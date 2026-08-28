@@ -1,12 +1,12 @@
 {
- "generato_il": "2026-08-28T16:27:46+00:00",
+ "generato_il": "2026-08-28T20:37:21+00:00",
  "partite": 27474,
  "stagioni": "1718–2526",
- "brier_modello": 0.58543,
+ "brier_modello": 0.58544,
  "brier_mercato": 0.56802,
  "logloss_modello": 0.98594,
  "logloss_mercato": 0.95723,
- "ece_modello": 0.01215,
+ "ece_modello": 0.01212,
  "ece_mercato": 0.00993,
  "campionati": [
   {
@@ -54,15 +54,15 @@
     },
     {
      "centro": 0.55,
-     "dichiarata": 0.547,
-     "osservata": 0.5605,
-     "casi": 769
+     "dichiarata": 0.5471,
+     "osservata": 0.5597,
+     "casi": 770
     },
     {
      "centro": 0.65,
-     "dichiarata": 0.6462,
-     "osservata": 0.6624,
-     "casi": 548
+     "dichiarata": 0.6463,
+     "osservata": 0.6636,
+     "casi": 547
     },
     {
      "centro": 0.75,
@@ -155,7 +155,7 @@
     {
      "anno": 2019,
      "partite": 355,
-     "brier_modello": 0.61007,
+     "brier_modello": 0.61006,
      "brier_mercato": 0.58278
     },
     {
@@ -212,7 +212,7 @@
    "brier_mercato": 0.56605,
    "logloss_modello": 0.97732,
    "logloss_mercato": 0.95603,
-   "ece_modello": 0.00759,
+   "ece_modello": 0.00768,
    "ece_mercato": 0.00574,
    "calibrazione_modello": [
     {
@@ -223,15 +223,15 @@
     },
     {
      "centro": 0.15,
-     "dichiarata": 0.1577,
-     "osservata": 0.1573,
-     "casi": 1386
+     "dichiarata": 0.1578,
+     "osservata": 0.1572,
+     "casi": 1387
     },
     {
      "centro": 0.25,
      "dichiarata": 0.25,
-     "osservata": 0.2561,
-     "casi": 3350
+     "osservata": 0.2562,
+     "casi": 3349
     },
     {
      "centro": 0.35,
@@ -259,15 +259,15 @@
     },
     {
      "centro": 0.75,
-     "dichiarata": 0.749,
-     "osservata": 0.7382,
-     "casi": 275
+     "dichiarata": 0.7488,
+     "osservata": 0.7372,
+     "casi": 274
     },
     {
      "centro": 0.85,
-     "dichiarata": 0.8386,
-     "osservata": 0.872,
-     "casi": 125
+     "dichiarata": 0.8383,
+     "osservata": 0.873,
+     "casi": 126
     },
     {
      "centro": 0.95,
@@ -360,13 +360,13 @@
     {
      "anno": 2021,
      "partite": 406,
-     "brier_modello": 0.57913,
+     "brier_modello": 0.57914,
      "brier_mercato": 0.56631
     },
     {
      "anno": 2022,
      "partite": 357,
-     "brier_modello": 0.58148,
+     "brier_modello": 0.58147,
      "brier_mercato": 0.56121
     },
     {
@@ -384,13 +384,13 @@
     {
      "anno": 2025,
      "partite": 376,
-     "brier_modello": 0.57462,
+     "brier_modello": 0.57461,
      "brier_mercato": 0.56632
     },
     {
      "anno": 2026,
      "partite": 172,
-     "brier_modello": 0.66809,
+     "brier_modello": 0.6681,
      "brier_mercato": 0.65467
     }
    ]
@@ -594,9 +594,9 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "partite": 2399,
-   "brier_modello": 0.59775,
+   "brier_modello": 0.59776,
    "brier_mercato": 0.57713,
-   "logloss_modello": 1.00603,
+   "logloss_modello": 1.00604,
    "logloss_mercato": 0.97189,
    "ece_modello": 0.01707,
    "ece_mercato": 0.0093,
@@ -657,7 +657,7 @@
     },
     {
      "centro": 0.95,
-     "dichiarata": 0.9441,
+     "dichiarata": 0.9442,
      "osservata": 0.8,
      "casi": 20
     }
@@ -734,7 +734,7 @@
     {
      "anno": 2019,
      "partite": 303,
-     "brier_modello": 0.60257,
+     "brier_modello": 0.60258,
      "brier_mercato": 0.5853
     },
     {
@@ -758,7 +758,7 @@
     {
      "anno": 2023,
      "partite": 308,
-     "brier_modello": 0.59293,
+     "brier_modello": 0.59292,
      "brier_mercato": 0.56961
     },
     {
@@ -770,7 +770,7 @@
     {
      "anno": 2025,
      "partite": 306,
-     "brier_modello": 0.6117,
+     "brier_modello": 0.61171,
      "brier_mercato": 0.59174
     },
     {
@@ -933,7 +933,7 @@
     {
      "anno": 2020,
      "partite": 256,
-     "brier_modello": 0.61707,
+     "brier_modello": 0.61706,
      "brier_mercato": 0.60259
     },
     {
@@ -945,7 +945,7 @@
     {
      "anno": 2022,
      "partite": 348,
-     "brier_modello": 0.58631,
+     "brier_modello": 0.5863,
      "brier_mercato": 0.56608
     },
     {
@@ -984,7 +984,7 @@
    "brier_mercato": 0.54698,
    "logloss_modello": 0.95246,
    "logloss_mercato": 0.92496,
-   "ece_modello": 0.01482,
+   "ece_modello": 0.0147,
    "ece_mercato": 0.01048,
    "calibrazione_modello": [
     {
@@ -1008,14 +1008,14 @@
     {
      "centro": 0.35,
      "dichiarata": 0.346,
-     "osservata": 0.3513,
-     "casi": 854
+     "osservata": 0.3509,
+     "casi": 855
     },
     {
      "centro": 0.45,
-     "dichiarata": 0.4477,
-     "osservata": 0.4195,
-     "casi": 677
+     "dichiarata": 0.4478,
+     "osservata": 0.4201,
+     "casi": 676
     },
     {
      "centro": 0.55,
@@ -1150,7 +1150,7 @@
     {
      "anno": 2024,
      "partite": 314,
-     "brier_modello": 0.54281,
+     "brier_modello": 0.5428,
      "brier_mercato": 0.52014
     },
     {
@@ -1313,7 +1313,7 @@
     {
      "anno": 2019,
      "partite": 304,
-     "brier_modello": 0.55408,
+     "brier_modello": 0.55407,
      "brier_mercato": 0.54032
     },
     {
@@ -1325,7 +1325,7 @@
     {
      "anno": 2021,
      "partite": 340,
-     "brier_modello": 0.56507,
+     "brier_modello": 0.56508,
      "brier_mercato": 0.54904
     },
     {
@@ -1349,7 +1349,7 @@
     {
      "anno": 2025,
      "partite": 303,
-     "brier_modello": 0.54964,
+     "brier_modello": 0.54965,
      "brier_mercato": 0.54409
     },
     {
@@ -1366,24 +1366,24 @@
    "bandiera": "🇹🇷",
    "paese": "Turchia",
    "partite": 2694,
-   "brier_modello": 0.61029,
+   "brier_modello": 0.6103,
    "brier_mercato": 0.58099,
-   "logloss_modello": 1.03217,
+   "logloss_modello": 1.03211,
    "logloss_mercato": 0.9769,
-   "ece_modello": 0.01468,
+   "ece_modello": 0.01467,
    "ece_mercato": 0.01369,
    "calibrazione_modello": [
     {
      "centro": 0.05,
-     "dichiarata": 0.0663,
-     "osservata": 0.1465,
-     "casi": 198
+     "dichiarata": 0.0665,
+     "osservata": 0.1508,
+     "casi": 199
     },
     {
      "centro": 0.15,
-     "dichiarata": 0.1602,
-     "osservata": 0.1708,
-     "casi": 978
+     "dichiarata": 0.1603,
+     "osservata": 0.1699,
+     "casi": 977
     },
     {
      "centro": 0.25,
@@ -1394,20 +1394,20 @@
     {
      "centro": 0.35,
      "dichiarata": 0.3426,
-     "osservata": 0.3244,
-     "casi": 1492
+     "osservata": 0.3242,
+     "casi": 1493
     },
     {
      "centro": 0.45,
-     "dichiarata": 0.4477,
+     "dichiarata": 0.4478,
      "osservata": 0.4394,
      "casi": 974
     },
     {
      "centro": 0.55,
-     "dichiarata": 0.5448,
-     "osservata": 0.5313,
-     "casi": 655
+     "dichiarata": 0.545,
+     "osservata": 0.5321,
+     "casi": 654
     },
     {
      "centro": 0.65,
@@ -1423,13 +1423,13 @@
     },
     {
      "centro": 0.85,
-     "dichiarata": 0.8337,
+     "dichiarata": 0.8318,
      "osservata": 0.6667,
      "casi": 39
     },
     {
      "centro": 0.95,
-     "dichiarata": 0.9703,
+     "dichiarata": 0.9686,
      "osservata": 0.2,
      "casi": 5
     }
@@ -1506,19 +1506,19 @@
     {
      "anno": 2019,
      "partite": 304,
-     "brier_modello": 0.63373,
+     "brier_modello": 0.63321,
      "brier_mercato": 0.59262
     },
     {
      "anno": 2020,
      "partite": 298,
-     "brier_modello": 0.64134,
+     "brier_modello": 0.64133,
      "brier_mercato": 0.62252
     },
     {
      "anno": 2021,
      "partite": 451,
-     "brier_modello": 0.62506,
+     "brier_modello": 0.62543,
      "brier_mercato": 0.60089
     },
     {
@@ -1563,7 +1563,7 @@
    "brier_mercato": 0.58431,
    "logloss_modello": 1.00779,
    "logloss_mercato": 0.98253,
-   "ece_modello": 0.01094,
+   "ece_modello": 0.01064,
    "ece_mercato": 0.00865,
    "calibrazione_modello": [
     {
@@ -1587,13 +1587,13 @@
     {
      "centro": 0.35,
      "dichiarata": 0.3441,
-     "osservata": 0.3469,
+     "osservata": 0.346,
      "casi": 1029
     },
     {
      "centro": 0.45,
      "dichiarata": 0.448,
-     "osservata": 0.4192,
+     "osservata": 0.4204,
      "casi": 835
     },
     {
@@ -1622,7 +1622,7 @@
     },
     {
      "centro": 0.95,
-     "dichiarata": 0.9632,
+     "dichiarata": 0.9634,
      "osservata": 0.6,
      "casi": 5
     }
@@ -1735,7 +1735,7 @@
     {
      "anno": 2026,
      "partite": 130,
-     "brier_modello": 0.60461,
+     "brier_modello": 0.60462,
      "brier_mercato": 0.59879
     }
    ]
@@ -1916,13 +1916,13 @@
     {
      "anno": 2024,
      "partite": 244,
-     "brier_modello": 0.57041,
+     "brier_modello": 0.5704,
      "brier_mercato": 0.55598
     },
     {
      "anno": 2025,
      "partite": 225,
-     "brier_modello": 0.5489,
+     "brier_modello": 0.54889,
      "brier_mercato": 0.53521
     },
     {
@@ -1996,7 +1996,7 @@
     },
     {
      "centro": 0.85,
-     "dichiarata": 0.8411,
+     "dichiarata": 0.841,
      "osservata": 0.8095,
      "casi": 147
     },
