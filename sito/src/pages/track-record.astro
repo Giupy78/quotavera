@@ -1,0 +1,244 @@
+---
+import Base from "../layouts/Base.astro";
+import Calibrazione from "../components/Calibrazione.astro";
+import track from "../dati/track-record.json";
+
+const num = (v: number, d = 5) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+const vinceModello = track.brier_modello < track.brier_mercato;
+const scarto = track.brier_modello - track.brier_mercato;
+
+/* Errore standard del Brier: senza, uno scarto al quarto decimale sembra un
+   risultato quando è rumore. Il Brier su 1X2 ha varianza attorno a 0,25 per
+   osservazione; l'errore della differenza fra due serie appaiate è più piccolo,
+   ma questo è il limite superiore ed è quello onesto da mostrare. */
+const errore = Math.sqrt(0.25 / track.partite);
+
+const ordinati = [...track.campionati].sort(
+  (a, b) => a.brier_modello - a.brier_mercato - (b.brier_modello - b.brier_mercato)
+);
+const migliori = ordinati.filter((c) => c.brier_modello < c.brier_mercato).length;
+
+/* Le curve di calibrazione sono salvate per campionato: qui si fondono
+   sommando i casi, non facendo la media delle percentuali — altrimenti una
+   fascia con 40 osservazioni peserebbe quanto una con 4.000. */
+function fondi(chiave: "calibrazione_modello" | "calibrazione_mercato") {
+  const somma = new Map<number, { casi: number; d: number; o: number }>();
+  for (const c of track.campionati) {
+    for (const f of c[chiave]) {
+      const g = somma.get(f.centro) ?? { casi: 0, d: 0, o: 0 };
+      g.casi += f.casi;
+      g.d += f.dichiarata * f.casi;
+      g.o += f.osservata * f.casi;
+      somma.set(f.centro, g);
+    }
+  }
+  return [...somma.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([centro, g]) => ({
+      centro,
+      dichiarata: g.d / g.casi,
+      osservata: g.o / g.casi,
+      casi: g.casi,
+    }));
+}
+
+const curvaModello = fondi("calibrazione_modello");
+const curvaMercato = fondi("calibrazione_mercato");
+const casiTotali = curvaModello.reduce((s, f) => s + f.casi, 0);
+---
+
+<Base
+  titolo="Track record"
+  descrizione="Il nostro modello contro la quota di chiusura del mercato, su partite vere."
+>
+  <section>
+    <p class="occhiello">Verifica fuori campione · stagioni {track.stagioni}</p>
+    <div class="hd">
+      <h1>Il modello batte il mercato?</h1>
+      <p>
+        {track.partite.toLocaleString("it-IT")} partite vere, misurate contro la
+        quota di chiusura. Il modello è stato ristimato ogni giornata usando
+        <strong> solo le partite già giocate</strong>.
+      </p>
+    </div>
+
+    <div class="tessere">
+      <div class="tessera">
+        <div class="k">Partite misurate</div>
+        <div class="v mono">{track.partite.toLocaleString("it-IT")}</div>
+        <div class="n">fuori campione, walk-forward</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Brier del modello</div>
+        <div class={`v mono${vinceModello ? " buono" : ""}`}>{num(track.brier_modello, 4)}</div>
+        <div class="n">più basso è meglio</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Brier del mercato</div>
+        <div class={`v mono${vinceModello ? "" : " buono"}`}>{num(track.brier_mercato, 4)}</div>
+        <div class="n">quota di chiusura, ripulita con Shin</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Calibrazione</div>
+        <div class="v mono">{num(track.ece_modello, 4)}</div>
+        <div class="n">mercato {num(track.ece_mercato, 4)} — sotto 0,02 è onesto</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>La risposta, senza giri</h2></div>
+    <div class="prosa">
+      {
+        vinceModello ? (
+          <p>
+            Sul campione completo il modello ha un Brier di
+            {" "}<strong>{num(track.brier_modello)}</strong> contro
+            {" "}<strong>{num(track.brier_mercato)}</strong> del mercato: è avanti di
+            {" "}{num(Math.abs(scarto))}. Con un errore standard di circa
+            {" "}{num(errore)}, è un margine
+            {Math.abs(scarto) > 2 * errore ? " che sopravvive al rumore" :
+              " che sta dentro il rumore, quindi non dimostra niente"}.
+          </p>
+        ) : (
+          <p>
+            <strong>No.</strong> Il modello ha un Brier di
+            {" "}<strong>{num(track.brier_modello)}</strong>, la quota di chiusura
+            {" "}<strong>{num(track.brier_mercato)}</strong>: il mercato è avanti di
+            {" "}{num(Math.abs(scarto))}. È il risultato che ci aspettavamo, ed è
+            anche quello che quasi tutti ottengono — battere la chiusura è
+            difficile per i fondi che ci lavorano a tempo pieno, figurarsi per un
+            modello sui soli gol.
+          </p>
+        )
+      }
+      <p>
+        Il modello è però <strong>calibrato</strong>: con un errore di
+        {" "}{num(track.ece_modello, 4)}, quando dice 45% succede il 45% delle
+        volte. È la cosa che conta per l'uso che ne facciamo — descrivere una
+        partita — e non ha niente a che vedere con l'essere migliori del mercato.
+        Sono due asticelle diverse: per informare serve essere corretti, per
+        guadagnare serve essere <em>migliori</em>.
+      </p>
+      <p>
+        <strong>Ecco perché su questo sito non troverai consigli di gioco.</strong>{" "}
+        Non è prudenza: è che i numeri dicono che non ne saremmo in grado, e
+        pubblicarli lo stesso vorrebbe dire vendere qualcosa che non abbiamo.
+        Questa pagina esiste perché tu possa verificarlo invece di crederci.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Le due curve di calibrazione</h2>
+      <p>
+        Dichiarato contro osservato. Sulla diagonale le probabilità sono oneste.
+        Il mercato è il riferimento: guarda quanto ci somiglia il modello.
+      </p>
+    </div>
+    <div class="duo">
+      <div class="pannello">
+        <h3>Il nostro modello</h3>
+        <p class="sub">
+          Errore di calibrazione {num(track.ece_modello, 4)} su
+          {" "}{casiTotali.toLocaleString("it-IT")} osservazioni
+        </p>
+        <Calibrazione fasce={curvaModello} />
+      </div>
+      <div class="pannello">
+        <h3>La quota di chiusura</h3>
+        <p class="sub">Errore di calibrazione {num(track.ece_mercato, 4)}</p>
+        <Calibrazione fasce={curvaMercato} />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Campionato per campionato</h2>
+      <p>
+        Dove il modello regge meglio e dove peggio. Vince in
+        {" "}{migliori} campionati su {track.campionati.length}.
+      </p>
+    </div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th class="num">Partite</th>
+            <th class="num">Modello</th>
+            <th class="num">Mercato</th>
+            <th class="num">Scarto</th>
+            <th class="num">Calibrazione</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            ordinati.map((c) => {
+              const d = c.brier_modello - c.brier_mercato;
+              return (
+                <tr>
+                  <td>
+                    <a href={`/calcio/${c.slug}/`} style="color:inherit">
+                      {c.bandiera} <b>{c.nome}</b>
+                    </a>
+                    <div style="font-size:11px;color:var(--ink-3)">{c.paese}</div>
+                  </td>
+                  <td class="num">{c.partite.toLocaleString("it-IT")}</td>
+                  <td class="num">{num(c.brier_modello, 4)}</td>
+                  <td class="num">{num(c.brier_mercato, 4)}</td>
+                  <td
+                    class="num"
+                    style={`font-weight:600;color:${d < 0 ? "var(--good)" : "var(--ink-3)"}`}
+                  >
+                    {d >= 0 ? "+" : ""}{num(d, 4)}
+                  </td>
+                  <td class="num">{num(c.ece_modello, 4)}</td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:78ch">
+      Lo scarto è Brier del modello meno Brier del mercato: negativo vuol dire
+      che il modello è avanti su quel campionato. Attenzione a leggerci troppo —
+      su qualche migliaio di partite le differenze al quarto decimale sono in
+      buona parte caso, ed è il motivo per cui la riga che conta è quella
+      complessiva e non la migliore della tabella.
+    </p>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Come è fatta questa verifica</h2>
+    </div>
+    <div class="prosa">
+      <p>
+        Due errori rendono inutile un backtest, e qui sono evitati per
+        costruzione. Il primo è <strong>guardare avanti</strong>: stimare su
+        tutta la stagione e poi «prevedere» partite che erano nel campione dà
+        numeri splendidi e falsi. Qui il modello viene ristimato ogni giornata
+        usando esclusivamente le partite già giocate a quella data.
+      </p>
+      <p>
+        Il secondo è <strong>scegliersi l'avversario</strong>. Misurarsi contro
+        le quote di apertura, o contro la media di tutti i bookmaker, è darsi
+        ragione da soli: la media include i banchi al dettaglio, che sono
+        sistematicamente peggiori. Il confronto qui è con la
+        <strong> quota di chiusura</strong> del Betfair Exchange, o di Pinnacle
+        dove l'exchange manca — il metro più duro che esista.
+      </p>
+      <p>
+        I dati sono pubblici e gratuiti: vengono da football-data.co.uk, e il
+        codice che produce questi numeri sta in <code>scripts/track_record.py</code>.
+        Chiunque può rifare i conti.
+      </p>
+    </div>
+  </section>
+</Base>

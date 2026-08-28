@@ -59,6 +59,19 @@ jobs:
         if: steps.ora.outputs.procedi == 'si'
         run: python scripts/genera_sito.py
 
+      - name: Il lunedì rifà anche il track record
+        # Costa parecchi minuti — ristima il modello centinaia di volte
+        # camminando in avanti su nove stagioni — e cambia molto lentamente:
+        # rifarlo ogni notte sarebbe spreco. Una volta a settimana basta.
+        if: steps.ora.outputs.procedi == 'si'
+        run: |
+          GIORNO=$(TZ=Europe/Rome date +%u)
+          if [ "$GIORNO" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python scripts/track_record.py
+          else
+            echo "Non è lunedì: il track record resta quello della settimana scorsa."
+          fi
+
       - uses: actions/setup-node@v4
         if: steps.ora.outputs.procedi == 'si'
         with:

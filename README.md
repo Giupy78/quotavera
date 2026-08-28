@@ -1,6 +1,6 @@
-# Quota Vera — motore di pronostici sportivi
+# Quota Vera — statistiche sportive dai dati veri
 
-Stato al **27 agosto 2026**. Questo file tiene decisioni, stato e prossimi
+Stato al **28 agosto 2026**. Questo file tiene decisioni, stato e prossimi
 passi, come il README di CondoManager. **Va aggiornato quando cambia una
 decisione**, non quando cambia un'idea: quello che non è scritto qui, la
 sessione dopo non esiste.
@@ -9,19 +9,35 @@ sessione dopo non esiste.
 
 ## 1. Cosa stiamo facendo, e cosa no
 
-Un sito che pubblica probabilità calcolate da un modello statistico, il
-confronto con le quote del mercato, e — soprattutto — **lo storico di quanto
-il modello ci prende, perdite comprese**.
+Un sito che, ogni giorno, pubblica **le statistiche delle partite in programma
+su 22 campionati europei** e lascia che sia il lettore a farsi un'idea.
 
-Non è un sito di pronostici nel senso corrente del termine. La differenza sta
-in una riga sola:
+Non diamo consigli di gioco, e non è prudenza: **il modello non batte il
+mercato**, l'abbiamo misurato su migliaia di partite vere contro la quota di
+chiusura, e pubblicarne i pronostici come vincenti vorrebbe dire vendere una
+cosa che non abbiamo. Quello che abbiamo è un modello **calibrato** — quando
+dice 45%, succede il 45% delle volte — e per descrivere una partita serve
+esattamente quello.
 
-> Ogni previsione viene congelata con la quota vista in quel momento, prima
-> della partita, e non si tocca più.
+Le tre cose che diamo e che nessuno dà insieme:
 
-È l'unica cosa che, fra sei mesi, distingue un track record da un racconto.
-Di siti che dicono «oggi giochiamo questa» ce ne sono migliaia; di siti che
-pubblicano la propria curva di calibrazione, nessuno.
+1. **Statistiche che significano qualcosa.** La forma misurata sui tiri in
+   porta e non sui risultati; chi segna più di quanto crea; i numeri di casa e
+   trasferta tenuti separati.
+2. **Il confronto fra mercati.** Quanto si tiene il banco, campionato per
+   campionato: impossibile da costruire guardando una lega sola.
+3. **Il nostro track record pubblicato**, con la calibrazione e la sconfitta
+   contro il mercato scritta a chiare lettere.
+
+### Cosa abbiamo scartato, e perché
+
+**Surebet e valuebet.** Misurate su 13.688 partite vere: le surebet esistono e
+valgono fra lo 0 e il 3 per mille, e per raccoglierle servono venti conti gioco
+che vengono limitati in settimane. Il valore richiede di battere il mercato, e
+non lo battiamo.
+
+**Il pronostico come prodotto.** Stessa ragione: sarebbe l'unica cosa che non
+possiamo onestamente offrire.
 
 ### Decisioni prese il 27 agosto 2026
 
@@ -53,20 +69,26 @@ deve sapere di che sport sta parlando.
 ```
 engine/
   core/         tipi, mercato (quote <-> probabilità), metriche
+  dati/         catalogo dei campionati, lettore di football-data.co.uk
+  statistiche.py  numeri di squadra: forma sui tiri, segna-vs-crea
   sports/
     football/   Dixon-Coles: due Poisson corrette sui punteggi bassi
     basketball/ margine e totale come due normali, ridge sulle forze
     tennis/     Elo per superficie, poi ricorsione dal punto al match
 scripts/
-  dimostrazione.py   il giro completo su dati simulati
-tests/               57 test, inclusa la riprova sui parametri noti
+  genera_sito.py     scarica, stima, scrive i JSON del sito
+  track_record.py    la verifica walk-forward contro la quota di chiusura
+  analisi_mercato.py quanto si tiene il banco, su partite vere
+  analisi_movimento.py  il mercato impara fra apertura e chiusura?
+sito/                Astro statico, 227 pagine
+tests/               87 test
 ```
 
-Il test che vale più di tutti gli altri è la **riprova sui parametri noti**: si
-inventano delle forze vere, si simula un campionato che le rispetti, si dà al
-modello solo i risultati, e si controlla che riesca a risalire ai parametri di
-partenza. Se un modello non ci riesce sui dati finti, sui dati veri non ha
-speranza — e questo è vero per tutti e tre gli sport.
+Il test che vale più di tutti è la **riprova sui parametri noti**: si inventano
+delle forze vere, si simula un campionato che le rispetti, si dà al modello solo
+i risultati, e si controlla che risalga ai parametri di partenza. Se un modello
+non ci riesce sui dati finti, sui dati veri non ha speranza — e vale per tutti e
+tre gli sport.
 
 ### Perché tre modelli diversi e non uno
 
@@ -113,22 +135,23 @@ inutili quasi tutti i siti del genere.
 ```
 
 ```bash
-.venv\Scripts\python.exe scripts\dimostrazione.py
+.venv\Scripts\python.exe scripts\genera_sito.py
 ```
 
-La dimostrazione simula tre stagioni, ne tiene una da parte, fa camminare il
-modello in avanti nel tempo ristimando solo su quello che avrebbe potuto
-sapere, e stampa calibrazione, confronto col mercato e rendimento con il suo
-intervallo di confidenza.
+Scarica lo storico e il calendario, stima un modello per campionato, calcola le
+statistiche e riscrive i JSON che il sito legge. È quello che gira ogni notte.
 
-### Cosa dice, e cosa non dice
+```bash
+.venv\Scripts\python.exe scripts\track_record.py
+```
 
-Sui dati simulati la catena regge: il modello ritrova i parametri da cui la
-stagione è stata generata, è calibrato, e trova valore in circa il 20% delle
-partite. **Ma i gol lì sono generati esattamente dal modello che poi li stima**:
-il modello gioca in casa. Il calcio vero non è Dixon-Coles e il banco vero è più
-preciso di quello simulato. Serve a verificare che la catena regga, non a
-promettere un rendimento.
+La verifica onesta: cammina in avanti su nove stagioni, ristima il modello ogni
+giornata **usando solo il passato**, e lo confronta con la quota di chiusura.
+Ci mette una decina di minuti. Gira il lunedì, non ogni notte.
+
+Ci sono anche `analisi_mercato.py` (quanto si tiene il banco, su 13.688 partite
+vere) e `analisi_movimento.py` (se il mercato impara fra apertura e chiusura:
+sì, e si misura).
 
 ---
 
@@ -137,83 +160,88 @@ promettere un rendimento.
 | Pezzo | Stato |
 |---|---|
 | Nucleo: tipi, mercato, metriche | fatto, 23 test |
-| Calcio: Dixon-Coles | fatto, 13 test, riprova sui parametri noti superata |
-| Basket: margine e totale | fatto, 8 test |
-| Tennis: Elo e ricorsione | fatto, 13 test |
-| Backtest walk-forward | fatto, su dati simulati |
-| Sito (Astro, 12 pagine) | fatto, gira in locale su dati simulati |
-| **Dati veri** | **da fare — è il prossimo passo** |
-| Archivio dei pronostici congelati | da fare |
-| Aggiornamento automatico | da fare |
-| Messa in linea su Cloudflare | da fare |
+| Calcio: Dixon-Coles | fatto, 13 test |
+| Basket, tennis | fatti, 21 test — in attesa di una fonte dati vera |
+| Lettore football-data.co.uk | fatto, 15 test |
+| Statistiche di squadra | fatto, 9 test |
+| **Sito su dati veri, 22 campionati** | **fatto, 227 pagine** |
+| **Track record contro la chiusura** | **fatto** |
+| Pipeline notturna | scritta, mai girata davvero |
+| Messa in linea | **manca solo questo** — vedi `DEPLOY.md` |
 
 ### Il sito
 
 ```bash
-python scripts/genera_sito.py    # il motore scrive i JSON
+python scripts/genera_sito.py    # scarica, stima, scrive i JSON
 npm --prefix sito run dev        # http://localhost:4321
 ```
 
-Astro statico, senza JavaScript nel browser: i grafici sono SVG generati in
-build. Niente Tailwind — il sistema visivo sta in `sito/src/styles/global.css`
-come token CSS, ed è lo stesso del mockup approvato.
+Astro statico, senza JavaScript nel browser. Niente Tailwind: il sistema visivo
+sta in `sito/src/styles/global.css` come token CSS.
 
-**Otto campionati europei** (`scripts/campionati.py`), 80 pagine generate:
-l'indice dei campionati, una **giornata** per campionato, il **dettaglio
-partita**, il **confronto fra mercati**, **come si leggono le quote**, il
-**track record**, **il modello**, più basket e tennis. La cerniera fra le due
-metà è `scripts/genera_sito.py`: il motore calcola, lo script serializza, il
-sito disegna. In produzione lo chiamerà il cron notturno con i dati veri, e la
-forma dei file non cambia.
+**Ventidue divisioni in undici paesi** (`engine/dati/catalogo.py`), 227 pagine:
+le partite del giorno, una pagina per campionato con calendario e statistiche,
+la scheda di ogni partita, gli articoli, il confronto fra mercati, come si
+leggono le quote, il modello, il track record.
 
-I parametri per campionato in `campionati.py` (reti a partita, fattore campo,
-margine del banco, dispersione delle forze) sono oggi **input** della
-simulazione. Sui dati veri diventano **output** del modello: è quella la
-sostituzione da fare, non una riscrittura.
+`scripts/genera_sito.py` è la cerniera: il motore calcola, lo script serializza,
+il sito disegna. È quello che il cron notturno chiama alle 04:00.
 
-### Il posizionamento, deciso il 28 agosto 2026
+**Le coppe non ci sono.** football-data copre solo campionati nazionali:
+Champions, Europa League e coppe nazionali richiedono una fonte a pagamento.
+Scritto in `catalogo.py` e sulla pagina dei campionati perché non venga
+riscoperto ogni volta.
 
-Non «troviamo le occasioni che gli altri non trovano» — la verifica dice che il
-modello non batte il mercato, e promettere il contrario sarebbe la cosa che
-questo progetto esiste per non fare. Le tre cose che diamo e che nessuno dà
-insieme: **spiegare i numeri** (`/quote/`), **confrontare i mercati fra
-campionati** (`/mercati/` — impossibile da costruire guardando una lega sola), e
-**pubblicare il nostro track record con la calibrazione**, giornate vuote
-comprese.
+### I dati, e quanto costano
 
-### Cosa ha detto il primo giro completo (28 agosto 2026)
+| Cosa | Da dove | Costo |
+|---|---|---|
+| Risultati, statistiche di campo, quote di chiusura | football-data.co.uk | gratis |
+| Calendario e quote pre-partita | `fixtures.csv`, stessa fonte | gratis |
+| Coppe, quote in tempo reale | serve un'API | 20-30 €/mese |
 
-Su 910 partite fuori campione, con il banco simulato che parte dalle
-probabilità vere più un 3% di rumore:
+Trent'anni di risultati, dieci di quote di chiusura, senza una chiave né un
+account. La sola cosa che i dati gratuiti non danno è **l'oggi al minuto**.
 
-- **il modello non batte il mercato**: Brier 0,580 contro 0,578. Sono
-  indistinguibili
-- **è calibrato**: errore 0,017, sotto la soglia dei 0,02
-- **zero giocate di valore**, perché alla pari col mercato non ce ne sono
+### Cosa ha detto la verifica sui dati veri (28 agosto 2026)
 
-Non è un difetto da correggere alzando il rumore del banco finché il modello
-vince: è il risultato, e il sito è disegnato perché lo stato normale sia
-«nessuna occasione». Le divergenze sotto soglia si mostrano lo stesso, in
-grigio, così le giornate vuote non sembrano nascondere qualcosa.
+Il modello ristimato ogni giornata usando **solo il passato**, confrontato con
+la quota di chiusura del Betfair Exchange (o Pinnacle dove manca), su nove
+stagioni e undici campionati — **27.474 partite fuori campione**:
+
+| | Modello | Mercato | Scarto |
+|---|---|---|---|
+| Brier | 0,58543 | **0,56802** | +0,01741 |
+| Log-loss | 0,98594 | **0,95723** | +0,02871 |
+| Errore di calibrazione | 0,01215 | 0,00993 | |
+
+**Il mercato vince, in tutti e undici i campionati.** La regolarità del
+distacco dice che non è rumore: è il risultato.
+
+Non è un difetto da correggere. Battere la quota di chiusura è difficile per i
+fondi che ci lavorano a tempo pieno; un modello sui soli gol non ci arriva. Il
+modello resta però **calibrato** — errore 0,012, sotto la soglia dei 0,02 — e
+per descrivere una partita serve esattamente quello. Sono due asticelle
+diverse: per informare serve essere corretti, per guadagnare serve essere
+*migliori*.
+
+**È la ragione per cui il sito non dà consigli di gioco, ed è scritta sulla
+pagina `/track-record/` perché chiunque possa verificarla invece di crederci.**
 
 ---
 
 ## 5. Prossimi passi, in ordine
 
-1. **Collegare i dati veri.** `football-data.org` ha un piano gratuito che
-   copre Serie A e i maggiori campionati europei. Serve un lettore che porti i
-   risultati nel tipo `Incontro`, e nient'altro.
-2. **Rifare la dimostrazione su dati veri.** È il momento della verità: qui il
-   modello smette di giocare in casa. Il risultato atteso è che *non* batta il
-   mercato — e va scritto lo stesso.
-3. **L'archivio dei pronostici.** Un file per giornata, con quota e ora, mai
-   più modificato. Va fatto prima del sito, perché il sito senza storico non
-   ha niente da dire.
-4. **L'aggiornamento automatico.** GitHub Actions con un cron notturno che
-   ristima e scrive JSON.
-5. **Il sito.** Astro su Cloudflare, come il sito di Isabella Caputo. Pagine
-   statiche, isole solo per i grafici. Il mockup grafico esiste già ed è il
-   riferimento visivo.
+1. **Metterlo online.** È l'unica cosa che manca e richiede i tuoi account:
+   repository GitHub, Cloudflare Pages. Istruzioni in `DEPLOY.md`.
+2. **Far girare la pipeline almeno una volta a mano** dalla scheda Actions
+   («Run workflow»), che salta il controllo dell'orario apposta.
+3. **Togliere il `noindex`** quando decidi di aprire: una variabile
+   d'ambiente su Cloudflare, non una modifica al codice.
+4. **Scrivere qualche approfondimento.** Il pezzo del giorno lo genera il
+   programma; gli articoli che restano validi oltre la giornata no.
+5. **Poi, se serve:** una fonte a pagamento per le coppe e le quote in diretta.
+   Da valutare solo quando il resto è in piedi e si vede se interessa a qualcuno.
 
 ---
 
