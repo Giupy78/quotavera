@@ -1,0 +1,24 @@
+/**
+ * Configurazione per Cloudflare Workers — il piano B se Pages non c'e' piu'.
+ *
+ * Cloudflare sta spostando tutto su Workers e sugli account nuovi il modulo di
+ * creazione Pages a volte non compare. Questo file permette di pubblicare lo
+ * stesso sito come Worker con "static assets": il contenuto e' identico, cambia
+ * solo il servizio che lo serve.
+ *
+ * Non c'e' nessuno script Worker — `main` e' assente apposta. E' un sito
+ * statico: Cloudflare serve i file di `dist` e basta, senza far girare codice
+ * a ogni richiesta.
+ *
+ * Se invece Pages funziona, questo file resta inerte e non da' fastidio.
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "quotavera",
+  "compatibility_date": "2026-08-28",
+  "assets": {
+    "directory": "./dist",
+    // Serve la nostra pagina 404 invece di quella generica di Cloudflare.
+    "not_found_handling": "404-page"
+  }
+}

@@ -1,0 +1,102 @@
+---
+import Base from "../layouts/Base.astro";
+import campionati from "../dati/campionati.json";
+
+const principali = campionati.campionati.filter((c) => c.principale).slice(0, 6);
+---
+
+<Base
+  titolo="Pagina non trovata"
+  descrizione="La pagina cercata non esiste o non è più disponibile."
+>
+  <section>
+    <p class="occhiello">Errore 404</p>
+    <div class="hd">
+      <h1>Questa pagina non c'è</h1>
+      <p>
+        Può darsi che la partita sia già stata giocata: le schede restano solo
+        finché la partita è in programma.
+      </p>
+    </div>
+
+    <div class="prosa">
+      <p>Da qui puoi ripartire:</p>
+    </div>
+
+    <div class="scorciatoie">
+      <a href="/"><b>Le partite di oggi</b><span>calendario di tutti i campionati</span></a>
+      <a href="/campionati/"><b>Tutti i campionati</b><span>ventidue divisioni in undici paesi</span></a>
+      <a href="/blog/"><b>Articoli</b><span>i numeri del giorno e gli approfondimenti</span></a>
+      <a href="/quote/"><b>Come si leggono le quote</b><span>margine, quota equa, valore atteso</span></a>
+    </div>
+
+    <div class="hd" style="margin-top:40px">
+      <h2>Oppure vai a un campionato</h2>
+    </div>
+    <div class="leghe-veloci">
+      {
+        principali.map((c) => (
+          <a href={`/calcio/${c.slug}/`}>
+            <span>{c.bandiera}</span>
+            {c.nome}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  .scorciatoie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .scorciatoie a {
+    background: var(--card);
+    padding: 16px 18px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .scorciatoie a:hover {
+    background: var(--sunk);
+  }
+  .scorciatoie b {
+    display: block;
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+  .scorciatoie span {
+    display: block;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    margin-top: 3px;
+  }
+
+  .leghe-veloci {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .leghe-veloci a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    padding: 8px 13px;
+    font-size: 13.5px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .leghe-veloci a:hover {
+    border-color: var(--rule-strong);
+    background: var(--sunk);
+  }
+  .leghe-veloci span {
+    font-size: 15px;
+    line-height: 1;
+  }
+</style>
