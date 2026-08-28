@@ -20,6 +20,8 @@ from pathlib import Path
 RADICE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RADICE))
 
+from engine.classifica import calcola as calcola_classifica
+from engine.classifica import posizioni_attese, ultimi_risultati
 from engine.core.market import margine, probabilita_implicite
 from engine.core.types import Fixture
 from engine.dati.catalogo import CAMPIONATI, PER_SLUG
@@ -148,6 +150,41 @@ def elabora(c, storico, stagione, cal) -> dict | None:
     squadre = sorted((numeri_squadra(s, conv) for s in stat.values()),
                      key=lambda s: s["scarto_conversione"], reverse=True)
 
+    tabella = calcola_classifica(stagione, conv)
+    attese = posizioni_attese(tabella)
+    classifica = [
+        {
+            "posizione": n,
+            "squadra": r.squadra,
+            "giocate": r.giocate,
+            "vinte": r.vinte,
+            "pareggiate": r.pareggiate,
+            "perse": r.perse,
+            "fatti": r.fatti,
+            "subiti": r.subiti,
+            "differenza": r.differenza,
+            "punti": r.punti,
+            "punti_attesi": arrotonda(r.punti_attesi, 1),
+            "scarto_punti": arrotonda(r.scarto_punti, 1),
+            "posizione_attesa": attese[r.squadra],
+            "salto": attese[r.squadra] - n,
+        }
+        for n, r in enumerate(tabella, start=1)
+    ]
+
+    risultati = [
+        {
+            "data": p.incontro.data.isoformat(),
+            "casa": p.incontro.casa,
+            "ospite": p.incontro.ospite,
+            "gol_casa": p.incontro.punti_casa,
+            "gol_ospite": p.incontro.punti_ospite,
+            "in_porta_casa": p.stat.in_porta[0] if p.stat.completa else None,
+            "in_porta_ospite": p.stat.in_porta[1] if p.stat.completa else None,
+        }
+        for p in ultimi_risultati(stagione, quanti=20)
+    ]
+
     return {
         "slug": c.slug, "nome": c.nome, "paese": c.paese, "bandiera": c.bandiera,
         "livello": c.livello, "principale": c.principale,
@@ -158,6 +195,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "squadre": squadre,
         "calendario": righe,
         "schede": schede,
+        "classifica": classifica,
+        "risultati": risultati,
         "sorprese": sorprese(stagione, c),
     }
 
@@ -271,13 +310,16 @@ def main() -> int:
 
     print()
     indice = [{k: v for k, v in l.items()
-               if k not in ("squadre", "calendario", "schede", "sorprese")}
+               if k not in ("squadre", "calendario", "schede", "sorprese",
+                            "classifica", "risultati")}
               for l in leghe]
     scrivi("campionati.json", {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                "fonte": "football-data.co.uk",
                                "campionati": indice})
     scrivi("calendario.json", {"campionati": {l["slug"]: l["calendario"] for l in leghe}})
     scrivi("squadre.json", {"campionati": {l["slug"]: l["squadre"] for l in leghe}})
+    scrivi("classifiche.json", {"campionati": {l["slug"]: l["classifica"] for l in leghe}})
+    scrivi("risultati.json", {"campionati": {l["slug"]: l["risultati"] for l in leghe}})
     scrivi("schede.json", {"partite": [s for l in leghe for s in l["schede"]]})
     scrivi("articolo.json", articolo(leghe))
 

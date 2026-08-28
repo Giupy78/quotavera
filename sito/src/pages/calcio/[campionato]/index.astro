@@ -4,17 +4,36 @@ import RigaPartita from "../../../components/RigaPartita.astro";
 import campionati from "../../../dati/campionati.json";
 import calendario from "../../../dati/calendario.json";
 import squadre from "../../../dati/squadre.json";
+import classifiche from "../../../dati/classifiche.json";
+import risultati from "../../../dati/risultati.json";
 
 export function getStaticPaths() {
   const cal = calendario.campionati as Record<string, any[]>;
   const sq = squadre.campionati as Record<string, any[]>;
+  const cl = classifiche.campionati as Record<string, any[]>;
+  const ri = risultati.campionati as Record<string, any[]>;
   return campionati.campionati.map((c) => ({
     params: { campionato: c.slug },
-    props: { lega: c, partite: cal[c.slug] ?? [], team: sq[c.slug] ?? [] },
+    props: {
+      lega: c,
+      partite: cal[c.slug] ?? [],
+      team: sq[c.slug] ?? [],
+      classifica: cl[c.slug] ?? [],
+      ultimi: ri[c.slug] ?? [],
+    },
   }));
 }
 
-const { lega, partite, team } = Astro.props;
+const { lega, partite, team, classifica, ultimi } = Astro.props;
+
+/* Le squadre che hanno raccolto molto piu' o molto meno del gioco: sono le
+   due righe che vale la pena raccontare sopra la tabella. */
+const fortunata = classifica.reduce(
+  (a: any, r: any) => (!a || r.scarto_punti > a.scarto_punti ? r : a), null
+);
+const sfortunata = classifica.reduce(
+  (a: any, r: any) => (!a || r.scarto_punti < a.scarto_punti ? r : a), null
+);
 
 const num = (v: number, d = 2) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -31,7 +50,7 @@ const dataLunga = (iso: string) =>
     weekday: "long", day: "numeric", month: "long",
   });
 
-const classifica = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
+const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
 ---
 
 <Base
@@ -100,6 +119,138 @@ const classifica = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     }
   </section>
 
+  {
+    classifica.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Classifica</h2>
+          <p>
+            Accanto ai punti veri, quelli che il gioco avrebbe prodotto: le due
+            colonne a destra sono la nostra, e non le trovi altrove.
+          </p>
+        </div>
+
+        {fortunata && sfortunata && fortunata.squadra !== sfortunata.squadra && (
+          <div class="prosa" style="margin-bottom:20px">
+            <p>
+              <strong>{fortunata.squadra}</strong> ha raccolto
+              {" "}{num(Math.abs(fortunata.scarto_punti), 1)} punti più di quanti
+              ne dicano i tiri, <strong>{sfortunata.squadra}</strong>
+              {" "}{num(Math.abs(sfortunata.scarto_punti), 1)} in meno. Sulla
+              distanza questi scarti tendono a chiudersi.
+            </p>
+          </div>
+        )}
+
+        <div class="scorri">
+          <table class="dati classifica">
+            <thead>
+              <tr>
+                <th class="pos">#</th>
+                <th>Squadra</th>
+                <th class="num">G</th>
+                <th class="num">V</th>
+                <th class="num">N</th>
+                <th class="num">P</th>
+                <th class="num">GF</th>
+                <th class="num">GS</th>
+                <th class="num">DR</th>
+                <th class="num">Punti</th>
+                <th class="num evidenza">Attesi</th>
+                <th class="num evidenza">Scarto</th>
+              </tr>
+            </thead>
+            <tbody>
+              {classifica.map((r: any) => (
+                <tr>
+                  <td class="pos">
+                    {r.posizione}
+                    {r.salto !== 0 && (
+                      <i class:list={["salto", { su: r.salto < 0 }]}>
+                        {r.salto < 0 ? "▲" : "▼"}{Math.abs(r.salto)}
+                      </i>
+                    )}
+                  </td>
+                  <td><b>{r.squadra}</b></td>
+                  <td class="num">{r.giocate}</td>
+                  <td class="num">{r.vinte}</td>
+                  <td class="num">{r.pareggiate}</td>
+                  <td class="num">{r.perse}</td>
+                  <td class="num">{r.fatti}</td>
+                  <td class="num">{r.subiti}</td>
+                  <td class="num">{r.differenza > 0 ? "+" : ""}{r.differenza}</td>
+                  <td class="num"><b>{r.punti}</b></td>
+                  <td class="num evidenza">{num(r.punti_attesi, 1)}</td>
+                  <td
+                    class="num evidenza"
+                    style={`font-weight:600;color:${
+                      r.scarto_punti > 0 ? "var(--s2)" : "var(--s1)"
+                    }`}
+                  >
+                    {r.scarto_punti > 0 ? "+" : ""}{num(r.scarto_punti, 1)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:80ch">
+          <b>Attesi</b> sono i punti che ogni squadra avrebbe raccolto se i gol
+          fossero caduti secondo i tiri in porta prodotti: per ogni partita si
+          pesa ogni esito per la sua probabilità, invece di assegnare la vittoria
+          a chi ha creato di più. La freccia accanto alla posizione dice dove
+          starebbe la squadra in quella classifica.
+        </p>
+      </section>
+    )
+  }
+
+  {
+    ultimi.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Ultimi risultati</h2>
+          <p>Con i tiri in porta accanto al punteggio: spesso raccontano un'altra partita.</p>
+        </div>
+        <div class="slip">
+          {ultimi.map((r: any) => {
+            const scarto =
+              r.in_porta_casa !== null
+                ? r.in_porta_casa - r.in_porta_ospite
+                : null;
+            const vinceCasa = r.gol_casa > r.gol_ospite;
+            const vinceOspite = r.gol_ospite > r.gol_casa;
+            /* Il gioco dice l'opposto del punteggio: e' la riga da notare. */
+            const controcorrente =
+              scarto !== null &&
+              ((vinceCasa && scarto <= -3) || (vinceOspite && scarto >= 3));
+            return (
+              <div class:list={["risultato", { controcorrente }]}>
+                <span class="quando mono">
+                  {new Date(r.data + "T00:00:00").toLocaleDateString("it-IT", {
+                    day: "2-digit", month: "2-digit",
+                  })}
+                </span>
+                <span class:list={["team", { spento: vinceOspite }]}>{r.casa}</span>
+                <b class="punteggio mono">{r.gol_casa}–{r.gol_ospite}</b>
+                <span class:list={["team", { spento: vinceCasa }]}>{r.ospite}</span>
+                <span class="tiri mono">
+                  {r.in_porta_casa !== null
+                    ? `${r.in_porta_casa}–${r.in_porta_ospite}`
+                    : "—"}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+        <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.5">
+          L'ultima colonna sono i tiri in porta. Le righe evidenziate sono quelle
+          in cui ha vinto chi ne ha fatti almeno tre in meno.
+        </p>
+      </section>
+    )
+  }
+
   <section>
     <div class="hd">
       <h2>Le squadre, in stagione</h2>
@@ -124,7 +275,7 @@ const classifica = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
         </thead>
         <tbody>
           {
-            classifica.map((s) => (
+            squadreOrdinate.map((s) => (
               <tr>
                 <td><b>{s.squadra}</b></td>
                 <td class="num">{s.partite}</td>
@@ -167,6 +318,87 @@ const classifica = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
 </Base>
 
 <style>
+  table.classifica td.pos,
+  table.classifica th.pos {
+    width: 62px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  /* I colori devono dire la stessa cosa della colonna "Scarto", altrimenti la
+     stessa riga si contraddice da sola.
+     Ocra = ha raccolto piu' di quanto ha creato (scende nella classifica del
+     gioco). Blu = ha creato piu' di quanto ha raccolto, ed e' quella
+     sottovalutata. */
+  .salto {
+    font-style: normal;
+    font-size: 9.5px;
+    margin-left: 4px;
+    color: var(--s2);
+  }
+  .salto.su {
+    color: var(--s1);
+  }
+  table.classifica .evidenza {
+    background: var(--sunk);
+  }
+  table.classifica th.evidenza {
+    color: var(--ink-2);
+  }
+
+  .risultato {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) 62px minmax(0, 1fr) 62px;
+    gap: 12px;
+    align-items: baseline;
+    padding: 9px 18px;
+    border-bottom: 1px solid var(--rule);
+    font-size: 13.5px;
+  }
+  .risultato:last-child {
+    border-bottom: 0;
+  }
+  .risultato.controcorrente {
+    background: var(--sunk);
+    box-shadow: inset 3px 0 0 var(--s2);
+  }
+  .risultato .quando {
+    font-size: 11.5px;
+    color: var(--ink-3);
+  }
+  .risultato .team {
+    font-weight: 600;
+    min-width: 0;
+  }
+  .risultato .team:nth-of-type(2) {
+    text-align: right;
+  }
+  /* Chi ha perso resta leggibile ma spento: il vincitore si vede al volo. */
+  .risultato .team.spento {
+    font-weight: 500;
+    color: var(--ink-3);
+  }
+  .risultato .punteggio {
+    text-align: center;
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+  .risultato .tiri {
+    text-align: right;
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+  @media (max-width: 640px) {
+    .risultato {
+      grid-template-columns: 46px 1fr 54px 1fr;
+    }
+    .risultato .tiri {
+      grid-column: 2 / -1;
+      text-align: left;
+    }
+  }
+
   .intestazione-lega span {
     display: block;
     padding: 9px 18px 5px;
