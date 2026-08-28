@@ -117,3 +117,70 @@ def test_ultimi_risultati_dal_piu_recente():
     assert len(ultimi) == 2
     assert ultimi[0].incontro.casa == "C"        # giorno 5, il piu' recente
     assert ultimi[1].incontro.casa == "E"        # giorno 3
+
+
+def test_le_giornate_si_deducono_dalle_partite_giocate():
+    """football-data non le pubblica: si contano le gare di ogni squadra."""
+    from engine.classifica import giornate
+
+    partite = [
+        partita("A", "B", 1, 0, 1),
+        partita("C", "D", 2, 2, 1),      # stessa giornata, stesso giorno
+        partita("B", "C", 0, 0, 8),      # seconda per B e per C
+        partita("D", "A", 3, 1, 8),
+        partita("A", "C", 1, 1, 15),     # terza
+    ]
+    g = giornate(partite)
+    numeri = [g[p.incontro.id] for p in partite]
+    assert numeri == [1, 1, 2, 2, 3]
+
+
+def test_una_partita_recuperata_resta_nella_sua_giornata():
+    """Il rinvio non deve spostare in avanti tutto il resto del calendario."""
+    from engine.classifica import giornate
+
+    partite = [
+        partita("A", "B", 1, 0, 1),      # giornata 1
+        partita("C", "D", 0, 0, 1),      # giornata 1
+        partita("A", "C", 2, 0, 8),      # giornata 2 per A e C
+        partita("B", "D", 1, 1, 30),     # rinviata: resta giornata 2 per B e D
+    ]
+    g = giornate(partite)
+    assert g[partite[3].incontro.id] == 2, "il recupero deve restare alla sua giornata"
+
+
+def test_le_giornate_su_un_girone_completo():
+    """Quattro squadre, girone di andata: tre giornate da due partite."""
+    from engine.classifica import giornate
+
+    coppie = [("A", "B"), ("C", "D"), ("A", "C"), ("B", "D"), ("A", "D"), ("B", "C")]
+    partite = [partita(c, o, 1, 0, n + 1) for n, (c, o) in enumerate(coppie)]
+    g = giornate(partite)
+    conteggio = {}
+    for p in partite:
+        conteggio.setdefault(g[p.incontro.id], 0)
+        conteggio[g[p.incontro.id]] += 1
+    assert conteggio == {1: 2, 2: 2, 3: 2}
+
+
+def test_le_giornate_non_sforano_il_totale_del_campionato():
+    """Con un rinvio, la squadra indietro non deve saltare avanti.
+
+    Assegnando a entrambe il numero della giornata piu' avanzata, chi era
+    rimasto indietro faceva un balzo e da li' in poi le sue giornate erano
+    sfalsate: in Serie A comparivano una 39 e una 40.
+    """
+    from engine.classifica import giornate
+
+    # Quattro squadre, girone doppio: sei giornate, nessuna oltre la sesta.
+    coppie = [("A", "B"), ("C", "D"), ("A", "C"), ("B", "D"), ("A", "D"), ("B", "C"),
+              ("B", "A"), ("D", "C"), ("C", "A"), ("D", "B"), ("D", "A"), ("C", "B")]
+    partite = [partita(c, o, 1, 0, n + 1) for n, (c, o) in enumerate(coppie)]
+    g = giornate(partite)
+    assert max(g.values()) == 6, f"giornate oltre il totale: {sorted(set(g.values()))}"
+
+    # Ogni squadra gioca esattamente sei partite, una per giornata.
+    for squadra in "ABCD":
+        sue = [g[p.incontro.id] for p in partite
+               if squadra in (p.incontro.casa, p.incontro.ospite)]
+        assert sorted(sue) == [1, 2, 3, 4, 5, 6]

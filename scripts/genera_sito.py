@@ -12,6 +12,7 @@ modello qui dentro, altrimenti finirebbe per esistere in due posti.
 
 from __future__ import annotations
 
+from collections import defaultdict
 import json
 import sys
 from datetime import date, datetime, timezone
@@ -21,7 +22,7 @@ RADICE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RADICE))
 
 from engine.classifica import calcola as calcola_classifica
-from engine.classifica import posizioni_attese, ultimi_risultati
+from engine.classifica import giornate, posizioni_attese
 from engine.core.market import margine, probabilita_implicite
 from engine.core.types import Fixture
 from engine.dati.catalogo import CAMPIONATI, PER_SLUG
@@ -41,7 +42,9 @@ STORIA = stagioni(2023, 2027)
 # a maggio: tutto cio' che e' stato giocato dopo il 1 luglio appartiene alla
 # stagione in corso.
 INIZIO_STAGIONE = date(2026, 7, 1)
+INIZIO_STAGIONE_PRECEDENTE = date(2025, 7, 1)
 NOME_STAGIONE = "2026/27"
+NOME_STAGIONE_PRECEDENTE = "2025/26"
 
 # Quante partite servono perche' una statistica di squadra significhi qualcosa.
 #
@@ -186,7 +189,7 @@ def elabora(c, storico, stagione, cal) -> dict | None:
     # dell'anno scorso a quelli di quest'anno non sarebbe una classifica.
     tabella = calcola_classifica(stagione, conv)
     attese = posizioni_attese(tabella)
-    giornate = max((r.giocate for r in tabella), default=0)
+    n_giornate = max((r.giocate for r in tabella), default=0)
     classifica = [
         {
             "posizione": n,
@@ -207,8 +210,33 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         for n, r in enumerate(tabella, start=1)
     ]
 
-    risultati = [
-        {
+    # I risultati raggruppati per giornata, dalla piu' recente. Un elenco piatto
+    # di partite non si legge: chi guarda vuole vedere il turno, come su
+    # qualsiasi sito di risultati.
+    #
+    # Se la stagione e' appena cominciata si mostrano anche le ultime giornate
+    # di quella precedente, altrimenti la sezione sarebbe quasi vuota.
+    numeri = giornate(stagione)
+    per_giornata: dict[int, list] = defaultdict(list)
+    for p in stagione:
+        per_giornata[numeri[p.incontro.id]].append(p)
+
+    if len(per_giornata) < 3:
+        # Solo la stagione precedente, non tutto lo storico: le giornate si
+        # contano dentro una stagione, altrimenti il contatore arriva a 120.
+        precedente = [
+            p for p in storico
+            if INIZIO_STAGIONE_PRECEDENTE <= p.incontro.data < INIZIO_STAGIONE
+        ]
+        numeri_prec = giornate(precedente)
+        ultime = sorted({numeri_prec[p.incontro.id] for p in precedente})[-3:]
+        for p in precedente:
+            n = numeri_prec[p.incontro.id]
+            if n in ultime:
+                per_giornata[n - 1000].append(p)      # negative: stagione scorsa
+
+    def riga_risultato(p):
+        return {
             "data": p.incontro.data.isoformat(),
             "casa": p.incontro.casa,
             "ospite": p.incontro.ospite,
@@ -217,8 +245,17 @@ def elabora(c, storico, stagione, cal) -> dict | None:
             "in_porta_casa": p.stat.in_porta[0] if p.stat.completa else None,
             "in_porta_ospite": p.stat.in_porta[1] if p.stat.completa else None,
         }
-        for p in ultimi_risultati(storico, quanti=20)
-    ]
+
+    risultati = [
+        {
+            "giornata": n if n > 0 else n + 1000,
+            "stagione_scorsa": n < 0,
+            "partite": sorted(
+                (riga_risultato(p) for p in gruppo), key=lambda r: r["data"]
+            ),
+        }
+        for n, gruppo in sorted(per_giornata.items(), reverse=True)
+    ][:8]
 
     return {
         "slug": c.slug, "nome": c.nome, "paese": c.paese, "bandiera": c.bandiera,
@@ -226,7 +263,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "partite_storico": len(storico),
         "partite_stagione": len(stagione),
         "stagione": NOME_STAGIONE,
-        "giornate_giocate": giornate,
+        "stagione_precedente": NOME_STAGIONE_PRECEDENTE,
+        "giornate_giocate": n_giornate,
         "finestra_statistiche": FINESTRA,
         "conversione": arrotonda(conv, 4),
         "vantaggio_casa": arrotonda(modello.vantaggio_casa, 4),

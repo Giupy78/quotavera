@@ -231,11 +231,20 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     ultimi.length > 0 && (
       <section>
         <div class="hd">
-          <h2>Ultimi risultati</h2>
-          <p>Con i tiri in porta accanto al punteggio: spesso raccontano un'altra partita.</p>
+          <h2>Risultati</h2>
+          <p>
+            Per giornata, dalla più recente. Con i tiri in porta accanto al
+            punteggio: spesso raccontano un'altra partita.
+          </p>
         </div>
+        {ultimi.map((g: any) => (
+        <div class="giornata">
+          <div class="titolo-giornata">
+            <b>{g.giornata}ª giornata</b>
+            {g.stagione_scorsa && <span>stagione {lega.stagione_precedente}</span>}
+          </div>
         <div class="slip">
-          {ultimi.map((r: any) => {
+          {g.partite.map((r: any) => {
             const scarto =
               r.in_porta_casa !== null
                 ? r.in_porta_casa - r.in_porta_ospite
@@ -265,9 +274,13 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
             );
           })}
         </div>
+        </div>
+        ))}
         <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.5">
           L'ultima colonna sono i tiri in porta. Le righe evidenziate sono quelle
-          in cui ha vinto chi ne ha fatti almeno tre in meno.
+          in cui ha vinto chi ne ha fatti almeno tre in meno. La giornata non è
+          pubblicata dalla fonte: si deduce contando le partite già giocate da
+          ogni squadra, così i recuperi restano al turno a cui appartengono.
         </p>
       </section>
     )
@@ -368,6 +381,28 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
   }
   table.classifica th.evidenza {
     color: var(--ink-2);
+  }
+
+  .giornata {
+    margin-bottom: 18px;
+  }
+  .titolo-giornata {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 18px;
+    background: var(--board);
+    color: var(--board-ink);
+  }
+  .titolo-giornata b {
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .titolo-giornata span {
+    font-size: 11px;
+    color: var(--board-ink-2);
   }
 
   .risultato {

@@ -151,3 +151,31 @@ def ultimi_risultati(
 ) -> list[PartitaStorica]:
     """Le partite giocate piu' di recente, dalla piu' recente."""
     return sorted(partite, key=lambda p: p.incontro.data, reverse=True)[:quanti]
+
+
+def giornate(partite: list[PartitaStorica]) -> dict[str, int]:
+    """A quale giornata appartiene ogni partita.
+
+    football-data non pubblica il numero di giornata, e raggrupparle per data
+    non funziona: un turno si spalma su tre giorni e i recuperi finiscono
+    ovunque. Si deduce invece contando, per ogni squadra, quante partite ha
+    gia' giocato: una partita appartiene alla giornata successiva a quella piu'
+    avanzata fra le due squadre in campo.
+
+    E' lo stesso criterio con cui si legge una classifica — la colonna "G" — e
+    regge anche con i recuperi: una partita rinviata e giocata dopo resta
+    assegnata alla sua giornata, non a quella in cui e' stata recuperata.
+    """
+    giocate: dict[str, int] = defaultdict(int)
+    fuori: dict[str, int] = {}
+    for p in sorted(partite, key=lambda x: x.incontro.data):
+        i = p.incontro
+        # L'etichetta e' la giornata piu' avanzata fra le due squadre, ma il
+        # contatore di ciascuna sale di uno e basta. Assegnando `n` a entrambe,
+        # la squadra rimasta indietro per un rinvio farebbe un salto e da li' in
+        # poi tutte le sue giornate sarebbero sfalsate — in Serie A comparivano
+        # una giornata 39 e una 40, che non esistono.
+        fuori[i.id] = max(giocate[i.casa], giocate[i.ospite]) + 1
+        giocate[i.casa] += 1
+        giocate[i.ospite] += 1
+    return fuori
