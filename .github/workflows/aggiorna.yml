@@ -36,10 +36,10 @@ jobs:
             echo "procedi=si" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         if: steps.ora.outputs.procedi == 'si'
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         if: steps.ora.outputs.procedi == 'si'
         with:
           python-version: "3.12"
@@ -72,7 +72,7 @@ jobs:
             echo "Non è lunedì: il track record resta quello della settimana scorsa."
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.ora.outputs.procedi == 'si'
         with:
           node-version: "22"

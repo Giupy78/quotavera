@@ -1,10 +1,10 @@
 import type { APIRoute } from "astro";
 
 /* robots.txt generato in build, non un file statico, perché deve restare
-   coerente con PUBLIC_INDICIZZA: finché il sito non è aperto agli indici non
-   ha senso che il file inviti i motori a entrare. */
+   coerente con lo stato del sito: se un giorno lo si richiude agli indici, non
+   ha senso che il file continui a invitare i motori a entrare. */
 
-const indicizzabile = import.meta.env.PUBLIC_INDICIZZA === "1";
+const indicizzabile = import.meta.env.PUBLIC_NOINDEX !== "1";
 
 /* I crawler che raccolgono testo per addestrare modelli.
  *
@@ -72,8 +72,7 @@ export const GET: APIRoute = ({ site }) => {
     righe.push(`Sitemap: ${new URL("sitemap-index.xml", site).href}`, "");
   } else if (!indicizzabile) {
     righe.push(
-      "# Il sito non e ancora aperto agli indici.",
-      "# Si apre impostando PUBLIC_INDICIZZA=1 fra le variabili d ambiente.",
+      "# Il sito e' temporaneamente chiuso agli indici (PUBLIC_NOINDEX=1).",
       ""
     );
   }

@@ -59,7 +59,12 @@ const generato = new Date(campionati.generato_il);
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
     />
-    {import.meta.env.PUBLIC_INDICIZZA !== "1" && (
+    {/* Il sito e' aperto agli indici. Lo era stato tenuto chiuso finche' i
+        dati erano simulati — mostrava partite inventate con nomi di squadre
+        vere, e un motore di ricerca il banner non lo legge. Da quando i dati
+        sono reali quella ragione non c'e' piu'.
+        Per richiuderlo: PUBLIC_NOINDEX=1 fra le variabili d'ambiente. */}
+    {import.meta.env.PUBLIC_NOINDEX === "1" && (
       <meta name="robots" content="noindex, nofollow" />
     )}
   </head>
