@@ -1,16 +1,21 @@
 name: Aggiornamento notturno
 
-# Ogni notte alle 04:00 ora italiana.
+# Ogni notte, poco dopo le quattro italiane.
 #
-# Le pianificazioni di GitHub Actions sono **solo in UTC** e non conoscono
-# l'ora legale: 04:00 a Roma sono le 02:00 UTC d'estate e le 03:00 UTC
-# d'inverno. Quindi il lavoro parte a entrambe le ore e il primo passo lo
-# ferma se a Roma non sono le 4. Costa due avvii a vuoto l'anno di secondi,
-# e in cambio l'orario resta giusto senza doverci pensare due volte all'anno.
+# `17 2` e non `0 2` per due ragioni. La prima e' che il minuto zero e' quello
+# in cui tutti pianificano i propri lavori, ed e' anche quello in cui GitHub
+# accumula piu' ritardo: spostarsi di qualche minuto riduce l'attesa.
+#
+# La seconda e' che qui c'era una guardia che verificava che a Roma fossero
+# *esattamente* le 04, con due cron per coprire ora solare e legale. Sembrava
+# preciso ed era fragile: bastava che GitHub ritardasse di un'ora — cosa che
+# capita — perche' l'orologio di Roma segnasse le 05 e il lavoro si saltasse da
+# solo, in silenzio. Meglio un cron solo che gira alle 04:17 d'estate e alle
+# 03:17 d'inverno: per un aggiornamento dati quell'ora di differenza non la
+# nota nessuno, e non c'e' piu' niente che possa saltare il turno.
 on:
   schedule:
-    - cron: "0 2 * * *"
-    - cron: "0 3 * * *"
+    - cron: "17 2 * * *"
   workflow_dispatch:        # per lanciarlo a mano dalla scheda Actions
 
 permissions:
@@ -24,46 +29,28 @@ jobs:
   aggiorna:
     runs-on: ubuntu-latest
     steps:
-      - name: È davvero notte a Roma?
-        id: ora
-        run: |
-          ORA=$(TZ=Europe/Rome date +%H)
-          echo "Ora a Roma: $ORA"
-          if [ "$ORA" != "04" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
-            echo "Non sono le 4: mi fermo qui."
-            echo "procedi=no" >> "$GITHUB_OUTPUT"
-          else
-            echo "procedi=si" >> "$GITHUB_OUTPUT"
-          fi
-
       - uses: actions/checkout@v7
-        if: steps.ora.outputs.procedi == 'si'
 
       - uses: actions/setup-python@v7
-        if: steps.ora.outputs.procedi == 'si'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Installa le dipendenze del motore
-        if: steps.ora.outputs.procedi == 'si'
         run: pip install -r requirements.txt
 
       - name: I test del motore devono passare
         # Se il motore è rotto, i dati non si rigenerano. Meglio un sito fermo
         # a ieri che un sito aggiornato con numeri sbagliati.
-        if: steps.ora.outputs.procedi == 'si'
         run: python -m pytest -q
 
       - name: Rigenera i dati
-        if: steps.ora.outputs.procedi == 'si'
         run: python scripts/genera_sito.py
 
       - name: Il lunedì rifà anche il track record
         # Costa parecchi minuti — ristima il modello centinaia di volte
         # camminando in avanti su nove stagioni — e cambia molto lentamente:
         # rifarlo ogni notte sarebbe spreco. Una volta a settimana basta.
-        if: steps.ora.outputs.procedi == 'si'
         run: |
           GIORNO=$(TZ=Europe/Rome date +%u)
           if [ "$GIORNO" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
@@ -73,7 +60,6 @@ jobs:
           fi
 
       - uses: actions/setup-node@v7
-        if: steps.ora.outputs.procedi == 'si'
         with:
           node-version: "22"
           cache: npm
@@ -85,7 +71,6 @@ jobs:
         #
         # `working-directory` e non `npm --prefix`: quest'ultimo confonde npm
         # su dove cercare i binari installati, e fallisce in modi poco chiari.
-        if: steps.ora.outputs.procedi == 'si'
         working-directory: sito
         run: |
           npm ci
@@ -95,13 +80,15 @@ jobs:
         # Il commit non è rumore: è l'archivio. Ogni notte resta agli atti cosa
         # sapeva il modello e quali quote vedeva, e non è più modificabile.
         # È la condizione senza cui un track record non si può dimostrare.
-        if: steps.ora.outputs.procedi == 'si'
+        #
+        # Quando le fonti non hanno pubblicato niente di nuovo non c'è nulla da
+        # committare, e va bene così: è un turno riuscito, non un errore.
         run: |
           git config user.name "Quota Vera"
           git config user.email "actions@users.noreply.github.com"
           git add sito/src/dati
           if git diff --staged --quiet; then
-            echo "Nessun cambiamento nei dati."
+            echo "Nessun cambiamento nei dati: le fonti non hanno aggiornato."
           else
             git commit -m "dati: aggiornamento del $(TZ=Europe/Rome date +%Y-%m-%d)"
             git push
