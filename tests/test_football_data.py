@@ -53,11 +53,18 @@ def test_una_terna_incompleta_o_assurda_diventa_None(riga):
     assert _quota(riga, ("A", "B", "C")) is None
 
 
-def test_i_codici_coprono_gli_otto_campionati_del_sito():
-    assert set(CODICI) == {
-        "serie-a", "premier-league", "laliga", "bundesliga",
-        "ligue-1", "eredivisie", "primeira-liga", "superlig",
-    }
+def test_i_codici_vengono_dal_catalogo():
+    """Aggiungere un campionato deve essere una riga sola, in catalogo.py."""
+    from engine.dati.catalogo import CAMPIONATI, PRINCIPALI, dal_codice
+
+    assert set(CODICI) == {c.slug for c in CAMPIONATI}
+    # Le prime divisioni che vanno nel menu ci devono essere tutte.
+    assert {"serie-a", "premier-league", "laliga"} <= {c.slug for c in PRINCIPALI}
+    # I codici sono univoci: due campionati sullo stesso file sarebbero un bug.
+    codici = [c.codice for c in CAMPIONATI]
+    assert len(codici) == len(set(codici))
+    assert dal_codice("I1").slug == "serie-a"
+    assert dal_codice("XX") is None
 
 
 def test_i_codici_stagione():
@@ -103,3 +110,47 @@ def test_esito_e_riferimento():
     # Senza nessuno dei due la partita non è utilizzabile: la media non basta.
     p = costruisci(1, 0, {"media": (1.9, 2.9, 3.9)})
     assert p.riferimento() is None
+
+
+def test_un_libro_con_margine_assurdo_viene_scartato():
+    """Sui mercati sottili l'exchange pre-partita da' numeri non credibili.
+
+    Betfair resta il riferimento preferito, ma se le sue quote implicano un
+    margine del 20% non sono l'opinione del mercato: sono quattro scommesse in
+    croce. In quel caso si passa al libro dopo invece di pubblicare che il banco
+    si tiene un quinto della posta.
+    """
+    from engine.dati.football_data import PartitaFutura
+
+    sottile = PartitaFutura(
+        campionato="superlig", data=date(2026, 8, 30), ora="18:00",
+        casa="Eyupspor", ospite="Alanyaspor",
+        quote={
+            "betfair": (3.30, 2.42, 2.08),      # somma inverse 1.197: assurdo
+            "media": (3.08, 3.23, 2.21),        # 8,7%: plausibile
+        },
+    )
+    assert sottile.riferimento() == (3.08, 3.23, 2.21)
+
+    liquido = PartitaFutura(
+        campionato="serie-a", data=date(2026, 8, 30), ora="20:45",
+        casa="Inter", ospite="Napoli",
+        quote={"betfair": (2.10, 3.60, 3.90), "media": (2.00, 3.40, 3.70)},
+    )
+    # Qui Betfair è credibile e vince, come deve.
+    assert liquido.riferimento() == (2.10, 3.60, 3.90)
+
+    # Se nessun libro è credibile, meglio niente che un numero inventato.
+    rotto = PartitaFutura(
+        campionato="serie-a", data=date(2026, 8, 30), ora="20:45",
+        casa="A", ospite="B", quote={"betfair": (1.5, 1.5, 1.5)},
+    )
+    assert rotto.riferimento() is None
+
+
+def test_l_id_di_una_partita_futura_e_pulito():
+    from engine.dati.football_data import PartitaFutura
+
+    p = PartitaFutura("laliga", date(2026, 8, 30), "18:00",
+                      "Ath Bilbao", "M'gladbach", {})
+    assert p.id == "ath-bilbao-mgladbach"

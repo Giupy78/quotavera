@@ -1,0 +1,153 @@
+---
+import Base from "../layouts/Base.astro";
+import campionati from "../dati/campionati.json";
+import calendario from "../dati/calendario.json";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+const cal = calendario.campionati as Record<string, any[]>;
+const leghe = campionati.campionati.map((c) => {
+  const partite = cal[c.slug] ?? [];
+  const margini = partite.map((p) => p.margine).filter((m) => m !== null);
+  return {
+    ...c,
+    in_programma: partite.length,
+    margine_medio: margini.length
+      ? margini.reduce((s, m) => s + m, 0) / margini.length
+      : null,
+  };
+});
+
+const perPaese = new Map<string, typeof leghe>();
+for (const l of leghe) {
+  if (!perPaese.has(l.paese)) perPaese.set(l.paese, []);
+  perPaese.get(l.paese)!.push(l);
+}
+for (const gruppo of perPaese.values()) gruppo.sort((a, b) => a.livello - b.livello);
+
+const totali = leghe.reduce((s, l) => s + l.partite_storico, 0);
+---
+
+<Base
+  titolo="Tutti i campionati"
+  descrizione="Ventidue divisioni in undici paesi europei, con statistiche e calendario."
+>
+  <section>
+    <p class="occhiello">Copertura</p>
+    <div class="hd">
+      <h1>Ventidue campionati, undici paesi</h1>
+      <p>
+        {totali.toLocaleString("it-IT")} partite di storico con statistiche di
+        campo e quote di chiusura, aggiornate ogni notte.
+      </p>
+    </div>
+
+    <div class="prosa" style="margin-bottom:26px">
+      <p>
+        Le <strong>coppe non ci sono</strong>: la fonte gratuita che usiamo
+        copre solo i campionati nazionali. Champions, Europa League e coppe
+        nazionali richiedono un'altra fonte, a pagamento, e per ora è una spesa
+        che non si giustifica. È scritto qui perché è un limite vero, non una
+        cosa da scoprire cercandole.
+      </p>
+    </div>
+
+    {
+      [...perPaese.entries()].map(([paese, gruppo]) => (
+        <div class="paese">
+          <h2>
+            <span>{gruppo[0].bandiera}</span> {paese}
+          </h2>
+          <div class="divisioni">
+            {gruppo.map((l) => (
+              <a href={`/calcio/${l.slug}/`} class:list={["divisione", { minore: !l.principale }]}>
+                <div>
+                  <b>{l.nome}</b>
+                  <small>
+                    {l.livello === 1 ? "massima serie" : `${l.livello}ª divisione`}
+                    {" · "}{l.partite_storico.toLocaleString("it-IT")} partite
+                  </small>
+                </div>
+                <div class="numeri mono">
+                  <span title="partite in programma">{l.in_programma}</span>
+                  {l.margine_medio !== null && (
+                    <span title="margine medio del banco" class="marg">
+                      {pct(l.margine_medio)}
+                    </span>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </section>
+</Base>
+
+<style>
+  .paese {
+    margin-bottom: 34px;
+  }
+  .paese h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .paese h2 span {
+    font-size: 22px;
+    line-height: 1;
+  }
+  .divisioni {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .divisione {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    background: var(--card);
+    padding: 14px 16px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .divisione:hover {
+    background: var(--sunk);
+  }
+  .divisione b {
+    display: block;
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+  .divisione small {
+    display: block;
+    font-size: 11.5px;
+    color: var(--ink-3);
+    margin-top: 3px;
+  }
+  .divisione.minore b {
+    font-weight: 500;
+    color: var(--ink-2);
+  }
+  .numeri {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+  .numeri .marg {
+    color: var(--ink-2);
+  }
+</style>

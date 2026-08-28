@@ -1,170 +1,180 @@
 ---
 import Base from "../../../layouts/Base.astro";
-import BarraProbabilita from "../../../components/BarraProbabilita.astro";
+import RigaPartita from "../../../components/RigaPartita.astro";
 import campionati from "../../../dati/campionati.json";
-import giornate from "../../../dati/giornate.json";
-import verifiche from "../../../dati/verifiche.json";
+import calendario from "../../../dati/calendario.json";
+import squadre from "../../../dati/squadre.json";
 
 export function getStaticPaths() {
+  const cal = calendario.campionati as Record<string, any[]>;
+  const sq = squadre.campionati as Record<string, any[]>;
   return campionati.campionati.map((c) => ({
     params: { campionato: c.slug },
-    props: {
-      lega: c,
-      righe: (giornate.giornate as Record<string, any[]>)[c.slug],
-      v: (verifiche.campionati as Record<string, any>)[c.slug],
-    },
+    props: { lega: c, partite: cal[c.slug] ?? [], team: sq[c.slug] ?? [] },
   }));
 }
 
-const { lega, righe, v } = Astro.props;
+const { lega, partite, team } = Astro.props;
 
-const num = (v2: number, d = 2) =>
-  v2.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
-const pct = (v2: number, d = 1) => num(v2 * 100, d) + "%";
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 0) => num(v * 100, d) + "%";
+
+const perData = new Map<string, any[]>();
+for (const p of partite) {
+  if (!perData.has(p.data)) perData.set(p.data, []);
+  perData.get(p.data)!.push(p);
+}
+
+const dataLunga = (iso: string) =>
+  new Date(iso + "T00:00:00").toLocaleDateString("it-IT", {
+    weekday: "long", day: "numeric", month: "long",
+  });
+
+const classifica = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
 ---
 
-<Base titolo={lega.nome} descrizione={`Probabilità del modello contro le quote di mercato, ${lega.nome}.`}>
+<Base
+  titolo={lega.nome}
+  descrizione={`Calendario, statistiche e quote di ${lega.nome} (${lega.paese}).`}
+>
   <section>
-    <p class="occhiello">{lega.bandiera} {lega.paese} · giornata simulata</p>
+    <p class="occhiello">{lega.bandiera} {lega.paese}</p>
     <div class="hd">
       <h1>{lega.nome}</h1>
-      <p>{lega.note}</p>
+      <p>
+        {lega.partite_storico.toLocaleString("it-IT")} partite di storico,
+        {" "}{team.length} squadre, {partite.length} in programma.
+      </p>
     </div>
 
     <div class="tessere">
       <div class="tessera">
-        <div class="k">Margine del banco</div>
-        <div class="v mono">{pct(lega.margine_banco)}</div>
-        <div class="n">quanto si tiene su ogni 1X2</div>
-      </div>
-      <div class="tessera">
-        <div class="k">Reti a partita</div>
-        <div class="v mono">{num(lega.gol_partita)}</div>
-        <div class="n">media del campionato</div>
-      </div>
-      <div class="tessera">
         <div class="k">Fattore campo</div>
-        <div class="v mono">{num(Math.exp(lega.vantaggio_casa_stimato), 2)}×</div>
+        <div class="v mono">{num(Math.exp(lega.vantaggio_casa))}×</div>
         <div class="n">reti attese in più giocando in casa</div>
       </div>
       <div class="tessera">
-        <div class="k">Occasioni</div>
-        <div class="v mono">{lega.occasioni} su {lega.partite_giornata}</div>
-        <div class="n">sopra i 12 punti di scarto</div>
+        <div class="k">Conversione</div>
+        <div class="v mono">{pct(lega.conversione, 1)}</div>
+        <div class="n">gol per tiro in porta, media del campionato</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Partite in stagione</div>
+        <div class="v mono">{lega.partite_stagione}</div>
+        <div class="n">già giocate, su cui si basano le statistiche</div>
+      </div>
+      <div class="tessera">
+        <div class="k">In programma</div>
+        <div class="v mono">{partite.length}</div>
+        <div class="n">nei prossimi giorni</div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="hd">
-      <h2>Modello contro mercato</h2>
+      <h2>Calendario</h2>
+      <p>La barra è la probabilità del modello. Le quote sono le migliori disponibili.</p>
+    </div>
+    {
+      partite.length === 0 ? (
+        <div class="vuoto">
+          <b>Nessuna partita in programma</b>
+          Il calendario di football-data si aggiorna un paio di volte a
+          settimana: se il campionato è fermo o la giornata è appena finita,
+          questa sezione resta vuota fino al prossimo aggiornamento.
+        </div>
+      ) : (
+        <div class="slip">
+          {[...perData.entries()].map(([giorno, delGiorno]) => (
+            <>
+              <div class="intestazione-lega">
+                <span>{dataLunga(giorno)}</span>
+              </div>
+              {delGiorno.map((p) => <RigaPartita p={p} slug={lega.slug} />)}
+            </>
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Le squadre, in stagione</h2>
       <p>
-        La barra è la probabilità del modello. La tacca verticale è quella
-        implicita nelle quote, ripulita dal margine.
+        Ordinate per gol fatti a partita. La colonna che conta è l'ultima: gol
+        veri contro gol attesi dai tiri in porta.
       </p>
-    </div>
-
-    <ul class="legenda">
-      <li><span class="sw" style="background:var(--s1)"></span> 1 — vittoria casa</li>
-      <li><span class="sw" style="background:var(--s2)"></span> X — pareggio</li>
-      <li><span class="sw" style="background:var(--s3)"></span> 2 — vittoria trasferta</li>
-      <li style="color:var(--ink-3)">barra: modello · tacca: mercato</li>
-    </ul>
-
-    <div class="slip">
-      <div class="slip-row head">
-        <span>Partita</span>
-        <span>Probabilità modello contro mercato</span>
-        <span style="text-align:right">Lettura</span>
-      </div>
-      {
-        righe.map((p: any) => (
-          <a class="slip-row" href={`/calcio/${lega.slug}/${p.id}/`}>
-            <div class="squadre">
-              {p.casa} — {p.ospite}
-              <small>{p.ora} · margine {pct(p.margine_banco)}</small>
-            </div>
-            <div>
-              <BarraProbabilita esiti={p.esiti} />
-            </div>
-            <div class="lettura">
-              {p.occasione ? (
-                <>
-                  <span class="pick">
-                    {p.occasione.esito} · <span class="mono">{num(p.occasione.quota)}</span>
-                  </span>
-                  <div style="margin-top:7px">
-                    scarto <span class="mono">+{pct(p.occasione.scarto)} pt</span>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <span class="sotto-soglia">
-                    {p.divergenza.esito} · <span class="mono">+{pct(p.divergenza.scarto)} pt</span>
-                  </span>
-                  <div style="margin-top:6px">sotto soglia</div>
-                </>
-              )}
-            </div>
-          </a>
-        ))
-      }
-    </div>
-
-    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:78ch">
-      «Scarto sufficiente» vuol dire almeno <b>12 punti</b> di probabilità sopra
-      il mercato <em>e</em> almeno il 10% di valore atteso. La soglia è alta di
-      proposito: il modello sbaglia ogni probabilità di 5-6 punti, e due errori
-      standard fanno dodici. Sotto quella riga lo scarto è rumore con un altro
-      nome — è così che si arriva a «trovare un'occasione» in ogni partita del
-      turno. Le giornate vuote sono la maggioranza, e restano vuote.
-      <a href="/quote/">Come si leggono questi numeri →</a>
-    </p>
-  </section>
-
-  <section>
-    <div class="hd">
-      <h2>Come va il modello qui</h2>
-      <p>Misurato su {v.partite} partite di questo campionato, mai viste in fase di stima.</p>
     </div>
     <div class="scorri">
       <table class="dati">
         <thead>
           <tr>
-            <th>Misura</th>
-            <th class="num">Modello</th>
-            <th class="num">Mercato</th>
-            <th>Come si legge</th>
+            <th>Squadra</th>
+            <th class="num">Partite</th>
+            <th class="num">Gol fatti</th>
+            <th class="num">Gol subiti</th>
+            <th class="num">Tiri in porta</th>
+            <th class="num">Over 2,5</th>
+            <th class="num">Gol/Gol</th>
+            <th class="num">Segna vs crea</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><b>Brier</b></td>
-            <td class="num">{num(v.brier_modello, 4)}</td>
-            <td class="num">{num(v.brier_mercato, 4)}</td>
-            <td>
-              Più basso è meglio. {v.brier_modello < v.brier_mercato
-                ? "Qui il modello è avanti."
-                : "Qui il mercato è avanti."}
-            </td>
-          </tr>
-          <tr>
-            <td><b>Errore di calibrazione</b></td>
-            <td class="num">{num(v.errore_calibrazione, 4)}</td>
-            <td class="num">—</td>
-            <td>Sotto 0,02 le probabilità dichiarate sono oneste.</td>
-          </tr>
-          <tr>
-            <td><b>Scarto medio dal mercato</b></td>
-            <td class="num">{pct(v.scarto_medio)}</td>
-            <td class="num">—</td>
-            <td>Di quanto il modello si stacca, in media, sull'esito su cui si stacca di più.</td>
-          </tr>
+          {
+            classifica.map((s) => (
+              <tr>
+                <td><b>{s.squadra}</b></td>
+                <td class="num">{s.partite}</td>
+                <td class="num">{num(s.gol_fatti)}</td>
+                <td class="num">{num(s.gol_subiti)}</td>
+                <td class="num">
+                  {num((s.casa.in_porta + s.trasferta.in_porta) / 2, 1)}
+                </td>
+                <td class="num">
+                  {pct((s.casa.over_25 * s.casa.partite + s.trasferta.over_25 * s.trasferta.partite) /
+                    Math.max(s.partite, 1))}
+                </td>
+                <td class="num">
+                  {pct((s.casa.gol_gol * s.casa.partite + s.trasferta.gol_gol * s.trasferta.partite) /
+                    Math.max(s.partite, 1))}
+                </td>
+                <td
+                  class="num"
+                  style={`font-weight:600;color:${
+                    s.scarto_conversione > 0 ? "var(--s2)" : "var(--s1)"
+                  }`}
+                >
+                  {s.scarto_conversione >= 0 ? "+" : ""}{num(s.scarto_conversione, 1)}
+                </td>
+              </tr>
+            ))
+          }
         </tbody>
       </table>
     </div>
-    <p style="margin-top:16px">
-      <a href="/mercati/">Confronta tutti i campionati →</a>
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:76ch">
+      «Segna vs crea» è la differenza fra i gol segnati e quelli che i tiri in
+      porta avrebbero fatto prevedere, alla conversione media del campionato
+      ({pct(lega.conversione, 1)}). Positivo vuol dire che sta segnando più di
+      quanto crea: può essere un attaccante in stato di grazia quanto fortuna, e
+      le due si distinguono solo col tempo — ma sulla stagione la fortuna
+      rientra e la bravura no.
     </p>
   </section>
 </Base>
+
+<style>
+  .intestazione-lega span {
+    display: block;
+    padding: 9px 18px 5px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    background: var(--sunk);
+    border-bottom: 1px solid var(--rule);
+  }
+</style>

@@ -1,0 +1,54 @@
+---
+import Base from "./Base.astro";
+
+const { frontmatter } = Astro.props;
+const giorno = frontmatter.data ? new Date(String(frontmatter.data)) : null;
+---
+
+<Base titolo={frontmatter.titolo} descrizione={frontmatter.sommario}>
+  <section>
+    <p class="occhiello">
+      Approfondimento
+      {giorno && ` · ${giorno.toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric" })}`}
+    </p>
+    <div class="hd">
+      <h1>{frontmatter.titolo}</h1>
+    </div>
+    {frontmatter.sommario && <p class="sommario">{frontmatter.sommario}</p>}
+
+    <article class="prosa articolo">
+      <slot />
+    </article>
+
+    <p style="margin-top:36px"><a href="/blog/">← tutti gli articoli</a></p>
+  </section>
+</Base>
+
+<style>
+  .sommario {
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 60ch;
+    margin: 0 0 30px;
+  }
+  .articolo :global(h2) {
+    font-family: var(--sans);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 36px 0 14px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+  .articolo :global(strong) {
+    font-weight: 500;
+  }
+  .articolo :global(code) {
+    font-family: var(--mono);
+    font-size: 0.88em;
+    background: var(--sunk);
+    padding: 1px 5px;
+  }
+</style>

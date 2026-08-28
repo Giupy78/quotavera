@@ -1,27 +1,28 @@
 ---
 import "../styles/global.css";
+import campionati from "../dati/campionati.json";
 
 interface Props {
   titolo: string;
   descrizione?: string;
-  simulato?: boolean;
 }
 
-const { titolo, descrizione = "", simulato = true } = Astro.props;
+const { titolo, descrizione = "" } = Astro.props;
 const qui = Astro.url.pathname;
 
 const voci = [
-  { href: "/", testo: "Campionati" },
-  { href: "/mercati/", testo: "Confronto mercati" },
+  { href: "/", testo: "Oggi" },
+  { href: "/blog/", testo: "Articoli" },
+  { href: "/mercati/", testo: "Mercati" },
   { href: "/quote/", testo: "Come si leggono" },
-  { href: "/track-record/", testo: "Track record" },
   { href: "/modello/", testo: "Il modello" },
-  { href: "/basket/", testo: "Basket" },
-  { href: "/tennis/", testo: "Tennis" },
 ];
 
 const attiva = (href: string) =>
   href === "/" ? qui === "/" : qui.startsWith(href);
+
+const principali = campionati.campionati.filter((c) => c.principale);
+const generato = new Date(campionati.generato_il);
 ---
 
 <html lang="it">
@@ -36,10 +37,6 @@ const attiva = (href: string) =>
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
     />
-    {/* Finché i dati sono simulati il sito non va indicizzato: mostra partite
-        inventate con nomi di squadre vere, e un motore di ricerca non legge il
-        banner. Si apre al pubblico impostando PUBLIC_INDICIZZA=1 nelle
-        variabili d'ambiente di Cloudflare Pages, non toccando il codice. */}
     {import.meta.env.PUBLIC_INDICIZZA !== "1" && (
       <meta name="robots" content="noindex, nofollow" />
     )}
@@ -59,18 +56,21 @@ const attiva = (href: string) =>
             }
           </nav>
         </div>
+        <nav class="leghe-nav">
+          {
+            principali.map((c) => (
+              <a
+                href={`/calcio/${c.slug}/`}
+                aria-current={qui.startsWith(`/calcio/${c.slug}/`) ? "page" : undefined}
+              >
+                <span>{c.bandiera}</span>
+                {c.nome}
+              </a>
+            ))
+          }
+          <a href="/campionati/" class="tutti">tutti i 22 →</a>
+        </nav>
       </div>
-      {
-        simulato && (
-          <div class="wrap avviso-simulato">
-            <span>
-              <b>Dati simulati.</b> Squadre, quote e risultati sono generati dal
-              modello su un campionato inventato, per costruire il sito prima di
-              collegare i dati veri. Nessun pronostico reale.
-            </span>
-          </div>
-        )
-      }
     </div>
 
     <main class="wrap">
@@ -80,15 +80,51 @@ const attiva = (href: string) =>
     <div class="wrap">
       <footer>
         <p>
-          Quota Vera — probabilità calcolate da un modello statistico, confrontate
-          con le quote di mercato. Il codice del motore e le metriche sono
-          pubblici: <a href="/modello/">come funziona</a>.
+          Statistiche e quote da <b>football-data.co.uk</b>. Ultimo aggiornamento
+          {" "}<time datetime={campionati.generato_il}>
+            {generato.toLocaleString("it-IT", { dateStyle: "long", timeStyle: "short" })}
+          </time>.
         </p>
         <p>
-          Questo sito non invita a scommettere e non contiene collegamenti a
-          operatori di gioco. È un servizio informativo di analisi e comparazione.
+          Quota Vera pubblica statistiche e probabilità calcolate da un modello
+          pubblico. <b>Non dà consigli di gioco e non contiene collegamenti a
+          operatori.</b> È un servizio informativo di analisi e comparazione.
         </p>
       </footer>
     </div>
   </body>
 </html>
+
+<style>
+  .leghe-nav {
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    padding-bottom: 14px;
+  }
+  .leghe-nav a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--board-ink-2);
+    text-decoration: none;
+    font-size: 12.5px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+  }
+  .leghe-nav a:hover {
+    color: var(--board-ink);
+    border-color: var(--board-rule);
+  }
+  .leghe-nav a[aria-current="page"] {
+    color: var(--board-ink);
+    border-color: var(--board-rule);
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .leghe-nav a span {
+    font-size: 14px;
+  }
+  .leghe-nav .tutti {
+    color: var(--s1);
+  }
+</style>

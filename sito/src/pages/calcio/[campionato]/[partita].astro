@@ -1,13 +1,12 @@
 ---
 import Base from "../../../layouts/Base.astro";
-import BarraProbabilita from "../../../components/BarraProbabilita.astro";
 import MatriceRisultati from "../../../components/MatriceRisultati.astro";
 import campionati from "../../../dati/campionati.json";
-import partite from "../../../dati/partite.json";
+import schede from "../../../dati/schede.json";
 
 export function getStaticPaths() {
   const leghe = Object.fromEntries(campionati.campionati.map((c) => [c.slug, c]));
-  return partite.partite.map((p: any) => ({
+  return schede.partite.map((p: any) => ({
     params: { campionato: p.campionato, partita: p.id },
     props: { p, lega: leghe[p.campionato] },
   }));
@@ -17,147 +16,408 @@ const { p, lega } = Astro.props;
 
 const num = (v: number, d = 2) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
-const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+const pct = (v: number, d = 0) => num(v * 100, d) + "%";
 
-const etichette: Record<string, string> = {
-  "1x2": "Esito finale",
-  btts: "Gol / Gol",
-  "ou_1.5": "1,5",
-  "ou_2.5": "2,5",
-  "ou_3.5": "3,5",
-};
-const nomiEsito: Record<string, string> = {
-  "1": `1 — ${p.casa}`,
-  X: "X — pareggio",
-  "2": `2 — ${p.ospite}`,
-  si: "Gol / Gol: sì",
-  no: "Gol / Gol: no",
-};
+const giorno = new Date(p.data + "T00:00:00");
+const c = p.stat_casa, o = p.stat_ospite;
+const fc = p.forma_casa, fo = p.forma_ospite;
 
+/* Il confronto è casa-contro-trasferta e non totale-contro-totale: una squadra
+   che in casa segna il doppio che fuori è un'informazione che la media
+   complessiva cancella del tutto. */
+const confronto = c && o ? [
+  ["Gol fatti a partita", c.casa.gol_fatti, o.trasferta.gol_fatti, 2],
+  ["Gol subiti a partita", c.casa.gol_subiti, o.trasferta.gol_subiti, 2],
+  ["Tiri a partita", c.casa.tiri, o.trasferta.tiri, 1],
+  ["Tiri in porta", c.casa.in_porta, o.trasferta.in_porta, 1],
+  ["Tiri in porta concessi", c.casa.in_porta_subiti, o.trasferta.in_porta_subiti, 1],
+  ["Corner a partita", c.casa.corner, o.trasferta.corner, 1],
+  ["Cartellini a partita", c.casa.cartellini, o.trasferta.cartellini, 1],
+] : [];
+
+const percentuali = c && o ? [
+  ["Over 2,5", c.casa.over_25, o.trasferta.over_25],
+  ["Gol / Gol", c.casa.gol_gol, o.trasferta.gol_gol],
+  ["Porta inviolata", c.casa.clean_sheet, o.trasferta.clean_sheet],
+  ["Rimasta a secco", c.casa.a_secco, o.trasferta.a_secco],
+] : [];
+
+const etichette = ["1", "X", "2"];
+const nomiEsito = [p.casa, "pareggio", p.ospite];
 const derivati: { nome: string; p: number }[] = [];
-for (const [mercato, esiti] of Object.entries(p.mercati)) {
-  for (const [esito, prob] of Object.entries(esiti as Record<string, number>)) {
-    const nome =
-      mercato === "1x2" || mercato === "btts"
-        ? nomiEsito[esito] ?? esito
-        : `${esito === "over" ? "Over" : "Under"} ${etichette[mercato]}`;
-    derivati.push({ nome, p: prob });
+if (p.dettaglio) {
+  const mercati = p.dettaglio.mercati as Record<string, Record<string, number>>;
+  for (const [nome, esiti] of Object.entries(mercati)) {
+    if (nome === "1x2") continue;
+    for (const [esito, prob] of Object.entries(esiti)) {
+      const soglia = nome.startsWith("ou_") ? nome.slice(3).replace(".", ",") : "";
+      const label =
+        nome === "btts"
+          ? `Gol / Gol: ${esito === "si" ? "sì" : "no"}`
+          : `${esito === "over" ? "Over" : "Under"} ${soglia}`;
+      derivati.push({ nome: label, p: prob });
+    }
   }
 }
-
-const golAttesi = p.gol_attesi_casa + p.gol_attesi_ospite;
 ---
 
-<Base titolo={`${p.casa} — ${p.ospite}`}>
+<Base titolo={`${p.casa} — ${p.ospite}`} descrizione={`Statistiche e numeri di ${p.casa} contro ${p.ospite}.`}>
   <section>
     <p class="occhiello">
       <a href={`/calcio/${lega.slug}/`} style="color:inherit">{lega.bandiera} {lega.nome}</a>
-      · {p.ora}
+      {" · "}
+      {giorno.toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" })}
+      {p.ora && ` · ${p.ora}`}
     </p>
     <div class="hd">
       <h1>{p.casa} — {p.ospite}</h1>
+      {
+        p.dettaglio && (
+          <p>
+            Reti attese <span class="mono">{num(p.dettaglio.gol_attesi_casa)}</span> —
+            <span class="mono">{num(p.dettaglio.gol_attesi_ospite)}</span>
+          </p>
+        )
+      }
+    </div>
+
+    {
+      p.p_modello && (
+        <div class="sintesi">
+          {p.p_modello.map((x: number, i: number) => (
+            <div class="voce">
+              <div class="et">{etichette[i]} — {nomiEsito[i]}</div>
+              <div class="valore mono">{pct(x)}</div>
+              <div class="sotto">
+                quota equa <b class="mono">{num(1 / x)}</b>
+                {p.p_mercato && (
+                  <span> · mercato <b class="mono">{pct(p.p_mercato[i])}</b></span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </section>
+
+  {
+    c && o && (
+      <section>
+        <div class="hd">
+          <h2>I numeri delle due squadre</h2>
+          <p>
+            {p.casa} in casa contro {p.ospite} in trasferta — non le medie
+            complessive, che nascondono proprio la differenza che conta.
+          </p>
+        </div>
+
+        <div class="scorri">
+          <table class="dati confronto">
+            <thead>
+              <tr>
+                <th>{p.casa} <small>(in casa)</small></th>
+                <th class="mezzo" />
+                <th class="destra">{p.ospite} <small>(in trasferta)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              {confronto.map(([nome, a, b, d]: any) => (
+                <tr>
+                  <td class="num forte">{num(a, d)}</td>
+                  <td class="mezzo">{nome}</td>
+                  <td class="destra forte">{num(b, d)}</td>
+                </tr>
+              ))}
+              {percentuali.map(([nome, a, b]: any) => (
+                <tr>
+                  <td class="num">{pct(a)}</td>
+                  <td class="mezzo">{nome}</td>
+                  <td class="destra">{pct(b)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    c && o && (
+      <section>
+        <div class="hd">
+          <h2>Segnano più o meno di quanto creano?</h2>
+          <p>
+            Gol veri contro gol attesi dai tiri in porta, alla conversione media
+            del campionato ({pct(lega.conversione, 1)}).
+          </p>
+        </div>
+        <div class="duo">
+          {[c, o].map((s) => (
+            <div class="pannello">
+              <h3>{s.squadra}</h3>
+              <p class="sub">
+                {s.gol_totali} gol da {s.in_porta_totali} tiri in porta
+              </p>
+              <div
+                class="scarto mono"
+                style={`color:${s.scarto_conversione > 0 ? "var(--s2)" : "var(--s1)"}`}
+              >
+                {s.scarto_conversione >= 0 ? "+" : ""}{num(s.scarto_conversione, 1)}
+              </div>
+              <p class="sub" style="margin:0">
+                {s.scarto_conversione >= 0 ? "sopra" : "sotto"} i
+                {" "}{num(s.attesi_dai_tiri, 1)} attesi
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    fc && fo && (
+      <section>
+        <div class="hd">
+          <h2>La forma, misurata sui tiri</h2>
+          <p>
+            Ultime sei partite. Sui tiri in porta e non sui risultati: i gol
+            sono troppo pochi perché cinque partite dicano qualcosa.
+          </p>
+        </div>
+        <div class="scorri">
+          <table class="dati">
+            <thead>
+              <tr>
+                <th>Squadra</th>
+                <th class="num">Partite</th>
+                <th class="num">Tiri in porta</th>
+                <th class="num">Concessi</th>
+                <th class="num">Gol fatti</th>
+                <th class="num">Gol subiti</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[fc, fo].map((s) => (
+                <tr>
+                  <td><b>{s.squadra}</b></td>
+                  <td class="num">{s.partite}</td>
+                  <td class="num">
+                    {num((s.casa.in_porta * s.casa.partite + s.trasferta.in_porta * s.trasferta.partite) /
+                      Math.max(s.partite, 1), 1)}
+                  </td>
+                  <td class="num">
+                    {num((s.casa.in_porta_subiti * s.casa.partite +
+                      s.trasferta.in_porta_subiti * s.trasferta.partite) /
+                      Math.max(s.partite, 1), 1)}
+                  </td>
+                  <td class="num">{num(s.gol_fatti)}</td>
+                  <td class="num">{num(s.gol_subiti)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    p.dettaglio && (
+      <section>
+        <div class="hd">
+          <h2>Dentro il modello</h2>
+          <p>
+            Tutti i mercati escono da una tabella sola: sono somme di celle, non
+            stime separate.
+          </p>
+        </div>
+        <div class="feature">
+          <div class="pannello">
+            <h3>Probabilità di ogni risultato esatto</h3>
+            <p class="sub">Valori in percentuale.</p>
+            <MatriceRisultati matrice={p.dettaglio.matrice} casa={p.casa} ospite={p.ospite} />
+          </div>
+          <div>
+            <div class="pannello">
+              <h3>Mercati derivati</h3>
+              <p class="sub">A destra la quota equa corrispondente.</p>
+              <div class="mkt">
+                {derivati.map((d) => (
+                  <div>
+                    <span>{d.nome}</span>
+                    <b class="mono">{pct(d.p, 1)}</b>
+                    <span class="q mono">{num(1 / d.p)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div class="pannello" style="margin-top:26px">
+              <h3>Risultati più probabili</h3>
+              <p class="sub">Le cinque celle più alte della tabella accanto.</p>
+              <div class="mkt">
+                {p.dettaglio.risultati_probabili.map((r: any) => (
+                  <div>
+                    <span class="mono">{r.risultato}</span>
+                    <b class="mono">{pct(r.p, 1)}</b>
+                    <span class="q mono">{num(1 / r.p)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    p.precedenti.length > 0 && (
+      <section>
+        <div class="hd"><h2>Precedenti</h2></div>
+        <div class="scorri">
+          <table class="dati">
+            <tbody>
+              {p.precedenti.map((x: any) => (
+                <tr>
+                  <td class="mono" style="color:var(--ink-3);white-space:nowrap">
+                    {new Date(x.data + "T00:00:00").toLocaleDateString("it-IT")}
+                  </td>
+                  <td style="text-align:right"><b>{x.casa}</b></td>
+                  <td class="mono" style="text-align:center;width:70px">
+                    {x.gol_casa}–{x.gol_ospite}
+                  </td>
+                  <td><b>{x.ospite}</b></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  <section>
+    <div class="hd">
+      <h2>Le quote, e quanto si tiene il banco</h2>
       <p>
-        Reti attese <span class="mono">{num(p.gol_attesi_casa)}</span> —
-        <span class="mono">{num(p.gol_attesi_ospite)}</span>, in totale
-        <span class="mono">{num(golAttesi)}</span>.
+        <a href="/quote/">Come si leggono questi numeri →</a>
       </p>
     </div>
-
-    <div style="margin-bottom:26px">
-      <BarraProbabilita esiti={p.esiti} />
-    </div>
-
-    <div class="feature">
-      <div class="pannello">
-        <h3>Probabilità di ogni risultato esatto</h3>
-        <p class="sub">
-          Tutto quello che c'è sotto viene da qui. I mercati non sono stime
-          separate: sono somme di celle di questa tabella.
-        </p>
-        <MatriceRisultati matrice={p.matrice} casa={p.casa} ospite={p.ospite} />
-      </div>
-
-      <div>
-        <div class="pannello">
-          <h3>Modello contro mercato</h3>
-          <p class="sub">
-            La quota equa è quella che pareggerebbe il conto sul lungo periodo.
-            Se il mercato la supera, la giocata ha valore atteso positivo.
-            <a href="/quote/">Come funziona →</a>
-          </p>
-          <div class="scorri">
-            <table class="dati" style="min-width:0">
-              <thead>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Fonte</th>
+            <th class="num">1</th>
+            <th class="num">X</th>
+            <th class="num">2</th>
+            <th class="num">Margine</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            Object.entries(p.quote).map(([libro, q]: any) => {
+              const m = q.reduce((s: number, x: number) => s + 1 / x, 0) - 1;
+              return (
                 <tr>
-                  <th>Esito</th>
-                  <th class="num">Modello</th>
-                  <th class="num">Equa</th>
-                  <th class="num">Mercato</th>
-                  <th class="num">Valore</th>
+                  <td>
+                    <b>{libro === "massimo" ? "Miglior prezzo" : libro === "media" ? "Media dei libri" : libro}</b>
+                  </td>
+                  {q.map((x: number) => <td class="num">{num(x)}</td>)}
+                  <td class="num" style={`color:${m < 0.02 ? "var(--good)" : "var(--ink-2)"}`}>
+                    {pct(m, 1)}
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {
-                  p.esiti.map((e: any) => (
-                    <tr style={e.valore ? "background:var(--good-bg)" : undefined}>
-                      <td>
-                        <b>{e.esito}</b>
-                        <div style="font-size:11px;color:var(--ink-3)">{e.bookmaker}</div>
-                      </td>
-                      <td class="num">{pct(e.p_modello)}</td>
-                      <td class="num">{num(e.quota_equa)}</td>
-                      <td class="num">{num(e.quota)}</td>
-                      <td
-                        class="num"
-                        style={e.valore ? "color:var(--good);font-weight:600" : "color:var(--ink-3)"}
-                      >
-                        {e.valore_atteso >= 0 ? "+" : ""}
-                        {num(e.valore_atteso * 100, 1)}%
-                      </td>
-                    </tr>
-                  ))
-                }
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="pannello" style="margin-top:26px">
-          <h3>Mercati derivati</h3>
-          <p class="sub">A destra la quota equa corrispondente.</p>
-          <div class="mkt">
-            {
-              derivati.map((d) => (
-                <div>
-                  <span>{d.nome}</span>
-                  <b class="mono">{pct(d.p)}</b>
-                  <span class="q mono">{num(1 / d.p)}</span>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-
-        <div class="pannello" style="margin-top:26px">
-          <h3>Risultati più probabili</h3>
-          <p class="sub">Le cinque celle più alte della tabella accanto.</p>
-          <div class="mkt">
-            {
-              p.risultati_probabili.map((r: any) => (
-                <div>
-                  <span class="mono">{r.risultato}</span>
-                  <b class="mono">{pct(r.p)}</b>
-                  <span class="q mono">{num(1 / r.p)}</span>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </div>
+              );
+            })
+          }
+        </tbody>
+      </table>
     </div>
-
-    <p style="margin-top:24px">
-      <a href={`/calcio/${lega.slug}/`}>← torna alla {lega.nome}</a>
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:76ch">
+      Il margine è quanto le probabilità implicite eccedono il 100%: è la
+      commissione, e su questa partita la differenza fra il miglior prezzo e la
+      media dei libri è quello che costa non confrontare.
     </p>
   </section>
+
+  <p style="margin-top:28px">
+    <a href={`/calcio/${lega.slug}/`}>← torna alla {lega.nome}</a>
+  </p>
 </Base>
+
+<style>
+  .sintesi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .voce {
+    background: var(--card);
+    padding: 16px 18px;
+  }
+  .voce .et {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .voce .valore {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 8px 0 6px;
+    line-height: 1;
+  }
+  .voce .sotto {
+    font-size: 12px;
+    color: var(--ink-3);
+  }
+
+  table.confronto td.mezzo,
+  table.confronto th.mezzo {
+    text-align: center;
+    color: var(--ink-3);
+    font-size: 12.5px;
+    width: 44%;
+  }
+  table.confronto td.destra,
+  table.confronto th.destra {
+    text-align: left;
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+  table.confronto th {
+    font-size: 12px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--ink-2);
+  }
+  table.confronto th small {
+    color: var(--ink-3);
+    font-weight: 400;
+  }
+  table.confronto td.forte {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .scarto {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin: 10px 0 8px;
+  }
+
+  @media (max-width: 700px) {
+    .sintesi {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

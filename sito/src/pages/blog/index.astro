@@ -1,0 +1,156 @@
+---
+import Base from "../../layouts/Base.astro";
+import articolo from "../../dati/articolo.json";
+
+/* Gli articoli scritti a mano sono file Markdown in questa stessa cartella:
+   Astro li trasforma in pagine da solo, e qui li elenchiamo leggendone il
+   frontmatter. Aggiungerne uno vuol dire creare un .md, niente altro. */
+const scritti = Object.values(
+  import.meta.glob("./*.md", { eager: true })
+) as any[];
+
+const posts = scritti
+  .map((m) => ({
+    titolo: m.frontmatter.titolo,
+    sommario: m.frontmatter.sommario ?? "",
+    data: m.frontmatter.data,
+    url: m.url,
+  }))
+  .sort((a, b) => String(b.data).localeCompare(String(a.data)));
+
+const giorno = new Date(articolo.data + "T00:00:00");
+const dataLunga = giorno.toLocaleDateString("it-IT", {
+  weekday: "long", day: "numeric", month: "long",
+});
+---
+
+<Base
+  titolo="Articoli"
+  descrizione="Il pezzo del giorno generato dai dati, e gli approfondimenti scritti a mano."
+>
+  <section>
+    <p class="occhiello">Articoli</p>
+    <div class="hd">
+      <h1>Quello che dicono i numeri</h1>
+      <p>
+        Ogni notte il programma rilegge i dati di 22 campionati e scrive il
+        pezzo del giorno. Gli approfondimenti, invece, li scriviamo a mano.
+      </p>
+    </div>
+
+    <a class="in-evidenza" href="/blog/giornata/">
+      <div class="etichetta">Generato stanotte</div>
+      <h2 style="text-transform:capitalize">{dataLunga}</h2>
+      <p>
+        {articolo.partite_in_programma} partite in programma su
+        {" "}{articolo.campionati} campionati. Chi segna più di quanto crea, chi
+        meno, e quanto costa giocare oggi rispetto a ieri.
+      </p>
+      <span class="vaia">Leggi l'articolo →</span>
+    </a>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Approfondimenti</h2>
+      <p>Pezzi scritti, che restano validi oltre la giornata.</p>
+    </div>
+    {
+      posts.length === 0 ? (
+        <div class="vuoto">
+          <b>Ancora nessun approfondimento</b>
+          Si aggiungono creando un file Markdown in <code>src/pages/blog/</code>:
+          servono un titolo, una data e un sommario nel frontmatter, e la pagina
+          compare qui da sola.
+        </div>
+      ) : (
+        <div class="slip">
+          {posts.map((p) => (
+            <a class="post" href={p.url}>
+              <div class="quando mono">
+                {new Date(String(p.data)).toLocaleDateString("it-IT")}
+              </div>
+              <div>
+                <b>{p.titolo}</b>
+                <p>{p.sommario}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </section>
+</Base>
+
+<style>
+  .in-evidenza {
+    display: block;
+    border: 1px solid var(--rule-strong);
+    background: var(--card);
+    padding: 26px 28px 24px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .in-evidenza:hover {
+    background: var(--sunk);
+  }
+  .etichetta {
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--good);
+    font-weight: 600;
+  }
+  .in-evidenza h2 {
+    margin: 10px 0 10px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  .in-evidenza p {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 62ch;
+  }
+  .vaia {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--s1);
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 18px;
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+  }
+  .post:last-child {
+    border-bottom: 0;
+  }
+  .post:hover {
+    background: var(--sunk);
+  }
+  .post .quando {
+    font-size: 12px;
+    color: var(--ink-3);
+    padding-top: 2px;
+  }
+  .post b {
+    font-size: 15.5px;
+    font-weight: 600;
+  }
+  .post p {
+    margin: 4px 0 0;
+    font-size: 13.5px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+</style>

@@ -30,18 +30,19 @@ from engine.core.types import Incontro
 BASE = "https://www.football-data.co.uk/mmz4281"
 CARTELLA = Path(__file__).resolve().parents[2] / "data" / "grezzi"
 
-# I nostri slug verso i codici di football-data. Sono gli otto campionati del
-# sito: la corrispondenza e' completa, non abbiamo dovuto rinunciare a nessuno.
-CODICI = {
-    "serie-a": "I1",
-    "premier-league": "E0",
-    "laliga": "SP1",
-    "bundesliga": "D1",
-    "ligue-1": "F1",
-    "eredivisie": "N1",
-    "primeira-liga": "P1",
-    "superlig": "T1",
-}
+def _codici() -> dict[str, str]:
+    """I nostri slug verso i codici di football-data, presi dal catalogo.
+
+    L'elenco sta in `catalogo.py` e non qui: aggiungere un campionato deve
+    essere una riga sola in un posto solo. L'import e' dentro la funzione
+    perche' il catalogo importa da qui a sua volta.
+    """
+    from engine.dati.catalogo import CAMPIONATI
+
+    return {c.slug: c.codice for c in CAMPIONATI}
+
+
+CODICI = _codici()
 
 # I libri che leggiamo, in ordine di quanto ci fidiamo del loro prezzo.
 #
@@ -70,6 +71,33 @@ LIBRI_APERTURA = {
 }
 
 RIFERIMENTO = ("betfair", "pinnacle")
+
+# Oltre questo margine, le quote di un libro non sono la sua opinione sulla
+# partita: sono un listino che nessuno sta davvero bancando.
+#
+# Serve soprattutto per l'exchange sulle partite future. Sui mercati liquidi
+# Betfair e' il riferimento migliore che esista — sul calendario ha un margine
+# medio del 2,8% contro il 7,8% di un banco al dettaglio — ma su una quarta
+# serie scozzese, tre giorni prima, i prezzi disponibili sono quelli di quattro
+# scommesse in croce, e la somma delle inverse arriva al 20%. Prendere quel
+# numero per buono vorrebbe dire pubblicare che il banco si tiene un quinto
+# della posta, che e' falso.
+MARGINE_MASSIMO_CREDIBILE = 0.12
+
+
+def _credibile(quote: tuple[float, float, float]) -> bool:
+    return sum(1.0 / q for q in quote) - 1.0 <= MARGINE_MASSIMO_CREDIBILE
+
+
+def _primo_credibile(
+    fonti: dict[str, tuple[float, float, float]], ordine: tuple[str, ...]
+) -> tuple[float, float, float] | None:
+    """Il primo libro dell'ordine che abbia un margine plausibile."""
+    for libro in ordine:
+        quote = fonti.get(libro)
+        if quote and _credibile(quote):
+            return quote
+    return None
 
 
 @dataclass(frozen=True, slots=True)
@@ -116,10 +144,7 @@ class PartitaStorica:
         veda. Meglio perdere la partita.
         """
         fonte = self.quote if quale == "chiusura" else self.apertura
-        for libro in RIFERIMENTO:
-            if libro in fonte:
-                return fonte[libro]
-        return None
+        return _primo_credibile(fonte, RIFERIMENTO)
 
     def coppia(self, libro: str) -> tuple[tuple[float, float, float],
                                           tuple[float, float, float]] | None:
@@ -271,6 +296,102 @@ def leggi(percorso: Path, campionato: str = "") -> list[PartitaStorica]:
                 )
             )
     return partite
+
+
+@dataclass(frozen=True, slots=True)
+class PartitaFutura:
+    """Una partita ancora da giocare, con le quote gia' esposte dal mercato.
+
+    Vengono dal file `fixtures.csv`, che football-data aggiorna un paio di
+    volte a settimana. Non e' un flusso in tempo reale — le quote sono
+    l'istantanea del momento in cui il file e' stato scritto — ma per un sito
+    che pubblica una scheda al giorno e' esattamente quello che serve, e non
+    costa niente.
+    """
+
+    campionato: str          # il nostro slug
+    data: date
+    ora: str
+    casa: str
+    ospite: str
+    quote: dict[str, tuple[float, float, float]]
+
+    @property
+    def id(self) -> str:
+        pulito = f"{self.casa}-{self.ospite}".lower()
+        for a, b in ((" ", "-"), ("'", ""), (".", ""), ("/", "-")):
+            pulito = pulito.replace(a, b)
+        return pulito
+
+    def riferimento(self) -> tuple[float, float, float] | None:
+        """Il libro piu' affidabile fra quelli con un margine credibile.
+
+        Sulle partite future Pinnacle non c'e' — football-data non la mette nel
+        calendario — quindi l'ordine e' Betfair, poi la media dei libri, poi un
+        banco al dettaglio. Il filtro sul margine serve a saltare l'exchange
+        quando il mercato e' ancora vuoto.
+        """
+        return _primo_credibile(self.quote, ("betfair", "media", "bet365", "massimo"))
+
+
+# Nel file del calendario le colonne non hanno il suffisso C: sono le quote
+# esposte adesso, non quelle di chiusura, che ovviamente non esistono ancora.
+LIBRI_CALENDARIO = {
+    "betfair": ("BFEH", "BFED", "BFEA"),
+    "bet365": ("B365H", "B365D", "B365A"),
+    "massimo": ("MaxH", "MaxD", "MaxA"),
+    "media": ("AvgH", "AvgD", "AvgA"),
+}
+
+
+def calendario(forza: bool = True) -> list[PartitaFutura]:
+    """Le partite in programma, con le quote attuali.
+
+    `forza` e' vero per difetto: un calendario in cache e' un calendario
+    vecchio, e le partite di ieri non servono a nessuno.
+    """
+    from engine.dati.catalogo import dal_codice
+
+    CARTELLA.mkdir(parents=True, exist_ok=True)
+    percorso = CARTELLA / "calendario.csv"
+    if forza or not percorso.exists():
+        richiesta = urllib.request.Request(
+            "https://www.football-data.co.uk/fixtures.csv",
+            headers={"User-Agent": "QuotaVera/0.1 (progetto personale)"},
+        )
+        with urllib.request.urlopen(richiesta, timeout=60) as risposta:
+            percorso.write_bytes(risposta.read())
+
+    fuori: list[PartitaFutura] = []
+    with percorso.open(encoding="utf-8-sig", errors="replace", newline="") as f:
+        for riga in csv.DictReader(f):
+            campionato = dal_codice(riga.get("Div", "") or "")
+            giorno = _data(riga.get("Date", ""))
+            casa = (riga.get("HomeTeam") or "").strip()
+            ospite = (riga.get("AwayTeam") or "").strip()
+            if not (campionato and giorno and casa and ospite):
+                continue
+
+            quote = {}
+            for nome, colonne in LIBRI_CALENDARIO.items():
+                valori = _quota(riga, colonne)
+                if valori:
+                    quote[nome] = valori
+            if not quote:
+                continue
+
+            fuori.append(
+                PartitaFutura(
+                    campionato=campionato.slug,
+                    data=giorno,
+                    ora=(riga.get("Time") or "").strip(),
+                    casa=casa,
+                    ospite=ospite,
+                    quote=quote,
+                )
+            )
+    fuori.sort(key=lambda p: (p.data, p.ora))
+    return fuori
 
 
 def stagioni(prima: int, ultima: int) -> list[str]:

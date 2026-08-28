@@ -1,0 +1,199 @@
+---
+import Base from "../../layouts/Base.astro";
+import articolo from "../../dati/articolo.json";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+const giorno = new Date(articolo.data + "T00:00:00");
+const dataLunga = giorno.toLocaleDateString("it-IT", {
+  weekday: "long", day: "numeric", month: "long", year: "numeric",
+});
+
+const sopra = articolo.segnano_piu_di_quanto_creano;
+const sotto = articolo.segnano_meno_di_quanto_creano;
+const care = articolo.partite_piu_care;
+const convenienti = articolo.partite_meno_care;
+
+const divario = care[0] && convenienti[0]
+  ? care[0].margine - convenienti[0].margine
+  : 0;
+---
+
+<Base
+  titolo={`I numeri di ${dataLunga}`}
+  descrizione="I numeri che saltano all'occhio oggi, su 22 campionati europei."
+>
+  <section>
+    <p class="occhiello">Articolo del giorno · generato dai dati</p>
+    <div class="hd">
+      <h1 style="text-transform:capitalize">{dataLunga}</h1>
+      <p>
+        {articolo.partite_in_programma} partite in programma su
+        {" "}{articolo.campionati} campionati.
+      </p>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Questo pezzo lo scrive il programma, non una persona: prende i numeri
+        della notte e mette in fila quelli che si discostano di più dal normale.
+        Non contiene consigli su cosa giocare, e non ne conterrà mai — sono
+        fatti misurati, e l'idea la fa il lettore.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Chi sta segnando più di quanto crea</h2>
+      <p>
+        Gol veri contro gol attesi dai tiri in porta. È la statistica che, sulla
+        distanza, torna indietro più spesso di qualsiasi altra.
+      </p>
+    </div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Squadra</th>
+            <th>Campionato</th>
+            <th class="num">Gol</th>
+            <th class="num">Attesi</th>
+            <th class="num">Differenza</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            sopra.map((s: any) => (
+              <tr>
+                <td><b>{s.squadra}</b></td>
+                <td style="color:var(--ink-2)">{s.bandiera} {s.campionato}</td>
+                <td class="num">{s.gol_totali}</td>
+                <td class="num">{num(s.attesi_dai_tiri, 1)}</td>
+                <td class="num" style="color:var(--s2);font-weight:600">
+                  +{num(s.scarto_conversione, 1)}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <div class="prosa" style="margin-top:20px">
+      <p>
+        {sopra[0] && (
+          <>
+            In testa <strong>{sopra[0].squadra}</strong>: {sopra[0].gol_totali} gol
+            segnati contro i {num(sopra[0].attesi_dai_tiri, 1)} che i suoi tiri in
+            porta avrebbero fatto prevedere, cioè
+            {" "}<strong>{num(sopra[0].scarto_conversione, 1)} in più</strong>.
+            Può essere un attaccante in stato di grazia quanto fortuna davanti
+            alla porta: la differenza fra le due si vede solo col tempo, ma su
+            una stagione intera la fortuna rientra e la bravura no.
+          </>
+        )}
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>E chi ne sta segnando meno</h2>
+      <p>Creano e non concretizzano: sono quelle che la classifica punisce più a lungo.</p>
+    </div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Squadra</th>
+            <th>Campionato</th>
+            <th class="num">Gol</th>
+            <th class="num">Attesi</th>
+            <th class="num">Differenza</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            sotto.map((s: any) => (
+              <tr>
+                <td><b>{s.squadra}</b></td>
+                <td style="color:var(--ink-2)">{s.bandiera} {s.campionato}</td>
+                <td class="num">{s.gol_totali}</td>
+                <td class="num">{num(s.attesi_dai_tiri, 1)}</td>
+                <td class="num" style="color:var(--s1);font-weight:600">
+                  {num(s.scarto_conversione, 1)}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Quanto costa giocare, partita per partita</h2>
+      <p>
+        Il margine è la commissione del banco. Cambia molto più di quanto si
+        creda, anche nella stessa giornata.
+      </p>
+    </div>
+    <div class="duo">
+      <div class="pannello">
+        <h3>Le partite più care</h3>
+        <p class="sub">Qui il banco si tiene di più.</p>
+        <div class="mkt">
+          {
+            care.map((p: any) => (
+              <div>
+                <span>
+                  <a href={`/calcio/${p.slug}/${p.id}/`} style="color:inherit">
+                    {p.casa} — {p.ospite}
+                  </a>
+                  <small style="display:block;color:var(--ink-3);font-size:11px">
+                    {p.bandiera} {p.campionato}
+                  </small>
+                </span>
+                <b class="mono">{pct(p.margine)}</b>
+                <span />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div class="pannello">
+        <h3>Le partite meno care</h3>
+        <p class="sub">Qui la commissione è la più bassa della giornata.</p>
+        <div class="mkt">
+          {
+            convenienti.map((p: any) => (
+              <div>
+                <span>
+                  <a href={`/calcio/${p.slug}/${p.id}/`} style="color:inherit">
+                    {p.casa} — {p.ospite}
+                  </a>
+                  <small style="display:block;color:var(--ink-3);font-size:11px">
+                    {p.bandiera} {p.campionato}
+                  </small>
+                </span>
+                <b class="mono" style="color:var(--good)">{pct(p.margine)}</b>
+                <span />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+    <div class="prosa" style="margin-top:20px">
+      <p>
+        Fra la partita più cara e quella più conveniente di oggi ci sono
+        {" "}<strong>{num(divario * 100, 1)} punti di margine</strong>. Sono soldi
+        che si perdono o si risparmiano prima ancora di sapere chi vince, e non
+        dipendono da quanto uno è bravo a scegliere.
+      </p>
+    </div>
+  </section>
+</Base>

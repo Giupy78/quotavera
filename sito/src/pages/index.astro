@@ -1,250 +1,195 @@
 ---
 import Base from "../layouts/Base.astro";
+import RigaPartita from "../components/RigaPartita.astro";
 import campionati from "../dati/campionati.json";
-import giornate from "../dati/giornate.json";
+import calendario from "../dati/calendario.json";
+import articolo from "../dati/articolo.json";
 
 const num = (v: number, d = 2) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
 const pct = (v: number, d = 1) => num(v * 100, d) + "%";
 
 const leghe = campionati.campionati;
-const partiteTotali = leghe.reduce((s, c) => s + c.partite_giornata, 0);
-const occasioniTotali = leghe.reduce((s, c) => s + c.occasioni, 0);
+const perSlug = Object.fromEntries(leghe.map((c) => [c.slug, c]));
+const cal = calendario.campionati as Record<string, any[]>;
 
-const margineMin = leghe.reduce((a, c) => (c.margine_banco < a.margine_banco ? c : a));
-const margineMax = leghe.reduce((a, c) => (c.margine_banco > a.margine_banco ? c : a));
-const campoMax = leghe.reduce((a, c) =>
-  c.vantaggio_casa_stimato > a.vantaggio_casa_stimato ? c : a
-);
+/* Tutte le partite di tutti i campionati, in ordine di orario: è la vista
+   che serve la mattina, e che un sito su un campionato solo non può dare. */
+const tutte = Object.entries(cal)
+  .flatMap(([slug, partite]) => partite.map((p) => ({ ...p, slug })))
+  .sort((a, b) => (a.data + a.ora).localeCompare(b.data + b.ora));
 
-/* Le partite più vicine nel tempo, da tutti i campionati insieme: è la vista
-   che un sito internazionale deve dare e che un sito su un campionato solo
-   non può dare. */
-const prossime = leghe
-  .flatMap((c) =>
-    (giornate.giornate as Record<string, any[]>)[c.slug]
-      .slice(0, 2)
-      .map((p) => ({ ...p, lega: c }))
-  )
-  .slice(0, 8);
+const perGiorno = new Map<string, typeof tutte>();
+for (const p of tutte) {
+  if (!perGiorno.has(p.data)) perGiorno.set(p.data, []);
+  perGiorno.get(p.data)!.push(p);
+}
+const giorni = [...perGiorno.entries()].slice(0, 4);
+
+const dataLunga = (iso: string) =>
+  new Date(iso + "T00:00:00").toLocaleDateString("it-IT", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  });
 ---
 
 <Base
-  titolo="Otto campionati"
-  descrizione="Probabilità calcolate da un modello statistico, confrontate con le quote di mercato, su otto campionati europei."
+  titolo="Le partite di oggi"
+  descrizione="Statistiche, probabilità e quote di 22 campionati europei, aggiornate ogni notte."
 >
   <section>
-    <p class="occhiello">Giornata simulata · {partiteTotali} partite</p>
+    <p class="occhiello">
+      {articolo.partite_in_programma} partite · {articolo.campionati} campionati
+    </p>
     <div class="hd">
-      <h1>Il mercato, campionato per campionato</h1>
+      <h1>Che partite si giocano, e cosa dicono i numeri</h1>
       <p>
-        Le stesse probabilità calcolate ovunque con lo stesso modello. Quello
-        che cambia da un campionato all'altro — e cambia molto — è quanto costa
-        giocarci e quanto il mercato è difficile da battere.
+        Le statistiche delle squadre, le probabilità del nostro modello e le
+        quote del mercato. Nessun consiglio: i numeri, e l'idea la fai tu.
       </p>
     </div>
 
     <div class="tessere">
       <div class="tessera">
-        <div class="k">Margine più basso</div>
-        <div class="v mono">{pct(margineMin.margine_banco)}</div>
-        <div class="n">{margineMin.bandiera} {margineMin.nome}</div>
+        <div class="k">Partite in programma</div>
+        <div class="v mono">{articolo.partite_in_programma}</div>
+        <div class="n">nei prossimi giorni</div>
       </div>
       <div class="tessera">
-        <div class="k">Margine più alto</div>
-        <div class="v mono">{pct(margineMax.margine_banco)}</div>
+        <div class="k">Campionati</div>
+        <div class="v mono">{articolo.campionati}</div>
+        <div class="n">in undici paesi europei</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Margine più basso oggi</div>
+        <div class="v mono">
+          {articolo.partite_meno_care[0] ? pct(articolo.partite_meno_care[0].margine) : "—"}
+        </div>
         <div class="n">
-          {margineMax.bandiera} {margineMax.nome} — {num(margineMax.margine_banco / margineMin.margine_banco, 1)}× il primo
+          {articolo.partite_meno_care[0]?.casa} — {articolo.partite_meno_care[0]?.ospite}
         </div>
       </div>
       <div class="tessera">
-        <div class="k">Fattore campo più forte</div>
-        <div class="v mono">{num(Math.exp(campoMax.vantaggio_casa_stimato), 2)}×</div>
-        <div class="n">{campoMax.bandiera} {campoMax.nome} — reti attese in casa</div>
-      </div>
-      <div class="tessera">
-        <div class="k">Occasioni oggi</div>
-        <div class="v mono">{occasioniTotali}</div>
-        <div class="n">su {partiteTotali} partite, in tutti i campionati</div>
+        <div class="k">Margine più alto oggi</div>
+        <div class="v mono">
+          {articolo.partite_piu_care[0] ? pct(articolo.partite_piu_care[0].margine) : "—"}
+        </div>
+        <div class="n">
+          {articolo.partite_piu_care[0]?.casa} — {articolo.partite_piu_care[0]?.ospite}
+        </div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="hd">
-      <h2>I campionati</h2>
+      <h2>Gli spunti</h2>
       <p>
-        Ordinati per quanto il banco si tiene: è la prima cosa da sapere prima
-        di guardare qualsiasi quota.
+        I numeri che saltano all'occhio oggi. <a href="/blog/">Tutti gli articoli →</a>
       </p>
     </div>
 
-    <div class="leghe">
-      {
-        leghe
-          .slice()
-          .sort((a, b) => a.margine_banco - b.margine_banco)
-          .map((c) => (
-            <a class="lega" href={`/calcio/${c.slug}/`}>
-              <div class="lega-top">
-                <span class="bandiera">{c.bandiera}</span>
-                <div>
-                  <b>{c.nome}</b>
-                  <small>{c.paese} · {c.squadre} squadre</small>
-                </div>
+    <div class="duo">
+      <div class="pannello">
+        <h3>Segnano più di quanto creano</h3>
+        <p class="sub">
+          Gol veri contro gol attesi dai tiri in porta. Chi sta molto sopra,
+          statisticamente, rientra — e il mercato se ne accorge tardi.
+        </p>
+        <div class="mkt">
+          {
+            articolo.segnano_piu_di_quanto_creano.map((s: any) => (
+              <div>
+                <span>
+                  {s.bandiera} <b style="font-weight:600">{s.squadra}</b>
+                  <small style="display:block;color:var(--ink-3);font-size:11px">
+                    {s.gol_totali} gol, {num(s.attesi_dai_tiri, 1)} attesi
+                  </small>
+                </span>
+                <b class="mono" style="color:var(--s2)">+{num(s.scarto_conversione, 1)}</b>
+                <span />
               </div>
-              <p class="lega-nota">{c.note}</p>
-              <div class="lega-num">
-                <div>
-                  <span>Margine banco</span>
-                  <b class="mono">{pct(c.margine_banco)}</b>
-                </div>
-                <div>
-                  <span>Reti a partita</span>
-                  <b class="mono">{num(c.gol_partita)}</b>
-                </div>
-                <div>
-                  <span>Fattore campo</span>
-                  <b class="mono">{num(Math.exp(c.vantaggio_casa_stimato), 2)}×</b>
-                </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="pannello">
+        <h3>Segnano meno di quanto creano</h3>
+        <p class="sub">
+          Le squadre che creano e non concretizzano. Sono quelle che il mercato
+          sottovaluta più a lungo, perché la classifica non le premia.
+        </p>
+        <div class="mkt">
+          {
+            articolo.segnano_meno_di_quanto_creano.map((s: any) => (
+              <div>
+                <span>
+                  {s.bandiera} <b style="font-weight:600">{s.squadra}</b>
+                  <small style="display:block;color:var(--ink-3);font-size:11px">
+                    {s.gol_totali} gol, {num(s.attesi_dai_tiri, 1)} attesi
+                  </small>
+                </span>
+                <b class="mono" style="color:var(--s1)">{num(s.scarto_conversione, 1)}</b>
+                <span />
               </div>
-            </a>
-          ))
-      }
+            ))
+          }
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="hd">
-      <h2>Prossime partite</h2>
-      <p>Da tutti i campionati insieme. La barra è il modello, la tacca il mercato.</p>
-    </div>
-    <div class="slip">
-      {
-        prossime.map((p) => (
-          <a class="slip-row compatto" href={`/calcio/${p.lega.slug}/${p.id}/`}>
-            <div class="squadre">
-              {p.casa} — {p.ospite}
-              <small>
-                {p.lega.bandiera} {p.lega.nome} · {p.ora}
-              </small>
-            </div>
-            <div class="quote-riga mono">
-              {p.esiti.map((e: any) => (
-                <span>
-                  <i>{e.esito}</i>
-                  {num(e.quota)}
-                </span>
-              ))}
-            </div>
-            <div class="lettura">
-              {p.occasione ? (
-                <span class="pick">{p.occasione.esito} · {num(p.occasione.quota)}</span>
-              ) : (
-                <span style="color:var(--ink-3)">nessuna occasione</span>
-              )}
-            </div>
-          </a>
-        ))
+  {
+    giorni.map(([giorno, partite]) => {
+      /* Raggruppate per campionato dentro la giornata: l'etichetta compare
+         una volta per gruppo. Farlo in CSS sembrava più furbo ma mostrava
+         l'intestazione su ogni riga tranne la prima, che è un'altra cosa. */
+      const gruppi = new Map<string, typeof partite>();
+      for (const p of partite) {
+        if (!gruppi.has(p.slug)) gruppi.set(p.slug, []);
+        gruppi.get(p.slug)!.push(p);
       }
-    </div>
-  </section>
+      return (
+        <section>
+          <div class="hd">
+            <h2 style="text-transform:capitalize">{dataLunga(giorno)}</h2>
+            <p>{partite.length} partite</p>
+          </div>
+          <div class="slip">
+            {[...gruppi.entries()].map(([slug, gruppo]) => (
+              <>
+                <div class="intestazione-lega">
+                  <a href={`/calcio/${slug}/`}>
+                    {perSlug[slug].bandiera} {perSlug[slug].nome}
+                  </a>
+                </div>
+                {gruppo.map((p) => (
+                  <RigaPartita p={p} slug={slug} />
+                ))}
+              </>
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
 </Base>
 
 <style>
-  .leghe {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-  }
-  .lega {
-    background: var(--card);
-    padding: 18px 20px 16px;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .lega:hover {
-    background: var(--sunk);
-  }
-  .lega-top {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .bandiera {
-    font-size: 26px;
-    line-height: 1;
-  }
-  .lega-top b {
+  .intestazione-lega a {
     display: block;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-  .lega-top small {
-    display: block;
-    font-size: 12px;
-    color: var(--ink-3);
-    margin-top: 2px;
-  }
-  .lega-nota {
-    margin: 0;
-    font-size: 12.5px;
-    line-height: 1.5;
-    color: var(--ink-2);
-    flex: 1;
-  }
-  .lega-num {
-    display: flex;
-    gap: 18px;
-    border-top: 1px solid var(--rule);
-    padding-top: 11px;
-  }
-  .lega-num div {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-  }
-  .lega-num span {
-    font-size: 10px;
+    padding: 8px 18px 4px;
+    font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--ink-3);
+    text-decoration: none;
+    background: var(--sunk);
+    border-bottom: 1px solid var(--rule);
   }
-  .lega-num b {
-    font-size: 15px;
-    font-weight: 600;
-  }
-
-  .slip-row.compatto {
-    grid-template-columns: 260px minmax(0, 1fr) 140px;
-  }
-  .quote-riga {
-    display: flex;
-    gap: 10px;
-    font-size: 13px;
-  }
-  .quote-riga span {
-    display: flex;
-    align-items: baseline;
-    gap: 5px;
-    border: 1px solid var(--rule);
-    padding: 4px 9px;
-    min-width: 66px;
-  }
-  .quote-riga i {
-    font-style: normal;
-    color: var(--ink-3);
-    font-size: 11px;
-  }
-  @media (max-width: 900px) {
-    .slip-row.compatto {
-      grid-template-columns: 1fr;
-    }
+  .intestazione-lega a:hover {
+    color: var(--ink);
   }
 </style>
