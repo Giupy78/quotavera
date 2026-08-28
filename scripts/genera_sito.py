@@ -27,6 +27,7 @@ from engine.core.market import margine, probabilita_implicite
 from engine.core.types import Fixture
 from engine.dati.catalogo import CAMPIONATI, PER_SLUG
 from engine.dati.football_data import calendario, carica, stagioni
+from engine.dati import openfootball
 from engine.sports.football.model import ModelloCalcio
 from engine.statistiche import calcola, conversione_media, precedenti
 
@@ -274,6 +275,68 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "classifica": classifica,
         "risultati": risultati,
         "sorprese": sorprese(stagione, c),
+        "stagione_completa": stagione_completa(c, set(stat) | attuali),
+    }
+
+
+def stagione_completa(c, nostre_squadre: set[str]) -> dict | None:
+    """Il calendario dell'intera stagione, giornata per giornata.
+
+    Viene da openfootball, che pubblica il calendario ufficiale con il numero
+    di giornata scritto. football-data ne da' solo una settimana, quindi senza
+    questa fonte il sito non potrebbe dire quando gioca una squadra fra un mese.
+
+    I nomi delle due fonti non coincidono ("FC Internazionale Milano" contro
+    "Inter") e vanno riconciliati, altrimenti il calendario non si collega ne'
+    alle statistiche ne' alle schede partita.
+    """
+    partite, alias = openfootball.carica(c.slug)
+    if not partite:
+        return None
+
+    # Dalla forma canonica al nome che usiamo noi ovunque nel sito.
+    verso_nostro = {
+        openfootball.normalizza(n, alias): n for n in nostre_squadre
+    }
+
+    def nostro(nome: str) -> str | None:
+        return verso_nostro.get(openfootball.normalizza(nome, alias))
+
+    per_giornata: dict[int, list] = defaultdict(list)
+    non_risolte = 0
+    for p in partite:
+        casa, ospite = nostro(p.casa), nostro(p.ospite)
+        if not casa or not ospite:
+            non_risolte += 1
+        per_giornata[p.giornata].append({
+            "data": p.data.isoformat(),
+            "ora": p.ora,
+            # Il nome nostro quando lo conosciamo, quello di openfootball
+            # altrimenti: meglio una riga con un nome diverso che una mancante.
+            "casa": casa or p.casa,
+            "ospite": ospite or p.ospite,
+            "collegabile": bool(casa and ospite),
+            "gol_casa": p.gol_casa,
+            "gol_ospite": p.gol_ospite,
+            "giocata": p.giocata,
+        })
+
+    giornate_ordinate = sorted(per_giornata)
+    # La giornata "corrente" e' la prima che non sia interamente giocata.
+    corrente = next(
+        (n for n in giornate_ordinate
+         if any(not x["giocata"] for x in per_giornata[n])),
+        giornate_ordinate[-1] if giornate_ordinate else 1,
+    )
+    return {
+        "giornate": [
+            {"numero": n,
+             "partite": sorted(per_giornata[n], key=lambda x: (x["data"], x["ora"]))}
+            for n in giornate_ordinate
+        ],
+        "corrente": corrente,
+        "totale": len(giornate_ordinate),
+        "non_risolte": non_risolte,
     }
 
 
@@ -387,7 +450,7 @@ def main() -> int:
     print()
     indice = [{k: v for k, v in l.items()
                if k not in ("squadre", "calendario", "schede", "sorprese",
-                            "classifica", "risultati")}
+                            "classifica", "risultati", "stagione_completa")}
               for l in leghe]
     scrivi("campionati.json", {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                "fonte": "football-data.co.uk",
@@ -396,6 +459,9 @@ def main() -> int:
     scrivi("squadre.json", {"campionati": {l["slug"]: l["squadre"] for l in leghe}})
     scrivi("classifiche.json", {"campionati": {l["slug"]: l["classifica"] for l in leghe}})
     scrivi("risultati.json", {"campionati": {l["slug"]: l["risultati"] for l in leghe}})
+    scrivi("stagione.json", {"campionati": {
+        l["slug"]: l["stagione_completa"] for l in leghe if l["stagione_completa"]
+    }})
     scrivi("schede.json", {"partite": [s for l in leghe for s in l["schede"]]})
     scrivi("articolo.json", articolo(leghe))
 
