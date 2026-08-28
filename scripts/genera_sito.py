@@ -35,8 +35,22 @@ USCITA = RADICE / "sito" / "src" / "dati"
 # la storia lontana e' rumore: tre stagioni con il decadimento predefinito sono
 # il compromesso fra avere abbastanza partite e non pesare rose che non
 # esistono piu'.
-STORIA = stagioni(2023, 2026)
-STAGIONE = "2526"
+STORIA = stagioni(2023, 2027)
+
+# Il confine fra una stagione e l'altra. I campionati europei girano da agosto
+# a maggio: tutto cio' che e' stato giocato dopo il 1 luglio appartiene alla
+# stagione in corso.
+INIZIO_STAGIONE = date(2026, 7, 1)
+NOME_STAGIONE = "2026/27"
+
+# Quante partite servono perche' una statistica di squadra significhi qualcosa.
+#
+# A fine agosto la stagione nuova ha una giornata giocata: una classifica su una
+# partita e' comunque la classifica — e' quello che la parola vuol dire — ma
+# statistiche costruite su una partita sola non sono statistiche. Per quelle si
+# usa una finestra mobile che attraversa il cambio di stagione, ed e' anche il
+# modo giusto di misurare una squadra: la sosta estiva non azzera come gioca.
+FINESTRA = 20
 
 
 def arrotonda(v: float, d: int = 4) -> float:
@@ -77,14 +91,21 @@ def numeri_squadra(s, conv: float) -> dict:
 
 
 def elabora(c, storico, stagione, cal) -> dict | None:
-    """Tutto quello che serve al sito per un campionato."""
+    """Tutto quello che serve al sito per un campionato.
+
+    `stagione` sono le partite della stagione in corso — poche, a inizio anno.
+    Le statistiche non si calcolano su quelle ma su una finestra mobile delle
+    ultime partite giocate da ogni squadra, che scavalca la sosta estiva.
+    """
     if len(storico) < 100:
         return None
 
     modello = ModelloCalcio().fit([p.incontro for p in storico])
-    conv = conversione_media(stagione) if stagione else 0.31
-    stat = calcola(stagione)
-    forma = calcola(stagione, ultime=6)
+    # La conversione media serve un campione ampio: si prende dallo storico
+    # recente, non dalla stagione in corso che potrebbe avere dieci partite.
+    conv = conversione_media(storico[-500:]) if storico else 0.31
+    stat = calcola(storico, ultime=FINESTRA)
+    forma = calcola(storico, ultime=6)
 
     partite_lega = [p for p in cal if p.campionato == c.slug]
     righe, schede = [], []
@@ -147,11 +168,25 @@ def elabora(c, storico, stagione, cal) -> dict | None:
             ],
         })
 
-    squadre = sorted((numeri_squadra(s, conv) for s in stat.values()),
-                     key=lambda s: s["scarto_conversione"], reverse=True)
+    # Chi milita nel campionato *adesso*: la finestra mobile guarda indietro tre
+    # stagioni, quindi senza questo filtro comparirebbero le retrocesse. Sono
+    # quelle che hanno giocato in questa stagione, piu' quelle che compaiono nel
+    # calendario — le neopromosse che non hanno ancora esordito.
+    attuali = {p.incontro.casa for p in stagione} | {p.incontro.ospite for p in stagione}
+    for p in cal:
+        if p.campionato == c.slug:
+            attuali |= {p.casa, p.ospite}
 
+    squadre = sorted(
+        (numeri_squadra(s, conv) for nome, s in stat.items() if nome in attuali),
+        key=lambda s: s["scarto_conversione"], reverse=True,
+    )
+
+    # La classifica invece e' della stagione in corso e basta: sommare i punti
+    # dell'anno scorso a quelli di quest'anno non sarebbe una classifica.
     tabella = calcola_classifica(stagione, conv)
     attese = posizioni_attese(tabella)
+    giornate = max((r.giocate for r in tabella), default=0)
     classifica = [
         {
             "posizione": n,
@@ -182,7 +217,7 @@ def elabora(c, storico, stagione, cal) -> dict | None:
             "in_porta_casa": p.stat.in_porta[0] if p.stat.completa else None,
             "in_porta_ospite": p.stat.in_porta[1] if p.stat.completa else None,
         }
-        for p in ultimi_risultati(stagione, quanti=20)
+        for p in ultimi_risultati(storico, quanti=20)
     ]
 
     return {
@@ -190,6 +225,9 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "livello": c.livello, "principale": c.principale,
         "partite_storico": len(storico),
         "partite_stagione": len(stagione),
+        "stagione": NOME_STAGIONE,
+        "giornate_giocate": giornate,
+        "finestra_statistiche": FINESTRA,
         "conversione": arrotonda(conv, 4),
         "vantaggio_casa": arrotonda(modello.vantaggio_casa, 4),
         "squadre": squadre,
@@ -297,14 +335,14 @@ def main() -> int:
     leghe = []
     for c in CAMPIONATI:
         storico = carica(c.slug, STORIA)
-        stagione = [p for p in storico if p.incontro.data >= date(2025, 7, 1)]
+        stagione = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
         dati = elabora(c, storico, stagione, cal)
         if not dati:
             print(f"  {c.etichetta:34s} dati insufficienti, salto")
             continue
         leghe.append(dati)
         print(f"  {c.etichetta:34s} {len(storico):5d} storico ·"
-              f" {len(dati['squadre']):2d} squadre ·"
+              f" {dati['giornate_giocate']:2d} giornate {NOME_STAGIONE} ·"
               f" {len(dati['calendario']):2d} in programma ·"
               f" campo {dati['vantaggio_casa']:+.3f}")
 
