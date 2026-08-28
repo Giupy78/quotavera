@@ -7,8 +7,13 @@ interface Props {
   descrizione?: string;
 }
 
-const { titolo, descrizione = "" } = Astro.props;
+const PREDEFINITA =
+  "Statistiche, probabilità e quote di 22 campionati europei, aggiornate ogni notte. Nessun consiglio di gioco: i numeri, e l'idea la fai tu.";
+
+const { titolo, descrizione = PREDEFINITA } = Astro.props;
 const qui = Astro.url.pathname;
+const canonico = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.href;
+const titoloCompleto = `${titolo} — Quota Vera`;
 
 const voci = [
   { href: "/", testo: "Oggi" },
@@ -17,6 +22,7 @@ const voci = [
   { href: "/quote/", testo: "Come si leggono" },
   { href: "/modello/", testo: "Il modello" },
   { href: "/track-record/", testo: "Track record" },
+  { href: "/cosa-facciamo/", testo: "Cos'è" },
 ];
 
 const attiva = (href: string) =>
@@ -30,8 +36,23 @@ const generato = new Date(campionati.generato_il);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{titolo} — Quota Vera</title>
-    {descrizione && <meta name="description" content={descrizione} />}
+    <title>{titoloCompleto}</title>
+    <meta name="description" content={descrizione} />
+    <link rel="canonical" href={canonico} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {/* Anteprima quando qualcuno incolla un link su WhatsApp o sui social:
+        senza questi tag comparirebbe solo l'indirizzo nudo. */}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Quota Vera" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:title" content={titoloCompleto} />
+    <meta property="og:description" content={descrizione} />
+    <meta property="og:url" content={canonico} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={titoloCompleto} />
+    <meta name="twitter:description" content={descrizione} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -89,7 +110,12 @@ const generato = new Date(campionati.generato_il);
         <p>
           Quota Vera pubblica statistiche e probabilità calcolate da un modello
           pubblico. <b>Non dà consigli di gioco e non contiene collegamenti a
-          operatori.</b> È un servizio informativo di analisi e comparazione.
+          operatori.</b> È un servizio informativo di analisi e comparazione —
+          <a href="/cosa-facciamo/">cos'è questo sito</a>.
+        </p>
+        <p>
+          Se giocare è diventato un problema: <b>800 940 789</b>, Numero Verde
+          Nazionale Dipendenze, anonimo e gratuito.
         </p>
       </footer>
     </div>

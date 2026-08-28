@@ -1,0 +1,223 @@
+---
+import Base from "../layouts/Base.astro";
+import campionati from "../dati/campionati.json";
+import track from "../dati/track-record.json";
+
+const num = (v: number, d = 4) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+const leghe = campionati.campionati.length;
+const storico = campionati.campionati.reduce((s, c) => s + c.partite_storico, 0);
+---
+
+<Base
+  titolo="Cos'è"
+  descrizione="Un sito di statistiche sportive che pubblica i propri numeri e ammette quello che non sa fare."
+>
+  <section>
+    <p class="occhiello">In una riga</p>
+    <div class="hd">
+      <h1>Pubblichiamo i numeri, l'idea la fai tu</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Quota Vera raccoglie le statistiche delle partite di
+        {" "}<strong>{leghe} campionati europei</strong>, calcola le probabilità con un
+        modello statistico pubblico, e le mette accanto alle quote del mercato.
+        Poi si ferma lì.
+      </p>
+      <p>
+        Non c'è una sezione «giocata del giorno», non ci sono link ai
+        bookmaker, e non c'è nessuno che vi dica su cosa puntare. Non è una
+        scelta di stile: è che <strong>i numeri dicono che non ne saremmo in
+        grado</strong>, e più sotto trovate esattamente quali numeri.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Cosa trovate</h2></div>
+    <div class="scorri">
+      <table class="dati">
+        <tbody>
+          <tr>
+            <td style="width:32%"><b>Il calendario</b></td>
+            <td>
+              Le partite in programma nei prossimi giorni, di tutti i
+              campionati insieme, con le quote migliori disponibili e quanto si
+              tiene il banco su ognuna.
+            </td>
+          </tr>
+          <tr>
+            <td><b>La scheda di ogni partita</b></td>
+            <td>
+              I numeri delle due squadre tenuti separati fra casa e trasferta —
+              perché la media complessiva nasconde proprio la differenza che
+              conta — più forma, precedenti e la tabella dei risultati esatti.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Chi segna più di quanto crea</b></td>
+            <td>
+              Gol veri contro gol attesi dai tiri in porta. È la statistica che
+              sulla distanza torna indietro più spesso di ogni altra, e quella
+              che la classifica non registra.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Il confronto fra mercati</b></td>
+            <td>
+              Quanto costa giocare, campionato per campionato. Fra il più
+              economico e il più caro c'è quasi il doppio, ed è una pagina che
+              si può costruire solo coprendo molti campionati insieme.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Come si leggono le quote</b></td>
+            <td>
+              Cos'è il margine, perché le probabilità implicite sommano a più di
+              cento, cosa vuol dire quota equa. Con i conti fatti passo per
+              passo.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Cosa non trovate, e perché</h2>
+    </div>
+    <div class="prosa">
+      <p>
+        <strong>Nessun pronostico presentato come vincente.</strong> Abbiamo
+        misurato il nostro modello contro la quota di chiusura del mercato — il
+        prezzo esposto poco prima del fischio d'inizio, quando tutte le
+        informazioni sono arrivate — su
+        {" "}<strong>{track.partite.toLocaleString("it-IT")} partite vere</strong>,
+        ristimandolo ogni giornata usando solo il passato.
+      </p>
+      <p>
+        Il risultato: Brier <strong>{num(track.brier_modello)}</strong> per il nostro
+        modello contro <strong>{num(track.brier_mercato)}</strong> del mercato.
+        <strong> Il mercato vince, in tutti i campionati.</strong> È un numero che
+        potete verificare voi: sta nella pagina
+        {" "}<a href="/track-record/">track record</a>, insieme al codice che lo
+        produce.
+      </p>
+      <p>
+        Il nostro modello è però <em>calibrato</em>: quando dice 45%, succede il
+        45% delle volte. Sono due cose diverse, e la distinzione tiene in piedi
+        tutto il sito — <strong>per descrivere una partita basta essere corretti,
+        per guadagnarci bisogna essere migliori del mercato.</strong> La prima la
+        superiamo, la seconda no.
+      </p>
+      <p>
+        <strong>Nessun collegamento a operatori di gioco</strong> e nessuna
+        pubblicità. Non guadagniamo se giocate, quindi non abbiamo motivo di
+        farvi giocare.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Da dove vengono i dati</h2></div>
+    <div class="prosa">
+      <p>
+        Da <strong>football-data.co.uk</strong>, che pubblica gratuitamente
+        risultati, statistiche di campo e quote di chiusura di più bookmaker.
+        Sono {storico.toLocaleString("it-IT")} partite di storico, e chiunque può
+        scaricare gli stessi file e rifare i nostri conti.
+      </p>
+      <p>
+        Ogni notte alle quattro un programma riscarica i dati, ristima i modelli
+        e ricostruisce il sito. Non c'è nessuno che scrive a mano i numeri che
+        leggete, e l'articolo del giorno lo compone lo stesso programma.
+      </p>
+      <p>
+        Il modello è una <strong>doppia Poisson con correzione Dixon-Coles</strong>,
+        una tecnica pubblicata nel 1997 e descritta per intero nella pagina
+        {" "}<a href="/modello/">il modello</a>. Non c'è niente di segreto: se
+        fosse segreto, non avreste modo di controllarlo.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Chi c'è dietro</h2></div>
+    <div class="prosa">
+      <p>
+        Un progetto personale, non un'azienda. Nasce dalla curiosità di
+        verificare quanto valgano davvero i numeri che circolano attorno alle
+        scommesse — e la risposta, per quel che riguarda i nostri, è scritta
+        sopra.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Se giocare è diventato un problema</h2></div>
+    <div class="avviso">
+      <p>
+        Questo sito pubblica statistiche, non inviti a scommettere. Ma se il
+        gioco è diventato un peso per voi o per qualcuno che conoscete, esiste un
+        servizio pubblico, <b>anonimo e gratuito</b>:
+      </p>
+      <p class="numero">
+        <b>800 940 789</b>
+        <span>
+          Numero Verde Nazionale Dipendenze — Istituto Superiore di Sanità.
+          Da fisso e da cellulare, dal lunedì al venerdì.
+        </span>
+      </p>
+      <p>
+        Per le sole problematiche di gioco d'azzardo resta attivo anche il
+        <b> 800 55 88 22</b>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .avviso {
+    border: 1px solid var(--rule-strong);
+    border-left: 3px solid var(--s2);
+    background: var(--card);
+    padding: 22px 24px;
+  }
+  .avviso p {
+    margin: 0 0 14px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 68ch;
+  }
+  .avviso p:last-child {
+    margin-bottom: 0;
+  }
+  .numero {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 14px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .numero b {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .numero span {
+    font-size: 13px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    max-width: 42ch;
+  }
+</style>
