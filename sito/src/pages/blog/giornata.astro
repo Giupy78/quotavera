@@ -45,6 +45,60 @@ const divario = care[0] && convenienti[0]
     </div>
   </section>
 
+  {
+    articolo.sorprese?.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Era davvero una sorpresa?</h2>
+          <p>
+            I risultati recenti che il gioco non spiega. Ha vinto chi ha tirato
+            in porta molto meno: succede, ma tende a non ripetersi.
+          </p>
+        </div>
+
+        <div class="sorprese">
+          {articolo.sorprese.map((s: any) => {
+            const vinceCasa = s.vincitore === s.casa;
+            return (
+              <div class="sorpresa">
+                <div class="risultato">
+                  <span class:list={["squadra", { perde: !vinceCasa }]}>{s.casa}</span>
+                  <b class="mono">{s.gol_casa}–{s.gol_ospite}</b>
+                  <span class:list={["squadra", { perde: vinceCasa }]}>{s.ospite}</span>
+                </div>
+                <div class="tiri">
+                  <span class="etichetta">tiri in porta</span>
+                  <b class="mono">{s.in_porta_casa}–{s.in_porta_ospite}</b>
+                </div>
+                <p class="lettura">
+                  <b>{s.vincitore}</b> ha vinto tirando in porta
+                  {" "}<b>{s.scarto_tiri} volte in meno</b> del {s.perdente}.
+                </p>
+                <div class="dove">{s.bandiera} {s.campionato}</div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div class="prosa" style="margin-top:22px">
+          <p>
+            Quando una di queste partite finisce, il racconto è sempre lo stesso:
+            <em> sorpresa</em>. Ma una vittoria arrivata tirando in porta sette
+            volte meno dell'avversario non dice che la squadra che ha vinto è più
+            forte — dice che quel giorno le è andata bene. <strong>Il tabellino
+            registra il punteggio, i tiri registrano la partita</strong>, e sulla
+            distanza è il secondo a tornare.
+          </p>
+          <p>
+            Vale anche al contrario, ed è la parte che interessa di più: chi ha
+            perso creando molto più dell'avversario non è in crisi. È
+            semplicemente una squadra a cui, quel giorno, non è entrata.
+          </p>
+        </div>
+      </section>
+    )
+  }
+
   <section>
     <div class="hd">
       <h2>Chi sta segnando più di quanto crea</h2>
@@ -197,3 +251,73 @@ const divario = care[0] && convenienti[0]
     </div>
   </section>
 </Base>
+
+<style>
+  .sorprese {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .sorpresa {
+    background: var(--card);
+    padding: 18px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .risultato {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 15px;
+  }
+  .risultato .squadra {
+    font-weight: 600;
+    min-width: 0;
+  }
+  /* Chi ha perso resta leggibile ma spento: il colpo d'occhio deve dire subito
+     chi ha vinto, senza doverlo cercare nel punteggio. */
+  .risultato .squadra.perde {
+    font-weight: 500;
+    color: var(--ink-3);
+  }
+  .risultato b {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .tiri {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+  }
+  .tiri .etichetta {
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .tiri b {
+    font-size: 15px;
+    color: var(--s1);
+  }
+  .sorpresa .lettura {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+  .sorpresa .lettura b {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .dove {
+    font-size: 11px;
+    color: var(--ink-3);
+    margin-top: auto;
+    padding-top: 6px;
+  }
+</style>

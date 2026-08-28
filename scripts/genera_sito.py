@@ -158,7 +158,50 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "squadre": squadre,
         "calendario": righe,
         "schede": schede,
+        "sorprese": sorprese(stagione, c),
     }
+
+
+def sorprese(storico, c, quante: int = 40) -> list[dict]:
+    """I risultati recenti che il gioco non spiega.
+
+    Non e' cronaca: della partita sappiamo solo i numeri, e arrivano con un
+    paio di giorni di ritardo. Ma il taglio che possiamo dare e' quello che
+    nessuno da', perche' richiede di guardare i tiri invece del tabellino:
+    **quella vittoria era meritata o e' stata varianza?**
+
+    Chi vince tirando in porta molto meno dell'avversario ha vinto contro il
+    gioco, e quel risultato tende a non ripetersi. Chi perde dominando ai tiri
+    tende a raddrizzarla. Sono le due situazioni che il pubblico legge sempre
+    al contrario, perche' la classifica registra solo il punteggio.
+    """
+    recenti = [p for p in storico if p.stat.completa][-quante:]
+    fuori = []
+    for p in recenti:
+        i = p.incontro
+        casa_p, ospite_p = p.stat.in_porta
+        esito = p.esito
+        if esito == 1:
+            continue                       # un pareggio non sorprende nessuno
+        vincitore_casa = esito == 0
+        tiri_vincitore = casa_p if vincitore_casa else ospite_p
+        tiri_perdente = ospite_p if vincitore_casa else casa_p
+        scarto = tiri_perdente - tiri_vincitore
+        if scarto < 3:
+            continue                       # ha vinto chi ha creato di piu': normale
+
+        fuori.append({
+            "campionato": c.nome, "bandiera": c.bandiera, "slug": c.slug,
+            "data": i.data.isoformat(),
+            "casa": i.casa, "ospite": i.ospite,
+            "gol_casa": i.punti_casa, "gol_ospite": i.punti_ospite,
+            "in_porta_casa": casa_p, "in_porta_ospite": ospite_p,
+            "vincitore": i.casa if vincitore_casa else i.ospite,
+            "perdente": i.ospite if vincitore_casa else i.casa,
+            "scarto_tiri": scarto,
+        })
+    fuori.sort(key=lambda x: (x["scarto_tiri"], x["data"]), reverse=True)
+    return fuori[:3]
 
 
 def articolo(leghe: list[dict]) -> dict:
@@ -185,10 +228,14 @@ def articolo(leghe: list[dict]) -> dict:
                 "id": p["id"], "casa": p["casa"], "ospite": p["ospite"],
                 "data": p["data"], "ora": p["ora"], "margine": p["margine"]}
 
+    tutte_sorprese = [s for l in leghe for s in l.get("sorprese", [])]
+    tutte_sorprese.sort(key=lambda x: x["scarto_tiri"], reverse=True)
+
     return {
         "data": date.today().isoformat(),
         "partite_in_programma": sum(len(l["calendario"]) for l in leghe),
         "campionati": len(leghe),
+        "sorprese": tutte_sorprese[:6],
         "segnano_piu_di_quanto_creano": [voce(l, s) for l, s in sopra],
         "segnano_meno_di_quanto_creano": [voce(l, s) for l, s in sotto],
         "partite_piu_care": [voce_partita(l, p) for l, p in care],
@@ -224,7 +271,8 @@ def main() -> int:
 
     print()
     indice = [{k: v for k, v in l.items()
-               if k not in ("squadre", "calendario", "schede")} for l in leghe]
+               if k not in ("squadre", "calendario", "schede", "sorprese")}
+              for l in leghe]
     scrivi("campionati.json", {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                                "fonte": "football-data.co.uk",
                                "campionati": indice})
