@@ -178,15 +178,16 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
                           })}
                           {p.ora && <i>{p.ora}</i>}
                         </span>
-                        <span class:list={["team", { spento: p.giocata && p.gol_casa < p.gol_ospite }]}>
+                        <span class:list={["team", "casa", { spento: p.giocata && p.gol_casa < p.gol_ospite }]}>
                           {p.casa}
                         </span>
-                        <b class="esito mono">
+                        <b class:list={["esito", "mono", { atteso: !p.giocata }]}>
                           {p.giocata ? `${p.gol_casa}–${p.gol_ospite}` : "–"}
                         </b>
                         <span class:list={["team", { spento: p.giocata && p.gol_ospite < p.gol_casa }]}>
                           {p.ospite}
                         </span>
+                        <span class="coda" />
                       </Riga>
                     );
                   })}
@@ -196,10 +197,18 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
           })}
         </div>
         <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:78ch">
+          <b>I risultati arrivano con uno o due giorni di ritardo.</b> Non siamo
+          un sito di risultati in diretta e non possiamo esserlo: le fonti che
+          usiamo pubblicano a intervalli — football-data un paio di volte a
+          settimana, openfootball quando i suoi volontari aggiornano. Una
+          partita giocata ieri sera può quindi comparire ancora senza punteggio.
+          Non è un guasto, è il ritardo della fonte.
+        </p>
+        <p style="font-size:12.5px;color:var(--ink-3);margin-top:8px;line-height:1.55;max-width:78ch">
           Il calendario viene da <b>openfootball</b>, che pubblica quello
-          ufficiale con le giornate già numerate. Le quote invece arrivano da
-          football-data, che ne espone solo una settimana per volta: per questo
-          le partite lontane compaiono qui ma non hanno ancora una scheda.
+          ufficiale con le giornate già numerate. Le quote arrivano invece da
+          <b> football-data</b>, che ne espone una settimana per volta: per
+          questo le partite lontane compaiono qui ma non hanno ancora una scheda.
         </p>
       </section>
     )
@@ -508,9 +517,11 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     color: var(--ink-3);
   }
 
+  /* La colonna di coda in fondo pareggia quella della data: senza, il
+     punteggio finisce a destra del centro della riga invece che al centro. */
   .elenco .voce {
     display: grid;
-    grid-template-columns: 92px minmax(0, 1fr) 56px minmax(0, 1fr);
+    grid-template-columns: 96px minmax(0, 1fr) 72px minmax(0, 1fr) 96px;
     gap: 12px;
     align-items: baseline;
     padding: 7px 18px;
@@ -533,7 +544,10 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     font-weight: 500;
     min-width: 0;
   }
-  .elenco .team:nth-of-type(1) {
+  /* Con una classe esplicita e non con nth-of-type: il primo <span> della riga
+     e' la data, quindi `.team:nth-of-type(1)` non corrispondeva a niente e la
+     squadra di casa restava allineata a sinistra. */
+  .elenco .team.casa {
     text-align: right;
   }
   .elenco .team.spento {
@@ -542,14 +556,22 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
   .elenco .esito {
     text-align: center;
     font-weight: 600;
-    color: var(--ink-2);
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .elenco .esito.atteso {
+    color: var(--ink-3);
+    font-weight: 400;
   }
   @media (max-width: 640px) {
     .elenco .voce {
-      grid-template-columns: 1fr 50px 1fr;
+      grid-template-columns: 1fr 56px 1fr;
     }
     .elenco .quando {
       grid-column: 1 / -1;
+    }
+    .elenco .coda {
+      display: none;
     }
   }
 
