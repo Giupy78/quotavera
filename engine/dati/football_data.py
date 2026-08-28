@@ -73,12 +73,32 @@ RIFERIMENTO = ("betfair", "pinnacle")
 
 
 @dataclass(frozen=True, slots=True)
+class Statistiche:
+    """Cosa è successo in campo, oltre al punteggio.
+
+    Sono nei file gratuiti per quasi tutte le partite, e valgono più dei gol
+    per capire una squadra: i gol sono pochi e il caso ci mette molto del suo,
+    i tiri in porta sono tanti e dicono la stessa cosa con meno rumore.
+    """
+
+    tiri: tuple[int, int] = (0, 0)
+    in_porta: tuple[int, int] = (0, 0)
+    corner: tuple[int, int] = (0, 0)
+    falli: tuple[int, int] = (0, 0)
+    gialli: tuple[int, int] = (0, 0)
+    rossi: tuple[int, int] = (0, 0)
+    gol_primo_tempo: tuple[int, int] = (0, 0)
+    completa: bool = False
+
+
+@dataclass(frozen=True, slots=True)
 class PartitaStorica:
-    """Una partita giocata, con il risultato e le quote di apertura e chiusura."""
+    """Una partita giocata: risultato, statistiche di campo, quote."""
 
     incontro: Incontro
     quote: dict[str, tuple[float, float, float]]
     apertura: dict[str, tuple[float, float, float]] = field(default_factory=dict)
+    stat: Statistiche = field(default_factory=Statistiche)
 
     @property
     def esito(self) -> int:
@@ -166,6 +186,45 @@ def _quota(riga: dict[str, str], colonne: tuple[str, str, str]) -> tuple[float, 
     return (fuori[0], fuori[1], fuori[2])
 
 
+def _intero(riga: dict[str, str], colonna: str) -> int | None:
+    grezzo = (riga.get(colonna) or "").strip()
+    if not grezzo:
+        return None
+    try:
+        return int(float(grezzo))
+    except ValueError:
+        return None
+
+
+def _statistiche(riga: dict[str, str]) -> Statistiche:
+    """Legge le statistiche di campo, tollerando le colonne mancanti.
+
+    Nelle stagioni piu' vecchie e in alcuni campionati minori mancano del tutto.
+    `completa` dice se ci sono almeno tiri e tiri in porta, che sono le due che
+    contano davvero: senza quelle la partita si puo' ancora usare per stimare il
+    modello sui gol, ma non per le statistiche di lettura.
+    """
+    coppie = {
+        "tiri": ("HS", "AS"),
+        "in_porta": ("HST", "AST"),
+        "corner": ("HC", "AC"),
+        "falli": ("HF", "AF"),
+        "gialli": ("HY", "AY"),
+        "rossi": ("HR", "AR"),
+        "gol_primo_tempo": ("HTHG", "HTAG"),
+    }
+    valori: dict[str, tuple[int, int]] = {}
+    for nome, (c, o) in coppie.items():
+        a, b = _intero(riga, c), _intero(riga, o)
+        valori[nome] = (a, b) if a is not None and b is not None else (0, 0)
+
+    completa = (
+        _intero(riga, "HS") is not None
+        and _intero(riga, "HST") is not None
+    )
+    return Statistiche(**valori, completa=completa)
+
+
 def leggi(percorso: Path, campionato: str = "") -> list[PartitaStorica]:
     """Legge un CSV scaricato e restituisce le partite utilizzabili.
 
@@ -198,6 +257,7 @@ def leggi(percorso: Path, campionato: str = "") -> list[PartitaStorica]:
             partite.append(
                 PartitaStorica(
                     apertura=apertura,
+                    stat=_statistiche(riga),
                     incontro=Incontro(
                         id=f"{percorso.stem}-{n}",
                         data=giorno,
