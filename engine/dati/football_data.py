@@ -21,7 +21,7 @@ from __future__ import annotations
 
 import csv
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date, datetime
 from pathlib import Path
 
@@ -57,15 +57,28 @@ LIBRI = {
     "media": ("AvgCH", "AvgCD", "AvgCA"),
 }
 
+# Le stesse colonne senza la C sono le quote di **apertura**: il primo prezzo
+# esposto, giorni prima della partita. Averle entrambe permette di misurare
+# quanto il mercato si e' mosso, e — cosa che conta molto di piu' — se
+# muovendosi ha imparato qualcosa.
+LIBRI_APERTURA = {
+    "betfair": ("BFEH", "BFED", "BFEA"),
+    "pinnacle": ("PSH", "PSD", "PSA"),
+    "bet365": ("B365H", "B365D", "B365A"),
+    "massimo": ("MaxH", "MaxD", "MaxA"),
+    "media": ("AvgH", "AvgD", "AvgA"),
+}
+
 RIFERIMENTO = ("betfair", "pinnacle")
 
 
 @dataclass(frozen=True, slots=True)
 class PartitaStorica:
-    """Una partita giocata, con il risultato e le quote di chiusura."""
+    """Una partita giocata, con il risultato e le quote di apertura e chiusura."""
 
     incontro: Incontro
     quote: dict[str, tuple[float, float, float]]
+    apertura: dict[str, tuple[float, float, float]] = field(default_factory=dict)
 
     @property
     def esito(self) -> int:
@@ -73,7 +86,7 @@ class PartitaStorica:
         c, o = self.incontro.punti_casa, self.incontro.punti_ospite
         return 0 if c > o else (1 if c == o else 2)
 
-    def riferimento(self) -> tuple[float, float, float] | None:
+    def riferimento(self, quale: str = "chiusura") -> tuple[float, float, float] | None:
         """Le quote del libro piu' affidabile fra quelli presenti.
 
         Betfair per primo, Pinnacle come riserva. Se manca anche quella la
@@ -82,10 +95,17 @@ class PartitaStorica:
         debole, e mescolarlo agli altri falserebbe il confronto senza che si
         veda. Meglio perdere la partita.
         """
+        fonte = self.quote if quale == "chiusura" else self.apertura
         for libro in RIFERIMENTO:
-            if libro in self.quote:
-                return self.quote[libro]
+            if libro in fonte:
+                return fonte[libro]
         return None
+
+    def coppia(self, libro: str) -> tuple[tuple[float, float, float],
+                                          tuple[float, float, float]] | None:
+        """(apertura, chiusura) di un libro, solo se ci sono entrambe."""
+        a, c = self.apertura.get(libro), self.quote.get(libro)
+        return (a, c) if a and c else None
 
 
 def scarica(campionato: str, stagione: str, forza: bool = False) -> Path:
@@ -169,8 +189,15 @@ def leggi(percorso: Path, campionato: str = "") -> list[PartitaStorica]:
                 if valori:
                     quote[nome] = valori
 
+            apertura = {}
+            for nome, colonne in LIBRI_APERTURA.items():
+                valori = _quota(riga, colonne)
+                if valori:
+                    apertura[nome] = valori
+
             partite.append(
                 PartitaStorica(
+                    apertura=apertura,
                     incontro=Incontro(
                         id=f"{percorso.stem}-{n}",
                         data=giorno,
