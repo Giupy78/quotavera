@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / Astro
+node_modules/
+sito/dist/
+sito/.astro/
+.wrangler/
+
+# Segreti e configurazione locale
+.env
+.dev.vars
+*.local
+
+# Dati grezzi scaricati dalle API: si riscaricano, non si versionano.
+data/grezzi/
+*.log
+
+# NON aggiungere qui sito/src/dati/: quei JSON *devono* stare nel repository.
+# Sono l'archivio dei pronostici congelati, ed è l'unica cosa che permette di
+# dimostrare un track record fra sei mesi. Se finissero in gitignore il
+# progetto perderebbe la sua ragione di esistere.

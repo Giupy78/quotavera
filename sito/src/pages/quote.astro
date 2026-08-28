@@ -1,0 +1,351 @@
+---
+import Base from "../layouts/Base.astro";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+/* Un esempio lavorato fino in fondo, con i conti fatti qui e non copiati:
+   se i numeri della pagina che spiega i numeri fossero scritti a mano,
+   prima o poi smetterebbero di tornare. */
+const quote = [2.21, 3.33, 3.42];
+const nomi = ["1 — casa", "X — pareggio", "2 — trasferta"];
+
+const inverse = quote.map((q) => 1 / q);
+const somma = inverse.reduce((a, b) => a + b, 0);
+const margine = somma - 1;
+const ingenue = inverse.map((i) => i / somma);
+
+/* Shin: si cerca per bisezione la z che fa sommare le probabilità a 1. */
+function shin(inv: number[], s: number) {
+  const prob = (z: number) =>
+    inv.map((q) => (Math.sqrt(z * z + (4 * (1 - z) * q * q) / s) - z) / (2 * (1 - z)));
+  let lo = 0,
+    hi = 0.5;
+  for (let i = 0; i < 80; i++) {
+    const mid = (lo + hi) / 2;
+    if (prob(mid).reduce((a, b) => a + b, 0) > 1) lo = mid;
+    else hi = mid;
+  }
+  const p = prob((lo + hi) / 2);
+  const t = p.reduce((a, b) => a + b, 0);
+  return p.map((x) => x / t);
+}
+const corrette = shin(inverse, somma);
+
+const modello = [0.455, 0.285, 0.26];
+const equa = modello.map((p) => 1 / p);
+const valore = modello.map((p, i) => p * quote[i] - 1);
+---
+
+<Base
+  titolo="Come si leggono le quote"
+  descrizione="Cosa vuol dire una quota, come diventa una probabilità, e quanto si tiene il banco."
+  simulato={false}
+>
+  <section>
+    <p class="occhiello">Le basi, per intero</p>
+    <div class="hd">
+      <h1>Come si leggono le quote</h1>
+      <p>
+        Nessun sito lo spiega davvero, e quasi tutti contano su questo. Qui c'è
+        tutto, con i conti fatti passo per passo su un esempio.
+      </p>
+    </div>
+
+    <div class="prosa">
+      <p>
+        <strong>Una quota è un prezzo, non una previsione.</strong> Quando un
+        bookmaker scrive <span class="mono">2,21</span>, sta dicendo: mettici un
+        euro e se hai ragione te ne ridò 2,21 — il tuo euro più 1,21 di vincita.
+        Nient'altro. Non ti sta dicendo cosa pensa che succederà: ti sta dicendo
+        a che prezzo è disposto a prendere la tua scommessa.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>1. Da quota a probabilità</h2>
+      <p>Il primo passo è capovolgerla: la probabilità è uno diviso la quota.</p>
+    </div>
+
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Esito</th>
+            <th class="num">Quota</th>
+            <th class="num">1 ÷ quota</th>
+            <th>Si legge</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            quote.map((q, i) => (
+              <tr>
+                <td><b>{nomi[i]}</b></td>
+                <td class="num">{num(q)}</td>
+                <td class="num">{pct(inverse[i])}</td>
+                <td style="color:var(--ink-2)">
+                  «succede circa {Math.round(inverse[i] * 100)} volte su 100»
+                </td>
+              </tr>
+            ))
+          }
+          <tr style="border-top:2px solid var(--rule-strong)">
+            <td><b>Totale</b></td>
+            <td class="num">—</td>
+            <td class="num" style="color:var(--s2);font-weight:600">{pct(somma)}</td>
+            <td style="color:var(--ink-2)">e qui c'è il problema</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prosa" style="margin-top:22px">
+      <p>
+        <strong>Somma {pct(somma)}, non 100%.</strong> Le tre probabilità
+        implicite sommano a più di uno, il che è impossibile: uno dei tre esiti
+        succede sempre. Quel {pct(margine)} in più è il
+        <strong> margine del banco</strong> — in gergo <em>overround</em> o
+        <em>vigorish</em>. È il prezzo del servizio, ed è la ragione per cui su
+        una lunga serie di scommesse a caso si perde.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>2. Il margine, e perché non è distribuito in modo uniforme</h2>
+      <p>Qui casca quasi tutto quello che si legge in giro.</p>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Il modo ovvio di togliere il margine è dividere ogni probabilità per la
+        somma. È anche il modo <strong>sbagliato</strong>, e produce un errore
+        che ha una direzione precisa: sovrastima sistematicamente gli esiti
+        improbabili.
+      </p>
+      <p>
+        Il motivo è che il banco non spalma il margine in modo uniforme. Ne mette
+        di più sulle quote lunghe, perché è lì che si concentrano le scommesse
+        emotive e le poche scommesse informate. È un fenomeno documentato da
+        decenni: si chiama <em>favourite-longshot bias</em>. Il metodo di
+        <strong>Shin</strong> lo modella esplicitamente, e restituisce
+        probabilità più vicine alla realtà.
+      </p>
+    </div>
+
+    <div class="scorri" style="margin-top:20px">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Esito</th>
+            <th class="num">Grezza</th>
+            <th class="num">Divisa per la somma</th>
+            <th class="num">Con Shin</th>
+            <th class="num">Differenza</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            quote.map((_, i) => (
+              <tr>
+                <td><b>{nomi[i]}</b></td>
+                <td class="num" style="color:var(--ink-3)">{pct(inverse[i], 2)}</td>
+                <td class="num">{pct(ingenue[i], 2)}</td>
+                <td class="num"><b>{pct(corrette[i], 2)}</b></td>
+                <td
+                  class="num"
+                  style={`color:${corrette[i] < ingenue[i] ? "var(--s3)" : "var(--s1)"}`}
+                >
+                  {corrette[i] - ingenue[i] >= 0 ? "+" : ""}
+                  {num((corrette[i] - ingenue[i]) * 100, 2)} pt
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:76ch">
+      Su un 1X2 equilibrato la differenza è di frazioni di punto. Su un mercato
+      con una quota a 15 o a 30 diventa di parecchi punti — ed è esattamente lì
+      che i siti che dividono per la somma «trovano valore» che non esiste.
+    </p>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>3. La quota equa e il valore atteso</h2>
+      <p>Le uniche due grandezze che dicono se una giocata ha senso.</p>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Se il nostro modello dice che l'1 vale {pct(modello[0])}, la
+        <strong> quota equa</strong> è uno diviso quella probabilità:
+        <span class="mono"> {num(equa[0])}</span>. È la quota a cui, giocando
+        all'infinito, si finirebbe in pari. Sopra si guadagna, sotto si perde.
+      </p>
+      <p>
+        Il <strong>valore atteso</strong> mette insieme le due cose:
+        probabilità × quota − 1. Se viene positivo, quella giocata ha un
+        vantaggio matematico; se viene negativo, ce l'ha il banco.
+      </p>
+    </div>
+
+    <div class="scorri" style="margin-top:20px">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Esito</th>
+            <th class="num">Modello</th>
+            <th class="num">Quota equa</th>
+            <th class="num">Quota offerta</th>
+            <th class="num">Valore atteso</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            quote.map((q, i) => (
+              <tr>
+                <td><b>{nomi[i]}</b></td>
+                <td class="num">{pct(modello[i])}</td>
+                <td class="num">{num(equa[i])}</td>
+                <td class="num">{num(q)}</td>
+                <td
+                  class="num"
+                  style={`font-weight:600;color:${valore[i] >= 0 ? "var(--good)" : "var(--ink-3)"}`}
+                >
+                  {valore[i] >= 0 ? "+" : ""}
+                  {num(valore[i] * 100, 1)}%
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prosa" style="margin-top:22px">
+      <p>
+        In questo esempio l'1 è quasi esattamente al prezzo giusto: quota equa
+        {" "}<span class="mono">{num(equa[0])}</span> contro
+        {" "}<span class="mono">{num(quote[0])}</span> offerta, cioè
+        {" "}{num(valore[0] * 100, 1)}% di valore. <strong>È la situazione
+        normale</strong>, ed è la ragione per cui su questo sito la colonna
+        delle occasioni è vuota quasi sempre.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>4. Il numero che conta più di tutti: la quota di chiusura</h2>
+    </div>
+    <div class="prosa">
+      <p>
+        La <strong>quota di chiusura</strong> è quella che il mercato espone
+        pochi minuti prima dell'inizio, quando tutte le informazioni sono
+        arrivate e tutti i soldi sono stati mossi. È la stima migliore che
+        esista al mondo su quella partita — migliore di qualsiasi modello
+        pubblico.
+      </p>
+      <p>
+        Da qui esce l'unica misura di bravura che <strong>non dipende da come è
+        finita la partita</strong>: se prendi sistematicamente quote più alte di
+        quella di chiusura, hai un vantaggio reale, anche se stai perdendo. Se
+        prendi quote più basse, stai perdendo anche mentre vinci — e te ne
+        accorgerai fra sei mesi.
+      </p>
+      <p>
+        È il numero che nessun sito di pronostici pubblica, perché è l'unico che
+        non si può raccontare.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>5. Tre trappole da riconoscere</h2>
+    </div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Quando leggi…</th>
+            <th>Sta succedendo questo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>«Value bet» a quota 40, 50, 70</b></td>
+            <td style="color:var(--ink-2)">
+              Nessuno prezza sul serio un esito da 70. O è un listino sbagliato
+              che il banco annullerà, o è una probabilità calcolata dividendo
+              per la somma. In nessuno dei due casi è valore.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Un'occasione in ogni partita del turno</b></td>
+            <td style="color:var(--ink-2)">
+              La soglia è più bassa dell'errore del modello: quello che viene
+              chiamato valore è il rumore dello stimatore. Un modello onesto
+              trova poco, e spesso niente.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Un rendimento senza il numero di giocate</b></td>
+            <td style="color:var(--ink-2)">
+              Su cinquanta giocate l'intervallo di confidenza è largo decine di
+              punti: un +20% e un −20% sono lo stesso risultato. Senza il
+              conteggio, la percentuale non significa niente.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Il riassunto, in cinque righe</h2></div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr><th>Termine</th><th>Formula</th><th>Cosa dice</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Probabilità implicita</b></td>
+            <td class="mono">1 ÷ quota</td>
+            <td style="color:var(--ink-2)">Quanto il prezzo suggerisce, margine incluso</td>
+          </tr>
+          <tr>
+            <td><b>Margine</b></td>
+            <td class="mono">Σ(1 ÷ quota) − 1</td>
+            <td style="color:var(--ink-2)">Quanto si tiene il banco su quel mercato</td>
+          </tr>
+          <tr>
+            <td><b>Quota equa</b></td>
+            <td class="mono">1 ÷ probabilità</td>
+            <td style="color:var(--ink-2)">Il prezzo a cui si finirebbe in pari</td>
+          </tr>
+          <tr>
+            <td><b>Valore atteso</b></td>
+            <td class="mono">probabilità × quota − 1</td>
+            <td style="color:var(--ink-2)">Il guadagno per euro giocato, sul lungo periodo</td>
+          </tr>
+          <tr>
+            <td><b>Valore di chiusura</b></td>
+            <td class="mono">quota presa ÷ quota di chiusura − 1</td>
+            <td style="color:var(--ink-2)">Se hai un vantaggio vero, indipendente dagli esiti</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,931 @@
+{
+ "simulato": true,
+ "campionati": {
+  "serie-a": [
+   {
+    "squadra": "Inter",
+    "attacco": 0.3102,
+    "difesa": 0.0967,
+    "fatti": 1.832,
+    "subiti": 0.908
+   },
+   {
+    "squadra": "Napoli",
+    "attacco": 0.2868,
+    "difesa": -0.1483,
+    "fatti": 1.789,
+    "subiti": 1.16
+   },
+   {
+    "squadra": "Juventus",
+    "attacco": 0.2318,
+    "difesa": -0.0773,
+    "fatti": 1.693,
+    "subiti": 1.08
+   },
+   {
+    "squadra": "Atalanta",
+    "attacco": 0.2678,
+    "difesa": -0.1464,
+    "fatti": 1.756,
+    "subiti": 1.158
+   },
+   {
+    "squadra": "Milan",
+    "attacco": 0.1846,
+    "difesa": -0.0811,
+    "fatti": 1.615,
+    "subiti": 1.085
+   },
+   {
+    "squadra": "Roma",
+    "attacco": 0.1612,
+    "difesa": -0.1984,
+    "fatti": 1.578,
+    "subiti": 1.219
+   },
+   {
+    "squadra": "Lazio",
+    "attacco": 0.0793,
+    "difesa": -0.1438,
+    "fatti": 1.454,
+    "subiti": 1.155
+   },
+   {
+    "squadra": "Torino",
+    "attacco": -0.07,
+    "difesa": -0.1606,
+    "fatti": 1.252,
+    "subiti": 1.174
+   },
+   {
+    "squadra": "Bologna",
+    "attacco": 0.0474,
+    "difesa": -0.288,
+    "fatti": 1.408,
+    "subiti": 1.334
+   },
+   {
+    "squadra": "Fiorentina",
+    "attacco": -0.0295,
+    "difesa": -0.2984,
+    "fatti": 1.304,
+    "subiti": 1.348
+   },
+   {
+    "squadra": "Udinese",
+    "attacco": 0.0645,
+    "difesa": -0.4737,
+    "fatti": 1.433,
+    "subiti": 1.606
+   },
+   {
+    "squadra": "Empoli",
+    "attacco": -0.1296,
+    "difesa": -0.3643,
+    "fatti": 1.18,
+    "subiti": 1.44
+   },
+   {
+    "squadra": "Genoa",
+    "attacco": -0.0889,
+    "difesa": -0.4191,
+    "fatti": 1.229,
+    "subiti": 1.521
+   },
+   {
+    "squadra": "Verona",
+    "attacco": -0.2235,
+    "difesa": -0.4753,
+    "fatti": 1.074,
+    "subiti": 1.609
+   },
+   {
+    "squadra": "Lecce",
+    "attacco": -0.2636,
+    "difesa": -0.4684,
+    "fatti": 1.032,
+    "subiti": 1.597
+   },
+   {
+    "squadra": "Cagliari",
+    "attacco": -0.2454,
+    "difesa": -0.5147,
+    "fatti": 1.051,
+    "subiti": 1.673
+   },
+   {
+    "squadra": "Como",
+    "attacco": -0.2678,
+    "difesa": -0.5712,
+    "fatti": 1.028,
+    "subiti": 1.77
+   },
+   {
+    "squadra": "Parma",
+    "attacco": -0.3152,
+    "difesa": -0.5777,
+    "fatti": 0.98,
+    "subiti": 1.782
+   }
+  ],
+  "premier-league": [
+   {
+    "squadra": "Manchester City",
+    "attacco": 0.3102,
+    "difesa": 0.0951,
+    "fatti": 1.872,
+    "subiti": 0.909
+   },
+   {
+    "squadra": "Arsenal",
+    "attacco": 0.3067,
+    "difesa": -0.141,
+    "fatti": 1.866,
+    "subiti": 1.151
+   },
+   {
+    "squadra": "Tottenham",
+    "attacco": 0.2599,
+    "difesa": -0.1813,
+    "fatti": 1.78,
+    "subiti": 1.199
+   },
+   {
+    "squadra": "Liverpool",
+    "attacco": 0.2444,
+    "difesa": -0.1585,
+    "fatti": 1.753,
+    "subiti": 1.172
+   },
+   {
+    "squadra": "Chelsea",
+    "attacco": 0.1907,
+    "difesa": -0.1249,
+    "fatti": 1.661,
+    "subiti": 1.133
+   },
+   {
+    "squadra": "Newcastle",
+    "attacco": 0.1141,
+    "difesa": -0.069,
+    "fatti": 1.539,
+    "subiti": 1.071
+   },
+   {
+    "squadra": "Manchester United",
+    "attacco": 0.1217,
+    "difesa": -0.2775,
+    "fatti": 1.551,
+    "subiti": 1.32
+   },
+   {
+    "squadra": "Aston Villa",
+    "attacco": 0.1741,
+    "difesa": -0.3468,
+    "fatti": 1.634,
+    "subiti": 1.414
+   },
+   {
+    "squadra": "Crystal Palace",
+    "attacco": -0.057,
+    "difesa": -0.2407,
+    "fatti": 1.297,
+    "subiti": 1.272
+   },
+   {
+    "squadra": "Brighton",
+    "attacco": 0.0525,
+    "difesa": -0.36,
+    "fatti": 1.447,
+    "subiti": 1.433
+   },
+   {
+    "squadra": "West Ham",
+    "attacco": 0.0372,
+    "difesa": -0.353,
+    "fatti": 1.425,
+    "subiti": 1.423
+   },
+   {
+    "squadra": "Fulham",
+    "attacco": -0.1471,
+    "difesa": -0.4094,
+    "fatti": 1.185,
+    "subiti": 1.506
+   },
+   {
+    "squadra": "Brentford",
+    "attacco": -0.2086,
+    "difesa": -0.3811,
+    "fatti": 1.114,
+    "subiti": 1.464
+   },
+   {
+    "squadra": "Everton",
+    "attacco": -0.1417,
+    "difesa": -0.4373,
+    "fatti": 1.192,
+    "subiti": 1.549
+   },
+   {
+    "squadra": "Nottingham Forest",
+    "attacco": -0.2391,
+    "difesa": -0.5136,
+    "fatti": 1.081,
+    "subiti": 1.671
+   },
+   {
+    "squadra": "Wolves",
+    "attacco": -0.2767,
+    "difesa": -0.556,
+    "fatti": 1.041,
+    "subiti": 1.744
+   },
+   {
+    "squadra": "Bournemouth",
+    "attacco": -0.2921,
+    "difesa": -0.6293,
+    "fatti": 1.025,
+    "subiti": 1.876
+   },
+   {
+    "squadra": "Leeds",
+    "attacco": -0.4492,
+    "difesa": -0.6209,
+    "fatti": 0.876,
+    "subiti": 1.861
+   }
+  ],
+  "laliga": [
+   {
+    "squadra": "Real Madrid",
+    "attacco": 0.3257,
+    "difesa": 0.2525,
+    "fatti": 1.738,
+    "subiti": 0.777
+   },
+   {
+    "squadra": "Barcellona",
+    "attacco": 0.3438,
+    "difesa": 0.0222,
+    "fatti": 1.77,
+    "subiti": 0.978
+   },
+   {
+    "squadra": "Atletico Madrid",
+    "attacco": 0.3074,
+    "difesa": 0.0684,
+    "fatti": 1.707,
+    "subiti": 0.934
+   },
+   {
+    "squadra": "Athletic Bilbao",
+    "attacco": 0.1953,
+    "difesa": 0.0207,
+    "fatti": 1.526,
+    "subiti": 0.979
+   },
+   {
+    "squadra": "Betis",
+    "attacco": 0.1997,
+    "difesa": -0.083,
+    "fatti": 1.533,
+    "subiti": 1.087
+   },
+   {
+    "squadra": "Real Sociedad",
+    "attacco": 0.1689,
+    "difesa": -0.054,
+    "fatti": 1.486,
+    "subiti": 1.056
+   },
+   {
+    "squadra": "Villarreal",
+    "attacco": 0.1697,
+    "difesa": -0.1118,
+    "fatti": 1.487,
+    "subiti": 1.118
+   },
+   {
+    "squadra": "Valencia",
+    "attacco": 0.1254,
+    "difesa": -0.1691,
+    "fatti": 1.423,
+    "subiti": 1.184
+   },
+   {
+    "squadra": "Girona",
+    "attacco": 0.0131,
+    "difesa": -0.1551,
+    "fatti": 1.272,
+    "subiti": 1.168
+   },
+   {
+    "squadra": "Siviglia",
+    "attacco": -0.0562,
+    "difesa": -0.2785,
+    "fatti": 1.187,
+    "subiti": 1.321
+   },
+   {
+    "squadra": "Rayo Vallecano",
+    "attacco": -0.1208,
+    "difesa": -0.3228,
+    "fatti": 1.112,
+    "subiti": 1.381
+   },
+   {
+    "squadra": "Celta Vigo",
+    "attacco": -0.0563,
+    "difesa": -0.3782,
+    "fatti": 1.186,
+    "subiti": 1.46
+   },
+   {
+    "squadra": "Osasuna",
+    "attacco": -0.1369,
+    "difesa": -0.3569,
+    "fatti": 1.094,
+    "subiti": 1.429
+   },
+   {
+    "squadra": "Getafe",
+    "attacco": -0.2496,
+    "difesa": -0.4607,
+    "fatti": 0.978,
+    "subiti": 1.585
+   },
+   {
+    "squadra": "Alaves",
+    "attacco": -0.2936,
+    "difesa": -0.4486,
+    "fatti": 0.936,
+    "subiti": 1.566
+   },
+   {
+    "squadra": "Maiorca",
+    "attacco": -0.2048,
+    "difesa": -0.5029,
+    "fatti": 1.023,
+    "subiti": 1.653
+   },
+   {
+    "squadra": "Espanyol",
+    "attacco": -0.3342,
+    "difesa": -0.5696,
+    "fatti": 0.899,
+    "subiti": 1.768
+   },
+   {
+    "squadra": "Leganes",
+    "attacco": -0.3966,
+    "difesa": -0.5626,
+    "fatti": 0.844,
+    "subiti": 1.755
+   }
+  ],
+  "bundesliga": [
+   {
+    "squadra": "Bayern Monaco",
+    "attacco": 0.3545,
+    "difesa": -0.0952,
+    "fatti": 2.274,
+    "subiti": 1.1
+   },
+   {
+    "squadra": "Lipsia",
+    "attacco": 0.3187,
+    "difesa": -0.2208,
+    "fatti": 2.194,
+    "subiti": 1.247
+   },
+   {
+    "squadra": "Bayer Leverkusen",
+    "attacco": 0.3166,
+    "difesa": -0.2678,
+    "fatti": 2.189,
+    "subiti": 1.307
+   },
+   {
+    "squadra": "Stoccarda",
+    "attacco": 0.2225,
+    "difesa": -0.2525,
+    "fatti": 1.992,
+    "subiti": 1.287
+   },
+   {
+    "squadra": "Friburgo",
+    "attacco": 0.0702,
+    "difesa": -0.2648,
+    "fatti": 1.711,
+    "subiti": 1.303
+   },
+   {
+    "squadra": "Borussia Dortmund",
+    "attacco": 0.1449,
+    "difesa": -0.3832,
+    "fatti": 1.844,
+    "subiti": 1.467
+   },
+   {
+    "squadra": "Eintracht Francoforte",
+    "attacco": 0.1112,
+    "difesa": -0.3571,
+    "fatti": 1.783,
+    "subiti": 1.429
+   },
+   {
+    "squadra": "Hoffenheim",
+    "attacco": 0.0972,
+    "difesa": -0.4983,
+    "fatti": 1.758,
+    "subiti": 1.646
+   },
+   {
+    "squadra": "Augusta",
+    "attacco": -0.0615,
+    "difesa": -0.4826,
+    "fatti": 1.5,
+    "subiti": 1.62
+   },
+   {
+    "squadra": "Werder Brema",
+    "attacco": -0.1041,
+    "difesa": -0.5186,
+    "fatti": 1.437,
+    "subiti": 1.68
+   },
+   {
+    "squadra": "Wolfsburg",
+    "attacco": -0.1331,
+    "difesa": -0.6132,
+    "fatti": 1.396,
+    "subiti": 1.846
+   },
+   {
+    "squadra": "Mainz",
+    "attacco": -0.1076,
+    "difesa": -0.6691,
+    "fatti": 1.432,
+    "subiti": 1.952
+   },
+   {
+    "squadra": "Borussia M'gladbach",
+    "attacco": -0.2407,
+    "difesa": -0.6016,
+    "fatti": 1.254,
+    "subiti": 1.825
+   },
+   {
+    "squadra": "Heidenheim",
+    "attacco": -0.3111,
+    "difesa": -0.686,
+    "fatti": 1.169,
+    "subiti": 1.986
+   },
+   {
+    "squadra": "Union Berlino",
+    "attacco": -0.256,
+    "difesa": -0.7336,
+    "fatti": 1.235,
+    "subiti": 2.082
+   },
+   {
+    "squadra": "St. Pauli",
+    "attacco": -0.4218,
+    "difesa": -0.8258,
+    "fatti": 1.046,
+    "subiti": 2.284
+   }
+  ],
+  "ligue-1": [
+   {
+    "squadra": "Paris Saint-Germain",
+    "attacco": 0.4094,
+    "difesa": 0.0599,
+    "fatti": 2.029,
+    "subiti": 0.942
+   },
+   {
+    "squadra": "Monaco",
+    "attacco": 0.4067,
+    "difesa": -0.0075,
+    "fatti": 2.023,
+    "subiti": 1.008
+   },
+   {
+    "squadra": "Lilla",
+    "attacco": 0.2162,
+    "difesa": 0.0104,
+    "fatti": 1.673,
+    "subiti": 0.99
+   },
+   {
+    "squadra": "Marsiglia",
+    "attacco": 0.2601,
+    "difesa": -0.1263,
+    "fatti": 1.747,
+    "subiti": 1.135
+   },
+   {
+    "squadra": "Nizza",
+    "attacco": 0.1131,
+    "difesa": -0.1602,
+    "fatti": 1.509,
+    "subiti": 1.174
+   },
+   {
+    "squadra": "Lione",
+    "attacco": 0.1225,
+    "difesa": -0.2539,
+    "fatti": 1.523,
+    "subiti": 1.289
+   },
+   {
+    "squadra": "Lens",
+    "attacco": 0.0489,
+    "difesa": -0.231,
+    "fatti": 1.415,
+    "subiti": 1.26
+   },
+   {
+    "squadra": "Strasburgo",
+    "attacco": -0.0748,
+    "difesa": -0.2077,
+    "fatti": 1.25,
+    "subiti": 1.231
+   },
+   {
+    "squadra": "Rennes",
+    "attacco": 0.011,
+    "difesa": -0.3442,
+    "fatti": 1.362,
+    "subiti": 1.411
+   },
+   {
+    "squadra": "Brest",
+    "attacco": -0.0668,
+    "difesa": -0.3915,
+    "fatti": 1.26,
+    "subiti": 1.479
+   },
+   {
+    "squadra": "Tolosa",
+    "attacco": -0.0684,
+    "difesa": -0.4561,
+    "fatti": 1.258,
+    "subiti": 1.578
+   },
+   {
+    "squadra": "Reims",
+    "attacco": -0.2204,
+    "difesa": -0.4148,
+    "fatti": 1.081,
+    "subiti": 1.514
+   },
+   {
+    "squadra": "Nantes",
+    "attacco": -0.1563,
+    "difesa": -0.5372,
+    "fatti": 1.152,
+    "subiti": 1.711
+   },
+   {
+    "squadra": "Auxerre",
+    "attacco": -0.2124,
+    "difesa": -0.5666,
+    "fatti": 1.089,
+    "subiti": 1.762
+   },
+   {
+    "squadra": "Angers",
+    "attacco": -0.3526,
+    "difesa": -0.5494,
+    "fatti": 0.947,
+    "subiti": 1.732
+   },
+   {
+    "squadra": "Le Havre",
+    "attacco": -0.4362,
+    "difesa": -0.5937,
+    "fatti": 0.871,
+    "subiti": 1.811
+   }
+  ],
+  "eredivisie": [
+   {
+    "squadra": "PSV",
+    "attacco": 0.5315,
+    "difesa": -0.0389,
+    "fatti": 2.92,
+    "subiti": 1.04
+   },
+   {
+    "squadra": "Feyenoord",
+    "attacco": 0.3742,
+    "difesa": -0.2086,
+    "fatti": 2.495,
+    "subiti": 1.232
+   },
+   {
+    "squadra": "AZ Alkmaar",
+    "attacco": 0.2951,
+    "difesa": -0.2602,
+    "fatti": 2.305,
+    "subiti": 1.297
+   },
+   {
+    "squadra": "Ajax",
+    "attacco": 0.3,
+    "difesa": -0.3448,
+    "fatti": 2.316,
+    "subiti": 1.412
+   },
+   {
+    "squadra": "Twente",
+    "attacco": 0.208,
+    "difesa": -0.3294,
+    "fatti": 2.113,
+    "subiti": 1.39
+   },
+   {
+    "squadra": "Go Ahead Eagles",
+    "attacco": 0.1015,
+    "difesa": -0.3817,
+    "fatti": 1.899,
+    "subiti": 1.465
+   },
+   {
+    "squadra": "Utrecht",
+    "attacco": 0.1307,
+    "difesa": -0.4952,
+    "fatti": 1.956,
+    "subiti": 1.641
+   },
+   {
+    "squadra": "Sparta Rotterdam",
+    "attacco": 0.0455,
+    "difesa": -0.5324,
+    "fatti": 1.796,
+    "subiti": 1.703
+   },
+   {
+    "squadra": "Heerenveen",
+    "attacco": -0.1155,
+    "difesa": -0.4924,
+    "fatti": 1.529,
+    "subiti": 1.636
+   },
+   {
+    "squadra": "NEC",
+    "attacco": -0.0212,
+    "difesa": -0.638,
+    "fatti": 1.68,
+    "subiti": 1.893
+   },
+   {
+    "squadra": "Groningen",
+    "attacco": -0.1221,
+    "difesa": -0.7323,
+    "fatti": 1.519,
+    "subiti": 2.08
+   },
+   {
+    "squadra": "Zwolle",
+    "attacco": -0.2624,
+    "difesa": -0.6902,
+    "fatti": 1.32,
+    "subiti": 1.994
+   },
+   {
+    "squadra": "Fortuna Sittard",
+    "attacco": -0.2642,
+    "difesa": -0.7994,
+    "fatti": 1.318,
+    "subiti": 2.224
+   },
+   {
+    "squadra": "Waalwijk",
+    "attacco": -0.3363,
+    "difesa": -0.8622,
+    "fatti": 1.226,
+    "subiti": 2.368
+   },
+   {
+    "squadra": "Almere City",
+    "attacco": -0.4322,
+    "difesa": -0.8997,
+    "fatti": 1.114,
+    "subiti": 2.459
+   },
+   {
+    "squadra": "Willem II",
+    "attacco": -0.4325,
+    "difesa": -0.9345,
+    "fatti": 1.113,
+    "subiti": 2.546
+   }
+  ],
+  "primeira-liga": [
+   {
+    "squadra": "Sporting",
+    "attacco": 0.4696,
+    "difesa": 0.2285,
+    "fatti": 2.002,
+    "subiti": 0.796
+   },
+   {
+    "squadra": "Benfica",
+    "attacco": 0.4201,
+    "difesa": 0.3372,
+    "fatti": 1.906,
+    "subiti": 0.714
+   },
+   {
+    "squadra": "Porto",
+    "attacco": 0.345,
+    "difesa": 0.0492,
+    "fatti": 1.768,
+    "subiti": 0.952
+   },
+   {
+    "squadra": "Braga",
+    "attacco": 0.2068,
+    "difesa": 0.0011,
+    "fatti": 1.54,
+    "subiti": 0.999
+   },
+   {
+    "squadra": "Vitoria Guimaraes",
+    "attacco": 0.2342,
+    "difesa": -0.1358,
+    "fatti": 1.582,
+    "subiti": 1.145
+   },
+   {
+    "squadra": "Moreirense",
+    "attacco": 0.1252,
+    "difesa": -0.0926,
+    "fatti": 1.419,
+    "subiti": 1.097
+   },
+   {
+    "squadra": "Famalicao",
+    "attacco": 0.1115,
+    "difesa": -0.1478,
+    "fatti": 1.4,
+    "subiti": 1.159
+   },
+   {
+    "squadra": "Santa Clara",
+    "attacco": -0.106,
+    "difesa": -0.3118,
+    "fatti": 1.126,
+    "subiti": 1.366
+   },
+   {
+    "squadra": "Casa Pia",
+    "attacco": -0.2339,
+    "difesa": -0.2732,
+    "fatti": 0.991,
+    "subiti": 1.314
+   },
+   {
+    "squadra": "Estoril",
+    "attacco": -0.1456,
+    "difesa": -0.4272,
+    "fatti": 1.082,
+    "subiti": 1.533
+   },
+   {
+    "squadra": "Arouca",
+    "attacco": -0.2429,
+    "difesa": -0.5012,
+    "fatti": 0.982,
+    "subiti": 1.651
+   },
+   {
+    "squadra": "Gil Vicente",
+    "attacco": -0.2832,
+    "difesa": -0.591,
+    "fatti": 0.943,
+    "subiti": 1.806
+   },
+   {
+    "squadra": "Nacional",
+    "attacco": -0.5047,
+    "difesa": -0.5967,
+    "fatti": 0.756,
+    "subiti": 1.816
+   },
+   {
+    "squadra": "Farense",
+    "attacco": -0.3962,
+    "difesa": -0.6837,
+    "fatti": 0.842,
+    "subiti": 1.981
+   }
+  ],
+  "superlig": [
+   {
+    "squadra": "Galatasaray",
+    "attacco": 0.492,
+    "difesa": -0.0255,
+    "fatti": 2.461,
+    "subiti": 1.026
+   },
+   {
+    "squadra": "Fenerbahçe",
+    "attacco": 0.3271,
+    "difesa": -0.2279,
+    "fatti": 2.087,
+    "subiti": 1.256
+   },
+   {
+    "squadra": "Beşiktaş",
+    "attacco": 0.2902,
+    "difesa": -0.2481,
+    "fatti": 2.012,
+    "subiti": 1.282
+   },
+   {
+    "squadra": "Trabzonspor",
+    "attacco": 0.2,
+    "difesa": -0.1951,
+    "fatti": 1.838,
+    "subiti": 1.215
+   },
+   {
+    "squadra": "Başakşehir",
+    "attacco": 0.2095,
+    "difesa": -0.2643,
+    "fatti": 1.856,
+    "subiti": 1.303
+   },
+   {
+    "squadra": "Adana Demirspor",
+    "attacco": 0.1293,
+    "difesa": -0.3479,
+    "fatti": 1.713,
+    "subiti": 1.416
+   },
+   {
+    "squadra": "Kasımpaşa",
+    "attacco": 0.0683,
+    "difesa": -0.3042,
+    "fatti": 1.611,
+    "subiti": 1.356
+   },
+   {
+    "squadra": "Antalyaspor",
+    "attacco": -0.0206,
+    "difesa": -0.3364,
+    "fatti": 1.474,
+    "subiti": 1.4
+   },
+   {
+    "squadra": "Alanyaspor",
+    "attacco": -0.13,
+    "difesa": -0.5152,
+    "fatti": 1.321,
+    "subiti": 1.674
+   },
+   {
+    "squadra": "Konyaspor",
+    "attacco": -0.2383,
+    "difesa": -0.5272,
+    "fatti": 1.186,
+    "subiti": 1.694
+   },
+   {
+    "squadra": "Sivasspor",
+    "attacco": -0.2429,
+    "difesa": -0.6195,
+    "fatti": 1.18,
+    "subiti": 1.858
+   },
+   {
+    "squadra": "Rizespor",
+    "attacco": -0.2109,
+    "difesa": -0.6874,
+    "fatti": 1.219,
+    "subiti": 1.989
+   },
+   {
+    "squadra": "Gaziantep",
+    "attacco": -0.3985,
+    "difesa": -0.668,
+    "fatti": 1.01,
+    "subiti": 1.95
+   },
+   {
+    "squadra": "Hatayspor",
+    "attacco": -0.4751,
+    "difesa": -0.7561,
+    "fatti": 0.936,
+    "subiti": 2.13
+   }
+  ]
+ }
+}

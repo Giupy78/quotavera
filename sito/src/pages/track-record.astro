@@ -1,0 +1,210 @@
+---
+import Base from "../layouts/Base.astro";
+import Calibrazione from "../components/Calibrazione.astro";
+import Rendimento from "../components/Rendimento.astro";
+import campionati from "../dati/campionati.json";
+import verifiche from "../dati/verifiche.json";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+const leghe = campionati.campionati;
+const per = verifiche.campionati as Record<string, any>;
+const tutte = Object.values(per);
+
+/* Aggregato su tutti i campionati: le misure si sommano pesando per partite,
+   perché una lega con 600 partite deve contare più di una con 300. */
+const partite = tutte.reduce((s, v) => s + v.partite, 0);
+const pesata = (chiave: string) =>
+  tutte.reduce((s, v) => s + v[chiave] * v.partite, 0) / partite;
+
+const brierModello = pesata("brier_modello");
+const brierMercato = pesata("brier_mercato");
+const giocate = tutte.reduce((s, v) => s + v.giocate, 0);
+
+/* Le fasce di calibrazione si fondono sommando i casi, non facendo la media
+   delle percentuali: altrimenti una fascia con 4 casi peserebbe quanto una
+   con 400. */
+const fuse = new Map<number, { casi: number; somma_d: number; somma_o: number }>();
+for (const v of tutte) {
+  for (const f of v.calibrazione) {
+    const g = fuse.get(f.centro) ?? { casi: 0, somma_d: 0, somma_o: 0 };
+    g.casi += f.casi;
+    g.somma_d += f.dichiarata * f.casi;
+    g.somma_o += f.osservata * f.casi;
+    fuse.set(f.centro, g);
+  }
+}
+const calibrazione = [...fuse.entries()]
+  .sort((a, b) => a[0] - b[0])
+  .map(([centro, g]) => ({
+    centro,
+    dichiarata: g.somma_d / g.casi,
+    osservata: g.somma_o / g.casi,
+    casi: g.casi,
+  }));
+const ece =
+  calibrazione.reduce((s, f) => s + Math.abs(f.osservata - f.dichiarata) * f.casi, 0) /
+  calibrazione.reduce((s, f) => s + f.casi, 0);
+---
+
+<Base titolo="Track record" descrizione="Calibrazione e confronto col mercato su otto campionati, perdite comprese.">
+  <section>
+    <p class="occhiello">Verifica fuori campione</p>
+    <div class="hd">
+      <h1>Come è andata davvero</h1>
+      <p>
+        Il modello ha camminato in avanti su stagioni mai viste, in ognuno degli
+        otto campionati, ristimando solo su quello che avrebbe potuto sapere in
+        quel momento.
+      </p>
+    </div>
+
+    <div class="tessere">
+      <div class="tessera">
+        <div class="k">Partite</div>
+        <div class="v mono">{partite.toLocaleString("it-IT")}</div>
+        <div class="n">su {leghe.length} campionati</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Brier modello</div>
+        <div class={`v mono${brierModello < brierMercato ? " buono" : ""}`}>
+          {num(brierModello, 4)}
+        </div>
+        <div class="n">mercato {num(brierMercato, 4)} — più basso è meglio</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Errore calibrazione</div>
+        <div class={`v mono${ece < 0.02 ? " buono" : ""}`}>{num(ece, 4)}</div>
+        <div class="n">sotto 0,02 le probabilità sono oneste</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Giocate di valore</div>
+        <div class="v mono">{giocate}</div>
+        <div class="n">
+          {giocate > 0 ? "sopra i 12 punti di scarto" : "mai sopra i 12 punti di scarto"}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="duo">
+      <div class="pannello">
+        <h3>Il modello è calibrato?</h3>
+        <p class="sub">
+          Quando dice 30%, succede il 30% delle volte? Sulla diagonale sì. Il
+          cerchio cresce con il numero di casi: qui sono
+          {" "}{calibrazione.reduce((s, f) => s + f.casi, 0).toLocaleString("it-IT")} in tutto.
+        </p>
+        <Calibrazione fasce={calibrazione} />
+      </div>
+      <div class="pannello">
+        <h3>Profitto cumulato</h3>
+        <p class="sub">
+          A puntata fissa di un'unità, sulle sole situazioni di valore.
+        </p>
+        <div class="vuoto">
+          <b>Nessuna giocata da mostrare</b>
+          In {partite.toLocaleString("it-IT")} partite, su otto campionati, il
+          modello non si è mai staccato dal mercato abbastanza da superare la
+          soglia. Questo grafico resta vuoto finché non succede — non è un
+          errore di caricamento, è il risultato.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Campionato per campionato</h2>
+      <p>Dove il modello regge meglio e dove peggio. La colonna che conta è lo scarto.</p>
+    </div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th class="num">Partite</th>
+            <th class="num">Brier modello</th>
+            <th class="num">Brier mercato</th>
+            <th class="num">Scarto</th>
+            <th class="num">Calibrazione</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            leghe
+              .slice()
+              .sort(
+                (a, b) =>
+                  per[a.slug].brier_modello -
+                  per[a.slug].brier_mercato -
+                  (per[b.slug].brier_modello - per[b.slug].brier_mercato)
+              )
+              .map((c) => {
+                const v = per[c.slug];
+                const delta = v.brier_modello - v.brier_mercato;
+                return (
+                  <tr>
+                    <td>
+                      <a href={`/calcio/${c.slug}/`} style="color:inherit">
+                        {c.bandiera} <b>{c.nome}</b>
+                      </a>
+                    </td>
+                    <td class="num">{v.partite}</td>
+                    <td class="num">{num(v.brier_modello, 4)}</td>
+                    <td class="num">{num(v.brier_mercato, 4)}</td>
+                    <td
+                      class="num"
+                      style={`font-weight:600;color:${delta < 0 ? "var(--good)" : "var(--ink-3)"}`}
+                    >
+                      {delta >= 0 ? "+" : ""}
+                      {num(delta, 4)}
+                    </td>
+                    <td class="num">{num(v.errore_calibrazione, 4)}</td>
+                  </tr>
+                );
+              })
+          }
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:76ch">
+      Lo scarto è Brier del modello meno Brier del mercato: negativo vuol dire
+      che il modello è avanti su quel campionato. Sono differenze al quarto
+      decimale, cioè i due sono praticamente indistinguibili ovunque.
+    </p>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Cosa vuol dire, e cosa no</h2></div>
+    <div class="prosa">
+      <p>
+        Non c'è un rendimento da mostrare, perché <strong>non c'è stata nessuna
+        giocata</strong>. In {partite.toLocaleString("it-IT")} partite il modello
+        non si è mai allontanato dal mercato abbastanza da superare i dodici
+        punti di soglia. È un risultato, non un dato mancante — e messo accanto
+        al Brier dice una cosa precisa: il modello è <em>alla pari</em> con il
+        mercato, e alla pari non si guadagna.
+      </p>
+      <p>
+        Le due righe che contano sono le altre. Il <strong>Brier</strong> dice se
+        il modello sa qualcosa che le quote non sanno già: qui la differenza è al
+        quarto decimale, cioè no. La <strong>calibrazione</strong> dice se le
+        probabilità sono oneste, e con un errore di {num(ece, 3)} lo sono.
+        <strong> Un modello calibrato che non batte il banco è il risultato
+        normale</strong>, ed è molto più di quanto dichiari chi promette il
+        contrario.
+      </p>
+      <p>
+        Va detta anche l'ultima cosa, ed è la più importante finché i dati sono
+        simulati: qui i gol sono generati esattamente dal modello che poi li
+        stima, e il banco simulato parte dalle probabilità vere — una condizione
+        che nessun bookmaker reale ha. Questi numeri servono a verificare che la
+        catena regga, non a promettere niente.
+      </p>
+    </div>
+  </section>
+</Base>

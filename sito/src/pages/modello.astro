@@ -1,0 +1,151 @@
+---
+import Base from "../layouts/Base.astro";
+import forze from "../dati/forze.json";
+import campionati from "../dati/campionati.json";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+const perCampionato = forze.campionati as Record<string, any[]>;
+const leghe = campionati.campionati;
+---
+
+<Base titolo="Il modello" descrizione="Come sono calcolate le probabilità, senza scatole nere.">
+  <section>
+    <p class="occhiello">Trasparenza</p>
+    <div class="hd">
+      <h1>Come sono calcolate le probabilità</h1>
+      <p>Se non si può spiegare in una pagina, non merita fiducia.</p>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Ogni squadra ha due numeri: quanto segna e quanto subisce. I gol delle
+        due squadre sono trattati come due distribuzioni di Poisson quasi
+        indipendenti — il «quasi» è la correzione di <strong>Dixon e Coles</strong>,
+        che alza 0-0 e 1-1 perché nel calcio vero capitano più spesso di quanto
+        due Poisson indipendenti prevedano.
+      </p>
+      <p>
+        Da lì esce <strong>una sola tabella</strong>: la probabilità di ogni
+        risultato esatto. Esito finale, over/under e gol/gol non sono stime
+        separate, sono somme di celle di quella tabella. È il motivo per cui i
+        mercati restano coerenti fra loro senza doverli aggiustare a mano.
+      </p>
+      <p>
+        Le forze si ristimano ogni notte a massima verosimiglianza, pesando meno
+        le partite vecchie. Le quote dei bookmaker vengono ripulite dal margine
+        con il <strong>metodo di Shin</strong> e non dividendo per la somma: il
+        margine non è distribuito in modo uniforme, sugli esiti improbabili è
+        molto più alto, e toglierlo male è il modo più comune di convincersi di
+        avere un vantaggio che non c'è.
+      </p>
+      <p>
+        Basket e tennis hanno modelli diversi, perché hanno strutture diverse:
+        nel basket il margine è una normale, nel tennis si scende al singolo
+        punto e si risale per ricorsione fino al match. Quello che condividono è
+        il resto — come si toglie il margine, come si misura il valore, come si
+        giudica la calibrazione.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Le forze stimate adesso</h2>
+      <p>
+        Reti attese contro un avversario medio, in campo neutro, per 90 minuti.
+        Tutti i campionati coperti, con i parametri veri del modello.
+      </p>
+    </div>
+
+    {
+      leghe.map((c) => (
+        <details class="lega-forze" open={c.slug === "serie-a"}>
+          <summary>
+            <span>{c.bandiera} <b>{c.nome}</b></span>
+            <small>{c.squadre} squadre · fattore campo {num(Math.exp(c.vantaggio_casa_stimato))}×</small>
+          </summary>
+          <div class="scorri">
+            <table class="dati">
+              <thead>
+                <tr>
+                  <th>Squadra</th>
+                  <th class="num">Segna</th>
+                  <th class="num">Subisce</th>
+                  <th class="num">Differenza</th>
+                  <th class="num">Attacco (log)</th>
+                  <th class="num">Difesa (log)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {perCampionato[c.slug].map((s) => (
+                  <tr>
+                    <td><b>{s.squadra}</b></td>
+                    <td class="num">{num(s.fatti)}</td>
+                    <td class="num">{num(s.subiti)}</td>
+                    <td
+                      class="num"
+                      style={s.fatti - s.subiti >= 0 ? "color:var(--good)" : "color:var(--ink-3)"}
+                    >
+                      {s.fatti - s.subiti >= 0 ? "+" : ""}{num(s.fatti - s.subiti)}
+                    </td>
+                    <td class="num" style="color:var(--ink-3)">{num(s.attacco, 3)}</td>
+                    <td class="num" style="color:var(--ink-3)">{num(s.difesa, 3)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </details>
+      ))
+    }
+
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:14px;line-height:1.55;max-width:76ch">
+      Le colonne in scala logaritmica sono i parametri veri del modello: 0 è la
+      media del campionato. Sono pubblicate perché chiunque possa rifare i conti
+      — ed è anche il motivo per cui non c'è niente da vendere qui dentro.
+    </p>
+  </section>
+
+  <style>
+    .lega-forze {
+      border: 1px solid var(--rule);
+      background: var(--card);
+      margin-bottom: 10px;
+    }
+    .lega-forze summary {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 13px 18px;
+      cursor: pointer;
+      font-size: 14.5px;
+      list-style: none;
+    }
+    .lega-forze summary::-webkit-details-marker {
+      display: none;
+    }
+    .lega-forze summary::before {
+      content: "▸";
+      color: var(--ink-3);
+      margin-right: 4px;
+    }
+    .lega-forze[open] summary::before {
+      content: "▾";
+    }
+    .lega-forze[open] summary {
+      border-bottom: 1px solid var(--rule);
+      background: var(--sunk);
+    }
+    .lega-forze summary small {
+      color: var(--ink-3);
+      font-size: 12px;
+    }
+    .lega-forze .scorri {
+      padding: 4px 18px 14px;
+    }
+  </style>
+</Base>

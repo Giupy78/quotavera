@@ -1,0 +1,249 @@
+---
+import Base from "../layouts/Base.astro";
+import campionati from "../dati/campionati.json";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+const leghe = campionati.campionati;
+
+/* Le quattro misure confrontabili. Ognuna è una barra ordinata: la forma
+   giusta per confrontare grandezze fra categorie, e senza SVG non c'è nessun
+   rischio che il testo si deformi. */
+const viste = [
+  {
+    id: "margine",
+    titolo: "Quanto si tiene il banco",
+    sub: "Margine medio sull'1X2. È il costo fisso di ogni giocata, prima ancora di indovinare.",
+    valore: (c: any) => c.margine_banco,
+    formato: (v: number) => pct(v),
+    crescente: true,
+    colore: "var(--s2)",
+  },
+  {
+    id: "campo",
+    titolo: "Quanto pesa giocare in casa",
+    sub: "Reti attese in più per la squadra di casa, a parità di forze. Varia molto più di quanto si creda.",
+    valore: (c: any) => Math.exp(c.vantaggio_casa_stimato),
+    formato: (v: number) => num(v) + "×",
+    crescente: false,
+    colore: "var(--s1)",
+  },
+  {
+    id: "gol",
+    titolo: "Quante reti si segnano",
+    sub: "Media a partita. Decide se gli over sono cari o convenienti, prima di guardare qualsiasi quota.",
+    valore: (c: any) => c.gol_partita,
+    formato: (v: number) => num(v),
+    crescente: false,
+    colore: "var(--s3)",
+  },
+  {
+    id: "scarto",
+    titolo: "Dove il modello si stacca di più",
+    sub: "Scarto medio dal mercato. Alto vuol dire mercato meno preciso — o modello meno preciso. Va letto insieme al margine.",
+    valore: (c: any) => c.scarto_medio,
+    formato: (v: number) => pct(v),
+    crescente: false,
+    colore: "var(--good)",
+  },
+];
+
+const margineMin = Math.min(...leghe.map((c) => c.margine_banco));
+const margineMax = Math.max(...leghe.map((c) => c.margine_banco));
+---
+
+<Base
+  titolo="Confronto fra mercati"
+  descrizione="Margine del banco, fattore campo e reti a partita, confrontati su otto campionati."
+>
+  <section>
+    <p class="occhiello">La pagina che serve a scegliere dove guardare</p>
+    <div class="hd">
+      <h1>Otto campionati, otto mercati diversi</h1>
+      <p>
+        Le quote non si leggono allo stesso modo ovunque. Su un campionato il
+        banco si tiene il {pct(margineMin)}, su un altro il {pct(margineMax)}:
+        {" "}{num(margineMax / margineMin, 1)} volte tanto, sullo stesso identico tipo
+        di scommessa.
+      </p>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Questa pagina esiste per una ragione sola: <strong>è impossibile
+        costruirla guardando un campionato solo</strong>. Le differenze fra
+        mercati si vedono solo mettendoli uno accanto all'altro, e sono
+        informazione utile prima ancora di aprire una singola partita — perché
+        dicono dove giocare costa poco e dove costa il doppio.
+      </p>
+    </div>
+  </section>
+
+  {
+    viste.map((v) => {
+      const dati = leghe
+        .map((c) => ({ c, x: v.valore(c) }))
+        .sort((a, b) => (v.crescente ? a.x - b.x : b.x - a.x));
+      const max = Math.max(...dati.map((d) => d.x));
+      return (
+        <section>
+          <div class="hd">
+            <h2>{v.titolo}</h2>
+            <p>{v.sub}</p>
+          </div>
+          <div class="classifica">
+            {dati.map((d) => (
+              <a class="riga" href={`/calcio/${d.c.slug}/`}>
+                <span class="nome">
+                  <i>{d.c.bandiera}</i>
+                  {d.c.nome}
+                </span>
+                <span class="traccia">
+                  <span
+                    class="riempi"
+                    style={`width:${(d.x / max) * 100}%;background:${v.colore}`}
+                  />
+                </span>
+                <b class="mono valore">{v.formato(d.x)}</b>
+              </a>
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
+
+  <section>
+    <div class="hd">
+      <h2>Tutto insieme</h2>
+      <p>Le stesse misure in tabella, per chi vuole confrontare colonne invece che barre.</p>
+    </div>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th class="num">Margine</th>
+            <th class="num">Fattore campo</th>
+            <th class="num">Reti/partita</th>
+            <th class="num">Brier mercato</th>
+            <th class="num">Scarto medio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            leghe
+              .slice()
+              .sort((a, b) => a.margine_banco - b.margine_banco)
+              .map((c) => (
+                <tr>
+                  <td>
+                    <a href={`/calcio/${c.slug}/`} style="color:inherit">
+                      {c.bandiera} <b>{c.nome}</b>
+                    </a>
+                    <div style="font-size:11px;color:var(--ink-3)">{c.paese}</div>
+                  </td>
+                  <td class="num">{pct(c.margine_banco)}</td>
+                  <td class="num">{num(Math.exp(c.vantaggio_casa_stimato))}×</td>
+                  <td class="num">{num(c.gol_partita)}</td>
+                  <td class="num">{num(c.brier_mercato, 3)}</td>
+                  <td class="num">{pct(c.scarto_medio)}</td>
+                </tr>
+              ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd"><h2>Come si legge questa tabella</h2></div>
+    <div class="prosa">
+      <p>
+        <strong>Il margine è la prima cosa da guardare, sempre.</strong> Un
+        margine del 6,6% vuol dire che, giocando a caso su quel campionato, si
+        perde il 6,6% di tutto quello che si muove. Per andare in pari bisogna
+        essere bravi almeno quanto quel numero — e nessun modello pubblico lo è
+        di quella misura.
+      </p>
+      <p>
+        <strong>Il fattore campo è il parametro più sottovalutato del calcio.</strong>
+        Fra il campionato dove pesa di meno e quello dove pesa di più c'è una
+        differenza che vale, da sola, parecchi punti di probabilità sull'1. Chi
+        applica la stessa intuizione a tutti i campionati sbaglia in modo
+        sistematico, sempre nella stessa direzione.
+      </p>
+      <p>
+        <strong>Lo scarto medio va letto con prudenza,</strong> ed è il motivo
+        per cui non lo chiamiamo «dove si guadagna». Uno scarto alto può voler
+        dire che il mercato è meno preciso, ma può altrettanto voler dire che il
+        modello ha meno dati e sbaglia di più. Sui campionati minori valgono
+        spesso entrambe le cose insieme, e si annullano. Diffidate di chiunque
+        vi presenti questo numero come una mappa del tesoro.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .classifica {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--rule);
+    background: var(--card);
+  }
+  .riga {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr) 78px;
+    gap: 16px;
+    align-items: center;
+    padding: 11px 18px;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+  }
+  .riga:last-child {
+    border-bottom: 0;
+  }
+  .riga:hover {
+    background: var(--sunk);
+  }
+  .nome {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  .nome i {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1;
+  }
+  .traccia {
+    display: block;
+    height: 14px;
+    background: var(--sunk);
+  }
+  .riempi {
+    display: block;
+    height: 100%;
+  }
+  .valore {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .riga {
+      grid-template-columns: 1fr 66px;
+      row-gap: 8px;
+    }
+    .traccia {
+      grid-column: 1 / -1;
+      order: 3;
+    }
+  }
+</style>

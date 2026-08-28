@@ -1,0 +1,9300 @@
+{
+ "simulato": true,
+ "partite": [
+  {
+   "id": "inter-como",
+   "campionato": "serie-a",
+   "casa": "Inter",
+   "ospite": "Como",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 3.161,
+   "gol_attesi_ospite": 0.695,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.021944,
+     0.014097,
+     0.00513,
+     0.001188,
+     0.000206,
+     2.9e-05
+    ],
+    [
+     0.066563,
+     0.047374,
+     0.016217,
+     0.003754,
+     0.000652,
+     9.1e-05
+    ],
+    [
+     0.106278,
+     0.073814,
+     0.025633,
+     0.005934,
+     0.00103,
+     0.000143
+    ],
+    [
+     0.111991,
+     0.077782,
+     0.027011,
+     0.006253,
+     0.001086,
+     0.000151
+    ],
+    [
+     0.088509,
+     0.061472,
+     0.021347,
+     0.004942,
+     0.000858,
+     0.000119
+    ],
+    [
+     0.05596,
+     0.038866,
+     0.013497,
+     0.003125,
+     0.000543,
+     7.5e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.112
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.1063
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0885
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0778
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0738
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.848,
+     "X": 0.1021,
+     "2": 0.0499
+    },
+    "btts": {
+     "si": 0.48,
+     "no": 0.52
+    },
+    "ou_1.5": {
+     "over": 0.8974,
+     "under": 0.1026
+    },
+    "ou_2.5": {
+     "over": 0.7386,
+     "under": 0.2614
+    },
+    "ou_3.5": {
+     "over": 0.5354,
+     "under": 0.4646
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.848,
+     "p_mercato": 0.8492,
+     "quota": 1.15,
+     "quota_equa": 1.18,
+     "valore_atteso": -0.0249,
+     "scarto": -0.0013,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1021,
+     "p_mercato": 0.1004,
+     "quota": 8.86,
+     "quota_equa": 9.79,
+     "valore_atteso": -0.095,
+     "scarto": 0.0017,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0499,
+     "p_mercato": 0.0504,
+     "quota": 16.19,
+     "quota_equa": 20.04,
+     "valore_atteso": -0.192,
+     "scarto": -0.0005,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "napoli-parma",
+   "campionato": "serie-a",
+   "casa": "Napoli",
+   "ospite": "Parma",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 3.108,
+   "gol_attesi_ospite": 0.846,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.019993,
+     0.015568,
+     0.006898,
+     0.001946,
+     0.000412,
+     7e-05
+    ],
+    [
+     0.059131,
+     0.051396,
+     0.021439,
+     0.006048,
+     0.00128,
+     0.000217
+    ],
+    [
+     0.093033,
+     0.078736,
+     0.033318,
+     0.009399,
+     0.001989,
+     0.000337
+    ],
+    [
+     0.096388,
+     0.081575,
+     0.034519,
+     0.009738,
+     0.00206,
+     0.000349
+    ],
+    [
+     0.074897,
+     0.063387,
+     0.026823,
+     0.007567,
+     0.001601,
+     0.000271
+    ],
+    [
+     0.046559,
+     0.039404,
+     0.016674,
+     0.004704,
+     0.000995,
+     0.000168
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.0964
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.093
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0816
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0787
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0749
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8153,
+     "X": 0.1162,
+     "2": 0.0685
+    },
+    "btts": {
+     "si": 0.5461,
+     "no": 0.4539
+    },
+    "ou_1.5": {
+     "over": 0.9053,
+     "under": 0.0947
+    },
+    "ou_2.5": {
+     "over": 0.754,
+     "under": 0.246
+    },
+    "ou_3.5": {
+     "over": 0.5555,
+     "under": 0.4445
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8153,
+     "p_mercato": 0.7933,
+     "quota": 1.23,
+     "quota_equa": 1.23,
+     "valore_atteso": 0.0028,
+     "scarto": 0.022,
+     "kelly": 0.003,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1162,
+     "p_mercato": 0.1294,
+     "quota": 7.04,
+     "quota_equa": 8.6,
+     "valore_atteso": -0.1818,
+     "scarto": -0.0132,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0685,
+     "p_mercato": 0.0773,
+     "quota": 11.22,
+     "quota_equa": 14.6,
+     "valore_atteso": -0.2313,
+     "scarto": -0.0088,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "atalanta-verona",
+   "campionato": "serie-a",
+   "casa": "Atalanta",
+   "ospite": "Verona",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 2.753,
+   "gol_attesi_ospite": 0.926,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.026242,
+     0.022497,
+     0.010844,
+     0.003346,
+     0.000774,
+     0.000143
+    ],
+    [
+     0.068745,
+     0.065434,
+     0.029855,
+     0.009212,
+     0.002132,
+     0.000395
+    ],
+    [
+     0.095913,
+     0.088788,
+     0.041096,
+     0.012681,
+     0.002935,
+     0.000543
+    ],
+    [
+     0.088018,
+     0.081479,
+     0.037713,
+     0.011637,
+     0.002693,
+     0.000499
+    ],
+    [
+     0.06058,
+     0.056079,
+     0.025957,
+     0.008009,
+     0.001854,
+     0.000343
+    ],
+    [
+     0.033356,
+     0.030878,
+     0.014292,
+     0.00441,
+     0.001021,
+     0.000189
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.0959
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0888
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.088
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0815
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0687
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7543,
+     "X": 0.1465,
+     "2": 0.0993
+    },
+    "btts": {
+     "si": 0.5661,
+     "no": 0.4339
+    },
+    "ou_1.5": {
+     "over": 0.8825,
+     "under": 0.1175
+    },
+    "ou_2.5": {
+     "over": 0.7103,
+     "under": 0.2897
+    },
+    "ou_3.5": {
+     "over": 0.5003,
+     "under": 0.4997
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7543,
+     "p_mercato": 0.7321,
+     "quota": 1.33,
+     "quota_equa": 1.33,
+     "valore_atteso": 0.0032,
+     "scarto": 0.0221,
+     "kelly": 0.0024,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1465,
+     "p_mercato": 0.1548,
+     "quota": 5.95,
+     "quota_equa": 6.83,
+     "valore_atteso": -0.1285,
+     "scarto": -0.0083,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0993,
+     "p_mercato": 0.1131,
+     "quota": 7.95,
+     "quota_equa": 10.07,
+     "valore_atteso": -0.2108,
+     "scarto": -0.0138,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "juventus-cagliari",
+   "campionato": "serie-a",
+   "casa": "Juventus",
+   "ospite": "Cagliari",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 2.762,
+   "gol_attesi_ospite": 0.845,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.028095,
+     0.022056,
+     0.00971,
+     0.002736,
+     0.000578,
+     9.8e-05
+    ],
+    [
+     0.074154,
+     0.064376,
+     0.026821,
+     0.007557,
+     0.001597,
+     0.00027
+    ],
+    [
+     0.103685,
+     0.087646,
+     0.037044,
+     0.010438,
+     0.002206,
+     0.000373
+    ],
+    [
+     0.09547,
+     0.080701,
+     0.034109,
+     0.009611,
+     0.002031,
+     0.000343
+    ],
+    [
+     0.065929,
+     0.05573,
+     0.023554,
+     0.006637,
+     0.001403,
+     0.000237
+    ],
+    [
+     0.036423,
+     0.030789,
+     0.013013,
+     0.003667,
+     0.000775,
+     0.000131
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1037
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0955
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0876
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0807
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0742
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.772,
+     "X": 0.1407,
+     "2": 0.0873
+    },
+    "btts": {
+     "si": 0.5354,
+     "no": 0.4646
+    },
+    "ou_1.5": {
+     "over": 0.8757,
+     "under": 0.1243
+    },
+    "ou_2.5": {
+     "over": 0.6979,
+     "under": 0.3021
+    },
+    "ou_3.5": {
+     "over": 0.4853,
+     "under": 0.5147
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.772,
+     "p_mercato": 0.7392,
+     "quota": 1.32,
+     "quota_equa": 1.3,
+     "valore_atteso": 0.0191,
+     "scarto": 0.0329,
+     "kelly": 0.0149,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1407,
+     "p_mercato": 0.1571,
+     "quota": 5.9,
+     "quota_equa": 7.11,
+     "valore_atteso": -0.1701,
+     "scarto": -0.0165,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0873,
+     "p_mercato": 0.1037,
+     "quota": 8.67,
+     "quota_equa": 11.46,
+     "valore_atteso": -0.2433,
+     "scarto": -0.0164,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "milan-lecce",
+   "campionato": "serie-a",
+   "casa": "Milan",
+   "ospite": "Lecce",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 2.516,
+   "gol_attesi_ospite": 0.833,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.036228,
+     0.028233,
+     0.012206,
+     0.00339,
+     0.000706,
+     0.000118
+    ],
+    [
+     0.087393,
+     0.074772,
+     0.030707,
+     0.008529,
+     0.001777,
+     0.000296
+    ],
+    [
+     0.11127,
+     0.092714,
+     0.038626,
+     0.010728,
+     0.002235,
+     0.000372
+    ],
+    [
+     0.093309,
+     0.077748,
+     0.032391,
+     0.008996,
+     0.001874,
+     0.000312
+    ],
+    [
+     0.058685,
+     0.048899,
+     0.020372,
+     0.005658,
+     0.001179,
+     0.000196
+    ],
+    [
+     0.029528,
+     0.024603,
+     0.01025,
+     0.002847,
+     0.000593,
+     9.9e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1113
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0933
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0927
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0874
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0777
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7382,
+     "X": 0.1599,
+     "2": 0.1019
+    },
+    "btts": {
+     "si": 0.5207,
+     "no": 0.4793
+    },
+    "ou_1.5": {
+     "over": 0.8481,
+     "under": 0.1519
+    },
+    "ou_2.5": {
+     "over": 0.6499,
+     "under": 0.3501
+    },
+    "ou_3.5": {
+     "over": 0.4298,
+     "under": 0.5702
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7382,
+     "p_mercato": 0.6801,
+     "quota": 1.43,
+     "quota_equa": 1.35,
+     "valore_atteso": 0.0556,
+     "scarto": 0.0581,
+     "kelly": 0.0323,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1599,
+     "p_mercato": 0.1784,
+     "quota": 5.21,
+     "quota_equa": 6.25,
+     "valore_atteso": -0.1669,
+     "scarto": -0.0185,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1019,
+     "p_mercato": 0.1415,
+     "quota": 6.47,
+     "quota_equa": 9.81,
+     "valore_atteso": -0.3407,
+     "scarto": -0.0396,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "roma-empoli",
+   "campionato": "serie-a",
+   "casa": "Roma",
+   "ospite": "Empoli",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.215,
+   "gol_attesi_ospite": 1.071,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.038708,
+     0.038805,
+     0.021471,
+     0.007667,
+     0.002053,
+     0.00044
+    ],
+    [
+     0.081601,
+     0.090069,
+     0.047553,
+     0.01698,
+     0.004547,
+     0.000974
+    ],
+    [
+     0.091784,
+     0.098318,
+     0.052659,
+     0.018803,
+     0.005035,
+     0.001079
+    ],
+    [
+     0.067759,
+     0.072583,
+     0.038875,
+     0.013881,
+     0.003717,
+     0.000796
+    ],
+    [
+     0.037518,
+     0.040188,
+     0.021525,
+     0.007686,
+     0.002058,
+     0.000441
+    ],
+    [
+     0.016618,
+     0.017801,
+     0.009534,
+     0.003404,
+     0.000912,
+     0.000195
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0983
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0918
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0901
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0816
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0726
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6312,
+     "X": 0.1976,
+     "2": 0.1712
+    },
+    "btts": {
+     "si": 0.5869,
+     "no": 0.4131
+    },
+    "ou_1.5": {
+     "over": 0.8409,
+     "under": 0.1591
+    },
+    "ou_2.5": {
+     "over": 0.6376,
+     "under": 0.3624
+    },
+    "ou_3.5": {
+     "over": 0.4163,
+     "under": 0.5837
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6312,
+     "p_mercato": 0.5952,
+     "quota": 1.63,
+     "quota_equa": 1.58,
+     "valore_atteso": 0.0289,
+     "scarto": 0.036,
+     "kelly": 0.0115,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1976,
+     "p_mercato": 0.2008,
+     "quota": 4.66,
+     "quota_equa": 5.06,
+     "valore_atteso": -0.0793,
+     "scarto": -0.0032,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1712,
+     "p_mercato": 0.204,
+     "quota": 4.59,
+     "quota_equa": 5.84,
+     "valore_atteso": -0.2143,
+     "scarto": -0.0328,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "lazio-genoa",
+   "campionato": "serie-a",
+   "casa": "Lazio",
+   "ospite": "Genoa",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.155,
+   "gol_attesi_ospite": 1.056,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.041631,
+     0.041249,
+     0.022487,
+     0.007918,
+     0.002091,
+     0.000442
+    ],
+    [
+     0.085544,
+     0.093092,
+     0.048468,
+     0.017066,
+     0.004507,
+     0.000952
+    ],
+    [
+     0.093619,
+     0.098893,
+     0.052233,
+     0.018392,
+     0.004857,
+     0.001026
+    ],
+    [
+     0.067261,
+     0.07105,
+     0.037527,
+     0.013214,
+     0.00349,
+     0.000737
+    ],
+    [
+     0.036243,
+     0.038285,
+     0.020221,
+     0.00712,
+     0.00188,
+     0.000397
+    ],
+    [
+     0.015623,
+     0.016503,
+     0.008717,
+     0.003069,
+     0.000811,
+     0.000171
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0989
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0936
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0931
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0855
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0711
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6229,
+     "X": 0.2022,
+     "2": 0.1748
+    },
+    "btts": {
+     "si": 0.578,
+     "no": 0.422
+    },
+    "ou_1.5": {
+     "over": 0.8316,
+     "under": 0.1684
+    },
+    "ou_2.5": {
+     "over": 0.6224,
+     "under": 0.3776
+    },
+    "ou_3.5": {
+     "over": 0.3998,
+     "under": 0.6002
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6229,
+     "p_mercato": 0.6065,
+     "quota": 1.6,
+     "quota_equa": 1.61,
+     "valore_atteso": -0.0033,
+     "scarto": 0.0164,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2022,
+     "p_mercato": 0.2003,
+     "quota": 4.67,
+     "quota_equa": 4.94,
+     "valore_atteso": -0.0556,
+     "scarto": 0.002,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1748,
+     "p_mercato": 0.1933,
+     "quota": 4.83,
+     "quota_equa": 5.72,
+     "valore_atteso": -0.1555,
+     "scarto": -0.0184,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "bologna-udinese",
+   "campionato": "serie-a",
+   "casa": "Bologna",
+   "ospite": "Udinese",
+   "ora": "30/08/2026 20:45",
+   "gol_attesi_casa": 2.205,
+   "gol_attesi_ospite": 1.423,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.027803,
+     0.036631,
+     0.026914,
+     0.012762,
+     0.004539,
+     0.001291
+    ],
+    [
+     0.057437,
+     0.084631,
+     0.05934,
+     0.028139,
+     0.010008,
+     0.002847
+    ],
+    [
+     0.064649,
+     0.09197,
+     0.065418,
+     0.031021,
+     0.011033,
+     0.003139
+    ],
+    [
+     0.047514,
+     0.067593,
+     0.048079,
+     0.022799,
+     0.008108,
+     0.002307
+    ],
+    [
+     0.02619,
+     0.037258,
+     0.026502,
+     0.012567,
+     0.004469,
+     0.001272
+    ],
+    [
+     0.011549,
+     0.01643,
+     0.011686,
+     0.005542,
+     0.001971,
+     0.000561
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.092
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0846
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0676
+    },
+    {
+     "risultato": "2-2",
+     "p": 0.0654
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0646
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5515,
+     "X": 0.2057,
+     "2": 0.2427
+    },
+    "btts": {
+     "si": 0.6764,
+     "no": 0.3236
+    },
+    "ou_1.5": {
+     "over": 0.8781,
+     "under": 0.1219
+    },
+    "ou_2.5": {
+     "over": 0.7019,
+     "under": 0.2981
+    },
+    "ou_3.5": {
+     "over": 0.4903,
+     "under": 0.5097
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5515,
+     "p_mercato": 0.544,
+     "quota": 1.78,
+     "quota_equa": 1.81,
+     "valore_atteso": -0.0182,
+     "scarto": 0.0076,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2057,
+     "p_mercato": 0.2153,
+     "quota": 4.36,
+     "quota_equa": 4.86,
+     "valore_atteso": -0.103,
+     "scarto": -0.0096,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.2427,
+     "p_mercato": 0.2407,
+     "quota": 3.92,
+     "quota_equa": 4.12,
+     "valore_atteso": -0.0485,
+     "scarto": 0.002,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "fiorentina-torino",
+   "campionato": "serie-a",
+   "casa": "Fiorentina",
+   "ospite": "Torino",
+   "ora": "31/08/2026 20:45",
+   "gol_attesi_casa": 1.493,
+   "gol_attesi_ospite": 1.257,
+   "rho": -0.0145,
+   "matrice": [
+    [
+     0.065707,
+     0.078651,
+     0.050505,
+     0.021155,
+     0.006646,
+     0.00167
+    ],
+    [
+     0.093761,
+     0.121732,
+     0.075393,
+     0.031579,
+     0.00992,
+     0.002493
+    ],
+    [
+     0.071276,
+     0.089564,
+     0.056272,
+     0.02357,
+     0.007404,
+     0.001861
+    ],
+    [
+     0.035466,
+     0.044566,
+     0.028,
+     0.011728,
+     0.003684,
+     0.000926
+    ],
+    [
+     0.013236,
+     0.016632,
+     0.010449,
+     0.004377,
+     0.001375,
+     0.000346
+    ],
+    [
+     0.003952,
+     0.004965,
+     0.00312,
+     0.001307,
+     0.00041,
+     0.000103
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.1217
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0938
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0896
+    },
+    {
+     "risultato": "0-1",
+     "p": 0.0787
+    },
+    {
+     "risultato": "1-2",
+     "p": 0.0754
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.4254,
+     "X": 0.2569,
+     "2": 0.3177
+    },
+    "btts": {
+     "si": 0.5563,
+     "no": 0.4437
+    },
+    "ou_1.5": {
+     "over": 0.7619,
+     "under": 0.2381
+    },
+    "ou_2.5": {
+     "over": 0.5184,
+     "under": 0.4816
+    },
+    "ou_3.5": {
+     "over": 0.2968,
+     "under": 0.7032
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.4254,
+     "p_mercato": 0.4595,
+     "quota": 2.1,
+     "quota_equa": 2.35,
+     "valore_atteso": -0.1067,
+     "scarto": -0.0341,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2569,
+     "p_mercato": 0.2328,
+     "quota": 4.05,
+     "quota_equa": 3.89,
+     "valore_atteso": 0.0405,
+     "scarto": 0.0241,
+     "kelly": 0.0033,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.3177,
+     "p_mercato": 0.3076,
+     "quota": 3.1,
+     "quota_equa": 3.15,
+     "valore_atteso": -0.0152,
+     "scarto": 0.01,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "manchester-city-leeds",
+   "campionato": "premier-league",
+   "casa": "Manchester City",
+   "ospite": "Leeds",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 3.177,
+   "gol_attesi_ospite": 0.58,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.023575,
+     0.013534,
+     0.003954,
+     0.000765,
+     0.000111,
+     1.3e-05
+    ],
+    [
+     0.074506,
+     0.04338,
+     0.012559,
+     0.002429,
+     0.000352,
+     4.1e-05
+    ],
+    [
+     0.118487,
+     0.068755,
+     0.019948,
+     0.003858,
+     0.00056,
+     6.5e-05
+    ],
+    [
+     0.125465,
+     0.072804,
+     0.021123,
+     0.004086,
+     0.000593,
+     6.9e-05
+    ],
+    [
+     0.099641,
+     0.057819,
+     0.016775,
+     0.003245,
+     0.000471,
+     5.5e-05
+    ],
+    [
+     0.063305,
+     0.036734,
+     0.010658,
+     0.002061,
+     0.000299,
+     3.5e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.1255
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.1185
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0996
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0745
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0728
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8695,
+     "X": 0.0915,
+     "2": 0.039
+    },
+    "btts": {
+     "si": 0.4219,
+     "no": 0.5781
+    },
+    "ou_1.5": {
+     "over": 0.8884,
+     "under": 0.1116
+    },
+    "ou_2.5": {
+     "over": 0.7226,
+     "under": 0.2774
+    },
+    "ou_3.5": {
+     "over": 0.515,
+     "under": 0.485
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8695,
+     "p_mercato": 0.8674,
+     "quota": 1.13,
+     "quota_equa": 1.15,
+     "valore_atteso": -0.0174,
+     "scarto": 0.0021,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0915,
+     "p_mercato": 0.0885,
+     "quota": 10.1,
+     "quota_equa": 10.93,
+     "valore_atteso": -0.0759,
+     "scarto": 0.003,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.039,
+     "p_mercato": 0.0441,
+     "quota": 18.61,
+     "quota_equa": 25.65,
+     "valore_atteso": -0.2745,
+     "scarto": -0.0051,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "arsenal-bournemouth",
+   "campionato": "premier-league",
+   "casa": "Arsenal",
+   "ospite": "Bournemouth",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 3.192,
+   "gol_attesi_ospite": 0.86,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.017589,
+     0.014931,
+     0.006462,
+     0.001852,
+     0.000398,
+     6.8e-05
+    ],
+    [
+     0.05572,
+     0.048093,
+     0.020629,
+     0.005912,
+     0.001271,
+     0.000218
+    ],
+    [
+     0.089099,
+     0.076599,
+     0.032926,
+     0.009436,
+     0.002028,
+     0.000349
+    ],
+    [
+     0.094809,
+     0.081508,
+     0.035036,
+     0.01004,
+     0.002158,
+     0.000371
+    ],
+    [
+     0.075663,
+     0.065048,
+     0.027961,
+     0.008013,
+     0.001722,
+     0.000296
+    ],
+    [
+     0.048307,
+     0.04153,
+     0.017852,
+     0.005116,
+     0.0011,
+     0.000189
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.0948
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0891
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0815
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0766
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0757
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8228,
+     "X": 0.1106,
+     "2": 0.0666
+    },
+    "btts": {
+     "si": 0.553,
+     "no": 0.447
+    },
+    "ou_1.5": {
+     "over": 0.9118,
+     "under": 0.0882
+    },
+    "ou_2.5": {
+     "over": 0.7681,
+     "under": 0.2319
+    },
+    "ou_3.5": {
+     "over": 0.5742,
+     "under": 0.4258
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8228,
+     "p_mercato": 0.8108,
+     "quota": 1.21,
+     "quota_equa": 1.22,
+     "valore_atteso": -0.0044,
+     "scarto": 0.012,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1106,
+     "p_mercato": 0.1162,
+     "quota": 7.94,
+     "quota_equa": 9.04,
+     "valore_atteso": -0.122,
+     "scarto": -0.0056,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0666,
+     "p_mercato": 0.073,
+     "quota": 12.16,
+     "quota_equa": 15.01,
+     "valore_atteso": -0.1899,
+     "scarto": -0.0064,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "liverpool-wolves",
+   "campionato": "premier-league",
+   "casa": "Liverpool",
+   "ospite": "Wolves",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 2.788,
+   "gol_attesi_ospite": 0.889,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.025516,
+     0.022419,
+     0.010019,
+     0.002967,
+     0.000659,
+     0.000117
+    ],
+    [
+     0.070621,
+     0.063001,
+     0.027929,
+     0.008272,
+     0.001837,
+     0.000327
+    ],
+    [
+     0.098616,
+     0.087622,
+     0.038927,
+     0.011529,
+     0.002561,
+     0.000455
+    ],
+    [
+     0.091632,
+     0.081417,
+     0.03617,
+     0.010713,
+     0.00238,
+     0.000423
+    ],
+    [
+     0.063857,
+     0.056738,
+     0.025207,
+     0.007466,
+     0.001658,
+     0.000295
+    ],
+    [
+     0.035601,
+     0.031632,
+     0.014053,
+     0.004162,
+     0.000925,
+     0.000164
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.0986
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0916
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0876
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0814
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0706
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7675,
+     "X": 0.14,
+     "2": 0.0925
+    },
+    "btts": {
+     "si": 0.5525,
+     "no": 0.4475
+    },
+    "ou_1.5": {
+     "over": 0.8814,
+     "under": 0.1186
+    },
+    "ou_2.5": {
+     "over": 0.7098,
+     "under": 0.2902
+    },
+    "ou_3.5": {
+     "over": 0.4997,
+     "under": 0.5003
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7675,
+     "p_mercato": 0.7462,
+     "quota": 1.31,
+     "quota_equa": 1.3,
+     "valore_atteso": 0.0054,
+     "scarto": 0.0213,
+     "kelly": 0.0044,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.14,
+     "p_mercato": 0.1471,
+     "quota": 6.31,
+     "quota_equa": 7.14,
+     "valore_atteso": -0.1166,
+     "scarto": -0.0071,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0925,
+     "p_mercato": 0.1066,
+     "quota": 8.51,
+     "quota_equa": 10.81,
+     "valore_atteso": -0.2129,
+     "scarto": -0.0142,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "chelsea-nottingham-forest",
+   "campionato": "premier-league",
+   "casa": "Chelsea",
+   "ospite": "Nottingham Forest",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 2.532,
+   "gol_attesi_ospite": 0.892,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.032772,
+     0.028939,
+     0.012978,
+     0.003859,
+     0.000861,
+     0.000154
+    ],
+    [
+     0.08243,
+     0.073831,
+     0.032861,
+     0.009772,
+     0.002179,
+     0.000389
+    ],
+    [
+     0.10456,
+     0.093276,
+     0.041605,
+     0.012372,
+     0.002759,
+     0.000492
+    ],
+    [
+     0.088254,
+     0.078729,
+     0.035116,
+     0.010442,
+     0.002329,
+     0.000415
+    ],
+    [
+     0.055868,
+     0.049838,
+     0.02223,
+     0.00661,
+     0.001474,
+     0.000263
+    ],
+    [
+     0.028293,
+     0.025239,
+     0.011258,
+     0.003348,
+     0.000747,
+     0.000133
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1046
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0933
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0883
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0824
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0787
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7288,
+     "X": 0.1603,
+     "2": 0.1109
+    },
+    "btts": {
+     "si": 0.5434,
+     "no": 0.4566
+    },
+    "ou_1.5": {
+     "over": 0.8559,
+     "under": 0.1441
+    },
+    "ou_2.5": {
+     "over": 0.6645,
+     "under": 0.3355
+    },
+    "ou_3.5": {
+     "over": 0.4462,
+     "under": 0.5538
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7288,
+     "p_mercato": 0.7518,
+     "quota": 1.3,
+     "quota_equa": 1.37,
+     "valore_atteso": -0.0526,
+     "scarto": -0.023,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1603,
+     "p_mercato": 0.1521,
+     "quota": 6.11,
+     "quota_equa": 6.24,
+     "valore_atteso": -0.0208,
+     "scarto": 0.0082,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1109,
+     "p_mercato": 0.0962,
+     "quota": 9.34,
+     "quota_equa": 9.01,
+     "valore_atteso": 0.0361,
+     "scarto": 0.0148,
+     "kelly": 0.0011,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "tottenham-everton",
+   "campionato": "premier-league",
+   "casa": "Tottenham",
+   "ospite": "Everton",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 2.514,
+   "gol_attesi_ospite": 1.04,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.028788,
+     0.029626,
+     0.015495,
+     0.005374,
+     0.001398,
+     0.000291
+    ],
+    [
+     0.071816,
+     0.075045,
+     0.038956,
+     0.01351,
+     0.003514,
+     0.000731
+    ],
+    [
+     0.090477,
+     0.094135,
+     0.04897,
+     0.016983,
+     0.004417,
+     0.000919
+    ],
+    [
+     0.075823,
+     0.078888,
+     0.041039,
+     0.014233,
+     0.003702,
+     0.00077
+    ],
+    [
+     0.047657,
+     0.049584,
+     0.025794,
+     0.008946,
+     0.002327,
+     0.000484
+    ],
+    [
+     0.023963,
+     0.024932,
+     0.01297,
+     0.004498,
+     0.00117,
+     0.000243
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0941
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0905
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0789
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0758
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.075
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6935,
+     "X": 0.1696,
+     "2": 0.1369
+    },
+    "btts": {
+     "si": 0.5945,
+     "no": 0.4055
+    },
+    "ou_1.5": {
+     "over": 0.8698,
+     "under": 0.1302
+    },
+    "ou_2.5": {
+     "over": 0.6888,
+     "under": 0.3112
+    },
+    "ou_3.5": {
+     "over": 0.4745,
+     "under": 0.5255
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6935,
+     "p_mercato": 0.6889,
+     "quota": 1.42,
+     "quota_equa": 1.44,
+     "valore_atteso": -0.0152,
+     "scarto": 0.0046,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1696,
+     "p_mercato": 0.1715,
+     "quota": 5.49,
+     "quota_equa": 5.9,
+     "valore_atteso": -0.0688,
+     "scarto": -0.0019,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1369,
+     "p_mercato": 0.1396,
+     "quota": 6.67,
+     "quota_equa": 7.31,
+     "valore_atteso": -0.0871,
+     "scarto": -0.0027,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "aston-villa-brentford",
+   "campionato": "premier-league",
+   "casa": "Aston Villa",
+   "ospite": "Brentford",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.181,
+   "gol_attesi_ospite": 1.148,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.036013,
+     0.040939,
+     0.023612,
+     0.009037,
+     0.002594,
+     0.000596
+    ],
+    [
+     0.077953,
+     0.089915,
+     0.051509,
+     0.019714,
+     0.005659,
+     0.001299
+    ],
+    [
+     0.085235,
+     0.097864,
+     0.056182,
+     0.021502,
+     0.006172,
+     0.001417
+    ],
+    [
+     0.061979,
+     0.071163,
+     0.040853,
+     0.015636,
+     0.004488,
+     0.001031
+    ],
+    [
+     0.033801,
+     0.03881,
+     0.02228,
+     0.008527,
+     0.002448,
+     0.000562
+    ],
+    [
+     0.014747,
+     0.016932,
+     0.009721,
+     0.00372,
+     0.001068,
+     0.000245
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0979
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0899
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0852
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.078
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0712
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6082,
+     "X": 0.2005,
+     "2": 0.1913
+    },
+    "btts": {
+     "si": 0.6059,
+     "no": 0.3941
+    },
+    "ou_1.5": {
+     "over": 0.8451,
+     "under": 0.1549
+    },
+    "ou_2.5": {
+     "over": 0.6463,
+     "under": 0.3537
+    },
+    "ou_3.5": {
+     "over": 0.4259,
+     "under": 0.5741
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6082,
+     "p_mercato": 0.588,
+     "quota": 1.66,
+     "quota_equa": 1.64,
+     "valore_atteso": 0.0097,
+     "scarto": 0.0202,
+     "kelly": 0.0037,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2005,
+     "p_mercato": 0.2162,
+     "quota": 4.4,
+     "quota_equa": 4.99,
+     "valore_atteso": -0.118,
+     "scarto": -0.0158,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1913,
+     "p_mercato": 0.1958,
+     "quota": 4.84,
+     "quota_equa": 5.23,
+     "valore_atteso": -0.0741,
+     "scarto": -0.0045,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "newcastle-fulham",
+   "campionato": "premier-league",
+   "casa": "Newcastle",
+   "ospite": "Fulham",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.113,
+   "gol_attesi_ospite": 0.925,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.048128,
+     0.044129,
+     0.0205,
+     0.00632,
+     0.001461,
+     0.00027
+    ],
+    [
+     0.101098,
+     0.093889,
+     0.043326,
+     0.013357,
+     0.003089,
+     0.000571
+    ],
+    [
+     0.107046,
+     0.099006,
+     0.045785,
+     0.014115,
+     0.003264,
+     0.000604
+    ],
+    [
+     0.075414,
+     0.06975,
+     0.032256,
+     0.009944,
+     0.002299,
+     0.000425
+    ],
+    [
+     0.039847,
+     0.036854,
+     0.017043,
+     0.005254,
+     0.001215,
+     0.000225
+    ],
+    [
+     0.016843,
+     0.015578,
+     0.007204,
+     0.002221,
+     0.000514,
+     9.5e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.107
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.1011
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.099
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0939
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0754
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6466,
+     "X": 0.1991,
+     "2": 0.1543
+    },
+    "btts": {
+     "si": 0.5307,
+     "no": 0.4693
+    },
+    "ou_1.5": {
+     "over": 0.8066,
+     "under": 0.1934
+    },
+    "ou_2.5": {
+     "over": 0.5852,
+     "under": 0.4148
+    },
+    "ou_3.5": {
+     "over": 0.3611,
+     "under": 0.6389
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6466,
+     "p_mercato": 0.6133,
+     "quota": 1.59,
+     "quota_equa": 1.55,
+     "valore_atteso": 0.0281,
+     "scarto": 0.0333,
+     "kelly": 0.0119,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1991,
+     "p_mercato": 0.1963,
+     "quota": 4.81,
+     "quota_equa": 5.02,
+     "valore_atteso": -0.0425,
+     "scarto": 0.0028,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1543,
+     "p_mercato": 0.1904,
+     "quota": 4.95,
+     "quota_equa": 6.48,
+     "valore_atteso": -0.236,
+     "scarto": -0.0361,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "manchester-united-crystal-palace",
+   "campionato": "premier-league",
+   "casa": "Manchester United",
+   "ospite": "Crystal Palace",
+   "ora": "30/08/2026 20:45",
+   "gol_attesi_casa": 1.799,
+   "gol_attesi_ospite": 1.247,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.047795,
+     0.059079,
+     0.036971,
+     0.015365,
+     0.004789,
+     0.001194
+    ],
+    [
+     0.085345,
+     0.106916,
+     0.066508,
+     0.02764,
+     0.008615,
+     0.002148
+    ],
+    [
+     0.07697,
+     0.095963,
+     0.059822,
+     0.024861,
+     0.007749,
+     0.001932
+    ],
+    [
+     0.046155,
+     0.057544,
+     0.035872,
+     0.014908,
+     0.004647,
+     0.001159
+    ],
+    [
+     0.020757,
+     0.02588,
+     0.016133,
+     0.006705,
+     0.00209,
+     0.000521
+    ],
+    [
+     0.007468,
+     0.009311,
+     0.005804,
+     0.002412,
+     0.000752,
+     0.000187
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.1069
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.096
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0853
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.077
+    },
+    {
+     "risultato": "1-2",
+     "p": 0.0665
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5033,
+     "X": 0.2317,
+     "2": 0.265
+    },
+    "btts": {
+     "si": 0.5949,
+     "no": 0.4051
+    },
+    "ou_1.5": {
+     "over": 0.8078,
+     "under": 0.1922
+    },
+    "ou_2.5": {
+     "over": 0.5869,
+     "under": 0.4131
+    },
+    "ou_3.5": {
+     "over": 0.3629,
+     "under": 0.6371
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5033,
+     "p_mercato": 0.5436,
+     "quota": 1.79,
+     "quota_equa": 1.99,
+     "valore_atteso": -0.0991,
+     "scarto": -0.0403,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2317,
+     "p_mercato": 0.2033,
+     "quota": 4.65,
+     "quota_equa": 4.32,
+     "valore_atteso": 0.0775,
+     "scarto": 0.0284,
+     "kelly": 0.0053,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.265,
+     "p_mercato": 0.253,
+     "quota": 3.77,
+     "quota_equa": 3.77,
+     "valore_atteso": -0.0011,
+     "scarto": 0.0119,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "brighton-west-ham",
+   "campionato": "premier-league",
+   "casa": "Brighton",
+   "ospite": "West Ham",
+   "ora": "31/08/2026 20:45",
+   "gol_attesi_casa": 1.878,
+   "gol_attesi_ospite": 1.488,
+   "rho": -0.0021,
+   "matrice": [
+    [
+     0.034751,
+     0.051182,
+     0.038221,
+     0.018952,
+     0.007048,
+     0.002097
+    ],
+    [
+     0.064675,
+     0.096718,
+     0.071783,
+     0.035593,
+     0.013237,
+     0.003938
+    ],
+    [
+     0.060927,
+     0.090631,
+     0.067408,
+     0.033424,
+     0.01243,
+     0.003698
+    ],
+    [
+     0.038142,
+     0.056738,
+     0.0422,
+     0.020925,
+     0.007782,
+     0.002315
+    ],
+    [
+     0.017909,
+     0.02664,
+     0.019814,
+     0.009825,
+     0.003654,
+     0.001087
+    ],
+    [
+     0.006727,
+     0.010007,
+     0.007443,
+     0.00369,
+     0.001372,
+     0.000408
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.0967
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0906
+    },
+    {
+     "risultato": "1-2",
+     "p": 0.0718
+    },
+    {
+     "risultato": "2-2",
+     "p": 0.0674
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0647
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.4691,
+     "X": 0.2239,
+     "2": 0.307
+    },
+    "btts": {
+     "si": 0.6559,
+     "no": 0.3441
+    },
+    "ou_1.5": {
+     "over": 0.8494,
+     "under": 0.1506
+    },
+    "ou_2.5": {
+     "over": 0.6535,
+     "under": 0.3465
+    },
+    "ou_3.5": {
+     "over": 0.434,
+     "under": 0.566
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.4691,
+     "p_mercato": 0.4333,
+     "quota": 2.24,
+     "quota_equa": 2.13,
+     "valore_atteso": 0.0508,
+     "scarto": 0.0358,
+     "kelly": 0.0102,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2239,
+     "p_mercato": 0.2399,
+     "quota": 3.98,
+     "quota_equa": 4.47,
+     "valore_atteso": -0.1089,
+     "scarto": -0.016,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.307,
+     "p_mercato": 0.3268,
+     "quota": 2.95,
+     "quota_equa": 3.26,
+     "valore_atteso": -0.0944,
+     "scarto": -0.0198,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "real-madrid-leganes",
+   "campionato": "laliga",
+   "casa": "Real Madrid",
+   "ospite": "Leganes",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 3.27,
+   "gol_attesi_ospite": 0.523,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.023081,
+     0.011459,
+     0.003097,
+     0.000539,
+     7e-05,
+     7e-06
+    ],
+    [
+     0.07379,
+     0.039158,
+     0.010127,
+     0.001764,
+     0.00023,
+     2.4e-05
+    ],
+    [
+     0.121293,
+     0.063378,
+     0.016558,
+     0.002884,
+     0.000377,
+     3.9e-05
+    ],
+    [
+     0.132212,
+     0.069083,
+     0.018048,
+     0.003144,
+     0.000411,
+     4.3e-05
+    ],
+    [
+     0.108084,
+     0.056476,
+     0.014755,
+     0.00257,
+     0.000336,
+     3.5e-05
+    ],
+    [
+     0.070688,
+     0.036936,
+     0.00965,
+     0.001681,
+     0.00022,
+     2.3e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.1322
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.1213
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.1081
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0738
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.0707
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8866,
+     "X": 0.0823,
+     "2": 0.0311
+    },
+    "btts": {
+     "si": 0.3918,
+     "no": 0.6082
+    },
+    "ou_1.5": {
+     "over": 0.8917,
+     "under": 0.1083
+    },
+    "ou_2.5": {
+     "over": 0.7281,
+     "under": 0.2719
+    },
+    "ou_3.5": {
+     "over": 0.5219,
+     "under": 0.4781
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8866,
+     "p_mercato": 0.897,
+     "quota": 1.09,
+     "quota_equa": 1.13,
+     "valore_atteso": -0.0336,
+     "scarto": -0.0104,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0823,
+     "p_mercato": 0.0721,
+     "quota": 11.88,
+     "quota_equa": 12.15,
+     "valore_atteso": -0.0223,
+     "scarto": 0.0102,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0311,
+     "p_mercato": 0.0309,
+     "quota": 23.98,
+     "quota_equa": 32.13,
+     "valore_atteso": -0.2537,
+     "scarto": 0.0002,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "barcellona-espanyol",
+   "campionato": "laliga",
+   "casa": "Barcellona",
+   "ospite": "Espanyol",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 3.353,
+   "gol_attesi_ospite": 0.7,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.01792,
+     0.011835,
+     0.00429,
+     0.001001,
+     0.000175,
+     2.5e-05
+    ],
+    [
+     0.058261,
+     0.041505,
+     0.014384,
+     0.003357,
+     0.000588,
+     8.2e-05
+    ],
+    [
+     0.098376,
+     0.068881,
+     0.024115,
+     0.005628,
+     0.000985,
+     0.000138
+    ],
+    [
+     0.10995,
+     0.076986,
+     0.026952,
+     0.00629,
+     0.001101,
+     0.000154
+    ],
+    [
+     0.092165,
+     0.064533,
+     0.022592,
+     0.005273,
+     0.000923,
+     0.000129
+    ],
+    [
+     0.061805,
+     0.043275,
+     0.01515,
+     0.003536,
+     0.000619,
+     8.7e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.11
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0984
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0922
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.077
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0689
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8652,
+     "X": 0.0908,
+     "2": 0.044
+    },
+    "btts": {
+     "si": 0.4862,
+     "no": 0.5138
+    },
+    "ou_1.5": {
+     "over": 0.912,
+     "under": 0.088
+    },
+    "ou_2.5": {
+     "over": 0.7678,
+     "under": 0.2322
+    },
+    "ou_3.5": {
+     "over": 0.5736,
+     "under": 0.4264
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8652,
+     "p_mercato": 0.8426,
+     "quota": 1.16,
+     "quota_equa": 1.16,
+     "valore_atteso": 0.0036,
+     "scarto": 0.0226,
+     "kelly": 0.0057,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0908,
+     "p_mercato": 0.1024,
+     "quota": 8.75,
+     "quota_equa": 11.01,
+     "valore_atteso": -0.2051,
+     "scarto": -0.0115,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.044,
+     "p_mercato": 0.0551,
+     "quota": 15.12,
+     "quota_equa": 22.75,
+     "valore_atteso": -0.3354,
+     "scarto": -0.0111,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "atletico-madrid-alaves",
+   "campionato": "laliga",
+   "casa": "Atletico Madrid",
+   "ospite": "Alaves",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 2.865,
+   "gol_attesi_ospite": 0.696,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.029065,
+     0.019256,
+     0.006906,
+     0.001603,
+     0.000279,
+     3.9e-05
+    ],
+    [
+     0.081029,
+     0.057405,
+     0.019785,
+     0.004592,
+     0.000799,
+     0.000111
+    ],
+    [
+     0.116897,
+     0.081398,
+     0.02834,
+     0.006578,
+     0.001145,
+     0.000159
+    ],
+    [
+     0.111631,
+     0.077731,
+     0.027063,
+     0.006282,
+     0.001094,
+     0.000152
+    ],
+    [
+     0.079951,
+     0.055672,
+     0.019383,
+     0.004499,
+     0.000783,
+     0.000109
+    ],
+    [
+     0.04581,
+     0.031898,
+     0.011106,
+     0.002578,
+     0.000449,
+     6.2e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1169
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.1116
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0814
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.081
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.08
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8154,
+     "X": 0.1219,
+     "2": 0.0627
+    },
+    "btts": {
+     "si": 0.4735,
+     "no": 0.5265
+    },
+    "ou_1.5": {
+     "over": 0.8706,
+     "under": 0.1294
+    },
+    "ou_2.5": {
+     "over": 0.6894,
+     "under": 0.3106
+    },
+    "ou_3.5": {
+     "over": 0.475,
+     "under": 0.525
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8154,
+     "p_mercato": 0.7809,
+     "quota": 1.25,
+     "quota_equa": 1.23,
+     "valore_atteso": 0.0192,
+     "scarto": 0.0345,
+     "kelly": 0.0192,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1219,
+     "p_mercato": 0.136,
+     "quota": 6.74,
+     "quota_equa": 8.2,
+     "valore_atteso": -0.1781,
+     "scarto": -0.0141,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0627,
+     "p_mercato": 0.0831,
+     "quota": 10.56,
+     "quota_equa": 15.95,
+     "valore_atteso": -0.338,
+     "scarto": -0.0204,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "athletic-bilbao-maiorca",
+   "campionato": "laliga",
+   "casa": "Athletic Bilbao",
+   "ospite": "Maiorca",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 2.704,
+   "gol_attesi_ospite": 0.798,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.030866,
+     0.02344,
+     0.009619,
+     0.002559,
+     0.000511,
+     8.1e-05
+    ],
+    [
+     0.080992,
+     0.065834,
+     0.026006,
+     0.006919,
+     0.00138,
+     0.00022
+    ],
+    [
+     0.110386,
+     0.0881,
+     0.035156,
+     0.009353,
+     0.001866,
+     0.000298
+    ],
+    [
+     0.099483,
+     0.079398,
+     0.031684,
+     0.008429,
+     0.001682,
+     0.000268
+    ],
+    [
+     0.067243,
+     0.053667,
+     0.021416,
+     0.005697,
+     0.001137,
+     0.000181
+    ],
+    [
+     0.036361,
+     0.029019,
+     0.01158,
+     0.003081,
+     0.000615,
+     9.8e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1104
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0995
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0881
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.081
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0794
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7739,
+     "X": 0.1415,
+     "2": 0.0846
+    },
+    "btts": {
+     "si": 0.5136,
+     "no": 0.4864
+    },
+    "ou_1.5": {
+     "over": 0.8647,
+     "under": 0.1353
+    },
+    "ou_2.5": {
+     "over": 0.6789,
+     "under": 0.3211
+    },
+    "ou_3.5": {
+     "over": 0.4627,
+     "under": 0.5373
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7739,
+     "p_mercato": 0.7758,
+     "quota": 1.26,
+     "quota_equa": 1.29,
+     "valore_atteso": -0.0249,
+     "scarto": -0.0019,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1415,
+     "p_mercato": 0.1413,
+     "quota": 6.54,
+     "quota_equa": 7.07,
+     "valore_atteso": -0.0744,
+     "scarto": 0.0003,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0846,
+     "p_mercato": 0.083,
+     "quota": 10.66,
+     "quota_equa": 11.83,
+     "valore_atteso": -0.0986,
+     "scarto": 0.0016,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "real-sociedad-getafe",
+   "campionato": "laliga",
+   "casa": "Real Sociedad",
+   "ospite": "Getafe",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 2.525,
+   "gol_attesi_ospite": 0.822,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.035977,
+     0.028228,
+     0.011913,
+     0.003266,
+     0.000671,
+     0.00011
+    ],
+    [
+     0.088203,
+     0.073893,
+     0.030077,
+     0.008245,
+     0.001695,
+     0.000279
+    ],
+    [
+     0.112282,
+     0.092337,
+     0.037968,
+     0.010408,
+     0.00214,
+     0.000352
+    ],
+    [
+     0.094491,
+     0.077707,
+     0.031952,
+     0.008759,
+     0.001801,
+     0.000296
+    ],
+    [
+     0.059639,
+     0.049046,
+     0.020167,
+     0.005528,
+     0.001137,
+     0.000187
+    ],
+    [
+     0.030114,
+     0.024765,
+     0.010183,
+     0.002791,
+     0.000574,
+     9.4e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1123
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0945
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0923
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0882
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0777
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7423,
+     "X": 0.1578,
+     "2": 0.0999
+    },
+    "btts": {
+     "si": 0.5164,
+     "no": 0.4836
+    },
+    "ou_1.5": {
+     "over": 0.8476,
+     "under": 0.1524
+    },
+    "ou_2.5": {
+     "over": 0.6495,
+     "under": 0.3505
+    },
+    "ou_3.5": {
+     "over": 0.4293,
+     "under": 0.5707
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7423,
+     "p_mercato": 0.734,
+     "quota": 1.33,
+     "quota_equa": 1.35,
+     "valore_atteso": -0.0128,
+     "scarto": 0.0083,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1578,
+     "p_mercato": 0.1571,
+     "quota": 5.91,
+     "quota_equa": 6.34,
+     "valore_atteso": -0.0672,
+     "scarto": 0.0007,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0999,
+     "p_mercato": 0.1089,
+     "quota": 8.31,
+     "quota_equa": 10.01,
+     "valore_atteso": -0.1701,
+     "scarto": -0.009,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "villarreal-rayo-vallecano",
+   "campionato": "laliga",
+   "casa": "Villarreal",
+   "ospite": "Rayo Vallecano",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.201,
+   "gol_attesi_ospite": 0.991,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.042021,
+     0.039826,
+     0.020187,
+     0.006669,
+     0.001652,
+     0.000327
+    ],
+    [
+     0.089564,
+     0.090581,
+     0.044432,
+     0.014678,
+     0.003637,
+     0.000721
+    ],
+    [
+     0.09957,
+     0.098678,
+     0.048897,
+     0.016153,
+     0.004002,
+     0.000793
+    ],
+    [
+     0.073051,
+     0.072397,
+     0.035874,
+     0.011851,
+     0.002936,
+     0.000582
+    ],
+    [
+     0.040196,
+     0.039836,
+     0.01974,
+     0.006521,
+     0.001616,
+     0.00032
+    ],
+    [
+     0.017694,
+     0.017536,
+     0.008689,
+     0.00287,
+     0.000711,
+     0.000141
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.0996
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0987
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0906
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0896
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0731
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6474,
+     "X": 0.1951,
+     "2": 0.1575
+    },
+    "btts": {
+     "si": 0.5601,
+     "no": 0.4399
+    },
+    "ou_1.5": {
+     "over": 0.8286,
+     "under": 0.1714
+    },
+    "ou_2.5": {
+     "over": 0.6183,
+     "under": 0.3817
+    },
+    "ou_3.5": {
+     "over": 0.3954,
+     "under": 0.6046
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6474,
+     "p_mercato": 0.6107,
+     "quota": 1.59,
+     "quota_equa": 1.54,
+     "valore_atteso": 0.0294,
+     "scarto": 0.0367,
+     "kelly": 0.0125,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1951,
+     "p_mercato": 0.2161,
+     "quota": 4.35,
+     "quota_equa": 5.13,
+     "valore_atteso": -0.1512,
+     "scarto": -0.0209,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1575,
+     "p_mercato": 0.1733,
+     "quota": 5.36,
+     "quota_equa": 6.35,
+     "valore_atteso": -0.156,
+     "scarto": -0.0158,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "betis-celta-vigo",
+   "campionato": "laliga",
+   "casa": "Betis",
+   "ospite": "Celta Vigo",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.397,
+   "gol_attesi_ospite": 1.027,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.033416,
+     0.032663,
+     0.017194,
+     0.005887,
+     0.001512,
+     0.000311
+    ],
+    [
+     0.077328,
+     0.081081,
+     0.041219,
+     0.014112,
+     0.003624,
+     0.000744
+    ],
+    [
+     0.093668,
+     0.096206,
+     0.049407,
+     0.016915,
+     0.004343,
+     0.000892
+    ],
+    [
+     0.074849,
+     0.076878,
+     0.03948,
+     0.013517,
+     0.003471,
+     0.000713
+    ],
+    [
+     0.044859,
+     0.046074,
+     0.023661,
+     0.008101,
+     0.00208,
+     0.000427
+    ],
+    [
+     0.021508,
+     0.02209,
+     0.011345,
+     0.003884,
+     0.000997,
+     0.000205
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0962
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0937
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0811
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0773
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0769
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6756,
+     "X": 0.1797,
+     "2": 0.1447
+    },
+    "btts": {
+     "si": 0.5843,
+     "no": 0.4157
+    },
+    "ou_1.5": {
+     "over": 0.8566,
+     "under": 0.1434
+    },
+    "ou_2.5": {
+     "over": 0.6647,
+     "under": 0.3353
+    },
+    "ou_3.5": {
+     "over": 0.4465,
+     "under": 0.5535
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6756,
+     "p_mercato": 0.6443,
+     "quota": 1.51,
+     "quota_equa": 1.48,
+     "valore_atteso": 0.0201,
+     "scarto": 0.0313,
+     "kelly": 0.0099,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1797,
+     "p_mercato": 0.2033,
+     "quota": 4.62,
+     "quota_equa": 5.56,
+     "valore_atteso": -0.1697,
+     "scarto": -0.0235,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1447,
+     "p_mercato": 0.1524,
+     "quota": 6.06,
+     "quota_equa": 6.91,
+     "valore_atteso": -0.1232,
+     "scarto": -0.0077,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "siviglia-osasuna",
+   "campionato": "laliga",
+   "casa": "Siviglia",
+   "ospite": "Osasuna",
+   "ora": "30/08/2026 20:45",
+   "gol_attesi_casa": 1.817,
+   "gol_attesi_ospite": 1.152,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.052451,
+     0.058072,
+     0.034084,
+     0.01309,
+     0.00377,
+     0.000869
+    ],
+    [
+     0.092217,
+     0.108602,
+     0.061931,
+     0.023784,
+     0.00685,
+     0.001579
+    ],
+    [
+     0.084773,
+     0.097669,
+     0.056263,
+     0.021607,
+     0.006224,
+     0.001434
+    ],
+    [
+     0.051344,
+     0.059154,
+     0.034076,
+     0.013087,
+     0.003769,
+     0.000869
+    ],
+    [
+     0.023323,
+     0.026871,
+     0.015479,
+     0.005945,
+     0.001712,
+     0.000395
+    ],
+    [
+     0.008475,
+     0.009765,
+     0.005625,
+     0.00216,
+     0.000622,
+     0.000143
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.1086
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0977
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0922
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0848
+    },
+    {
+     "risultato": "1-2",
+     "p": 0.0619
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5282,
+     "X": 0.2323,
+     "2": 0.2395
+    },
+    "btts": {
+     "si": 0.5739,
+     "no": 0.4261
+    },
+    "ou_1.5": {
+     "over": 0.7973,
+     "under": 0.2027
+    },
+    "ou_2.5": {
+     "over": 0.5698,
+     "under": 0.4302
+    },
+    "ou_3.5": {
+     "over": 0.3458,
+     "under": 0.6542
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5282,
+     "p_mercato": 0.5639,
+     "quota": 1.72,
+     "quota_equa": 1.89,
+     "valore_atteso": -0.0915,
+     "scarto": -0.0357,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2323,
+     "p_mercato": 0.2178,
+     "quota": 4.32,
+     "quota_equa": 4.31,
+     "valore_atteso": 0.0034,
+     "scarto": 0.0145,
+     "kelly": 0.0003,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.2395,
+     "p_mercato": 0.2183,
+     "quota": 4.31,
+     "quota_equa": 4.17,
+     "valore_atteso": 0.0324,
+     "scarto": 0.0212,
+     "kelly": 0.0024,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "valencia-girona",
+   "campionato": "laliga",
+   "casa": "Valencia",
+   "ospite": "Girona",
+   "ora": "31/08/2026 20:45",
+   "gol_attesi_casa": 1.781,
+   "gol_attesi_ospite": 1.2,
+   "rho": -0.0102,
+   "matrice": [
+    [
+     0.051883,
+     0.059816,
+     0.036545,
+     0.014615,
+     0.004384,
+     0.001052
+    ],
+    [
+     0.089313,
+     0.109584,
+     0.065074,
+     0.026024,
+     0.007806,
+     0.001873
+    ],
+    [
+     0.080501,
+     0.096581,
+     0.057937,
+     0.02317,
+     0.006949,
+     0.001668
+    ],
+    [
+     0.047781,
+     0.057326,
+     0.034388,
+     0.013752,
+     0.004125,
+     0.00099
+    ],
+    [
+     0.02127,
+     0.025519,
+     0.015308,
+     0.006122,
+     0.001836,
+     0.000441
+    ],
+    [
+     0.007575,
+     0.009088,
+     0.005452,
+     0.00218,
+     0.000654,
+     0.000157
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.1096
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0966
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0893
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0805
+    },
+    {
+     "risultato": "1-2",
+     "p": 0.0651
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5088,
+     "X": 0.2352,
+     "2": 0.256
+    },
+    "btts": {
+     "si": 0.5821,
+     "no": 0.4179
+    },
+    "ou_1.5": {
+     "over": 0.799,
+     "under": 0.201
+    },
+    "ou_2.5": {
+     "over": 0.5724,
+     "under": 0.4276
+    },
+    "ou_3.5": {
+     "over": 0.3483,
+     "under": 0.6517
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5088,
+     "p_mercato": 0.4785,
+     "quota": 2.02,
+     "quota_equa": 1.97,
+     "valore_atteso": 0.0278,
+     "scarto": 0.0303,
+     "kelly": 0.0068,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2352,
+     "p_mercato": 0.2374,
+     "quota": 3.98,
+     "quota_equa": 4.25,
+     "valore_atteso": -0.0641,
+     "scarto": -0.0022,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.256,
+     "p_mercato": 0.2841,
+     "quota": 3.35,
+     "quota_equa": 3.91,
+     "valore_atteso": -0.1424,
+     "scarto": -0.0281,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "bayern-monaco-heidenheim",
+   "campionato": "bundesliga",
+   "casa": "Bayern Monaco",
+   "ospite": "Heidenheim",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 3.374,
+   "gol_attesi_ospite": 0.806,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.016267,
+     0.011582,
+     0.005007,
+     0.001345,
+     0.000271,
+     4.4e-05
+    ],
+    [
+     0.05119,
+     0.042777,
+     0.016895,
+     0.004538,
+     0.000914,
+     0.000147
+    ],
+    [
+     0.087785,
+     0.07074,
+     0.028502,
+     0.007656,
+     0.001542,
+     0.000249
+    ],
+    [
+     0.098731,
+     0.079561,
+     0.032056,
+     0.008611,
+     0.001735,
+     0.00028
+    ],
+    [
+     0.083281,
+     0.067111,
+     0.02704,
+     0.007263,
+     0.001463,
+     0.000236
+    ],
+    [
+     0.056199,
+     0.045287,
+     0.018247,
+     0.004901,
+     0.000987,
+     0.000159
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.0987
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0878
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0833
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0796
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0707
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8496,
+     "X": 0.0978,
+     "2": 0.0526
+    },
+    "btts": {
+     "si": 0.535,
+     "no": 0.465
+    },
+    "ou_1.5": {
+     "over": 0.921,
+     "under": 0.079
+    },
+    "ou_2.5": {
+     "over": 0.7854,
+     "under": 0.2146
+    },
+    "ou_3.5": {
+     "over": 0.5977,
+     "under": 0.4023
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8496,
+     "p_mercato": 0.8814,
+     "quota": 1.11,
+     "quota_equa": 1.18,
+     "valore_atteso": -0.0569,
+     "scarto": -0.0318,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0978,
+     "p_mercato": 0.0782,
+     "quota": 11.15,
+     "quota_equa": 10.23,
+     "valore_atteso": 0.0904,
+     "scarto": 0.0196,
+     "kelly": 0.0022,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0526,
+     "p_mercato": 0.0405,
+     "quota": 19.58,
+     "quota_equa": 19.01,
+     "valore_atteso": 0.0301,
+     "scarto": 0.0122,
+     "kelly": 0.0004,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "bayer-leverkusen-st.-pauli",
+   "campionato": "bundesliga",
+   "casa": "Bayer Leverkusen",
+   "ospite": "St. Pauli",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 3.736,
+   "gol_attesi_ospite": 0.857,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.010928,
+     0.008137,
+     0.003772,
+     0.001078,
+     0.000231,
+     4e-05
+    ],
+    [
+     0.037692,
+     0.033543,
+     0.014094,
+     0.004027,
+     0.000863,
+     0.000148
+    ],
+    [
+     0.071652,
+     0.061426,
+     0.026329,
+     0.007524,
+     0.001613,
+     0.000276
+    ],
+    [
+     0.089239,
+     0.076502,
+     0.032792,
+     0.009371,
+     0.002008,
+     0.000344
+    ],
+    [
+     0.083356,
+     0.071459,
+     0.03063,
+     0.008753,
+     0.001876,
+     0.000322
+    ],
+    [
+     0.062289,
+     0.053399,
+     0.022889,
+     0.006541,
+     0.001402,
+     0.00024
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.0892
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0834
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0765
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0717
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0715
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.873,
+     "X": 0.0823,
+     "2": 0.0447
+    },
+    "btts": {
+     "si": 0.5624,
+     "no": 0.4376
+    },
+    "ou_1.5": {
+     "over": 0.9432,
+     "under": 0.0568
+    },
+    "ou_2.5": {
+     "over": 0.8343,
+     "under": 0.1657
+    },
+    "ou_3.5": {
+     "over": 0.6684,
+     "under": 0.3316
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.873,
+     "p_mercato": 0.8594,
+     "quota": 1.14,
+     "quota_equa": 1.15,
+     "valore_atteso": -0.0048,
+     "scarto": 0.0136,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0823,
+     "p_mercato": 0.0879,
+     "quota": 10.15,
+     "quota_equa": 12.15,
+     "valore_atteso": -0.1645,
+     "scarto": -0.0056,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0447,
+     "p_mercato": 0.0527,
+     "quota": 15.96,
+     "quota_equa": 22.37,
+     "valore_atteso": -0.2865,
+     "scarto": -0.008,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "stoccarda-union-berlino",
+   "campionato": "bundesliga",
+   "casa": "Stoccarda",
+   "ospite": "Union Berlino",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 3.101,
+   "gol_attesi_ospite": 0.997,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.017736,
+     0.015598,
+     0.00829,
+     0.002754,
+     0.000686,
+     0.000137
+    ],
+    [
+     0.050731,
+     0.05263,
+     0.025705,
+     0.008538,
+     0.002127,
+     0.000424
+    ],
+    [
+     0.080265,
+     0.079985,
+     0.039853,
+     0.013238,
+     0.003298,
+     0.000657
+    ],
+    [
+     0.082961,
+     0.082671,
+     0.041191,
+     0.013682,
+     0.003409,
+     0.000679
+    ],
+    [
+     0.064311,
+     0.064086,
+     0.031931,
+     0.010607,
+     0.002642,
+     0.000527
+    ],
+    [
+     0.039883,
+     0.039743,
+     0.019802,
+     0.006578,
+     0.001639,
+     0.000327
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.083
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0827
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0803
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.08
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0643
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7865,
+     "X": 0.1269,
+     "2": 0.0866
+    },
+    "btts": {
+     "si": 0.6033,
+     "no": 0.3967
+    },
+    "ou_1.5": {
+     "over": 0.9159,
+     "under": 0.0841
+    },
+    "ou_2.5": {
+     "over": 0.7748,
+     "under": 0.2252
+    },
+    "ou_3.5": {
+     "over": 0.5833,
+     "under": 0.4167
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7865,
+     "p_mercato": 0.8091,
+     "quota": 1.21,
+     "quota_equa": 1.27,
+     "valore_atteso": -0.0483,
+     "scarto": -0.0226,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1269,
+     "p_mercato": 0.1161,
+     "quota": 7.88,
+     "quota_equa": 7.88,
+     "valore_atteso": -0.0,
+     "scarto": 0.0108,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0866,
+     "p_mercato": 0.0748,
+     "quota": 11.75,
+     "quota_equa": 11.55,
+     "valore_atteso": 0.0176,
+     "scarto": 0.0118,
+     "kelly": 0.0004,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "lipsia-borussia-mgladbach",
+   "campionato": "bundesliga",
+   "casa": "Lipsia",
+   "ospite": "Borussia M'gladbach",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 2.992,
+   "gol_attesi_ospite": 0.98,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.020017,
+     0.01741,
+     0.009081,
+     0.002967,
+     0.000727,
+     0.000143
+    ],
+    [
+     0.055433,
+     0.056552,
+     0.02717,
+     0.008878,
+     0.002176,
+     0.000427
+    ],
+    [
+     0.084601,
+     0.082932,
+     0.040648,
+     0.013282,
+     0.003255,
+     0.000638
+    ],
+    [
+     0.084377,
+     0.082713,
+     0.04054,
+     0.013247,
+     0.003246,
+     0.000636
+    ],
+    [
+     0.063116,
+     0.06187,
+     0.030325,
+     0.009909,
+     0.002428,
+     0.000476
+    ],
+    [
+     0.037769,
+     0.037024,
+     0.018147,
+     0.00593,
+     0.001453,
+     0.000285
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.0846
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0844
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0829
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0827
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0631
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7758,
+     "X": 0.1332,
+     "2": 0.091
+    },
+    "btts": {
+     "si": 0.5944,
+     "no": 0.4056
+    },
+    "ou_1.5": {
+     "over": 0.9071,
+     "under": 0.0929
+    },
+    "ou_2.5": {
+     "over": 0.7569,
+     "under": 0.2431
+    },
+    "ou_3.5": {
+     "over": 0.5595,
+     "under": 0.4405
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7758,
+     "p_mercato": 0.7508,
+     "quota": 1.3,
+     "quota_equa": 1.29,
+     "valore_atteso": 0.0085,
+     "scarto": 0.025,
+     "kelly": 0.0071,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1332,
+     "p_mercato": 0.1431,
+     "quota": 6.44,
+     "quota_equa": 7.51,
+     "valore_atteso": -0.1422,
+     "scarto": -0.0099,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.091,
+     "p_mercato": 0.1061,
+     "quota": 8.49,
+     "quota_equa": 10.99,
+     "valore_atteso": -0.2273,
+     "scarto": -0.0151,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "borussia-dortmund-mainz",
+   "campionato": "bundesliga",
+   "casa": "Borussia Dortmund",
+   "ospite": "Mainz",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 2.69,
+   "gol_attesi_ospite": 1.317,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.019514,
+     0.022693,
+     0.015805,
+     0.006941,
+     0.002286,
+     0.000602
+    ],
+    [
+     0.047694,
+     0.065848,
+     0.042518,
+     0.018671,
+     0.006149,
+     0.00162
+    ],
+    [
+     0.0659,
+     0.086818,
+     0.057187,
+     0.025113,
+     0.008271,
+     0.002179
+    ],
+    [
+     0.059092,
+     0.077848,
+     0.051279,
+     0.022519,
+     0.007417,
+     0.001954
+    ],
+    [
+     0.03974,
+     0.052354,
+     0.034486,
+     0.015144,
+     0.004988,
+     0.001314
+    ],
+    [
+     0.021381,
+     0.028167,
+     0.018554,
+     0.008148,
+     0.002684,
+     0.000707
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0868
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0778
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0659
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0658
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0591
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6634,
+     "X": 0.1708,
+     "2": 0.1658
+    },
+    "btts": {
+     "si": 0.6837,
+     "no": 0.3163
+    },
+    "ou_1.5": {
+     "over": 0.9101,
+     "under": 0.0899
+    },
+    "ou_2.5": {
+     "over": 0.7625,
+     "under": 0.2375
+    },
+    "ou_3.5": {
+     "over": 0.5672,
+     "under": 0.4328
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6634,
+     "p_mercato": 0.697,
+     "quota": 1.4,
+     "quota_equa": 1.51,
+     "valore_atteso": -0.0713,
+     "scarto": -0.0336,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1708,
+     "p_mercato": 0.1565,
+     "quota": 5.94,
+     "quota_equa": 5.85,
+     "valore_atteso": 0.0148,
+     "scarto": 0.0143,
+     "kelly": 0.0007,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1658,
+     "p_mercato": 0.1465,
+     "quota": 6.32,
+     "quota_equa": 6.03,
+     "valore_atteso": 0.0478,
+     "scarto": 0.0193,
+     "kelly": 0.0022,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "eintracht-francoforte-wolfsburg",
+   "campionato": "bundesliga",
+   "casa": "Eintracht Francoforte",
+   "ospite": "Wolfsburg",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.46,
+   "gol_attesi_ospite": 1.251,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.026,
+     0.029109,
+     0.019158,
+     0.007989,
+     0.002499,
+     0.000625
+    ],
+    [
+     0.058702,
+     0.076856,
+     0.047125,
+     0.019652,
+     0.006146,
+     0.001538
+    ],
+    [
+     0.074066,
+     0.092659,
+     0.05796,
+     0.02417,
+     0.007559,
+     0.001891
+    ],
+    [
+     0.06073,
+     0.075975,
+     0.047524,
+     0.019818,
+     0.006198,
+     0.001551
+    ],
+    [
+     0.037347,
+     0.046722,
+     0.029225,
+     0.012187,
+     0.003812,
+     0.000954
+    ],
+    [
+     0.018373,
+     0.022986,
+     0.014378,
+     0.005996,
+     0.001875,
+     0.000469
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0927
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0769
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.076
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0741
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0607
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6371,
+     "X": 0.185,
+     "2": 0.1779
+    },
+    "btts": {
+     "si": 0.6543,
+     "no": 0.3457
+    },
+    "ou_1.5": {
+     "over": 0.8862,
+     "under": 0.1138
+    },
+    "ou_2.5": {
+     "over": 0.7161,
+     "under": 0.2839
+    },
+    "ou_3.5": {
+     "over": 0.5076,
+     "under": 0.4924
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6371,
+     "p_mercato": 0.646,
+     "quota": 1.51,
+     "quota_equa": 1.57,
+     "valore_atteso": -0.038,
+     "scarto": -0.0089,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.185,
+     "p_mercato": 0.1777,
+     "quota": 5.28,
+     "quota_equa": 5.41,
+     "valore_atteso": -0.0234,
+     "scarto": 0.0072,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1779,
+     "p_mercato": 0.1763,
+     "quota": 5.32,
+     "quota_equa": 5.62,
+     "valore_atteso": -0.0534,
+     "scarto": 0.0016,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "friburgo-augusta",
+   "campionato": "bundesliga",
+   "casa": "Friburgo",
+   "ospite": "Augusta",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.072,
+   "gol_attesi_ospite": 1.225,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.038885,
+     0.043439,
+     0.027777,
+     0.011347,
+     0.003476,
+     0.000852
+    ],
+    [
+     0.074749,
+     0.095817,
+     0.057551,
+     0.023509,
+     0.007202,
+     0.001765
+    ],
+    [
+     0.079398,
+     0.097301,
+     0.05962,
+     0.024354,
+     0.007461,
+     0.001829
+    ],
+    [
+     0.054835,
+     0.067199,
+     0.041176,
+     0.01682,
+     0.005153,
+     0.001263
+    ],
+    [
+     0.028403,
+     0.034808,
+     0.021328,
+     0.008712,
+     0.002669,
+     0.000654
+    ],
+    [
+     0.01177,
+     0.014424,
+     0.008838,
+     0.00361,
+     0.001106,
+     0.000271
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0973
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0958
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0794
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0747
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0672
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5666,
+     "X": 0.2141,
+     "2": 0.2193
+    },
+    "btts": {
+     "si": 0.6193,
+     "no": 0.3807
+    },
+    "ou_1.5": {
+     "over": 0.8429,
+     "under": 0.1571
+    },
+    "ou_2.5": {
+     "over": 0.6399,
+     "under": 0.3601
+    },
+    "ou_3.5": {
+     "over": 0.4189,
+     "under": 0.5811
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5666,
+     "p_mercato": 0.5492,
+     "quota": 1.77,
+     "quota_equa": 1.76,
+     "valore_atteso": 0.0029,
+     "scarto": 0.0174,
+     "kelly": 0.001,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2141,
+     "p_mercato": 0.2109,
+     "quota": 4.48,
+     "quota_equa": 4.67,
+     "valore_atteso": -0.0408,
+     "scarto": 0.0032,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.2193,
+     "p_mercato": 0.2399,
+     "quota": 3.96,
+     "quota_equa": 4.56,
+     "valore_atteso": -0.1317,
+     "scarto": -0.0206,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "hoffenheim-werder-brema",
+   "campionato": "bundesliga",
+   "casa": "Hoffenheim",
+   "ospite": "Werder Brema",
+   "ora": "30/08/2026 20:45",
+   "gol_attesi_casa": 2.207,
+   "gol_attesi_ospite": 1.483,
+   "rho": -0.0202,
+   "matrice": [
+    [
+     0.026637,
+     0.035416,
+     0.027488,
+     0.013591,
+     0.00504,
+     0.001495
+    ],
+    [
+     0.053491,
+     0.083434,
+     0.060655,
+     0.029989,
+     0.01112,
+     0.003299
+    ],
+    [
+     0.060835,
+     0.090234,
+     0.06692,
+     0.033087,
+     0.012269,
+     0.00364
+    ],
+    [
+     0.044746,
+     0.06637,
+     0.049222,
+     0.024336,
+     0.009024,
+     0.002677
+    ],
+    [
+     0.024684,
+     0.036613,
+     0.027153,
+     0.013425,
+     0.004978,
+     0.001477
+    ],
+    [
+     0.010893,
+     0.016158,
+     0.011983,
+     0.005925,
+     0.002197,
+     0.000652
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0902
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0834
+    },
+    {
+     "risultato": "2-2",
+     "p": 0.0669
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0664
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0608
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5386,
+     "X": 0.207,
+     "2": 0.2544
+    },
+    "btts": {
+     "si": 0.6896,
+     "no": 0.3104
+    },
+    "ou_1.5": {
+     "over": 0.8845,
+     "under": 0.1155
+    },
+    "ou_2.5": {
+     "over": 0.7127,
+     "under": 0.2873
+    },
+    "ou_3.5": {
+     "over": 0.5035,
+     "under": 0.4965
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5386,
+     "p_mercato": 0.508,
+     "quota": 1.91,
+     "quota_equa": 1.86,
+     "valore_atteso": 0.0287,
+     "scarto": 0.0306,
+     "kelly": 0.0079,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.207,
+     "p_mercato": 0.2022,
+     "quota": 4.66,
+     "quota_equa": 4.83,
+     "valore_atteso": -0.0353,
+     "scarto": 0.0048,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.2544,
+     "p_mercato": 0.2897,
+     "quota": 3.3,
+     "quota_equa": 3.93,
+     "valore_atteso": -0.1606,
+     "scarto": -0.0354,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "paris-saint-germain-le-havre",
+   "campionato": "ligue-1",
+   "casa": "Paris Saint-Germain",
+   "ospite": "Le Havre",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 3.397,
+   "gol_attesi_ospite": 0.609,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.019685,
+     0.009853,
+     0.003404,
+     0.000691,
+     0.000105,
+     1.3e-05
+    ],
+    [
+     0.061039,
+     0.039302,
+     0.011562,
+     0.002347,
+     0.000357,
+     4.4e-05
+    ],
+    [
+     0.105928,
+     0.064501,
+     0.019638,
+     0.003986,
+     0.000607,
+     7.4e-05
+    ],
+    [
+     0.119946,
+     0.073037,
+     0.022237,
+     0.004513,
+     0.000687,
+     8.4e-05
+    ],
+    [
+     0.101864,
+     0.062027,
+     0.018884,
+     0.003833,
+     0.000583,
+     7.1e-05
+    ],
+    [
+     0.069207,
+     0.042141,
+     0.01283,
+     0.002604,
+     0.000396,
+     4.8e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.1199
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.1059
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.1019
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.073
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.0692
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8823,
+     "X": 0.0838,
+     "2": 0.0339
+    },
+    "btts": {
+     "si": 0.442,
+     "no": 0.558
+    },
+    "ou_1.5": {
+     "over": 0.9094,
+     "under": 0.0906
+    },
+    "ou_2.5": {
+     "over": 0.7608,
+     "under": 0.2392
+    },
+    "ou_3.5": {
+     "over": 0.5641,
+     "under": 0.4359
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8823,
+     "p_mercato": 0.8874,
+     "quota": 1.1,
+     "quota_equa": 1.13,
+     "valore_atteso": -0.0295,
+     "scarto": -0.0051,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0838,
+     "p_mercato": 0.0791,
+     "quota": 10.87,
+     "quota_equa": 11.94,
+     "valore_atteso": -0.0894,
+     "scarto": 0.0047,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0339,
+     "p_mercato": 0.0334,
+     "quota": 22.25,
+     "quota_equa": 29.48,
+     "valore_atteso": -0.2453,
+     "scarto": 0.0005,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "monaco-angers",
+   "campionato": "ligue-1",
+   "casa": "Monaco",
+   "ospite": "Angers",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 3.241,
+   "gol_attesi_ospite": 0.708,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.020942,
+     0.012175,
+     0.004861,
+     0.001148,
+     0.000203,
+     2.9e-05
+    ],
+    [
+     0.061284,
+     0.046054,
+     0.015756,
+     0.003719,
+     0.000658,
+     9.3e-05
+    ],
+    [
+     0.101835,
+     0.072115,
+     0.025534,
+     0.006027,
+     0.001067,
+     0.000151
+    ],
+    [
+     0.110021,
+     0.077913,
+     0.027587,
+     0.006512,
+     0.001153,
+     0.000163
+    ],
+    [
+     0.08915,
+     0.063132,
+     0.022354,
+     0.005277,
+     0.000934,
+     0.000132
+    ],
+    [
+     0.05779,
+     0.040925,
+     0.014491,
+     0.003421,
+     0.000606,
+     8.6e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.11
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.1018
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0891
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0779
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0721
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8525,
+     "X": 0.1001,
+     "2": 0.0474
+    },
+    "btts": {
+     "si": 0.489,
+     "no": 0.511
+    },
+    "ou_1.5": {
+     "over": 0.9056,
+     "under": 0.0944
+    },
+    "ou_2.5": {
+     "over": 0.7529,
+     "under": 0.2471
+    },
+    "ou_3.5": {
+     "over": 0.5538,
+     "under": 0.4462
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8525,
+     "p_mercato": 0.8643,
+     "quota": 1.13,
+     "quota_equa": 1.17,
+     "valore_atteso": -0.0367,
+     "scarto": -0.0118,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1001,
+     "p_mercato": 0.0892,
+     "quota": 9.84,
+     "quota_equa": 9.99,
+     "valore_atteso": -0.0153,
+     "scarto": 0.0108,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0474,
+     "p_mercato": 0.0464,
+     "quota": 17.28,
+     "quota_equa": 21.09,
+     "valore_atteso": -0.1805,
+     "scarto": 0.001,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "marsiglia-auxerre",
+   "campionato": "ligue-1",
+   "casa": "Marsiglia",
+   "ospite": "Auxerre",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 2.848,
+   "gol_attesi_ospite": 0.917,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.025348,
+     0.019191,
+     0.009776,
+     0.00299,
+     0.000686,
+     0.000126
+    ],
+    [
+     0.064026,
+     0.062805,
+     0.027838,
+     0.008514,
+     0.001953,
+     0.000358
+    ],
+    [
+     0.09418,
+     0.086406,
+     0.039637,
+     0.012122,
+     0.00278,
+     0.00051
+    ],
+    [
+     0.089397,
+     0.082018,
+     0.037624,
+     0.011506,
+     0.002639,
+     0.000484
+    ],
+    [
+     0.063643,
+     0.05839,
+     0.026785,
+     0.008191,
+     0.001879,
+     0.000345
+    ],
+    [
+     0.036247,
+     0.033255,
+     0.015255,
+     0.004665,
+     0.00107,
+     0.000196
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.0942
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0894
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0864
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.082
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.064
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7679,
+     "X": 0.1414,
+     "2": 0.0907
+    },
+    "btts": {
+     "si": 0.5677,
+     "no": 0.4323
+    },
+    "ou_1.5": {
+     "over": 0.8914,
+     "under": 0.1086
+    },
+    "ou_2.5": {
+     "over": 0.7247,
+     "under": 0.2753
+    },
+    "ou_3.5": {
+     "over": 0.518,
+     "under": 0.482
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7679,
+     "p_mercato": 0.8135,
+     "quota": 1.2,
+     "quota_equa": 1.3,
+     "valore_atteso": -0.0785,
+     "scarto": -0.0456,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1414,
+     "p_mercato": 0.1188,
+     "quota": 7.62,
+     "quota_equa": 7.07,
+     "valore_atteso": 0.0774,
+     "scarto": 0.0226,
+     "kelly": 0.0029,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0907,
+     "p_mercato": 0.0677,
+     "quota": 12.62,
+     "quota_equa": 11.03,
+     "valore_atteso": 0.1442,
+     "scarto": 0.023,
+     "kelly": 0.0031,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "lilla-reims",
+   "campionato": "ligue-1",
+   "casa": "Lilla",
+   "ospite": "Reims",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 2.342,
+   "gol_attesi_ospite": 0.794,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.046329,
+     0.031715,
+     0.013711,
+     0.003629,
+     0.00072,
+     0.000114
+    ],
+    [
+     0.099049,
+     0.083706,
+     0.032107,
+     0.008497,
+     0.001686,
+     0.000268
+    ],
+    [
+     0.119278,
+     0.094699,
+     0.037592,
+     0.009949,
+     0.001975,
+     0.000314
+    ],
+    [
+     0.093104,
+     0.073918,
+     0.029343,
+     0.007765,
+     0.001541,
+     0.000245
+    ],
+    [
+     0.054505,
+     0.043273,
+     0.017178,
+     0.004546,
+     0.000902,
+     0.000143
+    ],
+    [
+     0.025527,
+     0.020267,
+     0.008045,
+     0.002129,
+     0.000423,
+     6.7e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1193
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.099
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0947
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0931
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0837
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7168,
+     "X": 0.1764,
+     "2": 0.1068
+    },
+    "btts": {
+     "si": 0.498,
+     "no": 0.502
+    },
+    "ou_1.5": {
+     "over": 0.8229,
+     "under": 0.1771
+    },
+    "ou_2.5": {
+     "over": 0.6062,
+     "under": 0.3938
+    },
+    "ou_3.5": {
+     "over": 0.3827,
+     "under": 0.6173
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7168,
+     "p_mercato": 0.7543,
+     "quota": 1.29,
+     "quota_equa": 1.39,
+     "valore_atteso": -0.0753,
+     "scarto": -0.0375,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1764,
+     "p_mercato": 0.1506,
+     "quota": 6.08,
+     "quota_equa": 5.67,
+     "valore_atteso": 0.0723,
+     "scarto": 0.0258,
+     "kelly": 0.0036,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1068,
+     "p_mercato": 0.0951,
+     "quota": 9.25,
+     "quota_equa": 9.36,
+     "valore_atteso": -0.0122,
+     "scarto": 0.0117,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "nizza-nantes",
+   "campionato": "ligue-1",
+   "casa": "Nizza",
+   "ospite": "Nantes",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 2.387,
+   "gol_attesi_ospite": 1.004,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.036518,
+     0.03101,
+     0.016982,
+     0.005683,
+     0.001426,
+     0.000286
+    ],
+    [
+     0.077622,
+     0.083582,
+     0.04054,
+     0.013567,
+     0.003405,
+     0.000684
+    ],
+    [
+     0.096017,
+     0.096397,
+     0.048389,
+     0.016193,
+     0.004064,
+     0.000816
+    ],
+    [
+     0.076405,
+     0.076707,
+     0.038505,
+     0.012886,
+     0.003234,
+     0.000649
+    ],
+    [
+     0.045598,
+     0.045779,
+     0.02298,
+     0.00769,
+     0.00193,
+     0.000388
+    ],
+    [
+     0.021771,
+     0.021857,
+     0.010972,
+     0.003672,
+     0.000922,
+     0.000185
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0964
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.096
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0836
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0776
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0767
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.677,
+     "X": 0.1835,
+     "2": 0.1395
+    },
+    "btts": {
+     "si": 0.5781,
+     "no": 0.4219
+    },
+    "ou_1.5": {
+     "over": 0.8548,
+     "under": 0.1452
+    },
+    "ou_2.5": {
+     "over": 0.6583,
+     "under": 0.3417
+    },
+    "ou_3.5": {
+     "over": 0.4392,
+     "under": 0.5608
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.677,
+     "p_mercato": 0.7151,
+     "quota": 1.36,
+     "quota_equa": 1.48,
+     "valore_atteso": -0.0793,
+     "scarto": -0.0381,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1835,
+     "p_mercato": 0.1641,
+     "quota": 5.62,
+     "quota_equa": 5.45,
+     "valore_atteso": 0.0313,
+     "scarto": 0.0194,
+     "kelly": 0.0017,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1395,
+     "p_mercato": 0.1208,
+     "quota": 7.46,
+     "quota_equa": 7.17,
+     "valore_atteso": 0.0408,
+     "scarto": 0.0187,
+     "kelly": 0.0016,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "lione-tolosa",
+   "campionato": "ligue-1",
+   "casa": "Lione",
+   "ospite": "Tolosa",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.222,
+   "gol_attesi_ospite": 1.204,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.035581,
+     0.036133,
+     0.023579,
+     0.009461,
+     0.002847,
+     0.000686
+    ],
+    [
+     0.069264,
+     0.090081,
+     0.052391,
+     0.021023,
+     0.006327,
+     0.001523
+    ],
+    [
+     0.080328,
+     0.0967,
+     0.058205,
+     0.023356,
+     0.007029,
+     0.001692
+    ],
+    [
+     0.059495,
+     0.071621,
+     0.043109,
+     0.017299,
+     0.005206,
+     0.001253
+    ],
+    [
+     0.033049,
+     0.039785,
+     0.023947,
+     0.009609,
+     0.002892,
+     0.000696
+    ],
+    [
+     0.014687,
+     0.01768,
+     0.010642,
+     0.00427,
+     0.001285,
+     0.000309
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0967
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0901
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0803
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0716
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0693
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6009,
+     "X": 0.2044,
+     "2": 0.1947
+    },
+    "btts": {
+     "si": 0.6271,
+     "no": 0.3729
+    },
+    "ou_1.5": {
+     "over": 0.859,
+     "under": 0.141
+    },
+    "ou_2.5": {
+     "over": 0.665,
+     "under": 0.335
+    },
+    "ou_3.5": {
+     "over": 0.447,
+     "under": 0.553
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6009,
+     "p_mercato": 0.6346,
+     "quota": 1.53,
+     "quota_equa": 1.66,
+     "valore_atteso": -0.0806,
+     "scarto": -0.0336,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2044,
+     "p_mercato": 0.1939,
+     "quota": 4.81,
+     "quota_equa": 4.89,
+     "valore_atteso": -0.0169,
+     "scarto": 0.0105,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1947,
+     "p_mercato": 0.1715,
+     "quota": 5.4,
+     "quota_equa": 5.14,
+     "valore_atteso": 0.0513,
+     "scarto": 0.0232,
+     "kelly": 0.0029,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "lens-brest",
+   "campionato": "ligue-1",
+   "casa": "Lens",
+   "ospite": "Brest",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 1.935,
+   "gol_attesi_ospite": 1.178,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.047988,
+     0.048835,
+     0.030859,
+     0.012121,
+     0.003571,
+     0.000842
+    ],
+    [
+     0.082477,
+     0.104901,
+     0.05972,
+     0.023458,
+     0.00691,
+     0.001629
+    ],
+    [
+     0.083234,
+     0.09808,
+     0.057787,
+     0.022698,
+     0.006687,
+     0.001576
+    ],
+    [
+     0.053693,
+     0.063271,
+     0.037278,
+     0.014642,
+     0.004314,
+     0.001017
+    ],
+    [
+     0.025978,
+     0.030611,
+     0.018036,
+     0.007084,
+     0.002087,
+     0.000492
+    ],
+    [
+     0.010055,
+     0.011848,
+     0.006981,
+     0.002742,
+     0.000808,
+     0.00019
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.1049
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0981
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0832
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0825
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0633
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5463,
+     "X": 0.2276,
+     "2": 0.2261
+    },
+    "btts": {
+     "si": 0.5958,
+     "no": 0.4042
+    },
+    "ou_1.5": {
+     "over": 0.8207,
+     "under": 0.1793
+    },
+    "ou_2.5": {
+     "over": 0.6017,
+     "under": 0.3983
+    },
+    "ou_3.5": {
+     "over": 0.3781,
+     "under": 0.6219
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5463,
+     "p_mercato": 0.5539,
+     "quota": 1.75,
+     "quota_equa": 1.83,
+     "valore_atteso": -0.0439,
+     "scarto": -0.0076,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2276,
+     "p_mercato": 0.2294,
+     "quota": 4.11,
+     "quota_equa": 4.39,
+     "valore_atteso": -0.0645,
+     "scarto": -0.0018,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.2261,
+     "p_mercato": 0.2167,
+     "quota": 4.34,
+     "quota_equa": 4.42,
+     "valore_atteso": -0.0188,
+     "scarto": 0.0094,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "rennes-strasburgo",
+   "campionato": "ligue-1",
+   "casa": "Rennes",
+   "ospite": "Strasburgo",
+   "ora": "30/08/2026 20:45",
+   "gol_attesi_casa": 1.551,
+   "gol_attesi_ospite": 1.309,
+   "rho": -0.0349,
+   "matrice": [
+    [
+     0.061343,
+     0.070936,
+     0.049097,
+     0.021427,
+     0.007014,
+     0.001837
+    ],
+    [
+     0.084755,
+     0.120348,
+     0.076126,
+     0.033224,
+     0.010875,
+     0.002848
+    ],
+    [
+     0.068857,
+     0.090154,
+     0.059019,
+     0.025758,
+     0.008431,
+     0.002208
+    ],
+    [
+     0.035589,
+     0.046596,
+     0.030504,
+     0.013313,
+     0.004358,
+     0.001141
+    ],
+    [
+     0.013795,
+     0.018062,
+     0.011824,
+     0.00516,
+     0.001689,
+     0.000442
+    ],
+    [
+     0.004278,
+     0.005601,
+     0.003667,
+     0.0016,
+     0.000524,
+     0.000137
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "1-1",
+     "p": 0.1203
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0902
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0848
+    },
+    {
+     "risultato": "1-2",
+     "p": 0.0761
+    },
+    {
+     "risultato": "0-1",
+     "p": 0.0709
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.4261,
+     "X": 0.2559,
+     "2": 0.318
+    },
+    "btts": {
+     "si": 0.5792,
+     "no": 0.4208
+    },
+    "ou_1.5": {
+     "over": 0.783,
+     "under": 0.217
+    },
+    "ou_2.5": {
+     "over": 0.5447,
+     "under": 0.4553
+    },
+    "ou_3.5": {
+     "over": 0.3214,
+     "under": 0.6786
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.4261,
+     "p_mercato": 0.5116,
+     "quota": 1.89,
+     "quota_equa": 2.35,
+     "valore_atteso": -0.1946,
+     "scarto": -0.0855,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.2559,
+     "p_mercato": 0.2206,
+     "quota": 4.26,
+     "quota_equa": 3.91,
+     "valore_atteso": 0.0899,
+     "scarto": 0.0352,
+     "kelly": 0.0069,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.318,
+     "p_mercato": 0.2678,
+     "quota": 3.54,
+     "quota_equa": 3.14,
+     "valore_atteso": 0.1258,
+     "scarto": 0.0502,
+     "kelly": 0.0124,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "psv-almere-city",
+   "campionato": "eredivisie",
+   "casa": "PSV",
+   "ospite": "Almere City",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 5.506,
+   "gol_attesi_ospite": 0.675,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.002611,
+     0.001266,
+     0.000527,
+     0.000119,
+     2e-05,
+     3e-06
+    ],
+    [
+     0.01245,
+     0.008898,
+     0.002902,
+     0.000653,
+     0.00011,
+     1.5e-05
+    ],
+    [
+     0.035088,
+     0.023679,
+     0.00799,
+     0.001797,
+     0.000303,
+     4.1e-05
+    ],
+    [
+     0.064394,
+     0.043456,
+     0.014663,
+     0.003298,
+     0.000556,
+     7.5e-05
+    ],
+    [
+     0.088632,
+     0.059813,
+     0.020182,
+     0.00454,
+     0.000766,
+     0.000103
+    ],
+    [
+     0.097596,
+     0.065862,
+     0.022223,
+     0.004999,
+     0.000843,
+     0.000114
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "5-0",
+     "p": 0.0976
+    },
+    {
+     "risultato": "6-0",
+     "p": 0.0896
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0886
+    },
+    {
+     "risultato": "7-0",
+     "p": 0.0704
+    },
+    {
+     "risultato": "5-1",
+     "p": 0.0659
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.9678,
+     "X": 0.0237,
+     "2": 0.0085
+    },
+    "btts": {
+     "si": 0.4888,
+     "no": 0.5112
+    },
+    "ou_1.5": {
+     "over": 0.9837,
+     "under": 0.0163
+    },
+    "ou_2.5": {
+     "over": 0.9392,
+     "under": 0.0608
+    },
+    "ou_3.5": {
+     "over": 0.8481,
+     "under": 0.1519
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.9678,
+     "p_mercato": 0.9582,
+     "quota": 1.02,
+     "quota_equa": 1.03,
+     "valore_atteso": -0.0129,
+     "scarto": 0.0096,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0237,
+     "p_mercato": 0.0294,
+     "quota": 23.73,
+     "quota_equa": 42.21,
+     "valore_atteso": -0.4379,
+     "scarto": -0.0058,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0085,
+     "p_mercato": 0.0124,
+     "quota": 43.31,
+     "quota_equa": 117.15,
+     "valore_atteso": -0.6303,
+     "scarto": -0.0039,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "feyenoord-willem-ii",
+   "campionato": "eredivisie",
+   "casa": "Feyenoord",
+   "ospite": "Willem II",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 4.871,
+   "gol_attesi_ospite": 0.799,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.004158,
+     0.00244,
+     0.001172,
+     0.000312,
+     6.2e-05,
+     1e-05
+    ],
+    [
+     0.01737,
+     0.01477,
+     0.005707,
+     0.001521,
+     0.000304,
+     4.9e-05
+    ],
+    [
+     0.0435,
+     0.034774,
+     0.013899,
+     0.003704,
+     0.00074,
+     0.000118
+    ],
+    [
+     0.070627,
+     0.056459,
+     0.022567,
+     0.006013,
+     0.001202,
+     0.000192
+    ],
+    [
+     0.086003,
+     0.068751,
+     0.02748,
+     0.007323,
+     0.001463,
+     0.000234
+    ],
+    [
+     0.083782,
+     0.066975,
+     0.02677,
+     0.007133,
+     0.001426,
+     0.000228
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "4-0",
+     "p": 0.086
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.0838
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0706
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0688
+    },
+    {
+     "risultato": "6-0",
+     "p": 0.068
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.9415,
+     "X": 0.0406,
+     "2": 0.0179
+    },
+    "btts": {
+     "si": 0.5464,
+     "no": 0.4536
+    },
+    "ou_1.5": {
+     "over": 0.976,
+     "under": 0.024
+    },
+    "ou_2.5": {
+     "over": 0.9166,
+     "under": 0.0834
+    },
+    "ou_3.5": {
+     "over": 0.8052,
+     "under": 0.1948
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.9415,
+     "p_mercato": 0.9381,
+     "quota": 1.04,
+     "quota_equa": 1.06,
+     "valore_atteso": -0.0208,
+     "scarto": 0.0035,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0406,
+     "p_mercato": 0.0422,
+     "quota": 17.99,
+     "quota_equa": 24.66,
+     "valore_atteso": -0.2704,
+     "scarto": -0.0016,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0179,
+     "p_mercato": 0.0197,
+     "quota": 31.71,
+     "quota_equa": 55.88,
+     "valore_atteso": -0.4326,
+     "scarto": -0.0018,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "ajax-waalwijk",
+   "campionato": "eredivisie",
+   "casa": "Ajax",
+   "ospite": "Waalwijk",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 4.207,
+   "gol_attesi_ospite": 1.009,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.006406,
+     0.004822,
+     0.002843,
+     0.000956,
+     0.000241,
+     4.9e-05
+    ],
+    [
+     0.022701,
+     0.024534,
+     0.011961,
+     0.004021,
+     0.001014,
+     0.000205
+    ],
+    [
+     0.049465,
+     0.049888,
+     0.025158,
+     0.008458,
+     0.002133,
+     0.00043
+    ],
+    [
+     0.069362,
+     0.069956,
+     0.035277,
+     0.01186,
+     0.00299,
+     0.000603
+    ],
+    [
+     0.072947,
+     0.073572,
+     0.037101,
+     0.012473,
+     0.003145,
+     0.000634
+    ],
+    [
+     0.061374,
+     0.061899,
+     0.031215,
+     0.010494,
+     0.002646,
+     0.000534
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "4-1",
+     "p": 0.0736
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0729
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.07
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0694
+    },
+    {
+     "risultato": "5-1",
+     "p": 0.0619
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8864,
+     "X": 0.0717,
+     "2": 0.0418
+    },
+    "btts": {
+     "si": 0.6263,
+     "no": 0.3737
+    },
+    "ou_1.5": {
+     "over": 0.9661,
+     "under": 0.0339
+    },
+    "ou_2.5": {
+     "over": 0.8892,
+     "under": 0.1108
+    },
+    "ou_3.5": {
+     "over": 0.7571,
+     "under": 0.2429
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8864,
+     "p_mercato": 0.9013,
+     "quota": 1.08,
+     "quota_equa": 1.13,
+     "valore_atteso": -0.0426,
+     "scarto": -0.0149,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0717,
+     "p_mercato": 0.0646,
+     "quota": 12.67,
+     "quota_equa": 13.95,
+     "valore_atteso": -0.0915,
+     "scarto": 0.0071,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0418,
+     "p_mercato": 0.0341,
+     "quota": 21.18,
+     "quota_equa": 23.9,
+     "valore_atteso": -0.1136,
+     "scarto": 0.0077,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "az-alkmaar-zwolle",
+   "campionato": "eredivisie",
+   "casa": "AZ Alkmaar",
+   "ospite": "Zwolle",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 3.525,
+   "gol_attesi_ospite": 0.998,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.012302,
+     0.009622,
+     0.005463,
+     0.001817,
+     0.000453,
+     9e-05
+    ],
+    [
+     0.037354,
+     0.039925,
+     0.019256,
+     0.006405,
+     0.001598,
+     0.000319
+    ],
+    [
+     0.068171,
+     0.068022,
+     0.033936,
+     0.011287,
+     0.002816,
+     0.000562
+    ],
+    [
+     0.080096,
+     0.07992,
+     0.039872,
+     0.013262,
+     0.003308,
+     0.00066
+    ],
+    [
+     0.070579,
+     0.070424,
+     0.035135,
+     0.011686,
+     0.002915,
+     0.000582
+    ],
+    [
+     0.049755,
+     0.049646,
+     0.024768,
+     0.008238,
+     0.002055,
+     0.00041
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.0801
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0799
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0706
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0704
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0682
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8325,
+     "X": 0.1028,
+     "2": 0.0648
+    },
+    "btts": {
+     "si": 0.6138,
+     "no": 0.3862
+    },
+    "ou_1.5": {
+     "over": 0.9407,
+     "under": 0.0593
+    },
+    "ou_2.5": {
+     "over": 0.8272,
+     "under": 0.1728
+    },
+    "ou_3.5": {
+     "over": 0.658,
+     "under": 0.342
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8325,
+     "p_mercato": 0.8445,
+     "quota": 1.15,
+     "quota_equa": 1.2,
+     "valore_atteso": -0.0427,
+     "scarto": -0.0121,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1028,
+     "p_mercato": 0.0967,
+     "quota": 8.93,
+     "quota_equa": 9.73,
+     "valore_atteso": -0.0821,
+     "scarto": 0.0061,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0648,
+     "p_mercato": 0.0587,
+     "quota": 13.7,
+     "quota_equa": 15.44,
+     "valore_atteso": -0.1129,
+     "scarto": 0.006,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "twente-fortuna-sittard",
+   "campionato": "eredivisie",
+   "casa": "Twente",
+   "ospite": "Fortuna Sittard",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 3.604,
+   "gol_attesi_ospite": 1.067,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.010725,
+     0.008856,
+     0.005395,
+     0.00192,
+     0.000512,
+     0.000109
+    ],
+    [
+     0.03288,
+     0.037687,
+     0.019444,
+     0.006918,
+     0.001846,
+     0.000394
+    ],
+    [
+     0.061508,
+     0.065652,
+     0.035038,
+     0.012466,
+     0.003327,
+     0.00071
+    ],
+    [
+     0.07389,
+     0.078869,
+     0.042092,
+     0.014976,
+     0.003996,
+     0.000853
+    ],
+    [
+     0.066573,
+     0.071059,
+     0.037924,
+     0.013493,
+     0.003601,
+     0.000769
+    ],
+    [
+     0.047985,
+     0.051219,
+     0.027335,
+     0.009726,
+     0.002595,
+     0.000554
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-1",
+     "p": 0.0789
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0739
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0711
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0666
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0657
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8291,
+     "X": 0.1026,
+     "2": 0.0682
+    },
+    "btts": {
+     "si": 0.6393,
+     "no": 0.3607
+    },
+    "ou_1.5": {
+     "over": 0.9475,
+     "under": 0.0525
+    },
+    "ou_2.5": {
+     "over": 0.8429,
+     "under": 0.1571
+    },
+    "ou_3.5": {
+     "over": 0.682,
+     "under": 0.318
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8291,
+     "p_mercato": 0.8094,
+     "quota": 1.2,
+     "quota_equa": 1.21,
+     "valore_atteso": -0.0051,
+     "scarto": 0.0197,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1026,
+     "p_mercato": 0.1091,
+     "quota": 8.07,
+     "quota_equa": 9.74,
+     "valore_atteso": -0.1717,
+     "scarto": -0.0064,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0682,
+     "p_mercato": 0.0815,
+     "quota": 10.44,
+     "quota_equa": 14.66,
+     "valore_atteso": -0.2876,
+     "scarto": -0.0133,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "utrecht-groningen",
+   "campionato": "eredivisie",
+   "casa": "Utrecht",
+   "ospite": "Groningen",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 3.119,
+   "gol_attesi_ospite": 1.452,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.012015,
+     0.013477,
+     0.010963,
+     0.005307,
+     0.001927,
+     0.00056
+    ],
+    [
+     0.030803,
+     0.048709,
+     0.034194,
+     0.016554,
+     0.00601,
+     0.001746
+    ],
+    [
+     0.050563,
+     0.073434,
+     0.053325,
+     0.025815,
+     0.009373,
+     0.002723
+    ],
+    [
+     0.052568,
+     0.076346,
+     0.05544,
+     0.026839,
+     0.009745,
+     0.00283
+    ],
+    [
+     0.04099,
+     0.05953,
+     0.043229,
+     0.020927,
+     0.007598,
+     0.002207
+    ],
+    [
+     0.025569,
+     0.037135,
+     0.026966,
+     0.013054,
+     0.00474,
+     0.001377
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-1",
+     "p": 0.0763
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0734
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0595
+    },
+    {
+     "risultato": "3-2",
+     "p": 0.0554
+    },
+    {
+     "risultato": "2-2",
+     "p": 0.0533
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.703,
+     "X": 0.1501,
+     "2": 0.1469
+    },
+    "btts": {
+     "si": 0.7336,
+     "no": 0.2664
+    },
+    "ou_1.5": {
+     "over": 0.9437,
+     "under": 0.0563
+    },
+    "ou_2.5": {
+     "over": 0.8335,
+     "under": 0.1665
+    },
+    "ou_3.5": {
+     "over": 0.668,
+     "under": 0.332
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.703,
+     "p_mercato": 0.7174,
+     "quota": 1.35,
+     "quota_equa": 1.42,
+     "valore_atteso": -0.0509,
+     "scarto": -0.0144,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1501,
+     "p_mercato": 0.1472,
+     "quota": 6.14,
+     "quota_equa": 6.66,
+     "valore_atteso": -0.0787,
+     "scarto": 0.0029,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1469,
+     "p_mercato": 0.1354,
+     "quota": 6.63,
+     "quota_equa": 6.81,
+     "valore_atteso": -0.0259,
+     "scarto": 0.0116,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "go-ahead-eagles-heerenveen",
+   "campionato": "eredivisie",
+   "casa": "Go Ahead Eagles",
+   "ospite": "Heerenveen",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.383,
+   "gol_attesi_ospite": 1.305,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.027719,
+     0.029996,
+     0.021319,
+     0.009274,
+     0.003025,
+     0.00079
+    ],
+    [
+     0.056995,
+     0.08055,
+     0.050808,
+     0.022101,
+     0.00721,
+     0.001882
+    ],
+    [
+     0.071107,
+     0.092791,
+     0.060543,
+     0.026335,
+     0.008591,
+     0.002242
+    ],
+    [
+     0.056487,
+     0.073713,
+     0.048095,
+     0.020921,
+     0.006825,
+     0.001781
+    ],
+    [
+     0.033655,
+     0.043918,
+     0.028655,
+     0.012464,
+     0.004066,
+     0.001061
+    ],
+    [
+     0.016041,
+     0.020933,
+     0.013658,
+     0.005941,
+     0.001938,
+     0.000506
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0928
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0805
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0737
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0711
+    },
+    {
+     "risultato": "2-2",
+     "p": 0.0605
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6102,
+     "X": 0.1944,
+     "2": 0.1954
+    },
+    "btts": {
+     "si": 0.6642,
+     "no": 0.3358
+    },
+    "ou_1.5": {
+     "over": 0.8853,
+     "under": 0.1147
+    },
+    "ou_2.5": {
+     "over": 0.7123,
+     "under": 0.2877
+    },
+    "ou_3.5": {
+     "over": 0.503,
+     "under": 0.497
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6102,
+     "p_mercato": 0.6427,
+     "quota": 1.5,
+     "quota_equa": 1.64,
+     "valore_atteso": -0.0847,
+     "scarto": -0.0325,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1944,
+     "p_mercato": 0.1788,
+     "quota": 5.1,
+     "quota_equa": 5.15,
+     "valore_atteso": -0.0088,
+     "scarto": 0.0155,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1954,
+     "p_mercato": 0.1784,
+     "quota": 5.11,
+     "quota_equa": 5.12,
+     "valore_atteso": -0.0013,
+     "scarto": 0.017,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "sparta-rotterdam-nec",
+   "campionato": "eredivisie",
+   "casa": "Sparta Rotterdam",
+   "ospite": "NEC",
+   "ora": "30/08/2026 20:45",
+   "gol_attesi_casa": 2.606,
+   "gol_attesi_ospite": 1.667,
+   "rho": -0.0344,
+   "matrice": [
+    [
+     0.016039,
+     0.021176,
+     0.019392,
+     0.010776,
+     0.004492,
+     0.001498
+    ],
+    [
+     0.034282,
+     0.062718,
+     0.050543,
+     0.028088,
+     0.011707,
+     0.003904
+    ],
+    [
+     0.047395,
+     0.079017,
+     0.065868,
+     0.036605,
+     0.015257,
+     0.005087
+    ],
+    [
+     0.041177,
+     0.068651,
+     0.057227,
+     0.031803,
+     0.013255,
+     0.00442
+    ],
+    [
+     0.026832,
+     0.044734,
+     0.03729,
+     0.020723,
+     0.008637,
+     0.00288
+    ],
+    [
+     0.013987,
+     0.023319,
+     0.019439,
+     0.010803,
+     0.004503,
+     0.001501
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.079
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0687
+    },
+    {
+     "risultato": "2-2",
+     "p": 0.0659
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0627
+    },
+    {
+     "risultato": "3-2",
+     "p": 0.0572
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5772,
+     "X": 0.1868,
+     "2": 0.236
+    },
+    "btts": {
+     "si": 0.7533,
+     "no": 0.2467
+    },
+    "ou_1.5": {
+     "over": 0.9285,
+     "under": 0.0715
+    },
+    "ou_2.5": {
+     "over": 0.799,
+     "under": 0.201
+    },
+    "ou_3.5": {
+     "over": 0.6175,
+     "under": 0.3825
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5772,
+     "p_mercato": 0.5589,
+     "quota": 1.72,
+     "quota_equa": 1.73,
+     "valore_atteso": -0.0072,
+     "scarto": 0.0183,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1868,
+     "p_mercato": 0.189,
+     "quota": 4.85,
+     "quota_equa": 5.35,
+     "valore_atteso": -0.0942,
+     "scarto": -0.0022,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.236,
+     "p_mercato": 0.2521,
+     "quota": 3.7,
+     "quota_equa": 4.24,
+     "valore_atteso": -0.1267,
+     "scarto": -0.0161,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "sporting-farense",
+   "campionato": "primeira-liga",
+   "casa": "Sporting",
+   "ospite": "Farense",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 4.513,
+   "gol_attesi_ospite": 0.535,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.007096,
+     0.003185,
+     0.00096,
+     0.000171,
+     2.3e-05,
+     2e-06
+    ],
+    [
+     0.029815,
+     0.016578,
+     0.004331,
+     0.000773,
+     0.000103,
+     1.1e-05
+    ],
+    [
+     0.068174,
+     0.036502,
+     0.009772,
+     0.001744,
+     0.000233,
+     2.5e-05
+    ],
+    [
+     0.102546,
+     0.054905,
+     0.014699,
+     0.002623,
+     0.000351,
+     3.8e-05
+    ],
+    [
+     0.115686,
+     0.061941,
+     0.016582,
+     0.002959,
+     0.000396,
+     4.2e-05
+    ],
+    [
+     0.104408,
+     0.055902,
+     0.014965,
+     0.002671,
+     0.000358,
+     3.8e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "4-0",
+     "p": 0.1157
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.1044
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.1025
+    },
+    {
+     "risultato": "6-0",
+     "p": 0.0785
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0682
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.9515,
+     "X": 0.0365,
+     "2": 0.012
+    },
+    "btts": {
+     "si": 0.4102,
+     "no": 0.5898
+    },
+    "ou_1.5": {
+     "over": 0.9599,
+     "under": 0.0401
+    },
+    "ou_2.5": {
+     "over": 0.8742,
+     "under": 0.1258
+    },
+    "ou_3.5": {
+     "over": 0.7306,
+     "under": 0.2694
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.9515,
+     "p_mercato": 0.9663,
+     "quota": 1.01,
+     "quota_equa": 1.05,
+     "valore_atteso": -0.039,
+     "scarto": -0.0148,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0365,
+     "p_mercato": 0.0263,
+     "quota": 24.68,
+     "quota_equa": 27.39,
+     "valore_atteso": -0.099,
+     "scarto": 0.0102,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.012,
+     "p_mercato": 0.0074,
+     "quota": 55.7,
+     "quota_equa": 83.27,
+     "valore_atteso": -0.3311,
+     "scarto": 0.0046,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "benfica-nacional",
+   "campionato": "primeira-liga",
+   "casa": "Benfica",
+   "ospite": "Nacional",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 3.937,
+   "gol_attesi_ospite": 0.431,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.013478,
+     0.005031,
+     0.001201,
+     0.000173,
+     1.9e-05,
+     2e-06
+    ],
+    [
+     0.050377,
+     0.022486,
+     0.004728,
+     0.000679,
+     7.3e-05,
+     6e-06
+    ],
+    [
+     0.100228,
+     0.04319,
+     0.009306,
+     0.001337,
+     0.000144,
+     1.2e-05
+    ],
+    [
+     0.13152,
+     0.056674,
+     0.012211,
+     0.001754,
+     0.000189,
+     1.6e-05
+    ],
+    [
+     0.129436,
+     0.055776,
+     0.012017,
+     0.001726,
+     0.000186,
+     1.6e-05
+    ],
+    [
+     0.101908,
+     0.043914,
+     0.009462,
+     0.001359,
+     0.000146,
+     1.3e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.1315
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.1294
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.1019
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.1002
+    },
+    {
+     "risultato": "6-0",
+     "p": 0.0669
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.9391,
+     "X": 0.0472,
+     "2": 0.0136
+    },
+    "btts": {
+     "si": 0.3437,
+     "no": 0.6563
+    },
+    "ou_1.5": {
+     "over": 0.9311,
+     "under": 0.0689
+    },
+    "ou_2.5": {
+     "over": 0.8072,
+     "under": 0.1928
+    },
+    "ou_3.5": {
+     "over": 0.6276,
+     "under": 0.3724
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.9391,
+     "p_mercato": 0.9108,
+     "quota": 1.07,
+     "quota_equa": 1.06,
+     "valore_atteso": 0.0049,
+     "scarto": 0.0284,
+     "kelly": 0.0175,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0472,
+     "p_mercato": 0.0635,
+     "quota": 12.9,
+     "quota_equa": 21.18,
+     "valore_atteso": -0.3908,
+     "scarto": -0.0163,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0136,
+     "p_mercato": 0.0257,
+     "quota": 26.37,
+     "quota_equa": 73.37,
+     "valore_atteso": -0.6406,
+     "scarto": -0.0121,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "porto-gil-vicente",
+   "campionato": "primeira-liga",
+   "casa": "Porto",
+   "ospite": "Gil Vicente",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 3.631,
+   "gol_attesi_ospite": 0.717,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.013934,
+     0.008544,
+     0.003366,
+     0.000805,
+     0.000144,
+     2.1e-05
+    ],
+    [
+     0.046688,
+     0.034932,
+     0.012224,
+     0.002922,
+     0.000524,
+     7.5e-05
+    ],
+    [
+     0.086295,
+     0.061889,
+     0.022193,
+     0.005305,
+     0.000951,
+     0.000136
+    ],
+    [
+     0.104447,
+     0.074907,
+     0.026861,
+     0.006421,
+     0.001151,
+     0.000165
+    ],
+    [
+     0.094814,
+     0.067998,
+     0.024384,
+     0.005829,
+     0.001045,
+     0.00015
+    ],
+    [
+     0.068855,
+     0.049381,
+     0.017708,
+     0.004233,
+     0.000759,
+     0.000109
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.1044
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0948
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0863
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0749
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.0689
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8848,
+     "X": 0.0786,
+     "2": 0.0366
+    },
+    "btts": {
+     "si": 0.499,
+     "no": 0.501
+    },
+    "ou_1.5": {
+     "over": 0.9308,
+     "under": 0.0692
+    },
+    "ou_2.5": {
+     "over": 0.8062,
+     "under": 0.1938
+    },
+    "ou_3.5": {
+     "over": 0.6269,
+     "under": 0.3731
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8848,
+     "p_mercato": 0.8818,
+     "quota": 1.1,
+     "quota_equa": 1.13,
+     "valore_atteso": -0.0267,
+     "scarto": 0.003,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0786,
+     "p_mercato": 0.0819,
+     "quota": 10.17,
+     "quota_equa": 12.72,
+     "valore_atteso": -0.2002,
+     "scarto": -0.0033,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0366,
+     "p_mercato": 0.0363,
+     "quota": 19.67,
+     "quota_equa": 27.34,
+     "valore_atteso": -0.2806,
+     "scarto": 0.0003,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "braga-arouca",
+   "campionato": "primeira-liga",
+   "casa": "Braga",
+   "ospite": "Arouca",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 2.891,
+   "gol_attesi_ospite": 0.784,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.026872,
+     0.01851,
+     0.00781,
+     0.00204,
+     0.0004,
+     6.3e-05
+    ],
+    [
+     0.072129,
+     0.059058,
+     0.022577,
+     0.005896,
+     0.001155,
+     0.000181
+    ],
+    [
+     0.106314,
+     0.083298,
+     0.032632,
+     0.008523,
+     0.001669,
+     0.000262
+    ],
+    [
+     0.102441,
+     0.080263,
+     0.031443,
+     0.008212,
+     0.001609,
+     0.000252
+    ],
+    [
+     0.074032,
+     0.058004,
+     0.022723,
+     0.005935,
+     0.001162,
+     0.000182
+    ],
+    [
+     0.042801,
+     0.033535,
+     0.013137,
+     0.003431,
+     0.000672,
+     0.000105
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1063
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.1024
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0833
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0803
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.074
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8007,
+     "X": 0.128,
+     "2": 0.0713
+    },
+    "btts": {
+     "si": 0.5144,
+     "no": 0.4856
+    },
+    "ou_1.5": {
+     "over": 0.8825,
+     "under": 0.1175
+    },
+    "ou_2.5": {
+     "over": 0.7093,
+     "under": 0.2907
+    },
+    "ou_3.5": {
+     "over": 0.499,
+     "under": 0.501
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8007,
+     "p_mercato": 0.8277,
+     "quota": 1.17,
+     "quota_equa": 1.25,
+     "valore_atteso": -0.0632,
+     "scarto": -0.027,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.128,
+     "p_mercato": 0.1148,
+     "quota": 7.59,
+     "quota_equa": 7.81,
+     "valore_atteso": -0.0281,
+     "scarto": 0.0133,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0713,
+     "p_mercato": 0.0576,
+     "quota": 13.7,
+     "quota_equa": 14.03,
+     "valore_atteso": -0.0234,
+     "scarto": 0.0137,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "vitoria-guimaraes-casa-pia",
+   "campionato": "primeira-liga",
+   "casa": "Vitoria Guimaraes",
+   "ospite": "Casa Pia",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 2.365,
+   "gol_attesi_ospite": 0.907,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.039987,
+     0.032408,
+     0.015604,
+     0.004715,
+     0.001069,
+     0.000194
+    ],
+    [
+     0.087792,
+     0.083432,
+     0.036905,
+     0.011152,
+     0.002528,
+     0.000458
+    ],
+    [
+     0.106203,
+     0.096281,
+     0.043643,
+     0.013188,
+     0.002989,
+     0.000542
+    ],
+    [
+     0.083728,
+     0.075905,
+     0.034407,
+     0.010397,
+     0.002357,
+     0.000427
+    ],
+    [
+     0.049507,
+     0.044882,
+     0.020344,
+     0.006148,
+     0.001393,
+     0.000253
+    ],
+    [
+     0.023418,
+     0.02123,
+     0.009623,
+     0.002908,
+     0.000659,
+     0.00012
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1062
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0963
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0878
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0837
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0834
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6959,
+     "X": 0.179,
+     "2": 0.1251
+    },
+    "btts": {
+     "si": 0.5421,
+     "no": 0.4579
+    },
+    "ou_1.5": {
+     "over": 0.8398,
+     "under": 0.1602
+    },
+    "ou_2.5": {
+     "over": 0.6346,
+     "under": 0.3654
+    },
+    "ou_3.5": {
+     "over": 0.4129,
+     "under": 0.5871
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6959,
+     "p_mercato": 0.7148,
+     "quota": 1.35,
+     "quota_equa": 1.44,
+     "valore_atteso": -0.0606,
+     "scarto": -0.0189,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.179,
+     "p_mercato": 0.1666,
+     "quota": 5.42,
+     "quota_equa": 5.59,
+     "valore_atteso": -0.0299,
+     "scarto": 0.0123,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1251,
+     "p_mercato": 0.1186,
+     "quota": 7.38,
+     "quota_equa": 7.99,
+     "valore_atteso": -0.0765,
+     "scarto": 0.0066,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "moreirense-estoril",
+   "campionato": "primeira-liga",
+   "casa": "Moreirense",
+   "ospite": "Estoril",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.474,
+   "gol_attesi_ospite": 0.948,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.034569,
+     0.029086,
+     0.014692,
+     0.004644,
+     0.001101,
+     0.000209
+    ],
+    [
+     0.078931,
+     0.078551,
+     0.036347,
+     0.01149,
+     0.002724,
+     0.000517
+    ],
+    [
+     0.099984,
+     0.094819,
+     0.04496,
+     0.014213,
+     0.00337,
+     0.000639
+    ],
+    [
+     0.082452,
+     0.078193,
+     0.037077,
+     0.01172,
+     0.002779,
+     0.000527
+    ],
+    [
+     0.050996,
+     0.048362,
+     0.022932,
+     0.007249,
+     0.001719,
+     0.000326
+    ],
+    [
+     0.025233,
+     0.023929,
+     0.011346,
+     0.003587,
+     0.00085,
+     0.000161
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-0",
+     "p": 0.1
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0948
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0825
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0789
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0786
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7052,
+     "X": 0.1717,
+     "2": 0.1231
+    },
+    "btts": {
+     "si": 0.5628,
+     "no": 0.4372
+    },
+    "ou_1.5": {
+     "over": 0.8574,
+     "under": 0.1426
+    },
+    "ou_2.5": {
+     "over": 0.6642,
+     "under": 0.3358
+    },
+    "ou_3.5": {
+     "over": 0.4459,
+     "under": 0.5541
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7052,
+     "p_mercato": 0.656,
+     "quota": 1.47,
+     "quota_equa": 1.42,
+     "valore_atteso": 0.0367,
+     "scarto": 0.0492,
+     "kelly": 0.0195,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1717,
+     "p_mercato": 0.1862,
+     "quota": 4.91,
+     "quota_equa": 5.82,
+     "valore_atteso": -0.157,
+     "scarto": -0.0145,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1231,
+     "p_mercato": 0.1578,
+     "quota": 5.72,
+     "quota_equa": 8.12,
+     "valore_atteso": -0.2959,
+     "scarto": -0.0347,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "famalicao-santa-clara",
+   "campionato": "primeira-liga",
+   "casa": "Famalicao",
+   "ospite": "Santa Clara",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.174,
+   "gol_attesi_ospite": 1.043,
+   "rho": -0.0248,
+   "matrice": [
+    [
+     0.04234,
+     0.03955,
+     0.021792,
+     0.007574,
+     0.001974,
+     0.000412
+    ],
+    [
+     0.084921,
+     0.09314,
+     0.047384,
+     0.016469,
+     0.004293,
+     0.000895
+    ],
+    [
+     0.094773,
+     0.098816,
+     0.051516,
+     0.017905,
+     0.004667,
+     0.000973
+    ],
+    [
+     0.068692,
+     0.071622,
+     0.037339,
+     0.012977,
+     0.003383,
+     0.000705
+    ],
+    [
+     0.037341,
+     0.038934,
+     0.020298,
+     0.007055,
+     0.001839,
+     0.000383
+    ],
+    [
+     0.016239,
+     0.016932,
+     0.008827,
+     0.003068,
+     0.0008,
+     0.000167
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0988
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0948
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0931
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0849
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0716
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.6289,
+     "X": 0.202,
+     "2": 0.1691
+    },
+    "btts": {
+     "si": 0.5761,
+     "no": 0.4239
+    },
+    "ou_1.5": {
+     "over": 0.8332,
+     "under": 0.1668
+    },
+    "ou_2.5": {
+     "over": 0.6235,
+     "under": 0.3765
+    },
+    "ou_3.5": {
+     "over": 0.401,
+     "under": 0.599
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.6289,
+     "p_mercato": 0.5646,
+     "quota": 1.7,
+     "quota_equa": 1.59,
+     "valore_atteso": 0.0692,
+     "scarto": 0.0643,
+     "kelly": 0.0247,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.202,
+     "p_mercato": 0.2163,
+     "quota": 4.26,
+     "quota_equa": 4.95,
+     "valore_atteso": -0.1395,
+     "scarto": -0.0143,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1691,
+     "p_mercato": 0.2191,
+     "quota": 4.21,
+     "quota_equa": 5.91,
+     "valore_atteso": -0.2882,
+     "scarto": -0.05,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "galatasaray-hatayspor",
+   "campionato": "superlig",
+   "casa": "Galatasaray",
+   "ospite": "Hatayspor",
+   "ora": "29/08/2026 12:30",
+   "gol_attesi_casa": 5.228,
+   "gol_attesi_ospite": 0.638,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.002571,
+     0.002499,
+     0.00063,
+     0.000134,
+     2.1e-05,
+     3e-06
+    ],
+    [
+     0.016706,
+     0.009798,
+     0.003292,
+     0.0007,
+     0.000112,
+     1.4e-05
+    ],
+    [
+     0.042296,
+     0.026981,
+     0.008606,
+     0.00183,
+     0.000292,
+     3.7e-05
+    ],
+    [
+     0.073702,
+     0.047015,
+     0.014996,
+     0.003189,
+     0.000509,
+     6.5e-05
+    ],
+    [
+     0.096322,
+     0.061445,
+     0.019598,
+     0.004167,
+     0.000665,
+     8.5e-05
+    ],
+    [
+     0.100708,
+     0.064242,
+     0.02049,
+     0.004357,
+     0.000695,
+     8.9e-05
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "5-0",
+     "p": 0.1007
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0963
+    },
+    {
+     "risultato": "6-0",
+     "p": 0.0877
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0737
+    },
+    {
+     "risultato": "7-0",
+     "p": 0.0655
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.9648,
+     "X": 0.0249,
+     "2": 0.0103
+    },
+    "btts": {
+     "si": 0.4683,
+     "no": 0.5317
+    },
+    "ou_1.5": {
+     "over": 0.9782,
+     "under": 0.0218
+    },
+    "ou_2.5": {
+     "over": 0.9255,
+     "under": 0.0745
+    },
+    "ou_3.5": {
+     "over": 0.8214,
+     "under": 0.1786
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.9648,
+     "p_mercato": 0.9646,
+     "quota": 1.01,
+     "quota_equa": 1.04,
+     "valore_atteso": -0.0255,
+     "scarto": 0.0002,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0249,
+     "p_mercato": 0.0261,
+     "quota": 24.37,
+     "quota_equa": 40.12,
+     "valore_atteso": -0.3926,
+     "scarto": -0.0012,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0103,
+     "p_mercato": 0.0093,
+     "quota": 47.58,
+     "quota_equa": 97.5,
+     "valore_atteso": -0.512,
+     "scarto": 0.001,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "fenerbahçe-gaziantep",
+   "campionato": "superlig",
+   "casa": "Fenerbahçe",
+   "ospite": "Gaziantep",
+   "ora": "29/08/2026 15:00",
+   "gol_attesi_casa": 4.059,
+   "gol_attesi_ospite": 0.843,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.006286,
+     0.007736,
+     0.002704,
+     0.00076,
+     0.00016,
+     2.7e-05
+    ],
+    [
+     0.0322,
+     0.024714,
+     0.010976,
+     0.003085,
+     0.00065,
+     0.00011
+    ],
+    [
+     0.062666,
+     0.052838,
+     0.022275,
+     0.006261,
+     0.00132,
+     0.000223
+    ],
+    [
+     0.084784,
+     0.071487,
+     0.030138,
+     0.00847,
+     0.001785,
+     0.000301
+    ],
+    [
+     0.086032,
+     0.07254,
+     0.030582,
+     0.008595,
+     0.001812,
+     0.000306
+    ],
+    [
+     0.069839,
+     0.058886,
+     0.024825,
+     0.006977,
+     0.001471,
+     0.000248
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "4-0",
+     "p": 0.086
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0848
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0725
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0715
+    },
+    {
+     "risultato": "5-0",
+     "p": 0.0698
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8996,
+     "X": 0.0638,
+     "2": 0.0366
+    },
+    "btts": {
+     "si": 0.5583,
+     "no": 0.4417
+    },
+    "ou_1.5": {
+     "over": 0.9538,
+     "under": 0.0462
+    },
+    "ou_2.5": {
+     "over": 0.8637,
+     "under": 0.1363
+    },
+    "ou_3.5": {
+     "over": 0.7143,
+     "under": 0.2857
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8996,
+     "p_mercato": 0.9074,
+     "quota": 1.07,
+     "quota_equa": 1.11,
+     "valore_atteso": -0.0375,
+     "scarto": -0.0078,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0638,
+     "p_mercato": 0.0628,
+     "quota": 12.7,
+     "quota_equa": 15.67,
+     "valore_atteso": -0.1894,
+     "scarto": 0.001,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0366,
+     "p_mercato": 0.0298,
+     "quota": 22.71,
+     "quota_equa": 27.32,
+     "valore_atteso": -0.1688,
+     "scarto": 0.0068,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "beşiktaş-rizespor",
+   "campionato": "superlig",
+   "casa": "Beşiktaş",
+   "ospite": "Rizespor",
+   "ora": "29/08/2026 18:00",
+   "gol_attesi_casa": 3.989,
+   "gol_attesi_ospite": 1.038,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.005293,
+     0.008364,
+     0.00361,
+     0.001249,
+     0.000324,
+     6.7e-05
+    ],
+    [
+     0.028139,
+     0.026336,
+     0.014399,
+     0.004982,
+     0.001293,
+     0.000268
+    ],
+    [
+     0.05331,
+     0.055333,
+     0.028717,
+     0.009936,
+     0.002578,
+     0.000535
+    ],
+    [
+     0.07088,
+     0.07357,
+     0.038181,
+     0.01321,
+     0.003428,
+     0.000712
+    ],
+    [
+     0.07068,
+     0.073363,
+     0.038074,
+     0.013173,
+     0.003418,
+     0.00071
+    ],
+    [
+     0.056385,
+     0.058525,
+     0.030373,
+     0.010509,
+     0.002727,
+     0.000566
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-1",
+     "p": 0.0736
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0734
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0709
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0707
+    },
+    {
+     "risultato": "5-1",
+     "p": 0.0585
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8693,
+     "X": 0.0776,
+     "2": 0.053
+    },
+    "btts": {
+     "si": 0.6322,
+     "no": 0.3678
+    },
+    "ou_1.5": {
+     "over": 0.9582,
+     "under": 0.0418
+    },
+    "ou_2.5": {
+     "over": 0.8749,
+     "under": 0.1251
+    },
+    "ou_3.5": {
+     "over": 0.7331,
+     "under": 0.2669
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8693,
+     "p_mercato": 0.8887,
+     "quota": 1.09,
+     "quota_equa": 1.15,
+     "valore_atteso": -0.0524,
+     "scarto": -0.0194,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0776,
+     "p_mercato": 0.0702,
+     "quota": 11.49,
+     "quota_equa": 12.88,
+     "valore_atteso": -0.1082,
+     "scarto": 0.0075,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.053,
+     "p_mercato": 0.0411,
+     "quota": 17.63,
+     "quota_equa": 18.85,
+     "valore_atteso": -0.0648,
+     "scarto": 0.0119,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "trabzonspor-sivasspor",
+   "campionato": "superlig",
+   "casa": "Trabzonspor",
+   "ospite": "Sivasspor",
+   "ora": "29/08/2026 20:45",
+   "gol_attesi_casa": 3.405,
+   "gol_attesi_ospite": 0.953,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.010778,
+     0.014428,
+     0.005863,
+     0.001863,
+     0.000444,
+     8.5e-05
+    ],
+    [
+     0.04607,
+     0.039763,
+     0.019966,
+     0.006344,
+     0.001512,
+     0.000288
+    ],
+    [
+     0.074821,
+     0.071324,
+     0.033996,
+     0.010802,
+     0.002574,
+     0.000491
+    ],
+    [
+     0.08493,
+     0.080961,
+     0.038589,
+     0.012262,
+     0.002922,
+     0.000557
+    ],
+    [
+     0.072304,
+     0.068925,
+     0.032852,
+     0.010439,
+     0.002488,
+     0.000474
+    ],
+    [
+     0.049244,
+     0.046943,
+     0.022375,
+     0.00711,
+     0.001694,
+     0.000323
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-0",
+     "p": 0.0849
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.081
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0748
+    },
+    {
+     "risultato": "4-0",
+     "p": 0.0723
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.0713
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.8313,
+     "X": 0.0996,
+     "2": 0.069
+    },
+    "btts": {
+     "si": 0.5918,
+     "no": 0.4082
+    },
+    "ou_1.5": {
+     "over": 0.9287,
+     "under": 0.0713
+    },
+    "ou_2.5": {
+     "over": 0.8083,
+     "under": 0.1917
+    },
+    "ou_3.5": {
+     "over": 0.6302,
+     "under": 0.3698
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.8313,
+     "p_mercato": 0.8565,
+     "quota": 1.13,
+     "quota_equa": 1.2,
+     "valore_atteso": -0.0606,
+     "scarto": -0.0251,
+     "kelly": 0.0,
+     "bookmaker": "Unibet",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.0996,
+     "p_mercato": 0.086,
+     "quota": 9.7,
+     "quota_equa": 10.04,
+     "valore_atteso": -0.0335,
+     "scarto": 0.0136,
+     "kelly": 0.0,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.069,
+     "p_mercato": 0.0575,
+     "quota": 13.57,
+     "quota_equa": 14.49,
+     "valore_atteso": -0.0633,
+     "scarto": 0.0115,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "başakşehir-konyaspor",
+   "campionato": "superlig",
+   "casa": "Başakşehir",
+   "ospite": "Konyaspor",
+   "ora": "30/08/2026 15:00",
+   "gol_attesi_casa": 3.135,
+   "gol_attesi_ospite": 1.026,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.013109,
+     0.01864,
+     0.008253,
+     0.002823,
+     0.000724,
+     0.000149
+    ],
+    [
+     0.051675,
+     0.047852,
+     0.02587,
+     0.008851,
+     0.002271,
+     0.000466
+    ],
+    [
+     0.076985,
+     0.079015,
+     0.040549,
+     0.013873,
+     0.00356,
+     0.000731
+    ],
+    [
+     0.080444,
+     0.082565,
+     0.042371,
+     0.014496,
+     0.00372,
+     0.000764
+    ],
+    [
+     0.063044,
+     0.064706,
+     0.033206,
+     0.011361,
+     0.002915,
+     0.000598
+    ],
+    [
+     0.039526,
+     0.040568,
+     0.020819,
+     0.007123,
+     0.001828,
+     0.000375
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "3-1",
+     "p": 0.0826
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0804
+    },
+    {
+     "risultato": "2-1",
+     "p": 0.079
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.077
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0647
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7888,
+     "X": 0.1193,
+     "2": 0.0919
+    },
+    "btts": {
+     "si": 0.6111,
+     "no": 0.3889
+    },
+    "ou_1.5": {
+     "over": 0.9166,
+     "under": 0.0834
+    },
+    "ou_2.5": {
+     "over": 0.7835,
+     "under": 0.2165
+    },
+    "ou_3.5": {
+     "over": 0.5953,
+     "under": 0.4047
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7888,
+     "p_mercato": 0.7298,
+     "quota": 1.32,
+     "quota_equa": 1.27,
+     "valore_atteso": 0.0412,
+     "scarto": 0.059,
+     "kelly": 0.0322,
+     "bookmaker": "Betfair",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1193,
+     "p_mercato": 0.1483,
+     "quota": 5.99,
+     "quota_equa": 8.38,
+     "valore_atteso": -0.2852,
+     "scarto": -0.029,
+     "kelly": 0.0,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.0919,
+     "p_mercato": 0.1219,
+     "quota": 7.14,
+     "quota_equa": 10.88,
+     "valore_atteso": -0.3437,
+     "scarto": -0.03,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "adana-demirspor-alanyaspor",
+   "campionato": "superlig",
+   "casa": "Adana Demirspor",
+   "ospite": "Alanyaspor",
+   "ora": "30/08/2026 17:00",
+   "gol_attesi_casa": 2.859,
+   "gol_attesi_ospite": 1.243,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.013589,
+     0.023612,
+     0.01282,
+     0.005314,
+     0.001652,
+     0.000411
+    ],
+    [
+     0.050396,
+     0.055953,
+     0.03665,
+     0.015191,
+     0.004723,
+     0.001175
+    ],
+    [
+     0.067757,
+     0.084256,
+     0.052386,
+     0.021714,
+     0.00675,
+     0.001679
+    ],
+    [
+     0.064567,
+     0.080288,
+     0.049919,
+     0.020692,
+     0.006432,
+     0.0016
+    ],
+    [
+     0.046145,
+     0.057381,
+     0.035677,
+     0.014788,
+     0.004597,
+     0.001143
+    ],
+    [
+     0.026383,
+     0.032808,
+     0.020398,
+     0.008455,
+     0.002628,
+     0.000654
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.0843
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0803
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0678
+    },
+    {
+     "risultato": "3-0",
+     "p": 0.0646
+    },
+    {
+     "risultato": "4-1",
+     "p": 0.0574
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.7095,
+     "X": 0.1479,
+     "2": 0.1425
+    },
+    "btts": {
+     "si": 0.6677,
+     "no": 0.3323
+    },
+    "ou_1.5": {
+     "over": 0.9124,
+     "under": 0.0876
+    },
+    "ou_2.5": {
+     "over": 0.7759,
+     "under": 0.2241
+    },
+    "ou_3.5": {
+     "over": 0.5851,
+     "under": 0.4149
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.7095,
+     "p_mercato": 0.6772,
+     "quota": 1.42,
+     "quota_equa": 1.41,
+     "valore_atteso": 0.0075,
+     "scarto": 0.0323,
+     "kelly": 0.0045,
+     "bookmaker": "888sport",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1479,
+     "p_mercato": 0.1627,
+     "quota": 5.51,
+     "quota_equa": 6.76,
+     "valore_atteso": -0.1848,
+     "scarto": -0.0147,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.1425,
+     "p_mercato": 0.1601,
+     "quota": 5.59,
+     "quota_equa": 7.02,
+     "valore_atteso": -0.2032,
+     "scarto": -0.0176,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    }
+   ]
+  },
+  {
+   "id": "kasımpaşa-antalyaspor",
+   "campionato": "superlig",
+   "casa": "Kasımpaşa",
+   "ospite": "Antalyaspor",
+   "ora": "30/08/2026 18:30",
+   "gol_attesi_casa": 2.249,
+   "gol_attesi_ospite": 1.328,
+   "rho": 0.0508,
+   "matrice": [
+    [
+     0.023728,
+     0.041384,
+     0.024663,
+     0.010918,
+     0.003625,
+     0.000963
+    ],
+    [
+     0.067149,
+     0.079301,
+     0.055473,
+     0.024556,
+     0.008153,
+     0.002165
+    ],
+    [
+     0.070746,
+     0.093952,
+     0.062385,
+     0.027616,
+     0.009169,
+     0.002435
+    ],
+    [
+     0.053041,
+     0.070439,
+     0.046772,
+     0.020705,
+     0.006874,
+     0.001826
+    ],
+    [
+     0.029825,
+     0.039608,
+     0.0263,
+     0.011642,
+     0.003865,
+     0.001027
+    ],
+    [
+     0.013417,
+     0.017817,
+     0.011831,
+     0.005237,
+     0.001739,
+     0.000462
+    ]
+   ],
+   "risultati_probabili": [
+    {
+     "risultato": "2-1",
+     "p": 0.094
+    },
+    {
+     "risultato": "1-1",
+     "p": 0.0793
+    },
+    {
+     "risultato": "2-0",
+     "p": 0.0707
+    },
+    {
+     "risultato": "3-1",
+     "p": 0.0704
+    },
+    {
+     "risultato": "1-0",
+     "p": 0.0671
+    }
+   ],
+   "mercati": {
+    "1x2": {
+     "1": 0.5863,
+     "X": 0.1905,
+     "2": 0.2233
+    },
+    "btts": {
+     "si": 0.6532,
+     "no": 0.3468
+    },
+    "ou_1.5": {
+     "over": 0.8677,
+     "under": 0.1323
+    },
+    "ou_2.5": {
+     "over": 0.693,
+     "under": 0.307
+    },
+    "ou_3.5": {
+     "over": 0.4796,
+     "under": 0.5204
+    }
+   },
+   "esiti": [
+    {
+     "esito": "1",
+     "p_modello": 0.5863,
+     "p_mercato": 0.6099,
+     "quota": 1.57,
+     "quota_equa": 1.71,
+     "valore_atteso": -0.0796,
+     "scarto": -0.0236,
+     "kelly": 0.0,
+     "bookmaker": "Bet365",
+     "valore": false
+    },
+    {
+     "esito": "X",
+     "p_modello": 0.1905,
+     "p_mercato": 0.1858,
+     "quota": 4.86,
+     "quota_equa": 5.25,
+     "valore_atteso": -0.0742,
+     "scarto": 0.0047,
+     "kelly": 0.0,
+     "bookmaker": "Pinnacle",
+     "valore": false
+    },
+    {
+     "esito": "2",
+     "p_modello": 0.2233,
+     "p_mercato": 0.2044,
+     "quota": 4.45,
+     "quota_equa": 4.48,
+     "valore_atteso": -0.0065,
+     "scarto": 0.0189,
+     "kelly": 0.0,
+     "bookmaker": "William Hill",
+     "valore": false
+    }
+   ]
+  }
+ ]
+}

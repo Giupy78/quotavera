@@ -1,0 +1,63 @@
+"""Nucleo comune: tipi, mercato, metriche. Non sa nulla di sport specifici."""
+
+from engine.core.market import (
+    kelly,
+    margine,
+    probabilita_implicite,
+    quota_equa,
+    valore_atteso,
+    valore_di_chiusura,
+)
+from engine.core.metrics import (
+    FasciaCalibrazione,
+    brier,
+    calibrazione,
+    curva_profitto,
+    curva_rendimento,
+    errore_calibrazione,
+    log_loss,
+    rendimento,
+    ribasso_massimo,
+)
+from engine.core.types import (
+    MERCATO_1X2,
+    MERCATO_BTTS,
+    MERCATO_HANDICAP,
+    MERCATO_ML,
+    MERCATO_OU,
+    Fixture,
+    Incontro,
+    Occasione,
+    Prediction,
+    Squadra,
+    normalizza,
+)
+
+__all__ = [
+    "MERCATO_1X2",
+    "MERCATO_BTTS",
+    "MERCATO_HANDICAP",
+    "MERCATO_ML",
+    "MERCATO_OU",
+    "FasciaCalibrazione",
+    "Fixture",
+    "Incontro",
+    "Occasione",
+    "Prediction",
+    "Squadra",
+    "brier",
+    "calibrazione",
+    "curva_profitto",
+    "curva_rendimento",
+    "errore_calibrazione",
+    "kelly",
+    "log_loss",
+    "margine",
+    "normalizza",
+    "probabilita_implicite",
+    "quota_equa",
+    "rendimento",
+    "ribasso_massimo",
+    "valore_atteso",
+    "valore_di_chiusura",
+]

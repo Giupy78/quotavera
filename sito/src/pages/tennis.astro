@@ -1,0 +1,58 @@
+---
+import Base from "../layouts/Base.astro";
+import tennis from "../dati/tennis.json";
+
+const num = (v: number, d = 1) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number) => num(v * 100, 1) + "%";
+---
+
+<Base titolo="Tennis" descrizione="Dal punto al match, per ricorsione.">
+  <section>
+    <p class="occhiello">Superficie: {tennis.superficie} · match simulati</p>
+    <div class="hd">
+      <h1>Tennis</h1>
+      <p>
+        Si stima una cosa sola — la probabilità di vincere un punto al proprio
+        servizio — e da lì si risale a game, tie-break, set e match.
+      </p>
+    </div>
+
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Match</th>
+            <th class="num">Elo</th>
+            <th class="num">Punti al servizio</th>
+            <th class="num">Set</th>
+            <th class="num">Match (al meglio di 5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            tennis.partite.map((p) => (
+              <tr>
+                <td><b>{p.casa} — {p.ospite}</b></td>
+                <td class="num">{p.elo_casa} – {p.elo_ospite}</td>
+                <td class="num">
+                  {pct(p.servizio_casa)} – {pct(p.servizio_ospite)}
+                </td>
+                <td class="num">{pct(p.p_set)}</td>
+                <td class="num"><b>{pct(p.p_casa)}</b></td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <p style="font-size:12.5px;color:var(--ink-3);margin-top:14px;line-height:1.55;max-width:70ch">
+      Guardate come cresce il vantaggio da sinistra a destra: qualche punto
+      percentuale sul servizio diventa molto di più sul set, e ancora di più sul
+      match. È l'unica cosa che bisogna capire del tennis per prezzarlo, ed è
+      anche il motivo per cui i modelli fatti sul risultato invece che sul punto
+      sbagliano sistematicamente.
+    </p>
+  </section>
+</Base>

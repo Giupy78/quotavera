@@ -1,0 +1,163 @@
+---
+import Base from "../../../layouts/Base.astro";
+import BarraProbabilita from "../../../components/BarraProbabilita.astro";
+import MatriceRisultati from "../../../components/MatriceRisultati.astro";
+import campionati from "../../../dati/campionati.json";
+import partite from "../../../dati/partite.json";
+
+export function getStaticPaths() {
+  const leghe = Object.fromEntries(campionati.campionati.map((c) => [c.slug, c]));
+  return partite.partite.map((p: any) => ({
+    params: { campionato: p.campionato, partita: p.id },
+    props: { p, lega: leghe[p.campionato] },
+  }));
+}
+
+const { p, lega } = Astro.props;
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+const etichette: Record<string, string> = {
+  "1x2": "Esito finale",
+  btts: "Gol / Gol",
+  "ou_1.5": "1,5",
+  "ou_2.5": "2,5",
+  "ou_3.5": "3,5",
+};
+const nomiEsito: Record<string, string> = {
+  "1": `1 — ${p.casa}`,
+  X: "X — pareggio",
+  "2": `2 — ${p.ospite}`,
+  si: "Gol / Gol: sì",
+  no: "Gol / Gol: no",
+};
+
+const derivati: { nome: string; p: number }[] = [];
+for (const [mercato, esiti] of Object.entries(p.mercati)) {
+  for (const [esito, prob] of Object.entries(esiti as Record<string, number>)) {
+    const nome =
+      mercato === "1x2" || mercato === "btts"
+        ? nomiEsito[esito] ?? esito
+        : `${esito === "over" ? "Over" : "Under"} ${etichette[mercato]}`;
+    derivati.push({ nome, p: prob });
+  }
+}
+
+const golAttesi = p.gol_attesi_casa + p.gol_attesi_ospite;
+---
+
+<Base titolo={`${p.casa} — ${p.ospite}`}>
+  <section>
+    <p class="occhiello">
+      <a href={`/calcio/${lega.slug}/`} style="color:inherit">{lega.bandiera} {lega.nome}</a>
+      · {p.ora}
+    </p>
+    <div class="hd">
+      <h1>{p.casa} — {p.ospite}</h1>
+      <p>
+        Reti attese <span class="mono">{num(p.gol_attesi_casa)}</span> —
+        <span class="mono">{num(p.gol_attesi_ospite)}</span>, in totale
+        <span class="mono">{num(golAttesi)}</span>.
+      </p>
+    </div>
+
+    <div style="margin-bottom:26px">
+      <BarraProbabilita esiti={p.esiti} />
+    </div>
+
+    <div class="feature">
+      <div class="pannello">
+        <h3>Probabilità di ogni risultato esatto</h3>
+        <p class="sub">
+          Tutto quello che c'è sotto viene da qui. I mercati non sono stime
+          separate: sono somme di celle di questa tabella.
+        </p>
+        <MatriceRisultati matrice={p.matrice} casa={p.casa} ospite={p.ospite} />
+      </div>
+
+      <div>
+        <div class="pannello">
+          <h3>Modello contro mercato</h3>
+          <p class="sub">
+            La quota equa è quella che pareggerebbe il conto sul lungo periodo.
+            Se il mercato la supera, la giocata ha valore atteso positivo.
+            <a href="/quote/">Come funziona →</a>
+          </p>
+          <div class="scorri">
+            <table class="dati" style="min-width:0">
+              <thead>
+                <tr>
+                  <th>Esito</th>
+                  <th class="num">Modello</th>
+                  <th class="num">Equa</th>
+                  <th class="num">Mercato</th>
+                  <th class="num">Valore</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  p.esiti.map((e: any) => (
+                    <tr style={e.valore ? "background:var(--good-bg)" : undefined}>
+                      <td>
+                        <b>{e.esito}</b>
+                        <div style="font-size:11px;color:var(--ink-3)">{e.bookmaker}</div>
+                      </td>
+                      <td class="num">{pct(e.p_modello)}</td>
+                      <td class="num">{num(e.quota_equa)}</td>
+                      <td class="num">{num(e.quota)}</td>
+                      <td
+                        class="num"
+                        style={e.valore ? "color:var(--good);font-weight:600" : "color:var(--ink-3)"}
+                      >
+                        {e.valore_atteso >= 0 ? "+" : ""}
+                        {num(e.valore_atteso * 100, 1)}%
+                      </td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pannello" style="margin-top:26px">
+          <h3>Mercati derivati</h3>
+          <p class="sub">A destra la quota equa corrispondente.</p>
+          <div class="mkt">
+            {
+              derivati.map((d) => (
+                <div>
+                  <span>{d.nome}</span>
+                  <b class="mono">{pct(d.p)}</b>
+                  <span class="q mono">{num(1 / d.p)}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="pannello" style="margin-top:26px">
+          <h3>Risultati più probabili</h3>
+          <p class="sub">Le cinque celle più alte della tabella accanto.</p>
+          <div class="mkt">
+            {
+              p.risultati_probabili.map((r: any) => (
+                <div>
+                  <span class="mono">{r.risultato}</span>
+                  <b class="mono">{pct(r.p)}</b>
+                  <span class="q mono">{num(1 / r.p)}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:24px">
+      <a href={`/calcio/${lega.slug}/`}>← torna alla {lega.nome}</a>
+    </p>
+  </section>
+</Base>

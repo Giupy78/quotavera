@@ -1,0 +1,94 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  titolo: string;
+  descrizione?: string;
+  simulato?: boolean;
+}
+
+const { titolo, descrizione = "", simulato = true } = Astro.props;
+const qui = Astro.url.pathname;
+
+const voci = [
+  { href: "/", testo: "Campionati" },
+  { href: "/mercati/", testo: "Confronto mercati" },
+  { href: "/quote/", testo: "Come si leggono" },
+  { href: "/track-record/", testo: "Track record" },
+  { href: "/modello/", testo: "Il modello" },
+  { href: "/basket/", testo: "Basket" },
+  { href: "/tennis/", testo: "Tennis" },
+];
+
+const attiva = (href: string) =>
+  href === "/" ? qui === "/" : qui.startsWith(href);
+---
+
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titolo} — Quota Vera</title>
+    {descrizione && <meta name="description" content={descrizione} />}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+    />
+    {/* Finché i dati sono simulati il sito non va indicizzato: mostra partite
+        inventate con nomi di squadre vere, e un motore di ricerca non legge il
+        banner. Si apre al pubblico impostando PUBLIC_INDICIZZA=1 nelle
+        variabili d'ambiente di Cloudflare Pages, non toccando il codice. */}
+    {import.meta.env.PUBLIC_INDICIZZA !== "1" && (
+      <meta name="robots" content="noindex, nofollow" />
+    )}
+  </head>
+  <body>
+    <div class="board">
+      <div class="wrap">
+        <div class="topbar">
+          <a class="marchio" href="/">Quota <em>Vera</em></a>
+          <nav class="menu">
+            {
+              voci.map((v) => (
+                <a href={v.href} aria-current={attiva(v.href) ? "page" : undefined}>
+                  {v.testo}
+                </a>
+              ))
+            }
+          </nav>
+        </div>
+      </div>
+      {
+        simulato && (
+          <div class="wrap avviso-simulato">
+            <span>
+              <b>Dati simulati.</b> Squadre, quote e risultati sono generati dal
+              modello su un campionato inventato, per costruire il sito prima di
+              collegare i dati veri. Nessun pronostico reale.
+            </span>
+          </div>
+        )
+      }
+    </div>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <div class="wrap">
+      <footer>
+        <p>
+          Quota Vera — probabilità calcolate da un modello statistico, confrontate
+          con le quote di mercato. Il codice del motore e le metriche sono
+          pubblici: <a href="/modello/">come funziona</a>.
+        </p>
+        <p>
+          Questo sito non invita a scommettere e non contiene collegamenti a
+          operatori di gioco. È un servizio informativo di analisi e comparazione.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

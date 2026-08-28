@@ -1,0 +1,19 @@
+{
+  "name": "quotavera-sito",
+  "type": "module",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev --port 4321",
+    "dev:rete": "astro dev --host --port 4321",
+    "build": "astro build",
+    "preview": "astro preview --port 4321",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.2.0"
+  }
+}

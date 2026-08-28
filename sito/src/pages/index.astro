@@ -1,0 +1,250 @@
+---
+import Base from "../layouts/Base.astro";
+import campionati from "../dati/campionati.json";
+import giornate from "../dati/giornate.json";
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 1) => num(v * 100, d) + "%";
+
+const leghe = campionati.campionati;
+const partiteTotali = leghe.reduce((s, c) => s + c.partite_giornata, 0);
+const occasioniTotali = leghe.reduce((s, c) => s + c.occasioni, 0);
+
+const margineMin = leghe.reduce((a, c) => (c.margine_banco < a.margine_banco ? c : a));
+const margineMax = leghe.reduce((a, c) => (c.margine_banco > a.margine_banco ? c : a));
+const campoMax = leghe.reduce((a, c) =>
+  c.vantaggio_casa_stimato > a.vantaggio_casa_stimato ? c : a
+);
+
+/* Le partite più vicine nel tempo, da tutti i campionati insieme: è la vista
+   che un sito internazionale deve dare e che un sito su un campionato solo
+   non può dare. */
+const prossime = leghe
+  .flatMap((c) =>
+    (giornate.giornate as Record<string, any[]>)[c.slug]
+      .slice(0, 2)
+      .map((p) => ({ ...p, lega: c }))
+  )
+  .slice(0, 8);
+---
+
+<Base
+  titolo="Otto campionati"
+  descrizione="Probabilità calcolate da un modello statistico, confrontate con le quote di mercato, su otto campionati europei."
+>
+  <section>
+    <p class="occhiello">Giornata simulata · {partiteTotali} partite</p>
+    <div class="hd">
+      <h1>Il mercato, campionato per campionato</h1>
+      <p>
+        Le stesse probabilità calcolate ovunque con lo stesso modello. Quello
+        che cambia da un campionato all'altro — e cambia molto — è quanto costa
+        giocarci e quanto il mercato è difficile da battere.
+      </p>
+    </div>
+
+    <div class="tessere">
+      <div class="tessera">
+        <div class="k">Margine più basso</div>
+        <div class="v mono">{pct(margineMin.margine_banco)}</div>
+        <div class="n">{margineMin.bandiera} {margineMin.nome}</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Margine più alto</div>
+        <div class="v mono">{pct(margineMax.margine_banco)}</div>
+        <div class="n">
+          {margineMax.bandiera} {margineMax.nome} — {num(margineMax.margine_banco / margineMin.margine_banco, 1)}× il primo
+        </div>
+      </div>
+      <div class="tessera">
+        <div class="k">Fattore campo più forte</div>
+        <div class="v mono">{num(Math.exp(campoMax.vantaggio_casa_stimato), 2)}×</div>
+        <div class="n">{campoMax.bandiera} {campoMax.nome} — reti attese in casa</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Occasioni oggi</div>
+        <div class="v mono">{occasioniTotali}</div>
+        <div class="n">su {partiteTotali} partite, in tutti i campionati</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>I campionati</h2>
+      <p>
+        Ordinati per quanto il banco si tiene: è la prima cosa da sapere prima
+        di guardare qualsiasi quota.
+      </p>
+    </div>
+
+    <div class="leghe">
+      {
+        leghe
+          .slice()
+          .sort((a, b) => a.margine_banco - b.margine_banco)
+          .map((c) => (
+            <a class="lega" href={`/calcio/${c.slug}/`}>
+              <div class="lega-top">
+                <span class="bandiera">{c.bandiera}</span>
+                <div>
+                  <b>{c.nome}</b>
+                  <small>{c.paese} · {c.squadre} squadre</small>
+                </div>
+              </div>
+              <p class="lega-nota">{c.note}</p>
+              <div class="lega-num">
+                <div>
+                  <span>Margine banco</span>
+                  <b class="mono">{pct(c.margine_banco)}</b>
+                </div>
+                <div>
+                  <span>Reti a partita</span>
+                  <b class="mono">{num(c.gol_partita)}</b>
+                </div>
+                <div>
+                  <span>Fattore campo</span>
+                  <b class="mono">{num(Math.exp(c.vantaggio_casa_stimato), 2)}×</b>
+                </div>
+              </div>
+            </a>
+          ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Prossime partite</h2>
+      <p>Da tutti i campionati insieme. La barra è il modello, la tacca il mercato.</p>
+    </div>
+    <div class="slip">
+      {
+        prossime.map((p) => (
+          <a class="slip-row compatto" href={`/calcio/${p.lega.slug}/${p.id}/`}>
+            <div class="squadre">
+              {p.casa} — {p.ospite}
+              <small>
+                {p.lega.bandiera} {p.lega.nome} · {p.ora}
+              </small>
+            </div>
+            <div class="quote-riga mono">
+              {p.esiti.map((e: any) => (
+                <span>
+                  <i>{e.esito}</i>
+                  {num(e.quota)}
+                </span>
+              ))}
+            </div>
+            <div class="lettura">
+              {p.occasione ? (
+                <span class="pick">{p.occasione.esito} · {num(p.occasione.quota)}</span>
+              ) : (
+                <span style="color:var(--ink-3)">nessuna occasione</span>
+              )}
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  .leghe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .lega {
+    background: var(--card);
+    padding: 18px 20px 16px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lega:hover {
+    background: var(--sunk);
+  }
+  .lega-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .bandiera {
+    font-size: 26px;
+    line-height: 1;
+  }
+  .lega-top b {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .lega-top small {
+    display: block;
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-top: 2px;
+  }
+  .lega-nota {
+    margin: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    flex: 1;
+  }
+  .lega-num {
+    display: flex;
+    gap: 18px;
+    border-top: 1px solid var(--rule);
+    padding-top: 11px;
+  }
+  .lega-num div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .lega-num span {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .lega-num b {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .slip-row.compatto {
+    grid-template-columns: 260px minmax(0, 1fr) 140px;
+  }
+  .quote-riga {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .quote-riga span {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    border: 1px solid var(--rule);
+    padding: 4px 9px;
+    min-width: 66px;
+  }
+  .quote-riga i {
+    font-style: normal;
+    color: var(--ink-3);
+    font-size: 11px;
+  }
+  @media (max-width: 900px) {
+    .slip-row.compatto {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

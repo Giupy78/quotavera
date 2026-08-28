@@ -1,0 +1,91 @@
+name: Aggiornamento notturno
+
+# Ogni notte alle 04:00 ora italiana.
+#
+# Le pianificazioni di GitHub Actions sono **solo in UTC** e non conoscono
+# l'ora legale: 04:00 a Roma sono le 02:00 UTC d'estate e le 03:00 UTC
+# d'inverno. Quindi il lavoro parte a entrambe le ore e il primo passo lo
+# ferma se a Roma non sono le 4. Costa due avvii a vuoto l'anno di secondi,
+# e in cambio l'orario resta giusto senza doverci pensare due volte all'anno.
+on:
+  schedule:
+    - cron: "0 2 * * *"
+    - cron: "0 3 * * *"
+  workflow_dispatch:        # per lanciarlo a mano dalla scheda Actions
+
+permissions:
+  contents: write           # serve a scrivere il commit con i dati nuovi
+
+concurrency:
+  group: aggiornamento
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - name: È davvero notte a Roma?
+        id: ora
+        run: |
+          ORA=$(TZ=Europe/Rome date +%H)
+          echo "Ora a Roma: $ORA"
+          if [ "$ORA" != "04" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "Non sono le 4: mi fermo qui."
+            echo "procedi=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "procedi=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.ora.outputs.procedi == 'si'
+
+      - uses: actions/setup-python@v5
+        if: steps.ora.outputs.procedi == 'si'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa le dipendenze del motore
+        if: steps.ora.outputs.procedi == 'si'
+        run: pip install -r requirements.txt
+
+      - name: I test del motore devono passare
+        # Se il motore è rotto, i dati non si rigenerano. Meglio un sito fermo
+        # a ieri che un sito aggiornato con numeri sbagliati.
+        if: steps.ora.outputs.procedi == 'si'
+        run: python -m pytest -q
+
+      - name: Rigenera i dati
+        if: steps.ora.outputs.procedi == 'si'
+        run: python scripts/genera_sito.py
+
+      - uses: actions/setup-node@v4
+        if: steps.ora.outputs.procedi == 'si'
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: sito/package-lock.json
+
+      - name: Il sito deve compilare
+        # Si compila qui, prima di committare: se la build fallisce non si
+        # manda in produzione un commit che rompe il deploy.
+        if: steps.ora.outputs.procedi == 'si'
+        run: |
+          npm ci --prefix sito
+          npm run build --prefix sito
+
+      - name: Congela i dati di stanotte
+        # Il commit non è rumore: è l'archivio. Ogni notte resta agli atti cosa
+        # sapeva il modello e quali quote vedeva, e non è più modificabile.
+        # È la condizione senza cui un track record non si può dimostrare.
+        if: steps.ora.outputs.procedi == 'si'
+        run: |
+          git config user.name "Quota Vera"
+          git config user.email "actions@users.noreply.github.com"
+          git add sito/src/dati
+          if git diff --staged --quiet; then
+            echo "Nessun cambiamento nei dati."
+          else
+            git commit -m "dati: aggiornamento del $(TZ=Europe/Rome date +%Y-%m-%d)"
+            git push
+          fi

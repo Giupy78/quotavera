@@ -1,0 +1,525 @@
+/* Sistema visivo di Quota Vera.
+   Token unici per tutto il sito: i colori non si scrivono mai a mano nei
+   componenti, si prendono da qui. Le due serie di token (chiaro/scuro) sono
+   definite insieme perche' il tema segue quello del sistema operativo. */
+
+:root {
+  --paper: #f1f2ee;
+  --card: #fbfbf9;
+  --sunk: #e9eae4;
+  --ink: #14181a;
+  --ink-2: #4b5459;
+  --ink-3: #79817f;
+  --rule: #dcddd6;
+  --rule-strong: #c4c6bd;
+
+  /* Serie: 1 / X / 2. Validate per daltonismo e contrasto sul fondo chiaro. */
+  --s1: #1f6fb2;
+  --s2: #a9761d;
+  --s3: #8e4ea8;
+
+  --good: #2e7d5b;
+  --good-bg: #e2efe8;
+  --ramp-0: #f4f6f8;
+  --ramp-1: #1b5e96;
+
+  --board: #101619;
+  --board-ink: #edeee9;
+  --board-ink-2: #8e9a9e;
+  --board-rule: #263035;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #101315;
+    --card: #191d20;
+    --sunk: #141819;
+    --ink: #e9eae5;
+    --ink-2: #a0a8ab;
+    --ink-3: #79817f;
+    --rule: #2a3033;
+    --rule-strong: #3a4145;
+    --s1: #4a90cc;
+    --s2: #b5842a;
+    --s3: #a06bb8;
+    --good: #5aa582;
+    --good-bg: #1b2a24;
+    --ramp-0: #171c1f;
+    --ramp-1: #6faee0;
+    --board: #080b0d;
+    --board-ink: #e9eae5;
+    --board-ink-2: #828c90;
+    --board-rule: #1e2529;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------- intestazione */
+
+.board {
+  background: var(--board);
+  color: var(--board-ink);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--board-rule);
+}
+
+.marchio {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--board-ink);
+  text-decoration: none;
+  line-height: 1;
+}
+.marchio em {
+  font-style: normal;
+  color: var(--board-ink-2);
+}
+
+nav.menu {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+nav.menu a {
+  color: var(--board-ink-2);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+nav.menu a:hover {
+  color: var(--board-ink);
+}
+nav.menu a[aria-current="page"] {
+  color: var(--board-ink);
+  border-bottom-color: var(--s1);
+}
+
+.avviso-simulato {
+  background: var(--board);
+  color: var(--board-ink-2);
+  font-size: 12.5px;
+  line-height: 1.45;
+  padding: 11px 0 16px;
+}
+.avviso-simulato span {
+  display: block;
+  border-left: 3px solid var(--s2);
+  padding: 8px 0 8px 13px;
+}
+.avviso-simulato b {
+  color: var(--board-ink);
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ titoli */
+
+main {
+  padding-bottom: 80px;
+}
+section {
+  padding-top: 46px;
+}
+
+.hd {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+.hd h1,
+.hd h2 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+.hd h1 {
+  font-size: 26px;
+}
+.hd p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-2);
+  max-width: 48ch;
+  line-height: 1.5;
+}
+
+.occhiello {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 6px;
+}
+
+.prosa {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.68;
+  color: var(--ink);
+  max-width: 66ch;
+}
+.prosa p {
+  margin: 0 0 18px;
+}
+.prosa strong {
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------------ schedina */
+
+.slip {
+  border: 1px solid var(--rule);
+  background: var(--card);
+}
+.slip-row {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) 150px;
+  gap: 20px;
+  align-items: center;
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--rule);
+  color: inherit;
+  text-decoration: none;
+}
+.slip-row:last-child {
+  border-bottom: 0;
+}
+a.slip-row:hover {
+  background: var(--sunk);
+}
+.slip-row.head {
+  padding: 10px 18px;
+  background: var(--sunk);
+  border-bottom: 1px solid var(--rule-strong);
+}
+.slip-row.head span {
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.squadre {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.squadre small {
+  display: block;
+  font-weight: 500;
+  color: var(--ink-3);
+  font-size: 11.5px;
+  margin-top: 3px;
+  letter-spacing: 0.03em;
+}
+.lettura {
+  text-align: right;
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.45;
+}
+.pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--good-bg);
+  color: var(--good);
+  border: 1px solid var(--good);
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* La divergenza che non supera la soglia. Stessa forma della segnalazione,
+   colore spento: si legge che c'e' ed e' evidente che non conta. */
+.sotto-soglia {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px dashed var(--rule-strong);
+  color: var(--ink-3);
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.vuoto {
+  border: 1px dashed var(--rule-strong);
+  padding: 26px 22px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.vuoto b {
+  display: block;
+  color: var(--ink-2);
+  font-size: 14.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.legenda {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+.legenda li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.sw {
+  width: 11px;
+  height: 11px;
+  flex: none;
+}
+
+/* ------------------------------------------------------------------ pannelli */
+
+.pannello {
+  border: 1px solid var(--rule);
+  background: var(--card);
+  padding: 18px;
+  min-width: 0;
+}
+.pannello h3 {
+  margin: 0 0 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.pannello .sub {
+  margin: 0 0 16px;
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.5;
+}
+
+.duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 430px) minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+
+.mkt {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--rule);
+}
+.mkt div {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+}
+.mkt div:last-child {
+  border-bottom: 0;
+}
+.mkt span:first-child {
+  color: var(--ink-2);
+}
+.mkt b {
+  font-weight: 600;
+  font-size: 14px;
+}
+.mkt .q {
+  color: var(--ink-3);
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------------------ riquadri */
+
+.tessere {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+.tessera {
+  background: var(--card);
+  padding: 18px 20px 20px;
+}
+.tessera .k {
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.tessera .v {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 8px;
+  line-height: 1;
+}
+.tessera .n {
+  font-size: 12px;
+  color: var(--ink-3);
+  margin-top: 7px;
+  line-height: 1.35;
+}
+.tessera .v.buono {
+  color: var(--good);
+}
+
+table.dati {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  min-width: 520px;
+}
+table.dati th,
+table.dati td {
+  text-align: left;
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--rule);
+  line-height: 1.5;
+}
+table.dati th {
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+  border-bottom: 1px solid var(--rule-strong);
+}
+table.dati td.num {
+  text-align: right;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+table.dati th.num {
+  text-align: right;
+}
+.scorri {
+  overflow-x: auto;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+.griglia line {
+  stroke: var(--rule);
+  stroke-width: 1;
+}
+.assi text {
+  fill: var(--ink-3);
+  font-size: 11px;
+  font-family: var(--mono);
+}
+.assi line {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+.etichetta {
+  fill: var(--ink-2);
+  font-size: 11.5px;
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 56px;
+  padding: 24px 0 40px;
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.6;
+}
+footer a {
+  color: var(--ink-2);
+}
+
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--s1);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .tessere {
+    grid-template-columns: 1fr 1fr;
+  }
+  .duo,
+  .feature {
+    grid-template-columns: 1fr;
+  }
+  .slip-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .lettura {
+    text-align: left;
+  }
+}
