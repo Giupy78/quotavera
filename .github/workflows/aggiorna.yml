@@ -69,10 +69,14 @@ jobs:
       - name: Il sito deve compilare
         # Si compila qui, prima di committare: se la build fallisce non si
         # manda in produzione un commit che rompe il deploy.
+        #
+        # `working-directory` e non `npm --prefix`: quest'ultimo confonde npm
+        # su dove cercare i binari installati, e fallisce in modi poco chiari.
         if: steps.ora.outputs.procedi == 'si'
+        working-directory: sito
         run: |
-          npm ci --prefix sito
-          npm run build --prefix sito
+          npm ci
+          npm run build
 
       - name: Congela i dati di stanotte
         # Il commit non è rumore: è l'archivio. Ogni notte resta agli atti cosa
