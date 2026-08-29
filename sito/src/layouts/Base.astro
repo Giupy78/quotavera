@@ -107,10 +107,15 @@ const generato = new Date(campionati.generato_il);
     <div class="wrap">
       <footer>
         <p>
-          Statistiche e quote da <b>football-data.co.uk</b>. Ultimo aggiornamento
-          {" "}<time datetime={campionati.generato_il}>
+          Statistiche e quote da <b>football-data.co.uk</b>, calendario da
+          <b> openfootball</b>. Ultimo aggiornamento
+          {" "}<time id="generato" datetime={campionati.generato_il}>
             {generato.toLocaleString("it-IT", { dateStyle: "long", timeStyle: "short" })}
           </time>.
+          <span id="fermo" hidden>
+            {" "}<b>I dati non si aggiornano da più di due giorni</b> — qualcosa
+            si è inceppato nel processo notturno.
+          </span>
         </p>
         <p>
           Quota Vera pubblica statistiche e probabilità calcolate da un modello
@@ -124,6 +129,30 @@ const generato = new Date(campionati.generato_il);
         </p>
       </footer>
     </div>
+
+    <!--
+      L'unico JavaScript del sito, e c'e' una ragione precisa.
+
+      Il sito e' statico: la data di generazione e' scritta dentro la pagina al
+      momento della build, quindi confrontarla con "adesso" si puo' fare solo
+      nel browser di chi guarda. Senza questo controllo un processo notturno che
+      smette di girare non si nota: il sito resta in piedi, bello, e racconta
+      la settimana scorsa come se fosse oggi.
+
+      Se JavaScript e' disattivato non compare niente e la pagina funziona
+      uguale: e' un avviso di servizio, non un pezzo del contenuto.
+    -->
+    <script is:inline>
+      (function () {
+        var t = document.getElementById("generato");
+        var avviso = document.getElementById("fermo");
+        if (!t || !avviso) return;
+        var quando = new Date(t.getAttribute("datetime"));
+        if (isNaN(quando)) return;
+        var ore = (Date.now() - quando.getTime()) / 3600000;
+        if (ore > 48) avviso.hidden = false;
+      })();
+    </script>
   </body>
 </html>
 
