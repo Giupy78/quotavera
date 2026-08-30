@@ -452,7 +452,18 @@ def main() -> int:
                if k not in ("squadre", "calendario", "schede", "sorprese",
                             "classifica", "risultati", "stagione_completa")}
               for l in leghe]
+    # Due date diverse, e tenerle separate e' il punto.
+    #
+    # `generato_il` dice quando abbiamo guardato. `dati_fino_al` dice fin dove
+    # arrivano i risultati che abbiamo trovato. Le fonti pubblicano a turno
+    # concluso, un paio di volte a settimana: fra il venerdi' e la domenica si
+    # gioca e non esce niente, e un sito che mostra solo "ultimo aggiornamento:
+    # stanotte" sembra rotto proprio quando sta funzionando. Con tutt'e due si
+    # legge la differenza fra "il nostro processo si e' inceppato" e "il turno
+    # non e' ancora finito", che per chi guarda non e' la stessa cosa.
+    giocate = [p["data"] for l in leghe for g in l["risultati"] for p in g["partite"]]
     scrivi("campionati.json", {"generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                               "dati_fino_al": max(giocate) if giocate else None,
                                "fonte": "football-data.co.uk",
                                "campionati": indice})
     scrivi("calendario.json", {"campionati": {l["slug"]: l["calendario"] for l in leghe}})

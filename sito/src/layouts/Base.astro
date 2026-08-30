@@ -30,6 +30,17 @@ const attiva = (href: string) =>
 
 const principali = campionati.campionati.filter((c) => c.principale);
 const generato = new Date(campionati.generato_il);
+
+// Il risultato piu' recente che abbiamo, su tutti i campionati. E' quasi
+// sempre indietro rispetto a stanotte, e non e' un difetto: le fonti
+// pubblicano a turno concluso.
+//
+// Attenzione a come si scrive: e' un massimo, non un fronte unico. Ogni
+// lega ha il suo calendario, e mentre una e' arrivata a mercoledi' un'altra
+// puo' essere ferma al sabato prima. "Risultati fino al 27" sarebbe falso;
+// "il piu' recente e' del 27" e' esatto.
+const fino = campionati.dati_fino_al ? new Date(campionati.dati_fino_al) : null;
+const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", month: "long" });
 ---
 
 <html lang="it">
@@ -108,10 +119,14 @@ const generato = new Date(campionati.generato_il);
       <footer>
         <p>
           Statistiche e quote da <b>football-data.co.uk</b>, calendario da
-          <b> openfootball</b>. Ultimo aggiornamento
+          <b> openfootball</b>. Controllato
           {" "}<time id="generato" datetime={campionati.generato_il}>
             {generato.toLocaleString("it-IT", { dateStyle: "long", timeStyle: "short" })}
-          </time>.
+          </time>{fino && (
+            <>; il risultato più recente che abbiamo è del <b>{giorno(fino)}</b>
+            {" "}— le fonti pubblicano a turno concluso, un paio di volte a
+            settimana</>
+          )}.
           <span id="fermo" hidden>
             {" "}<b>I dati non si aggiornano da più di due giorni</b> — qualcosa
             si è inceppato nel processo notturno.
