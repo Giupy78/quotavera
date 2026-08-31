@@ -42,11 +42,34 @@ class Ruolo:
     in_porta: int = 0
     in_porta_subiti: int = 0
     corner: int = 0
+    corner_subiti: int = 0
+    falli: int = 0
+    falli_subiti: int = 0
     gialli: int = 0
     rossi: int = 0
     gol_pt_fatti: int = 0
     gol_pt_subiti: int = 0
     con_statistiche: int = 0
+
+    # Dal tabellino ESPN, che football-data non ha. Hanno un contatore tutto
+    # loro perche' esistono solo da questa stagione: dividere per
+    # `con_statistiche` farebbe medie schiacciate su partite che quei numeri
+    # non li avevano proprio.
+    tiri_respinti: int = 0
+    fuorigioco: int = 0
+    parate: int = 0
+    possesso: float = 0.0
+    passaggi: int = 0
+    passaggi_riusciti: int = 0
+    cross: int = 0
+    cross_riusciti: int = 0
+    contrasti: int = 0
+    contrasti_riusciti: int = 0
+    intercetti: int = 0
+    respinte: int = 0
+    lanci: int = 0
+    lanci_riusciti: int = 0
+    con_avanzate: int = 0
     over_25: int = 0
     gol_gol: int = 0
     clean_sheet: int = 0
@@ -80,8 +103,72 @@ class Ruolo:
         return self.corner / self.con_statistiche if self.con_statistiche else 0.0
 
     @property
+    def tiri_subiti_partita(self) -> float:
+        return self.tiri_subiti / self.con_statistiche if self.con_statistiche else 0.0
+
+    @property
+    def corner_subiti_partita(self) -> float:
+        return self.corner_subiti / self.con_statistiche if self.con_statistiche else 0.0
+
+    @property
+    def falli_partita(self) -> float:
+        return self.falli / self.con_statistiche if self.con_statistiche else 0.0
+
+    @property
     def cartellini_partita(self) -> float:
         return (self.gialli + self.rossi) / self.con_statistiche if self.con_statistiche else 0.0
+
+    def _avanzata(self, valore: float) -> float:
+        return valore / self.con_avanzate if self.con_avanzate else 0.0
+
+    @property
+    def possesso_medio(self) -> float:
+        return self._avanzata(self.possesso)
+
+    @property
+    def passaggi_partita(self) -> float:
+        return self._avanzata(self.passaggi)
+
+    @property
+    def precisione_passaggi(self) -> float:
+        return self.passaggi_riusciti / self.passaggi if self.passaggi else 0.0
+
+    @property
+    def precisione_cross(self) -> float:
+        return self.cross_riusciti / self.cross if self.cross else 0.0
+
+    @property
+    def precisione_lanci(self) -> float:
+        return self.lanci_riusciti / self.lanci if self.lanci else 0.0
+
+    @property
+    def contrasti_partita(self) -> float:
+        return self._avanzata(self.contrasti)
+
+    @property
+    def intercetti_partita(self) -> float:
+        return self._avanzata(self.intercetti)
+
+    @property
+    def respinte_partita(self) -> float:
+        return self._avanzata(self.respinte)
+
+    @property
+    def parate_partita(self) -> float:
+        return self._avanzata(self.parate)
+
+    @property
+    def fuorigioco_partita(self) -> float:
+        return self._avanzata(self.fuorigioco)
+
+    @property
+    def tiri_respinti_partita(self) -> float:
+        return self._avanzata(self.tiri_respinti)
+
+    @property
+    def precisione_tiri(self) -> float:
+        """Quanti dei tiri finiscono nello specchio. Dice la qualita' della conclusione."""
+        return self.in_porta / self.tiri if self.tiri else 0.0
 
     @property
     def quota_over_25(self) -> float:
@@ -191,10 +278,31 @@ def _aggiorna(r: Ruolo, fatti: int, subiti: int, p: PartitaStorica, in_casa: boo
     r.in_porta += s.in_porta[i]
     r.in_porta_subiti += s.in_porta[j]
     r.corner += s.corner[i]
+    r.corner_subiti += s.corner[j]
+    r.falli += s.falli[i]
+    r.falli_subiti += s.falli[j]
     r.gialli += s.gialli[i]
     r.rossi += s.rossi[i]
     r.gol_pt_fatti += s.gol_primo_tempo[i]
     r.gol_pt_subiti += s.gol_primo_tempo[j]
+
+    if not s.avanzate:
+        return
+    r.con_avanzate += 1
+    r.tiri_respinti += s.tiri_respinti[i]
+    r.fuorigioco += s.fuorigioco[i]
+    r.parate += s.parate[i]
+    r.possesso += s.possesso[i]
+    r.passaggi += s.passaggi[i]
+    r.passaggi_riusciti += s.passaggi_riusciti[i]
+    r.cross += s.cross[i]
+    r.cross_riusciti += s.cross_riusciti[i]
+    r.contrasti += s.contrasti[i]
+    r.contrasti_riusciti += s.contrasti_riusciti[i]
+    r.intercetti += s.intercetti[i]
+    r.respinte += s.respinte[i]
+    r.lanci += s.lanci[i]
+    r.lanci_riusciti += s.lanci_riusciti[i]
 
 
 def calcola(

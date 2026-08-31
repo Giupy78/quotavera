@@ -15,7 +15,7 @@ from __future__ import annotations
 from collections import defaultdict
 import json
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 RADICE = Path(__file__).resolve().parent.parent
@@ -27,7 +27,8 @@ from engine.core.market import margine, probabilita_implicite
 from engine.core.types import Fixture
 from engine.dati.catalogo import CAMPIONATI, PER_SLUG
 from engine.dati.football_data import calendario, carica, stagioni
-from engine.dati import openfootball
+from engine.dati import espn, openfootball
+from engine.dati.unione import fondi
 from engine.sports.football.model import ModelloCalcio
 from engine.statistiche import calcola, conversione_media, precedenti
 
@@ -56,9 +57,21 @@ NOME_STAGIONE_PRECEDENTE = "2025/26"
 # modo giusto di misurare una squadra: la sosta estiva non azzera come gioca.
 FINESTRA = 20
 
+# Quante partite indietro puo' guardare chi legge. Sono quattro scelte e non un
+# cursore libero perche' il sito e' statico: ogni finestra e' calcolata qui e
+# scritta nella pagina, e il lettore le scambia senza che parta una richiesta.
+# Cinque per la forma del momento, quaranta per il fondo stagione; venti resta
+# il valore predefinito, che e' il compromesso fra rumore e attualita'.
+FINESTRE = (5, 10, 20, 40)
+
 
 def arrotonda(v: float, d: int = 4) -> float:
     return round(float(v), d)
+
+
+def oggi_utc() -> date:
+    """La data di oggi in UTC — la stessa che vede la macchina di GitHub."""
+    return datetime.now(timezone.utc).date()
 
 
 def numeri_ruolo(r) -> dict:
@@ -69,13 +82,70 @@ def numeri_ruolo(r) -> dict:
         "tiri": arrotonda(r.tiri_partita, 1),
         "in_porta": arrotonda(r.in_porta_partita, 1),
         "in_porta_subiti": arrotonda(r.in_porta_subiti_partita, 1),
+        "tiri_subiti": arrotonda(r.tiri_subiti_partita, 1),
         "corner": arrotonda(r.corner_partita, 1),
+        "corner_subiti": arrotonda(r.corner_subiti_partita, 1),
+        "falli": arrotonda(r.falli_partita, 1),
         "cartellini": arrotonda(r.cartellini_partita, 1),
+        "gialli": r.gialli,
+        "rossi": r.rossi,
+        "precisione_tiri": arrotonda(r.precisione_tiri, 3),
         "over_25": arrotonda(r.quota_over_25, 3),
         "gol_gol": arrotonda(r.quota_gol_gol, 3),
         "clean_sheet": arrotonda(r.quota_clean_sheet, 3),
         "a_secco": arrotonda(r.quota_a_secco, 3),
+        # Dal tabellino ESPN. `con_avanzate` a zero significa che per questa
+        # squadra non ne abbiamo ancora: il sito deve saperlo per non stampare
+        # zeri che sembrano misure.
+        "con_avanzate": r.con_avanzate,
+        "possesso": arrotonda(r.possesso_medio, 1),
+        "passaggi": arrotonda(r.passaggi_partita, 0),
+        "precisione_passaggi": arrotonda(r.precisione_passaggi, 3),
+        "precisione_cross": arrotonda(r.precisione_cross, 3),
+        "precisione_lanci": arrotonda(r.precisione_lanci, 3),
+        "contrasti": arrotonda(r.contrasti_partita, 1),
+        "intercetti": arrotonda(r.intercetti_partita, 1),
+        "respinte": arrotonda(r.respinte_partita, 1),
+        "parate": arrotonda(r.parate_partita, 1),
+        "fuorigioco": arrotonda(r.fuorigioco_partita, 1),
+        "tiri_respinti": arrotonda(r.tiri_respinti_partita, 1),
     }
+
+
+def incrocio(casa, ospite) -> list[dict] | None:
+    """Attacco di chi gioca in casa contro difesa di chi gioca fuori.
+
+    E' il confronto che serve davvero e che quasi nessuno fa. Mostrare i tiri
+    dell'Inter accanto ai tiri del Como non dice niente: giocano contro
+    avversari diversi. Mettere i tiri che l'Inter *fa in casa* accanto ai tiri
+    che il Como *concede fuori* e' un incrocio, e risponde alla domanda vera —
+    quanto e' probabile che questa partita produca tiri.
+
+    Ogni riga tiene i due ruoli separati: la media complessiva di una squadra
+    nasconde la differenza fra come gioca in casa e come gioca in trasferta,
+    che in molti campionati e' il fattore piu' grande di tutti.
+    """
+    if not casa or not ospite:
+        return None
+    c, o = casa["casa"], ospite["trasferta"]
+    righe = [
+        ("Gol", c["gol_fatti"], o["gol_subiti"], 2),
+        ("Tiri", c["tiri"], o["tiri_subiti"], 1),
+        ("Tiri in porta", c["in_porta"], o["in_porta_subiti"], 1),
+        ("Calci d'angolo", c["corner"], o["corner_subiti"], 1),
+    ]
+    fuori = [{"voce": v, "attacco": a, "difesa": d,
+              "media": arrotonda((a + d) / 2, dec)}
+             for v, a, d, dec in righe]
+    # Le avanzate solo se ci sono da tutte e due le parti: mezza riga vuota
+    # confonde piu' di una riga assente.
+    # Con una partita sola "media possesso" e' una parola grossa: e' quel
+    # singolo dato, e nell'incrocio i due valori sommerebbero a cento perche'
+    # vengono dalla stessa partita. Sotto tre, meglio non dirlo.
+    if c.get("con_avanzate", 0) >= 3 and o.get("con_avanzate", 0) >= 3:
+        fuori.append({"voce": "Possesso", "attacco": c["possesso"],
+                      "difesa": o["possesso"], "media": None})
+    return fuori
 
 
 def numeri_squadra(s, conv: float) -> dict:
@@ -111,7 +181,35 @@ def elabora(c, storico, stagione, cal) -> dict | None:
     stat = calcola(storico, ultime=FINESTRA)
     forma = calcola(storico, ultime=6)
 
-    partite_lega = [p for p in cal if p.campionato == c.slug]
+    # Il calendario di football-data continua a elencare partite gia' giocate
+    # finche' non le sposta nel file dei risultati, e quel passaggio puo'
+    # tardare giorni. Il risultato, senza questo filtro, e' un sito che mostra
+    # Milan-Venezia "in programma" e due sezioni piu' sotto ne pubblica il 2-0.
+    #
+    # Adesso che ESPN ci dice quali sono finite, si incrociano: se una partita
+    # e' nello storico, dal calendario esce. La tolleranza sulla data serve
+    # perche' le due fonti non concordano sempre sul giorno.
+    giocate: dict[tuple[str, str], list] = {}
+    for x in storico:
+        giocate.setdefault((x.incontro.casa, x.incontro.ospite), []).append(x.incontro.data)
+
+    def gia_giocata(p) -> bool:
+        return any(abs((d - p.data).days) <= 3
+                   for d in giocate.get((p.casa, p.ospite), ()))
+
+    # E una regola che non dipende da nessuna fonte: una partita di ieri non e'
+    # "in programma". Serve per i due campionati scozzesi minori, che ESPN non
+    # copre — li' non sappiamo il risultato, ma sappiamo che si sono giocate, e
+    # tenerle fra le prossime sarebbe sbagliato comunque.
+    # Il margine di un giorno evita di far sparire le partite di stasera per
+    # via del fuso: il lavoro notturno gira in UTC.
+    ieri = oggi_utc() - timedelta(days=1)
+
+    partite_lega = [p for p in cal
+                    if p.campionato == c.slug and not gia_giocata(p) and p.data > ieri]
+    tolte = sum(1 for p in cal if p.campionato == c.slug) - len(partite_lega)
+    if tolte:
+        print(f"  {c.etichetta:34s} {tolte} partite tolte dal calendario: gia' giocate")
     righe, schede = [], []
 
     for p in partite_lega:
@@ -164,6 +262,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
             "stat_ospite": numeri_squadra(so, conv) if so else None,
             "forma_casa": numeri_squadra(forma[p.casa], conv) if p.casa in forma else None,
             "forma_ospite": numeri_squadra(forma[p.ospite], conv) if p.ospite in forma else None,
+            "incrocio": incrocio(numeri_squadra(sc, conv) if sc else None,
+                                 numeri_squadra(so, conv) if so else None),
             "precedenti": [
                 {"data": x.incontro.data.isoformat(), "casa": x.incontro.casa,
                  "ospite": x.incontro.ospite, "gol_casa": x.incontro.punti_casa,
@@ -185,6 +285,43 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         (numeri_squadra(s, conv) for nome, s in stat.items() if nome in attuali),
         key=lambda s: s["scarto_conversione"], reverse=True,
     )
+
+    # Le stesse statistiche su piu' profondita', perche' la domanda "come sta
+    # questa squadra" non ha una sola risposta giusta: cinque partite dicono il
+    # momento e sono quasi tutto rumore, quaranta dicono il valore e non si
+    # accorgono di un cambio di allenatore. Darle tutte e lasciare scegliere e'
+    # piu' onesto che sceglierne una e presentarla come la verita'.
+    finestre = {}
+    for n_finestra in FINESTRE:
+        st = calcola(storico, ultime=n_finestra)
+        finestre[str(n_finestra)] = sorted(
+            (numeri_squadra(x, conv) for nome, x in st.items() if nome in attuali),
+            key=lambda s: s["scarto_conversione"], reverse=True,
+        )
+
+    # Quanto della finestra e' di questa stagione. A inizio anno la risposta e'
+    # "quasi niente", e va detto: chi legge deve sapere che sta guardando in
+    # buona parte il campionato scorso. Il numero si calcola, non si scrive a
+    # mano — cosi' l'avviso sparisce da solo quando smette di essere vero.
+    per_squadra = defaultdict(list)
+    for p_st in sorted(storico, key=lambda x: x.incontro.data):
+        per_squadra[p_st.incontro.casa].append(p_st)
+        per_squadra[p_st.incontro.ospite].append(p_st)
+    composizione = {}
+    for n_finestra in FINESTRE:
+        dentro = fuori_stagione = 0
+        for nome in attuali:
+            for p_st in per_squadra.get(nome, [])[-n_finestra:]:
+                if p_st.incontro.data >= INIZIO_STAGIONE:
+                    dentro += 1
+                else:
+                    fuori_stagione += 1
+        totale = dentro + fuori_stagione
+        composizione[str(n_finestra)] = {
+            "di_questa_stagione": dentro,
+            "di_prima": fuori_stagione,
+            "quota_stagione": arrotonda(dentro / totale, 3) if totale else 0.0,
+        }
 
     # La classifica invece e' della stagione in corso e basta: sommare i punti
     # dell'anno scorso a quelli di quest'anno non sarebbe una classifica.
@@ -270,6 +407,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "conversione": arrotonda(conv, 4),
         "vantaggio_casa": arrotonda(modello.vantaggio_casa, 4),
         "squadre": squadre,
+        "finestre": finestre,
+        "composizione_finestre": composizione,
         "calendario": righe,
         "schede": schede,
         "classifica": classifica,
@@ -434,8 +573,34 @@ def main() -> int:
     print(f"  {len(cal)} partite in programma\n")
 
     leghe = []
+    oggi = date.today()
     for c in CAMPIONATI:
         storico = carica(c.slug, STORIA)
+
+        # Il buco che ESPN riempie: football-data pubblica a turno concluso e
+        # puo' arrivare con giorni di ritardo, cosi' il sito resta fermo mentre
+        # il campionato va avanti. Qui si prendono da ESPN le partite gia'
+        # giocate che football-data non ha ancora, e le statistiche avanzate
+        # che non avra' mai.
+        #
+        # I nomi contro cui abbinare sono quelli della *stagione in corso* —
+        # dalle partite gia' giocate e dal calendario. Usare tutto lo storico
+        # metterebbe in gara squadre retrocesse anni fa, e una somiglianza di
+        # troppo e' precisamente il modo in cui i gol finiscono nella squadra
+        # sbagliata.
+        in_corso = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
+        squadre_note = sorted(
+            {p.incontro.casa for p in in_corso} | {p.incontro.ospite for p in in_corso}
+            | {p.casa for p in cal if p.campionato == c.slug}
+            | {p.ospite for p in cal if p.campionato == c.slug}
+        )
+        if squadre_note:
+            recenti, _ = espn.aggiorna(c.slug, squadre_note, INIZIO_STAGIONE, oggi)
+            storico, arricchite, aggiunte = fondi(storico, recenti, c.slug)
+            if aggiunte or arricchite:
+                print(f"  {c.etichetta:34s} ESPN: +{aggiunte} partite,"
+                      f" {arricchite} arricchite")
+
         stagione = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
         dati = elabora(c, storico, stagione, cal)
         if not dati:
@@ -450,7 +615,8 @@ def main() -> int:
     print()
     indice = [{k: v for k, v in l.items()
                if k not in ("squadre", "calendario", "schede", "sorprese",
-                            "classifica", "risultati", "stagione_completa")}
+                            "classifica", "risultati", "stagione_completa",
+                            "finestre")}
               for l in leghe]
     # Due date diverse, e tenerle separate e' il punto.
     #
@@ -468,6 +634,13 @@ def main() -> int:
                                "campionati": indice})
     scrivi("calendario.json", {"campionati": {l["slug"]: l["calendario"] for l in leghe}})
     scrivi("squadre.json", {"campionati": {l["slug"]: l["squadre"] for l in leghe}})
+    scrivi("finestre.json", {
+        "disponibili": list(FINESTRE),
+        "predefinita": FINESTRA,
+        "campionati": {l["slug"]: {"dati": l["finestre"],
+                                   "composizione": l["composizione_finestre"]}
+                       for l in leghe},
+    })
     scrivi("classifiche.json", {"campionati": {l["slug"]: l["classifica"] for l in leghe}})
     scrivi("risultati.json", {"campionati": {l["slug"]: l["risultati"] for l in leghe}})
     scrivi("stagione.json", {"campionati": {

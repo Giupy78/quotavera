@@ -196,12 +196,52 @@ riscoperto ogni volta.
 
 | Cosa | Da dove | Costo |
 |---|---|---|
-| Risultati, statistiche di campo, quote di chiusura | football-data.co.uk | gratis |
+| Storico, quote di chiusura e di apertura | football-data.co.uk | gratis |
 | Calendario e quote pre-partita | `fixtures.csv`, stessa fonte | gratis |
+| Calendario completo di stagione | openfootball | gratis |
+| **Risultati del giorno e tabellini** | **ESPN** | **gratis** |
 | Coppe, quote in tempo reale | serve un'API | 20-30 €/mese |
 
 Trent'anni di risultati, dieci di quote di chiusura, senza una chiave né un
-account. La sola cosa che i dati gratuiti non danno è **l'oggi al minuto**.
+account.
+
+#### Perché è entrato ESPN (31 agosto 2026)
+
+football-data pubblica i risultati **a turno concluso**, e le intestazioni HTTP
+dei suoi file dicono quanto: il 31 agosto, di lunedì, i file di Serie A, Premier
+e Ligue 1 erano fermi al 24 — una settimana, con un turno intero giocato in
+mezzo. Il sito si rigenerava ogni notte e restava giustamente identico, il che
+è il modo peggiore di funzionare: sembra rotto proprio mentre non lo è.
+
+ESPN ha un endpoint pubblico senza chiave con i risultati entro pochi minuti dal
+fischio. Copre **20 dei nostri 22 campionati** (mancano le due serie scozzesi
+minori) e porta in regalo **27 statistiche per squadra** contro le 7 di
+football-data: possesso, passaggi, cross, contrasti, intercetti, respinte,
+parate.
+
+Tre cose imparate, che non si indovinano:
+
+- **Non si manda uno `User-Agent`.** Qualunque valore, anche quello di un
+  browser, fa rispondere `403`. Con quello predefinito di urllib la stessa
+  richiesta passa.
+- **I nomi delle squadre vanno abbinati con cura.** ESPN dice «Wolverhampton
+  Wanderers», football-data dice «Wolves». Togliendo gli orpelli societari si
+  arriva al 99%, ma togliere «City» e «Rovers» renderebbe *Bristol City* e
+  *Bristol Rovers* lo stesso nome: l'abbinamento accetta solo accoppiate
+  **univoche da entrambi i lati**, e chi resta fuori viene saltato. Un
+  abbinamento sbagliato non si vede — i gol finiscono nella squadra sbagliata e
+  la classifica mente in silenzio.
+- **`dati/espn/` sta nel repository.** È la memoria dei tabellini scaricati: la
+  macchina di GitHub nasce e muore ogni notte, e senza archivio rifarebbe una
+  richiesta per partita su tutta la stagione, ogni volta.
+
+Incrociando le due fonti è saltato fuori un difetto che c'era da sempre:
+`fixtures.csv` continua a elencare le partite già giocate finché non le sposta
+nei risultati. Il 31 agosto **8 delle 10 partite di Serie A «in programma»
+erano già finite**, e il sito ne pubblicava il risultato due sezioni più sotto.
+Ora chi è nello storico esce dal calendario, e una partita con data passata non
+è «in programma» comunque — regola che serve per i due campionati scozzesi che
+ESPN non copre.
 
 ### Cosa ha detto la verifica sui dati veri (28 agosto 2026)
 

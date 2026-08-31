@@ -1,6 +1,6 @@
 {
- "generato_il": "2026-08-30T07:14:31+00:00",
- "dati_fino_al": "2026-08-27",
+ "generato_il": "2026-08-31T16:14:30+00:00",
+ "dati_fino_al": "2026-08-31",
  "fonte": "football-data.co.uk",
  "campionati": [
   {
@@ -10,14 +10,36 @@
    "bandiera": "🇮🇹",
    "livello": 1,
    "principale": true,
-   "partite_storico": 1150,
-   "partite_stagione": 10,
+   "partite_storico": 1158,
+   "partite_stagione": 18,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 1,
+   "giornate_giocate": 2,
    "finestra_statistiche": 20,
-   "conversione": 0.3006,
-   "vantaggio_casa": 0.1081
+   "conversione": 0.3002,
+   "vantaggio_casa": 0.105,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 36,
+     "di_prima": 64,
+     "quota_stagione": 0.36
+    },
+    "10": {
+     "di_questa_stagione": 36,
+     "di_prima": 164,
+     "quota_stagione": 0.18
+    },
+    "20": {
+     "di_questa_stagione": 36,
+     "di_prima": 364,
+     "quota_stagione": 0.09
+    },
+    "40": {
+     "di_questa_stagione": 36,
+     "di_prima": 764,
+     "quota_stagione": 0.045
+    }
+   }
   },
   {
    "slug": "premier-league",
@@ -26,14 +48,36 @@
    "bandiera": "🏴",
    "livello": 1,
    "principale": true,
-   "partite_storico": 1150,
-   "partite_stagione": 10,
+   "partite_storico": 1159,
+   "partite_stagione": 19,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 1,
+   "giornate_giocate": 2,
    "finestra_statistiche": 20,
-   "conversione": 0.3264,
-   "vantaggio_casa": 0.1781
+   "conversione": 0.3287,
+   "vantaggio_casa": 0.1758,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 38,
+     "di_prima": 56,
+     "quota_stagione": 0.404
+    },
+    "10": {
+     "di_questa_stagione": 38,
+     "di_prima": 146,
+     "quota_stagione": 0.207
+    },
+    "20": {
+     "di_questa_stagione": 38,
+     "di_prima": 326,
+     "quota_stagione": 0.104
+    },
+    "40": {
+     "di_questa_stagione": 38,
+     "di_prima": 686,
+     "quota_stagione": 0.052
+    }
+   }
   },
   {
    "slug": "laliga",
@@ -42,14 +86,36 @@
    "bandiera": "🇪🇸",
    "livello": 1,
    "principale": true,
-   "partite_storico": 1160,
-   "partite_stagione": 20,
+   "partite_storico": 1168,
+   "partite_stagione": 28,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.3076,
-   "vantaggio_casa": 0.2904
+   "conversione": 0.3078,
+   "vantaggio_casa": 0.2955,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 56,
+     "di_prima": 38,
+     "quota_stagione": 0.596
+    },
+    "10": {
+     "di_questa_stagione": 56,
+     "di_prima": 123,
+     "quota_stagione": 0.313
+    },
+    "20": {
+     "di_questa_stagione": 56,
+     "di_prima": 293,
+     "quota_stagione": 0.16
+    },
+    "40": {
+     "di_questa_stagione": 56,
+     "di_prima": 633,
+     "quota_stagione": 0.081
+    }
+   }
   },
   {
    "slug": "bundesliga",
@@ -58,14 +124,36 @@
    "bandiera": "🇩🇪",
    "livello": 1,
    "principale": true,
-   "partite_storico": 918,
-   "partite_stagione": 0,
+   "partite_storico": 927,
+   "partite_stagione": 9,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 0,
+   "giornate_giocate": 1,
    "finestra_statistiche": 20,
-   "conversione": 0.3402,
-   "vantaggio_casa": 0.1704
+   "conversione": 0.3393,
+   "vantaggio_casa": 0.1839,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 18,
+     "di_prima": 60,
+     "quota_stagione": 0.231
+    },
+    "10": {
+     "di_questa_stagione": 18,
+     "di_prima": 135,
+     "quota_stagione": 0.118
+    },
+    "20": {
+     "di_questa_stagione": 18,
+     "di_prima": 285,
+     "quota_stagione": 0.059
+    },
+    "40": {
+     "di_questa_stagione": 18,
+     "di_prima": 580,
+     "quota_stagione": 0.03
+    }
+   }
   },
   {
    "slug": "ligue-1",
@@ -74,14 +162,36 @@
    "bandiera": "🇫🇷",
    "livello": 1,
    "principale": true,
-   "partite_storico": 927,
-   "partite_stagione": 9,
+   "partite_storico": 936,
+   "partite_stagione": 18,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 1,
+   "giornate_giocate": 2,
    "finestra_statistiche": 20,
-   "conversione": 0.3254,
-   "vantaggio_casa": 0.1942
+   "conversione": 0.3267,
+   "vantaggio_casa": 0.1945,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 36,
+     "di_prima": 48,
+     "quota_stagione": 0.429
+    },
+    "10": {
+     "di_questa_stagione": 36,
+     "di_prima": 128,
+     "quota_stagione": 0.22
+    },
+    "20": {
+     "di_questa_stagione": 36,
+     "di_prima": 288,
+     "quota_stagione": 0.111
+    },
+    "40": {
+     "di_questa_stagione": 36,
+     "di_prima": 604,
+     "quota_stagione": 0.056
+    }
+   }
   },
   {
    "slug": "eredivisie",
@@ -90,14 +200,36 @@
    "bandiera": "🇳🇱",
    "livello": 1,
    "principale": true,
-   "partite_storico": 942,
-   "partite_stagione": 24,
+   "partite_storico": 951,
+   "partite_stagione": 33,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 3,
+   "giornate_giocate": 4,
    "finestra_statistiche": 20,
-   "conversione": 0.3133,
-   "vantaggio_casa": 0.2322
+   "conversione": 0.3153,
+   "vantaggio_casa": 0.2153,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 66,
+     "di_prima": 22,
+     "quota_stagione": 0.75
+    },
+    "10": {
+     "di_questa_stagione": 66,
+     "di_prima": 102,
+     "quota_stagione": 0.393
+    },
+    "20": {
+     "di_questa_stagione": 66,
+     "di_prima": 262,
+     "quota_stagione": 0.201
+    },
+    "40": {
+     "di_questa_stagione": 66,
+     "di_prima": 576,
+     "quota_stagione": 0.103
+    }
+   }
   },
   {
    "slug": "primeira-liga",
@@ -106,14 +238,36 @@
    "bandiera": "🇵🇹",
    "livello": 1,
    "principale": true,
-   "partite_storico": 942,
-   "partite_stagione": 24,
+   "partite_storico": 949,
+   "partite_stagione": 31,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 3,
+   "giornate_giocate": 4,
    "finestra_statistiche": 20,
-   "conversione": 0.3224,
-   "vantaggio_casa": 0.2094
+   "conversione": 0.3238,
+   "vantaggio_casa": 0.1977,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 62,
+     "di_prima": 26,
+     "quota_stagione": 0.705
+    },
+    "10": {
+     "di_questa_stagione": 62,
+     "di_prima": 106,
+     "quota_stagione": 0.369
+    },
+    "20": {
+     "di_questa_stagione": 62,
+     "di_prima": 266,
+     "quota_stagione": 0.189
+    },
+    "40": {
+     "di_questa_stagione": 62,
+     "di_prima": 584,
+     "quota_stagione": 0.096
+    }
+   }
   },
   {
    "slug": "superlig",
@@ -122,14 +276,36 @@
    "bandiera": "🇹🇷",
    "livello": 1,
    "principale": true,
-   "partite_storico": 1046,
-   "partite_stagione": 18,
+   "partite_storico": 1053,
+   "partite_stagione": 25,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.316,
-   "vantaggio_casa": 0.2383
+   "conversione": 0.3152,
+   "vantaggio_casa": 0.2268,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 50,
+     "di_prima": 32,
+     "quota_stagione": 0.61
+    },
+    "10": {
+     "di_questa_stagione": 50,
+     "di_prima": 107,
+     "quota_stagione": 0.318
+    },
+    "20": {
+     "di_questa_stagione": 50,
+     "di_prima": 257,
+     "quota_stagione": 0.163
+    },
+    "40": {
+     "di_questa_stagione": 50,
+     "di_prima": 551,
+     "quota_stagione": 0.083
+    }
+   }
   },
   {
    "slug": "jupiler",
@@ -138,14 +314,36 @@
    "bandiera": "🇧🇪",
    "livello": 1,
    "principale": true,
-   "partite_storico": 959,
-   "partite_stagione": 24,
+   "partite_storico": 968,
+   "partite_stagione": 33,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 3,
+   "giornate_giocate": 4,
    "finestra_statistiche": 20,
-   "conversione": 0.3036,
-   "vantaggio_casa": 0.203
+   "conversione": 0.305,
+   "vantaggio_casa": 0.201,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 66,
+     "di_prima": 22,
+     "quota_stagione": 0.75
+    },
+    "10": {
+     "di_questa_stagione": 66,
+     "di_prima": 102,
+     "quota_stagione": 0.393
+    },
+    "20": {
+     "di_questa_stagione": 66,
+     "di_prima": 262,
+     "quota_stagione": 0.201
+    },
+    "40": {
+     "di_questa_stagione": 66,
+     "di_prima": 581,
+     "quota_stagione": 0.102
+    }
+   }
   },
   {
    "slug": "super-league-grecia",
@@ -154,14 +352,36 @@
    "bandiera": "🇬🇷",
    "livello": 1,
    "principale": true,
-   "partite_storico": 715,
-   "partite_stagione": 6,
+   "partite_storico": 721,
+   "partite_stagione": 12,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 1,
+   "giornate_giocate": 2,
    "finestra_statistiche": 20,
-   "conversione": 0.2943,
-   "vantaggio_casa": 0.2067
+   "conversione": 0.2948,
+   "vantaggio_casa": 0.2149,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 24,
+     "di_prima": 40,
+     "quota_stagione": 0.375
+    },
+    "10": {
+     "di_questa_stagione": 24,
+     "di_prima": 100,
+     "quota_stagione": 0.194
+    },
+    "20": {
+     "di_questa_stagione": 24,
+     "di_prima": 220,
+     "quota_stagione": 0.098
+    },
+    "40": {
+     "di_questa_stagione": 24,
+     "di_prima": 460,
+     "quota_stagione": 0.05
+    }
+   }
   },
   {
    "slug": "premiership",
@@ -170,14 +390,36 @@
    "bandiera": "🏴",
    "livello": 1,
    "principale": true,
-   "partite_storico": 697,
-   "partite_stagione": 13,
+   "partite_storico": 703,
+   "partite_stagione": 19,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 3,
+   "giornate_giocate": 4,
    "finestra_statistiche": 20,
-   "conversione": 0.3323,
-   "vantaggio_casa": 0.2635
+   "conversione": 0.3334,
+   "vantaggio_casa": 0.2461,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 38,
+     "di_prima": 22,
+     "quota_stagione": 0.633
+    },
+    "10": {
+     "di_questa_stagione": 38,
+     "di_prima": 82,
+     "quota_stagione": 0.317
+    },
+    "20": {
+     "di_questa_stagione": 38,
+     "di_prima": 202,
+     "quota_stagione": 0.158
+    },
+    "40": {
+     "di_questa_stagione": 38,
+     "di_prima": 442,
+     "quota_stagione": 0.079
+    }
+   }
   },
   {
    "slug": "serie-b",
@@ -186,14 +428,36 @@
    "bandiera": "🇮🇹",
    "livello": 2,
    "principale": false,
-   "partite_storico": 1150,
-   "partite_stagione": 10,
+   "partite_storico": 1160,
+   "partite_stagione": 20,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 1,
+   "giornate_giocate": 2,
    "finestra_statistiche": 20,
-   "conversione": 0.3106,
-   "vantaggio_casa": 0.2658
+   "conversione": 0.311,
+   "vantaggio_casa": 0.2592,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 40,
+     "di_prima": 48,
+     "quota_stagione": 0.455
+    },
+    "10": {
+     "di_questa_stagione": 40,
+     "di_prima": 128,
+     "quota_stagione": 0.238
+    },
+    "20": {
+     "di_questa_stagione": 40,
+     "di_prima": 288,
+     "quota_stagione": 0.122
+    },
+    "40": {
+     "di_questa_stagione": 40,
+     "di_prima": 608,
+     "quota_stagione": 0.062
+    }
+   }
   },
   {
    "slug": "championship",
@@ -202,14 +466,36 @@
    "bandiera": "🏴",
    "livello": 2,
    "principale": false,
-   "partite_storico": 1680,
-   "partite_stagione": 24,
+   "partite_storico": 1692,
+   "partite_stagione": 36,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.3174,
-   "vantaggio_casa": 0.2071
+   "conversione": 0.319,
+   "vantaggio_casa": 0.2106,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 72,
+     "di_prima": 40,
+     "quota_stagione": 0.643
+    },
+    "10": {
+     "di_questa_stagione": 72,
+     "di_prima": 140,
+     "quota_stagione": 0.34
+    },
+    "20": {
+     "di_questa_stagione": 72,
+     "di_prima": 340,
+     "quota_stagione": 0.175
+    },
+    "40": {
+     "di_questa_stagione": 72,
+     "di_prima": 740,
+     "quota_stagione": 0.089
+    }
+   }
   },
   {
    "slug": "league-one",
@@ -218,14 +504,36 @@
    "bandiera": "🏴",
    "livello": 3,
    "principale": false,
-   "partite_storico": 1680,
-   "partite_stagione": 24,
+   "partite_storico": 1691,
+   "partite_stagione": 35,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.333,
-   "vantaggio_casa": 0.1982
+   "conversione": 0.3336,
+   "vantaggio_casa": 0.2091,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 70,
+     "di_prima": 40,
+     "quota_stagione": 0.636
+    },
+    "10": {
+     "di_questa_stagione": 70,
+     "di_prima": 135,
+     "quota_stagione": 0.341
+    },
+    "20": {
+     "di_questa_stagione": 70,
+     "di_prima": 325,
+     "quota_stagione": 0.177
+    },
+    "40": {
+     "di_questa_stagione": 70,
+     "di_prima": 705,
+     "quota_stagione": 0.09
+    }
+   }
   },
   {
    "slug": "league-two",
@@ -234,14 +542,36 @@
    "bandiera": "🏴",
    "livello": 4,
    "principale": false,
-   "partite_storico": 1680,
-   "partite_stagione": 24,
+   "partite_storico": 1692,
+   "partite_stagione": 36,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.3252,
-   "vantaggio_casa": 0.1651
+   "conversione": 0.3265,
+   "vantaggio_casa": 0.1652,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 72,
+     "di_prima": 38,
+     "quota_stagione": 0.655
+    },
+    "10": {
+     "di_questa_stagione": 72,
+     "di_prima": 133,
+     "quota_stagione": 0.351
+    },
+    "20": {
+     "di_questa_stagione": 72,
+     "di_prima": 323,
+     "quota_stagione": 0.182
+    },
+    "40": {
+     "di_questa_stagione": 72,
+     "di_prima": 703,
+     "quota_stagione": 0.093
+    }
+   }
   },
   {
    "slug": "national-league",
@@ -250,14 +580,36 @@
    "bandiera": "🏴",
    "livello": 5,
    "principale": false,
-   "partite_storico": 1693,
-   "partite_stagione": 37,
+   "partite_storico": 1715,
+   "partite_stagione": 59,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 4,
+   "giornate_giocate": 5,
    "finestra_statistiche": 20,
-   "conversione": 0.3452,
-   "vantaggio_casa": 0.1865
+   "conversione": 0.497,
+   "vantaggio_casa": 0.1837,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 118,
+     "di_prima": 2,
+     "quota_stagione": 0.983
+    },
+    "10": {
+     "di_questa_stagione": 118,
+     "di_prima": 102,
+     "quota_stagione": 0.536
+    },
+    "20": {
+     "di_questa_stagione": 118,
+     "di_prima": 302,
+     "quota_stagione": 0.281
+    },
+    "40": {
+     "di_questa_stagione": 118,
+     "di_prima": 702,
+     "quota_stagione": 0.144
+    }
+   }
   },
   {
    "slug": "laliga-2",
@@ -266,14 +618,36 @@
    "bandiera": "🇪🇸",
    "livello": 2,
    "principale": false,
-   "partite_storico": 1408,
-   "partite_stagione": 22,
+   "partite_storico": 1417,
+   "partite_stagione": 31,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.3027,
-   "vantaggio_casa": 0.2682
+   "conversione": 0.3036,
+   "vantaggio_casa": 0.2669,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 62,
+     "di_prima": 39,
+     "quota_stagione": 0.614
+    },
+    "10": {
+     "di_questa_stagione": 62,
+     "di_prima": 129,
+     "quota_stagione": 0.325
+    },
+    "20": {
+     "di_questa_stagione": 62,
+     "di_prima": 309,
+     "quota_stagione": 0.167
+    },
+    "40": {
+     "di_questa_stagione": 62,
+     "di_prima": 669,
+     "quota_stagione": 0.085
+    }
+   }
   },
   {
    "slug": "bundesliga-2",
@@ -282,14 +656,36 @@
    "bandiera": "🇩🇪",
    "livello": 2,
    "principale": false,
-   "partite_storico": 936,
-   "partite_stagione": 18,
+   "partite_storico": 945,
+   "partite_stagione": 27,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 2,
+   "giornate_giocate": 3,
    "finestra_statistiche": 20,
-   "conversione": 0.3228,
-   "vantaggio_casa": 0.2109
+   "conversione": 0.3245,
+   "vantaggio_casa": 0.2037,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 54,
+     "di_prima": 30,
+     "quota_stagione": 0.643
+    },
+    "10": {
+     "di_questa_stagione": 54,
+     "di_prima": 105,
+     "quota_stagione": 0.34
+    },
+    "20": {
+     "di_questa_stagione": 54,
+     "di_prima": 255,
+     "quota_stagione": 0.175
+    },
+    "40": {
+     "di_questa_stagione": 54,
+     "di_prima": 540,
+     "quota_stagione": 0.091
+    }
+   }
   },
   {
    "slug": "ligue-2",
@@ -298,14 +694,36 @@
    "bandiera": "🇫🇷",
    "livello": 2,
    "principale": false,
-   "partite_storico": 1017,
-   "partite_stagione": 27,
+   "partite_storico": 1025,
+   "partite_stagione": 35,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 3,
+   "giornate_giocate": 4,
    "finestra_statistiche": 20,
-   "conversione": 0.3138,
-   "vantaggio_casa": 0.1708
+   "conversione": 0.3148,
+   "vantaggio_casa": 0.1554,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 70,
+     "di_prima": 16,
+     "quota_stagione": 0.814
+    },
+    "10": {
+     "di_questa_stagione": 70,
+     "di_prima": 91,
+     "quota_stagione": 0.435
+    },
+    "20": {
+     "di_questa_stagione": 70,
+     "di_prima": 241,
+     "quota_stagione": 0.225
+    },
+    "40": {
+     "di_questa_stagione": 70,
+     "di_prima": 531,
+     "quota_stagione": 0.116
+    }
+   }
   },
   {
    "slug": "championship-scozia",
@@ -314,14 +732,36 @@
    "bandiera": "🏴",
    "livello": 2,
    "principale": false,
-   "partite_storico": 555,
-   "partite_stagione": 15,
+   "partite_storico": 560,
+   "partite_stagione": 20,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
-   "giornate_giocate": 3,
+   "giornate_giocate": 4,
    "finestra_statistiche": 20,
-   "conversione": 0.3335,
-   "vantaggio_casa": 0.2153
+   "conversione": 0.3326,
+   "vantaggio_casa": 0.2259,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 40,
+     "di_prima": 9,
+     "quota_stagione": 0.816
+    },
+    "10": {
+     "di_questa_stagione": 40,
+     "di_prima": 54,
+     "quota_stagione": 0.426
+    },
+    "20": {
+     "di_questa_stagione": 40,
+     "di_prima": 144,
+     "quota_stagione": 0.217
+    },
+    "40": {
+     "di_questa_stagione": 40,
+     "di_prima": 324,
+     "quota_stagione": 0.11
+    }
+   }
   },
   {
    "slug": "league-one-scozia",
@@ -337,7 +777,29 @@
    "giornate_giocate": 4,
    "finestra_statistiche": 20,
    "conversione": 0.3279,
-   "vantaggio_casa": 0.1329
+   "vantaggio_casa": 0.1329,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 38,
+     "di_prima": 8,
+     "quota_stagione": 0.826
+    },
+    "10": {
+     "di_questa_stagione": 38,
+     "di_prima": 43,
+     "quota_stagione": 0.469
+    },
+    "20": {
+     "di_questa_stagione": 38,
+     "di_prima": 113,
+     "quota_stagione": 0.252
+    },
+    "40": {
+     "di_questa_stagione": 38,
+     "di_prima": 253,
+     "quota_stagione": 0.131
+    }
+   }
   },
   {
    "slug": "league-two-scozia",
@@ -353,7 +815,29 @@
    "giornate_giocate": 4,
    "finestra_statistiche": 20,
    "conversione": 0.3369,
-   "vantaggio_casa": 0.2001
+   "vantaggio_casa": 0.2001,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 40,
+     "di_prima": 9,
+     "quota_stagione": 0.816
+    },
+    "10": {
+     "di_questa_stagione": 40,
+     "di_prima": 54,
+     "quota_stagione": 0.426
+    },
+    "20": {
+     "di_questa_stagione": 40,
+     "di_prima": 144,
+     "quota_stagione": 0.217
+    },
+    "40": {
+     "di_questa_stagione": 40,
+     "di_prima": 324,
+     "quota_stagione": 0.11
+    }
+   }
   }
  ]
 }

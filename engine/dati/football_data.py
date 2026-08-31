@@ -118,6 +118,29 @@ class Statistiche:
     gol_primo_tempo: tuple[int, int] = (0, 0)
     completa: bool = False
 
+    # Da qui in giu' non e' roba di football-data: arriva dal tabellino ESPN,
+    # che ne pubblica ventisette per squadra dove qui sopra ce n'erano sette.
+    # Stanno nella stessa struttura di proposito — chi legge una partita non
+    # deve sapere da quale delle due fonti viene ogni numero — ma restano a
+    # zero per tutto lo storico, e per questo c'e' `avanzate` a dire se
+    # guardarle ha senso. Un tiro a zero e' un dato; un possesso a zero e' un
+    # buco, e confonderli farebbe medie false.
+    tiri_respinti: tuple[int, int] = (0, 0)
+    fuorigioco: tuple[int, int] = (0, 0)
+    parate: tuple[int, int] = (0, 0)
+    possesso: tuple[float, float] = (0.0, 0.0)
+    passaggi: tuple[int, int] = (0, 0)
+    passaggi_riusciti: tuple[int, int] = (0, 0)
+    cross: tuple[int, int] = (0, 0)
+    cross_riusciti: tuple[int, int] = (0, 0)
+    contrasti: tuple[int, int] = (0, 0)
+    contrasti_riusciti: tuple[int, int] = (0, 0)
+    intercetti: tuple[int, int] = (0, 0)
+    respinte: tuple[int, int] = (0, 0)
+    lanci: tuple[int, int] = (0, 0)
+    lanci_riusciti: tuple[int, int] = (0, 0)
+    avanzate: bool = False
+
 
 @dataclass(frozen=True, slots=True)
 class PartitaStorica:

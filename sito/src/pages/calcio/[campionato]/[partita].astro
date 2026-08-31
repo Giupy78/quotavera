@@ -144,6 +144,55 @@ if (p.dettaglio) {
   }
 
   {
+    p.incrocio && (
+      <section>
+        <div class="hd">
+          <h2>L'incrocio: attacco contro difesa</h2>
+          <p>
+            La tabella sopra mette i due attacchi uno accanto all'altro, ma le
+            due squadre hanno giocato contro avversari diversi: confrontarle
+            direttamente dice poco. Qui invece si incrocia — quanto
+            {" "}<b>{p.casa}</b> produce in casa contro quanto
+            {" "}<b>{p.ospite}</b> concede in trasferta. È la domanda a cui
+            serve rispondere per capire che partita sarà.
+          </p>
+        </div>
+
+        <div class="scorri">
+          <table class="dati confronto">
+            <thead>
+              <tr>
+                <th>{p.casa} <small>(produce in casa)</small></th>
+                <th class="mezzo" />
+                <th class="destra">{p.ospite} <small>(concede fuori)</small></th>
+                <th class="num media">Attesa</th>
+              </tr>
+            </thead>
+            <tbody>
+              {p.incrocio.map((r: any) => (
+                <tr>
+                  <td class="num forte">{r.attacco}</td>
+                  <td class="mezzo">{r.voce}</td>
+                  <td class="destra forte">{r.difesa}</td>
+                  <td class="num media">{r.media === null ? "—" : r.media}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="nota-incrocio">
+          La colonna <b>Attesa</b> è la media fra i due numeri, e va letta per
+          quello che è: una stima grezza, non una previsione del modello. Quando
+          i due valori sono lontani — un attacco prolifico contro una difesa
+          solida — la media sta nel mezzo e nasconde proprio l'incertezza che
+          rende la partita interessante. Le probabilità vere sono più sotto.
+        </p>
+      </section>
+    )
+  }
+
+  {
     c && o && (
       <section>
         <div class="hd">
@@ -350,6 +399,21 @@ if (p.dettaglio) {
 </Base>
 
 <style>
+  td.media,
+  th.media {
+    font-family: var(--mono);
+    color: var(--ink-3);
+    border-left: 1px solid var(--rule);
+    padding-left: 14px;
+  }
+  .nota-incrocio {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.55;
+    max-width: 76ch;
+    margin-top: 14px;
+  }
+
   .sintesi {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

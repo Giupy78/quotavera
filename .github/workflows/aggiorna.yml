@@ -81,12 +81,19 @@ jobs:
         # sapeva il modello e quali quote vedeva, e non è più modificabile.
         # È la condizione senza cui un track record non si può dimostrare.
         #
+        # `dati/espn` va committato per una ragione diversa e altrettanto
+        # concreta: è la memoria dei tabellini già scaricati. La macchina di
+        # GitHub nasce e muore ogni notte, quindi senza questo archivio nel
+        # repository il lavoro rifarebbe da capo una richiesta per partita su
+        # tutta la stagione, ogni volta. Sono 600 KB che evitano qualche
+        # migliaio di richieste inutili a un servizio che ci regala i dati.
+        #
         # Quando le fonti non hanno pubblicato niente di nuovo non c'è nulla da
         # committare, e va bene così: è un turno riuscito, non un errore.
         run: |
           git config user.name "Quota Vera"
           git config user.email "actions@users.noreply.github.com"
-          git add sito/src/dati
+          git add sito/src/dati dati/espn
           if git diff --staged --quiet; then
             echo "Nessun cambiamento nei dati: le fonti non hanno aggiornato."
           else

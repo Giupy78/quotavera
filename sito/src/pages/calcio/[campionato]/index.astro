@@ -7,6 +7,7 @@ import squadre from "../../../dati/squadre.json";
 import classifiche from "../../../dati/classifiche.json";
 import risultati from "../../../dati/risultati.json";
 import stagione from "../../../dati/stagione.json";
+import finestre from "../../../dati/finestre.json";
 
 export function getStaticPaths() {
   const cal = calendario.campionati as Record<string, any[]>;
@@ -22,11 +23,23 @@ export function getStaticPaths() {
       classifica: cl[c.slug] ?? [],
       ultimi: ri[c.slug] ?? [],
       completo: (stagione.campionati as Record<string, any>)[c.slug] ?? null,
+      fin: (finestre.campionati as Record<string, any>)[c.slug] ?? null,
     },
   }));
 }
 
-const { lega, partite, team, classifica, ultimi, completo } = Astro.props;
+const { lega, partite, team, classifica, ultimi, completo, fin } = Astro.props;
+
+/* Le profondita' fra cui puo' scegliere chi legge, e quella aperta all'arrivo. */
+const profondita: number[] = finestre.disponibili;
+const predefinita = finestre.predefinita;
+
+/* Quanto della finestra predefinita e' di questa stagione. A inizio anno e'
+   quasi niente, e il lettore deve saperlo: sta guardando in buona parte il
+   campionato scorso. La soglia e' meta' — sotto, l'avviso compare da solo;
+   sopra, sparisce senza che nessuno debba ricordarsi di toglierlo. */
+const comp = fin?.composizione?.[String(predefinita)] ?? null;
+const inizioStagione = comp !== null && comp.quota_stagione < 0.5;
 
 /* Gli id delle partite di cui abbiamo la scheda: solo quelle possono essere
    collegate dal calendario completo. */
@@ -377,72 +390,276 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
 
   <section>
     <div class="hd">
-      <h2>Le squadre, ultime {lega.finestra_statistiche} partite</h2>
+      <h2>Le squadre</h2>
       <p>
-        Non la stagione in corso — sarebbe un campione troppo piccolo ad agosto.
-        Una finestra mobile che scavalca la sosta: una squadra non cambia da
-        maggio a settembre quanto la classifica lascerebbe credere.
+        Non la sola stagione in corso — ad agosto sarebbe un campione troppo
+        piccolo. Una finestra mobile che scavalca la sosta: una squadra non
+        cambia da maggio a settembre quanto la classifica lascerebbe credere.
+        <b>Scegli tu quanto guardare indietro</b>: cinque partite dicono il
+        momento, quaranta dicono il valore.
       </p>
     </div>
-    <div class="scorri">
-      <table class="dati">
-        <thead>
-          <tr>
-            <th>Squadra</th>
-            <th class="num">Partite</th>
-            <th class="num">Gol fatti</th>
-            <th class="num">Gol subiti</th>
-            <th class="num">Tiri in porta</th>
-            <th class="num">Over 2,5</th>
-            <th class="num">Gol/Gol</th>
-            <th class="num">Segna vs crea</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            squadreOrdinate.map((s) => (
-              <tr>
-                <td><b>{s.squadra}</b></td>
-                <td class="num">{s.partite}</td>
-                <td class="num">{num(s.gol_fatti)}</td>
-                <td class="num">{num(s.gol_subiti)}</td>
-                <td class="num">
-                  {num((s.casa.in_porta + s.trasferta.in_porta) / 2, 1)}
-                </td>
-                <td class="num">
-                  {pct((s.casa.over_25 * s.casa.partite + s.trasferta.over_25 * s.trasferta.partite) /
-                    Math.max(s.partite, 1))}
-                </td>
-                <td class="num">
-                  {pct((s.casa.gol_gol * s.casa.partite + s.trasferta.gol_gol * s.trasferta.partite) /
-                    Math.max(s.partite, 1))}
-                </td>
-                <td
-                  class="num"
-                  style={`font-weight:600;color:${
-                    s.scarto_conversione > 0 ? "var(--s2)" : "var(--s1)"
-                  }`}
-                >
-                  {s.scarto_conversione >= 0 ? "+" : ""}{num(s.scarto_conversione, 1)}
-                </td>
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
+
+    {inizioStagione && (
+      <p class="avviso-stagione">
+        <b>Siamo a inizio stagione.</b> Delle ultime {predefinita} partite di
+        ogni squadra, solo il <b>{pct(comp.quota_stagione)}</b> è di
+        {" "}{lega.stagione}: il resto viene da {lega.stagione_precedente}. È
+        voluto — con {lega.giornate_giocate} giornate giocate qualunque
+        statistica di questa stagione sarebbe rumore — ma va saputo mentre si
+        legge. Più avanti nell'anno questo avviso sparirà da solo.
+      </p>
+    )}
+
+    <div class="finestre">
+      {profondita.map((n) => (
+        <input type="radio" name="finestra" id={`fin-${n}`} checked={n === predefinita} />
+      ))}
+      <div class="scelte" role="group" aria-label="Quante partite guardare indietro">
+        <span>Ultime</span>
+        {profondita.map((n) => <label for={`fin-${n}`}>{n}</label>)}
+        <span>partite di ogni squadra</span>
+      </div>
+
+      <div class="pannelli">
+        {profondita.map((n) => {
+          const righe = [...(fin?.dati?.[String(n)] ?? [])].sort(
+            (a: any, b: any) => b.gol_fatti - a.gol_fatti);
+          const c = fin?.composizione?.[String(n)];
+          const avanzate = righe.some((r: any) => r.casa.con_avanzate || r.trasferta.con_avanzate);
+          return (
+            <div class={`pannello p-${n}`}>
+              <div class="scorri">
+                <table class="dati squadre-full">
+                  <thead>
+                    <tr class="gruppi">
+                      <th colspan="2"></th>
+                      <th colspan="5" class="g-att">Attacco</th>
+                      <th colspan="4" class="g-dif">Difesa</th>
+                      <th colspan="2" class="g-dis">Disciplina</th>
+                      {avanzate && <th colspan="5" class="g-gio">Gioco</th>}
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <th>Squadra</th>
+                      <th class="num">Part.</th>
+                      <th class="num">Gol</th>
+                      <th class="num">Tiri</th>
+                      <th class="num">In porta</th>
+                      <th class="num" title="Quota dei tiri che finisce nello specchio">Precis.</th>
+                      <th class="num">Angoli</th>
+                      <th class="num">Gol sub.</th>
+                      <th class="num">Tiri conc.</th>
+                      <th class="num">Angoli conc.</th>
+                      <th class="num">Parate</th>
+                      <th class="num">Falli</th>
+                      <th class="num">Cartellini</th>
+                      {avanzate && (
+                        <th class="num" title="Su quante partite sono calcolate le colonne Gioco">
+                          su
+                        </th>
+                      )}
+                      {avanzate && <th class="num">Possesso</th>}
+                      {avanzate && <th class="num">Passaggi ok</th>}
+                      {avanzate && <th class="num">Contrasti</th>}
+                      {avanzate && <th class="num">Intercetti</th>}
+                      <th class="num">Segna vs crea</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {righe.map((s: any) => {
+                      const ca = s.casa, tr = s.trasferta;
+                      /* Media pesata sul numero di partite, non media delle due
+                         medie. La differenza non e' accademica: una squadra che
+                         ha il tabellino di una sola gara in casa aveva
+                         (88% + 0) / 2 = 44% di passaggi riusciti, cioe' un dato
+                         vero dimezzato da uno mancante. */
+                      const pes = (a: number, na: number, b: number, nb: number) =>
+                        na + nb > 0 ? (a * na + b * nb) / (na + nb) : null;
+                      const base = (k: string) =>
+                        pes(ca[k], ca.con_statistiche ?? ca.partite, tr[k],
+                            tr.con_statistiche ?? tr.partite);
+                      const av = (k: string) =>
+                        pes(ca[k], ca.con_avanzate, tr[k], tr.con_avanzate);
+                      const nAv = ca.con_avanzate + tr.con_avanzate;
+                      const haAv = nAv > 0;
+                      const q = (v: number | null, d = 1) => (v === null ? "—" : num(v, d));
+                      return (
+                        <tr>
+                          <td><b>{s.squadra}</b></td>
+                          <td class="num">{s.partite}</td>
+                          <td class="num">{num(s.gol_fatti)}</td>
+                          <td class="num">{q(base("tiri"))}</td>
+                          <td class="num">{q(base("in_porta"))}</td>
+                          <td class="num">{
+                            (base("tiri") ?? 0) > 0
+                              ? pct((base("in_porta") ?? 0) / (base("tiri") as number))
+                              : "—"
+                          }</td>
+                          <td class="num">{q(base("corner"))}</td>
+                          <td class="num">{num(s.gol_subiti)}</td>
+                          <td class="num">{q(base("tiri_subiti"))}</td>
+                          <td class="num">{q(base("corner_subiti"))}</td>
+                          <td class="num">{q(av("parate"))}</td>
+                          <td class="num">{q(base("falli"))}</td>
+                          <td class="num">{q(base("cartellini"))}</td>
+                          {avanzate && <td class="num pochine">{haAv ? nAv : "—"}</td>}
+                          {avanzate && <td class="num">{haAv ? q(av("possesso")) + "%" : "—"}</td>}
+                          {avanzate && <td class="num">{haAv ? pct(av("precisione_passaggi") as number) : "—"}</td>}
+                          {avanzate && <td class="num">{q(av("contrasti"))}</td>}
+                          {avanzate && <td class="num">{q(av("intercetti"))}</td>}
+                          <td class="num" style={`font-weight:600;color:${
+                            s.scarto_conversione > 0 ? "var(--s2)" : "var(--s1)"}`}>
+                            {s.scarto_conversione >= 0 ? "+" : ""}{num(s.scarto_conversione, 1)}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              {c && (
+                <p class="composizione">
+                  Su {c.di_questa_stagione + c.di_prima} partite considerate,
+                  {" "}<b>{c.di_questa_stagione}</b> sono di {lega.stagione} e
+                  {" "}<b>{c.di_prima}</b> di prima.
+                </p>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
-    <p style="font-size:12.5px;color:var(--ink-3);margin-top:12px;line-height:1.55;max-width:76ch">
+
+    <p class="nota-conversione">
       «Segna vs crea» è la differenza fra i gol segnati e quelli che i tiri in
       porta avrebbero fatto prevedere, alla conversione media del campionato
       ({pct(lega.conversione, 1)}). Positivo vuol dire che sta segnando più di
       quanto crea: può essere un attaccante in stato di grazia quanto fortuna, e
       le due si distinguono solo col tempo — ma sulla stagione la fortuna
       rientra e la bravura no.
+      <br /><br />
+      Le colonne sotto <b>Gioco</b> — possesso, passaggi, contrasti, intercetti —
+      arrivano dai tabellini di ESPN e quindi esistono solo per le partite di
+      questa stagione, non per tutta la finestra scelta. La colonna
+      {" "}<b>su</b> dice su quante partite sono calcolate: a inizio stagione
+      sono due o tre, e vanno lette per quello che sono. Dove manca il dato
+      c'è un trattino, non uno zero — uno zero sarebbe una misura, e qui non
+      abbiamo misurato niente.
     </p>
   </section>
 </Base>
 
 <style>
+  td.pochine {
+    color: var(--ink-3);
+    font-size: 11.5px;
+  }
+
+  /* --- selettore di profondita', senza una riga di JavaScript ---------
+     Quattro radio nascosti alla vista ma non alla tastiera: `opacity:0` e non
+     `display:none`, altrimenti sparirebbero dall'ordine di tabulazione e la
+     tabella diventerebbe irraggiungibile per chi non usa il mouse.
+     I pannelli sono tutti nella pagina e se ne mostra uno: e' il prezzo da
+     pagare per non chiedere niente al server quando si cambia scelta. */
+  .finestre > input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+  .scelte {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    margin-bottom: 14px;
+  }
+  .scelte label {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    padding: 4px 11px;
+    border: 1px solid var(--rule);
+    color: var(--ink-2);
+    cursor: pointer;
+    user-select: none;
+  }
+  .scelte label:hover {
+    border-color: var(--ink-3);
+    color: var(--ink);
+  }
+  .pannello {
+    display: none;
+  }
+  /* Una regola per profondita': i selettori CSS non sanno contare. */
+  #fin-5:checked ~ .pannelli .p-5,
+  #fin-10:checked ~ .pannelli .p-10,
+  #fin-20:checked ~ .pannelli .p-20,
+  #fin-40:checked ~ .pannelli .p-40 {
+    display: block;
+  }
+  #fin-5:checked ~ .scelte label[for="fin-5"],
+  #fin-10:checked ~ .scelte label[for="fin-10"],
+  #fin-20:checked ~ .scelte label[for="fin-20"],
+  #fin-40:checked ~ .scelte label[for="fin-40"] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
+    font-weight: 600;
+  }
+  /* Il contorno di messa a fuoco va disegnato sull'etichetta: il radio e'
+     invisibile, quindi il suo contorno non si vedrebbe. */
+  .finestre > input[type="radio"]:focus-visible + .scelte label,
+  #fin-5:focus-visible ~ .scelte label[for="fin-5"],
+  #fin-10:focus-visible ~ .scelte label[for="fin-10"],
+  #fin-20:focus-visible ~ .scelte label[for="fin-20"],
+  #fin-40:focus-visible ~ .scelte label[for="fin-40"] {
+    outline: 2px solid var(--s1);
+    outline-offset: 2px;
+  }
+
+  /* --- la tabella larga ---------------------------------------------- */
+  table.squadre-full {
+    font-size: 12.5px;
+  }
+  table.squadre-full th,
+  table.squadre-full td {
+    white-space: nowrap;
+  }
+  tr.gruppi th {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 600;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 4px;
+  }
+  tr.gruppi th.g-att { color: var(--s2); }
+  tr.gruppi th.g-dif { color: var(--s1); }
+  tr.gruppi th.g-gio { color: var(--acc, var(--ink-2)); }
+
+  .avviso-stagione {
+    border-left: 2px solid var(--s1);
+    padding: 10px 0 10px 14px;
+    margin-bottom: 18px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 78ch;
+  }
+  .composizione,
+  .nota-conversione {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.55;
+    max-width: 76ch;
+  }
+  .composizione { margin-top: 10px; }
+  .nota-conversione { margin-top: 18px; }
+
   table.classifica td.pos,
   table.classifica th.pos {
     width: 62px;
