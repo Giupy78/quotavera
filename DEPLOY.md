@@ -11,7 +11,7 @@ richiede i tuoi account, e nessuno può farlo al posto tuo.
 tutto il resto.
 
 Io esisto dentro una sessione: quando la chiudi non c'è nessun processo mio che
-resta acceso ad aspettare le quattro di notte. Un aggiornamento che dipendesse
+resta acceso ad aspettare le due di notte. Un aggiornamento che dipendesse
 da me sarebbe un aggiornamento che non avviene.
 
 Ad aggiornarlo è **GitHub Actions**, con il lavoro già scritto in

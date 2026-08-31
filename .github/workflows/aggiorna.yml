@@ -1,21 +1,27 @@
 name: Aggiornamento notturno
 
-# Ogni notte, poco dopo le quattro italiane.
+# Ogni notte alle due italiane. `0 0` in UTC, che d'estate a Roma sono le 02:00
+# e d'inverno le 01:00.
 #
-# `17 2` e non `0 2` per due ragioni. La prima e' che il minuto zero e' quello
-# in cui tutti pianificano i propri lavori, ed e' anche quello in cui GitHub
-# accumula piu' ritardo: spostarsi di qualche minuto riduce l'attesa.
+# La deriva di un'ora fra ora legale e solare e' voluta. Qui prima c'era una
+# guardia che verificava che a Roma fosse *esattamente* l'ora giusta, con due
+# cron per coprire le due stagioni: sembrava preciso ed era fragile, perche'
+# bastava un ritardo di GitHub — cosa che capita — perche' l'orologio di Roma
+# segnasse l'ora dopo e il lavoro si saltasse da solo, in silenzio. Per un
+# aggiornamento dati un'ora non la nota nessuno; un turno saltato si'.
 #
-# La seconda e' che qui c'era una guardia che verificava che a Roma fossero
-# *esattamente* le 04, con due cron per coprire ora solare e legale. Sembrava
-# preciso ed era fragile: bastava che GitHub ritardasse di un'ora — cosa che
-# capita — perche' l'orologio di Roma segnasse le 05 e il lavoro si saltasse da
-# solo, in silenzio. Meglio un cron solo che gira alle 04:17 d'estate e alle
-# 03:17 d'inverno: per un aggiornamento dati quell'ora di differenza non la
-# nota nessuno, e non c'e' piu' niente che possa saltare il turno.
+# Le due di notte funzionano bene rispetto alle fonti: football-data aggiorna i
+# suoi file verso le 22:20 UTC (lo dicono le intestazioni Last-Modified) ed ESPN
+# pubblica entro pochi minuti dal fischio, quindi anche la partita europea piu'
+# tarda e' chiusa da un pezzo.
+#
+# Una cosa da sapere: l'orario e' quello richiesto, non quello garantito. Le
+# pianificazioni di GitHub Actions vengono servite con ritardo variabile — il
+# 29 agosto un turno previsto per le 02:17 UTC e' partito alle 09:06, quasi
+# sette ore dopo. Il lavoro parte comunque, ma non contarci al minuto.
 on:
   schedule:
-    - cron: "17 2 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:        # per lanciarlo a mano dalla scheda Actions
 
 permissions:
