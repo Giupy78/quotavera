@@ -132,3 +132,34 @@ def test_senza_espn_lo_storico_torna_identico():
     fuori, arricchite, aggiunte = fondi(storico, [], "Serie A")
     assert fuori is storico
     assert (arricchite, aggiunte) == (0, 0)
+
+
+# --- gli orari -----------------------------------------------------------
+
+def test_gli_orari_di_football_data_sono_di_londra_non_di_roma():
+    """L'errore era invisibile perche' coerente: sbagliate tutte di un'ora.
+
+    Inter-Monza del 22 agosto risultava alle 17:30 e si giocava alle 18:30.
+    Nessuna stonava rispetto alle altre, quindi nessuno se ne accorgeva: e'
+    saltato fuori solo confrontando con ESPN, che l'ora la dichiara in UTC.
+    """
+    from engine.dati.football_data import ora_italiana
+
+    # I due orari classici della Serie A, come li scrive football-data.
+    assert ora_italiana("17:30", date(2026, 8, 22)) == "18:30"
+    assert ora_italiana("19:45", date(2026, 8, 24)) == "20:45"
+
+
+def test_la_conversione_vale_anche_in_inverno():
+    """Londra e Roma cambiano ora lo stesso giorno: lo scarto resta di un'ora."""
+    from engine.dati.football_data import ora_italiana
+
+    assert ora_italiana("15:00", date(2026, 1, 15)) == "16:00"
+    assert ora_italiana("15:00", date(2026, 7, 15)) == "16:00"
+
+
+def test_un_orario_mancante_non_fa_esplodere_niente():
+    from engine.dati.football_data import ora_italiana
+
+    assert ora_italiana("", date(2026, 8, 22)) == ""
+    assert ora_italiana("boh", date(2026, 8, 22)) == "boh"

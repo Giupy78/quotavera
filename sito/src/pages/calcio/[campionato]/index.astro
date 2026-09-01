@@ -121,7 +121,12 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
   <section>
     <div class="hd">
       <h2>Calendario</h2>
-      <p>La barra è la probabilità del modello. Le quote sono le migliori disponibili.</p>
+      <p>
+        La barra è la probabilità del modello. Le quote, dove ci sono, sono le
+        migliori disponibili: il trattino vuol dire che il mercato non le ha
+        ancora esposte — il calendario arriva da ESPN, le quote da
+        football-data, e la seconda è più lenta della prima.
+      </p>
     </div>
     {
       partite.length === 0 ? (

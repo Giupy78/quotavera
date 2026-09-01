@@ -26,7 +26,7 @@ from engine.classifica import giornate, posizioni_attese
 from engine.core.market import margine, probabilita_implicite
 from engine.core.types import Fixture
 from engine.dati.catalogo import CAMPIONATI, PER_SLUG
-from engine.dati.football_data import calendario, carica, stagioni
+from engine.dati.football_data import PartitaFutura, calendario, carica, stagioni
 from engine.dati import espn, openfootball
 from engine.dati.unione import fondi
 from engine.sports.football.model import ModelloCalcio
@@ -64,9 +64,20 @@ FINESTRA = 20
 # il valore predefinito, che e' il compromesso fra rumore e attualita'.
 FINESTRE = (5, 10, 20, 40)
 
+# Quanti giorni avanti guardare per le partite in programma. Dieci coprono il
+# turno che viene e quello infrasettimanale senza generare una scheda per ogni
+# partita di qui a maggio: il calendario completo di stagione sta gia' nella
+# sua sezione, e ha un altro scopo.
+ORIZZONTE = 10
+
 
 def arrotonda(v: float, d: int = 4) -> float:
     return round(float(v), d)
+
+
+def gia_giocata_coppia(giocate: dict, casa: str, ospite: str, quando: date) -> bool:
+    """Se questa partita e' gia' nello storico, non e' in programma."""
+    return any(abs((d - quando).days) <= 3 for d in giocate.get((casa, ospite), ()))
 
 
 def oggi_utc() -> date:
@@ -210,6 +221,42 @@ def elabora(c, storico, stagione, cal) -> dict | None:
     tolte = sum(1 for p in cal if p.campionato == c.slug) - len(partite_lega)
     if tolte:
         print(f"  {c.etichetta:34s} {tolte} partite tolte dal calendario: gia' giocate")
+
+    # Il calendario di football-data copre una finestra corta e la aggiorna
+    # quando gli pare: il 1 settembre, tolte le gia' giocate, restava **una**
+    # partita su ventidue campionati. Un sito che dice "1 partita in programma"
+    # sembra spento, e lo sembra proprio mentre funziona.
+    #
+    # ESPN il calendario ce l'ha completo. Da li' si prendono solo giorno, ora e
+    # squadre: le quote no, anche se ci sono, perche' arrivano da un operatore
+    # con tanto di link al suo sito — e questo sito si regge sul non averne.
+    # Quelle di football-data, quando arrivano, si aggiungono da sole al giro
+    # dopo, perche' l'abbinamento e' per squadre e data.
+    # Le squadre contro cui abbinare i nomi ESPN: quelle di questa stagione,
+    # dalle partite giocate e dal calendario. Non tutto lo storico, che
+    # metterebbe in gara squadre retrocesse anni fa.
+    squadre_note = sorted(
+        {p.incontro.casa for p in stagione} | {p.incontro.ospite for p in stagione}
+        | {p.casa for p in cal if p.campionato == c.slug}
+        | {p.ospite for p in cal if p.campionato == c.slug}
+    )
+    if squadre_note:
+        note = {(p.casa, p.ospite) for p in partite_lega}
+        aggiunte_cal = 0
+        domani = ieri + timedelta(days=1)
+        for f in espn.in_programma(c.slug, squadre_note, domani,
+                                  domani + timedelta(days=ORIZZONTE)):
+            if (f["casa"], f["ospite"]) in note or gia_giocata_coppia(
+                    giocate, f["casa"], f["ospite"], f["data"]):
+                continue
+            partite_lega.append(PartitaFutura(
+                campionato=c.slug, data=f["data"], ora=f["ora"],
+                casa=f["casa"], ospite=f["ospite"], quote={},
+            ))
+            aggiunte_cal += 1
+        if aggiunte_cal:
+            print(f"  {c.etichetta:34s} +{aggiunte_cal} in programma da ESPN")
+    partite_lega.sort(key=lambda p: (p.data, p.ora))
     righe, schede = [], []
 
     for p in partite_lega:

@@ -1,6 +1,6 @@
-name: Aggiornamento notturno
+name: Aggiornamento dati
 
-# Ogni notte alle due italiane. `0 0` in UTC, che d'estate a Roma sono le 02:00
+# Due volte al giorno. Il turno principale e' alle due italiane: `0 0` in UTC, che d'estate a Roma sono le 02:00
 # e d'inverno le 01:00.
 #
 # La deriva di un'ora fra ora legale e solare e' voluta. Qui prima c'era una
@@ -19,9 +19,17 @@ name: Aggiornamento notturno
 # pianificazioni di GitHub Actions vengono servite con ritardo variabile — il
 # 29 agosto un turno previsto per le 02:17 UTC e' partito alle 09:06, quasi
 # sette ore dopo. Il lavoro parte comunque, ma non contarci al minuto.
+#
+# Ed e' la ragione principale del secondo giro a mezzogiorno UTC. Serve poco
+# per i dati — quello di notte prende gia' tutta la giornata precedente, e le
+# partite serali finiscono verso le 21 UTC — ma serve molto come ridondanza:
+# due turni distanti dodici ore rendono improbabile che un ritardo o un turno
+# scartato da GitHub lascino il sito fermo un giorno intero. In piu' le partite
+# del primo pomeriggio compaiono il pomeriggio stesso invece che la notte.
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"     # 02:00 italiane d'estate, 01:00 d'inverno
+    - cron: "0 12 * * *"    # 14:00 / 13:00: il giro di controllo del pomeriggio
   workflow_dispatch:        # per lanciarlo a mano dalla scheda Actions
 
 permissions:
@@ -53,17 +61,37 @@ jobs:
       - name: Rigenera i dati
         run: python scripts/genera_sito.py
 
-      - name: Il lunedì rifà anche il track record
+      - name: Il track record, una volta a settimana
         # Costa parecchi minuti — ristima il modello centinaia di volte
         # camminando in avanti su nove stagioni — e cambia molto lentamente:
-        # rifarlo ogni notte sarebbe spreco. Una volta a settimana basta.
+        # rifarlo a ogni giro sarebbe spreco.
+        #
+        # La condizione è l'**età del dato**, non il giorno della settimana.
+        # Prima era "se è lunedì", e con due turni al giorno sarebbe girato due
+        # volte; e bastava che GitHub ritardasse il turno di lunedì oltre la
+        # mezzanotte perché saltasse per una settimana intera. L'età non ha
+        # nessuno di questi due problemi: se il file ha più di sei giorni si
+        # rifà, quando che sia.
         run: |
-          GIORNO=$(TZ=Europe/Rome date +%u)
-          if [ "$GIORNO" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            python scripts/track_record.py
-          else
-            echo "Non è lunedì: il track record resta quello della settimana scorsa."
-          fi
+          python - <<'FINE'
+          import json, pathlib, subprocess, sys
+          from datetime import datetime, timedelta, timezone
+
+          f = pathlib.Path("sito/src/dati/track-record.json")
+          scaduto = True
+          if f.exists():
+              try:
+                  quando = datetime.fromisoformat(json.loads(f.read_text())["generato_il"])
+                  eta = datetime.now(timezone.utc) - quando
+                  scaduto = eta > timedelta(days=6)
+                  print(f"track record vecchio di {eta.days} giorni")
+              except (KeyError, ValueError, json.JSONDecodeError):
+                  print("track record illeggibile: lo rifaccio")
+
+          if scaduto:
+              sys.exit(subprocess.run([sys.executable, "scripts/track_record.py"]).returncode)
+          print("ancora fresco: resta quello della settimana scorsa.")
+          FINE
 
       - uses: actions/setup-node@v7
         with:

@@ -39,8 +39,14 @@ import unicodedata
 import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+UTC = timezone.utc
+# ESPN dichiara sempre l'ora in UTC ("2026-09-04T18:45Z"). Il lettore e'
+# italiano: la si converte una volta sola, qui, e non ci si pensa piu'.
+ROMA = ZoneInfo("Europe/Rome")
 
 BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 CARTELLA = Path(__file__).resolve().parents[2] / "dati" / "espn"
@@ -322,6 +328,78 @@ def partite_finite(lega_espn: str, da: date, a: date) -> list[dict]:
                 })
             except (KeyError, TypeError, ValueError):
                 continue
+    return fuori
+
+
+def partite_in_programma(lega_espn: str, da: date, a: date) -> list[dict]:
+    """Le partite ancora da giocare, coi nomi ancora quelli di ESPN.
+
+    Serve perche' `fixtures.csv` di football-data copre una finestra corta —
+    pochi giorni — e la aggiorna quando gli pare. Il 1 settembre conteneva una
+    partita sola in tutti e ventidue i campionati: un sito che dice "1 partita
+    in programma" sembra spento, e lo sembra proprio mentre funziona.
+
+    Da ESPN si prende **solo il calendario**: giorno, ora, squadre. Le quote no,
+    anche se ci sono: arrivano da un operatore con tanto di link al suo sito, e
+    questo sito si regge sul non averne. Le quote restano football-data.
+    """
+    fuori = []
+    for intervallo in _giorni(da, a, passo=29):
+        d = _chiedi(f"{BASE}/{lega_espn}/scoreboard?dates={intervallo}")
+        if not d:
+            continue
+        for e in d.get("events", []):
+            gare = e.get("competitions") or []
+            if not gare:
+                continue
+            g = gare[0]
+            if g.get("status", {}).get("type", {}).get("name") != "STATUS_SCHEDULED":
+                continue
+            lati = {c.get("homeAway"): c for c in g.get("competitors", [])}
+            if "home" not in lati or "away" not in lati:
+                continue
+            try:
+                quando = e["date"]          # "2026-09-04T18:45Z", sempre in UTC
+                fuori.append({
+                    "id": str(e["id"]),
+                    "data": quando[:10],
+                    "ora": quando[11:16],
+                    "casa": lati["home"]["team"]["displayName"],
+                    "ospite": lati["away"]["team"]["displayName"],
+                })
+            except (KeyError, TypeError):
+                continue
+    return fuori
+
+
+def in_programma(slug: str, squadre_nostre: list[str], da: date, a: date) -> list[dict]:
+    """Le prossime partite di un campionato, gia' coi nostri nomi e in ora italiana.
+
+    Restituisce dizionari e non `PartitaFutura` per non far dipendere questo
+    modulo da football_data: chi chiama sa cosa costruirci.
+    """
+    lega = LEGHE.get(slug)
+    if not lega:
+        return []
+
+    grezze = partite_in_programma(lega, da, a)
+    if not grezze:
+        return []
+
+    loro = sorted({p["casa"] for p in grezze} | {p["ospite"] for p in grezze})
+    mappa, _ = abbina(loro, squadre_nostre)
+
+    fuori = []
+    for p in grezze:
+        casa, ospite = mappa.get(p["casa"]), mappa.get(p["ospite"])
+        if not casa or not ospite:
+            continue
+        quando = datetime(
+            *(int(x) for x in p["data"].split("-")),
+            int(p["ora"][:2]), int(p["ora"][3:5]), tzinfo=UTC,
+        ).astimezone(ROMA)
+        fuori.append({"data": quando.date(), "ora": quando.strftime("%H:%M"),
+                      "casa": casa, "ospite": ospite})
     return fuori
 
 

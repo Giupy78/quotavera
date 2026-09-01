@@ -116,9 +116,9 @@
        "casa": "Milan",
        "ospite": "Venezia",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -126,9 +126,9 @@
        "casa": "Sassuolo",
        "ospite": "Torino",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -136,9 +136,9 @@
        "casa": "Monza",
        "ospite": "Udinese",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -146,9 +146,9 @@
        "casa": "Fiorentina",
        "ospite": "Frosinone",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -156,9 +156,9 @@
        "casa": "Juventus",
        "ospite": "Parma",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -166,9 +166,9 @@
        "casa": "Napoli",
        "ospite": "Como",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -176,9 +176,9 @@
        "casa": "Lazio",
        "ospite": "Genoa",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -186,9 +186,9 @@
        "casa": "Cagliari",
        "ospite": "Inter",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-31",
@@ -196,9 +196,9 @@
        "casa": "Lecce",
        "ospite": "Roma",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 4,
+       "giocata": true
       },
       {
        "data": "2026-08-31",
@@ -206,9 +206,9 @@
        "casa": "Atalanta",
        "ospite": "Bologna",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 0,
+       "giocata": true
       }
      ]
     },
@@ -297,7 +297,7 @@
       },
       {
        "data": "2026-09-07",
-       "ora": "18:00",
+       "ora": "18:30",
        "casa": "Cagliari",
        "ospite": "Lecce",
        "collegabile": true,
@@ -343,8 +343,8 @@
       {
        "data": "2026-09-12",
        "ora": "18:00",
-       "casa": "Sassuolo",
-       "ospite": "Juventus",
+       "casa": "Lazio",
+       "ospite": "Milan",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -355,26 +355,6 @@
        "ora": "20:45",
        "casa": "Atalanta",
        "ospite": "Cagliari",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-13",
-       "ora": "12:30",
-       "casa": "Torino",
-       "ospite": "Roma",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-13",
-       "ora": "15:00",
-       "casa": "Como",
-       "ospite": "Parma",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -403,8 +383,28 @@
       {
        "data": "2026-09-13",
        "ora": "20:45",
-       "casa": "Lazio",
-       "ospite": "Milan",
+       "casa": "Sassuolo",
+       "ospite": "Juventus",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-14",
+       "ora": "18:30",
+       "casa": "Como",
+       "ospite": "Parma",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-14",
+       "ora": "18:30",
+       "casa": "Torino",
+       "ospite": "Roma",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -3993,7 +3993,7 @@
      ]
     }
    ],
-   "corrente": 2,
+   "corrente": 3,
    "totale": 38,
    "non_risolte": 0
   },
@@ -4113,9 +4113,9 @@
        "casa": "Crystal Palace",
        "ospite": "Man City",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 4,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -4123,9 +4123,9 @@
        "casa": "Liverpool",
        "ospite": "Nott'm Forest",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -4133,9 +4133,9 @@
        "casa": "Bournemouth",
        "ospite": "Everton",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -4143,9 +4143,9 @@
        "casa": "Coventry",
        "ospite": "Hull",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -4153,9 +4153,9 @@
        "casa": "Tottenham",
        "ospite": "Newcastle",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -4163,9 +4163,9 @@
        "casa": "Sunderland",
        "ospite": "Fulham",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -4173,9 +4173,9 @@
        "casa": "Chelsea",
        "ospite": "Brighton",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 4,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -4183,9 +4183,9 @@
        "casa": "Leeds",
        "ospite": "Brentford",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -4193,9 +4193,9 @@
        "casa": "Man United",
        "ospite": "Ipswich",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 5,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-31",
@@ -4203,9 +4203,9 @@
        "casa": "Aston Villa",
        "ospite": "Arsenal",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 1,
+       "giocata": true
       }
      ]
     },
@@ -4484,16 +4484,6 @@
       },
       {
        "data": "2026-09-19",
-       "ora": "15:00",
-       "casa": "Man City",
-       "ospite": "Sunderland",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-19",
        "ora": "17:30",
        "casa": "Nott'm Forest",
        "ospite": "Coventry",
@@ -4507,6 +4497,16 @@
        "ora": "14:00",
        "casa": "Bournemouth",
        "ospite": "Liverpool",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-20",
+       "ora": "14:00",
+       "casa": "Man City",
+       "ospite": "Sunderland",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -7990,7 +7990,7 @@
      ]
     }
    ],
-   "corrente": 2,
+   "corrente": 3,
    "totale": 38,
    "non_risolte": 0
   },
@@ -8065,9 +8065,9 @@
        "casa": "Valencia",
        "ospite": "Betis",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-26",
@@ -8075,9 +8075,9 @@
        "casa": "Real Madrid",
        "ospite": "Sociedad",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 4,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-27",
@@ -8085,9 +8085,9 @@
        "casa": "Celta",
        "ospite": "Osasuna",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-27",
@@ -8095,9 +8095,9 @@
        "casa": "Barcelona",
        "ospite": "Ath Bilbao",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 0,
+       "giocata": true
       }
      ]
     },
@@ -8215,9 +8215,9 @@
        "casa": "Santander",
        "ospite": "Elche",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-28",
@@ -8225,9 +8225,9 @@
        "casa": "Alaves",
        "ospite": "Villarreal",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -8235,9 +8235,9 @@
        "casa": "Levante",
        "ospite": "Betis",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 5,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -8245,9 +8245,9 @@
        "casa": "Sociedad",
        "ospite": "Espanol",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -8255,9 +8255,9 @@
        "casa": "Sevilla",
        "ospite": "Ath Madrid",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -8265,9 +8265,9 @@
        "casa": "Real Madrid",
        "ospite": "Malaga",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 4,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -8275,9 +8275,9 @@
        "casa": "La Coruna",
        "ospite": "Valencia",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -8285,9 +8285,9 @@
        "casa": "Celta",
        "ospite": "Ath Bilbao",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-31",
@@ -8295,9 +8295,9 @@
        "casa": "Osasuna",
        "ospite": "Getafe",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-31",
@@ -8305,9 +8305,9 @@
        "casa": "Barcelona",
        "ospite": "Vallecano",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 5,
+       "gol_ospite": 2,
+       "giocata": true
       }
      ]
     },
@@ -8420,18 +8420,8 @@
      "numero": 5,
      "partite": [
       {
-       "data": "2026-09-13",
-       "ora": "",
-       "casa": "Getafe",
-       "ospite": "La Coruna",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-13",
-       "ora": "",
+       "data": "2026-09-11",
+       "ora": "21:00",
        "casa": "Sevilla",
        "ospite": "Valencia",
        "collegabile": true,
@@ -8440,8 +8430,8 @@
        "giocata": false
       },
       {
-       "data": "2026-09-13",
-       "ora": "",
+       "data": "2026-09-12",
+       "ora": "14:00",
        "casa": "Santander",
        "ospite": "Alaves",
        "collegabile": true,
@@ -8450,10 +8440,30 @@
        "giocata": false
       },
       {
-       "data": "2026-09-13",
-       "ora": "",
-       "casa": "Villarreal",
-       "ospite": "Betis",
+       "data": "2026-09-12",
+       "ora": "16:15",
+       "casa": "Osasuna",
+       "ospite": "Espanol",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-12",
+       "ora": "18:30",
+       "casa": "Ath Bilbao",
+       "ospite": "Elche",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-12",
+       "ora": "21:00",
+       "casa": "Real Madrid",
+       "ospite": "Vallecano",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8461,7 +8471,7 @@
       },
       {
        "data": "2026-09-13",
-       "ora": "",
+       "ora": "14:00",
        "casa": "Celta",
        "ospite": "Malaga",
        "collegabile": true,
@@ -8471,27 +8481,7 @@
       },
       {
        "data": "2026-09-13",
-       "ora": "",
-       "casa": "Osasuna",
-       "ospite": "Espanol",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-13",
-       "ora": "",
-       "casa": "Sociedad",
-       "ospite": "Ath Madrid",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-13",
-       "ora": "",
+       "ora": "16:15",
        "casa": "Levante",
        "ospite": "Barcelona",
        "collegabile": true,
@@ -8501,9 +8491,9 @@
       },
       {
        "data": "2026-09-13",
-       "ora": "",
-       "casa": "Ath Bilbao",
-       "ospite": "Elche",
+       "ora": "18:30",
+       "casa": "Getafe",
+       "ospite": "La Coruna",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8511,9 +8501,19 @@
       },
       {
        "data": "2026-09-13",
-       "ora": "",
-       "casa": "Real Madrid",
-       "ospite": "Vallecano",
+       "ora": "21:00",
+       "casa": "Sociedad",
+       "ospite": "Ath Madrid",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-14",
+       "ora": "21:00",
+       "casa": "Villarreal",
+       "ospite": "Betis",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8535,8 +8535,8 @@
        "giocata": false
       },
       {
-       "data": "2026-09-16",
-       "ora": "",
+       "data": "2026-09-15",
+       "ora": "19:00",
        "casa": "Vallecano",
        "ospite": "Espanol",
        "collegabile": true,
@@ -8545,18 +8545,8 @@
        "giocata": false
       },
       {
-       "data": "2026-09-16",
-       "ora": "",
-       "casa": "La Coruna",
-       "ospite": "Sevilla",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-16",
-       "ora": "",
+       "data": "2026-09-15",
+       "ora": "20:00",
        "casa": "Alaves",
        "ospite": "Valencia",
        "collegabile": true,
@@ -8565,8 +8555,8 @@
        "giocata": false
       },
       {
-       "data": "2026-09-16",
-       "ora": "",
+       "data": "2026-09-15",
+       "ora": "21:30",
        "casa": "Elche",
        "ospite": "Real Madrid",
        "collegabile": true,
@@ -8576,9 +8566,9 @@
       },
       {
        "data": "2026-09-16",
-       "ora": "",
-       "casa": "Malaga",
-       "ospite": "Villarreal",
+       "ora": "19:00",
+       "casa": "La Coruna",
+       "ospite": "Sevilla",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8586,7 +8576,7 @@
       },
       {
        "data": "2026-09-16",
-       "ora": "",
+       "ora": "19:00",
        "casa": "Ath Madrid",
        "ospite": "Osasuna",
        "collegabile": true,
@@ -8596,7 +8586,7 @@
       },
       {
        "data": "2026-09-16",
-       "ora": "",
+       "ora": "21:30",
        "casa": "Levante",
        "ospite": "Ath Bilbao",
        "collegabile": true,
@@ -8606,7 +8596,17 @@
       },
       {
        "data": "2026-09-16",
-       "ora": "",
+       "ora": "21:30",
+       "casa": "Barcelona",
+       "ospite": "Santander",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-17",
+       "ora": "19:00",
        "casa": "Betis",
        "ospite": "Getafe",
        "collegabile": true,
@@ -8615,10 +8615,10 @@
        "giocata": false
       },
       {
-       "data": "2026-09-16",
-       "ora": "",
-       "casa": "Barcelona",
-       "ospite": "Santander",
+       "data": "2026-09-17",
+       "ora": "21:30",
+       "casa": "Malaga",
+       "ospite": "Villarreal",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8630,10 +8630,40 @@
      "numero": 7,
      "partite": [
       {
-       "data": "2026-09-20",
-       "ora": "",
-       "casa": "Ath Madrid",
-       "ospite": "Real Madrid",
+       "data": "2026-09-19",
+       "ora": "14:00",
+       "casa": "Osasuna",
+       "ospite": "Vallecano",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-19",
+       "ora": "16:15",
+       "casa": "Ath Bilbao",
+       "ospite": "Alaves",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-19",
+       "ora": "18:30",
+       "casa": "Celta",
+       "ospite": "Santander",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-19",
+       "ora": "21:00",
+       "casa": "Sevilla",
+       "ospite": "Barcelona",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8652,26 +8682,6 @@
       {
        "data": "2026-09-20",
        "ora": "",
-       "casa": "Sevilla",
-       "ospite": "Barcelona",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-20",
-       "ora": "",
-       "casa": "Ath Bilbao",
-       "ospite": "Alaves",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-20",
-       "ora": "",
        "casa": "Espanol",
        "ospite": "Elche",
        "collegabile": true,
@@ -8681,9 +8691,9 @@
       },
       {
        "data": "2026-09-20",
-       "ora": "",
-       "casa": "Osasuna",
-       "ospite": "Vallecano",
+       "ora": "14:00",
+       "casa": "Getafe",
+       "ospite": "Malaga",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8691,9 +8701,9 @@
       },
       {
        "data": "2026-09-20",
-       "ora": "",
-       "casa": "Celta",
-       "ospite": "Santander",
+       "ora": "16:15",
+       "casa": "Ath Madrid",
+       "ospite": "Real Madrid",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -8701,7 +8711,7 @@
       },
       {
        "data": "2026-09-20",
-       "ora": "",
+       "ora": "18:30",
        "casa": "La Coruna",
        "ospite": "Betis",
        "collegabile": true,
@@ -8711,19 +8721,9 @@
       },
       {
        "data": "2026-09-20",
-       "ora": "",
+       "ora": "18:30",
        "casa": "Villarreal",
        "ospite": "Levante",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-20",
-       "ora": "",
-       "casa": "Getafe",
-       "ospite": "Malaga",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -11987,7 +11987,7 @@
      ]
     }
    ],
-   "corrente": 1,
+   "corrente": 4,
    "totale": 38,
    "non_risolte": 0
   },
@@ -12002,9 +12002,9 @@
        "casa": "Bayern Munich",
        "ospite": "Stuttgart",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 5,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -12012,9 +12012,9 @@
        "casa": "RB Leipzig",
        "ospite": "M'gladbach",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -12022,9 +12022,9 @@
        "casa": "Mainz",
        "ospite": "Paderborn",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -12032,9 +12032,9 @@
        "casa": "Union Berlin",
        "ospite": "Ein Frankfurt",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -12042,9 +12042,9 @@
        "casa": "Elversberg",
        "ospite": "Leverkusen",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -12052,9 +12052,9 @@
        "casa": "FC Koln",
        "ospite": "Hoffenheim",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -12062,9 +12062,9 @@
        "casa": "Dortmund",
        "ospite": "Hamburg",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -12072,9 +12072,9 @@
        "casa": "Freiburg",
        "ospite": "Werder Bremen",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 4,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-30",
@@ -12082,9 +12082,9 @@
        "casa": "Augsburg",
        "ospite": "Schalke 04",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 0,
+       "giocata": true
       }
      ]
     },
@@ -15224,7 +15224,7 @@
      ]
     }
    ],
-   "corrente": 1,
+   "corrente": 2,
    "totale": 34,
    "non_risolte": 0
   },
@@ -15489,9 +15489,9 @@
        "casa": "Wrexham",
        "ospite": "Birmingham",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15499,9 +15499,9 @@
        "casa": "Wolves",
        "ospite": "Stoke",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 4,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15509,9 +15509,9 @@
        "casa": "Derby",
        "ospite": "Swansea",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15519,9 +15519,9 @@
        "casa": "Middlesbrough",
        "ospite": "West Brom",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 3,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15529,9 +15529,9 @@
        "casa": "Norwich",
        "ospite": "Burnley",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 4,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15539,9 +15539,9 @@
        "casa": "Bolton",
        "ospite": "Lincoln",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15549,9 +15549,9 @@
        "casa": "Bristol City",
        "ospite": "Portsmouth",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15559,9 +15559,9 @@
        "casa": "Southampton",
        "ospite": "Millwall",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 5,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15569,9 +15569,9 @@
        "casa": "Charlton",
        "ospite": "Preston",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 0,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15579,9 +15579,9 @@
        "casa": "Blackburn",
        "ospite": "QPR",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15589,9 +15589,9 @@
        "casa": "Cardiff",
        "ospite": "Sheffield United",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-08-29",
@@ -15599,9 +15599,9 @@
        "casa": "Watford",
        "ospite": "West Ham",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 1,
+       "giocata": true
       }
      ]
     },
@@ -15901,26 +15901,6 @@
       {
        "data": "2026-09-08",
        "ora": "19:45",
-       "casa": "Middlesbrough",
-       "ospite": "Millwall",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-08",
-       "ora": "19:45",
-       "casa": "Bristol City",
-       "ospite": "Lincoln",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-08",
-       "ora": "19:45",
        "casa": "Wrexham",
        "ospite": "Burnley",
        "collegabile": true,
@@ -15940,10 +15920,10 @@
       },
       {
        "data": "2026-09-09",
-       "ora": "19:45",
+       "ora": "",
        "casa": "Wolves",
-       "ospite": "Portsmouth",
-       "collegabile": true,
+       "ospite": "Portsmouth FC            [postponed]",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15973,6 +15953,26 @@
        "ora": "20:00",
        "casa": "Charlton",
        "ospite": "QPR",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-15",
+       "ora": "19:45",
+       "casa": "Middlesbrough",
+       "ospite": "Millwall",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-15",
+       "ora": "19:45",
+       "casa": "Bristol City",
+       "ospite": "Lincoln",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -16171,16 +16171,6 @@
       {
        "data": "2026-09-19",
        "ora": "15:00",
-       "casa": "Norwich",
-       "ospite": "Bolton",
-       "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
-      },
-      {
-       "data": "2026-09-19",
-       "ora": "15:00",
        "casa": "QPR",
        "ospite": "Preston",
        "collegabile": true,
@@ -16223,6 +16213,16 @@
        "ora": "12:00",
        "casa": "Wolves",
        "ospite": "West Brom",
+       "collegabile": true,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
+      },
+      {
+       "data": "2026-09-20",
+       "ora": "13:30",
+       "casa": "Norwich",
+       "ospite": "Bolton",
        "collegabile": true,
        "gol_casa": null,
        "gol_ospite": null,
@@ -20981,9 +20981,9 @@
      ]
     }
    ],
-   "corrente": 3,
+   "corrente": 4,
    "totale": 46,
-   "non_risolte": 0
+   "non_risolte": 1
   }
  }
 }

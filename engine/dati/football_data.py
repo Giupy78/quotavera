@@ -24,6 +24,7 @@ import urllib.request
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from engine.core.types import Incontro
 
@@ -357,6 +358,34 @@ class PartitaFutura:
         return _primo_credibile(self.quote, ("betfair", "media", "bet365", "massimo"))
 
 
+def ora_italiana(orario: str, giorno: date) -> str:
+    """Converte un orario di football-data in ora italiana.
+
+    football-data e' un sito britannico e pubblica **tutti** gli orari in ora
+    di Londra, anche quelli di Serie A. Noi li mostravamo tali e quali, e per
+    un lettore italiano erano sistematicamente un'ora avanti: Inter-Monza del
+    22 agosto risultava alle 17:30 quando si giocava alle 18:30.
+
+    L'errore era invisibile perche' coerente — sbagliate tutte allo stesso
+    modo, nessuna stonava — ed e' venuto fuori solo confrontando con ESPN, che
+    dichiara l'ora in UTC: 16:30Z, cioe' 17:30 a Londra e 18:30 a Roma.
+
+    Londra e Roma cambiano ora lo stesso giorno, quindi lo scarto e' sempre di
+    un'ora; si passa comunque per le zone vere invece di sommare 1, perche' una
+    regola che vale "sempre" e' esattamente quella che un giorno smette di
+    valere senza avvisare.
+    """
+    if not orario or ":" not in orario:
+        return orario
+    try:
+        ore, minuti = (int(x) for x in orario.split(":")[:2])
+        a_londra = datetime(giorno.year, giorno.month, giorno.day, ore, minuti,
+                            tzinfo=ZoneInfo("Europe/London"))
+        return a_londra.astimezone(ZoneInfo("Europe/Rome")).strftime("%H:%M")
+    except (ValueError, KeyError):
+        return orario
+
+
 # Nel file del calendario le colonne non hanno il suffisso C: sono le quote
 # esposte adesso, non quelle di chiusura, che ovviamente non esistono ancora.
 LIBRI_CALENDARIO = {
@@ -407,7 +436,7 @@ def calendario(forza: bool = True) -> list[PartitaFutura]:
                 PartitaFutura(
                     campionato=campionato.slug,
                     data=giorno,
-                    ora=(riga.get("Time") or "").strip(),
+                    ora=ora_italiana((riga.get("Time") or "").strip(), giorno),
                     casa=casa,
                     ospite=ospite,
                     quote=quote,
