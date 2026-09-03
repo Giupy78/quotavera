@@ -1,6 +1,6 @@
 {
- "data": "2026-09-02",
- "partite_in_programma": 348,
+ "data": "2026-09-03",
+ "partite_in_programma": 382,
  "campionati": 22,
  "sorprese": [
   {
@@ -335,8 +335,8 @@
    "gol_subiti": 1.0,
    "gol_totali": 49,
    "in_porta_totali": 111,
-   "attesi_dai_tiri": 35.4,
-   "scarto_conversione": 13.6,
+   "attesi_dai_tiri": 35.5,
+   "scarto_conversione": 13.5,
    "vantaggio_casa": 0.01,
    "casa": {
     "partite": 11,
@@ -799,8 +799,8 @@
    "gol_subiti": 1.75,
    "gol_totali": 18,
    "in_porta_totali": 84,
-   "attesi_dai_tiri": 26.8,
-   "scarto_conversione": -8.8,
+   "attesi_dai_tiri": 26.9,
+   "scarto_conversione": -8.9,
    "vantaggio_casa": 0.18,
    "casa": {
     "partite": 9,
@@ -870,50 +870,6 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "League One",
-   "bandiera": "🏴",
-   "slug": "league-one",
-   "id": "luton-stockport",
-   "casa": "Luton",
-   "ospite": "Stockport",
-   "data": "2026-09-02",
-   "ora": "20:45",
-   "margine": 0.0555
-  },
-  {
-   "campionato": "Premiership",
-   "bandiera": "🏴",
-   "slug": "premiership",
-   "id": "motherwell-dundee-united",
-   "casa": "Motherwell",
-   "ospite": "Dundee United",
-   "data": "2026-09-02",
-   "ora": "20:45",
-   "margine": 0.0432
-  },
-  {
-   "campionato": "League One",
-   "bandiera": "🏴",
-   "slug": "league-one",
-   "id": "burton-afc-wimbledon",
-   "casa": "Burton",
-   "ospite": "AFC Wimbledon",
-   "data": "2026-09-02",
-   "ora": "20:45",
-   "margine": 0.0424
-  },
-  {
-   "campionato": "League One",
-   "bandiera": "🏴",
-   "slug": "league-one",
-   "id": "reading-mansfield",
-   "casa": "Reading",
-   "ospite": "Mansfield",
-   "data": "2026-09-02",
-   "ora": "21:00",
-   "margine": 0.0357
-  },
-  {
    "campionato": "Pro League",
    "bandiera": "🇧🇪",
    "slug": "jupiler",
@@ -923,31 +879,53 @@
    "data": "2026-09-03",
    "ora": "20:30",
    "margine": 0.0334
+  },
+  {
+   "campionato": "Premiership",
+   "bandiera": "🏴",
+   "slug": "premiership",
+   "id": "hibernian-hearts",
+   "casa": "Hibernian",
+   "ospite": "Hearts",
+   "data": "2026-09-03",
+   "ora": "20:45",
+   "margine": 0.0313
+  },
+  {
+   "campionato": "Ligue 1",
+   "bandiera": "🇫🇷",
+   "slug": "ligue-1",
+   "id": "toulouse-lille",
+   "casa": "Toulouse",
+   "ospite": "Lille",
+   "data": "2026-09-03",
+   "ora": "20:45",
+   "margine": 0.0141
+  },
+  {
+   "campionato": "LaLiga",
+   "bandiera": "🇪🇸",
+   "slug": "laliga",
+   "id": "sociedad-celta",
+   "casa": "Sociedad",
+   "ospite": "Celta",
+   "data": "2026-09-03",
+   "ora": "21:00",
+   "margine": 0.0081
+  },
+  {
+   "campionato": "Pro League",
+   "bandiera": "🇧🇪",
+   "slug": "jupiler",
+   "id": "gent-oud-heverlee-leuven",
+   "casa": "Gent",
+   "ospite": "Oud-Heverlee Leuven",
+   "data": "2026-09-03",
+   "ora": "20:30",
+   "margine": 0.0071
   }
  ],
  "partite_meno_care": [
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴",
-   "slug": "championship",
-   "id": "qpr-cardiff",
-   "casa": "QPR",
-   "ospite": "Cardiff",
-   "data": "2026-09-02",
-   "ora": "20:45",
-   "margine": 0.0036
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴",
-   "slug": "championship",
-   "id": "burnley-middlesbrough",
-   "casa": "Burnley",
-   "ospite": "Middlesbrough",
-   "data": "2026-09-02",
-   "ora": "21:00",
-   "margine": 0.0064
-  },
   {
    "campionato": "Pro League",
    "bandiera": "🇧🇪",
@@ -971,15 +949,37 @@
    "margine": 0.0081
   },
   {
+   "campionato": "Ligue 1",
+   "bandiera": "🇫🇷",
+   "slug": "ligue-1",
+   "id": "toulouse-lille",
+   "casa": "Toulouse",
+   "ospite": "Lille",
+   "data": "2026-09-03",
+   "ora": "20:45",
+   "margine": 0.0141
+  },
+  {
    "campionato": "Premiership",
    "bandiera": "🏴",
    "slug": "premiership",
-   "id": "celtic-aberdeen",
-   "casa": "Celtic",
-   "ospite": "Aberdeen",
-   "data": "2026-09-02",
+   "id": "hibernian-hearts",
+   "casa": "Hibernian",
+   "ospite": "Hearts",
+   "data": "2026-09-03",
    "ora": "20:45",
-   "margine": 0.0103
+   "margine": 0.0313
+  },
+  {
+   "campionato": "Pro League",
+   "bandiera": "🇧🇪",
+   "slug": "jupiler",
+   "id": "anderlecht-kortrijk",
+   "casa": "Anderlecht",
+   "ospite": "Kortrijk",
+   "data": "2026-09-03",
+   "ora": "20:30",
+   "margine": 0.0334
   }
  ]
 }
