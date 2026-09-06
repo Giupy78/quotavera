@@ -461,11 +461,11 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "classifica": classifica,
         "risultati": risultati,
         "sorprese": sorprese(stagione, c),
-        "stagione_completa": stagione_completa(c, set(stat) | attuali),
+        "stagione_completa": stagione_completa(c, set(stat) | attuali, stagione),
     }
 
 
-def stagione_completa(c, nostre_squadre: set[str]) -> dict | None:
+def stagione_completa(c, nostre_squadre: set[str], storico=()) -> dict | None:
     """Il calendario dell'intera stagione, giornata per giornata.
 
     Viene da openfootball, che pubblica il calendario ufficiale con il numero
@@ -475,6 +475,14 @@ def stagione_completa(c, nostre_squadre: set[str]) -> dict | None:
     I nomi delle due fonti non coincidono ("FC Internazionale Milano" contro
     "Inter") e vanno riconciliati, altrimenti il calendario non si collega ne'
     alle statistiche ne' alle schede partita.
+
+    **I punteggi pero' non si prendono da openfootball.** Loro aggiornano una
+    volta a settimana, e il 6 settembre la terza giornata era ancora tutta a
+    trattini nonostante avessimo i risultati da due giorni: la stessa pagina
+    mostrava Inter-Napoli 3-2 nella sezione Risultati e Inter — Napoli qui
+    sotto. Il calendario e' loro, il risultato e' nostro: si prende da
+    `storico`, che tiene insieme football-data ed ESPN, e da openfootball resta
+    solo la struttura delle giornate.
     """
     partite, alias = openfootball.carica(c.slug)
     if not partite:
@@ -488,12 +496,32 @@ def stagione_completa(c, nostre_squadre: set[str]) -> dict | None:
     def nostro(nome: str) -> str | None:
         return verso_nostro.get(openfootball.normalizza(nome, alias))
 
+    # I nostri risultati, indicizzati per coppia di squadre. La data si
+    # confronta dopo con tolleranza: le fonti non concordano sempre sul giorno.
+    nostri: dict[tuple[str, str], list] = defaultdict(list)
+    for x in storico:
+        i = x.incontro
+        nostri[(i.casa, i.ospite)].append((i.data, i.punti_casa, i.punti_ospite))
+
+    def risultato(casa, ospite, quando):
+        for data, gc, go in nostri.get((casa, ospite), ()):
+            if abs((data - quando).days) <= 3:
+                return gc, go
+        return None, None
+
     per_giornata: dict[int, list] = defaultdict(list)
     non_risolte = 0
     for p in partite:
         casa, ospite = nostro(p.casa), nostro(p.ospite)
         if not casa or not ospite:
             non_risolte += 1
+
+        # Prima i nostri, che sono freschi; openfootball come riserva per le
+        # partite piu' vecchie di quanto arrivi il nostro storico.
+        gc, go = (risultato(casa, ospite, p.data) if casa and ospite else (None, None))
+        if gc is None:
+            gc, go = p.gol_casa, p.gol_ospite
+
         per_giornata[p.giornata].append({
             "data": p.data.isoformat(),
             "ora": p.ora,
@@ -502,9 +530,9 @@ def stagione_completa(c, nostre_squadre: set[str]) -> dict | None:
             "casa": casa or p.casa,
             "ospite": ospite or p.ospite,
             "collegabile": bool(casa and ospite),
-            "gol_casa": p.gol_casa,
-            "gol_ospite": p.gol_ospite,
-            "giocata": p.giocata,
+            "gol_casa": gc,
+            "gol_ospite": go,
+            "giocata": gc is not None,
         })
 
     giornate_ordinate = sorted(per_giornata)
