@@ -1,0 +1,174 @@
+---
+/* Il pezzo del giorno di un singolo campionato.
+   Ventidue pagine invece di una: chi cerca "Ligue 2" non ha nessun motivo di
+   trovarsi un riassunto in cui la Ligue 2 sta in una riga su venti. */
+import Base from "../../layouts/Base.astro";
+import articoli from "../../dati/articoli.json";
+import chicche from "../../dati/chicche.json";
+
+export function getStaticPaths() {
+  return (articoli.pezzi as any[]).map((p) => ({
+    params: { campionato: p.slug },
+    props: { pezzo: p },
+  }));
+}
+
+const { pezzo } = Astro.props;
+
+const giorno = new Date(articoli.data + "T00:00:00");
+const dataLunga = giorno.toLocaleDateString("it-IT", {
+  weekday: "long", day: "numeric", month: "long", year: "numeric",
+});
+
+/* Le chicche trasversali che riguardano questo campionato: sono calcolate
+   confrontando tutti i tornei, quindi meritano di comparire dove il lettore
+   e' gia' interessato a quello. */
+const trasversali = (chicche.confronti as any[]).filter(
+  (x) => x.slug === pezzo.slug,
+);
+---
+
+<Base
+  titolo={pezzo.titolo}
+  descrizione={pezzo.sommario}
+>
+  <section>
+    <p class="occhiello">
+      <a href="/blog/">Articoli</a> · {dataLunga}
+    </p>
+    <div class="hd">
+      <h1>{pezzo.bandiera} {pezzo.titolo}</h1>
+      <p>{pezzo.sommario}</p>
+    </div>
+
+    <div class="prosa">
+      {pezzo.sezioni.map((s: any) => (
+        <>
+          <h2>{s.titolo}</h2>
+          {s.righe.map((r: string) => <p>{r}</p>)}
+        </>
+      ))}
+    </div>
+
+    <p class="vaia">
+      <a href={`/calcio/${pezzo.slug}/`}>
+        Classifica, risultati e statistiche di {pezzo.campionato} →
+      </a>
+    </p>
+  </section>
+
+  {(pezzo.chicche.length > 0 || trasversali.length > 0) && (
+    <section>
+      <div class="hd">
+        <h2>Chicche</h2>
+        <p>
+          Numeri veri, calcolati sulle ultime stagioni. Descrivono il passato:
+          una serie aperta dice cosa è successo, non cosa succederà.
+        </p>
+      </div>
+      <div class="chicche">
+        {[...trasversali, ...pezzo.chicche].map((c: any) => (
+          <article class="chicca">
+            <div class="numero mono">{c.numero}</div>
+            <div>
+              <h3>{c.titolo}</h3>
+              <p>{c.testo}</p>
+              {c.campione > 1 && (
+                <p class="campione">su {c.campione} partite</p>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {pezzo.sorprese.length > 0 && (
+    <section>
+      <div class="hd">
+        <h2>Vittorie che il gioco non spiega</h2>
+        <p>
+          Chi ha vinto tirando in porta molto meno dell'avversario. Non è un
+          giudizio sulla squadra: è un risultato che, statisticamente, tende a
+          non ripetersi.
+        </p>
+      </div>
+      <div class="scorri">
+        <table class="dati">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Partita</th>
+              <th class="num">Risultato</th>
+              <th class="num">Tiri in porta</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pezzo.sorprese.map((s: any) => (
+              <tr>
+                <td class="mono">{s.data.slice(8, 10)}/{s.data.slice(5, 7)}</td>
+                <td>{s.casa} — {s.ospite}</td>
+                <td class="num mono">{s.gol_casa}–{s.gol_ospite}</td>
+                <td class="num mono">{s.in_porta_casa}–{s.in_porta_ospite}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .prosa h2 {
+    font-size: 17px;
+    margin: 26px 0 8px;
+  }
+  .prosa p {
+    line-height: 1.7;
+    max-width: 72ch;
+    margin-bottom: 10px;
+  }
+  .vaia {
+    margin-top: 24px;
+    font-size: 13.5px;
+  }
+  .chicche {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .chicca {
+    background: var(--bg);
+    padding: 16px 18px;
+    display: grid;
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+  .chicca .numero {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--s1);
+    line-height: 1.2;
+    padding-top: 1px;
+  }
+  .chicca h3 {
+    font-size: 14px;
+    margin: 0 0 5px;
+    line-height: 1.35;
+  }
+  .chicca p {
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .chicca .campione {
+    color: var(--ink-3);
+    font-size: 11.5px;
+    margin-top: 5px;
+  }
+</style>

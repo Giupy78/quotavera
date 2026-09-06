@@ -1,0 +1,1968 @@
+{
+ "data": "2026-09-07",
+ "confronti": [
+  {
+   "tipo": "gol_lega",
+   "titolo": "Il campionato dove si segna di piu' e' Bundesliga",
+   "testo": "3.21 gol a partita, contando tutte le gare delle ultime stagioni.",
+   "numero": "3.21",
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "squadre": [],
+   "campione": 935
+  },
+  {
+   "tipo": "gol_lega_meno",
+   "titolo": "E quello dove si segna di meno e' LaLiga 2",
+   "testo": "2.46 gol a partita: quasi uno in meno del campionato piu' prolifico.",
+   "numero": "2.46",
+   "campionato": "LaLiga 2",
+   "bandiera": "🇪🇸",
+   "slug": "laliga-2",
+   "squadre": [],
+   "campione": 1429
+  },
+  {
+   "tipo": "campo",
+   "titolo": "Giocare in casa conta piu' che altrove in LaLiga",
+   "testo": "La squadra di casa vince il 46% delle partite.",
+   "numero": "46%",
+   "campionato": "LaLiga",
+   "bandiera": "🇪🇸",
+   "slug": "laliga",
+   "squadre": [],
+   "campione": 1179
+  },
+  {
+   "tipo": "pareggi",
+   "titolo": "In Serie B si pareggia piu' che ovunque",
+   "testo": "Un 32% delle partite finisce in parita'.",
+   "numero": "32%",
+   "campionato": "Serie B",
+   "bandiera": "🇮🇹",
+   "slug": "serie-b",
+   "squadre": [],
+   "campione": 1169
+  },
+  {
+   "tipo": "cartellini",
+   "titolo": "L'arbitro estrae di piu' in Super League",
+   "testo": "5.6 cartellini a partita fra le due squadre.",
+   "numero": "5.6",
+   "campionato": "Super League",
+   "bandiera": "🇬🇷",
+   "slug": "super-league-grecia",
+   "squadre": [],
+   "campione": 722
+  },
+  {
+   "tipo": "corner",
+   "titolo": "Il campionato dei calci d'angolo e' Premiership",
+   "testo": "10.6 angoli a partita in totale.",
+   "numero": "10.6",
+   "campionato": "Premiership",
+   "bandiera": "🏴",
+   "slug": "premiership",
+   "squadre": [],
+   "campione": 715
+  }
+ ],
+ "per_campionato": {
+  "serie-a": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Inter non perde da 13 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "13",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Inter"
+    ],
+    "campione": 13
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Genoa non vince da 8 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "8",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Genoa"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Inter non molla all'intervallo",
+    "testo": "Sotto al riposo 13 volte, ha finito vincendo 4. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "31%",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Inter"
+    ],
+    "campione": 13
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Cagliari non tiene il vantaggio",
+    "testo": "Avanti al riposo 18 volte, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "56%",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Cagliari"
+    ],
+    "campione": 18
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Inter 1-2 Udinese",
+    "testo": "31/08/2025: che Udinese vinceva in casa di Inter era pagato 13.00, cioe' circa 8% di probabilita' secondo il mercato.",
+    "numero": "13.00",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Inter",
+     "Udinese"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Milan 1-2 Cremonese",
+    "testo": "23/08/2025: che Cremonese vinceva in casa di Milan era pagato 12.50, cioe' circa 8% di probabilita' secondo il mercato.",
+    "numero": "12.50",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Milan",
+     "Cremonese"
+    ],
+    "campione": 1
+   }
+  ],
+  "premier-league": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Arsenal non perde da 8 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "8",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Arsenal"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Nott'm Forest non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Nott'm Forest"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Tottenham non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Tottenham"
+    ],
+    "campione": 3
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Man City non molla all'intervallo",
+    "testo": "Sotto al riposo 18 volte, ha finito vincendo 6. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "33%",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Man City"
+    ],
+    "campione": 18
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Ipswich non tiene il vantaggio",
+    "testo": "Avanti al riposo 8 volte, non ha vinto 4 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "50%",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Ipswich"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "Ipswich decide presto",
+    "testo": "23 dei suoi 40 gol arrivano prima dell'intervallo. E' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "58%",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Ipswich"
+    ],
+    "campione": 40
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Sunderland vive di secondi tempi",
+    "testo": "Solo 14 dei suoi 45 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "69%",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Sunderland"
+    ],
+    "campione": 45
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Liverpool 0-1 Nott'm Forest",
+    "testo": "14/09/2024: che Nott'm Forest vinceva in casa di Liverpool era pagato 15.50, cioe' circa 6% di probabilita' secondo il mercato.",
+    "numero": "15.50",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Liverpool",
+     "Nott'm Forest"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Liverpool 0-1 Crystal Palace",
+    "testo": "14/04/2024: che Crystal Palace vinceva in casa di Liverpool era pagato 14.50, cioe' circa 7% di probabilita' secondo il mercato.",
+    "numero": "14.50",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Liverpool",
+     "Crystal Palace"
+    ],
+    "campione": 1
+   }
+  ],
+  "laliga": [
+   {
+    "tipo": "rimonte",
+    "titolo": "Barcelona non molla all'intervallo",
+    "testo": "Sotto al riposo 21 volte, ha finito vincendo 9. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "43%",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Barcelona"
+    ],
+    "campione": 21
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Levante non tiene il vantaggio",
+    "testo": "Avanti al riposo 10 volte, non ha vinto 5 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "50%",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Levante"
+    ],
+    "campione": 10
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Barcelona 0-1 Leganes",
+    "testo": "15/12/2024: che Leganes vinceva in casa di Barcelona era pagato 26.00, cioe' circa 4% di probabilita' secondo il mercato.",
+    "numero": "26.00",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Barcelona",
+     "Leganes"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Barcelona 1-2 Las Palmas",
+    "testo": "30/11/2024: che Las Palmas vinceva in casa di Barcelona era pagato 22.00, cioe' circa 5% di probabilita' secondo il mercato.",
+    "numero": "22.00",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Barcelona",
+     "Las Palmas"
+    ],
+    "campione": 1
+   }
+  ],
+  "bundesliga": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Bayern Munich non perde da 17 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "17",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Bayern Munich"
+    ],
+    "campione": 17
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Ein Frankfurt non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Ein Frankfurt"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Bayern Munich non molla all'intervallo",
+    "testo": "Sotto al riposo 14 volte, ha finito vincendo 4. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "29%",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Bayern Munich"
+    ],
+    "campione": 14
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Mainz non tiene il vantaggio",
+    "testo": "Avanti al riposo 37 volte, non ha vinto 15 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "41%",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Mainz"
+    ],
+    "campione": 37
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Bayern Munich 0-1 Werder Bremen",
+    "testo": "21/01/2024: che Werder Bremen vinceva in casa di Bayern Munich era pagato 26.00, cioe' circa 4% di probabilita' secondo il mercato.",
+    "numero": "26.00",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Bayern Munich",
+     "Werder Bremen"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Bayern Munich 1-2 Augsburg",
+    "testo": "24/01/2026: che Augsburg vinceva in casa di Bayern Munich era pagato 21.00, cioe' circa 5% di probabilita' secondo il mercato.",
+    "numero": "21.00",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Bayern Munich",
+     "Augsburg"
+    ],
+    "campione": 1
+   }
+  ],
+  "ligue-1": [
+   {
+    "tipo": "digiuno",
+    "titolo": "Nice non vince da 11 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "11",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Nice"
+    ],
+    "campione": 11
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Monaco non molla all'intervallo",
+    "testo": "Sotto al riposo 25 volte, ha finito vincendo 5. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "20%",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Monaco"
+    ],
+    "campione": 25
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Nice non tiene il vantaggio",
+    "testo": "Avanti al riposo 37 volte, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "38%",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Nice"
+    ],
+    "campione": 37
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Lille 1-2 Le Havre",
+    "testo": "08/02/2025: che Le Havre vinceva in casa di Lille era pagato 15.50, cioe' circa 6% di probabilita' secondo il mercato.",
+    "numero": "15.50",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Lille",
+     "Le Havre"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Monaco 0-1 Angers",
+    "testo": "01/11/2024: che Angers vinceva in casa di Monaco era pagato 14.00, cioe' circa 7% di probabilita' secondo il mercato.",
+    "numero": "14.00",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Monaco",
+     "Angers"
+    ],
+    "campione": 1
+   }
+  ],
+  "eredivisie": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Feyenoord non perde da 14 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "14",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Feyenoord"
+    ],
+    "campione": 14
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Willem II non vince da 21 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "21",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Willem II"
+    ],
+    "campione": 21
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "PSV Eindhoven non molla all'intervallo",
+    "testo": "Sotto al riposo 16 volte, ha finito vincendo 7. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "44%",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "PSV Eindhoven"
+    ],
+    "campione": 16
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Excelsior non tiene il vantaggio",
+    "testo": "Avanti al riposo 22 volte, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "45%",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Excelsior"
+    ],
+    "campione": 22
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "PSV Eindhoven 0-2 Telstar",
+    "testo": "30/08/2025: che Telstar vinceva in casa di PSV Eindhoven era pagato 29.00, cioe' circa 3% di probabilita' secondo il mercato.",
+    "numero": "29.00",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "PSV Eindhoven",
+     "Telstar"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Zwolle 3-1 PSV Eindhoven",
+    "testo": "18/01/2025: che Zwolle batteva PSV Eindhoven era pagato 15.00, cioe' circa 7% di probabilita' secondo il mercato.",
+    "numero": "15.00",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Zwolle",
+     "PSV Eindhoven"
+    ],
+    "campione": 1
+   }
+  ],
+  "primeira-liga": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Benfica non perde da 53 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "53",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Benfica"
+    ],
+    "campione": 53
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Estoril non vince da 12 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "12",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Estoril"
+    ],
+    "campione": 12
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Casa Pia non segna da 5 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "5",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Casa Pia"
+    ],
+    "campione": 5
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Sp Lisbon non molla all'intervallo",
+    "testo": "Sotto al riposo 8 volte, ha finito vincendo 3. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "38%",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Sp Lisbon"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Rio Ave non tiene il vantaggio",
+    "testo": "Avanti al riposo 24 volte, non ha vinto 12 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "50%",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Rio Ave"
+    ],
+    "campione": 24
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Sp Lisbon 0-1 Santa Clara",
+    "testo": "30/11/2024: che Santa Clara vinceva in casa di Sp Lisbon era pagato 17.50, cioe' circa 6% di probabilita' secondo il mercato.",
+    "numero": "17.50",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Sp Lisbon",
+     "Santa Clara"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Casa Pia 2-1 Porto",
+    "testo": "02/02/2026: che Casa Pia batteva Porto era pagato 17.00, cioe' circa 6% di probabilita' secondo il mercato.",
+    "numero": "17.00",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Casa Pia",
+     "Porto"
+    ],
+    "campione": 1
+   }
+  ],
+  "superlig": [
+   {
+    "tipo": "digiuno",
+    "titolo": "Konyaspor non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Konyaspor"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Fenerbahce non molla all'intervallo",
+    "testo": "Sotto al riposo 22 volte, ha finito vincendo 12. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "55%",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Fenerbahce"
+    ],
+    "campione": 22
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Alanyaspor non tiene il vantaggio",
+    "testo": "Avanti al riposo 40 volte, non ha vinto 20 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "50%",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Alanyaspor"
+    ],
+    "campione": 40
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Buyuksehyr 2-3 Ad. Demirspor",
+    "testo": "25/05/2025: che Ad. Demirspor vinceva in casa di Buyuksehyr era pagato 24.00, cioe' circa 4% di probabilita' secondo il mercato.",
+    "numero": "24.00",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Buyuksehyr",
+     "Ad. Demirspor"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Hatayspor 4-2 Fenerbahce",
+    "testo": "26/05/2025: che Hatayspor batteva Fenerbahce era pagato 14.50, cioe' circa 7% di probabilita' secondo il mercato.",
+    "numero": "14.50",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Hatayspor",
+     "Fenerbahce"
+    ],
+    "campione": 1
+   }
+  ],
+  "jupiler": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Waregem non perde da 12 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "12",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Waregem"
+    ],
+    "campione": 12
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Mechelen non vince da 9 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "9",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Mechelen"
+    ],
+    "campione": 9
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Cercle Brugge non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Cercle Brugge"
+    ],
+    "campione": 3
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Waregem non molla all'intervallo",
+    "testo": "Sotto al riposo 13 volte, ha finito vincendo 3. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "23%",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Waregem"
+    ],
+    "campione": 13
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Oud-Heverlee Leuven non tiene il vantaggio",
+    "testo": "Avanti al riposo 24 volte, non ha vinto 9 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "38%",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Oud-Heverlee Leuven"
+    ],
+    "campione": 24
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Club Brugge 1-2 Standard",
+    "testo": "23/02/2025: che Standard vinceva in casa di Club Brugge era pagato 14.00, cioe' circa 7% di probabilita' secondo il mercato.",
+    "numero": "14.00",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Club Brugge",
+     "Standard"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Club Brugge 0-1 Antwerp",
+    "testo": "30/11/2025: che Antwerp vinceva in casa di Club Brugge era pagato 11.00, cioe' circa 9% di probabilita' secondo il mercato.",
+    "numero": "11.00",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Club Brugge",
+     "Antwerp"
+    ],
+    "campione": 1
+   }
+  ],
+  "super-league-grecia": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "AEK non perde da 26 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "26",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "AEK"
+    ],
+    "campione": 26
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Volos NFC non vince da 9 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "9",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Volos NFC"
+    ],
+    "campione": 9
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Levadeiakos non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Levadeiakos"
+    ],
+    "campione": 3
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "PAOK non molla all'intervallo",
+    "testo": "Sotto al riposo 16 volte, ha finito vincendo 4. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "25%",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "PAOK"
+    ],
+    "campione": 16
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Asteras Tripolis non tiene il vantaggio",
+    "testo": "Avanti al riposo 23 volte, non ha vinto 9 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "39%",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Asteras Tripolis"
+    ],
+    "campione": 23
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "OFI Crete decide presto",
+    "testo": "69 dei suoi 121 gol arrivano prima dell'intervallo. E' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "57%",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "OFI Crete"
+    ],
+    "campione": 121
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "PAOK 1-2 Volos NFC",
+    "testo": "12/01/2025: che Volos NFC vinceva in casa di PAOK era pagato 28.00, cioe' circa 4% di probabilita' secondo il mercato.",
+    "numero": "28.00",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "PAOK",
+     "Volos NFC"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Lamia 3-1 Panathinaikos",
+    "testo": "23/02/2025: che Lamia batteva Panathinaikos era pagato 18.00, cioe' circa 6% di probabilita' secondo il mercato.",
+    "numero": "18.00",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Lamia",
+     "Panathinaikos"
+    ],
+    "campione": 1
+   }
+  ],
+  "premiership": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Celtic non perde da 12 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "12",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Celtic"
+    ],
+    "campione": 12
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Falkirk non vince da 8 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "8",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Falkirk"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Aberdeen non segna da 4 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "4",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Aberdeen"
+    ],
+    "campione": 4
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Celtic non molla all'intervallo",
+    "testo": "Sotto al riposo 15 volte, ha finito vincendo 4. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "27%",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Celtic"
+    ],
+    "campione": 15
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Dundee United non tiene il vantaggio",
+    "testo": "Avanti al riposo 18 volte, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "56%",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Dundee United"
+    ],
+    "campione": 18
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Rangers 1-2 Motherwell",
+    "testo": "01/03/2025: che Motherwell vinceva in casa di Rangers era pagato 25.00, cioe' circa 4% di probabilita' secondo il mercato.",
+    "numero": "25.00",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Rangers",
+     "Motherwell"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "St Johnstone 1-0 Celtic",
+    "testo": "06/04/2025: che St Johnstone batteva Celtic era pagato 22.00, cioe' circa 5% di probabilita' secondo il mercato.",
+    "numero": "22.00",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "St Johnstone",
+     "Celtic"
+    ],
+    "campione": 1
+   }
+  ],
+  "serie-b": [
+   {
+    "tipo": "digiuno",
+    "titolo": "Carrarese non vince da 8 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "8",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Carrarese"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Catanzaro non molla all'intervallo",
+    "testo": "Sotto al riposo 32 volte, ha finito vincendo 5. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "16%",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Catanzaro"
+    ],
+    "campione": 32
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Sampdoria non tiene il vantaggio",
+    "testo": "Avanti al riposo 28 volte, non ha vinto 13 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "46%",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Sampdoria"
+    ],
+    "campione": 28
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Palermo 1-2 Lecco",
+    "testo": "29/10/2023: che Lecco vinceva in casa di Palermo era pagato 9.10, cioe' circa 11% di probabilita' secondo il mercato.",
+    "numero": "9.10",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Palermo",
+     "Lecco"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Cesena 3-4 Padova",
+    "testo": "08/05/2026: che Padova vinceva in casa di Cesena era pagato 8.60, cioe' circa 12% di probabilita' secondo il mercato.",
+    "numero": "8.60",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Cesena",
+     "Padova"
+    ],
+    "campione": 1
+   }
+  ],
+  "championship": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Birmingham non perde da 10 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "10",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Birmingham"
+    ],
+    "campione": 10
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Cardiff non vince da 13 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "13",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Cardiff"
+    ],
+    "campione": 13
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Swansea non subisce gol da 4 partite",
+    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Swansea"
+    ],
+    "campione": 4
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Southampton non molla all'intervallo",
+    "testo": "Sotto al riposo 21 volte, ha finito vincendo 7. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "33%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Southampton"
+    ],
+    "campione": 21
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Wrexham non tiene il vantaggio",
+    "testo": "Avanti al riposo 17 volte, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "47%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Wrexham"
+    ],
+    "campione": 17
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Charlton vive di secondi tempi",
+    "testo": "Solo 16 dei suoi 50 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "68%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Charlton"
+    ],
+    "campione": 50
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Middlesbrough 0-1 Charlton",
+    "testo": "11/03/2026: che Charlton vinceva in casa di Middlesbrough era pagato 12.00, cioe' circa 8% di probabilita' secondo il mercato.",
+    "numero": "12.00",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Middlesbrough",
+     "Charlton"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Coventry 0-0 Sheffield Weds",
+    "testo": "11/04/2026: che Coventry e Sheffield Weds pareggiavano era pagato 10.00, cioe' circa 10% di probabilita' secondo il mercato.",
+    "numero": "10.00",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Coventry",
+     "Sheffield Weds"
+    ],
+    "campione": 1
+   }
+  ],
+  "league-one": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Huddersfield non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Huddersfield"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Stockport non molla all'intervallo",
+    "testo": "Sotto al riposo 26 volte, ha finito vincendo 5. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "19%",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Stockport"
+    ],
+    "campione": 26
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Barnsley non tiene il vantaggio",
+    "testo": "Avanti al riposo 49 volte, non ha vinto 20 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "41%",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Barnsley"
+    ],
+    "campione": 49
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Shrewsbury 3-2 Birmingham",
+    "testo": "23/11/2024: che Shrewsbury batteva Birmingham era pagato 11.00, cioe' circa 9% di probabilita' secondo il mercato.",
+    "numero": "11.00",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Shrewsbury",
+     "Birmingham"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Peterboro 1-3 Carlisle",
+    "testo": "29/03/2024: che Carlisle vinceva in casa di Peterboro era pagato 10.43, cioe' circa 10% di probabilita' secondo il mercato.",
+    "numero": "10.43",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Peterboro",
+     "Carlisle"
+    ],
+    "campione": 1
+   }
+  ],
+  "league-two": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Barnet non perde da 14 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "14",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Barnet"
+    ],
+    "campione": 14
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Port Vale non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Port Vale"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Fleetwood Town non molla all'intervallo",
+    "testo": "Sotto al riposo 25 volte, ha finito vincendo 5. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "20%",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Fleetwood Town"
+    ],
+    "campione": 25
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Tranmere non tiene il vantaggio",
+    "testo": "Avanti al riposo 37 volte, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "38%",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Tranmere"
+    ],
+    "campione": 37
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Cheltenham vive di secondi tempi",
+    "testo": "Solo 38 dei suoi 123 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "69%",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Cheltenham"
+    ],
+    "campione": 123
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Salford 1-3 Newport County",
+    "testo": "17/02/2026: che Newport County vinceva in casa di Salford era pagato 10.00, cioe' circa 10% di probabilita' secondo il mercato.",
+    "numero": "10.00",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Salford",
+     "Newport County"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Barnet 1-2 Newport County",
+    "testo": "14/03/2026: che Newport County vinceva in casa di Barnet era pagato 9.40, cioe' circa 11% di probabilita' secondo il mercato.",
+    "numero": "9.40",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Barnet",
+     "Newport County"
+    ],
+    "campione": 1
+   }
+  ],
+  "national-league": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Boreham Wood non perde da 9 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "9",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Boreham Wood"
+    ],
+    "campione": 9
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Solihull non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Solihull"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Rochdale 2-4 Morecambe",
+    "testo": "03/04/2026: che Morecambe vinceva in casa di Rochdale era pagato 12.00, cioe' circa 8% di probabilita' secondo il mercato.",
+    "numero": "12.00",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Rochdale",
+     "Morecambe"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Gateshead 3-1 York",
+    "testo": "24/03/2026: che Gateshead batteva York era pagato 9.80, cioe' circa 10% di probabilita' secondo il mercato.",
+    "numero": "9.80",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Gateshead",
+     "York"
+    ],
+    "campione": 1
+   }
+  ],
+  "laliga-2": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Castellon non perde da 8 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "8",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Castellon"
+    ],
+    "campione": 8
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Eldense non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Eldense"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Ceuta non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Ceuta"
+    ],
+    "campione": 3
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Eibar non molla all'intervallo",
+    "testo": "Sotto al riposo 28 volte, ha finito vincendo 5. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "18%",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Eibar"
+    ],
+    "campione": 28
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Eldense non tiene il vantaggio",
+    "testo": "Avanti al riposo 20 volte, non ha vinto 9 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "45%",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Eldense"
+    ],
+    "campione": 20
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "Ceuta decide presto",
+    "testo": "30 dei suoi 52 gol arrivano prima dell'intervallo. E' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "58%",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Ceuta"
+    ],
+    "campione": 52
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Andorra vive di secondi tempi",
+    "testo": "Solo 33 dei suoi 102 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "68%",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Andorra"
+    ],
+    "campione": 102
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Andorra 0-2 Ceuta",
+    "testo": "24/05/2026: che Ceuta vinceva in casa di Andorra era pagato 10.00, cioe' circa 10% di probabilita' secondo il mercato.",
+    "numero": "10.00",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Andorra",
+     "Ceuta"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Albacete 0-1 Alcorcon",
+    "testo": "20/01/2024: che Alcorcon vinceva in casa di Albacete era pagato 8.02, cioe' circa 12% di probabilita' secondo il mercato.",
+    "numero": "8.02",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Albacete",
+     "Alcorcon"
+    ],
+    "campione": 1
+   }
+  ],
+  "bundesliga-2": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Nurnberg non perde da 9 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "9",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Nurnberg"
+    ],
+    "campione": 9
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Darmstadt non vince da 13 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "13",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Darmstadt"
+    ],
+    "campione": 13
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Darmstadt non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Darmstadt"
+    ],
+    "campione": 3
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Hannover non molla all'intervallo",
+    "testo": "Sotto al riposo 25 volte, ha finito vincendo 6. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "24%",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Hannover"
+    ],
+    "campione": 25
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Darmstadt non tiene il vantaggio",
+    "testo": "Avanti al riposo 17 volte, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "47%",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Darmstadt"
+    ],
+    "campione": 17
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "Dresden decide presto",
+    "testo": "33 dei suoi 59 gol arrivano prima dell'intervallo. E' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "56%",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Dresden"
+    ],
+    "campione": 59
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Hannover 1-2 Greuther Furth",
+    "testo": "08/03/2026: che Greuther Furth vinceva in casa di Hannover era pagato 9.20, cioe' circa 11% di probabilita' secondo il mercato.",
+    "numero": "9.20",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Hannover",
+     "Greuther Furth"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "St Pauli 3-4 Elversberg",
+    "testo": "14/04/2024: che Elversberg vinceva in casa di St Pauli era pagato 8.73, cioe' circa 11% di probabilita' secondo il mercato.",
+    "numero": "8.73",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "St Pauli",
+     "Elversberg"
+    ],
+    "campione": 1
+   }
+  ],
+  "ligue-2": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Reims non perde da 12 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "12",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Reims"
+    ],
+    "campione": 12
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Boulogne non vince da 12 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "12",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Boulogne"
+    ],
+    "campione": 12
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Rodez non molla all'intervallo",
+    "testo": "Sotto al riposo 34 volte, ha finito vincendo 9. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "26%",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Rodez"
+    ],
+    "campione": 34
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Clermont non tiene il vantaggio",
+    "testo": "Avanti al riposo 14 volte, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "57%",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Clermont"
+    ],
+    "campione": 14
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Boulogne vive di secondi tempi",
+    "testo": "Solo 9 dei suoi 36 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "75%",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Boulogne"
+    ],
+    "campione": 36
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Paris FC 1-2 Martigues",
+    "testo": "03/01/2025: che Martigues vinceva in casa di Paris FC era pagato 15.00, cioe' circa 7% di probabilita' secondo il mercato.",
+    "numero": "15.00",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Paris FC",
+     "Martigues"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Lorient 0-1 Laval",
+    "testo": "22/02/2025: che Laval vinceva in casa di Lorient era pagato 10.50, cioe' circa 10% di probabilita' secondo il mercato.",
+    "numero": "10.50",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Lorient",
+     "Laval"
+    ],
+    "campione": 1
+   }
+  ],
+  "championship-scozia": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Partick non perde da 19 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "19",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Partick"
+    ],
+    "campione": 19
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Morton non vince da 10 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "10",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Morton"
+    ],
+    "campione": 10
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Partick non molla all'intervallo",
+    "testo": "Sotto al riposo 26 volte, ha finito vincendo 3. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "12%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Partick"
+    ],
+    "campione": 26
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Morton non tiene il vantaggio",
+    "testo": "Avanti al riposo 31 volte, non ha vinto 12 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "39%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Morton"
+    ],
+    "campione": 31
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Arbroath vive di secondi tempi",
+    "testo": "Solo 27 dei suoi 82 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "67%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Arbroath"
+    ],
+    "campione": 82
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Falkirk 1-3 Raith Rvs",
+    "testo": "19/04/2025: che Raith Rvs vinceva in casa di Falkirk era pagato 9.00, cioe' circa 11% di probabilita' secondo il mercato.",
+    "numero": "9.00",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Falkirk",
+     "Raith Rvs"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Dundee United 0-2 Airdrie Utd",
+    "testo": "27/02/2024: che Airdrie Utd vinceva in casa di Dundee United era pagato 8.31, cioe' circa 12% di probabilita' secondo il mercato.",
+    "numero": "8.31",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Dundee United",
+     "Airdrie Utd"
+    ],
+    "campione": 1
+   }
+  ],
+  "league-one-scozia": [
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Hamilton non subisce gol da 4 partite",
+    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Hamilton"
+    ],
+    "campione": 4
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Alloa non molla all'intervallo",
+    "testo": "Sotto al riposo 34 volte, ha finito vincendo 6. E' la quota di rimonte piu' alta del campionato.",
+    "numero": "18%",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Alloa"
+    ],
+    "campione": 34
+   },
+   {
+    "tipo": "fragilita",
+    "titolo": "Montrose non tiene il vantaggio",
+    "testo": "Avanti al riposo 35 volte, non ha vinto 12 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "34%",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Montrose"
+    ],
+    "campione": 35
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Edinburgh City 2-2 Falkirk",
+    "testo": "13/01/2024: che Edinburgh City e Falkirk pareggiavano era pagato 21.24, cioe' circa 5% di probabilita' secondo il mercato.",
+    "numero": "21.24",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Edinburgh City",
+     "Falkirk"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Hamilton 2-3 Annan Athletic",
+    "testo": "10/02/2024: che Annan Athletic vinceva in casa di Hamilton era pagato 12.98, cioe' circa 8% di probabilita' secondo il mercato.",
+    "numero": "12.98",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Hamilton",
+     "Annan Athletic"
+    ],
+    "campione": 1
+   }
+  ],
+  "league-two-scozia": [
+   {
+    "tipo": "fragilita",
+    "titolo": "Annan Athletic non tiene il vantaggio",
+    "testo": "Avanti al riposo 11 volte, non ha vinto 5 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "45%",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two-scozia",
+    "squadre": [
+     "Annan Athletic"
+    ],
+    "campione": 11
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "Forfar decide presto",
+    "testo": "68 dei suoi 123 gol arrivano prima dell'intervallo. E' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "55%",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two-scozia",
+    "squadre": [
+     "Forfar"
+    ],
+    "campione": 123
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "Peterhead 2-3 Edinburgh City",
+    "testo": "16/11/2024: che Edinburgh City vinceva in casa di Peterhead era pagato 7.60, cioe' circa 13% di probabilita' secondo il mercato.",
+    "numero": "7.60",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two-scozia",
+    "squadre": [
+     "Peterhead",
+     "Edinburgh City"
+    ],
+    "campione": 1
+   },
+   {
+    "tipo": "sorpresa_mercato",
+    "titolo": "East Fife 0-3 Stranraer",
+    "testo": "15/03/2025: che Stranraer vinceva in casa di East Fife era pagato 7.40, cioe' circa 14% di probabilita' secondo il mercato.",
+    "numero": "7.40",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two-scozia",
+    "squadre": [
+     "East Fife",
+     "Stranraer"
+    ],
+    "campione": 1
+   }
+  ]
+ }
+}

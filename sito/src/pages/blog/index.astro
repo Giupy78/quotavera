@@ -1,6 +1,8 @@
 ---
 import Base from "../../layouts/Base.astro";
 import articolo from "../../dati/articolo.json";
+import articoli from "../../dati/articoli.json";
+import chicche from "../../dati/chicche.json";
 
 /* Gli articoli scritti a mano sono file Markdown in questa stessa cartella:
    Astro li trasforma in pagine da solo, e qui li elenchiamo leggendone il
@@ -18,6 +20,11 @@ const posts = scritti
   }))
   .sort((a, b) => String(b.data).localeCompare(String(a.data)));
 
+/* I ventidue pezzi del giorno. Davanti i campionati maggiori: non per
+   gerarchia sportiva, ma perche' sono quelli che la maggior parte di chi
+   arriva qui sta cercando. */
+const pezzi = [...(articoli.pezzi as any[])];
+
 const giorno = new Date(articolo.data + "T00:00:00");
 const dataLunga = giorno.toLocaleDateString("it-IT", {
   weekday: "long", day: "numeric", month: "long",
@@ -33,8 +40,9 @@ const dataLunga = giorno.toLocaleDateString("it-IT", {
     <div class="hd">
       <h1>Quello che dicono i numeri</h1>
       <p>
-        Ogni notte il programma rilegge i dati di 22 campionati e scrive il
-        pezzo del giorno. Gli approfondimenti, invece, li scriviamo a mano.
+        Ogni notte il programma rilegge i dati di 22 campionati e scrive
+        {" "}<b>un pezzo per ciascuno</b>, più il riepilogo generale. Gli
+        approfondimenti, invece, li scriviamo a mano.
       </p>
     </div>
 
@@ -48,6 +56,53 @@ const dataLunga = giorno.toLocaleDateString("it-IT", {
       </p>
       <span class="vaia">Leggi l'articolo →</span>
     </a>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Chicche di oggi</h2>
+      <p>
+        I numeri che vengono fuori confrontando ventidue campionati fra loro —
+        una cosa che si può fare solo avendoli tutti. Descrivono il passato:
+        non sono previsioni.
+      </p>
+    </div>
+    <div class="chicche">
+      {(chicche.confronti as any[]).map((c) => (
+        <a class="chicca" href={`/blog/${c.slug}/`}>
+          <div class="numero mono">{c.numero}</div>
+          <div>
+            <b>{c.titolo}</b>
+            <p>{c.testo}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
+      <h2>Campionato per campionato</h2>
+      <p>
+        Lo stesso lavoro, fatto su ognuno separatamente: {pezzi.length} pezzi
+        riscritti stanotte.
+      </p>
+    </div>
+    <div class="griglia-leghe">
+      {pezzi.map((p: any) => (
+        <a class="lega" href={`/blog/${p.slug}/`}>
+          <div class="testa">
+            <span class="bandiera">{p.bandiera}</span>
+            <b>{p.campionato}</b>
+            <span class="paese">{p.paese}</span>
+          </div>
+          <p>{p.sommario}</p>
+          {p.chicche.length > 0 && (
+            <span class="quante">{p.chicche.length} chicche</span>
+          )}
+        </a>
+      ))}
+    </div>
   </section>
 
   <section>
@@ -83,6 +138,78 @@ const dataLunga = giorno.toLocaleDateString("it-IT", {
 </Base>
 
 <style>
+  .chicche {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .chicca {
+    background: var(--bg);
+    padding: 15px 17px;
+    display: grid;
+    grid-template-columns: 62px minmax(0, 1fr);
+    gap: 13px;
+    align-items: start;
+    text-decoration: none;
+    color: inherit;
+  }
+  .chicca:hover { background: var(--sunk); }
+  .chicca .numero {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--s1);
+  }
+  .chicca b { font-size: 13.5px; line-height: 1.35; display: block; }
+  .chicca p {
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 4px 0 0;
+  }
+
+  .griglia-leghe {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .lega {
+    background: var(--bg);
+    padding: 14px 16px 15px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .lega:hover { background: var(--sunk); }
+  .lega .testa {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin-bottom: 5px;
+  }
+  .lega .bandiera { font-size: 15px; }
+  .lega .paese {
+    font-size: 11.5px;
+    color: var(--ink-3);
+    margin-left: auto;
+  }
+  .lega p {
+    font-size: 12.5px;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .lega .quante {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 11px;
+    font-family: var(--mono);
+    color: var(--s1);
+  }
+
   .in-evidenza {
     display: block;
     border: 1px solid var(--rule-strong);

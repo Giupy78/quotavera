@@ -21,6 +21,7 @@ from pathlib import Path
 RADICE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RADICE))
 
+from engine import chicche as motore_chicche
 from engine.classifica import calcola as calcola_classifica
 from engine.classifica import giornate, posizioni_attese
 from engine.core.market import margine, probabilita_implicite
@@ -462,6 +463,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "risultati": risultati,
         "sorprese": sorprese(stagione, c),
         "stagione_completa": stagione_completa(c, set(stat) | attuali, stagione),
+        "chicche": [x.come_dizionario()
+                    for x in motore_chicche.per_campionato(storico, c, attuali)],
     }
 
 
@@ -596,6 +599,87 @@ def sorprese(storico, c, quante: int = 40) -> list[dict]:
     return fuori[:3]
 
 
+def articolo_campionato(l: dict) -> dict | None:
+    """Il pezzo del giorno di un singolo campionato.
+
+    Ventidue articoli invece di uno. Non e' quantita' per la quantita': chi
+    guarda la Ligue 2 non ha nessun motivo di leggere un riassunto in cui la
+    Ligue 2 compare in una riga su venti, e un pezzo per campionato e' anche
+    l'unica forma che un motore di ricerca sa indicizzare per "Ligue 2".
+
+    Il testo si costruisce dai numeri, sempre. Dove non c'e' un numero non c'e'
+    una frase: preferiamo un articolo corto a uno gonfiato con aggettivi.
+    """
+    risultati = l.get("risultati") or []
+    ultima = next((g for g in risultati if not g.get("stagione_scorsa")), None)
+    classifica = l.get("classifica") or []
+    if not classifica:
+        return None
+
+    sezioni = []
+
+    if ultima and ultima["partite"]:
+        partite = ultima["partite"]
+        gol = sum(p["gol_casa"] + p["gol_ospite"] for p in partite)
+        goleada = max(partite, key=lambda p: abs(p["gol_casa"] - p["gol_ospite"]))
+        scarto = abs(goleada["gol_casa"] - goleada["gol_ospite"])
+        righe = [
+            f"Nella {ultima['giornata']}ª giornata sono stati segnati {gol} gol "
+            f"in {len(partite)} partite, {gol / len(partite):.1f} a incontro."
+        ]
+        if scarto >= 3:
+            vince = goleada["casa"] if goleada["gol_casa"] > goleada["gol_ospite"] else goleada["ospite"]
+            righe.append(
+                f"Il risultato piu' netto e' stato {goleada['casa']} "
+                f"{goleada['gol_casa']}-{goleada['gol_ospite']} {goleada['ospite']}: "
+                f"{vince} ha vinto con {scarto} gol di scarto."
+            )
+        sezioni.append({"titolo": f"La {ultima['giornata']}ª giornata", "righe": righe})
+
+    def punti(n: int) -> str:
+        return f"{n} punto" if n == 1 else f"{n} punti"
+
+    def partite_n(n: int) -> str:
+        return f"{n} partita" if n == 1 else f"{n} partite"
+
+    prima = classifica[0]
+    righe = [
+        f"In testa c'e' {prima['squadra']} con {punti(prima['punti'])} in "
+        f"{partite_n(prima['giocate'])}."
+    ]
+    # Chi sta raccogliendo molto piu' o molto meno di quanto il gioco direbbe.
+    fortunata = max(classifica, key=lambda r: r["scarto_punti"])
+    sfortunata = min(classifica, key=lambda r: r["scarto_punti"])
+    if fortunata["scarto_punti"] >= 2:
+        righe.append(
+            f"{fortunata['squadra']} ha {punti(fortunata['punti'])} ma i tiri in "
+            f"porta ne direbbero {fortunata['punti_attesi']}: e' la squadra che "
+            f"sta raccogliendo di piu' rispetto a quanto crea."
+        )
+    if sfortunata["scarto_punti"] <= -2:
+        righe.append(
+            f"All'opposto {sfortunata['squadra']}, ferma a "
+            f"{punti(sfortunata['punti'])} contro i {sfortunata['punti_attesi']} "
+            f"attesi dal gioco."
+        )
+    sezioni.append({"titolo": "La classifica, e quella del gioco", "righe": righe})
+
+    return {
+        "slug": l["slug"], "campionato": l["nome"], "bandiera": l["bandiera"],
+        "paese": l["paese"],
+        "titolo": f"{l['nome']}: cosa dicono i numeri",
+        "sommario": (
+            f"{prima['squadra']} in testa con {punti(prima['punti'])}"
+            + (f", {ultima['giornata']}ª giornata archiviata" if ultima else "")
+            + "."
+        ),
+        "sezioni": sezioni,
+        "chicche": l.get("chicche", []),
+        "sorprese": l.get("sorprese", []),
+        "giornate_giocate": l.get("giornate_giocate", 0),
+    }
+
+
 def articolo(leghe: list[dict]) -> dict:
     """L'articolo del giorno, costruito dai numeri e non dalle opinioni.
 
@@ -648,6 +732,11 @@ def main() -> int:
     print(f"  {len(cal)} partite in programma\n")
 
     leghe = []
+    # Il materiale per i confronti fra campionati: (catalogo, partite). Si
+    # raccoglie qui perche' le chicche trasversali — dove si segna di piu', dove
+    # l'arbitro estrae di piu' — hanno senso solo guardando tutti i tornei
+    # insieme, e a quel punto lo storico di ciascuno e' gia' stato caricato.
+    materiale_chicche: list[tuple] = []
     oggi = date.today()
     for c in CAMPIONATI:
         storico = carica(c.slug, STORIA)
@@ -682,6 +771,7 @@ def main() -> int:
             print(f"  {c.etichetta:34s} dati insufficienti, salto")
             continue
         leghe.append(dati)
+        materiale_chicche.append((c, storico))
         print(f"  {c.etichetta:34s} {len(storico):5d} storico ·"
               f" {dati['giornate_giocate']:2d} giornate {NOME_STAGIONE} ·"
               f" {len(dati['calendario']):2d} in programma ·"
@@ -715,7 +805,7 @@ def main() -> int:
     indice = [{k: v for k, v in l.items()
                if k not in ("squadre", "calendario", "schede", "sorprese",
                             "classifica", "risultati", "stagione_completa",
-                            "finestre")}
+                            "finestre", "chicche")}
               for l in leghe]
     # Due date diverse, e tenerle separate e' il punto.
     #
@@ -747,6 +837,15 @@ def main() -> int:
     }})
     scrivi("schede.json", {"partite": [s for l in leghe for s in l["schede"]]})
     scrivi("articolo.json", articolo(leghe))
+
+    pezzi = [a for a in (articolo_campionato(l) for l in leghe) if a]
+    scrivi("articoli.json", {"data": date.today().isoformat(), "pezzi": pezzi})
+    scrivi("chicche.json", {
+        "data": date.today().isoformat(),
+        "confronti": [x.come_dizionario()
+                      for x in motore_chicche.confronti(materiale_chicche)],
+        "per_campionato": {l["slug"]: l.get("chicche", []) for l in leghe},
+    })
 
     print("\nFatto: dati veri, nessuna simulazione.")
     return 0
