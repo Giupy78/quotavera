@@ -61,24 +61,37 @@ const dataLunga = (iso: string) =>
         <div class="v mono">{articolo.campionati}</div>
         <div class="n">in undici paesi europei</div>
       </div>
-      <div class="tessera">
-        <div class="k">Margine più basso oggi</div>
-        <div class="v mono">
-          {articolo.partite_meno_care[0] ? pct(articolo.partite_meno_care[0].margine) : "—"}
+      {/* Le quote arrivano solo due o tre giorni prima del fischio: fuori da
+          quella finestra queste due tessere restavano "— —", che non e' un
+          dato mancante, e' una casella rotta. Meglio una sola tessera che
+          dice cosa sta succedendo. */}
+      {articolo.partite_meno_care[0] ? (
+        <>
+          <div class="tessera">
+            <div class="k">Margine più basso oggi</div>
+            <div class="v mono">{pct(articolo.partite_meno_care[0].margine)}</div>
+            <div class="n">
+              {articolo.partite_meno_care[0].casa} — {articolo.partite_meno_care[0].ospite}
+            </div>
+          </div>
+          <div class="tessera">
+            <div class="k">Margine più alto oggi</div>
+            <div class="v mono">{pct(articolo.partite_piu_care[0].margine)}</div>
+            <div class="n">
+              {articolo.partite_piu_care[0].casa} — {articolo.partite_piu_care[0].ospite}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div class="tessera larga">
+          <div class="k">Quote</div>
+          <div class="v mono">in arrivo</div>
+          <div class="n">
+            il mercato le espone due o tre giorni prima; il calendario qui sopra
+            arriva più avanti
+          </div>
         </div>
-        <div class="n">
-          {articolo.partite_meno_care[0]?.casa} — {articolo.partite_meno_care[0]?.ospite}
-        </div>
-      </div>
-      <div class="tessera">
-        <div class="k">Margine più alto oggi</div>
-        <div class="v mono">
-          {articolo.partite_piu_care[0] ? pct(articolo.partite_piu_care[0].margine) : "—"}
-        </div>
-        <div class="n">
-          {articolo.partite_piu_care[0]?.casa} — {articolo.partite_piu_care[0]?.ospite}
-        </div>
-      </div>
+      )}
     </div>
   </section>
 

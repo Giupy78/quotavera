@@ -59,6 +59,16 @@ const viste = [
 const ordinati = [...leghe].sort((a, b) => (a.margine ?? 1) - (b.margine ?? 1));
 const min = ordinati[0];
 const max = ordinati[ordinati.length - 1];
+
+/* Puo' capitare che nessuna partita in programma abbia le quote: football-data
+   le pubblica solo due o tre giorni prima, e quando il loro sito e' giu' — il
+   6 settembre rispondeva 503 su tutto — non ne arrivano affatto. Il calendario
+   in quei giorni viene da ESPN, che le quote non ce le da'.
+
+   Senza questa guardia la pagina leggeva `min.margine` su un elenco vuoto e
+   faceva cadere l'intera compilazione del sito: una pagina su trecento
+   impediva la pubblicazione di tutte le altre. */
+const haQuote = ordinati.length > 0;
 ---
 
 <Base
@@ -69,11 +79,22 @@ const max = ordinati[ordinati.length - 1];
     <p class="occhiello">La pagina che serve a scegliere dove guardare</p>
     <div class="hd">
       <h1>Ventidue campionati, ventidue mercati diversi</h1>
-      <p>
-        Su un campionato il banco si tiene il {pct(min.margine!)}, su un altro il
-        {" "}{pct(max.margine!)}: {num(max.margine! / min.margine!, 1)} volte tanto,
-        sullo stesso identico tipo di scommessa.
-      </p>
+      {haQuote ? (
+        <p>
+          Su un campionato il banco si tiene il {pct(min.margine!)}, su un altro
+          il {pct(max.margine!)}: {num(max.margine! / min.margine!, 1)} volte
+          tanto, sullo stesso identico tipo di scommessa.
+        </p>
+      ) : (
+        <p>
+          <b>In questo momento non abbiamo quote su nessuna partita in
+          programma.</b> Non è un guasto: le quote arrivano da
+          football-data.co.uk, che le pubblica due o tre giorni prima del
+          fischio. Il calendario che vedete nelle altre pagine viene da un'altra
+          fonte, più avanti nel tempo ma senza prezzi. Questa pagina torna a
+          popolarsi da sola appena il mercato espone le prossime.
+        </p>
+      )}
     </div>
 
     <div class="prosa">

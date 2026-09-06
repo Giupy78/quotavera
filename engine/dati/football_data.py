@@ -177,6 +177,38 @@ class PartitaStorica:
         return (a, c) if a and c else None
 
 
+def _prendi(url: str, percorso: Path, forza: bool) -> bool:
+    """Scarica in `percorso`. Se non ci riesce, tiene quello che c'era.
+
+    Restituisce True se il file e' utilizzabile — appena scaricato o vecchio
+    che sia — e False se non c'e' proprio niente.
+
+    Serve perche' football-data va giu'. Il 6 settembre rispondeva 503 su
+    tutto, homepage compresa, e la generazione moriva alla prima richiesta: il
+    sito e' rimasto fermo due giorni pur avendo ESPN perfettamente funzionante
+    e tutto lo storico gia' scaricato. Una fonte che cade non deve portarsi
+    dietro le altre.
+    """
+    if percorso.exists() and not forza:
+        return True
+    try:
+        richiesta = urllib.request.Request(
+            url, headers={"User-Agent": "QuotaVera/0.1 (progetto personale)"}
+        )
+        with urllib.request.urlopen(richiesta, timeout=60) as risposta:
+            contenuto = risposta.read()
+        if not contenuto.strip():
+            raise ValueError("risposta vuota")
+        percorso.write_bytes(contenuto)
+        return True
+    except Exception as errore:
+        if percorso.exists():
+            print(f"  ! {url.rsplit('/', 1)[-1]}: {errore} — uso la copia di prima")
+            return True
+        print(f"  ! {url.rsplit('/', 1)[-1]}: {errore} — e non ho una copia")
+        return False
+
+
 def scarica(campionato: str, stagione: str, forza: bool = False) -> Path:
     """Scarica il CSV di un campionato e lo tiene in cache su disco.
 
@@ -195,12 +227,8 @@ def scarica(campionato: str, stagione: str, forza: bool = False) -> Path:
         return percorso
 
     url = f"{BASE}/{stagione}/{CODICI[campionato]}.csv"
-    richiesta = urllib.request.Request(
-        url, headers={"User-Agent": "QuotaVera/0.1 (progetto personale)"}
-    )
-    with urllib.request.urlopen(richiesta, timeout=60) as risposta:
-        contenuto = risposta.read()
-    percorso.write_bytes(contenuto)
+    if not _prendi(url, percorso, forza):
+        raise FileNotFoundError(f"{campionato} {stagione}: non scaricabile e non in cache")
     return percorso
 
 
@@ -406,13 +434,11 @@ def calendario(forza: bool = True) -> list[PartitaFutura]:
 
     CARTELLA.mkdir(parents=True, exist_ok=True)
     percorso = CARTELLA / "calendario.csv"
-    if forza or not percorso.exists():
-        richiesta = urllib.request.Request(
-            "https://www.football-data.co.uk/fixtures.csv",
-            headers={"User-Agent": "QuotaVera/0.1 (progetto personale)"},
-        )
-        with urllib.request.urlopen(richiesta, timeout=60) as risposta:
-            percorso.write_bytes(risposta.read())
+    if not _prendi("https://www.football-data.co.uk/fixtures.csv", percorso, forza):
+        # Senza calendario di football-data restiamo senza quote sulle partite
+        # future, ma le partite ce le da' ESPN e i risultati pure: il sito esce
+        # lo stesso, un po' piu' povero. Meglio di non uscire.
+        return []
 
     fuori: list[PartitaFutura] = []
     with percorso.open(encoding="utf-8-sig", errors="replace", newline="") as f:

@@ -659,6 +659,30 @@ def main() -> int:
               f" {len(dati['calendario']):2d} in programma ·"
               f" campo {dati['vantaggio_casa']:+.3f}")
 
+    # La protezione che conta: non pubblicare un sito impoverito.
+    #
+    # Il 6 settembre football-data rispondeva 503 su tutto. La generazione
+    # moriva subito, e per una volta ci ha salvati: se fosse arrivata in fondo
+    # avrebbe scritto un sito con zero campionati e l'avrebbe committato,
+    # cancellando quello buono. Ora che le fonti che cadono non fermano piu' il
+    # lavoro, quel paracadute involontario non c'e' piu' e va messo apposta.
+    #
+    # Il confronto e' con quello che sta gia' nel repository: se questo giro ha
+    # prodotto molto meno, qualcosa e' andato storto a monte e il sito di ieri
+    # vale piu' di quello di oggi.
+    prima = USCITA / "campionati.json"
+    if prima.exists():
+        try:
+            quanti_prima = len(json.loads(prima.read_text(encoding="utf-8"))["campionati"])
+        except (json.JSONDecodeError, KeyError):
+            quanti_prima = 0
+        if quanti_prima and len(leghe) < quanti_prima * 0.75:
+            print()
+            print(f"Mi fermo: {len(leghe)} campionati contro i {quanti_prima} di prima.")
+            print("Le fonti devono essere in difficolta'. Meglio il sito di ieri")
+            print("che uno dimezzato: non scrivo niente.")
+            return 1
+
     print()
     indice = [{k: v for k, v in l.items()
                if k not in ("squadre", "calendario", "schede", "sorprese",
