@@ -119,8 +119,9 @@ def rimonte(partite: list[PartitaStorica], c,
             fuori.append(Chicca(
                 tipo="rimonte",
                 titolo=f"{nome} non molla all'intervallo",
-                testo=(f"Sotto al riposo {su} volte, ha finito vincendo {quante}. "
-                       f"E' la quota di rimonte piu' alta del campionato."),
+                testo=(f"Sotto al riposo {su} volte nelle ultime stagioni, ha "
+                       f"finito vincendo {quante}: e' la quota di rimonte piu' "
+                       f"alta del campionato."),
                 numero=_percento(quante, su),
                 campionato=c.nome, bandiera=c.bandiera, slug=c.slug,
                 squadre=[nome], campione=su,
@@ -134,8 +135,9 @@ def rimonte(partite: list[PartitaStorica], c,
             fuori.append(Chicca(
                 tipo="fragilita",
                 titolo=f"{nome} non tiene il vantaggio",
-                testo=(f"Avanti al riposo {su} volte, non ha vinto {quante} di "
-                       f"quelle partite. Nessuno in campionato ne butta via tanti."),
+                testo=(f"Avanti al riposo {su} volte nelle ultime stagioni, non "
+                       f"ha vinto {quante} di quelle partite. Nessuno in "
+                       f"campionato ne butta via tanti."),
                 numero=_percento(quante, su),
                 campionato=c.nome, bandiera=c.bandiera, slug=c.slug,
                 squadre=[nome], campione=su,
@@ -169,8 +171,9 @@ def quando_segnano(partite: list[PartitaStorica], c,
         fuori.append(Chicca(
             tipo="primo_tempo",
             titolo=f"{nome} decide presto",
-            testo=(f"{primi} dei suoi {tutti} gol arrivano prima dell'intervallo. "
-                   f"E' la squadra piu' sbilanciata sul primo tempo del campionato."),
+            testo=(f"{primi} dei suoi {tutti} gol delle ultime stagioni arrivano "
+                   f"prima dell'intervallo: e' la squadra piu' sbilanciata sul "
+                   f"primo tempo del campionato."),
             numero=_percento(primi, tutti),
             campionato=c.nome, bandiera=c.bandiera, slug=c.slug,
             squadre=[nome], campione=tutti,
@@ -232,14 +235,27 @@ def sorprese_del_mercato(partite: list[PartitaStorica], c,
 # --- le serie aperte ------------------------------------------------------
 
 def serie_aperte(partite: list[PartitaStorica], c,
-                 squadre_attuali: set[str] | None = None) -> list[Chicca]:
+                 squadre_attuali: set[str] | None = None,
+                 dal: date | None = None) -> list[Chicca]:
     """Quello che sta succedendo adesso e dura da un po'.
 
     Le serie sono la statistica piu' fraintesa che ci sia: non predicono
     niente, e vanno raccontate per quello che sono — un fatto sul passato che
     ha il pregio di essere vistoso. Qui si riportano solo se abbastanza lunghe
     da non essere casuali a occhio.
+
+    **`dal` taglia alla stagione in corso, e non e' un dettaglio.** Contando
+    all'indietro senza limite, a settembre "l'Inter non perde da 13 partite"
+    ne comprende otto di maggio: fra le due c'e' stato un mercato, un ritiro e
+    tre mesi di niente, e chiamarla una serie aperta vuol dire dire una cosa
+    che suona vera e non lo e'. Le trasmissioni le contano cosi'; noi no.
+
+    Il prezzo e' che a inizio stagione di serie non ne esce quasi nessuna, e va
+    bene: meglio una sezione corta che una piena di numeri gonfiati.
     """
+    if dal is not None:
+        partite = [p for p in partite if p.incontro.data >= dal]
+
     per_squadra: dict[str, list] = defaultdict(list)
     for p in sorted(partite, key=lambda x: x.incontro.data):
         per_squadra[p.incontro.casa].append((p, True))
@@ -358,10 +374,18 @@ def confronti(per_lega: list[tuple]) -> list[Chicca]:
 
 
 def per_campionato(partite: list[PartitaStorica], c,
-                   squadre_attuali: set[str] | None = None) -> list[Chicca]:
-    """Tutte le chicche di un campionato, gia' pronte da pubblicare."""
+                   squadre_attuali: set[str] | None = None,
+                   dal: date | None = None) -> list[Chicca]:
+    """Tutte le chicche di un campionato, gia' pronte da pubblicare.
+
+    Due orizzonti diversi, di proposito. Le **serie aperte** guardano solo la
+    stagione in corso, perche' una serie che attraversa l'estate non e' una
+    serie. Le **statistiche di tendenza** — rimonte, primo tempo — guardano piu'
+    stagioni, perche' su tre giornate non direbbero niente; e lo scrivono nel
+    testo, cosi' nessuno le scambia per dati di quest'anno.
+    """
     fuori: list[Chicca] = []
-    fuori += serie_aperte(partite, c, squadre_attuali)
+    fuori += serie_aperte(partite, c, squadre_attuali, dal)
     fuori += rimonte(partite, c, squadre_attuali)
     fuori += quando_segnano(partite, c, squadre_attuali)
     fuori += sorprese_del_mercato(partite, c)

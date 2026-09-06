@@ -464,7 +464,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         "sorprese": sorprese(stagione, c),
         "stagione_completa": stagione_completa(c, set(stat) | attuali, stagione),
         "chicche": [x.come_dizionario()
-                    for x in motore_chicche.per_campionato(storico, c, attuali)],
+                    for x in motore_chicche.per_campionato(storico, c, attuali,
+                                                           INIZIO_STAGIONE)],
     }
 
 

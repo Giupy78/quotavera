@@ -133,3 +133,35 @@ def test_senza_quote_credibili_non_si_inventa_una_sorpresa():
     # Margine enorme: `riferimento()` scarta il libro e non resta niente.
     p = partita("C", "D", 0, 1, 2, quote={"pinnacle": (1.1, 1.1, 1.1)})
     assert chicche.sorprese_del_mercato([p], C) == []
+
+
+def test_una_serie_non_attraversa_la_sosta_estiva():
+    """Contando senza limite, a settembre si sommano otto partite di maggio.
+
+    Suona vera e non lo e': in mezzo ci sono stati un mercato, un ritiro e tre
+    mesi di niente. Le trasmissioni le contano cosi'; noi no.
+    """
+    vecchie = [
+        PartitaStorica(
+            incontro=Incontro(f"v{n}", date(2026, 5, n), "A", "B", 2, 0, "Serie A"),
+            quote={}, stat=Statistiche(gol_primo_tempo=(1, 0), completa=True),
+        )
+        for n in range(1, 9)
+    ]
+    nuove = [
+        PartitaStorica(
+            incontro=Incontro(f"n{n}", date(2026, 9, n), "A", "C", 1, 0, "Serie A"),
+            quote={}, stat=Statistiche(gol_primo_tempo=(1, 0), completa=True),
+        )
+        for n in range(1, 4)
+    ]
+    tutte = vecchie + nuove
+
+    # Senza taglio: undici di fila, e la chicca esce.
+    senza = [x for x in chicche.serie_aperte(tutte, C) if x.tipo == "imbattuta"]
+    assert senza and senza[0].numero == "11"
+
+    # Con il taglio alla stagione: tre, sotto soglia, e non esce.
+    con = [x for x in chicche.serie_aperte(tutte, C, dal=date(2026, 7, 1))
+           if x.tipo == "imbattuta"]
+    assert con == [], "una serie di tre partite non e' una notizia"
