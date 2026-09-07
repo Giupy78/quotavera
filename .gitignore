@@ -15,8 +15,21 @@ sito/.astro/
 .dev.vars
 *.local
 
-# Dati grezzi scaricati dalle API: si riscaricano, non si versionano.
-data/grezzi/
+# I dati grezzi di football-data. Le stagioni **concluse** stanno nel
+# repository; quella in corso no.
+#
+# Sembra un'inversione della regola normale — i file scaricabili non si
+# versionano — ed e' una lezione presa in faccia. Il 6 e il 7 settembre
+# football-data ha risposto 503 per tre giorni di fila: la macchina di GitHub
+# nasce vuota, quindi senza storico locale il sito non si e' potuto rigenerare
+# affatto, pur avendo ESPN perfettamente funzionante per i risultati.
+#
+# Le stagioni chiuse non cambieranno mai piu': tenerle qui costa 20 MB una
+# volta sola e rende la ricostruzione del sito indipendente dal fatto che un
+# sito terzo sia in piedi stanotte. Quella in corso resta fuori perche' cambia
+# ogni settimana, e per lei bastano la cache di Actions e ESPN.
+data/grezzi/*-2627.csv
+data/grezzi/calendario.csv
 *.log
 
 # NON aggiungere qui sito/src/dati/: quei JSON *devono* stare nel repository.

@@ -236,10 +236,23 @@ def elabora(c, storico, stagione, cal) -> dict | None:
     # Le squadre contro cui abbinare i nomi ESPN: quelle di questa stagione,
     # dalle partite giocate e dal calendario. Non tutto lo storico, che
     # metterebbe in gara squadre retrocesse anni fa.
+
+    # Le due fonti naturali — la stagione in corso e il calendario — vengono
+    # entrambe da football-data: quando football-data e' giu' l'insieme resta
+    # vuoto, ESPN non viene nemmeno interrogato, e il soccorso non parte proprio
+    # nel momento in cui servirebbe. E' successo il 7 settembre.
+    #
+    # La terza fonte e' lo storico su disco: le squadre viste di recente. Le
+    # neopromosse mancheranno, e le loro partite verranno saltate invece che
+    # attribuite male — che e' il comportamento giusto — ma le altre bastano a
+    # tenere in piedi il campionato.
+    viste_di_recente = ({p.incontro.casa for p in storico[-400:]}
+                        | {p.incontro.ospite for p in storico[-400:]})
     squadre_note = sorted(
         {p.incontro.casa for p in stagione} | {p.incontro.ospite for p in stagione}
         | {p.casa for p in cal if p.campionato == c.slug}
         | {p.ospite for p in cal if p.campionato == c.slug}
+        or viste_di_recente
     )
     if squadre_note:
         note = {(p.casa, p.ospite) for p in partite_lega}
@@ -754,10 +767,15 @@ def main() -> int:
         # troppo e' precisamente il modo in cui i gol finiscono nella squadra
         # sbagliata.
         in_corso = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
+        # Stesso ripiego di `elabora`: senza, con football-data giu' l'insieme
+        # e' vuoto e ESPN non viene interrogato.
+        viste = ({p.incontro.casa for p in storico[-400:]}
+                 | {p.incontro.ospite for p in storico[-400:]})
         squadre_note = sorted(
             {p.incontro.casa for p in in_corso} | {p.incontro.ospite for p in in_corso}
             | {p.casa for p in cal if p.campionato == c.slug}
             | {p.ospite for p in cal if p.campionato == c.slug}
+            or viste
         )
         if squadre_note:
             recenti, _ = espn.aggiorna(c.slug, squadre_note, INIZIO_STAGIONE, oggi)
@@ -800,6 +818,26 @@ def main() -> int:
             print(f"Mi fermo: {len(leghe)} campionati contro i {quanti_prima} di prima.")
             print("Le fonti devono essere in difficolta'. Meglio il sito di ieri")
             print("che uno dimezzato: non scrivo niente.")
+            return 1
+
+    # Contare i campionati non basta, e l'ho scoperto provandolo: con le fonti
+    # a terra escono ventidue campionati **vuoti**, la guardia li conta tutti e
+    # ventidue ed e' contenta, e si pubblica un sito senza una classifica
+    # dentro. Quello che va pesato e' il contenuto.
+    adesso = sum(len(l.get("squadre") or []) for l in leghe)
+    vecchio = USCITA / "squadre.json"
+    if vecchio.exists():
+        try:
+            precedenti = json.loads(vecchio.read_text(encoding="utf-8"))["campionati"]
+            quante_prima = sum(len(v) for v in precedenti.values())
+        except (json.JSONDecodeError, KeyError, AttributeError):
+            quante_prima = 0
+        if quante_prima and adesso < quante_prima * 0.75:
+            print()
+            print(f"Mi fermo: {adesso} squadre con statistiche contro le "
+                  f"{quante_prima} di prima, su {len(leghe)} campionati.")
+            print("Le fonti devono essere in difficolta'. Meglio il sito di ieri")
+            print("che uno svuotato: non scrivo niente.")
             return 1
 
     print()
