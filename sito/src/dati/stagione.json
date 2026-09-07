@@ -271,9 +271,9 @@
        "casa": "Frosinone",
        "ospite": "Venezia",
        "collegabile": true,
-       "gol_casa": 3,
-       "gol_ospite": 2,
-       "giocata": true
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-06",
@@ -4006,8 +4006,8 @@
        "data": "2026-08-21",
        "ora": "20:00",
        "casa": "Arsenal",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": 3,
        "gol_ospite": 0,
        "giocata": true
@@ -4015,9 +4015,9 @@
       {
        "data": "2026-08-22",
        "ora": "12:30",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Man United",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 0,
        "giocata": true
@@ -4140,9 +4140,9 @@
       {
        "data": "2026-08-29",
        "ora": "15:00",
-       "casa": "Coventry",
-       "ospite": "Hull",
-       "collegabile": true,
+       "casa": "Coventry City FC",
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": 0,
        "gol_ospite": 1,
        "giocata": true
@@ -4246,11 +4246,11 @@
        "data": "2026-09-05",
        "ora": "15:00",
        "casa": "Man City",
-       "ospite": "Coventry",
-       "collegabile": true,
-       "gol_casa": 1,
-       "gol_ospite": 0,
-       "giocata": true
+       "ospite": "Coventry City FC",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
@@ -4285,12 +4285,12 @@
       {
        "data": "2026-09-05",
        "ora": "17:30",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Aston Villa",
-       "collegabile": true,
-       "gol_casa": 0,
-       "gol_ospite": 0,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-06",
@@ -4361,8 +4361,8 @@
        "data": "2026-09-12",
        "ora": "15:00",
        "casa": "Chelsea",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4390,9 +4390,9 @@
       {
        "data": "2026-09-13",
        "ora": "14:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Brighton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4476,8 +4476,8 @@
        "data": "2026-09-19",
        "ora": "15:00",
        "casa": "Newcastle",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4486,8 +4486,8 @@
        "data": "2026-09-19",
        "ora": "17:30",
        "casa": "Nott'm Forest",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4590,9 +4590,9 @@
       {
        "data": "2026-10-11",
        "ora": "14:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Everton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4620,9 +4620,9 @@
       {
        "data": "2026-10-12",
        "ora": "20:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Newcastle",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4646,8 +4646,8 @@
        "data": "2026-10-17",
        "ora": "15:00",
        "casa": "Fulham",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4726,8 +4726,8 @@
        "data": "2026-10-19",
        "ora": "20:00",
        "casa": "Tottenham",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4780,9 +4780,9 @@
       {
        "data": "2026-10-24",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Fulham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4820,9 +4820,9 @@
       {
        "data": "2026-10-25",
        "ora": "14:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Brentford",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4875,9 +4875,9 @@
       {
        "data": "2026-10-31",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Sunderland",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4885,9 +4885,9 @@
       {
        "data": "2026-10-31",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Ipswich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4951,8 +4951,8 @@
        "data": "2026-11-07",
        "ora": "15:00",
        "casa": "Arsenal",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -4991,8 +4991,8 @@
        "data": "2026-11-07",
        "ora": "15:00",
        "casa": "Everton",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5095,9 +5095,9 @@
       {
        "data": "2026-11-21",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Brighton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5135,9 +5135,9 @@
       {
        "data": "2026-11-21",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Crystal Palace",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5161,8 +5161,8 @@
        "data": "2026-11-28",
        "ora": "15:00",
        "casa": "Leeds",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5251,8 +5251,8 @@
        "data": "2026-11-28",
        "ora": "15:00",
        "casa": "Crystal Palace",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5285,9 +5285,9 @@
       {
        "data": "2026-12-02",
        "ora": "20:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Nott'm Forest",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5325,9 +5325,9 @@
       {
        "data": "2026-12-02",
        "ora": "20:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Ipswich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5381,8 +5381,8 @@
        "data": "2026-12-05",
        "ora": "15:00",
        "casa": "Man United",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5431,8 +5431,8 @@
        "data": "2026-12-05",
        "ora": "15:00",
        "casa": "Bournemouth",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5495,9 +5495,9 @@
       {
        "data": "2026-12-12",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Tottenham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5525,9 +5525,9 @@
       {
        "data": "2026-12-12",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Aston Villa",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5621,8 +5621,8 @@
        "data": "2026-12-19",
        "ora": "15:00",
        "casa": "Man City",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5641,8 +5641,8 @@
        "data": "2026-12-19",
        "ora": "15:00",
        "casa": "Bournemouth",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5725,9 +5725,9 @@
       {
        "data": "2026-12-26",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Chelsea",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5765,9 +5765,9 @@
       {
        "data": "2026-12-26",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Liverpool",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5800,9 +5800,9 @@
       {
        "data": "2026-12-30",
        "ora": "20:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Brentford",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5830,9 +5830,9 @@
       {
        "data": "2026-12-30",
        "ora": "20:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Leeds",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5936,8 +5936,8 @@
        "data": "2027-01-02",
        "ora": "15:00",
        "casa": "Sunderland",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -5946,8 +5946,8 @@
        "data": "2027-01-02",
        "ora": "15:00",
        "casa": "Liverpool",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6041,8 +6041,8 @@
        "data": "2027-01-06",
        "ora": "20:00",
        "casa": "Nott'm Forest",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6091,8 +6091,8 @@
        "data": "2027-01-06",
        "ora": "20:00",
        "casa": "Ipswich",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6165,9 +6165,9 @@
       {
        "data": "2027-01-16",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Everton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6185,9 +6185,9 @@
       {
        "data": "2027-01-16",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Arsenal",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6211,8 +6211,8 @@
        "data": "2027-01-23",
        "ora": "15:00",
        "casa": "Ipswich",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6231,8 +6231,8 @@
        "data": "2027-01-23",
        "ora": "15:00",
        "casa": "Sunderland",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6345,9 +6345,9 @@
       {
        "data": "2027-01-30",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Crystal Palace",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6355,9 +6355,9 @@
       {
        "data": "2027-01-30",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Leeds",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6431,8 +6431,8 @@
        "data": "2027-02-06",
        "ora": "15:00",
        "casa": "Brighton",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6451,8 +6451,8 @@
        "data": "2027-02-06",
        "ora": "15:00",
        "casa": "Crystal Palace",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6535,9 +6535,9 @@
       {
        "data": "2027-02-10",
        "ora": "20:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Liverpool",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6545,9 +6545,9 @@
       {
        "data": "2027-02-10",
        "ora": "20:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Sunderland",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6651,8 +6651,8 @@
        "data": "2027-02-20",
        "ora": "15:00",
        "casa": "Brentford",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6671,8 +6671,8 @@
        "data": "2027-02-20",
        "ora": "15:00",
        "casa": "Liverpool",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6765,9 +6765,9 @@
       {
        "data": "2027-02-27",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Bournemouth",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6825,9 +6825,9 @@
       {
        "data": "2027-02-27",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Man City",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6881,8 +6881,8 @@
        "data": "2027-03-03",
        "ora": "20:00",
        "casa": "Leeds",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6931,8 +6931,8 @@
        "data": "2027-03-03",
        "ora": "20:00",
        "casa": "Chelsea",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -6985,9 +6985,9 @@
       {
        "data": "2027-03-13",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Man City",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7016,8 +7016,8 @@
        "data": "2027-03-13",
        "ora": "15:00",
        "casa": "Aston Villa",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7061,8 +7061,8 @@
        "data": "2027-03-20",
        "ora": "15:00",
        "casa": "Brighton",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7110,9 +7110,9 @@
       {
        "data": "2027-03-20",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Chelsea",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7176,8 +7176,8 @@
        "data": "2027-04-10",
        "ora": "15:00",
        "casa": "Man United",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7205,9 +7205,9 @@
       {
        "data": "2027-04-10",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Arsenal",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7300,9 +7300,9 @@
       {
        "data": "2027-04-17",
        "ora": "15:00",
-       "casa": "Hull",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "casa": "Hull City AFC",
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7386,8 +7386,8 @@
        "data": "2027-04-24",
        "ora": "15:00",
        "casa": "Tottenham",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7436,8 +7436,8 @@
        "data": "2027-04-24",
        "ora": "15:00",
        "casa": "Aston Villa",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7490,9 +7490,9 @@
       {
        "data": "2027-05-01",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Man United",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7500,9 +7500,9 @@
       {
        "data": "2027-05-01",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Bournemouth",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7626,8 +7626,8 @@
        "data": "2027-05-08",
        "ora": "15:00",
        "casa": "Newcastle",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7656,8 +7656,8 @@
        "data": "2027-05-08",
        "ora": "15:00",
        "casa": "Everton",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7680,9 +7680,9 @@
       {
        "data": "2027-05-15",
        "ora": "15:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Fulham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7730,9 +7730,9 @@
       {
        "data": "2027-05-15",
        "ora": "15:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Tottenham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7786,8 +7786,8 @@
        "data": "2027-05-23",
        "ora": "15:00",
        "casa": "Brentford",
-       "ospite": "Hull",
-       "collegabile": true,
+       "ospite": "Hull City AFC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7856,8 +7856,8 @@
        "data": "2027-05-23",
        "ora": "15:00",
        "casa": "Fulham",
-       "ospite": "Coventry",
-       "collegabile": true,
+       "ospite": "Coventry City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7920,9 +7920,9 @@
       {
        "data": "2027-05-30",
        "ora": "16:00",
-       "casa": "Coventry",
+       "casa": "Coventry City FC",
        "ospite": "Nott'm Forest",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7940,9 +7940,9 @@
       {
        "data": "2027-05-30",
        "ora": "16:00",
-       "casa": "Hull",
+       "casa": "Hull City AFC",
        "ospite": "Newcastle",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -7990,9 +7990,9 @@
      ]
     }
    ],
-   "corrente": 4,
+   "corrente": 3,
    "totale": 38,
-   "non_risolte": 0
+   "non_risolte": 74
   },
   "laliga": {
    "giornate": [
@@ -8022,9 +8022,9 @@
       {
        "data": "2026-08-16",
        "ora": "17:00",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Villarreal",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 2,
        "giocata": true
@@ -8042,9 +8042,9 @@
       {
        "data": "2026-08-17",
        "ora": "21:00",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Elche",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 1,
        "giocata": true
@@ -8053,8 +8053,8 @@
        "data": "2026-08-19",
        "ora": "21:00",
        "casa": "Ath Madrid",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 0,
        "giocata": true
@@ -8168,8 +8168,8 @@
        "data": "2026-08-23",
        "ora": "19:30",
        "casa": "Getafe",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 0,
        "giocata": true
@@ -8197,9 +8197,9 @@
       {
        "data": "2026-08-24",
        "ora": "21:30",
-       "casa": "Malaga",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "casa": "Málaga CF",
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 1,
        "giocata": true
@@ -8212,9 +8212,9 @@
       {
        "data": "2026-08-28",
        "ora": "19:00",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Elche",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 3,
        "gol_ospite": 2,
        "giocata": true
@@ -8263,8 +8263,8 @@
        "data": "2026-08-30",
        "ora": "17:00",
        "casa": "Real Madrid",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": 4,
        "gol_ospite": 0,
        "giocata": true
@@ -8272,9 +8272,9 @@
       {
        "data": "2026-08-30",
        "ora": "19:30",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Valencia",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 3,
        "gol_ospite": 1,
        "giocata": true
@@ -8338,21 +8338,21 @@
        "data": "2026-09-05",
        "ora": "18:30",
        "casa": "Vallecano",
-       "ospite": "Santander",
-       "collegabile": true,
-       "gol_casa": 3,
-       "gol_ospite": 2,
-       "giocata": true
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
        "ora": "21:00",
        "casa": "Villarreal",
-       "ospite": "La Coruna",
-       "collegabile": true,
-       "gol_casa": 2,
-       "gol_ospite": 3,
-       "giocata": true
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-06",
@@ -8377,12 +8377,12 @@
       {
        "data": "2026-09-06",
        "ora": "18:30",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Levante",
-       "collegabile": true,
-       "gol_casa": 0,
-       "gol_ospite": 0,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-06",
@@ -8432,9 +8432,9 @@
       {
        "data": "2026-09-12",
        "ora": "14:00",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Alaves",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8473,8 +8473,8 @@
        "data": "2026-09-13",
        "ora": "14:00",
        "casa": "Celta",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8493,8 +8493,8 @@
        "data": "2026-09-13",
        "ora": "18:30",
        "casa": "Getafe",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8567,9 +8567,9 @@
       {
        "data": "2026-09-16",
        "ora": "19:00",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Sevilla",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8598,8 +8598,8 @@
        "data": "2026-09-16",
        "ora": "21:30",
        "casa": "Barcelona",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8617,9 +8617,9 @@
       {
        "data": "2026-09-17",
        "ora": "21:30",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Villarreal",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8653,8 +8653,8 @@
        "data": "2026-09-19",
        "ora": "18:30",
        "casa": "Celta",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8693,8 +8693,8 @@
        "data": "2026-09-20",
        "ora": "14:00",
        "casa": "Getafe",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8712,9 +8712,9 @@
       {
        "data": "2026-09-20",
        "ora": "18:30",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Betis",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8807,9 +8807,9 @@
       {
        "data": "2026-10-11",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Valencia",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8817,9 +8817,9 @@
       {
        "data": "2026-10-11",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Espanol",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8828,8 +8828,8 @@
        "data": "2026-10-11",
        "ora": "",
        "casa": "Sociedad",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8902,9 +8902,9 @@
       {
        "data": "2026-10-18",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Sociedad",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8913,8 +8913,8 @@
        "data": "2026-10-18",
        "ora": "",
        "casa": "Osasuna",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8922,9 +8922,9 @@
       {
        "data": "2026-10-18",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Levante",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -8958,8 +8958,8 @@
        "data": "2026-10-25",
        "ora": "",
        "casa": "Alaves",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9008,8 +9008,8 @@
        "data": "2026-10-25",
        "ora": "",
        "casa": "Ath Madrid",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9037,9 +9037,9 @@
       {
        "data": "2026-10-25",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Espanol",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9053,8 +9053,8 @@
        "data": "2026-11-01",
        "ora": "",
        "casa": "Betis",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9102,9 +9102,9 @@
       {
        "data": "2026-11-01",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Osasuna",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9132,9 +9132,9 @@
       {
        "data": "2026-11-01",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Real Madrid",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9217,9 +9217,9 @@
       {
        "data": "2026-11-08",
        "ora": "",
-       "casa": "Malaga",
-       "ospite": "Santander",
-       "collegabile": true,
+       "casa": "Málaga CF",
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9228,8 +9228,8 @@
        "data": "2026-11-08",
        "ora": "",
        "casa": "Espanol",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9282,9 +9282,9 @@
       {
        "data": "2026-11-22",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Sociedad",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9303,8 +9303,8 @@
        "data": "2026-11-22",
        "ora": "",
        "casa": "Osasuna",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9333,8 +9333,8 @@
        "data": "2026-11-22",
        "ora": "",
        "casa": "Alaves",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9438,8 +9438,8 @@
        "data": "2026-11-29",
        "ora": "",
        "casa": "Levante",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9447,9 +9447,9 @@
       {
        "data": "2026-11-29",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Barcelona",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9457,9 +9457,9 @@
       {
        "data": "2026-11-29",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Ath Bilbao",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9483,8 +9483,8 @@
        "data": "2026-12-06",
        "ora": "",
        "casa": "Sevilla",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9512,9 +9512,9 @@
       {
        "data": "2026-12-06",
        "ora": "",
-       "casa": "Santander",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "casa": "Real Racing Club de Santander",
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9587,9 +9587,9 @@
       {
        "data": "2026-12-13",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Barcelona",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9607,9 +9607,9 @@
       {
        "data": "2026-12-13",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Ath Bilbao",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9648,8 +9648,8 @@
        "data": "2026-12-13",
        "ora": "",
        "casa": "Betis",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9753,8 +9753,8 @@
        "data": "2026-12-20",
        "ora": "",
        "casa": "Vallecano",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9762,9 +9762,9 @@
       {
        "data": "2026-12-20",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Real Madrid",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9773,8 +9773,8 @@
        "data": "2026-12-20",
        "ora": "",
        "casa": "Sevilla",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9817,9 +9817,9 @@
       {
        "data": "2027-01-03",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Ath Bilbao",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9827,9 +9827,9 @@
       {
        "data": "2027-01-03",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Elche",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9848,8 +9848,8 @@
        "data": "2027-01-03",
        "ora": "",
        "casa": "Celta",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9932,9 +9932,9 @@
       {
        "data": "2027-01-10",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Vallecano",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9943,8 +9943,8 @@
        "data": "2027-01-10",
        "ora": "",
        "casa": "Ath Madrid",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9983,8 +9983,8 @@
        "data": "2027-01-10",
        "ora": "",
        "casa": "Valencia",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -9997,9 +9997,9 @@
       {
        "data": "2027-01-17",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Real Madrid",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10027,9 +10027,9 @@
       {
        "data": "2027-01-17",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Osasuna",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10078,8 +10078,8 @@
        "data": "2027-01-17",
        "ora": "",
        "casa": "Betis",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10153,8 +10153,8 @@
        "data": "2027-01-24",
        "ora": "",
        "casa": "Sociedad",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10162,9 +10162,9 @@
       {
        "data": "2027-01-24",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Celta",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10192,9 +10192,9 @@
       {
        "data": "2027-01-24",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Ath Madrid",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10248,8 +10248,8 @@
        "data": "2027-01-31",
        "ora": "",
        "casa": "Villarreal",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10288,8 +10288,8 @@
        "data": "2027-01-31",
        "ora": "",
        "casa": "Osasuna",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10297,9 +10297,9 @@
       {
        "data": "2027-01-31",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Alaves",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10372,9 +10372,9 @@
       {
        "data": "2027-02-07",
        "ora": "",
-       "casa": "La Coruna",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "casa": "RC Deportivo La Coruña",
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10393,8 +10393,8 @@
        "data": "2027-02-07",
        "ora": "",
        "casa": "Valencia",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10468,8 +10468,8 @@
        "data": "2027-02-14",
        "ora": "",
        "casa": "Elche",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10488,8 +10488,8 @@
        "data": "2027-02-14",
        "ora": "",
        "casa": "Levante",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10497,9 +10497,9 @@
       {
        "data": "2027-02-14",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Getafe",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10523,8 +10523,8 @@
        "data": "2027-02-21",
        "ora": "",
        "casa": "Alaves",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10532,9 +10532,9 @@
       {
        "data": "2027-02-21",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Betis",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10602,9 +10602,9 @@
       {
        "data": "2027-02-21",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Sociedad",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10638,8 +10638,8 @@
        "data": "2027-02-28",
        "ora": "",
        "casa": "Levante",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10647,9 +10647,9 @@
       {
        "data": "2027-02-28",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Ath Madrid",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10697,9 +10697,9 @@
       {
        "data": "2027-02-28",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Vallecano",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10743,8 +10743,8 @@
        "data": "2027-03-07",
        "ora": "",
        "casa": "Elche",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10812,9 +10812,9 @@
       {
        "data": "2027-03-07",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Getafe",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10823,8 +10823,8 @@
        "data": "2027-03-07",
        "ora": "",
        "casa": "Espanol",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10887,9 +10887,9 @@
       {
        "data": "2027-03-14",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Ath Madrid",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10897,9 +10897,9 @@
       {
        "data": "2027-03-14",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Vallecano",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10918,8 +10918,8 @@
        "data": "2027-03-14",
        "ora": "",
        "casa": "Barcelona",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -10943,8 +10943,8 @@
        "data": "2027-03-21",
        "ora": "",
        "casa": "Villarreal",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11012,9 +11012,9 @@
       {
        "data": "2027-03-21",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Betis",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11023,8 +11023,8 @@
        "data": "2027-03-21",
        "ora": "",
        "casa": "Valencia",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11067,9 +11067,9 @@
       {
        "data": "2027-04-04",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Osasuna",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11078,8 +11078,8 @@
        "data": "2027-04-04",
        "ora": "",
        "casa": "Ath Bilbao",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11087,9 +11087,9 @@
       {
        "data": "2027-04-04",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Villarreal",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11163,8 +11163,8 @@
        "data": "2027-04-11",
        "ora": "",
        "casa": "Espanol",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11203,8 +11203,8 @@
        "data": "2027-04-11",
        "ora": "",
        "casa": "Sevilla",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11222,9 +11222,9 @@
       {
        "data": "2027-04-11",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Barcelona",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11288,8 +11288,8 @@
        "data": "2027-04-18",
        "ora": "",
        "casa": "Sociedad",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11297,9 +11297,9 @@
       {
        "data": "2027-04-18",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Valencia",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11307,9 +11307,9 @@
       {
        "data": "2027-04-18",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Celta",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11413,8 +11413,8 @@
        "data": "2027-04-21",
        "ora": "",
        "casa": "Ath Bilbao",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11422,9 +11422,9 @@
       {
        "data": "2027-04-21",
        "ora": "",
-       "casa": "Santander",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "casa": "Real Racing Club de Santander",
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11467,9 +11467,9 @@
       {
        "data": "2027-05-02",
        "ora": "",
-       "casa": "La Coruna",
-       "ospite": "Santander",
-       "collegabile": true,
+       "casa": "RC Deportivo La Coruña",
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11517,9 +11517,9 @@
       {
        "data": "2027-05-02",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Getafe",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11603,8 +11603,8 @@
        "data": "2027-05-09",
        "ora": "",
        "casa": "Ath Bilbao",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11612,9 +11612,9 @@
       {
        "data": "2027-05-09",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Sevilla",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11623,8 +11623,8 @@
        "data": "2027-05-09",
        "ora": "",
        "casa": "Vallecano",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11717,9 +11717,9 @@
       {
        "data": "2027-05-16",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Celta",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11727,9 +11727,9 @@
       {
        "data": "2027-05-16",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Alaves",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11758,8 +11758,8 @@
        "data": "2027-05-16",
        "ora": "",
        "casa": "Real Madrid",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11822,9 +11822,9 @@
       {
        "data": "2027-05-23",
        "ora": "",
-       "casa": "Santander",
+       "casa": "Real Racing Club de Santander",
        "ospite": "Levante",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11832,9 +11832,9 @@
       {
        "data": "2027-05-23",
        "ora": "",
-       "casa": "La Coruna",
+       "casa": "RC Deportivo La Coruña",
        "ospite": "Espanol",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11853,8 +11853,8 @@
        "data": "2027-05-23",
        "ora": "",
        "casa": "Barcelona",
-       "ospite": "Malaga",
-       "collegabile": true,
+       "ospite": "Málaga CF",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11898,8 +11898,8 @@
        "data": "2027-05-30",
        "ora": "",
        "casa": "Real Madrid",
-       "ospite": "La Coruna",
-       "collegabile": true,
+       "ospite": "RC Deportivo La Coruña",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11927,9 +11927,9 @@
       {
        "data": "2027-05-30",
        "ora": "",
-       "casa": "Malaga",
+       "casa": "Málaga CF",
        "ospite": "Sevilla",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11938,8 +11938,8 @@
        "data": "2027-05-30",
        "ora": "",
        "casa": "Elche",
-       "ospite": "Santander",
-       "collegabile": true,
+       "ospite": "Real Racing Club de Santander",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -11989,7 +11989,7 @@
    ],
    "corrente": 4,
    "totale": 38,
-   "non_risolte": 0
+   "non_risolte": 108
   },
   "bundesliga": {
    "giornate": [
@@ -12020,8 +12020,8 @@
        "data": "2026-08-29",
        "ora": "15:30",
        "casa": "Mainz",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": 0,
        "gol_ospite": 0,
        "giocata": true
@@ -12039,9 +12039,9 @@
       {
        "data": "2026-08-29",
        "ora": "15:30",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Leverkusen",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 3,
        "gol_ospite": 2,
        "giocata": true
@@ -12080,8 +12080,8 @@
        "data": "2026-08-30",
        "ora": "17:30",
        "casa": "Augsburg",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": 3,
        "gol_ospite": 0,
        "giocata": true
@@ -12135,31 +12135,31 @@
        "data": "2026-09-05",
        "ora": "15:30",
        "casa": "M'gladbach",
-       "ospite": "Elversberg",
-       "collegabile": true,
-       "gol_casa": 3,
-       "gol_ospite": 4,
-       "giocata": true
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
        "ora": "15:30",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Freiburg",
-       "collegabile": true,
-       "gol_casa": 0,
-       "gol_ospite": 1,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
        "ora": "18:30",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Bayern Munich",
-       "collegabile": true,
-       "gol_casa": 0,
-       "gol_ospite": 0,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-06",
@@ -12190,8 +12190,8 @@
        "data": "2026-09-11",
        "ora": "20:30",
        "casa": "Union Berlin",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12210,8 +12210,8 @@
        "data": "2026-09-12",
        "ora": "15:30",
        "casa": "Dortmund",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12269,9 +12269,9 @@
       {
        "data": "2026-09-13",
        "ora": "17:30",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Bayern Munich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12354,9 +12354,9 @@
       {
        "data": "2026-09-20",
        "ora": "17:30",
-       "casa": "Schalke 04",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "casa": "FC Schalke 04",
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12364,9 +12364,9 @@
       {
        "data": "2026-09-20",
        "ora": "19:30",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Hoffenheim",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12389,9 +12389,9 @@
       {
        "data": "2026-10-10",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Stuttgart",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12420,8 +12420,8 @@
        "data": "2026-10-10",
        "ora": "",
        "casa": "Freiburg",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12430,8 +12430,8 @@
        "data": "2026-10-10",
        "ora": "",
        "casa": "Union Berlin",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12495,8 +12495,8 @@
        "data": "2026-10-17",
        "ora": "",
        "casa": "Werder Bremen",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12504,9 +12504,9 @@
       {
        "data": "2026-10-17",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Augsburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12554,9 +12554,9 @@
       {
        "data": "2026-10-17",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Mainz",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12580,8 +12580,8 @@
        "data": "2026-10-24",
        "ora": "",
        "casa": "FC Koln",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12590,8 +12590,8 @@
        "data": "2026-10-24",
        "ora": "",
        "casa": "RB Leipzig",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12609,9 +12609,9 @@
       {
        "data": "2026-10-24",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Hamburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12665,8 +12665,8 @@
        "data": "2026-10-31",
        "ora": "",
        "casa": "M'gladbach",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12674,9 +12674,9 @@
       {
        "data": "2026-10-31",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "RB Leipzig",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12734,9 +12734,9 @@
       {
        "data": "2026-10-31",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Mainz",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12780,8 +12780,8 @@
        "data": "2026-11-07",
        "ora": "",
        "casa": "Dortmund",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12809,9 +12809,9 @@
       {
        "data": "2026-11-07",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Ein Frankfurt",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12840,8 +12840,8 @@
        "data": "2026-11-07",
        "ora": "",
        "casa": "Hoffenheim",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12855,8 +12855,8 @@
        "data": "2026-11-21",
        "ora": "",
        "casa": "Leverkusen",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12884,9 +12884,9 @@
       {
        "data": "2026-11-21",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Freiburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12894,9 +12894,9 @@
       {
        "data": "2026-11-21",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Stuttgart",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12950,8 +12950,8 @@
        "data": "2026-11-28",
        "ora": "",
        "casa": "FC Koln",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -12969,9 +12969,9 @@
       {
        "data": "2026-11-28",
        "ora": "",
-       "casa": "Paderborn",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "casa": "SC Paderborn 07",
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13054,9 +13054,9 @@
       {
        "data": "2026-12-05",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Dortmund",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13094,9 +13094,9 @@
       {
        "data": "2026-12-05",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Stuttgart",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13115,8 +13115,8 @@
        "data": "2026-12-05",
        "ora": "",
        "casa": "Bayern Munich",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13139,9 +13139,9 @@
       {
        "data": "2026-12-12",
        "ora": "",
-       "casa": "Paderborn",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "casa": "SC Paderborn 07",
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13180,8 +13180,8 @@
        "data": "2026-12-12",
        "ora": "",
        "casa": "Hamburg",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13234,9 +13234,9 @@
       {
        "data": "2026-12-19",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "M'gladbach",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13254,9 +13254,9 @@
       {
        "data": "2026-12-19",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Hamburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13315,8 +13315,8 @@
        "data": "2026-12-19",
        "ora": "",
        "casa": "Augsburg",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13360,8 +13360,8 @@
        "data": "2027-01-09",
        "ora": "",
        "casa": "Ein Frankfurt",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13370,8 +13370,8 @@
        "data": "2027-01-09",
        "ora": "",
        "casa": "Hoffenheim",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13409,9 +13409,9 @@
       {
        "data": "2027-01-09",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "RB Leipzig",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13444,9 +13444,9 @@
       {
        "data": "2027-01-13",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Werder Bremen",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13465,8 +13465,8 @@
        "data": "2027-01-13",
        "ora": "",
        "casa": "Union Berlin",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13494,9 +13494,9 @@
       {
        "data": "2027-01-13",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Ein Frankfurt",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13520,8 +13520,8 @@
        "data": "2027-01-16",
        "ora": "",
        "casa": "Werder Bremen",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13539,9 +13539,9 @@
       {
        "data": "2027-01-16",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "FC Koln",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13560,8 +13560,8 @@
        "data": "2027-01-16",
        "ora": "",
        "casa": "Leverkusen",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13634,9 +13634,9 @@
       {
        "data": "2027-01-23",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Mainz",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13644,9 +13644,9 @@
       {
        "data": "2027-01-23",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Augsburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13695,8 +13695,8 @@
        "data": "2027-01-23",
        "ora": "",
        "casa": "Leverkusen",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13709,9 +13709,9 @@
       {
        "data": "2027-01-30",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "M'gladbach",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13770,8 +13770,8 @@
        "data": "2027-01-30",
        "ora": "",
        "casa": "Freiburg",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13790,8 +13790,8 @@
        "data": "2027-01-30",
        "ora": "",
        "casa": "Bayern Munich",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13824,9 +13824,9 @@
       {
        "data": "2027-02-06",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Union Berlin",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13875,8 +13875,8 @@
        "data": "2027-02-06",
        "ora": "",
        "casa": "Bayern Munich",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13884,9 +13884,9 @@
       {
        "data": "2027-02-06",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Dortmund",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13929,9 +13929,9 @@
       {
        "data": "2027-02-13",
        "ora": "",
-       "casa": "Elversberg",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "casa": "SV 07 Elversberg",
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13950,8 +13950,8 @@
        "data": "2027-02-13",
        "ora": "",
        "casa": "Hoffenheim",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -13994,9 +13994,9 @@
       {
        "data": "2027-02-20",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Freiburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14005,8 +14005,8 @@
        "data": "2027-02-20",
        "ora": "",
        "casa": "Stuttgart",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14074,9 +14074,9 @@
       {
        "data": "2027-02-20",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Union Berlin",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14120,8 +14120,8 @@
        "data": "2027-02-27",
        "ora": "",
        "casa": "Augsburg",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14130,8 +14130,8 @@
        "data": "2027-02-27",
        "ora": "",
        "casa": "Mainz",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14149,9 +14149,9 @@
       {
        "data": "2027-02-27",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Werder Bremen",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14194,9 +14194,9 @@
       {
        "data": "2027-03-03",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "FC Koln",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14244,9 +14244,9 @@
       {
        "data": "2027-03-03",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "RB Leipzig",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14265,8 +14265,8 @@
        "data": "2027-03-03",
        "ora": "",
        "casa": "Hamburg",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14300,8 +14300,8 @@
        "data": "2027-03-06",
        "ora": "",
        "casa": "Mainz",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14330,8 +14330,8 @@
        "data": "2027-03-06",
        "ora": "",
        "casa": "RB Leipzig",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14339,9 +14339,9 @@
       {
        "data": "2027-03-06",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "M'gladbach",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14384,9 +14384,9 @@
       {
        "data": "2027-03-13",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Dortmund",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14395,8 +14395,8 @@
        "data": "2027-03-13",
        "ora": "",
        "casa": "Ein Frankfurt",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14434,9 +14434,9 @@
       {
        "data": "2027-03-13",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Hoffenheim",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14510,8 +14510,8 @@
        "data": "2027-03-20",
        "ora": "",
        "casa": "Stuttgart",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14530,8 +14530,8 @@
        "data": "2027-03-20",
        "ora": "",
        "casa": "Freiburg",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14549,9 +14549,9 @@
       {
        "data": "2027-03-20",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Leverkusen",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14574,9 +14574,9 @@
       {
        "data": "2027-04-03",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "FC Koln",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14644,9 +14644,9 @@
       {
        "data": "2027-04-03",
        "ora": "",
-       "casa": "Schalke 04",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "casa": "FC Schalke 04",
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14660,8 +14660,8 @@
        "data": "2027-04-10",
        "ora": "",
        "casa": "Stuttgart",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14669,9 +14669,9 @@
       {
        "data": "2027-04-10",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Bayern Munich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14710,8 +14710,8 @@
        "data": "2027-04-10",
        "ora": "",
        "casa": "Dortmund",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14794,9 +14794,9 @@
       {
        "data": "2027-04-17",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Hamburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14804,9 +14804,9 @@
       {
        "data": "2027-04-17",
        "ora": "",
-       "casa": "Elversberg",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "casa": "SV 07 Elversberg",
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14870,8 +14870,8 @@
        "data": "2027-04-24",
        "ora": "",
        "casa": "Hamburg",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14899,9 +14899,9 @@
       {
        "data": "2027-04-24",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Augsburg",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14920,8 +14920,8 @@
        "data": "2027-04-24",
        "ora": "",
        "casa": "M'gladbach",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14944,9 +14944,9 @@
       {
        "data": "2027-05-08",
        "ora": "",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Ein Frankfurt",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -14955,8 +14955,8 @@
        "data": "2027-05-08",
        "ora": "",
        "casa": "RB Leipzig",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15004,9 +15004,9 @@
       {
        "data": "2027-05-08",
        "ora": "",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Hoffenheim",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15040,8 +15040,8 @@
        "data": "2027-05-15",
        "ora": "",
        "casa": "Ein Frankfurt",
-       "ospite": "Elversberg",
-       "collegabile": true,
+       "ospite": "SV 07 Elversberg",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15049,9 +15049,9 @@
       {
        "data": "2027-05-15",
        "ora": "",
-       "casa": "Paderborn",
+       "casa": "SC Paderborn 07",
        "ospite": "Union Berlin",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15100,8 +15100,8 @@
        "data": "2027-05-15",
        "ora": "",
        "casa": "Werder Bremen",
-       "ospite": "Schalke 04",
-       "collegabile": true,
+       "ospite": "FC Schalke 04",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15164,9 +15164,9 @@
       {
        "data": "2027-05-22",
        "ora": "15:30",
-       "casa": "Schalke 04",
+       "casa": "FC Schalke 04",
        "ospite": "Leverkusen",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15174,9 +15174,9 @@
       {
        "data": "2027-05-22",
        "ora": "15:30",
-       "casa": "Elversberg",
+       "casa": "SV 07 Elversberg",
        "ospite": "Werder Bremen",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15215,8 +15215,8 @@
        "data": "2027-05-22",
        "ora": "15:30",
        "casa": "FC Koln",
-       "ospite": "Paderborn",
-       "collegabile": true,
+       "ospite": "SC Paderborn 07",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15224,9 +15224,9 @@
      ]
     }
    ],
-   "corrente": 3,
+   "corrente": 2,
    "totale": 34,
-   "non_risolte": 0
+   "non_risolte": 96
   },
   "championship": {
    "giornate": [
@@ -15236,9 +15236,9 @@
       {
        "data": "2026-08-14",
        "ora": "20:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Blackburn",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 2,
        "giocata": true
@@ -15246,9 +15246,9 @@
       {
        "data": "2026-08-15",
        "ora": "12:30",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Preston",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 1,
        "giocata": true
@@ -15277,8 +15277,8 @@
        "data": "2026-08-15",
        "ora": "15:00",
        "casa": "Middlesbrough",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 1,
        "giocata": true
@@ -15337,8 +15337,8 @@
        "data": "2026-08-16",
        "ora": "16:00",
        "casa": "Burnley",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": 2,
        "gol_ospite": 2,
        "giocata": true
@@ -15371,9 +15371,9 @@
       {
        "data": "2026-08-22",
        "ora": "12:30",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Portsmouth",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 3,
        "giocata": true
@@ -15401,9 +15401,9 @@
       {
        "data": "2026-08-22",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Charlton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 2,
        "giocata": true
@@ -15422,8 +15422,8 @@
        "data": "2026-08-22",
        "ora": "15:00",
        "casa": "Preston",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 3,
        "giocata": true
@@ -15462,8 +15462,8 @@
        "data": "2026-08-22",
        "ora": "15:00",
        "casa": "QPR",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": 0,
        "gol_ospite": 0,
        "giocata": true
@@ -15496,9 +15496,9 @@
       {
        "data": "2026-08-29",
        "ora": "12:30",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Stoke",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": 4,
        "gol_ospite": 1,
        "giocata": true
@@ -15536,9 +15536,9 @@
       {
        "data": "2026-08-29",
        "ora": "15:00",
-       "casa": "Bolton",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "casa": "Bolton Wanderers FC",
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": 0,
        "gol_ospite": 1,
        "giocata": true
@@ -15597,8 +15597,8 @@
        "data": "2026-08-29",
        "ora": "15:00",
        "casa": "Watford",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": 1,
        "gol_ospite": 1,
        "giocata": true
@@ -15621,32 +15621,32 @@
       {
        "data": "2026-09-01",
        "ora": "19:45",
-       "casa": "West Ham",
-       "ospite": "Wolves",
-       "collegabile": true,
-       "gol_casa": 4,
-       "gol_ospite": 2,
-       "giocata": true
+       "casa": "West Ham United FC",
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-01",
        "ora": "19:45",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Blackburn",
-       "collegabile": true,
-       "gol_casa": 0,
-       "gol_ospite": 0,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-01",
        "ora": "19:45",
        "casa": "Sheffield United",
-       "ospite": "Bolton",
-       "collegabile": true,
-       "gol_casa": 3,
-       "gol_ospite": 2,
-       "giocata": true
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-01",
@@ -15704,9 +15704,9 @@
        "casa": "QPR",
        "ospite": "Cardiff",
        "collegabile": true,
-       "gol_casa": 2,
-       "gol_ospite": 1,
-       "giocata": true
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-02",
@@ -15724,9 +15724,9 @@
        "casa": "Burnley",
        "ospite": "Middlesbrough",
        "collegabile": true,
-       "gol_casa": 1,
-       "gol_ospite": 1,
-       "giocata": true
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       }
      ]
     },
@@ -15756,12 +15756,12 @@
       {
        "data": "2026-09-05",
        "ora": "12:30",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Southampton",
-       "collegabile": true,
-       "gol_casa": 1,
-       "gol_ospite": 1,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
@@ -15789,9 +15789,9 @@
        "casa": "Portsmouth",
        "ospite": "Cardiff",
        "collegabile": true,
-       "gol_casa": 2,
-       "gol_ospite": 0,
-       "giocata": true
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
@@ -15806,12 +15806,12 @@
       {
        "data": "2026-09-05",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Derby",
-       "collegabile": true,
-       "gol_casa": 3,
-       "gol_ospite": 0,
-       "giocata": true
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
@@ -15819,19 +15819,19 @@
        "casa": "Burnley",
        "ospite": "Bristol City",
        "collegabile": true,
-       "gol_casa": 1,
-       "gol_ospite": 2,
-       "giocata": true
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
        "ora": "15:00",
        "casa": "Millwall",
-       "ospite": "Bolton",
-       "collegabile": true,
-       "gol_casa": 4,
-       "gol_ospite": 0,
-       "giocata": true
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       },
       {
        "data": "2026-09-05",
@@ -15847,11 +15847,11 @@
        "data": "2026-09-06",
        "ora": "12:00",
        "casa": "Birmingham",
-       "ospite": "Wolves",
-       "collegabile": true,
-       "gol_casa": 2,
-       "gol_ospite": 2,
-       "giocata": true
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
+       "gol_casa": null,
+       "gol_ospite": null,
+       "giocata": false
       }
      ]
     },
@@ -15911,9 +15911,9 @@
       {
        "data": "2026-09-08",
        "ora": "20:00",
-       "casa": "Bolton",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "casa": "Bolton Wanderers FC",
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15921,7 +15921,7 @@
       {
        "data": "2026-09-09",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Portsmouth FC            [postponed]",
        "collegabile": false,
        "gol_casa": null,
@@ -15972,8 +15972,8 @@
        "data": "2026-09-15",
        "ora": "19:45",
        "casa": "Bristol City",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -15986,9 +15986,9 @@
       {
        "data": "2026-09-11",
        "ora": "20:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Wrexham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16006,9 +16006,9 @@
       {
        "data": "2026-09-12",
        "ora": "12:30",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Cardiff",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16037,8 +16037,8 @@
        "data": "2026-09-12",
        "ora": "15:00",
        "casa": "Preston",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16097,8 +16097,8 @@
        "data": "2026-09-13",
        "ora": "12:00",
        "casa": "Sheffield United",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16132,8 +16132,8 @@
        "data": "2026-09-19",
        "ora": "12:30",
        "casa": "Millwall",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16201,9 +16201,9 @@
       {
        "data": "2026-09-19",
        "ora": "15:00",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Swansea",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16211,9 +16211,9 @@
       {
        "data": "2026-09-20",
        "ora": "12:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "West Brom",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16222,8 +16222,8 @@
        "data": "2026-09-20",
        "ora": "13:30",
        "casa": "Norwich",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16236,9 +16236,9 @@
       {
        "data": "2026-10-09",
        "ora": "20:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "QPR",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16277,8 +16277,8 @@
        "data": "2026-10-10",
        "ora": "15:00",
        "casa": "Sheffield United",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16316,9 +16316,9 @@
       {
        "data": "2026-10-10",
        "ora": "15:00",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Stoke",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16337,8 +16337,8 @@
        "data": "2026-10-10",
        "ora": "15:00",
        "casa": "Middlesbrough",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16361,9 +16361,9 @@
       {
        "data": "2026-10-13",
        "ora": "19:45",
-       "casa": "Wolves",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "casa": "Wolverhampton Wanderers FC",
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16471,9 +16471,9 @@
       {
        "data": "2026-10-14",
        "ora": "20:00",
-       "casa": "Lincoln",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "casa": "Lincoln City FC",
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16487,8 +16487,8 @@
        "data": "2026-10-16",
        "ora": "20:00",
        "casa": "Burnley",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16497,8 +16497,8 @@
        "data": "2026-10-17",
        "ora": "12:30",
        "casa": "Millwall",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16537,8 +16537,8 @@
        "data": "2026-10-17",
        "ora": "15:00",
        "casa": "Southampton",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16577,8 +16577,8 @@
        "data": "2026-10-17",
        "ora": "15:00",
        "casa": "Swansea",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16611,9 +16611,9 @@
       {
        "data": "2026-10-23",
        "ora": "20:00",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Middlesbrough",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16691,9 +16691,9 @@
       {
        "data": "2026-10-24",
        "ora": "15:00",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Burnley",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16701,9 +16701,9 @@
       {
        "data": "2026-10-24",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Southampton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16721,9 +16721,9 @@
       {
        "data": "2026-10-24",
        "ora": "15:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Watford",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16766,9 +16766,9 @@
       {
        "data": "2026-10-31",
        "ora": "12:30",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Birmingham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16776,9 +16776,9 @@
       {
        "data": "2026-10-31",
        "ora": "15:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Cardiff",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16786,9 +16786,9 @@
       {
        "data": "2026-10-31",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "West Brom",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16806,9 +16806,9 @@
       {
        "data": "2026-10-31",
        "ora": "15:00",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Bristol City",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16892,8 +16892,8 @@
        "data": "2026-11-03",
        "ora": "19:45",
        "casa": "Watford",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16902,8 +16902,8 @@
        "data": "2026-11-03",
        "ora": "19:45",
        "casa": "Charlton",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16952,8 +16952,8 @@
        "data": "2026-11-04",
        "ora": "19:45",
        "casa": "Cardiff",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16972,8 +16972,8 @@
        "data": "2026-11-04",
        "ora": "20:00",
        "casa": "Bristol City",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16987,8 +16987,8 @@
        "data": "2026-11-06",
        "ora": "20:00",
        "casa": "Derby",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -16997,8 +16997,8 @@
        "data": "2026-11-07",
        "ora": "12:30",
        "casa": "Wrexham",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17027,8 +17027,8 @@
        "data": "2026-11-07",
        "ora": "15:00",
        "casa": "QPR",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17067,8 +17067,8 @@
        "data": "2026-11-07",
        "ora": "15:00",
        "casa": "Blackburn",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17161,9 +17161,9 @@
       {
        "data": "2026-11-21",
        "ora": "15:00",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Portsmouth",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17191,9 +17191,9 @@
       {
        "data": "2026-11-21",
        "ora": "15:00",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Wrexham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17201,9 +17201,9 @@
       {
        "data": "2026-11-21",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Preston",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17211,9 +17211,9 @@
       {
        "data": "2026-11-21",
        "ora": "15:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Charlton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17257,8 +17257,8 @@
        "data": "2026-11-24",
        "ora": "19:45",
        "casa": "Portsmouth",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17277,8 +17277,8 @@
        "data": "2026-11-24",
        "ora": "19:45",
        "casa": "Charlton",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17306,9 +17306,9 @@
       {
        "data": "2026-11-24",
        "ora": "20:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Derby",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17326,9 +17326,9 @@
       {
        "data": "2026-11-25",
        "ora": "19:45",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "West Brom",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17381,9 +17381,9 @@
       {
        "data": "2026-11-28",
        "ora": "12:30",
-       "casa": "Lincoln",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "casa": "Lincoln City FC",
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17432,8 +17432,8 @@
        "data": "2026-11-28",
        "ora": "15:00",
        "casa": "Birmingham",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17451,9 +17451,9 @@
       {
        "data": "2026-11-28",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Stoke",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17487,8 +17487,8 @@
        "data": "2026-12-04",
        "ora": "20:00",
        "casa": "Sheffield United",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17506,9 +17506,9 @@
       {
        "data": "2026-12-05",
        "ora": "12:30",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Blackburn",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17527,8 +17527,8 @@
        "data": "2026-12-05",
        "ora": "15:00",
        "casa": "Cardiff",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17556,9 +17556,9 @@
       {
        "data": "2026-12-05",
        "ora": "15:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Southampton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17652,8 +17652,8 @@
        "data": "2026-12-08",
        "ora": "19:45",
        "casa": "Swansea",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17662,8 +17662,8 @@
        "data": "2026-12-08",
        "ora": "19:45",
        "casa": "QPR",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17681,9 +17681,9 @@
       {
        "data": "2026-12-08",
        "ora": "20:45",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Middlesbrough",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17701,9 +17701,9 @@
       {
        "data": "2026-12-09",
        "ora": "19:45",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Stoke",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17736,9 +17736,9 @@
       {
        "data": "2026-12-11",
        "ora": "20:00",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Wrexham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17786,9 +17786,9 @@
       {
        "data": "2026-12-12",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Bristol City",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17796,9 +17796,9 @@
       {
        "data": "2026-12-12",
        "ora": "15:00",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Norwich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17836,9 +17836,9 @@
       {
        "data": "2026-12-12",
        "ora": "15:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Millwall",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17892,8 +17892,8 @@
        "data": "2026-12-19",
        "ora": "12:30",
        "casa": "Birmingham",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17912,8 +17912,8 @@
        "data": "2026-12-19",
        "ora": "12:30",
        "casa": "Watford",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17932,8 +17932,8 @@
        "data": "2026-12-19",
        "ora": "15:00",
        "casa": "Norwich",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17952,8 +17952,8 @@
        "data": "2026-12-19",
        "ora": "15:00",
        "casa": "Derby",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -17986,9 +17986,9 @@
       {
        "data": "2026-12-26",
        "ora": "12:30",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Burnley",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18026,9 +18026,9 @@
       {
        "data": "2026-12-26",
        "ora": "15:00",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Norwich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18036,9 +18036,9 @@
       {
        "data": "2026-12-26",
        "ora": "15:00",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Swansea",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18076,9 +18076,9 @@
       {
        "data": "2026-12-26",
        "ora": "15:00",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "West Brom",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18152,8 +18152,8 @@
        "data": "2026-12-29",
        "ora": "19:45",
        "casa": "Watford",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18172,8 +18172,8 @@
        "data": "2026-12-29",
        "ora": "19:45",
        "casa": "Burnley",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18192,8 +18192,8 @@
        "data": "2026-12-29",
        "ora": "19:45",
        "casa": "Middlesbrough",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18222,8 +18222,8 @@
        "data": "2026-12-29",
        "ora": "20:15",
        "casa": "Southampton",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18307,8 +18307,8 @@
        "data": "2027-01-01",
        "ora": "",
        "casa": "Norwich",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18327,8 +18327,8 @@
        "data": "2027-01-01",
        "ora": "",
        "casa": "Wrexham",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18337,8 +18337,8 @@
        "data": "2027-01-01",
        "ora": "",
        "casa": "Millwall",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18347,8 +18347,8 @@
        "data": "2027-01-01",
        "ora": "",
        "casa": "Bristol City",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18381,9 +18381,9 @@
       {
        "data": "2027-01-16",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Burnley",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18411,9 +18411,9 @@
       {
        "data": "2027-01-16",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Millwall",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18451,9 +18451,9 @@
       {
        "data": "2027-01-16",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Swansea",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18461,9 +18461,9 @@
       {
        "data": "2027-01-16",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Southampton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18507,8 +18507,8 @@
        "data": "2027-01-23",
        "ora": "",
        "casa": "Cardiff",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18527,8 +18527,8 @@
        "data": "2027-01-23",
        "ora": "",
        "casa": "Bristol City",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18567,8 +18567,8 @@
        "data": "2027-01-23",
        "ora": "",
        "casa": "Birmingham",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18587,8 +18587,8 @@
        "data": "2027-01-23",
        "ora": "",
        "casa": "West Brom",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18611,9 +18611,9 @@
       {
        "data": "2027-01-26",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Charlton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18631,9 +18631,9 @@
       {
        "data": "2027-01-26",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Watford",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18691,9 +18691,9 @@
       {
        "data": "2027-01-27",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Bristol City",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18711,9 +18711,9 @@
       {
        "data": "2027-01-27",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Cardiff",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18776,9 +18776,9 @@
       {
        "data": "2027-01-30",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Wrexham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18786,9 +18786,9 @@
       {
        "data": "2027-01-30",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "QPR",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18806,9 +18806,9 @@
       {
        "data": "2027-01-30",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Derby",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18816,9 +18816,9 @@
       {
        "data": "2027-01-30",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Blackburn",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18892,8 +18892,8 @@
        "data": "2027-02-06",
        "ora": "",
        "casa": "Preston",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18902,8 +18902,8 @@
        "data": "2027-02-06",
        "ora": "",
        "casa": "Portsmouth",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18922,8 +18922,8 @@
        "data": "2027-02-06",
        "ora": "",
        "casa": "Charlton",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -18932,8 +18932,8 @@
        "data": "2027-02-06",
        "ora": "",
        "casa": "Wrexham",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19006,9 +19006,9 @@
       {
        "data": "2027-02-13",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Preston",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19037,8 +19037,8 @@
        "data": "2027-02-13",
        "ora": "",
        "casa": "Cardiff",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19046,9 +19046,9 @@
       {
        "data": "2027-02-13",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Sheffield United",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19067,8 +19067,8 @@
        "data": "2027-02-13",
        "ora": "",
        "casa": "Wrexham",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19131,9 +19131,9 @@
       {
        "data": "2027-02-16",
        "ora": "",
-       "casa": "West Ham",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "casa": "West Ham United FC",
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19191,9 +19191,9 @@
       {
        "data": "2027-02-17",
        "ora": "",
-       "casa": "Bolton",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "casa": "Bolton Wanderers FC",
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19257,8 +19257,8 @@
        "data": "2027-02-20",
        "ora": "",
        "casa": "Swansea",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19326,9 +19326,9 @@
       {
        "data": "2027-02-20",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Millwall",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19336,9 +19336,9 @@
       {
        "data": "2027-02-20",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Norwich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19347,8 +19347,8 @@
        "data": "2027-02-20",
        "ora": "",
        "casa": "West Brom",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19362,8 +19362,8 @@
        "data": "2027-02-27",
        "ora": "",
        "casa": "QPR",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19382,8 +19382,8 @@
        "data": "2027-02-27",
        "ora": "",
        "casa": "Stoke",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19411,9 +19411,9 @@
       {
        "data": "2027-02-27",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Middlesbrough",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19441,9 +19441,9 @@
       {
        "data": "2027-02-27",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Sheffield United",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19527,8 +19527,8 @@
        "data": "2027-03-02",
        "ora": "",
        "casa": "Charlton",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19536,9 +19536,9 @@
       {
        "data": "2027-03-02",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "QPR",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19567,8 +19567,8 @@
        "data": "2027-03-03",
        "ora": "",
        "casa": "Portsmouth",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19576,9 +19576,9 @@
       {
        "data": "2027-03-03",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Preston",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19622,8 +19622,8 @@
        "data": "2027-03-06",
        "ora": "",
        "casa": "Blackburn",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19662,8 +19662,8 @@
        "data": "2027-03-06",
        "ora": "",
        "casa": "Preston",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19671,9 +19671,9 @@
       {
        "data": "2027-03-06",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Middlesbrough",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19721,9 +19721,9 @@
       {
        "data": "2027-03-06",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Burnley",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19807,8 +19807,8 @@
        "data": "2027-03-13",
        "ora": "",
        "casa": "Stoke",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19836,9 +19836,9 @@
       {
        "data": "2027-03-13",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Birmingham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19846,9 +19846,9 @@
       {
        "data": "2027-03-13",
        "ora": "",
-       "casa": "Wolves",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "casa": "Wolverhampton Wanderers FC",
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19911,9 +19911,9 @@
       {
        "data": "2027-03-16",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Cardiff",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19932,8 +19932,8 @@
        "data": "2027-03-16",
        "ora": "",
        "casa": "Southampton",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19941,9 +19941,9 @@
       {
        "data": "2027-03-17",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Sheffield United",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19962,8 +19962,8 @@
        "data": "2027-03-17",
        "ora": "",
        "casa": "Blackburn",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -19987,8 +19987,8 @@
        "data": "2027-03-20",
        "ora": "",
        "casa": "Swansea",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20057,8 +20057,8 @@
        "data": "2027-03-20",
        "ora": "",
        "casa": "Burnley",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20077,8 +20077,8 @@
        "data": "2027-03-20",
        "ora": "",
        "casa": "West Brom",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20087,8 +20087,8 @@
        "data": "2027-03-20",
        "ora": "",
        "casa": "Norwich",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20141,9 +20141,9 @@
       {
        "data": "2027-04-03",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Watford",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20161,9 +20161,9 @@
       {
        "data": "2027-04-03",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Birmingham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20171,9 +20171,9 @@
       {
        "data": "2027-04-03",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Derby",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20181,9 +20181,9 @@
       {
        "data": "2027-04-03",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Norwich",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20236,9 +20236,9 @@
       {
        "data": "2027-04-06",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Bristol City",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20256,9 +20256,9 @@
       {
        "data": "2027-04-06",
        "ora": "",
-       "casa": "West Ham",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "casa": "West Ham United FC",
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20287,8 +20287,8 @@
        "data": "2027-04-06",
        "ora": "",
        "casa": "Portsmouth",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20371,9 +20371,9 @@
       {
        "data": "2027-04-10",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "Birmingham",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20401,9 +20401,9 @@
       {
        "data": "2027-04-10",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Millwall",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20442,8 +20442,8 @@
        "data": "2027-04-10",
        "ora": "",
        "casa": "Southampton",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20472,8 +20472,8 @@
        "data": "2027-04-10",
        "ora": "",
        "casa": "Derby",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20517,8 +20517,8 @@
        "data": "2027-04-17",
        "ora": "",
        "casa": "Stoke",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20526,9 +20526,9 @@
       {
        "data": "2027-04-17",
        "ora": "",
-       "casa": "Lincoln",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "casa": "Lincoln City FC",
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20556,9 +20556,9 @@
       {
        "data": "2027-04-17",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Watford",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20611,9 +20611,9 @@
       {
        "data": "2027-04-20",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Sheffield United",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20651,9 +20651,9 @@
       {
        "data": "2027-04-20",
        "ora": "",
-       "casa": "Wolves",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "casa": "Wolverhampton Wanderers FC",
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20702,8 +20702,8 @@
        "data": "2027-04-21",
        "ora": "",
        "casa": "Blackburn",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20747,8 +20747,8 @@
        "data": "2027-04-24",
        "ora": "",
        "casa": "Middlesbrough",
-       "ospite": "West Ham",
-       "collegabile": true,
+       "ospite": "West Ham United FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20757,8 +20757,8 @@
        "data": "2027-04-24",
        "ora": "",
        "casa": "Stoke",
-       "ospite": "Lincoln",
-       "collegabile": true,
+       "ospite": "Lincoln City FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20776,9 +20776,9 @@
       {
        "data": "2027-04-24",
        "ora": "",
-       "casa": "Bolton",
+       "casa": "Bolton Wanderers FC",
        "ospite": "Swansea",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20796,9 +20796,9 @@
       {
        "data": "2027-04-24",
        "ora": "",
-       "casa": "Wolves",
+       "casa": "Wolverhampton Wanderers FC",
        "ospite": "QPR",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20871,9 +20871,9 @@
       {
        "data": "2027-05-01",
        "ora": "",
-       "casa": "West Ham",
+       "casa": "West Ham United FC",
        "ospite": "Portsmouth",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20882,8 +20882,8 @@
        "data": "2027-05-01",
        "ora": "",
        "casa": "West Brom",
-       "ospite": "Bolton",
-       "collegabile": true,
+       "ospite": "Bolton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20941,9 +20941,9 @@
       {
        "data": "2027-05-01",
        "ora": "",
-       "casa": "Lincoln",
+       "casa": "Lincoln City FC",
        "ospite": "Charlton",
-       "collegabile": true,
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20962,8 +20962,8 @@
        "data": "2027-05-01",
        "ora": "",
        "casa": "Derby",
-       "ospite": "Wolves",
-       "collegabile": true,
+       "ospite": "Wolverhampton Wanderers FC",
+       "collegabile": false,
        "gol_casa": null,
        "gol_ospite": null,
        "giocata": false
@@ -20981,9 +20981,9 @@
      ]
     }
    ],
-   "corrente": 6,
+   "corrente": 4,
    "totale": 46,
-   "non_risolte": 1
+   "non_risolte": 172
   }
  }
 }
