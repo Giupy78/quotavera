@@ -53,22 +53,11 @@ jobs:
       - name: Installa le dipendenze del motore
         run: pip install -r requirements.txt
 
-      - name: Riprendi i CSV gia' scaricati
-        # `data/grezzi` non sta nel repository — sono decine di MB di storico
-        # che si riscaricano quando servono — ma la macchina di GitHub nasce
-        # vuota ogni volta, e questo significa che una giornata storta di
-        # football-data ci lascia senza *niente*: non solo senza i dati nuovi,
-        # ma anche senza i vecchi.
-        #
-        # E' successo il 6 settembre: 503 su tutto il sito, e il lavoro e'
-        # morto alla prima richiesta pur avendo ESPN perfettamente in piedi.
-        # Con la cache, quel giorno avremmo pubblicato lo storico di ieri piu'
-        # i risultati freschi di ESPN — che e' esattamente cio' che serve.
-        uses: actions/cache@v4
-        with:
-          path: data/grezzi
-          key: grezzi-${{ github.run_id }}
-          restore-keys: grezzi-
+      # Qui c'era una cache di `data/grezzi`, messa quando quella cartella non
+      # stava nel repository. Ora ci sta, e la cache non solo e' inutile: e'
+      # dannosa. Il ripristino avviene dopo il checkout e sovrascriverebbe i
+      # CSV appena presi dal repository con copie potenzialmente piu' vecchie —
+      # cioe' il contrario di quello che serve.
 
       - name: I test del motore devono passare
         # Se il motore è rotto, i dati non si rigenerano. Meglio un sito fermo
@@ -144,7 +133,7 @@ jobs:
         run: |
           git config user.name "Quota Vera"
           git config user.email "actions@users.noreply.github.com"
-          git add sito/src/dati dati/espn
+          git add sito/src/dati dati/espn data/grezzi
           if git diff --staged --quiet; then
             echo "Nessun cambiamento nei dati: le fonti non hanno aggiornato."
           else

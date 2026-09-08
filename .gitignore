@@ -26,10 +26,17 @@ sito/.astro/
 #
 # Le stagioni chiuse non cambieranno mai piu': tenerle qui costa 20 MB una
 # volta sola e rende la ricostruzione del sito indipendente dal fatto che un
-# sito terzo sia in piedi stanotte. Quella in corso resta fuori perche' cambia
-# ogni settimana, e per lei bastano la cache di Actions e ESPN.
-data/grezzi/*-2627.csv
-data/grezzi/calendario.csv
+# sito terzo sia in piedi stanotte.
+#
+# Anche quella in corso, e l'ho imparato lasciandola fuori. Serviva a poco
+# risparmiare 250 KB: senza, la macchina di GitHub non sa nemmeno **quali
+# squadre** giochino quest'anno, e ripiega su quelle della stagione scorsa. Il
+# risultato e' stato che Frosinone, neopromossa, non esisteva per il sito, e
+# Frosinone-Venezia restava senza risultato pur avendolo in archivio. Stessa
+# causa per le due serie scozzesi, che restavano vuote del tutto.
+#
+# Cambia di qualche decina di KB a settimana, contro i megabyte di JSON che
+# gia' committiamo ogni notte: il rapporto costo-beneficio non e' discutibile.
 *.log
 
 # NON aggiungere qui sito/src/dati/: quei JSON *devono* stare nel repository.
