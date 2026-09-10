@@ -58266,15 +58266,40 @@
    "ospite": "Sp Braga",
    "data": "2026-09-10",
    "ora": "21:15",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     5.3,
+     3.85,
+     1.35
+    ],
+    "bet365": [
+     4.75,
+     3.6,
+     1.71
+    ],
+    "massimo": [
+     4.75,
+     3.7,
+     1.78
+    ],
+    "media": [
+     4.57,
+     3.58,
+     1.72
+    ]
+   },
+   "p_mercato": [
+    0.1951,
+    0.2543,
+    0.5506
+   ],
    "p_modello": [
     0.191,
     0.2113,
     0.5976
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0795,
+   "margine_migliore": 0.0426,
    "campionato": "primeira-liga",
    "dettaglio": {
     "gol_attesi_casa": 1.0,
@@ -84056,6 +84081,503 @@
    "precedenti": []
   },
   {
+   "id": "panathinaikos-kifisia",
+   "casa": "Panathinaikos",
+   "ospite": "Kifisia",
+   "data": "2026-09-10",
+   "ora": "20:15",
+   "quote": {
+    "betfair": [
+     1.22,
+     4.9,
+     1.04
+    ],
+    "bet365": [
+     1.27,
+     5.0,
+     11.0
+    ],
+    "massimo": [
+     1.29,
+     5.25,
+     11.0
+    ],
+    "media": [
+     1.26,
+     4.97,
+     10.19
+    ]
+   },
+   "p_mercato": [
+    0.7531,
+    0.1732,
+    0.0738
+   ],
+   "p_modello": [
+    0.7419,
+    0.1863,
+    0.0718
+   ],
+   "margine": 0.093,
+   "margine_migliore": 0.0566,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 2.33,
+    "gol_attesi_ospite": 0.63,
+    "matrice": [
+     [
+      0.06417,
+      0.02047,
+      0.01042,
+      0.0022,
+      0.00035,
+      4e-05
+     ],
+     [
+      0.10811,
+      0.08884,
+      0.02426,
+      0.00513,
+      0.00081,
+      0.0001
+     ],
+     [
+      0.14019,
+      0.08895,
+      0.02822,
+      0.00597,
+      0.00095,
+      0.00012
+     ],
+     [
+      0.10873,
+      0.06899,
+      0.02189,
+      0.00463,
+      0.00073,
+      9e-05
+     ],
+     [
+      0.06325,
+      0.04013,
+      0.01273,
+      0.00269,
+      0.00043,
+      5e-05
+     ],
+     [
+      0.02943,
+      0.01868,
+      0.00592,
+      0.00125,
+      0.0002,
+      3e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "2-0",
+      "p": 0.1402
+     },
+     {
+      "risultato": "3-0",
+      "p": 0.1087
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1081
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0889
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.0888
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.7419,
+      "X": 0.1863,
+      "2": 0.0718
+     },
+     "btts": {
+      "si": 0.4363,
+      "no": 0.5637
+     },
+     "ou_1.5": {
+      "over": 0.8072,
+      "under": 0.1928
+     },
+     "ou_2.5": {
+      "over": 0.5678,
+      "under": 0.4322
+     },
+     "ou_3.5": {
+      "over": 0.3436,
+      "under": 0.6564
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Panathinaikos",
+    "partite": 20,
+    "gol_fatti": 1.55,
+    "gol_subiti": 0.85,
+    "gol_totali": 31,
+    "in_porta_totali": 97,
+    "attesi_dai_tiri": 29.0,
+    "scarto_conversione": 2.0,
+    "vantaggio_casa": 0.7,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.9,
+     "gol_subiti": 0.8,
+     "tiri": 13.6,
+     "in_porta": 5.9,
+     "in_porta_subiti": 2.7,
+     "tiri_subiti": 8.5,
+     "corner": 4.4,
+     "corner_subiti": 3.2,
+     "falli": 11.6,
+     "cartellini": 2.1,
+     "gialli": 19,
+     "rossi": 2,
+     "precisione_tiri": 0.434,
+     "over_25": 0.6,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.4,
+     "a_secco": 0.3,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 0.9,
+     "tiri": 10.5,
+     "in_porta": 3.8,
+     "in_porta_subiti": 3.3,
+     "tiri_subiti": 10.1,
+     "corner": 3.2,
+     "corner_subiti": 3.2,
+     "falli": 16.0,
+     "cartellini": 2.2,
+     "gialli": 22,
+     "rossi": 0,
+     "precisione_tiri": 0.362,
+     "over_25": 0.4,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.5,
+     "a_secco": 0.4,
+     "con_avanzate": 1,
+     "possesso": 59.2,
+     "passaggi": 485.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 2.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Kifisia",
+    "partite": 20,
+    "gol_fatti": 0.85,
+    "gol_subiti": 1.25,
+    "gol_totali": 17,
+    "in_porta_totali": 87,
+    "attesi_dai_tiri": 26.0,
+    "scarto_conversione": -9.0,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.36,
+     "tiri": 14.5,
+     "in_porta": 5.5,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 8.1,
+     "corner": 3.9,
+     "corner_subiti": 3.2,
+     "falli": 16.6,
+     "cartellini": 2.4,
+     "gialli": 25,
+     "rossi": 1,
+     "precisione_tiri": 0.384,
+     "over_25": 0.455,
+     "gol_gol": 0.455,
+     "clean_sheet": 0.364,
+     "a_secco": 0.364,
+     "con_avanzate": 1,
+     "possesso": 34.6,
+     "passaggi": 286.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 4.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.11,
+     "tiri": 9.7,
+     "in_porta": 2.9,
+     "in_porta_subiti": 3.1,
+     "tiri_subiti": 13.0,
+     "corner": 2.7,
+     "corner_subiti": 5.8,
+     "falli": 16.0,
+     "cartellini": 3.6,
+     "gialli": 31,
+     "rossi": 1,
+     "precisione_tiri": 0.299,
+     "over_25": 0.333,
+     "gol_gol": 0.444,
+     "clean_sheet": 0.333,
+     "a_secco": 0.444,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 9.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Panathinaikos",
+    "partite": 6,
+    "gol_fatti": 1.33,
+    "gol_subiti": 1.0,
+    "gol_totali": 8,
+    "in_porta_totali": 21,
+    "attesi_dai_tiri": 6.3,
+    "scarto_conversione": 1.7,
+    "vantaggio_casa": 0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 1.0,
+     "tiri": 8.7,
+     "in_porta": 4.0,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 10.3,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 8.3,
+     "cartellini": 2.7,
+     "gialli": 6,
+     "rossi": 2,
+     "precisione_tiri": 0.462,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.0,
+     "tiri": 10.0,
+     "in_porta": 3.0,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 13.3,
+     "corner": 2.0,
+     "corner_subiti": 6.0,
+     "falli": 15.7,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.3,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 59.2,
+     "passaggi": 485.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 2.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Kifisia",
+    "partite": 6,
+    "gol_fatti": 1.0,
+    "gol_subiti": 1.5,
+    "gol_totali": 6,
+    "in_porta_totali": 23,
+    "attesi_dai_tiri": 6.9,
+    "scarto_conversione": -0.9,
+    "vantaggio_casa": 0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 2.0,
+     "tiri": 15.0,
+     "in_porta": 5.7,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 11.7,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 13.7,
+     "cartellini": 1.7,
+     "gialli": 4,
+     "rossi": 1,
+     "precisione_tiri": 0.378,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 34.6,
+     "passaggi": 286.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 4.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.0,
+     "tiri": 6.3,
+     "in_porta": 2.0,
+     "in_porta_subiti": 2.3,
+     "tiri_subiti": 12.0,
+     "corner": 1.0,
+     "corner_subiti": 5.7,
+     "falli": 13.7,
+     "cartellini": 3.3,
+     "gialli": 10,
+     "rossi": 0,
+     "precisione_tiri": 0.316,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.667,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 9.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.9,
+     "difesa": 1.11,
+     "media": 1.5
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 13.6,
+     "difesa": 13.0,
+     "media": 13.3
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 5.9,
+     "difesa": 3.1,
+     "media": 4.5
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 4.4,
+     "difesa": 5.8,
+     "media": 5.1
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-02-01",
+     "casa": "Panathinaikos",
+     "ospite": "Kifisia",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-09-14",
+     "casa": "Kifisia",
+     "ospite": "Panathinaikos",
+     "gol_casa": 3,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2024-02-25",
+     "casa": "Panathinaikos",
+     "ospite": "Kifisia",
+     "gol_casa": 1,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2023-11-12",
+     "casa": "Kifisia",
+     "ospite": "Panathinaikos",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
    "id": "olympiakos-ofi-crete",
    "casa": "Olympiakos",
    "ospite": "OFI Crete",
@@ -84064,62 +84586,62 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.7735,
-    0.1721,
-    0.0544
+    0.7688,
+    0.1761,
+    0.0551
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 2.35,
+    "gol_attesi_casa": 2.32,
     "gol_attesi_ospite": 0.52,
     "matrice": [
      [
-      0.06741,
-      0.01871,
-      0.00771,
-      0.00134,
+      0.0697,
+      0.01894,
+      0.00791,
+      0.00137,
       0.00018,
       2e-05
      ],
      [
-      0.12218,
-      0.08027,
-      0.01813,
-      0.00315,
-      0.00041,
+      0.12391,
+      0.08194,
+      0.01837,
+      0.00319,
+      0.00042,
       4e-05
      ],
      [
-      0.15633,
-      0.08162,
-      0.02131,
+      0.15713,
+      0.08188,
+      0.02133,
       0.00371,
       0.00048,
       5e-05
      ],
      [
-      0.1225,
-      0.06395,
-      0.0167,
-      0.00291,
-      0.00038,
+      0.12162,
+      0.06337,
+      0.01651,
+      0.00287,
+      0.00037,
       4e-05
      ],
      [
-      0.07199,
-      0.03759,
-      0.00981,
-      0.00171,
+      0.07061,
+      0.03679,
+      0.00959,
+      0.00166,
       0.00022,
       2e-05
      ],
      [
-      0.03385,
-      0.01767,
-      0.00461,
-      0.0008,
+      0.03279,
+      0.01709,
+      0.00445,
+      0.00077,
       0.0001,
       1e-05
      ]
@@ -84127,46 +84649,46 @@
     "risultati_probabili": [
      {
       "risultato": "2-0",
-      "p": 0.1563
-     },
-     {
-      "risultato": "3-0",
-      "p": 0.1225
+      "p": 0.1571
      },
      {
       "risultato": "1-0",
-      "p": 0.1222
+      "p": 0.1239
      },
      {
-      "risultato": "2-1",
-      "p": 0.0816
+      "risultato": "3-0",
+      "p": 0.1216
      },
      {
       "risultato": "1-1",
-      "p": 0.0803
+      "p": 0.0819
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0819
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.7735,
-      "X": 0.1721,
-      "2": 0.0544
+      "1": 0.7688,
+      "X": 0.1761,
+      "2": 0.0551
      },
      "btts": {
-      "si": 0.3788,
-      "no": 0.6212
+      "si": 0.3777,
+      "no": 0.6223
      },
      "ou_1.5": {
-      "over": 0.7917,
-      "under": 0.2083
+      "over": 0.7874,
+      "under": 0.2126
      },
      "ou_2.5": {
-      "over": 0.5474,
-      "under": 0.4526
+      "over": 0.5405,
+      "under": 0.4595
      },
      "ou_3.5": {
-      "over": 0.3238,
-      "under": 0.6762
+      "over": 0.3172,
+      "under": 0.6828
      }
     }
    },
@@ -84177,8 +84699,8 @@
     "gol_subiti": 0.5,
     "gol_totali": 23,
     "in_porta_totali": 108,
-    "attesi_dai_tiri": 32.1,
-    "scarto_conversione": -9.1,
+    "attesi_dai_tiri": 32.3,
+    "scarto_conversione": -9.3,
     "vantaggio_casa": -0.88,
     "casa": {
      "partite": 9,
@@ -84248,39 +84770,39 @@
    "stat_ospite": {
     "squadra": "OFI Crete",
     "partite": 20,
-    "gol_fatti": 1.55,
+    "gol_fatti": 1.45,
     "gol_subiti": 1.5,
-    "gol_totali": 31,
-    "in_porta_totali": 68,
-    "attesi_dai_tiri": 20.2,
+    "gol_totali": 29,
+    "in_porta_totali": 61,
+    "attesi_dai_tiri": 18.2,
     "scarto_conversione": 10.8,
-    "vantaggio_casa": 0.5,
+    "vantaggio_casa": 0.3,
     "casa": {
      "partite": 10,
-     "gol_fatti": 1.8,
+     "gol_fatti": 1.6,
      "gol_subiti": 1.0,
-     "tiri": 11.2,
-     "in_porta": 3.7,
-     "in_porta_subiti": 4.0,
-     "tiri_subiti": 11.9,
-     "corner": 3.0,
-     "corner_subiti": 4.5,
-     "falli": 14.0,
-     "cartellini": 1.5,
-     "gialli": 14,
+     "tiri": 9.4,
+     "in_porta": 3.0,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 10.4,
+     "corner": 2.8,
+     "corner_subiti": 3.9,
+     "falli": 12.5,
+     "cartellini": 1.6,
+     "gialli": 15,
      "rossi": 1,
-     "precisione_tiri": 0.33,
-     "over_25": 0.5,
+     "precisione_tiri": 0.319,
+     "over_25": 0.4,
      "gol_gol": 0.2,
      "clean_sheet": 0.5,
      "a_secco": 0.3,
-     "con_avanzate": 0,
+     "con_avanzate": 1,
      "possesso": 0.0,
      "passaggi": 0.0,
      "precisione_passaggi": 0.0,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 0.0,
+     "contrasti": 16.0,
      "intercetti": 0.0,
      "respinte": 0.0,
      "parate": 0.0,
@@ -84327,8 +84849,8 @@
     "gol_subiti": 0.5,
     "gol_totali": 6,
     "in_porta_totali": 34,
-    "attesi_dai_tiri": 10.1,
-    "scarto_conversione": -4.1,
+    "attesi_dai_tiri": 10.2,
+    "scarto_conversione": -4.2,
     "vantaggio_casa": 0.0,
     "casa": {
      "partite": 3,
@@ -84398,39 +84920,39 @@
    "forma_ospite": {
     "squadra": "OFI Crete",
     "partite": 6,
-    "gol_fatti": 1.5,
-    "gol_subiti": 1.83,
-    "gol_totali": 9,
-    "in_porta_totali": 15,
-    "attesi_dai_tiri": 4.5,
-    "scarto_conversione": 4.5,
-    "vantaggio_casa": 0.33,
+    "gol_fatti": 1.83,
+    "gol_subiti": 1.5,
+    "gol_totali": 11,
+    "in_porta_totali": 14,
+    "attesi_dai_tiri": 4.2,
+    "scarto_conversione": 6.8,
+    "vantaggio_casa": 1.0,
     "casa": {
      "partite": 3,
-     "gol_fatti": 1.67,
-     "gol_subiti": 1.0,
-     "tiri": 13.3,
-     "in_porta": 2.3,
-     "in_porta_subiti": 2.3,
-     "tiri_subiti": 12.0,
-     "corner": 4.0,
-     "corner_subiti": 4.0,
-     "falli": 12.3,
+     "gol_fatti": 2.33,
+     "gol_subiti": 0.33,
+     "tiri": 9.7,
+     "in_porta": 2.0,
+     "in_porta_subiti": 1.3,
+     "tiri_subiti": 8.3,
+     "corner": 3.0,
+     "corner_subiti": 1.7,
+     "falli": 9.7,
      "cartellini": 2.0,
      "gialli": 6,
      "rossi": 0,
-     "precisione_tiri": 0.175,
+     "precisione_tiri": 0.207,
      "over_25": 0.333,
      "gol_gol": 0.333,
-     "clean_sheet": 0.333,
-     "a_secco": 0.333,
-     "con_avanzate": 0,
+     "clean_sheet": 0.667,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
      "possesso": 0.0,
      "passaggi": 0.0,
      "precisione_passaggi": 0.0,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 0.0,
+     "contrasti": 16.0,
      "intercetti": 0.0,
      "respinte": 0.0,
      "parate": 0.0,
@@ -84550,109 +85072,109 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.3579,
-    0.3102,
-    0.3319
+    0.3608,
+    0.3111,
+    0.3281
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 1.28,
+    "gol_attesi_casa": 1.29,
     "gol_attesi_ospite": 1.22,
     "matrice": [
      [
-      0.10244,
-      0.08062,
-      0.06142,
-      0.02499,
-      0.00763,
-      0.00186
+      0.10253,
+      0.07882,
+      0.06061,
+      0.0246,
+      0.00749,
+      0.00182
      ],
      [
-      0.0851,
-      0.14831,
-      0.07831,
-      0.03187,
-      0.00972,
-      0.00237
+      0.08445,
+      0.14882,
+      0.07796,
+      0.03164,
+      0.00963,
+      0.00234
      ],
      [
-      0.06701,
-      0.0818,
-      0.04993,
-      0.02032,
-      0.0062,
+      0.06765,
+      0.08236,
+      0.05014,
+      0.02035,
+      0.00619,
       0.00151
      ],
      [
-      0.02848,
-      0.03477,
-      0.02122,
-      0.00863,
-      0.00264,
-      0.00064
+      0.02901,
+      0.03531,
+      0.0215,
+      0.00872,
+      0.00266,
+      0.00065
      ],
      [
-      0.00908,
-      0.01108,
-      0.00676,
-      0.00275,
-      0.00084,
+      0.00933,
+      0.01136,
+      0.00691,
+      0.00281,
+      0.00085,
       0.00021
      ],
      [
-      0.00232,
-      0.00283,
-      0.00172,
-      0.0007,
-      0.00021,
+      0.0024,
+      0.00292,
+      0.00178,
+      0.00072,
+      0.00022,
       5e-05
      ]
     ],
     "risultati_probabili": [
      {
       "risultato": "1-1",
-      "p": 0.1483
+      "p": 0.1488
      },
      {
       "risultato": "0-0",
-      "p": 0.1024
+      "p": 0.1025
      },
      {
       "risultato": "1-0",
-      "p": 0.0851
+      "p": 0.0844
      },
      {
       "risultato": "2-1",
-      "p": 0.0818
+      "p": 0.0824
      },
      {
       "risultato": "0-1",
-      "p": 0.0806
+      "p": 0.0788
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.3579,
-      "X": 0.3102,
-      "2": 0.3319
+      "1": 0.3608,
+      "X": 0.3111,
+      "2": 0.3281
      },
      "btts": {
-      "si": 0.528,
-      "no": 0.472
+      "si": 0.5302,
+      "no": 0.4698
      },
      "ou_1.5": {
-      "over": 0.7318,
-      "under": 0.2682
+      "over": 0.7342,
+      "under": 0.2658
      },
      "ou_2.5": {
-      "over": 0.4551,
-      "under": 0.5449
+      "over": 0.4571,
+      "under": 0.5429
      },
      "ou_3.5": {
-      "over": 0.2415,
-      "under": 0.7585
+      "over": 0.2432,
+      "under": 0.7568
      }
     }
    },
@@ -84738,8 +85260,8 @@
     "gol_subiti": 1.1,
     "gol_totali": 33,
     "in_porta_totali": 79,
-    "attesi_dai_tiri": 23.5,
-    "scarto_conversione": 9.5,
+    "attesi_dai_tiri": 23.6,
+    "scarto_conversione": 9.4,
     "vantaggio_casa": 0.5,
     "casa": {
      "partite": 10,
@@ -84888,8 +85410,8 @@
     "gol_subiti": 1.0,
     "gol_totali": 12,
     "in_porta_totali": 24,
-    "attesi_dai_tiri": 7.1,
-    "scarto_conversione": 4.9,
+    "attesi_dai_tiri": 7.2,
+    "scarto_conversione": 4.8,
     "vantaggio_casa": 1.33,
     "casa": {
      "partite": 3,
@@ -84993,62 +85515,62 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.3623,
-    0.2778,
-    0.3599
+    0.3655,
+    0.2792,
+    0.3553
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 1.5,
-    "gol_attesi_ospite": 1.5,
+    "gol_attesi_casa": 1.51,
+    "gol_attesi_ospite": 1.49,
     "matrice": [
      [
-      0.06712,
-      0.05698,
-      0.05576,
-      0.02785,
-      0.01043,
-      0.00313
+      0.06789,
+      0.05592,
+      0.05514,
+      0.02736,
+      0.01019,
+      0.00303
      ],
      [
-      0.05725,
-      0.12939,
-      0.08387,
-      0.04189,
-      0.01569,
-      0.0047
+      0.05707,
+      0.13013,
+      0.08337,
+      0.04137,
+      0.0154,
+      0.00459
      ],
      [
-      0.05617,
-      0.08417,
-      0.06307,
-      0.0315,
-      0.0118,
-      0.00354
+      0.05686,
+      0.08466,
+      0.06303,
+      0.03128,
+      0.01164,
+      0.00347
      ],
      [
-      0.02816,
-      0.0422,
-      0.03162,
-      0.01579,
-      0.00592,
-      0.00177
+      0.02866,
+      0.04267,
+      0.03176,
+      0.01576,
+      0.00587,
+      0.00175
      ],
      [
-      0.01059,
-      0.01587,
-      0.01189,
-      0.00594,
+      0.01083,
+      0.01613,
+      0.01201,
+      0.00596,
       0.00222,
-      0.00067
+      0.00066
      ],
      [
-      0.00318,
-      0.00477,
-      0.00358,
-      0.00179,
+      0.00328,
+      0.00488,
+      0.00363,
+      0.0018,
       0.00067,
       0.0002
      ]
@@ -85056,46 +85578,46 @@
     "risultati_probabili": [
      {
       "risultato": "1-1",
-      "p": 0.1294
+      "p": 0.1301
      },
      {
       "risultato": "2-1",
-      "p": 0.0842
+      "p": 0.0847
      },
      {
       "risultato": "1-2",
-      "p": 0.0839
+      "p": 0.0834
      },
      {
       "risultato": "0-0",
-      "p": 0.0671
+      "p": 0.0679
      },
      {
       "risultato": "2-2",
-      "p": 0.0631
+      "p": 0.063
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.3623,
-      "X": 0.2778,
-      "2": 0.3599
+      "1": 0.3655,
+      "X": 0.2792,
+      "2": 0.3553
      },
      "btts": {
-      "si": 0.6214,
-      "no": 0.3786
+      "si": 0.6218,
+      "no": 0.3782
      },
      "ou_1.5": {
-      "over": 0.8187,
-      "under": 0.1813
+      "over": 0.8191,
+      "under": 0.1809
      },
      "ou_2.5": {
-      "over": 0.5773,
-      "under": 0.4227
+      "over": 0.577,
+      "under": 0.423
      },
      "ou_3.5": {
-      "over": 0.3533,
-      "under": 0.6467
+      "over": 0.3529,
+      "under": 0.6471
      }
     }
    },
@@ -85182,7 +85704,7 @@
     "gol_totali": 17,
     "in_porta_totali": 57,
     "attesi_dai_tiri": 17.0,
-    "scarto_conversione": 0.0,
+    "scarto_conversione": -0.0,
     "vantaggio_casa": 0.13,
     "casa": {
      "partite": 11,
@@ -85436,54 +85958,54 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.0815,
-    0.2189,
-    0.6995
+    0.0852,
+    0.2258,
+    0.689
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 0.57,
-    "gol_attesi_ospite": 2.0,
+    "gol_attesi_casa": 0.58,
+    "gol_attesi_ospite": 1.97,
     "matrice": [
      [
-      0.08982,
-      0.13912,
-      0.15297,
-      0.10215,
-      0.05116,
-      0.0205
+      0.093,
+      0.13981,
+      0.1516,
+      0.09931,
+      0.04879,
+      0.01917
      ],
      [
-      0.02993,
-      0.10078,
-      0.08733,
-      0.05832,
-      0.02921,
-      0.0117
+      0.03102,
+      0.10391,
+      0.08786,
+      0.05755,
+      0.02827,
+      0.01111
      ],
      [
-      0.01242,
-      0.02489,
-      0.02493,
-      0.01665,
-      0.00834,
-      0.00334
+      0.01319,
+      0.02591,
+      0.02546,
+      0.01668,
+      0.00819,
+      0.00322
      ],
      [
-      0.00236,
-      0.00474,
-      0.00474,
-      0.00317,
-      0.00159,
-      0.00064
+      0.00255,
+      0.00501,
+      0.00492,
+      0.00322,
+      0.00158,
+      0.00062
      ],
      [
-      0.00034,
-      0.00068,
-      0.00068,
-      0.00045,
+      0.00037,
+      0.00073,
+      0.00071,
+      0.00047,
       0.00023,
       9e-05
      ],
@@ -85499,46 +86021,46 @@
     "risultati_probabili": [
      {
       "risultato": "0-2",
-      "p": 0.153
+      "p": 0.1516
      },
      {
       "risultato": "0-1",
-      "p": 0.1391
-     },
-     {
-      "risultato": "0-3",
-      "p": 0.1021
+      "p": 0.1398
      },
      {
       "risultato": "1-1",
-      "p": 0.1008
+      "p": 0.1039
+     },
+     {
+      "risultato": "0-3",
+      "p": 0.0993
      },
      {
       "risultato": "0-0",
-      "p": 0.0898
+      "p": 0.093
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.0815,
-      "X": 0.2189,
-      "2": 0.6995
+      "1": 0.0852,
+      "X": 0.2258,
+      "2": 0.689
      },
      "btts": {
-      "si": 0.3899,
-      "no": 0.6101
+      "si": 0.3927,
+      "no": 0.6073
      },
      "ou_1.5": {
-      "over": 0.7411,
-      "under": 0.2589
+      "over": 0.7362,
+      "under": 0.2638
      },
      "ou_2.5": {
-      "over": 0.475,
-      "under": 0.525
+      "over": 0.4675,
+      "under": 0.5325
      },
      "ou_3.5": {
-      "over": 0.2582,
-      "under": 0.7418
+      "over": 0.2519,
+      "under": 0.7481
      }
     }
    },
@@ -85549,8 +86071,8 @@
     "gol_subiti": 1.25,
     "gol_totali": 21,
     "in_porta_totali": 61,
-    "attesi_dai_tiri": 18.1,
-    "scarto_conversione": 2.9,
+    "attesi_dai_tiri": 18.2,
+    "scarto_conversione": 2.8,
     "vantaggio_casa": 0.49,
     "casa": {
      "partite": 11,
@@ -85620,31 +86142,31 @@
    "stat_ospite": {
     "squadra": "AEK",
     "partite": 20,
-    "gol_fatti": 2.1,
+    "gol_fatti": 2.05,
     "gol_subiti": 0.5,
-    "gol_totali": 42,
+    "gol_totali": 41,
     "in_porta_totali": 90,
-    "attesi_dai_tiri": 26.8,
-    "scarto_conversione": 15.2,
-    "vantaggio_casa": 1.39,
+    "attesi_dai_tiri": 26.9,
+    "scarto_conversione": 14.1,
+    "vantaggio_casa": 1.5,
     "casa": {
-     "partite": 11,
-     "gol_fatti": 2.73,
-     "gol_subiti": 0.36,
-     "tiri": 14.1,
+     "partite": 10,
+     "gol_fatti": 2.8,
+     "gol_subiti": 0.3,
+     "tiri": 14.0,
      "in_porta": 5.4,
      "in_porta_subiti": 2.5,
-     "tiri_subiti": 9.3,
-     "corner": 4.2,
-     "corner_subiti": 2.5,
-     "falli": 15.5,
-     "cartellini": 2.3,
-     "gialli": 25,
+     "tiri_subiti": 9.0,
+     "corner": 4.1,
+     "corner_subiti": 2.4,
+     "falli": 15.0,
+     "cartellini": 2.1,
+     "gialli": 21,
      "rossi": 0,
-     "precisione_tiri": 0.381,
-     "over_25": 0.727,
-     "gol_gol": 0.364,
-     "clean_sheet": 0.636,
+     "precisione_tiri": 0.386,
+     "over_25": 0.7,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.7,
      "a_secco": 0.0,
      "con_avanzate": 1,
      "possesso": 0.0,
@@ -85660,36 +86182,36 @@
      "tiri_respinti": 0.0
     },
     "trasferta": {
-     "partite": 9,
-     "gol_fatti": 1.33,
-     "gol_subiti": 0.67,
-     "tiri": 12.7,
-     "in_porta": 3.4,
+     "partite": 10,
+     "gol_fatti": 1.3,
+     "gol_subiti": 0.7,
+     "tiri": 12.3,
+     "in_porta": 3.6,
      "in_porta_subiti": 3.1,
-     "tiri_subiti": 9.3,
-     "corner": 6.1,
-     "corner_subiti": 4.6,
-     "falli": 15.2,
-     "cartellini": 3.0,
-     "gialli": 27,
+     "tiri_subiti": 9.8,
+     "corner": 5.7,
+     "corner_subiti": 4.2,
+     "falli": 15.1,
+     "cartellini": 2.9,
+     "gialli": 29,
      "rossi": 0,
-     "precisione_tiri": 0.272,
-     "over_25": 0.333,
-     "gol_gol": 0.444,
-     "clean_sheet": 0.556,
-     "a_secco": 0.222,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
+     "precisione_tiri": 0.293,
+     "over_25": 0.3,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.2,
+     "con_avanzate": 1,
+     "possesso": 65.4,
+     "passaggi": 551.0,
+     "precisione_passaggi": 0.853,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 0.0,
+     "contrasti": 7.0,
      "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
+     "respinte": 17.0,
+     "parate": 2.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.0
     }
    },
    "forma_casa": {
@@ -85699,8 +86221,8 @@
     "gol_subiti": 1.17,
     "gol_totali": 4,
     "in_porta_totali": 20,
-    "attesi_dai_tiri": 5.9,
-    "scarto_conversione": -1.9,
+    "attesi_dai_tiri": 6.0,
+    "scarto_conversione": -2.0,
     "vantaggio_casa": -1.25,
     "casa": {
      "partite": 4,
@@ -85770,13 +86292,13 @@
    "forma_ospite": {
     "squadra": "AEK",
     "partite": 6,
-    "gol_fatti": 2.17,
-    "gol_subiti": 0.5,
-    "gol_totali": 13,
-    "in_porta_totali": 29,
-    "attesi_dai_tiri": 8.6,
-    "scarto_conversione": 4.4,
-    "vantaggio_casa": 2.5,
+    "gol_fatti": 2.33,
+    "gol_subiti": 0.67,
+    "gol_totali": 14,
+    "in_porta_totali": 30,
+    "attesi_dai_tiri": 9.0,
+    "scarto_conversione": 5.0,
+    "vantaggio_casa": 2.0,
     "casa": {
      "partite": 4,
      "gol_fatti": 3.0,
@@ -85811,49 +86333,49 @@
     },
     "trasferta": {
      "partite": 2,
-     "gol_fatti": 0.5,
-     "gol_subiti": 0.5,
-     "tiri": 13.5,
-     "in_porta": 4.0,
-     "in_porta_subiti": 4.5,
-     "tiri_subiti": 12.0,
-     "corner": 6.0,
-     "corner_subiti": 5.0,
-     "falli": 15.0,
-     "cartellini": 3.5,
-     "gialli": 7,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.0,
+     "tiri": 11.0,
+     "in_porta": 4.5,
+     "in_porta_subiti": 3.5,
+     "tiri_subiti": 14.5,
+     "corner": 3.5,
+     "corner_subiti": 4.5,
+     "falli": 12.5,
+     "cartellini": 1.5,
+     "gialli": 3,
      "rossi": 0,
-     "precisione_tiri": 0.296,
+     "precisione_tiri": 0.409,
      "over_25": 0.0,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.5,
-     "a_secco": 0.5,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 65.4,
+     "passaggi": 551.0,
+     "precisione_passaggi": 0.853,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 0.0,
+     "contrasti": 7.0,
      "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
+     "respinte": 17.0,
+     "parate": 2.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.0
     }
    },
    "incrocio": [
     {
      "voce": "Gol",
      "attacco": 1.27,
-     "difesa": 0.67,
-     "media": 0.97
+     "difesa": 0.7,
+     "media": 0.98
     },
     {
      "voce": "Tiri",
      "attacco": 11.1,
-     "difesa": 9.3,
-     "media": 10.2
+     "difesa": 9.8,
+     "media": 10.4
     },
     {
      "voce": "Tiri in porta",
@@ -85864,8 +86386,8 @@
     {
      "voce": "Calci d'angolo",
      "attacco": 5.2,
-     "difesa": 4.6,
-     "media": 4.9
+     "difesa": 4.2,
+     "media": 4.7
     }
    ],
    "precedenti": [
@@ -85914,6 +86436,464 @@
    ]
   },
   {
+   "id": "kifisia-levadeiakos",
+   "casa": "Kifisia",
+   "ospite": "Levadeiakos",
+   "data": "2026-09-13",
+   "ora": "20:00",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.2828,
+    0.2743,
+    0.4429
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 1.32,
+    "gol_attesi_ospite": 1.68,
+    "matrice": [
+     [
+      0.06759,
+      0.06584,
+      0.07047,
+      0.03955,
+      0.01665,
+      0.00561
+     ],
+     [
+      0.04764,
+      0.12818,
+      0.09287,
+      0.05212,
+      0.02194,
+      0.00739
+     ],
+     [
+      0.04316,
+      0.07268,
+      0.06119,
+      0.03434,
+      0.01446,
+      0.00487
+     ],
+     [
+      0.01896,
+      0.03192,
+      0.02688,
+      0.01508,
+      0.00635,
+      0.00214
+     ],
+     [
+      0.00625,
+      0.01052,
+      0.00885,
+      0.00497,
+      0.00209,
+      0.0007
+     ],
+     [
+      0.00165,
+      0.00277,
+      0.00233,
+      0.00131,
+      0.00055,
+      0.00019
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1282
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0929
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0727
+     },
+     {
+      "risultato": "0-2",
+      "p": 0.0705
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.0676
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.2828,
+      "X": 0.2743,
+      "2": 0.4429
+     },
+     "btts": {
+      "si": 0.6142,
+      "no": 0.3858
+     },
+     "ou_1.5": {
+      "over": 0.8189,
+      "under": 0.1811
+     },
+     "ou_2.5": {
+      "over": 0.5771,
+      "under": 0.4229
+     },
+     "ou_3.5": {
+      "over": 0.3531,
+      "under": 0.6469
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Kifisia",
+    "partite": 20,
+    "gol_fatti": 0.85,
+    "gol_subiti": 1.25,
+    "gol_totali": 17,
+    "in_porta_totali": 87,
+    "attesi_dai_tiri": 26.0,
+    "scarto_conversione": -9.0,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.36,
+     "tiri": 14.5,
+     "in_porta": 5.5,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 8.1,
+     "corner": 3.9,
+     "corner_subiti": 3.2,
+     "falli": 16.6,
+     "cartellini": 2.4,
+     "gialli": 25,
+     "rossi": 1,
+     "precisione_tiri": 0.384,
+     "over_25": 0.455,
+     "gol_gol": 0.455,
+     "clean_sheet": 0.364,
+     "a_secco": 0.364,
+     "con_avanzate": 1,
+     "possesso": 34.6,
+     "passaggi": 286.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 4.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.11,
+     "tiri": 9.7,
+     "in_porta": 2.9,
+     "in_porta_subiti": 3.1,
+     "tiri_subiti": 13.0,
+     "corner": 2.7,
+     "corner_subiti": 5.8,
+     "falli": 16.0,
+     "cartellini": 3.6,
+     "gialli": 31,
+     "rossi": 1,
+     "precisione_tiri": 0.299,
+     "over_25": 0.333,
+     "gol_gol": 0.444,
+     "clean_sheet": 0.333,
+     "a_secco": 0.444,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 9.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Levadeiakos",
+    "partite": 20,
+    "gol_fatti": 1.35,
+    "gol_subiti": 1.9,
+    "gol_totali": 27,
+    "in_porta_totali": 66,
+    "attesi_dai_tiri": 19.7,
+    "scarto_conversione": 7.3,
+    "vantaggio_casa": 0.7,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.7,
+     "gol_subiti": 1.5,
+     "tiri": 9.1,
+     "in_porta": 3.7,
+     "in_porta_subiti": 4.1,
+     "tiri_subiti": 13.1,
+     "corner": 2.9,
+     "corner_subiti": 3.7,
+     "falli": 13.2,
+     "cartellini": 2.4,
+     "gialli": 22,
+     "rossi": 2,
+     "precisione_tiri": 0.407,
+     "over_25": 0.5,
+     "gol_gol": 0.6,
+     "clean_sheet": 0.2,
+     "a_secco": 0.3,
+     "con_avanzate": 2,
+     "possesso": 20.4,
+     "passaggi": 166.0,
+     "precisione_passaggi": 0.765,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 26.0,
+     "intercetti": 0.0,
+     "respinte": 14.5,
+     "parate": 2.5,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 1.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.3,
+     "tiri": 8.4,
+     "in_porta": 2.9,
+     "in_porta_subiti": 4.6,
+     "tiri_subiti": 13.6,
+     "corner": 3.2,
+     "corner_subiti": 5.2,
+     "falli": 14.1,
+     "cartellini": 2.9,
+     "gialli": 27,
+     "rossi": 2,
+     "precisione_tiri": 0.345,
+     "over_25": 0.8,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.1,
+     "a_secco": 0.6,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Kifisia",
+    "partite": 6,
+    "gol_fatti": 1.0,
+    "gol_subiti": 1.5,
+    "gol_totali": 6,
+    "in_porta_totali": 23,
+    "attesi_dai_tiri": 6.9,
+    "scarto_conversione": -0.9,
+    "vantaggio_casa": 0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 2.0,
+     "tiri": 15.0,
+     "in_porta": 5.7,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 11.7,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 13.7,
+     "cartellini": 1.7,
+     "gialli": 4,
+     "rossi": 1,
+     "precisione_tiri": 0.378,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 34.6,
+     "passaggi": 286.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 4.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.0,
+     "tiri": 6.3,
+     "in_porta": 2.0,
+     "in_porta_subiti": 2.3,
+     "tiri_subiti": 12.0,
+     "corner": 1.0,
+     "corner_subiti": 5.7,
+     "falli": 13.7,
+     "cartellini": 3.3,
+     "gialli": 10,
+     "rossi": 0,
+     "precisione_tiri": 0.316,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.667,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 9.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Levadeiakos",
+    "partite": 6,
+    "gol_fatti": 1.0,
+    "gol_subiti": 2.17,
+    "gol_totali": 6,
+    "in_porta_totali": 16,
+    "attesi_dai_tiri": 4.8,
+    "scarto_conversione": 1.2,
+    "vantaggio_casa": 0.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.0,
+     "tiri": 8.7,
+     "in_porta": 3.0,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 8.3,
+     "corner": 3.3,
+     "corner_subiti": 2.0,
+     "falli": 12.0,
+     "cartellini": 2.3,
+     "gialli": 6,
+     "rossi": 1,
+     "precisione_tiri": 0.346,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.0,
+     "a_secco": 0.667,
+     "con_avanzate": 2,
+     "possesso": 20.4,
+     "passaggi": 166.0,
+     "precisione_passaggi": 0.765,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 26.0,
+     "intercetti": 0.0,
+     "respinte": 14.5,
+     "parate": 2.5,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 1.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.33,
+     "tiri": 9.0,
+     "in_porta": 2.3,
+     "in_porta_subiti": 5.7,
+     "tiri_subiti": 14.3,
+     "corner": 0.7,
+     "corner_subiti": 6.0,
+     "falli": 13.3,
+     "cartellini": 3.0,
+     "gialli": 7,
+     "rossi": 2,
+     "precisione_tiri": 0.259,
+     "over_25": 1.0,
+     "gol_gol": 0.0,
+     "clean_sheet": 0.333,
+     "a_secco": 0.667,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.0,
+     "difesa": 2.3,
+     "media": 1.65
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 14.5,
+     "difesa": 13.6,
+     "media": 14.1
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 5.5,
+     "difesa": 4.6,
+     "media": 5.0
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 3.9,
+     "difesa": 5.2,
+     "media": 4.5
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-02-28",
+     "casa": "Kifisia",
+     "ospite": "Levadeiakos",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-08-25",
+     "casa": "Levadeiakos",
+     "ospite": "Kifisia",
+     "gol_casa": 3,
+     "gol_ospite": 2
+    }
+   ]
+  },
+  {
    "id": "paok-aris",
    "casa": "PAOK",
    "ospite": "Aris",
@@ -85922,141 +86902,141 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.6615,
-    0.2276,
-    0.1109
+    0.6554,
+    0.2292,
+    0.1154
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 2.03,
-    "gol_attesi_ospite": 0.74,
+    "gol_attesi_casa": 2.05,
+    "gol_attesi_ospite": 0.77,
     "matrice": [
      [
-      0.07713,
-      0.03156,
-      0.01709,
-      0.00421,
-      0.00078,
-      0.00012
+      0.07515,
+      0.03085,
+      0.01778,
+      0.00457,
+      0.00088,
+      0.00014
      ],
      [
-      0.11241,
-      0.10862,
-      0.03475,
-      0.00857,
-      0.00158,
-      0.00023
+      0.10714,
+      0.10966,
+      0.03637,
+      0.00935,
+      0.0018,
+      0.00028
      ],
      [
-      0.12919,
-      0.09555,
-      0.03533,
-      0.00871,
-      0.00161,
-      0.00024
+      0.12519,
+      0.0965,
+      0.03719,
+      0.00956,
+      0.00184,
+      0.00028
      ],
      [
-      0.08757,
-      0.06477,
-      0.02395,
-      0.00591,
-      0.00109,
-      0.00016
+      0.08534,
+      0.06579,
+      0.02536,
+      0.00652,
+      0.00126,
+      0.00019
      ],
      [
-      0.04452,
-      0.03293,
-      0.01218,
-      0.003,
-      0.00056,
-      8e-05
+      0.04364,
+      0.03364,
+      0.01296,
+      0.00333,
+      0.00064,
+      0.0001
      ],
      [
-      0.01811,
-      0.01339,
-      0.00495,
-      0.00122,
-      0.00023,
-      3e-05
+      0.01785,
+      0.01376,
+      0.0053,
+      0.00136,
+      0.00026,
+      4e-05
      ]
     ],
     "risultati_probabili": [
      {
       "risultato": "2-0",
-      "p": 0.1292
-     },
-     {
-      "risultato": "1-0",
-      "p": 0.1124
+      "p": 0.1252
      },
      {
       "risultato": "1-1",
-      "p": 0.1086
+      "p": 0.1097
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1071
      },
      {
       "risultato": "2-1",
-      "p": 0.0955
+      "p": 0.0965
      },
      {
       "risultato": "3-0",
-      "p": 0.0876
+      "p": 0.0853
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.6615,
-      "X": 0.2276,
-      "2": 0.1109
+      "1": 0.6554,
+      "X": 0.2292,
+      "2": 0.1154
      },
      "btts": {
-      "si": 0.4689,
-      "no": 0.5311
+      "si": 0.4831,
+      "no": 0.5169
      },
      "ou_1.5": {
-      "over": 0.7789,
-      "under": 0.2211
+      "over": 0.7869,
+      "under": 0.2131
      },
      "ou_2.5": {
-      "over": 0.524,
-      "under": 0.476
+      "over": 0.5342,
+      "under": 0.4658
      },
      "ou_3.5": {
-      "over": 0.3019,
-      "under": 0.6981
+      "over": 0.3114,
+      "under": 0.6886
      }
     }
    },
    "stat_casa": {
     "squadra": "PAOK",
     "partite": 20,
-    "gol_fatti": 1.8,
-    "gol_subiti": 0.7,
-    "gol_totali": 36,
-    "in_porta_totali": 84,
-    "attesi_dai_tiri": 25.0,
-    "scarto_conversione": 11.0,
-    "vantaggio_casa": 0.8,
+    "gol_fatti": 1.75,
+    "gol_subiti": 0.85,
+    "gol_totali": 35,
+    "in_porta_totali": 73,
+    "attesi_dai_tiri": 21.8,
+    "scarto_conversione": 13.2,
+    "vantaggio_casa": 0.86,
     "casa": {
-     "partite": 10,
-     "gol_fatti": 2.2,
-     "gol_subiti": 0.3,
-     "tiri": 12.2,
-     "in_porta": 5.1,
-     "in_porta_subiti": 1.8,
-     "tiri_subiti": 7.6,
-     "corner": 5.7,
+     "partite": 9,
+     "gol_fatti": 2.22,
+     "gol_subiti": 0.33,
+     "tiri": 11.8,
+     "in_porta": 4.4,
+     "in_porta_subiti": 1.9,
+     "tiri_subiti": 8.1,
+     "corner": 5.6,
      "corner_subiti": 3.3,
-     "falli": 13.5,
+     "falli": 13.6,
      "cartellini": 1.4,
-     "gialli": 14,
+     "gialli": 13,
      "rossi": 0,
-     "precisione_tiri": 0.418,
-     "over_25": 0.5,
-     "gol_gol": 0.3,
-     "clean_sheet": 0.7,
-     "a_secco": 0.2,
+     "precisione_tiri": 0.377,
+     "over_25": 0.556,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.667,
+     "a_secco": 0.222,
      "con_avanzate": 0,
      "possesso": 0.0,
      "passaggi": 0.0,
@@ -86071,36 +87051,36 @@
      "tiri_respinti": 0.0
     },
     "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.4,
-     "gol_subiti": 1.1,
-     "tiri": 11.6,
-     "in_porta": 3.3,
-     "in_porta_subiti": 3.7,
-     "tiri_subiti": 12.9,
-     "corner": 4.4,
-     "corner_subiti": 4.8,
-     "falli": 12.5,
+     "partite": 11,
+     "gol_fatti": 1.36,
+     "gol_subiti": 1.27,
+     "tiri": 10.5,
+     "in_porta": 3.0,
+     "in_porta_subiti": 3.4,
+     "tiri_subiti": 11.7,
+     "corner": 4.0,
+     "corner_subiti": 4.4,
+     "falli": 11.4,
      "cartellini": 1.9,
-     "gialli": 19,
-     "rossi": 0,
+     "gialli": 20,
+     "rossi": 1,
      "precisione_tiri": 0.284,
-     "over_25": 0.6,
-     "gol_gol": 0.6,
-     "clean_sheet": 0.3,
-     "a_secco": 0.3,
-     "con_avanzate": 1,
-     "possesso": 54.0,
-     "passaggi": 398.0,
+     "over_25": 0.636,
+     "gol_gol": 0.636,
+     "clean_sheet": 0.273,
+     "a_secco": 0.273,
+     "con_avanzate": 2,
+     "possesso": 27.0,
+     "passaggi": 199.0,
      "precisione_passaggi": 0.786,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 18.0,
+     "contrasti": 16.5,
      "intercetti": 0.0,
-     "respinte": 29.0,
-     "parate": 1.0,
-     "fuorigioco": 2.0,
-     "tiri_respinti": 1.0
+     "respinte": 14.5,
+     "parate": 0.5,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 0.5
     }
    },
    "stat_ospite": {
@@ -86110,8 +87090,8 @@
     "gol_subiti": 1.2,
     "gol_totali": 26,
     "in_porta_totali": 85,
-    "attesi_dai_tiri": 25.3,
-    "scarto_conversione": 0.7,
+    "attesi_dai_tiri": 25.4,
+    "scarto_conversione": 0.6,
     "vantaggio_casa": 0.4,
     "casa": {
      "partite": 10,
@@ -86181,31 +87161,31 @@
    "forma_casa": {
     "squadra": "PAOK",
     "partite": 6,
-    "gol_fatti": 2.17,
-    "gol_subiti": 1.0,
-    "gol_totali": 13,
-    "in_porta_totali": 26,
-    "attesi_dai_tiri": 7.7,
-    "scarto_conversione": 5.3,
+    "gol_fatti": 1.83,
+    "gol_subiti": 1.33,
+    "gol_totali": 11,
+    "in_porta_totali": 20,
+    "attesi_dai_tiri": 6.0,
+    "scarto_conversione": 5.0,
     "vantaggio_casa": 1.0,
     "casa": {
-     "partite": 3,
-     "gol_fatti": 2.67,
-     "gol_subiti": 0.67,
-     "tiri": 11.7,
-     "in_porta": 5.0,
-     "in_porta_subiti": 3.3,
-     "tiri_subiti": 12.7,
-     "corner": 4.7,
-     "corner_subiti": 5.0,
-     "falli": 14.7,
-     "cartellini": 1.3,
-     "gialli": 4,
+     "partite": 2,
+     "gol_fatti": 2.5,
+     "gol_subiti": 0.5,
+     "tiri": 14.0,
+     "in_porta": 4.5,
+     "in_porta_subiti": 2.5,
+     "tiri_subiti": 10.5,
+     "corner": 5.5,
+     "corner_subiti": 3.0,
+     "falli": 16.0,
+     "cartellini": 1.5,
+     "gialli": 3,
      "rossi": 0,
-     "precisione_tiri": 0.429,
-     "over_25": 0.667,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.333,
+     "precisione_tiri": 0.321,
+     "over_25": 0.5,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
      "a_secco": 0.0,
      "con_avanzate": 0,
      "possesso": 0.0,
@@ -86221,36 +87201,36 @@
      "tiri_respinti": 0.0
     },
     "trasferta": {
-     "partite": 3,
-     "gol_fatti": 1.67,
-     "gol_subiti": 1.33,
-     "tiri": 13.0,
-     "in_porta": 3.7,
-     "in_porta_subiti": 5.7,
-     "tiri_subiti": 19.3,
-     "corner": 4.3,
-     "corner_subiti": 5.7,
-     "falli": 12.0,
-     "cartellini": 3.0,
-     "gialli": 9,
-     "rossi": 0,
+     "partite": 4,
+     "gol_fatti": 1.5,
+     "gol_subiti": 1.75,
+     "tiri": 9.8,
+     "in_porta": 2.8,
+     "in_porta_subiti": 4.2,
+     "tiri_subiti": 14.5,
+     "corner": 3.2,
+     "corner_subiti": 4.2,
+     "falli": 9.0,
+     "cartellini": 2.8,
+     "gialli": 10,
+     "rossi": 1,
      "precisione_tiri": 0.282,
-     "over_25": 0.667,
+     "over_25": 0.75,
      "gol_gol": 1.0,
      "clean_sheet": 0.0,
      "a_secco": 0.0,
-     "con_avanzate": 1,
-     "possesso": 54.0,
-     "passaggi": 398.0,
+     "con_avanzate": 2,
+     "possesso": 27.0,
+     "passaggi": 199.0,
      "precisione_passaggi": 0.786,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 18.0,
+     "contrasti": 16.5,
      "intercetti": 0.0,
-     "respinte": 29.0,
-     "parate": 1.0,
-     "fuorigioco": 2.0,
-     "tiri_respinti": 1.0
+     "respinte": 14.5,
+     "parate": 0.5,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 0.5
     }
    },
    "forma_ospite": {
@@ -86260,8 +87240,8 @@
     "gol_subiti": 1.67,
     "gol_totali": 13,
     "in_porta_totali": 28,
-    "attesi_dai_tiri": 8.3,
-    "scarto_conversione": 4.7,
+    "attesi_dai_tiri": 8.4,
+    "scarto_conversione": 4.6,
     "vantaggio_casa": 1.0,
     "casa": {
      "partite": 3,
@@ -86331,25 +87311,25 @@
    "incrocio": [
     {
      "voce": "Gol",
-     "attacco": 2.2,
+     "attacco": 2.22,
      "difesa": 1.4,
-     "media": 1.8
+     "media": 1.81
     },
     {
      "voce": "Tiri",
-     "attacco": 12.2,
+     "attacco": 11.8,
      "difesa": 8.6,
-     "media": 10.4
+     "media": 10.2
     },
     {
      "voce": "Tiri in porta",
-     "attacco": 5.1,
+     "attacco": 4.4,
      "difesa": 2.6,
-     "media": 3.8
+     "media": 3.5
     },
     {
      "voce": "Calci d'angolo",
-     "attacco": 5.7,
+     "attacco": 5.6,
      "difesa": 2.8,
      "media": 4.2
     }
@@ -86400,70 +87380,1042 @@
    ]
   },
   {
-   "id": "aris-iraklis",
-   "casa": "Aris",
-   "ospite": "Iraklis",
-   "data": "2026-09-19",
-   "ora": "20:00",
+   "id": "panathinaikos-panetolikos",
+   "casa": "Panathinaikos",
+   "ospite": "Panetolikos",
+   "data": "2026-09-13",
+   "ora": "20:30",
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5015,
-    0.2959,
-    0.2026
+    0.6652,
+    0.2409,
+    0.0939
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 1.53,
-    "gol_attesi_ospite": 0.9,
+    "gol_attesi_casa": 1.86,
+    "gol_attesi_ospite": 0.58,
     "matrice": [
      [
-      0.10719,
-      0.06042,
-      0.03564,
-      0.01067,
-      0.0024,
-      0.00043
+      0.10234,
+      0.03552,
+      0.01483,
+      0.00289,
+      0.00042,
+      5e-05
      ],
      [
-      0.11606,
-      0.14017,
-      0.05448,
-      0.01632,
-      0.00366,
-      0.00066
+      0.14641,
+      0.10969,
+      0.02755,
+      0.00536,
+      0.00078,
+      9e-05
      ],
      [
-      0.10316,
-      0.09269,
-      0.04164,
-      0.01247,
-      0.0028,
-      0.0005
+      0.1502,
+      0.08768,
+      0.02559,
+      0.00498,
+      0.00073,
+      8e-05
      ],
      [
-      0.05257,
-      0.04723,
-      0.02122,
-      0.00636,
+      0.09301,
+      0.05429,
+      0.01585,
+      0.00308,
+      0.00045,
+      5e-05
+     ],
+     [
+      0.04319,
+      0.02522,
+      0.00736,
       0.00143,
+      0.00021,
+      2e-05
+     ],
+     [
+      0.01605,
+      0.00937,
+      0.00273,
+      0.00053,
+      8e-05,
+      1e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "2-0",
+      "p": 0.1502
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1464
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.1097
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.1023
+     },
+     {
+      "risultato": "3-0",
+      "p": 0.093
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.6652,
+      "X": 0.2409,
+      "2": 0.0939
+     },
+     "btts": {
+      "si": 0.3885,
+      "no": 0.6115
+     },
+     "ou_1.5": {
+      "over": 0.7157,
+      "under": 0.2843
+     },
+     "ou_2.5": {
+      "over": 0.441,
+      "under": 0.559
+     },
+     "ou_3.5": {
+      "over": 0.2299,
+      "under": 0.7701
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Panathinaikos",
+    "partite": 20,
+    "gol_fatti": 1.55,
+    "gol_subiti": 0.85,
+    "gol_totali": 31,
+    "in_porta_totali": 97,
+    "attesi_dai_tiri": 29.0,
+    "scarto_conversione": 2.0,
+    "vantaggio_casa": 0.7,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.9,
+     "gol_subiti": 0.8,
+     "tiri": 13.6,
+     "in_porta": 5.9,
+     "in_porta_subiti": 2.7,
+     "tiri_subiti": 8.5,
+     "corner": 4.4,
+     "corner_subiti": 3.2,
+     "falli": 11.6,
+     "cartellini": 2.1,
+     "gialli": 19,
+     "rossi": 2,
+     "precisione_tiri": 0.434,
+     "over_25": 0.6,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.4,
+     "a_secco": 0.3,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 0.9,
+     "tiri": 10.5,
+     "in_porta": 3.8,
+     "in_porta_subiti": 3.3,
+     "tiri_subiti": 10.1,
+     "corner": 3.2,
+     "corner_subiti": 3.2,
+     "falli": 16.0,
+     "cartellini": 2.2,
+     "gialli": 22,
+     "rossi": 0,
+     "precisione_tiri": 0.362,
+     "over_25": 0.4,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.5,
+     "a_secco": 0.4,
+     "con_avanzate": 1,
+     "possesso": 59.2,
+     "passaggi": 485.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 2.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Panetolikos",
+    "partite": 20,
+    "gol_fatti": 1.35,
+    "gol_subiti": 1.0,
+    "gol_totali": 27,
+    "in_porta_totali": 74,
+    "attesi_dai_tiri": 22.1,
+    "scarto_conversione": 4.9,
+    "vantaggio_casa": 0.3,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.5,
+     "gol_subiti": 1.1,
+     "tiri": 13.8,
+     "in_porta": 4.5,
+     "in_porta_subiti": 3.5,
+     "tiri_subiti": 9.5,
+     "corner": 5.2,
+     "corner_subiti": 3.4,
+     "falli": 13.7,
+     "cartellini": 2.2,
+     "gialli": 21,
+     "rossi": 1,
+     "precisione_tiri": 0.326,
+     "over_25": 0.5,
+     "gol_gol": 0.7,
+     "clean_sheet": 0.2,
+     "a_secco": 0.2,
+     "con_avanzate": 1,
+     "possesso": 44.2,
+     "passaggi": 312.0,
+     "precisione_passaggi": 0.75,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 10.0,
+     "intercetti": 0.0,
+     "respinte": 28.0,
+     "parate": 3.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 9.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 0.9,
+     "tiri": 7.0,
+     "in_porta": 2.9,
+     "in_porta_subiti": 4.5,
+     "tiri_subiti": 13.9,
+     "corner": 2.1,
+     "corner_subiti": 4.3,
+     "falli": 14.2,
+     "cartellini": 2.4,
+     "gialli": 24,
+     "rossi": 0,
+     "precisione_tiri": 0.414,
+     "over_25": 0.4,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.3,
+     "a_secco": 0.4,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Panathinaikos",
+    "partite": 6,
+    "gol_fatti": 1.33,
+    "gol_subiti": 1.0,
+    "gol_totali": 8,
+    "in_porta_totali": 21,
+    "attesi_dai_tiri": 6.3,
+    "scarto_conversione": 1.7,
+    "vantaggio_casa": 0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 1.0,
+     "tiri": 8.7,
+     "in_porta": 4.0,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 10.3,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 8.3,
+     "cartellini": 2.7,
+     "gialli": 6,
+     "rossi": 2,
+     "precisione_tiri": 0.462,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.0,
+     "tiri": 10.0,
+     "in_porta": 3.0,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 13.3,
+     "corner": 2.0,
+     "corner_subiti": 6.0,
+     "falli": 15.7,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.3,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 59.2,
+     "passaggi": 485.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 2.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Panetolikos",
+    "partite": 6,
+    "gol_fatti": 1.67,
+    "gol_subiti": 0.83,
+    "gol_totali": 10,
+    "in_porta_totali": 24,
+    "attesi_dai_tiri": 7.2,
+    "scarto_conversione": 2.8,
+    "vantaggio_casa": 0.25,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 1.75,
+     "gol_subiti": 1.0,
+     "tiri": 15.0,
+     "in_porta": 5.2,
+     "in_porta_subiti": 4.5,
+     "tiri_subiti": 10.8,
+     "corner": 5.2,
+     "corner_subiti": 3.5,
+     "falli": 17.0,
+     "cartellini": 1.5,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.35,
+     "over_25": 0.5,
+     "gol_gol": 0.75,
+     "clean_sheet": 0.25,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 44.2,
+     "passaggi": 312.0,
+     "precisione_passaggi": 0.75,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 10.0,
+     "intercetti": 0.0,
+     "respinte": 28.0,
+     "parate": 3.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 9.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 1.5,
+     "gol_subiti": 0.5,
+     "tiri": 6.0,
+     "in_porta": 1.5,
+     "in_porta_subiti": 2.0,
+     "tiri_subiti": 7.0,
+     "corner": 1.0,
+     "corner_subiti": 2.0,
+     "falli": 7.0,
+     "cartellini": 2.5,
+     "gialli": 5,
+     "rossi": 0,
+     "precisione_tiri": 0.25,
+     "over_25": 0.0,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.9,
+     "difesa": 0.9,
+     "media": 1.4
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 13.6,
+     "difesa": 13.9,
+     "media": 13.8
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 5.9,
+     "difesa": 4.5,
+     "media": 5.2
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 4.4,
+     "difesa": 4.3,
+     "media": 4.3
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-03-15",
+     "casa": "Panathinaikos",
+     "ospite": "Panetolikos",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-09-28",
+     "casa": "Panetolikos",
+     "ospite": "Panathinaikos",
+     "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-03-01",
+     "casa": "Panathinaikos",
+     "ospite": "Panetolikos",
+     "gol_casa": 2,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2024-11-24",
+     "casa": "Panetolikos",
+     "ospite": "Panathinaikos",
+     "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2024-01-07",
+     "casa": "Panathinaikos",
+     "ospite": "Panetolikos",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2023-09-16",
+     "casa": "Panetolikos",
+     "ospite": "Panathinaikos",
+     "gol_casa": 0,
+     "gol_ospite": 5
+    }
+   ]
+  },
+  {
+   "id": "atromitos-kifisia",
+   "casa": "Atromitos",
+   "ospite": "Kifisia",
+   "data": "2026-09-19",
+   "ora": "18:00",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.5279,
+    0.286,
+    0.1861
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 1.62,
+    "gol_attesi_ospite": 0.89,
+    "matrice": [
+     [
+      0.1006,
+      0.05329,
+      0.03199,
+      0.00944,
+      0.00209,
+      0.00037
+     ],
+     [
+      0.11329,
+      0.13606,
+      0.05183,
+      0.0153,
+      0.00339,
+      0.0006
+     ],
+     [
+      0.10716,
+      0.09487,
+      0.04199,
+      0.01239,
+      0.00274,
+      0.00049
+     ],
+     [
+      0.05788,
+      0.05124,
+      0.02268,
+      0.00669,
+      0.00148,
       0.00026
      ],
      [
-      0.02009,
-      0.01805,
-      0.00811,
-      0.00243,
-      0.00055,
+      0.02344,
+      0.02076,
+      0.00919,
+      0.00271,
+      0.0006,
+      0.00011
+     ],
+     [
+      0.0076,
+      0.00673,
+      0.00298,
+      0.00088,
+      0.00019,
+      3e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1361
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1133
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.1072
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.1006
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0949
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.5279,
+      "X": 0.286,
+      "2": 0.1861
+     },
+     "btts": {
+      "si": 0.4902,
+      "no": 0.5098
+     },
+     "ou_1.5": {
+      "over": 0.7328,
+      "under": 0.2672
+     },
+     "ou_2.5": {
+      "over": 0.4576,
+      "under": 0.5424
+     },
+     "ou_3.5": {
+      "over": 0.2436,
+      "under": 0.7564
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Atromitos",
+    "partite": 20,
+    "gol_fatti": 1.65,
+    "gol_subiti": 1.1,
+    "gol_totali": 33,
+    "in_porta_totali": 79,
+    "attesi_dai_tiri": 23.6,
+    "scarto_conversione": 9.4,
+    "vantaggio_casa": 0.5,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.9,
+     "gol_subiti": 1.2,
+     "tiri": 11.2,
+     "in_porta": 4.1,
+     "in_porta_subiti": 3.6,
+     "tiri_subiti": 9.2,
+     "corner": 2.9,
+     "corner_subiti": 3.9,
+     "falli": 13.3,
+     "cartellini": 2.3,
+     "gialli": 22,
+     "rossi": 1,
+     "precisione_tiri": 0.366,
+     "over_25": 0.7,
+     "gol_gol": 0.7,
+     "clean_sheet": 0.3,
+     "a_secco": 0.1,
+     "con_avanzate": 2,
+     "possesso": 23.0,
+     "passaggi": 168.0,
+     "precisione_passaggi": 0.767,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 12.5,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 1.5,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 2.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.4,
+     "gol_subiti": 1.0,
+     "tiri": 10.7,
+     "in_porta": 3.8,
+     "in_porta_subiti": 4.4,
+     "tiri_subiti": 11.9,
+     "corner": 6.2,
+     "corner_subiti": 5.0,
+     "falli": 16.0,
+     "cartellini": 2.6,
+     "gialli": 26,
+     "rossi": 0,
+     "precisione_tiri": 0.355,
+     "over_25": 0.5,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.4,
+     "a_secco": 0.3,
+     "con_avanzate": 1,
+     "possesso": 30.7,
+     "passaggi": 233.0,
+     "precisione_passaggi": 0.695,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.0,
+     "intercetti": 0.0,
+     "respinte": 55.0,
+     "parate": 8.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 3.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Kifisia",
+    "partite": 20,
+    "gol_fatti": 0.85,
+    "gol_subiti": 1.25,
+    "gol_totali": 17,
+    "in_porta_totali": 87,
+    "attesi_dai_tiri": 26.0,
+    "scarto_conversione": -9.0,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.36,
+     "tiri": 14.5,
+     "in_porta": 5.5,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 8.1,
+     "corner": 3.9,
+     "corner_subiti": 3.2,
+     "falli": 16.6,
+     "cartellini": 2.4,
+     "gialli": 25,
+     "rossi": 1,
+     "precisione_tiri": 0.384,
+     "over_25": 0.455,
+     "gol_gol": 0.455,
+     "clean_sheet": 0.364,
+     "a_secco": 0.364,
+     "con_avanzate": 1,
+     "possesso": 34.6,
+     "passaggi": 286.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 4.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.11,
+     "tiri": 9.7,
+     "in_porta": 2.9,
+     "in_porta_subiti": 3.1,
+     "tiri_subiti": 13.0,
+     "corner": 2.7,
+     "corner_subiti": 5.8,
+     "falli": 16.0,
+     "cartellini": 3.6,
+     "gialli": 31,
+     "rossi": 1,
+     "precisione_tiri": 0.299,
+     "over_25": 0.333,
+     "gol_gol": 0.444,
+     "clean_sheet": 0.333,
+     "a_secco": 0.444,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 9.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Atromitos",
+    "partite": 6,
+    "gol_fatti": 2.0,
+    "gol_subiti": 1.0,
+    "gol_totali": 12,
+    "in_porta_totali": 24,
+    "attesi_dai_tiri": 7.2,
+    "scarto_conversione": 4.8,
+    "vantaggio_casa": 1.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 2.67,
+     "gol_subiti": 1.0,
+     "tiri": 10.3,
+     "in_porta": 4.0,
+     "in_porta_subiti": 1.3,
+     "tiri_subiti": 6.3,
+     "corner": 1.7,
+     "corner_subiti": 3.3,
+     "falli": 11.3,
+     "cartellini": 1.0,
+     "gialli": 3,
+     "rossi": 0,
+     "precisione_tiri": 0.387,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.0,
+     "con_avanzate": 2,
+     "possesso": 23.0,
+     "passaggi": 168.0,
+     "precisione_passaggi": 0.767,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 12.5,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 1.5,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 2.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 1.0,
+     "tiri": 10.7,
+     "in_porta": 4.0,
+     "in_porta_subiti": 6.3,
+     "tiri_subiti": 15.7,
+     "corner": 6.3,
+     "corner_subiti": 7.3,
+     "falli": 15.0,
+     "cartellini": 3.7,
+     "gialli": 11,
+     "rossi": 0,
+     "precisione_tiri": 0.375,
+     "over_25": 0.667,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 30.7,
+     "passaggi": 233.0,
+     "precisione_passaggi": 0.695,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.0,
+     "intercetti": 0.0,
+     "respinte": 55.0,
+     "parate": 8.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 3.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Kifisia",
+    "partite": 6,
+    "gol_fatti": 1.0,
+    "gol_subiti": 1.5,
+    "gol_totali": 6,
+    "in_porta_totali": 23,
+    "attesi_dai_tiri": 6.9,
+    "scarto_conversione": -0.9,
+    "vantaggio_casa": 0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 2.0,
+     "tiri": 15.0,
+     "in_porta": 5.7,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 11.7,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 13.7,
+     "cartellini": 1.7,
+     "gialli": 4,
+     "rossi": 1,
+     "precisione_tiri": 0.378,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 34.6,
+     "passaggi": 286.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 4.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.0,
+     "tiri": 6.3,
+     "in_porta": 2.0,
+     "in_porta_subiti": 2.3,
+     "tiri_subiti": 12.0,
+     "corner": 1.0,
+     "corner_subiti": 5.7,
+     "falli": 13.7,
+     "cartellini": 3.3,
+     "gialli": 10,
+     "rossi": 0,
+     "precisione_tiri": 0.316,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.667,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 9.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.9,
+     "difesa": 1.11,
+     "media": 1.5
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 11.2,
+     "difesa": 13.0,
+     "media": 12.1
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 4.1,
+     "difesa": 3.1,
+     "media": 3.6
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 2.9,
+     "difesa": 5.8,
+     "media": 4.3
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-05-12",
+     "casa": "Kifisia",
+     "ospite": "Atromitos",
+     "gol_casa": 0,
+     "gol_ospite": 3
+    },
+    {
+     "data": "2026-04-08",
+     "casa": "Atromitos",
+     "ospite": "Kifisia",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2026-02-07",
+     "casa": "Kifisia",
+     "ospite": "Atromitos",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-11-01",
+     "casa": "Atromitos",
+     "ospite": "Kifisia",
+     "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2024-04-20",
+     "casa": "Atromitos",
+     "ospite": "Kifisia",
+     "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2024-01-04",
+     "casa": "Atromitos",
+     "ospite": "Kifisia",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "aris-iraklis",
+   "casa": "Aris",
+   "ospite": "Iraklis",
+   "data": "2026-09-19",
+   "ora": "18:30",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.5047,
+    0.2957,
+    0.1996
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 1.54,
+    "gol_attesi_ospite": 0.9,
+    "matrice": [
+     [
+      0.10667,
+      0.05866,
+      0.0351,
+      0.0105,
+      0.00236,
+      0.00042
+     ],
+     [
+      0.11486,
+      0.14021,
+      0.05416,
+      0.01621,
+      0.00364,
+      0.00065
+     ],
+     [
+      0.10369,
+      0.09308,
+      0.04178,
+      0.0125,
+      0.00281,
+      0.0005
+     ],
+     [
+      0.05332,
+      0.04787,
+      0.02148,
+      0.00643,
+      0.00144,
+      0.00026
+     ],
+     [
+      0.02057,
+      0.01846,
+      0.00829,
+      0.00248,
+      0.00056,
       0.0001
      ],
      [
-      0.00614,
-      0.00552,
-      0.00248,
-      0.00074,
+      0.00635,
+      0.0057,
+      0.00256,
+      0.00077,
       0.00017,
       3e-05
      ]
@@ -86475,42 +88427,42 @@
      },
      {
       "risultato": "1-0",
-      "p": 0.1161
+      "p": 0.1149
      },
      {
       "risultato": "0-0",
-      "p": 0.1072
+      "p": 0.1067
      },
      {
       "risultato": "2-0",
-      "p": 0.1032
+      "p": 0.1037
      },
      {
       "risultato": "2-1",
-      "p": 0.0927
+      "p": 0.0931
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5015,
-      "X": 0.2959,
-      "2": 0.2026
+      "1": 0.5047,
+      "X": 0.2957,
+      "2": 0.1996
      },
      "btts": {
-      "si": 0.4832,
-      "no": 0.5168
+      "si": 0.4854,
+      "no": 0.5146
      },
      "ou_1.5": {
-      "over": 0.7163,
-      "under": 0.2837
+      "over": 0.7198,
+      "under": 0.2802
      },
      "ou_2.5": {
-      "over": 0.4374,
-      "under": 0.5626
+      "over": 0.4408,
+      "under": 0.5592
      },
      "ou_3.5": {
-      "over": 0.227,
-      "under": 0.773
+      "over": 0.2298,
+      "under": 0.7702
      }
     }
    },
@@ -86521,8 +88473,8 @@
     "gol_subiti": 1.2,
     "gol_totali": 26,
     "in_porta_totali": 85,
-    "attesi_dai_tiri": 25.3,
-    "scarto_conversione": 0.7,
+    "attesi_dai_tiri": 25.4,
+    "scarto_conversione": 0.6,
     "vantaggio_casa": 0.4,
     "casa": {
      "partite": 10,
@@ -86671,8 +88623,8 @@
     "gol_subiti": 1.67,
     "gol_totali": 13,
     "in_porta_totali": 28,
-    "attesi_dai_tiri": 8.3,
-    "scarto_conversione": 4.7,
+    "attesi_dai_tiri": 8.4,
+    "scarto_conversione": 4.6,
     "vantaggio_casa": 1.0,
     "casa": {
      "partite": 3,
@@ -86846,178 +88798,178 @@
    "id": "levadeiakos-olympiakos",
    "casa": "Levadeiakos",
    "ospite": "Olympiakos",
-   "data": "2026-09-19",
-   "ora": "20:00",
+   "data": "2026-09-20",
+   "ora": "16:00",
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.1464,
-    0.2608,
-    0.5929
+    0.1431,
+    0.2621,
+    0.5948
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 0.8,
+    "gol_attesi_casa": 0.79,
     "gol_attesi_ospite": 1.79,
     "matrice": [
      [
-      0.09152,
-      0.11736,
-      0.1202,
-      0.07183,
-      0.0322,
-      0.01154
+      0.09355,
+      0.11889,
+      0.12182,
+      0.07261,
+      0.03246,
+      0.01161
      ],
      [
-      0.04313,
-      0.12404,
-      0.0962,
-      0.05749,
-      0.02577,
-      0.00924
+      0.04256,
+      0.1245,
+      0.0958,
+      0.0571,
+      0.02553,
+      0.00913
      ],
      [
-      0.02395,
-      0.04294,
-      0.03849,
-      0.023,
-      0.01031,
-      0.0037
+      0.02356,
+      0.04213,
+      0.03767,
+      0.02245,
+      0.01004,
+      0.00359
      ],
      [
-      0.00639,
-      0.01146,
-      0.01027,
-      0.00614,
-      0.00275,
-      0.00099
+      0.00618,
+      0.01104,
+      0.00987,
+      0.00589,
+      0.00263,
+      0.00094
      ],
      [
-      0.00128,
-      0.00229,
-      0.00205,
-      0.00123,
-      0.00055,
-      0.0002
+      0.00121,
+      0.00217,
+      0.00194,
+      0.00116,
+      0.00052,
+      0.00019
      ],
      [
-      0.0002,
-      0.00037,
-      0.00033,
-      0.0002,
-      9e-05,
+      0.00019,
+      0.00034,
+      0.00031,
+      0.00018,
+      8e-05,
       3e-05
      ]
     ],
     "risultati_probabili": [
      {
       "risultato": "1-1",
-      "p": 0.124
+      "p": 0.1245
      },
      {
       "risultato": "0-2",
-      "p": 0.1202
+      "p": 0.1218
      },
      {
       "risultato": "0-1",
-      "p": 0.1174
+      "p": 0.1189
      },
      {
       "risultato": "1-2",
-      "p": 0.0962
+      "p": 0.0958
      },
      {
       "risultato": "0-0",
-      "p": 0.0915
+      "p": 0.0935
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.1464,
-      "X": 0.2608,
-      "2": 0.5929
+      "1": 0.1431,
+      "X": 0.2621,
+      "2": 0.5948
      },
      "btts": {
-      "si": 0.4758,
-      "no": 0.5242
+      "si": 0.4708,
+      "no": 0.5292
      },
      "ou_1.5": {
-      "over": 0.748,
-      "under": 0.252
+      "over": 0.745,
+      "under": 0.255
      },
      "ou_2.5": {
-      "over": 0.4798,
-      "under": 0.5202
+      "over": 0.4751,
+      "under": 0.5249
      },
      "ou_3.5": {
-      "over": 0.2624,
-      "under": 0.7376
+      "over": 0.2584,
+      "under": 0.7416
      }
     }
    },
    "stat_casa": {
     "squadra": "Levadeiakos",
     "partite": 20,
-    "gol_fatti": 1.45,
-    "gol_subiti": 1.8,
-    "gol_totali": 29,
-    "in_porta_totali": 70,
-    "attesi_dai_tiri": 20.8,
-    "scarto_conversione": 8.2,
-    "vantaggio_casa": 0.8,
+    "gol_fatti": 1.35,
+    "gol_subiti": 1.9,
+    "gol_totali": 27,
+    "in_porta_totali": 66,
+    "attesi_dai_tiri": 19.7,
+    "scarto_conversione": 7.3,
+    "vantaggio_casa": 0.7,
     "casa": {
-     "partite": 9,
-     "gol_fatti": 1.89,
-     "gol_subiti": 1.44,
-     "tiri": 9.2,
-     "in_porta": 3.9,
-     "in_porta_subiti": 3.9,
-     "tiri_subiti": 12.9,
-     "corner": 2.7,
-     "corner_subiti": 3.6,
-     "falli": 12.7,
-     "cartellini": 2.3,
-     "gialli": 20,
-     "rossi": 1,
-     "precisione_tiri": 0.422,
-     "over_25": 0.556,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.222,
-     "a_secco": 0.222,
-     "con_avanzate": 1,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
+     "partite": 10,
+     "gol_fatti": 1.7,
+     "gol_subiti": 1.5,
+     "tiri": 9.1,
+     "in_porta": 3.7,
+     "in_porta_subiti": 4.1,
+     "tiri_subiti": 13.1,
+     "corner": 2.9,
+     "corner_subiti": 3.7,
+     "falli": 13.2,
+     "cartellini": 2.4,
+     "gialli": 22,
+     "rossi": 2,
+     "precisione_tiri": 0.407,
+     "over_25": 0.5,
+     "gol_gol": 0.6,
+     "clean_sheet": 0.2,
+     "a_secco": 0.3,
+     "con_avanzate": 2,
+     "possesso": 20.4,
+     "passaggi": 166.0,
+     "precisione_passaggi": 0.765,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 22.0,
+     "contrasti": 26.0,
      "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
+     "respinte": 14.5,
+     "parate": 2.5,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 1.0
     },
     "trasferta": {
-     "partite": 11,
-     "gol_fatti": 1.09,
-     "gol_subiti": 2.09,
-     "tiri": 9.2,
-     "in_porta": 3.2,
-     "in_porta_subiti": 4.3,
-     "tiri_subiti": 13.1,
-     "corner": 3.5,
-     "corner_subiti": 4.9,
-     "falli": 13.7,
-     "cartellini": 2.8,
-     "gialli": 29,
+     "partite": 10,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.3,
+     "tiri": 8.4,
+     "in_porta": 2.9,
+     "in_porta_subiti": 4.6,
+     "tiri_subiti": 13.6,
+     "corner": 3.2,
+     "corner_subiti": 5.2,
+     "falli": 14.1,
+     "cartellini": 2.9,
+     "gialli": 27,
      "rossi": 2,
-     "precisione_tiri": 0.347,
-     "over_25": 0.727,
-     "gol_gol": 0.273,
-     "clean_sheet": 0.182,
-     "a_secco": 0.545,
+     "precisione_tiri": 0.345,
+     "over_25": 0.8,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.1,
+     "a_secco": 0.6,
      "con_avanzate": 0,
      "possesso": 0.0,
      "passaggi": 0.0,
@@ -87039,8 +88991,8 @@
     "gol_subiti": 0.5,
     "gol_totali": 23,
     "in_porta_totali": 108,
-    "attesi_dai_tiri": 32.1,
-    "scarto_conversione": -9.1,
+    "attesi_dai_tiri": 32.3,
+    "scarto_conversione": -9.3,
     "vantaggio_casa": -0.88,
     "casa": {
      "partite": 9,
@@ -87110,44 +89062,44 @@
    "forma_casa": {
     "squadra": "Levadeiakos",
     "partite": 6,
-    "gol_fatti": 1.83,
+    "gol_fatti": 1.0,
     "gol_subiti": 2.17,
-    "gol_totali": 11,
-    "in_porta_totali": 23,
-    "attesi_dai_tiri": 6.8,
-    "scarto_conversione": 4.2,
-    "vantaggio_casa": 1.67,
+    "gol_totali": 6,
+    "in_porta_totali": 16,
+    "attesi_dai_tiri": 4.8,
+    "scarto_conversione": 1.2,
+    "vantaggio_casa": 0.0,
     "casa": {
      "partite": 3,
-     "gol_fatti": 2.67,
+     "gol_fatti": 1.0,
      "gol_subiti": 2.0,
-     "tiri": 10.0,
-     "in_porta": 5.3,
-     "in_porta_subiti": 3.3,
-     "tiri_subiti": 7.3,
-     "corner": 2.7,
-     "corner_subiti": 1.7,
-     "falli": 11.0,
-     "cartellini": 2.0,
+     "tiri": 8.7,
+     "in_porta": 3.0,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 8.3,
+     "corner": 3.3,
+     "corner_subiti": 2.0,
+     "falli": 12.0,
+     "cartellini": 2.3,
      "gialli": 6,
-     "rossi": 0,
-     "precisione_tiri": 0.533,
-     "over_25": 0.667,
-     "gol_gol": 0.667,
+     "rossi": 1,
+     "precisione_tiri": 0.346,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
      "clean_sheet": 0.0,
-     "a_secco": 0.333,
-     "con_avanzate": 1,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
+     "a_secco": 0.667,
+     "con_avanzate": 2,
+     "possesso": 20.4,
+     "passaggi": 166.0,
+     "precisione_passaggi": 0.765,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 22.0,
+     "contrasti": 26.0,
      "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
+     "respinte": 14.5,
+     "parate": 2.5,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 1.0
     },
     "trasferta": {
      "partite": 3,
@@ -87189,8 +89141,8 @@
     "gol_subiti": 0.5,
     "gol_totali": 6,
     "in_porta_totali": 34,
-    "attesi_dai_tiri": 10.1,
-    "scarto_conversione": -4.1,
+    "attesi_dai_tiri": 10.2,
+    "scarto_conversione": -4.2,
     "vantaggio_casa": 0.0,
     "casa": {
      "partite": 3,
@@ -87260,27 +89212,27 @@
    "incrocio": [
     {
      "voce": "Gol",
-     "attacco": 1.89,
+     "attacco": 1.7,
      "difesa": 0.64,
-     "media": 1.26
+     "media": 1.17
     },
     {
      "voce": "Tiri",
-     "attacco": 9.2,
+     "attacco": 9.1,
      "difesa": 6.3,
-     "media": 7.8
+     "media": 7.7
     },
     {
      "voce": "Tiri in porta",
-     "attacco": 3.9,
+     "attacco": 3.7,
      "difesa": 2.7,
-     "media": 3.3
+     "media": 3.2
     },
     {
      "voce": "Calci d'angolo",
-     "attacco": 2.7,
+     "attacco": 2.9,
      "difesa": 1.9,
-     "media": 2.3
+     "media": 2.4
     }
    ],
    "precedenti": [
@@ -87315,1042 +89267,70 @@
    ]
   },
   {
-   "id": "ofi-crete-asteras-tripolis",
-   "casa": "OFI Crete",
-   "ospite": "Asteras Tripolis",
-   "data": "2026-09-19",
-   "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.4739,
-    0.2865,
-    0.2397
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "super-league-grecia",
-   "dettaglio": {
-    "gol_attesi_casa": 1.6,
-    "gol_attesi_ospite": 1.08,
-    "matrice": [
-     [
-      0.08704,
-      0.05582,
-      0.04028,
-      0.01456,
-      0.00394,
-      0.00086
-     ],
-     [
-      0.09092,
-      0.13711,
-      0.06429,
-      0.02323,
-      0.0063,
-      0.00137
-     ],
-     [
-      0.08732,
-      0.09467,
-      0.05131,
-      0.01854,
-      0.00503,
-      0.00109
-     ],
-     [
-      0.04646,
-      0.05037,
-      0.0273,
-      0.00987,
-      0.00267,
-      0.00058
-     ],
-     [
-      0.01854,
-      0.0201,
-      0.0109,
-      0.00394,
-      0.00107,
-      0.00023
-     ],
-     [
-      0.00592,
-      0.00642,
-      0.00348,
-      0.00126,
-      0.00034,
-      7e-05
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "1-1",
-      "p": 0.1371
-     },
-     {
-      "risultato": "2-1",
-      "p": 0.0947
-     },
-     {
-      "risultato": "1-0",
-      "p": 0.0909
-     },
-     {
-      "risultato": "2-0",
-      "p": 0.0873
-     },
-     {
-      "risultato": "0-0",
-      "p": 0.087
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.4739,
-      "X": 0.2865,
-      "2": 0.2397
-     },
-     "btts": {
-      "si": 0.5462,
-      "no": 0.4538
-     },
-     "ou_1.5": {
-      "over": 0.7662,
-      "under": 0.2338
-     },
-     "ou_2.5": {
-      "over": 0.5015,
-      "under": 0.4985
-     },
-     "ou_3.5": {
-      "over": 0.2815,
-      "under": 0.7185
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "OFI Crete",
-    "partite": 20,
-    "gol_fatti": 1.55,
-    "gol_subiti": 1.5,
-    "gol_totali": 31,
-    "in_porta_totali": 68,
-    "attesi_dai_tiri": 20.2,
-    "scarto_conversione": 10.8,
-    "vantaggio_casa": 0.5,
-    "casa": {
-     "partite": 10,
-     "gol_fatti": 1.8,
-     "gol_subiti": 1.0,
-     "tiri": 11.2,
-     "in_porta": 3.7,
-     "in_porta_subiti": 4.0,
-     "tiri_subiti": 11.9,
-     "corner": 3.0,
-     "corner_subiti": 4.5,
-     "falli": 14.0,
-     "cartellini": 1.5,
-     "gialli": 14,
-     "rossi": 1,
-     "precisione_tiri": 0.33,
-     "over_25": 0.5,
-     "gol_gol": 0.2,
-     "clean_sheet": 0.5,
-     "a_secco": 0.3,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.3,
-     "gol_subiti": 2.0,
-     "tiri": 8.8,
-     "in_porta": 3.4,
-     "in_porta_subiti": 6.9,
-     "tiri_subiti": 18.1,
-     "corner": 2.4,
-     "corner_subiti": 5.8,
-     "falli": 13.0,
-     "cartellini": 3.1,
-     "gialli": 27,
-     "rossi": 1,
-     "precisione_tiri": 0.392,
-     "over_25": 0.7,
-     "gol_gol": 0.8,
-     "clean_sheet": 0.1,
-     "a_secco": 0.1,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "stat_ospite": {
-    "squadra": "Asteras Tripolis",
-    "partite": 20,
-    "gol_fatti": 1.05,
-    "gol_subiti": 1.25,
-    "gol_totali": 21,
-    "in_porta_totali": 61,
-    "attesi_dai_tiri": 18.1,
-    "scarto_conversione": 2.9,
-    "vantaggio_casa": 0.49,
-    "casa": {
-     "partite": 11,
-     "gol_fatti": 1.27,
-     "gol_subiti": 1.09,
-     "tiri": 11.1,
-     "in_porta": 3.1,
-     "in_porta_subiti": 3.5,
-     "tiri_subiti": 8.9,
-     "corner": 5.2,
-     "corner_subiti": 3.8,
-     "falli": 12.7,
-     "cartellini": 2.4,
-     "gialli": 24,
-     "rossi": 2,
-     "precisione_tiri": 0.279,
-     "over_25": 0.455,
-     "gol_gol": 0.455,
-     "clean_sheet": 0.273,
-     "a_secco": 0.364,
-     "con_avanzate": 2,
-     "possesso": 25.1,
-     "passaggi": 194.0,
-     "precisione_passaggi": 0.761,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 17.0,
-     "intercetti": 0.0,
-     "respinte": 14.5,
-     "parate": 3.0,
-     "fuorigioco": 2.0,
-     "tiri_respinti": 1.0
-    },
-    "trasferta": {
-     "partite": 9,
-     "gol_fatti": 0.78,
-     "gol_subiti": 1.44,
-     "tiri": 8.8,
-     "in_porta": 3.0,
-     "in_porta_subiti": 5.2,
-     "tiri_subiti": 14.3,
-     "corner": 4.1,
-     "corner_subiti": 5.0,
-     "falli": 13.7,
-     "cartellini": 2.4,
-     "gialli": 21,
-     "rossi": 1,
-     "precisione_tiri": 0.342,
-     "over_25": 0.444,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.222,
-     "a_secco": 0.333,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_casa": {
-    "squadra": "OFI Crete",
-    "partite": 6,
-    "gol_fatti": 1.5,
-    "gol_subiti": 1.83,
-    "gol_totali": 9,
-    "in_porta_totali": 15,
-    "attesi_dai_tiri": 4.5,
-    "scarto_conversione": 4.5,
-    "vantaggio_casa": 0.33,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 1.67,
-     "gol_subiti": 1.0,
-     "tiri": 13.3,
-     "in_porta": 2.3,
-     "in_porta_subiti": 2.3,
-     "tiri_subiti": 12.0,
-     "corner": 4.0,
-     "corner_subiti": 4.0,
-     "falli": 12.3,
-     "cartellini": 2.0,
-     "gialli": 6,
-     "rossi": 0,
-     "precisione_tiri": 0.175,
-     "over_25": 0.333,
-     "gol_gol": 0.333,
-     "clean_sheet": 0.333,
-     "a_secco": 0.333,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 1.33,
-     "gol_subiti": 2.67,
-     "tiri": 12.5,
-     "in_porta": 4.0,
-     "in_porta_subiti": 6.0,
-     "tiri_subiti": 16.5,
-     "corner": 3.0,
-     "corner_subiti": 5.0,
-     "falli": 14.0,
-     "cartellini": 5.0,
-     "gialli": 9,
-     "rossi": 1,
-     "precisione_tiri": 0.32,
-     "over_25": 1.0,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_ospite": {
-    "squadra": "Asteras Tripolis",
-    "partite": 6,
-    "gol_fatti": 0.67,
-    "gol_subiti": 1.17,
-    "gol_totali": 4,
-    "in_porta_totali": 20,
-    "attesi_dai_tiri": 5.9,
-    "scarto_conversione": -1.9,
-    "vantaggio_casa": -1.25,
-    "casa": {
-     "partite": 4,
-     "gol_fatti": 0.25,
-     "gol_subiti": 0.75,
-     "tiri": 10.5,
-     "in_porta": 2.0,
-     "in_porta_subiti": 2.8,
-     "tiri_subiti": 6.8,
-     "corner": 6.2,
-     "corner_subiti": 2.5,
-     "falli": 8.0,
-     "cartellini": 3.0,
-     "gialli": 11,
-     "rossi": 1,
-     "precisione_tiri": 0.19,
-     "over_25": 0.0,
-     "gol_gol": 0.0,
-     "clean_sheet": 0.5,
-     "a_secco": 0.75,
-     "con_avanzate": 2,
-     "possesso": 25.1,
-     "passaggi": 194.0,
-     "precisione_passaggi": 0.761,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 17.0,
-     "intercetti": 0.0,
-     "respinte": 14.5,
-     "parate": 3.0,
-     "fuorigioco": 2.0,
-     "tiri_respinti": 1.0
-    },
-    "trasferta": {
-     "partite": 2,
-     "gol_fatti": 1.5,
-     "gol_subiti": 2.0,
-     "tiri": 12.5,
-     "in_porta": 6.0,
-     "in_porta_subiti": 5.5,
-     "tiri_subiti": 11.5,
-     "corner": 5.0,
-     "corner_subiti": 3.0,
-     "falli": 14.5,
-     "cartellini": 3.0,
-     "gialli": 5,
-     "rossi": 1,
-     "precisione_tiri": 0.48,
-     "over_25": 1.0,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.8,
-     "difesa": 1.44,
-     "media": 1.62
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 11.2,
-     "difesa": 14.3,
-     "media": 12.8
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 3.7,
-     "difesa": 5.2,
-     "media": 4.5
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 3.0,
-     "difesa": 5.0,
-     "media": 4.0
-    }
-   ],
-   "precedenti": [
-    {
-     "data": "2026-01-11",
-     "casa": "OFI Crete",
-     "ospite": "Asteras Tripolis",
-     "gol_casa": 4,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2025-11-03",
-     "casa": "Asteras Tripolis",
-     "ospite": "OFI Crete",
-     "gol_casa": 3,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2025-04-26",
-     "casa": "OFI Crete",
-     "ospite": "Asteras Tripolis",
-     "gol_casa": 0,
-     "gol_ospite": 2
-    },
-    {
-     "data": "2025-04-13",
-     "casa": "Asteras Tripolis",
-     "ospite": "OFI Crete",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2025-02-15",
-     "casa": "OFI Crete",
-     "ospite": "Asteras Tripolis",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2024-11-04",
-     "casa": "Asteras Tripolis",
-     "ospite": "OFI Crete",
-     "gol_casa": 3,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "panetolikos-paok",
-   "casa": "Panetolikos",
-   "ospite": "PAOK",
-   "data": "2026-09-19",
-   "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.1184,
-    0.2472,
-    0.6345
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "super-league-grecia",
-   "dettaglio": {
-    "gol_attesi_casa": 0.7,
-    "gol_attesi_ospite": 1.86,
-    "matrice": [
-     [
-      0.09266,
-      0.12761,
-      0.13342,
-      0.08281,
-      0.03855,
-      0.01436
-     ],
-     [
-      0.03837,
-      0.11637,
-      0.09373,
-      0.05818,
-      0.02708,
-      0.01009
-     ],
-     [
-      0.01899,
-      0.03537,
-      0.03293,
-      0.02044,
-      0.00951,
-      0.00354
-     ],
-     [
-      0.00445,
-      0.00828,
-      0.00771,
-      0.00479,
-      0.00223,
-      0.00083
-     ],
-     [
-      0.00078,
-      0.00145,
-      0.00135,
-      0.00084,
-      0.00039,
-      0.00015
-     ],
-     [
-      0.00011,
-      0.0002,
-      0.00019,
-      0.00012,
-      5e-05,
-      2e-05
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "0-2",
-      "p": 0.1334
-     },
-     {
-      "risultato": "0-1",
-      "p": 0.1276
-     },
-     {
-      "risultato": "1-1",
-      "p": 0.1164
-     },
-     {
-      "risultato": "1-2",
-      "p": 0.0937
-     },
-     {
-      "risultato": "0-0",
-      "p": 0.0927
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.1184,
-      "X": 0.2472,
-      "2": 0.6345
-     },
-     "btts": {
-      "si": 0.442,
-      "no": 0.558
-     },
-     "ou_1.5": {
-      "over": 0.7414,
-      "under": 0.2586
-     },
-     "ou_2.5": {
-      "over": 0.4726,
-      "under": 0.5274
-     },
-     "ou_3.5": {
-      "over": 0.2562,
-      "under": 0.7438
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "Panetolikos",
-    "partite": 20,
-    "gol_fatti": 1.35,
-    "gol_subiti": 1.0,
-    "gol_totali": 27,
-    "in_porta_totali": 74,
-    "attesi_dai_tiri": 22.0,
-    "scarto_conversione": 5.0,
-    "vantaggio_casa": 0.3,
-    "casa": {
-     "partite": 10,
-     "gol_fatti": 1.5,
-     "gol_subiti": 1.1,
-     "tiri": 13.8,
-     "in_porta": 4.5,
-     "in_porta_subiti": 3.5,
-     "tiri_subiti": 9.5,
-     "corner": 5.2,
-     "corner_subiti": 3.4,
-     "falli": 13.7,
-     "cartellini": 2.2,
-     "gialli": 21,
-     "rossi": 1,
-     "precisione_tiri": 0.326,
-     "over_25": 0.5,
-     "gol_gol": 0.7,
-     "clean_sheet": 0.2,
-     "a_secco": 0.2,
-     "con_avanzate": 1,
-     "possesso": 44.2,
-     "passaggi": 312.0,
-     "precisione_passaggi": 0.75,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 10.0,
-     "intercetti": 0.0,
-     "respinte": 28.0,
-     "parate": 3.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 9.0
-    },
-    "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.2,
-     "gol_subiti": 0.9,
-     "tiri": 7.0,
-     "in_porta": 2.9,
-     "in_porta_subiti": 4.5,
-     "tiri_subiti": 13.9,
-     "corner": 2.1,
-     "corner_subiti": 4.3,
-     "falli": 14.2,
-     "cartellini": 2.4,
-     "gialli": 24,
-     "rossi": 0,
-     "precisione_tiri": 0.414,
-     "over_25": 0.4,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.3,
-     "a_secco": 0.4,
-     "con_avanzate": 1,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 13.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "stat_ospite": {
-    "squadra": "PAOK",
-    "partite": 20,
-    "gol_fatti": 1.8,
-    "gol_subiti": 0.7,
-    "gol_totali": 36,
-    "in_porta_totali": 84,
-    "attesi_dai_tiri": 25.0,
-    "scarto_conversione": 11.0,
-    "vantaggio_casa": 0.8,
-    "casa": {
-     "partite": 10,
-     "gol_fatti": 2.2,
-     "gol_subiti": 0.3,
-     "tiri": 12.2,
-     "in_porta": 5.1,
-     "in_porta_subiti": 1.8,
-     "tiri_subiti": 7.6,
-     "corner": 5.7,
-     "corner_subiti": 3.3,
-     "falli": 13.5,
-     "cartellini": 1.4,
-     "gialli": 14,
-     "rossi": 0,
-     "precisione_tiri": 0.418,
-     "over_25": 0.5,
-     "gol_gol": 0.3,
-     "clean_sheet": 0.7,
-     "a_secco": 0.2,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.4,
-     "gol_subiti": 1.1,
-     "tiri": 11.6,
-     "in_porta": 3.3,
-     "in_porta_subiti": 3.7,
-     "tiri_subiti": 12.9,
-     "corner": 4.4,
-     "corner_subiti": 4.8,
-     "falli": 12.5,
-     "cartellini": 1.9,
-     "gialli": 19,
-     "rossi": 0,
-     "precisione_tiri": 0.284,
-     "over_25": 0.6,
-     "gol_gol": 0.6,
-     "clean_sheet": 0.3,
-     "a_secco": 0.3,
-     "con_avanzate": 1,
-     "possesso": 54.0,
-     "passaggi": 398.0,
-     "precisione_passaggi": 0.786,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 18.0,
-     "intercetti": 0.0,
-     "respinte": 29.0,
-     "parate": 1.0,
-     "fuorigioco": 2.0,
-     "tiri_respinti": 1.0
-    }
-   },
-   "forma_casa": {
-    "squadra": "Panetolikos",
-    "partite": 6,
-    "gol_fatti": 1.67,
-    "gol_subiti": 0.83,
-    "gol_totali": 10,
-    "in_porta_totali": 24,
-    "attesi_dai_tiri": 7.1,
-    "scarto_conversione": 2.9,
-    "vantaggio_casa": 0.25,
-    "casa": {
-     "partite": 4,
-     "gol_fatti": 1.75,
-     "gol_subiti": 1.0,
-     "tiri": 15.0,
-     "in_porta": 5.2,
-     "in_porta_subiti": 4.5,
-     "tiri_subiti": 10.8,
-     "corner": 5.2,
-     "corner_subiti": 3.5,
-     "falli": 17.0,
-     "cartellini": 1.5,
-     "gialli": 6,
-     "rossi": 0,
-     "precisione_tiri": 0.35,
-     "over_25": 0.5,
-     "gol_gol": 0.75,
-     "clean_sheet": 0.25,
-     "a_secco": 0.0,
-     "con_avanzate": 1,
-     "possesso": 44.2,
-     "passaggi": 312.0,
-     "precisione_passaggi": 0.75,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 10.0,
-     "intercetti": 0.0,
-     "respinte": 28.0,
-     "parate": 3.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 9.0
-    },
-    "trasferta": {
-     "partite": 2,
-     "gol_fatti": 1.5,
-     "gol_subiti": 0.5,
-     "tiri": 6.0,
-     "in_porta": 1.5,
-     "in_porta_subiti": 2.0,
-     "tiri_subiti": 7.0,
-     "corner": 1.0,
-     "corner_subiti": 2.0,
-     "falli": 7.0,
-     "cartellini": 2.5,
-     "gialli": 5,
-     "rossi": 0,
-     "precisione_tiri": 0.25,
-     "over_25": 0.0,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.5,
-     "a_secco": 0.0,
-     "con_avanzate": 1,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 13.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_ospite": {
-    "squadra": "PAOK",
-    "partite": 6,
-    "gol_fatti": 2.17,
-    "gol_subiti": 1.0,
-    "gol_totali": 13,
-    "in_porta_totali": 26,
-    "attesi_dai_tiri": 7.7,
-    "scarto_conversione": 5.3,
-    "vantaggio_casa": 1.0,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 2.67,
-     "gol_subiti": 0.67,
-     "tiri": 11.7,
-     "in_porta": 5.0,
-     "in_porta_subiti": 3.3,
-     "tiri_subiti": 12.7,
-     "corner": 4.7,
-     "corner_subiti": 5.0,
-     "falli": 14.7,
-     "cartellini": 1.3,
-     "gialli": 4,
-     "rossi": 0,
-     "precisione_tiri": 0.429,
-     "over_25": 0.667,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.333,
-     "a_secco": 0.0,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 1.67,
-     "gol_subiti": 1.33,
-     "tiri": 13.0,
-     "in_porta": 3.7,
-     "in_porta_subiti": 5.7,
-     "tiri_subiti": 19.3,
-     "corner": 4.3,
-     "corner_subiti": 5.7,
-     "falli": 12.0,
-     "cartellini": 3.0,
-     "gialli": 9,
-     "rossi": 0,
-     "precisione_tiri": 0.282,
-     "over_25": 0.667,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 1,
-     "possesso": 54.0,
-     "passaggi": 398.0,
-     "precisione_passaggi": 0.786,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 18.0,
-     "intercetti": 0.0,
-     "respinte": 29.0,
-     "parate": 1.0,
-     "fuorigioco": 2.0,
-     "tiri_respinti": 1.0
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.5,
-     "difesa": 1.1,
-     "media": 1.3
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 13.8,
-     "difesa": 12.9,
-     "media": 13.4
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 4.5,
-     "difesa": 3.7,
-     "media": 4.1
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 5.2,
-     "difesa": 4.8,
-     "media": 5.0
-    }
-   ],
-   "precedenti": [
-    {
-     "data": "2026-01-10",
-     "casa": "Panetolikos",
-     "ospite": "PAOK",
-     "gol_casa": 0,
-     "gol_ospite": 3
-    },
-    {
-     "data": "2025-09-20",
-     "casa": "PAOK",
-     "ospite": "Panetolikos",
-     "gol_casa": 0,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2024-12-15",
-     "casa": "Panetolikos",
-     "ospite": "PAOK",
-     "gol_casa": 0,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2024-08-25",
-     "casa": "PAOK",
-     "ospite": "Panetolikos",
-     "gol_casa": 2,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2024-02-25",
-     "casa": "Panetolikos",
-     "ospite": "PAOK",
-     "gol_casa": 1,
-     "gol_ospite": 3
-    },
-    {
-     "data": "2023-11-12",
-     "casa": "PAOK",
-     "ospite": "Panetolikos",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    }
-   ]
-  },
-  {
    "id": "volos-nfc-aek",
    "casa": "Volos NFC",
    "ospite": "AEK",
-   "data": "2026-09-19",
-   "ora": "20:00",
+   "data": "2026-09-20",
+   "ora": "17:00",
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.0694,
-    0.1961,
-    0.7346
+    0.0727,
+    0.2029,
+    0.7245
    ],
    "margine": null,
    "margine_migliore": null,
    "campionato": "super-league-grecia",
    "dettaglio": {
-    "gol_attesi_casa": 0.56,
-    "gol_attesi_ospite": 2.18,
+    "gol_attesi_casa": 0.57,
+    "gol_attesi_ospite": 2.14,
     "matrice": [
      [
-      0.07678,
-      0.12811,
-      0.15302,
-      0.11115,
-      0.06055,
-      0.02639
+      0.07975,
+      0.12913,
+      0.15215,
+      0.10844,
+      0.05796,
+      0.02479
      ],
      [
-      0.02397,
-      0.09143,
-      0.08618,
-      0.0626,
-      0.0341,
-      0.01486
+      0.02488,
+      0.09457,
+      0.08701,
+      0.06201,
+      0.03315,
+      0.01418
      ],
      [
-      0.01022,
-      0.02227,
-      0.02427,
-      0.01763,
-      0.0096,
-      0.00419
+      0.01088,
+      0.02327,
+      0.02488,
+      0.01773,
+      0.00948,
+      0.00405
      ],
      [
-      0.00192,
-      0.00418,
-      0.00456,
-      0.00331,
-      0.0018,
-      0.00079
+      0.00207,
+      0.00444,
+      0.00474,
+      0.00338,
+      0.00181,
+      0.00077
      ],
      [
-      0.00027,
-      0.00059,
-      0.00064,
-      0.00047,
-      0.00025,
+      0.0003,
+      0.00063,
+      0.00068,
+      0.00048,
+      0.00026,
       0.00011
      ],
      [
       3e-05,
       7e-05,
-      7e-05,
-      5e-05,
+      8e-05,
+      6e-05,
       3e-05,
       1e-05
      ]
@@ -88358,46 +89338,46 @@
     "risultati_probabili": [
      {
       "risultato": "0-2",
-      "p": 0.153
+      "p": 0.1521
      },
      {
       "risultato": "0-1",
-      "p": 0.1281
+      "p": 0.1291
      },
      {
       "risultato": "0-3",
-      "p": 0.1112
+      "p": 0.1084
      },
      {
       "risultato": "1-1",
-      "p": 0.0914
+      "p": 0.0946
      },
      {
       "risultato": "1-2",
-      "p": 0.0862
+      "p": 0.087
      }
     ],
     "mercati": {
      "1x2": {
-      "1": 0.0694,
-      "X": 0.1961,
-      "2": 0.7346
+      "1": 0.0727,
+      "X": 0.2029,
+      "2": 0.7245
      },
      "btts": {
-      "si": 0.3942,
-      "no": 0.6058
+      "si": 0.3974,
+      "no": 0.6026
      },
      "ou_1.5": {
-      "over": 0.7711,
-      "under": 0.2289
+      "over": 0.7662,
+      "under": 0.2338
      },
      "ou_2.5": {
-      "over": 0.5165,
-      "under": 0.4835
+      "over": 0.5086,
+      "under": 0.4914
      },
      "ou_3.5": {
-      "over": 0.295,
-      "under": 0.705
+      "over": 0.2878,
+      "under": 0.7122
      }
     }
    },
@@ -88409,7 +89389,7 @@
     "gol_totali": 17,
     "in_porta_totali": 57,
     "attesi_dai_tiri": 17.0,
-    "scarto_conversione": 0.0,
+    "scarto_conversione": -0.0,
     "vantaggio_casa": 0.13,
     "casa": {
      "partite": 11,
@@ -88479,31 +89459,31 @@
    "stat_ospite": {
     "squadra": "AEK",
     "partite": 20,
-    "gol_fatti": 2.1,
+    "gol_fatti": 2.05,
     "gol_subiti": 0.5,
-    "gol_totali": 42,
+    "gol_totali": 41,
     "in_porta_totali": 90,
-    "attesi_dai_tiri": 26.8,
-    "scarto_conversione": 15.2,
-    "vantaggio_casa": 1.39,
+    "attesi_dai_tiri": 26.9,
+    "scarto_conversione": 14.1,
+    "vantaggio_casa": 1.5,
     "casa": {
-     "partite": 11,
-     "gol_fatti": 2.73,
-     "gol_subiti": 0.36,
-     "tiri": 14.1,
+     "partite": 10,
+     "gol_fatti": 2.8,
+     "gol_subiti": 0.3,
+     "tiri": 14.0,
      "in_porta": 5.4,
      "in_porta_subiti": 2.5,
-     "tiri_subiti": 9.3,
-     "corner": 4.2,
-     "corner_subiti": 2.5,
-     "falli": 15.5,
-     "cartellini": 2.3,
-     "gialli": 25,
+     "tiri_subiti": 9.0,
+     "corner": 4.1,
+     "corner_subiti": 2.4,
+     "falli": 15.0,
+     "cartellini": 2.1,
+     "gialli": 21,
      "rossi": 0,
-     "precisione_tiri": 0.381,
-     "over_25": 0.727,
-     "gol_gol": 0.364,
-     "clean_sheet": 0.636,
+     "precisione_tiri": 0.386,
+     "over_25": 0.7,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.7,
      "a_secco": 0.0,
      "con_avanzate": 1,
      "possesso": 0.0,
@@ -88519,36 +89499,36 @@
      "tiri_respinti": 0.0
     },
     "trasferta": {
-     "partite": 9,
-     "gol_fatti": 1.33,
-     "gol_subiti": 0.67,
-     "tiri": 12.7,
-     "in_porta": 3.4,
+     "partite": 10,
+     "gol_fatti": 1.3,
+     "gol_subiti": 0.7,
+     "tiri": 12.3,
+     "in_porta": 3.6,
      "in_porta_subiti": 3.1,
-     "tiri_subiti": 9.3,
-     "corner": 6.1,
-     "corner_subiti": 4.6,
-     "falli": 15.2,
-     "cartellini": 3.0,
-     "gialli": 27,
+     "tiri_subiti": 9.8,
+     "corner": 5.7,
+     "corner_subiti": 4.2,
+     "falli": 15.1,
+     "cartellini": 2.9,
+     "gialli": 29,
      "rossi": 0,
-     "precisione_tiri": 0.272,
-     "over_25": 0.333,
-     "gol_gol": 0.444,
-     "clean_sheet": 0.556,
-     "a_secco": 0.222,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
+     "precisione_tiri": 0.293,
+     "over_25": 0.3,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.2,
+     "con_avanzate": 1,
+     "possesso": 65.4,
+     "passaggi": 551.0,
+     "precisione_passaggi": 0.853,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 0.0,
+     "contrasti": 7.0,
      "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
+     "respinte": 17.0,
+     "parate": 2.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.0
     }
    },
    "forma_casa": {
@@ -88629,13 +89609,13 @@
    "forma_ospite": {
     "squadra": "AEK",
     "partite": 6,
-    "gol_fatti": 2.17,
-    "gol_subiti": 0.5,
-    "gol_totali": 13,
-    "in_porta_totali": 29,
-    "attesi_dai_tiri": 8.6,
-    "scarto_conversione": 4.4,
-    "vantaggio_casa": 2.5,
+    "gol_fatti": 2.33,
+    "gol_subiti": 0.67,
+    "gol_totali": 14,
+    "in_porta_totali": 30,
+    "attesi_dai_tiri": 9.0,
+    "scarto_conversione": 5.0,
+    "vantaggio_casa": 2.0,
     "casa": {
      "partite": 4,
      "gol_fatti": 3.0,
@@ -88670,49 +89650,49 @@
     },
     "trasferta": {
      "partite": 2,
-     "gol_fatti": 0.5,
-     "gol_subiti": 0.5,
-     "tiri": 13.5,
-     "in_porta": 4.0,
-     "in_porta_subiti": 4.5,
-     "tiri_subiti": 12.0,
-     "corner": 6.0,
-     "corner_subiti": 5.0,
-     "falli": 15.0,
-     "cartellini": 3.5,
-     "gialli": 7,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.0,
+     "tiri": 11.0,
+     "in_porta": 4.5,
+     "in_porta_subiti": 3.5,
+     "tiri_subiti": 14.5,
+     "corner": 3.5,
+     "corner_subiti": 4.5,
+     "falli": 12.5,
+     "cartellini": 1.5,
+     "gialli": 3,
      "rossi": 0,
-     "precisione_tiri": 0.296,
+     "precisione_tiri": 0.409,
      "over_25": 0.0,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.5,
-     "a_secco": 0.5,
-     "con_avanzate": 0,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 65.4,
+     "passaggi": 551.0,
+     "precisione_passaggi": 0.853,
      "precisione_cross": 0.0,
      "precisione_lanci": 0.0,
-     "contrasti": 0.0,
+     "contrasti": 7.0,
      "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
+     "respinte": 17.0,
+     "parate": 2.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.0
     }
    },
    "incrocio": [
     {
      "voce": "Gol",
      "attacco": 0.91,
-     "difesa": 0.67,
-     "media": 0.79
+     "difesa": 0.7,
+     "media": 0.8
     },
     {
      "voce": "Tiri",
      "attacco": 9.8,
-     "difesa": 9.3,
-     "media": 9.6
+     "difesa": 9.8,
+     "media": 9.8
     },
     {
      "voce": "Tiri in porta",
@@ -88723,8 +89703,8 @@
     {
      "voce": "Calci d'angolo",
      "attacco": 3.6,
-     "difesa": 4.6,
-     "media": 4.1
+     "difesa": 4.2,
+     "media": 3.9
     }
    ],
    "precedenti": [
@@ -88769,6 +89749,1421 @@
      "ospite": "AEK",
      "gol_casa": 2,
      "gol_ospite": 3
+    }
+   ]
+  },
+  {
+   "id": "ofi-crete-asteras-tripolis",
+   "casa": "OFI Crete",
+   "ospite": "Asteras Tripolis",
+   "data": "2026-09-20",
+   "ora": "18:00",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.482,
+    0.2868,
+    0.2312
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 1.61,
+    "gol_attesi_ospite": 1.06,
+    "matrice": [
+     [
+      0.08826,
+      0.05423,
+      0.03895,
+      0.01379,
+      0.00366,
+      0.00078
+     ],
+     [
+      0.09215,
+      0.13731,
+      0.06273,
+      0.0222,
+      0.00589,
+      0.00125
+     ],
+     [
+      0.08962,
+      0.09514,
+      0.05051,
+      0.01787,
+      0.00474,
+      0.00101
+     ],
+     [
+      0.0481,
+      0.05107,
+      0.02711,
+      0.00959,
+      0.00255,
+      0.00054
+     ],
+     [
+      0.01937,
+      0.02056,
+      0.01091,
+      0.00386,
+      0.00103,
+      0.00022
+     ],
+     [
+      0.00624,
+      0.00662,
+      0.00352,
+      0.00124,
+      0.00033,
+      7e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1373
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0951
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.0922
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.0896
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.0883
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.482,
+      "X": 0.2868,
+      "2": 0.2312
+     },
+     "btts": {
+      "si": 0.5426,
+      "no": 0.4574
+     },
+     "ou_1.5": {
+      "over": 0.7654,
+      "under": 0.2346
+     },
+     "ou_2.5": {
+      "over": 0.4995,
+      "under": 0.5005
+     },
+     "ou_3.5": {
+      "over": 0.2797,
+      "under": 0.7203
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "OFI Crete",
+    "partite": 20,
+    "gol_fatti": 1.45,
+    "gol_subiti": 1.5,
+    "gol_totali": 29,
+    "in_porta_totali": 61,
+    "attesi_dai_tiri": 18.2,
+    "scarto_conversione": 10.8,
+    "vantaggio_casa": 0.3,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.6,
+     "gol_subiti": 1.0,
+     "tiri": 9.4,
+     "in_porta": 3.0,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 10.4,
+     "corner": 2.8,
+     "corner_subiti": 3.9,
+     "falli": 12.5,
+     "cartellini": 1.6,
+     "gialli": 15,
+     "rossi": 1,
+     "precisione_tiri": 0.319,
+     "over_25": 0.4,
+     "gol_gol": 0.2,
+     "clean_sheet": 0.5,
+     "a_secco": 0.3,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.3,
+     "gol_subiti": 2.0,
+     "tiri": 8.8,
+     "in_porta": 3.4,
+     "in_porta_subiti": 6.9,
+     "tiri_subiti": 18.1,
+     "corner": 2.4,
+     "corner_subiti": 5.8,
+     "falli": 13.0,
+     "cartellini": 3.1,
+     "gialli": 27,
+     "rossi": 1,
+     "precisione_tiri": 0.392,
+     "over_25": 0.7,
+     "gol_gol": 0.8,
+     "clean_sheet": 0.1,
+     "a_secco": 0.1,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Asteras Tripolis",
+    "partite": 20,
+    "gol_fatti": 1.05,
+    "gol_subiti": 1.25,
+    "gol_totali": 21,
+    "in_porta_totali": 61,
+    "attesi_dai_tiri": 18.2,
+    "scarto_conversione": 2.8,
+    "vantaggio_casa": 0.49,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.27,
+     "gol_subiti": 1.09,
+     "tiri": 11.1,
+     "in_porta": 3.1,
+     "in_porta_subiti": 3.5,
+     "tiri_subiti": 8.9,
+     "corner": 5.2,
+     "corner_subiti": 3.8,
+     "falli": 12.7,
+     "cartellini": 2.4,
+     "gialli": 24,
+     "rossi": 2,
+     "precisione_tiri": 0.279,
+     "over_25": 0.455,
+     "gol_gol": 0.455,
+     "clean_sheet": 0.273,
+     "a_secco": 0.364,
+     "con_avanzate": 2,
+     "possesso": 25.1,
+     "passaggi": 194.0,
+     "precisione_passaggi": 0.761,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 17.0,
+     "intercetti": 0.0,
+     "respinte": 14.5,
+     "parate": 3.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.0
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 0.78,
+     "gol_subiti": 1.44,
+     "tiri": 8.8,
+     "in_porta": 3.0,
+     "in_porta_subiti": 5.2,
+     "tiri_subiti": 14.3,
+     "corner": 4.1,
+     "corner_subiti": 5.0,
+     "falli": 13.7,
+     "cartellini": 2.4,
+     "gialli": 21,
+     "rossi": 1,
+     "precisione_tiri": 0.342,
+     "over_25": 0.444,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.222,
+     "a_secco": 0.333,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "OFI Crete",
+    "partite": 6,
+    "gol_fatti": 1.83,
+    "gol_subiti": 1.5,
+    "gol_totali": 11,
+    "in_porta_totali": 14,
+    "attesi_dai_tiri": 4.2,
+    "scarto_conversione": 6.8,
+    "vantaggio_casa": 1.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 2.33,
+     "gol_subiti": 0.33,
+     "tiri": 9.7,
+     "in_porta": 2.0,
+     "in_porta_subiti": 1.3,
+     "tiri_subiti": 8.3,
+     "corner": 3.0,
+     "corner_subiti": 1.7,
+     "falli": 9.7,
+     "cartellini": 2.0,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.207,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.667,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 2.67,
+     "tiri": 12.5,
+     "in_porta": 4.0,
+     "in_porta_subiti": 6.0,
+     "tiri_subiti": 16.5,
+     "corner": 3.0,
+     "corner_subiti": 5.0,
+     "falli": 14.0,
+     "cartellini": 5.0,
+     "gialli": 9,
+     "rossi": 1,
+     "precisione_tiri": 0.32,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Asteras Tripolis",
+    "partite": 6,
+    "gol_fatti": 0.67,
+    "gol_subiti": 1.17,
+    "gol_totali": 4,
+    "in_porta_totali": 20,
+    "attesi_dai_tiri": 6.0,
+    "scarto_conversione": -2.0,
+    "vantaggio_casa": -1.25,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 0.25,
+     "gol_subiti": 0.75,
+     "tiri": 10.5,
+     "in_porta": 2.0,
+     "in_porta_subiti": 2.8,
+     "tiri_subiti": 6.8,
+     "corner": 6.2,
+     "corner_subiti": 2.5,
+     "falli": 8.0,
+     "cartellini": 3.0,
+     "gialli": 11,
+     "rossi": 1,
+     "precisione_tiri": 0.19,
+     "over_25": 0.0,
+     "gol_gol": 0.0,
+     "clean_sheet": 0.5,
+     "a_secco": 0.75,
+     "con_avanzate": 2,
+     "possesso": 25.1,
+     "passaggi": 194.0,
+     "precisione_passaggi": 0.761,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 17.0,
+     "intercetti": 0.0,
+     "respinte": 14.5,
+     "parate": 3.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 1.5,
+     "gol_subiti": 2.0,
+     "tiri": 12.5,
+     "in_porta": 6.0,
+     "in_porta_subiti": 5.5,
+     "tiri_subiti": 11.5,
+     "corner": 5.0,
+     "corner_subiti": 3.0,
+     "falli": 14.5,
+     "cartellini": 3.0,
+     "gialli": 5,
+     "rossi": 1,
+     "precisione_tiri": 0.48,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.6,
+     "difesa": 1.44,
+     "media": 1.52
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 9.4,
+     "difesa": 14.3,
+     "media": 11.9
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 3.0,
+     "difesa": 5.2,
+     "media": 4.1
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 2.8,
+     "difesa": 5.0,
+     "media": 3.9
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-01-11",
+     "casa": "OFI Crete",
+     "ospite": "Asteras Tripolis",
+     "gol_casa": 4,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-11-03",
+     "casa": "Asteras Tripolis",
+     "ospite": "OFI Crete",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-04-26",
+     "casa": "OFI Crete",
+     "ospite": "Asteras Tripolis",
+     "gol_casa": 0,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-04-13",
+     "casa": "Asteras Tripolis",
+     "ospite": "OFI Crete",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-02-15",
+     "casa": "OFI Crete",
+     "ospite": "Asteras Tripolis",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-11-04",
+     "casa": "Asteras Tripolis",
+     "ospite": "OFI Crete",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "kalamata-panathinaikos",
+   "casa": "Kalamata",
+   "ospite": "Panathinaikos",
+   "data": "2026-09-20",
+   "ora": "18:30",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.088,
+    0.1713,
+    0.7406
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 0.87,
+    "gol_attesi_ospite": 2.65,
+    "matrice": [
+     [
+      0.04078,
+      0.06759,
+      0.10419,
+      0.09199,
+      0.06092,
+      0.03227
+     ],
+     [
+      0.01474,
+      0.07949,
+      0.09059,
+      0.07999,
+      0.05297,
+      0.02806
+     ],
+     [
+      0.01123,
+      0.02974,
+      0.03938,
+      0.03477,
+      0.02303,
+      0.0122
+     ],
+     [
+      0.00325,
+      0.00862,
+      0.01141,
+      0.01008,
+      0.00667,
+      0.00354
+     ],
+     [
+      0.00071,
+      0.00187,
+      0.00248,
+      0.00219,
+      0.00145,
+      0.00077
+     ],
+     [
+      0.00012,
+      0.00033,
+      0.00043,
+      0.00038,
+      0.00025,
+      0.00013
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "0-2",
+      "p": 0.1042
+     },
+     {
+      "risultato": "0-3",
+      "p": 0.092
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0906
+     },
+     {
+      "risultato": "1-3",
+      "p": 0.08
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.0795
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.088,
+      "X": 0.1713,
+      "2": 0.7406
+     },
+     "btts": {
+      "si": 0.5508,
+      "no": 0.4492
+     },
+     "ou_1.5": {
+      "over": 0.8769,
+      "under": 0.1231
+     },
+     "ou_2.5": {
+      "over": 0.682,
+      "under": 0.318
+     },
+     "ou_3.5": {
+      "over": 0.4664,
+      "under": 0.5336
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Kalamata",
+    "partite": 3,
+    "gol_fatti": 1.0,
+    "gol_subiti": 2.0,
+    "gol_totali": 3,
+    "in_porta_totali": 6,
+    "attesi_dai_tiri": 1.8,
+    "scarto_conversione": 1.2,
+    "vantaggio_casa": 1.5,
+    "casa": {
+     "partite": 1,
+     "gol_fatti": 2.0,
+     "gol_subiti": 3.0,
+     "tiri": 7.0,
+     "in_porta": 3.0,
+     "in_porta_subiti": 7.0,
+     "tiri_subiti": 19.0,
+     "corner": 1.0,
+     "corner_subiti": 10.0,
+     "falli": 15.0,
+     "cartellini": 4.0,
+     "gialli": 3,
+     "rossi": 1,
+     "precisione_tiri": 0.429,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 37.1,
+     "passaggi": 197.0,
+     "precisione_passaggi": 0.624,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 3.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 0.5,
+     "gol_subiti": 1.5,
+     "tiri": 5.5,
+     "in_porta": 1.5,
+     "in_porta_subiti": 2.0,
+     "tiri_subiti": 10.0,
+     "corner": 1.5,
+     "corner_subiti": 2.0,
+     "falli": 7.5,
+     "cartellini": 4.5,
+     "gialli": 8,
+     "rossi": 1,
+     "precisione_tiri": 0.273,
+     "over_25": 0.0,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 2,
+     "possesso": 27.9,
+     "passaggi": 196.0,
+     "precisione_passaggi": 0.814,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 11.0,
+     "intercetti": 0.0,
+     "respinte": 13.0,
+     "parate": 1.0,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 0.5
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Panathinaikos",
+    "partite": 20,
+    "gol_fatti": 1.55,
+    "gol_subiti": 0.85,
+    "gol_totali": 31,
+    "in_porta_totali": 97,
+    "attesi_dai_tiri": 29.0,
+    "scarto_conversione": 2.0,
+    "vantaggio_casa": 0.7,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.9,
+     "gol_subiti": 0.8,
+     "tiri": 13.6,
+     "in_porta": 5.9,
+     "in_porta_subiti": 2.7,
+     "tiri_subiti": 8.5,
+     "corner": 4.4,
+     "corner_subiti": 3.2,
+     "falli": 11.6,
+     "cartellini": 2.1,
+     "gialli": 19,
+     "rossi": 2,
+     "precisione_tiri": 0.434,
+     "over_25": 0.6,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.4,
+     "a_secco": 0.3,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 0.9,
+     "tiri": 10.5,
+     "in_porta": 3.8,
+     "in_porta_subiti": 3.3,
+     "tiri_subiti": 10.1,
+     "corner": 3.2,
+     "corner_subiti": 3.2,
+     "falli": 16.0,
+     "cartellini": 2.2,
+     "gialli": 22,
+     "rossi": 0,
+     "precisione_tiri": 0.362,
+     "over_25": 0.4,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.5,
+     "a_secco": 0.4,
+     "con_avanzate": 1,
+     "possesso": 59.2,
+     "passaggi": 485.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 2.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Kalamata",
+    "partite": 3,
+    "gol_fatti": 1.0,
+    "gol_subiti": 2.0,
+    "gol_totali": 3,
+    "in_porta_totali": 6,
+    "attesi_dai_tiri": 1.8,
+    "scarto_conversione": 1.2,
+    "vantaggio_casa": 1.5,
+    "casa": {
+     "partite": 1,
+     "gol_fatti": 2.0,
+     "gol_subiti": 3.0,
+     "tiri": 7.0,
+     "in_porta": 3.0,
+     "in_porta_subiti": 7.0,
+     "tiri_subiti": 19.0,
+     "corner": 1.0,
+     "corner_subiti": 10.0,
+     "falli": 15.0,
+     "cartellini": 4.0,
+     "gialli": 3,
+     "rossi": 1,
+     "precisione_tiri": 0.429,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 37.1,
+     "passaggi": 197.0,
+     "precisione_passaggi": 0.624,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.0,
+     "intercetti": 0.0,
+     "respinte": 30.0,
+     "parate": 3.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 0.5,
+     "gol_subiti": 1.5,
+     "tiri": 5.5,
+     "in_porta": 1.5,
+     "in_porta_subiti": 2.0,
+     "tiri_subiti": 10.0,
+     "corner": 1.5,
+     "corner_subiti": 2.0,
+     "falli": 7.5,
+     "cartellini": 4.5,
+     "gialli": 8,
+     "rossi": 1,
+     "precisione_tiri": 0.273,
+     "over_25": 0.0,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 2,
+     "possesso": 27.9,
+     "passaggi": 196.0,
+     "precisione_passaggi": 0.814,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 11.0,
+     "intercetti": 0.0,
+     "respinte": 13.0,
+     "parate": 1.0,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 0.5
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Panathinaikos",
+    "partite": 6,
+    "gol_fatti": 1.33,
+    "gol_subiti": 1.0,
+    "gol_totali": 8,
+    "in_porta_totali": 21,
+    "attesi_dai_tiri": 6.3,
+    "scarto_conversione": 1.7,
+    "vantaggio_casa": 0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 1.0,
+     "tiri": 8.7,
+     "in_porta": 4.0,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 10.3,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 8.3,
+     "cartellini": 2.7,
+     "gialli": 6,
+     "rossi": 2,
+     "precisione_tiri": 0.462,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.0,
+     "tiri": 10.0,
+     "in_porta": 3.0,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 13.3,
+     "corner": 2.0,
+     "corner_subiti": 6.0,
+     "falli": 15.7,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.3,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 1,
+     "possesso": 59.2,
+     "passaggi": 485.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 12.0,
+     "parate": 2.0,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 2.0,
+     "difesa": 0.9,
+     "media": 1.45
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 7.0,
+     "difesa": 10.1,
+     "media": 8.6
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 3.0,
+     "difesa": 3.3,
+     "media": 3.1
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 1.0,
+     "difesa": 3.2,
+     "media": 2.1
+    }
+   ],
+   "precedenti": []
+  },
+  {
+   "id": "panetolikos-paok",
+   "casa": "Panetolikos",
+   "ospite": "PAOK",
+   "data": "2026-09-20",
+   "ora": "20:00",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.1257,
+    0.251,
+    0.6233
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "super-league-grecia",
+   "dettaglio": {
+    "gol_attesi_casa": 0.74,
+    "gol_attesi_ospite": 1.86,
+    "matrice": [
+     [
+      0.09127,
+      0.12211,
+      0.12874,
+      0.07968,
+      0.03698,
+      0.01373
+     ],
+     [
+      0.03853,
+      0.1189,
+      0.09499,
+      0.05879,
+      0.02729,
+      0.01013
+     ],
+     [
+      0.02033,
+      0.03775,
+      0.03504,
+      0.02169,
+      0.01007,
+      0.00374
+     ],
+     [
+      0.005,
+      0.00928,
+      0.00862,
+      0.00533,
+      0.00248,
+      0.00092
+     ],
+     [
+      0.00092,
+      0.00171,
+      0.00159,
+      0.00098,
+      0.00046,
+      0.00017
+     ],
+     [
+      0.00014,
+      0.00025,
+      0.00023,
+      0.00015,
+      7e-05,
+      3e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "0-2",
+      "p": 0.1287
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.1221
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.1189
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.095
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.0913
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.1257,
+      "X": 0.251,
+      "2": 0.6233
+     },
+     "btts": {
+      "si": 0.4569,
+      "no": 0.5431
+     },
+     "ou_1.5": {
+      "over": 0.7481,
+      "under": 0.2519
+     },
+     "ou_2.5": {
+      "over": 0.4801,
+      "under": 0.5199
+     },
+     "ou_3.5": {
+      "over": 0.2627,
+      "under": 0.7373
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Panetolikos",
+    "partite": 20,
+    "gol_fatti": 1.35,
+    "gol_subiti": 1.0,
+    "gol_totali": 27,
+    "in_porta_totali": 74,
+    "attesi_dai_tiri": 22.1,
+    "scarto_conversione": 4.9,
+    "vantaggio_casa": 0.3,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.5,
+     "gol_subiti": 1.1,
+     "tiri": 13.8,
+     "in_porta": 4.5,
+     "in_porta_subiti": 3.5,
+     "tiri_subiti": 9.5,
+     "corner": 5.2,
+     "corner_subiti": 3.4,
+     "falli": 13.7,
+     "cartellini": 2.2,
+     "gialli": 21,
+     "rossi": 1,
+     "precisione_tiri": 0.326,
+     "over_25": 0.5,
+     "gol_gol": 0.7,
+     "clean_sheet": 0.2,
+     "a_secco": 0.2,
+     "con_avanzate": 1,
+     "possesso": 44.2,
+     "passaggi": 312.0,
+     "precisione_passaggi": 0.75,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 10.0,
+     "intercetti": 0.0,
+     "respinte": 28.0,
+     "parate": 3.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 9.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 0.9,
+     "tiri": 7.0,
+     "in_porta": 2.9,
+     "in_porta_subiti": 4.5,
+     "tiri_subiti": 13.9,
+     "corner": 2.1,
+     "corner_subiti": 4.3,
+     "falli": 14.2,
+     "cartellini": 2.4,
+     "gialli": 24,
+     "rossi": 0,
+     "precisione_tiri": 0.414,
+     "over_25": 0.4,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.3,
+     "a_secco": 0.4,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "PAOK",
+    "partite": 20,
+    "gol_fatti": 1.75,
+    "gol_subiti": 0.85,
+    "gol_totali": 35,
+    "in_porta_totali": 73,
+    "attesi_dai_tiri": 21.8,
+    "scarto_conversione": 13.2,
+    "vantaggio_casa": 0.86,
+    "casa": {
+     "partite": 9,
+     "gol_fatti": 2.22,
+     "gol_subiti": 0.33,
+     "tiri": 11.8,
+     "in_porta": 4.4,
+     "in_porta_subiti": 1.9,
+     "tiri_subiti": 8.1,
+     "corner": 5.6,
+     "corner_subiti": 3.3,
+     "falli": 13.6,
+     "cartellini": 1.4,
+     "gialli": 13,
+     "rossi": 0,
+     "precisione_tiri": 0.377,
+     "over_25": 0.556,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.667,
+     "a_secco": 0.222,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 11,
+     "gol_fatti": 1.36,
+     "gol_subiti": 1.27,
+     "tiri": 10.5,
+     "in_porta": 3.0,
+     "in_porta_subiti": 3.4,
+     "tiri_subiti": 11.7,
+     "corner": 4.0,
+     "corner_subiti": 4.4,
+     "falli": 11.4,
+     "cartellini": 1.9,
+     "gialli": 20,
+     "rossi": 1,
+     "precisione_tiri": 0.284,
+     "over_25": 0.636,
+     "gol_gol": 0.636,
+     "clean_sheet": 0.273,
+     "a_secco": 0.273,
+     "con_avanzate": 2,
+     "possesso": 27.0,
+     "passaggi": 199.0,
+     "precisione_passaggi": 0.786,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.5,
+     "intercetti": 0.0,
+     "respinte": 14.5,
+     "parate": 0.5,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 0.5
+    }
+   },
+   "forma_casa": {
+    "squadra": "Panetolikos",
+    "partite": 6,
+    "gol_fatti": 1.67,
+    "gol_subiti": 0.83,
+    "gol_totali": 10,
+    "in_porta_totali": 24,
+    "attesi_dai_tiri": 7.2,
+    "scarto_conversione": 2.8,
+    "vantaggio_casa": 0.25,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 1.75,
+     "gol_subiti": 1.0,
+     "tiri": 15.0,
+     "in_porta": 5.2,
+     "in_porta_subiti": 4.5,
+     "tiri_subiti": 10.8,
+     "corner": 5.2,
+     "corner_subiti": 3.5,
+     "falli": 17.0,
+     "cartellini": 1.5,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.35,
+     "over_25": 0.5,
+     "gol_gol": 0.75,
+     "clean_sheet": 0.25,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 44.2,
+     "passaggi": 312.0,
+     "precisione_passaggi": 0.75,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 10.0,
+     "intercetti": 0.0,
+     "respinte": 28.0,
+     "parate": 3.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 9.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 1.5,
+     "gol_subiti": 0.5,
+     "tiri": 6.0,
+     "in_porta": 1.5,
+     "in_porta_subiti": 2.0,
+     "tiri_subiti": 7.0,
+     "corner": 1.0,
+     "corner_subiti": 2.0,
+     "falli": 7.0,
+     "cartellini": 2.5,
+     "gialli": 5,
+     "rossi": 0,
+     "precisione_tiri": 0.25,
+     "over_25": 0.0,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.0,
+     "con_avanzate": 1,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "PAOK",
+    "partite": 6,
+    "gol_fatti": 1.83,
+    "gol_subiti": 1.33,
+    "gol_totali": 11,
+    "in_porta_totali": 20,
+    "attesi_dai_tiri": 6.0,
+    "scarto_conversione": 5.0,
+    "vantaggio_casa": 1.0,
+    "casa": {
+     "partite": 2,
+     "gol_fatti": 2.5,
+     "gol_subiti": 0.5,
+     "tiri": 14.0,
+     "in_porta": 4.5,
+     "in_porta_subiti": 2.5,
+     "tiri_subiti": 10.5,
+     "corner": 5.5,
+     "corner_subiti": 3.0,
+     "falli": 16.0,
+     "cartellini": 1.5,
+     "gialli": 3,
+     "rossi": 0,
+     "precisione_tiri": 0.321,
+     "over_25": 0.5,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.0,
+     "con_avanzate": 0,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 4,
+     "gol_fatti": 1.5,
+     "gol_subiti": 1.75,
+     "tiri": 9.8,
+     "in_porta": 2.8,
+     "in_porta_subiti": 4.2,
+     "tiri_subiti": 14.5,
+     "corner": 3.2,
+     "corner_subiti": 4.2,
+     "falli": 9.0,
+     "cartellini": 2.8,
+     "gialli": 10,
+     "rossi": 1,
+     "precisione_tiri": 0.282,
+     "over_25": 0.75,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 2,
+     "possesso": 27.0,
+     "passaggi": 199.0,
+     "precisione_passaggi": 0.786,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.5,
+     "intercetti": 0.0,
+     "respinte": 14.5,
+     "parate": 0.5,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 0.5
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.5,
+     "difesa": 1.27,
+     "media": 1.39
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 13.8,
+     "difesa": 11.7,
+     "media": 12.8
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 4.5,
+     "difesa": 3.4,
+     "media": 4.0
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.2,
+     "difesa": 4.4,
+     "media": 4.8
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-01-10",
+     "casa": "Panetolikos",
+     "ospite": "PAOK",
+     "gol_casa": 0,
+     "gol_ospite": 3
+    },
+    {
+     "data": "2025-09-20",
+     "casa": "PAOK",
+     "ospite": "Panetolikos",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2024-12-15",
+     "casa": "Panetolikos",
+     "ospite": "PAOK",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-08-25",
+     "casa": "PAOK",
+     "ospite": "Panetolikos",
+     "gol_casa": 2,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2024-02-25",
+     "casa": "Panetolikos",
+     "ospite": "PAOK",
+     "gol_casa": 1,
+     "gol_ospite": 3
+    },
+    {
+     "data": "2023-11-12",
+     "casa": "PAOK",
+     "ospite": "Panetolikos",
+     "gol_casa": 2,
+     "gol_ospite": 1
     }
    ]
   },
@@ -102230,7 +104625,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5841,
+    0.5842,
     0.2,
     0.2158
    ],
@@ -102242,7 +104637,7 @@
     "gol_attesi_ospite": 1.44,
     "matrice": [
      [
-      0.02622,
+      0.02621,
       0.02611,
       0.02217,
       0.01062,
@@ -102251,14 +104646,14 @@
      ],
      [
       0.04689,
-      0.07895,
+      0.07894,
       0.05332,
       0.02554,
       0.00918,
       0.00264
      ],
      [
-      0.06209,
+      0.06208,
       0.08922,
       0.06411,
       0.03071,
@@ -102268,7 +104663,7 @@
      [
       0.04977,
       0.07152,
-      0.05139,
+      0.0514,
       0.02462,
       0.00885,
       0.00254
@@ -102314,13 +104709,13 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5841,
+      "1": 0.5842,
       "X": 0.2,
       "2": 0.2158
      },
      "btts": {
-      "si": 0.6982,
-      "no": 0.3018
+      "si": 0.6983,
+      "no": 0.3017
      },
      "ou_1.5": {
       "over": 0.9008,
@@ -102331,8 +104726,8 @@
       "under": 0.2624
      },
      "ou_3.5": {
-      "over": 0.5346,
-      "under": 0.4654
+      "over": 0.5347,
+      "under": 0.4653
      }
     }
    },
@@ -102681,7 +105076,7 @@
    "p_modello": [
     0.3411,
     0.2624,
-    0.3964
+    0.3965
    ],
    "margine": null,
    "margine_migliore": null,
@@ -102696,14 +105091,14 @@
       0.06305,
       0.0317,
       0.01195,
-      0.0036
+      0.00361
      ],
      [
       0.06934,
       0.12315,
       0.08728,
       0.04388,
-      0.01654,
+      0.01655,
       0.00499
      ],
      [
@@ -102724,7 +105119,7 @@
      ],
      [
       0.00848,
-      0.0128,
+      0.01279,
       0.00965,
       0.00485,
       0.00183,
@@ -102765,7 +105160,7 @@
      "1x2": {
       "1": 0.3411,
       "X": 0.2624,
-      "2": 0.3964
+      "2": 0.3965
      },
      "btts": {
       "si": 0.591,
@@ -103140,7 +105535,7 @@
     "gol_attesi_ospite": 1.07,
     "matrice": [
      [
-      0.10242,
+      0.10241,
       0.09269,
       0.05424,
       0.01941,
@@ -103614,7 +106009,7 @@
      [
       0.12116,
       0.13206,
-      0.05967,
+      0.05968,
       0.01913,
       0.0046,
       0.00088
@@ -104572,7 +106967,7 @@
    "p_modello": [
     0.4001,
     0.3061,
-    0.2937
+    0.2938
    ],
    "margine": null,
    "margine_migliore": null,
@@ -104583,14 +106978,14 @@
     "matrice": [
      [
       0.11929,
-      0.10165,
+      0.10166,
       0.05475,
-      0.01814,
+      0.01815,
       0.00451,
       0.0009
      ],
      [
-      0.12511,
+      0.12512,
       0.14132,
       0.06603,
       0.02188,
@@ -104656,7 +107051,7 @@
      "1x2": {
       "1": 0.4001,
       "X": 0.3061,
-      "2": 0.2937
+      "2": 0.2938
      },
      "btts": {
       "si": 0.4498,
@@ -105056,7 +107451,7 @@
       0.00183
      ],
      [
-      0.08104,
+      0.08105,
       0.09627,
       0.05717,
       0.02264,
@@ -105515,7 +107910,7 @@
    "p_mercato": null,
    "p_modello": [
     0.4478,
-    0.3298,
+    0.3299,
     0.2224
    ],
    "margine": null,
@@ -105526,9 +107921,9 @@
     "gol_attesi_ospite": 0.71,
     "matrice": [
      [
-      0.16596,
-      0.10436,
-      0.04011,
+      0.16598,
+      0.10438,
+      0.04012,
       0.00953,
       0.0017,
       0.00024
@@ -105537,20 +107932,20 @@
       0.1707,
       0.13568,
       0.04546,
-      0.0108,
+      0.01081,
       0.00193,
       0.00027
      ],
      [
-      0.10136,
-      0.07227,
+      0.10135,
+      0.07226,
       0.02576,
       0.00612,
       0.00109,
       0.00016
      ],
      [
-      0.03829,
+      0.03828,
       0.0273,
       0.00973,
       0.00231,
@@ -105559,7 +107954,7 @@
      ],
      [
       0.01085,
-      0.00774,
+      0.00773,
       0.00276,
       0.00066,
       0.00012,
@@ -105568,7 +107963,7 @@
      [
       0.00246,
       0.00175,
-      0.00063,
+      0.00062,
       0.00015,
       3e-05,
       0.0
@@ -105593,22 +107988,22 @@
      },
      {
       "risultato": "2-0",
-      "p": 0.1014
+      "p": 0.1013
      }
     ],
     "mercati": {
      "1x2": {
       "1": 0.4478,
-      "X": 0.3298,
+      "X": 0.3299,
       "2": 0.2224
      },
      "btts": {
-      "si": 0.3539,
-      "no": 0.6461
+      "si": 0.3538,
+      "no": 0.6462
      },
      "ou_1.5": {
-      "over": 0.559,
-      "under": 0.441
+      "over": 0.5589,
+      "under": 0.4411
      },
      "ou_2.5": {
       "over": 0.2818,
@@ -105977,7 +108372,7 @@
       0.00063
      ],
      [
-      0.07692,
+      0.07693,
       0.10049,
       0.05376,
       0.0204,
@@ -106448,7 +108843,7 @@
     "matrice": [
      [
       0.13184,
-      0.14008,
+      0.14009,
       0.08938,
       0.03586,
       0.01079,
@@ -106457,14 +108852,14 @@
      [
       0.10123,
       0.14044,
-      0.07943,
+      0.07944,
       0.03187,
       0.00959,
       0.00231
      ],
      [
       0.04873,
-      0.05866,
+      0.05865,
       0.0353,
       0.01416,
       0.00426,
@@ -106912,7 +109307,7 @@
     "matrice": [
      [
       0.11113,
-      0.09589,
+      0.0959,
       0.05295,
       0.01792,
       0.00455,
@@ -106930,7 +109325,7 @@
       0.08159,
       0.08284,
       0.04206,
-      0.01424,
+      0.01423,
       0.00361,
       0.00073
      ],
@@ -106954,7 +109349,7 @@
       0.00272,
       0.00276,
       0.0014,
-      0.00048,
+      0.00047,
       0.00012,
       2e-05
      ]
@@ -107403,8 +109798,8 @@
     "gol_attesi_ospite": 2.27,
     "matrice": [
      [
-      0.01389,
-      0.02019,
+      0.01388,
+      0.02018,
       0.02686,
       0.02034,
       0.01155,
@@ -107412,7 +109807,7 @@
      ],
      [
       0.02043,
-      0.05775,
+      0.05774,
       0.06164,
       0.04666,
       0.0265,
@@ -107428,9 +109823,9 @@
      ],
      [
       0.02097,
-      0.04763,
+      0.04762,
       0.05408,
-      0.04094,
+      0.04095,
       0.02325,
       0.01056
      ],
@@ -107840,8 +110235,8 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5274,
-    0.3027,
+    0.5273,
+    0.3028,
     0.1699
    ],
    "margine": null,
@@ -107852,15 +110247,15 @@
     "gol_attesi_ospite": 0.63,
     "matrice": [
      [
-      0.15008,
-      0.082,
+      0.1501,
+      0.08201,
       0.02814,
-      0.00589,
+      0.0059,
       0.00093,
       0.00012
      ],
      [
-      0.18055,
+      0.18056,
       0.12577,
       0.03714,
       0.00778,
@@ -107868,15 +110263,15 @@
       0.00015
      ],
      [
-      0.12414,
-      0.07801,
+      0.12413,
+      0.078,
       0.02451,
       0.00513,
       0.00081,
       0.0001
      ],
      [
-      0.05462,
+      0.05461,
       0.03432,
       0.01078,
       0.00226,
@@ -107885,7 +110280,7 @@
      ],
      [
       0.01802,
-      0.01133,
+      0.01132,
       0.00356,
       0.00075,
       0.00012,
@@ -107924,25 +110319,25 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5274,
-      "X": 0.3027,
+      "1": 0.5273,
+      "X": 0.3028,
       "2": 0.1699
      },
      "btts": {
-      "si": 0.3495,
-      "no": 0.6505
+      "si": 0.3494,
+      "no": 0.6506
      },
      "ou_1.5": {
-      "over": 0.5874,
-      "under": 0.4126
+      "over": 0.5873,
+      "under": 0.4127
      },
      "ou_2.5": {
       "over": 0.3093,
       "under": 0.6907
      },
      "ou_3.5": {
-      "over": 0.1337,
-      "under": 0.8663
+      "over": 0.1336,
+      "under": 0.8664
      }
     }
    },
@@ -108296,7 +110691,7 @@
     "matrice": [
      [
       0.09518,
-      0.0795,
+      0.07951,
       0.04397,
       0.01472,
       0.0037,
@@ -108771,7 +111166,7 @@
    "p_modello": [
     0.4881,
     0.2748,
-    0.2371
+    0.2372
    ],
    "margine": null,
    "margine_migliore": null,
@@ -108781,7 +111176,7 @@
     "gol_attesi_ospite": 0.98,
     "matrice": [
      [
-      0.09072,
+      0.09071,
       0.0733,
       0.03973,
       0.01297,
@@ -108855,7 +111250,7 @@
      "1x2": {
       "1": 0.4881,
       "X": 0.2748,
-      "2": 0.2371
+      "2": 0.2372
      },
      "btts": {
       "si": 0.4945,
@@ -109706,7 +112101,7 @@
    "p_modello": [
     0.365,
     0.2512,
-    0.3838
+    0.3839
    ],
    "margine": null,
    "margine_migliore": null,
@@ -109716,7 +112111,7 @@
     "gol_attesi_ospite": 1.58,
     "matrice": [
      [
-      0.05089,
+      0.05088,
       0.06284,
       0.05519,
       0.02913,
@@ -109728,12 +112123,12 @@
       0.11419,
       0.08497,
       0.04485,
-      0.01775,
+      0.01776,
       0.00562
      ],
      [
       0.05218,
-      0.08263,
+      0.08262,
       0.06542,
       0.03453,
       0.01367,
@@ -109744,7 +112139,7 @@
       0.04241,
       0.03357,
       0.01772,
-      0.00701,
+      0.00702,
       0.00222
      ],
      [
@@ -109790,7 +112185,7 @@
      "1x2": {
       "1": 0.365,
       "X": 0.2512,
-      "2": 0.3838
+      "2": 0.3839
      },
      "btts": {
       "si": 0.6312,
@@ -110168,14 +112563,14 @@
       0.09616,
       0.10257,
       0.06994,
-      0.02941,
+      0.02942,
       0.00928,
       0.00234
      ],
      [
       0.09453,
       0.13803,
-      0.08184,
+      0.08185,
       0.03442,
       0.01086,
       0.00274
@@ -110651,7 +113046,7 @@
       0.00238
      ],
      [
-      0.09435,
+      0.09436,
       0.13809,
       0.08205,
       0.03458,
@@ -110660,7 +113055,7 @@
      ],
      [
       0.05971,
-      0.0755,
+      0.07549,
       0.04773,
       0.02011,
       0.00636,
@@ -110668,7 +113063,7 @@
      ],
      [
       0.02315,
-      0.02928,
+      0.02927,
       0.01851,
       0.0078,
       0.00247,
@@ -111121,8 +113516,8 @@
     "gol_attesi_ospite": 0.73,
     "matrice": [
      [
-      0.10377,
-      0.06289,
+      0.10376,
+      0.06288,
       0.02546,
       0.00616,
       0.00112,
@@ -111130,7 +113525,7 @@
      ],
      [
       0.14836,
-      0.12022,
+      0.12021,
       0.04103,
       0.00993,
       0.0018,
@@ -111153,7 +113548,7 @@
       0.00011
      ],
      [
-      0.02713,
+      0.02714,
       0.01971,
       0.00716,
       0.00173,
@@ -111210,8 +113605,8 @@
       "under": 0.5861
      },
      "ou_3.5": {
-      "over": 0.2083,
-      "under": 0.7917
+      "over": 0.2084,
+      "under": 0.7916
      }
     }
    },
@@ -111585,26 +113980,26 @@
     "gol_attesi_ospite": 1.0,
     "matrice": [
      [
-      0.18143,
+      0.18144,
       0.16514,
-      0.08694,
-      0.02905,
+      0.08693,
+      0.02904,
       0.00728,
       0.00146
      ],
      [
-      0.12176,
+      0.12178,
       0.13874,
-      0.06535,
+      0.06534,
       0.02183,
       0.00547,
       0.0011
      ],
      [
-      0.0489,
+      0.04891,
       0.04901,
       0.02456,
-      0.00821,
+      0.0082,
       0.00206,
       0.00041
      ],
@@ -111666,8 +114061,8 @@
       "no": 0.6572
      },
      "ou_1.5": {
-      "over": 0.5317,
-      "under": 0.4683
+      "over": 0.5316,
+      "under": 0.4684
      },
      "ou_2.5": {
       "over": 0.2571,
@@ -112034,7 +114429,7 @@
     "gol_attesi_ospite": 1.05,
     "matrice": [
      [
-      0.1108,
+      0.11079,
       0.09899,
       0.05639,
       0.01973,
@@ -112521,7 +114916,7 @@
      ],
      [
       0.10384,
-      0.13052,
+      0.13051,
       0.06737,
       0.02467,
       0.00677,
@@ -112597,8 +114992,8 @@
       "under": 0.2603
      },
      "ou_2.5": {
-      "over": 0.4806,
-      "under": 0.5194
+      "over": 0.4805,
+      "under": 0.5195
      },
      "ou_3.5": {
       "over": 0.2631,
@@ -114345,15 +116740,40 @@
    "ospite": "Luton",
    "data": "2026-09-10",
    "ora": "21:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     3.25,
+     3.5,
+     2.32
+    ],
+    "bet365": [
+     3.0,
+     3.4,
+     2.2
+    ],
+    "massimo": [
+     3.1,
+     3.5,
+     2.3
+    ],
+    "media": [
+     2.99,
+     3.36,
+     2.22
+    ]
+   },
+   "p_mercato": [
+    0.2997,
+    0.2779,
+    0.4223
+   ],
    "p_modello": [
     0.3763,
     0.2793,
     0.3444
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0244,
+   "margine_migliore": 0.0431,
    "campionato": "league-one",
    "dettaglio": {
     "gol_attesi_casa": 1.2,
