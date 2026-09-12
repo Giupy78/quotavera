@@ -1,5 +1,5 @@
 {
- "data": "2026-09-11",
+ "data": "2026-09-12",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -10,18 +10,18 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 935
+   "campione": 936
   },
   {
    "tipo": "gol_lega_meno",
    "titolo": "E quello dove si segna di meno e' LaLiga 2",
-   "testo": "2.46 gol a partita: quasi uno in meno del campionato piu' prolifico.",
-   "numero": "2.46",
+   "testo": "2.47 gol a partita: quasi uno in meno del campionato piu' prolifico.",
+   "numero": "2.47",
    "campionato": "LaLiga 2",
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1430
+   "campione": 1431
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga",
    "squadre": [],
-   "campione": 1181
+   "campione": 1182
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1170
+   "campione": 1173
   },
   {
    "tipo": "cartellini",
@@ -390,6 +390,19 @@
   ],
   "eredivisie": [
    {
+    "tipo": "imbattuta",
+    "titolo": "AZ Alkmaar non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "AZ Alkmaar"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "PSV Eindhoven non molla all'intervallo",
     "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 7: e' la quota di rimonte piu' alta del campionato.",
@@ -570,6 +583,19 @@
    }
   ],
   "jupiler": [
+   {
+    "tipo": "digiuno",
+    "titolo": "Mechelen non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Mechelen"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "a_secco",
     "titolo": "Cercle Brugge non segna da 3 partite",
@@ -830,6 +856,19 @@
     "campione": 28
    },
    {
+    "tipo": "ripresa",
+    "titolo": "Virtus Entella vive di secondi tempi",
+    "testo": "Solo 14 dei suoi 43 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "67%",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Virtus Entella"
+    ],
+    "campione": 43
+   },
+   {
     "tipo": "sorpresa_mercato",
     "titolo": "Palermo 1-2 Lecco",
     "testo": "29/10/2023: che Lecco vinceva in casa di Palermo era pagato 9.10, cioe' circa 11% di probabilita' secondo il mercato.",
@@ -900,16 +939,16 @@
    },
    {
     "tipo": "ripresa",
-    "titolo": "Charlton vive di secondi tempi",
-    "testo": "Solo 16 dei suoi 50 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "68%",
+    "titolo": "West Ham vive di secondi tempi",
+    "testo": "Solo 1 dei suoi 20 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "95%",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "Charlton"
+     "West Ham"
     ],
-    "campione": 50
+    "campione": 20
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1068,14 +1107,14 @@
   "national-league": [
    {
     "tipo": "imbattuta",
-    "titolo": "Boreham Wood non perde da 6 partite",
+    "titolo": "Kidderminster non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "6",
     "campionato": "National League",
     "bandiera": "🏴",
     "slug": "national-league",
     "squadre": [
-     "Boreham Wood"
+     "Kidderminster"
     ],
     "campione": 6
    },
@@ -1123,19 +1162,6 @@
   ],
   "laliga-2": [
    {
-    "tipo": "a_secco",
-    "titolo": "Ceuta non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
-    "campionato": "LaLiga 2",
-    "bandiera": "🇪🇸",
-    "slug": "laliga-2",
-    "squadre": [
-     "Ceuta"
-    ],
-    "campione": 3
-   },
-   {
     "tipo": "rimonte",
     "titolo": "Eibar non molla all'intervallo",
     "testo": "Sotto al riposo 28 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
@@ -1164,15 +1190,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ceuta decide presto",
-    "testo": "30 dei suoi 52 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "58%",
+    "testo": "30 dei suoi 53 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "57%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Ceuta"
     ],
-    "campione": 52
+    "campione": 53
    },
    {
     "tipo": "ripresa",
@@ -1217,19 +1243,6 @@
    }
   ],
   "bundesliga-2": [
-   {
-    "tipo": "a_secco",
-    "titolo": "Darmstadt non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
-    "campionato": "2. Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga-2",
-    "squadre": [
-     "Darmstadt"
-    ],
-    "campione": 3
-   },
    {
     "tipo": "rimonte",
     "titolo": "Hannover non molla all'intervallo",
@@ -1300,6 +1313,32 @@
   ],
   "ligue-2": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Reims non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Reims"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Clermont non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Clermont"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Rodez non molla all'intervallo",
     "testo": "Sotto al riposo 34 volte nelle ultime stagioni, ha finito vincendo 9: e' la quota di rimonte piu' alta del campionato.",
@@ -1368,6 +1407,19 @@
    }
   ],
   "championship-scozia": [
+   {
+    "tipo": "digiuno",
+    "titolo": "Morton non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Morton"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "rimonte",
     "titolo": "Partick non molla all'intervallo",
