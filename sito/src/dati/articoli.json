@@ -231,14 +231,14 @@
     {
      "titolo": "La 5ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 8 gol in 3 partite, 2.7 a incontro."
+      "Nella 5ª giornata sono stati segnati 11 gol in 4 partite, 2.8 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'e' Barcelona con 12 punti in 4 partite.",
-      "Alaves ha 10 punti ma i tiri in porta ne direbbero 6.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "Betis ha 9 punti ma i tiri in porta ne direbbero 5.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
       "All'opposto Villarreal, ferma a 2 punti contro i 8.0 attesi dal gioco."
      ]
     }
@@ -304,6 +304,21 @@
      "campionato": "LaLiga",
      "bandiera": "🇪🇸",
      "slug": "laliga",
+     "data": "2026-09-12",
+     "casa": "Santander",
+     "ospite": "Alaves",
+     "gol_casa": 2,
+     "gol_ospite": 1,
+     "in_porta_casa": 4,
+     "in_porta_ospite": 8,
+     "vincitore": "Santander",
+     "perdente": "Alaves",
+     "scarto_tiri": 4
+    },
+    {
+     "campionato": "LaLiga",
+     "bandiera": "🇪🇸",
+     "slug": "laliga",
      "data": "2026-09-07",
      "casa": "Elche",
      "ospite": "Sociedad",
@@ -328,21 +343,6 @@
      "in_porta_ospite": 6,
      "vincitore": "Alaves",
      "perdente": "Villarreal",
-     "scarto_tiri": 4
-    },
-    {
-     "campionato": "LaLiga",
-     "bandiera": "🇪🇸",
-     "slug": "laliga",
-     "data": "2026-08-22",
-     "casa": "Ath Bilbao",
-     "ospite": "Sevilla",
-     "gol_casa": 1,
-     "gol_ospite": 3,
-     "in_porta_casa": 8,
-     "in_porta_ospite": 4,
-     "vincitore": "Sevilla",
-     "perdente": "Ath Bilbao",
      "scarto_tiri": 4
     }
    ],
@@ -1404,7 +1404,7 @@
     {
      "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 6 gol in 1 partite, 6.0 a incontro.",
+      "Nella 7ª giornata sono stati segnati 12 gol in 4 partite, 3.0 a incontro.",
       "Il risultato piu' netto e' stato West Ham 6-0 Wrexham: West Ham ha vinto con 6 gol di scarto."
      ]
     },
@@ -1413,23 +1413,23 @@
      "righe": [
       "In testa c'e' West Ham con 14 punti in 7 partite.",
       "Charlton ha 11 punti ma i tiri in porta ne direbbero 5.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Cardiff, ferma a 4 punti contro i 8.8 attesi dal gioco."
+      "All'opposto Cardiff, ferma a 4 punti contro i 11.0 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "digiuno",
-     "titolo": "Cardiff non vince da 6 partite",
+     "titolo": "Cardiff non vince da 7 partite",
      "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
+     "numero": "7",
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
      "squadre": [
       "Cardiff"
      ],
-     "campione": 6
+     "campione": 7
     },
     {
      "tipo": "rimonte",
@@ -1504,6 +1504,21 @@
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
+     "data": "2026-09-12",
+     "casa": "Bolton",
+     "ospite": "Cardiff",
+     "gol_casa": 1,
+     "gol_ospite": 0,
+     "in_porta_casa": 5,
+     "in_porta_ospite": 10,
+     "vincitore": "Bolton",
+     "perdente": "Cardiff",
+     "scarto_tiri": 5
+    },
+    {
+     "campionato": "Championship",
+     "bandiera": "🏴",
+     "slug": "championship",
      "data": "2026-08-29",
      "casa": "Bolton",
      "ospite": "Lincoln",
@@ -1544,7 +1559,7 @@
     {
      "titolo": "La 6ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
+      "Nella 6ª giornata sono stati segnati 9 gol in 3 partite, 3.0 a incontro."
      ]
     },
     {
@@ -1617,21 +1632,6 @@
      "campionato": "League One",
      "bandiera": "🏴",
      "slug": "league-one",
-     "data": "2026-08-22",
-     "casa": "Stockport",
-     "ospite": "Blackpool",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 9,
-     "in_porta_ospite": 3,
-     "vincitore": "Blackpool",
-     "perdente": "Stockport",
-     "scarto_tiri": 6
-    },
-    {
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
      "data": "2026-09-01",
      "casa": "Bradford",
      "ospite": "Cambridge",
@@ -1667,25 +1667,37 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League Two: cosa dicono i numeri",
-   "sommario": "Bristol Rvs in testa con 12 punti, 5ª giornata archiviata.",
+   "sommario": "Bristol Rvs in testa con 12 punti, 6ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 5ª giornata",
+     "titolo": "La 6ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 33 gol in 12 partite, 2.8 a incontro.",
-      "Il risultato piu' netto e' stato Rochdale 1-4 Gillingham: Gillingham ha vinto con 3 gol di scarto."
+      "Nella 6ª giornata sono stati segnati 6 gol in 2 partite, 3.0 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Bristol Rvs con 12 punti in 5 partite.",
+      "In testa c'e' Bristol Rvs con 12 punti in 6 partite.",
       "Swindon ha 10 punti ma i tiri in porta ne direbbero 4.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
       "All'opposto Shrewsbury, ferma a 3 punti contro i 6.8 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
+    {
+     "tipo": "imbattuta",
+     "titolo": "Grimsby non perde da 6 partite",
+     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+     "numero": "6",
+     "campionato": "League Two",
+     "bandiera": "🏴",
+     "slug": "league-two",
+     "squadre": [
+      "Grimsby"
+     ],
+     "campione": 6
+    },
     {
      "tipo": "rimonte",
      "titolo": "Fleetwood Town non molla all'intervallo",
@@ -1715,15 +1727,15 @@
     {
      "tipo": "ripresa",
      "titolo": "Cheltenham vive di secondi tempi",
-     "testo": "Solo 38 dei suoi 123 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "69%",
+     "testo": "Solo 38 dei suoi 126 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "70%",
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
      "squadre": [
       "Cheltenham"
      ],
-     "campione": 123
+     "campione": 126
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1759,6 +1771,21 @@
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
+     "data": "2026-09-12",
+     "casa": "Crawley Town",
+     "ospite": "Cheltenham",
+     "gol_casa": 1,
+     "gol_ospite": 3,
+     "in_porta_casa": 6,
+     "in_porta_ospite": 3,
+     "vincitore": "Cheltenham",
+     "perdente": "Crawley Town",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "League Two",
+     "bandiera": "🏴",
+     "slug": "league-two",
      "data": "2026-08-22",
      "casa": "Swindon",
      "ospite": "Cheltenham",
@@ -1771,7 +1798,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 5
+   "giornate_giocate": 6
   },
   {
    "slug": "national-league",
@@ -1779,18 +1806,18 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 16 punti, 7ª giornata archiviata.",
+   "sommario": "Harrogate in testa con 16 punti, 7ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 7ª giornata sono stati segnati 10 gol in 3 partite, 3.3 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Boreham Wood con 16 punti in 6 partite.",
+      "In testa c'e' Harrogate con 16 punti in 7 partite.",
       "Hornchurch ha 12 punti ma i tiri in porta ne direbbero 6.1: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
       "All'opposto Solihull, ferma a 1 punto contro i 4.2 attesi dal gioco."
      ]
@@ -1866,7 +1893,7 @@
     {
      "titolo": "La 5ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 4 gol in 1 partite, 4.0 a incontro."
+      "Nella 5ª giornata sono stati segnati 8 gol in 2 partite, 4.0 a incontro."
      ]
     },
     {
@@ -1874,7 +1901,7 @@
      "righe": [
       "In testa c'e' Castellon con 10 punti in 4 partite.",
       "Eibar ha 9 punti ma i tiri in porta ne direbbero 4.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Albacete, ferma a 0 punti contro i 4.7 attesi dal gioco."
+      "All'opposto Andorra, ferma a 3 punti contro i 9.0 attesi dal gioco."
      ]
     }
    ],
@@ -1921,7 +1948,7 @@
     {
      "tipo": "ripresa",
      "titolo": "Andorra vive di secondi tempi",
-     "testo": "Solo 33 dei suoi 102 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "testo": "Solo 33 dei suoi 103 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
      "numero": "68%",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
@@ -1929,7 +1956,7 @@
      "squadre": [
       "Andorra"
      ],
-     "campione": 102
+     "campione": 103
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2020,7 +2047,8 @@
     {
      "titolo": "La 5ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 6 gol in 2 partite, 3.0 a incontro."
+      "Nella 5ª giornata sono stati segnati 15 gol in 5 partite, 3.0 a incontro.",
+      "Il risultato piu' netto e' stato Magdeburg 3-0 Kaiserslautern: Magdeburg ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -2028,7 +2056,7 @@
      "righe": [
       "In testa c'e' Nurnberg con 13 punti in 5 partite.",
       "Hertha ha 12 punti ma i tiri in porta ne direbbero 5.5: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Braunschweig, ferma a 3 punti contro i 6.8 attesi dal gioco."
+      "All'opposto Braunschweig, ferma a 4 punti contro i 8.0 attesi dal gioco."
      ]
     }
    ],
@@ -2058,19 +2086,6 @@
       "Darmstadt"
      ],
      "campione": 17
-    },
-    {
-     "tipo": "primo_tempo",
-     "titolo": "Dresden decide presto",
-     "testo": "33 dei suoi 59 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-     "numero": "56%",
-     "campionato": "2. Bundesliga",
-     "bandiera": "🇩🇪",
-     "slug": "bundesliga-2",
-     "squadre": [
-      "Dresden"
-     ],
-     "campione": 59
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2161,7 +2176,7 @@
     {
      "titolo": "La 6ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 10 gol in 5 partite, 2.0 a incontro."
+      "Nella 6ª giornata sono stati segnati 14 gol in 7 partite, 2.0 a incontro."
      ]
     },
     {
@@ -2169,7 +2184,7 @@
      "righe": [
       "In testa c'e' St Etienne con 15 punti in 5 partite.",
       "St Etienne ha 15 punti ma i tiri in porta ne direbbero 10.3: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Boulogne, ferma a 5 punti contro i 8.6 attesi dal gioco."
+      "All'opposto Nantes, ferma a 4 punti contro i 8.0 attesi dal gioco."
      ]
     }
    ],
@@ -2288,21 +2303,6 @@
      "campionato": "Ligue 2",
      "bandiera": "🇫🇷",
      "slug": "ligue-2",
-     "data": "2026-08-14",
-     "casa": "Dijon",
-     "ospite": "Pau FC",
-     "gol_casa": 0,
-     "gol_ospite": 1,
-     "in_porta_casa": 9,
-     "in_porta_ospite": 3,
-     "vincitore": "Pau FC",
-     "perdente": "Dijon",
-     "scarto_tiri": 6
-    },
-    {
-     "campionato": "Ligue 2",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-2",
      "data": "2026-09-11",
      "casa": "Dijon",
      "ospite": "Laval",
@@ -2313,6 +2313,21 @@
      "vincitore": "Dijon",
      "perdente": "Laval",
      "scarto_tiri": 4
+    },
+    {
+     "campionato": "Ligue 2",
+     "bandiera": "🇫🇷",
+     "slug": "ligue-2",
+     "data": "2026-08-21",
+     "casa": "Sochaux",
+     "ospite": "Guingamp",
+     "gol_casa": 1,
+     "gol_ospite": 0,
+     "in_porta_casa": 3,
+     "in_porta_ospite": 6,
+     "vincitore": "Sochaux",
+     "perdente": "Guingamp",
+     "scarto_tiri": 3
     }
    ],
    "giornate_giocate": 6

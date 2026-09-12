@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1431
+   "campione": 1432
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga",
    "squadre": [],
-   "campione": 1182
+   "campione": 1183
   },
   {
    "tipo": "pareggi",
@@ -900,16 +900,16 @@
   "championship": [
    {
     "tipo": "digiuno",
-    "titolo": "Cardiff non vince da 6 partite",
+    "titolo": "Cardiff non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
      "Cardiff"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
@@ -1037,6 +1037,19 @@
   ],
   "league-two": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Grimsby non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Grimsby"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Fleetwood Town non molla all'intervallo",
     "testo": "Sotto al riposo 25 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
@@ -1065,15 +1078,15 @@
    {
     "tipo": "ripresa",
     "titolo": "Cheltenham vive di secondi tempi",
-    "testo": "Solo 38 dei suoi 123 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "69%",
+    "testo": "Solo 38 dei suoi 126 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "70%",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
      "Cheltenham"
     ],
-    "campione": 123
+    "campione": 126
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1203,7 +1216,7 @@
    {
     "tipo": "ripresa",
     "titolo": "Andorra vive di secondi tempi",
-    "testo": "Solo 33 dei suoi 102 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "testo": "Solo 33 dei suoi 103 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
     "numero": "68%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
@@ -1211,7 +1224,7 @@
     "squadre": [
      "Andorra"
     ],
-    "campione": 102
+    "campione": 103
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1268,19 +1281,6 @@
      "Darmstadt"
     ],
     "campione": 17
-   },
-   {
-    "tipo": "primo_tempo",
-    "titolo": "Dresden decide presto",
-    "testo": "33 dei suoi 59 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "56%",
-    "campionato": "2. Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga-2",
-    "squadre": [
-     "Dresden"
-    ],
-    "campione": 59
    },
    {
     "tipo": "sorpresa_mercato",
