@@ -1,5 +1,5 @@
 {
- "data": "2026-09-12",
+ "data": "2026-09-13",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 936
+   "campione": 942
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1432
+   "campione": 1436
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga",
    "squadre": [],
-   "campione": 1183
+   "campione": 1186
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1173
+   "campione": 1178
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 728
+   "campione": 730
   },
   {
    "tipo": "corner",
@@ -128,16 +128,16 @@
   "premier-league": [
    {
     "tipo": "a_secco",
-    "titolo": "Tottenham non segna da 3 partite",
+    "titolo": "Tottenham non segna da 4 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
+    "numero": "4",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Tottenham"
     ],
-    "campione": 3
+    "campione": 4
    },
    {
     "tipo": "rimonte",
@@ -164,19 +164,6 @@
      "Ipswich"
     ],
     "campione": 8
-   },
-   {
-    "tipo": "primo_tempo",
-    "titolo": "Ipswich decide presto",
-    "testo": "23 dei suoi 40 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "58%",
-    "campionato": "Premier League",
-    "bandiera": "🏴",
-    "slug": "premier-league",
-    "squadre": [
-     "Ipswich"
-    ],
-    "campione": 40
    },
    {
     "tipo": "ripresa",
@@ -277,6 +264,19 @@
    }
   ],
   "bundesliga": [
+   {
+    "tipo": "a_secco",
+    "titolo": "Paderborn non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Paderborn"
+    ],
+    "campione": 3
+   },
    {
     "tipo": "rimonte",
     "titolo": "Bayern Munich non molla all'intervallo",
@@ -403,6 +403,19 @@
     "campione": 6
    },
    {
+    "tipo": "digiuno",
+    "titolo": "Den Haag non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Den Haag"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "PSV Eindhoven non molla all'intervallo",
     "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 7: e' la quota di rimonte piu' alta del campionato.",
@@ -459,17 +472,30 @@
   ],
   "primeira-liga": [
    {
-    "tipo": "a_secco",
-    "titolo": "Casa Pia non segna da 5 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "5",
+    "tipo": "imbattuta",
+    "titolo": "Porto non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Porto"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Casa Pia non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
      "Casa Pia"
     ],
-    "campione": 5
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -496,6 +522,19 @@
      "Rio Ave"
     ],
     "campione": 24
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Alverca vive di secondi tempi",
+    "testo": "Solo 14 dei suoi 43 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "67%",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Alverca"
+    ],
+    "campione": 43
    },
    {
     "tipo": "sorpresa_mercato",
@@ -584,30 +623,30 @@
   ],
   "jupiler": [
    {
+    "tipo": "imbattuta",
+    "titolo": "St. Gilloise non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "St. Gilloise"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "digiuno",
-    "titolo": "Mechelen non vince da 6 partite",
+    "titolo": "Oud-Heverlee Leuven non vince da 6 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "6",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
-     "Mechelen"
+     "Oud-Heverlee Leuven"
     ],
     "campione": 6
-   },
-   {
-    "tipo": "a_secco",
-    "titolo": "Cercle Brugge non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
-    "campionato": "Pro League",
-    "bandiera": "🇧🇪",
-    "slug": "jupiler",
-    "squadre": [
-     "Cercle Brugge"
-    ],
-    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -707,7 +746,7 @@
    {
     "tipo": "primo_tempo",
     "titolo": "OFI Crete decide presto",
-    "testo": "69 dei suoi 123 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "testo": "69 dei suoi 124 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
     "numero": "56%",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
@@ -715,7 +754,7 @@
     "squadre": [
      "OFI Crete"
     ],
-    "campione": 123
+    "campione": 124
    },
    {
     "tipo": "sorpresa_mercato",
@@ -899,6 +938,19 @@
   ],
   "championship": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Southampton non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Southampton"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "digiuno",
     "titolo": "Cardiff non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
@@ -910,6 +962,19 @@
      "Cardiff"
     ],
     "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Charlton non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Charlton"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -981,6 +1046,45 @@
   ],
   "league-one": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Huddersfield non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Huddersfield"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Milton Keynes Dons non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Milton Keynes Dons"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Mansfield non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Mansfield"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Stockport non molla all'intervallo",
     "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
@@ -1038,14 +1142,14 @@
   "league-two": [
    {
     "tipo": "imbattuta",
-    "titolo": "Grimsby non perde da 6 partite",
+    "titolo": "Walsall non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "6",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
-     "Grimsby"
+     "Walsall"
     ],
     "campione": 6
    },
@@ -1120,29 +1224,42 @@
   "national-league": [
    {
     "tipo": "imbattuta",
-    "titolo": "Kidderminster non perde da 6 partite",
+    "titolo": "Boreham Wood non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "National League",
     "bandiera": "🏴",
     "slug": "national-league",
     "squadre": [
-     "Kidderminster"
+     "Boreham Wood"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "digiuno",
-    "titolo": "Solihull non vince da 6 partite",
+    "titolo": "Solihull non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "National League",
     "bandiera": "🏴",
     "slug": "national-league",
     "squadre": [
      "Solihull"
     ],
-    "campione": 6
+    "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Sutton non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Sutton"
+    ],
+    "campione": 3
    },
    {
     "tipo": "sorpresa_mercato",
