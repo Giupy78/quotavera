@@ -1,6 +1,6 @@
 {
  "data": "2026-09-13",
- "partite_in_programma": 271,
+ "partite_in_programma": 263,
  "campionati": 22,
  "sorprese": [
   {
@@ -927,17 +927,6 @@
  ],
  "partite_meno_care": [
   {
-   "campionato": "Premier League",
-   "bandiera": "🏴",
-   "slug": "premier-league",
-   "id": "coventry-brighton",
-   "casa": "Coventry",
-   "ospite": "Brighton",
-   "data": "2026-09-13",
-   "ora": "15:00",
-   "margine": 0.0036
-  },
-  {
    "campionato": "LaLiga",
    "bandiera": "🇪🇸",
    "slug": "laliga",
@@ -963,23 +952,34 @@
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
-   "id": "rb-leipzig-hamburg",
-   "casa": "RB Leipzig",
-   "ospite": "Hamburg",
-   "data": "2026-09-13",
-   "ora": "15:30",
-   "margine": 0.006
-  },
-  {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
    "id": "elversberg-bayern-munich",
    "casa": "Elversberg",
    "ospite": "Bayern Munich",
    "data": "2026-09-13",
    "ora": "17:30",
    "margine": 0.007
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "lecce-monza",
+   "casa": "Lecce",
+   "ospite": "Monza",
+   "data": "2026-09-13",
+   "ora": "15:00",
+   "margine": 0.0072
+  },
+  {
+   "campionato": "Premier League",
+   "bandiera": "🏴",
+   "slug": "premier-league",
+   "id": "man-united-man-city",
+   "casa": "Man United",
+   "ospite": "Man City",
+   "data": "2026-09-13",
+   "ora": "17:30",
+   "margine": 0.0072
   }
  ]
 }
