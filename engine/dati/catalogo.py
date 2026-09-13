@@ -56,9 +56,15 @@ CAMPIONATI: list[Campionato] = [
     Campionato("laliga-2", "SP2", "LaLiga 2", "Spagna", "🇪🇸", 2, False),
     Campionato("bundesliga-2", "D2", "2. Bundesliga", "Germania", "🇩🇪", 2, False),
     Campionato("ligue-2", "F2", "Ligue 2", "Francia", "🇫🇷", 2, False),
-    Campionato("championship-scozia", "SC1", "Championship", "Scozia", "🏴", 2, False),
-    Campionato("league-one-scozia", "SC2", "League One", "Scozia", "🏴", 3, False),
-    Campionato("league-two-scozia", "SC3", "League Two", "Scozia", "🏴", 4, False),
+    # "scozzese" nel nome e non solo nel paese: le tre serie hanno lo stesso
+    # nome di quelle inglesi, e dove il paese non si vede — il menu, le
+    # etichette dei giorni in homepage, gli articoli — comparivano due
+    # "Championship" identiche. Su Windows avevano pure la stessa bandiera
+    # nera, perche' la bandiera scozzese li' non esiste. Gli slug non cambiano,
+    # quindi nessun indirizzo si rompe.
+    Campionato("championship-scozia", "SC1", "Championship scozzese", "Scozia", "🏴", 2, False),
+    Campionato("league-one-scozia", "SC2", "League One scozzese", "Scozia", "🏴", 3, False),
+    Campionato("league-two-scozia", "SC3", "League Two scozzese", "Scozia", "🏴", 4, False),
 ]
 
 PER_SLUG = {c.slug: c for c in CAMPIONATI}

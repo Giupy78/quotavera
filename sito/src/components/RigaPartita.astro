@@ -19,7 +19,7 @@ const etichette = ["1", "X", "2"];
 const quote = p.quote.massimo ?? p.quote.media ?? p.quote.bet365 ?? null;
 ---
 
-<a class="riga-partita" href={`/calcio/${slug}/${p.id}/`}>
+<a class:list={["riga-partita", { "senza-quote": !quote }]} href={`/calcio/${slug}/${p.id}/`}>
   <div class="quando">
     {
       mostraData && (
@@ -71,6 +71,7 @@ const quote = p.quote.massimo ?? p.quote.media ?? p.quote.bet365 ?? null;
   </div>
 
   <div class="margine mono">
+    <span class="etichetta-margine">margine</span>
     {p.margine !== null ? pct(p.margine, 1) : "—"}
   </div>
 </a>
@@ -182,13 +183,51 @@ const quote = p.quote.massimo ?? p.quote.media ?? p.quote.bet365 ?? null;
       text-align: left;
     }
   }
+  .etichetta-margine {
+    display: none;
+  }
+
   @media (max-width: 700px) {
+    /* Su telefono l'orario sta accanto alle squadre invece che su una riga
+       sua: e' un'informazione di dieci caratteri, e prenderle una riga intera
+       allungava ogni partita di trenta pixel. */
     .riga-partita {
-      grid-template-columns: 1fr;
+      grid-template-columns: 44px minmax(0, 1fr);
+      column-gap: 10px;
+      row-gap: 8px;
+      padding: 11px 14px;
     }
+    .quando {
+      grid-column: 1;
+      align-self: baseline;
+    }
+    .chi {
+      grid-column: 2;
+      font-size: 14px;
+    }
+    .prob,
     .quote,
     .margine {
-      grid-column: 1;
+      grid-column: 1 / -1;
+    }
+    .margine {
+      font-size: 12px;
+      color: var(--ink-3);
+    }
+    /* Senza etichetta, "4,2%" da solo sotto le quote non si capisce cos'e'. */
+    .etichetta-margine {
+      display: inline;
+      margin-right: 6px;
+      font-family: var(--sans);
+    }
+    /* Senza quote i due blocchi erano un riquadro vuoto con un trattino e un
+       altro trattino sotto: ottanta pixel per partita che non dicevano niente,
+       ripetuti su quasi tutto il calendario quando il mercato non ha ancora
+       esposto i prezzi. Sul desktop restano, perche' li' tengono allineate
+       le colonne; qui non allineano niente. */
+    .senza-quote .quote,
+    .senza-quote .margine {
+      display: none;
     }
   }
 </style>

@@ -11,6 +11,7 @@ const pct = (v: number, d = 1) => num(v * 100, d) + "%";
 
 const leghe = campionati.campionati;
 const perSlug = Object.fromEntries(leghe.map((c) => [c.slug, c]));
+const ordine = Object.fromEntries(leghe.map((c, i) => [c.slug, i]));
 const cal = calendario.campionati as Record<string, any[]>;
 
 /* Tutte le partite di tutti i campionati, in ordine di orario: è la vista
@@ -24,7 +25,46 @@ for (const p of tutte) {
   if (!perGiorno.has(p.data)) perGiorno.set(p.data, []);
   perGiorno.get(p.data)!.push(p);
 }
-const giorni = [...perGiorno.entries()].slice(0, 4);
+/* Il primo giorno si mostra per intero, gli altri in forma compatta.
+   La ragione e' misurata, non estetica: elencando ogni partita di ogni
+   campionato per quattro giorni, questa pagina era alta **quaranta schermate
+   su telefono**. Nessuno arriva in fondo a quaranta schermate, quindi tutto
+   quello che stava sotto la seconda era lavoro buttato — e le pagine dei
+   campionati hanno gia' tutto, per chi vuole tutto.
+
+   Il sabato si gioca il grosso: 106 partite in diciannove campionati contro
+   le 21 di un venerdi'. Per quello i gruppi dei campionati maggiori si aprono
+   da soli e gli altri restano chiusi con il conteggio in vista: nessuna
+   informazione sparisce, cambia solo quanto costa raggiungerla. */
+const tuttiGiorni = [...perGiorno.entries()].slice(0, 6);
+const oggi = tuttiGiorni[0];
+const prossimi = tuttiGiorni.slice(1);
+
+/* Le partite di un giorno, raccolte per campionato, con i maggiori davanti. */
+const perCampionato = (partite: typeof tutte) => {
+  const gruppi = new Map<string, typeof partite>();
+  for (const p of partite) {
+    if (!gruppi.has(p.slug)) gruppi.set(p.slug, []);
+    gruppi.get(p.slug)!.push(p);
+  }
+  /* Maggiori davanti, nell'ordine del catalogo — lo stesso del menu in alto,
+     che comincia dalla Serie A. Ordinando per numero di partite, a pari
+     conteggio vinceva l'orario, e un venerdi' la Serie A finiva quarta dietro
+     Süper Lig ed Eredivisie: corretto, e sbagliato per chi legge in italiano.
+     I minori seguono, dal piu' affollato. */
+  return [...gruppi.entries()].sort((a, b) => {
+    const pa = perSlug[a[0]]?.principale ? 0 : 1;
+    const pb = perSlug[b[0]]?.principale ? 0 : 1;
+    if (pa !== pb) return pa - pb;
+    if (pa === 0) return ordine[a[0]] - ordine[b[0]];
+    return b[1].length - a[1].length;
+  });
+};
+
+const giornoCorto = (iso: string) =>
+  new Date(iso + "T00:00:00").toLocaleDateString("it-IT", {
+    weekday: "short", day: "numeric", month: "short",
+  });
 
 const dataLunga = (iso: string) =>
   new Date(iso + "T00:00:00").toLocaleDateString("it-IT", {
@@ -85,7 +125,7 @@ const dataLunga = (iso: string) =>
       ) : (
         <div class="tessera larga">
           <div class="k">Quote</div>
-          <div class="v mono">in arrivo</div>
+          <div class="v mono testo">in arrivo</div>
           <div class="n">
             il mercato le espone due o tre giorni prima; il calendario qui sopra
             arriva più avanti
@@ -155,42 +195,191 @@ const dataLunga = (iso: string) =>
   </section>
 
   {
-    giorni.map(([giorno, partite]) => {
-      /* Raggruppate per campionato dentro la giornata: l'etichetta compare
-         una volta per gruppo. Farlo in CSS sembrava più furbo ma mostrava
-         l'intestazione su ogni riga tranne la prima, che è un'altra cosa. */
-      const gruppi = new Map<string, typeof partite>();
-      for (const p of partite) {
-        if (!gruppi.has(p.slug)) gruppi.set(p.slug, []);
-        gruppi.get(p.slug)!.push(p);
-      }
-      return (
-        <section>
-          <div class="hd">
-            <h2 style="text-transform:capitalize">{dataLunga(giorno)}</h2>
-            <p>{partite.length} partite</p>
-          </div>
-          <div class="slip">
-            {[...gruppi.entries()].map(([slug, gruppo]) => (
-              <>
-                <div class="intestazione-lega">
-                  <a href={`/calcio/${slug}/`}>
-                    {perSlug[slug].bandiera} {perSlug[slug].nome}
-                  </a>
-                </div>
-                {gruppo.map((p) => (
-                  <RigaPartita p={p} slug={slug} />
-                ))}
-              </>
-            ))}
-          </div>
-        </section>
-      );
-    })
+    oggi && (
+      <section>
+        <div class="hd">
+          <h2 style="text-transform:capitalize">{dataLunga(oggi[0])}</h2>
+          <p>
+            {oggi[1].length} partite in {perCampionato(oggi[1]).length} campionati.
+            I gruppi chiusi si aprono con un clic.
+          </p>
+        </div>
+        <div class="giorno">
+          {perCampionato(oggi[1]).map(([slug, gruppo]) => (
+            <details open={perSlug[slug]?.principale}>
+              <summary>
+                <span class="bandiera">{perSlug[slug].bandiera}</span>
+                <b>{perSlug[slug].nome}</b>
+                <span class="conto mono">{gruppo.length}</span>
+              </summary>
+              <div class="slip">
+                {gruppo.map((p) => <RigaPartita p={p} slug={slug} />)}
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+    )
   }
+
+  {
+    prossimi.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Nei prossimi giorni</h2>
+          <p>
+            Quanto si gioca, e dove. Ogni riquadro porta alla pagina del
+            campionato, con calendario completo, classifica e statistiche.
+          </p>
+        </div>
+        <div class="prossimi">
+          {prossimi.map(([giorno, partite]) => (
+            <div class="giornata">
+              <div class="quando">
+                <b style="text-transform:capitalize">{giornoCorto(giorno)}</b>
+                <span class="mono">{partite.length}</span>
+              </div>
+              <div class="leghe">
+                {perCampionato(partite).map(([slug, gruppo]) => (
+                  <a href={`/calcio/${slug}/`} class={perSlug[slug]?.principale ? "forte" : ""}>
+                    <span class="bandiera">{perSlug[slug].bandiera}</span>
+                    {perSlug[slug].nome}
+                    <span class="mono">{gruppo.length}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
 </Base>
 
 <style>
+  /* --- il giorno in corso, per campionato ---------------------------- */
+  .giorno details {
+    border: 1px solid var(--rule);
+    border-bottom: none;
+  }
+  .giorno details:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+  .giorno summary {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 16px;
+    cursor: pointer;
+    background: var(--sunk);
+    font-size: 13px;
+    list-style: none;
+  }
+  .giorno summary::-webkit-details-marker {
+    display: none;
+  }
+  /* Il triangolino lo disegniamo noi: quello di sistema cambia forma fra
+     browser e non si allinea con niente. */
+  /* Una freccetta disegnata con due bordi: i caratteri triangolo hanno
+     dimensioni diverse in ogni font, e quello piccolo si leggeva a malapena. */
+  .giorno summary::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-right: 1.5px solid var(--ink-2);
+    border-bottom: 1.5px solid var(--ink-2);
+    transform: rotate(-45deg);
+    margin: 0 4px 0 2px;
+    transition: transform 0.15s ease;
+    flex: 0 0 auto;
+  }
+  .giorno details[open] summary::before {
+    transform: rotate(45deg);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .giorno summary::before {
+      transition: none;
+    }
+  }
+  .giorno summary:hover {
+    background: var(--card);
+  }
+  .giorno summary .conto {
+    margin-left: auto;
+    color: var(--ink-3);
+    font-size: 12px;
+  }
+  .giorno details[open] summary {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* --- i giorni successivi, in forma compatta ------------------------ */
+  .prossimi {
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .giornata {
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 14px;
+    padding: 13px 16px;
+    align-items: baseline;
+  }
+  .giornata .quando {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 13px;
+  }
+  .giornata .quando span {
+    color: var(--ink-3);
+    font-size: 12px;
+  }
+  .giornata .leghe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .giornata .leghe a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border: 1px solid var(--rule);
+    font-size: 12px;
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  .giornata .leghe a:hover {
+    border-color: var(--ink-3);
+    color: var(--ink);
+  }
+  .giornata .leghe a.forte {
+    color: var(--ink);
+    border-color: var(--rule-strong);
+  }
+  .giornata .leghe a span.mono {
+    color: var(--ink-3);
+    font-size: 11px;
+  }
+  /* La bandiera e' decorativa: su Windows i caratteri bandiera non esistono e
+     al loro posto compare la sigla del paese. Tenerla piccola e grigia fa si'
+     che in quel caso sembri un'etichetta, non un carattere mancante. */
+  .bandiera {
+    font-size: 13px;
+  }
+
+  @media (max-width: 560px) {
+    .giornata {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+
   .intestazione-lega a {
     display: block;
     padding: 8px 18px 4px;

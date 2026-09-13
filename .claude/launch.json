@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "sito", "run", "dev"],
       "port": 4321
+    },
+    {
+      "name": "sito-compilato",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "cd /d C:\\Users\\Utente\\OneDrive\\Desktop\\QuotaVera\\sito && npx astro preview --port 4340"],
+      "port": 4340
     }
   ]
 }

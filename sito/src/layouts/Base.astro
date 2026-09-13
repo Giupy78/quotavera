@@ -178,6 +178,29 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
     flex-wrap: wrap;
     padding-bottom: 14px;
   }
+  /* Su telefono tredici voci andavano a capo quattro volte: fra marchio, menu
+     e campionati l'intestazione occupava seicento pixel degli ottocento della
+     prima schermata, e il contenuto cominciava fuori campo. In una riga sola
+     che scorre di lato l'ingombro torna a una riga, e chi cerca il suo
+     campionato lo trova scorrendo invece che leggendo un muro. */
+  @media (max-width: 620px) {
+    .leghe-nav {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 10px;
+      /* Un filo di spazio a destra: senza, l'ultima voce sembra tagliata
+         invece che scorribile. */
+      padding-right: 20px;
+    }
+    .leghe-nav::-webkit-scrollbar {
+      display: none;
+    }
+    .leghe-nav a {
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+  }
   .leghe-nav a {
     display: flex;
     align-items: center;
