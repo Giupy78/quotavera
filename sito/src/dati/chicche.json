@@ -1,5 +1,5 @@
 {
- "data": "2026-09-13",
+ "data": "2026-09-14",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -10,18 +10,18 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 943
+   "campione": 944
   },
   {
    "tipo": "gol_lega_meno",
    "titolo": "E quello dove si segna di meno e' LaLiga 2",
-   "testo": "2.47 gol a partita: quasi uno in meno del campionato piu' prolifico.",
-   "numero": "2.47",
+   "testo": "2.46 gol a partita: quasi uno in meno del campionato piu' prolifico.",
+   "numero": "2.46",
    "campionato": "LaLiga 2",
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1436
+   "campione": 1440
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga",
    "squadre": [],
-   "campione": 1186
+   "campione": 1190
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1178
+   "campione": 1180
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 730
+   "campione": 735
   },
   {
    "tipo": "corner",
@@ -208,6 +208,19 @@
    }
   ],
   "laliga": [
+   {
+    "tipo": "digiuno",
+    "titolo": "Celta non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Celta"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "rimonte",
     "titolo": "Barcelona non molla all'intervallo",
@@ -391,14 +404,14 @@
   "eredivisie": [
    {
     "tipo": "imbattuta",
-    "titolo": "AZ Alkmaar non perde da 6 partite",
+    "titolo": "PSV Eindhoven non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "6",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
-     "AZ Alkmaar"
+     "PSV Eindhoven"
     ],
     "campione": 6
    },
@@ -473,27 +486,27 @@
   "primeira-liga": [
    {
     "tipo": "imbattuta",
-    "titolo": "Porto non perde da 6 partite",
+    "titolo": "Sp Lisbon non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "6",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
-     "Porto"
+     "Sp Lisbon"
     ],
     "campione": 6
    },
    {
     "tipo": "digiuno",
-    "titolo": "Casa Pia non vince da 6 partite",
+    "titolo": "Famalicao non vince da 6 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "6",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
-     "Casa Pia"
+     "Famalicao"
     ],
     "campione": 6
    },
@@ -649,6 +662,19 @@
     "campione": 6
    },
    {
+    "tipo": "a_secco",
+    "titolo": "Kortrijk non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Kortrijk"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Waregem non molla all'intervallo",
     "testo": "Sotto al riposo 13 volte nelle ultime stagioni, ha finito vincendo 3: e' la quota di rimonte piu' alta del campionato.",
@@ -706,16 +732,16 @@
   "super-league-grecia": [
    {
     "tipo": "a_secco",
-    "titolo": "Levadeiakos non segna da 3 partite",
+    "titolo": "Levadeiakos non segna da 4 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
+    "numero": "4",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "Levadeiakos"
     ],
-    "campione": 3
+    "campione": 4
    },
    {
     "tipo": "rimonte",

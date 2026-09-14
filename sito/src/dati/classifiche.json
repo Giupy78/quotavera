@@ -14,8 +14,8 @@
     "punti": 10,
     "punti_attesi": 5.1,
     "scarto_punti": 4.9,
-    "posizione_attesa": 9,
-    "salto": 8
+    "posizione_attesa": 13,
+    "salto": 12
    },
    {
     "posizione": 2,
@@ -30,8 +30,8 @@
     "punti": 9,
     "punti_attesi": 7.0,
     "scarto_punti": 2.0,
-    "posizione_attesa": 1,
-    "salto": -1
+    "posizione_attesa": 2,
+    "salto": 0
    },
    {
     "posizione": 3,
@@ -46,8 +46,8 @@
     "punti": 9,
     "punti_attesi": 6.1,
     "scarto_punti": 2.9,
-    "posizione_attesa": 7,
-    "salto": 4
+    "posizione_attesa": 9,
+    "salto": 6
    },
    {
     "posizione": 4,
@@ -62,8 +62,8 @@
     "punti": 9,
     "punti_attesi": 6.2,
     "scarto_punti": 2.8,
-    "posizione_attesa": 5,
-    "salto": 1
+    "posizione_attesa": 6,
+    "salto": 2
    },
    {
     "posizione": 5,
@@ -78,8 +78,8 @@
     "punti": 8,
     "punti_attesi": 6.2,
     "scarto_punti": 1.8,
-    "posizione_attesa": 4,
-    "salto": -1
+    "posizione_attesa": 5,
+    "salto": 0
    },
    {
     "posizione": 6,
@@ -94,8 +94,8 @@
     "punti": 7,
     "punti_attesi": 6.8,
     "scarto_punti": 0.2,
-    "posizione_attesa": 2,
-    "salto": -4
+    "posizione_attesa": 3,
+    "salto": -3
    },
    {
     "posizione": 7,
@@ -110,27 +110,59 @@
     "punti": 7,
     "punti_attesi": 6.2,
     "scarto_punti": 0.8,
-    "posizione_attesa": 6,
-    "salto": -1
+    "posizione_attesa": 8,
+    "salto": 1
    },
    {
     "posizione": 8,
     "squadra": "Juventus",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 2,
     "pareggiate": 1,
-    "perse": 0,
-    "fatti": 4,
-    "subiti": 1,
-    "differenza": 3,
+    "perse": 1,
+    "fatti": 6,
+    "subiti": 4,
+    "differenza": 2,
     "punti": 7,
-    "punti_attesi": 6.3,
-    "scarto_punti": 0.7,
-    "posizione_attesa": 3,
-    "salto": -5
+    "punti_attesi": 8.1,
+    "scarto_punti": -1.1,
+    "posizione_attesa": 1,
+    "salto": -7
    },
    {
     "posizione": 9,
+    "squadra": "Sassuolo",
+    "giocate": 4,
+    "vinte": 2,
+    "pareggiate": 1,
+    "perse": 1,
+    "fatti": 8,
+    "subiti": 7,
+    "differenza": 1,
+    "punti": 7,
+    "punti_attesi": 6.2,
+    "scarto_punti": 0.8,
+    "posizione_attesa": 7,
+    "salto": -2
+   },
+   {
+    "posizione": 10,
+    "squadra": "Napoli",
+    "giocate": 4,
+    "vinte": 2,
+    "pareggiate": 0,
+    "perse": 2,
+    "fatti": 6,
+    "subiti": 5,
+    "differenza": 1,
+    "punti": 6,
+    "punti_attesi": 5.2,
+    "scarto_punti": 0.8,
+    "posizione_attesa": 12,
+    "salto": 2
+   },
+   {
+    "posizione": 11,
     "squadra": "Atalanta",
     "giocate": 4,
     "vinte": 2,
@@ -142,11 +174,27 @@
     "punti": 6,
     "punti_attesi": 3.7,
     "scarto_punti": 2.3,
-    "posizione_attesa": 13,
-    "salto": 4
+    "posizione_attesa": 14,
+    "salto": 3
    },
    {
-    "posizione": 10,
+    "posizione": 12,
+    "squadra": "Lecce",
+    "giocate": 4,
+    "vinte": 2,
+    "pareggiate": 0,
+    "perse": 2,
+    "fatti": 5,
+    "subiti": 7,
+    "differenza": -2,
+    "punti": 6,
+    "punti_attesi": 2.3,
+    "scarto_punti": 3.7,
+    "posizione_attesa": 20,
+    "salto": 8
+   },
+   {
+    "posizione": 13,
     "squadra": "Udinese",
     "giocate": 3,
     "vinte": 1,
@@ -159,42 +207,10 @@
     "punti_attesi": 3.6,
     "scarto_punti": 0.4,
     "posizione_attesa": 15,
-    "salto": 5
-   },
-   {
-    "posizione": 11,
-    "squadra": "Sassuolo",
-    "giocate": 3,
-    "vinte": 1,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 5,
-    "differenza": 0,
-    "punti": 4,
-    "punti_attesi": 5.1,
-    "scarto_punti": -1.1,
-    "posizione_attesa": 10,
-    "salto": -1
-   },
-   {
-    "posizione": 12,
-    "squadra": "Napoli",
-    "giocate": 3,
-    "vinte": 1,
-    "pareggiate": 0,
-    "perse": 2,
-    "fatti": 5,
-    "subiti": 5,
-    "differenza": 0,
-    "punti": 3,
-    "punti_attesi": 3.6,
-    "scarto_punti": -0.6,
-    "posizione_attesa": 14,
     "salto": 2
    },
    {
-    "posizione": 13,
+    "posizione": 14,
     "squadra": "Torino",
     "giocate": 3,
     "vinte": 1,
@@ -207,23 +223,7 @@
     "punti_attesi": 2.4,
     "scarto_punti": 0.6,
     "posizione_attesa": 19,
-    "salto": 6
-   },
-   {
-    "posizione": 14,
-    "squadra": "Lecce",
-    "giocate": 3,
-    "vinte": 1,
-    "pareggiate": 0,
-    "perse": 2,
-    "fatti": 2,
-    "subiti": 5,
-    "differenza": -3,
-    "punti": 3,
-    "punti_attesi": 2.0,
-    "scarto_punti": 1.0,
-    "posizione_attesa": 20,
-    "salto": 6
+    "salto": 5
    },
    {
     "posizione": 15,
@@ -238,22 +238,22 @@
     "punti": 3,
     "punti_attesi": 6.0,
     "scarto_punti": -3.0,
-    "posizione_attesa": 8,
-    "salto": -7
+    "posizione_attesa": 10,
+    "salto": -5
    },
    {
     "posizione": 16,
     "squadra": "Bologna",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 0,
     "pareggiate": 1,
-    "perse": 2,
+    "perse": 3,
     "fatti": 2,
-    "subiti": 4,
-    "differenza": -2,
+    "subiti": 5,
+    "differenza": -3,
     "punti": 1,
-    "punti_attesi": 4.6,
-    "scarto_punti": -3.6,
+    "punti_attesi": 5.6,
+    "scarto_punti": -4.6,
     "posizione_attesa": 11,
     "salto": -5
    },
@@ -276,18 +276,18 @@
    {
     "posizione": 18,
     "squadra": "Monza",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 0,
     "pareggiate": 1,
-    "perse": 2,
-    "fatti": 4,
-    "subiti": 8,
-    "differenza": -4,
+    "perse": 3,
+    "fatti": 6,
+    "subiti": 11,
+    "differenza": -5,
     "punti": 1,
-    "punti_attesi": 4.1,
-    "scarto_punti": -3.1,
-    "posizione_attesa": 12,
-    "salto": -6
+    "punti_attesi": 6.7,
+    "scarto_punti": -5.7,
+    "posizione_attesa": 4,
+    "salto": -14
    },
    {
     "posizione": 19,
@@ -342,18 +342,18 @@
    {
     "posizione": 2,
     "squadra": "Man City",
-    "giocate": 3,
-    "vinte": 3,
+    "giocate": 4,
+    "vinte": 4,
     "pareggiate": 0,
     "perse": 0,
-    "fatti": 7,
+    "fatti": 8,
     "subiti": 2,
-    "differenza": 5,
-    "punti": 9,
-    "punti_attesi": 6.2,
-    "scarto_punti": 2.8,
-    "posizione_attesa": 7,
-    "salto": 5
+    "differenza": 6,
+    "punti": 12,
+    "punti_attesi": 7.2,
+    "scarto_punti": 4.8,
+    "posizione_attesa": 2,
+    "salto": 0
    },
    {
     "posizione": 3,
@@ -368,8 +368,8 @@
     "punti": 8,
     "punti_attesi": 5.4,
     "scarto_punti": 2.6,
-    "posizione_attesa": 9,
-    "salto": 6
+    "posizione_attesa": 10,
+    "salto": 7
    },
    {
     "posizione": 4,
@@ -384,8 +384,8 @@
     "punti": 7,
     "punti_attesi": 7.0,
     "scarto_punti": -0.0,
-    "posizione_attesa": 2,
-    "salto": -2
+    "posizione_attesa": 3,
+    "salto": -1
    },
    {
     "posizione": 5,
@@ -400,8 +400,8 @@
     "punti": 7,
     "punti_attesi": 5.3,
     "scarto_punti": 1.7,
-    "posizione_attesa": 10,
-    "salto": 5
+    "posizione_attesa": 11,
+    "salto": 6
    },
    {
     "posizione": 6,
@@ -416,8 +416,8 @@
     "punti": 6,
     "punti_attesi": 5.1,
     "scarto_punti": 0.9,
-    "posizione_attesa": 11,
-    "salto": 5
+    "posizione_attesa": 12,
+    "salto": 6
    },
    {
     "posizione": 7,
@@ -432,8 +432,8 @@
     "punti": 6,
     "punti_attesi": 6.5,
     "scarto_punti": -0.5,
-    "posizione_attesa": 6,
-    "salto": -1
+    "posizione_attesa": 7,
+    "salto": 0
    },
    {
     "posizione": 8,
@@ -448,8 +448,8 @@
     "punti": 6,
     "punti_attesi": 7.0,
     "scarto_punti": -1.0,
-    "posizione_attesa": 4,
-    "salto": -4
+    "posizione_attesa": 5,
+    "salto": -3
    },
    {
     "posizione": 9,
@@ -512,24 +512,24 @@
     "punti": 5,
     "punti_attesi": 5.8,
     "scarto_punti": -0.8,
-    "posizione_attesa": 8,
-    "salto": -4
+    "posizione_attesa": 9,
+    "salto": -3
    },
    {
     "posizione": 13,
     "squadra": "Man United",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 1,
     "pareggiate": 1,
-    "perse": 1,
+    "perse": 2,
     "fatti": 7,
-    "subiti": 6,
-    "differenza": 1,
+    "subiti": 7,
+    "differenza": 0,
     "punti": 4,
-    "punti_attesi": 4.7,
-    "scarto_punti": -0.7,
-    "posizione_attesa": 13,
-    "salto": 0
+    "punti_attesi": 6.3,
+    "scarto_punti": -2.3,
+    "posizione_attesa": 8,
+    "salto": -5
    },
    {
     "posizione": 14,
@@ -544,8 +544,8 @@
     "punti": 4,
     "punti_attesi": 7.0,
     "scarto_punti": -3.0,
-    "posizione_attesa": 3,
-    "salto": -11
+    "posizione_attesa": 4,
+    "salto": -10
    },
    {
     "posizione": 15,
@@ -560,8 +560,8 @@
     "punti": 3,
     "punti_attesi": 6.8,
     "scarto_punti": -3.8,
-    "posizione_attesa": 5,
-    "salto": -10
+    "posizione_attesa": 6,
+    "salto": -9
    },
    {
     "posizione": 16,
@@ -608,8 +608,8 @@
     "punti": 1,
     "punti_attesi": 4.9,
     "scarto_punti": -3.9,
-    "posizione_attesa": 12,
-    "salto": -6
+    "posizione_attesa": 13,
+    "salto": -5
    },
    {
     "posizione": 19,
@@ -648,16 +648,16 @@
    {
     "posizione": 1,
     "squadra": "Barcelona",
-    "giocate": 4,
-    "vinte": 4,
+    "giocate": 5,
+    "vinte": 5,
     "pareggiate": 0,
     "perse": 0,
-    "fatti": 17,
-    "subiti": 2,
-    "differenza": 15,
-    "punti": 12,
-    "punti_attesi": 10.0,
-    "scarto_punti": 2.0,
+    "fatti": 21,
+    "subiti": 4,
+    "differenza": 17,
+    "punti": 15,
+    "punti_attesi": 11.2,
+    "scarto_punti": 3.8,
     "posizione_attesa": 2,
     "salto": 1
    },
@@ -695,6 +695,22 @@
    },
    {
     "posizione": 4,
+    "squadra": "Ath Madrid",
+    "giocate": 5,
+    "vinte": 3,
+    "pareggiate": 1,
+    "perse": 1,
+    "fatti": 10,
+    "subiti": 6,
+    "differenza": 4,
+    "punti": 10,
+    "punti_attesi": 8.2,
+    "scarto_punti": 1.8,
+    "posizione_attesa": 5,
+    "salto": 1
+   },
+   {
+    "posizione": 5,
     "squadra": "Sevilla",
     "giocate": 5,
     "vinte": 3,
@@ -706,11 +722,27 @@
     "punti": 10,
     "punti_attesi": 7.4,
     "scarto_punti": 2.6,
-    "posizione_attesa": 7,
+    "posizione_attesa": 8,
     "salto": 3
    },
    {
-    "posizione": 5,
+    "posizione": 6,
+    "squadra": "La Coruna",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 3,
+    "perse": 0,
+    "fatti": 9,
+    "subiti": 6,
+    "differenza": 3,
+    "punti": 9,
+    "punti_attesi": 6.0,
+    "scarto_punti": 3.0,
+    "posizione_attesa": 13,
+    "salto": 7
+   },
+   {
+    "posizione": 7,
     "squadra": "Betis",
     "giocate": 4,
     "vinte": 3,
@@ -722,27 +754,11 @@
     "punti": 9,
     "punti_attesi": 5.2,
     "scarto_punti": 3.8,
-    "posizione_attesa": 13,
-    "salto": 8
-   },
-   {
-    "posizione": 6,
-    "squadra": "La Coruna",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 2,
-    "perse": 0,
-    "fatti": 8,
-    "subiti": 5,
-    "differenza": 3,
-    "punti": 8,
-    "punti_attesi": 4.9,
-    "scarto_punti": 3.1,
     "posizione_attesa": 16,
-    "salto": 10
+    "salto": 9
    },
    {
-    "posizione": 7,
+    "posizione": 8,
     "squadra": "Espanol",
     "giocate": 5,
     "vinte": 2,
@@ -754,24 +770,8 @@
     "punti": 7,
     "punti_attesi": 6.0,
     "scarto_punti": 1.0,
-    "posizione_attesa": 12,
-    "salto": 5
-   },
-   {
-    "posizione": 8,
-    "squadra": "Ath Madrid",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 7,
-    "subiti": 6,
-    "differenza": 1,
-    "punti": 7,
-    "punti_attesi": 6.4,
-    "scarto_punti": 0.6,
-    "posizione_attesa": 10,
-    "salto": 2
+    "posizione_attesa": 14,
+    "salto": 6
    },
    {
     "posizione": 9,
@@ -786,8 +786,8 @@
     "punti": 7,
     "punti_attesi": 7.6,
     "scarto_punti": -0.6,
-    "posizione_attesa": 6,
-    "salto": -3
+    "posizione_attesa": 7,
+    "salto": -2
    },
    {
     "posizione": 10,
@@ -802,27 +802,11 @@
     "punti": 7,
     "punti_attesi": 4.9,
     "scarto_punti": 2.1,
-    "posizione_attesa": 15,
-    "salto": 5
+    "posizione_attesa": 17,
+    "salto": 7
    },
    {
     "posizione": 11,
-    "squadra": "Sociedad",
-    "giocate": 5,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 2,
-    "fatti": 6,
-    "subiti": 8,
-    "differenza": -2,
-    "punti": 7,
-    "punti_attesi": 6.3,
-    "scarto_punti": 0.7,
-    "posizione_attesa": 11,
-    "salto": 0
-   },
-   {
-    "posizione": 12,
     "squadra": "Osasuna",
     "giocate": 5,
     "vinte": 2,
@@ -835,42 +819,74 @@
     "punti_attesi": 8.8,
     "scarto_punti": -1.8,
     "posizione_attesa": 3,
-    "salto": -9
+    "salto": -8
+   },
+   {
+    "posizione": 12,
+    "squadra": "Sociedad",
+    "giocate": 6,
+    "vinte": 2,
+    "pareggiate": 1,
+    "perse": 3,
+    "fatti": 6,
+    "subiti": 11,
+    "differenza": -5,
+    "punti": 7,
+    "punti_attesi": 7.2,
+    "scarto_punti": -0.2,
+    "posizione_attesa": 9,
+    "salto": -3
    },
    {
     "posizione": 13,
     "squadra": "Levante",
-    "giocate": 4,
+    "giocate": 5,
     "vinte": 1,
     "pareggiate": 2,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 5,
-    "differenza": 0,
+    "perse": 2,
+    "fatti": 7,
+    "subiti": 9,
+    "differenza": -2,
     "punti": 5,
-    "punti_attesi": 3.8,
-    "scarto_punti": 1.2,
-    "posizione_attesa": 18,
-    "salto": 5
+    "punti_attesi": 5.4,
+    "scarto_punti": -0.4,
+    "posizione_attesa": 15,
+    "salto": 2
    },
    {
     "posizione": 14,
     "squadra": "Getafe",
-    "giocate": 4,
+    "giocate": 5,
     "vinte": 1,
-    "pareggiate": 1,
+    "pareggiate": 2,
     "perse": 2,
-    "fatti": 2,
-    "subiti": 5,
+    "fatti": 3,
+    "subiti": 6,
     "differenza": -3,
-    "punti": 4,
-    "punti_attesi": 3.1,
-    "scarto_punti": 0.9,
-    "posizione_attesa": 19,
-    "salto": 5
+    "punti": 5,
+    "punti_attesi": 4.7,
+    "scarto_punti": 0.3,
+    "posizione_attesa": 18,
+    "salto": 4
    },
    {
     "posizione": 15,
+    "squadra": "Celta",
+    "giocate": 6,
+    "vinte": 0,
+    "pareggiate": 4,
+    "perse": 2,
+    "fatti": 3,
+    "subiti": 6,
+    "differenza": -3,
+    "punti": 4,
+    "punti_attesi": 7.1,
+    "scarto_punti": -3.1,
+    "posizione_attesa": 10,
+    "salto": -5
+   },
+   {
+    "posizione": 16,
     "squadra": "Vallecano",
     "giocate": 5,
     "vinte": 1,
@@ -882,27 +898,27 @@
     "punti": 4,
     "punti_attesi": 6.4,
     "scarto_punti": -2.4,
-    "posizione_attesa": 9,
-    "salto": -6
+    "posizione_attesa": 12,
+    "salto": -4
    },
    {
-    "posizione": 16,
-    "squadra": "Celta",
+    "posizione": 17,
+    "squadra": "Malaga",
     "giocate": 5,
     "vinte": 0,
     "pareggiate": 3,
     "perse": 2,
     "fatti": 2,
-    "subiti": 5,
-    "differenza": -3,
+    "subiti": 8,
+    "differenza": -6,
     "punti": 3,
-    "punti_attesi": 5.0,
-    "scarto_punti": -2.0,
-    "posizione_attesa": 14,
-    "salto": -2
+    "punti_attesi": 3.5,
+    "scarto_punti": -0.5,
+    "posizione_attesa": 20,
+    "salto": 3
    },
    {
-    "posizione": 17,
+    "posizione": 18,
     "squadra": "Villarreal",
     "giocate": 4,
     "vinte": 0,
@@ -914,24 +930,8 @@
     "punti": 2,
     "punti_attesi": 8.0,
     "scarto_punti": -6.0,
-    "posizione_attesa": 5,
+    "posizione_attesa": 6,
     "salto": -12
-   },
-   {
-    "posizione": 18,
-    "squadra": "Malaga",
-    "giocate": 4,
-    "vinte": 0,
-    "pareggiate": 2,
-    "perse": 2,
-    "fatti": 1,
-    "subiti": 7,
-    "differenza": -6,
-    "punti": 2,
-    "punti_attesi": 2.8,
-    "scarto_punti": -0.8,
-    "posizione_attesa": 20,
-    "salto": 2
    },
    {
     "posizione": 19,
@@ -946,8 +946,8 @@
     "punti": 2,
     "punti_attesi": 6.8,
     "scarto_punti": -4.8,
-    "posizione_attesa": 8,
-    "salto": -11
+    "posizione_attesa": 11,
+    "salto": -8
    },
    {
     "posizione": 20,
@@ -962,8 +962,8 @@
     "punti": 1,
     "punti_attesi": 4.3,
     "scarto_punti": -3.3,
-    "posizione_attesa": 17,
-    "salto": -3
+    "posizione_attesa": 19,
+    "salto": -1
    }
   ],
   "bundesliga": [
@@ -980,8 +980,8 @@
     "punti": 9,
     "punti_attesi": 6.6,
     "scarto_punti": 2.4,
-    "posizione_attesa": 1,
-    "salto": 0
+    "posizione_attesa": 2,
+    "salto": 1
    },
    {
     "posizione": 2,
@@ -996,8 +996,8 @@
     "punti": 9,
     "punti_attesi": 5.9,
     "scarto_punti": 3.1,
-    "posizione_attesa": 3,
-    "salto": 1
+    "posizione_attesa": 4,
+    "salto": 2
    },
    {
     "posizione": 3,
@@ -1012,11 +1012,27 @@
     "punti": 7,
     "punti_attesi": 5.2,
     "scarto_punti": 1.8,
-    "posizione_attesa": 6,
-    "salto": 3
+    "posizione_attesa": 7,
+    "salto": 4
    },
    {
     "posizione": 4,
+    "squadra": "Bayern Munich",
+    "giocate": 3,
+    "vinte": 2,
+    "pareggiate": 1,
+    "perse": 0,
+    "fatti": 7,
+    "subiti": 2,
+    "differenza": 5,
+    "punti": 7,
+    "punti_attesi": 7.2,
+    "scarto_punti": -0.2,
+    "posizione_attesa": 1,
+    "salto": -3
+   },
+   {
+    "posizione": 5,
     "squadra": "RB Leipzig",
     "giocate": 3,
     "vinte": 2,
@@ -1028,40 +1044,24 @@
     "punti": 6,
     "punti_attesi": 5.3,
     "scarto_punti": 0.7,
-    "posizione_attesa": 4,
+    "posizione_attesa": 5,
     "salto": 0
    },
    {
-    "posizione": 5,
+    "posizione": 6,
     "squadra": "Elversberg",
-    "giocate": 2,
+    "giocate": 3,
     "vinte": 2,
     "pareggiate": 0,
-    "perse": 0,
-    "fatti": 7,
-    "subiti": 5,
-    "differenza": 2,
+    "perse": 1,
+    "fatti": 8,
+    "subiti": 7,
+    "differenza": 1,
     "punti": 6,
-    "punti_attesi": 3.9,
-    "scarto_punti": 2.1,
-    "posizione_attesa": 11,
-    "salto": 6
-   },
-   {
-    "posizione": 6,
-    "squadra": "Bayern Munich",
-    "giocate": 2,
-    "vinte": 1,
-    "pareggiate": 1,
-    "perse": 0,
-    "fatti": 5,
-    "subiti": 1,
-    "differenza": 4,
-    "punti": 4,
-    "punti_attesi": 4.6,
-    "scarto_punti": -0.6,
-    "posizione_attesa": 8,
-    "salto": 2
+    "punti_attesi": 4.2,
+    "scarto_punti": 1.8,
+    "posizione_attesa": 10,
+    "salto": 4
    },
    {
     "posizione": 7,
@@ -1076,8 +1076,8 @@
     "punti": 4,
     "punti_attesi": 5.3,
     "scarto_punti": -1.3,
-    "posizione_attesa": 5,
-    "salto": -2
+    "posizione_attesa": 6,
+    "salto": -1
    },
    {
     "posizione": 8,
@@ -1092,8 +1092,8 @@
     "punti": 4,
     "punti_attesi": 6.5,
     "scarto_punti": -2.5,
-    "posizione_attesa": 2,
-    "salto": -6
+    "posizione_attesa": 3,
+    "salto": -5
    },
    {
     "posizione": 9,
@@ -1124,8 +1124,8 @@
     "punti": 4,
     "punti_attesi": 3.9,
     "scarto_punti": 0.1,
-    "posizione_attesa": 10,
-    "salto": 0
+    "posizione_attesa": 11,
+    "salto": 1
    },
    {
     "posizione": 11,
@@ -1172,8 +1172,8 @@
     "punti": 3,
     "punti_attesi": 4.7,
     "scarto_punti": -1.7,
-    "posizione_attesa": 7,
-    "salto": -6
+    "posizione_attesa": 8,
+    "salto": -5
    },
    {
     "posizione": 14,
@@ -1259,6 +1259,22 @@
   "ligue-1": [
    {
     "posizione": 1,
+    "squadra": "Lille",
+    "giocate": 4,
+    "vinte": 3,
+    "pareggiate": 1,
+    "perse": 0,
+    "fatti": 7,
+    "subiti": 2,
+    "differenza": 5,
+    "punti": 10,
+    "punti_attesi": 7.1,
+    "scarto_punti": 2.9,
+    "posizione_attesa": 4,
+    "salto": 3
+   },
+   {
+    "posizione": 2,
     "squadra": "Monaco",
     "giocate": 4,
     "vinte": 3,
@@ -1270,11 +1286,11 @@
     "punti": 10,
     "punti_attesi": 5.9,
     "scarto_punti": 4.1,
-    "posizione_attesa": 6,
-    "salto": 5
+    "posizione_attesa": 8,
+    "salto": 6
    },
    {
-    "posizione": 2,
+    "posizione": 3,
     "squadra": "Rennes",
     "giocate": 4,
     "vinte": 3,
@@ -1286,11 +1302,11 @@
     "punti": 10,
     "punti_attesi": 6.5,
     "scarto_punti": 3.5,
-    "posizione_attesa": 1,
-    "salto": -1
+    "posizione_attesa": 5,
+    "salto": 2
    },
    {
-    "posizione": 3,
+    "posizione": 4,
     "squadra": "Lyon",
     "giocate": 4,
     "vinte": 2,
@@ -1302,11 +1318,11 @@
     "punti": 8,
     "punti_attesi": 5.9,
     "scarto_punti": 2.1,
-    "posizione_attesa": 4,
-    "salto": 1
+    "posizione_attesa": 7,
+    "salto": 3
    },
    {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "Paris FC",
     "giocate": 4,
     "vinte": 2,
@@ -1318,24 +1334,8 @@
     "punti": 8,
     "punti_attesi": 6.2,
     "scarto_punti": 1.8,
-    "posizione_attesa": 3,
-    "salto": -1
-   },
-   {
-    "posizione": 5,
-    "squadra": "Lille",
-    "giocate": 3,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 0,
-    "fatti": 5,
-    "subiti": 2,
-    "differenza": 3,
-    "punti": 7,
-    "punti_attesi": 4.7,
-    "scarto_punti": 2.3,
-    "posizione_attesa": 14,
-    "salto": 9
+    "posizione_attesa": 6,
+    "salto": 1
    },
    {
     "posizione": 6,
@@ -1350,27 +1350,43 @@
     "punti": 7,
     "punti_attesi": 5.1,
     "scarto_punti": 1.9,
-    "posizione_attesa": 11,
-    "salto": 5
+    "posizione_attesa": 12,
+    "salto": 6
    },
    {
     "posizione": 7,
     "squadra": "Brest",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 1,
     "pareggiate": 2,
-    "perse": 0,
+    "perse": 1,
     "fatti": 6,
-    "subiti": 5,
-    "differenza": 1,
+    "subiti": 6,
+    "differenza": 0,
     "punti": 5,
-    "punti_attesi": 6.4,
-    "scarto_punti": -1.4,
+    "punti_attesi": 7.5,
+    "scarto_punti": -2.5,
     "posizione_attesa": 2,
     "salto": -5
    },
    {
     "posizione": 8,
+    "squadra": "Paris SG",
+    "giocate": 4,
+    "vinte": 1,
+    "pareggiate": 2,
+    "perse": 1,
+    "fatti": 6,
+    "subiti": 6,
+    "differenza": 0,
+    "punti": 5,
+    "punti_attesi": 7.6,
+    "scarto_punti": -2.6,
+    "posizione_attesa": 1,
+    "salto": -7
+   },
+   {
+    "posizione": 9,
     "squadra": "Lorient",
     "giocate": 4,
     "vinte": 1,
@@ -1382,11 +1398,27 @@
     "punti": 5,
     "punti_attesi": 5.7,
     "scarto_punti": -0.7,
-    "posizione_attesa": 7,
-    "salto": -1
+    "posizione_attesa": 9,
+    "salto": 0
    },
    {
-    "posizione": 9,
+    "posizione": 10,
+    "squadra": "Lens",
+    "giocate": 4,
+    "vinte": 1,
+    "pareggiate": 1,
+    "perse": 2,
+    "fatti": 8,
+    "subiti": 7,
+    "differenza": 1,
+    "punti": 4,
+    "punti_attesi": 7.3,
+    "scarto_punti": -3.3,
+    "posizione_attesa": 3,
+    "salto": -7
+   },
+   {
+    "posizione": 11,
     "squadra": "Angers",
     "giocate": 4,
     "vinte": 1,
@@ -1398,43 +1430,27 @@
     "punti": 4,
     "punti_attesi": 2.8,
     "scarto_punti": 1.2,
-    "posizione_attesa": 17,
-    "salto": 8
-   },
-   {
-    "posizione": 10,
-    "squadra": "Troyes",
-    "giocate": 3,
-    "vinte": 1,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 4,
-    "subiti": 7,
-    "differenza": -3,
-    "punti": 4,
-    "punti_attesi": 2.7,
-    "scarto_punti": 1.3,
     "posizione_attesa": 18,
-    "salto": 8
-   },
-   {
-    "posizione": 11,
-    "squadra": "Lens",
-    "giocate": 3,
-    "vinte": 1,
-    "pareggiate": 0,
-    "perse": 2,
-    "fatti": 6,
-    "subiti": 5,
-    "differenza": 1,
-    "punti": 3,
-    "punti_attesi": 5.7,
-    "scarto_punti": -2.7,
-    "posizione_attesa": 8,
-    "salto": -3
+    "salto": 7
    },
    {
     "posizione": 12,
+    "squadra": "Troyes",
+    "giocate": 4,
+    "vinte": 1,
+    "pareggiate": 1,
+    "perse": 2,
+    "fatti": 4,
+    "subiti": 9,
+    "differenza": -5,
+    "punti": 4,
+    "punti_attesi": 3.1,
+    "scarto_punti": 0.9,
+    "posizione_attesa": 17,
+    "salto": 5
+   },
+   {
+    "posizione": 13,
     "squadra": "Marseille",
     "giocate": 4,
     "vinte": 1,
@@ -1446,11 +1462,27 @@
     "punti": 3,
     "punti_attesi": 5.2,
     "scarto_punti": -2.2,
-    "posizione_attesa": 9,
+    "posizione_attesa": 10,
     "salto": -3
    },
    {
-    "posizione": 13,
+    "posizione": 14,
+    "squadra": "Le Mans",
+    "giocate": 4,
+    "vinte": 0,
+    "pareggiate": 3,
+    "perse": 1,
+    "fatti": 7,
+    "subiti": 8,
+    "differenza": -1,
+    "punti": 3,
+    "punti_attesi": 4.7,
+    "scarto_punti": -1.7,
+    "posizione_attesa": 15,
+    "salto": 1
+   },
+   {
+    "posizione": 15,
     "squadra": "Auxerre",
     "giocate": 4,
     "vinte": 1,
@@ -1462,40 +1494,8 @@
     "punti": 3,
     "punti_attesi": 4.8,
     "scarto_punti": -1.8,
-    "posizione_attesa": 13,
-    "salto": 0
-   },
-   {
-    "posizione": 14,
-    "squadra": "Le Mans",
-    "giocate": 3,
-    "vinte": 0,
-    "pareggiate": 2,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 6,
-    "differenza": -1,
-    "punti": 2,
-    "punti_attesi": 3.5,
-    "scarto_punti": -1.5,
-    "posizione_attesa": 16,
-    "salto": 2
-   },
-   {
-    "posizione": 15,
-    "squadra": "Paris SG",
-    "giocate": 3,
-    "vinte": 0,
-    "pareggiate": 2,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 6,
-    "differenza": -1,
-    "punti": 2,
-    "punti_attesi": 5.9,
-    "scarto_punti": -3.9,
-    "posizione_attesa": 5,
-    "salto": -10
+    "posizione_attesa": 14,
+    "salto": -1
    },
    {
     "posizione": 16,
@@ -1510,8 +1510,8 @@
     "punti": 2,
     "punti_attesi": 5.1,
     "scarto_punti": -3.1,
-    "posizione_attesa": 12,
-    "salto": -4
+    "posizione_attesa": 13,
+    "salto": -3
    },
    {
     "posizione": 17,
@@ -1526,8 +1526,8 @@
     "punti": 2,
     "punti_attesi": 5.1,
     "scarto_punti": -3.1,
-    "posizione_attesa": 10,
-    "salto": -7
+    "posizione_attesa": 11,
+    "salto": -6
    },
    {
     "posizione": 18,
@@ -1542,13 +1542,29 @@
     "punti": 2,
     "punti_attesi": 4.2,
     "scarto_punti": -2.2,
-    "posizione_attesa": 15,
-    "salto": -3
+    "posizione_attesa": 16,
+    "salto": -2
    }
   ],
   "eredivisie": [
    {
     "posizione": 1,
+    "squadra": "PSV Eindhoven",
+    "giocate": 6,
+    "vinte": 5,
+    "pareggiate": 1,
+    "perse": 0,
+    "fatti": 22,
+    "subiti": 7,
+    "differenza": 15,
+    "punti": 16,
+    "punti_attesi": 12.6,
+    "scarto_punti": 3.4,
+    "posizione_attesa": 4,
+    "salto": 3
+   },
+   {
+    "posizione": 2,
     "squadra": "AZ Alkmaar",
     "giocate": 6,
     "vinte": 5,
@@ -1561,26 +1577,26 @@
     "punti_attesi": 13.8,
     "scarto_punti": 2.2,
     "posizione_attesa": 1,
-    "salto": 0
-   },
-   {
-    "posizione": 2,
-    "squadra": "PSV Eindhoven",
-    "giocate": 5,
-    "vinte": 4,
-    "pareggiate": 1,
-    "perse": 0,
-    "fatti": 18,
-    "subiti": 6,
-    "differenza": 12,
-    "punti": 13,
-    "punti_attesi": 10.6,
-    "scarto_punti": 2.4,
-    "posizione_attesa": 4,
-    "salto": 2
+    "salto": -1
    },
    {
     "posizione": 3,
+    "squadra": "Feyenoord",
+    "giocate": 6,
+    "vinte": 4,
+    "pareggiate": 2,
+    "perse": 0,
+    "fatti": 20,
+    "subiti": 7,
+    "differenza": 13,
+    "punti": 14,
+    "punti_attesi": 13.5,
+    "scarto_punti": 0.5,
+    "posizione_attesa": 2,
+    "salto": -1
+   },
+   {
+    "posizione": 4,
     "squadra": "Twente",
     "giocate": 6,
     "vinte": 4,
@@ -1592,22 +1608,6 @@
     "punti": 13,
     "punti_attesi": 12.7,
     "scarto_punti": 0.3,
-    "posizione_attesa": 2,
-    "salto": -1
-   },
-   {
-    "posizione": 4,
-    "squadra": "Feyenoord",
-    "giocate": 5,
-    "vinte": 3,
-    "pareggiate": 2,
-    "perse": 0,
-    "fatti": 13,
-    "subiti": 7,
-    "differenza": 6,
-    "punti": 11,
-    "punti_attesi": 10.9,
-    "scarto_punti": 0.1,
     "posizione_attesa": 3,
     "salto": -1
    },
@@ -1656,8 +1656,8 @@
     "punti": 10,
     "punti_attesi": 7.3,
     "scarto_punti": 2.7,
-    "posizione_attesa": 9,
-    "salto": 2
+    "posizione_attesa": 11,
+    "salto": 4
    },
    {
     "posizione": 8,
@@ -1704,43 +1704,59 @@
     "punti": 7,
     "punti_attesi": 7.9,
     "scarto_punti": -0.9,
-    "posizione_attesa": 8,
-    "salto": -2
+    "posizione_attesa": 9,
+    "salto": -1
    },
    {
     "posizione": 11,
-    "squadra": "Sparta Rotterdam",
-    "giocate": 5,
-    "vinte": 1,
-    "pareggiate": 2,
-    "perse": 2,
-    "fatti": 9,
-    "subiti": 9,
-    "differenza": 0,
-    "punti": 5,
-    "punti_attesi": 7.0,
-    "scarto_punti": -2.0,
-    "posizione_attesa": 12,
-    "salto": 1
-   },
-   {
-    "posizione": 12,
     "squadra": "Heerenveen",
-    "giocate": 5,
+    "giocate": 6,
     "vinte": 1,
-    "pareggiate": 2,
+    "pareggiate": 3,
     "perse": 2,
     "fatti": 7,
     "subiti": 9,
     "differenza": -2,
+    "punti": 6,
+    "punti_attesi": 9.2,
+    "scarto_punti": -3.2,
+    "posizione_attesa": 8,
+    "salto": -3
+   },
+   {
+    "posizione": 12,
+    "squadra": "Sparta Rotterdam",
+    "giocate": 6,
+    "vinte": 1,
+    "pareggiate": 2,
+    "perse": 3,
+    "fatti": 10,
+    "subiti": 13,
+    "differenza": -3,
     "punti": 5,
-    "punti_attesi": 7.0,
-    "scarto_punti": -2.0,
-    "posizione_attesa": 11,
-    "salto": -1
+    "punti_attesi": 7.8,
+    "scarto_punti": -2.8,
+    "posizione_attesa": 10,
+    "salto": -2
    },
    {
     "posizione": 13,
+    "squadra": "Telstar",
+    "giocate": 6,
+    "vinte": 1,
+    "pareggiate": 2,
+    "perse": 3,
+    "fatti": 5,
+    "subiti": 11,
+    "differenza": -6,
+    "punti": 5,
+    "punti_attesi": 3.8,
+    "scarto_punti": 1.2,
+    "posizione_attesa": 16,
+    "salto": 3
+   },
+   {
+    "posizione": 14,
     "squadra": "Utrecht",
     "giocate": 6,
     "vinte": 1,
@@ -1753,42 +1769,10 @@
     "punti_attesi": 6.3,
     "scarto_punti": -1.3,
     "posizione_attesa": 14,
-    "salto": 1
-   },
-   {
-    "posizione": 14,
-    "squadra": "Zwolle",
-    "giocate": 5,
-    "vinte": 1,
-    "pareggiate": 1,
-    "perse": 3,
-    "fatti": 6,
-    "subiti": 10,
-    "differenza": -4,
-    "punti": 4,
-    "punti_attesi": 4.6,
-    "scarto_punti": -0.6,
-    "posizione_attesa": 15,
-    "salto": 1
+    "salto": 0
    },
    {
     "posizione": 15,
-    "squadra": "Telstar",
-    "giocate": 5,
-    "vinte": 1,
-    "pareggiate": 1,
-    "perse": 3,
-    "fatti": 5,
-    "subiti": 11,
-    "differenza": -6,
-    "punti": 4,
-    "punti_attesi": 3.3,
-    "scarto_punti": 0.7,
-    "posizione_attesa": 16,
-    "salto": 1
-   },
-   {
-    "posizione": 16,
     "squadra": "Cambuur",
     "giocate": 6,
     "vinte": 1,
@@ -1800,8 +1784,24 @@
     "punti": 4,
     "punti_attesi": 7.1,
     "scarto_punti": -3.1,
-    "posizione_attesa": 10,
-    "salto": -6
+    "posizione_attesa": 12,
+    "salto": -3
+   },
+   {
+    "posizione": 16,
+    "squadra": "Zwolle",
+    "giocate": 6,
+    "vinte": 1,
+    "pareggiate": 1,
+    "perse": 4,
+    "fatti": 6,
+    "subiti": 17,
+    "differenza": -11,
+    "punti": 4,
+    "punti_attesi": 4.9,
+    "scarto_punti": -0.9,
+    "posizione_attesa": 15,
+    "salto": -1
    },
    {
     "posizione": 17,
@@ -1850,72 +1850,72 @@
     "punti": 18,
     "punti_attesi": 12.4,
     "scarto_punti": 5.6,
-    "posizione_attesa": 2,
-    "salto": 1
+    "posizione_attesa": 3,
+    "salto": 2
    },
    {
     "posizione": 2,
     "squadra": "Benfica",
-    "giocate": 5,
-    "vinte": 4,
+    "giocate": 6,
+    "vinte": 5,
     "pareggiate": 1,
     "perse": 0,
-    "fatti": 18,
-    "subiti": 3,
-    "differenza": 15,
-    "punti": 13,
-    "punti_attesi": 13.0,
-    "scarto_punti": -0.0,
+    "fatti": 21,
+    "subiti": 4,
+    "differenza": 17,
+    "punti": 16,
+    "punti_attesi": 15.1,
+    "scarto_punti": 0.9,
     "posizione_attesa": 1,
     "salto": -1
    },
    {
     "posizione": 3,
     "squadra": "Sp Lisbon",
-    "giocate": 5,
+    "giocate": 6,
     "vinte": 4,
-    "pareggiate": 1,
+    "pareggiate": 2,
     "perse": 0,
-    "fatti": 14,
-    "subiti": 5,
+    "fatti": 15,
+    "subiti": 6,
     "differenza": 9,
-    "punti": 13,
-    "punti_attesi": 10.9,
-    "scarto_punti": 2.1,
-    "posizione_attesa": 3,
-    "salto": 0
+    "punti": 14,
+    "punti_attesi": 13.0,
+    "scarto_punti": 1.0,
+    "posizione_attesa": 2,
+    "salto": -1
    },
    {
     "posizione": 4,
     "squadra": "Santa Clara",
-    "giocate": 5,
-    "vinte": 3,
+    "giocate": 6,
+    "vinte": 4,
     "pareggiate": 2,
     "perse": 0,
-    "fatti": 9,
-    "subiti": 3,
-    "differenza": 6,
-    "punti": 11,
-    "punti_attesi": 8.5,
-    "scarto_punti": 2.5,
+    "fatti": 11,
+    "subiti": 4,
+    "differenza": 7,
+    "punti": 14,
+    "punti_attesi": 10.1,
+    "scarto_punti": 3.9,
     "posizione_attesa": 5,
     "salto": 1
    },
    {
     "posizione": 5,
     "squadra": "Arouca",
-    "giocate": 5,
+    "giocate": 6,
     "vinte": 3,
     "pareggiate": 1,
-    "perse": 1,
-    "fatti": 7,
-    "subiti": 3,
-    "differenza": 4,
+    "perse": 2,
+    "fatti": 8,
+    "subiti": 5,
+    "differenza": 3,
     "punti": 10,
-    "punti_attesi": 6.0,
-    "scarto_punti": 4.0,
-    "posizione_attesa": 12,
-    "salto": 7
+    "punti_attesi": 7.1,
+    "scarto_punti": 2.9,
+    "posizione_attesa": 9,
+    "salto": 4
    },
    {
     "posizione": 6,
@@ -1930,8 +1930,8 @@
     "punti": 9,
     "punti_attesi": 6.8,
     "scarto_punti": 2.2,
-    "posizione_attesa": 10,
-    "salto": 4
+    "posizione_attesa": 11,
+    "salto": 5
    },
    {
     "posizione": 7,
@@ -1951,22 +1951,6 @@
    },
    {
     "posizione": 8,
-    "squadra": "Gil Vicente",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 3,
-    "subiti": 1,
-    "differenza": 2,
-    "punti": 7,
-    "punti_attesi": 7.7,
-    "scarto_punti": -0.7,
-    "posizione_attesa": 7,
-    "salto": -1
-   },
-   {
-    "posizione": 9,
     "squadra": "Sp Braga",
     "giocate": 4,
     "vinte": 2,
@@ -1978,8 +1962,24 @@
     "punti": 7,
     "punti_attesi": 6.9,
     "scarto_punti": 0.1,
-    "posizione_attesa": 9,
-    "salto": 0
+    "posizione_attesa": 10,
+    "salto": 2
+   },
+   {
+    "posizione": 9,
+    "squadra": "Gil Vicente",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 1,
+    "perse": 2,
+    "fatti": 4,
+    "subiti": 4,
+    "differenza": 0,
+    "punti": 7,
+    "punti_attesi": 8.4,
+    "scarto_punti": -1.4,
+    "posizione_attesa": 6,
+    "salto": -3
    },
    {
     "posizione": 10,
@@ -2010,11 +2010,27 @@
     "punti": 5,
     "punti_attesi": 6.5,
     "scarto_punti": -1.5,
-    "posizione_attesa": 11,
-    "salto": 0
+    "posizione_attesa": 12,
+    "salto": 1
    },
    {
     "posizione": 12,
+    "squadra": "Famalicao",
+    "giocate": 6,
+    "vinte": 0,
+    "pareggiate": 4,
+    "perse": 2,
+    "fatti": 5,
+    "subiti": 7,
+    "differenza": -2,
+    "punti": 4,
+    "punti_attesi": 7.6,
+    "scarto_punti": -3.6,
+    "posizione_attesa": 8,
+    "salto": -4
+   },
+   {
+    "posizione": 13,
     "squadra": "Guimaraes",
     "giocate": 6,
     "vinte": 1,
@@ -2027,10 +2043,10 @@
     "punti_attesi": 10.6,
     "scarto_punti": -6.6,
     "posizione_attesa": 4,
-    "salto": -8
+    "salto": -9
    },
    {
-    "posizione": 13,
+    "posizione": 14,
     "squadra": "Nacional",
     "giocate": 6,
     "vinte": 1,
@@ -2043,10 +2059,10 @@
     "punti_attesi": 4.6,
     "scarto_punti": -0.6,
     "posizione_attesa": 16,
-    "salto": 3
+    "salto": 2
    },
    {
-    "posizione": 14,
+    "posizione": 15,
     "squadra": "Moreirense",
     "giocate": 5,
     "vinte": 1,
@@ -2059,23 +2075,7 @@
     "punti_attesi": 4.0,
     "scarto_punti": 0.0,
     "posizione_attesa": 17,
-    "salto": 3
-   },
-   {
-    "posizione": 15,
-    "squadra": "Famalicao",
-    "giocate": 5,
-    "vinte": 0,
-    "pareggiate": 3,
-    "perse": 2,
-    "fatti": 4,
-    "subiti": 6,
-    "differenza": -2,
-    "punti": 3,
-    "punti_attesi": 6.9,
-    "scarto_punti": -3.9,
-    "posizione_attesa": 8,
-    "salto": -7
+    "salto": 2
    },
    {
     "posizione": 16,
@@ -2106,8 +2106,8 @@
     "punti": 2,
     "punti_attesi": 8.0,
     "scarto_punti": -6.0,
-    "posizione_attesa": 6,
-    "salto": -11
+    "posizione_attesa": 7,
+    "salto": -10
    },
    {
     "posizione": 18,
@@ -2129,6 +2129,22 @@
   "superlig": [
    {
     "posizione": 1,
+    "squadra": "Galatasaray",
+    "giocate": 5,
+    "vinte": 4,
+    "pareggiate": 1,
+    "perse": 0,
+    "fatti": 13,
+    "subiti": 6,
+    "differenza": 7,
+    "punti": 13,
+    "punti_attesi": 10.4,
+    "scarto_punti": 2.6,
+    "posizione_attesa": 1,
+    "salto": 0
+   },
+   {
+    "posizione": 2,
     "squadra": "Besiktas",
     "giocate": 5,
     "vinte": 4,
@@ -2140,43 +2156,43 @@
     "punti": 12,
     "punti_attesi": 10.2,
     "scarto_punti": 1.8,
-    "posizione_attesa": 1,
+    "posizione_attesa": 2,
     "salto": 0
    },
    {
-    "posizione": 2,
-    "squadra": "Galatasaray",
-    "giocate": 4,
+    "posizione": 3,
+    "squadra": "Amedspor",
+    "giocate": 5,
     "vinte": 3,
     "pareggiate": 1,
-    "perse": 0,
-    "fatti": 12,
-    "subiti": 6,
-    "differenza": 6,
-    "punti": 10,
-    "punti_attesi": 7.6,
-    "scarto_punti": 2.4,
-    "posizione_attesa": 4,
-    "salto": 2
-   },
-   {
-    "posizione": 3,
-    "squadra": "Kocaelispor",
-    "giocate": 4,
-    "vinte": 3,
-    "pareggiate": 0,
     "perse": 1,
-    "fatti": 5,
-    "subiti": 3,
-    "differenza": 2,
-    "punti": 9,
-    "punti_attesi": 6.9,
-    "scarto_punti": 2.1,
-    "posizione_attesa": 7,
-    "salto": 4
+    "fatti": 12,
+    "subiti": 5,
+    "differenza": 7,
+    "punti": 10,
+    "punti_attesi": 8.4,
+    "scarto_punti": 1.6,
+    "posizione_attesa": 4,
+    "salto": 1
    },
    {
     "posizione": 4,
+    "squadra": "Kasimpasa",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 3,
+    "perse": 0,
+    "fatti": 7,
+    "subiti": 5,
+    "differenza": 2,
+    "punti": 9,
+    "punti_attesi": 5.7,
+    "scarto_punti": 3.3,
+    "posizione_attesa": 11,
+    "salto": 7
+   },
+   {
+    "posizione": 5,
     "squadra": "Rizespor",
     "giocate": 5,
     "vinte": 3,
@@ -2188,11 +2204,27 @@
     "punti": 9,
     "punti_attesi": 8.7,
     "scarto_punti": 0.3,
-    "posizione_attesa": 2,
+    "posizione_attesa": 3,
     "salto": -2
    },
    {
-    "posizione": 5,
+    "posizione": 6,
+    "squadra": "Kocaelispor",
+    "giocate": 5,
+    "vinte": 3,
+    "pareggiate": 0,
+    "perse": 2,
+    "fatti": 5,
+    "subiti": 4,
+    "differenza": 1,
+    "punti": 9,
+    "punti_attesi": 7.0,
+    "scarto_punti": 2.0,
+    "posizione_attesa": 7,
+    "salto": 1
+   },
+   {
+    "posizione": 7,
     "squadra": "Alanyaspor",
     "giocate": 5,
     "vinte": 2,
@@ -2204,11 +2236,11 @@
     "punti": 8,
     "punti_attesi": 4.4,
     "scarto_punti": 3.6,
-    "posizione_attesa": 15,
-    "salto": 10
+    "posizione_attesa": 16,
+    "salto": 9
    },
    {
-    "posizione": 6,
+    "posizione": 8,
     "squadra": "Trabzonspor",
     "giocate": 5,
     "vinte": 2,
@@ -2220,11 +2252,11 @@
     "punti": 7,
     "punti_attesi": 7.0,
     "scarto_punti": 0.0,
-    "posizione_attesa": 6,
+    "posizione_attesa": 8,
     "salto": 0
    },
    {
-    "posizione": 7,
+    "posizione": 9,
     "squadra": "Corum",
     "giocate": 5,
     "vinte": 2,
@@ -2236,11 +2268,11 @@
     "punti": 7,
     "punti_attesi": 5.6,
     "scarto_punti": 1.4,
-    "posizione_attesa": 11,
-    "salto": 4
+    "posizione_attesa": 12,
+    "salto": 3
    },
    {
-    "posizione": 8,
+    "posizione": 10,
     "squadra": "Gaziantep",
     "giocate": 4,
     "vinte": 2,
@@ -2252,43 +2284,27 @@
     "punti": 7,
     "punti_attesi": 6.8,
     "scarto_punti": 0.2,
-    "posizione_attesa": 8,
-    "salto": 0
-   },
-   {
-    "posizione": 9,
-    "squadra": "Amedspor",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 7,
-    "subiti": 5,
-    "differenza": 2,
-    "punti": 7,
-    "punti_attesi": 5.9,
-    "scarto_punti": 1.1,
     "posizione_attesa": 9,
-    "salto": 0
-   },
-   {
-    "posizione": 10,
-    "squadra": "Genclerbirligi",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 4,
-    "subiti": 7,
-    "differenza": -3,
-    "punti": 7,
-    "punti_attesi": 3.5,
-    "scarto_punti": 3.5,
-    "posizione_attesa": 17,
-    "salto": 7
+    "salto": -1
    },
    {
     "posizione": 11,
+    "squadra": "Genclerbirligi",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 1,
+    "perse": 2,
+    "fatti": 5,
+    "subiti": 9,
+    "differenza": -4,
+    "punti": 7,
+    "punti_attesi": 5.3,
+    "scarto_punti": 1.7,
+    "posizione_attesa": 13,
+    "salto": 2
+   },
+   {
+    "posizione": 12,
     "squadra": "Fenerbahce",
     "giocate": 4,
     "vinte": 2,
@@ -2300,40 +2316,24 @@
     "punti": 6,
     "punti_attesi": 8.0,
     "scarto_punti": -2.0,
-    "posizione_attesa": 3,
-    "salto": -8
-   },
-   {
-    "posizione": 12,
-    "squadra": "Kasimpasa",
-    "giocate": 4,
-    "vinte": 1,
-    "pareggiate": 3,
-    "perse": 0,
-    "fatti": 5,
-    "subiti": 4,
-    "differenza": 1,
-    "punti": 6,
-    "punti_attesi": 4.8,
-    "scarto_punti": 1.2,
-    "posizione_attesa": 13,
-    "salto": 1
+    "posizione_attesa": 5,
+    "salto": -7
    },
    {
     "posizione": 13,
     "squadra": "Buyuksehyr",
-    "giocate": 4,
+    "giocate": 5,
     "vinte": 1,
     "pareggiate": 1,
-    "perse": 2,
+    "perse": 3,
     "fatti": 6,
-    "subiti": 6,
-    "differenza": 0,
+    "subiti": 11,
+    "differenza": -5,
     "punti": 4,
-    "punti_attesi": 4.4,
-    "scarto_punti": -0.4,
-    "posizione_attesa": 14,
-    "salto": 1
+    "punti_attesi": 4.7,
+    "scarto_punti": -0.7,
+    "posizione_attesa": 15,
+    "salto": 2
    },
    {
     "posizione": 14,
@@ -2364,8 +2364,8 @@
     "punti": 4,
     "punti_attesi": 4.2,
     "scarto_punti": -0.2,
-    "posizione_attesa": 16,
-    "salto": 1
+    "posizione_attesa": 17,
+    "salto": 2
    },
    {
     "posizione": 16,
@@ -2380,8 +2380,8 @@
     "punti": 3,
     "punti_attesi": 5.0,
     "scarto_punti": -2.0,
-    "posizione_attesa": 12,
-    "salto": -4
+    "posizione_attesa": 14,
+    "salto": -2
    },
    {
     "posizione": 17,
@@ -2412,8 +2412,8 @@
     "punti": 2,
     "punti_attesi": 7.2,
     "scarto_punti": -5.2,
-    "posizione_attesa": 5,
-    "salto": -13
+    "posizione_attesa": 6,
+    "salto": -12
    }
   ],
   "jupiler": [
@@ -2430,11 +2430,27 @@
     "punti": 16,
     "punti_attesi": 11.9,
     "scarto_punti": 4.1,
-    "posizione_attesa": 1,
-    "salto": 0
+    "posizione_attesa": 2,
+    "salto": 1
    },
    {
     "posizione": 2,
+    "squadra": "Gent",
+    "giocate": 6,
+    "vinte": 5,
+    "pareggiate": 1,
+    "perse": 0,
+    "fatti": 11,
+    "subiti": 3,
+    "differenza": 8,
+    "punti": 16,
+    "punti_attesi": 9.0,
+    "scarto_punti": 7.0,
+    "posizione_attesa": 5,
+    "salto": 3
+   },
+   {
+    "posizione": 3,
     "squadra": "Club Brugge",
     "giocate": 6,
     "vinte": 5,
@@ -2446,56 +2462,40 @@
     "punti": 15,
     "punti_attesi": 10.1,
     "scarto_punti": 4.9,
-    "posizione_attesa": 2,
-    "salto": 0
-   },
-   {
-    "posizione": 3,
-    "squadra": "Gent",
-    "giocate": 5,
-    "vinte": 5,
-    "pareggiate": 0,
-    "perse": 0,
-    "fatti": 10,
-    "subiti": 2,
-    "differenza": 8,
-    "punti": 15,
-    "punti_attesi": 7.8,
-    "scarto_punti": 7.2,
-    "posizione_attesa": 8,
-    "salto": 5
+    "posizione_attesa": 4,
+    "salto": 1
    },
    {
     "posizione": 4,
     "squadra": "Charleroi",
-    "giocate": 5,
-    "vinte": 4,
+    "giocate": 6,
+    "vinte": 5,
     "pareggiate": 0,
     "perse": 1,
-    "fatti": 11,
+    "fatti": 12,
     "subiti": 5,
-    "differenza": 6,
-    "punti": 12,
-    "punti_attesi": 9.9,
-    "scarto_punti": 2.1,
-    "posizione_attesa": 3,
-    "salto": -1
+    "differenza": 7,
+    "punti": 15,
+    "punti_attesi": 11.9,
+    "scarto_punti": 3.1,
+    "posizione_attesa": 1,
+    "salto": -3
    },
    {
     "posizione": 5,
     "squadra": "Waregem",
-    "giocate": 5,
+    "giocate": 6,
     "vinte": 3,
     "pareggiate": 2,
-    "perse": 0,
+    "perse": 1,
     "fatti": 10,
-    "subiti": 3,
-    "differenza": 7,
+    "subiti": 4,
+    "differenza": 6,
     "punti": 11,
-    "punti_attesi": 7.7,
-    "scarto_punti": 3.3,
-    "posizione_attesa": 9,
-    "salto": 4
+    "punti_attesi": 8.3,
+    "scarto_punti": 2.7,
+    "posizione_attesa": 8,
+    "salto": 3
    },
    {
     "posizione": 6,
@@ -2510,8 +2510,8 @@
     "punti": 11,
     "punti_attesi": 9.0,
     "scarto_punti": 2.0,
-    "posizione_attesa": 4,
-    "salto": -2
+    "posizione_attesa": 6,
+    "salto": 0
    },
    {
     "posizione": 7,
@@ -2526,11 +2526,27 @@
     "punti": 10,
     "punti_attesi": 8.0,
     "scarto_punti": 2.0,
-    "posizione_attesa": 7,
-    "salto": 0
+    "posizione_attesa": 10,
+    "salto": 3
    },
    {
     "posizione": 8,
+    "squadra": "Genk",
+    "giocate": 6,
+    "vinte": 2,
+    "pareggiate": 3,
+    "perse": 1,
+    "fatti": 13,
+    "subiti": 9,
+    "differenza": 4,
+    "punti": 9,
+    "punti_attesi": 10.1,
+    "scarto_punti": -1.1,
+    "posizione_attesa": 3,
+    "salto": -5
+   },
+   {
+    "posizione": 9,
     "squadra": "Beveren",
     "giocate": 6,
     "vinte": 3,
@@ -2542,24 +2558,8 @@
     "punti": 9,
     "punti_attesi": 5.9,
     "scarto_punti": 3.1,
-    "posizione_attesa": 13,
+    "posizione_attesa": 14,
     "salto": 5
-   },
-   {
-    "posizione": 9,
-    "squadra": "Genk",
-    "giocate": 5,
-    "vinte": 2,
-    "pareggiate": 2,
-    "perse": 1,
-    "fatti": 12,
-    "subiti": 8,
-    "differenza": 4,
-    "punti": 8,
-    "punti_attesi": 8.5,
-    "scarto_punti": -0.5,
-    "posizione_attesa": 6,
-    "salto": -3
    },
    {
     "posizione": 10,
@@ -2574,8 +2574,8 @@
     "punti": 8,
     "punti_attesi": 6.3,
     "scarto_punti": 1.7,
-    "posizione_attesa": 11,
-    "salto": 1
+    "posizione_attesa": 12,
+    "salto": 2
    },
    {
     "posizione": 11,
@@ -2590,8 +2590,8 @@
     "punti": 7,
     "punti_attesi": 8.9,
     "scarto_punti": -1.9,
-    "posizione_attesa": 5,
-    "salto": -6
+    "posizione_attesa": 7,
+    "salto": -4
    },
    {
     "posizione": 12,
@@ -2622,11 +2622,27 @@
     "punti": 7,
     "punti_attesi": 6.2,
     "scarto_punti": 0.8,
-    "posizione_attesa": 12,
-    "salto": -1
+    "posizione_attesa": 13,
+    "salto": 0
    },
    {
     "posizione": 14,
+    "squadra": "RAAL La Louviere",
+    "giocate": 6,
+    "vinte": 1,
+    "pareggiate": 1,
+    "perse": 4,
+    "fatti": 7,
+    "subiti": 12,
+    "differenza": -5,
+    "punti": 4,
+    "punti_attesi": 8.2,
+    "scarto_punti": -4.2,
+    "posizione_attesa": 9,
+    "salto": -5
+   },
+   {
+    "posizione": 15,
     "squadra": "Cercle Brugge",
     "giocate": 6,
     "vinte": 0,
@@ -2638,11 +2654,11 @@
     "punti": 3,
     "punti_attesi": 7.5,
     "scarto_punti": -4.5,
-    "posizione_attesa": 10,
+    "posizione_attesa": 11,
     "salto": -4
    },
    {
-    "posizione": 15,
+    "posizione": 16,
     "squadra": "Mechelen",
     "giocate": 6,
     "vinte": 0,
@@ -2654,22 +2670,6 @@
     "punti": 2,
     "punti_attesi": 5.9,
     "scarto_punti": -3.9,
-    "posizione_attesa": 14,
-    "salto": -1
-   },
-   {
-    "posizione": 16,
-    "squadra": "RAAL La Louviere",
-    "giocate": 5,
-    "vinte": 0,
-    "pareggiate": 1,
-    "perse": 4,
-    "fatti": 4,
-    "subiti": 12,
-    "differenza": -8,
-    "punti": 1,
-    "punti_attesi": 5.9,
-    "scarto_punti": -4.9,
     "posizione_attesa": 15,
     "salto": -1
    },
@@ -2686,58 +2686,58 @@
     "punti": 1,
     "punti_attesi": 5.0,
     "scarto_punti": -4.0,
-    "posizione_attesa": 17,
-    "salto": 0
+    "posizione_attesa": 18,
+    "salto": 1
    },
    {
     "posizione": 18,
     "squadra": "Kortrijk",
-    "giocate": 5,
+    "giocate": 6,
     "vinte": 0,
     "pareggiate": 0,
-    "perse": 5,
+    "perse": 6,
     "fatti": 1,
-    "subiti": 12,
-    "differenza": -11,
+    "subiti": 15,
+    "differenza": -14,
     "punti": 0,
-    "punti_attesi": 4.5,
-    "scarto_punti": -4.5,
-    "posizione_attesa": 18,
-    "salto": 0
+    "punti_attesi": 5.0,
+    "scarto_punti": -5.0,
+    "posizione_attesa": 17,
+    "salto": -1
    }
   ],
   "super-league-grecia": [
    {
     "posizione": 1,
     "squadra": "Panathinaikos",
-    "giocate": 3,
-    "vinte": 3,
+    "giocate": 4,
+    "vinte": 4,
     "pareggiate": 0,
     "perse": 0,
-    "fatti": 8,
+    "fatti": 11,
     "subiti": 2,
-    "differenza": 6,
-    "punti": 9,
-    "punti_attesi": 4.3,
-    "scarto_punti": 4.7,
+    "differenza": 9,
+    "punti": 12,
+    "punti_attesi": 5.4,
+    "scarto_punti": 6.6,
     "posizione_attesa": 4,
     "salto": 3
    },
    {
     "posizione": 2,
-    "squadra": "Panetolikos",
-    "giocate": 3,
+    "squadra": "PAOK",
+    "giocate": 4,
     "vinte": 3,
     "pareggiate": 0,
-    "perse": 0,
-    "fatti": 7,
-    "subiti": 1,
-    "differenza": 6,
+    "perse": 1,
+    "fatti": 9,
+    "subiti": 4,
+    "differenza": 5,
     "punti": 9,
-    "punti_attesi": 3.6,
-    "scarto_punti": 5.4,
-    "posizione_attesa": 7,
-    "salto": 5
+    "punti_attesi": 6.7,
+    "scarto_punti": 2.3,
+    "posizione_attesa": 2,
+    "salto": 0
    },
    {
     "posizione": 3,
@@ -2752,27 +2752,43 @@
     "punti": 9,
     "punti_attesi": 4.0,
     "scarto_punti": 5.0,
-    "posizione_attesa": 5,
-    "salto": 2
+    "posizione_attesa": 11,
+    "salto": 8
    },
    {
     "posizione": 4,
-    "squadra": "AEK",
-    "giocate": 3,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 0,
-    "fatti": 10,
-    "subiti": 1,
-    "differenza": 9,
-    "punti": 7,
-    "punti_attesi": 5.7,
-    "scarto_punti": 1.3,
-    "posizione_attesa": 2,
-    "salto": -2
+    "squadra": "Panetolikos",
+    "giocate": 4,
+    "vinte": 3,
+    "pareggiate": 0,
+    "perse": 1,
+    "fatti": 7,
+    "subiti": 4,
+    "differenza": 3,
+    "punti": 9,
+    "punti_attesi": 4.7,
+    "scarto_punti": 4.3,
+    "posizione_attesa": 8,
+    "salto": 4
    },
    {
     "posizione": 5,
+    "squadra": "AEK",
+    "giocate": 4,
+    "vinte": 2,
+    "pareggiate": 2,
+    "perse": 0,
+    "fatti": 11,
+    "subiti": 2,
+    "differenza": 9,
+    "punti": 8,
+    "punti_attesi": 6.6,
+    "scarto_punti": 1.4,
+    "posizione_attesa": 3,
+    "salto": -2
+   },
+   {
+    "posizione": 6,
     "squadra": "Olympiakos",
     "giocate": 4,
     "vinte": 2,
@@ -2785,37 +2801,21 @@
     "punti_attesi": 7.3,
     "scarto_punti": -0.3,
     "posizione_attesa": 1,
-    "salto": -4
-   },
-   {
-    "posizione": 6,
-    "squadra": "PAOK",
-    "giocate": 3,
-    "vinte": 2,
-    "pareggiate": 0,
-    "perse": 1,
-    "fatti": 7,
-    "subiti": 4,
-    "differenza": 3,
-    "punti": 6,
-    "punti_attesi": 4.9,
-    "scarto_punti": 1.1,
-    "posizione_attesa": 3,
-    "salto": -3
+    "salto": -5
    },
    {
     "posizione": 7,
     "squadra": "Aris",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 2,
     "pareggiate": 0,
-    "perse": 1,
+    "perse": 2,
     "fatti": 5,
-    "subiti": 8,
-    "differenza": -3,
+    "subiti": 10,
+    "differenza": -5,
     "punti": 6,
-    "punti_attesi": 3.2,
-    "scarto_punti": 2.8,
+    "punti_attesi": 4.1,
+    "scarto_punti": 1.9,
     "posizione_attesa": 10,
     "salto": 3
    },
@@ -2832,11 +2832,27 @@
     "punti": 5,
     "punti_attesi": 2.9,
     "scarto_punti": 2.1,
-    "posizione_attesa": 12,
-    "salto": 4
+    "posizione_attesa": 13,
+    "salto": 5
    },
    {
     "posizione": 9,
+    "squadra": "Kalamata",
+    "giocate": 4,
+    "vinte": 1,
+    "pareggiate": 1,
+    "perse": 2,
+    "fatti": 6,
+    "subiti": 7,
+    "differenza": -1,
+    "punti": 4,
+    "punti_attesi": 4.4,
+    "scarto_punti": -0.4,
+    "posizione_attesa": 9,
+    "salto": 0
+   },
+   {
+    "posizione": 10,
     "squadra": "Atromitos",
     "giocate": 4,
     "vinte": 0,
@@ -2848,86 +2864,70 @@
     "punti": 2,
     "punti_attesi": 3.4,
     "scarto_punti": -1.4,
-    "posizione_attesa": 9,
-    "salto": 0
-   },
-   {
-    "posizione": 10,
-    "squadra": "Volos NFC",
-    "giocate": 3,
-    "vinte": 0,
-    "pareggiate": 2,
-    "perse": 1,
-    "fatti": 2,
-    "subiti": 4,
-    "differenza": -2,
-    "punti": 2,
-    "punti_attesi": 3.9,
-    "scarto_punti": -1.9,
-    "posizione_attesa": 6,
-    "salto": -4
+    "posizione_attesa": 12,
+    "salto": 2
    },
    {
     "posizione": 11,
-    "squadra": "Kalamata",
-    "giocate": 3,
+    "squadra": "Volos NFC",
+    "giocate": 4,
     "vinte": 0,
-    "pareggiate": 1,
+    "pareggiate": 2,
     "perse": 2,
     "fatti": 3,
-    "subiti": 6,
-    "differenza": -3,
-    "punti": 1,
-    "punti_attesi": 2.8,
-    "scarto_punti": -1.8,
-    "posizione_attesa": 13,
-    "salto": 2
+    "subiti": 7,
+    "differenza": -4,
+    "punti": 2,
+    "punti_attesi": 5.1,
+    "scarto_punti": -3.1,
+    "posizione_attesa": 7,
+    "salto": -4
    },
    {
     "posizione": 12,
     "squadra": "Kifisia",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 0,
-    "pareggiate": 1,
+    "pareggiate": 2,
     "perse": 2,
     "fatti": 2,
     "subiti": 6,
     "differenza": -4,
-    "punti": 1,
-    "punti_attesi": 3.0,
-    "scarto_punti": -2.0,
-    "posizione_attesa": 11,
-    "salto": -1
+    "punti": 2,
+    "punti_attesi": 5.1,
+    "scarto_punti": -3.1,
+    "posizione_attesa": 6,
+    "salto": -6
    },
    {
     "posizione": 13,
     "squadra": "Asteras Tripolis",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 0,
-    "pareggiate": 0,
+    "pareggiate": 1,
     "perse": 3,
-    "fatti": 1,
-    "subiti": 6,
+    "fatti": 2,
+    "subiti": 7,
     "differenza": -5,
-    "punti": 0,
-    "punti_attesi": 3.5,
-    "scarto_punti": -3.5,
-    "posizione_attesa": 8,
-    "salto": -5
+    "punti": 1,
+    "punti_attesi": 5.3,
+    "scarto_punti": -4.3,
+    "posizione_attesa": 5,
+    "salto": -8
    },
    {
     "posizione": 14,
     "squadra": "Levadeiakos",
-    "giocate": 3,
+    "giocate": 4,
     "vinte": 0,
-    "pareggiate": 0,
+    "pareggiate": 1,
     "perse": 3,
     "fatti": 0,
     "subiti": 8,
     "differenza": -8,
-    "punti": 0,
-    "punti_attesi": 2.1,
-    "scarto_punti": -2.1,
+    "punti": 1,
+    "punti_attesi": 2.7,
+    "scarto_punti": -1.7,
     "posizione_attesa": 14,
     "salto": 0
    }
@@ -3129,22 +3129,38 @@
   "serie-b": [
    {
     "posizione": 1,
-    "squadra": "Palermo",
-    "giocate": 3,
+    "squadra": "Mantova",
+    "giocate": 4,
     "vinte": 3,
-    "pareggiate": 0,
+    "pareggiate": 1,
     "perse": 0,
-    "fatti": 7,
+    "fatti": 8,
     "subiti": 3,
-    "differenza": 4,
-    "punti": 9,
-    "punti_attesi": 4.9,
-    "scarto_punti": 4.1,
-    "posizione_attesa": 11,
-    "salto": 10
+    "differenza": 5,
+    "punti": 10,
+    "punti_attesi": 7.5,
+    "scarto_punti": 2.5,
+    "posizione_attesa": 1,
+    "salto": 0
    },
    {
     "posizione": 2,
+    "squadra": "Palermo",
+    "giocate": 4,
+    "vinte": 3,
+    "pareggiate": 1,
+    "perse": 0,
+    "fatti": 8,
+    "subiti": 4,
+    "differenza": 4,
+    "punti": 10,
+    "punti_attesi": 5.6,
+    "scarto_punti": 4.4,
+    "posizione_attesa": 8,
+    "salto": 6
+   },
+   {
+    "posizione": 3,
     "squadra": "Sudtirol",
     "giocate": 4,
     "vinte": 2,
@@ -3157,26 +3173,26 @@
     "punti_attesi": 3.3,
     "scarto_punti": 4.7,
     "posizione_attesa": 19,
-    "salto": 17
+    "salto": 16
    },
    {
-    "posizione": 3,
-    "squadra": "Mantova",
-    "giocate": 3,
+    "posizione": 4,
+    "squadra": "Avellino",
+    "giocate": 4,
     "vinte": 2,
     "pareggiate": 1,
-    "perse": 0,
+    "perse": 1,
     "fatti": 6,
     "subiti": 3,
     "differenza": 3,
     "punti": 7,
-    "punti_attesi": 5.5,
-    "scarto_punti": 1.5,
-    "posizione_attesa": 6,
-    "salto": 3
+    "punti_attesi": 6.8,
+    "scarto_punti": 0.2,
+    "posizione_attesa": 3,
+    "salto": -1
    },
    {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "Modena",
     "giocate": 4,
     "vinte": 2,
@@ -3188,11 +3204,11 @@
     "punti": 7,
     "punti_attesi": 6.5,
     "scarto_punti": 0.5,
-    "posizione_attesa": 2,
-    "salto": -2
+    "posizione_attesa": 4,
+    "salto": -1
    },
    {
-    "posizione": 5,
+    "posizione": 6,
     "squadra": "Ascoli",
     "giocate": 4,
     "vinte": 2,
@@ -3204,11 +3220,11 @@
     "punti": 7,
     "punti_attesi": 5.1,
     "scarto_punti": 1.9,
-    "posizione_attesa": 8,
-    "salto": 3
+    "posizione_attesa": 10,
+    "salto": 4
    },
    {
-    "posizione": 6,
+    "posizione": 7,
     "squadra": "Padova",
     "giocate": 4,
     "vinte": 2,
@@ -3221,23 +3237,7 @@
     "punti_attesi": 3.7,
     "scarto_punti": 3.3,
     "posizione_attesa": 18,
-    "salto": 12
-   },
-   {
-    "posizione": 7,
-    "squadra": "Avellino",
-    "giocate": 3,
-    "vinte": 2,
-    "pareggiate": 0,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 2,
-    "differenza": 3,
-    "punti": 6,
-    "punti_attesi": 4.7,
-    "scarto_punti": 1.3,
-    "posizione_attesa": 13,
-    "salto": 6
+    "salto": 11
    },
    {
     "posizione": 8,
@@ -3268,8 +3268,8 @@
     "punti": 6,
     "punti_attesi": 6.9,
     "scarto_punti": -0.9,
-    "posizione_attesa": 1,
-    "salto": -8
+    "posizione_attesa": 2,
+    "salto": -7
    },
    {
     "posizione": 10,
@@ -3300,8 +3300,8 @@
     "punti": 6,
     "punti_attesi": 4.7,
     "scarto_punti": 1.3,
-    "posizione_attesa": 12,
-    "salto": 1
+    "posizione_attesa": 13,
+    "salto": 2
    },
    {
     "posizione": 12,
@@ -3332,8 +3332,8 @@
     "punti": 4,
     "punti_attesi": 5.6,
     "scarto_punti": -1.6,
-    "posizione_attesa": 5,
-    "salto": -8
+    "posizione_attesa": 9,
+    "salto": -4
    },
    {
     "posizione": 14,
@@ -3348,8 +3348,8 @@
     "punti": 4,
     "punti_attesi": 5.0,
     "scarto_punti": -1.0,
-    "posizione_attesa": 10,
-    "salto": -4
+    "posizione_attesa": 12,
+    "salto": -2
    },
    {
     "posizione": 15,
@@ -3364,8 +3364,8 @@
     "punti": 4,
     "punti_attesi": 6.2,
     "scarto_punti": -2.2,
-    "posizione_attesa": 3,
-    "salto": -12
+    "posizione_attesa": 5,
+    "salto": -10
    },
    {
     "posizione": 16,
@@ -3380,8 +3380,8 @@
     "punti": 4,
     "punti_attesi": 5.0,
     "scarto_punti": -1.0,
-    "posizione_attesa": 9,
-    "salto": -7
+    "posizione_attesa": 11,
+    "salto": -5
    },
    {
     "posizione": 17,
@@ -3396,8 +3396,8 @@
     "punti": 4,
     "punti_attesi": 5.8,
     "scarto_punti": -1.8,
-    "posizione_attesa": 4,
-    "salto": -13
+    "posizione_attesa": 7,
+    "salto": -10
    },
    {
     "posizione": 18,
@@ -3417,22 +3417,6 @@
    },
    {
     "posizione": 19,
-    "squadra": "Sampdoria",
-    "giocate": 3,
-    "vinte": 0,
-    "pareggiate": 1,
-    "perse": 2,
-    "fatti": 3,
-    "subiti": 6,
-    "differenza": -3,
-    "punti": 1,
-    "punti_attesi": 5.4,
-    "scarto_punti": -4.4,
-    "posizione_attesa": 7,
-    "salto": -12
-   },
-   {
-    "posizione": 20,
     "squadra": "Carrarese",
     "giocate": 4,
     "vinte": 0,
@@ -3445,7 +3429,23 @@
     "punti_attesi": 3.8,
     "scarto_punti": -2.8,
     "posizione_attesa": 17,
-    "salto": -3
+    "salto": -2
+   },
+   {
+    "posizione": 20,
+    "squadra": "Sampdoria",
+    "giocate": 4,
+    "vinte": 0,
+    "pareggiate": 1,
+    "perse": 3,
+    "fatti": 3,
+    "subiti": 8,
+    "differenza": -5,
+    "punti": 1,
+    "punti_attesi": 6.1,
+    "scarto_punti": -5.1,
+    "posizione_attesa": 6,
+    "salto": -14
    }
   ],
   "championship": [
@@ -5006,11 +5006,43 @@
     "punti": 13,
     "punti_attesi": 8.5,
     "scarto_punti": 4.5,
-    "posizione_attesa": 2,
-    "salto": 1
+    "posizione_attesa": 3,
+    "salto": 2
    },
    {
     "posizione": 2,
+    "squadra": "Mallorca",
+    "giocate": 5,
+    "vinte": 3,
+    "pareggiate": 1,
+    "perse": 1,
+    "fatti": 7,
+    "subiti": 2,
+    "differenza": 5,
+    "punti": 10,
+    "punti_attesi": 8.1,
+    "scarto_punti": 1.9,
+    "posizione_attesa": 4,
+    "salto": 2
+   },
+   {
+    "posizione": 3,
+    "squadra": "Tenerife",
+    "giocate": 5,
+    "vinte": 3,
+    "pareggiate": 1,
+    "perse": 1,
+    "fatti": 7,
+    "subiti": 3,
+    "differenza": 4,
+    "punti": 10,
+    "punti_attesi": 7.7,
+    "scarto_punti": 2.3,
+    "posizione_attesa": 5,
+    "salto": 2
+   },
+   {
+    "posizione": 4,
     "squadra": "Las Palmas",
     "giocate": 5,
     "vinte": 3,
@@ -5022,11 +5054,11 @@
     "punti": 10,
     "punti_attesi": 6.7,
     "scarto_punti": 3.3,
-    "posizione_attesa": 5,
-    "salto": 3
+    "posizione_attesa": 9,
+    "salto": 5
    },
    {
-    "posizione": 3,
+    "posizione": 5,
     "squadra": "Almeria",
     "giocate": 5,
     "vinte": 3,
@@ -5039,10 +5071,10 @@
     "punti_attesi": 5.5,
     "scarto_punti": 3.5,
     "posizione_attesa": 15,
-    "salto": 12
+    "salto": 10
    },
    {
-    "posizione": 4,
+    "posizione": 6,
     "squadra": "Eibar",
     "giocate": 4,
     "vinte": 3,
@@ -5054,11 +5086,27 @@
     "punti": 9,
     "punti_attesi": 4.2,
     "scarto_punti": 4.8,
-    "posizione_attesa": 21,
-    "salto": 17
+    "posizione_attesa": 22,
+    "salto": 16
    },
    {
-    "posizione": 5,
+    "posizione": 7,
+    "squadra": "Oviedo",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 2,
+    "perse": 1,
+    "fatti": 4,
+    "subiti": 1,
+    "differenza": 3,
+    "punti": 8,
+    "punti_attesi": 8.9,
+    "scarto_punti": -0.9,
+    "posizione_attesa": 2,
+    "salto": -5
+   },
+   {
+    "posizione": 8,
     "squadra": "Sociedad B",
     "giocate": 5,
     "vinte": 2,
@@ -5070,11 +5118,11 @@
     "punti": 8,
     "punti_attesi": 5.3,
     "scarto_punti": 2.7,
-    "posizione_attesa": 16,
-    "salto": 11
+    "posizione_attesa": 17,
+    "salto": 9
    },
    {
-    "posizione": 6,
+    "posizione": 9,
     "squadra": "Burgos",
     "giocate": 5,
     "vinte": 2,
@@ -5086,43 +5134,11 @@
     "punti": 8,
     "punti_attesi": 4.6,
     "scarto_punti": 3.4,
-    "posizione_attesa": 18,
-    "salto": 12
+    "posizione_attesa": 20,
+    "salto": 11
    },
    {
-    "posizione": 7,
-    "squadra": "Sabadell",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 2,
-    "perse": 0,
-    "fatti": 4,
-    "subiti": 2,
-    "differenza": 2,
-    "punti": 8,
-    "punti_attesi": 5.7,
-    "scarto_punti": 2.3,
-    "posizione_attesa": 13,
-    "salto": 6
-   },
-   {
-    "posizione": 8,
-    "squadra": "Leganes",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 2,
-    "perse": 0,
-    "fatti": 3,
-    "subiti": 1,
-    "differenza": 2,
-    "punti": 8,
-    "punti_attesi": 4.2,
-    "scarto_punti": 3.8,
-    "posizione_attesa": 22,
-    "salto": 14
-   },
-   {
-    "posizione": 9,
+    "posizione": 10,
     "squadra": "Granada",
     "giocate": 5,
     "vinte": 2,
@@ -5134,11 +5150,43 @@
     "punti": 8,
     "punti_attesi": 7.1,
     "scarto_punti": 0.9,
-    "posizione_attesa": 4,
-    "salto": -5
+    "posizione_attesa": 8,
+    "salto": -2
    },
    {
-    "posizione": 10,
+    "posizione": 11,
+    "squadra": "Sabadell",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 2,
+    "perse": 1,
+    "fatti": 4,
+    "subiti": 4,
+    "differenza": 0,
+    "punti": 8,
+    "punti_attesi": 6.7,
+    "scarto_punti": 1.3,
+    "posizione_attesa": 10,
+    "salto": -1
+   },
+   {
+    "posizione": 12,
+    "squadra": "Leganes",
+    "giocate": 5,
+    "vinte": 2,
+    "pareggiate": 2,
+    "perse": 1,
+    "fatti": 3,
+    "subiti": 3,
+    "differenza": 0,
+    "punti": 8,
+    "punti_attesi": 5.0,
+    "scarto_punti": 3.0,
+    "posizione_attesa": 18,
+    "salto": 6
+   },
+   {
+    "posizione": 13,
     "squadra": "Girona",
     "giocate": 5,
     "vinte": 2,
@@ -5150,11 +5198,11 @@
     "punti": 7,
     "punti_attesi": 7.2,
     "scarto_punti": -0.2,
-    "posizione_attesa": 3,
-    "salto": -7
+    "posizione_attesa": 7,
+    "salto": -6
    },
    {
-    "posizione": 11,
+    "posizione": 14,
     "squadra": "Celta B",
     "giocate": 4,
     "vinte": 2,
@@ -5166,91 +5214,59 @@
     "punti": 7,
     "punti_attesi": 5.8,
     "scarto_punti": 1.2,
-    "posizione_attesa": 12,
-    "salto": 1
-   },
-   {
-    "posizione": 12,
-    "squadra": "Mallorca",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 2,
-    "differenza": 3,
-    "punti": 7,
-    "punti_attesi": 6.3,
-    "scarto_punti": 0.7,
-    "posizione_attesa": 8,
-    "salto": -4
-   },
-   {
-    "posizione": 13,
-    "squadra": "Tenerife",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 5,
-    "subiti": 3,
-    "differenza": 2,
-    "punti": 7,
-    "punti_attesi": 5.9,
-    "scarto_punti": 1.1,
-    "posizione_attesa": 11,
-    "salto": -2
-   },
-   {
-    "posizione": 14,
-    "squadra": "Sp Gijon",
-    "giocate": 4,
-    "vinte": 2,
-    "pareggiate": 1,
-    "perse": 1,
-    "fatti": 2,
-    "subiti": 2,
-    "differenza": 0,
-    "punti": 7,
-    "punti_attesi": 6.0,
-    "scarto_punti": 1.0,
-    "posizione_attesa": 10,
-    "salto": -4
+    "posizione_attesa": 14,
+    "salto": 0
    },
    {
     "posizione": 15,
-    "squadra": "Oviedo",
-    "giocate": 4,
-    "vinte": 1,
-    "pareggiate": 2,
-    "perse": 1,
-    "fatti": 1,
-    "subiti": 1,
-    "differenza": 0,
-    "punti": 5,
-    "punti_attesi": 6.5,
-    "scarto_punti": -1.5,
-    "posizione_attesa": 7,
-    "salto": -8
-   },
-   {
-    "posizione": 16,
-    "squadra": "Valladolid",
-    "giocate": 4,
-    "vinte": 1,
+    "squadra": "Sp Gijon",
+    "giocate": 5,
+    "vinte": 2,
     "pareggiate": 1,
     "perse": 2,
     "fatti": 2,
-    "subiti": 4,
-    "differenza": -2,
-    "punti": 4,
-    "punti_attesi": 5.6,
-    "scarto_punti": -1.6,
-    "posizione_attesa": 14,
-    "salto": -2
+    "subiti": 3,
+    "differenza": -1,
+    "punti": 7,
+    "punti_attesi": 7.6,
+    "scarto_punti": -0.6,
+    "posizione_attesa": 6,
+    "salto": -9
+   },
+   {
+    "posizione": 16,
+    "squadra": "Eldense",
+    "giocate": 5,
+    "vinte": 1,
+    "pareggiate": 2,
+    "perse": 2,
+    "fatti": 3,
+    "subiti": 6,
+    "differenza": -3,
+    "punti": 5,
+    "punti_attesi": 5.4,
+    "scarto_punti": -0.4,
+    "posizione_attesa": 16,
+    "salto": 0
    },
    {
     "posizione": 17,
+    "squadra": "Valladolid",
+    "giocate": 5,
+    "vinte": 1,
+    "pareggiate": 1,
+    "perse": 3,
+    "fatti": 2,
+    "subiti": 7,
+    "differenza": -5,
+    "punti": 4,
+    "punti_attesi": 6.0,
+    "scarto_punti": -2.0,
+    "posizione_attesa": 13,
+    "salto": -4
+   },
+   {
+    "posizione": 18,
     "squadra": "Andorra",
     "giocate": 5,
     "vinte": 1,
@@ -5263,10 +5279,10 @@
     "punti_attesi": 9.0,
     "scarto_punti": -6.0,
     "posizione_attesa": 1,
-    "salto": -16
+    "salto": -17
    },
    {
-    "posizione": 18,
+    "posizione": 19,
     "squadra": "Cadiz",
     "giocate": 5,
     "vinte": 0,
@@ -5278,11 +5294,11 @@
     "punti": 3,
     "punti_attesi": 4.6,
     "scarto_punti": -1.6,
-    "posizione_attesa": 17,
-    "salto": -1
+    "posizione_attesa": 19,
+    "salto": 0
    },
    {
-    "posizione": 19,
+    "posizione": 20,
     "squadra": "Cordoba",
     "giocate": 5,
     "vinte": 1,
@@ -5294,24 +5310,8 @@
     "punti": 3,
     "punti_attesi": 6.5,
     "scarto_punti": -3.5,
-    "posizione_attesa": 6,
-    "salto": -13
-   },
-   {
-    "posizione": 20,
-    "squadra": "Eldense",
-    "giocate": 4,
-    "vinte": 0,
-    "pareggiate": 2,
-    "perse": 2,
-    "fatti": 2,
-    "subiti": 6,
-    "differenza": -4,
-    "punti": 2,
-    "punti_attesi": 4.4,
-    "scarto_punti": -2.4,
-    "posizione_attesa": 20,
-    "salto": 0
+    "posizione_attesa": 11,
+    "salto": -9
    },
    {
     "posizione": 21,
@@ -5326,8 +5326,8 @@
     "punti": 1,
     "punti_attesi": 6.3,
     "scarto_punti": -5.3,
-    "posizione_attesa": 9,
-    "salto": -12
+    "posizione_attesa": 12,
+    "salto": -9
    },
    {
     "posizione": 22,
@@ -5342,8 +5342,8 @@
     "punti": 0,
     "punti_attesi": 4.4,
     "scarto_punti": -4.4,
-    "posizione_attesa": 19,
-    "salto": -3
+    "posizione_attesa": 21,
+    "salto": -1
    }
   ],
   "bundesliga-2": [
