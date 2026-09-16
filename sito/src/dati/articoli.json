@@ -1,5 +1,5 @@
 {
- "data": "2026-09-15",
+ "data": "2026-09-16",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -7,20 +7,20 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie A: cosa dicono i numeri",
-   "sommario": "Roma in testa con 12 punti, 4ª giornata archiviata.",
+   "sommario": "Roma in testa con 3 punti, 1ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 4ª giornata",
+     "titolo": "La 1ª giornata",
      "righe": [
-      "Nella 4ª giornata sono stati segnati 39 gol in 10 partite, 3.9 a incontro."
+      "Nella 1ª giornata sono stati segnati 24 gol in 10 partite, 2.4 a incontro.",
+      "Il risultato piu' netto e' stato Roma 4-0 Fiorentina: Roma ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Roma con 12 punti in 4 partite.",
-      "Lazio ha 10 punti ma i tiri in porta ne direbbero 5.1: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Monza, ferma a 1 punto contro i 6.7 attesi dal gioco."
+      "In testa c'e' Roma con 3 punti in 1 partita.",
+      "Lazio ha 3 punti ma i tiri in porta ne direbbero 0.9: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea."
      ]
     }
    ],
@@ -80,24 +80,8 @@
      "campione": 1
     }
    ],
-   "sorprese": [
-    {
-     "campionato": "Serie A",
-     "bandiera": "🇮🇹",
-     "slug": "serie-a",
-     "data": "2026-09-13",
-     "casa": "Lecce",
-     "ospite": "Monza",
-     "gol_casa": 3,
-     "gol_ospite": 2,
-     "in_porta_casa": 3,
-     "in_porta_ospite": 11,
-     "vincitore": "Lecce",
-     "perdente": "Monza",
-     "scarto_tiri": 8
-    }
-   ],
-   "giornate_giocate": 4
+   "sorprese": [],
+   "giornate_giocate": 1
   },
   {
    "slug": "premier-league",
@@ -105,38 +89,23 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "Premier League: cosa dicono i numeri",
-   "sommario": "Arsenal in testa con 12 punti, 4ª giornata archiviata.",
+   "sommario": "Brighton in testa con 3 punti, 1ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 4ª giornata",
+     "titolo": "La 1ª giornata",
      "righe": [
-      "Nella 4ª giornata sono stati segnati 29 gol in 10 partite, 2.9 a incontro.",
-      "Il risultato piu' netto e' stato Coventry 0-5 Brighton: Brighton ha vinto con 5 gol di scarto."
+      "Nella 1ª giornata sono stati segnati 30 gol in 10 partite, 3.0 a incontro.",
+      "Il risultato piu' netto e' stato Brighton 4-0 Aston Villa: Brighton ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Arsenal con 12 punti in 4 partite.",
-      "Man City ha 12 punti ma i tiri in porta ne direbbero 7.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Coventry, ferma a 0 punti contro i 4.3 attesi dal gioco."
+      "In testa c'e' Brighton con 3 punti in 1 partita."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "a_secco",
-     "titolo": "Tottenham non segna da 4 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "4",
-     "campionato": "Premier League",
-     "bandiera": "🏴",
-     "slug": "premier-league",
-     "squadre": [
-      "Tottenham"
-     ],
-     "campione": 4
-    },
     {
      "tipo": "rimonte",
      "titolo": "Man City non molla all'intervallo",
@@ -164,17 +133,30 @@
      "campione": 8
     },
     {
+     "tipo": "primo_tempo",
+     "titolo": "Ipswich decide presto",
+     "testo": "23 dei suoi 38 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+     "numero": "61%",
+     "campionato": "Premier League",
+     "bandiera": "🏴",
+     "slug": "premier-league",
+     "squadre": [
+      "Ipswich"
+     ],
+     "campione": 38
+    },
+    {
      "tipo": "ripresa",
      "titolo": "Sunderland vive di secondi tempi",
-     "testo": "Solo 14 dei suoi 45 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "69%",
+     "testo": "Solo 14 dei suoi 43 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "67%",
      "campionato": "Premier League",
      "bandiera": "🏴",
      "slug": "premier-league",
      "squadre": [
       "Sunderland"
      ],
-     "campione": 45
+     "campione": 43
     },
     {
      "tipo": "sorpresa_mercato",
@@ -205,24 +187,8 @@
      "campione": 1
     }
    ],
-   "sorprese": [
-    {
-     "campionato": "Premier League",
-     "bandiera": "🏴",
-     "slug": "premier-league",
-     "data": "2026-08-29",
-     "casa": "Tottenham",
-     "ospite": "Newcastle",
-     "gol_casa": 0,
-     "gol_ospite": 2,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 2,
-     "vincitore": "Newcastle",
-     "perdente": "Tottenham",
-     "scarto_tiri": 4
-    }
-   ],
-   "giornate_giocate": 4
+   "sorprese": [],
+   "giornate_giocate": 1
   },
   {
    "slug": "laliga",
@@ -230,38 +196,25 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga: cosa dicono i numeri",
-   "sommario": "Barcelona in testa con 15 punti, 6ª giornata archiviata.",
+   "sommario": "Barcelona in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 5 gol in 2 partite, 2.5 a incontro.",
-      "Il risultato piu' netto e' stato Sociedad 0-3 Ath Madrid: Ath Madrid ha vinto con 3 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 32 gol in 12 partite, 2.7 a incontro.",
+      "Il risultato piu' netto e' stato Elche 0-5 Barcelona: Barcelona ha vinto con 5 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Barcelona con 15 punti in 5 partite.",
-      "Betis ha 12 punti ma i tiri in porta ne direbbero 7.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Villarreal, ferma a 2 punti contro i 8.9 attesi dal gioco."
+      "In testa c'e' Barcelona con 6 punti in 2 partite.",
+      "Sevilla ha 6 punti ma i tiri in porta ne direbbero 2.3: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Ath Bilbao, ferma a 0 punti contro i 2.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "digiuno",
-     "titolo": "Celta non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "LaLiga",
-     "bandiera": "🇪🇸",
-     "slug": "laliga",
-     "squadre": [
-      "Celta"
-     ],
-     "campione": 6
-    },
     {
      "tipo": "rimonte",
      "titolo": "Barcelona non molla all'intervallo",
@@ -322,49 +275,19 @@
      "campionato": "LaLiga",
      "bandiera": "🇪🇸",
      "slug": "laliga",
-     "data": "2026-09-12",
-     "casa": "Santander",
-     "ospite": "Alaves",
-     "gol_casa": 2,
-     "gol_ospite": 1,
-     "in_porta_casa": 4,
-     "in_porta_ospite": 8,
-     "vincitore": "Santander",
-     "perdente": "Alaves",
-     "scarto_tiri": 4
-    },
-    {
-     "campionato": "LaLiga",
-     "bandiera": "🇪🇸",
-     "slug": "laliga",
-     "data": "2026-09-07",
-     "casa": "Elche",
-     "ospite": "Sociedad",
-     "gol_casa": 2,
-     "gol_ospite": 3,
-     "in_porta_casa": 10,
-     "in_porta_ospite": 6,
-     "vincitore": "Sociedad",
-     "perdente": "Elche",
-     "scarto_tiri": 4
-    },
-    {
-     "campionato": "LaLiga",
-     "bandiera": "🇪🇸",
-     "slug": "laliga",
-     "data": "2026-08-28",
-     "casa": "Alaves",
-     "ospite": "Villarreal",
+     "data": "2026-08-22",
+     "casa": "Ath Bilbao",
+     "ospite": "Sevilla",
      "gol_casa": 1,
-     "gol_ospite": 0,
-     "in_porta_casa": 2,
-     "in_porta_ospite": 6,
-     "vincitore": "Alaves",
-     "perdente": "Villarreal",
+     "gol_ospite": 3,
+     "in_porta_casa": 8,
+     "in_porta_ospite": 4,
+     "vincitore": "Sevilla",
+     "perdente": "Ath Bilbao",
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 2
   },
   {
    "slug": "bundesliga",
@@ -372,38 +295,23 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "Bundesliga: cosa dicono i numeri",
-   "sommario": "Freiburg in testa con 9 punti, 3ª giornata archiviata.",
+   "sommario": "Bayern Munich in testa con 3 punti, 1ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 3ª giornata",
+     "titolo": "La 1ª giornata",
      "righe": [
-      "Nella 3ª giornata sono stati segnati 33 gol in 9 partite, 3.7 a incontro.",
-      "Il risultato piu' netto e' stato Freiburg 5-0 M'gladbach: Freiburg ha vinto con 5 gol di scarto."
+      "Nella 1ª giornata sono stati segnati 35 gol in 9 partite, 3.9 a incontro.",
+      "Il risultato piu' netto e' stato Bayern Munich 5-1 Stuttgart: Bayern Munich ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Freiburg con 9 punti in 3 partite.",
-      "Dortmund ha 9 punti ma i tiri in porta ne direbbero 5.9: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Union Berlin, ferma a 1 punto contro i 3.7 attesi dal gioco."
+      "In testa c'e' Bayern Munich con 3 punti in 1 partita."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "a_secco",
-     "titolo": "Paderborn non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "3",
-     "campionato": "Bundesliga",
-     "bandiera": "🇩🇪",
-     "slug": "bundesliga",
-     "squadre": [
-      "Paderborn"
-     ],
-     "campione": 3
-    },
     {
      "tipo": "rimonte",
      "titolo": "Bayern Munich non molla all'intervallo",
@@ -460,7 +368,7 @@
     }
    ],
    "sorprese": [],
-   "giornate_giocate": 3
+   "giornate_giocate": 1
   },
   {
    "slug": "ligue-1",
@@ -468,20 +376,19 @@
    "bandiera": "🇫🇷",
    "paese": "Francia",
    "titolo": "Ligue 1: cosa dicono i numeri",
-   "sommario": "Lille in testa con 10 punti, 4ª giornata archiviata.",
+   "sommario": "Marseille in testa con 3 punti, 1ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 4ª giornata",
+     "titolo": "La 1ª giornata",
      "righe": [
-      "Nella 4ª giornata sono stati segnati 15 gol in 9 partite, 1.7 a incontro."
+      "Nella 1ª giornata sono stati segnati 24 gol in 9 partite, 2.7 a incontro.",
+      "Il risultato piu' netto e' stato Marseille 4-0 Strasbourg: Marseille ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Lille con 10 punti in 4 partite.",
-      "Monaco ha 10 punti ma i tiri in porta ne direbbero 5.9: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Lens, ferma a 4 punti contro i 7.3 attesi dal gioco."
+      "In testa c'e' Marseille con 3 punti in 1 partita."
      ]
     }
    ],
@@ -541,54 +448,8 @@
      "campione": 1
     }
    ],
-   "sorprese": [
-    {
-     "campionato": "Ligue 1",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-1",
-     "data": "2026-09-04",
-     "casa": "Paris SG",
-     "ospite": "Monaco",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 10,
-     "in_porta_ospite": 2,
-     "vincitore": "Monaco",
-     "perdente": "Paris SG",
-     "scarto_tiri": 8
-    },
-    {
-     "campionato": "Ligue 1",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-1",
-     "data": "2026-09-03",
-     "casa": "Toulouse",
-     "ospite": "Lille",
-     "gol_casa": 0,
-     "gol_ospite": 1,
-     "in_porta_casa": 10,
-     "in_porta_ospite": 6,
-     "vincitore": "Lille",
-     "perdente": "Toulouse",
-     "scarto_tiri": 4
-    },
-    {
-     "campionato": "Ligue 1",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-1",
-     "data": "2026-08-29",
-     "casa": "Lorient",
-     "ospite": "Troyes",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 2,
-     "vincitore": "Troyes",
-     "perdente": "Lorient",
-     "scarto_tiri": 4
-    }
-   ],
-   "giornate_giocate": 4
+   "sorprese": [],
+   "giornate_giocate": 1
   },
   {
    "slug": "eredivisie",
@@ -596,51 +457,24 @@
    "bandiera": "🇳🇱",
    "paese": "Paesi Bassi",
    "titolo": "Eredivisie: cosa dicono i numeri",
-   "sommario": "PSV Eindhoven in testa con 16 punti, 6ª giornata archiviata.",
+   "sommario": "AZ Alkmaar in testa con 9 punti, 3ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 3ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 30 gol in 9 partite, 3.3 a incontro.",
-      "Il risultato piu' netto e' stato Zwolle 0-7 Feyenoord: Feyenoord ha vinto con 7 gol di scarto."
+      "Nella 3ª giornata sono stati segnati 27 gol in 6 partite, 4.5 a incontro.",
+      "Il risultato piu' netto e' stato PSV Eindhoven 5-1 Groningen: PSV Eindhoven ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' PSV Eindhoven con 16 punti in 6 partite.",
-      "PSV Eindhoven ha 16 punti ma i tiri in porta ne direbbero 12.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Heerenveen, ferma a 6 punti contro i 9.2 attesi dal gioco."
+      "In testa c'e' AZ Alkmaar con 9 punti in 3 partite.",
+      "All'opposto Cambuur, ferma a 0 punti contro i 2.5 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "PSV Eindhoven non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "Eredivisie",
-     "bandiera": "🇳🇱",
-     "slug": "eredivisie",
-     "squadre": [
-      "PSV Eindhoven"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Den Haag non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "Eredivisie",
-     "bandiera": "🇳🇱",
-     "slug": "eredivisie",
-     "squadre": [
-      "Den Haag"
-     ],
-     "campione": 6
-    },
     {
      "tipo": "rimonte",
      "titolo": "PSV Eindhoven non molla all'intervallo",
@@ -697,7 +531,7 @@
     }
    ],
    "sorprese": [],
-   "giornate_giocate": 6
+   "giornate_giocate": 3
   },
   {
    "slug": "primeira-liga",
@@ -705,50 +539,36 @@
    "bandiera": "🇵🇹",
    "paese": "Portogallo",
    "titolo": "Primeira Liga: cosa dicono i numeri",
-   "sommario": "Porto in testa con 18 punti, 6ª giornata archiviata.",
+   "sommario": "Porto in testa con 9 punti, 3ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 3ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 32 gol in 9 partite, 3.6 a incontro.",
-      "Il risultato piu' netto e' stato Casa Pia 1-4 Porto: Porto ha vinto con 3 gol di scarto."
+      "Nella 3ª giornata sono stati segnati 16 gol in 7 partite, 2.3 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Porto con 18 punti in 6 partite.",
-      "Porto ha 18 punti ma i tiri in porta ne direbbero 12.4: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Guimaraes, ferma a 4 punti contro i 10.6 attesi dal gioco."
+      "In testa c'e' Porto con 9 punti in 3 partite.",
+      "Maritimo ha 7 punti ma i tiri in porta ne direbbero 3.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Estoril, ferma a 1 punto contro i 5.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
-     "tipo": "imbattuta",
-     "titolo": "Sp Lisbon non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
+     "tipo": "a_secco",
+     "titolo": "Casa Pia non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+     "numero": "3",
      "campionato": "Primeira Liga",
      "bandiera": "🇵🇹",
      "slug": "primeira-liga",
      "squadre": [
-      "Sp Lisbon"
+      "Casa Pia"
      ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Famalicao non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "Primeira Liga",
-     "bandiera": "🇵🇹",
-     "slug": "primeira-liga",
-     "squadre": [
-      "Famalicao"
-     ],
-     "campione": 6
+     "campione": 3
     },
     {
      "tipo": "rimonte",
@@ -775,19 +595,6 @@
       "Rio Ave"
      ],
      "campione": 24
-    },
-    {
-     "tipo": "ripresa",
-     "titolo": "Alverca vive di secondi tempi",
-     "testo": "Solo 14 dei suoi 43 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "67%",
-     "campionato": "Primeira Liga",
-     "bandiera": "🇵🇹",
-     "slug": "primeira-liga",
-     "squadre": [
-      "Alverca"
-     ],
-     "campione": 43
     },
     {
      "tipo": "sorpresa_mercato",
@@ -823,36 +630,6 @@
      "campionato": "Primeira Liga",
      "bandiera": "🇵🇹",
      "slug": "primeira-liga",
-     "data": "2026-09-06",
-     "casa": "Gil Vicente",
-     "ospite": "Academico Viseu",
-     "gol_casa": 0,
-     "gol_ospite": 1,
-     "in_porta_casa": 7,
-     "in_porta_ospite": 1,
-     "vincitore": "Academico Viseu",
-     "perdente": "Gil Vicente",
-     "scarto_tiri": 6
-    },
-    {
-     "campionato": "Primeira Liga",
-     "bandiera": "🇵🇹",
-     "slug": "primeira-liga",
-     "data": "2026-09-12",
-     "casa": "Academico Viseu",
-     "ospite": "Guimaraes",
-     "gol_casa": 2,
-     "gol_ospite": 1,
-     "in_porta_casa": 4,
-     "in_porta_ospite": 7,
-     "vincitore": "Academico Viseu",
-     "perdente": "Guimaraes",
-     "scarto_tiri": 3
-    },
-    {
-     "campionato": "Primeira Liga",
-     "bandiera": "🇵🇹",
-     "slug": "primeira-liga",
      "data": "2026-08-22",
      "casa": "Estoril",
      "ospite": "Rio Ave",
@@ -865,7 +642,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 3
   },
   {
    "slug": "superlig",
@@ -873,21 +650,21 @@
    "bandiera": "🇹🇷",
    "paese": "Turchia",
    "titolo": "Süper Lig: cosa dicono i numeri",
-   "sommario": "Galatasaray in testa con 13 punti, 5ª giornata archiviata.",
+   "sommario": "Genclerbirligi in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 5ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 25 gol in 9 partite, 2.8 a incontro.",
-      "Il risultato piu' netto e' stato Amedspor 5-0 Buyuksehyr: Amedspor ha vinto con 5 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 21 gol in 9 partite, 2.3 a incontro.",
+      "Il risultato piu' netto e' stato Erzurumspor 0-4 Galatasaray: Galatasaray ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Galatasaray con 13 punti in 5 partite.",
-      "Alanyaspor ha 8 punti ma i tiri in porta ne direbbero 4.4: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Goztep, ferma a 2 punti contro i 7.2 attesi dal gioco."
+      "In testa c'e' Genclerbirligi con 6 punti in 2 partite.",
+      "Genclerbirligi ha 6 punti ma i tiri in porta ne direbbero 0.8: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Goztep, ferma a 1 punto contro i 4.4 attesi dal gioco."
      ]
     }
    ],
@@ -952,6 +729,21 @@
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
      "slug": "superlig",
+     "data": "2026-08-15",
+     "casa": "Genclerbirligi",
+     "ospite": "Fenerbahce",
+     "gol_casa": 2,
+     "gol_ospite": 1,
+     "in_porta_casa": 3,
+     "in_porta_ospite": 11,
+     "vincitore": "Genclerbirligi",
+     "perdente": "Fenerbahce",
+     "scarto_tiri": 8
+    },
+    {
+     "campionato": "Süper Lig",
+     "bandiera": "🇹🇷",
+     "slug": "superlig",
      "data": "2026-08-22",
      "casa": "Rizespor",
      "ospite": "Samsunspor",
@@ -977,24 +769,9 @@
      "vincitore": "Genclerbirligi",
      "perdente": "Goztep",
      "scarto_tiri": 4
-    },
-    {
-     "campionato": "Süper Lig",
-     "bandiera": "🇹🇷",
-     "slug": "superlig",
-     "data": "2026-09-07",
-     "casa": "Rizespor",
-     "ospite": "Alanyaspor",
-     "gol_casa": 0,
-     "gol_ospite": 1,
-     "in_porta_casa": 5,
-     "in_porta_ospite": 2,
-     "vincitore": "Alanyaspor",
-     "perdente": "Rizespor",
-     "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 5
+   "giornate_giocate": 2
   },
   {
    "slug": "jupiler",
@@ -1002,64 +779,25 @@
    "bandiera": "🇧🇪",
    "paese": "Belgio",
    "titolo": "Pro League: cosa dicono i numeri",
-   "sommario": "St. Gilloise in testa con 16 punti, 6ª giornata archiviata.",
+   "sommario": "Club Brugge in testa con 9 punti, 3ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 3ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 26 gol in 9 partite, 2.9 a incontro.",
-      "Il risultato piu' netto e' stato St. Gilloise 5-0 Lommel SK: St. Gilloise ha vinto con 5 gol di scarto."
+      "Nella 3ª giornata sono stati segnati 21 gol in 6 partite, 3.5 a incontro.",
+      "Il risultato piu' netto e' stato Waregem 4-0 Beveren: Waregem ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' St. Gilloise con 16 punti in 6 partite.",
-      "Gent ha 16 punti ma i tiri in porta ne direbbero 9.0: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Kortrijk, ferma a 0 punti contro i 5.0 attesi dal gioco."
+      "In testa c'e' Club Brugge con 9 punti in 3 partite.",
+      "Club Brugge ha 9 punti ma i tiri in porta ne direbbero 6.4: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto RAAL La Louviere, ferma a 0 punti contro i 3.8 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "St. Gilloise non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "Pro League",
-     "bandiera": "🇧🇪",
-     "slug": "jupiler",
-     "squadre": [
-      "St. Gilloise"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Oud-Heverlee Leuven non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "Pro League",
-     "bandiera": "🇧🇪",
-     "slug": "jupiler",
-     "squadre": [
-      "Oud-Heverlee Leuven"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Kortrijk non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "3",
-     "campionato": "Pro League",
-     "bandiera": "🇧🇪",
-     "slug": "jupiler",
-     "squadre": [
-      "Kortrijk"
-     ],
-     "campione": 3
-    },
     {
      "tipo": "rimonte",
      "titolo": "Waregem non molla all'intervallo",
@@ -1132,7 +870,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 3
   },
   {
    "slug": "super-league-grecia",
@@ -1140,20 +878,20 @@
    "bandiera": "🇬🇷",
    "paese": "Grecia",
    "titolo": "Super League: cosa dicono i numeri",
-   "sommario": "PAOK in testa con 9 punti, 4ª giornata archiviata.",
+   "sommario": "AEK in testa con 3 punti, 1ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 4ª giornata",
+     "titolo": "La 1ª giornata",
      "righe": [
-      "Nella 4ª giornata sono stati segnati 11 gol in 5 partite, 2.2 a incontro."
+      "Nella 1ª giornata sono stati segnati 20 gol in 6 partite, 3.3 a incontro.",
+      "Il risultato piu' netto e' stato AEK 4-0 Iraklis: AEK ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' PAOK con 9 punti in 3 partite.",
-      "Panetolikos ha 9 punti ma i tiri in porta ne direbbero 3.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Asteras Tripolis, ferma a 1 punto contro i 5.3 attesi dal gioco."
+      "In testa c'e' AEK con 3 punti in 1 partita.",
+      "Panetolikos ha 3 punti ma i tiri in porta ne direbbero 1.0: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea."
      ]
     }
    ],
@@ -1187,7 +925,7 @@
     {
      "tipo": "primo_tempo",
      "titolo": "OFI Crete decide presto",
-     "testo": "69 dei suoi 122 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+     "testo": "69 dei suoi 121 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
      "numero": "57%",
      "campionato": "Super League",
      "bandiera": "🇬🇷",
@@ -1195,7 +933,7 @@
      "squadre": [
       "OFI Crete"
      ],
-     "campione": 122
+     "campione": 121
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1227,7 +965,7 @@
     }
    ],
    "sorprese": [],
-   "giornate_giocate": 4
+   "giornate_giocate": 1
   },
   {
    "slug": "premiership",
@@ -1235,50 +973,23 @@
    "bandiera": "🏴",
    "paese": "Scozia",
    "titolo": "Premiership: cosa dicono i numeri",
-   "sommario": "Celtic in testa con 18 punti, 6ª giornata archiviata.",
+   "sommario": "Celtic in testa con 6 punti, 3ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 3ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 7 gol in 4 partite, 1.8 a incontro."
+      "Nella 3ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Celtic con 18 punti in 6 partite.",
-      "Celtic ha 18 punti ma i tiri in porta ne direbbero 13.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Kilmarnock, ferma a 1 punto contro i 5.0 attesi dal gioco."
+      "In testa c'e' Celtic con 6 punti in 2 partite.",
+      "All'opposto Rangers, ferma a 1 punto contro i 4.6 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Celtic non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "Premiership",
-     "bandiera": "🏴",
-     "slug": "premiership",
-     "squadre": [
-      "Celtic"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Aberdeen non segna da 4 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "4",
-     "campionato": "Premiership",
-     "bandiera": "🏴",
-     "slug": "premiership",
-     "squadre": [
-      "Aberdeen"
-     ],
-     "campione": 4
-    },
     {
      "tipo": "rimonte",
      "titolo": "Celtic non molla all'intervallo",
@@ -1351,7 +1062,7 @@
      "scarto_tiri": 7
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 3
   },
   {
    "slug": "serie-b",
@@ -1359,21 +1070,20 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie B: cosa dicono i numeri",
-   "sommario": "Mantova in testa con 10 punti, 4ª giornata archiviata.",
+   "sommario": "Vicenza in testa con 3 punti, 1ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 4ª giornata",
+     "titolo": "La 1ª giornata",
      "righe": [
-      "Nella 4ª giornata sono stati segnati 24 gol in 10 partite, 2.4 a incontro.",
-      "Il risultato piu' netto e' stato Pisa 1-4 Virtus Entella: Virtus Entella ha vinto con 3 gol di scarto."
+      "Nella 1ª giornata sono stati segnati 23 gol in 10 partite, 2.3 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Mantova con 10 punti in 4 partite.",
-      "Sudtirol ha 8 punti ma i tiri in porta ne direbbero 3.3: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Sampdoria, ferma a 1 punto contro i 6.1 attesi dal gioco."
+      "In testa c'e' Vicenza con 3 punti in 1 partita.",
+      "Padova ha 3 punti ma i tiri in porta ne direbbero 0.5: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Pisa, ferma a 0 punti contro i 2.4 attesi dal gioco."
      ]
     }
    ],
@@ -1403,19 +1113,6 @@
       "Sampdoria"
      ],
      "campione": 28
-    },
-    {
-     "tipo": "ripresa",
-     "titolo": "Virtus Entella vive di secondi tempi",
-     "testo": "Solo 14 dei suoi 43 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "67%",
-     "campionato": "Serie B",
-     "bandiera": "🇮🇹",
-     "slug": "serie-b",
-     "squadre": [
-      "Virtus Entella"
-     ],
-     "campione": 43
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1478,7 +1175,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 4
+   "giornate_giocate": 1
   },
   {
    "slug": "championship",
@@ -1486,64 +1183,25 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "Championship: cosa dicono i numeri",
-   "sommario": "West Ham in testa con 14 punti, 7ª giornata archiviata.",
+   "sommario": "Millwall in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 7ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 37 gol in 12 partite, 3.1 a incontro.",
-      "Il risultato piu' netto e' stato West Ham 6-0 Wrexham: West Ham ha vinto con 6 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 35 gol in 12 partite, 2.9 a incontro.",
+      "Il risultato piu' netto e' stato Millwall 3-0 Norwich: Millwall ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' West Ham con 14 punti in 7 partite.",
-      "Charlton ha 12 punti ma i tiri in porta ne direbbero 6.9: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Cardiff, ferma a 4 punti contro i 11.0 attesi dal gioco."
+      "In testa c'e' Millwall con 6 punti in 2 partite.",
+      "Charlton ha 6 punti ma i tiri in porta ne direbbero 2.1: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Norwich, ferma a 0 punti contro i 2.4 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Southampton non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "Championship",
-     "bandiera": "🏴",
-     "slug": "championship",
-     "squadre": [
-      "Southampton"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Cardiff non vince da 7 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "7",
-     "campionato": "Championship",
-     "bandiera": "🏴",
-     "slug": "championship",
-     "squadre": [
-      "Cardiff"
-     ],
-     "campione": 7
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Charlton non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "3",
-     "campionato": "Championship",
-     "bandiera": "🏴",
-     "slug": "championship",
-     "squadre": [
-      "Charlton"
-     ],
-     "campione": 3
-    },
     {
      "tipo": "rimonte",
      "titolo": "Southampton non molla all'intervallo",
@@ -1571,17 +1229,17 @@
      "campione": 17
     },
     {
-     "tipo": "ripresa",
-     "titolo": "West Ham vive di secondi tempi",
-     "testo": "Solo 1 dei suoi 20 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "95%",
+     "tipo": "primo_tempo",
+     "titolo": "Burnley decide presto",
+     "testo": "40 dei suoi 72 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+     "numero": "56%",
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
      "squadre": [
-      "West Ham"
+      "Burnley"
      ],
-     "campione": 20
+     "campione": 72
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1617,19 +1275,34 @@
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
-     "data": "2026-09-12",
-     "casa": "Bolton",
-     "ospite": "Cardiff",
+     "data": "2026-08-22",
+     "casa": "West Ham",
+     "ospite": "Charlton",
      "gol_casa": 1,
-     "gol_ospite": 0,
-     "in_porta_casa": 5,
-     "in_porta_ospite": 10,
-     "vincitore": "Bolton",
-     "perdente": "Cardiff",
-     "scarto_tiri": 5
+     "gol_ospite": 2,
+     "in_porta_casa": 9,
+     "in_porta_ospite": 5,
+     "vincitore": "Charlton",
+     "perdente": "West Ham",
+     "scarto_tiri": 4
+    },
+    {
+     "campionato": "Championship",
+     "bandiera": "🏴",
+     "slug": "championship",
+     "data": "2026-08-15",
+     "casa": "Norwich",
+     "ospite": "West Brom",
+     "gol_casa": 1,
+     "gol_ospite": 2,
+     "in_porta_casa": 7,
+     "in_porta_ospite": 4,
+     "vincitore": "West Brom",
+     "perdente": "Norwich",
+     "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 7
+   "giornate_giocate": 2
   },
   {
    "slug": "league-one",
@@ -1637,64 +1310,24 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League One: cosa dicono i numeri",
-   "sommario": "Sheffield Weds in testa con 13 punti, 6ª giornata archiviata.",
+   "sommario": "Bradford in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 32 gol in 12 partite, 2.7 a incontro.",
-      "Il risultato piu' netto e' stato Plymouth 3-0 Barnsley: Plymouth ha vinto con 3 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 25 gol in 12 partite, 2.1 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Sheffield Weds con 13 punti in 6 partite.",
-      "AFC Wimbledon ha 10 punti ma i tiri in porta ne direbbero 5.9: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Doncaster, ferma a 3 punti contro i 9.0 attesi dal gioco."
+      "In testa c'e' Bradford con 6 punti in 2 partite.",
+      "Bromley ha 4 punti ma i tiri in porta ne direbbero 1.3: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Doncaster, ferma a 1 punto contro i 3.3 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Huddersfield non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "squadre": [
-      "Huddersfield"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Milton Keynes Dons non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "squadre": [
-      "Milton Keynes Dons"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Mansfield non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "3",
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "squadre": [
-      "Mansfield"
-     ],
-     "campione": 3
-    },
     {
      "tipo": "rimonte",
      "titolo": "Stockport non molla all'intervallo",
@@ -1755,49 +1388,34 @@
      "campionato": "League One",
      "bandiera": "🏴",
      "slug": "league-one",
-     "data": "2026-09-12",
-     "casa": "AFC Wimbledon",
-     "ospite": "Doncaster",
+     "data": "2026-08-22",
+     "casa": "Stockport",
+     "ospite": "Blackpool",
      "gol_casa": 1,
-     "gol_ospite": 0,
-     "in_porta_casa": 3,
-     "in_porta_ospite": 9,
-     "vincitore": "AFC Wimbledon",
-     "perdente": "Doncaster",
+     "gol_ospite": 2,
+     "in_porta_casa": 9,
+     "in_porta_ospite": 3,
+     "vincitore": "Blackpool",
+     "perdente": "Stockport",
      "scarto_tiri": 6
     },
     {
      "campionato": "League One",
      "bandiera": "🏴",
      "slug": "league-one",
-     "data": "2026-09-01",
-     "casa": "Bradford",
-     "ospite": "Cambridge",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 5,
-     "in_porta_ospite": 2,
-     "vincitore": "Cambridge",
-     "perdente": "Bradford",
-     "scarto_tiri": 3
-    },
-    {
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "data": "2026-08-30",
-     "casa": "AFC Wimbledon",
-     "ospite": "Wigan",
-     "gol_casa": 1,
-     "gol_ospite": 0,
-     "in_porta_casa": 2,
-     "in_porta_ospite": 5,
-     "vincitore": "AFC Wimbledon",
-     "perdente": "Wigan",
-     "scarto_tiri": 3
+     "data": "2026-08-15",
+     "casa": "Barnsley",
+     "ospite": "Bromley",
+     "gol_casa": 0,
+     "gol_ospite": 1,
+     "in_porta_casa": 8,
+     "in_porta_ospite": 3,
+     "vincitore": "Bromley",
+     "perdente": "Barnsley",
+     "scarto_tiri": 5
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 2
   },
   {
    "slug": "league-two",
@@ -1805,38 +1423,24 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League Two: cosa dicono i numeri",
-   "sommario": "Barnet in testa con 12 punti, 6ª giornata archiviata.",
+   "sommario": "Barnet in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 31 gol in 12 partite, 2.6 a incontro.",
-      "Il risultato piu' netto e' stato York 4-0 Swindon: York ha vinto con 4 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 29 gol in 12 partite, 2.4 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Barnet con 12 punti in 6 partite.",
-      "Swindon ha 10 punti ma i tiri in porta ne direbbero 5.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Crawley Town, ferma a 4 punti contro i 7.5 attesi dal gioco."
+      "In testa c'e' Barnet con 6 punti in 2 partite.",
+      "Crewe ha 6 punti ma i tiri in porta ne direbbero 2.4: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Northampton, ferma a 1 punto contro i 4.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Walsall non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "League Two",
-     "bandiera": "🏴",
-     "slug": "league-two",
-     "squadre": [
-      "Walsall"
-     ],
-     "campione": 6
-    },
     {
      "tipo": "rimonte",
      "titolo": "Fleetwood Town non molla all'intervallo",
@@ -1866,15 +1470,15 @@
     {
      "tipo": "ripresa",
      "titolo": "Cheltenham vive di secondi tempi",
-     "testo": "Solo 38 dei suoi 126 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "70%",
+     "testo": "Solo 38 dei suoi 116 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "67%",
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
      "squadre": [
       "Cheltenham"
      ],
-     "campione": 126
+     "campione": 116
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1910,19 +1514,34 @@
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
-     "data": "2026-09-12",
-     "casa": "Crawley Town",
-     "ospite": "Cheltenham",
+     "data": "2026-08-22",
+     "casa": "Crewe",
+     "ospite": "Northampton",
      "gol_casa": 1,
-     "gol_ospite": 3,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 3,
-     "vincitore": "Cheltenham",
-     "perdente": "Crawley Town",
+     "gol_ospite": 0,
+     "in_porta_casa": 3,
+     "in_porta_ospite": 6,
+     "vincitore": "Crewe",
+     "perdente": "Northampton",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "League Two",
+     "bandiera": "🏴",
+     "slug": "league-two",
+     "data": "2026-08-22",
+     "casa": "Swindon",
+     "ospite": "Cheltenham",
+     "gol_casa": 2,
+     "gol_ospite": 1,
+     "in_porta_casa": 3,
+     "in_porta_ospite": 6,
+     "vincitore": "Swindon",
+     "perdente": "Cheltenham",
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 2
   },
   {
    "slug": "national-league",
@@ -1930,64 +1549,24 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 17 punti, 7ª giornata archiviata.",
+   "sommario": "Boreham Wood in testa con 10 punti, 4ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 7ª giornata",
+     "titolo": "La 4ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 43 gol in 12 partite, 3.6 a incontro.",
-      "Il risultato piu' netto e' stato Woking 5-1 Altrincham: Woking ha vinto con 4 gol di scarto."
+      "Nella 4ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Boreham Wood con 17 punti in 7 partite.",
-      "Aldershot ha 14 punti ma i tiri in porta ne direbbero 7.5: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Solihull, ferma a 1 punto contro i 5.2 attesi dal gioco."
+      "In testa c'e' Boreham Wood con 10 punti in 4 partite.",
+      "Sutton ha 9 punti ma i tiri in porta ne direbbero 5.4: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Barrow, ferma a 1 punto contro i 3.9 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Boreham Wood non perde da 7 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "7",
-     "campionato": "National League",
-     "bandiera": "🏴",
-     "slug": "national-league",
-     "squadre": [
-      "Boreham Wood"
-     ],
-     "campione": 7
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Solihull non vince da 7 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "7",
-     "campionato": "National League",
-     "bandiera": "🏴",
-     "slug": "national-league",
-     "squadre": [
-      "Solihull"
-     ],
-     "campione": 7
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Sutton non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-     "numero": "3",
-     "campionato": "National League",
-     "bandiera": "🏴",
-     "slug": "national-league",
-     "squadre": [
-      "Sutton"
-     ],
-     "campione": 3
-    },
     {
      "tipo": "sorpresa_mercato",
      "titolo": "Rochdale 2-4 Morecambe",
@@ -2017,8 +1596,24 @@
      "campione": 1
     }
    ],
-   "sorprese": [],
-   "giornate_giocate": 7
+   "sorprese": [
+    {
+     "campionato": "National League",
+     "bandiera": "🏴",
+     "slug": "national-league",
+     "data": "2026-08-08",
+     "casa": "Carlisle",
+     "ospite": "Worthing",
+     "gol_casa": 2,
+     "gol_ospite": 3,
+     "in_porta_casa": 6,
+     "in_porta_ospite": 3,
+     "vincitore": "Worthing",
+     "perdente": "Carlisle",
+     "scarto_tiri": 3
+    }
+   ],
+   "giornate_giocate": 4
   },
   {
    "slug": "laliga-2",
@@ -2026,38 +1621,24 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga 2: cosa dicono i numeri",
-   "sommario": "Castellon in testa con 13 punti, 5ª giornata archiviata.",
+   "sommario": "Tenerife in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 5ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 28 gol in 11 partite, 2.5 a incontro.",
-      "Il risultato piu' netto e' stato Celta B 0-4 Eibar: Eibar ha vinto con 4 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 24 gol in 11 partite, 2.2 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Castellon con 13 punti in 5 partite.",
-      "Eibar ha 12 punti ma i tiri in porta ne direbbero 5.3: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Andorra, ferma a 3 punti contro i 9.0 attesi dal gioco."
+      "In testa c'e' Tenerife con 6 punti in 2 partite.",
+      "Tenerife ha 6 punti ma i tiri in porta ne direbbero 2.7: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Albacete, ferma a 0 punti contro i 2.9 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "porta_chiusa",
-     "titolo": "Eibar non subisce gol da 4 partite",
-     "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
-     "numero": "4",
-     "campionato": "LaLiga 2",
-     "bandiera": "🇪🇸",
-     "slug": "laliga-2",
-     "squadre": [
-      "Eibar"
-     ],
-     "campione": 4
-    },
     {
      "tipo": "rimonte",
      "titolo": "Eibar non molla all'intervallo",
@@ -2087,20 +1668,20 @@
     {
      "tipo": "primo_tempo",
      "titolo": "Ceuta decide presto",
-     "testo": "30 dei suoi 53 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-     "numero": "57%",
+     "testo": "30 dei suoi 52 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+     "numero": "58%",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
      "squadre": [
       "Ceuta"
      ],
-     "campione": 53
+     "campione": 52
     },
     {
      "tipo": "ripresa",
      "titolo": "Andorra vive di secondi tempi",
-     "testo": "Solo 33 dei suoi 103 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "testo": "Solo 33 dei suoi 102 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
      "numero": "68%",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
@@ -2108,7 +1689,7 @@
      "squadre": [
       "Andorra"
      ],
-     "campione": 103
+     "campione": 102
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2144,34 +1725,34 @@
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
-     "data": "2026-08-30",
-     "casa": "Andorra",
-     "ospite": "Eibar",
+     "data": "2026-08-22",
+     "casa": "Oviedo",
+     "ospite": "Leganes",
      "gol_casa": 0,
      "gol_ospite": 1,
      "in_porta_casa": 5,
-     "in_porta_ospite": 1,
-     "vincitore": "Eibar",
-     "perdente": "Andorra",
-     "scarto_tiri": 4
+     "in_porta_ospite": 2,
+     "vincitore": "Leganes",
+     "perdente": "Oviedo",
+     "scarto_tiri": 3
     },
     {
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
-     "data": "2026-08-28",
-     "casa": "Tenerife",
-     "ospite": "Sp Gijon",
-     "gol_casa": 0,
-     "gol_ospite": 1,
-     "in_porta_casa": 4,
-     "in_porta_ospite": 1,
-     "vincitore": "Sp Gijon",
-     "perdente": "Tenerife",
+     "data": "2026-08-16",
+     "casa": "Burgos",
+     "ospite": "Cordoba",
+     "gol_casa": 3,
+     "gol_ospite": 2,
+     "in_porta_casa": 5,
+     "in_porta_ospite": 8,
+     "vincitore": "Burgos",
+     "perdente": "Cordoba",
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 5
+   "giornate_giocate": 2
   },
   {
    "slug": "bundesliga-2",
@@ -2179,21 +1760,21 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "2. Bundesliga: cosa dicono i numeri",
-   "sommario": "Hertha in testa con 15 punti, 5ª giornata archiviata.",
+   "sommario": "Nurnberg in testa con 6 punti, 2ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 5ª giornata",
+     "titolo": "La 2ª giornata",
      "righe": [
-      "Nella 5ª giornata sono stati segnati 24 gol in 9 partite, 2.7 a incontro.",
-      "Il risultato piu' netto e' stato Magdeburg 3-0 Kaiserslautern: Magdeburg ha vinto con 3 gol di scarto."
+      "Nella 2ª giornata sono stati segnati 24 gol in 9 partite, 2.7 a incontro.",
+      "Il risultato piu' netto e' stato Hertha 4-1 Heidenheim: Hertha ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Hertha con 15 punti in 5 partite.",
-      "Hertha ha 15 punti ma i tiri in porta ne direbbero 6.9: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Braunschweig, ferma a 4 punti contro i 8.0 attesi dal gioco."
+      "In testa c'e' Nurnberg con 6 punti in 2 partite.",
+      "Hertha ha 6 punti ma i tiri in porta ne direbbero 3.5: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Hannover, ferma a 0 punti contro i 2.8 attesi dal gioco."
      ]
     }
    ],
@@ -2223,6 +1804,19 @@
       "Darmstadt"
      ],
      "campione": 17
+    },
+    {
+     "tipo": "primo_tempo",
+     "titolo": "Dresden decide presto",
+     "testo": "33 dei suoi 55 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+     "numero": "60%",
+     "campionato": "2. Bundesliga",
+     "bandiera": "🇩🇪",
+     "slug": "bundesliga-2",
+     "squadre": [
+      "Dresden"
+     ],
+     "campione": 55
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2268,39 +1862,9 @@
      "vincitore": "Cottbus",
      "perdente": "Hannover",
      "scarto_tiri": 6
-    },
-    {
-     "campionato": "2. Bundesliga",
-     "bandiera": "🇩🇪",
-     "slug": "bundesliga-2",
-     "data": "2026-08-30",
-     "casa": "St Pauli",
-     "ospite": "Kaiserslautern",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 7,
-     "in_porta_ospite": 4,
-     "vincitore": "Kaiserslautern",
-     "perdente": "St Pauli",
-     "scarto_tiri": 3
-    },
-    {
-     "campionato": "2. Bundesliga",
-     "bandiera": "🇩🇪",
-     "slug": "bundesliga-2",
-     "data": "2026-08-28",
-     "casa": "Braunschweig",
-     "ospite": "Hertha",
-     "gol_casa": 3,
-     "gol_ospite": 5,
-     "in_porta_casa": 9,
-     "in_porta_ospite": 6,
-     "vincitore": "Hertha",
-     "perdente": "Braunschweig",
-     "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 5
+   "giornate_giocate": 2
   },
   {
    "slug": "ligue-2",
@@ -2308,50 +1872,25 @@
    "bandiera": "🇫🇷",
    "paese": "Francia",
    "titolo": "Ligue 2: cosa dicono i numeri",
-   "sommario": "St Etienne in testa con 15 punti, 6ª giornata archiviata.",
+   "sommario": "St Etienne in testa con 9 punti, 3ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 3ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 18 gol in 9 partite, 2.0 a incontro."
+      "Nella 3ª giornata sono stati segnati 24 gol in 9 partite, 2.7 a incontro.",
+      "Il risultato piu' netto e' stato St Etienne 4-0 Grenoble: St Etienne ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' St Etienne con 15 punti in 6 partite.",
-      "Sochaux ha 9 punti ma i tiri in porta ne direbbero 5.2: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Nantes, ferma a 4 punti contro i 8.0 attesi dal gioco."
+      "In testa c'e' St Etienne con 9 punti in 3 partite.",
+      "Montpellier ha 7 punti ma i tiri in porta ne direbbero 4.8: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Dijon, ferma a 2 punti contro i 5.6 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Reims non perde da 6 partite",
-     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-     "numero": "6",
-     "campionato": "Ligue 2",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-2",
-     "squadre": [
-      "Reims"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Clermont non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "Ligue 2",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-2",
-     "squadre": [
-      "Clermont"
-     ],
-     "campione": 6
-    },
     {
      "tipo": "rimonte",
      "titolo": "Rodez non molla all'intervallo",
@@ -2381,15 +1920,15 @@
     {
      "tipo": "ripresa",
      "titolo": "Boulogne vive di secondi tempi",
-     "testo": "Solo 9 dei suoi 36 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "75%",
+     "testo": "Solo 9 dei suoi 35 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "74%",
      "campionato": "Ligue 2",
      "bandiera": "🇫🇷",
      "slug": "ligue-2",
      "squadre": [
       "Boulogne"
      ],
-     "campione": 36
+     "campione": 35
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2425,49 +1964,34 @@
      "campionato": "Ligue 2",
      "bandiera": "🇫🇷",
      "slug": "ligue-2",
-     "data": "2026-09-11",
-     "casa": "Rodez",
-     "ospite": "Grenoble",
+     "data": "2026-08-14",
+     "casa": "Dijon",
+     "ospite": "Pau FC",
      "gol_casa": 0,
      "gol_ospite": 1,
-     "in_porta_casa": 8,
-     "in_porta_ospite": 1,
-     "vincitore": "Grenoble",
-     "perdente": "Rodez",
-     "scarto_tiri": 7
+     "in_porta_casa": 9,
+     "in_porta_ospite": 3,
+     "vincitore": "Pau FC",
+     "perdente": "Dijon",
+     "scarto_tiri": 6
     },
     {
      "campionato": "Ligue 2",
      "bandiera": "🇫🇷",
      "slug": "ligue-2",
-     "data": "2026-09-11",
-     "casa": "Dijon",
-     "ospite": "Laval",
-     "gol_casa": 3,
-     "gol_ospite": 2,
+     "data": "2026-08-21",
+     "casa": "Sochaux",
+     "ospite": "Guingamp",
+     "gol_casa": 1,
+     "gol_ospite": 0,
      "in_porta_casa": 3,
-     "in_porta_ospite": 7,
-     "vincitore": "Dijon",
-     "perdente": "Laval",
-     "scarto_tiri": 4
-    },
-    {
-     "campionato": "Ligue 2",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-2",
-     "data": "2026-09-12",
-     "casa": "Dunkerque",
-     "ospite": "St Etienne",
-     "gol_casa": 2,
-     "gol_ospite": 1,
-     "in_porta_casa": 2,
-     "in_porta_ospite": 5,
-     "vincitore": "Dunkerque",
-     "perdente": "St Etienne",
+     "in_porta_ospite": 6,
+     "vincitore": "Sochaux",
+     "perdente": "Guingamp",
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 3
   },
   {
    "slug": "championship-scozia",
@@ -2475,38 +1999,24 @@
    "bandiera": "🏴",
    "paese": "Scozia",
    "titolo": "Championship scozzese: cosa dicono i numeri",
-   "sommario": "Raith Rvs in testa con 13 punti, 6ª giornata archiviata.",
+   "sommario": "Stenhousemuir in testa con 7 punti, 3ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 3ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 15 gol in 4 partite, 3.8 a incontro.",
-      "Il risultato piu' netto e' stato Raith Rvs 4-0 Arbroath: Raith Rvs ha vinto con 4 gol di scarto."
+      "Nella 3ª giornata sono stati segnati 11 gol in 5 partite, 2.2 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Raith Rvs con 13 punti in 6 partite.",
-      "Stenhousemuir ha 13 punti ma i tiri in porta ne direbbero 7.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Morton, ferma a 1 punto contro i 5.0 attesi dal gioco."
+      "In testa c'e' Stenhousemuir con 7 punti in 3 partite.",
+      "Stenhousemuir ha 7 punti ma i tiri in porta ne direbbero 4.7: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Inverness C, ferma a 3 punti contro i 5.7 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "digiuno",
-     "titolo": "Morton non vince da 6 partite",
-     "testo": "Il digiuno aperto piu' lungo del campionato.",
-     "numero": "6",
-     "campionato": "Championship scozzese",
-     "bandiera": "🏴",
-     "slug": "championship-scozia",
-     "squadre": [
-      "Morton"
-     ],
-     "campione": 6
-    },
     {
      "tipo": "rimonte",
      "titolo": "Partick non molla all'intervallo",
@@ -2532,19 +2042,6 @@
       "Morton"
      ],
      "campione": 31
-    },
-    {
-     "tipo": "ripresa",
-     "titolo": "Arbroath vive di secondi tempi",
-     "testo": "Solo 27 dei suoi 82 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "67%",
-     "campionato": "Championship scozzese",
-     "bandiera": "🏴",
-     "slug": "championship-scozia",
-     "squadre": [
-      "Arbroath"
-     ],
-     "campione": 82
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2576,7 +2073,7 @@
     }
    ],
    "sorprese": [],
-   "giornate_giocate": 6
+   "giornate_giocate": 3
   },
   {
    "slug": "league-one-scozia",
