@@ -1,26 +1,8161 @@
 {
  "campionati": {
-  "serie-a": [],
-  "premier-league": [],
-  "laliga": [],
-  "bundesliga": [],
-  "ligue-1": [],
-  "eredivisie": [],
-  "primeira-liga": [],
-  "superlig": [],
-  "jupiler": [],
-  "super-league-grecia": [],
-  "premiership": [],
-  "serie-b": [],
-  "championship": [],
-  "league-one": [],
-  "league-two": [],
-  "national-league": [],
-  "laliga-2": [],
-  "bundesliga-2": [],
-  "ligue-2": [],
-  "championship-scozia": [],
-  "league-one-scozia": [],
-  "league-two-scozia": []
+  "serie-a": [
+   {
+    "id": "monza-sassuolo",
+    "casa": "Monza",
+    "ospite": "Sassuolo",
+    "data": "2026-09-18",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.88,
+      3.5,
+      2.7
+     ],
+     "bet365": [
+      2.7,
+      3.4,
+      2.55
+     ],
+     "massimo": [
+      2.75,
+      3.5,
+      2.6
+     ],
+     "media": [
+      2.7,
+      3.4,
+      2.53
+     ]
+    },
+    "p_mercato": [
+     0.3461,
+     0.2847,
+     0.3692
+    ],
+    "p_modello": [
+     0.2516,
+     0.2583,
+     0.49
+    ],
+    "margine": 0.0033,
+    "margine_migliore": 0.034
+   },
+   {
+    "id": "bologna-torino",
+    "casa": "Bologna",
+    "ospite": "Torino",
+    "data": "2026-09-19",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      2.04,
+      3.6,
+      4.2
+     ],
+     "bet365": [
+      1.91,
+      3.5,
+      4.0
+     ],
+     "massimo": [
+      1.98,
+      3.5,
+      4.2
+     ],
+     "media": [
+      1.93,
+      3.46,
+      3.92
+     ]
+    },
+    "p_mercato": [
+     0.4879,
+     0.2758,
+     0.2362
+    ],
+    "p_modello": [
+     0.5133,
+     0.256,
+     0.2307
+    ],
+    "margine": 0.0061,
+    "margine_migliore": 0.0289
+   },
+   {
+    "id": "udinese-cagliari",
+    "casa": "Udinese",
+    "ospite": "Cagliari",
+    "data": "2026-09-19",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      2.38,
+      3.3,
+      3.5
+     ],
+     "bet365": [
+      2.25,
+      3.3,
+      3.3
+     ],
+     "massimo": [
+      2.3,
+      3.3,
+      3.4
+     ],
+     "media": [
+      2.25,
+      3.22,
+      3.28
+     ]
+    },
+    "p_mercato": [
+     0.417,
+     0.3001,
+     0.2829
+    ],
+    "p_modello": [
+     0.4353,
+     0.276,
+     0.2887
+    ],
+    "margine": 0.0089,
+    "margine_migliore": 0.0319
+   },
+   {
+    "id": "roma-inter",
+    "casa": "Roma",
+    "ospite": "Inter",
+    "data": "2026-09-19",
+    "ora": "18:00",
+    "quote": {
+     "betfair": [
+      2.82,
+      3.6,
+      2.7
+     ],
+     "bet365": [
+      2.7,
+      3.4,
+      2.55
+     ],
+     "massimo": [
+      2.7,
+      3.7,
+      2.64
+     ],
+     "media": [
+      2.62,
+      3.49,
+      2.55
+     ]
+    },
+    "p_mercato": [
+     0.3537,
+     0.2769,
+     0.3694
+    ],
+    "p_modello": [
+     0.3114,
+     0.2565,
+     0.4321
+    ],
+    "margine": 0.0028,
+    "margine_migliore": 0.0194
+   },
+   {
+    "id": "venezia-lazio",
+    "casa": "Venezia",
+    "ospite": "Lazio",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      4.1,
+      3.75,
+      2.02
+     ],
+     "bet365": [
+      3.9,
+      3.5,
+      1.91
+     ],
+     "massimo": [
+      3.9,
+      3.75,
+      2.05
+     ],
+     "media": [
+      3.67,
+      3.57,
+      1.97
+     ]
+    },
+    "p_mercato": [
+     0.2422,
+     0.2649,
+     0.493
+    ],
+    "p_modello": [
+     0.1887,
+     0.2748,
+     0.5365
+    ],
+    "margine": 0.0056,
+    "margine_migliore": 0.0109
+   },
+   {
+    "id": "fiorentina-napoli",
+    "casa": "Fiorentina",
+    "ospite": "Napoli",
+    "data": "2026-09-20",
+    "ora": "12:30",
+    "quote": {
+     "betfair": [
+      3.4,
+      3.45,
+      2.36
+     ],
+     "bet365": [
+      3.3,
+      3.4,
+      2.2
+     ],
+     "massimo": [
+      3.3,
+      3.5,
+      2.25
+     ],
+     "media": [
+      3.15,
+      3.39,
+      2.21
+     ]
+    },
+    "p_mercato": [
+     0.2916,
+     0.2874,
+     0.421
+    ],
+    "p_modello": [
+     0.2595,
+     0.2705,
+     0.47
+    ],
+    "margine": 0.0077,
+    "margine_migliore": 0.0332
+   },
+   {
+    "id": "frosinone-como",
+    "casa": "Frosinone",
+    "ospite": "Como",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      6.6,
+      4.8,
+      1.54
+     ],
+     "bet365": [
+      6.0,
+      4.5,
+      1.5
+     ],
+     "massimo": [
+      6.2,
+      4.75,
+      1.53
+     ],
+     "media": [
+      5.71,
+      4.45,
+      1.51
+     ]
+    },
+    "p_mercato": [
+     0.1489,
+     0.2056,
+     0.6456
+    ],
+    "p_modello": [
+     0.1386,
+     0.2085,
+     0.6529
+    ],
+    "margine": 0.0092,
+    "margine_migliore": 0.0254
+   },
+   {
+    "id": "parma-genoa",
+    "casa": "Parma",
+    "ospite": "Genoa",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      3.3,
+      3.05,
+      2.64
+     ],
+     "bet365": [
+      3.1,
+      3.1,
+      2.45
+     ],
+     "massimo": [
+      3.1,
+      3.1,
+      2.52
+     ],
+     "media": [
+      3.05,
+      3.01,
+      2.46
+     ]
+    },
+    "p_mercato": [
+     0.2999,
+     0.3247,
+     0.3755
+    ],
+    "p_modello": [
+     0.3189,
+     0.3177,
+     0.3633
+    ],
+    "margine": 0.0097,
+    "margine_migliore": 0.042
+   },
+   {
+    "id": "juventus-atalanta",
+    "casa": "Juventus",
+    "ospite": "Atalanta",
+    "data": "2026-09-20",
+    "ora": "18:00",
+    "quote": {
+     "betfair": [
+      1.75,
+      4.0,
+      5.5
+     ],
+     "bet365": [
+      1.7,
+      3.9,
+      4.75
+     ],
+     "massimo": [
+      1.72,
+      3.9,
+      5.0
+     ],
+     "media": [
+      1.69,
+      3.77,
+      4.84
+     ]
+    },
+    "p_mercato": [
+     0.5702,
+     0.249,
+     0.1809
+    ],
+    "p_modello": [
+     0.3973,
+     0.2845,
+     0.3182
+    ],
+    "margine": 0.0032,
+    "margine_migliore": 0.0378
+   },
+   {
+    "id": "milan-lecce",
+    "casa": "Milan",
+    "ospite": "Lecce",
+    "data": "2026-09-20",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      1.29,
+      6.2,
+      14.0
+     ],
+     "bet365": [
+      1.27,
+      5.75,
+      11.0
+     ],
+     "massimo": [
+      1.28,
+      5.75,
+      14.5
+     ],
+     "media": [
+      1.25,
+      5.58,
+      11.46
+     ]
+    },
+    "p_mercato": [
+     0.7717,
+     0.159,
+     0.0693
+    ],
+    "p_modello": [
+     0.6341,
+     0.2353,
+     0.1306
+    ],
+    "margine": 0.0079,
+    "margine_migliore": 0.0241
+   }
+  ],
+  "premier-league": [
+   {
+    "id": "brentford-chelsea",
+    "casa": "Brentford",
+    "ospite": "Chelsea",
+    "data": "2026-09-18",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      2.7,
+      3.9,
+      2.66
+     ],
+     "bet365": [
+      2.55,
+      3.8,
+      2.45
+     ],
+     "massimo": [
+      2.71,
+      3.8,
+      2.5
+     ],
+     "media": [
+      2.62,
+      3.7,
+      2.48
+     ]
+    },
+    "p_mercato": [
+     0.3694,
+     0.2556,
+     0.375
+    ],
+    "p_modello": [
+     0.4033,
+     0.2563,
+     0.3404
+    ],
+    "margine": 0.0027,
+    "margine_migliore": 0.0322
+   },
+   {
+    "id": "tottenham-aston-villa",
+    "casa": "Tottenham",
+    "ospite": "Aston Villa",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      2.08,
+      3.7,
+      3.95
+     ],
+     "bet365": [
+      2.0,
+      3.5,
+      3.7
+     ],
+     "massimo": [
+      2.0,
+      3.7,
+      3.8
+     ],
+     "media": [
+      1.99,
+      3.59,
+      3.62
+     ]
+    },
+    "p_mercato": [
+     0.4792,
+     0.2689,
+     0.2518
+    ],
+    "p_modello": [
+     0.3536,
+     0.2571,
+     0.3893
+    ],
+    "margine": 0.0042,
+    "margine_migliore": 0.0334
+   },
+   {
+    "id": "brighton-arsenal",
+    "casa": "Brighton",
+    "ospite": "Arsenal",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      5.3,
+      4.1,
+      1.73
+     ],
+     "bet365": [
+      5.0,
+      3.9,
+      1.67
+     ],
+     "massimo": [
+      5.0,
+      4.0,
+      1.72
+     ],
+     "media": [
+      4.77,
+      3.89,
+      1.68
+     ]
+    },
+    "p_mercato": [
+     0.1855,
+     0.2406,
+     0.5739
+    ],
+    "p_modello": [
+     0.2,
+     0.2718,
+     0.5282
+    ],
+    "margine": 0.0106,
+    "margine_migliore": 0.0314
+   },
+   {
+    "id": "everton-ipswich",
+    "casa": "Everton",
+    "ospite": "Ipswich",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.85,
+      3.9,
+      4.8
+     ],
+     "bet365": [
+      1.75,
+      3.8,
+      4.5
+     ],
+     "massimo": [
+      1.8,
+      3.9,
+      4.75
+     ],
+     "media": [
+      1.76,
+      3.79,
+      4.36
+     ]
+    },
+    "p_mercato": [
+     0.5385,
+     0.2548,
+     0.2067
+    ],
+    "p_modello": [
+     0.64,
+     0.2265,
+     0.1335
+    ],
+    "margine": 0.0053,
+    "margine_migliore": 0.0225
+   },
+   {
+    "id": "newcastle-hull",
+    "casa": "Newcastle",
+    "ospite": "Hull",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.64,
+      4.6,
+      5.6
+     ],
+     "bet365": [
+      1.6,
+      4.33,
+      5.0
+     ],
+     "massimo": [
+      1.62,
+      4.35,
+      5.5
+     ],
+     "media": [
+      1.58,
+      4.26,
+      5.1
+     ]
+    },
+    "p_mercato": [
+     0.6075,
+     0.2157,
+     0.1769
+    ],
+    "p_modello": [
+     0.0129,
+     0.1893,
+     0.7979
+    ],
+    "margine": 0.0057,
+    "margine_migliore": 0.029
+   },
+   {
+    "id": "nottm-forest-coventry",
+    "casa": "Nott'm Forest",
+    "ospite": "Coventry",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.64,
+      4.3,
+      6.2
+     ],
+     "bet365": [
+      1.57,
+      4.0,
+      5.75
+     ],
+     "massimo": [
+      1.6,
+      4.2,
+      6.0
+     ],
+     "media": [
+      1.58,
+      4.02,
+      5.54
+     ]
+    },
+    "p_mercato": [
+     0.6083,
+     0.2314,
+     0.1602
+    ],
+    "p_modello": [
+     0.8716,
+     0.1234,
+     0.005
+    ],
+    "margine": 0.0036,
+    "margine_migliore": 0.0298
+   },
+   {
+    "id": "bournemouth-liverpool",
+    "casa": "Bournemouth",
+    "ospite": "Liverpool",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      3.3,
+      4.0,
+      2.22
+     ],
+     "bet365": [
+      3.2,
+      3.8,
+      2.1
+     ],
+     "massimo": [
+      3.2,
+      3.9,
+      2.38
+     ],
+     "media": [
+      3.05,
+      3.78,
+      2.13
+     ]
+    },
+    "p_mercato": [
+     0.3019,
+     0.2489,
+     0.4492
+    ],
+    "p_modello": [
+     0.3328,
+     0.2534,
+     0.4138
+    ],
+    "margine": 0.0035,
+    "margine_migliore": -0.0109
+   },
+   {
+    "id": "leeds-crystal-palace",
+    "casa": "Leeds",
+    "ospite": "Crystal Palace",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      1.8,
+      3.95,
+      5.0
+     ],
+     "bet365": [
+      1.73,
+      3.9,
+      4.75
+     ],
+     "massimo": [
+      1.8,
+      4.0,
+      4.9
+     ],
+     "media": [
+      1.74,
+      3.79,
+      4.49
+     ]
+    },
+    "p_mercato": [
+     0.5522,
+     0.2504,
+     0.1974
+    ],
+    "p_modello": [
+     0.4412,
+     0.2889,
+     0.2699
+    ],
+    "margine": 0.0087,
+    "margine_migliore": 0.0096
+   },
+   {
+    "id": "man-city-sunderland",
+    "casa": "Man City",
+    "ospite": "Sunderland",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      1.34,
+      6.0,
+      11.0
+     ],
+     "bet365": [
+      1.3,
+      5.5,
+      9.0
+     ],
+     "massimo": [
+      1.3,
+      6.0,
+      11.0
+     ],
+     "media": [
+      1.29,
+      5.56,
+      9.39
+     ]
+    },
+    "p_mercato": [
+     0.7446,
+     0.1655,
+     0.0899
+    ],
+    "p_modello": [
+     0.6689,
+     0.2176,
+     0.1135
+    ],
+    "margine": 0.0038,
+    "margine_migliore": 0.0268
+   },
+   {
+    "id": "fulham-man-united",
+    "casa": "Fulham",
+    "ospite": "Man United",
+    "data": "2026-09-20",
+    "ora": "17:30",
+    "quote": {
+     "betfair": [
+      3.6,
+      3.95,
+      2.12
+     ],
+     "bet365": [
+      3.5,
+      3.8,
+      2.0
+     ],
+     "massimo": [
+      3.5,
+      3.8,
+      2.05
+     ],
+     "media": [
+      3.36,
+      3.71,
+      2.0
+     ]
+    },
+    "p_mercato": [
+     0.2769,
+     0.2523,
+     0.4707
+    ],
+    "p_modello": [
+     0.3494,
+     0.2752,
+     0.3753
+    ],
+    "margine": 0.0026,
+    "margine_migliore": 0.0367
+   }
+  ],
+  "laliga": [
+   {
+    "id": "espanol-elche",
+    "casa": "Espanol",
+    "ospite": "Elche",
+    "data": "2026-09-18",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      1.86,
+      3.75,
+      5.0
+     ],
+     "bet365": [
+      1.8,
+      3.5,
+      4.5
+     ],
+     "massimo": [
+      1.84,
+      3.75,
+      4.8
+     ],
+     "media": [
+      1.8,
+      3.59,
+      4.41
+     ]
+    },
+    "p_mercato": [
+     0.536,
+     0.2653,
+     0.1987
+    ],
+    "p_modello": [
+     0.4767,
+     0.2521,
+     0.2712
+    ],
+    "margine": 0.0043,
+    "margine_migliore": 0.0185
+   },
+   {
+    "id": "osasuna-vallecano",
+    "casa": "Osasuna",
+    "ospite": "Vallecano",
+    "data": "2026-09-19",
+    "ora": "14:00",
+    "quote": {
+     "betfair": [
+      2.54,
+      3.3,
+      3.2
+     ],
+     "bet365": [
+      2.38,
+      3.3,
+      3.0
+     ],
+     "massimo": [
+      2.45,
+      3.3,
+      3.1
+     ],
+     "media": [
+      2.39,
+      3.25,
+      2.99
+     ]
+    },
+    "p_mercato": [
+     0.3905,
+     0.3,
+     0.3095
+    ],
+    "p_modello": [
+     0.4382,
+     0.2958,
+     0.266
+    ],
+    "margine": 0.0092,
+    "margine_migliore": 0.0338
+   },
+   {
+    "id": "ath-bilbao-alaves",
+    "casa": "Ath Bilbao",
+    "ospite": "Alaves",
+    "data": "2026-09-19",
+    "ora": "16:15",
+    "quote": {
+     "betfair": [
+      1.66,
+      4.2,
+      6.0
+     ],
+     "bet365": [
+      1.62,
+      4.0,
+      5.25
+     ],
+     "massimo": [
+      1.68,
+      4.0,
+      5.5
+     ],
+     "media": [
+      1.63,
+      3.87,
+      5.26
+     ]
+    },
+    "p_mercato": [
+     0.5995,
+     0.2359,
+     0.1646
+    ],
+    "p_modello": [
+     0.4928,
+     0.2675,
+     0.2396
+    ],
+    "margine": 0.0072,
+    "margine_migliore": 0.0271
+   },
+   {
+    "id": "celta-santander",
+    "casa": "Celta",
+    "ospite": "Santander",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.87,
+      4.1,
+      4.3
+     ],
+     "bet365": [
+      1.8,
+      3.8,
+      4.2
+     ],
+     "massimo": [
+      1.86,
+      4.0,
+      4.2
+     ],
+     "media": [
+      1.81,
+      3.85,
+      4.02
+     ]
+    },
+    "p_mercato": [
+     0.5305,
+     0.2404,
+     0.2291
+    ],
+    "p_modello": [
+     0.587,
+     0.2268,
+     0.1862
+    ],
+    "margine": 0.0112,
+    "margine_migliore": 0.0257
+   },
+   {
+    "id": "sevilla-barcelona",
+    "casa": "Sevilla",
+    "ospite": "Barcelona",
+    "data": "2026-09-19",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      15.5,
+      8.4,
+      1.22
+     ],
+     "bet365": [
+      11.0,
+      7.5,
+      1.2
+     ],
+     "massimo": [
+      13.5,
+      8.0,
+      1.22
+     ],
+     "media": [
+      11.92,
+      7.42,
+      1.19
+     ]
+    },
+    "p_mercato": [
+     0.0637,
+     0.1181,
+     0.8182
+    ],
+    "p_modello": [
+     0.1548,
+     0.1832,
+     0.662
+    ],
+    "margine": 0.0032,
+    "margine_migliore": 0.0187
+   },
+   {
+    "id": "getafe-malaga",
+    "casa": "Getafe",
+    "ospite": "Malaga",
+    "data": "2026-09-20",
+    "ora": "14:00",
+    "quote": {
+     "betfair": [
+      2.14,
+      3.1,
+      4.5
+     ],
+     "bet365": [
+      2.0,
+      3.1,
+      4.2
+     ],
+     "massimo": [
+      2.08,
+      3.1,
+      4.35
+     ],
+     "media": [
+      2.02,
+      3.03,
+      4.06
+     ]
+    },
+    "p_mercato": [
+     0.4629,
+     0.3186,
+     0.2185
+    ],
+    "p_modello": [
+     0.5614,
+     0.3305,
+     0.1081
+    ],
+    "margine": 0.0121,
+    "margine_migliore": 0.0332
+   },
+   {
+    "id": "ath-madrid-real-madrid",
+    "casa": "Ath Madrid",
+    "ospite": "Real Madrid",
+    "data": "2026-09-20",
+    "ora": "16:15",
+    "quote": {
+     "betfair": [
+      3.75,
+      4.1,
+      2.02
+     ],
+     "bet365": [
+      3.6,
+      3.8,
+      1.95
+     ],
+     "massimo": [
+      3.65,
+      3.9,
+      2.0
+     ],
+     "media": [
+      3.43,
+      3.8,
+      1.95
+     ]
+    },
+    "p_mercato": [
+     0.2649,
+     0.2422,
+     0.493
+    ],
+    "p_modello": [
+     0.3535,
+     0.2514,
+     0.3951
+    ],
+    "margine": 0.0056,
+    "margine_migliore": 0.0304
+   },
+   {
+    "id": "la-coruna-betis",
+    "casa": "La Coruna",
+    "ospite": "Betis",
+    "data": "2026-09-20",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      3.5,
+      3.85,
+      2.14
+     ],
+     "bet365": [
+      3.4,
+      3.75,
+      2.05
+     ],
+     "massimo": [
+      3.5,
+      3.75,
+      2.15
+     ],
+     "media": [
+      3.32,
+      3.51,
+      2.07
+     ]
+    },
+    "p_mercato": [
+     0.2816,
+     0.2557,
+     0.4626
+    ],
+    "p_modello": [
+     0.2199,
+     0.2556,
+     0.5245
+    ],
+    "margine": 0.0127,
+    "margine_migliore": 0.0175
+   },
+   {
+    "id": "villarreal-levante",
+    "casa": "Villarreal",
+    "ospite": "Levante",
+    "data": "2026-09-20",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.55,
+      5.0,
+      6.2
+     ],
+     "bet365": [
+      1.5,
+      4.75,
+      5.5
+     ],
+     "massimo": [
+      1.53,
+      4.75,
+      6.0
+     ],
+     "media": [
+      1.49,
+      4.6,
+      5.53
+     ]
+    },
+    "p_mercato": [
+     0.6425,
+     0.1981,
+     0.1594
+    ],
+    "p_modello": [
+     0.6925,
+     0.1695,
+     0.1381
+    ],
+    "margine": 0.0065,
+    "margine_migliore": 0.0308
+   },
+   {
+    "id": "valencia-sociedad",
+    "casa": "Valencia",
+    "ospite": "Sociedad",
+    "data": "2026-09-20",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      2.84,
+      3.45,
+      2.68
+     ],
+     "bet365": [
+      2.7,
+      3.4,
+      2.6
+     ],
+     "massimo": [
+      2.75,
+      3.4,
+      2.62
+     ],
+     "media": [
+      2.68,
+      3.35,
+      2.52
+     ]
+    },
+    "p_mercato": [
+     0.347,
+     0.285,
+     0.368
+    ],
+    "p_modello": [
+     0.4321,
+     0.2632,
+     0.3047
+    ],
+    "margine": 0.0151,
+    "margine_migliore": 0.0394
+   }
+  ],
+  "bundesliga": [
+   {
+    "id": "bayern-munich-union-berlin",
+    "casa": "Bayern Munich",
+    "ospite": "Union Berlin",
+    "data": "2026-09-18",
+    "ora": "20:30",
+    "quote": {
+     "betfair": [
+      1.06,
+      22.0,
+      50.0
+     ],
+     "bet365": [
+      1.04,
+      19.0,
+      29.0
+     ],
+     "massimo": [
+      1.06,
+      21.0,
+      50.0
+     ],
+     "media": [
+      1.04,
+      16.58,
+      32.77
+     ]
+    },
+    "p_mercato": [
+     0.9391,
+     0.0431,
+     0.0178
+    ],
+    "p_modello": [
+     0.8729,
+     0.0862,
+     0.041
+    ],
+    "margine": 0.0089,
+    "margine_migliore": 0.011
+   },
+   {
+    "id": "ein-frankfurt-freiburg",
+    "casa": "Ein Frankfurt",
+    "ospite": "Freiburg",
+    "data": "2026-09-19",
+    "ora": "15:30",
+    "quote": {
+     "betfair": [
+      2.52,
+      3.95,
+      2.82
+     ],
+     "bet365": [
+      2.4,
+      3.9,
+      2.63
+     ],
+     "massimo": [
+      2.42,
+      4.0,
+      2.72
+     ],
+     "media": [
+      2.36,
+      3.79,
+      2.62
+     ]
+    },
+    "p_mercato": [
+     0.3952,
+     0.2517,
+     0.3531
+    ],
+    "p_modello": [
+     0.4969,
+     0.2273,
+     0.2758
+    ],
+    "margine": 0.0046,
+    "margine_migliore": 0.0309
+   },
+   {
+    "id": "hamburg-fc-koln",
+    "casa": "Hamburg",
+    "ospite": "FC Koln",
+    "data": "2026-09-19",
+    "ora": "15:30",
+    "quote": {
+     "betfair": [
+      2.88,
+      3.75,
+      2.54
+     ],
+     "bet365": [
+      2.7,
+      3.6,
+      2.45
+     ],
+     "massimo": [
+      2.75,
+      3.75,
+      2.5
+     ],
+     "media": [
+      2.64,
+      3.62,
+      2.42
+     ]
+    },
+    "p_mercato": [
+     0.3447,
+     0.2643,
+     0.3911
+    ],
+    "p_modello": [
+     0.4287,
+     0.2719,
+     0.2994
+    ],
+    "margine": 0.0076,
+    "margine_migliore": 0.0303
+   },
+   {
+    "id": "mgladbach-mainz",
+    "casa": "M'gladbach",
+    "ospite": "Mainz",
+    "data": "2026-09-19",
+    "ora": "15:30",
+    "quote": {
+     "betfair": [
+      3.1,
+      3.85,
+      2.34
+     ],
+     "bet365": [
+      3.0,
+      3.7,
+      2.2
+     ],
+     "massimo": [
+      3.0,
+      3.75,
+      2.3
+     ],
+     "media": [
+      2.9,
+      3.65,
+      2.22
+     ]
+    },
+    "p_mercato": [
+     0.3194,
+     0.2567,
+     0.4239
+    ],
+    "p_modello": [
+     0.3772,
+     0.2785,
+     0.3443
+    ],
+    "margine": 0.0097,
+    "margine_migliore": 0.0348
+   },
+   {
+    "id": "werder-bremen-augsburg",
+    "casa": "Werder Bremen",
+    "ospite": "Augsburg",
+    "data": "2026-09-19",
+    "ora": "15:30",
+    "quote": {
+     "betfair": [
+      2.44,
+      4.0,
+      2.86
+     ],
+     "bet365": [
+      2.3,
+      3.8,
+      2.8
+     ],
+     "massimo": [
+      2.35,
+      4.0,
+      2.8
+     ],
+     "media": [
+      2.27,
+      3.82,
+      2.74
+     ]
+    },
+    "p_mercato": [
+     0.4065,
+     0.247,
+     0.3465
+    ],
+    "p_modello": [
+     0.4088,
+     0.2771,
+     0.3142
+    ],
+    "margine": 0.0095,
+    "margine_migliore": 0.0327
+   },
+   {
+    "id": "stuttgart-dortmund",
+    "casa": "Stuttgart",
+    "ospite": "Dortmund",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      2.52,
+      3.95,
+      2.8
+     ],
+     "bet365": [
+      2.4,
+      3.75,
+      2.75
+     ],
+     "massimo": [
+      2.42,
+      4.0,
+      2.75
+     ],
+     "media": [
+      2.36,
+      3.76,
+      2.66
+     ]
+    },
+    "p_mercato": [
+     0.3943,
+     0.2509,
+     0.3547
+    ],
+    "p_modello": [
+     0.3656,
+     0.2416,
+     0.3928
+    ],
+    "margine": 0.0071,
+    "margine_migliore": 0.0269
+   },
+   {
+    "id": "leverkusen-rb-leipzig",
+    "casa": "Leverkusen",
+    "ospite": "RB Leipzig",
+    "data": "2026-09-20",
+    "ora": "15:30",
+    "quote": {
+     "betfair": [
+      2.02,
+      4.3,
+      3.6
+     ],
+     "bet365": [
+      1.95,
+      4.2,
+      3.25
+     ],
+     "massimo": [
+      2.0,
+      4.2,
+      3.3
+     ],
+     "media": [
+      1.96,
+      4.03,
+      3.2
+     ]
+    },
+    "p_mercato": [
+     0.493,
+     0.2309,
+     0.2761
+    ],
+    "p_modello": [
+     0.5077,
+     0.2339,
+     0.2584
+    ],
+    "margine": 0.0054,
+    "margine_migliore": 0.0411
+   },
+   {
+    "id": "schalke-04-elversberg",
+    "casa": "Schalke 04",
+    "ospite": "Elversberg",
+    "data": "2026-09-20",
+    "ora": "17:30",
+    "quote": {
+     "betfair": [
+      2.1,
+      3.75,
+      3.75
+     ],
+     "bet365": [
+      2.0,
+      3.7,
+      3.5
+     ],
+     "massimo": [
+      2.1,
+      3.8,
+      3.5
+     ],
+     "media": [
+      2.02,
+      3.66,
+      3.32
+     ]
+    },
+    "p_mercato": [
+     0.4727,
+     0.2637,
+     0.2637
+    ],
+    "p_modello": [
+     0.0001,
+     0.002,
+     0.9979
+    ],
+    "margine": 0.0095,
+    "margine_migliore": 0.0251
+   },
+   {
+    "id": "paderborn-hoffenheim",
+    "casa": "Paderborn",
+    "ospite": "Hoffenheim",
+    "data": "2026-09-20",
+    "ora": "19:30",
+    "quote": {
+     "betfair": [
+      4.7,
+      4.5,
+      1.72
+     ],
+     "bet365": [
+      4.33,
+      4.5,
+      1.67
+     ],
+     "massimo": [
+      4.5,
+      4.5,
+      1.7
+     ],
+     "media": [
+      4.31,
+      4.34,
+      1.65
+     ]
+    },
+    "p_mercato": [
+     0.2078,
+     0.2172,
+     0.5749
+    ],
+    "p_modello": [
+     0.0627,
+     0.8694,
+     0.0679
+    ],
+    "margine": 0.0164,
+    "margine_migliore": 0.0327
+   }
+  ],
+  "ligue-1": [
+   {
+    "id": "monaco-lens",
+    "casa": "Monaco",
+    "ospite": "Lens",
+    "data": "2026-09-18",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.1,
+      3.8,
+      3.75
+     ],
+     "bet365": [
+      2.05,
+      3.7,
+      3.4
+     ],
+     "massimo": [
+      2.05,
+      3.75,
+      3.6
+     ],
+     "media": [
+      2.01,
+      3.71,
+      3.42
+     ]
+    },
+    "p_mercato": [
+     0.474,
+     0.2613,
+     0.2648
+    ],
+    "p_modello": [
+     0.3858,
+     0.248,
+     0.3663
+    ],
+    "margine": 0.006,
+    "margine_migliore": 0.0322
+   },
+   {
+    "id": "paris-fc-strasbourg",
+    "casa": "Paris FC",
+    "ospite": "Strasbourg",
+    "data": "2026-09-19",
+    "ora": "17:15",
+    "quote": {
+     "betfair": [
+      1.57,
+      4.0,
+      5.7
+     ],
+     "bet365": [
+      1.95,
+      3.75,
+      3.6
+     ],
+     "massimo": [
+      2.05,
+      3.75,
+      3.6
+     ],
+     "media": [
+      2.0,
+      3.67,
+      3.4
+     ]
+    },
+    "p_mercato": [
+     0.6119,
+     0.2307,
+     0.1574
+    ],
+    "p_modello": [
+     0.4124,
+     0.2549,
+     0.3327
+    ],
+    "margine": 0.0624,
+    "margine_migliore": 0.0322
+   },
+   {
+    "id": "angers-troyes",
+    "casa": "Angers",
+    "ospite": "Troyes",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.26,
+      3.5,
+      3.55
+     ],
+     "bet365": [
+      2.2,
+      3.3,
+      3.4
+     ],
+     "massimo": [
+      2.25,
+      3.4,
+      3.4
+     ],
+     "media": [
+      2.19,
+      3.31,
+      3.25
+     ]
+    },
+    "p_mercato": [
+     0.4389,
+     0.2825,
+     0.2785
+    ],
+    "p_modello": [
+     0.0496,
+     0.9482,
+     0.0022
+    ],
+    "margine": 0.0099,
+    "margine_migliore": 0.0327
+   },
+   {
+    "id": "le-mans-lorient",
+    "casa": "Le Mans",
+    "ospite": "Lorient",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.8,
+      3.55,
+      2.7
+     ],
+     "bet365": [
+      2.7,
+      3.3,
+      2.63
+     ],
+     "massimo": [
+      2.7,
+      3.5,
+      2.66
+     ],
+     "media": [
+      2.64,
+      3.39,
+      2.56
+     ]
+    },
+    "p_mercato": [
+     0.354,
+     0.2787,
+     0.3672
+    ],
+    "p_modello": [
+     0.3813,
+     0.2191,
+     0.3996
+    ],
+    "margine": 0.0092,
+    "margine_migliore": 0.032
+   },
+   {
+    "id": "lyon-rennes",
+    "casa": "Lyon",
+    "ospite": "Rennes",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.18,
+      3.9,
+      3.35
+     ],
+     "bet365": [
+      2.1,
+      3.7,
+      3.2
+     ],
+     "massimo": [
+      2.15,
+      3.8,
+      3.2
+     ],
+     "media": [
+      2.09,
+      3.72,
+      3.09
+     ]
+    },
+    "p_mercato": [
+     0.4538,
+     0.2521,
+     0.2941
+    ],
+    "p_modello": [
+     0.4922,
+     0.2332,
+     0.2746
+    ],
+    "margine": 0.0136,
+    "margine_migliore": 0.0408
+   },
+   {
+    "id": "toulouse-le-havre",
+    "casa": "Toulouse",
+    "ospite": "Le Havre",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      1.75,
+      4.1,
+      5.2
+     ],
+     "bet365": [
+      1.7,
+      3.75,
+      5.0
+     ],
+     "massimo": [
+      1.8,
+      3.9,
+      5.0
+     ],
+     "media": [
+      1.71,
+      3.77,
+      4.62
+     ]
+    },
+    "p_mercato": [
+     0.5684,
+     0.2415,
+     0.19
+    ],
+    "p_modello": [
+     0.5136,
+     0.275,
+     0.2114
+    ],
+    "margine": 0.0076,
+    "margine_migliore": 0.012
+   },
+   {
+    "id": "auxerre-brest",
+    "casa": "Auxerre",
+    "ospite": "Brest",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      3.0,
+      3.65,
+      2.46
+     ],
+     "bet365": [
+      2.88,
+      3.5,
+      2.45
+     ],
+     "massimo": [
+      2.96,
+      3.6,
+      2.45
+     ],
+     "media": [
+      2.79,
+      3.5,
+      2.36
+     ]
+    },
+    "p_mercato": [
+     0.3287,
+     0.2696,
+     0.4017
+    ],
+    "p_modello": [
+     0.416,
+     0.2684,
+     0.3156
+    ],
+    "margine": 0.0138,
+    "margine_migliore": 0.0238
+   },
+   {
+    "id": "nice-lille",
+    "casa": "Nice",
+    "ospite": "Lille",
+    "data": "2026-09-20",
+    "ora": "17:15",
+    "quote": {
+     "betfair": [
+      3.75,
+      3.5,
+      2.12
+     ],
+     "bet365": [
+      3.6,
+      3.5,
+      2.05
+     ],
+     "massimo": [
+      3.7,
+      3.6,
+      2.08
+     ],
+     "media": [
+      3.48,
+      3.45,
+      2.04
+     ]
+    },
+    "p_mercato": [
+     0.2591,
+     0.278,
+     0.4629
+    ],
+    "p_modello": [
+     0.28,
+     0.2871,
+     0.4329
+    ],
+    "margine": 0.0241,
+    "margine_migliore": 0.0288
+   },
+   {
+    "id": "marseille-paris-sg",
+    "casa": "Marseille",
+    "ospite": "Paris SG",
+    "data": "2026-09-20",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      8.0,
+      5.8,
+      1.41
+     ],
+     "bet365": [
+      7.0,
+      5.0,
+      1.4
+     ],
+     "massimo": [
+      7.8,
+      5.5,
+      1.43
+     ],
+     "media": [
+      6.72,
+      5.18,
+      1.38
+     ]
+    },
+    "p_mercato": [
+     0.1231,
+     0.1705,
+     0.7064
+    ],
+    "p_modello": [
+     0.2796,
+     0.2295,
+     0.4909
+    ],
+    "margine": 0.0066,
+    "margine_migliore": 0.0093
+   }
+  ],
+  "eredivisie": [
+   {
+    "id": "groningen-zwolle",
+    "casa": "Groningen",
+    "ospite": "Zwolle",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      1.57,
+      4.7,
+      6.2
+     ],
+     "bet365": [
+      1.53,
+      4.5,
+      5.5
+     ],
+     "massimo": [
+      1.55,
+      4.75,
+      5.66
+     ],
+     "media": [
+      1.5,
+      4.52,
+      5.23
+     ]
+    },
+    "p_mercato": [
+     0.6325,
+     0.2094,
+     0.1581
+    ],
+    "p_modello": [
+     0.5555,
+     0.244,
+     0.2005
+    ],
+    "margine": 0.011,
+    "margine_migliore": 0.0324
+   },
+   {
+    "id": "den-haag-cambuur",
+    "casa": "Den Haag",
+    "ospite": "Cambuur",
+    "data": "2026-09-19",
+    "ora": "16:30",
+    "quote": {
+     "betfair": [
+      1.86,
+      4.2,
+      4.2
+     ],
+     "bet365": [
+      1.8,
+      3.9,
+      4.2
+     ],
+     "massimo": [
+      1.82,
+      4.0,
+      4.2
+     ],
+     "media": [
+      1.76,
+      3.95,
+      3.87
+     ]
+    },
+    "p_mercato": [
+     0.5323,
+     0.2338,
+     0.2338
+    ],
+    "p_modello": [
+     0.5216,
+     0.2157,
+     0.2627
+    ],
+    "margine": 0.0138,
+    "margine_migliore": 0.0375
+   },
+   {
+    "id": "sparta-rotterdam-heerenveen",
+    "casa": "Sparta Rotterdam",
+    "ospite": "Heerenveen",
+    "data": "2026-09-19",
+    "ora": "18:45",
+    "quote": {
+     "betfair": [
+      2.7,
+      3.75,
+      2.72
+     ],
+     "bet365": [
+      2.5,
+      3.75,
+      2.6
+     ],
+     "massimo": [
+      2.5,
+      3.8,
+      2.6
+     ],
+     "media": [
+      2.44,
+      3.65,
+      2.55
+     ]
+    },
+    "p_mercato": [
+     0.3688,
+     0.2652,
+     0.366
+    ],
+    "p_modello": [
+     0.3964,
+     0.2758,
+     0.3278
+    ],
+    "margine": 0.0047,
+    "margine_migliore": 0.0478
+   },
+   {
+    "id": "ajax-excelsior",
+    "casa": "Ajax",
+    "ospite": "Excelsior",
+    "data": "2026-09-19",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      1.24,
+      7.6,
+      12.5
+     ],
+     "bet365": [
+      1.22,
+      7.0,
+      11.0
+     ],
+     "massimo": [
+      1.23,
+      7.5,
+      11.5
+     ],
+     "media": [
+      1.2,
+      6.82,
+      10.04
+     ]
+    },
+    "p_mercato": [
+     0.7984,
+     0.1265,
+     0.0752
+    ],
+    "p_modello": [
+     0.6508,
+     0.2087,
+     0.1405
+    ],
+    "margine": 0.018,
+    "margine_migliore": 0.0333
+   },
+   {
+    "id": "willem-ii-for-sittard",
+    "casa": "Willem II",
+    "ospite": "For Sittard",
+    "data": "2026-09-19",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      2.62,
+      3.9,
+      2.7
+     ],
+     "bet365": [
+      2.55,
+      3.75,
+      2.55
+     ],
+     "massimo": [
+      2.55,
+      3.8,
+      2.55
+     ],
+     "media": [
+      2.47,
+      3.69,
+      2.49
+     ]
+    },
+    "p_mercato": [
+     0.3788,
+     0.2538,
+     0.3675
+    ],
+    "p_modello": [
+     0.3026,
+     0.2885,
+     0.4089
+    ],
+    "margine": 0.0085,
+    "margine_migliore": 0.0475
+   },
+   {
+    "id": "feyenoord-utrecht",
+    "casa": "Feyenoord",
+    "ospite": "Utrecht",
+    "data": "2026-09-20",
+    "ora": "12:15",
+    "quote": {
+     "betfair": [
+      1.3,
+      6.4,
+      11.5
+     ],
+     "bet365": [
+      1.29,
+      5.75,
+      9.5
+     ],
+     "massimo": [
+      1.3,
+      6.25,
+      10.0
+     ],
+     "media": [
+      1.25,
+      5.9,
+      8.88
+     ]
+    },
+    "p_mercato": [
+     0.7638,
+     0.1527,
+     0.0836
+    ],
+    "p_modello": [
+     0.5896,
+     0.2248,
+     0.1855
+    ],
+    "margine": 0.0124,
+    "margine_migliore": 0.0292
+   },
+   {
+    "id": "az-alkmaar-telstar",
+    "casa": "AZ Alkmaar",
+    "ospite": "Telstar",
+    "data": "2026-09-20",
+    "ora": "14:30",
+    "quote": {
+     "betfair": [
+      1.27,
+      6.6,
+      9.4
+     ],
+     "bet365": [
+      1.25,
+      6.0,
+      10.0
+     ],
+     "massimo": [
+      1.28,
+      6.5,
+      10.0
+     ],
+     "media": [
+      1.24,
+      6.29,
+      9.06
+     ]
+    },
+    "p_mercato": [
+     0.7674,
+     0.1385,
+     0.094
+    ],
+    "p_modello": [
+     0.5752,
+     0.2336,
+     0.1913
+    ],
+    "margine": 0.0453,
+    "margine_migliore": 0.0351
+   },
+   {
+    "id": "twente-psv-eindhoven",
+    "casa": "Twente",
+    "ospite": "PSV Eindhoven",
+    "data": "2026-09-20",
+    "ora": "14:30",
+    "quote": {
+     "betfair": [
+      2.94,
+      4.2,
+      2.26
+     ],
+     "bet365": [
+      2.88,
+      4.0,
+      2.2
+     ],
+     "massimo": [
+      2.88,
+      4.1,
+      2.2
+     ],
+     "media": [
+      2.77,
+      4.0,
+      2.14
+     ]
+    },
+    "p_mercato": [
+     0.3332,
+     0.2317,
+     0.435
+    ],
+    "p_modello": [
+     0.2869,
+     0.227,
+     0.4861
+    ],
+    "margine": 0.0207,
+    "margine_migliore": 0.0457
+   },
+   {
+    "id": "nijmegen-go-ahead-eagles",
+    "casa": "Nijmegen",
+    "ospite": "Go Ahead Eagles",
+    "data": "2026-09-20",
+    "ora": "16:45",
+    "quote": {
+     "betfair": [
+      2.02,
+      4.3,
+      3.55
+     ],
+     "bet365": [
+      1.95,
+      4.0,
+      3.5
+     ],
+     "massimo": [
+      1.95,
+      4.2,
+      3.5
+     ],
+     "media": [
+      1.92,
+      4.0,
+      3.29
+     ]
+    },
+    "p_mercato": [
+     0.4916,
+     0.2297,
+     0.2787
+    ],
+    "p_modello": [
+     0.5453,
+     0.2222,
+     0.2324
+    ],
+    "margine": 0.0093,
+    "margine_migliore": 0.0366
+   }
+  ],
+  "primeira-liga": [
+   {
+    "id": "gil-vicente-maritimo",
+    "casa": "Gil Vicente",
+    "ospite": "Maritimo",
+    "data": "2026-09-19",
+    "ora": "16:30",
+    "quote": {
+     "betfair": [
+      1.97,
+      3.45,
+      4.4
+     ],
+     "bet365": [
+      1.86,
+      3.4,
+      4.0
+     ],
+     "massimo": [
+      2.02,
+      3.5,
+      4.0
+     ],
+     "media": [
+      1.95,
+      3.27,
+      3.84
+     ]
+    },
+    "p_mercato": [
+     0.4984,
+     0.2819,
+     0.2197
+    ],
+    "p_modello": [
+     0.2937,
+     0.2598,
+     0.4465
+    ],
+    "margine": 0.0247,
+    "margine_migliore": 0.0308
+   },
+   {
+    "id": "nacional-famalicao",
+    "casa": "Nacional",
+    "ospite": "Famalicao",
+    "data": "2026-09-19",
+    "ora": "16:30",
+    "quote": {
+     "betfair": [
+      3.85,
+      3.4,
+      2.16
+     ],
+     "bet365": [
+      3.6,
+      3.4,
+      2.01
+     ],
+     "massimo": [
+      3.7,
+      3.4,
+      2.12
+     ],
+     "media": [
+      3.5,
+      3.28,
+      2.05
+     ]
+    },
+    "p_mercato": [
+     0.2545,
+     0.2887,
+     0.4568
+    ],
+    "p_modello": [
+     0.3091,
+     0.298,
+     0.3928
+    ],
+    "margine": 0.0168,
+    "margine_migliore": 0.0361
+   },
+   {
+    "id": "alverca-rio-ave",
+    "casa": "Alverca",
+    "ospite": "Rio Ave",
+    "data": "2026-09-19",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      1.95,
+      3.5,
+      4.4
+     ],
+     "bet365": [
+      1.86,
+      3.5,
+      4.0
+     ],
+     "massimo": [
+      1.95,
+      3.55,
+      4.0
+     ],
+     "media": [
+      1.86,
+      3.45,
+      3.95
+     ]
+    },
+    "p_mercato": [
+     0.5031,
+     0.2775,
+     0.2194
+    ],
+    "p_modello": [
+     0.4341,
+     0.2616,
+     0.3043
+    ],
+    "margine": 0.0258,
+    "margine_migliore": 0.0445
+   },
+   {
+    "id": "sp-lisbon-arouca",
+    "casa": "Sp Lisbon",
+    "ospite": "Arouca",
+    "data": "2026-09-19",
+    "ora": "21:30",
+    "quote": {
+     "betfair": [
+      1.22,
+      7.6,
+      17.5
+     ],
+     "bet365": [
+      1.19,
+      7.0,
+      11.0
+     ],
+     "massimo": [
+      1.22,
+      7.0,
+      15.0
+     ],
+     "media": [
+      1.2,
+      6.44,
+      11.85
+     ]
+    },
+    "p_mercato": [
+     0.8159,
+     0.1292,
+     0.0549
+    ],
+    "p_modello": [
+     0.8441,
+     0.0964,
+     0.0595
+    ],
+    "margine": 0.0084,
+    "margine_migliore": 0.0292
+   },
+   {
+    "id": "estrela-academico-viseu",
+    "casa": "Estrela",
+    "ospite": "Academico Viseu",
+    "data": "2026-09-20",
+    "ora": "16:30",
+    "quote": {
+     "betfair": [
+      2.1,
+      3.3,
+      3.75
+     ],
+     "bet365": [
+      2.1,
+      3.3,
+      3.4
+     ],
+     "massimo": [
+      2.2,
+      3.4,
+      3.6
+     ],
+     "media": [
+      2.11,
+      3.27,
+      3.33
+     ]
+    },
+    "p_mercato": [
+     0.4595,
+     0.2882,
+     0.2523
+    ],
+    "p_modello": [
+     0.2021,
+     0.206,
+     0.5919
+    ],
+    "margine": 0.0459,
+    "margine_migliore": 0.0264
+   },
+   {
+    "id": "guimaraes-moreirense",
+    "casa": "Guimaraes",
+    "ospite": "Moreirense",
+    "data": "2026-09-20",
+    "ora": "16:30",
+    "quote": {
+     "betfair": [
+      1.55,
+      4.4,
+      7.0
+     ],
+     "bet365": [
+      1.49,
+      3.75,
+      7.0
+     ],
+     "massimo": [
+      1.53,
+      4.33,
+      7.0
+     ],
+     "media": [
+      1.51,
+      4.02,
+      6.09
+     ]
+    },
+    "p_mercato": [
+     0.6389,
+     0.2226,
+     0.1385
+    ],
+    "p_modello": [
+     0.5052,
+     0.2498,
+     0.2451
+    ],
+    "margine": 0.0153,
+    "margine_migliore": 0.0274
+   },
+   {
+    "id": "estoril-casa-pia",
+    "casa": "Estoril",
+    "ospite": "Casa Pia",
+    "data": "2026-09-20",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      1.78,
+      3.4,
+      4.8
+     ],
+     "bet365": [
+      1.71,
+      3.6,
+      4.75
+     ],
+     "massimo": [
+      1.8,
+      3.75,
+      4.75
+     ],
+     "media": [
+      1.75,
+      3.59,
+      4.36
+     ]
+    },
+    "p_mercato": [
+     0.5371,
+     0.2736,
+     0.1893
+    ],
+    "p_modello": [
+     0.5731,
+     0.2128,
+     0.2141
+    ],
+    "margine": 0.0642,
+    "margine_migliore": 0.0327
+   },
+   {
+    "id": "santa-clara-sp-braga",
+    "casa": "Santa Clara",
+    "ospite": "Sp Braga",
+    "data": "2026-09-20",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      4.0,
+      3.25,
+      2.16
+     ],
+     "bet365": [
+      3.5,
+      3.3,
+      2.05
+     ],
+     "massimo": [
+      4.0,
+      3.3,
+      2.15
+     ],
+     "media": [
+      3.66,
+      3.11,
+      2.05
+     ]
+    },
+    "p_mercato": [
+     0.2436,
+     0.301,
+     0.4554
+    ],
+    "p_modello": [
+     0.2825,
+     0.2707,
+     0.4467
+    ],
+    "margine": 0.0207,
+    "margine_migliore": 0.0181
+   },
+   {
+    "id": "porto-benfica",
+    "casa": "Porto",
+    "ospite": "Benfica",
+    "data": "2026-09-20",
+    "ora": "21:30",
+    "quote": {
+     "betfair": [
+      2.88,
+      3.5,
+      2.68
+     ],
+     "bet365": [
+      2.65,
+      3.3,
+      2.5
+     ],
+     "massimo": [
+      2.7,
+      3.4,
+      2.6
+     ],
+     "media": [
+      2.6,
+      3.35,
+      2.5
+     ]
+    },
+    "p_mercato": [
+     0.3452,
+     0.2838,
+     0.3711
+    ],
+    "p_modello": [
+     0.4079,
+     0.2685,
+     0.3236
+    ],
+    "margine": 0.0061,
+    "margine_migliore": 0.0491
+   }
+  ],
+  "superlig": [
+   {
+    "id": "kasimpasa-konyaspor",
+    "casa": "Kasimpasa",
+    "ospite": "Konyaspor",
+    "data": "2026-09-18",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      2.6,
+      3.25,
+      3.1
+     ],
+     "bet365": [
+      2.3,
+      3.2,
+      3.0
+     ],
+     "massimo": [
+      2.45,
+      3.25,
+      3.0
+     ],
+     "media": [
+      2.4,
+      3.13,
+      2.87
+     ]
+    },
+    "p_mercato": [
+     0.3795,
+     0.3028,
+     0.3177
+    ],
+    "p_modello": [
+     0.4429,
+     0.2815,
+     0.2756
+    ],
+    "margine": 0.0149,
+    "margine_migliore": 0.0492
+   },
+   {
+    "id": "corum-alanyaspor",
+    "casa": "Corum",
+    "ospite": "Alanyaspor",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.14,
+      3.35,
+      3.7
+     ],
+     "bet365": [
+      2.05,
+      3.2,
+      3.5
+     ],
+     "massimo": [
+      2.15,
+      3.4,
+      3.5
+     ],
+     "media": [
+      2.07,
+      3.3,
+      3.31
+     ]
+    },
+    "p_mercato": [
+     0.4542,
+     0.2869,
+     0.2589
+    ],
+    "p_modello": [
+     0.3566,
+     0.3519,
+     0.2915
+    ],
+    "margine": 0.0361,
+    "margine_migliore": 0.0449
+   },
+   {
+    "id": "kocaelispor-gaziantep",
+    "casa": "Kocaelispor",
+    "ospite": "Gaziantep",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.28,
+      3.1,
+      3.8
+     ],
+     "bet365": [
+      2.15,
+      3.1,
+      3.4
+     ],
+     "massimo": [
+      2.25,
+      3.25,
+      3.4
+     ],
+     "media": [
+      2.19,
+      3.12,
+      3.23
+     ]
+    },
+    "p_mercato": [
+     0.4299,
+     0.3146,
+     0.2555
+    ],
+    "p_modello": [
+     0.3333,
+     0.364,
+     0.3026
+    ],
+    "margine": 0.0243,
+    "margine_migliore": 0.0463
+   },
+   {
+    "id": "buyuksehyr-genclerbirligi",
+    "casa": "Buyuksehyr",
+    "ospite": "Genclerbirligi",
+    "data": "2026-09-19",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      1.56,
+      4.8,
+      6.2
+     ],
+     "bet365": [
+      1.42,
+      4.33,
+      6.5
+     ],
+     "massimo": [
+      1.55,
+      4.35,
+      6.5
+     ],
+     "media": [
+      1.49,
+      4.24,
+      5.52
+     ]
+    },
+    "p_mercato": [
+     0.6367,
+     0.2051,
+     0.1582
+    ],
+    "p_modello": [
+     0.5538,
+     0.2671,
+     0.179
+    ],
+    "margine": 0.0106,
+    "margine_migliore": 0.0289
+   },
+   {
+    "id": "trabzonspor-galatasaray",
+    "casa": "Trabzonspor",
+    "ospite": "Galatasaray",
+    "data": "2026-09-19",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      3.2,
+      4.1,
+      2.16
+     ],
+     "bet365": [
+      3.0,
+      3.7,
+      2.05
+     ],
+     "massimo": [
+      3.0,
+      3.95,
+      2.12
+     ],
+     "media": [
+      2.92,
+      3.77,
+      2.07
+     ]
+    },
+    "p_mercato": [
+     0.3062,
+     0.2379,
+     0.4559
+    ],
+    "p_modello": [
+     0.2631,
+     0.2577,
+     0.4792
+    ],
+    "margine": 0.0194,
+    "margine_migliore": 0.0582
+   },
+   {
+    "id": "erzurumspor-samsunspor",
+    "casa": "Erzurumspor",
+    "ospite": "Samsunspor",
+    "data": "2026-09-20",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.54,
+      2.98,
+      2.76
+     ],
+     "bet365": [
+      2.57,
+      3.2,
+      2.57
+     ],
+     "massimo": [
+      2.7,
+      3.3,
+      2.66
+     ],
+     "media": [
+      2.58,
+      3.21,
+      2.57
+     ]
+    },
+    "p_mercato": [
+     0.3625,
+     0.3057,
+     0.3318
+    ],
+    "p_modello": [
+     0.0023,
+     0.0637,
+     0.9341
+    ],
+    "margine": 0.0916,
+    "margine_migliore": 0.0493
+   },
+   {
+    "id": "fenerbahce-eyupspor",
+    "casa": "Fenerbahce",
+    "ospite": "Eyupspor",
+    "data": "2026-09-20",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.2,
+      7.4,
+      15.5
+     ],
+     "bet365": [
+      1.15,
+      6.5,
+      13.0
+     ],
+     "massimo": [
+      1.22,
+      7.5,
+      13.0
+     ],
+     "media": [
+      1.18,
+      6.44,
+      12.0
+     ]
+    },
+    "p_mercato": [
+     0.8184,
+     0.1257,
+     0.0559
+    ],
+    "p_modello": [
+     0.7439,
+     0.1681,
+     0.088
+    ],
+    "margine": 0.033,
+    "margine_migliore": 0.0299
+   },
+   {
+    "id": "amedspor-besiktas",
+    "casa": "Amedspor",
+    "ospite": "Besiktas",
+    "data": "2026-09-20",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      4.3,
+      4.1,
+      1.8
+     ],
+     "bet365": [
+      3.9,
+      3.6,
+      1.79
+     ],
+     "massimo": [
+      3.95,
+      3.8,
+      1.85
+     ],
+     "media": [
+      3.82,
+      3.71,
+      1.79
+     ]
+    },
+    "p_mercato": [
+     0.2228,
+     0.234,
+     0.5432
+    ],
+    "p_modello": [
+     0.0579,
+     0.1214,
+     0.8206
+    ],
+    "margine": 0.032,
+    "margine_migliore": 0.0569
+   },
+   {
+    "id": "goztep-rizespor",
+    "casa": "Goztep",
+    "ospite": "Rizespor",
+    "data": "2026-09-20",
+    "ora": "19:00",
+    "quote": {
+     "betfair": [
+      2.38,
+      3.4,
+      3.1
+     ],
+     "bet365": [
+      2.3,
+      3.4,
+      2.75
+     ],
+     "massimo": [
+      2.35,
+      3.45,
+      2.92
+     ],
+     "media": [
+      2.28,
+      3.36,
+      2.83
+     ]
+    },
+    "p_mercato": [
+     0.4072,
+     0.2823,
+     0.3105
+    ],
+    "p_modello": [
+     0.52,
+     0.2645,
+     0.2156
+    ],
+    "margine": 0.0369,
+    "margine_migliore": 0.0579
+   }
+  ],
+  "jupiler": [
+   {
+    "id": "gent-standard",
+    "casa": "Gent",
+    "ospite": "Standard",
+    "data": "2026-09-18",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      1.85,
+      3.7,
+      5.0
+     ],
+     "bet365": [
+      1.8,
+      3.4,
+      4.2
+     ],
+     "massimo": [
+      1.83,
+      3.6,
+      4.5
+     ],
+     "media": [
+      1.77,
+      3.5,
+      4.34
+     ]
+    },
+    "p_mercato": [
+     0.5364,
+     0.2668,
+     0.1968
+    ],
+    "p_modello": [
+     0.4586,
+     0.2913,
+     0.2501
+    ],
+    "margine": 0.0108,
+    "margine_migliore": 0.0464
+   },
+   {
+    "id": "oud-heverlee-leuven-raal-la-louviere",
+    "casa": "Oud-Heverlee Leuven",
+    "ospite": "RAAL La Louviere",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.02,
+      3.45,
+      3.9
+     ],
+     "bet365": [
+      2.0,
+      3.3,
+      3.4
+     ],
+     "massimo": [
+      2.1,
+      3.4,
+      3.7
+     ],
+     "media": [
+      2.01,
+      3.33,
+      3.47
+     ]
+    },
+    "p_mercato": [
+     0.4798,
+     0.2767,
+     0.2436
+    ],
+    "p_modello": [
+     0.4052,
+     0.3115,
+     0.2833
+    ],
+    "margine": 0.0413,
+    "margine_migliore": 0.0406
+   },
+   {
+    "id": "charleroi-cercle-brugge",
+    "casa": "Charleroi",
+    "ospite": "Cercle Brugge",
+    "data": "2026-09-19",
+    "ora": "18:15",
+    "quote": {
+     "betfair": [
+      1.83,
+      4.2,
+      4.2
+     ],
+     "bet365": [
+      1.7,
+      3.7,
+      4.2
+     ],
+     "massimo": [
+      1.8,
+      4.2,
+      4.33
+     ],
+     "media": [
+      1.73,
+      3.88,
+      3.99
+     ]
+    },
+    "p_mercato": [
+     0.5378,
+     0.2311,
+     0.2311
+    ],
+    "p_modello": [
+     0.4809,
+     0.2651,
+     0.254
+    ],
+    "margine": 0.0226,
+    "margine_migliore": 0.0246
+   },
+   {
+    "id": "anderlecht-waregem",
+    "casa": "Anderlecht",
+    "ospite": "Waregem",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      1.8,
+      3.45,
+      4.7
+     ],
+     "bet365": [
+      1.75,
+      3.7,
+      4.1
+     ],
+     "massimo": [
+      1.8,
+      3.8,
+      4.33
+     ],
+     "media": [
+      1.74,
+      3.7,
+      4.14
+     ]
+    },
+    "p_mercato": [
+     0.5333,
+     0.2713,
+     0.1954
+    ],
+    "p_modello": [
+     0.4619,
+     0.2527,
+     0.2854
+    ],
+    "margine": 0.0582,
+    "margine_migliore": 0.0497
+   },
+   {
+    "id": "lommel-sk-mechelen",
+    "casa": "Lommel SK",
+    "ospite": "Mechelen",
+    "data": "2026-09-19",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.76,
+      3.8,
+      2.52
+     ],
+     "bet365": [
+      2.6,
+      3.3,
+      2.5
+     ],
+     "massimo": [
+      2.63,
+      3.6,
+      2.6
+     ],
+     "media": [
+      2.57,
+      3.45,
+      2.48
+     ]
+    },
+    "p_mercato": [
+     0.3548,
+     0.2562,
+     0.3891
+    ],
+    "p_modello": [
+     0.6697,
+     0.2252,
+     0.1051
+    ],
+    "margine": 0.0223,
+    "margine_migliore": 0.0426
+   },
+   {
+    "id": "antwerp-st-gilloise",
+    "casa": "Antwerp",
+    "ospite": "St. Gilloise",
+    "data": "2026-09-20",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      5.5,
+      4.2,
+      1.66
+     ],
+     "bet365": [
+      4.75,
+      3.9,
+      1.6
+     ],
+     "massimo": [
+      5.33,
+      4.1,
+      1.64
+     ],
+     "media": [
+      4.99,
+      3.93,
+      1.6
+     ]
+    },
+    "p_mercato": [
+     0.1753,
+     0.2312,
+     0.5935
+    ],
+    "p_modello": [
+     0.1865,
+     0.2866,
+     0.5269
+    ],
+    "margine": 0.0223,
+    "margine_migliore": 0.0413
+   },
+   {
+    "id": "st-truiden-westerlo",
+    "casa": "St Truiden",
+    "ospite": "Westerlo",
+    "data": "2026-09-20",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.69,
+      4.2,
+      4.7
+     ],
+     "bet365": [
+      1.65,
+      3.9,
+      4.33
+     ],
+     "massimo": [
+      1.7,
+      4.33,
+      4.6
+     ],
+     "media": [
+      1.65,
+      4.1,
+      4.29
+     ]
+    },
+    "p_mercato": [
+     0.575,
+     0.225,
+     0.2
+    ],
+    "p_modello": [
+     0.5434,
+     0.2265,
+     0.2301
+    ],
+    "margine": 0.0426,
+    "margine_migliore": 0.0366
+   },
+   {
+    "id": "club-brugge-genk",
+    "casa": "Club Brugge",
+    "ospite": "Genk",
+    "data": "2026-09-20",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.45,
+      4.8,
+      5.1
+     ],
+     "bet365": [
+      1.45,
+      4.2,
+      6.0
+     ],
+     "massimo": [
+      1.53,
+      4.8,
+      6.0
+     ],
+     "media": [
+      1.47,
+      4.6,
+      5.33
+     ]
+    },
+    "p_mercato": [
+     0.651,
+     0.1805,
+     0.1685
+    ],
+    "p_modello": [
+     0.6625,
+     0.1934,
+     0.1442
+    ],
+    "margine": 0.0941,
+    "margine_migliore": 0.0286
+   },
+   {
+    "id": "kortrijk-beveren",
+    "casa": "Kortrijk",
+    "ospite": "Beveren",
+    "data": "2026-09-20",
+    "ora": "19:15",
+    "quote": {
+     "betfair": [
+      1.43,
+      3.25,
+      2.6
+     ],
+     "bet365": [
+      2.55,
+      3.3,
+      2.55
+     ],
+     "massimo": [
+      2.65,
+      3.5,
+      2.6
+     ],
+     "media": [
+      2.54,
+      3.43,
+      2.5
+     ]
+    },
+    "p_mercato": [
+     0.3646,
+     0.2646,
+     0.3708
+    ],
+    "p_modello": [
+     0.46,
+     0.3017,
+     0.2382
+    ],
+    "margine": 0.0852,
+    "margine_migliore": 0.0477
+   }
+  ],
+  "super-league-grecia": [
+   {
+    "id": "atromitos-kifisia",
+    "casa": "Atromitos",
+    "ospite": "Kifisia",
+    "data": "2026-09-19",
+    "ora": "18:00",
+    "quote": {
+     "betfair": [
+      2.08,
+      3.45,
+      3.95
+     ],
+     "bet365": [
+      1.96,
+      3.2,
+      4.0
+     ],
+     "massimo": [
+      2.05,
+      3.4,
+      4.0
+     ],
+     "media": [
+      1.98,
+      3.25,
+      3.59
+     ]
+    },
+    "p_mercato": [
+     0.472,
+     0.2822,
+     0.2458
+    ],
+    "p_modello": [
+     0.5391,
+     0.2745,
+     0.1865
+    ],
+    "margine": 0.0238,
+    "margine_migliore": 0.0319
+   },
+   {
+    "id": "aris-iraklis",
+    "casa": "Aris",
+    "ospite": "Iraklis",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.66,
+      3.85,
+      5.6
+     ],
+     "bet365": [
+      1.57,
+      3.75,
+      5.5
+     ],
+     "massimo": [
+      1.65,
+      3.8,
+      5.5
+     ],
+     "media": [
+      1.61,
+      3.65,
+      5.11
+     ]
+    },
+    "p_mercato": [
+     0.5863,
+     0.247,
+     0.1667
+    ],
+    "p_modello": [
+     0.9124,
+     0.0857,
+     0.002
+    ],
+    "margine": 0.0407,
+    "margine_migliore": 0.051
+   },
+   {
+    "id": "levadeiakos-olympiakos",
+    "casa": "Levadeiakos",
+    "ospite": "Olympiakos",
+    "data": "2026-09-20",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      9.6,
+      5.1,
+      1.38
+     ],
+     "bet365": [
+      8.5,
+      4.75,
+      1.33
+     ],
+     "massimo": [
+      8.7,
+      4.75,
+      1.38
+     ],
+     "media": [
+      7.81,
+      4.4,
+      1.35
+     ]
+    },
+    "p_mercato": [
+     0.0974,
+     0.1886,
+     0.714
+    ],
+    "p_modello": [
+     0.1531,
+     0.2562,
+     0.5907
+    ],
+    "margine": 0.0249,
+    "margine_migliore": 0.0501
+   },
+   {
+    "id": "volos-nfc-aek",
+    "casa": "Volos NFC",
+    "ospite": "AEK",
+    "data": "2026-09-20",
+    "ora": "17:00",
+    "quote": {
+     "betfair": [
+      8.4,
+      4.6,
+      1.25
+     ],
+     "bet365": [
+      9.0,
+      4.75,
+      1.33
+     ],
+     "massimo": [
+      9.0,
+      5.0,
+      1.35
+     ],
+     "media": [
+      8.09,
+      4.72,
+      1.32
+     ]
+    },
+    "p_mercato": [
+     0.0984,
+     0.1838,
+     0.7178
+    ],
+    "p_modello": [
+     0.0784,
+     0.2057,
+     0.716
+    ],
+    "margine": 0.093,
+    "margine_migliore": 0.0519
+   },
+   {
+    "id": "ofi-crete-asteras-tripolis",
+    "casa": "OFI Crete",
+    "ospite": "Asteras Tripolis",
+    "data": "2026-09-20",
+    "ora": "18:00",
+    "quote": {
+     "betfair": [
+      1.31,
+      3.2,
+      3.0
+     ],
+     "bet365": [
+      2.15,
+      3.2,
+      3.4
+     ],
+     "massimo": [
+      2.2,
+      3.3,
+      3.4
+     ],
+     "media": [
+      2.15,
+      3.16,
+      3.17
+     ]
+    },
+    "p_mercato": [
+     0.4304,
+     0.2853,
+     0.2843
+    ],
+    "p_modello": [
+     0.4669,
+     0.2818,
+     0.2513
+    ],
+    "margine": 0.097,
+    "margine_migliore": 0.0517
+   },
+   {
+    "id": "kalamata-panathinaikos",
+    "casa": "Kalamata",
+    "ospite": "Panathinaikos",
+    "data": "2026-09-20",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      8.4,
+      5.3,
+      1.3
+     ],
+     "bet365": [
+      9.5,
+      4.5,
+      1.33
+     ],
+     "massimo": [
+      9.5,
+      5.33,
+      1.35
+     ],
+     "media": [
+      7.97,
+      4.61,
+      1.33
+     ]
+    },
+    "p_mercato": [
+     0.0981,
+     0.1659,
+     0.736
+    ],
+    "p_modello": [
+     0.1192,
+     0.1158,
+     0.7649
+    ],
+    "margine": 0.077,
+    "margine_migliore": 0.0336
+   },
+   {
+    "id": "panetolikos-paok",
+    "casa": "Panetolikos",
+    "ospite": "PAOK",
+    "data": "2026-09-20",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      5.6,
+      4.0,
+      1.52
+     ],
+     "bet365": [
+      5.5,
+      4.0,
+      1.57
+     ],
+     "massimo": [
+      5.6,
+      4.0,
+      1.6
+     ],
+     "media": [
+      5.25,
+      3.8,
+      1.56
+     ]
+    },
+    "p_mercato": [
+     0.1537,
+     0.2234,
+     0.6229
+    ],
+    "p_modello": [
+     0.108,
+     0.2312,
+     0.6607
+    ],
+    "margine": 0.0865,
+    "margine_migliore": 0.0536
+   }
+  ],
+  "premiership": [
+   {
+    "id": "dundee-motherwell",
+    "casa": "Dundee",
+    "ospite": "Motherwell",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      3.0,
+      3.4,
+      2.36
+     ],
+     "bet365": [
+      3.0,
+      3.4,
+      2.25
+     ],
+     "massimo": [
+      3.2,
+      3.6,
+      2.3
+     ],
+     "media": [
+      2.99,
+      3.4,
+      2.23
+     ]
+    },
+    "p_mercato": [
+     0.3165,
+     0.2778,
+     0.4057
+    ],
+    "p_modello": [
+     0.3165,
+     0.2637,
+     0.4199
+    ],
+    "margine": 0.0512,
+    "margine_migliore": 0.0251
+   },
+   {
+    "id": "hibernian-aberdeen",
+    "casa": "Hibernian",
+    "ospite": "Aberdeen",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.81,
+      4.0,
+      4.5
+     ],
+     "bet365": [
+      1.68,
+      3.8,
+      4.5
+     ],
+     "massimo": [
+      1.75,
+      4.0,
+      4.6
+     ],
+     "media": [
+      1.71,
+      3.8,
+      4.35
+     ]
+    },
+    "p_mercato": [
+     0.543,
+     0.2423,
+     0.2147
+    ],
+    "p_modello": [
+     0.6042,
+     0.2293,
+     0.1665
+    ],
+    "margine": 0.0247,
+    "margine_migliore": 0.0388
+   },
+   {
+    "id": "st-johnstone-falkirk",
+    "casa": "St Johnstone",
+    "ospite": "Falkirk",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.14,
+      3.55,
+      3.6
+     ],
+     "bet365": [
+      2.01,
+      3.5,
+      3.5
+     ],
+     "massimo": [
+      2.15,
+      3.6,
+      3.5
+     ],
+     "media": [
+      2.03,
+      3.49,
+      3.35
+     ]
+    },
+    "p_mercato": [
+     0.4575,
+     0.2732,
+     0.2693
+    ],
+    "p_modello": [
+     0.34,
+     0.2717,
+     0.3883
+    ],
+    "margine": 0.0268,
+    "margine_migliore": 0.0286
+   },
+   {
+    "id": "st-mirren-dundee-united",
+    "casa": "St Mirren",
+    "ospite": "Dundee United",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.38,
+      3.8,
+      2.8
+     ],
+     "bet365": [
+      2.3,
+      3.6,
+      2.82
+     ],
+     "massimo": [
+      2.4,
+      3.6,
+      3.0
+     ],
+     "media": [
+      2.33,
+      3.49,
+      2.77
+     ]
+    },
+    "p_mercato": [
+     0.4059,
+     0.2505,
+     0.3435
+    ],
+    "p_modello": [
+     0.427,
+     0.2889,
+     0.284
+    ],
+    "margine": 0.0405,
+    "margine_migliore": 0.0278
+   },
+   {
+    "id": "kilmarnock-hearts",
+    "casa": "Kilmarnock",
+    "ospite": "Hearts",
+    "data": "2026-09-19",
+    "ora": "18:45",
+    "quote": {
+     "betfair": [
+      5.0,
+      4.3,
+      1.68
+     ],
+     "bet365": [
+      4.75,
+      4.1,
+      1.61
+     ],
+     "massimo": [
+      4.75,
+      4.2,
+      1.67
+     ],
+     "media": [
+      4.59,
+      4.04,
+      1.64
+     ]
+    },
+    "p_mercato": [
+     0.1917,
+     0.224,
+     0.5842
+    ],
+    "p_modello": [
+     0.2338,
+     0.2426,
+     0.5236
+    ],
+    "margine": 0.0278,
+    "margine_migliore": 0.0474
+   },
+   {
+    "id": "celtic-rangers",
+    "casa": "Celtic",
+    "ospite": "Rangers",
+    "data": "2026-09-20",
+    "ora": "13:00",
+    "quote": {
+     "betfair": [
+      2.32,
+      3.95,
+      3.05
+     ],
+     "bet365": [
+      2.15,
+      3.7,
+      3.0
+     ],
+     "massimo": [
+      2.22,
+      3.75,
+      3.2
+     ],
+     "media": [
+      2.16,
+      3.63,
+      2.98
+     ]
+    },
+    "p_mercato": [
+     0.4267,
+     0.2494,
+     0.3239
+    ],
+    "p_modello": [
+     0.5788,
+     0.2092,
+     0.212
+    ],
+    "margine": 0.0121,
+    "margine_migliore": 0.0296
+   }
+  ],
+  "serie-b": [
+   {
+    "id": "juve-stabia-cesena",
+    "casa": "Juve Stabia",
+    "ospite": "Cesena",
+    "data": "2026-09-18",
+    "ora": "20:30",
+    "quote": {
+     "betfair": [
+      2.34,
+      3.45,
+      3.45
+     ],
+     "bet365": [
+      2.2,
+      3.1,
+      3.4
+     ],
+     "massimo": [
+      2.26,
+      3.4,
+      3.4
+     ],
+     "media": [
+      2.2,
+      3.27,
+      3.08
+     ]
+    },
+    "p_mercato": [
+     0.4248,
+     0.2876,
+     0.2876
+    ],
+    "p_modello": [
+     0.4728,
+     0.301,
+     0.2261
+    ],
+    "margine": 0.0071,
+    "margine_migliore": 0.0307
+   },
+   {
+    "id": "carrarese-benevento",
+    "casa": "Carrarese",
+    "ospite": "Benevento",
+    "data": "2026-09-19",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      2.98,
+      3.4,
+      2.54
+     ],
+     "bet365": [
+      2.85,
+      3.3,
+      2.35
+     ],
+     "massimo": [
+      2.9,
+      3.4,
+      2.4
+     ],
+     "media": [
+      2.82,
+      3.33,
+      2.32
+     ]
+    },
+    "p_mercato": [
+     0.3278,
+     0.2866,
+     0.3856
+    ],
+    "p_modello": [
+     0.7008,
+     0.1859,
+     0.1133
+    ],
+    "margine": 0.0234,
+    "margine_migliore": 0.0556
+   },
+   {
+    "id": "cremonese-virtus-entella",
+    "casa": "Cremonese",
+    "ospite": "Virtus Entella",
+    "data": "2026-09-19",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      1.79,
+      3.8,
+      5.1
+     ],
+     "bet365": [
+      1.76,
+      3.3,
+      4.75
+     ],
+     "massimo": [
+      1.81,
+      3.75,
+      4.75
+     ],
+     "media": [
+      1.74,
+      3.5,
+      4.46
+     ]
+    },
+    "p_mercato": [
+     0.5517,
+     0.2575,
+     0.1908
+    ],
+    "p_modello": [
+     0.6044,
+     0.2639,
+     0.1317
+    ],
+    "margine": 0.0179,
+    "margine_migliore": 0.0297
+   },
+   {
+    "id": "palermo-padova",
+    "casa": "Palermo",
+    "ospite": "Padova",
+    "data": "2026-09-19",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      1.63,
+      4.3,
+      5.8
+     ],
+     "bet365": [
+      1.53,
+      3.9,
+      5.5
+     ],
+     "massimo": [
+      1.6,
+      4.2,
+      5.5
+     ],
+     "media": [
+      1.55,
+      3.99,
+      5.21
+     ]
+    },
+    "p_mercato": [
+     0.6061,
+     0.2269,
+     0.167
+    ],
+    "p_modello": [
+     0.5773,
+     0.2716,
+     0.1511
+    ],
+    "margine": 0.0185,
+    "margine_migliore": 0.0449
+   },
+   {
+    "id": "sampdoria-catanzaro",
+    "casa": "Sampdoria",
+    "ospite": "Catanzaro",
+    "data": "2026-09-19",
+    "ora": "17:15",
+    "quote": {
+     "betfair": [
+      2.08,
+      3.0,
+      3.45
+     ],
+     "bet365": [
+      1.96,
+      3.3,
+      3.7
+     ],
+     "massimo": [
+      2.12,
+      3.35,
+      3.7
+     ],
+     "media": [
+      2.05,
+      3.28,
+      3.38
+     ]
+    },
+    "p_mercato": [
+     0.4433,
+     0.2995,
+     0.2572
+    ],
+    "p_modello": [
+     0.3233,
+     0.2958,
+     0.3809
+    ],
+    "margine": 0.104,
+    "margine_migliore": 0.0405
+   },
+   {
+    "id": "ascoli-avellino",
+    "casa": "Ascoli",
+    "ospite": "Avellino",
+    "data": "2026-09-19",
+    "ora": "19:30",
+    "quote": {
+     "betfair": [
+      2.02,
+      3.05,
+      3.4
+     ],
+     "bet365": [
+      2.05,
+      3.3,
+      3.5
+     ],
+     "massimo": [
+      2.12,
+      3.4,
+      3.6
+     ],
+     "media": [
+      2.06,
+      3.31,
+      3.34
+     ]
+    },
+    "p_mercato": [
+     0.4526,
+     0.2901,
+     0.2573
+    ],
+    "p_modello": [
+     0.4446,
+     0.3255,
+     0.2298
+    ],
+    "margine": 0.117,
+    "margine_migliore": 0.0436
+   },
+   {
+    "id": "arezzo-sudtirol",
+    "casa": "Arezzo",
+    "ospite": "Sudtirol",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      2.22,
+      3.1,
+      3.5
+     ],
+     "bet365": [
+      2.2,
+      3.1,
+      3.4
+     ],
+     "massimo": [
+      2.25,
+      3.2,
+      3.4
+     ],
+     "media": [
+      2.2,
+      3.08,
+      3.22
+     ]
+    },
+    "p_mercato": [
+     0.4295,
+     0.3034,
+     0.2671
+    ],
+    "p_modello": [
+     0.7385,
+     0.1746,
+     0.0869
+    ],
+    "margine": 0.0587,
+    "margine_migliore": 0.0511
+   },
+   {
+    "id": "verona-vicenza",
+    "casa": "Verona",
+    "ospite": "Vicenza",
+    "data": "2026-09-20",
+    "ora": "15:00",
+    "quote": {
+     "betfair": [
+      1.92,
+      3.65,
+      4.0
+     ],
+     "bet365": [
+      1.86,
+      3.4,
+      4.2
+     ],
+     "massimo": [
+      1.91,
+      3.6,
+      4.2
+     ],
+     "media": [
+      1.85,
+      3.51,
+      3.75
+     ]
+    },
+    "p_mercato": [
+     0.504,
+     0.2598,
+     0.2362
+    ],
+    "p_modello": [
+     0.0674,
+     0.0794,
+     0.8532
+    ],
+    "margine": 0.0448,
+    "margine_migliore": 0.0394
+   },
+   {
+    "id": "mantova-pisa",
+    "casa": "Mantova",
+    "ospite": "Pisa",
+    "data": "2026-09-20",
+    "ora": "17:15",
+    "quote": {
+     "betfair": [
+      2.78,
+      3.3,
+      2.52
+     ],
+     "bet365": [
+      2.65,
+      3.2,
+      2.55
+     ],
+     "massimo": [
+      2.75,
+      3.4,
+      2.6
+     ],
+     "media": [
+      2.67,
+      3.25,
+      2.44
+     ]
+    },
+    "p_mercato": [
+     0.3398,
+     0.2839,
+     0.3763
+    ],
+    "p_modello": [
+     0.3245,
+     0.28,
+     0.3955
+    ],
+    "margine": 0.0596,
+    "margine_migliore": 0.0424
+   },
+   {
+    "id": "modena-empoli",
+    "casa": "Modena",
+    "ospite": "Empoli",
+    "data": "2026-09-20",
+    "ora": "19:30",
+    "quote": {
+     "betfair": [
+      1.57,
+      3.4,
+      4.8
+     ],
+     "bet365": [
+      1.62,
+      3.6,
+      5.25
+     ],
+     "massimo": [
+      1.69,
+      3.7,
+      5.33
+     ],
+     "media": [
+      1.65,
+      3.61,
+      4.86
+     ]
+    },
+    "p_mercato": [
+     0.5713,
+     0.2491,
+     0.1796
+    ],
+    "p_modello": [
+     0.4787,
+     0.294,
+     0.2273
+    ],
+    "margine": 0.0888,
+    "margine_migliore": 0.0496
+   }
+  ],
+  "championship": [
+   {
+    "id": "bristol-city-watford",
+    "casa": "Bristol City",
+    "ospite": "Watford",
+    "data": "2026-09-18",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      1.81,
+      4.0,
+      4.9
+     ],
+     "bet365": [
+      1.66,
+      3.9,
+      4.5
+     ],
+     "massimo": [
+      1.77,
+      4.0,
+      4.55
+     ],
+     "media": [
+      1.74,
+      3.85,
+      4.41
+     ]
+    },
+    "p_mercato": [
+     0.5499,
+     0.248,
+     0.2021
+    ],
+    "p_modello": [
+     0.4651,
+     0.2766,
+     0.2582
+    ],
+    "margine": 0.0066,
+    "margine_migliore": 0.0348
+   },
+   {
+    "id": "cardiff-charlton",
+    "casa": "Cardiff",
+    "ospite": "Charlton",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      1.86,
+      4.1,
+      4.4
+     ],
+     "bet365": [
+      1.79,
+      3.8,
+      4.0
+     ],
+     "massimo": [
+      1.82,
+      4.0,
+      4.1
+     ],
+     "media": [
+      1.79,
+      3.9,
+      4.01
+     ]
+    },
+    "p_mercato": [
+     0.5343,
+     0.2412,
+     0.2246
+    ],
+    "p_modello": [
+     0.3645,
+     0.3021,
+     0.3334
+    ],
+    "margine": 0.0088,
+    "margine_migliore": 0.0434
+   },
+   {
+    "id": "millwall-west-ham",
+    "casa": "Millwall",
+    "ospite": "West Ham",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      4.4,
+      4.2,
+      1.84
+     ],
+     "bet365": [
+      4.1,
+      3.9,
+      1.76
+     ],
+     "massimo": [
+      4.2,
+      4.0,
+      1.83
+     ],
+     "media": [
+      4.02,
+      3.88,
+      1.79
+     ]
+    },
+    "p_mercato": [
+     0.2246,
+     0.2354,
+     0.5401
+    ],
+    "p_modello": [
+     0.5426,
+     0.2114,
+     0.246
+    ],
+    "margine": 0.0088,
+    "margine_migliore": 0.0345
+   },
+   {
+    "id": "stoke-sheffield-united",
+    "casa": "Stoke",
+    "ospite": "Sheffield United",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      2.48,
+      3.5,
+      3.1
+     ],
+     "bet365": [
+      2.3,
+      3.4,
+      2.85
+     ],
+     "massimo": [
+      2.52,
+      3.5,
+      3.0
+     ],
+     "media": [
+      2.39,
+      3.39,
+      2.84
+     ]
+    },
+    "p_mercato": [
+     0.3992,
+     0.282,
+     0.3188
+    ],
+    "p_modello": [
+     0.3014,
+     0.2935,
+     0.4051
+    ],
+    "margine": 0.0115,
+    "margine_migliore": 0.0159
+   },
+   {
+    "id": "birmingham-middlesbrough",
+    "casa": "Birmingham",
+    "ospite": "Middlesbrough",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.94,
+      3.85,
+      2.46
+     ],
+     "bet365": [
+      2.75,
+      3.6,
+      2.3
+     ],
+     "massimo": [
+      2.88,
+      3.6,
+      2.3
+     ],
+     "media": [
+      2.85,
+      3.58,
+      2.29
+     ]
+    },
+    "p_mercato": [
+     0.338,
+     0.2577,
+     0.4043
+    ],
+    "p_modello": [
+     0.334,
+     0.2879,
+     0.378
+    ],
+    "margine": 0.0064,
+    "margine_migliore": 0.0598
+   },
+   {
+    "id": "burnley-derby",
+    "casa": "Burnley",
+    "ospite": "Derby",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.87,
+      4.0,
+      4.5
+     ],
+     "bet365": [
+      1.76,
+      3.6,
+      4.33
+     ],
+     "massimo": [
+      1.83,
+      3.75,
+      4.33
+     ],
+     "media": [
+      1.79,
+      3.68,
+      4.21
+     ]
+    },
+    "p_mercato": [
+     0.5321,
+     0.2478,
+     0.2201
+    ],
+    "p_modello": [
+     0.6335,
+     0.2505,
+     0.116
+    ],
+    "margine": 0.007,
+    "margine_migliore": 0.0441
+   },
+   {
+    "id": "lincoln-swansea",
+    "casa": "Lincoln",
+    "ospite": "Swansea",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.9,
+      3.5,
+      2.6
+     ],
+     "bet365": [
+      2.75,
+      3.3,
+      2.45
+     ],
+     "massimo": [
+      2.88,
+      3.4,
+      2.45
+     ],
+     "media": [
+      2.79,
+      3.36,
+      2.43
+     ]
+    },
+    "p_mercato": [
+     0.3398,
+     0.2809,
+     0.3794
+    ],
+    "p_modello": [
+     0.1815,
+     0.22,
+     0.5985
+    ],
+    "margine": 0.0152,
+    "margine_migliore": 0.0495
+   },
+   {
+    "id": "portsmouth-blackburn",
+    "casa": "Portsmouth",
+    "ospite": "Blackburn",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.18,
+      3.6,
+      3.7
+     ],
+     "bet365": [
+      2.05,
+      3.5,
+      3.4
+     ],
+     "massimo": [
+      2.15,
+      3.5,
+      3.5
+     ],
+     "media": [
+      2.08,
+      3.39,
+      3.44
+     ]
+    },
+    "p_mercato": [
+     0.4563,
+     0.2756,
+     0.2681
+    ],
+    "p_modello": [
+     0.3806,
+     0.2991,
+     0.3202
+    ],
+    "margine": 0.0068,
+    "margine_migliore": 0.0365
+   },
+   {
+    "id": "qpr-preston",
+    "casa": "QPR",
+    "ospite": "Preston",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.8,
+      4.0,
+      4.9
+     ],
+     "bet365": [
+      1.68,
+      3.75,
+      4.75
+     ],
+     "massimo": [
+      1.78,
+      4.0,
+      4.75
+     ],
+     "media": [
+      1.72,
+      3.79,
+      4.53
+     ]
+    },
+    "p_mercato": [
+     0.5518,
+     0.247,
+     0.2012
+    ],
+    "p_modello": [
+     0.4461,
+     0.2677,
+     0.2861
+    ],
+    "margine": 0.0096,
+    "margine_migliore": 0.0223
+   },
+   {
+    "id": "wrexham-southampton",
+    "casa": "Wrexham",
+    "ospite": "Southampton",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      3.1,
+      3.8,
+      2.38
+     ],
+     "bet365": [
+      3.0,
+      3.6,
+      2.2
+     ],
+     "massimo": [
+      3.0,
+      3.6,
+      2.35
+     ],
+     "media": [
+      2.91,
+      3.52,
+      2.28
+     ]
+    },
+    "p_mercato": [
+     0.3206,
+     0.2613,
+     0.4181
+    ],
+    "p_modello": [
+     0.3385,
+     0.2345,
+     0.427
+    ],
+    "margine": 0.0059,
+    "margine_migliore": 0.0366
+   },
+   {
+    "id": "wolves-west-brom",
+    "casa": "Wolves",
+    "ospite": "West Brom",
+    "data": "2026-09-20",
+    "ora": "13:00",
+    "quote": {
+     "betfair": [
+      1.9,
+      3.8,
+      4.6
+     ],
+     "bet365": [
+      1.76,
+      3.7,
+      4.33
+     ],
+     "massimo": [
+      1.85,
+      3.75,
+      4.5
+     ],
+     "media": [
+      1.81,
+      3.63,
+      4.25
+     ]
+    },
+    "p_mercato": [
+     0.5237,
+     0.261,
+     0.2153
+    ],
+    "p_modello": [
+     0.5889,
+     0.1944,
+     0.2168
+    ],
+    "margine": 0.0069,
+    "margine_migliore": 0.0294
+   },
+   {
+    "id": "norwich-bolton",
+    "casa": "Norwich",
+    "ospite": "Bolton",
+    "data": "2026-09-20",
+    "ora": "14:30",
+    "quote": {
+     "betfair": [
+      1.56,
+      4.8,
+      6.0
+     ],
+     "bet365": [
+      1.46,
+      4.5,
+      5.75
+     ],
+     "massimo": [
+      1.55,
+      4.5,
+      5.75
+     ],
+     "media": [
+      1.52,
+      4.44,
+      5.39
+     ]
+    },
+    "p_mercato": [
+     0.6345,
+     0.2035,
+     0.162
+    ],
+    "p_modello": [
+     0.2588,
+     0.3736,
+     0.3677
+    ],
+    "margine": 0.016,
+    "margine_migliore": 0.0413
+   }
+  ],
+  "league-one": [
+   {
+    "id": "barnsley-leicester",
+    "casa": "Barnsley",
+    "ospite": "Leicester",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      3.4,
+      4.1,
+      2.1
+     ],
+     "bet365": [
+      3.3,
+      3.75,
+      1.96
+     ],
+     "massimo": [
+      3.3,
+      4.0,
+      2.1
+     ],
+     "media": [
+      3.17,
+      3.83,
+      2.04
+     ]
+    },
+    "p_mercato": [
+     0.2895,
+     0.2395,
+     0.471
+    ],
+    "p_modello": [
+     0.6123,
+     0.2086,
+     0.1791
+    ],
+    "margine": 0.0142,
+    "margine_migliore": 0.0292
+   },
+   {
+    "id": "burton-mansfield",
+    "casa": "Burton",
+    "ospite": "Mansfield",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      2.64,
+      3.2,
+      2.84
+     ],
+     "bet365": [
+      2.5,
+      3.3,
+      2.57
+     ],
+     "massimo": [
+      2.55,
+      3.7,
+      2.75
+     ],
+     "media": [
+      2.5,
+      3.42,
+      2.65
+     ]
+    },
+    "p_mercato": [
+     0.364,
+     0.2984,
+     0.3376
+    ],
+    "p_modello": [
+     0.3368,
+     0.2761,
+     0.3871
+    ],
+    "margine": 0.0434,
+    "margine_migliore": 0.0261
+   },
+   {
+    "id": "blackpool-plymouth",
+    "casa": "Blackpool",
+    "ospite": "Plymouth",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.86,
+      3.95,
+      2.46
+     ],
+     "bet365": [
+      2.57,
+      3.4,
+      2.45
+     ],
+     "massimo": [
+      2.7,
+      3.8,
+      2.5
+     ],
+     "media": [
+      2.63,
+      3.62,
+      2.4
+     ]
+    },
+    "p_mercato": [
+     0.3465,
+     0.2503,
+     0.4032
+    ],
+    "p_modello": [
+     0.3944,
+     0.2412,
+     0.3645
+    ],
+    "margine": 0.0093,
+    "margine_migliore": 0.0335
+   },
+   {
+    "id": "bromley-huddersfield",
+    "casa": "Bromley",
+    "ospite": "Huddersfield",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      5.8,
+      4.1,
+      1.63
+     ],
+     "bet365": [
+      5.5,
+      3.9,
+      1.53
+     ],
+     "massimo": [
+      5.75,
+      4.2,
+      1.62
+     ],
+     "media": [
+      5.19,
+      4.04,
+      1.58
+     ]
+    },
+    "p_mercato": [
+     0.1637,
+     0.2347,
+     0.6016
+    ],
+    "p_modello": [
+     0.4388,
+     0.3588,
+     0.2025
+    ],
+    "margine": 0.0298,
+    "margine_migliore": 0.0293
+   },
+   {
+    "id": "leyton-orient-stevenage",
+    "casa": "Leyton Orient",
+    "ospite": "Stevenage",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.46,
+      3.35,
+      3.25
+     ],
+     "bet365": [
+      2.2,
+      3.3,
+      3.1
+     ],
+     "massimo": [
+      2.38,
+      3.3,
+      3.2
+     ],
+     "media": [
+      2.32,
+      3.23,
+      3.03
+     ]
+    },
+    "p_mercato": [
+     0.4021,
+     0.2944,
+     0.3036
+    ],
+    "p_modello": [
+     0.4188,
+     0.2926,
+     0.2886
+    ],
+    "margine": 0.0127,
+    "margine_migliore": 0.0357
+   },
+   {
+    "id": "luton-bradford",
+    "casa": "Luton",
+    "ospite": "Bradford",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.18,
+      3.65,
+      3.45
+     ],
+     "bet365": [
+      2.01,
+      3.3,
+      3.5
+     ],
+     "massimo": [
+      2.1,
+      3.6,
+      3.5
+     ],
+     "media": [
+      2.08,
+      3.49,
+      3.3
+     ]
+    },
+    "p_mercato": [
+     0.4505,
+     0.2668,
+     0.2826
+    ],
+    "p_modello": [
+     0.4325,
+     0.2658,
+     0.3017
+    ],
+    "margine": 0.0225,
+    "margine_migliore": 0.0397
+   },
+   {
+    "id": "oxford-cambridge",
+    "casa": "Oxford",
+    "ospite": "Cambridge",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.22,
+      3.6,
+      3.5
+     ],
+     "bet365": [
+      2.05,
+      3.4,
+      3.3
+     ],
+     "massimo": [
+      2.15,
+      3.5,
+      3.4
+     ],
+     "media": [
+      2.11,
+      3.44,
+      3.26
+     ]
+    },
+    "p_mercato": [
+     0.4454,
+     0.2733,
+     0.2812
+    ],
+    "p_modello": [
+     0.6707,
+     0.1828,
+     0.1466
+    ],
+    "margine": 0.0139,
+    "margine_migliore": 0.0449
+   },
+   {
+    "id": "peterboro-doncaster",
+    "casa": "Peterboro",
+    "ospite": "Doncaster",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.58,
+      3.95,
+      2.72
+     ],
+     "bet365": [
+      2.32,
+      3.6,
+      2.65
+     ],
+     "massimo": [
+      2.45,
+      3.75,
+      2.75
+     ],
+     "media": [
+      2.37,
+      3.63,
+      2.68
+     ]
+    },
+    "p_mercato": [
+     0.3847,
+     0.2505,
+     0.3648
+    ],
+    "p_modello": [
+     0.5258,
+     0.2311,
+     0.2432
+    ],
+    "margine": 0.0084,
+    "margine_migliore": 0.0385
+   },
+   {
+    "id": "reading-notts-county",
+    "casa": "Reading",
+    "ospite": "Notts County",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.88,
+      3.7,
+      4.5
+     ],
+     "bet365": [
+      1.76,
+      3.7,
+      4.0
+     ],
+     "massimo": [
+      1.85,
+      3.75,
+      4.4
+     ],
+     "media": [
+      1.81,
+      3.66,
+      4.07
+     ]
+    },
+    "p_mercato": [
+     0.5226,
+     0.2626,
+     0.2148
+    ],
+    "p_modello": [
+     0.5149,
+     0.2269,
+     0.2582
+    ],
+    "margine": 0.0244,
+    "margine_migliore": 0.0345
+   },
+   {
+    "id": "sheffield-weds-stockport",
+    "casa": "Sheffield Weds",
+    "ospite": "Stockport",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      3.0,
+      3.9,
+      2.36
+     ],
+     "bet365": [
+      3.0,
+      3.5,
+      2.15
+     ],
+     "massimo": [
+      3.0,
+      3.8,
+      2.3
+     ],
+     "media": [
+      2.84,
+      3.64,
+      2.25
+     ]
+    },
+    "p_mercato": [
+     0.3289,
+     0.2522,
+     0.4189
+    ],
+    "p_modello": [
+     0.3525,
+     0.2913,
+     0.3562
+    ],
+    "margine": 0.0135,
+    "margine_migliore": 0.0313
+   },
+   {
+    "id": "wigan-wycombe",
+    "casa": "Wigan",
+    "ospite": "Wycombe",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.58,
+      3.4,
+      2.72
+     ],
+     "bet365": [
+      2.5,
+      3.3,
+      2.57
+     ],
+     "massimo": [
+      2.55,
+      3.6,
+      2.7
+     ],
+     "media": [
+      2.47,
+      3.49,
+      2.61
+     ]
+    },
+    "p_mercato": [
+     0.3707,
+     0.2783,
+     0.351
+    ],
+    "p_modello": [
+     0.3099,
+     0.2881,
+     0.4021
+    ],
+    "margine": 0.0494,
+    "margine_migliore": 0.0403
+   }
+  ],
+  "league-two": [
+   {
+    "id": "rochdale-oldham",
+    "casa": "Rochdale",
+    "ospite": "Oldham",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      3.9,
+      3.8,
+      2.02
+     ],
+     "bet365": [
+      3.8,
+      3.4,
+      1.86
+     ],
+     "massimo": [
+      3.8,
+      3.75,
+      2.0
+     ],
+     "media": [
+      3.63,
+      3.57,
+      1.94
+     ]
+    },
+    "p_mercato": [
+     0.2518,
+     0.2586,
+     0.4896
+    ],
+    "p_modello": [
+     0.0278,
+     0.0929,
+     0.8793
+    ],
+    "margine": 0.0146,
+    "margine_migliore": 0.0298
+   },
+   {
+    "id": "walsall-port-vale",
+    "casa": "Walsall",
+    "ospite": "Port Vale",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      2.56,
+      3.3,
+      2.96
+     ],
+     "bet365": [
+      2.4,
+      3.25,
+      2.75
+     ],
+     "massimo": [
+      2.5,
+      3.5,
+      2.88
+     ],
+     "media": [
+      2.44,
+      3.31,
+      2.79
+     ]
+    },
+    "p_mercato": [
+     0.3798,
+     0.2929,
+     0.3274
+    ],
+    "p_modello": [
+     0.3726,
+     0.2734,
+     0.354
+    ],
+    "margine": 0.0315,
+    "margine_migliore": 0.0329
+   },
+   {
+    "id": "accrington-newport-county",
+    "casa": "Accrington",
+    "ospite": "Newport County",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.16,
+      3.55,
+      3.35
+     ],
+     "bet365": [
+      2.01,
+      3.3,
+      3.5
+     ],
+     "massimo": [
+      2.05,
+      3.6,
+      3.5
+     ],
+     "media": [
+      2.02,
+      3.48,
+      3.43
+     ]
+    },
+    "p_mercato": [
+     0.4474,
+     0.268,
+     0.2846
+    ],
+    "p_modello": [
+     0.4737,
+     0.2463,
+     0.28
+    ],
+    "margine": 0.0432,
+    "margine_migliore": 0.0513
+   },
+   {
+    "id": "barnet-fleetwood-town",
+    "casa": "Barnet",
+    "ospite": "Fleetwood Town",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.72,
+      3.85,
+      4.7
+     ],
+     "bet365": [
+      1.66,
+      3.8,
+      4.5
+     ],
+     "massimo": [
+      1.7,
+      4.0,
+      5.0
+     ],
+     "media": [
+      1.66,
+      3.94,
+      4.59
+     ]
+    },
+    "p_mercato": [
+     0.5604,
+     0.243,
+     0.1966
+    ],
+    "p_modello": [
+     0.5363,
+     0.2365,
+     0.2272
+    ],
+    "margine": 0.0539,
+    "margine_migliore": 0.0382
+   },
+   {
+    "id": "chesterfield-york",
+    "casa": "Chesterfield",
+    "ospite": "York",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.48,
+      3.65,
+      2.86
+     ],
+     "bet365": [
+      2.4,
+      3.3,
+      2.7
+     ],
+     "massimo": [
+      2.42,
+      3.6,
+      2.8
+     ],
+     "media": [
+      2.37,
+      3.52,
+      2.72
+     ]
+    },
+    "p_mercato": [
+     0.3939,
+     0.2655,
+     0.3406
+    ],
+    "p_modello": [
+     0.5556,
+     0.192,
+     0.2523
+    ],
+    "margine": 0.0268,
+    "margine_migliore": 0.0481
+   },
+   {
+    "id": "colchester-cheltenham",
+    "casa": "Colchester",
+    "ospite": "Cheltenham",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.0,
+      3.55,
+      3.7
+     ],
+     "bet365": [
+      1.86,
+      3.5,
+      3.8
+     ],
+     "massimo": [
+      1.95,
+      3.75,
+      3.8
+     ],
+     "media": [
+      1.91,
+      3.6,
+      3.69
+     ]
+    },
+    "p_mercato": [
+     0.4808,
+     0.2652,
+     0.254
+    ],
+    "p_modello": [
+     0.5555,
+     0.2284,
+     0.2161
+    ],
+    "margine": 0.052,
+    "margine_migliore": 0.0426
+   },
+   {
+    "id": "crewe-shrewsbury",
+    "casa": "Crewe",
+    "ospite": "Shrewsbury",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.93,
+      3.15,
+      3.75
+     ],
+     "bet365": [
+      1.91,
+      3.3,
+      3.8
+     ],
+     "massimo": [
+      1.98,
+      3.6,
+      4.0
+     ],
+     "media": [
+      1.94,
+      3.45,
+      3.72
+     ]
+    },
+    "p_mercato": [
+     0.4803,
+     0.2846,
+     0.2351
+    ],
+    "p_modello": [
+     0.5804,
+     0.243,
+     0.1766
+    ],
+    "margine": 0.1023,
+    "margine_migliore": 0.0328
+   },
+   {
+    "id": "exeter-tranmere",
+    "casa": "Exeter",
+    "ospite": "Tranmere",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.32,
+      3.6,
+      3.25
+     ],
+     "bet365": [
+      2.15,
+      3.4,
+      3.1
+     ],
+     "massimo": [
+      2.26,
+      3.5,
+      3.13
+     ],
+     "media": [
+      2.24,
+      3.36,
+      3.04
+     ]
+    },
+    "p_mercato": [
+     0.4252,
+     0.2725,
+     0.3023
+    ],
+    "p_modello": [
+     0.5957,
+     0.2863,
+     0.1181
+    ],
+    "margine": 0.0165,
+    "margine_migliore": 0.0477
+   },
+   {
+    "id": "gillingham-bristol-rvs",
+    "casa": "Gillingham",
+    "ospite": "Bristol Rvs",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      3.85,
+      3.75,
+      2.06
+     ],
+     "bet365": [
+      3.8,
+      3.4,
+      1.91
+     ],
+     "massimo": [
+      3.8,
+      3.8,
+      2.0
+     ],
+     "media": [
+      3.6,
+      3.54,
+      1.94
+     ]
+    },
+    "p_mercato": [
+     0.256,
+     0.2629,
+     0.4811
+    ],
+    "p_modello": [
+     0.3375,
+     0.2594,
+     0.4031
+    ],
+    "margine": 0.0118,
+    "margine_migliore": 0.0263
+   },
+   {
+    "id": "grimsby-crawley-town",
+    "casa": "Grimsby",
+    "ospite": "Crawley Town",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.48,
+      4.9,
+      6.8
+     ],
+     "bet365": [
+      1.45,
+      4.33,
+      6.25
+     ],
+     "massimo": [
+      1.48,
+      4.75,
+      6.5
+     ],
+     "media": [
+      1.44,
+      4.57,
+      6.14
+     ]
+    },
+    "p_mercato": [
+     0.6645,
+     0.196,
+     0.1394
+    ],
+    "p_modello": [
+     0.5676,
+     0.2329,
+     0.1995
+    ],
+    "margine": 0.0268,
+    "margine_migliore": 0.04
+   },
+   {
+    "id": "northampton-rotherham",
+    "casa": "Northampton",
+    "ospite": "Rotherham",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.58,
+      3.5,
+      2.94
+     ],
+     "bet365": [
+      2.25,
+      3.4,
+      2.82
+     ],
+     "massimo": [
+      2.4,
+      3.5,
+      3.0
+     ],
+     "media": [
+      2.34,
+      3.35,
+      2.87
+     ]
+    },
+    "p_mercato": [
+     0.3829,
+     0.2814,
+     0.3356
+    ],
+    "p_modello": [
+     0.0469,
+     0.7505,
+     0.2026
+    ],
+    "margine": 0.0134,
+    "margine_migliore": 0.0357
+   },
+   {
+    "id": "salford-swindon",
+    "casa": "Salford",
+    "ospite": "Swindon",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.59,
+      4.5,
+      5.7
+     ],
+     "bet365": [
+      1.53,
+      4.1,
+      5.25
+     ],
+     "massimo": [
+      1.58,
+      4.5,
+      6.0
+     ],
+     "media": [
+      1.53,
+      4.31,
+      5.33
+     ]
+    },
+    "p_mercato": [
+     0.6182,
+     0.2141,
+     0.1677
+    ],
+    "p_modello": [
+     0.4264,
+     0.2423,
+     0.3313
+    ],
+    "margine": 0.0266,
+    "margine_migliore": 0.0218
+   }
+  ],
+  "national-league": [
+   {
+    "id": "yeovil-solihull",
+    "casa": "Yeovil",
+    "ospite": "Solihull",
+    "data": "2026-09-18",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      2.12,
+      3.8,
+      3.45
+     ],
+     "bet365": [
+      2.0,
+      3.5,
+      3.2
+     ],
+     "massimo": [
+      2.08,
+      3.6,
+      3.2
+     ],
+     "media": [
+      2.01,
+      3.52,
+      3.13
+     ]
+    },
+    "p_mercato": [
+     0.4627,
+     0.2554,
+     0.2819
+    ],
+    "p_modello": [
+     0.3725,
+     0.2741,
+     0.3533
+    ],
+    "margine": 0.0247,
+    "margine_migliore": 0.071
+   },
+   {
+    "id": "hartlepool-worthing",
+    "casa": "Hartlepool",
+    "ospite": "Worthing",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      2.26,
+      3.75,
+      2.84
+     ],
+     "bet365": [
+      2.1,
+      3.6,
+      2.9
+     ],
+     "massimo": [
+      2.2,
+      4.0,
+      2.9
+     ],
+     "media": [
+      2.14,
+      3.58,
+      2.83
+     ]
+    },
+    "p_mercato": [
+     0.4207,
+     0.2476,
+     0.3317
+    ],
+    "p_modello": [
+     0.2785,
+     0.2609,
+     0.4606
+    ],
+    "margine": 0.0613,
+    "margine_migliore": 0.0494
+   },
+   {
+    "id": "tamworth-wealdstone",
+    "casa": "Tamworth",
+    "ospite": "Wealdstone",
+    "data": "2026-09-19",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      1.93,
+      3.7,
+      3.25
+     ],
+     "bet365": [
+      1.9,
+      3.75,
+      3.3
+     ],
+     "massimo": [
+      1.93,
+      4.0,
+      3.4
+     ],
+     "media": [
+      1.88,
+      3.76,
+      3.32
+     ]
+    },
+    "p_mercato": [
+     0.4826,
+     0.2405,
+     0.277
+    ],
+    "p_modello": [
+     0.464,
+     0.2368,
+     0.2992
+    ],
+    "margine": 0.0961,
+    "margine_migliore": 0.0623
+   },
+   {
+    "id": "barrow-aldershot",
+    "casa": "Barrow",
+    "ospite": "Aldershot",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.82,
+      3.9,
+      3.75
+     ],
+     "bet365": [
+      1.8,
+      3.7,
+      3.7
+     ],
+     "massimo": [
+      1.83,
+      3.8,
+      4.0
+     ],
+     "media": [
+      1.77,
+      3.73,
+      3.76
+     ]
+    },
+    "p_mercato": [
+     0.5219,
+     0.234,
+     0.2441
+    ],
+    "p_modello": [
+     0.3588,
+     0.2957,
+     0.3456
+    ],
+    "margine": 0.0725,
+    "margine_migliore": 0.0596
+   },
+   {
+    "id": "boreham-wood-harrogate",
+    "casa": "Boreham Wood",
+    "ospite": "Harrogate",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.7,
+      4.1,
+      4.0
+     ],
+     "bet365": [
+      1.67,
+      4.0,
+      4.1
+     ],
+     "massimo": [
+      1.7,
+      4.5,
+      4.75
+     ],
+     "media": [
+      1.64,
+      4.05,
+      4.14
+     ]
+    },
+    "p_mercato": [
+     0.5564,
+     0.2188,
+     0.2248
+    ],
+    "p_modello": [
+     0.4698,
+     0.1709,
+     0.3593
+    ],
+    "margine": 0.0821,
+    "margine_migliore": 0.021
+   },
+   {
+    "id": "eastleigh-carlisle",
+    "casa": "Eastleigh",
+    "ospite": "Carlisle",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      4.0,
+      3.95,
+      1.78
+     ],
+     "bet365": [
+      3.7,
+      3.75,
+      1.75
+     ],
+     "massimo": [
+      4.0,
+      4.0,
+      1.8
+     ],
+     "media": [
+      3.79,
+      3.75,
+      1.75
+     ]
+    },
+    "p_mercato": [
+     0.23,
+     0.2331,
+     0.5369
+    ],
+    "p_modello": [
+     0.2159,
+     0.2224,
+     0.5617
+    ],
+    "margine": 0.065,
+    "margine_migliore": 0.0556
+   },
+   {
+    "id": "forest-green-boston-utd",
+    "casa": "Forest Green",
+    "ospite": "Boston Utd",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.71,
+      4.1,
+      4.3
+     ],
+     "bet365": [
+      1.7,
+      3.9,
+      4.1
+     ],
+     "massimo": [
+      1.73,
+      4.0,
+      4.2
+     ],
+     "media": [
+      1.68,
+      3.85,
+      4.07
+     ]
+    },
+    "p_mercato": [
+     0.5609,
+     0.2251,
+     0.214
+    ],
+    "p_modello": [
+     0.5612,
+     0.2413,
+     0.1975
+    ],
+    "margine": 0.0613,
+    "margine_migliore": 0.0661
+   },
+   {
+    "id": "fylde-altrincham",
+    "casa": "Fylde",
+    "ospite": "Altrincham",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.7,
+      4.4,
+      4.2
+     ],
+     "bet365": [
+      1.7,
+      3.9,
+      4.0
+     ],
+     "massimo": [
+      1.78,
+      4.0,
+      4.0
+     ],
+     "media": [
+      1.72,
+      3.83,
+      3.9
+     ]
+    },
+    "p_mercato": [
+     0.5673,
+     0.211,
+     0.2217
+    ],
+    "p_modello": [
+     0.3512,
+     0.2526,
+     0.3962
+    ],
+    "margine": 0.0536,
+    "margine_migliore": 0.0618
+   },
+   {
+    "id": "gateshead-southend",
+    "casa": "Gateshead",
+    "ospite": "Southend",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      5.9,
+      4.3,
+      1.55
+     ],
+     "bet365": [
+      5.0,
+      4.2,
+      1.53
+     ],
+     "massimo": [
+      5.5,
+      4.33,
+      1.54
+     ],
+     "media": [
+      5.23,
+      4.11,
+      1.5
+     ]
+    },
+    "p_mercato": [
+     0.1559,
+     0.2181,
+     0.626
+    ],
+    "p_modello": [
+     0.2265,
+     0.2394,
+     0.5341
+    ],
+    "margine": 0.0472,
+    "margine_migliore": 0.0621
+   },
+   {
+    "id": "halifax-sutton",
+    "casa": "Halifax",
+    "ospite": "Sutton",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.16,
+      3.5,
+      2.82
+     ],
+     "bet365": [
+      2.3,
+      3.5,
+      2.7
+     ],
+     "massimo": [
+      2.3,
+      3.6,
+      2.9
+     ],
+     "media": [
+      2.2,
+      3.46,
+      2.83
+     ]
+    },
+    "p_mercato": [
+     0.4262,
+     0.2534,
+     0.3205
+    ],
+    "p_modello": [
+     0.498,
+     0.2535,
+     0.2485
+    ],
+    "margine": 0.1033,
+    "margine_migliore": 0.0574
+   },
+   {
+    "id": "woking-kidderminster",
+    "casa": "Woking",
+    "ospite": "Kidderminster",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.3,
+      3.45,
+      2.96
+     ],
+     "bet365": [
+      2.25,
+      3.4,
+      2.8
+     ],
+     "massimo": [
+      2.33,
+      3.5,
+      2.88
+     ],
+     "media": [
+      2.26,
+      3.36,
+      2.81
+     ]
+    },
+    "p_mercato": [
+     0.4127,
+     0.27,
+     0.3173
+    ],
+    "p_modello": [
+     0.4949,
+     0.3175,
+     0.1876
+    ],
+    "margine": 0.0625,
+    "margine_migliore": 0.0621
+   },
+   {
+    "id": "hornchurch-scunthorpe",
+    "casa": "Hornchurch",
+    "ospite": "Scunthorpe",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      2.46,
+      3.1,
+      2.26
+     ],
+     "bet365": [
+      2.45,
+      3.5,
+      2.5
+     ],
+     "massimo": [
+      2.45,
+      3.6,
+      2.6
+     ],
+     "media": [
+      2.42,
+      3.46,
+      2.53
+     ]
+    },
+    "p_mercato": [
+     0.3796,
+     0.2584,
+     0.362
+    ],
+    "p_modello": [
+     0.5343,
+     0.1827,
+     0.2831
+    ],
+    "margine": 0.0975,
+    "margine_migliore": 0.0706
+   }
+  ],
+  "laliga-2": [
+   {
+    "id": "albacete-cordoba",
+    "casa": "Albacete",
+    "ospite": "Cordoba",
+    "data": "2026-09-18",
+    "ora": "20:30",
+    "quote": {
+     "betfair": [
+      2.56,
+      3.7,
+      2.86
+     ],
+     "bet365": [
+      2.4,
+      3.6,
+      2.57
+     ],
+     "massimo": [
+      2.4,
+      3.6,
+      2.71
+     ],
+     "media": [
+      2.35,
+      3.54,
+      2.63
+     ]
+    },
+    "p_mercato": [
+     0.387,
+     0.2669,
+     0.3461
+    ],
+    "p_modello": [
+     0.4869,
+     0.2348,
+     0.2783
+    ],
+    "margine": 0.0105,
+    "margine_migliore": 0.0634
+   },
+   {
+    "id": "sociedad-b-mallorca",
+    "casa": "Sociedad B",
+    "ospite": "Mallorca",
+    "data": "2026-09-19",
+    "ora": "14:00",
+    "quote": {
+     "betfair": [
+      4.1,
+      3.6,
+      1.89
+     ],
+     "bet365": [
+      4.0,
+      3.4,
+      1.86
+     ],
+     "massimo": [
+      4.0,
+      3.6,
+      1.95
+     ],
+     "media": [
+      3.8,
+      3.42,
+      1.88
+     ]
+    },
+    "p_mercato": [
+     0.2283,
+     0.2617,
+     0.51
+    ],
+    "p_modello": [
+     0.4024,
+     0.3005,
+     0.2971
+    ],
+    "margine": 0.0508,
+    "margine_migliore": 0.0406
+   },
+   {
+    "id": "andorra-sp-gijon",
+    "casa": "Andorra",
+    "ospite": "Sp Gijon",
+    "data": "2026-09-19",
+    "ora": "16:15",
+    "quote": {
+     "betfair": [
+      2.02,
+      3.6,
+      3.6
+     ],
+     "bet365": [
+      1.96,
+      3.5,
+      3.6
+     ],
+     "massimo": [
+      2.08,
+      3.5,
+      3.6
+     ],
+     "media": [
+      1.99,
+      3.39,
+      3.45
+     ]
+    },
+    "p_mercato": [
+     0.4764,
+     0.2618,
+     0.2618
+    ],
+    "p_modello": [
+     0.4574,
+     0.2469,
+     0.2957
+    ],
+    "margine": 0.0506,
+    "margine_migliore": 0.0443
+   },
+   {
+    "id": "castellon-tenerife",
+    "casa": "Castellon",
+    "ospite": "Tenerife",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.58,
+      4.3,
+      5.9
+     ],
+     "bet365": [
+      1.51,
+      4.0,
+      5.75
+     ],
+     "massimo": [
+      1.55,
+      4.2,
+      5.75
+     ],
+     "media": [
+      1.52,
+      4.0,
+      5.47
+     ]
+    },
+    "p_mercato": [
+     0.6188,
+     0.2218,
+     0.1594
+    ],
+    "p_modello": [
+     0.5621,
+     0.2481,
+     0.1897
+    ],
+    "margine": 0.035,
+    "margine_migliore": 0.0572
+   },
+   {
+    "id": "eldense-eibar",
+    "casa": "Eldense",
+    "ospite": "Eibar",
+    "data": "2026-09-19",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      3.1,
+      3.25,
+      2.44
+     ],
+     "bet365": [
+      3.0,
+      3.2,
+      2.32
+     ],
+     "massimo": [
+      3.1,
+      3.2,
+      2.42
+     ],
+     "media": [
+      2.89,
+      3.1,
+      2.38
+     ]
+    },
+    "p_mercato": [
+     0.3094,
+     0.2947,
+     0.3958
+    ],
+    "p_modello": [
+     0.2687,
+     0.2821,
+     0.4492
+    ],
+    "margine": 0.0401,
+    "margine_migliore": 0.0483
+   },
+   {
+    "id": "cadiz-girona",
+    "casa": "Cadiz",
+    "ospite": "Girona",
+    "data": "2026-09-19",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      3.95,
+      3.55,
+      2.02
+     ],
+     "bet365": [
+      3.75,
+      3.5,
+      1.91
+     ],
+     "massimo": [
+      3.75,
+      3.5,
+      1.98
+     ],
+     "media": [
+      3.61,
+      3.43,
+      1.93
+     ]
+    },
+    "p_mercato": [
+     0.2439,
+     0.2722,
+     0.484
+    ],
+    "p_modello": [
+     0.4938,
+     0.2666,
+     0.2396
+    ],
+    "margine": 0.0299,
+    "margine_migliore": 0.0574
+   },
+   {
+    "id": "sabadell-oviedo",
+    "casa": "Sabadell",
+    "ospite": "Oviedo",
+    "data": "2026-09-20",
+    "ora": "14:00",
+    "quote": {
+     "betfair": [
+      2.46,
+      3.05,
+      3.55
+     ],
+     "bet365": [
+      2.3,
+      3.0,
+      3.4
+     ],
+     "massimo": [
+      2.38,
+      3.0,
+      3.4
+     ],
+     "media": [
+      2.29,
+      2.92,
+      3.2
+     ]
+    },
+    "p_mercato": [
+     0.4009,
+     0.3226,
+     0.2766
+    ],
+    "p_modello": [
+     0.0436,
+     0.9052,
+     0.0512
+    ],
+    "margine": 0.0161,
+    "margine_migliore": 0.0476
+   },
+   {
+    "id": "ceuta-valladolid",
+    "casa": "Ceuta",
+    "ospite": "Valladolid",
+    "data": "2026-09-20",
+    "ora": "16:15",
+    "quote": {
+     "betfair": [
+      2.78,
+      3.5,
+      2.74
+     ],
+     "bet365": [
+      2.57,
+      3.25,
+      2.57
+     ],
+     "massimo": [
+      2.65,
+      3.3,
+      2.65
+     ],
+     "media": [
+      2.54,
+      3.24,
+      2.55
+     ]
+    },
+    "p_mercato": [
+     0.3562,
+     0.2824,
+     0.3614
+    ],
+    "p_modello": [
+     0.4208,
+     0.2718,
+     0.3073
+    ],
+    "margine": 0.0104,
+    "margine_migliore": 0.0577
+   },
+   {
+    "id": "almeria-celta-b",
+    "casa": "Almeria",
+    "ospite": "Celta B",
+    "data": "2026-09-20",
+    "ora": "18:30",
+    "quote": {
+     "bet365": [
+      1.37,
+      4.5,
+      8.0
+     ],
+     "massimo": [
+      1.4,
+      5.0,
+      8.0
+     ],
+     "media": [
+      1.37,
+      4.64,
+      7.06
+     ]
+    },
+    "p_mercato": [
+     0.6932,
+     0.1893,
+     0.1175
+    ],
+    "p_modello": [
+     0.355,
+     0.2223,
+     0.4227
+    ],
+    "margine": 0.0871,
+    "margine_migliore": 0.0393
+   },
+   {
+    "id": "las-palmas-burgos",
+    "casa": "Las Palmas",
+    "ospite": "Burgos",
+    "data": "2026-09-20",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      2.06,
+      3.25,
+      4.2
+     ],
+     "bet365": [
+      1.96,
+      3.4,
+      3.75
+     ],
+     "massimo": [
+      2.05,
+      3.4,
+      3.9
+     ],
+     "media": [
+      2.01,
+      3.18,
+      3.62
+     ]
+    },
+    "p_mercato": [
+     0.4739,
+     0.2976,
+     0.2285
+    ],
+    "p_modello": [
+     0.4718,
+     0.3079,
+     0.2202
+    ],
+    "margine": 0.0312,
+    "margine_migliore": 0.0383
+   },
+   {
+    "id": "leganes-granada",
+    "casa": "Leganes",
+    "ospite": "Granada",
+    "data": "2026-09-20",
+    "ora": "21:00",
+    "quote": {
+     "betfair": [
+      1.41,
+      2.98,
+      3.25
+     ],
+     "bet365": [
+      1.96,
+      3.1,
+      4.1
+     ],
+     "massimo": [
+      2.05,
+      3.2,
+      4.1
+     ],
+     "media": [
+      1.99,
+      3.12,
+      3.77
+     ]
+    },
+    "p_mercato": [
+     0.4701,
+     0.292,
+     0.2379
+    ],
+    "p_modello": [
+     0.4092,
+     0.2944,
+     0.2964
+    ],
+    "margine": 0.0883,
+    "margine_migliore": 0.0442
+   }
+  ],
+  "bundesliga-2": [
+   {
+    "id": "greuther-furth-magdeburg",
+    "casa": "Greuther Furth",
+    "ospite": "Magdeburg",
+    "data": "2026-09-18",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      3.05,
+      3.95,
+      2.32
+     ],
+     "bet365": [
+      2.9,
+      3.6,
+      2.2
+     ],
+     "massimo": [
+      2.95,
+      3.8,
+      2.25
+     ],
+     "media": [
+      2.84,
+      3.72,
+      2.17
+     ]
+    },
+    "p_mercato": [
+     0.3239,
+     0.2494,
+     0.4267
+    ],
+    "p_modello": [
+     0.3965,
+     0.2298,
+     0.3737
+    ],
+    "margine": 0.0121,
+    "margine_migliore": 0.0466
+   },
+   {
+    "id": "wolfsburg-darmstadt",
+    "casa": "Wolfsburg",
+    "ospite": "Darmstadt",
+    "data": "2026-09-18",
+    "ora": "18:30",
+    "quote": {
+     "betfair": [
+      1.53,
+      5.0,
+      6.2
+     ],
+     "bet365": [
+      1.48,
+      4.5,
+      5.75
+     ],
+     "massimo": [
+      1.51,
+      4.75,
+      6.0
+     ],
+     "media": [
+      1.46,
+      4.63,
+      5.58
+     ]
+    },
+    "p_mercato": [
+     0.6475,
+     0.1955,
+     0.157
+    ],
+    "p_modello": [
+     0.4244,
+     0.5443,
+     0.0313
+    ],
+    "margine": 0.0149,
+    "margine_migliore": 0.0394
+   },
+   {
+    "id": "holstein-kiel-osnabruck",
+    "casa": "Holstein Kiel",
+    "ospite": "Osnabruck",
+    "data": "2026-09-19",
+    "ora": "13:00",
+    "quote": {
+     "betfair": [
+      1.84,
+      4.4,
+      4.3
+     ],
+     "bet365": [
+      1.73,
+      4.0,
+      4.0
+     ],
+     "massimo": [
+      1.78,
+      4.0,
+      4.1
+     ],
+     "media": [
+      1.74,
+      3.95,
+      3.91
+     ]
+    },
+    "p_mercato": [
+     0.5422,
+     0.2263,
+     0.2315
+    ],
+    "p_modello": [
+     0.7524,
+     0.1636,
+     0.084
+    ],
+    "margine": 0.0033,
+    "margine_migliore": 0.0557
+   },
+   {
+    "id": "kaiserslautern-braunschweig",
+    "casa": "Kaiserslautern",
+    "ospite": "Braunschweig",
+    "data": "2026-09-19",
+    "ora": "13:00",
+    "quote": {
+     "betfair": [
+      1.99,
+      3.95,
+      3.85
+     ],
+     "bet365": [
+      1.9,
+      3.75,
+      3.6
+     ],
+     "massimo": [
+      1.95,
+      3.8,
+      3.6
+     ],
+     "media": [
+      1.9,
+      3.75,
+      3.45
+     ]
+    },
+    "p_mercato": [
+     0.4967,
+     0.2484,
+     0.2549
+    ],
+    "p_modello": [
+     0.5429,
+     0.2438,
+     0.2133
+    ],
+    "margine": 0.0154,
+    "margine_migliore": 0.0538
+   },
+   {
+    "id": "karlsruhe-nurnberg",
+    "casa": "Karlsruhe",
+    "ospite": "Nurnberg",
+    "data": "2026-09-19",
+    "ora": "13:00",
+    "quote": {
+     "betfair": [
+      2.98,
+      3.95,
+      2.22
+     ],
+     "bet365": [
+      2.88,
+      3.9,
+      2.1
+     ],
+     "massimo": [
+      2.95,
+      4.0,
+      2.2
+     ],
+     "media": [
+      2.81,
+      3.87,
+      2.13
+     ]
+    },
+    "p_mercato": [
+     0.3226,
+     0.241,
+     0.4364
+    ],
+    "p_modello": [
+     0.4272,
+     0.2358,
+     0.337
+    ],
+    "margine": 0.0392,
+    "margine_migliore": 0.0435
+   },
+   {
+    "id": "dresden-hertha",
+    "casa": "Dresden",
+    "ospite": "Hertha",
+    "data": "2026-09-19",
+    "ora": "20:30",
+    "quote": {
+     "betfair": [
+      2.86,
+      4.1,
+      2.36
+     ],
+     "bet365": [
+      2.63,
+      3.7,
+      2.3
+     ],
+     "massimo": [
+      2.7,
+      4.0,
+      2.4
+     ],
+     "media": [
+      2.65,
+      3.86,
+      2.23
+     ]
+    },
+    "p_mercato": [
+     0.3438,
+     0.2386,
+     0.4176
+    ],
+    "p_modello": [
+     0.4318,
+     0.2588,
+     0.3094
+    ],
+    "margine": 0.0173,
+    "margine_migliore": 0.037
+   },
+   {
+    "id": "bielefeld-heidenheim",
+    "casa": "Bielefeld",
+    "ospite": "Heidenheim",
+    "data": "2026-09-20",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      2.18,
+      3.85,
+      3.35
+     ],
+     "bet365": [
+      2.1,
+      3.6,
+      3.1
+     ],
+     "massimo": [
+      2.1,
+      3.8,
+      3.2
+     ],
+     "media": [
+      2.04,
+      3.64,
+      3.1
+     ]
+    },
+    "p_mercato": [
+     0.4526,
+     0.2544,
+     0.293
+    ],
+    "p_modello": [
+     0.8538,
+     0.0777,
+     0.0685
+    ],
+    "margine": 0.017,
+    "margine_migliore": 0.0518
+   },
+   {
+    "id": "cottbus-st-pauli",
+    "casa": "Cottbus",
+    "ospite": "St Pauli",
+    "data": "2026-09-20",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      3.25,
+      4.2,
+      2.16
+     ],
+     "bet365": [
+      3.0,
+      3.7,
+      2.1
+     ],
+     "massimo": [
+      3.1,
+      3.9,
+      2.15
+     ],
+     "media": [
+      2.95,
+      3.75,
+      2.06
+     ]
+    },
+    "p_mercato": [
+     0.3048,
+     0.2354,
+     0.4598
+    ],
+    "p_modello": [
+     0.2954,
+     0.2319,
+     0.4727
+    ],
+    "margine": 0.0088,
+    "margine_migliore": 0.0441
+   },
+   {
+    "id": "hannover-bochum",
+    "casa": "Hannover",
+    "ospite": "Bochum",
+    "data": "2026-09-20",
+    "ora": "13:30",
+    "quote": {
+     "betfair": [
+      1.89,
+      3.85,
+      4.1
+     ],
+     "bet365": [
+      1.8,
+      4.0,
+      3.8
+     ],
+     "massimo": [
+      1.83,
+      4.0,
+      3.9
+     ],
+     "media": [
+      1.77,
+      3.92,
+      3.74
+     ]
+    },
+    "p_mercato": [
+     0.5167,
+     0.2495,
+     0.2338
+    ],
+    "p_modello": [
+     0.468,
+     0.2716,
+     0.2605
+    ],
+    "margine": 0.0327,
+    "margine_migliore": 0.0529
+   }
+  ],
+  "ligue-2": [
+   {
+    "id": "annecy-dijon",
+    "casa": "Annecy",
+    "ospite": "Dijon",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      2.26,
+      3.6,
+      3.5
+     ],
+     "bet365": [
+      2.1,
+      3.1,
+      3.2
+     ],
+     "massimo": [
+      2.2,
+      3.5,
+      3.3
+     ],
+     "media": [
+      2.11,
+      3.34,
+      3.21
+     ]
+    },
+    "p_mercato": [
+     0.4403,
+     0.2759,
+     0.2838
+    ],
+    "p_modello": [
+     0.5257,
+     0.3041,
+     0.1702
+    ],
+    "margine": 0.006,
+    "margine_migliore": 0.0433
+   },
+   {
+    "id": "grenoble-clermont",
+    "casa": "Grenoble",
+    "ospite": "Clermont",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      2.58,
+      3.15,
+      3.3
+     ],
+     "bet365": [
+      2.3,
+      2.8,
+      3.1
+     ],
+     "massimo": [
+      2.4,
+      3.1,
+      3.2
+     ],
+     "media": [
+      2.34,
+      3.02,
+      3.07
+     ]
+    },
+    "p_mercato": [
+     0.3848,
+     0.3148,
+     0.3004
+    ],
+    "p_modello": [
+     0.4151,
+     0.2954,
+     0.2895
+    ],
+    "margine": 0.0081,
+    "margine_migliore": 0.0517
+   },
+   {
+    "id": "laval-sochaux",
+    "casa": "Laval",
+    "ospite": "Sochaux",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      2.44,
+      3.2,
+      3.35
+     ],
+     "bet365": [
+      2.25,
+      3.0,
+      3.0
+     ],
+     "massimo": [
+      2.3,
+      3.25,
+      3.2
+     ],
+     "media": [
+      2.27,
+      3.15,
+      3.08
+     ]
+    },
+    "p_mercato": [
+     0.4025,
+     0.3057,
+     0.2918
+    ],
+    "p_modello": [
+     0.4454,
+     0.4127,
+     0.142
+    ],
+    "margine": 0.0208,
+    "margine_migliore": 0.055
+   },
+   {
+    "id": "pau-fc-dunkerque",
+    "casa": "Pau FC",
+    "ospite": "Dunkerque",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      2.38,
+      3.5,
+      3.3
+     ],
+     "bet365": [
+      2.15,
+      3.1,
+      3.0
+     ],
+     "massimo": [
+      2.3,
+      3.4,
+      3.0
+     ],
+     "media": [
+      2.23,
+      3.32,
+      2.96
+     ]
+    },
+    "p_mercato": [
+     0.417,
+     0.2829,
+     0.3001
+    ],
+    "p_modello": [
+     0.3267,
+     0.2271,
+     0.4462
+    ],
+    "margine": 0.0089,
+    "margine_migliore": 0.0622
+   },
+   {
+    "id": "reims-montpellier",
+    "casa": "Reims",
+    "ospite": "Montpellier",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      2.18,
+      3.45,
+      3.75
+     ],
+     "bet365": [
+      2.05,
+      3.1,
+      3.3
+     ],
+     "massimo": [
+      2.15,
+      3.4,
+      3.6
+     ],
+     "media": [
+      2.08,
+      3.26,
+      3.35
+     ]
+    },
+    "p_mercato": [
+     0.4532,
+     0.285,
+     0.2619
+    ],
+    "p_modello": [
+     0.4096,
+     0.2989,
+     0.2915
+    ],
+    "margine": 0.0152,
+    "margine_migliore": 0.037
+   },
+   {
+    "id": "rodez-nancy",
+    "casa": "Rodez",
+    "ospite": "Nancy",
+    "data": "2026-09-18",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      2.54,
+      3.5,
+      3.0
+     ],
+     "bet365": [
+      2.3,
+      3.1,
+      2.8
+     ],
+     "massimo": [
+      2.38,
+      3.4,
+      2.9
+     ],
+     "media": [
+      2.31,
+      3.33,
+      2.84
+     ]
+    },
+    "p_mercato": [
+     0.3893,
+     0.2816,
+     0.3291
+    ],
+    "p_modello": [
+     0.5879,
+     0.2236,
+     0.1885
+    ],
+    "margine": 0.0127,
+    "margine_migliore": 0.0591
+   },
+   {
+    "id": "boulogne-nantes",
+    "casa": "Boulogne",
+    "ospite": "Nantes",
+    "data": "2026-09-19",
+    "ora": "14:00",
+    "quote": {
+     "betfair": [
+      3.5,
+      3.3,
+      2.14
+     ],
+     "bet365": [
+      3.3,
+      3.1,
+      2.0
+     ],
+     "massimo": [
+      3.5,
+      3.3,
+      2.15
+     ],
+     "media": [
+      3.35,
+      3.22,
+      2.08
+     ]
+    },
+    "p_mercato": [
+     0.2679,
+     0.285,
+     0.447
+    ],
+    "p_modello": [
+     0.6674,
+     0.1882,
+     0.1445
+    ],
+    "margine": 0.056,
+    "margine_migliore": 0.0539
+   },
+   {
+    "id": "guingamp-red-star",
+    "casa": "Guingamp",
+    "ospite": "Red Star",
+    "data": "2026-09-19",
+    "ora": "14:00",
+    "quote": {
+     "betfair": [
+      2.54,
+      3.25,
+      2.84
+     ],
+     "bet365": [
+      2.38,
+      3.1,
+      2.6
+     ],
+     "massimo": [
+      2.45,
+      3.45,
+      2.75
+     ],
+     "media": [
+      2.41,
+      3.34,
+      2.66
+     ]
+    },
+    "p_mercato": [
+     0.3753,
+     0.2904,
+     0.3343
+    ],
+    "p_modello": [
+     0.4075,
+     0.271,
+     0.3215
+    ],
+    "margine": 0.0535,
+    "margine_migliore": 0.0617
+   },
+   {
+    "id": "metz-st-etienne",
+    "casa": "Metz",
+    "ospite": "St Etienne",
+    "data": "2026-09-19",
+    "ora": "20:00",
+    "quote": {
+     "betfair": [
+      3.75,
+      3.3,
+      1.95
+     ],
+     "bet365": [
+      3.4,
+      3.3,
+      1.9
+     ],
+     "massimo": [
+      3.5,
+      3.6,
+      2.05
+     ],
+     "media": [
+      3.36,
+      3.48,
+      1.98
+     ]
+    },
+    "p_mercato": [
+     0.2411,
+     0.2767,
+     0.4823
+    ],
+    "p_modello": [
+     0.4131,
+     0.2547,
+     0.3322
+    ],
+    "margine": 0.0825,
+    "margine_migliore": 0.0513
+   }
+  ],
+  "championship-scozia": [
+   {
+    "id": "queens-park-ayr",
+    "casa": "Queens Park",
+    "ospite": "Ayr",
+    "data": "2026-09-18",
+    "ora": "20:30",
+    "quote": {
+     "betfair": [
+      3.35,
+      3.25,
+      2.38
+     ],
+     "bet365": [
+      3.1,
+      3.1,
+      2.15
+     ],
+     "massimo": [
+      3.2,
+      3.3,
+      2.2
+     ],
+     "media": [
+      3.09,
+      3.2,
+      2.16
+     ]
+    },
+    "p_mercato": [
+     0.29,
+     0.2991,
+     0.4109
+    ],
+    "p_modello": [
+     0.3191,
+     0.3249,
+     0.356
+    ],
+    "margine": 0.0264,
+    "margine_migliore": 0.0701
+   },
+   {
+    "id": "livingston-inverness-c",
+    "casa": "Livingston",
+    "ospite": "Inverness C",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.92,
+      3.55,
+      3.85
+     ],
+     "bet365": [
+      1.83,
+      3.4,
+      3.6
+     ],
+     "massimo": [
+      1.92,
+      3.5,
+      3.85
+     ],
+     "media": [
+      1.87,
+      3.4,
+      3.67
+     ]
+    },
+    "p_mercato": [
+     0.4976,
+     0.262,
+     0.2404
+    ],
+    "p_modello": [
+     0.5058,
+     0.3612,
+     0.133
+    ],
+    "margine": 0.0623,
+    "margine_migliore": 0.0663
+   },
+   {
+    "id": "morton-dunfermline",
+    "casa": "Morton",
+    "ospite": "Dunfermline",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      4.7,
+      4.0,
+      1.69
+     ],
+     "bet365": [
+      4.0,
+      3.6,
+      1.7
+     ],
+     "massimo": [
+      4.4,
+      4.0,
+      1.75
+     ],
+     "media": [
+      4.24,
+      3.71,
+      1.69
+     ]
+    },
+    "p_mercato": [
+     0.1965,
+     0.2332,
+     0.5704
+    ],
+    "p_modello": [
+     0.3137,
+     0.3369,
+     0.3494
+    ],
+    "margine": 0.0545,
+    "margine_migliore": 0.0487
+   },
+   {
+    "id": "partick-raith-rvs",
+    "casa": "Partick",
+    "ospite": "Raith Rvs",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.93,
+      3.3,
+      3.75
+     ],
+     "bet365": [
+      1.8,
+      3.4,
+      3.75
+     ],
+     "massimo": [
+      1.94,
+      3.45,
+      3.8
+     ],
+     "media": [
+      1.89,
+      3.36,
+      3.67
+     ]
+    },
+    "p_mercato": [
+     0.4856,
+     0.275,
+     0.2395
+    ],
+    "p_modello": [
+     0.4536,
+     0.3093,
+     0.2371
+    ],
+    "margine": 0.0878,
+    "margine_migliore": 0.0685
+   },
+   {
+    "id": "stenhousemuir-arbroath",
+    "casa": "Stenhousemuir",
+    "ospite": "Arbroath",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.95,
+      3.35,
+      4.5
+     ],
+     "bet365": [
+      1.85,
+      3.25,
+      3.6
+     ],
+     "massimo": [
+      1.95,
+      3.3,
+      4.2
+     ],
+     "media": [
+      1.89,
+      3.19,
+      3.9
+     ]
+    },
+    "p_mercato": [
+     0.5002,
+     0.2877,
+     0.2121
+    ],
+    "p_modello": [
+     0.7878,
+     0.1835,
+     0.0287
+    ],
+    "margine": 0.0336,
+    "margine_migliore": 0.0539
+   }
+  ],
+  "league-one-scozia": [
+   {
+    "id": "alloa-east-kilbride",
+    "casa": "Alloa",
+    "ospite": "East Kilbride",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.66,
+      3.55,
+      2.58
+     ],
+     "bet365": [
+      2.45,
+      3.4,
+      2.55
+     ],
+     "massimo": [
+      2.5,
+      3.5,
+      2.57
+     ],
+     "media": [
+      2.43,
+      3.4,
+      2.52
+     ]
+    },
+    "p_mercato": [
+     0.3606,
+     0.2674,
+     0.3721
+    ],
+    "p_modello": [
+     0.3849,
+     0.2534,
+     0.3617
+    ],
+    "margine": 0.0452,
+    "margine_migliore": 0.0748
+   },
+   {
+    "id": "cove-rangers-ross-county",
+    "casa": "Cove Rangers",
+    "ospite": "Ross County",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      7.0,
+      1.12,
+      1.3
+     ],
+     "bet365": [
+      7.5,
+      4.33,
+      1.36
+     ],
+     "massimo": [
+      8.0,
+      5.0,
+      1.37
+     ],
+     "media": [
+      7.21,
+      4.72,
+      1.33
+     ]
+    },
+    "p_mercato": [
+     0.1105,
+     0.1811,
+     0.7084
+    ],
+    "p_modello": [
+     0.1966,
+     0.2924,
+     0.511
+    ],
+    "margine": 0.1024,
+    "margine_migliore": 0.0549
+   },
+   {
+    "id": "east-fife-montrose",
+    "casa": "East Fife",
+    "ospite": "Montrose",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.14,
+      2.88,
+      2.76
+     ],
+     "bet365": [
+      2.25,
+      3.5,
+      2.8
+     ],
+     "massimo": [
+      2.36,
+      3.5,
+      2.88
+     ],
+     "media": [
+      2.27,
+      3.28,
+      2.79
+     ]
+    },
+    "p_mercato": [
+     0.4041,
+     0.2719,
+     0.324
+    ],
+    "p_modello": [
+     0.3268,
+     0.2852,
+     0.388
+    ],
+    "margine": 0.1038,
+    "margine_migliore": 0.0567
+   },
+   {
+    "id": "hamilton-queen-of-sth",
+    "casa": "Hamilton",
+    "ospite": "Queen of Sth",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      1.26,
+      4.5,
+      7.8
+     ],
+     "bet365": [
+      1.29,
+      4.75,
+      8.5
+     ],
+     "massimo": [
+      1.29,
+      5.5,
+      9.5
+     ],
+     "media": [
+      1.26,
+      5.15,
+      8.48
+     ]
+    },
+    "p_mercato": [
+     0.7477,
+     0.1627,
+     0.0895
+    ],
+    "p_modello": [
+     0.5377,
+     0.2591,
+     0.2031
+    ],
+    "margine": 0.1058,
+    "margine_migliore": 0.0623
+   },
+   {
+    "id": "peterhead-airdrie-utd",
+    "casa": "Peterhead",
+    "ospite": "Airdrie Utd",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.68,
+      2.82,
+      2.1
+     ],
+     "bet365": [
+      2.88,
+      3.4,
+      2.2
+     ],
+     "massimo": [
+      2.9,
+      3.4,
+      2.3
+     ],
+     "media": [
+      2.87,
+      3.25,
+      2.23
+     ]
+    },
+    "p_mercato": [
+     0.3141,
+     0.2744,
+     0.4116
+    ],
+    "p_modello": [
+     0.6021,
+     0.2552,
+     0.1428
+    ],
+    "margine": 0.1046,
+    "margine_migliore": 0.0737
+   }
+  ],
+  "league-two-scozia": [
+   {
+    "id": "dumbarton-spartans",
+    "casa": "Dumbarton",
+    "ospite": "Spartans",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      3.35,
+      3.45,
+      1.64
+     ],
+     "bet365": [
+      3.75,
+      3.8,
+      1.7
+     ],
+     "massimo": [
+      3.9,
+      4.0,
+      1.78
+     ],
+     "media": [
+      3.8,
+      3.83,
+      1.71
+     ]
+    },
+    "p_mercato": [
+     0.2296,
+     0.2276,
+     0.5429
+    ],
+    "p_modello": [
+     0.2738,
+     0.2568,
+     0.4695
+    ],
+    "margine": 0.109,
+    "margine_migliore": 0.0682
+   },
+   {
+    "id": "elgin-stranraer",
+    "casa": "Elgin",
+    "ospite": "Stranraer",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.04,
+      3.3,
+      3.05
+     ],
+     "bet365": [
+      2.05,
+      3.5,
+      2.9
+     ],
+     "massimo": [
+      2.05,
+      3.6,
+      3.25
+     ],
+     "media": [
+      2.0,
+      3.48,
+      3.15
+     ]
+    },
+    "p_mercato": [
+     0.4617,
+     0.2545,
+     0.2838
+    ],
+    "p_modello": [
+     0.4623,
+     0.2775,
+     0.2602
+    ],
+    "margine": 0.1048,
+    "margine_migliore": 0.0733
+   },
+   {
+    "id": "forfar-annan-athletic",
+    "casa": "Forfar",
+    "ospite": "Annan Athletic",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.72,
+      3.15,
+      2.4
+     ],
+     "bet365": [
+      2.6,
+      3.3,
+      2.35
+     ],
+     "massimo": [
+      2.71,
+      3.4,
+      2.45
+     ],
+     "media": [
+      2.64,
+      3.26,
+      2.38
+     ]
+    },
+    "p_mercato": [
+     0.3337,
+     0.2848,
+     0.3815
+    ],
+    "p_modello": [
+     0.4829,
+     0.2779,
+     0.2392
+    ],
+    "margine": 0.1018,
+    "margine_migliore": 0.0713
+   },
+   {
+    "id": "kelty-hearts-edinburgh-city",
+    "casa": "Kelty Hearts",
+    "ospite": "Edinburgh City",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      2.5,
+      3.25,
+      2.42
+     ],
+     "bet365": [
+      2.2,
+      3.4,
+      2.75
+     ],
+     "massimo": [
+      2.38,
+      3.6,
+      2.75
+     ],
+     "media": [
+      2.31,
+      3.4,
+      2.63
+     ]
+    },
+    "p_mercato": [
+     0.3955,
+     0.2604,
+     0.3442
+    ],
+    "p_modello": [
+     0.4711,
+     0.207,
+     0.3219
+    ],
+    "margine": 0.1072,
+    "margine_migliore": 0.0616
+   },
+   {
+    "id": "stirling-clyde",
+    "casa": "Stirling",
+    "ospite": "Clyde",
+    "data": "2026-09-19",
+    "ora": "16:00",
+    "quote": {
+     "betfair": [
+      3.5,
+      4.0,
+      1.77
+     ],
+     "bet365": [
+      3.6,
+      4.0,
+      1.7
+     ],
+     "massimo": [
+      3.9,
+      4.2,
+      1.78
+     ],
+     "media": [
+      3.74,
+      3.93,
+      1.71
+     ]
+    },
+    "p_mercato": [
+     0.2541,
+     0.2193,
+     0.5266
+    ],
+    "p_modello": [
+     0.3007,
+     0.2455,
+     0.4538
+    ],
+    "margine": 0.1007,
+    "margine_migliore": 0.0563
+   }
+  ]
  }
 }
