@@ -290,26 +290,45 @@ def tabellino(lega_espn: str, id_evento: str) -> dict[str, tuple[float, float]]:
     return fuori
 
 
-def _giorni(da: date, a: date, passo: int = 9) -> list[str]:
-    """ESPN accetta intervalli; li spezziamo per non chiedere troppo in una volta."""
-    fuori, cursore = [], da
-    while cursore <= a:
-        fine = min(cursore + timedelta(days=passo), a)
-        fuori.append(f"{cursore:%Y%m%d}-{fine:%Y%m%d}")
-        cursore = fine + timedelta(days=1)
+def _mesi(da: date, a: date) -> list[str]:
+    """I mesi da interrogare, nel formato che ESPN accetta: `YYYYMM`.
+
+    Qui c'erano gli intervalli `YYYYMMDD-YYYYMMDD`, e hanno funzionato fino a
+    meta' settembre 2026. Poi ESPN ha smesso di accettarli: ogni intervallo
+    risponde `400 Bad Request`, mentre la singola data continua a funzionare.
+    Nessun annuncio, ovviamente — e' l'endpoint che alimenta il loro sito, non
+    un'API con un contratto, ed era scritto nel commento in testa al modulo che
+    poteva cambiare forma senza preavviso.
+
+    L'effetto era subdolo: `_chiedi` non ritenta i 4xx e restituisce None, come
+    deve, quindi niente si rompeva — semplicemente non arrivava piu' nessun
+    risultato nuovo, in silenzio, mentre il sito continuava a pubblicare.
+
+    Il mese e' anche meglio di prima: una richiesta copre trenta giorni dove
+    gli intervalli ne coprivano dieci.
+    """
+    fuori, anno, mese = [], da.year, da.month
+    while (anno, mese) <= (a.year, a.month):
+        fuori.append(f"{anno}{mese:02d}")
+        anno, mese = (anno + 1, 1) if mese == 12 else (anno, mese + 1)
     return fuori
 
 
 def partite_finite(lega_espn: str, da: date, a: date) -> list[dict]:
     """Le partite concluse nell'intervallo, coi nomi ancora quelli di ESPN."""
     fuori = []
-    for intervallo in _giorni(da, a):
-        d = _chiedi(f"{BASE}/{lega_espn}/scoreboard?dates={intervallo}")
+    dal, al = da.isoformat(), a.isoformat()
+    for mese in _mesi(da, a):
+        d = _chiedi(f"{BASE}/{lega_espn}/scoreboard?dates={mese}")
         if not d:
             continue
         for e in d.get("events", []):
             gare = e.get("competitions") or []
             if not gare:
+                continue
+            # Il mese restituisce tutto il mese: si tiene solo la finestra
+            # chiesta, altrimenti si raccolgono partite fuori stagione.
+            if not (dal <= e.get("date", "")[:10] <= al):
                 continue
             g = gare[0]
             if g.get("status", {}).get("type", {}).get("name") != "STATUS_FULL_TIME":
@@ -344,13 +363,16 @@ def partite_in_programma(lega_espn: str, da: date, a: date) -> list[dict]:
     questo sito si regge sul non averne. Le quote restano football-data.
     """
     fuori = []
-    for intervallo in _giorni(da, a, passo=29):
-        d = _chiedi(f"{BASE}/{lega_espn}/scoreboard?dates={intervallo}")
+    dal, al = da.isoformat(), a.isoformat()
+    for mese in _mesi(da, a):
+        d = _chiedi(f"{BASE}/{lega_espn}/scoreboard?dates={mese}")
         if not d:
             continue
         for e in d.get("events", []):
             gare = e.get("competitions") or []
             if not gare:
+                continue
+            if not (dal <= e.get("date", "")[:10] <= al):
                 continue
             g = gare[0]
             if g.get("status", {}).get("type", {}).get("name") != "STATUS_SCHEDULED":

@@ -144,6 +144,11 @@ def leggi_alias(testo: str) -> dict[str, str]:
     return fuori
 
 
+def _pulisci(nome: str) -> str:
+    """Il nome senza le annotazioni fra parentesi quadre, e senza spazi doppi."""
+    return re.sub(r"\s+", " ", re.sub(r"\[[^\]]*\]", "", nome)).strip()
+
+
 def leggi_calendario(testo: str) -> list[Incontro]:
     """Legge un file di openfootball e restituisce le partite in ordine."""
     partite: list[Incontro] = []
@@ -190,7 +195,11 @@ def leggi_calendario(testo: str) -> list[Incontro]:
             corpo = corpo[: p.start()]
 
         casa, _, ospite = corpo.partition(" v ")
-        casa, ospite = casa.strip(), ospite.strip()
+        # openfootball annota i rinvii in coda al nome dell'ospite:
+        # "Athletic Club            [postponed]". Senza toglierla, quella nota
+        # diventa parte del nome — compariva tale e quale nel calendario di
+        # stagione — e impedisce anche di riconoscere la squadra.
+        casa, ospite = _pulisci(casa), _pulisci(ospite)
         if not casa or not ospite:
             continue
 

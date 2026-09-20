@@ -4,13 +4,13 @@
   {
    "tipo": "gol_lega",
    "titolo": "Il campionato dove si segna di piu' e' Bundesliga",
-   "testo": "3.20 gol a partita, contando tutte le gare delle ultime stagioni.",
-   "numero": "3.20",
+   "testo": "3.22 gol a partita, contando tutte le gare delle ultime stagioni.",
+   "numero": "3.22",
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 926
+   "campione": 950
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,18 +21,18 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1408
+   "campione": 1447
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta piu' che altrove in LaLiga 2",
-   "testo": "La squadra di casa vince il 46% delle partite.",
-   "numero": "46%",
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
+   "titolo": "Giocare in casa conta piu' che altrove in National League",
+   "testo": "La squadra di casa vince il 47% delle partite.",
+   "numero": "47%",
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
    "squadre": [],
-   "campione": 1408
+   "campione": 108
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1150
+   "campione": 1186
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 714
+   "campione": 738
   },
   {
    "tipo": "corner",
@@ -65,7 +65,7 @@
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 697
+   "campione": 725
   }
  ],
  "per_campionato": {
@@ -86,15 +86,15 @@
    {
     "tipo": "fragilita",
     "titolo": "Cagliari non tiene il vantaggio",
-    "testo": "Avanti al riposo 18 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "56%",
+    "testo": "Avanti al riposo 19 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "53%",
     "campionato": "Serie A",
     "bandiera": "🇮🇹",
     "slug": "serie-a",
     "squadre": [
      "Cagliari"
     ],
-    "campione": 18
+    "campione": 19
    },
    {
     "tipo": "sorpresa_mercato",
@@ -141,42 +141,42 @@
    },
    {
     "tipo": "fragilita",
-    "titolo": "Ipswich non tiene il vantaggio",
+    "titolo": "Sunderland non tiene il vantaggio",
     "testo": "Avanti al riposo 8 volte nelle ultime stagioni, non ha vinto 4 di quelle partite. Nessuno in campionato ne butta via tanti.",
     "numero": "50%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
-     "Ipswich"
+     "Sunderland"
     ],
     "campione": 8
    },
    {
     "tipo": "primo_tempo",
     "titolo": "Ipswich decide presto",
-    "testo": "23 dei suoi 38 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "61%",
+    "testo": "26 dei suoi 43 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "60%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Ipswich"
     ],
-    "campione": 38
+    "campione": 43
    },
    {
     "tipo": "ripresa",
     "titolo": "Sunderland vive di secondi tempi",
-    "testo": "Solo 14 dei suoi 43 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "67%",
+    "testo": "Solo 14 dei suoi 45 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "69%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Sunderland"
     ],
-    "campione": 43
+    "campione": 45
    },
    {
     "tipo": "sorpresa_mercato",
@@ -208,6 +208,32 @@
    }
   ],
   "laliga": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Barcelona non perde da 7 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "7",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Barcelona"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Malaga non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Malaga"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "rimonte",
     "titolo": "Barcelona non molla all'intervallo",
@@ -265,6 +291,19 @@
   ],
   "bundesliga": [
    {
+    "tipo": "a_secco",
+    "titolo": "Paderborn non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Paderborn"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Bayern Munich non molla all'intervallo",
     "testo": "Sotto al riposo 14 volte nelle ultime stagioni, ha finito vincendo 4: e' la quota di rimonte piu' alta del campionato.",
@@ -279,16 +318,16 @@
    },
    {
     "tipo": "fragilita",
-    "titolo": "Mainz non tiene il vantaggio",
-    "testo": "Avanti al riposo 37 volte nelle ultime stagioni, non ha vinto 15 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "41%",
+    "titolo": "FC Koln non tiene il vantaggio",
+    "testo": "Avanti al riposo 10 volte nelle ultime stagioni, non ha vinto 4 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "40%",
     "campionato": "Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga",
     "squadre": [
-     "Mainz"
+     "FC Koln"
     ],
-    "campione": 37
+    "campione": 10
    },
    {
     "tipo": "sorpresa_mercato",
@@ -323,15 +362,15 @@
    {
     "tipo": "rimonte",
     "titolo": "Monaco non molla all'intervallo",
-    "testo": "Sotto al riposo 25 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "20%",
+    "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "23%",
     "campionato": "Ligue 1",
     "bandiera": "🇫🇷",
     "slug": "ligue-1",
     "squadre": [
      "Monaco"
     ],
-    "campione": 25
+    "campione": 26
    },
    {
     "tipo": "fragilita",
@@ -377,6 +416,32 @@
   ],
   "eredivisie": [
    {
+    "tipo": "imbattuta",
+    "titolo": "PSV Eindhoven non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "PSV Eindhoven"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Willem II non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Willem II"
+    ],
+    "campione": 7
+   },
+   {
     "tipo": "rimonte",
     "titolo": "PSV Eindhoven non molla all'intervallo",
     "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 7: e' la quota di rimonte piu' alta del campionato.",
@@ -392,15 +457,15 @@
    {
     "tipo": "fragilita",
     "titolo": "Excelsior non tiene il vantaggio",
-    "testo": "Avanti al riposo 22 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "45%",
+    "testo": "Avanti al riposo 24 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "42%",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
      "Excelsior"
     ],
-    "campione": 22
+    "campione": 24
    },
    {
     "tipo": "sorpresa_mercato",
@@ -433,17 +498,30 @@
   ],
   "primeira-liga": [
    {
-    "tipo": "a_secco",
-    "titolo": "Casa Pia non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
+    "tipo": "imbattuta",
+    "titolo": "Sp Lisbon non perde da 7 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "7",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
-     "Casa Pia"
+     "Sp Lisbon"
     ],
-    "campione": 3
+    "campione": 7
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Estoril non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Primeira Liga",
+    "bandiera": "🇵🇹",
+    "slug": "primeira-liga",
+    "squadre": [
+     "Estoril"
+    ],
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -502,6 +580,19 @@
   ],
   "superlig": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Kasimpasa non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Kasimpasa"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Fenerbahce non molla all'intervallo",
     "testo": "Sotto al riposo 22 volte nelle ultime stagioni, ha finito vincendo 12: e' la quota di rimonte piu' alta del campionato.",
@@ -558,30 +649,82 @@
   ],
   "jupiler": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Gent non perde da 7 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "7",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Gent"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Mechelen non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Mechelen"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Anderlecht non subisce gol da 4 partite",
+    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Anderlecht"
+    ],
+    "campione": 4
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Mechelen non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Mechelen"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Waregem non molla all'intervallo",
-    "testo": "Sotto al riposo 13 volte nelle ultime stagioni, ha finito vincendo 3: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "23%",
+    "testo": "Sotto al riposo 14 volte nelle ultime stagioni, ha finito vincendo 3: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "21%",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
      "Waregem"
     ],
-    "campione": 13
+    "campione": 14
    },
    {
     "tipo": "fragilita",
     "titolo": "Oud-Heverlee Leuven non tiene il vantaggio",
-    "testo": "Avanti al riposo 24 volte nelle ultime stagioni, non ha vinto 9 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "38%",
+    "testo": "Avanti al riposo 25 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "40%",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
      "Oud-Heverlee Leuven"
     ],
-    "campione": 24
+    "campione": 25
    },
    {
     "tipo": "sorpresa_mercato",
@@ -614,17 +757,30 @@
   ],
   "super-league-grecia": [
    {
-    "tipo": "rimonte",
-    "titolo": "PAOK non molla all'intervallo",
-    "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 4: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "25%",
+    "tipo": "a_secco",
+    "titolo": "Levadeiakos non segna da 4 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "4",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
-     "PAOK"
+     "Levadeiakos"
     ],
-    "campione": 16
+    "campione": 4
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "AEK non molla all'intervallo",
+    "testo": "Sotto al riposo 17 volte nelle ultime stagioni, ha finito vincendo 4: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "24%",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "AEK"
+    ],
+    "campione": 17
    },
    {
     "tipo": "fragilita",
@@ -642,7 +798,7 @@
    {
     "tipo": "primo_tempo",
     "titolo": "OFI Crete decide presto",
-    "testo": "69 dei suoi 121 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "testo": "71 dei suoi 125 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
     "numero": "57%",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
@@ -650,7 +806,7 @@
     "squadre": [
      "OFI Crete"
     ],
-    "campione": 121
+    "campione": 125
    },
    {
     "tipo": "sorpresa_mercato",
@@ -683,30 +839,43 @@
   ],
   "premiership": [
    {
-    "tipo": "rimonte",
-    "titolo": "Celtic non molla all'intervallo",
-    "testo": "Sotto al riposo 15 volte nelle ultime stagioni, ha finito vincendo 4: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "27%",
+    "tipo": "imbattuta",
+    "titolo": "Celtic non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
     "campionato": "Premiership",
     "bandiera": "🏴",
     "slug": "premiership",
     "squadre": [
      "Celtic"
     ],
-    "campione": 15
+    "campione": 6
+   },
+   {
+    "tipo": "rimonte",
+    "titolo": "Celtic non molla all'intervallo",
+    "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "31%",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Celtic"
+    ],
+    "campione": 16
    },
    {
     "tipo": "fragilita",
     "titolo": "Dundee United non tiene il vantaggio",
-    "testo": "Avanti al riposo 18 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "56%",
+    "testo": "Avanti al riposo 19 volte nelle ultime stagioni, non ha vinto 10 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "53%",
     "campionato": "Premiership",
     "bandiera": "🏴",
     "slug": "premiership",
     "squadre": [
      "Dundee United"
     ],
-    "campione": 18
+    "campione": 19
    },
    {
     "tipo": "sorpresa_mercato",
@@ -739,30 +908,43 @@
   ],
   "serie-b": [
    {
+    "tipo": "a_secco",
+    "titolo": "Carrarese non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Carrarese"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Catanzaro non molla all'intervallo",
-    "testo": "Sotto al riposo 32 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "16%",
+    "testo": "Sotto al riposo 33 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "15%",
     "campionato": "Serie B",
     "bandiera": "🇮🇹",
     "slug": "serie-b",
     "squadre": [
      "Catanzaro"
     ],
-    "campione": 32
+    "campione": 33
    },
    {
     "tipo": "fragilita",
     "titolo": "Sampdoria non tiene il vantaggio",
-    "testo": "Avanti al riposo 28 volte nelle ultime stagioni, non ha vinto 13 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "46%",
+    "testo": "Avanti al riposo 29 volte nelle ultime stagioni, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "48%",
     "campionato": "Serie B",
     "bandiera": "🇮🇹",
     "slug": "serie-b",
     "squadre": [
      "Sampdoria"
     ],
-    "campione": 28
+    "campione": 29
    },
    {
     "tipo": "sorpresa_mercato",
@@ -795,6 +977,32 @@
   ],
   "championship": [
    {
+    "tipo": "imbattuta",
+    "titolo": "West Ham non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "West Ham"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Burnley non vince da 8 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "8",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Burnley"
+    ],
+    "campione": 8
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Southampton non molla all'intervallo",
     "testo": "Sotto al riposo 21 volte nelle ultime stagioni, ha finito vincendo 7: e' la quota di rimonte piu' alta del campionato.",
@@ -809,29 +1017,29 @@
    },
    {
     "tipo": "fragilita",
-    "titolo": "Wrexham non tiene il vantaggio",
-    "testo": "Avanti al riposo 17 volte nelle ultime stagioni, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "47%",
+    "titolo": "Cardiff non tiene il vantaggio",
+    "testo": "Avanti al riposo 18 volte nelle ultime stagioni, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "44%",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "Wrexham"
+     "Cardiff"
     ],
-    "campione": 17
+    "campione": 18
    },
    {
-    "tipo": "primo_tempo",
-    "titolo": "Burnley decide presto",
-    "testo": "40 dei suoi 72 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "56%",
+    "tipo": "ripresa",
+    "titolo": "Charlton vive di secondi tempi",
+    "testo": "Solo 16 dei suoi 51 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "69%",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "Burnley"
+     "Charlton"
     ],
-    "campione": 72
+    "campione": 51
    },
    {
     "tipo": "sorpresa_mercato",
@@ -864,9 +1072,35 @@
   ],
   "league-one": [
    {
+    "tipo": "digiuno",
+    "titolo": "Milton Keynes Dons non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Milton Keynes Dons"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Wigan non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Wigan"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Stockport non molla all'intervallo",
-    "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
+    "testo": "Sotto al riposo 27 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
     "numero": "19%",
     "campionato": "League One",
     "bandiera": "🏴",
@@ -874,20 +1108,20 @@
     "squadre": [
      "Stockport"
     ],
-    "campione": 26
+    "campione": 27
    },
    {
     "tipo": "fragilita",
-    "titolo": "Barnsley non tiene il vantaggio",
-    "testo": "Avanti al riposo 49 volte nelle ultime stagioni, non ha vinto 20 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "titolo": "Burton non tiene il vantaggio",
+    "testo": "Avanti al riposo 37 volte nelle ultime stagioni, non ha vinto 15 di quelle partite. Nessuno in campionato ne butta via tanti.",
     "numero": "41%",
     "campionato": "League One",
     "bandiera": "🏴",
     "slug": "league-one",
     "squadre": [
-     "Barnsley"
+     "Burton"
     ],
-    "campione": 49
+    "campione": 37
    },
    {
     "tipo": "sorpresa_mercato",
@@ -920,43 +1154,69 @@
   ],
   "league-two": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Walsall non perde da 7 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "7",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Walsall"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Newport County non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Newport County"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Exeter non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Exeter"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Fleetwood Town non molla all'intervallo",
-    "testo": "Sotto al riposo 25 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "20%",
+    "testo": "Sotto al riposo 27 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "19%",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
      "Fleetwood Town"
     ],
-    "campione": 25
+    "campione": 27
    },
    {
     "tipo": "fragilita",
-    "titolo": "Tranmere non tiene il vantaggio",
-    "testo": "Avanti al riposo 37 volte nelle ultime stagioni, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "38%",
+    "titolo": "Barnet non tiene il vantaggio",
+    "testo": "Avanti al riposo 17 volte nelle ultime stagioni, non ha vinto 7 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "41%",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
-     "Tranmere"
+     "Barnet"
     ],
-    "campione": 37
-   },
-   {
-    "tipo": "ripresa",
-    "titolo": "Cheltenham vive di secondi tempi",
-    "testo": "Solo 38 dei suoi 116 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "67%",
-    "campionato": "League Two",
-    "bandiera": "🏴",
-    "slug": "league-two",
-    "squadre": [
-     "Cheltenham"
-    ],
-    "campione": 116
+    "campione": 17
    },
    {
     "tipo": "sorpresa_mercato",
@@ -989,6 +1249,45 @@
   ],
   "national-league": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Boreham Wood non perde da 9 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "9",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Boreham Wood"
+    ],
+    "campione": 9
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Gateshead non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Gateshead"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Boreham Wood vive di secondi tempi",
+    "testo": "Solo 4 dei suoi 23 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "83%",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Boreham Wood"
+    ],
+    "campione": 23
+   },
+   {
     "tipo": "sorpresa_mercato",
     "titolo": "Rochdale 2-4 Morecambe",
     "testo": "03/04/2026: che Morecambe vinceva in casa di Rochdale era pagato 12.00, cioe' circa 8% di probabilita' secondo il mercato.",
@@ -1019,6 +1318,45 @@
   ],
   "laliga-2": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Castellon non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Castellon"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Cadiz non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Cadiz"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Mallorca non subisce gol da 4 partite",
+    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Mallorca"
+    ],
+    "campione": 4
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Eibar non molla all'intervallo",
     "testo": "Sotto al riposo 28 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
@@ -1047,7 +1385,7 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ceuta decide presto",
-    "testo": "30 dei suoi 52 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "testo": "31 dei suoi 53 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
     "numero": "58%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
@@ -1055,12 +1393,12 @@
     "squadre": [
      "Ceuta"
     ],
-    "campione": 52
+    "campione": 53
    },
    {
     "tipo": "ripresa",
     "titolo": "Andorra vive di secondi tempi",
-    "testo": "Solo 33 dei suoi 102 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "testo": "Solo 33 dei suoi 104 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
     "numero": "68%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
@@ -1068,7 +1406,7 @@
     "squadre": [
      "Andorra"
     ],
-    "campione": 102
+    "campione": 104
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1101,6 +1439,32 @@
   ],
   "bundesliga-2": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Nurnberg non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Nurnberg"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Holstein Kiel non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Holstein Kiel"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Hannover non molla all'intervallo",
     "testo": "Sotto al riposo 25 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
@@ -1116,28 +1480,28 @@
    {
     "tipo": "fragilita",
     "titolo": "Darmstadt non tiene il vantaggio",
-    "testo": "Avanti al riposo 17 volte nelle ultime stagioni, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "47%",
+    "testo": "Avanti al riposo 18 volte nelle ultime stagioni, non ha vinto 8 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "44%",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Darmstadt"
     ],
-    "campione": 17
+    "campione": 18
    },
    {
     "tipo": "primo_tempo",
     "titolo": "Dresden decide presto",
-    "testo": "33 dei suoi 55 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "60%",
+    "testo": "36 dei suoi 62 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "58%",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Dresden"
     ],
-    "campione": 55
+    "campione": 62
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1170,17 +1534,43 @@
   ],
   "ligue-2": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Reims non perde da 7 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "7",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Reims"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Clermont non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "Ligue 2",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-2",
+    "squadre": [
+     "Clermont"
+    ],
+    "campione": 7
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Rodez non molla all'intervallo",
-    "testo": "Sotto al riposo 34 volte nelle ultime stagioni, ha finito vincendo 9: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "26%",
+    "testo": "Sotto al riposo 37 volte nelle ultime stagioni, ha finito vincendo 9: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "24%",
     "campionato": "Ligue 2",
     "bandiera": "🇫🇷",
     "slug": "ligue-2",
     "squadre": [
      "Rodez"
     ],
-    "campione": 34
+    "campione": 37
    },
    {
     "tipo": "fragilita",
@@ -1198,15 +1588,15 @@
    {
     "tipo": "ripresa",
     "titolo": "Boulogne vive di secondi tempi",
-    "testo": "Solo 9 dei suoi 35 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "74%",
+    "testo": "Solo 10 dei suoi 37 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "73%",
     "campionato": "Ligue 2",
     "bandiera": "🇫🇷",
     "slug": "ligue-2",
     "squadre": [
      "Boulogne"
     ],
-    "campione": 35
+    "campione": 37
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1239,6 +1629,32 @@
   ],
   "championship-scozia": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Stenhousemuir non perde da 7 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "7",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Stenhousemuir"
+    ],
+    "campione": 7
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Morton non vince da 7 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "7",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Morton"
+    ],
+    "campione": 7
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Partick non molla all'intervallo",
     "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 3: e' la quota di rimonte piu' alta del campionato.",
@@ -1263,6 +1679,19 @@
      "Morton"
     ],
     "campione": 31
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Arbroath vive di secondi tempi",
+    "testo": "Solo 27 dei suoi 82 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "67%",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Arbroath"
+    ],
+    "campione": 82
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1295,43 +1724,69 @@
   ],
   "league-one-scozia": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Ross County non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "League One scozzese",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Ross County"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "porta_chiusa",
-    "titolo": "Hamilton non subisce gol da 4 partite",
+    "titolo": "Hamilton non subisce gol da 6 partite",
     "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
-    "numero": "4",
+    "numero": "6",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
     "slug": "league-one-scozia",
     "squadre": [
      "Hamilton"
     ],
-    "campione": 4
+    "campione": 6
    },
    {
     "tipo": "rimonte",
     "titolo": "Alloa non molla all'intervallo",
-    "testo": "Sotto al riposo 34 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "18%",
+    "testo": "Sotto al riposo 36 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "17%",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
     "slug": "league-one-scozia",
     "squadre": [
      "Alloa"
     ],
-    "campione": 34
+    "campione": 36
    },
    {
     "tipo": "fragilita",
     "titolo": "Montrose non tiene il vantaggio",
-    "testo": "Avanti al riposo 35 volte nelle ultime stagioni, non ha vinto 12 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "34%",
+    "testo": "Avanti al riposo 38 volte nelle ultime stagioni, non ha vinto 12 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "32%",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
     "slug": "league-one-scozia",
     "squadre": [
      "Montrose"
     ],
-    "campione": 35
+    "campione": 38
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Ross County vive di secondi tempi",
+    "testo": "Solo 6 dei suoi 20 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "70%",
+    "campionato": "League One scozzese",
+    "bandiera": "🏴",
+    "slug": "league-one-scozia",
+    "squadre": [
+     "Ross County"
+    ],
+    "campione": 20
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1364,30 +1819,30 @@
   ],
   "league-two-scozia": [
    {
+    "tipo": "digiuno",
+    "titolo": "Stirling non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "League Two scozzese",
+    "bandiera": "🏴",
+    "slug": "league-two-scozia",
+    "squadre": [
+     "Stirling"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "fragilita",
     "titolo": "Annan Athletic non tiene il vantaggio",
-    "testo": "Avanti al riposo 11 volte nelle ultime stagioni, non ha vinto 5 di quelle partite. Nessuno in campionato ne butta via tanti.",
-    "numero": "45%",
+    "testo": "Avanti al riposo 12 volte nelle ultime stagioni, non ha vinto 5 di quelle partite. Nessuno in campionato ne butta via tanti.",
+    "numero": "42%",
     "campionato": "League Two scozzese",
     "bandiera": "🏴",
     "slug": "league-two-scozia",
     "squadre": [
      "Annan Athletic"
     ],
-    "campione": 11
-   },
-   {
-    "tipo": "primo_tempo",
-    "titolo": "Forfar decide presto",
-    "testo": "68 dei suoi 123 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "55%",
-    "campionato": "League Two scozzese",
-    "bandiera": "🏴",
-    "slug": "league-two-scozia",
-    "squadre": [
-     "Forfar"
-    ],
-    "campione": 123
+    "campione": 12
    },
    {
     "tipo": "sorpresa_mercato",

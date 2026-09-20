@@ -163,3 +163,32 @@ def test_un_orario_mancante_non_fa_esplodere_niente():
 
     assert ora_italiana("", date(2026, 8, 22)) == ""
     assert ora_italiana("boh", date(2026, 8, 22)) == "boh"
+
+
+# --- gli intervalli di ESPN ----------------------------------------------
+
+def test_i_mesi_coprono_tutta_la_finestra():
+    """ESPN ha smesso di accettare gli intervalli di date: ora si chiede il mese.
+
+    Gli intervalli `YYYYMMDD-YYYYMMDD` hanno funzionato fino a meta' settembre
+    2026, poi hanno cominciato a rispondere 400. Non si rompeva niente — i 4xx
+    non si ritentano e la richiesta torna vuota — ma smetteva di arrivare ogni
+    risultato nuovo, in silenzio.
+    """
+    from engine.dati.espn import _mesi
+
+    assert _mesi(date(2026, 7, 1), date(2026, 9, 20)) == ["202607", "202608", "202609"]
+
+
+def test_un_mese_solo_quando_la_finestra_sta_dentro_un_mese():
+    from engine.dati.espn import _mesi
+
+    assert _mesi(date(2026, 9, 3), date(2026, 9, 28)) == ["202609"]
+
+
+def test_i_mesi_attraversano_il_capodanno():
+    from engine.dati.espn import _mesi
+
+    assert _mesi(date(2026, 11, 20), date(2027, 2, 2)) == [
+        "202611", "202612", "202701", "202702",
+    ]

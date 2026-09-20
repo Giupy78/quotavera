@@ -478,11 +478,28 @@ def stagioni(prima: int, ultima: int) -> list[str]:
 
 
 def carica(campionato: str, stagioni_volute: list[str]) -> list[PartitaStorica]:
-    """Scarica e legge piu' stagioni di un campionato, in ordine di data."""
+    """Scarica e legge piu' stagioni di un campionato, in ordine di data.
+
+    La stagione **in corso** si riscarica sempre; quelle concluse si leggono
+    dalla copia su disco, perche' non cambieranno mai piu'.
+
+    Questa distinzione mancava, ed e' costata tre settimane di dati. `scarica`
+    ha sempre restituito la copia locale quando esisteva, e finche'
+    `data/grezzi` non era versionata sulla macchina di GitHub non esisteva mai:
+    ogni notte riscaricava tutto, e nessuno se n'era accorto. Mettendo i CSV nel
+    repository — che serviva, e continua a servire — il file c'era sempre, e da
+    quel giorno la stagione in corso non e' piu' stata aggiornata: le classifiche
+    di tutti e ventidue i campionati sono rimaste ferme a una giornata.
+
+    Il guaio e' che non si vedeva da nessuna parte. Il lavoro notturno girava,
+    committava, il sito si rigenerava: solo che rigenerava sempre gli stessi
+    numeri.
+    """
+    recente = max(stagioni_volute) if stagioni_volute else None
     tutte: list[PartitaStorica] = []
     for s in stagioni_volute:
         try:
-            tutte.extend(leggi(scarica(campionato, s), campionato))
+            tutte.extend(leggi(scarica(campionato, s, forza=(s == recente)), campionato))
         except Exception as errore:      # una stagione mancante non ferma il resto
             print(f"  ! {campionato} {s}: {errore}")
     tutte.sort(key=lambda p: p.incontro.data)
