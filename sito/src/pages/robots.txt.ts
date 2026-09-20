@@ -6,32 +6,32 @@ import type { APIRoute } from "astro";
 
 const indicizzabile = import.meta.env.PUBLIC_NOINDEX !== "1";
 
-/* I crawler che raccolgono testo per addestrare modelli.
+/* Gli assistenti AI sono lasciati entrare apposta.
+ *
+ * Il criterio è uno solo: il crawler restituisce qualcosa? Chi indicizza per
+ * citare il sito nelle risposte porta lettori, ed è lo stesso motivo per cui
+ * lasciamo entrare Google. Chi aspira testo e non rimanda nessuno indietro
+ * resta fuori: è la lista qui sotto.
  *
  * Due note che valgono più della lista:
  *
- * 1. `Google-Extended` e `Applebot-Extended` bloccano SOLO l'uso per
- *    l'addestramento. Non toccano `Googlebot` né `Applebot`, quindi il
- *    posizionamento nella ricerca resta intatto. Bloccare `Googlebot` invece
- *    farebbe sparire il sito da Google: sono due cose diverse e vengono
- *    confuse spesso.
+ * 1. `Google-Extended` e `Applebot-Extended` riguardano SOLO l'uso per
+ *    l'addestramento e per le risposte generate. Non toccano `Googlebot` né
+ *    `Applebot`, quindi il posizionamento nella ricerca non c'entra in nessuno
+ *    dei due sensi: aprirli non aiuta il ranking, chiuderli non lo danneggia.
+ *    Bloccare `Googlebot` invece farebbe sparire il sito da Google: sono cose
+ *    diverse e vengono confuse spesso.
  *
- * 2. `OAI-SearchBot` e `PerplexityBot` servono a *citare* il sito nelle
- *    risposte, non ad addestrare. Sono lasciati liberi apposta: per un sito
- *    che deve farsi trovare, essere citato è traffico, non un furto.
+ * 2. `OAI-SearchBot` e `PerplexityBot` non sono mai stati bloccati: servono a
+ *    citare, non ad addestrare. `ClaudeBot` e `GPTBot` invece lo erano, e
+ *    alimentano anche gli indici da cui quegli assistenti pescano le fonti.
+ *    Per un sito di pronostici, dove la domanda arriva sempre più spesso a un
+ *    assistente invece che a un motore, restare fuori da quegli indici costa
+ *    più di quanto protegga.
  */
-const ADDESTRAMENTO = [
-  "GPTBot",              // OpenAI, addestramento
-  "ClaudeBot",           // Anthropic
-  "anthropic-ai",
-  "Claude-Web",
-  "Google-Extended",     // Gemini: NON influisce sulla ricerca Google
-  "Applebot-Extended",   // Apple Intelligence: NON influisce su Siri/Spotlight
-  "CCBot",               // Common Crawl, la base di mezzo settore
+const SCRAPING = [
+  "CCBot",               // Common Crawl: archivio, non manda lettori
   "Bytespider",          // ByteDance
-  "meta-externalagent",  // Meta
-  "FacebookBot",
-  "Amazonbot",
   "cohere-ai",
   "Diffbot",
   "Omgilibot",
@@ -51,12 +51,15 @@ export const GET: APIRoute = ({ site }) => {
     "#",
     "# I dati di questo sito vengono da football-data.co.uk e sono pubblici.",
     "# Le elaborazioni, i testi e il codice sono nostri.",
+    "#",
+    "# Gli assistenti AI possono leggere e citare il sito: se portano lettori,",
+    "# sono benvenuti come qualsiasi altro motore di ricerca.",
     "",
-    "# --- Raccolta per addestrare modelli linguistici: non consentita ---",
+    "# --- Raccolta massiva senza ritorno: non consentita ---",
     "",
   ];
 
-  for (const bot of ADDESTRAMENTO) {
+  for (const bot of SCRAPING) {
     righe.push(`User-agent: ${bot}`, "Disallow: /", "");
   }
 
