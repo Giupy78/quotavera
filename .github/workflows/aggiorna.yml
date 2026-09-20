@@ -140,3 +140,17 @@ jobs:
             git commit -m "dati: aggiornamento del $(TZ=Europe/Rome date +%Y-%m-%d)"
             git push
           fi
+
+      - name: I dati pubblicati hanno senso?
+        # **Dopo** la pubblicazione, e non prima: un dato in ritardo non e' una
+        # buona ragione per non pubblicare, e il sito con i dati di ieri vale
+        # piu' di nessun sito. Se qualcosa non torna il turno diventa rosso e
+        # parte la mail, ma quello che c'era e' gia' online.
+        #
+        # Serve perche' tutti gli altri controlli guardano se il lavoro e'
+        # andato a buon fine, e a settembre il lavoro andava a buon fine mentre
+        # pubblicava per tre settimane la stessa classifica ferma a una
+        # giornata: sedici turni riusciti di fila, zero mail, zero pagine
+        # rotte. Questo invece guarda il risultato, ed e' l'unica domanda che
+        # avrebbe scoperto il guasto.
+        run: python scripts/controlla.py

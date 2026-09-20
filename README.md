@@ -142,6 +142,44 @@ Scarica lo storico e il calendario, stima un modello per campionato, calcola le
 statistiche e riscrive i JSON che il sito legge. È quello che gira ogni notte.
 
 ```bash
+.venv\Scripts\python.exe scripts\controlla.py
+```
+
+La sentinella: guarda i dati **già pubblicati** e dice se hanno senso. Esce con
+1 quando qualcosa non torna, e nel lavoro notturno gira come ultimo passo —
+dopo la pubblicazione, non prima.
+
+L'ordine non è un dettaglio. Un dato in ritardo non è una buona ragione per non
+pubblicare: il sito con i dati di ieri vale più di nessun sito. La sentinella
+serve a far diventare rosso il turno, e quindi a far partire la mail, lasciando
+che il sito esca comunque.
+
+#### Perché serviva (20 settembre 2026)
+
+Per tre settimane il sito ha pubblicato la classifica di Serie A con **una
+partita giocata**. Nel frattempo: sedici turni notturni su sedici riusciti,
+nessuna mail, nessuna pagina rotta, il commit dei dati puntuale ogni notte. Il
+processo *riusciva* — rigenerava sempre gli stessi numeri.
+
+Erano due guasti sommati. Il primo nostro: `scarica()` riusava la copia su
+disco quando esisteva, e finché `data/grezzi` non era versionata la macchina di
+GitHub nasceva vuota e riscaricava tutto, quindi il difetto non si vedeva.
+Mettendo i CSV nel repository — cosa necessaria — il file c'è sempre, e la
+stagione in corso ha smesso di aggiornarsi. Il secondo di ESPN: ha smesso di
+accettare gli intervalli di date (`400`), e siccome i 4xx non si ritentano la
+richiesta tornava vuota senza rompere niente. Ora si chiede il mese.
+
+Nessuno dei controlli che avevamo poteva accorgersene, perché guardavano tutti
+**se il lavoro era andato a buon fine**. Anche l'avviso in fondo al sito guarda
+quando abbiamo girato, non cosa abbiamo prodotto.
+
+La sentinella è stata provata contro i dati rotti di quel giorno prima di
+essere messa in produzione: li segnala tutti e due. Vale la pena sapere che il
+controllo sulle partite senza risultato da solo *non* sarebbe bastato —
+openfootball riempiva i buchi coi suoi dati settimanali — e che a vederlo sono
+stati i controlli sulla freschezza delle fonti.
+
+```bash
 .venv\Scripts\python.exe scripts\track_record.py
 ```
 
