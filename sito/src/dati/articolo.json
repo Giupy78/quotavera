@@ -1,6 +1,6 @@
 {
- "data": "2026-09-19",
- "partite_in_programma": 177,
+ "data": "2026-09-20",
+ "partite_in_programma": 57,
  "campionati": 22,
  "sorprese": [
   {
@@ -870,59 +870,59 @@
  ],
  "partite_piu_care": [
   {
+   "campionato": "Super League",
+   "bandiera": "🇬🇷",
+   "slug": "super-league-grecia",
+   "id": "ofi-crete-asteras-tripolis",
+   "casa": "OFI Crete",
+   "ospite": "Asteras Tripolis",
+   "data": "2026-09-20",
+   "ora": "18:00",
+   "margine": 0.097
+  },
+  {
+   "campionato": "Pro League",
+   "bandiera": "🇧🇪",
+   "slug": "jupiler",
+   "id": "club-brugge-genk",
+   "casa": "Club Brugge",
+   "ospite": "Genk",
+   "data": "2026-09-20",
+   "ora": "18:30",
+   "margine": 0.0941
+  },
+  {
+   "campionato": "Super League",
+   "bandiera": "🇬🇷",
+   "slug": "super-league-grecia",
+   "id": "volos-nfc-aek",
+   "casa": "Volos NFC",
+   "ospite": "AEK",
+   "data": "2026-09-20",
+   "ora": "17:00",
+   "margine": 0.093
+  },
+  {
+   "campionato": "Süper Lig",
+   "bandiera": "🇹🇷",
+   "slug": "superlig",
+   "id": "erzurumspor-samsunspor",
+   "casa": "Erzurumspor",
+   "ospite": "Samsunspor",
+   "data": "2026-09-20",
+   "ora": "16:00",
+   "margine": 0.0916
+  },
+  {
    "campionato": "Serie B",
    "bandiera": "🇮🇹",
    "slug": "serie-b",
-   "id": "ascoli-avellino",
-   "casa": "Ascoli",
-   "ospite": "Avellino",
-   "data": "2026-09-19",
+   "id": "modena-empoli",
+   "casa": "Modena",
+   "ospite": "Empoli",
+   "data": "2026-09-20",
    "ora": "19:30",
-   "margine": 0.117
-  },
-  {
-   "campionato": "League Two scozzese",
-   "bandiera": "🏴",
-   "slug": "league-two-scozia",
-   "id": "dumbarton-spartans",
-   "casa": "Dumbarton",
-   "ospite": "Spartans",
-   "data": "2026-09-19",
-   "ora": "16:00",
-   "margine": 0.109
-  },
-  {
-   "campionato": "League Two scozzese",
-   "bandiera": "🏴",
-   "slug": "league-two-scozia",
-   "id": "kelty-hearts-edinburgh-city",
-   "casa": "Kelty Hearts",
-   "ospite": "Edinburgh City",
-   "data": "2026-09-19",
-   "ora": "16:00",
-   "margine": 0.1072
-  },
-  {
-   "campionato": "League One scozzese",
-   "bandiera": "🏴",
-   "slug": "league-one-scozia",
-   "id": "hamilton-queen-of-sth",
-   "casa": "Hamilton",
-   "ospite": "Queen of Sth",
-   "data": "2026-09-19",
-   "ora": "16:00",
-   "margine": 0.1058
-  },
-  {
-   "campionato": "League Two scozzese",
-   "bandiera": "🏴",
-   "slug": "league-two-scozia",
-   "id": "elgin-stranraer",
-   "casa": "Elgin",
-   "ospite": "Stranraer",
-   "data": "2026-09-19",
-   "ora": "16:00",
-   "margine": 0.1048
+   "margine": 0.0888
   }
  ],
  "partite_meno_care": [
@@ -941,17 +941,6 @@
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
-   "id": "roma-inter",
-   "casa": "Roma",
-   "ospite": "Inter",
-   "data": "2026-09-19",
-   "ora": "18:00",
-   "margine": 0.0028
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
    "id": "juventus-atalanta",
    "casa": "Juventus",
    "ospite": "Atalanta",
@@ -960,26 +949,37 @@
    "margine": 0.0032
   },
   {
-   "campionato": "LaLiga",
-   "bandiera": "🇪🇸",
-   "slug": "laliga",
-   "id": "sevilla-barcelona",
-   "casa": "Sevilla",
-   "ospite": "Barcelona",
-   "data": "2026-09-19",
-   "ora": "21:00",
-   "margine": 0.0032
+   "campionato": "Premier League",
+   "bandiera": "🏴",
+   "slug": "premier-league",
+   "id": "bournemouth-liverpool",
+   "casa": "Bournemouth",
+   "ospite": "Liverpool",
+   "data": "2026-09-20",
+   "ora": "15:00",
+   "margine": 0.0035
   },
   {
-   "campionato": "2. Bundesliga",
+   "campionato": "Premier League",
+   "bandiera": "🏴",
+   "slug": "premier-league",
+   "id": "man-city-sunderland",
+   "casa": "Man City",
+   "ospite": "Sunderland",
+   "data": "2026-09-20",
+   "ora": "15:00",
+   "margine": 0.0038
+  },
+  {
+   "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
-   "slug": "bundesliga-2",
-   "id": "holstein-kiel-osnabruck",
-   "casa": "Holstein Kiel",
-   "ospite": "Osnabruck",
-   "data": "2026-09-19",
-   "ora": "13:00",
-   "margine": 0.0033
+   "slug": "bundesliga",
+   "id": "leverkusen-rb-leipzig",
+   "casa": "Leverkusen",
+   "ospite": "RB Leipzig",
+   "data": "2026-09-20",
+   "ora": "15:30",
+   "margine": 0.0054
   }
  ]
 }
