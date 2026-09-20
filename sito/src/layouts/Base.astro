@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import campionati from "../dati/campionati.json";
+import Analitiche from "../components/Analitiche.astro";
 
 interface Props {
   titolo: string;
@@ -168,6 +169,7 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
         if (ore > 48) avviso.hidden = false;
       })();
     </script>
+  <Analitiche />
   </body>
 </html>
 

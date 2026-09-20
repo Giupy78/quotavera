@@ -1,0 +1,36 @@
+---
+/**
+ * Cloudflare Web Analytics.
+ *
+ * Serve a vedere i lettori veri. Le statistiche HTTP del pannello Cloudflare
+ * contano tutto quello che bussa, e su questi domini quasi tutto quello che
+ * bussa e' uno scanner: in una giornata tipo il 79% delle richieste sono 404
+ * su /.env e simili. Questo invece e' un beacon JavaScript, quindi conta solo
+ * chi apre davvero la pagina con un browser.
+ *
+ * Niente cookie e nessun identificatore persistente: non serve consenso e non
+ * allunga il banner privacy.
+ *
+ * Il token non e' un segreto — finisce nell'HTML, in chiaro, visibile a
+ * chiunque apra il sorgente. Sta in una variabile d'ambiente solo perche'
+ * cambia da sito a sito: la si imposta come PUBLIC_CF_BEACON_TOKEN nelle
+ * variabili del progetto su Cloudflare. Finche' non c'e', qui non viene
+ * stampato niente e il sito funziona identico.
+ *
+ * ATTENZIONE: Cloudflare sa anche iniettare questo stesso beacon da solo, se
+ * attivi l'inserimento automatico dal pannello. Le due strade si escludono —
+ * se le usi tutte e due, ogni visita viene contata due volte.
+ */
+const token = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+---
+
+{
+  token && (
+    <script
+      is:inline
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon={JSON.stringify({ token })}
+    />
+  )
+}
