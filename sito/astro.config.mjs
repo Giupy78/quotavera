@@ -1,10 +1,14 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import { mappaLastmod } from "./src/lib/lastmod";
 
 // Statico: ogni pagina e' HTML generato in build, nessun server a runtime.
 // E' la scelta che rende il sito gratis da tenere su Cloudflare Pages e che
 // permette di rigenerarlo dal cron notturno senza toccare infrastruttura.
+// Letta una volta sola: scorre il calendario di tutti i campionati.
+const LASTMOD = mappaLastmod();
+
 export default defineConfig({
   site: "https://quotavera.it",
   output: "static",
@@ -15,6 +19,10 @@ export default defineConfig({
       // pagine di spiegazione quasi mai. Dirlo ai motori evita che sprechino
       // la scansione dove non serve.
       serialize(pagina) {
+        // La data vera dei dati, dove la sappiamo: vedi src/lib/lastmod.ts
+        const quando = LASTMOD.get(new URL(pagina.url).pathname);
+        if (quando) pagina = { ...pagina, lastmod: quando };
+
         if (pagina.url.includes("/calcio/") && pagina.url.split("/").length > 6) {
           return { ...pagina, changefreq: "daily", priority: 0.6 };
         }
