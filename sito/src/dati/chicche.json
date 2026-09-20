@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 950
+   "campione": 951
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1447
+   "campione": 1448
   },
   {
    "tipo": "campo",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1186
+   "campione": 1188
   },
   {
    "tipo": "cartellini",
@@ -65,7 +65,7 @@
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 725
+   "campione": 726
   }
  ],
  "per_campionato": {
@@ -168,15 +168,15 @@
    {
     "tipo": "ripresa",
     "titolo": "Sunderland vive di secondi tempi",
-    "testo": "Solo 14 dei suoi 45 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "69%",
+    "testo": "Solo 14 dei suoi 48 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "71%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Sunderland"
     ],
-    "campione": 45
+    "campione": 48
    },
    {
     "tipo": "sorpresa_mercato",
@@ -223,16 +223,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Malaga non vince da 6 partite",
+    "titolo": "Malaga non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "LaLiga",
     "bandiera": "🇪🇸",
     "slug": "laliga",
     "squadre": [
      "Malaga"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
@@ -417,16 +417,16 @@
   "eredivisie": [
    {
     "tipo": "imbattuta",
-    "titolo": "PSV Eindhoven non perde da 6 partite",
+    "titolo": "Feyenoord non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
-     "PSV Eindhoven"
+     "Feyenoord"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "digiuno",
@@ -440,6 +440,19 @@
      "Willem II"
     ],
     "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Telstar non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Telstar"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -650,14 +663,14 @@
   "jupiler": [
    {
     "tipo": "imbattuta",
-    "titolo": "Gent non perde da 7 partite",
+    "titolo": "St. Gilloise non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "7",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
-     "Gent"
+     "St. Gilloise"
     ],
     "campione": 7
    },
@@ -838,19 +851,6 @@
    }
   ],
   "premiership": [
-   {
-    "tipo": "imbattuta",
-    "titolo": "Celtic non perde da 6 partite",
-    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "6",
-    "campionato": "Premiership",
-    "bandiera": "🏴",
-    "slug": "premiership",
-    "squadre": [
-     "Celtic"
-    ],
-    "campione": 6
-   },
    {
     "tipo": "rimonte",
     "titolo": "Celtic non molla all'intervallo",
