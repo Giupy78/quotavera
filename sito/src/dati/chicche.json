@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 951
+   "campione": 953
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1448
+   "campione": 1452
   },
   {
    "tipo": "campo",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1188
+   "campione": 1190
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 738
+   "campione": 743
   },
   {
    "tipo": "corner",
@@ -291,19 +291,6 @@
   ],
   "bundesliga": [
    {
-    "tipo": "a_secco",
-    "titolo": "Paderborn non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
-    "campionato": "Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga",
-    "squadre": [
-     "Paderborn"
-    ],
-    "campione": 3
-   },
-   {
     "tipo": "rimonte",
     "titolo": "Bayern Munich non molla all'intervallo",
     "testo": "Sotto al riposo 14 volte nelle ultime stagioni, ha finito vincendo 4: e' la quota di rimonte piu' alta del campionato.",
@@ -525,16 +512,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Estoril non vince da 6 partite",
+    "titolo": "Estoril non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
      "Estoril"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
@@ -604,6 +591,32 @@
      "Kasimpasa"
     ],
     "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Goztep non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Goztep"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Eyupspor non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Eyupspor"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -771,16 +784,16 @@
   "super-league-grecia": [
    {
     "tipo": "a_secco",
-    "titolo": "Levadeiakos non segna da 4 partite",
+    "titolo": "Levadeiakos non segna da 5 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "4",
+    "numero": "5",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "Levadeiakos"
     ],
-    "campione": 4
+    "campione": 5
    },
    {
     "tipo": "rimonte",
@@ -811,15 +824,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "OFI Crete decide presto",
-    "testo": "71 dei suoi 125 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "57%",
+    "testo": "71 dei suoi 127 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "56%",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "OFI Crete"
     ],
-    "campione": 125
+    "campione": 127
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1332,14 +1345,14 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Cadiz non vince da 6 partite",
+    "titolo": "Ceuta non vince da 6 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "6",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
-     "Cadiz"
+     "Ceuta"
     ],
     "campione": 6
    },
@@ -1385,15 +1398,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ceuta decide presto",
-    "testo": "31 dei suoi 53 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "58%",
+    "testo": "31 dei suoi 54 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "57%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Ceuta"
     ],
-    "campione": 53
+    "campione": 54
    },
    {
     "tipo": "ripresa",

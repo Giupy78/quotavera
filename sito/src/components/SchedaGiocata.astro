@@ -1,0 +1,256 @@
+---
+/* La scheda di una partita gia' giocata.
+
+   Esiste per due ragioni, e la seconda vale piu' della prima.
+
+   La prima e' che fino a ieri questa pagina spariva appena la partita si
+   giocava: su 142 indirizzi nel sitemap, 88 erano schede destinate a diventare
+   404 nel giro di giorni. Google le indicizzava e le ritrovava morte, e il
+   sito non accumulava mai niente di stabile.
+
+   La seconda e' che qui sta la cosa piu' onesta che possiamo pubblicare: il
+   pronostico scritto **prima**, lasciato accanto a com'e' andata. Non si
+   ricalcola a cose fatte — sarebbe il modo piu' elegante di avere sempre
+   ragione — si legge dall'archivio, dove e' stato scritto una volta sola. */
+
+interface Props {
+  p: any;
+  lega: any;
+}
+const { p, lega } = Astro.props;
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 0) => num(v * 100, d) + "%";
+
+const giorno = new Date(p.data + "T00:00:00");
+const dataLunga = giorno.toLocaleDateString("it-IT", {
+  weekday: "long", day: "numeric", month: "long", year: "numeric",
+});
+
+const st = p.statistiche;
+const etichette = ["1", "X", "2"];
+const colori = ["var(--s1)", "var(--s2)", "var(--s3)"];
+
+/* 0 = vince la casa, 1 = pareggio, 2 = vince l'ospite. Serve a segnare quale
+   delle tre probabilita' si e' poi avverata. */
+const esito = p.gol_casa > p.gol_ospite ? 0 : p.gol_casa === p.gol_ospite ? 1 : 2;
+
+const righeStat = st
+  ? ([
+      ["Gol", [p.gol_casa, p.gol_ospite]],
+      ["Gol nel primo tempo", st.primo_tempo],
+      ["Tiri", st.tiri],
+      ["Tiri in porta", st.in_porta],
+      ["Calci d'angolo", st.corner],
+      ["Falli", st.falli],
+      ["Cartellini gialli", st.gialli],
+      ...(st.possesso ? [["Possesso", st.possesso.map((x: number) => num(x, 1) + "%")]] : []),
+      ...(st.passaggi ? [["Passaggi", st.passaggi]] : []),
+      ...(st.parate ? [["Parate", st.parate]] : []),
+    ] as [string, any[]][])
+  : [];
+
+const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
+  ?? p.quote_chiusura?.media ?? p.quote_chiusura?.bet365 ?? null;
+---
+
+<section>
+  <p class="occhiello">
+    <a href={`/calcio/${p.campionato}/`}>{lega?.bandiera} {lega?.nome}</a>
+    {" · "}<span style="text-transform:capitalize">{dataLunga}</span>
+  </p>
+
+  <div class="tabellone">
+    <div class="squadra casa">{p.casa}</div>
+    <div class="punteggio mono">{p.gol_casa}<i>–</i>{p.gol_ospite}</div>
+    <div class="squadra">{p.ospite}</div>
+  </div>
+
+  {st && (
+    <p class="sotto">
+      Primo tempo {st.primo_tempo[0]}–{st.primo_tempo[1]} · tiri in porta
+      {" "}{st.in_porta[0]}–{st.in_porta[1]}
+    </p>
+  )}
+</section>
+
+{
+  p.pronostico && p.pronostico.p_modello && (
+    <section>
+      <div class="hd">
+        <h2>Cosa dicevamo prima</h2>
+        <p>
+          Scritto il {new Date(p.pronostico.salvato_il + "T00:00:00")
+            .toLocaleDateString("it-IT", { day: "numeric", month: "long" })}, prima
+          che si giocasse, e non più toccato. La barra segnata è quella che si è
+          poi avverata: una volta sola non dice niente sul modello — serve il
+          {" "}<a href="/track-record/">track record</a> per quello — ma è il
+          minimo che si possa chiedere a chi pubblica numeri.
+        </p>
+      </div>
+
+      <div class="scorri">
+        <table class="dati">
+          <thead>
+            <tr>
+              <th>Esito</th>
+              <th class="num">Il nostro modello</th>
+              <th class="num">Il mercato</th>
+              <th class="num">Quota di chiusura</th>
+              <th />
+            </tr>
+          </thead>
+          <tbody>
+            {etichette.map((e, i) => (
+              <tr class={i === esito ? "avvenuto" : ""}>
+                <td>
+                  <span class="pallino" style={`background:${colori[i]}`} />
+                  {e === "1" ? p.casa : e === "2" ? p.ospite : "Pareggio"}
+                </td>
+                <td class="num mono">{pct(p.pronostico.p_modello[i], 1)}</td>
+                <td class="num mono">
+                  {p.pronostico.p_mercato ? pct(p.pronostico.p_mercato[i], 1) : "—"}
+                </td>
+                <td class="num mono">{quote ? num(quote[i]) : "—"}</td>
+                <td class="esito-segno">{i === esito ? "è andata così" : ""}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}
+
+{
+  st && (
+    <section>
+      <div class="hd">
+        <h2>Com'è andata in campo</h2>
+        <p>
+          I numeri della partita. I tiri in porta raccontano spesso una storia
+          diversa dal punteggio: è il motivo per cui li mettiamo accanto.
+        </p>
+      </div>
+      <div class="scorri">
+        <table class="dati confronto">
+          <thead>
+            <tr>
+              <th>{p.casa}</th>
+              <th class="mezzo" />
+              <th class="destra">{p.ospite}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {righeStat.map(([nome, valori]) => (
+              <tr>
+                <td class="num forte">{valori[0]}</td>
+                <td class="mezzo">{nome}</td>
+                <td class="destra forte">{valori[1]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}
+
+{
+  p.precedenti?.length > 0 && (
+    <section>
+      <div class="hd"><h2>Precedenti</h2></div>
+      <div class="scorri">
+        <table class="dati">
+          <tbody>
+            {p.precedenti.map((x: any) => (
+              <tr>
+                <td class="mono">{x.data.slice(8, 10)}/{x.data.slice(5, 7)}/{x.data.slice(2, 4)}</td>
+                <td>{x.casa} — {x.ospite}</td>
+                <td class="num mono">{x.gol_casa}–{x.gol_ospite}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}
+
+<section>
+  <p class="vaia">
+    <a href={`/calcio/${p.campionato}/`}>
+      Classifica, risultati e statistiche di {lega?.nome} →
+    </a>
+  </p>
+</section>
+
+<style>
+  .tabellone {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 18px;
+    align-items: center;
+    padding: 22px 0 6px;
+  }
+  .squadra {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .squadra.casa {
+    text-align: right;
+  }
+  .punteggio {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+  .punteggio i {
+    font-style: normal;
+    color: var(--ink-3);
+    margin: 0 6px;
+  }
+  .sotto {
+    color: var(--ink-3);
+    font-size: 12.5px;
+    text-align: center;
+    margin: 0 0 4px;
+  }
+  .pallino {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  tr.avvenuto {
+    background: var(--sunk);
+  }
+  tr.avvenuto td {
+    font-weight: 600;
+  }
+  .esito-segno {
+    font-size: 11.5px;
+    color: var(--ink-3);
+    font-weight: 400 !important;
+    white-space: nowrap;
+  }
+  .vaia {
+    font-size: 13.5px;
+  }
+
+  @media (max-width: 560px) {
+    .tabellone {
+      gap: 10px;
+    }
+    .squadra {
+      font-size: 16px;
+    }
+    .punteggio {
+      font-size: 26px;
+    }
+  }
+</style>

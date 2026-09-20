@@ -1,6 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
 import MatriceRisultati from "../../../components/MatriceRisultati.astro";
+import SchedaGiocata from "../../../components/SchedaGiocata.astro";
 import campionati from "../../../dati/campionati.json";
 import schede from "../../../dati/schede.json";
 
@@ -19,6 +20,18 @@ const num = (v: number, d = 2) =>
 const pct = (v: number, d = 0) => num(v * 100, d) + "%";
 
 const giorno = new Date(p.data + "T00:00:00");
+/* Titolo e descrizione cambiano a partita giocata: chi cerca "Inter Monza" il
+   giorno dopo vuole il risultato, e il risultato nel titolo e' anche l'unica
+   cosa che distingue questa pagina dalle altre mille agli occhi di un motore
+   di ricerca. */
+const titolo = p.giocata
+  ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}`
+  : `${p.casa} — ${p.ospite}`;
+const descrizione = p.giocata
+  ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}: risultato, statistiche `
+    + `della partita e cosa diceva il nostro modello prima che si giocasse.`
+  : `Statistiche e numeri di ${p.casa} contro ${p.ospite}.`;
+
 const c = p.stat_casa, o = p.stat_ospite;
 const fc = p.forma_casa, fo = p.forma_ospite;
 
@@ -61,7 +74,15 @@ if (p.dettaglio) {
 }
 ---
 
-<Base titolo={`${p.casa} — ${p.ospite}`} descrizione={`Statistiche e numeri di ${p.casa} contro ${p.ospite}.`}>
+<Base titolo={titolo} descrizione={descrizione}>
+  {/* Due pagine allo stesso indirizzo: prima del fischio l'anteprima,
+      dopo il risultato con quello che dicevamo prima. Lo stesso indirizzo
+      di proposito — e' quello che Google ha gia' indicizzato, e prima
+      spariva appena la partita si giocava. */}
+  {p.giocata ? (
+    <SchedaGiocata p={p} lega={lega} />
+  ) : (
+    <>
   <section>
     <p class="occhiello">
       <a href={`/calcio/${lega.slug}/`} style="color:inherit">{lega.bandiera} {lega.nome}</a>
@@ -396,6 +417,8 @@ if (p.dettaglio) {
   <p style="margin-top:28px">
     <a href={`/calcio/${lega.slug}/`}>← torna alla {lega.nome}</a>
   </p>
+    </>
+  )}
 </Base>
 
 <style>

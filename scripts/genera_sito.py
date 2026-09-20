@@ -71,6 +71,30 @@ FINESTRE = (5, 10, 20, 40)
 # sua sezione, e ha un altro scopo.
 ORIZZONTE = 10
 
+# Le schede delle partite giocate restano per **tutta la stagione**, non per un
+# tot di giorni.
+#
+# Fino a ieri la pagina spariva appena la partita si giocava: su 142 indirizzi
+# nel sitemap, 88 erano schede destinate a diventare 404 nel giro di giorni.
+# Google le indicizzava e le ritrovava morte, il sito non accumulava mai niente
+# di stabile, e la parte piu' interessante — cosa avevamo detto prima, e com'e'
+# andata — non era visibile da nessuna parte.
+#
+# La prima versione di questa correzione le teneva 75 giorni, il che spostava
+# il problema di due mesi e mezzo invece di risolverlo. Legarle alla stagione
+# toglie il gradino: nascono e restano finche' il campionato e' quello.
+#
+# Resta una domanda aperta per l'estate: a stagione nuova, che fine fanno
+# quelle vecchie? Tenerle tutte vuol dire crescere di ottomila pagine l'anno;
+# toglierle vuol dire ottomila 404 in un giorno solo. Si decide a maggio, con
+# i numeri veri di quanto traffico portano.
+
+# Dove restano i pronostici fatti **prima** della partita. Si scrivono una volta
+# sola e non si riscrivono mai: riscriverli col modello di oggi vorrebbe dire
+# pronosticare a cose fatte, che e' il modo piu' elegante di avere sempre
+# ragione. E' anche l'archivio che rende dimostrabile il track record.
+PRONOSTICI = RADICE / "dati" / "pronostici"
+
 
 def arrotonda(v: float, d: int = 4) -> float:
     return round(float(v), d)
@@ -79,6 +103,37 @@ def arrotonda(v: float, d: int = 4) -> float:
 def gia_giocata_coppia(giocate: dict, casa: str, ospite: str, quando: date) -> bool:
     """Se questa partita e' gia' nello storico, non e' in programma."""
     return any(abs((d - quando).days) <= 3 for d in giocate.get((casa, ospite), ()))
+
+
+def id_partita(casa: str, ospite: str) -> str:
+    """L'indirizzo di una partita: lo stesso che usa `PartitaFutura.id`.
+
+    Deve restare identico prima e dopo il fischio, altrimenti la pagina
+    indicizzata da Google quando la partita era in programma non e' la stessa
+    che la sostituisce a partita giocata.
+    """
+    pulito = f"{casa}-{ospite}".lower()
+    for a, b in ((" ", "-"), ("'", ""), (".", ""), ("/", "-")):
+        pulito = pulito.replace(a, b)
+    return pulito
+
+
+def carica_pronostici(slug: str) -> dict:
+    f = PRONOSTICI / f"{slug}.json"
+    if not f.exists():
+        return {}
+    try:
+        return json.loads(f.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def salva_pronostici(slug: str, dati: dict) -> None:
+    PRONOSTICI.mkdir(parents=True, exist_ok=True)
+    (PRONOSTICI / f"{slug}.json").write_text(
+        json.dumps(dati, ensure_ascii=False, indent=1, sort_keys=True),
+        encoding="utf-8",
+    )
 
 
 def oggi_utc() -> date:
@@ -330,6 +385,73 @@ def elabora(c, storico, stagione, cal) -> dict | None:
                  "ospite": x.incontro.ospite, "gol_casa": x.incontro.punti_casa,
                  "gol_ospite": x.incontro.punti_ospite}
                 for x in precedenti(storico, p.casa, p.ospite, quante=6)
+            ],
+        })
+
+    # --- l'archivio dei pronostici ---------------------------------------
+    #
+    # Si scrive quello che il modello dice **prima** della partita, una volta
+    # sola. Chi c'e' gia' non si tocca: aggiornarlo col modello di oggi
+    # vorrebbe dire pronosticare a cose fatte.
+    archivio = carica_pronostici(c.slug)
+    nuovi = 0
+    for sc_ in schede:
+        if sc_["id"] in archivio:
+            continue
+        archivio[sc_["id"]] = {
+            "data": sc_["data"], "ora": sc_["ora"],
+            "casa": sc_["casa"], "ospite": sc_["ospite"],
+            "p_modello": sc_["p_modello"], "p_mercato": sc_["p_mercato"],
+            "quote": sc_["quote"], "margine": sc_["margine"],
+            "salvato_il": oggi_utc().isoformat(),
+        }
+        nuovi += 1
+    if nuovi:
+        salva_pronostici(c.slug, archivio)
+
+    # --- le schede delle partite gia' giocate -----------------------------
+    #
+    # La pagina resta al suo indirizzo anche dopo il fischio finale, con il
+    # risultato, le statistiche della gara e — se lo avevamo archiviato — cosa
+    # dicevamo prima. E' la parte piu' onesta del sito: un pronostico scritto
+    # prima e lasciato li' accanto a com'e' andata.
+    for x in stagione:
+        i = x.incontro
+        if i.data >= oggi_utc():
+            continue
+        chiave = id_partita(i.casa, i.ospite)
+        if chiave in {y["id"] for y in schede}:
+            continue          # gia' presente come partita in programma
+        prima = archivio.get(chiave)
+        st_ = x.stat
+        schede.append({
+            "id": chiave,
+            "campionato": c.slug,
+            "casa": i.casa, "ospite": i.ospite,
+            "data": i.data.isoformat(), "ora": "",
+            "giocata": True,
+            "gol_casa": i.punti_casa, "gol_ospite": i.punti_ospite,
+            "statistiche": ({
+                "tiri": list(st_.tiri), "in_porta": list(st_.in_porta),
+                "corner": list(st_.corner), "falli": list(st_.falli),
+                "gialli": list(st_.gialli), "rossi": list(st_.rossi),
+                "primo_tempo": list(st_.gol_primo_tempo),
+                "possesso": list(st_.possesso) if st_.avanzate else None,
+                "passaggi": list(st_.passaggi) if st_.avanzate else None,
+                "parate": list(st_.parate) if st_.avanzate else None,
+            } if st_.completa else None),
+            "quote_chiusura": {k: list(v) for k, v in x.quote.items()},
+            # Quello che dicevamo prima, se c'eravamo.
+            "pronostico": prima,
+            "p_modello": None, "p_mercato": None, "quote": {},
+            "margine": None, "margine_migliore": None, "dettaglio": None,
+            "stat_casa": None, "stat_ospite": None,
+            "forma_casa": None, "forma_ospite": None, "incrocio": None,
+            "precedenti": [
+                {"data": y.incontro.data.isoformat(), "casa": y.incontro.casa,
+                 "ospite": y.incontro.ospite, "gol_casa": y.incontro.punti_casa,
+                 "gol_ospite": y.incontro.punti_ospite}
+                for y in precedenti(storico, i.casa, i.ospite, quante=6)
             ],
         })
 
