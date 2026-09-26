@@ -1,5 +1,5 @@
 {
- "data": "2026-09-25",
+ "data": "2026-09-26",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1452
+   "campione": 1453
   },
   {
    "tipo": "campo",
@@ -1319,16 +1319,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Ceuta non vince da 6 partite",
+    "titolo": "Albacete non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
-     "Ceuta"
+     "Albacete"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "porta_chiusa",
@@ -1617,29 +1617,42 @@
   "championship-scozia": [
    {
     "tipo": "imbattuta",
-    "titolo": "Stenhousemuir non perde da 7 partite",
+    "titolo": "Stenhousemuir non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Championship scozzese",
     "bandiera": "🏴",
     "slug": "championship-scozia",
     "squadre": [
      "Stenhousemuir"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
-    "titolo": "Morton non vince da 7 partite",
+    "titolo": "Morton non vince da 8 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Championship scozzese",
     "bandiera": "🏴",
     "slug": "championship-scozia",
     "squadre": [
      "Morton"
     ],
-    "campione": 7
+    "campione": 8
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Stenhousemuir non subisce gol da 4 partite",
+    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Stenhousemuir"
+    ],
+    "campione": 4
    },
    {
     "tipo": "rimonte",
@@ -1670,15 +1683,15 @@
    {
     "tipo": "ripresa",
     "titolo": "Arbroath vive di secondi tempi",
-    "testo": "Solo 27 dei suoi 82 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "67%",
+    "testo": "Solo 27 dei suoi 84 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "68%",
     "campionato": "Championship scozzese",
     "bandiera": "🏴",
     "slug": "championship-scozia",
     "squadre": [
      "Arbroath"
     ],
-    "campione": 82
+    "campione": 84
    },
    {
     "tipo": "sorpresa_mercato",
