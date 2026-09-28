@@ -1,5 +1,5 @@
 {
- "data": "2026-09-27",
+ "data": "2026-09-28",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -1929,16 +1929,16 @@
     },
     {
      "tipo": "rimonte",
-     "titolo": "Fleetwood Town non molla all'intervallo",
-     "testo": "Sotto al riposo 27 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
-     "numero": "19%",
+     "titolo": "Walsall non molla all'intervallo",
+     "testo": "Sotto al riposo 39 volte nelle ultime stagioni, ha finito vincendo 7: e' la quota di rimonte piu' alta del campionato.",
+     "numero": "18%",
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
      "squadre": [
-      "Fleetwood Town"
+      "Walsall"
      ],
-     "campione": 27
+     "campione": 39
     },
     {
      "tipo": "fragilita",
@@ -2028,15 +2028,15 @@
      "titolo": "La 10ª giornata",
      "righe": [
       "Nella 10ª giornata sono stati segnati 50 gol in 12 partite, 4.2 a incontro.",
-      "Il risultato piu' netto e' stato Wealdstone 4-0 Gateshead: Wealdstone ha vinto con 4 gol di scarto."
+      "Il risultato piu' netto e' stato Aldershot 5-1 Tamworth: Aldershot ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'e' Boreham Wood con 26 punti in 10 partite.",
-      "Altrincham ha 18 punti ma i tiri in porta ne direbbero 9.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Solihull, ferma a 4 punti contro i 11.8 attesi dal gioco."
+      "Boreham Wood ha 26 punti ma i tiri in porta ne direbbero 19.0: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Solihull, ferma a 4 punti contro i 11.0 attesi dal gioco."
      ]
     }
    ],
@@ -2068,10 +2068,23 @@
      "campione": 8
     },
     {
+     "tipo": "fragilita",
+     "titolo": "Worthing non tiene il vantaggio",
+     "testo": "Avanti al riposo 8 volte nelle ultime stagioni, non ha vinto 4 di quelle partite. Nessuno in campionato ne butta via tanti.",
+     "numero": "50%",
+     "campionato": "National League",
+     "bandiera": "🏴",
+     "slug": "national-league",
+     "squadre": [
+      "Worthing"
+     ],
+     "campione": 8
+    },
+    {
      "tipo": "ripresa",
      "titolo": "Boreham Wood vive di secondi tempi",
-     "testo": "Solo 6 dei suoi 26 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "77%",
+     "testo": "Solo 7 dei suoi 26 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "73%",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
@@ -2139,6 +2152,21 @@
      "vincitore": "Hornchurch",
      "perdente": "Scunthorpe",
      "scarto_tiri": 4
+    },
+    {
+     "campionato": "National League",
+     "bandiera": "🏴",
+     "slug": "national-league",
+     "data": "2026-09-26",
+     "casa": "Kidderminster",
+     "ospite": "Yeovil",
+     "gol_casa": 0,
+     "gol_ospite": 1,
+     "in_porta_casa": 4,
+     "in_porta_ospite": 1,
+     "vincitore": "Yeovil",
+     "perdente": "Kidderminster",
+     "scarto_tiri": 3
     }
    ],
    "giornate_giocate": 10
@@ -2149,19 +2177,19 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga 2: cosa dicono i numeri",
-   "sommario": "Castellon in testa con 16 punti, 7ª giornata archiviata.",
+   "sommario": "Eibar in testa con 18 punti, 7ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 20 gol in 7 partite, 2.9 a incontro."
+      "Nella 7ª giornata sono stati segnati 28 gol in 10 partite, 2.8 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'e' Castellon con 16 punti in 6 partite.",
-      "Eibar ha 15 punti ma i tiri in porta ne direbbero 7.5: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "In testa c'e' Eibar con 18 punti in 7 partite.",
+      "Eibar ha 18 punti ma i tiri in porta ne direbbero 9.1: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
       "All'opposto Albacete, ferma a 1 punto contro i 8.6 attesi dal gioco."
      ]
     }
@@ -2169,14 +2197,14 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Castellon non perde da 6 partite",
+     "titolo": "Eibar non perde da 6 partite",
      "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
      "numero": "6",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
      "squadre": [
-      "Castellon"
+      "Eibar"
      ],
      "campione": 6
     },
@@ -2222,8 +2250,8 @@
     {
      "tipo": "ripresa",
      "titolo": "Andorra vive di secondi tempi",
-     "testo": "Solo 33 dei suoi 107 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "69%",
+     "testo": "Solo 35 dei suoi 107 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "67%",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
@@ -2617,8 +2645,8 @@
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'e' Stenhousemuir con 22 punti in 8 partite.",
-      "Stenhousemuir ha 22 punti ma i tiri in porta ne direbbero 10.6: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
-      "All'opposto Morton, ferma a 1 punto contro i 6.8 attesi dal gioco."
+      "Stenhousemuir ha 22 punti ma i tiri in porta ne direbbero 10.7: e' la squadra che sta raccogliendo di piu' rispetto a quanto crea.",
+      "All'opposto Morton, ferma a 1 punto contro i 6.5 attesi dal gioco."
      ]
     }
    ],
@@ -2687,19 +2715,6 @@
       "Morton"
      ],
      "campione": 31
-    },
-    {
-     "tipo": "ripresa",
-     "titolo": "Arbroath vive di secondi tempi",
-     "testo": "Solo 27 dei suoi 84 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "68%",
-     "campionato": "Championship scozzese",
-     "bandiera": "🏴",
-     "slug": "championship-scozia",
-     "squadre": [
-      "Arbroath"
-     ],
-     "campione": 84
     },
     {
      "tipo": "sorpresa_mercato",
