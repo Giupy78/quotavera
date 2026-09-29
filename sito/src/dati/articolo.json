@@ -513,17 +513,17 @@
     "gol_gol": 0.111,
     "clean_sheet": 0.556,
     "a_secco": 0.556,
-    "con_avanzate": 1,
-    "possesso": 69.3,
-    "passaggi": 515.0,
-    "precisione_passaggi": 0.85,
+    "con_avanzate": 2,
+    "possesso": 65.9,
+    "passaggi": 564.0,
+    "precisione_passaggi": 0.874,
     "precisione_cross": 0.0,
     "precisione_lanci": 0.0,
-    "contrasti": 22.0,
+    "contrasti": 17.5,
     "intercetti": 0.0,
-    "respinte": 19.0,
-    "parate": 1.0,
-    "fuorigioco": 3.0,
+    "respinte": 15.5,
+    "parate": 2.5,
+    "fuorigioco": 1.5,
     "tiri_respinti": 5.0
    },
    "trasferta": {
@@ -868,6 +868,118 @@
    }
   }
  ],
- "partite_piu_care": [],
- "partite_meno_care": []
+ "partite_piu_care": [
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "eastleigh-southend",
+   "casa": "Eastleigh",
+   "ospite": "Southend",
+   "data": "2026-09-30",
+   "ora": "20:45",
+   "margine": 0.1025
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "tamworth-sutton",
+   "casa": "Tamworth",
+   "ospite": "Sutton",
+   "data": "2026-09-30",
+   "ora": "20:45",
+   "margine": 0.0738
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "boreham-wood-kidderminster",
+   "casa": "Boreham Wood",
+   "ospite": "Kidderminster",
+   "data": "2026-09-29",
+   "ora": "20:00",
+   "margine": 0.0346
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "barrow-scunthorpe",
+   "casa": "Barrow",
+   "ospite": "Scunthorpe",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0304
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "yeovil-worthing",
+   "casa": "Yeovil",
+   "ospite": "Worthing",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0298
+  }
+ ],
+ "partite_meno_care": [
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "gateshead-altrincham",
+   "casa": "Gateshead",
+   "ospite": "Altrincham",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0149
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "hartlepool-harrogate",
+   "casa": "Hartlepool",
+   "ospite": "Harrogate",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0167
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "fylde-carlisle",
+   "casa": "Fylde",
+   "ospite": "Carlisle",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0171
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "woking-solihull",
+   "casa": "Woking",
+   "ospite": "Solihull",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0249
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
+   "id": "hornchurch-aldershot",
+   "casa": "Hornchurch",
+   "ospite": "Aldershot",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "margine": 0.0256
+  }
+ ]
 }

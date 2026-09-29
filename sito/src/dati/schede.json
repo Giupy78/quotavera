@@ -64102,9 +64102,18 @@
      2,
      0
     ],
-    "possesso": null,
-    "passaggi": null,
-    "parate": null
+    "possesso": [
+     0.0,
+     0.0
+    ],
+    "passaggi": [
+     0,
+     0
+    ],
+    "parate": [
+     0,
+     0
+    ]
    },
    "quote_chiusura": {
     "betfair": [
@@ -64706,9 +64715,18 @@
      0,
      0
     ],
-    "possesso": null,
-    "passaggi": null,
-    "parate": null
+    "possesso": [
+     62.5,
+     37.5
+    ],
+    "passaggi": [
+     613,
+     368
+    ],
+    "parate": [
+     4,
+     4
+    ]
    },
    "quote_chiusura": {
     "betfair": [
@@ -66005,18 +66023,9 @@
      1,
      1
     ],
-    "possesso": [
-     63.9,
-     36.1
-    ],
-    "passaggi": [
-     582,
-     333
-    ],
-    "parate": [
-     1,
-     4
-    ]
+    "possesso": null,
+    "passaggi": null,
+    "parate": null
    },
    "quote_chiusura": {
     "betfair": [
@@ -113980,15 +113989,40 @@
    "ospite": "Kidderminster",
    "data": "2026-09-29",
    "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     1.4,
+     4.9,
+     8.6
+    ],
+    "bet365": [
+     1.33,
+     5.0,
+     7.5
+    ],
+    "massimo": [
+     1.36,
+     5.0,
+     8.0
+    ],
+    "media": [
+     1.33,
+     4.72,
+     7.33
+    ]
+   },
+   "p_mercato": [
+    0.6996,
+    0.1937,
+    0.1067
+   ],
    "p_modello": [
     0.5358,
     0.253,
     0.2113
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0346,
+   "margine_migliore": 0.0603,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.57,
@@ -114439,912 +114473,45 @@
    ]
   },
   {
-   "id": "fylde-carlisle",
-   "casa": "Fylde",
-   "ospite": "Carlisle",
-   "data": "2026-09-29",
-   "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.3173,
-    0.2233,
-    0.4594
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "national-league",
-   "dettaglio": {
-    "gol_attesi_casa": 1.52,
-    "gol_attesi_ospite": 1.87,
-    "matrice": [
-     [
-      0.03361,
-      0.0632,
-      0.05879,
-      0.03655,
-      0.01705,
-      0.00636
-     ],
-     [
-      0.05161,
-      0.09577,
-      0.0895,
-      0.05565,
-      0.02595,
-      0.00968
-     ],
-     [
-      0.03915,
-      0.07304,
-      0.06813,
-      0.04236,
-      0.01976,
-      0.00737
-     ],
-     [
-      0.01987,
-      0.03707,
-      0.03457,
-      0.0215,
-      0.01003,
-      0.00374
-     ],
-     [
-      0.00756,
-      0.01411,
-      0.01316,
-      0.00818,
-      0.00382,
-      0.00142
-     ],
-     [
-      0.0023,
-      0.0043,
-      0.00401,
-      0.00249,
-      0.00116,
-      0.00043
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "1-1",
-      "p": 0.0958
-     },
-     {
-      "risultato": "1-2",
-      "p": 0.0895
-     },
-     {
-      "risultato": "2-1",
-      "p": 0.073
-     },
-     {
-      "risultato": "2-2",
-      "p": 0.0681
-     },
-     {
-      "risultato": "0-1",
-      "p": 0.0632
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.3173,
-      "X": 0.2233,
-      "2": 0.4594
-     },
-     "btts": {
-      "si": 0.6606,
-      "no": 0.3394
-     },
-     "ou_1.5": {
-      "over": 0.8516,
-      "under": 0.1484
-     },
-     "ou_2.5": {
-      "over": 0.6579,
-      "under": 0.3421
-     },
-     "ou_3.5": {
-      "over": 0.4389,
-      "under": 0.5611
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "Fylde",
-    "partite": 20,
-    "gol_fatti": 1.45,
-    "gol_subiti": 1.5,
-    "gol_totali": 29,
-    "in_porta_totali": 50,
-    "attesi_dai_tiri": 16.6,
-    "scarto_conversione": 12.4,
-    "vantaggio_casa": -0.21,
-    "casa": {
-     "partite": 9,
-     "gol_fatti": 1.33,
-     "gol_subiti": 1.67,
-     "tiri": 9.0,
-     "in_porta": 5.0,
-     "in_porta_subiti": 4.0,
-     "tiri_subiti": 8.0,
-     "corner": 5.5,
-     "corner_subiti": 3.8,
-     "falli": 10.2,
-     "cartellini": 1.8,
-     "gialli": 7,
-     "rossi": 0,
-     "precisione_tiri": 0.556,
-     "over_25": 0.778,
-     "gol_gol": 0.556,
-     "clean_sheet": 0.222,
-     "a_secco": 0.222,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 11,
-     "gol_fatti": 1.55,
-     "gol_subiti": 1.36,
-     "tiri": 7.8,
-     "in_porta": 5.0,
-     "in_porta_subiti": 5.2,
-     "tiri_subiti": 11.5,
-     "corner": 5.5,
-     "corner_subiti": 4.5,
-     "falli": 13.2,
-     "cartellini": 1.8,
-     "gialli": 11,
-     "rossi": 0,
-     "precisione_tiri": 0.638,
-     "over_25": 0.545,
-     "gol_gol": 0.545,
-     "clean_sheet": 0.182,
-     "a_secco": 0.364,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "stat_ospite": {
-    "squadra": "Carlisle",
-    "partite": 20,
-    "gol_fatti": 1.95,
-    "gol_subiti": 1.3,
-    "gol_totali": 39,
-    "in_porta_totali": 62,
-    "attesi_dai_tiri": 20.6,
-    "scarto_conversione": 18.4,
-    "vantaggio_casa": 1.5,
-    "casa": {
-     "partite": 10,
-     "gol_fatti": 2.7,
-     "gol_subiti": 1.6,
-     "tiri": 14.8,
-     "in_porta": 8.2,
-     "in_porta_subiti": 5.2,
-     "tiri_subiti": 7.7,
-     "corner": 6.7,
-     "corner_subiti": 5.0,
-     "falli": 11.5,
-     "cartellini": 1.5,
-     "gialli": 9,
-     "rossi": 0,
-     "precisione_tiri": 0.551,
-     "over_25": 0.8,
-     "gol_gol": 0.7,
-     "clean_sheet": 0.3,
-     "a_secco": 0.1,
-     "con_avanzate": 6,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.2,
-     "gol_subiti": 1.0,
-     "tiri": 8.2,
-     "in_porta": 3.2,
-     "in_porta_subiti": 4.8,
-     "tiri_subiti": 8.8,
-     "corner": 4.8,
-     "corner_subiti": 4.5,
-     "falli": 12.2,
-     "cartellini": 2.0,
-     "gialli": 8,
-     "rossi": 0,
-     "precisione_tiri": 0.394,
-     "over_25": 0.4,
-     "gol_gol": 0.6,
-     "clean_sheet": 0.3,
-     "a_secco": 0.1,
-     "con_avanzate": 2,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_casa": {
-    "squadra": "Fylde",
-    "partite": 6,
-    "gol_fatti": 2.17,
-    "gol_subiti": 1.17,
-    "gol_totali": 13,
-    "in_porta_totali": 32,
-    "attesi_dai_tiri": 10.6,
-    "scarto_conversione": 2.4,
-    "vantaggio_casa": -1.0,
-    "casa": {
-     "partite": 2,
-     "gol_fatti": 1.5,
-     "gol_subiti": 2.0,
-     "tiri": 8.0,
-     "in_porta": 3.5,
-     "in_porta_subiti": 5.0,
-     "tiri_subiti": 9.0,
-     "corner": 6.5,
-     "corner_subiti": 2.0,
-     "falli": 11.5,
-     "cartellini": 2.0,
-     "gialli": 4,
-     "rossi": 0,
-     "precisione_tiri": 0.438,
-     "over_25": 1.0,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 2,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 4,
-     "gol_fatti": 2.5,
-     "gol_subiti": 0.75,
-     "tiri": 8.5,
-     "in_porta": 6.2,
-     "in_porta_subiti": 5.2,
-     "tiri_subiti": 12.2,
-     "corner": 6.5,
-     "corner_subiti": 5.8,
-     "falli": 11.8,
-     "cartellini": 1.5,
-     "gialli": 6,
-     "rossi": 0,
-     "precisione_tiri": 0.735,
-     "over_25": 0.75,
-     "gol_gol": 0.75,
-     "clean_sheet": 0.25,
-     "a_secco": 0.0,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_ospite": {
-    "squadra": "Carlisle",
-    "partite": 6,
-    "gol_fatti": 1.67,
-    "gol_subiti": 2.17,
-    "gol_totali": 10,
-    "in_porta_totali": 34,
-    "attesi_dai_tiri": 11.3,
-    "scarto_conversione": -1.3,
-    "vantaggio_casa": 1.75,
-    "casa": {
-     "partite": 4,
-     "gol_fatti": 2.25,
-     "gol_subiti": 2.5,
-     "tiri": 14.2,
-     "in_porta": 7.5,
-     "in_porta_subiti": 5.8,
-     "tiri_subiti": 9.0,
-     "corner": 6.5,
-     "corner_subiti": 5.8,
-     "falli": 13.0,
-     "cartellini": 2.2,
-     "gialli": 9,
-     "rossi": 0,
-     "precisione_tiri": 0.526,
-     "over_25": 0.75,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 2,
-     "gol_fatti": 0.5,
-     "gol_subiti": 1.5,
-     "tiri": 7.5,
-     "in_porta": 2.0,
-     "in_porta_subiti": 5.5,
-     "tiri_subiti": 10.0,
-     "corner": 5.5,
-     "corner_subiti": 4.5,
-     "falli": 12.5,
-     "cartellini": 1.5,
-     "gialli": 3,
-     "rossi": 0,
-     "precisione_tiri": 0.267,
-     "over_25": 0.5,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.0,
-     "a_secco": 0.5,
-     "con_avanzate": 2,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.33,
-     "difesa": 1.0,
-     "media": 1.17
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 9.0,
-     "difesa": 8.8,
-     "media": 8.9
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 5.0,
-     "difesa": 4.8,
-     "media": 4.9
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 5.5,
-     "difesa": 4.5,
-     "media": 5.0
-    }
-   ],
-   "precedenti": []
-  },
-  {
-   "id": "hornchurch-aldershot",
-   "casa": "Hornchurch",
-   "ospite": "Aldershot",
-   "data": "2026-09-29",
-   "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.4274,
-    0.247,
-    0.3255
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "national-league",
-   "dettaglio": {
-    "gol_attesi_casa": 1.55,
-    "gol_attesi_ospite": 1.32,
-    "matrice": [
-     [
-      0.05651,
-      0.07514,
-      0.04949,
-      0.02179,
-      0.0072,
-      0.0019
-     ],
-     [
-      0.08806,
-      0.11583,
-      0.07664,
-      0.03375,
-      0.01115,
-      0.00294
-     ],
-     [
-      0.06802,
-      0.08985,
-      0.05935,
-      0.02613,
-      0.00863,
-      0.00228
-     ],
-     [
-      0.03511,
-      0.04638,
-      0.03064,
-      0.01349,
-      0.00446,
-      0.00118
-     ],
-     [
-      0.01359,
-      0.01796,
-      0.01186,
-      0.00522,
-      0.00172,
-      0.00046
-     ],
-     [
-      0.00421,
-      0.00556,
-      0.00367,
-      0.00162,
-      0.00053,
-      0.00014
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "1-1",
-      "p": 0.1158
-     },
-     {
-      "risultato": "2-1",
-      "p": 0.0899
-     },
-     {
-      "risultato": "1-0",
-      "p": 0.0881
-     },
-     {
-      "risultato": "1-2",
-      "p": 0.0766
-     },
-     {
-      "risultato": "0-1",
-      "p": 0.0751
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.4274,
-      "X": 0.247,
-      "2": 0.3255
-     },
-     "btts": {
-      "si": 0.5771,
-      "no": 0.4229
-     },
-     "ou_1.5": {
-      "over": 0.7803,
-      "under": 0.2197
-     },
-     "ou_2.5": {
-      "over": 0.547,
-      "under": 0.453
-     },
-     "ou_3.5": {
-      "over": 0.3236,
-      "under": 0.6764
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "Hornchurch",
-    "partite": 10,
-    "gol_fatti": 1.1,
-    "gol_subiti": 1.5,
-    "gol_totali": 11,
-    "in_porta_totali": 41,
-    "attesi_dai_tiri": 13.6,
-    "scarto_conversione": -2.6,
-    "vantaggio_casa": 0.25,
-    "casa": {
-     "partite": 4,
-     "gol_fatti": 1.25,
-     "gol_subiti": 0.25,
-     "tiri": 10.0,
-     "in_porta": 4.0,
-     "in_porta_subiti": 3.0,
-     "tiri_subiti": 9.0,
-     "corner": 5.2,
-     "corner_subiti": 4.5,
-     "falli": 11.5,
-     "cartellini": 2.0,
-     "gialli": 8,
-     "rossi": 0,
-     "precisione_tiri": 0.4,
-     "over_25": 0.25,
-     "gol_gol": 0.0,
-     "clean_sheet": 0.75,
-     "a_secco": 0.25,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 6,
-     "gol_fatti": 1.0,
-     "gol_subiti": 2.33,
-     "tiri": 6.3,
-     "in_porta": 4.2,
-     "in_porta_subiti": 7.5,
-     "tiri_subiti": 12.7,
-     "corner": 4.2,
-     "corner_subiti": 8.0,
-     "falli": 13.3,
-     "cartellini": 1.7,
-     "gialli": 10,
-     "rossi": 0,
-     "precisione_tiri": 0.658,
-     "over_25": 0.833,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.0,
-     "a_secco": 0.5,
-     "con_avanzate": 6,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "stat_ospite": {
-    "squadra": "Aldershot",
-    "partite": 20,
-    "gol_fatti": 1.15,
-    "gol_subiti": 1.4,
-    "gol_totali": 23,
-    "in_porta_totali": 46,
-    "attesi_dai_tiri": 15.3,
-    "scarto_conversione": 7.7,
-    "vantaggio_casa": 0.07,
-    "casa": {
-     "partite": 11,
-     "gol_fatti": 1.18,
-     "gol_subiti": 1.45,
-     "tiri": 8.2,
-     "in_porta": 4.6,
-     "in_porta_subiti": 3.8,
-     "tiri_subiti": 8.6,
-     "corner": 4.0,
-     "corner_subiti": 4.6,
-     "falli": 12.0,
-     "cartellini": 2.0,
-     "gialli": 9,
-     "rossi": 1,
-     "precisione_tiri": 0.561,
-     "over_25": 0.455,
-     "gol_gol": 0.455,
-     "clean_sheet": 0.091,
-     "a_secco": 0.455,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 9,
-     "gol_fatti": 1.11,
-     "gol_subiti": 1.33,
-     "tiri": 9.2,
-     "in_porta": 4.6,
-     "in_porta_subiti": 4.8,
-     "tiri_subiti": 10.6,
-     "corner": 4.0,
-     "corner_subiti": 5.8,
-     "falli": 12.8,
-     "cartellini": 3.4,
-     "gialli": 15,
-     "rossi": 2,
-     "precisione_tiri": 0.5,
-     "over_25": 0.444,
-     "gol_gol": 0.556,
-     "clean_sheet": 0.222,
-     "a_secco": 0.222,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_casa": {
-    "squadra": "Hornchurch",
-    "partite": 6,
-    "gol_fatti": 0.67,
-    "gol_subiti": 1.67,
-    "gol_totali": 4,
-    "in_porta_totali": 22,
-    "attesi_dai_tiri": 7.3,
-    "scarto_conversione": -3.3,
-    "vantaggio_casa": -0.25,
-    "casa": {
-     "partite": 2,
-     "gol_fatti": 0.5,
-     "gol_subiti": 0.5,
-     "tiri": 9.0,
-     "in_porta": 2.5,
-     "in_porta_subiti": 5.0,
-     "tiri_subiti": 10.5,
-     "corner": 6.0,
-     "corner_subiti": 5.0,
-     "falli": 12.0,
-     "cartellini": 1.5,
-     "gialli": 3,
-     "rossi": 0,
-     "precisione_tiri": 0.278,
-     "over_25": 0.0,
-     "gol_gol": 0.0,
-     "clean_sheet": 0.5,
-     "a_secco": 0.5,
-     "con_avanzate": 2,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 4,
-     "gol_fatti": 0.75,
-     "gol_subiti": 2.25,
-     "tiri": 7.0,
-     "in_porta": 4.2,
-     "in_porta_subiti": 6.8,
-     "tiri_subiti": 12.5,
-     "corner": 3.8,
-     "corner_subiti": 8.0,
-     "falli": 15.0,
-     "cartellini": 2.0,
-     "gialli": 8,
-     "rossi": 0,
-     "precisione_tiri": 0.607,
-     "over_25": 0.75,
-     "gol_gol": 0.25,
-     "clean_sheet": 0.0,
-     "a_secco": 0.75,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_ospite": {
-    "squadra": "Aldershot",
-    "partite": 6,
-    "gol_fatti": 1.67,
-    "gol_subiti": 0.83,
-    "gol_totali": 10,
-    "in_porta_totali": 32,
-    "attesi_dai_tiri": 10.6,
-    "scarto_conversione": -0.6,
-    "vantaggio_casa": 1.33,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 2.33,
-     "gol_subiti": 0.67,
-     "tiri": 8.3,
-     "in_porta": 5.3,
-     "in_porta_subiti": 3.3,
-     "tiri_subiti": 8.7,
-     "corner": 3.7,
-     "corner_subiti": 4.7,
-     "falli": 13.0,
-     "cartellini": 2.7,
-     "gialli": 7,
-     "rossi": 1,
-     "precisione_tiri": 0.64,
-     "over_25": 0.333,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.333,
-     "a_secco": 0.0,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 1.0,
-     "gol_subiti": 1.0,
-     "tiri": 9.0,
-     "in_porta": 5.3,
-     "in_porta_subiti": 4.7,
-     "tiri_subiti": 11.3,
-     "corner": 4.7,
-     "corner_subiti": 6.0,
-     "falli": 13.0,
-     "cartellini": 2.7,
-     "gialli": 8,
-     "rossi": 0,
-     "precisione_tiri": 0.593,
-     "over_25": 0.333,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.0,
-     "a_secco": 0.333,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.25,
-     "difesa": 1.33,
-     "media": 1.29
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 10.0,
-     "difesa": 10.6,
-     "media": 10.3
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 4.0,
-     "difesa": 4.8,
-     "media": 4.4
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 5.2,
-     "difesa": 5.8,
-     "media": 5.5
-    },
-    {
-     "voce": "Possesso",
-     "attacco": 0.0,
-     "difesa": 0.0,
-     "media": null
-    }
-   ],
-   "precedenti": []
-  },
-  {
    "id": "barrow-scunthorpe",
    "casa": "Barrow",
    "ospite": "Scunthorpe",
    "data": "2026-09-29",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     2.16,
+     3.85,
+     3.25
+    ],
+    "bet365": [
+     2.0,
+     3.6,
+     3.1
+    ],
+    "massimo": [
+     2.05,
+     3.75,
+     3.2
+    ],
+    "media": [
+     2.02,
+     3.55,
+     3.07
+    ]
+   },
+   "p_mercato": [
+    0.4519,
+    0.2502,
+    0.2978
+   ],
    "p_modello": [
     0.4502,
     0.2379,
     0.3119
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0304,
+   "margine_migliore": 0.067,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.67,
@@ -115780,498 +114947,45 @@
    "precedenti": []
   },
   {
-   "id": "halifax-boston-utd",
-   "casa": "Halifax",
-   "ospite": "Boston Utd",
-   "data": "2026-09-29",
-   "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.4705,
-    0.2615,
-    0.268
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "national-league",
-   "dettaglio": {
-    "gol_attesi_casa": 1.47,
-    "gol_attesi_ospite": 1.04,
-    "matrice": [
-     [
-      0.08111,
-      0.08482,
-      0.04399,
-      0.01525,
-      0.00396,
-      0.00082
-     ],
-     [
-      0.11973,
-      0.12405,
-      0.06463,
-      0.0224,
-      0.00583,
-      0.00121
-     ],
-     [
-      0.08778,
-      0.09129,
-      0.04747,
-      0.01646,
-      0.00428,
-      0.00089
-     ],
-     [
-      0.04299,
-      0.04471,
-      0.02325,
-      0.00806,
-      0.0021,
-      0.00044
-     ],
-     [
-      0.01579,
-      0.01642,
-      0.00854,
-      0.00296,
-      0.00077,
-      0.00016
-     ],
-     [
-      0.00464,
-      0.00483,
-      0.00251,
-      0.00087,
-      0.00023,
-      5e-05
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "1-1",
-      "p": 0.124
-     },
-     {
-      "risultato": "1-0",
-      "p": 0.1197
-     },
-     {
-      "risultato": "2-1",
-      "p": 0.0913
-     },
-     {
-      "risultato": "2-0",
-      "p": 0.0878
-     },
-     {
-      "risultato": "0-1",
-      "p": 0.0848
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.4705,
-      "X": 0.2615,
-      "2": 0.268
-     },
-     "btts": {
-      "si": 0.4975,
-      "no": 0.5025
-     },
-     "ou_1.5": {
-      "over": 0.7143,
-      "under": 0.2857
-     },
-     "ou_2.5": {
-      "over": 0.4585,
-      "under": 0.5415
-     },
-     "ou_3.5": {
-      "over": 0.2444,
-      "under": 0.7556
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "Halifax",
-    "partite": 20,
-    "gol_fatti": 1.45,
-    "gol_subiti": 1.3,
-    "gol_totali": 29,
-    "in_porta_totali": 51,
-    "attesi_dai_tiri": 17.0,
-    "scarto_conversione": 12.0,
-    "vantaggio_casa": 0.7,
-    "casa": {
-     "partite": 10,
-     "gol_fatti": 1.8,
-     "gol_subiti": 1.8,
-     "tiri": 10.6,
-     "in_porta": 6.4,
-     "in_porta_subiti": 3.8,
-     "tiri_subiti": 8.2,
-     "corner": 5.0,
-     "corner_subiti": 7.2,
-     "falli": 11.8,
-     "cartellini": 2.4,
-     "gialli": 12,
-     "rossi": 0,
-     "precisione_tiri": 0.604,
-     "over_25": 0.7,
-     "gol_gol": 0.7,
-     "clean_sheet": 0.2,
-     "a_secco": 0.1,
-     "con_avanzate": 5,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.1,
-     "gol_subiti": 0.8,
-     "tiri": 7.4,
-     "in_porta": 3.8,
-     "in_porta_subiti": 4.8,
-     "tiri_subiti": 9.0,
-     "corner": 2.8,
-     "corner_subiti": 4.8,
-     "falli": 11.4,
-     "cartellini": 1.8,
-     "gialli": 8,
-     "rossi": 1,
-     "precisione_tiri": 0.514,
-     "over_25": 0.4,
-     "gol_gol": 0.3,
-     "clean_sheet": 0.6,
-     "a_secco": 0.2,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "stat_ospite": {
-    "squadra": "Boston Utd",
-    "partite": 20,
-    "gol_fatti": 1.4,
-    "gol_subiti": 1.4,
-    "gol_totali": 28,
-    "in_porta_totali": 60,
-    "attesi_dai_tiri": 19.9,
-    "scarto_conversione": 8.1,
-    "vantaggio_casa": -0.48,
-    "casa": {
-     "partite": 11,
-     "gol_fatti": 1.18,
-     "gol_subiti": 1.27,
-     "tiri": 11.3,
-     "in_porta": 6.7,
-     "in_porta_subiti": 4.7,
-     "tiri_subiti": 9.3,
-     "corner": 7.7,
-     "corner_subiti": 7.2,
-     "falli": 10.7,
-     "cartellini": 2.3,
-     "gialli": 12,
-     "rossi": 2,
-     "precisione_tiri": 0.588,
-     "over_25": 0.455,
-     "gol_gol": 0.545,
-     "clean_sheet": 0.182,
-     "a_secco": 0.273,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 9,
-     "gol_fatti": 1.67,
-     "gol_subiti": 1.56,
-     "tiri": 8.5,
-     "in_porta": 5.0,
-     "in_porta_subiti": 4.8,
-     "tiri_subiti": 11.8,
-     "corner": 4.0,
-     "corner_subiti": 7.5,
-     "falli": 12.5,
-     "cartellini": 2.5,
-     "gialli": 10,
-     "rossi": 0,
-     "precisione_tiri": 0.588,
-     "over_25": 0.556,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.222,
-     "a_secco": 0.111,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_casa": {
-    "squadra": "Halifax",
-    "partite": 6,
-    "gol_fatti": 1.17,
-    "gol_subiti": 0.67,
-    "gol_totali": 7,
-    "in_porta_totali": 26,
-    "attesi_dai_tiri": 8.6,
-    "scarto_conversione": -1.6,
-    "vantaggio_casa": 1.0,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 1.67,
-     "gol_subiti": 0.33,
-     "tiri": 11.3,
-     "in_porta": 6.3,
-     "in_porta_subiti": 3.7,
-     "tiri_subiti": 8.7,
-     "corner": 5.7,
-     "corner_subiti": 6.3,
-     "falli": 12.0,
-     "cartellini": 2.7,
-     "gialli": 8,
-     "rossi": 0,
-     "precisione_tiri": 0.559,
-     "over_25": 0.333,
-     "gol_gol": 0.333,
-     "clean_sheet": 0.667,
-     "a_secco": 0.0,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 0.67,
-     "gol_subiti": 1.0,
-     "tiri": 5.3,
-     "in_porta": 2.3,
-     "in_porta_subiti": 4.3,
-     "tiri_subiti": 9.3,
-     "corner": 1.7,
-     "corner_subiti": 4.0,
-     "falli": 13.3,
-     "cartellini": 2.0,
-     "gialli": 5,
-     "rossi": 1,
-     "precisione_tiri": 0.438,
-     "over_25": 0.333,
-     "gol_gol": 0.333,
-     "clean_sheet": 0.333,
-     "a_secco": 0.333,
-     "con_avanzate": 3,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "forma_ospite": {
-    "squadra": "Boston Utd",
-    "partite": 6,
-    "gol_fatti": 1.5,
-    "gol_subiti": 1.83,
-    "gol_totali": 9,
-    "in_porta_totali": 38,
-    "attesi_dai_tiri": 12.6,
-    "scarto_conversione": -3.6,
-    "vantaggio_casa": -1.5,
-    "casa": {
-     "partite": 4,
-     "gol_fatti": 1.0,
-     "gol_subiti": 2.0,
-     "tiri": 12.2,
-     "in_porta": 7.2,
-     "in_porta_subiti": 5.8,
-     "tiri_subiti": 10.2,
-     "corner": 8.8,
-     "corner_subiti": 8.2,
-     "falli": 9.8,
-     "cartellini": 2.0,
-     "gialli": 7,
-     "rossi": 1,
-     "precisione_tiri": 0.592,
-     "over_25": 0.5,
-     "gol_gol": 0.75,
-     "clean_sheet": 0.0,
-     "a_secco": 0.25,
-     "con_avanzate": 4,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    },
-    "trasferta": {
-     "partite": 2,
-     "gol_fatti": 2.5,
-     "gol_subiti": 1.5,
-     "tiri": 8.0,
-     "in_porta": 4.5,
-     "in_porta_subiti": 6.5,
-     "tiri_subiti": 14.0,
-     "corner": 5.0,
-     "corner_subiti": 8.0,
-     "falli": 13.0,
-     "cartellini": 1.5,
-     "gialli": 3,
-     "rossi": 0,
-     "precisione_tiri": 0.562,
-     "over_25": 1.0,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 2,
-     "possesso": 0.0,
-     "passaggi": 0.0,
-     "precisione_passaggi": 0.0,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 0.0,
-     "intercetti": 0.0,
-     "respinte": 0.0,
-     "parate": 0.0,
-     "fuorigioco": 0.0,
-     "tiri_respinti": 0.0
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.8,
-     "difesa": 1.56,
-     "media": 1.68
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 10.6,
-     "difesa": 11.8,
-     "media": 11.2
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 6.4,
-     "difesa": 4.8,
-     "media": 5.6
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 5.0,
-     "difesa": 7.5,
-     "media": 6.2
-    },
-    {
-     "voce": "Possesso",
-     "attacco": 0.0,
-     "difesa": 0.0,
-     "media": null
-    }
-   ],
-   "precedenti": [
-    {
-     "data": "2026-01-17",
-     "casa": "Halifax",
-     "ospite": "Boston Utd",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2025-08-19",
-     "casa": "Boston Utd",
-     "ospite": "Halifax",
-     "gol_casa": 0,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2025-02-15",
-     "casa": "Halifax",
-     "ospite": "Boston Utd",
-     "gol_casa": 1,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2024-10-19",
-     "casa": "Boston Utd",
-     "ospite": "Halifax",
-     "gol_casa": 0,
-     "gol_ospite": 1
-    }
-   ]
-  },
-  {
    "id": "forest-green-wealdstone",
    "casa": "Forest Green",
    "ospite": "Wealdstone",
    "data": "2026-09-29",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     1.8,
+     4.2,
+     4.3
+    ],
+    "bet365": [
+     1.7,
+     4.0,
+     3.9
+    ],
+    "massimo": [
+     1.7,
+     4.0,
+     4.2
+    ],
+    "media": [
+     1.68,
+     3.92,
+     3.97
+    ]
+   },
+   "p_mercato": [
+    0.5454,
+    0.23,
+    0.2245
+   ],
    "p_modello": [
     0.5936,
     0.2119,
     0.1945
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0262,
+   "margine_migliore": 0.0763,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 2.01,
@@ -116730,20 +115444,513 @@
    ]
   },
   {
+   "id": "fylde-carlisle",
+   "casa": "Fylde",
+   "ospite": "Carlisle",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "quote": {
+    "betfair": [
+     2.4,
+     4.2,
+     2.76
+    ],
+    "bet365": [
+     2.35,
+     3.8,
+     2.55
+    ],
+    "massimo": [
+     2.35,
+     3.8,
+     2.7
+    ],
+    "media": [
+     2.27,
+     3.7,
+     2.57
+    ]
+   },
+   "p_mercato": [
+    0.4106,
+    0.2328,
+    0.3565
+   ],
+   "p_modello": [
+    0.3173,
+    0.2233,
+    0.4594
+   ],
+   "margine": 0.0171,
+   "margine_migliore": 0.0591,
+   "campionato": "national-league",
+   "dettaglio": {
+    "gol_attesi_casa": 1.52,
+    "gol_attesi_ospite": 1.87,
+    "matrice": [
+     [
+      0.03361,
+      0.0632,
+      0.05879,
+      0.03655,
+      0.01705,
+      0.00636
+     ],
+     [
+      0.05161,
+      0.09577,
+      0.0895,
+      0.05565,
+      0.02595,
+      0.00968
+     ],
+     [
+      0.03915,
+      0.07304,
+      0.06813,
+      0.04236,
+      0.01976,
+      0.00737
+     ],
+     [
+      0.01987,
+      0.03707,
+      0.03457,
+      0.0215,
+      0.01003,
+      0.00374
+     ],
+     [
+      0.00756,
+      0.01411,
+      0.01316,
+      0.00818,
+      0.00382,
+      0.00142
+     ],
+     [
+      0.0023,
+      0.0043,
+      0.00401,
+      0.00249,
+      0.00116,
+      0.00043
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.0958
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0895
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.073
+     },
+     {
+      "risultato": "2-2",
+      "p": 0.0681
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.0632
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.3173,
+      "X": 0.2233,
+      "2": 0.4594
+     },
+     "btts": {
+      "si": 0.6606,
+      "no": 0.3394
+     },
+     "ou_1.5": {
+      "over": 0.8516,
+      "under": 0.1484
+     },
+     "ou_2.5": {
+      "over": 0.6579,
+      "under": 0.3421
+     },
+     "ou_3.5": {
+      "over": 0.4389,
+      "under": 0.5611
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Fylde",
+    "partite": 20,
+    "gol_fatti": 1.45,
+    "gol_subiti": 1.5,
+    "gol_totali": 29,
+    "in_porta_totali": 50,
+    "attesi_dai_tiri": 16.6,
+    "scarto_conversione": 12.4,
+    "vantaggio_casa": -0.21,
+    "casa": {
+     "partite": 9,
+     "gol_fatti": 1.33,
+     "gol_subiti": 1.67,
+     "tiri": 9.0,
+     "in_porta": 5.0,
+     "in_porta_subiti": 4.0,
+     "tiri_subiti": 8.0,
+     "corner": 5.5,
+     "corner_subiti": 3.8,
+     "falli": 10.2,
+     "cartellini": 1.8,
+     "gialli": 7,
+     "rossi": 0,
+     "precisione_tiri": 0.556,
+     "over_25": 0.778,
+     "gol_gol": 0.556,
+     "clean_sheet": 0.222,
+     "a_secco": 0.222,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 11,
+     "gol_fatti": 1.55,
+     "gol_subiti": 1.36,
+     "tiri": 7.8,
+     "in_porta": 5.0,
+     "in_porta_subiti": 5.2,
+     "tiri_subiti": 11.5,
+     "corner": 5.5,
+     "corner_subiti": 4.5,
+     "falli": 13.2,
+     "cartellini": 1.8,
+     "gialli": 11,
+     "rossi": 0,
+     "precisione_tiri": 0.638,
+     "over_25": 0.545,
+     "gol_gol": 0.545,
+     "clean_sheet": 0.182,
+     "a_secco": 0.364,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Carlisle",
+    "partite": 20,
+    "gol_fatti": 1.95,
+    "gol_subiti": 1.3,
+    "gol_totali": 39,
+    "in_porta_totali": 62,
+    "attesi_dai_tiri": 20.6,
+    "scarto_conversione": 18.4,
+    "vantaggio_casa": 1.5,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 2.7,
+     "gol_subiti": 1.6,
+     "tiri": 14.8,
+     "in_porta": 8.2,
+     "in_porta_subiti": 5.2,
+     "tiri_subiti": 7.7,
+     "corner": 6.7,
+     "corner_subiti": 5.0,
+     "falli": 11.5,
+     "cartellini": 1.5,
+     "gialli": 9,
+     "rossi": 0,
+     "precisione_tiri": 0.551,
+     "over_25": 0.8,
+     "gol_gol": 0.7,
+     "clean_sheet": 0.3,
+     "a_secco": 0.1,
+     "con_avanzate": 6,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 1.0,
+     "tiri": 8.2,
+     "in_porta": 3.2,
+     "in_porta_subiti": 4.8,
+     "tiri_subiti": 8.8,
+     "corner": 4.8,
+     "corner_subiti": 4.5,
+     "falli": 12.2,
+     "cartellini": 2.0,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.394,
+     "over_25": 0.4,
+     "gol_gol": 0.6,
+     "clean_sheet": 0.3,
+     "a_secco": 0.1,
+     "con_avanzate": 2,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Fylde",
+    "partite": 6,
+    "gol_fatti": 2.17,
+    "gol_subiti": 1.17,
+    "gol_totali": 13,
+    "in_porta_totali": 32,
+    "attesi_dai_tiri": 10.6,
+    "scarto_conversione": 2.4,
+    "vantaggio_casa": -1.0,
+    "casa": {
+     "partite": 2,
+     "gol_fatti": 1.5,
+     "gol_subiti": 2.0,
+     "tiri": 8.0,
+     "in_porta": 3.5,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 9.0,
+     "corner": 6.5,
+     "corner_subiti": 2.0,
+     "falli": 11.5,
+     "cartellini": 2.0,
+     "gialli": 4,
+     "rossi": 0,
+     "precisione_tiri": 0.438,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 2,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 4,
+     "gol_fatti": 2.5,
+     "gol_subiti": 0.75,
+     "tiri": 8.5,
+     "in_porta": 6.2,
+     "in_porta_subiti": 5.2,
+     "tiri_subiti": 12.2,
+     "corner": 6.5,
+     "corner_subiti": 5.8,
+     "falli": 11.8,
+     "cartellini": 1.5,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.735,
+     "over_25": 0.75,
+     "gol_gol": 0.75,
+     "clean_sheet": 0.25,
+     "a_secco": 0.0,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Carlisle",
+    "partite": 6,
+    "gol_fatti": 1.67,
+    "gol_subiti": 2.17,
+    "gol_totali": 10,
+    "in_porta_totali": 34,
+    "attesi_dai_tiri": 11.3,
+    "scarto_conversione": -1.3,
+    "vantaggio_casa": 1.75,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 2.25,
+     "gol_subiti": 2.5,
+     "tiri": 14.2,
+     "in_porta": 7.5,
+     "in_porta_subiti": 5.8,
+     "tiri_subiti": 9.0,
+     "corner": 6.5,
+     "corner_subiti": 5.8,
+     "falli": 13.0,
+     "cartellini": 2.2,
+     "gialli": 9,
+     "rossi": 0,
+     "precisione_tiri": 0.526,
+     "over_25": 0.75,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 0.5,
+     "gol_subiti": 1.5,
+     "tiri": 7.5,
+     "in_porta": 2.0,
+     "in_porta_subiti": 5.5,
+     "tiri_subiti": 10.0,
+     "corner": 5.5,
+     "corner_subiti": 4.5,
+     "falli": 12.5,
+     "cartellini": 1.5,
+     "gialli": 3,
+     "rossi": 0,
+     "precisione_tiri": 0.267,
+     "over_25": 0.5,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 2,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.33,
+     "difesa": 1.0,
+     "media": 1.17
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 9.0,
+     "difesa": 8.8,
+     "media": 8.9
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 5.0,
+     "difesa": 4.8,
+     "media": 4.9
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.5,
+     "difesa": 4.5,
+     "media": 5.0
+    }
+   ],
+   "precedenti": []
+  },
+  {
    "id": "gateshead-altrincham",
    "casa": "Gateshead",
    "ospite": "Altrincham",
    "data": "2026-09-29",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     4.6,
+     4.3,
+     1.77
+    ],
+    "bet365": [
+     4.1,
+     3.9,
+     1.67
+    ],
+    "massimo": [
+     4.33,
+     4.0,
+     1.73
+    ],
+    "media": [
+     4.04,
+     3.85,
+     1.68
+    ]
+   },
+   "p_mercato": [
+    0.2129,
+    0.228,
+    0.5592
+   ],
    "p_modello": [
     0.328,
     0.2431,
     0.4289
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0149,
+   "margine_migliore": 0.059,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.36,
@@ -117222,20 +116429,548 @@
    ]
   },
   {
+   "id": "halifax-boston-utd",
+   "casa": "Halifax",
+   "ospite": "Boston Utd",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "quote": {
+    "betfair": [
+     2.26,
+     3.75,
+     3.15
+    ],
+    "bet365": [
+     2.05,
+     3.6,
+     3.0
+    ],
+    "massimo": [
+     2.15,
+     3.6,
+     3.1
+    ],
+    "media": [
+     2.09,
+     3.47,
+     2.98
+    ]
+   },
+   "p_mercato": [
+    0.4329,
+    0.2583,
+    0.3088
+   ],
+   "p_modello": [
+    0.4705,
+    0.2615,
+    0.268
+   ],
+   "margine": 0.0266,
+   "margine_migliore": 0.0655,
+   "campionato": "national-league",
+   "dettaglio": {
+    "gol_attesi_casa": 1.47,
+    "gol_attesi_ospite": 1.04,
+    "matrice": [
+     [
+      0.08111,
+      0.08482,
+      0.04399,
+      0.01525,
+      0.00396,
+      0.00082
+     ],
+     [
+      0.11973,
+      0.12405,
+      0.06463,
+      0.0224,
+      0.00583,
+      0.00121
+     ],
+     [
+      0.08778,
+      0.09129,
+      0.04747,
+      0.01646,
+      0.00428,
+      0.00089
+     ],
+     [
+      0.04299,
+      0.04471,
+      0.02325,
+      0.00806,
+      0.0021,
+      0.00044
+     ],
+     [
+      0.01579,
+      0.01642,
+      0.00854,
+      0.00296,
+      0.00077,
+      0.00016
+     ],
+     [
+      0.00464,
+      0.00483,
+      0.00251,
+      0.00087,
+      0.00023,
+      5e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.124
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1197
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0913
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.0878
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.0848
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.4705,
+      "X": 0.2615,
+      "2": 0.268
+     },
+     "btts": {
+      "si": 0.4975,
+      "no": 0.5025
+     },
+     "ou_1.5": {
+      "over": 0.7143,
+      "under": 0.2857
+     },
+     "ou_2.5": {
+      "over": 0.4585,
+      "under": 0.5415
+     },
+     "ou_3.5": {
+      "over": 0.2444,
+      "under": 0.7556
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Halifax",
+    "partite": 20,
+    "gol_fatti": 1.45,
+    "gol_subiti": 1.3,
+    "gol_totali": 29,
+    "in_porta_totali": 51,
+    "attesi_dai_tiri": 17.0,
+    "scarto_conversione": 12.0,
+    "vantaggio_casa": 0.7,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.8,
+     "gol_subiti": 1.8,
+     "tiri": 10.6,
+     "in_porta": 6.4,
+     "in_porta_subiti": 3.8,
+     "tiri_subiti": 8.2,
+     "corner": 5.0,
+     "corner_subiti": 7.2,
+     "falli": 11.8,
+     "cartellini": 2.4,
+     "gialli": 12,
+     "rossi": 0,
+     "precisione_tiri": 0.604,
+     "over_25": 0.7,
+     "gol_gol": 0.7,
+     "clean_sheet": 0.2,
+     "a_secco": 0.1,
+     "con_avanzate": 5,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.1,
+     "gol_subiti": 0.8,
+     "tiri": 7.4,
+     "in_porta": 3.8,
+     "in_porta_subiti": 4.8,
+     "tiri_subiti": 9.0,
+     "corner": 2.8,
+     "corner_subiti": 4.8,
+     "falli": 11.4,
+     "cartellini": 1.8,
+     "gialli": 8,
+     "rossi": 1,
+     "precisione_tiri": 0.514,
+     "over_25": 0.4,
+     "gol_gol": 0.3,
+     "clean_sheet": 0.6,
+     "a_secco": 0.2,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Boston Utd",
+    "partite": 20,
+    "gol_fatti": 1.4,
+    "gol_subiti": 1.4,
+    "gol_totali": 28,
+    "in_porta_totali": 60,
+    "attesi_dai_tiri": 19.9,
+    "scarto_conversione": 8.1,
+    "vantaggio_casa": -0.48,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.18,
+     "gol_subiti": 1.27,
+     "tiri": 11.3,
+     "in_porta": 6.7,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 9.3,
+     "corner": 7.7,
+     "corner_subiti": 7.2,
+     "falli": 10.7,
+     "cartellini": 2.3,
+     "gialli": 12,
+     "rossi": 2,
+     "precisione_tiri": 0.588,
+     "over_25": 0.455,
+     "gol_gol": 0.545,
+     "clean_sheet": 0.182,
+     "a_secco": 0.273,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 1.67,
+     "gol_subiti": 1.56,
+     "tiri": 8.5,
+     "in_porta": 5.0,
+     "in_porta_subiti": 4.8,
+     "tiri_subiti": 11.8,
+     "corner": 4.0,
+     "corner_subiti": 7.5,
+     "falli": 12.5,
+     "cartellini": 2.5,
+     "gialli": 10,
+     "rossi": 0,
+     "precisione_tiri": 0.588,
+     "over_25": 0.556,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.222,
+     "a_secco": 0.111,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Halifax",
+    "partite": 6,
+    "gol_fatti": 1.17,
+    "gol_subiti": 0.67,
+    "gol_totali": 7,
+    "in_porta_totali": 26,
+    "attesi_dai_tiri": 8.6,
+    "scarto_conversione": -1.6,
+    "vantaggio_casa": 1.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 0.33,
+     "tiri": 11.3,
+     "in_porta": 6.3,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 8.7,
+     "corner": 5.7,
+     "corner_subiti": 6.3,
+     "falli": 12.0,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.559,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.667,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.0,
+     "tiri": 5.3,
+     "in_porta": 2.3,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 9.3,
+     "corner": 1.7,
+     "corner_subiti": 4.0,
+     "falli": 13.3,
+     "cartellini": 2.0,
+     "gialli": 5,
+     "rossi": 1,
+     "precisione_tiri": 0.438,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Boston Utd",
+    "partite": 6,
+    "gol_fatti": 1.5,
+    "gol_subiti": 1.83,
+    "gol_totali": 9,
+    "in_porta_totali": 38,
+    "attesi_dai_tiri": 12.6,
+    "scarto_conversione": -3.6,
+    "vantaggio_casa": -1.5,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.0,
+     "tiri": 12.2,
+     "in_porta": 7.2,
+     "in_porta_subiti": 5.8,
+     "tiri_subiti": 10.2,
+     "corner": 8.8,
+     "corner_subiti": 8.2,
+     "falli": 9.8,
+     "cartellini": 2.0,
+     "gialli": 7,
+     "rossi": 1,
+     "precisione_tiri": 0.592,
+     "over_25": 0.5,
+     "gol_gol": 0.75,
+     "clean_sheet": 0.0,
+     "a_secco": 0.25,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 2.5,
+     "gol_subiti": 1.5,
+     "tiri": 8.0,
+     "in_porta": 4.5,
+     "in_porta_subiti": 6.5,
+     "tiri_subiti": 14.0,
+     "corner": 5.0,
+     "corner_subiti": 8.0,
+     "falli": 13.0,
+     "cartellini": 1.5,
+     "gialli": 3,
+     "rossi": 0,
+     "precisione_tiri": 0.562,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 2,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.8,
+     "difesa": 1.56,
+     "media": 1.68
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 10.6,
+     "difesa": 11.8,
+     "media": 11.2
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 6.4,
+     "difesa": 4.8,
+     "media": 5.6
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.0,
+     "difesa": 7.5,
+     "media": 6.2
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 0.0,
+     "difesa": 0.0,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-01-17",
+     "casa": "Halifax",
+     "ospite": "Boston Utd",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-08-19",
+     "casa": "Boston Utd",
+     "ospite": "Halifax",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-02-15",
+     "casa": "Halifax",
+     "ospite": "Boston Utd",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2024-10-19",
+     "casa": "Boston Utd",
+     "ospite": "Halifax",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
    "id": "hartlepool-harrogate",
    "casa": "Hartlepool",
    "ospite": "Harrogate",
    "data": "2026-09-29",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     3.75,
+     4.0,
+     2.0
+    ],
+    "bet365": [
+     3.8,
+     3.6,
+     1.75
+    ],
+    "massimo": [
+     3.8,
+     4.0,
+     1.91
+    ],
+    "media": [
+     3.51,
+     3.63,
+     1.84
+    ]
+   },
+   "p_mercato": [
+    0.2614,
+    0.2448,
+    0.4938
+   ],
    "p_modello": [
     0.3019,
     0.2199,
     0.4782
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0167,
+   "margine_migliore": 0.0367,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.5,
@@ -117671,20 +117406,519 @@
    "precedenti": []
   },
   {
+   "id": "hornchurch-aldershot",
+   "casa": "Hornchurch",
+   "ospite": "Aldershot",
+   "data": "2026-09-29",
+   "ora": "20:45",
+   "quote": {
+    "betfair": [
+     2.24,
+     3.75,
+     3.2
+    ],
+    "bet365": [
+     2.2,
+     3.5,
+     2.9
+    ],
+    "massimo": [
+     2.2,
+     3.6,
+     3.1
+    ],
+    "media": [
+     2.08,
+     3.5,
+     2.98
+    ]
+   },
+   "p_mercato": [
+    0.4372,
+    0.2586,
+    0.3042
+   ],
+   "p_modello": [
+    0.4274,
+    0.247,
+    0.3255
+   ],
+   "margine": 0.0256,
+   "margine_migliore": 0.0549,
+   "campionato": "national-league",
+   "dettaglio": {
+    "gol_attesi_casa": 1.55,
+    "gol_attesi_ospite": 1.32,
+    "matrice": [
+     [
+      0.05651,
+      0.07514,
+      0.04949,
+      0.02179,
+      0.0072,
+      0.0019
+     ],
+     [
+      0.08806,
+      0.11583,
+      0.07664,
+      0.03375,
+      0.01115,
+      0.00294
+     ],
+     [
+      0.06802,
+      0.08985,
+      0.05935,
+      0.02613,
+      0.00863,
+      0.00228
+     ],
+     [
+      0.03511,
+      0.04638,
+      0.03064,
+      0.01349,
+      0.00446,
+      0.00118
+     ],
+     [
+      0.01359,
+      0.01796,
+      0.01186,
+      0.00522,
+      0.00172,
+      0.00046
+     ],
+     [
+      0.00421,
+      0.00556,
+      0.00367,
+      0.00162,
+      0.00053,
+      0.00014
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1158
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0899
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.0881
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0766
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.0751
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.4274,
+      "X": 0.247,
+      "2": 0.3255
+     },
+     "btts": {
+      "si": 0.5771,
+      "no": 0.4229
+     },
+     "ou_1.5": {
+      "over": 0.7803,
+      "under": 0.2197
+     },
+     "ou_2.5": {
+      "over": 0.547,
+      "under": 0.453
+     },
+     "ou_3.5": {
+      "over": 0.3236,
+      "under": 0.6764
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Hornchurch",
+    "partite": 10,
+    "gol_fatti": 1.1,
+    "gol_subiti": 1.5,
+    "gol_totali": 11,
+    "in_porta_totali": 41,
+    "attesi_dai_tiri": 13.6,
+    "scarto_conversione": -2.6,
+    "vantaggio_casa": 0.25,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 1.25,
+     "gol_subiti": 0.25,
+     "tiri": 10.0,
+     "in_porta": 4.0,
+     "in_porta_subiti": 3.0,
+     "tiri_subiti": 9.0,
+     "corner": 5.2,
+     "corner_subiti": 4.5,
+     "falli": 11.5,
+     "cartellini": 2.0,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.4,
+     "over_25": 0.25,
+     "gol_gol": 0.0,
+     "clean_sheet": 0.75,
+     "a_secco": 0.25,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 6,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.33,
+     "tiri": 6.3,
+     "in_porta": 4.2,
+     "in_porta_subiti": 7.5,
+     "tiri_subiti": 12.7,
+     "corner": 4.2,
+     "corner_subiti": 8.0,
+     "falli": 13.3,
+     "cartellini": 1.7,
+     "gialli": 10,
+     "rossi": 0,
+     "precisione_tiri": 0.658,
+     "over_25": 0.833,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 6,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Aldershot",
+    "partite": 20,
+    "gol_fatti": 1.15,
+    "gol_subiti": 1.4,
+    "gol_totali": 23,
+    "in_porta_totali": 46,
+    "attesi_dai_tiri": 15.3,
+    "scarto_conversione": 7.7,
+    "vantaggio_casa": 0.07,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.18,
+     "gol_subiti": 1.45,
+     "tiri": 8.2,
+     "in_porta": 4.6,
+     "in_porta_subiti": 3.8,
+     "tiri_subiti": 8.6,
+     "corner": 4.0,
+     "corner_subiti": 4.6,
+     "falli": 12.0,
+     "cartellini": 2.0,
+     "gialli": 9,
+     "rossi": 1,
+     "precisione_tiri": 0.561,
+     "over_25": 0.455,
+     "gol_gol": 0.455,
+     "clean_sheet": 0.091,
+     "a_secco": 0.455,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 1.11,
+     "gol_subiti": 1.33,
+     "tiri": 9.2,
+     "in_porta": 4.6,
+     "in_porta_subiti": 4.8,
+     "tiri_subiti": 10.6,
+     "corner": 4.0,
+     "corner_subiti": 5.8,
+     "falli": 12.8,
+     "cartellini": 3.4,
+     "gialli": 15,
+     "rossi": 2,
+     "precisione_tiri": 0.5,
+     "over_25": 0.444,
+     "gol_gol": 0.556,
+     "clean_sheet": 0.222,
+     "a_secco": 0.222,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Hornchurch",
+    "partite": 6,
+    "gol_fatti": 0.67,
+    "gol_subiti": 1.67,
+    "gol_totali": 4,
+    "in_porta_totali": 22,
+    "attesi_dai_tiri": 7.3,
+    "scarto_conversione": -3.3,
+    "vantaggio_casa": -0.25,
+    "casa": {
+     "partite": 2,
+     "gol_fatti": 0.5,
+     "gol_subiti": 0.5,
+     "tiri": 9.0,
+     "in_porta": 2.5,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 10.5,
+     "corner": 6.0,
+     "corner_subiti": 5.0,
+     "falli": 12.0,
+     "cartellini": 1.5,
+     "gialli": 3,
+     "rossi": 0,
+     "precisione_tiri": 0.278,
+     "over_25": 0.0,
+     "gol_gol": 0.0,
+     "clean_sheet": 0.5,
+     "a_secco": 0.5,
+     "con_avanzate": 2,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 4,
+     "gol_fatti": 0.75,
+     "gol_subiti": 2.25,
+     "tiri": 7.0,
+     "in_porta": 4.2,
+     "in_porta_subiti": 6.8,
+     "tiri_subiti": 12.5,
+     "corner": 3.8,
+     "corner_subiti": 8.0,
+     "falli": 15.0,
+     "cartellini": 2.0,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.607,
+     "over_25": 0.75,
+     "gol_gol": 0.25,
+     "clean_sheet": 0.0,
+     "a_secco": 0.75,
+     "con_avanzate": 4,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Aldershot",
+    "partite": 6,
+    "gol_fatti": 1.67,
+    "gol_subiti": 0.83,
+    "gol_totali": 10,
+    "in_porta_totali": 32,
+    "attesi_dai_tiri": 10.6,
+    "scarto_conversione": -0.6,
+    "vantaggio_casa": 1.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 2.33,
+     "gol_subiti": 0.67,
+     "tiri": 8.3,
+     "in_porta": 5.3,
+     "in_porta_subiti": 3.3,
+     "tiri_subiti": 8.7,
+     "corner": 3.7,
+     "corner_subiti": 4.7,
+     "falli": 13.0,
+     "cartellini": 2.7,
+     "gialli": 7,
+     "rossi": 1,
+     "precisione_tiri": 0.64,
+     "over_25": 0.333,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.0,
+     "tiri": 9.0,
+     "in_porta": 5.3,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 11.3,
+     "corner": 4.7,
+     "corner_subiti": 6.0,
+     "falli": 13.0,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.593,
+     "over_25": 0.333,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 0.0,
+     "passaggi": 0.0,
+     "precisione_passaggi": 0.0,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 0.0,
+     "intercetti": 0.0,
+     "respinte": 0.0,
+     "parate": 0.0,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.25,
+     "difesa": 1.33,
+     "media": 1.29
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 10.0,
+     "difesa": 10.6,
+     "media": 10.3
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 4.0,
+     "difesa": 4.8,
+     "media": 4.4
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.2,
+     "difesa": 5.8,
+     "media": 5.5
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 0.0,
+     "difesa": 0.0,
+     "media": null
+    }
+   ],
+   "precedenti": []
+  },
+  {
    "id": "woking-solihull",
    "casa": "Woking",
    "ospite": "Solihull",
    "data": "2026-09-29",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     1.98,
+     3.95,
+     3.75
+    ],
+    "bet365": [
+     1.83,
+     3.8,
+     3.5
+    ],
+    "massimo": [
+     1.91,
+     3.8,
+     3.6
+    ],
+    "media": [
+     1.86,
+     3.66,
+     3.43
+    ]
+   },
+   "p_mercato": [
+    0.4958,
+    0.2454,
+    0.2588
+   ],
    "p_modello": [
     0.5265,
     0.238,
     0.2354
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0249,
+   "margine_migliore": 0.0645,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.72,
@@ -118162,15 +118396,40 @@
    "ospite": "Worthing",
    "data": "2026-09-29",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     2.24,
+     4.0,
+     3.0
+    ],
+    "bet365": [
+     2.05,
+     3.75,
+     2.9
+    ],
+    "massimo": [
+     2.1,
+     4.0,
+     3.0
+    ],
+    "media": [
+     2.08,
+     3.7,
+     2.86
+    ]
+   },
+   "p_mercato": [
+    0.4357,
+    0.2408,
+    0.3235
+   ],
    "p_modello": [
     0.3172,
     0.2347,
     0.4481
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0298,
+   "margine_migliore": 0.0595,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.4,
@@ -118611,15 +118870,40 @@
    "ospite": "Southend",
    "data": "2026-09-30",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     3.85,
+     3.6,
+     1.77
+    ],
+    "bet365": [
+     4.1,
+     3.8,
+     1.7
+    ],
+    "massimo": [
+     4.1,
+     4.0,
+     1.78
+    ],
+    "media": [
+     3.85,
+     3.75,
+     1.73
+    ]
+   },
+   "p_mercato": [
+    0.2282,
+    0.2458,
+    0.526
+   ],
    "p_modello": [
     0.2369,
     0.2335,
     0.5297
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.1025,
+   "margine_migliore": 0.0557,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.11,
@@ -119103,15 +119387,40 @@
    "ospite": "Sutton",
    "data": "2026-09-30",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "betfair": [
+     2.26,
+     3.55,
+     2.86
+    ],
+    "bet365": [
+     2.25,
+     3.6,
+     2.7
+    ],
+    "massimo": [
+     2.25,
+     3.6,
+     2.8
+    ],
+    "media": [
+     2.23,
+     3.48,
+     2.72
+    ]
+   },
+   "p_mercato": [
+    0.4163,
+    0.2585,
+    0.3252
+   ],
    "p_modello": [
     0.4619,
     0.2328,
     0.3053
    ],
-   "margine": null,
-   "margine_migliore": null,
+   "margine": 0.0738,
+   "margine_migliore": 0.0794,
    "campionato": "national-league",
    "dettaglio": {
     "gol_attesi_casa": 1.75,
@@ -140355,7 +140664,7 @@
      "in_porta_subiti": 5.5,
      "tiri_subiti": 15.2,
      "corner": 4.9,
-     "corner_subiti": 5.4,
+     "corner_subiti": 5.3,
      "falli": 15.9,
      "cartellini": 3.3,
      "gialli": 33,
@@ -140505,7 +140814,7 @@
      "in_porta_subiti": 5.7,
      "tiri_subiti": 19.0,
      "corner": 3.3,
-     "corner_subiti": 5.0,
+     "corner_subiti": 4.7,
      "falli": 14.0,
      "cartellini": 3.0,
      "gialli": 9,
@@ -142137,7 +142446,7 @@
      "in_porta": 6.4,
      "in_porta_subiti": 4.2,
      "tiri_subiti": 9.9,
-     "corner": 6.3,
+     "corner": 6.2,
      "corner_subiti": 4.0,
      "falli": 14.2,
      "cartellini": 3.0,
@@ -142287,7 +142596,7 @@
      "in_porta": 6.7,
      "in_porta_subiti": 3.7,
      "tiri_subiti": 11.7,
-     "corner": 5.7,
+     "corner": 5.3,
      "corner_subiti": 3.7,
      "falli": 10.3,
      "cartellini": 2.3,
@@ -152252,7 +152561,7 @@
     ],
     "corner": [
      4,
-     3
+     2
     ],
     "falli": [
      17,
@@ -152268,7 +152577,7 @@
     ],
     "primo_tempo": [
      0,
-     0
+     1
     ],
     "possesso": [
      43.8,
@@ -152283,7 +152592,28 @@
      2
     ]
    },
-   "quote_chiusura": {},
+   "quote_chiusura": {
+    "betfair": [
+     3.6,
+     3.5,
+     2.26
+    ],
+    "bet365": [
+     3.25,
+     3.5,
+     2.1
+    ],
+    "massimo": [
+     3.3,
+     3.5,
+     2.2
+    ],
+    "media": [
+     3.2,
+     3.28,
+     2.12
+    ]
+   },
    "pronostico": {
     "casa": "Leganes",
     "data": "2026-09-28",
