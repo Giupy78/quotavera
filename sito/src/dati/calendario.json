@@ -2,17 +2,186 @@
  "campionati": {
   "serie-a": [],
   "premier-league": [],
-  "laliga": [],
-  "bundesliga": [],
-  "ligue-1": [],
-  "eredivisie": [],
-  "primeira-liga": [],
-  "superlig": [],
-  "jupiler": [],
+  "laliga": [
+   {
+    "id": "malaga-espanol",
+    "casa": "Malaga",
+    "ospite": "Espanol",
+    "data": "2026-10-09",
+    "ora": "21:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.1829,
+     0.3314,
+     0.4857
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "bundesliga": [
+   {
+    "id": "dortmund-werder-bremen",
+    "casa": "Dortmund",
+    "ospite": "Werder Bremen",
+    "data": "2026-10-09",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.7098,
+     0.1825,
+     0.1077
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "ligue-1": [
+   {
+    "id": "lens-lyon",
+    "casa": "Lens",
+    "ospite": "Lyon",
+    "data": "2026-10-09",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4415,
+     0.2593,
+     0.2992
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "eredivisie": [
+   {
+    "id": "psv-eindhoven-heerenveen",
+    "casa": "PSV Eindhoven",
+    "ospite": "Heerenveen",
+    "data": "2026-10-09",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.7974,
+     0.1227,
+     0.0799
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "primeira-liga": [
+   {
+    "id": "moreirense-gil-vicente",
+    "casa": "Moreirense",
+    "ospite": "Gil Vicente",
+    "data": "2026-10-09",
+    "ora": "19:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3477,
+     0.2857,
+     0.3666
+    ],
+    "margine": null,
+    "margine_migliore": null
+   },
+   {
+    "id": "sp-braga-sp-lisbon",
+    "casa": "Sp Braga",
+    "ospite": "Sp Lisbon",
+    "data": "2026-10-09",
+    "ora": "21:15",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.256,
+     0.2265,
+     0.5175
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "superlig": [
+   {
+    "id": "galatasaray-kasimpasa",
+    "casa": "Galatasaray",
+    "ospite": "Kasimpasa",
+    "data": "2026-10-09",
+    "ora": "19:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.7602,
+     0.1575,
+     0.0823
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "jupiler": [
+   {
+    "id": "beveren-lommel-sk",
+    "casa": "Beveren",
+    "ospite": "Lommel SK",
+    "data": "2026-10-09",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2907,
+     0.3545,
+     0.3548
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
   "super-league-grecia": [],
   "premiership": [],
-  "serie-b": [],
-  "championship": [],
+  "serie-b": [
+   {
+    "id": "avellino-sampdoria",
+    "casa": "Avellino",
+    "ospite": "Sampdoria",
+    "data": "2026-10-09",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4256,
+     0.3121,
+     0.2622
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "championship": [
+   {
+    "id": "west-ham-qpr",
+    "casa": "West Ham",
+    "ospite": "QPR",
+    "data": "2026-10-09",
+    "ora": "21:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.8003,
+     0.1183,
+     0.0814
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
   "league-one": [
    {
     "id": "burton-huddersfield",
@@ -561,50 +730,25 @@
     ],
     "margine": null,
     "margine_migliore": null
+   },
+   {
+    "id": "sutton-boreham-wood",
+    "casa": "Sutton",
+    "ospite": "Boreham Wood",
+    "data": "2026-10-09",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2295,
+     0.2153,
+     0.5553
+    ],
+    "margine": null,
+    "margine_migliore": null
    }
   ],
   "laliga-2": [
-   {
-    "id": "leganes-castellon",
-    "casa": "Leganes",
-    "ospite": "Castellon",
-    "data": "2026-09-28",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      3.0,
-      3.4,
-      2.3
-     ],
-     "bet365": [
-      2.75,
-      3.4,
-      2.32
-     ],
-     "massimo": [
-      3.0,
-      3.4,
-      2.32
-     ],
-     "media": [
-      2.89,
-      3.25,
-      2.26
-     ]
-    },
-    "p_mercato": [
-     0.3129,
-     0.2743,
-     0.4128
-    ],
-    "p_modello": [
-     0.3317,
-     0.2802,
-     0.388
-    ],
-    "margine": 0.0622,
-    "margine_migliore": 0.0585
-   },
    {
     "id": "eldense-oviedo",
     "casa": "Eldense",
@@ -614,9 +758,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2379,
-     0.2937,
-     0.4684
+     0.2374,
+     0.2933,
+     0.4693
     ],
     "margine": null,
     "margine_migliore": null
@@ -630,9 +774,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3167,
-     0.284,
-     0.3993
+     0.3162,
+     0.2838,
+     0.4
     ],
     "margine": null,
     "margine_migliore": null
@@ -646,9 +790,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4876,
+     0.487,
      0.2573,
-     0.2551
+     0.2557
     ],
     "margine": null,
     "margine_migliore": null
@@ -662,9 +806,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3475,
-     0.3074,
-     0.3451
+     0.3577,
+     0.3079,
+     0.3343
     ],
     "margine": null,
     "margine_migliore": null
@@ -678,9 +822,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5825,
-     0.246,
-     0.1715
+     0.5835,
+     0.2456,
+     0.1709
     ],
     "margine": null,
     "margine_migliore": null
@@ -694,9 +838,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4082,
-     0.2527,
-     0.3391
+     0.4079,
+     0.2525,
+     0.3396
     ],
     "margine": null,
     "margine_migliore": null
@@ -710,9 +854,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5528,
-     0.2387,
-     0.2085
+     0.5505,
+     0.2392,
+     0.2103
     ],
     "margine": null,
     "margine_migliore": null
@@ -726,9 +870,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.7108,
-     0.1664,
-     0.1228
+     0.7178,
+     0.1638,
+     0.1184
     ],
     "margine": null,
     "margine_migliore": null
@@ -742,9 +886,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5591,
-     0.255,
-     0.186
+     0.5583,
+     0.2551,
+     0.1866
     ],
     "margine": null,
     "margine_migliore": null
@@ -758,9 +902,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3079,
-     0.3519,
-     0.3402
+     0.3072,
+     0.3517,
+     0.3412
     ],
     "margine": null,
     "margine_migliore": null
@@ -774,16 +918,130 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4909,
+     0.4903,
      0.2593,
-     0.2498
+     0.2504
     ],
     "margine": null,
     "margine_migliore": null
    }
   ],
-  "bundesliga-2": [],
-  "ligue-2": [],
+  "bundesliga-2": [
+   {
+    "id": "heidenheim-kaiserslautern",
+    "casa": "Heidenheim",
+    "ospite": "Kaiserslautern",
+    "data": "2026-10-09",
+    "ora": "18:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4759,
+     0.2071,
+     0.317
+    ],
+    "margine": null,
+    "margine_migliore": null
+   },
+   {
+    "id": "braunschweig-holstein-kiel",
+    "casa": "Braunschweig",
+    "ospite": "Holstein Kiel",
+    "data": "2026-10-09",
+    "ora": "18:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3262,
+     0.267,
+     0.4067
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
+  "ligue-2": [
+   {
+    "id": "nancy-guingamp",
+    "casa": "Nancy",
+    "ospite": "Guingamp",
+    "data": "2026-10-09",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3491,
+     0.2651,
+     0.3858
+    ],
+    "margine": null,
+    "margine_migliore": null
+   },
+   {
+    "id": "dunkerque-annecy",
+    "casa": "Dunkerque",
+    "ospite": "Annecy",
+    "data": "2026-10-09",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3904,
+     0.2583,
+     0.3513
+    ],
+    "margine": null,
+    "margine_migliore": null
+   },
+   {
+    "id": "montpellier-grenoble",
+    "casa": "Montpellier",
+    "ospite": "Grenoble",
+    "data": "2026-10-09",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4759,
+     0.3171,
+     0.207
+    ],
+    "margine": null,
+    "margine_migliore": null
+   },
+   {
+    "id": "pau-fc-laval",
+    "casa": "Pau FC",
+    "ospite": "Laval",
+    "data": "2026-10-09",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4459,
+     0.2535,
+     0.3007
+    ],
+    "margine": null,
+    "margine_migliore": null
+   },
+   {
+    "id": "sochaux-boulogne",
+    "casa": "Sochaux",
+    "ospite": "Boulogne",
+    "data": "2026-10-09",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3053,
+     0.4734,
+     0.2212
+    ],
+    "margine": null,
+    "margine_migliore": null
+   }
+  ],
   "championship-scozia": [
    {
     "id": "morton-raith-rvs",
