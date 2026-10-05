@@ -1,5 +1,5 @@
 {
- "data": "2026-10-04",
+ "data": "2026-10-05",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1468
+   "campione": 1473
   },
   {
    "tipo": "campo",
@@ -1250,16 +1250,16 @@
    },
    {
     "tipo": "ripresa",
-    "titolo": "Yeovil vive di secondi tempi",
-    "testo": "Solo 6 dei suoi 26 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "77%",
+    "titolo": "Boreham Wood vive di secondi tempi",
+    "testo": "Solo 9 dei suoi 32 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "72%",
     "campionato": "National League",
     "bandiera": "🏴",
     "slug": "national-league",
     "squadre": [
-     "Yeovil"
+     "Boreham Wood"
     ],
-    "campione": 26
+    "campione": 32
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1293,16 +1293,16 @@
   "laliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Eibar non perde da 7 partite",
+    "titolo": "Castellon non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
-     "Eibar"
+     "Castellon"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
@@ -1320,15 +1320,15 @@
    {
     "tipo": "rimonte",
     "titolo": "Eibar non molla all'intervallo",
-    "testo": "Sotto al riposo 28 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
-    "numero": "18%",
+    "testo": "Sotto al riposo 29 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
+    "numero": "21%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Eibar"
     ],
-    "campione": 28
+    "campione": 29
    },
    {
     "tipo": "fragilita",
@@ -1642,6 +1642,19 @@
     "campione": 31
    },
    {
+    "tipo": "primo_tempo",
+    "titolo": "Ayr decide presto",
+    "testo": "87 dei suoi 157 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "55%",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Ayr"
+    ],
+    "campione": 157
+   },
+   {
     "tipo": "sorpresa_mercato",
     "titolo": "Falkirk 1-3 Raith Rvs",
     "testo": "19/04/2025: che Raith Rvs vinceva in casa di Falkirk era pagato 9.00, cioe' circa 11% di probabilita' secondo il mercato.",
@@ -1673,34 +1686,34 @@
   "league-one-scozia": [
    {
     "tipo": "imbattuta",
-    "titolo": "Ross County non perde da 7 partite",
+    "titolo": "Ross County non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
     "slug": "league-one-scozia",
     "squadre": [
      "Ross County"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
-    "titolo": "East Fife non vince da 6 partite",
+    "titolo": "East Fife non vince da 7 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
     "slug": "league-one-scozia",
     "squadre": [
      "East Fife"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
     "titolo": "Alloa non molla all'intervallo",
-    "testo": "Sotto al riposo 37 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
+    "testo": "Sotto al riposo 38 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
     "numero": "16%",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
@@ -1708,7 +1721,7 @@
     "squadre": [
      "Alloa"
     ],
-    "campione": 37
+    "campione": 38
    },
    {
     "tipo": "fragilita",
@@ -1725,16 +1738,16 @@
    },
    {
     "tipo": "ripresa",
-    "titolo": "East Fife vive di secondi tempi",
-    "testo": "Solo 13 dei suoi 41 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "68%",
+    "titolo": "Ross County vive di secondi tempi",
+    "testo": "Solo 8 dei suoi 26 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "69%",
     "campionato": "League One scozzese",
     "bandiera": "🏴",
     "slug": "league-one-scozia",
     "squadre": [
-     "East Fife"
+     "Ross County"
     ],
-    "campione": 41
+    "campione": 26
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1768,27 +1781,14 @@
   "league-two-scozia": [
    {
     "tipo": "imbattuta",
-    "titolo": "Stranraer non perde da 6 partite",
+    "titolo": "Stranraer non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "6",
-    "campionato": "League Two scozzese",
-    "bandiera": "🏴",
-    "slug": "league-two-scozia",
-    "squadre": [
-     "Stranraer"
-    ],
-    "campione": 6
-   },
-   {
-    "tipo": "digiuno",
-    "titolo": "Stirling non vince da 7 partite",
-    "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "7",
     "campionato": "League Two scozzese",
     "bandiera": "🏴",
     "slug": "league-two-scozia",
     "squadre": [
-     "Stirling"
+     "Stranraer"
     ],
     "campione": 7
    },
@@ -1817,6 +1817,19 @@
      "Annan Athletic"
     ],
     "campione": 12
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "Forfar decide presto",
+    "testo": "70 dei suoi 127 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "55%",
+    "campionato": "League Two scozzese",
+    "bandiera": "🏴",
+    "slug": "league-two-scozia",
+    "squadre": [
+     "Forfar"
+    ],
+    "campione": 127
    },
    {
     "tipo": "sorpresa_mercato",
