@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 954
+   "campione": 959
   },
   {
    "tipo": "gol_lega_meno",
@@ -32,7 +32,7 @@
    "bandiera": "🏴",
    "slug": "national-league",
    "squadre": [],
-   "campione": 144
+   "campione": 146
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1191
+   "campione": 1195
   },
   {
    "tipo": "cartellini",
@@ -65,7 +65,7 @@
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 726
+   "campione": 730
   }
  ],
  "per_campionato": {
@@ -127,6 +127,32 @@
   ],
   "premier-league": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Brentford non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Brentford"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Fulham non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Fulham"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Man City non molla all'intervallo",
     "testo": "Sotto al riposo 18 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
@@ -155,15 +181,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ipswich decide presto",
-    "testo": "26 dei suoi 43 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "60%",
+    "testo": "26 dei suoi 45 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "58%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Ipswich"
     ],
-    "campione": 43
+    "campione": 45
    },
    {
     "tipo": "sorpresa_mercato",
@@ -663,29 +689,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Mechelen non vince da 7 partite",
+    "titolo": "Cercle Brugge non vince da 8 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
-     "Mechelen"
+     "Cercle Brugge"
     ],
-    "campione": 7
-   },
-   {
-    "tipo": "porta_chiusa",
-    "titolo": "Anderlecht non subisce gol da 4 partite",
-    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
-    "numero": "4",
-    "campionato": "Pro League",
-    "bandiera": "🇧🇪",
-    "slug": "jupiler",
-    "squadre": [
-     "Anderlecht"
-    ],
-    "campione": 4
+    "campione": 8
    },
    {
     "tipo": "a_secco",
@@ -839,6 +852,32 @@
   ],
   "premiership": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Rangers non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "Rangers"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "St Mirren non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Premiership",
+    "bandiera": "🏴",
+    "slug": "premiership",
+    "squadre": [
+     "St Mirren"
+    ],
+    "campione": 3
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Celtic non molla all'intervallo",
     "testo": "Sotto al riposo 17 volte nelle ultime stagioni, ha finito vincendo 5: e' la quota di rimonte piu' alta del campionato.",
@@ -894,6 +933,19 @@
    }
   ],
   "serie-b": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Sudtirol non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Sudtirol"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "a_secco",
     "titolo": "Carrarese non segna da 3 partite",
@@ -965,16 +1017,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Burnley non vince da 8 partite",
+    "titolo": "Charlton non vince da 6 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "8",
+    "numero": "6",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "Burnley"
+     "Charlton"
     ],
-    "campione": 8
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -1003,17 +1055,17 @@
     "campione": 19
    },
    {
-    "tipo": "primo_tempo",
-    "titolo": "Burnley decide presto",
-    "testo": "43 dei suoi 78 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "55%",
+    "tipo": "ripresa",
+    "titolo": "Charlton vive di secondi tempi",
+    "testo": "Solo 17 dei suoi 52 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "67%",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "Burnley"
+     "Charlton"
     ],
-    "campione": 78
+    "campione": 52
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1046,30 +1098,43 @@
   ],
   "league-one": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Sheffield Weds non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "League One",
+    "bandiera": "🏴",
+    "slug": "league-one",
+    "squadre": [
+     "Sheffield Weds"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "digiuno",
-    "titolo": "Milton Keynes Dons non vince da 7 partite",
+    "titolo": "Milton Keynes Dons non vince da 8 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "League One",
     "bandiera": "🏴",
     "slug": "league-one",
     "squadre": [
      "Milton Keynes Dons"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "a_secco",
-    "titolo": "Wigan non segna da 3 partite",
+    "titolo": "Wigan non segna da 4 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
+    "numero": "4",
     "campionato": "League One",
     "bandiera": "🏴",
     "slug": "league-one",
     "squadre": [
      "Wigan"
     ],
-    "campione": 3
+    "campione": 4
    },
    {
     "tipo": "rimonte",
@@ -1129,16 +1194,29 @@
   "league-two": [
    {
     "tipo": "imbattuta",
-    "titolo": "Crewe non perde da 9 partite",
+    "titolo": "Crewe non perde da 10 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
      "Crewe"
     ],
-    "campione": 9
+    "campione": 10
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Oldham non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "League Two",
+    "bandiera": "🏴",
+    "slug": "league-two",
+    "squadre": [
+     "Oldham"
+    ],
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -1234,6 +1312,19 @@
      "Worthing"
     ],
     "campione": 9
+   },
+   {
+    "tipo": "primo_tempo",
+    "titolo": "Altrincham decide presto",
+    "testo": "11 dei suoi 20 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "55%",
+    "campionato": "National League",
+    "bandiera": "🏴",
+    "slug": "national-league",
+    "squadre": [
+     "Altrincham"
+    ],
+    "campione": 20
    },
    {
     "tipo": "ripresa",
@@ -1428,15 +1519,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Dresden decide presto",
-    "testo": "37 dei suoi 62 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
-    "numero": "60%",
+    "testo": "37 dei suoi 63 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "numero": "59%",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Dresden"
     ],
-    "campione": 62
+    "campione": 63
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1470,27 +1561,27 @@
   "ligue-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Sochaux non perde da 7 partite",
+    "titolo": "Reims non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Ligue 2",
     "bandiera": "🇫🇷",
     "slug": "ligue-2",
     "squadre": [
-     "Sochaux"
+     "Reims"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
-    "titolo": "Boulogne non vince da 8 partite",
+    "titolo": "Clermont non vince da 8 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "8",
     "campionato": "Ligue 2",
     "bandiera": "🇫🇷",
     "slug": "ligue-2",
     "squadre": [
-     "Boulogne"
+     "Clermont"
     ],
     "campione": 8
    },
@@ -1564,19 +1655,6 @@
   ],
   "championship-scozia": [
    {
-    "tipo": "imbattuta",
-    "titolo": "Stenhousemuir non perde da 8 partite",
-    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "8",
-    "campionato": "Championship scozzese",
-    "bandiera": "🏴",
-    "slug": "championship-scozia",
-    "squadre": [
-     "Stenhousemuir"
-    ],
-    "campione": 8
-   },
-   {
     "tipo": "digiuno",
     "titolo": "Morton non vince da 9 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
@@ -1588,19 +1666,6 @@
      "Morton"
     ],
     "campione": 9
-   },
-   {
-    "tipo": "porta_chiusa",
-    "titolo": "Stenhousemuir non subisce gol da 4 partite",
-    "testo": "Quattro o piu' partite di fila con la porta inviolata capitano poco.",
-    "numero": "4",
-    "campionato": "Championship scozzese",
-    "bandiera": "🏴",
-    "slug": "championship-scozia",
-    "squadre": [
-     "Stenhousemuir"
-    ],
-    "campione": 4
    },
    {
     "tipo": "rimonte",
@@ -1631,7 +1696,7 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ayr decide presto",
-    "testo": "87 dei suoi 157 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
+    "testo": "87 dei suoi 158 gol delle ultime stagioni arrivano prima dell'intervallo: e' la squadra piu' sbilanciata sul primo tempo del campionato.",
     "numero": "55%",
     "campionato": "Championship scozzese",
     "bandiera": "🏴",
@@ -1639,7 +1704,7 @@
     "squadre": [
      "Ayr"
     ],
-    "campione": 157
+    "campione": 158
    },
    {
     "tipo": "sorpresa_mercato",
