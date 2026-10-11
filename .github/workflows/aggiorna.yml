@@ -128,12 +128,18 @@ jobs:
         # tutta la stagione, ogni volta. Sono 600 KB che evitano qualche
         # migliaio di richieste inutili a un servizio che ci regala i dati.
         #
+        # `dati/pronostici` doveva stare in questa lista fin dal primo
+        # giorno, ed era stato dimenticato: la macchina scriveva l'archivio ogni notte e
+        # lo buttava via, perché un file non committato muore con il runner.
+        # Tre settimane di pronostici persi senza che niente segnalasse nulla —
+        # il file c'era, veniva scritto, semplicemente non tornava a casa.
+        #
         # Quando le fonti non hanno pubblicato niente di nuovo non c'è nulla da
         # committare, e va bene così: è un turno riuscito, non un errore.
         run: |
           git config user.name "Quota Vera"
           git config user.email "actions@users.noreply.github.com"
-          git add sito/src/dati dati/espn data/grezzi
+          git add sito/src/dati dati/espn data/grezzi dati/pronostici
           if git diff --staged --quiet; then
             echo "Nessun cambiamento nei dati: le fonti non hanno aggiornato."
           else

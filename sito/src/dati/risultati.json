@@ -7,6 +7,15 @@
     "partite": [
      {
       "data": "2026-10-10",
+      "casa": "Napoli",
+      "ospite": "Frosinone",
+      "gol_casa": 3,
+      "gol_ospite": 0,
+      "in_porta_casa": 8,
+      "in_porta_ospite": 1
+     },
+     {
+      "data": "2026-10-10",
       "casa": "Genoa",
       "ospite": "Fiorentina",
       "gol_casa": 2,
@@ -22,15 +31,6 @@
       "gol_ospite": 0,
       "in_porta_casa": 6,
       "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Napoli",
-      "ospite": "Frosinone",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 1
      }
     ]
    },
@@ -531,6 +531,15 @@
      },
      {
       "data": "2026-10-10",
+      "casa": "Man United",
+      "ospite": "Tottenham",
+      "gol_casa": 1,
+      "gol_ospite": 1,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 3
+     },
+     {
+      "data": "2026-10-10",
       "casa": "Chelsea",
       "ospite": "Bournemouth",
       "gol_casa": 5,
@@ -564,15 +573,6 @@
       "gol_ospite": 1,
       "in_porta_casa": 6,
       "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Man United",
-      "ospite": "Tottenham",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 3
      }
     ]
    },
@@ -1073,12 +1073,12 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Alaves",
-      "ospite": "Ath Madrid",
+      "casa": "Real Madrid",
+      "ospite": "Villarreal",
       "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 7
+      "gol_ospite": 0,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 4
      },
      {
       "data": "2026-10-10",
@@ -1091,12 +1091,12 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Real Madrid",
-      "ospite": "Villarreal",
+      "casa": "Alaves",
+      "ospite": "Ath Madrid",
       "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 4
+      "gol_ospite": 2,
+      "in_porta_casa": 3,
+      "in_porta_ospite": 7
      }
     ]
    },
@@ -2199,12 +2199,12 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Lille",
-      "ospite": "Le Havre",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 2
+      "casa": "Paris SG",
+      "ospite": "Le Mans",
+      "gol_casa": 3,
+      "gol_ospite": 1,
+      "in_porta_casa": 8,
+      "in_porta_ospite": 3
      },
      {
       "data": "2026-10-10",
@@ -2217,15 +2217,6 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Brest",
-      "ospite": "Angers",
-      "gol_casa": 5,
-      "gol_ospite": 1,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Lorient",
       "ospite": "Paris FC",
       "gol_casa": 1,
@@ -2235,11 +2226,20 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Paris SG",
-      "ospite": "Le Mans",
-      "gol_casa": 3,
+      "casa": "Lille",
+      "ospite": "Le Havre",
+      "gol_casa": 1,
+      "gol_ospite": 0,
+      "in_porta_casa": 1,
+      "in_porta_ospite": 2
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Brest",
+      "ospite": "Angers",
+      "gol_casa": 5,
       "gol_ospite": 1,
-      "in_porta_casa": 8,
+      "in_porta_casa": 9,
       "in_porta_ospite": 3
      }
     ]
@@ -2696,24 +2696,6 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Go Ahead Eagles",
-      "ospite": "Sparta Rotterdam",
-      "gol_casa": 3,
-      "gol_ospite": 3,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 8
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Feyenoord",
-      "ospite": "AZ Alkmaar",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-10-10",
       "casa": "For Sittard",
       "ospite": "Twente",
       "gol_casa": 1,
@@ -2728,6 +2710,24 @@
       "gol_casa": 1,
       "gol_ospite": 1,
       "in_porta_casa": 5,
+      "in_porta_ospite": 2
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Go Ahead Eagles",
+      "ospite": "Sparta Rotterdam",
+      "gol_casa": 3,
+      "gol_ospite": 3,
+      "in_porta_casa": 6,
+      "in_porta_ospite": 8
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Feyenoord",
+      "ospite": "AZ Alkmaar",
+      "gol_casa": 2,
+      "gol_ospite": 0,
+      "in_porta_casa": 4,
       "in_porta_ospite": 2
      }
     ]
@@ -3376,21 +3376,21 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Academico Viseu",
-      "ospite": "Estoril",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 9
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Casa Pia",
       "ospite": "Santa Clara",
       "gol_casa": 0,
       "gol_ospite": 1,
       "in_porta_casa": 2,
       "in_porta_ospite": 2
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Academico Viseu",
+      "ospite": "Estoril",
+      "gol_casa": 2,
+      "gol_ospite": 1,
+      "in_porta_casa": 6,
+      "in_porta_ospite": 9
      }
     ]
    },
@@ -4020,6 +4020,15 @@
      },
      {
       "data": "2026-10-10",
+      "casa": "Rizespor",
+      "ospite": "Fenerbahce",
+      "gol_casa": 0,
+      "gol_ospite": 3,
+      "in_porta_casa": 5,
+      "in_porta_ospite": 5
+     },
+     {
+      "data": "2026-10-10",
       "casa": "Alanyaspor",
       "ospite": "Erzurumspor",
       "gol_casa": 0,
@@ -4034,15 +4043,6 @@
       "gol_casa": 2,
       "gol_ospite": 2,
       "in_porta_casa": 4,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Rizespor",
-      "ospite": "Fenerbahce",
-      "gol_casa": 0,
-      "gol_ospite": 3,
-      "in_porta_casa": 5,
       "in_porta_ospite": 5
      }
     ]
@@ -4586,24 +4586,6 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Cercle Brugge",
-      "ospite": "Anderlecht",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "RAAL La Louviere",
-      "ospite": "Club Brugge",
-      "gol_casa": 1,
-      "gol_ospite": 4,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Genk",
       "ospite": "Kortrijk",
       "gol_casa": 3,
@@ -4617,6 +4599,24 @@
       "ospite": "Gent",
       "gol_casa": 0,
       "gol_ospite": 2,
+      "in_porta_casa": 3,
+      "in_porta_ospite": 7
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Cercle Brugge",
+      "ospite": "Anderlecht",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 7,
+      "in_porta_ospite": 6
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "RAAL La Louviere",
+      "ospite": "Club Brugge",
+      "gol_casa": 1,
+      "gol_ospite": 4,
       "in_porta_casa": 3,
       "in_porta_ospite": 7
      }
@@ -5239,21 +5239,21 @@
     "partite": [
      {
       "data": "2026-10-10",
-      "casa": "AEK",
-      "ospite": "OFI Crete",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Asteras Tripolis",
       "ospite": "Atromitos",
       "gol_casa": 2,
       "gol_ospite": 1,
       "in_porta_casa": 10,
       "in_porta_ospite": 1
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "AEK",
+      "ospite": "OFI Crete",
+      "gol_casa": 3,
+      "gol_ospite": 0,
+      "in_porta_casa": 7,
+      "in_porta_ospite": 0
      }
     ]
    },
@@ -6101,6 +6101,15 @@
      },
      {
       "data": "2026-10-10",
+      "casa": "Vicenza",
+      "ospite": "Pisa",
+      "gol_casa": 0,
+      "gol_ospite": 3,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 9
+     },
+     {
+      "data": "2026-10-10",
       "casa": "Empoli",
       "ospite": "Palermo",
       "gol_casa": 2,
@@ -6116,15 +6125,6 @@
       "gol_ospite": 0,
       "in_porta_casa": 6,
       "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Vicenza",
-      "ospite": "Pisa",
-      "gol_casa": 0,
-      "gol_ospite": 3,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 9
      },
      {
       "data": "2026-10-10",
@@ -9142,6 +9142,78 @@
      },
      {
       "data": "2026-10-10",
+      "casa": "Forest Green",
+      "ospite": "Hartlepool",
+      "gol_casa": 2,
+      "gol_ospite": 4,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Worthing",
+      "ospite": "Solihull",
+      "gol_casa": 5,
+      "gol_ospite": 0,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Woking",
+      "ospite": "Harrogate",
+      "gol_casa": 0,
+      "gol_ospite": 1,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Wealdstone",
+      "ospite": "Yeovil",
+      "gol_casa": 0,
+      "gol_ospite": 6,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Tamworth",
+      "ospite": "Barrow",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Halifax",
+      "ospite": "Gateshead",
+      "gol_casa": 4,
+      "gol_ospite": 1,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Boston Utd",
+      "ospite": "Southend",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Fylde",
+      "ospite": "Scunthorpe",
+      "gol_casa": 2,
+      "gol_ospite": 0,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     },
+     {
+      "data": "2026-10-10",
       "casa": "Carlisle",
       "ospite": "Kidderminster",
       "gol_casa": 0,
@@ -9160,82 +9232,10 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Fylde",
-      "ospite": "Scunthorpe",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Hornchurch",
       "ospite": "Eastleigh",
       "gol_casa": 2,
       "gol_ospite": 0,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Boston Utd",
-      "ospite": "Southend",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Halifax",
-      "ospite": "Gateshead",
-      "gol_casa": 4,
-      "gol_ospite": 1,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Tamworth",
-      "ospite": "Barrow",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Wealdstone",
-      "ospite": "Yeovil",
-      "gol_casa": 0,
-      "gol_ospite": 6,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Woking",
-      "ospite": "Harrogate",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Worthing",
-      "ospite": "Solihull",
-      "gol_casa": 5,
-      "gol_ospite": 0,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "Forest Green",
-      "ospite": "Hartlepool",
-      "gol_casa": 2,
-      "gol_ospite": 4,
       "in_porta_casa": 0,
       "in_porta_ospite": 0
      }
@@ -10038,21 +10038,21 @@
     "partite": [
      {
       "data": "2026-10-10",
-      "casa": "Ceuta",
-      "ospite": "Sabadell",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Eldense",
       "ospite": "Cordoba",
       "gol_casa": 2,
       "gol_ospite": 1,
       "in_porta_casa": 4,
       "in_porta_ospite": 6
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Ceuta",
+      "ospite": "Sabadell",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 3
      },
      {
       "data": "2026-10-10",
@@ -10844,21 +10844,21 @@
      },
      {
       "data": "2026-10-10",
-      "casa": "Darmstadt",
-      "ospite": "Cottbus",
-      "gol_casa": 3,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-10-10",
       "casa": "Nurnberg",
       "ospite": "Wolfsburg",
       "gol_casa": 4,
       "gol_ospite": 4,
       "in_porta_casa": 8,
       "in_porta_ospite": 9
+     },
+     {
+      "data": "2026-10-10",
+      "casa": "Darmstadt",
+      "ospite": "Cottbus",
+      "gol_casa": 3,
+      "gol_ospite": 1,
+      "in_porta_casa": 7,
+      "in_porta_ospite": 6
      }
     ]
    },
@@ -11437,6 +11437,15 @@
      },
      {
       "data": "2026-10-10",
+      "casa": "St Etienne",
+      "ospite": "Rodez",
+      "gol_casa": 2,
+      "gol_ospite": 0,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 4
+     },
+     {
+      "data": "2026-10-10",
       "casa": "Nantes",
       "ospite": "Reims",
       "gol_casa": 0,
@@ -11452,15 +11461,6 @@
       "gol_ospite": 3,
       "in_porta_casa": 4,
       "in_porta_ospite": 9
-     },
-     {
-      "data": "2026-10-10",
-      "casa": "St Etienne",
-      "ospite": "Rodez",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 4
      }
     ]
    },

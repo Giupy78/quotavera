@@ -41,6 +41,7 @@ RADICE = Path(__file__).resolve().parents[1]
 DATI = RADICE / "sito" / "src" / "dati"
 GREZZI = RADICE / "data" / "grezzi"
 ESPN = RADICE / "dati" / "espn"
+PRONOSTICI = RADICE / "dati" / "pronostici"
 
 # Quanti giorni puo' restare una partita senza risultato prima di essere
 # sospetta. Due bastano: football-data pubblica a turno concluso, ma ESPN entro
@@ -84,9 +85,27 @@ def _ultima_partita_nel_csv(percorso: Path) -> date | None:
         return None
 
 
-def controlla() -> list[str]:
-    """Tutti i guai trovati, in ordine di gravita'. Lista vuota = tutto bene."""
+def controlla() -> tuple[list[str], list[str]]:
+    """Restituisce (guai, avvisi).
+
+    La distinzione e' costata cara per impararla. La prima versione trattava
+    tutto allo stesso modo, e dal 25 settembre ha fatto fallire **trentatre'
+    turni di fila** per una cosa che non toccava nessun lettore: football-data
+    aveva smesso di pubblicare, ma ESPN copriva tutto e il sito era aggiornato
+    al giorno prima.
+
+    Trentatre' mail identiche equivalgono a nessuna mail. E infatti, nascosto
+    dietro quel rumore, c'era un guasto vero che nessuno ha guardato per tre
+    settimane: l'archivio dei pronostici non veniva committato, quindi ogni
+    notte veniva scritto e buttato via.
+
+    Da qui la regola: **si fallisce su cio' che il lettore vede**, e si avvisa
+    su cio' che potrebbe diventare un problema. Una fonte ferma mentre l'altra
+    copre e' un avviso. Tutt'e due ferme, o i risultati che non arrivano in
+    pagina, sono un guaio.
+    """
     guai: list[str] = []
+    avvisi: list[str] = []
     oggi = date.today()
 
     campionati = _carica("campionati.json")
@@ -114,6 +133,10 @@ def controlla() -> list[str]:
             )
 
     # --- 2. le fonti stanno producendo? -----------------------------------
+    #
+    # Una fonte ferma non e' di per se' un guaio: ne abbiamo due apposta. Lo
+    # diventa quando si fermano tutte e due, perche' allora siamo ciechi.
+    fonti_ferme: dict[str, list[str]] = {"espn": [], "football-data": []}
     for slug in nomi:
         archivio = ESPN / f"{slug}.json"
         if not archivio.exists():
@@ -125,7 +148,7 @@ def controlla() -> list[str]:
             continue
         ultima = max((v["data"] for v in dati.values()), default=None)
         if ultima and (oggi - date.fromisoformat(ultima)).days > ESPN_FERMO:
-            guai.append(f"{nomi[slug]}: ESPN fermo al {ultima}")
+            fonti_ferme["espn"].append(nomi[slug])
 
     stagione_corrente = max(
         (p.name.rsplit("-", 1)[1][:4] for p in GREZZI.glob("*-*.csv")
@@ -139,10 +162,64 @@ def controlla() -> list[str]:
                 continue
             ultima = _ultima_partita_nel_csv(f)
             if ultima and (oggi - ultima).days > FOOTBALL_DATA_FERMO:
-                guai.append(
-                    f"{nomi[slug]}: football-data fermo al {ultima} "
-                    f"({(oggi - ultima).days} giorni)"
+                fonti_ferme["football-data"].append(
+                    f"{nomi[slug]} (al {ultima})"
                 )
+
+    # Il verdetto sulle fonti: ferme tutte e due vuol dire che non arrivera'
+    # piu' niente, e quello e' un guaio. Una sola, con l'altra che copre, e'
+    # una cosa da sapere e basta.
+    if fonti_ferme["espn"] and fonti_ferme["football-data"]:
+        guai.append(
+            f"ferme tutt'e due le fonti: ESPN su {len(fonti_ferme['espn'])} "
+            f"campionati e football-data su {len(fonti_ferme['football-data'])}. "
+            f"Da qui in poi non arriva piu' niente."
+        )
+    else:
+        for fonte, elenco in fonti_ferme.items():
+            if elenco:
+                avvisi.append(
+                    f"{fonte} fermo su {len(elenco)} campionati "
+                    f"(es. {elenco[0]}) - l'altra fonte sta coprendo"
+                )
+
+    # --- i pronostici tornano a casa? -------------------------------------
+    #
+    # Questo controllo nasce dal guasto che il rumore aveva nascosto: l'archivio
+    # dei pronostici veniva scritto ogni notte sulla macchina di GitHub e perso
+    # subito dopo, perche' non era fra i file da committare. Il codice
+    # funzionava, il file esisteva, semplicemente non tornava a casa.
+    #
+    # Il modo per accorgersene non e' guardare se il processo riesce, ma se le
+    # partite in programma hanno davvero un pronostico messo da parte.
+    in_programma = [
+        (slug, q)
+        for slug, elenco in _carica("calendario.json")["campionati"].items()
+        for q in elenco
+    ]
+    if in_programma:
+        coperte = 0
+        for slug, q in in_programma:
+            archivio = PRONOSTICI / f"{slug}.json"
+            if not archivio.exists():
+                continue
+            try:
+                dati_arch = json.loads(archivio.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue
+            if q["id"] in dati_arch:
+                coperte += 1
+        quota = coperte / len(in_programma)
+        if quota < 0.5:
+            guai.append(
+                f"solo {coperte} partite in programma su {len(in_programma)} hanno "
+                f"un pronostico archiviato: l'archivio non sta tornando a casa"
+            )
+        elif quota < 0.9:
+            avvisi.append(
+                f"{coperte} partite in programma su {len(in_programma)} hanno "
+                f"un pronostico archiviato"
+            )
 
     # --- 3. le classifiche tornano? ---------------------------------------
     #
@@ -188,17 +265,24 @@ def controlla() -> list[str]:
     if ore > 30:
         guai.append(f"i dati sono stati generati {ore:.0f} ore fa")
 
-    return guai
+    return guai, avvisi
 
 
 def main() -> int:
-    guai = controlla()
+    guai, avvisi = controlla()
     dati = _carica("campionati.json")
     print(f"Generato il {dati['generato_il']}, risultati fino al {dati['dati_fino_al']}.")
+    if avvisi:
+        quante = "1 cosa" if len(avvisi) == 1 else f"{len(avvisi)} cose"
+        print(f"\n{quante} da sapere (il turno resta verde):\n")
+        for a in avvisi:
+            print(f"  . {a}")
+
     if not guai:
-        print("Tutto in ordine.")
+        print("\nNiente di rotto." if avvisi else "Tutto in ordine.")
         return 0
-    print(f"\n{len(guai)} cose non tornano:\n")
+    quanti = "1 cosa non torna" if len(guai) == 1 else f"{len(guai)} cose non tornano"
+    print(f"\n{quanti}:\n")
     for g in guai:
         print(f"  - {g}")
     print(
