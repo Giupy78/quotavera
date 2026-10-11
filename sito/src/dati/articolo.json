@@ -1,6 +1,6 @@
 {
  "data": "2026-10-11",
- "partite_in_programma": 259,
+ "partite_in_programma": 228,
  "campionati": 22,
  "sorprese": [
   {
@@ -645,8 +645,8 @@
    "gol_subiti": 1.9,
    "gol_totali": 15,
    "in_porta_totali": 80,
-   "attesi_dai_tiri": 25.8,
-   "scarto_conversione": -10.8,
+   "attesi_dai_tiri": 25.7,
+   "scarto_conversione": -10.7,
    "vantaggio_casa": 0.5,
    "casa": {
     "partite": 10,
@@ -930,17 +930,6 @@
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
-   "id": "como-roma",
-   "casa": "Como",
-   "ospite": "Roma",
-   "data": "2026-10-11",
-   "ora": "12:30",
-   "margine": 0.0002
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
    "id": "sassuolo-milan",
    "casa": "Sassuolo",
    "ospite": "Milan",
@@ -949,37 +938,48 @@
    "margine": 0.0045
   },
   {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "nice-strasbourg",
-   "casa": "Nice",
-   "ospite": "Strasbourg",
+   "campionato": "LaLiga",
+   "bandiera": "🇪🇸",
+   "slug": "laliga",
+   "id": "betis-osasuna",
+   "casa": "Betis",
+   "ospite": "Osasuna",
    "data": "2026-10-11",
-   "ora": "15:00",
-   "margine": 0.0059
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "lecce-bologna",
-   "casa": "Lecce",
-   "ospite": "Bologna",
-   "data": "2026-10-11",
-   "ora": "15:00",
-   "margine": 0.0061
+   "ora": "18:30",
+   "margine": 0.0074
   },
   {
    "campionato": "Premier League",
    "bandiera": "🏴",
    "slug": "premier-league",
-   "id": "crystal-palace-nottm-forest",
-   "casa": "Crystal Palace",
-   "ospite": "Nott'm Forest",
+   "id": "liverpool-man-city",
+   "casa": "Liverpool",
+   "ospite": "Man City",
    "data": "2026-10-11",
-   "ora": "15:00",
-   "margine": 0.0067
+   "ora": "17:30",
+   "margine": 0.0075
+  },
+  {
+   "campionato": "Ligue 1",
+   "bandiera": "🇫🇷",
+   "slug": "ligue-1",
+   "id": "troyes-marseille",
+   "casa": "Troyes",
+   "ospite": "Marseille",
+   "data": "2026-10-11",
+   "ora": "20:45",
+   "margine": 0.008
+  },
+  {
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "freiburg-schalke-04",
+   "casa": "Freiburg",
+   "ospite": "Schalke 04",
+   "data": "2026-10-11",
+   "ora": "17:30",
+   "margine": 0.0099
   }
  ]
 }

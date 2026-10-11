@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 960
+   "campione": 961
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,18 +21,18 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1477
+   "campione": 1479
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta piu' che altrove in National League",
+   "titolo": "Giocare in casa conta piu' che altrove in LaLiga 2",
    "testo": "La squadra di casa vince il 46% delle partite.",
    "numero": "46%",
-   "campionato": "National League",
-   "bandiera": "🏴",
-   "slug": "national-league",
+   "campionato": "LaLiga 2",
+   "bandiera": "🇪🇸",
+   "slug": "laliga-2",
    "squadre": [],
-   "campione": 155
+   "campione": 1479
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1197
+   "campione": 1199
   },
   {
    "tipo": "cartellini",
@@ -54,32 +54,32 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 745
+   "campione": 747
   },
   {
    "tipo": "corner",
    "titolo": "Il campionato dei calci d'angolo e' Premiership",
-   "testo": "10.7 angoli a partita in totale.",
-   "numero": "10.7",
+   "testo": "10.8 angoli a partita in totale.",
+   "numero": "10.8",
    "campionato": "Premiership",
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 730
+   "campione": 732
   }
  ],
  "per_campionato": {
   "serie-a": [
    {
     "tipo": "imbattuta",
-    "titolo": "Inter non perde da 6 partite",
+    "titolo": "Roma non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "6",
     "campionato": "Serie A",
     "bandiera": "🇮🇹",
     "slug": "serie-a",
     "squadre": [
-     "Inter"
+     "Roma"
     ],
     "campione": 6
    },
@@ -141,14 +141,14 @@
   "premier-league": [
    {
     "tipo": "imbattuta",
-    "titolo": "Brentford non perde da 6 partite",
+    "titolo": "Everton non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "6",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
-     "Brentford"
+     "Everton"
     ],
     "campione": 6
    },
@@ -469,27 +469,27 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Willem II non vince da 7 partite",
+    "titolo": "Willem II non vince da 8 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
      "Willem II"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "a_secco",
-    "titolo": "Telstar non segna da 3 partite",
+    "titolo": "Zwolle non segna da 3 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
     "numero": "3",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
-     "Telstar"
+     "Zwolle"
     ],
     "campione": 3
    },
@@ -646,14 +646,14 @@
    },
    {
     "tipo": "a_secco",
-    "titolo": "Eyupspor non segna da 3 partite",
+    "titolo": "Gaziantep non segna da 3 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
     "numero": "3",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
-     "Eyupspor"
+     "Gaziantep"
     ],
     "campione": 3
    },
@@ -715,14 +715,14 @@
   "jupiler": [
    {
     "tipo": "imbattuta",
-    "titolo": "Gent non perde da 8 partite",
+    "titolo": "St. Gilloise non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
     "numero": "8",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
-     "Gent"
+     "St. Gilloise"
     ],
     "campione": 8
    },
@@ -823,29 +823,29 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Atromitos non vince da 6 partite",
+    "titolo": "Levadeiakos non vince da 6 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "6",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
-     "Atromitos"
+     "Levadeiakos"
     ],
     "campione": 6
    },
    {
     "tipo": "a_secco",
-    "titolo": "Levadeiakos non segna da 5 partite",
+    "titolo": "Levadeiakos non segna da 6 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "5",
+    "numero": "6",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "Levadeiakos"
     ],
-    "campione": 5
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -1010,19 +1010,6 @@
      "Sudtirol"
     ],
     "campione": 6
-   },
-   {
-    "tipo": "a_secco",
-    "titolo": "Carrarese non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
-    "campionato": "Serie B",
-    "bandiera": "🇮🇹",
-    "slug": "serie-b",
-    "squadre": [
-     "Carrarese"
-    ],
-    "campione": 3
    },
    {
     "tipo": "fragilita",
@@ -1436,16 +1423,16 @@
   "laliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Castellon non perde da 8 partite",
+    "titolo": "Eibar non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "8",
+    "numero": "7",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
-     "Castellon"
+     "Eibar"
     ],
-    "campione": 8
+    "campione": 7
    },
    {
     "tipo": "digiuno",
@@ -1459,6 +1446,19 @@
      "Albacete"
     ],
     "campione": 8
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Leganes non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "LaLiga 2",
+    "bandiera": "🇪🇸",
+    "slug": "laliga-2",
+    "squadre": [
+     "Leganes"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -1489,15 +1489,15 @@
    {
     "tipo": "ripresa",
     "titolo": "Andorra vive di secondi tempi",
-    "testo": "Solo 35 dei suoi 107 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "67%",
+    "testo": "Solo 35 dei suoi 108 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "68%",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Andorra"
     ],
-    "campione": 107
+    "campione": 108
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1554,6 +1554,19 @@
      "Holstein Kiel"
     ],
     "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Karlsruhe non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
+    "numero": "3",
+    "campionato": "2. Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga-2",
+    "squadre": [
+     "Karlsruhe"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
