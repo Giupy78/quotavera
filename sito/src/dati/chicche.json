@@ -1,16 +1,16 @@
 {
- "data": "2026-10-10",
+ "data": "2026-10-11",
  "confronti": [
   {
    "tipo": "gol_lega",
    "titolo": "Il campionato dove si segna di piu' e' Bundesliga",
-   "testo": "3.22 gol a partita, contando tutte le gare delle ultime stagioni.",
-   "numero": "3.22",
+   "testo": "3.23 gol a partita, contando tutte le gare delle ultime stagioni.",
+   "numero": "3.23",
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 959
+   "campione": 960
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1474
+   "campione": 1477
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🏴",
    "slug": "national-league",
    "squadre": [],
-   "campione": 146
+   "campione": 155
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1195
+   "campione": 1197
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 743
+   "campione": 745
   },
   {
    "tipo": "corner",
@@ -70,6 +70,19 @@
  ],
  "per_campionato": {
   "serie-a": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Inter non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Inter"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "rimonte",
     "titolo": "Inter non molla all'intervallo",
@@ -141,14 +154,14 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Fulham non vince da 6 partite",
+    "titolo": "Tottenham non vince da 6 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
     "numero": "6",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
-     "Fulham"
+     "Tottenham"
     ],
     "campione": 6
    },
@@ -223,16 +236,16 @@
   "laliga": [
    {
     "tipo": "imbattuta",
-    "titolo": "Barcelona non perde da 7 partite",
+    "titolo": "Barcelona non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "LaLiga",
     "bandiera": "🇪🇸",
     "slug": "laliga",
     "squadre": [
      "Barcelona"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
@@ -360,6 +373,32 @@
   ],
   "ligue-1": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Monaco non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Monaco"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Le Havre non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Le Havre"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Monaco non molla all'intervallo",
     "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 6: e' la quota di rimonte piu' alta del campionato.",
@@ -417,16 +456,16 @@
   "eredivisie": [
    {
     "tipo": "imbattuta",
-    "titolo": "Feyenoord non perde da 7 partite",
+    "titolo": "Feyenoord non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
      "Feyenoord"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
@@ -525,16 +564,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Estoril non vince da 7 partite",
+    "titolo": "Estoril non vince da 8 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
      "Estoril"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "rimonte",
@@ -676,16 +715,16 @@
   "jupiler": [
    {
     "tipo": "imbattuta",
-    "titolo": "St. Gilloise non perde da 7 partite",
+    "titolo": "Gent non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
-     "St. Gilloise"
+     "Gent"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
@@ -702,14 +741,14 @@
    },
    {
     "tipo": "a_secco",
-    "titolo": "Mechelen non segna da 3 partite",
+    "titolo": "Waregem non segna da 3 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
     "numero": "3",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
-     "Mechelen"
+     "Waregem"
     ],
     "campione": 3
    },
@@ -769,6 +808,32 @@
    }
   ],
   "super-league-grecia": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "AEK non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
+    "numero": "6",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "AEK"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Atromitos non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Atromitos"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "a_secco",
     "titolo": "Levadeiakos non segna da 5 partite",
@@ -1289,16 +1354,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Gateshead non vince da 10 partite",
+    "titolo": "Gateshead non vince da 11 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "10",
+    "numero": "11",
     "campionato": "National League",
     "bandiera": "🏴",
     "slug": "national-league",
     "squadre": [
      "Gateshead"
     ],
-    "campione": 10
+    "campione": 11
    },
    {
     "tipo": "fragilita",
@@ -1466,16 +1531,16 @@
   "bundesliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Nurnberg non perde da 6 partite",
+    "titolo": "Nurnberg non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Nurnberg"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "digiuno",
@@ -1654,19 +1719,6 @@
    }
   ],
   "championship-scozia": [
-   {
-    "tipo": "digiuno",
-    "titolo": "Morton non vince da 9 partite",
-    "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "9",
-    "campionato": "Championship scozzese",
-    "bandiera": "🏴",
-    "slug": "championship-scozia",
-    "squadre": [
-     "Morton"
-    ],
-    "campione": 9
-   },
    {
     "tipo": "rimonte",
     "titolo": "Partick non molla all'intervallo",
