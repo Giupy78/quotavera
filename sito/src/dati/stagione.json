@@ -596,9 +596,9 @@
        "casa": "Sassuolo",
        "ospite": "Milan",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-10-11",
@@ -606,9 +606,9 @@
        "casa": "Cagliari",
        "ospite": "Juventus",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 1,
+       "gol_ospite": 1,
+       "giocata": true
       },
       {
        "data": "2026-10-12",
@@ -4613,9 +4613,9 @@
        "casa": "Liverpool",
        "ospite": "Man City",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 0,
+       "gol_ospite": 3,
+       "giocata": true
       },
       {
        "data": "2026-10-12",
@@ -8810,9 +8810,9 @@
        "casa": "Betis",
        "ospite": "Osasuna",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 5,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-10-11",
@@ -8820,9 +8820,9 @@
        "casa": "Santander",
        "ospite": "Valencia",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 2,
+       "giocata": true
       },
       {
        "data": "2026-10-12",
@@ -12462,9 +12462,9 @@
        "casa": "Freiburg",
        "ospite": "Schalke 04",
        "collegabile": true,
-       "gol_casa": null,
-       "gol_ospite": null,
-       "giocata": false
+       "gol_casa": 2,
+       "gol_ospite": 1,
+       "giocata": true
       }
      ]
     },
@@ -15224,7 +15224,7 @@
      ]
     }
    ],
-   "corrente": 5,
+   "corrente": 6,
    "totale": 34,
    "non_risolte": 0
   },
