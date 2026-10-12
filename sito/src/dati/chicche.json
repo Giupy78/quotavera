@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1481
+   "campione": 1484
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1481
+   "campione": 1484
   },
   {
    "tipo": "pareggi",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 749
+   "campione": 750
   },
   {
    "tipo": "corner",
@@ -80,6 +80,19 @@
     "slug": "serie-a",
     "squadre": [
      "Roma"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Venezia non vince da 6 partite",
+    "testo": "Il digiuno aperto piu' lungo del campionato.",
+    "numero": "6",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Venezia"
     ],
     "campione": 6
    },
@@ -645,30 +658,17 @@
   ],
   "superlig": [
    {
-    "tipo": "digiuno",
-    "titolo": "Goztep non vince da 6 partite",
-    "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "6",
-    "campionato": "Süper Lig",
-    "bandiera": "🇹🇷",
-    "slug": "superlig",
-    "squadre": [
-     "Goztep"
-    ],
-    "campione": 6
-   },
-   {
     "tipo": "a_secco",
-    "titolo": "Gaziantep non segna da 3 partite",
+    "titolo": "Eyupspor non segna da 4 partite",
     "testo": "Tre partite senza gol di fila sono gia' un problema, non un caso.",
-    "numero": "3",
+    "numero": "4",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
-     "Gaziantep"
+     "Eyupspor"
     ],
-    "campione": 3
+    "campione": 4
    },
    {
     "tipo": "rimonte",
@@ -1436,29 +1436,29 @@
   "laliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Eibar non perde da 7 partite",
+    "titolo": "Almeria non perde da 6 partite",
     "testo": "Una serie aperta: dice cosa e' successo, non cosa succedera'.",
-    "numero": "7",
+    "numero": "6",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
-     "Eibar"
+     "Almeria"
     ],
-    "campione": 7
+    "campione": 6
    },
    {
     "tipo": "digiuno",
-    "titolo": "Albacete non vince da 8 partite",
+    "titolo": "Albacete non vince da 9 partite",
     "testo": "Il digiuno aperto piu' lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Albacete"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "a_secco",
