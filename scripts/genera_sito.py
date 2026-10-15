@@ -766,7 +766,7 @@ def articolo_campionato(l: dict) -> dict | None:
         if scarto >= 3:
             vince = goleada["casa"] if goleada["gol_casa"] > goleada["gol_ospite"] else goleada["ospite"]
             righe.append(
-                f"Il risultato piu' netto e' stato {goleada['casa']} "
+                f"Il risultato più netto è stato {goleada['casa']} "
                 f"{goleada['gol_casa']}-{goleada['gol_ospite']} {goleada['ospite']}: "
                 f"{vince} ha vinto con {scarto} gol di scarto."
             )
@@ -780,7 +780,7 @@ def articolo_campionato(l: dict) -> dict | None:
 
     prima = classifica[0]
     righe = [
-        f"In testa c'e' {prima['squadra']} con {punti(prima['punti'])} in "
+        f"In testa c'è {prima['squadra']} con {punti(prima['punti'])} in "
         f"{partite_n(prima['giocate'])}."
     ]
     # Chi sta raccogliendo molto piu' o molto meno di quanto il gioco direbbe.
@@ -789,8 +789,8 @@ def articolo_campionato(l: dict) -> dict | None:
     if fortunata["scarto_punti"] >= 2:
         righe.append(
             f"{fortunata['squadra']} ha {punti(fortunata['punti'])} ma i tiri in "
-            f"porta ne direbbero {fortunata['punti_attesi']}: e' la squadra che "
-            f"sta raccogliendo di piu' rispetto a quanto crea."
+            f"porta ne direbbero {fortunata['punti_attesi']}: è la squadra che "
+            f"sta raccogliendo di più rispetto a quanto crea."
         )
     if sfortunata["scarto_punti"] <= -2:
         righe.append(

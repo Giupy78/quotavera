@@ -120,7 +120,7 @@ def rimonte(partite: list[PartitaStorica], c,
                 tipo="rimonte",
                 titolo=f"{nome} non molla all'intervallo",
                 testo=(f"Sotto al riposo {su} volte nelle ultime stagioni, ha "
-                       f"finito vincendo {quante}: e' la quota di rimonte piu' "
+                       f"finito vincendo {quante}: è la quota di rimonte più "
                        f"alta del campionato."),
                 numero=_percento(quante, su),
                 campionato=c.nome, bandiera=c.bandiera, slug=c.slug,
@@ -172,7 +172,7 @@ def quando_segnano(partite: list[PartitaStorica], c,
             tipo="primo_tempo",
             titolo=f"{nome} decide presto",
             testo=(f"{primi} dei suoi {tutti} gol delle ultime stagioni arrivano "
-                   f"prima dell'intervallo: e' la squadra piu' sbilanciata sul "
+                   f"prima dell'intervallo: è la squadra più sbilanciata sul "
                    f"primo tempo del campionato."),
             numero=_percento(primi, tutti),
             campionato=c.nome, bandiera=c.bandiera, slug=c.slug,
@@ -222,7 +222,7 @@ def sorprese_del_mercato(partite: list[PartitaStorica], c,
             tipo="sorpresa_mercato",
             titolo=f"{i.casa} {i.punti_casa}-{i.punti_ospite} {i.ospite}",
             testo=(f"{i.data.strftime('%d/%m/%Y')}: che {testo_esito} era pagato "
-                   f"{quota:.2f}, cioe' circa {_percento(1, quota)} di probabilita' "
+                   f"{quota:.2f}, cioè circa {_percento(1, quota)} di probabilità "
                    f"secondo il mercato."),
             numero=f"{quota:.2f}",
             campionato=c.nome, bandiera=c.bandiera, slug=c.slug,
@@ -289,13 +289,13 @@ def serie_aperte(partite: list[PartitaStorica], c,
     fuori = []
     for elenco, soglia, tipo, titolo, testo in (
         (imbattute, 6, "imbattuta", "{s} non perde da {n} partite",
-         "Una serie aperta: dice cosa e' successo, non cosa succedera'."),
+         "Una serie aperta: dice cosa è successo, non cosa succederà."),
         (senza_vittoria, 6, "digiuno", "{s} non vince da {n} partite",
-         "Il digiuno aperto piu' lungo del campionato."),
+         "Il digiuno aperto più lungo del campionato."),
         (senza_subire, 4, "porta_chiusa", "{s} non subisce gol da {n} partite",
-         "Quattro o piu' partite di fila con la porta inviolata capitano poco."),
+         "Quattro o più partite di fila con la porta inviolata capitano poco."),
         (senza_segnare, 3, "a_secco", "{s} non segna da {n} partite",
-         "Tre partite senza gol di fila sono gia' un problema, non un caso."),
+         "Tre partite senza gol di fila sono già un problema, non un caso."),
     ):
         if not elenco:
             continue
@@ -353,22 +353,26 @@ def confronti(per_lega: list[tuple]) -> list[Chicca]:
             campione=r["n"],
         )
 
-    due = lambda v: f"{v:.2f}"
+    # La virgola, non il punto: questi numeri li legge un lettore italiano, e
+    # "3.23 gol a partita" in mezzo a una frase in italiano stona come un
+    # refuso. Non e' pignoleria — e' la differenza fra un testo scritto e un
+    # testo sputato da un programma.
+    due = lambda v: f"{v:.2f}".replace(".", ",")
     pc = lambda v: f"{100 * v:.0f}%"
-    uno = lambda v: f"{v:.1f}"
+    uno = lambda v: f"{v:.1f}".replace(".", ",")
 
     return [
-        estremo("gol", True, "gol_lega", "Il campionato dove si segna di piu' e' {c}",
+        estremo("gol", True, "gol_lega", "Il campionato dove si segna di più è {c}",
                 "{v} gol a partita, contando tutte le gare delle ultime stagioni.", due),
-        estremo("gol", False, "gol_lega_meno", "E quello dove si segna di meno e' {c}",
-                "{v} gol a partita: quasi uno in meno del campionato piu' prolifico.", due),
-        estremo("casa", True, "campo", "Giocare in casa conta piu' che altrove in {c}",
+        estremo("gol", False, "gol_lega_meno", "E quello dove si segna di meno è {c}",
+                "{v} gol a partita: quasi uno in meno del campionato più prolifico.", due),
+        estremo("casa", True, "campo", "Giocare in casa conta più che altrove in {c}",
                 "La squadra di casa vince il {v} delle partite.", pc),
-        estremo("pari", True, "pareggi", "In {c} si pareggia piu' che ovunque",
-                "Un {v} delle partite finisce in parita'.", pc),
-        estremo("cartellini", True, "cartellini", "L'arbitro estrae di piu' in {c}",
+        estremo("pari", True, "pareggi", "In {c} si pareggia più che ovunque",
+                "Un {v} delle partite finisce in parità.", pc),
+        estremo("cartellini", True, "cartellini", "L'arbitro estrae di più in {c}",
                 "{v} cartellini a partita fra le due squadre.", uno),
-        estremo("corner", True, "corner", "Il campionato dei calci d'angolo e' {c}",
+        estremo("corner", True, "corner", "Il campionato dei calci d'angolo è {c}",
                 "{v} angoli a partita in totale.", uno),
     ]
 

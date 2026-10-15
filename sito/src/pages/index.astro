@@ -4,6 +4,8 @@ import RigaPartita from "../components/RigaPartita.astro";
 import campionati from "../dati/campionati.json";
 import calendario from "../dati/calendario.json";
 import articolo from "../dati/articolo.json";
+import articoli from "../dati/articoli.json";
+import chicche from "../dati/chicche.json";
 
 const num = (v: number, d = 2) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -38,7 +40,9 @@ for (const p of tutte) {
    informazione sparisce, cambia solo quanto costa raggiungerla. */
 const tuttiGiorni = [...perGiorno.entries()].slice(0, 6);
 const oggi = tuttiGiorni[0];
-const prossimi = tuttiGiorni.slice(1);
+/* Tre giorni, non cinque: oltre il terzo non ci sono quote e il calendario
+   completo di ogni campionato ha comunque tutto fino a maggio. */
+const prossimi = tuttiGiorni.slice(1, 4);
 
 /* Le partite di un giorno, raccolte per campionato, con i maggiori davanti. */
 const perCampionato = (partite: typeof tutte) => {
@@ -60,6 +64,13 @@ const perCampionato = (partite: typeof tutte) => {
     return b[1].length - a[1].length;
   });
 };
+
+/* Vero quando c'e' una partita quotata sola, o quando la meno cara e la piu'
+   cara sono la stessa: in quel caso le due tessere direbbero la stessa cosa. */
+const unSoloMargine =
+  articolo.partite_meno_care.length > 0 &&
+  (articolo.partite_piu_care.length === 0 ||
+    articolo.partite_meno_care[0].id === articolo.partite_piu_care[0].id);
 
 const giornoCorto = (iso: string) =>
   new Date(iso + "T00:00:00").toLocaleDateString("it-IT", {
@@ -85,8 +96,8 @@ const dataLunga = (iso: string) =>
     <div class="hd">
       <h1>Che partite si giocano, e cosa dicono i numeri</h1>
       <p>
-        Le statistiche delle squadre, le probabilità del nostro modello e le
-        quote del mercato. Nessun consiglio: i numeri, e l'idea la fai tu.
+        Statistiche, probabilità e quote di 22 campionati, rifatte ogni notte.
+        {" "}<b>Nessun consiglio di gioco</b>: i numeri, e l'idea la fai tu.
       </p>
     </div>
 
@@ -105,7 +116,21 @@ const dataLunga = (iso: string) =>
           quella finestra queste due tessere restavano "— —", che non e' un
           dato mancante, e' una casella rotta. Meglio una sola tessera che
           dice cosa sta succedendo. */}
-      {articolo.partite_meno_care[0] ? (
+      {/* Con una partita sola quotata, "più basso" e "più alto" sono la stessa
+          partita e lo stesso numero: due tessere identiche affiancate, che non
+          si leggono come "c'è un solo dato" ma come un errore. Capita quando
+          football-data e' indietro, e in quel caso una tessera sola dice la
+          verita' meglio di due. */}
+      {unSoloMargine ? (
+        <div class="tessera larga">
+          <div class="k">Margine del banco</div>
+          <div class="v mono">{pct(articolo.partite_meno_care[0].margine)}</div>
+          <div class="n">
+            {articolo.partite_meno_care[0].casa} — {articolo.partite_meno_care[0].ospite}:
+            {" "}l'unica partita per cui il mercato ha gia' esposto le quote
+          </div>
+        </div>
+      ) : articolo.partite_meno_care[0] ? (
         <>
           <div class="tessera">
             <div class="k">Margine più basso oggi</div>
@@ -137,9 +162,33 @@ const dataLunga = (iso: string) =>
 
   <section>
     <div class="hd">
+      <h2>Lo sapevi?</h2>
+      <p>
+        Numeri che vengono fuori solo mettendo ventidue campionati uno accanto
+        all'altro. Ogni riquadro porta all'articolo del suo campionato.
+      </p>
+    </div>
+    <div class="vetrina">
+      {
+        (chicche.confronti as any[]).map((c) => (
+          <a class="chicca" href={`/blog/${c.slug}/`}>
+            <span class="numero mono">{c.numero}</span>
+            <span class="testo">
+              <b>{c.titolo}</b>
+              <small>{c.testo}</small>
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section>
+    <div class="hd">
       <h2>Gli spunti</h2>
       <p>
-        I numeri che saltano all'occhio oggi. <a href="/blog/">Tutti gli articoli →</a>
+        Le squadre che stanno andando diversamente da come giocano. È la lettura
+        che la classifica non dà.
       </p>
     </div>
 
@@ -152,7 +201,7 @@ const dataLunga = (iso: string) =>
         </p>
         <div class="mkt">
           {
-            articolo.segnano_piu_di_quanto_creano.map((s: any) => (
+            articolo.segnano_piu_di_quanto_creano.slice(0, 4).map((s: any) => (
               <div>
                 <span>
                   {s.bandiera} <b style="font-weight:600">{s.squadra}</b>
@@ -176,7 +225,7 @@ const dataLunga = (iso: string) =>
         </p>
         <div class="mkt">
           {
-            articolo.segnano_meno_di_quanto_creano.map((s: any) => (
+            articolo.segnano_meno_di_quanto_creano.slice(0, 4).map((s: any) => (
               <div>
                 <span>
                   {s.bandiera} <b style="font-weight:600">{s.squadra}</b>
@@ -191,6 +240,67 @@ const dataLunga = (iso: string) =>
           }
         </div>
       </div>
+    </div>
+  </section>
+
+  {
+    articolo.sorprese.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Vittorie che il gioco non spiega</h2>
+          <p>
+            Chi ha vinto tirando in porta molto meno dell'avversario. Non è un
+            giudizio sulla squadra: è un risultato che, statisticamente, tende
+            a non ripetersi.
+          </p>
+        </div>
+        <div class="sorprese">
+          {articolo.sorprese.slice(0, 6).map((x: any) => (
+            <a class="sorpresa" href={`/calcio/${x.slug}/`}>
+              <span class="lega">{x.bandiera} {x.campionato}</span>
+              <span class="gara">
+                <b>{x.casa}</b> {x.gol_casa}–{x.gol_ospite} <b>{x.ospite}</b>
+              </span>
+              <span class="tiri mono">
+                tiri in porta {x.in_porta_casa}–{x.in_porta_ospite}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <section>
+    <div class="hd">
+      <h2>Gli articoli di oggi</h2>
+      <p>
+        Uno per campionato, riscritto stanotte dai suoi numeri: la giornata
+        appena conclusa, la classifica vera contro quella del gioco, e le sue
+        chicche. <a href="/blog/">Tutti gli articoli →</a>
+      </p>
+    </div>
+    <div class="articoli">
+      {
+        (articoli.pezzi as any[]).map((a) => (
+          <a class="pezzo" href={`/blog/${a.slug}/`}>
+            <span class="testa">
+              <span class="bandiera">{a.bandiera}</span>
+              <b>{a.campionato}</b>
+              {a.chicche.length > 0 && (
+                <span class="quante mono">{a.chicche.length}</span>
+              )}
+            </span>
+            {/* Il sommario solo per i maggiori. Ventidue sommari in fila
+                erano una schermata e mezza di prosa quasi identica — "X in
+                testa con N punti" ventidue volte — e chi cerca la Ligue 2 la
+                trova lo stesso dal nome. */}
+            {perSlug[a.slug]?.principale && (
+              <span class="somm">{a.sommario}</span>
+            )}
+          </a>
+        ))
+      }
     </div>
   </section>
 
@@ -258,6 +368,131 @@ const dataLunga = (iso: string) =>
 </Base>
 
 <style>
+  /* --- la vetrina delle chicche -------------------------------------
+     Il numero grande e colorato fa il lavoro: e' l'unica cosa che si legge
+     scorrendo veloce, e il resto si legge solo se quel numero ha incuriosito.
+     Per questo la frase sta sotto, piccola, e non compete. */
+  .vetrina {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .vetrina .chicca {
+    background: var(--paper);
+    padding: 15px 17px;
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    gap: 13px;
+    align-items: baseline;
+    text-decoration: none;
+    color: inherit;
+  }
+  .vetrina .chicca:hover {
+    background: var(--sunk);
+  }
+  .vetrina .numero {
+    font-family: var(--sans);
+    font-variant-numeric: tabular-nums;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--s1);
+    letter-spacing: -0.01em;
+  }
+  .vetrina .testo b {
+    font-size: 13.5px;
+    line-height: 1.35;
+    display: block;
+  }
+  .vetrina .testo small {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  /* --- le sorprese --------------------------------------------------- */
+  .sorprese {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .sorpresa {
+    background: var(--paper);
+    padding: 13px 16px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .sorpresa:hover {
+    background: var(--sunk);
+  }
+  .sorpresa .lega {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 5px;
+  }
+  .sorpresa .gara {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .sorpresa .tiri {
+    display: block;
+    margin-top: 4px;
+    font-size: 11.5px;
+    color: var(--s1);
+  }
+
+  /* --- gli articoli del giorno ---------------------------------------
+     Erano invisibili: ventidue pezzi riscritti ogni notte e nessun modo di
+     arrivarci dalla prima pagina se non un "tutti gli articoli" in fondo a
+     una frase. */
+  .articoli {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .pezzo {
+    background: var(--paper);
+    padding: 12px 15px 13px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .pezzo:hover {
+    background: var(--sunk);
+  }
+  .pezzo .testa {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin-bottom: 4px;
+  }
+  .pezzo .testa b {
+    font-size: 13.5px;
+  }
+  .pezzo .quante {
+    margin-left: auto;
+    font-size: 11px;
+    color: var(--s1);
+  }
+  .pezzo .somm {
+    display: block;
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
   /* --- il giorno in corso, per campionato ---------------------------- */
   .giorno details {
     border: 1px solid var(--rule);

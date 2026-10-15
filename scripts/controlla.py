@@ -221,6 +221,28 @@ def controlla() -> tuple[list[str], list[str]]:
                 f"un pronostico archiviato"
             )
 
+    # --- quante partite hanno un prezzo? ----------------------------------
+    #
+    # Le quote vengono solo da football-data, e solo dal suo file del
+    # calendario, che copre due o tre giorni. Puo' restare magro anche quando i
+    # risultati arrivano regolarmente: sono due file diversi. Il sito regge lo
+    # stesso, ma meta' di cio' che ha di particolare — il confronto col mercato
+    # — sparisce senza che niente lo dica.
+    quotate = sum(
+        1
+        for elenco in _carica("calendario.json")["campionati"].values()
+        for q in elenco
+        if q.get("quote")
+    )
+    if in_programma and quotate / len(in_programma) < 0.1:
+        avvisi.append(
+            f"solo {quotate} {'partita' if quotate == 1 else 'partite'} su "
+            f"{len(in_programma)} in programma ha le quote"
+            if quotate == 1 else
+            f"solo {quotate} partite su {len(in_programma)} in programma hanno "
+            f"le quote"
+        )
+
     # --- 3. le classifiche tornano? ---------------------------------------
     #
     # Aritmetica pura: se non torna, si e' rotto qualcosa nella fusione delle
