@@ -21,18 +21,18 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1486
+   "campione": 1487
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta più che altrove in LaLiga 2",
+   "titolo": "Giocare in casa conta più che altrove in National League",
    "testo": "La squadra di casa vince il 46% delle partite.",
    "numero": "46%",
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
    "squadre": [],
-   "campione": 1486
+   "campione": 155
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1201
+   "campione": 1205
   },
   {
    "tipo": "cartellini",
@@ -80,19 +80,6 @@
     "slug": "serie-a",
     "squadre": [
      "Roma"
-    ],
-    "campione": 6
-   },
-   {
-    "tipo": "digiuno",
-    "titolo": "Venezia non vince da 6 partite",
-    "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
-    "campionato": "Serie A",
-    "bandiera": "🇮🇹",
-    "slug": "serie-a",
-    "squadre": [
-     "Venezia"
     ],
     "campione": 6
    },
@@ -658,17 +645,43 @@
   ],
   "superlig": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Amedspor non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+    "numero": "6",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Amedspor"
+    ],
+    "campione": 6
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Genclerbirligi non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Genclerbirligi"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "a_secco",
-    "titolo": "Eyupspor non segna da 4 partite",
+    "titolo": "Eyupspor non segna da 5 partite",
     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "4",
+    "numero": "5",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
      "Eyupspor"
     ],
-    "campione": 4
+    "campione": 5
    },
    {
     "tipo": "rimonte",
@@ -1025,6 +1038,19 @@
     "campione": 6
    },
    {
+    "tipo": "digiuno",
+    "titolo": "Vicenza non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Vicenza"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "fragilita",
     "titolo": "Sampdoria non tiene il vantaggio",
     "testo": "Avanti al riposo 29 volte nelle ultime stagioni, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
@@ -1069,29 +1095,29 @@
   "championship": [
    {
     "tipo": "imbattuta",
-    "titolo": "West Ham non perde da 8 partite",
+    "titolo": "Middlesbrough non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "West Ham"
+     "Middlesbrough"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
-    "titolo": "Charlton non vince da 7 partite",
+    "titolo": "Charlton non vince da 8 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
      "Charlton"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "rimonte",
@@ -1174,19 +1200,6 @@
      "Sheffield Weds"
     ],
     "campione": 6
-   },
-   {
-    "tipo": "digiuno",
-    "titolo": "Milton Keynes Dons non vince da 8 partite",
-    "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
-    "campionato": "League One",
-    "bandiera": "🏴",
-    "slug": "league-one",
-    "squadre": [
-     "Milton Keynes Dons"
-    ],
-    "campione": 8
    },
    {
     "tipo": "a_secco",
@@ -1423,16 +1436,16 @@
   "laliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Almeria non perde da 6 partite",
+    "titolo": "Almeria non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Almeria"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "digiuno",

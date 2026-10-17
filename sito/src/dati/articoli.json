@@ -12,7 +12,7 @@
     {
      "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 6 gol in 1 partite, 6.0 a incontro."
+      "Nella 7ª giornata sono stati segnati 7 gol in 2 partite, 3.5 a incontro."
      ]
     },
     {
@@ -20,7 +20,7 @@
      "righe": [
       "In testa c'è Inter con 16 punti in 6 partite.",
       "Lazio ha 16 punti ma i tiri in porta ne direbbero 7.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Venezia, ferma a 0 punti contro i 6.2 attesi dal gioco."
+      "All'opposto Monza, ferma a 4 punti contro i 9.0 attesi dal gioco."
      ]
     }
    ],
@@ -35,19 +35,6 @@
      "slug": "serie-a",
      "squadre": [
       "Roma"
-     ],
-     "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Venezia non vince da 6 partite",
-     "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "6",
-     "campionato": "Serie A",
-     "bandiera": "🇮🇹",
-     "slug": "serie-a",
-     "squadre": [
-      "Venezia"
      ],
      "campione": 6
     },
@@ -126,6 +113,21 @@
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
+     "data": "2026-10-17",
+     "casa": "Venezia",
+     "ospite": "Napoli",
+     "gol_casa": 1,
+     "gol_ospite": 0,
+     "in_porta_casa": 4,
+     "in_porta_ospite": 10,
+     "vincitore": "Venezia",
+     "perdente": "Napoli",
+     "scarto_tiri": 6
+    },
+    {
+     "campionato": "Serie A",
+     "bandiera": "🇮🇹",
+     "slug": "serie-a",
      "data": "2026-09-19",
      "casa": "Venezia",
      "ospite": "Lazio",
@@ -136,21 +138,6 @@
      "vincitore": "Lazio",
      "perdente": "Venezia",
      "scarto_tiri": 4
-    },
-    {
-     "campionato": "Serie A",
-     "bandiera": "🇮🇹",
-     "slug": "serie-a",
-     "data": "2026-09-20",
-     "casa": "Parma",
-     "ospite": "Genoa",
-     "gol_casa": 2,
-     "gol_ospite": 1,
-     "in_porta_casa": 2,
-     "in_porta_ospite": 5,
-     "vincitore": "Parma",
-     "perdente": "Genoa",
-     "scarto_tiri": 3
     }
    ],
    "giornate_giocate": 7
@@ -161,13 +148,12 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "Premier League: cosa dicono i numeri",
-   "sommario": "Man City in testa con 18 punti, 6ª giornata archiviata.",
+   "sommario": "Man City in testa con 18 punti, 7ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 6ª giornata",
+     "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 6ª giornata sono stati segnati 36 gol in 10 partite, 3.6 a incontro.",
-      "Il risultato più netto è stato Chelsea 5-1 Bournemouth: Chelsea ha vinto con 4 gol di scarto."
+      "Nella 7ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
      ]
     },
     {
@@ -291,7 +277,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 6
+   "giornate_giocate": 7
   },
   {
    "slug": "laliga",
@@ -304,7 +290,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 3 gol in 2 partite, 1.5 a incontro."
      ]
     },
     {
@@ -1012,18 +998,18 @@
    "bandiera": "🇹🇷",
    "paese": "Turchia",
    "titolo": "Süper Lig: cosa dicono i numeri",
-   "sommario": "Galatasaray in testa con 16 punti, 8ª giornata archiviata.",
+   "sommario": "Galatasaray in testa con 19 punti, 8ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 7 gol in 4 partite, 1.8 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Galatasaray con 16 punti in 7 partite.",
+      "In testa c'è Galatasaray con 19 punti in 8 partite.",
       "Alanyaspor ha 12 punti ma i tiri in porta ne direbbero 7.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Goztep, ferma a 6 punti contro i 11.5 attesi dal gioco."
      ]
@@ -1031,17 +1017,43 @@
    ],
    "chicche": [
     {
+     "tipo": "imbattuta",
+     "titolo": "Amedspor non perde da 6 partite",
+     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+     "numero": "6",
+     "campionato": "Süper Lig",
+     "bandiera": "🇹🇷",
+     "slug": "superlig",
+     "squadre": [
+      "Amedspor"
+     ],
+     "campione": 6
+    },
+    {
+     "tipo": "digiuno",
+     "titolo": "Genclerbirligi non vince da 6 partite",
+     "testo": "Il digiuno aperto più lungo del campionato.",
+     "numero": "6",
+     "campionato": "Süper Lig",
+     "bandiera": "🇹🇷",
+     "slug": "superlig",
+     "squadre": [
+      "Genclerbirligi"
+     ],
+     "campione": 6
+    },
+    {
      "tipo": "a_secco",
-     "titolo": "Eyupspor non segna da 4 partite",
+     "titolo": "Eyupspor non segna da 5 partite",
      "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "4",
+     "numero": "5",
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
      "slug": "superlig",
      "squadre": [
       "Eyupspor"
      ],
-     "campione": 4
+     "campione": 5
     },
     {
      "tipo": "rimonte",
@@ -1557,7 +1569,7 @@
     {
      "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 4 gol in 1 partite, 4.0 a incontro."
+      "Nella 7ª giornata sono stati segnati 16 gol in 5 partite, 3.2 a incontro."
      ]
     },
     {
@@ -1580,6 +1592,19 @@
      "slug": "serie-b",
      "squadre": [
       "Sudtirol"
+     ],
+     "campione": 6
+    },
+    {
+     "tipo": "digiuno",
+     "titolo": "Vicenza non vince da 6 partite",
+     "testo": "Il digiuno aperto più lungo del campionato.",
+     "numero": "6",
+     "campionato": "Serie B",
+     "bandiera": "🇮🇹",
+     "slug": "serie-b",
+     "squadre": [
+      "Vicenza"
      ],
      "campione": 6
     },
@@ -1640,21 +1665,6 @@
      "vincitore": "Avellino",
      "perdente": "Modena",
      "scarto_tiri": 8
-    },
-    {
-     "campionato": "Serie B",
-     "bandiera": "🇮🇹",
-     "slug": "serie-b",
-     "data": "2026-09-05",
-     "casa": "Carrarese",
-     "ospite": "Empoli",
-     "gol_casa": 0,
-     "gol_ospite": 1,
-     "in_porta_casa": 5,
-     "in_porta_ospite": 2,
-     "vincitore": "Empoli",
-     "perdente": "Carrarese",
-     "scarto_tiri": 3
     }
    ],
    "giornate_giocate": 7
@@ -1670,7 +1680,7 @@
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
+      "Nella 11ª giornata sono stati segnati 13 gol in 4 partite, 3.2 a incontro."
      ]
     },
     {
@@ -1685,29 +1695,29 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "West Ham non perde da 8 partite",
+     "titolo": "Middlesbrough non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
      "squadre": [
-      "West Ham"
+      "Middlesbrough"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "digiuno",
-     "titolo": "Charlton non vince da 7 partite",
+     "titolo": "Charlton non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
      "squadre": [
       "Charlton"
      ],
-     "campione": 7
+     "campione": 8
     },
     {
      "tipo": "rimonte",
@@ -1817,12 +1827,12 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League One: cosa dicono i numeri",
-   "sommario": "Plymouth in testa con 19 punti, 10ª giornata archiviata.",
+   "sommario": "Plymouth in testa con 19 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 4 gol in 2 partite, 2.0 a incontro."
+      "Nella 11ª giornata sono stati segnati 4 gol in 1 partite, 4.0 a incontro."
      ]
     },
     {
@@ -1847,19 +1857,6 @@
       "Sheffield Weds"
      ],
      "campione": 6
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Milton Keynes Dons non vince da 8 partite",
-     "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "8",
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "squadre": [
-      "Milton Keynes Dons"
-     ],
-     "campione": 8
     },
     {
      "tipo": "a_secco",
@@ -1976,7 +1973,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "league-two",
@@ -1984,13 +1981,12 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League Two: cosa dicono i numeri",
-   "sommario": "Salford in testa con 19 punti, 10ª giornata archiviata.",
+   "sommario": "Salford in testa con 19 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 23 gol in 11 partite, 2.1 a incontro.",
-      "Il risultato più netto è stato Rotherham 1-4 Gillingham: Gillingham ha vinto con 3 gol di scarto."
+      "Nella 11ª giornata sono stati segnati 3 gol in 2 partite, 1.5 a incontro."
      ]
     },
     {
@@ -2088,7 +2084,7 @@
      "scarto_tiri": 8
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "national-league",
@@ -2249,18 +2245,18 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga 2: cosa dicono i numeri",
-   "sommario": "Almeria in testa con 21 punti, 10ª giornata archiviata.",
+   "sommario": "Almeria in testa con 24 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 1 gol in 1 partite, 1.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 7 gol in 2 partite, 3.5 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Almeria con 21 punti in 9 partite.",
+      "In testa c'è Almeria con 24 punti in 10 partite.",
       "Eibar ha 21 punti ma i tiri in porta ne direbbero 11.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Albacete, ferma a 1 punto contro i 10.5 attesi dal gioco."
      ]
@@ -2269,16 +2265,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Almeria non perde da 6 partite",
+     "titolo": "Almeria non perde da 7 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "6",
+     "numero": "7",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
      "squadre": [
       "Almeria"
      ],
-     "campione": 6
+     "campione": 7
     },
     {
      "tipo": "digiuno",
@@ -2366,6 +2362,21 @@
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
+     "data": "2026-10-17",
+     "casa": "Sociedad B",
+     "ospite": "Almeria",
+     "gol_casa": 2,
+     "gol_ospite": 4,
+     "in_porta_casa": 9,
+     "in_porta_ospite": 4,
+     "vincitore": "Almeria",
+     "perdente": "Sociedad B",
+     "scarto_tiri": 5
+    },
+    {
+     "campionato": "LaLiga 2",
+     "bandiera": "🇪🇸",
+     "slug": "laliga-2",
      "data": "2026-10-12",
      "casa": "Burgos",
      "ospite": "Granada",
@@ -2391,7 +2402,7 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 2 gol in 2 partite, 1.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 10 gol in 5 partite, 2.0 a incontro."
      ]
     },
     {
@@ -2399,7 +2410,7 @@
      "righe": [
       "In testa c'è Hertha con 22 punti in 8 partite.",
       "Hertha ha 22 punti ma i tiri in porta ne direbbero 14.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Braunschweig, ferma a 7 punti contro i 11.6 attesi dal gioco."
+      "All'opposto Braunschweig, ferma a 7 punti contro i 13.2 attesi dal gioco."
      ]
     }
    ],
@@ -2541,21 +2552,6 @@
      "vincitore": "Hannover",
      "perdente": "Bochum",
      "scarto_tiri": 3
-    },
-    {
-     "campionato": "2. Bundesliga",
-     "bandiera": "🇩🇪",
-     "slug": "bundesliga-2",
-     "data": "2026-08-30",
-     "casa": "St Pauli",
-     "ospite": "Kaiserslautern",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 7,
-     "in_porta_ospite": 4,
-     "vincitore": "Kaiserslautern",
-     "perdente": "St Pauli",
-     "scarto_tiri": 3
     }
    ],
    "giornate_giocate": 8
@@ -2571,7 +2567,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 20 gol in 5 partite, 4.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 30 gol in 7 partite, 4.3 a incontro."
      ]
     },
     {
