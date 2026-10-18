@@ -1,5 +1,5 @@
 {
- "data": "2026-10-17",
+ "data": "2026-10-18",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 963
+   "campione": 969
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1487
+   "campione": 1490
   },
   {
    "tipo": "campo",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1205
+   "campione": 1207
   },
   {
    "tipo": "cartellini",
@@ -54,34 +54,34 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 750
+   "campione": 751
   },
   {
    "tipo": "corner",
    "titolo": "Il campionato dei calci d'angolo è Premiership",
-   "testo": "10,8 angoli a partita in totale.",
-   "numero": "10,8",
+   "testo": "10,7 angoli a partita in totale.",
+   "numero": "10,7",
    "campionato": "Premiership",
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 732
+   "campione": 737
   }
  ],
  "per_campionato": {
   "serie-a": [
    {
     "tipo": "imbattuta",
-    "titolo": "Roma non perde da 6 partite",
+    "titolo": "Roma non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Serie A",
     "bandiera": "🇮🇹",
     "slug": "serie-a",
     "squadre": [
      "Roma"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
@@ -141,16 +141,16 @@
   "premier-league": [
    {
     "tipo": "imbattuta",
-    "titolo": "Man City non perde da 6 partite",
+    "titolo": "Man City non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Man City"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "digiuno",
@@ -194,15 +194,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ipswich decide presto",
-    "testo": "26 dei suoi 45 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-    "numero": "58%",
+    "testo": "26 dei suoi 47 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+    "numero": "55%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Ipswich"
     ],
-    "campione": 45
+    "campione": 47
    },
    {
     "tipo": "sorpresa_mercato",
@@ -236,16 +236,16 @@
   "laliga": [
    {
     "tipo": "imbattuta",
-    "titolo": "Barcelona non perde da 8 partite",
+    "titolo": "Barcelona non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "LaLiga",
     "bandiera": "🇪🇸",
     "slug": "laliga",
     "squadre": [
      "Barcelona"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
@@ -316,6 +316,19 @@
    }
   ],
   "bundesliga": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Dortmund non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+    "numero": "6",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Dortmund"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "rimonte",
     "titolo": "Bayern Munich non molla all'intervallo",
@@ -399,19 +412,6 @@
     "campione": 6
    },
    {
-    "tipo": "a_secco",
-    "titolo": "Troyes non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "3",
-    "campionato": "Ligue 1",
-    "bandiera": "🇫🇷",
-    "slug": "ligue-1",
-    "squadre": [
-     "Troyes"
-    ],
-    "campione": 3
-   },
-   {
     "tipo": "rimonte",
     "titolo": "Monaco non molla all'intervallo",
     "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 6: è la quota di rimonte più alta del campionato.",
@@ -469,29 +469,29 @@
   "eredivisie": [
    {
     "tipo": "imbattuta",
-    "titolo": "Feyenoord non perde da 8 partite",
+    "titolo": "Feyenoord non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
      "Feyenoord"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
-    "titolo": "Willem II non vince da 8 partite",
+    "titolo": "Willem II non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Eredivisie",
     "bandiera": "🇳🇱",
     "slug": "eredivisie",
     "squadre": [
      "Willem II"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "a_secco",
@@ -669,6 +669,19 @@
      "Genclerbirligi"
     ],
     "campione": 6
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Fenerbahce non subisce gol da 4 partite",
+    "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "Süper Lig",
+    "bandiera": "🇹🇷",
+    "slug": "superlig",
+    "squadre": [
+     "Fenerbahce"
+    ],
+    "campione": 4
    },
    {
     "tipo": "a_secco",
@@ -849,29 +862,29 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Volos NFC non vince da 6 partite",
+    "titolo": "Volos NFC non vince da 7 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "Volos NFC"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "a_secco",
-    "titolo": "Levadeiakos non segna da 6 partite",
+    "titolo": "Levadeiakos non segna da 7 partite",
     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "Levadeiakos"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
@@ -944,29 +957,29 @@
   "premiership": [
    {
     "tipo": "imbattuta",
-    "titolo": "Rangers non perde da 6 partite",
+    "titolo": "Rangers non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Premiership",
     "bandiera": "🏴",
     "slug": "premiership",
     "squadre": [
      "Rangers"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
-    "tipo": "a_secco",
-    "titolo": "St Mirren non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "3",
+    "tipo": "digiuno",
+    "titolo": "Hibernian non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
     "campionato": "Premiership",
     "bandiera": "🏴",
     "slug": "premiership",
     "squadre": [
-     "St Mirren"
+     "Hibernian"
     ],
-    "campione": 3
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -1026,16 +1039,16 @@
   "serie-b": [
    {
     "tipo": "imbattuta",
-    "titolo": "Sudtirol non perde da 6 partite",
+    "titolo": "Palermo non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Serie B",
     "bandiera": "🇮🇹",
     "slug": "serie-b",
     "squadre": [
-     "Sudtirol"
+     "Palermo"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "digiuno",
@@ -1095,14 +1108,14 @@
   "championship": [
    {
     "tipo": "imbattuta",
-    "titolo": "Middlesbrough non perde da 9 partite",
+    "titolo": "West Ham non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
     "numero": "9",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "Middlesbrough"
+     "West Ham"
     ],
     "campione": 9
    },
@@ -1190,29 +1203,29 @@
   "league-one": [
    {
     "tipo": "imbattuta",
-    "titolo": "Sheffield Weds non perde da 6 partite",
+    "titolo": "Sheffield Weds non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "League One",
     "bandiera": "🏴",
     "slug": "league-one",
     "squadre": [
      "Sheffield Weds"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
-    "tipo": "a_secco",
-    "titolo": "Wigan non segna da 4 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "4",
+    "tipo": "digiuno",
+    "titolo": "Notts County non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
     "campionato": "League One",
     "bandiera": "🏴",
     "slug": "league-one",
     "squadre": [
-     "Wigan"
+     "Notts County"
     ],
-    "campione": 4
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -1272,29 +1285,29 @@
   "league-two": [
    {
     "tipo": "imbattuta",
-    "titolo": "Crewe non perde da 10 partite",
+    "titolo": "Crewe non perde da 11 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "10",
+    "numero": "11",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
      "Crewe"
     ],
-    "campione": 10
+    "campione": 11
    },
    {
     "tipo": "digiuno",
-    "titolo": "Oldham non vince da 6 partite",
+    "titolo": "Crawley Town non vince da 7 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
-     "Oldham"
+     "Crawley Town"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "fragilita",
@@ -1449,16 +1462,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Albacete non vince da 9 partite",
+    "titolo": "Albacete non vince da 10 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
      "Albacete"
     ],
-    "campione": 9
+    "campione": 10
    },
    {
     "tipo": "a_secco",
@@ -1732,6 +1745,19 @@
    }
   ],
   "championship-scozia": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Dunfermline non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+    "numero": "6",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Dunfermline"
+    ],
+    "campione": 6
+   },
    {
     "tipo": "rimonte",
     "titolo": "Partick non molla all'intervallo",
