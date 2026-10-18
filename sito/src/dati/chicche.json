@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1490
+   "campione": 1491
   },
   {
    "tipo": "campo",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1207
+   "campione": 1208
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 751
+   "campione": 752
   },
   {
    "tipo": "corner",
@@ -164,6 +164,19 @@
      "Tottenham"
     ],
     "campione": 6
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Brighton non subisce gol da 4 partite",
+    "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Brighton"
+    ],
+    "campione": 4
    },
    {
     "tipo": "rimonte",
@@ -494,19 +507,6 @@
     "campione": 9
    },
    {
-    "tipo": "a_secco",
-    "titolo": "Zwolle non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "3",
-    "campionato": "Eredivisie",
-    "bandiera": "🇳🇱",
-    "slug": "eredivisie",
-    "squadre": [
-     "Zwolle"
-    ],
-    "campione": 3
-   },
-   {
     "tipo": "rimonte",
     "titolo": "PSV Eindhoven non molla all'intervallo",
     "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 7: è la quota di rimonte più alta del campionato.",
@@ -659,14 +659,14 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Genclerbirligi non vince da 6 partite",
+    "titolo": "Samsunspor non vince da 6 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
     "numero": "6",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
-     "Genclerbirligi"
+     "Samsunspor"
     ],
     "campione": 6
    },
@@ -915,15 +915,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "OFI Crete decide presto",
-    "testo": "72 dei suoi 127 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-    "numero": "57%",
+    "testo": "72 dei suoi 130 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+    "numero": "55%",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
      "OFI Crete"
     ],
-    "campione": 127
+    "campione": 130
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1569,19 +1569,6 @@
     "campione": 8
    },
    {
-    "tipo": "a_secco",
-    "titolo": "Karlsruhe non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "3",
-    "campionato": "2. Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga-2",
-    "squadre": [
-     "Karlsruhe"
-    ],
-    "campione": 3
-   },
-   {
     "tipo": "rimonte",
     "titolo": "Hannover non molla all'intervallo",
     "testo": "Sotto al riposo 26 volte nelle ultime stagioni, ha finito vincendo 6: è la quota di rimonte più alta del campionato.",
@@ -1610,15 +1597,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Dresden decide presto",
-    "testo": "38 dei suoi 63 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-    "numero": "60%",
+    "testo": "38 dei suoi 65 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+    "numero": "58%",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Dresden"
     ],
-    "campione": 63
+    "campione": 65
    },
    {
     "tipo": "sorpresa_mercato",
