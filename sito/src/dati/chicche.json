@@ -1,5 +1,5 @@
 {
- "data": "2026-10-18",
+ "data": "2026-10-19",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 969
+   "campione": 971
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,18 +21,18 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1491
+   "campione": 1495
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta più che altrove in National League",
+   "titolo": "Giocare in casa conta più che altrove in LaLiga 2",
    "testo": "La squadra di casa vince il 46% delle partite.",
    "numero": "46%",
-   "campionato": "National League",
-   "bandiera": "🏴",
-   "slug": "national-league",
+   "campionato": "LaLiga 2",
+   "bandiera": "🇪🇸",
+   "slug": "laliga-2",
    "squadre": [],
-   "campione": 155
+   "campione": 1495
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1208
+   "campione": 1210
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 752
+   "campione": 756
   },
   {
    "tipo": "corner",
@@ -65,7 +65,7 @@
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 737
+   "campione": 738
   }
  ],
  "per_campionato": {
@@ -262,16 +262,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Malaga non vince da 8 partite",
+    "titolo": "Malaga non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "LaLiga",
     "bandiera": "🇪🇸",
     "slug": "laliga",
     "squadre": [
      "Malaga"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "rimonte",
@@ -343,6 +343,19 @@
     "campione": 6
    },
    {
+    "tipo": "digiuno",
+    "titolo": "M'gladbach non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "M'gladbach"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "rimonte",
     "titolo": "Bayern Munich non molla all'intervallo",
     "testo": "Sotto al riposo 15 volte nelle ultime stagioni, ha finito vincendo 4: è la quota di rimonte più alta del campionato.",
@@ -399,30 +412,17 @@
   ],
   "ligue-1": [
    {
-    "tipo": "imbattuta",
-    "titolo": "Monaco non perde da 6 partite",
-    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "6",
-    "campionato": "Ligue 1",
-    "bandiera": "🇫🇷",
-    "slug": "ligue-1",
-    "squadre": [
-     "Monaco"
-    ],
-    "campione": 6
-   },
-   {
     "tipo": "digiuno",
-    "titolo": "Le Havre non vince da 6 partite",
+    "titolo": "Le Havre non vince da 7 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Ligue 1",
     "bandiera": "🇫🇷",
     "slug": "ligue-1",
     "squadre": [
      "Le Havre"
     ],
-    "campione": 6
+    "campione": 7
    },
    {
     "tipo": "rimonte",
