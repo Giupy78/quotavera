@@ -70196,455 +70196,6 @@
    ]
   },
   {
-   "id": "toulouse-troyes",
-   "casa": "Toulouse",
-   "ospite": "Troyes",
-   "data": "2026-10-24",
-   "ora": "17:15",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.7708,
-    0.1542,
-    0.075
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "ligue-1",
-   "dettaglio": {
-    "gol_attesi_casa": 2.47,
-    "gol_attesi_ospite": 0.65,
-    "matrice": [
-     [
-      0.0467,
-      0.02604,
-      0.0093,
-      0.00201,
-      0.00033,
-      4e-05
-     ],
-     [
-      0.10645,
-      0.07343,
-      0.023,
-      0.00498,
-      0.00081,
-      0.00011
-     ],
-     [
-      0.13483,
-      0.08758,
-      0.02844,
-      0.00616,
-      0.001,
-      0.00013
-     ],
-     [
-      0.11114,
-      0.07219,
-      0.02344,
-      0.00508,
-      0.00082,
-      0.00011
-     ],
-     [
-      0.06871,
-      0.04463,
-      0.01449,
-      0.00314,
-      0.00051,
-      7e-05
-     ],
-     [
-      0.03398,
-      0.02207,
-      0.00717,
-      0.00155,
-      0.00025,
-      3e-05
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "2-0",
-      "p": 0.1348
-     },
-     {
-      "risultato": "3-0",
-      "p": 0.1111
-     },
-     {
-      "risultato": "1-0",
-      "p": 0.1065
-     },
-     {
-      "risultato": "2-1",
-      "p": 0.0876
-     },
-     {
-      "risultato": "1-1",
-      "p": 0.0734
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.7708,
-      "X": 0.1542,
-      "2": 0.075
-     },
-     "btts": {
-      "si": 0.44,
-      "no": 0.56
-     },
-     "ou_1.5": {
-      "over": 0.8208,
-      "under": 0.1792
-     },
-     "ou_2.5": {
-      "over": 0.6032,
-      "under": 0.3968
-     },
-     "ou_3.5": {
-      "over": 0.3795,
-      "under": 0.6205
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "Toulouse",
-    "partite": 20,
-    "gol_fatti": 1.4,
-    "gol_subiti": 1.65,
-    "gol_totali": 28,
-    "in_porta_totali": 87,
-    "attesi_dai_tiri": 28.4,
-    "scarto_conversione": -0.4,
-    "vantaggio_casa": -0.73,
-    "casa": {
-     "partite": 9,
-     "gol_fatti": 1.0,
-     "gol_subiti": 1.56,
-     "tiri": 15.9,
-     "in_porta": 5.0,
-     "in_porta_subiti": 4.4,
-     "tiri_subiti": 11.3,
-     "corner": 5.6,
-     "corner_subiti": 3.9,
-     "falli": 15.0,
-     "cartellini": 2.6,
-     "gialli": 21,
-     "rossi": 2,
-     "precisione_tiri": 0.315,
-     "over_25": 0.444,
-     "gol_gol": 0.444,
-     "clean_sheet": 0.111,
-     "a_secco": 0.444,
-     "con_avanzate": 3,
-     "possesso": 51.5,
-     "passaggi": 475.0,
-     "precisione_passaggi": 0.863,
-     "precisione_cross": 0.175,
-     "precisione_lanci": 0.623,
-     "contrasti": 15.3,
-     "intercetti": 8.0,
-     "respinte": 16.7,
-     "parate": 3.7,
-     "fuorigioco": 2.7,
-     "tiri_respinti": 3.7
-    },
-    "trasferta": {
-     "partite": 11,
-     "gol_fatti": 1.73,
-     "gol_subiti": 1.73,
-     "tiri": 11.0,
-     "in_porta": 3.8,
-     "in_porta_subiti": 4.7,
-     "tiri_subiti": 14.9,
-     "corner": 3.1,
-     "corner_subiti": 5.2,
-     "falli": 13.7,
-     "cartellini": 2.0,
-     "gialli": 21,
-     "rossi": 1,
-     "precisione_tiri": 0.347,
-     "over_25": 0.818,
-     "gol_gol": 0.727,
-     "clean_sheet": 0.182,
-     "a_secco": 0.182,
-     "con_avanzate": 4,
-     "possesso": 49.3,
-     "passaggi": 522.0,
-     "precisione_passaggi": 0.861,
-     "precisione_cross": 0.195,
-     "precisione_lanci": 0.44,
-     "contrasti": 16.2,
-     "intercetti": 8.2,
-     "respinte": 36.8,
-     "parate": 2.2,
-     "fuorigioco": 1.2,
-     "tiri_respinti": 1.5
-    }
-   },
-   "stat_ospite": {
-    "squadra": "Troyes",
-    "partite": 7,
-    "gol_fatti": 0.71,
-    "gol_subiti": 2.29,
-    "gol_totali": 5,
-    "in_porta_totali": 22,
-    "attesi_dai_tiri": 7.2,
-    "scarto_conversione": -2.2,
-    "vantaggio_casa": 0.08,
-    "casa": {
-     "partite": 4,
-     "gol_fatti": 0.75,
-     "gol_subiti": 2.75,
-     "tiri": 15.8,
-     "in_porta": 4.0,
-     "in_porta_subiti": 4.5,
-     "tiri_subiti": 11.8,
-     "corner": 7.2,
-     "corner_subiti": 2.2,
-     "falli": 10.2,
-     "cartellini": 2.2,
-     "gialli": 9,
-     "rossi": 0,
-     "precisione_tiri": 0.254,
-     "over_25": 0.5,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.25,
-     "a_secco": 0.5,
-     "con_avanzate": 4,
-     "possesso": 40.9,
-     "passaggi": 388.0,
-     "precisione_passaggi": 0.818,
-     "precisione_cross": 0.304,
-     "precisione_lanci": 0.519,
-     "contrasti": 13.8,
-     "intercetti": 10.2,
-     "respinte": 16.0,
-     "parate": 2.0,
-     "fuorigioco": 1.5,
-     "tiri_respinti": 5.0
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 0.67,
-     "gol_subiti": 1.67,
-     "tiri": 12.7,
-     "in_porta": 2.0,
-     "in_porta_subiti": 5.0,
-     "tiri_subiti": 13.3,
-     "corner": 7.0,
-     "corner_subiti": 2.0,
-     "falli": 15.3,
-     "cartellini": 0.7,
-     "gialli": 2,
-     "rossi": 0,
-     "precisione_tiri": 0.158,
-     "over_25": 0.333,
-     "gol_gol": 0.333,
-     "clean_sheet": 0.0,
-     "a_secco": 0.667,
-     "con_avanzate": 3,
-     "possesso": 36.2,
-     "passaggi": 322.0,
-     "precisione_passaggi": 0.768,
-     "precisione_cross": 0.254,
-     "precisione_lanci": 0.437,
-     "contrasti": 23.0,
-     "intercetti": 8.0,
-     "respinte": 18.3,
-     "parate": 3.0,
-     "fuorigioco": 2.7,
-     "tiri_respinti": 3.3
-    }
-   },
-   "forma_casa": {
-    "squadra": "Toulouse",
-    "partite": 6,
-    "gol_fatti": 2.0,
-    "gol_subiti": 1.5,
-    "gol_totali": 12,
-    "in_porta_totali": 30,
-    "attesi_dai_tiri": 9.8,
-    "scarto_conversione": 2.2,
-    "vantaggio_casa": -0.75,
-    "casa": {
-     "partite": 2,
-     "gol_fatti": 1.5,
-     "gol_subiti": 1.5,
-     "tiri": 19.0,
-     "in_porta": 7.5,
-     "in_porta_subiti": 6.5,
-     "tiri_subiti": 14.0,
-     "corner": 6.0,
-     "corner_subiti": 4.5,
-     "falli": 16.5,
-     "cartellini": 2.0,
-     "gialli": 4,
-     "rossi": 0,
-     "precisione_tiri": 0.395,
-     "over_25": 0.5,
-     "gol_gol": 0.5,
-     "clean_sheet": 0.0,
-     "a_secco": 0.5,
-     "con_avanzate": 2,
-     "possesso": 53.3,
-     "passaggi": 496.0,
-     "precisione_passaggi": 0.866,
-     "precisione_cross": 0.156,
-     "precisione_lanci": 0.648,
-     "contrasti": 15.5,
-     "intercetti": 8.5,
-     "respinte": 16.0,
-     "parate": 5.0,
-     "fuorigioco": 3.0,
-     "tiri_respinti": 4.0
-    },
-    "trasferta": {
-     "partite": 4,
-     "gol_fatti": 2.25,
-     "gol_subiti": 1.5,
-     "tiri": 10.0,
-     "in_porta": 3.8,
-     "in_porta_subiti": 3.8,
-     "tiri_subiti": 15.8,
-     "corner": 2.8,
-     "corner_subiti": 4.2,
-     "falli": 15.2,
-     "cartellini": 1.5,
-     "gialli": 6,
-     "rossi": 0,
-     "precisione_tiri": 0.375,
-     "over_25": 1.0,
-     "gol_gol": 0.75,
-     "clean_sheet": 0.25,
-     "a_secco": 0.0,
-     "con_avanzate": 4,
-     "possesso": 49.3,
-     "passaggi": 522.0,
-     "precisione_passaggi": 0.861,
-     "precisione_cross": 0.195,
-     "precisione_lanci": 0.44,
-     "contrasti": 16.2,
-     "intercetti": 8.2,
-     "respinte": 36.8,
-     "parate": 2.2,
-     "fuorigioco": 1.2,
-     "tiri_respinti": 1.5
-    }
-   },
-   "forma_ospite": {
-    "squadra": "Troyes",
-    "partite": 6,
-    "gol_fatti": 0.83,
-    "gol_subiti": 2.67,
-    "gol_totali": 5,
-    "in_porta_totali": 20,
-    "attesi_dai_tiri": 6.5,
-    "scarto_conversione": -1.5,
-    "vantaggio_casa": 0.33,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 1.0,
-     "gol_subiti": 3.67,
-     "tiri": 18.0,
-     "in_porta": 4.7,
-     "in_porta_subiti": 5.7,
-     "tiri_subiti": 12.3,
-     "corner": 7.7,
-     "corner_subiti": 2.3,
-     "falli": 11.0,
-     "cartellini": 2.3,
-     "gialli": 7,
-     "rossi": 0,
-     "precisione_tiri": 0.259,
-     "over_25": 0.667,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.0,
-     "a_secco": 0.333,
-     "con_avanzate": 3,
-     "possesso": 40.8,
-     "passaggi": 365.0,
-     "precisione_passaggi": 0.807,
-     "precisione_cross": 0.314,
-     "precisione_lanci": 0.511,
-     "contrasti": 15.0,
-     "intercetti": 9.3,
-     "respinte": 16.0,
-     "parate": 2.3,
-     "fuorigioco": 1.7,
-     "tiri_respinti": 6.0
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 0.67,
-     "gol_subiti": 1.67,
-     "tiri": 12.7,
-     "in_porta": 2.0,
-     "in_porta_subiti": 5.0,
-     "tiri_subiti": 13.3,
-     "corner": 7.0,
-     "corner_subiti": 2.0,
-     "falli": 15.3,
-     "cartellini": 0.7,
-     "gialli": 2,
-     "rossi": 0,
-     "precisione_tiri": 0.158,
-     "over_25": 0.333,
-     "gol_gol": 0.333,
-     "clean_sheet": 0.0,
-     "a_secco": 0.667,
-     "con_avanzate": 3,
-     "possesso": 36.2,
-     "passaggi": 322.0,
-     "precisione_passaggi": 0.768,
-     "precisione_cross": 0.254,
-     "precisione_lanci": 0.437,
-     "contrasti": 23.0,
-     "intercetti": 8.0,
-     "respinte": 18.3,
-     "parate": 3.0,
-     "fuorigioco": 2.7,
-     "tiri_respinti": 3.3
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.0,
-     "difesa": 1.67,
-     "media": 1.33
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 15.9,
-     "difesa": 13.3,
-     "media": 14.6
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 5.0,
-     "difesa": 5.0,
-     "media": 5.0
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 5.6,
-     "difesa": 2.0,
-     "media": 3.8
-    },
-    {
-     "voce": "Possesso",
-     "attacco": 51.5,
-     "difesa": 36.2,
-     "media": null
-    }
-   ],
-   "precedenti": []
-  },
-  {
    "id": "lens-paris-fc",
    "casa": "Lens",
    "ospite": "Paris FC",
@@ -73496,6 +73047,455 @@
      "gol_ospite": 1
     }
    ]
+  },
+  {
+   "id": "toulouse-troyes",
+   "casa": "Toulouse",
+   "ospite": "Troyes",
+   "data": "2026-10-25",
+   "ora": "17:15",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.7708,
+    0.1542,
+    0.075
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "ligue-1",
+   "dettaglio": {
+    "gol_attesi_casa": 2.47,
+    "gol_attesi_ospite": 0.65,
+    "matrice": [
+     [
+      0.0467,
+      0.02604,
+      0.0093,
+      0.00201,
+      0.00033,
+      4e-05
+     ],
+     [
+      0.10645,
+      0.07343,
+      0.023,
+      0.00498,
+      0.00081,
+      0.00011
+     ],
+     [
+      0.13483,
+      0.08758,
+      0.02844,
+      0.00616,
+      0.001,
+      0.00013
+     ],
+     [
+      0.11114,
+      0.07219,
+      0.02344,
+      0.00508,
+      0.00082,
+      0.00011
+     ],
+     [
+      0.06871,
+      0.04463,
+      0.01449,
+      0.00314,
+      0.00051,
+      7e-05
+     ],
+     [
+      0.03398,
+      0.02207,
+      0.00717,
+      0.00155,
+      0.00025,
+      3e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "2-0",
+      "p": 0.1348
+     },
+     {
+      "risultato": "3-0",
+      "p": 0.1111
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1065
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0876
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.0734
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.7708,
+      "X": 0.1542,
+      "2": 0.075
+     },
+     "btts": {
+      "si": 0.44,
+      "no": 0.56
+     },
+     "ou_1.5": {
+      "over": 0.8208,
+      "under": 0.1792
+     },
+     "ou_2.5": {
+      "over": 0.6032,
+      "under": 0.3968
+     },
+     "ou_3.5": {
+      "over": 0.3795,
+      "under": 0.6205
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Toulouse",
+    "partite": 20,
+    "gol_fatti": 1.4,
+    "gol_subiti": 1.65,
+    "gol_totali": 28,
+    "in_porta_totali": 87,
+    "attesi_dai_tiri": 28.4,
+    "scarto_conversione": -0.4,
+    "vantaggio_casa": -0.73,
+    "casa": {
+     "partite": 9,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.56,
+     "tiri": 15.9,
+     "in_porta": 5.0,
+     "in_porta_subiti": 4.4,
+     "tiri_subiti": 11.3,
+     "corner": 5.6,
+     "corner_subiti": 3.9,
+     "falli": 15.0,
+     "cartellini": 2.6,
+     "gialli": 21,
+     "rossi": 2,
+     "precisione_tiri": 0.315,
+     "over_25": 0.444,
+     "gol_gol": 0.444,
+     "clean_sheet": 0.111,
+     "a_secco": 0.444,
+     "con_avanzate": 3,
+     "possesso": 51.5,
+     "passaggi": 475.0,
+     "precisione_passaggi": 0.863,
+     "precisione_cross": 0.175,
+     "precisione_lanci": 0.623,
+     "contrasti": 15.3,
+     "intercetti": 8.0,
+     "respinte": 16.7,
+     "parate": 3.7,
+     "fuorigioco": 2.7,
+     "tiri_respinti": 3.7
+    },
+    "trasferta": {
+     "partite": 11,
+     "gol_fatti": 1.73,
+     "gol_subiti": 1.73,
+     "tiri": 11.0,
+     "in_porta": 3.8,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 14.9,
+     "corner": 3.1,
+     "corner_subiti": 5.2,
+     "falli": 13.7,
+     "cartellini": 2.0,
+     "gialli": 21,
+     "rossi": 1,
+     "precisione_tiri": 0.347,
+     "over_25": 0.818,
+     "gol_gol": 0.727,
+     "clean_sheet": 0.182,
+     "a_secco": 0.182,
+     "con_avanzate": 4,
+     "possesso": 49.3,
+     "passaggi": 522.0,
+     "precisione_passaggi": 0.861,
+     "precisione_cross": 0.195,
+     "precisione_lanci": 0.44,
+     "contrasti": 16.2,
+     "intercetti": 8.2,
+     "respinte": 36.8,
+     "parate": 2.2,
+     "fuorigioco": 1.2,
+     "tiri_respinti": 1.5
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Troyes",
+    "partite": 7,
+    "gol_fatti": 0.71,
+    "gol_subiti": 2.29,
+    "gol_totali": 5,
+    "in_porta_totali": 22,
+    "attesi_dai_tiri": 7.2,
+    "scarto_conversione": -2.2,
+    "vantaggio_casa": 0.08,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 0.75,
+     "gol_subiti": 2.75,
+     "tiri": 15.8,
+     "in_porta": 4.0,
+     "in_porta_subiti": 4.5,
+     "tiri_subiti": 11.8,
+     "corner": 7.2,
+     "corner_subiti": 2.2,
+     "falli": 10.2,
+     "cartellini": 2.2,
+     "gialli": 9,
+     "rossi": 0,
+     "precisione_tiri": 0.254,
+     "over_25": 0.5,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.25,
+     "a_secco": 0.5,
+     "con_avanzate": 4,
+     "possesso": 40.9,
+     "passaggi": 388.0,
+     "precisione_passaggi": 0.818,
+     "precisione_cross": 0.304,
+     "precisione_lanci": 0.519,
+     "contrasti": 13.8,
+     "intercetti": 10.2,
+     "respinte": 16.0,
+     "parate": 2.0,
+     "fuorigioco": 1.5,
+     "tiri_respinti": 5.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.67,
+     "tiri": 12.7,
+     "in_porta": 2.0,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 13.3,
+     "corner": 7.0,
+     "corner_subiti": 2.0,
+     "falli": 15.3,
+     "cartellini": 0.7,
+     "gialli": 2,
+     "rossi": 0,
+     "precisione_tiri": 0.158,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.0,
+     "a_secco": 0.667,
+     "con_avanzate": 3,
+     "possesso": 36.2,
+     "passaggi": 322.0,
+     "precisione_passaggi": 0.768,
+     "precisione_cross": 0.254,
+     "precisione_lanci": 0.437,
+     "contrasti": 23.0,
+     "intercetti": 8.0,
+     "respinte": 18.3,
+     "parate": 3.0,
+     "fuorigioco": 2.7,
+     "tiri_respinti": 3.3
+    }
+   },
+   "forma_casa": {
+    "squadra": "Toulouse",
+    "partite": 6,
+    "gol_fatti": 2.0,
+    "gol_subiti": 1.5,
+    "gol_totali": 12,
+    "in_porta_totali": 30,
+    "attesi_dai_tiri": 9.8,
+    "scarto_conversione": 2.2,
+    "vantaggio_casa": -0.75,
+    "casa": {
+     "partite": 2,
+     "gol_fatti": 1.5,
+     "gol_subiti": 1.5,
+     "tiri": 19.0,
+     "in_porta": 7.5,
+     "in_porta_subiti": 6.5,
+     "tiri_subiti": 14.0,
+     "corner": 6.0,
+     "corner_subiti": 4.5,
+     "falli": 16.5,
+     "cartellini": 2.0,
+     "gialli": 4,
+     "rossi": 0,
+     "precisione_tiri": 0.395,
+     "over_25": 0.5,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 2,
+     "possesso": 53.3,
+     "passaggi": 496.0,
+     "precisione_passaggi": 0.866,
+     "precisione_cross": 0.156,
+     "precisione_lanci": 0.648,
+     "contrasti": 15.5,
+     "intercetti": 8.5,
+     "respinte": 16.0,
+     "parate": 5.0,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 4,
+     "gol_fatti": 2.25,
+     "gol_subiti": 1.5,
+     "tiri": 10.0,
+     "in_porta": 3.8,
+     "in_porta_subiti": 3.8,
+     "tiri_subiti": 15.8,
+     "corner": 2.8,
+     "corner_subiti": 4.2,
+     "falli": 15.2,
+     "cartellini": 1.5,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.375,
+     "over_25": 1.0,
+     "gol_gol": 0.75,
+     "clean_sheet": 0.25,
+     "a_secco": 0.0,
+     "con_avanzate": 4,
+     "possesso": 49.3,
+     "passaggi": 522.0,
+     "precisione_passaggi": 0.861,
+     "precisione_cross": 0.195,
+     "precisione_lanci": 0.44,
+     "contrasti": 16.2,
+     "intercetti": 8.2,
+     "respinte": 36.8,
+     "parate": 2.2,
+     "fuorigioco": 1.2,
+     "tiri_respinti": 1.5
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Troyes",
+    "partite": 6,
+    "gol_fatti": 0.83,
+    "gol_subiti": 2.67,
+    "gol_totali": 5,
+    "in_porta_totali": 20,
+    "attesi_dai_tiri": 6.5,
+    "scarto_conversione": -1.5,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 3.67,
+     "tiri": 18.0,
+     "in_porta": 4.7,
+     "in_porta_subiti": 5.7,
+     "tiri_subiti": 12.3,
+     "corner": 7.7,
+     "corner_subiti": 2.3,
+     "falli": 11.0,
+     "cartellini": 2.3,
+     "gialli": 7,
+     "rossi": 0,
+     "precisione_tiri": 0.259,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 40.8,
+     "passaggi": 365.0,
+     "precisione_passaggi": 0.807,
+     "precisione_cross": 0.314,
+     "precisione_lanci": 0.511,
+     "contrasti": 15.0,
+     "intercetti": 9.3,
+     "respinte": 16.0,
+     "parate": 2.3,
+     "fuorigioco": 1.7,
+     "tiri_respinti": 6.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.67,
+     "tiri": 12.7,
+     "in_porta": 2.0,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 13.3,
+     "corner": 7.0,
+     "corner_subiti": 2.0,
+     "falli": 15.3,
+     "cartellini": 0.7,
+     "gialli": 2,
+     "rossi": 0,
+     "precisione_tiri": 0.158,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.0,
+     "a_secco": 0.667,
+     "con_avanzate": 3,
+     "possesso": 36.2,
+     "passaggi": 322.0,
+     "precisione_passaggi": 0.768,
+     "precisione_cross": 0.254,
+     "precisione_lanci": 0.437,
+     "contrasti": 23.0,
+     "intercetti": 8.0,
+     "respinte": 18.3,
+     "parate": 3.0,
+     "fuorigioco": 2.7,
+     "tiri_respinti": 3.3
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.0,
+     "difesa": 1.67,
+     "media": 1.33
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 15.9,
+     "difesa": 13.3,
+     "media": 14.6
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 5.0,
+     "difesa": 5.0,
+     "media": 5.0
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.6,
+     "difesa": 2.0,
+     "media": 3.8
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 51.5,
+     "difesa": 36.2,
+     "media": null
+    }
+   ],
+   "precedenti": []
   },
   {
    "id": "paris-sg-lyon",
@@ -215470,13 +215470,13 @@
      [
       0.0543,
       0.06564,
-      0.0408,
-      0.01676,
+      0.04081,
+      0.01677,
       0.00517,
       0.00127
      ],
      [
-      0.09029,
+      0.0903,
       0.11258,
       0.06902,
       0.02836,
@@ -215493,7 +215493,7 @@
      ],
      [
       0.04333,
-      0.05341,
+      0.0534,
       0.03291,
       0.01352,
       0.00417,
@@ -215961,14 +215961,14 @@
     "matrice": [
      [
       0.09258,
-      0.07788,
+      0.07789,
       0.03351,
       0.00953,
       0.00203,
       0.00035
      ],
      [
-      0.14033,
+      0.14034,
       0.12095,
       0.05136,
       0.01461,
@@ -215976,7 +215976,7 @@
       0.00053
      ],
      [
-      0.10803,
+      0.10802,
       0.09222,
       0.03936,
       0.0112,
@@ -215985,7 +215985,7 @@
      ],
      [
       0.05519,
-      0.04712,
+      0.04711,
       0.02011,
       0.00572,
       0.00122,
@@ -216439,22 +216439,22 @@
     "matrice": [
      [
       0.03331,
-      0.04379,
-      0.02983,
-      0.0134,
+      0.0438,
+      0.02984,
+      0.01341,
       0.00452,
       0.00122
      ],
      [
-      0.06745,
-      0.09203,
+      0.06746,
+      0.09204,
       0.06171,
       0.02773,
       0.00934,
       0.00252
      ],
      [
-      0.07026,
+      0.07025,
       0.0947,
       0.06382,
       0.02868,
@@ -216463,7 +216463,7 @@
      ],
      [
       0.04844,
-      0.0653,
+      0.06529,
       0.04401,
       0.01977,
       0.00666,
@@ -216471,16 +216471,16 @@
      ],
      [
       0.02505,
-      0.03377,
+      0.03376,
       0.02276,
-      0.01023,
+      0.01022,
       0.00345,
       0.00093
      ],
      [
       0.01036,
       0.01397,
-      0.00942,
+      0.00941,
       0.00423,
       0.00143,
       0.00038
@@ -216527,8 +216527,8 @@
       "under": 0.3367
      },
      "ou_3.5": {
-      "over": 0.4451,
-      "under": 0.5549
+      "over": 0.445,
+      "under": 0.555
      }
     }
    },
@@ -216877,7 +216877,7 @@
    "p_modello": [
     0.2379,
     0.2459,
-    0.5162
+    0.5161
    ],
    "margine": null,
    "margine_migliore": null,
@@ -216888,31 +216888,31 @@
     "matrice": [
      [
       0.06828,
-      0.11126,
+      0.11127,
       0.09244,
       0.05093,
       0.02104,
       0.00696
      ],
      [
-      0.0698,
+      0.06981,
       0.11696,
       0.09616,
-      0.05298,
+      0.05297,
       0.02189,
-      0.00724
+      0.00723
      ],
      [
       0.03662,
       0.06052,
       0.05001,
       0.02755,
-      0.01139,
+      0.01138,
       0.00376
      ],
      [
       0.0127,
-      0.02098,
+      0.02099,
       0.01734,
       0.00955,
       0.00395,
@@ -216961,15 +216961,15 @@
      "1x2": {
       "1": 0.2379,
       "X": 0.2459,
-      "2": 0.5162
+      "2": 0.5161
      },
      "btts": {
       "si": 0.5234,
       "no": 0.4766
      },
      "ou_1.5": {
-      "over": 0.7507,
-      "under": 0.2493
+      "over": 0.7506,
+      "under": 0.2494
      },
      "ou_2.5": {
       "over": 0.5046,
@@ -217428,8 +217428,8 @@
       "2": 0.3293
      },
      "btts": {
-      "si": 0.5447,
-      "no": 0.4553
+      "si": 0.5446,
+      "no": 0.4554
      },
      "ou_1.5": {
       "over": 0.7495,
@@ -217830,31 +217830,31 @@
     "matrice": [
      [
       0.03395,
-      0.07497,
+      0.07498,
       0.08489,
-      0.06371,
-      0.03586,
+      0.0637,
+      0.03585,
       0.01614
      ],
      [
-      0.03793,
+      0.03794,
       0.08684,
-      0.09724,
-      0.07298,
-      0.04107,
+      0.09725,
+      0.07297,
+      0.04106,
       0.01849
      ],
      [
       0.02198,
-      0.04948,
+      0.04949,
       0.0557,
-      0.0418,
+      0.04179,
       0.02352,
       0.01059
      ],
      [
       0.00839,
-      0.01889,
+      0.0189,
       0.02127,
       0.01596,
       0.00898,
@@ -217910,8 +217910,8 @@
       "no": 0.3894
      },
      "ou_1.5": {
-      "over": 0.8532,
-      "under": 0.1468
+      "over": 0.8531,
+      "under": 0.1469
      },
      "ou_2.5": {
       "over": 0.6594,
@@ -218266,9 +218266,9 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.344,
+    0.3441,
     0.2725,
-    0.3835
+    0.3834
    ],
    "margine": null,
    "margine_migliore": null,
@@ -218286,8 +218286,8 @@
       0.0024
      ],
      [
-      0.09984,
-      0.12934,
+      0.09985,
+      0.12933,
       0.08236,
       0.03515,
       0.01125,
@@ -218299,13 +218299,13 @@
       0.04933,
       0.02105,
       0.00674,
-      0.00173
+      0.00172
      ],
      [
-      0.02403,
+      0.02404,
       0.03077,
       0.0197,
-      0.00841,
+      0.0084,
       0.00269,
       0.00069
      ],
@@ -218350,9 +218350,9 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.344,
+      "1": 0.3441,
       "X": 0.2725,
-      "2": 0.3835
+      "2": 0.3834
      },
      "btts": {
       "si": 0.5047,
@@ -218770,34 +218770,34 @@
     "gol_attesi_ospite": 1.6,
     "matrice": [
      [
-      0.05552,
-      0.08748,
+      0.05553,
+      0.08749,
       0.0706,
-      0.03773,
+      0.03772,
       0.01512,
       0.00485
      ],
      [
-      0.07074,
+      0.07075,
       0.11495,
       0.09167,
-      0.04899,
+      0.04898,
       0.01963,
-      0.0063
+      0.00629
      ],
      [
-      0.04631,
+      0.04632,
       0.07425,
       0.05951,
       0.0318,
-      0.01275,
+      0.01274,
       0.00409
      ],
      [
-      0.02004,
+      0.02005,
       0.03214,
       0.02576,
-      0.01377,
+      0.01376,
       0.00552,
       0.00177
      ],
@@ -218821,7 +218821,7 @@
     "risultati_probabili": [
      {
       "risultato": "1-1",
-      "p": 0.1149
+      "p": 0.115
      },
      {
       "risultato": "1-2",
@@ -218837,7 +218837,7 @@
      },
      {
       "risultato": "1-0",
-      "p": 0.0707
+      "p": 0.0708
      }
     ],
     "mercati": {
@@ -218851,8 +218851,8 @@
       "no": 0.4187
      },
      "ou_1.5": {
-      "over": 0.7863,
-      "under": 0.2137
+      "over": 0.7862,
+      "under": 0.2138
      },
      "ou_2.5": {
       "over": 0.5544,
@@ -219209,7 +219209,7 @@
    "p_modello": [
     0.184,
     0.2239,
-    0.5921
+    0.5922
    ],
    "margine": null,
    "margine_migliore": null,
@@ -219219,31 +219219,31 @@
     "gol_attesi_ospite": 1.87,
     "matrice": [
      [
-      0.06115,
-      0.11267,
-      0.10575,
+      0.06113,
+      0.11266,
+      0.10576,
       0.06586,
       0.03076,
-      0.01149
+      0.0115
      ],
      [
-      0.05614,
-      0.10645,
+      0.05613,
+      0.10644,
       0.09892,
-      0.0616,
-      0.02877,
+      0.06161,
+      0.02878,
       0.01075
      ],
      [
       0.02651,
-      0.04953,
-      0.04626,
+      0.04952,
+      0.04627,
       0.02881,
       0.01346,
       0.00503
      ],
      [
-      0.00827,
+      0.00826,
       0.01544,
       0.01443,
       0.00898,
@@ -219293,19 +219293,19 @@
      "1x2": {
       "1": 0.184,
       "X": 0.2239,
-      "2": 0.5921
+      "2": 0.5922
      },
      "btts": {
       "si": 0.5143,
       "no": 0.4857
      },
      "ou_1.5": {
-      "over": 0.77,
-      "under": 0.23
+      "over": 0.7701,
+      "under": 0.2299
      },
      "ou_2.5": {
-      "over": 0.5313,
-      "under": 0.4687
+      "over": 0.5314,
+      "under": 0.4686
      },
      "ou_3.5": {
       "over": 0.3088,
@@ -219658,7 +219658,7 @@
    "p_modello": [
     0.2739,
     0.2847,
-    0.4414
+    0.4413
    ],
    "margine": null,
    "margine_migliore": null,
@@ -219668,15 +219668,15 @@
     "gol_attesi_ospite": 1.28,
     "matrice": [
      [
-      0.10785,
-      0.13704,
+      0.10784,
+      0.13703,
       0.08847,
       0.03789,
       0.01217,
       0.00313
      ],
      [
-      0.10097,
+      0.10098,
       0.13128,
       0.08391,
       0.03594,
@@ -219685,7 +219685,7 @@
      ],
      [
       0.0482,
-      0.06193,
+      0.06194,
       0.03979,
       0.01704,
       0.00547,
@@ -219742,7 +219742,7 @@
      "1x2": {
       "1": 0.2739,
       "X": 0.2847,
-      "2": 0.4414
+      "2": 0.4413
      },
      "btts": {
       "si": 0.4438,
@@ -220117,15 +220117,15 @@
     "gol_attesi_ospite": 0.97,
     "matrice": [
      [
-      0.09492,
+      0.0949,
       0.09106,
-      0.04462,
-      0.01447,
+      0.04463,
+      0.01448,
       0.00352,
       0.00069
      ],
      [
-      0.13024,
+      0.13022,
       0.12802,
       0.06197,
       0.0201,
@@ -220133,11 +220133,11 @@
       0.00095
      ],
      [
-      0.09089,
+      0.09088,
       0.08844,
       0.04303,
       0.01396,
-      0.00339,
+      0.0034,
       0.00066
      ],
      [
@@ -220151,7 +220151,7 @@
      [
       0.01461,
       0.01421,
-      0.00691,
+      0.00692,
       0.00224,
       0.00055,
       0.00011
@@ -220568,7 +220568,7 @@
      [
       0.03305,
       0.04168,
-      0.02724,
+      0.02725,
       0.01174,
       0.0038,
       0.00098
@@ -220591,7 +220591,7 @@
      ],
      [
       0.05257,
-      0.06798,
+      0.06797,
       0.04395,
       0.01894,
       0.00612,
@@ -220599,7 +220599,7 @@
      ],
      [
       0.02801,
-      0.03622,
+      0.03621,
       0.02341,
       0.01009,
       0.00326,
@@ -220607,7 +220607,7 @@
      ],
      [
       0.01194,
-      0.01544,
+      0.01543,
       0.00998,
       0.0043,
       0.00139,
@@ -221058,7 +221058,7 @@
     "gol_attesi_ospite": 0.73,
     "matrice": [
      [
-      0.10312,
+      0.1031,
       0.07428,
       0.02735,
       0.00666,
@@ -221066,15 +221066,15 @@
       0.00018
      ],
      [
-      0.15803,
+      0.15802,
       0.11646,
-      0.04231,
+      0.04232,
       0.0103,
       0.00188,
       0.00027
      ],
      [
-      0.12273,
+      0.12272,
       0.08964,
       0.03274,
       0.00797,
@@ -221083,15 +221083,15 @@
      ],
      [
       0.0633,
-      0.04623,
-      0.01688,
+      0.04624,
+      0.01689,
       0.00411,
       0.00075,
       0.00011
      ],
      [
       0.02449,
-      0.01788,
+      0.01789,
       0.00653,
       0.00159,
       0.00029,
@@ -221099,7 +221099,7 @@
      ],
      [
       0.00758,
-      0.00553,
+      0.00554,
       0.00202,
       0.00049,
       9e-05,
@@ -221143,8 +221143,8 @@
       "under": 0.3354
      },
      "ou_2.5": {
-      "over": 0.398,
-      "under": 0.602
+      "over": 0.3981,
+      "under": 0.6019
      },
      "ou_3.5": {
       "over": 0.1961,
@@ -221515,15 +221515,15 @@
       0.00084
      ],
      [
-      0.12229,
+      0.1223,
       0.12715,
-      0.06508,
+      0.06507,
       0.02232,
       0.00574,
       0.00118
      ],
      [
-      0.08683,
+      0.08684,
       0.08934,
       0.04596,
       0.01576,
@@ -221531,8 +221531,8 @@
       0.00083
      ],
      [
-      0.04088,
-      0.04206,
+      0.04089,
+      0.04207,
       0.02164,
       0.00742,
       0.00191,
@@ -221540,7 +221540,7 @@
      ],
      [
       0.01444,
-      0.01485,
+      0.01486,
       0.00764,
       0.00262,
       0.00067,
@@ -221584,8 +221584,8 @@
       "2": 0.2738
      },
      "btts": {
-      "si": 0.4868,
-      "no": 0.5132
+      "si": 0.4867,
+      "no": 0.5133
      },
      "ou_1.5": {
       "over": 0.7011,
@@ -221956,15 +221956,15 @@
     "gol_attesi_ospite": 1.0,
     "matrice": [
      [
-      0.05398,
-      0.05291,
+      0.05397,
+      0.05292,
       0.02672,
       0.00891,
       0.00223,
       0.00045
      ],
      [
-      0.10258,
+      0.10257,
       0.10364,
       0.05156,
       0.01719,
@@ -221974,15 +221974,15 @@
      [
       0.09946,
       0.09946,
-      0.04973,
+      0.04974,
       0.01658,
-      0.00414,
+      0.00415,
       0.00083
      ],
      [
       0.06396,
-      0.06396,
-      0.03198,
+      0.06397,
+      0.03199,
       0.01066,
       0.00267,
       0.00053
@@ -222408,9 +222408,9 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.6073,
+    0.6072,
     0.2118,
-    0.1809
+    0.181
    ],
    "margine": null,
    "margine_migliore": null,
@@ -222420,31 +222420,31 @@
     "gol_attesi_ospite": 1.0,
     "matrice": [
      [
-      0.04976,
+      0.04975,
       0.04876,
-      0.02464,
+      0.02465,
       0.00822,
       0.00206,
       0.00041
      ],
      [
-      0.09851,
-      0.09957,
-      0.04955,
+      0.0985,
+      0.09958,
+      0.04956,
       0.01653,
       0.00413,
       0.00083
      ],
      [
-      0.09955,
+      0.09954,
       0.0996,
-      0.04982,
-      0.01661,
+      0.04983,
+      0.01662,
       0.00416,
       0.00083
      ],
      [
-      0.06672,
+      0.06671,
       0.06675,
       0.03339,
       0.01114,
@@ -222453,7 +222453,7 @@
      ],
      [
       0.03354,
-      0.03356,
+      0.03355,
       0.01679,
       0.0056,
       0.0014,
@@ -222479,7 +222479,7 @@
      },
      {
       "risultato": "2-0",
-      "p": 0.0996
+      "p": 0.0995
      },
      {
       "risultato": "1-0",
@@ -222492,9 +222492,9 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.6073,
+      "1": 0.6072,
       "X": 0.2118,
-      "2": 0.1809
+      "2": 0.181
      },
      "btts": {
       "si": 0.5481,
@@ -222858,7 +222858,7 @@
    "p_mercato": null,
    "p_modello": [
     0.451,
-    0.2372,
+    0.2371,
     0.3119
    ],
    "margine": null,
@@ -222869,7 +222869,7 @@
     "gol_attesi_ospite": 1.38,
     "matrice": [
      [
-      0.04641,
+      0.0464,
       0.06274,
       0.04369,
       0.0201,
@@ -222878,9 +222878,9 @@
      ],
      [
       0.07748,
-      0.10829,
+      0.10828,
       0.07436,
-      0.03421,
+      0.03422,
       0.01181,
       0.00326
      ],
@@ -222903,7 +222903,7 @@
      [
       0.01603,
       0.02213,
-      0.01527,
+      0.01528,
       0.00703,
       0.00243,
       0.00067
@@ -222942,7 +222942,7 @@
     "mercati": {
      "1x2": {
       "1": 0.451,
-      "X": 0.2372,
+      "X": 0.2371,
       "2": 0.3119
      },
      "btts": {
@@ -223321,12 +223321,12 @@
       0.04561,
       0.03665,
       0.01522,
-      0.00417,
+      0.00416,
       0.00085,
       0.00014
      ],
      [
-      0.10242,
+      0.10243,
       0.08487,
       0.03466,
       0.00948,
@@ -223336,15 +223336,15 @@
      [
       0.1171,
       0.09613,
-      0.03946,
+      0.03945,
       0.0108,
       0.00222,
       0.00036
      ],
      [
-      0.08887,
+      0.08888,
       0.07296,
-      0.02995,
+      0.02994,
       0.00819,
       0.00168,
       0.00028
@@ -223767,15 +223767,15 @@
     "gol_attesi_ospite": 0.97,
     "matrice": [
      [
-      0.11475,
-      0.10943,
+      0.11474,
+      0.10942,
       0.05315,
       0.0171,
       0.00413,
       0.0008
      ],
      [
-      0.13683,
+      0.13684,
       0.13344,
       0.06408,
       0.02062,
@@ -223800,7 +223800,7 @@
      ],
      [
       0.01004,
-      0.00969,
+      0.0097,
       0.00468,
       0.00151,
       0.00036,
@@ -224231,15 +224231,15 @@
     "gol_attesi_ospite": 1.01,
     "matrice": [
      [
-      0.07274,
-      0.07234,
+      0.07275,
+      0.07235,
       0.03689,
-      0.01243,
+      0.01244,
       0.00314,
       0.00064
      ],
      [
-      0.1161,
+      0.11611,
       0.11864,
       0.05968,
       0.02012,
@@ -224248,22 +224248,22 @@
      ],
      [
       0.09442,
-      0.09549,
+      0.09548,
       0.04828,
-      0.01628,
+      0.01627,
       0.00411,
       0.00083
      ],
      [
       0.05092,
-      0.0515,
+      0.05149,
       0.02604,
       0.00878,
       0.00222,
       0.00045
      ],
      [
-      0.0206,
+      0.02059,
       0.02083,
       0.01053,
       0.00355,
@@ -224271,7 +224271,7 @@
       0.00018
      ],
      [
-      0.00667,
+      0.00666,
       0.00674,
       0.00341,
       0.00115,
@@ -224298,7 +224298,7 @@
      },
      {
       "risultato": "0-0",
-      "p": 0.0727
+      "p": 0.0728
      }
     ],
     "mercati": {
@@ -224316,8 +224316,8 @@
       "under": 0.2612
      },
      "ou_2.5": {
-      "over": 0.4889,
-      "under": 0.5111
+      "over": 0.4888,
+      "under": 0.5112
      },
      "ou_3.5": {
       "over": 0.2703,
@@ -224697,7 +224697,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.4547,
+    0.4548,
     0.2292,
     0.3161
    ],
@@ -224709,7 +224709,7 @@
     "gol_attesi_ospite": 1.47,
     "matrice": [
      [
-      0.03838,
+      0.03839,
       0.05523,
       0.04104,
       0.02014,
@@ -224717,7 +224717,7 @@
       0.00218
      ],
      [
-      0.0677,
+      0.06771,
       0.10095,
       0.07393,
       0.03628,
@@ -224725,7 +224725,7 @@
       0.00393
      ],
      [
-      0.06145,
+      0.06146,
       0.09047,
       0.0666,
       0.03268,
@@ -224752,7 +224752,7 @@
       0.00599,
       0.00882,
       0.00649,
-      0.00319,
+      0.00318,
       0.00117,
       0.00035
      ]
@@ -224781,7 +224781,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.4547,
+      "1": 0.4548,
       "X": 0.2292,
       "2": 0.3161
      },
@@ -225173,16 +225173,16 @@
     "gol_attesi_ospite": 2.07,
     "matrice": [
      [
-      0.02931,
+      0.0293,
       0.05929,
-      0.06186,
+      0.06185,
       0.04269,
       0.0221,
       0.00915
      ],
      [
       0.04211,
-      0.0886,
+      0.08859,
       0.09125,
       0.06298,
       0.0326,
@@ -225192,7 +225192,7 @@
       0.0314,
       0.06501,
       0.06731,
-      0.04645,
+      0.04646,
       0.02405,
       0.00996
      ],
@@ -225200,15 +225200,15 @@
       0.01544,
       0.03197,
       0.0331,
-      0.02284,
-      0.01182,
+      0.02285,
+      0.01183,
       0.0049
      ],
      [
       0.00569,
       0.01179,
       0.01221,
-      0.00842,
+      0.00843,
       0.00436,
       0.00181
      ],
@@ -225224,7 +225224,7 @@
     "risultati_probabili": [
      {
       "risultato": "1-2",
-      "p": 0.0913
+      "p": 0.0912
      },
      {
       "risultato": "1-1",
@@ -225258,12 +225258,12 @@
       "under": 0.1307
      },
      "ou_2.5": {
-      "over": 0.6874,
-      "under": 0.3126
+      "over": 0.6875,
+      "under": 0.3125
      },
      "ou_3.5": {
-      "over": 0.473,
-      "under": 0.527
+      "over": 0.4731,
+      "under": 0.5269
      }
     }
    },
@@ -225639,22 +225639,22 @@
      [
       0.09437,
       0.10679,
-      0.06163,
+      0.06162,
       0.02356,
-      0.00676,
+      0.00675,
       0.00155
      ],
      [
-      0.1137,
-      0.13187,
+      0.11371,
+      0.13186,
       0.07523,
       0.02876,
       0.00825,
       0.00189
      ],
      [
-      0.06981,
-      0.08007,
+      0.06982,
+      0.08008,
       0.04592,
       0.01756,
       0.00503,
@@ -225662,7 +225662,7 @@
      ],
      [
       0.02841,
-      0.03258,
+      0.03259,
       0.01869,
       0.00714,
       0.00205,
@@ -226087,8 +226087,8 @@
     "matrice": [
      [
       0.10769,
-      0.0976,
-      0.04511,
+      0.09761,
+      0.04512,
       0.01381,
       0.00317,
       0.00058
@@ -226096,13 +226096,13 @@
      [
       0.14023,
       0.13004,
-      0.05939,
+      0.0594,
       0.01818,
       0.00417,
       0.00077
      ],
      [
-      0.09275,
+      0.09274,
       0.08516,
       0.0391,
       0.01197,
@@ -226118,7 +226118,7 @@
       0.00022
      ],
      [
-      0.0134,
+      0.01339,
       0.0123,
       0.00565,
       0.00173,
@@ -226525,7 +226525,7 @@
    "p_modello": [
     0.3633,
     0.2727,
-    0.3639
+    0.364
    ],
    "margine": null,
    "margine_migliore": null,
@@ -226535,7 +226535,7 @@
     "gol_attesi_ospite": 1.24,
     "matrice": [
      [
-      0.08451,
+      0.08449,
       0.1033,
       0.06446,
       0.02665,
@@ -226543,17 +226543,17 @@
       0.00205
      ],
      [
-      0.1032,
-      0.12946,
+      0.10319,
+      0.12945,
       0.07986,
       0.03301,
-      0.01023,
+      0.01024,
       0.00254
      ],
      [
       0.06433,
-      0.07977,
-      0.04946,
+      0.07978,
+      0.04947,
       0.02045,
       0.00634,
       0.00157
@@ -226561,7 +226561,7 @@
      [
       0.02656,
       0.03294,
-      0.02042,
+      0.02043,
       0.00844,
       0.00262,
       0.00065
@@ -226570,7 +226570,7 @@
       0.00823,
       0.0102,
       0.00633,
-      0.00261,
+      0.00262,
       0.00081,
       0.0002
      ],
@@ -226609,7 +226609,7 @@
      "1x2": {
       "1": 0.3633,
       "X": 0.2727,
-      "2": 0.3639
+      "2": 0.364
      },
      "btts": {
       "si": 0.5054,
@@ -226620,8 +226620,8 @@
       "under": 0.291
      },
      "ou_2.5": {
-      "over": 0.4507,
-      "under": 0.5493
+      "over": 0.4508,
+      "under": 0.5492
      },
      "ou_3.5": {
       "over": 0.2379,
@@ -226985,7 +226985,7 @@
     "matrice": [
      [
       0.03383,
-      0.05895,
+      0.05896,
       0.05301,
       0.03151,
       0.01405,
@@ -226994,13 +226994,13 @@
      [
       0.05344,
       0.09668,
-      0.08576,
+      0.08577,
       0.05098,
       0.02273,
       0.00811
      ],
      [
-      0.04364,
+      0.04363,
       0.07781,
       0.06938,
       0.04124,
@@ -227009,7 +227009,7 @@
      ],
      [
       0.02353,
-      0.04197,
+      0.04196,
       0.03742,
       0.02224,
       0.00992,
@@ -227018,7 +227018,7 @@
      [
       0.00952,
       0.01697,
-      0.01514,
+      0.01513,
       0.009,
       0.00401,
       0.00143
@@ -227449,14 +227449,14 @@
     "matrice": [
      [
       0.05664,
-      0.04005,
+      0.04006,
       0.0146,
       0.00351,
       0.00063,
       9e-05
      ],
      [
-      0.12084,
+      0.12085,
       0.08788,
       0.03151,
       0.00757,
@@ -227472,7 +227472,7 @@
       0.00021
      ],
      [
-      0.0942,
+      0.09419,
       0.0679,
       0.02447,
       0.00588,
@@ -227488,7 +227488,7 @@
       8e-05
      ],
      [
-      0.02195,
+      0.02194,
       0.01582,
       0.0057,
       0.00137,
@@ -227525,8 +227525,8 @@
       "2": 0.1108
      },
      "btts": {
-      "si": 0.4547,
-      "no": 0.5453
+      "si": 0.4548,
+      "no": 0.5452
      },
      "ou_1.5": {
       "over": 0.7825,
@@ -227900,7 +227900,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.6577,
+    0.6576,
     0.213,
     0.1293
    ],
@@ -227913,22 +227913,22 @@
     "matrice": [
      [
       0.0757,
-      0.05183,
+      0.05184,
       0.01822,
       0.00423,
       0.00074,
       0.0001
      ],
      [
-      0.14173,
+      0.14174,
       0.09953,
-      0.03446,
+      0.03447,
       0.008,
       0.00139,
       0.00019
      ],
      [
-      0.13455,
+      0.13454,
       0.09366,
       0.0326,
       0.00756,
@@ -227936,7 +227936,7 @@
       0.00018
      ],
      [
-      0.08485,
+      0.08484,
       0.05906,
       0.02056,
       0.00477,
@@ -227944,7 +227944,7 @@
       0.00012
      ],
      [
-      0.04013,
+      0.04012,
       0.02793,
       0.00972,
       0.00226,
@@ -227984,7 +227984,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.6577,
+      "1": 0.6576,
       "X": 0.213,
       "2": 0.1293
      },
@@ -228001,8 +228001,8 @@
       "under": 0.5216
      },
      "ou_3.5": {
-      "over": 0.2613,
-      "under": 0.7387
+      "over": 0.2612,
+      "under": 0.7388
      }
     }
    },
@@ -228349,8 +228349,8 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5434,
-    0.239,
+    0.5433,
+    0.2391,
     0.2176
    ],
    "margine": null,
@@ -228362,24 +228362,24 @@
     "matrice": [
      [
       0.06624,
-      0.06501,
+      0.06502,
       0.03277,
       0.01091,
       0.00273,
       0.00054
      ],
      [
-      0.11262,
-      0.11369,
-      0.0565,
+      0.11263,
+      0.1137,
+      0.05651,
       0.01882,
       0.0047,
       0.00094
      ],
      [
-      0.09761,
+      0.0976,
       0.09752,
-      0.04872,
+      0.04871,
       0.01622,
       0.00405,
       0.00081
@@ -228388,7 +228388,7 @@
       0.0561,
       0.05605,
       0.028,
-      0.00933,
+      0.00932,
       0.00233,
       0.00047
      ],
@@ -228433,8 +228433,8 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5434,
-      "X": 0.239,
+      "1": 0.5433,
+      "X": 0.2391,
       "2": 0.2176
      },
      "btts": {
@@ -228446,8 +228446,8 @@
       "under": 0.2439
      },
      "ou_2.5": {
-      "over": 0.5121,
-      "under": 0.4879
+      "over": 0.512,
+      "under": 0.488
      },
      "ou_3.5": {
       "over": 0.291,
@@ -241520,31 +241520,326 @@
    ]
   },
   {
-   "id": "afc-wimbledon-mansfield",
+   "id": "stevenage-plymouth",
    "campionato": "league-one",
-   "casa": "AFC Wimbledon",
-   "ospite": "Mansfield",
+   "casa": "Stevenage",
+   "ospite": "Plymouth",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
-   "gol_casa": 0,
-   "gol_ospite": 3,
+   "gol_casa": 3,
+   "gol_ospite": 0,
    "statistiche": {
     "tiri": [
-     13,
+     17,
      13
     ],
     "in_porta": [
-     2,
-     6
+     7,
+     1
     ],
     "corner": [
-     9,
-     6
+     5,
+     5
     ],
     "falli": [
      9,
-     11
+     17
+    ],
+    "gialli": [
+     1,
+     1
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     49.0,
+     51.0
+    ],
+    "passaggi": [
+     360,
+     380
+    ],
+    "parate": [
+     1,
+     3
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Stevenage",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Plymouth",
+    "p_mercato": null,
+    "p_modello": [
+     0.352,
+     0.2794,
+     0.3686
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Stevenage",
+     "ospite": "Plymouth",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2026-03-17",
+     "casa": "Plymouth",
+     "ospite": "Stevenage",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2026-01-01",
+     "casa": "Stevenage",
+     "ospite": "Plymouth",
+     "gol_casa": 1,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
+   "id": "oxford-wigan",
+   "campionato": "league-one",
+   "casa": "Oxford",
+   "ospite": "Wigan",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 2,
+   "gol_ospite": 1,
+   "statistiche": {
+    "tiri": [
+     24,
+     7
+    ],
+    "in_porta": [
+     7,
+     1
+    ],
+    "corner": [
+     9,
+     1
+    ],
+    "falli": [
+     13,
+     20
+    ],
+    "gialli": [
+     3,
+     3
+    ],
+    "rossi": [
+     0,
+     1
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     62.1,
+     37.9
+    ],
+    "passaggi": [
+     533,
+     333
+    ],
+    "parate": [
+     0,
+     4
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Oxford",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Wigan",
+    "p_mercato": null,
+    "p_modello": [
+     0.5972,
+     0.2265,
+     0.1762
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Oxford",
+     "ospite": "Wigan",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-02-13",
+     "casa": "Oxford",
+     "ospite": "Wigan",
+     "gol_casa": 4,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2023-10-24",
+     "casa": "Wigan",
+     "ospite": "Oxford",
+     "gol_casa": 2,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "notts-county-sheffield-weds",
+   "campionato": "league-one",
+   "casa": "Notts County",
+   "ospite": "Sheffield Weds",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 2,
+   "gol_ospite": 0,
+   "statistiche": {
+    "tiri": [
+     19,
+     6
+    ],
+    "in_porta": [
+     4,
+     0
+    ],
+    "corner": [
+     4,
+     0
+    ],
+    "falli": [
+     21,
+     17
+    ],
+    "gialli": [
+     2,
+     2
+    ],
+    "rossi": [
+     0,
+     1
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     52.2,
+     47.8
+    ],
+    "passaggi": [
+     401,
+     369
+    ],
+    "parate": [
+     0,
+     2
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Notts County",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Sheffield Weds",
+    "p_mercato": null,
+    "p_modello": [
+     0.1885,
+     0.2533,
+     0.5582
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Notts County",
+     "ospite": "Sheffield Weds",
+     "gol_casa": 2,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "luton-barnsley",
+   "campionato": "league-one",
+   "casa": "Luton",
+   "ospite": "Barnsley",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 2,
+   "gol_ospite": 1,
+   "statistiche": {
+    "tiri": [
+     23,
+     14
+    ],
+    "in_porta": [
+     6,
+     4
+    ],
+    "corner": [
+     7,
+     4
+    ],
+    "falli": [
+     16,
+     19
     ],
     "gialli": [
      2,
@@ -241559,30 +241854,30 @@
      0
     ],
     "possesso": [
-     53.5,
-     46.5
+     48.3,
+     51.7
     ],
     "passaggi": [
-     395,
-     354
+     301,
+     329
     ],
     "parate": [
      3,
-     2
+     4
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "AFC Wimbledon",
+    "casa": "Luton",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Mansfield",
+    "ospite": "Barnsley",
     "p_mercato": null,
     "p_modello": [
-     0.2985,
-     0.2705,
-     0.4311
+     0.5736,
+     0.2017,
+     0.2247
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -241601,138 +241896,49 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "AFC Wimbledon",
-     "ospite": "Mansfield",
-     "gol_casa": 0,
-     "gol_ospite": 3
-    },
-    {
-     "data": "2026-02-28",
-     "casa": "Mansfield",
-     "ospite": "AFC Wimbledon",
+     "casa": "Luton",
+     "ospite": "Barnsley",
      "gol_casa": 2,
-     "gol_ospite": 2
+     "gol_ospite": 1
     },
     {
-     "data": "2025-12-13",
-     "casa": "AFC Wimbledon",
-     "ospite": "Mansfield",
-     "gol_casa": 0,
+     "data": "2026-04-25",
+     "casa": "Luton",
+     "ospite": "Barnsley",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-11-22",
+     "casa": "Barnsley",
+     "ospite": "Luton",
+     "gol_casa": 5,
      "gol_ospite": 0
     }
    ]
   },
   {
-   "id": "blackpool-milton-keynes-dons",
+   "id": "huddersfield-peterboro",
    "campionato": "league-one",
-   "casa": "Blackpool",
-   "ospite": "Milton Keynes Dons",
+   "casa": "Huddersfield",
+   "ospite": "Peterboro",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
-   "gol_casa": 2,
-   "gol_ospite": 0,
+   "gol_casa": 4,
+   "gol_ospite": 1,
    "statistiche": {
     "tiri": [
-     9,
-     15
+     16,
+     14
     ],
     "in_porta": [
-     5,
-     3
-    ],
-    "corner": [
-     2,
+     6,
      4
     ],
-    "falli": [
-     11,
-     19
-    ],
-    "gialli": [
+    "corner": [
      2,
      2
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     48.0,
-     52.0
-    ],
-    "passaggi": [
-     360,
-     372
-    ],
-    "parate": [
-     3,
-     3
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Blackpool",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Milton Keynes Dons",
-    "p_mercato": null,
-    "p_modello": [
-     0.62,
-     0.208,
-     0.172
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Blackpool",
-     "ospite": "Milton Keynes Dons",
-     "gol_casa": 2,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "bromley-leicester",
-   "campionato": "league-one",
-   "casa": "Bromley",
-   "ospite": "Leicester",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 0,
-   "gol_ospite": 4,
-   "statistiche": {
-    "tiri": [
-     8,
-     16
-    ],
-    "in_porta": [
-     4,
-     9
-    ],
-    "corner": [
-     5,
-     4
     ],
     "falli": [
      14,
@@ -241751,30 +241957,30 @@
      0
     ],
     "possesso": [
-     25.1,
-     74.9
+     44.5,
+     55.5
     ],
     "passaggi": [
-     236,
-     761
+     359,
+     442
     ],
     "parate": [
-     5,
-     5
+     3,
+     1
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Bromley",
+    "casa": "Huddersfield",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Leicester",
+    "ospite": "Peterboro",
     "p_mercato": null,
     "p_modello": [
-     0.3081,
-     0.2213,
-     0.4706
+     0.5317,
+     0.2211,
+     0.2472
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -241793,43 +241999,71 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Bromley",
-     "ospite": "Leicester",
+     "casa": "Huddersfield",
+     "ospite": "Peterboro",
+     "gol_casa": 4,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2026-01-31",
+     "casa": "Peterboro",
+     "ospite": "Huddersfield",
+     "gol_casa": 2,
+     "gol_ospite": 3
+    },
+    {
+     "data": "2025-09-06",
+     "casa": "Huddersfield",
+     "ospite": "Peterboro",
+     "gol_casa": 3,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-02-22",
+     "casa": "Huddersfield",
+     "ospite": "Peterboro",
      "gol_casa": 0,
-     "gol_ospite": 4
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-08-10",
+     "casa": "Peterboro",
+     "ospite": "Huddersfield",
+     "gol_casa": 0,
+     "gol_ospite": 2
     }
    ]
   },
   {
-   "id": "burton-bradford",
+   "id": "doncaster-stockport",
    "campionato": "league-one",
-   "casa": "Burton",
-   "ospite": "Bradford",
+   "casa": "Doncaster",
+   "ospite": "Stockport",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
    "gol_casa": 0,
-   "gol_ospite": 0,
+   "gol_ospite": 2,
    "statistiche": {
     "tiri": [
-     15,
-     18
-    ],
-    "in_porta": [
-     3,
-     3
-    ],
-    "corner": [
      4,
-     13
-    ],
-    "falli": [
-     12,
      17
     ],
+    "in_porta": [
+     1,
+     5
+    ],
+    "corner": [
+     2,
+     6
+    ],
+    "falli": [
+     9,
+     9
+    ],
     "gialli": [
-     4,
-     2
+     2,
+     1
     ],
     "rossi": [
      0,
@@ -241840,30 +242074,30 @@
      0
     ],
     "possesso": [
-     46.9,
-     53.1
+     32.7,
+     67.3
     ],
     "passaggi": [
-     345,
-     383
+     337,
+     697
     ],
     "parate": [
-     2,
-     3
+     3,
+     1
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Burton",
+    "casa": "Doncaster",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Bradford",
+    "ospite": "Stockport",
     "p_mercato": null,
     "p_modello": [
-     0.2838,
-     0.3099,
-     0.4064
+     0.247,
+     0.2507,
+     0.5022
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -241882,23 +242116,23 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Burton",
-     "ospite": "Bradford",
+     "casa": "Doncaster",
+     "ospite": "Stockport",
      "gol_casa": 0,
-     "gol_ospite": 0
+     "gol_ospite": 2
     },
     {
-     "data": "2026-03-21",
-     "casa": "Burton",
-     "ospite": "Bradford",
-     "gol_casa": 2,
-     "gol_ospite": 1
+     "data": "2025-12-29",
+     "casa": "Stockport",
+     "ospite": "Doncaster",
+     "gol_casa": 4,
+     "gol_ospite": 2
     },
     {
-     "data": "2025-11-08",
-     "casa": "Bradford",
-     "ospite": "Burton",
-     "gol_casa": 1,
+     "data": "2025-12-09",
+     "casa": "Doncaster",
+     "ospite": "Stockport",
+     "gol_casa": 0,
      "gol_ospite": 2
     }
    ]
@@ -242021,35 +242255,35 @@
    ]
   },
   {
-   "id": "doncaster-stockport",
+   "id": "burton-bradford",
    "campionato": "league-one",
-   "casa": "Doncaster",
-   "ospite": "Stockport",
+   "casa": "Burton",
+   "ospite": "Bradford",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
    "gol_casa": 0,
-   "gol_ospite": 2,
+   "gol_ospite": 0,
    "statistiche": {
     "tiri": [
-     4,
-     17
+     15,
+     18
     ],
     "in_porta": [
-     1,
-     5
+     3,
+     3
     ],
     "corner": [
-     2,
-     6
+     4,
+     13
     ],
     "falli": [
-     9,
-     9
+     12,
+     17
     ],
     "gialli": [
-     2,
-     1
+     4,
+     2
     ],
     "rossi": [
      0,
@@ -242060,30 +242294,30 @@
      0
     ],
     "possesso": [
-     32.7,
-     67.3
+     46.9,
+     53.1
     ],
     "passaggi": [
-     337,
-     697
+     345,
+     383
     ],
     "parate": [
-     3,
-     1
+     2,
+     3
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Doncaster",
+    "casa": "Burton",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Stockport",
+    "ospite": "Bradford",
     "p_mercato": null,
     "p_modello": [
-     0.247,
-     0.2507,
-     0.5022
+     0.2838,
+     0.3099,
+     0.4064
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -242102,49 +242336,49 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Doncaster",
-     "ospite": "Stockport",
+     "casa": "Burton",
+     "ospite": "Bradford",
      "gol_casa": 0,
-     "gol_ospite": 2
+     "gol_ospite": 0
     },
     {
-     "data": "2025-12-29",
-     "casa": "Stockport",
-     "ospite": "Doncaster",
-     "gol_casa": 4,
-     "gol_ospite": 2
+     "data": "2026-03-21",
+     "casa": "Burton",
+     "ospite": "Bradford",
+     "gol_casa": 2,
+     "gol_ospite": 1
     },
     {
-     "data": "2025-12-09",
-     "casa": "Doncaster",
-     "ospite": "Stockport",
-     "gol_casa": 0,
+     "data": "2025-11-08",
+     "casa": "Bradford",
+     "ospite": "Burton",
+     "gol_casa": 1,
      "gol_ospite": 2
     }
    ]
   },
   {
-   "id": "huddersfield-peterboro",
+   "id": "bromley-leicester",
    "campionato": "league-one",
-   "casa": "Huddersfield",
-   "ospite": "Peterboro",
+   "casa": "Bromley",
+   "ospite": "Leicester",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
-   "gol_casa": 4,
-   "gol_ospite": 1,
+   "gol_casa": 0,
+   "gol_ospite": 4,
    "statistiche": {
     "tiri": [
-     16,
-     14
+     8,
+     16
     ],
     "in_porta": [
-     6,
-     4
+     4,
+     9
     ],
     "corner": [
-     2,
-     2
+     5,
+     4
     ],
     "falli": [
      14,
@@ -242163,30 +242397,30 @@
      0
     ],
     "possesso": [
-     44.5,
-     55.5
+     25.1,
+     74.9
     ],
     "passaggi": [
-     359,
-     442
+     236,
+     761
     ],
     "parate": [
-     3,
-     1
+     5,
+     5
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Huddersfield",
+    "casa": "Bromley",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Peterboro",
+    "ospite": "Leicester",
     "p_mercato": null,
     "p_modello": [
-     0.5317,
-     0.2211,
-     0.2472
+     0.3081,
+     0.2213,
+     0.4706
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -242205,369 +242439,46 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Huddersfield",
-     "ospite": "Peterboro",
-     "gol_casa": 4,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2026-01-31",
-     "casa": "Peterboro",
-     "ospite": "Huddersfield",
-     "gol_casa": 2,
-     "gol_ospite": 3
-    },
-    {
-     "data": "2025-09-06",
-     "casa": "Huddersfield",
-     "ospite": "Peterboro",
-     "gol_casa": 3,
-     "gol_ospite": 2
-    },
-    {
-     "data": "2025-02-22",
-     "casa": "Huddersfield",
-     "ospite": "Peterboro",
+     "casa": "Bromley",
+     "ospite": "Leicester",
      "gol_casa": 0,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2024-08-10",
-     "casa": "Peterboro",
-     "ospite": "Huddersfield",
-     "gol_casa": 0,
-     "gol_ospite": 2
+     "gol_ospite": 4
     }
    ]
   },
   {
-   "id": "luton-barnsley",
+   "id": "blackpool-milton-keynes-dons",
    "campionato": "league-one",
-   "casa": "Luton",
-   "ospite": "Barnsley",
+   "casa": "Blackpool",
+   "ospite": "Milton Keynes Dons",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
    "gol_casa": 2,
-   "gol_ospite": 1,
+   "gol_ospite": 0,
    "statistiche": {
     "tiri": [
-     23,
-     14
+     9,
+     15
     ],
     "in_porta": [
-     6,
-     4
+     5,
+     3
     ],
     "corner": [
-     7,
+     2,
      4
     ],
     "falli": [
-     16,
+     11,
      19
     ],
     "gialli": [
      2,
-     1
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     48.3,
-     51.7
-    ],
-    "passaggi": [
-     301,
-     329
-    ],
-    "parate": [
-     3,
-     4
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Luton",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Barnsley",
-    "p_mercato": null,
-    "p_modello": [
-     0.5736,
-     0.2017,
-     0.2247
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Luton",
-     "ospite": "Barnsley",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2026-04-25",
-     "casa": "Luton",
-     "ospite": "Barnsley",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2025-11-22",
-     "casa": "Barnsley",
-     "ospite": "Luton",
-     "gol_casa": 5,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "notts-county-sheffield-weds",
-   "campionato": "league-one",
-   "casa": "Notts County",
-   "ospite": "Sheffield Weds",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 2,
-   "gol_ospite": 0,
-   "statistiche": {
-    "tiri": [
-     19,
-     6
-    ],
-    "in_porta": [
-     4,
-     0
-    ],
-    "corner": [
-     4,
-     0
-    ],
-    "falli": [
-     21,
-     17
-    ],
-    "gialli": [
-     2,
      2
     ],
     "rossi": [
      0,
-     1
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     52.2,
-     47.8
-    ],
-    "passaggi": [
-     401,
-     369
-    ],
-    "parate": [
-     0,
-     2
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Notts County",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Sheffield Weds",
-    "p_mercato": null,
-    "p_modello": [
-     0.1885,
-     0.2533,
-     0.5582
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Notts County",
-     "ospite": "Sheffield Weds",
-     "gol_casa": 2,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "oxford-wigan",
-   "campionato": "league-one",
-   "casa": "Oxford",
-   "ospite": "Wigan",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 2,
-   "gol_ospite": 1,
-   "statistiche": {
-    "tiri": [
-     24,
-     7
-    ],
-    "in_porta": [
-     7,
-     1
-    ],
-    "corner": [
-     9,
-     1
-    ],
-    "falli": [
-     13,
-     20
-    ],
-    "gialli": [
-     3,
-     3
-    ],
-    "rossi": [
-     0,
-     1
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     62.1,
-     37.9
-    ],
-    "passaggi": [
-     533,
-     333
-    ],
-    "parate": [
-     0,
-     4
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Oxford",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Wigan",
-    "p_mercato": null,
-    "p_modello": [
-     0.5972,
-     0.2265,
-     0.1762
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Oxford",
-     "ospite": "Wigan",
-     "gol_casa": 2,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2024-02-13",
-     "casa": "Oxford",
-     "ospite": "Wigan",
-     "gol_casa": 4,
-     "gol_ospite": 2
-    },
-    {
-     "data": "2023-10-24",
-     "casa": "Wigan",
-     "ospite": "Oxford",
-     "gol_casa": 2,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "stevenage-plymouth",
-   "campionato": "league-one",
-   "casa": "Stevenage",
-   "ospite": "Plymouth",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 3,
-   "gol_ospite": 0,
-   "statistiche": {
-    "tiri": [
-     17,
-     13
-    ],
-    "in_porta": [
-     7,
-     1
-    ],
-    "corner": [
-     5,
-     5
-    ],
-    "falli": [
-     9,
-     17
-    ],
-    "gialli": [
-     1,
-     1
-    ],
-    "rossi": [
-     0,
      0
     ],
     "primo_tempo": [
@@ -242575,30 +242486,30 @@
      0
     ],
     "possesso": [
-     49.0,
-     51.0
+     48.0,
+     52.0
     ],
     "passaggi": [
      360,
-     380
+     372
     ],
     "parate": [
-     1,
+     3,
      3
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Stevenage",
+    "casa": "Blackpool",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Plymouth",
+    "ospite": "Milton Keynes Dons",
     "p_mercato": null,
     "p_modello": [
-     0.352,
-     0.2794,
-     0.3686
+     0.62,
+     0.208,
+     0.172
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -242617,24 +242528,113 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Stevenage",
-     "ospite": "Plymouth",
-     "gol_casa": 3,
+     "casa": "Blackpool",
+     "ospite": "Milton Keynes Dons",
+     "gol_casa": 2,
      "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "afc-wimbledon-mansfield",
+   "campionato": "league-one",
+   "casa": "AFC Wimbledon",
+   "ospite": "Mansfield",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 0,
+   "gol_ospite": 3,
+   "statistiche": {
+    "tiri": [
+     13,
+     13
+    ],
+    "in_porta": [
+     2,
+     6
+    ],
+    "corner": [
+     9,
+     6
+    ],
+    "falli": [
+     9,
+     11
+    ],
+    "gialli": [
+     2,
+     1
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     53.5,
+     46.5
+    ],
+    "passaggi": [
+     395,
+     354
+    ],
+    "parate": [
+     3,
+     2
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "AFC Wimbledon",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Mansfield",
+    "p_mercato": null,
+    "p_modello": [
+     0.2985,
+     0.2705,
+     0.4311
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "AFC Wimbledon",
+     "ospite": "Mansfield",
+     "gol_casa": 0,
+     "gol_ospite": 3
     },
     {
-     "data": "2026-03-17",
-     "casa": "Plymouth",
-     "ospite": "Stevenage",
-     "gol_casa": 1,
-     "gol_ospite": 0
+     "data": "2026-02-28",
+     "casa": "Mansfield",
+     "ospite": "AFC Wimbledon",
+     "gol_casa": 2,
+     "gol_ospite": 2
     },
     {
-     "data": "2026-01-01",
-     "casa": "Stevenage",
-     "ospite": "Plymouth",
-     "gol_casa": 1,
-     "gol_ospite": 1
+     "data": "2025-12-13",
+     "casa": "AFC Wimbledon",
+     "ospite": "Mansfield",
+     "gol_casa": 0,
+     "gol_ospite": 0
     }
    ]
   },
@@ -242668,7 +242668,7 @@
      ],
      [
       0.07467,
-      0.11408,
+      0.11407,
       0.08412,
       0.04177,
       0.01556,
@@ -243589,9 +243589,9 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.2405,
+    0.2406,
     0.4173,
-    0.3422
+    0.3421
    ],
    "margine": null,
    "margine_migliore": null,
@@ -243601,25 +243601,25 @@
     "gol_attesi_ospite": 0.69,
     "matrice": [
      [
-      0.29881,
-      0.20321,
-      0.0701,
+      0.29879,
+      0.2032,
+      0.07009,
       0.01603,
       0.00275,
       0.00038
      ],
      [
-      0.15533,
-      0.10842,
+      0.15535,
+      0.10843,
       0.03683,
       0.00842,
       0.00145,
       0.0002
      ],
      [
-      0.04109,
+      0.0411,
       0.0282,
-      0.00967,
+      0.00968,
       0.00221,
       0.00038,
       5e-05
@@ -243673,17 +243673,17 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.2405,
+      "1": 0.2406,
       "X": 0.4173,
-      "2": 0.3422
+      "2": 0.3421
      },
      "btts": {
       "si": 0.204,
       "no": 0.796
      },
      "ou_1.5": {
-      "over": 0.3426,
-      "under": 0.6574
+      "over": 0.3427,
+      "under": 0.6573
      },
      "ou_2.5": {
       "over": 0.123,
@@ -244075,7 +244075,7 @@
      ],
      [
       0.04714,
-      0.05417,
+      0.05418,
       0.03113,
       0.01192,
       0.00343,
@@ -244517,12 +244517,12 @@
       0.07585,
       0.07914,
       0.04329,
-      0.01555,
+      0.01554,
       0.00419,
       0.0009
      ],
      [
-      0.11204,
+      0.11205,
       0.12326,
       0.06573,
       0.0236,
@@ -244532,9 +244532,9 @@
      [
       0.08599,
       0.09263,
-      0.0499,
+      0.04989,
       0.01792,
-      0.00483,
+      0.00482,
       0.00104
      ],
      [
@@ -244993,7 +244993,7 @@
     "matrice": [
      [
       0.06767,
-      0.08329,
+      0.0833,
       0.05376,
       0.0228,
       0.00725,
@@ -245001,7 +245001,7 @@
      ],
      [
       0.0944,
-      0.12289,
+      0.12288,
       0.07738,
       0.03281,
       0.01044,
@@ -245470,7 +245470,7 @@
     "gol_attesi_ospite": 0.41,
     "matrice": [
      [
-      0.33562,
+      0.33558,
       0.1348,
       0.02753,
       0.00372,
@@ -245481,20 +245481,20 @@
       0.22964,
       0.09448,
       0.01897,
-      0.00256,
+      0.00257,
       0.00026,
       2e-05
      ],
      [
-      0.07944,
-      0.03222,
-      0.00653,
+      0.07945,
+      0.03223,
+      0.00654,
       0.00088,
       9e-05,
       1e-05
      ],
      [
-      0.01824,
+      0.01825,
       0.0074,
       0.0015,
       0.0002,
@@ -245503,7 +245503,7 @@
      ],
      [
       0.00314,
-      0.00127,
+      0.00128,
       0.00026,
       3e-05,
       0.0,
@@ -245551,16 +245551,16 @@
       "no": 0.833
      },
      "ou_1.5": {
-      "over": 0.2999,
-      "under": 0.7001
+      "over": 0.3,
+      "under": 0.7
      },
      "ou_2.5": {
       "over": 0.0985,
       "under": 0.9015
      },
      "ou_3.5": {
-      "over": 0.0253,
-      "under": 0.9747
+      "over": 0.0254,
+      "under": 0.9746
      }
     }
    },
@@ -245928,7 +245928,7 @@
      ],
      [
       0.09348,
-      0.12807,
+      0.12806,
       0.08481,
       0.03782,
       0.01265,
@@ -246411,19 +246411,19 @@
     "gol_attesi_ospite": 1.2,
     "matrice": [
      [
-      0.07559,
-      0.08774,
+      0.07558,
+      0.08773,
       0.05328,
       0.02127,
       0.00637,
       0.00152
      ],
      [
-      0.10294,
+      0.10293,
       0.12603,
       0.0747,
-      0.02981,
-      0.00892,
+      0.02982,
+      0.00893,
       0.00214
      ],
      [
@@ -246492,8 +246492,8 @@
       "no": 0.4725
      },
      "ou_1.5": {
-      "over": 0.7337,
-      "under": 0.2663
+      "over": 0.7338,
+      "under": 0.2662
      },
      "ou_2.5": {
       "over": 0.4814,
@@ -246860,48 +246860,48 @@
     "gol_attesi_ospite": 1.28,
     "matrice": [
      [
-      0.06429,
-      0.07922,
-      0.05128,
+      0.06428,
+      0.07921,
+      0.05127,
       0.02179,
       0.00695,
       0.00177
      ],
      [
-      0.09268,
-      0.12092,
-      0.07632,
+      0.09267,
+      0.12091,
+      0.07631,
       0.03243,
       0.01034,
       0.00264
      ],
      [
       0.06987,
-      0.08908,
+      0.08909,
       0.05679,
       0.02414,
       0.00769,
       0.00196
      ],
      [
-      0.03466,
-      0.04419,
-      0.02817,
-      0.01197,
+      0.03467,
+      0.0442,
+      0.02818,
+      0.01198,
       0.00382,
       0.00097
      ],
      [
       0.0129,
-      0.01644,
-      0.01048,
+      0.01645,
+      0.01049,
       0.00446,
       0.00142,
       0.00036
      ],
      [
       0.00384,
-      0.00489,
+      0.0049,
       0.00312,
       0.00133,
       0.00042,
@@ -246945,8 +246945,8 @@
       "under": 0.2362
      },
      "ou_2.5": {
-      "over": 0.5217,
-      "under": 0.4783
+      "over": 0.5218,
+      "under": 0.4782
      },
      "ou_3.5": {
       "over": 0.2999,
@@ -247310,22 +247310,22 @@
     "matrice": [
      [
       0.08413,
-      0.08518,
+      0.08519,
       0.0451,
-      0.01568,
+      0.01569,
       0.00409,
       0.00085
      ],
      [
       0.11866,
-      0.12638,
+      0.12639,
       0.06527,
       0.0227,
       0.00592,
       0.00124
      ],
      [
-      0.08679,
+      0.08678,
       0.09054,
       0.04723,
       0.01643,
@@ -247333,7 +247333,7 @@
       0.00089
      ],
      [
-      0.04187,
+      0.04186,
       0.04368,
       0.02279,
       0.00792,
@@ -247349,7 +247349,7 @@
       0.00016
      ],
      [
-      0.00439,
+      0.00438,
       0.00457,
       0.00239,
       0.00083,
@@ -247783,7 +247783,7 @@
      ],
      [
       0.03473,
-      0.03974,
+      0.03975,
       0.02274,
       0.00868,
       0.00248,
@@ -248253,16 +248253,16 @@
       0.03164,
       0.0459,
       0.0357,
-      0.01815,
+      0.01814,
       0.00692,
       0.00211
      ],
      [
       0.05923,
-      0.09265,
+      0.09264,
       0.06992,
-      0.03554,
-      0.01355,
+      0.03553,
+      0.01354,
       0.00413
      ],
      [
@@ -248270,13 +248270,13 @@
       0.08982,
       0.06847,
       0.0348,
-      0.01327,
-      0.00405
+      0.01326,
+      0.00404
      ],
      [
       0.03846,
       0.05864,
-      0.0447,
+      0.04471,
       0.02272,
       0.00866,
       0.00264
@@ -248285,14 +248285,14 @@
       0.01883,
       0.02871,
       0.02189,
-      0.01112,
+      0.01113,
       0.00424,
       0.00129
      ],
      [
       0.00738,
       0.01125,
-      0.00857,
+      0.00858,
       0.00436,
       0.00166,
       0.00051
@@ -248707,7 +248707,7 @@
       0.00603
      ],
      [
-      0.06828,
+      0.06829,
       0.11591,
       0.0948,
       0.05222,
@@ -248726,7 +248726,7 @@
       0.01619,
       0.02675,
       0.0221,
-      0.01218,
+      0.01217,
       0.00503,
       0.00166
      ],
@@ -248788,8 +248788,8 @@
       "under": 0.4611
      },
      "ou_3.5": {
-      "over": 0.3159,
-      "under": 0.6841
+      "over": 0.3158,
+      "under": 0.6842
      }
     }
    },
@@ -249177,23 +249177,23 @@
     "gol_attesi_ospite": 1.53,
     "matrice": [
      [
-      0.04468,
+      0.04467,
       0.06555,
-      0.05093,
-      0.02595,
-      0.00992,
+      0.05092,
+      0.02594,
+      0.00991,
       0.00303
      ],
      [
       0.06886,
-      0.10799,
-      0.08171,
+      0.10798,
+      0.0817,
       0.04163,
       0.01591,
       0.00486
      ],
      [
-      0.0561,
+      0.05611,
       0.08576,
       0.06554,
       0.0334,
@@ -249201,15 +249201,15 @@
       0.0039
      ],
      [
-      0.03,
-      0.04586,
+      0.03001,
+      0.04587,
       0.03505,
       0.01786,
       0.00682,
       0.00209
      ],
      [
-      0.01203,
+      0.01204,
       0.0184,
       0.01406,
       0.00716,
@@ -249244,7 +249244,7 @@
      },
      {
       "risultato": "0-1",
-      "p": 0.0656
+      "p": 0.0655
      }
     ],
     "mercati": {
@@ -249626,7 +249626,7 @@
     "gol_attesi_ospite": 0.85,
     "matrice": [
      [
-      0.10352,
+      0.10351,
       0.08529,
       0.03662,
       0.01033,
@@ -249635,7 +249635,7 @@
      ],
      [
       0.14538,
-      0.12536,
+      0.12535,
       0.05251,
       0.01481,
       0.00313,
@@ -249643,7 +249643,7 @@
      ],
      [
       0.10513,
-      0.08897,
+      0.08898,
       0.03765,
       0.01062,
       0.00225,
@@ -249652,14 +249652,14 @@
      [
       0.05025,
       0.04253,
-      0.01799,
+      0.018,
       0.00508,
       0.00107,
       0.00018
      ],
      [
       0.01801,
-      0.01524,
+      0.01525,
       0.00645,
       0.00182,
       0.00039,
@@ -250065,7 +250065,7 @@
    "p_modello": [
     0.3967,
     0.3928,
-    0.2104
+    0.2105
    ],
    "margine": null,
    "margine_migliore": null,
@@ -250075,23 +250075,23 @@
     "gol_attesi_ospite": 0.5,
     "matrice": [
      [
-      0.27041,
-      0.13458,
-      0.03418,
+      0.2704,
+      0.13459,
+      0.03419,
       0.00574,
       0.00072,
       7e-05
      ],
      [
-      0.21651,
-      0.11075,
-      0.02762,
+      0.21649,
+      0.11076,
+      0.02763,
       0.00464,
       0.00058,
       6e-05
      ],
      [
-      0.08793,
+      0.08792,
       0.0443,
       0.01116,
       0.00187,
@@ -250149,7 +250149,7 @@
      "1x2": {
       "1": 0.3967,
       "X": 0.3928,
-      "2": 0.2104
+      "2": 0.2105
      },
      "btts": {
       "si": 0.2205,
@@ -250525,7 +250525,7 @@
     "matrice": [
      [
       0.09906,
-      0.10695,
+      0.10694,
       0.05998,
       0.02215,
       0.00614,
@@ -250533,14 +250533,14 @@
      ],
      [
       0.11766,
-      0.13318,
+      0.13317,
       0.07304,
-      0.02697,
+      0.02698,
       0.00747,
       0.00166
      ],
      [
-      0.07245,
+      0.07244,
       0.08027,
       0.04447,
       0.01642,
@@ -250565,7 +250565,7 @@
      ],
      [
       0.00218,
-      0.00241,
+      0.00242,
       0.00134,
       0.00049,
       0.00014,
@@ -251016,7 +251016,7 @@
     "gol_attesi_ospite": 1.44,
     "matrice": [
      [
-      0.06063,
+      0.06062,
       0.08412,
       0.06124,
       0.0293,
@@ -251025,7 +251025,7 @@
      ],
      [
       0.08126,
-      0.11957,
+      0.11956,
       0.08496,
       0.04066,
       0.01459,
@@ -251489,7 +251489,7 @@
      ],
      [
       0.10804,
-      0.12378,
+      0.12377,
       0.0687,
       0.02568,
       0.0072,
@@ -251504,7 +251504,7 @@
       0.00121
      ],
      [
-      0.04065,
+      0.04066,
       0.04559,
       0.02556,
       0.00955,
@@ -251944,7 +251944,7 @@
     "gol_attesi_ospite": 0.86,
     "matrice": [
      [
-      0.07762,
+      0.07761,
       0.06485,
       0.02847,
       0.00819,
@@ -251978,7 +251978,7 @@
      [
       0.02712,
       0.0234,
-      0.01009,
+      0.0101,
       0.0029,
       0.00063,
       0.00011
@@ -252408,15 +252408,15 @@
     "gol_attesi_ospite": 0.52,
     "matrice": [
      [
-      0.33696,
+      0.33693,
       0.17383,
-      0.04549,
+      0.0455,
       0.00789,
       0.00103,
       0.00011
      ],
      [
-      0.19061,
+      0.1906,
       0.10073,
       0.02595,
       0.0045,
@@ -252459,7 +252459,7 @@
     "risultati_probabili": [
      {
       "risultato": "0-0",
-      "p": 0.337
+      "p": 0.3369
      },
      {
       "risultato": "1-0",
@@ -252493,8 +252493,8 @@
       "under": 0.7014
      },
      "ou_2.5": {
-      "over": 0.0977,
-      "under": 0.9023
+      "over": 0.0978,
+      "under": 0.9022
      },
      "ou_3.5": {
       "over": 0.0251,
@@ -252857,7 +252857,7 @@
     "gol_attesi_ospite": 1.13,
     "matrice": [
      [
-      0.10618,
+      0.10617,
       0.11679,
       0.06657,
       0.02501,
@@ -252865,7 +252865,7 @@
       0.00159
      ],
      [
-      0.11695,
+      0.11694,
       0.13466,
       0.07512,
       0.02822,
@@ -252873,7 +252873,7 @@
       0.00179
      ],
      [
-      0.06675,
+      0.06674,
       0.07522,
       0.04239,
       0.01592,
@@ -252882,7 +252882,7 @@
      ],
      [
       0.02511,
-      0.02829,
+      0.0283,
       0.01594,
       0.00599,
       0.00169,
@@ -253309,7 +253309,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.6355,
+    0.6354,
     0.191,
     0.1735
    ],
@@ -253321,7 +253321,7 @@
     "gol_attesi_ospite": 1.14,
     "matrice": [
      [
-      0.03271,
+      0.0327,
       0.03535,
       0.02056,
       0.00779,
@@ -253329,33 +253329,33 @@
       0.0005
      ],
      [
-      0.07279,
+      0.07278,
       0.08449,
-      0.04751,
+      0.04752,
       0.01799,
       0.00511,
       0.00116
      ],
      [
-      0.08508,
+      0.08507,
       0.09665,
-      0.0549,
+      0.05491,
       0.02079,
-      0.0059,
+      0.00591,
       0.00134
      ],
      [
-      0.06554,
+      0.06553,
       0.07446,
-      0.04229,
+      0.0423,
       0.01602,
       0.00455,
       0.00103
      ],
      [
-      0.03787,
+      0.03786,
       0.04302,
-      0.02443,
+      0.02444,
       0.00925,
       0.00263,
       0.0006
@@ -253393,7 +253393,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.6355,
+      "1": 0.6354,
       "X": 0.191,
       "2": 0.1735
      },
@@ -253771,7 +253771,7 @@
     "matrice": [
      [
       0.0451,
-      0.06284,
+      0.06285,
       0.04641,
       0.02247,
       0.00816,
@@ -268431,34 +268431,226 @@
    ]
   },
   {
-   "id": "barnet-swindon",
+   "id": "york-accrington",
    "campionato": "league-two",
-   "casa": "Barnet",
-   "ospite": "Swindon",
+   "casa": "York",
+   "ospite": "Accrington",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
    "gol_casa": 1,
-   "gol_ospite": 3,
+   "gol_ospite": 1,
    "statistiche": {
     "tiri": [
-     22,
-     11
+     16,
+     12
     ],
     "in_porta": [
-     11,
-     5
+     6,
+     4
     ],
     "corner": [
-     14,
-     0
-    ],
-    "falli": [
      7,
      6
     ],
+    "falli": [
+     10,
+     14
+    ],
     "gialli": [
+     2,
+     3
+    ],
+    "rossi": [
      0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     61.0,
+     39.0
+    ],
+    "passaggi": [
+     524,
+     325
+    ],
+    "parate": [
+     3,
+     5
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "York",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Accrington",
+    "p_mercato": null,
+    "p_modello": [
+     0.6338,
+     0.1938,
+     0.1725
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "York",
+     "ospite": "Accrington",
+     "gol_casa": 1,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
+   "id": "walsall-oldham",
+   "campionato": "league-two",
+   "casa": "Walsall",
+   "ospite": "Oldham",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 3,
+   "gol_ospite": 0,
+   "statistiche": {
+    "tiri": [
+     22,
+     15
+    ],
+    "in_porta": [
+     5,
+     5
+    ],
+    "corner": [
+     8,
+     1
+    ],
+    "falli": [
+     13,
+     21
+    ],
+    "gialli": [
+     3,
+     3
+    ],
+    "rossi": [
+     1,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     54.4,
+     45.6
+    ],
+    "passaggi": [
+     377,
+     320
+    ],
+    "parate": [
+     5,
+     2
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Walsall",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Oldham",
+    "p_mercato": null,
+    "p_modello": [
+     0.4085,
+     0.2796,
+     0.3119
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Walsall",
+     "ospite": "Oldham",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-12-29",
+     "casa": "Walsall",
+     "ospite": "Oldham",
+     "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-12-10",
+     "casa": "Oldham",
+     "ospite": "Walsall",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
+   "id": "rotherham-newport-county",
+   "campionato": "league-two",
+   "casa": "Rotherham",
+   "ospite": "Newport County",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 2,
+   "gol_ospite": 2,
+   "statistiche": {
+    "tiri": [
+     12,
+     12
+    ],
+    "in_porta": [
+     5,
+     4
+    ],
+    "corner": [
+     2,
+     2
+    ],
+    "falli": [
+     18,
+     16
+    ],
+    "gialli": [
+     3,
      1
     ],
     "rossi": [
@@ -268470,30 +268662,30 @@
      0
     ],
     "possesso": [
-     72.3,
-     27.7
+     61.8,
+     38.2
     ],
     "passaggi": [
-     599,
-     233
+     392,
+     248
     ],
     "parate": [
      2,
-     11
+     3
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Barnet",
+    "casa": "Rotherham",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Swindon",
+    "ospite": "Newport County",
     "p_mercato": null,
     "p_modello": [
-     0.5679,
-     0.209,
-     0.2231
+     0.4397,
+     0.2368,
+     0.3235
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -268512,56 +268704,42 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Barnet",
-     "ospite": "Swindon",
-     "gol_casa": 1,
-     "gol_ospite": 3
-    },
-    {
-     "data": "2026-02-17",
-     "casa": "Barnet",
-     "ospite": "Swindon",
-     "gol_casa": 1,
-     "gol_ospite": 2
-    },
-    {
-     "data": "2025-08-19",
-     "casa": "Swindon",
-     "ospite": "Barnet",
-     "gol_casa": 0,
+     "casa": "Rotherham",
+     "ospite": "Newport County",
+     "gol_casa": 2,
      "gol_ospite": 2
     }
    ]
   },
   {
-   "id": "bristol-rvs-salford",
+   "id": "rochdale-grimsby",
    "campionato": "league-two",
-   "casa": "Bristol Rvs",
-   "ospite": "Salford",
+   "casa": "Rochdale",
+   "ospite": "Grimsby",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
-   "gol_casa": 1,
+   "gol_casa": 2,
    "gol_ospite": 2,
    "statistiche": {
     "tiri": [
-     14,
-     12
+     16,
+     24
     ],
     "in_porta": [
      6,
-     5
+     7
     ],
     "corner": [
      7,
-     3
+     10
     ],
     "falli": [
-     15,
-     14
+     13,
+     8
     ],
     "gialli": [
-     4,
+     3,
      3
     ],
     "rossi": [
@@ -268573,30 +268751,30 @@
      0
     ],
     "possesso": [
-     48.8,
-     51.2
+     53.4,
+     46.6
     ],
     "passaggi": [
-     347,
-     374
+     383,
+     329
     ],
     "parate": [
-     3,
-     5
+     4,
+     3
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Bristol Rvs",
+    "casa": "Rochdale",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Salford",
+    "ospite": "Grimsby",
     "p_mercato": null,
     "p_modello": [
-     0.3539,
-     0.2587,
-     0.3874
+     0.3231,
+     0.277,
+     0.3999
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -268615,23 +268793,510 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Bristol Rvs",
-     "ospite": "Salford",
+     "casa": "Rochdale",
+     "ospite": "Grimsby",
+     "gol_casa": 2,
+     "gol_ospite": 2
+    }
+   ]
+  },
+  {
+   "id": "northampton-tranmere",
+   "campionato": "league-two",
+   "casa": "Northampton",
+   "ospite": "Tranmere",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 0,
+   "gol_ospite": 1,
+   "statistiche": {
+    "tiri": [
+     21,
+     8
+    ],
+    "in_porta": [
+     4,
+     1
+    ],
+    "corner": [
+     9,
+     6
+    ],
+    "falli": [
+     12,
+     9
+    ],
+    "gialli": [
+     0,
+     2
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     63.6,
+     36.4
+    ],
+    "passaggi": [
+     481,
+     279
+    ],
+    "parate": [
+     0,
+     4
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Northampton",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Tranmere",
+    "p_mercato": null,
+    "p_modello": [
+     0.2605,
+     0.3952,
+     0.3444
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Northampton",
+     "ospite": "Tranmere",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
+   "id": "gillingham-port-vale",
+   "campionato": "league-two",
+   "casa": "Gillingham",
+   "ospite": "Port Vale",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 1,
+   "gol_ospite": 1,
+   "statistiche": {
+    "tiri": [
+     9,
+     11
+    ],
+    "in_porta": [
+     3,
+     3
+    ],
+    "corner": [
+     9,
+     4
+    ],
+    "falli": [
+     12,
+     11
+    ],
+    "gialli": [
+     2,
+     1
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     40.9,
+     59.1
+    ],
+    "passaggi": [
+     290,
+     430
+    ],
+    "parate": [
+     2,
+     2
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Gillingham",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "21:00",
+    "ospite": "Port Vale",
+    "p_mercato": null,
+    "p_modello": [
+     0.3286,
+     0.3061,
+     0.3653
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Gillingham",
+     "ospite": "Port Vale",
      "gol_casa": 1,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-05-03",
+     "casa": "Port Vale",
+     "ospite": "Gillingham",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-11-09",
+     "casa": "Gillingham",
+     "ospite": "Port Vale",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "exeter-crewe",
+   "campionato": "league-two",
+   "casa": "Exeter",
+   "ospite": "Crewe",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 2,
+   "gol_ospite": 0,
+   "statistiche": {
+    "tiri": [
+     15,
+     16
+    ],
+    "in_porta": [
+     5,
+     4
+    ],
+    "corner": [
+     3,
+     6
+    ],
+    "falli": [
+     11,
+     13
+    ],
+    "gialli": [
+     1,
+     1
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     46.3,
+     53.7
+    ],
+    "passaggi": [
+     369,
+     418
+    ],
+    "parate": [
+     4,
+     3
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Exeter",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Crewe",
+    "p_mercato": null,
+    "p_modello": [
+     0.2847,
+     0.4576,
+     0.2577
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Exeter",
+     "ospite": "Crewe",
+     "gol_casa": 2,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "crawley-town-shrewsbury",
+   "campionato": "league-two",
+   "casa": "Crawley Town",
+   "ospite": "Shrewsbury",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 2,
+   "gol_ospite": 3,
+   "statistiche": {
+    "tiri": [
+     12,
+     16
+    ],
+    "in_porta": [
+     6,
+     7
+    ],
+    "corner": [
+     4,
+     2
+    ],
+    "falli": [
+     8,
+     8
+    ],
+    "gialli": [
+     2,
+     3
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     57.5,
+     42.5
+    ],
+    "passaggi": [
+     388,
+     273
+    ],
+    "parate": [
+     4,
+     4
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Crawley Town",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Shrewsbury",
+    "p_mercato": null,
+    "p_modello": [
+     0.452,
+     0.274,
+     0.2739
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Crawley Town",
+     "ospite": "Shrewsbury",
+     "gol_casa": 2,
+     "gol_ospite": 3
+    },
+    {
+     "data": "2026-04-18",
+     "casa": "Crawley Town",
+     "ospite": "Shrewsbury",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-10-18",
+     "casa": "Shrewsbury",
+     "ospite": "Crawley Town",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "chesterfield-colchester",
+   "campionato": "league-two",
+   "casa": "Chesterfield",
+   "ospite": "Colchester",
+   "data": "2026-10-20",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 1,
+   "gol_ospite": 1,
+   "statistiche": {
+    "tiri": [
+     19,
+     6
+    ],
+    "in_porta": [
+     3,
+     1
+    ],
+    "corner": [
+     7,
+     2
+    ],
+    "falli": [
+     9,
+     15
+    ],
+    "gialli": [
+     3,
+     2
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     62.4,
+     37.6
+    ],
+    "passaggi": [
+     584,
+     355
+    ],
+    "parate": [
+     0,
+     1
+    ]
+   },
+   "quote_chiusura": {},
+   "pronostico": {
+    "casa": "Chesterfield",
+    "data": "2026-10-20",
+    "margine": null,
+    "ora": "20:45",
+    "ospite": "Colchester",
+    "p_mercato": null,
+    "p_modello": [
+     0.4896,
+     0.2559,
+     0.2545
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-11"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-10-20",
+     "casa": "Chesterfield",
+     "ospite": "Colchester",
+     "gol_casa": 1,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2026-03-03",
+     "casa": "Chesterfield",
+     "ospite": "Colchester",
+     "gol_casa": 3,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-10-04",
+     "casa": "Colchester",
+     "ospite": "Chesterfield",
+     "gol_casa": 6,
      "gol_ospite": 2
     },
     {
-     "data": "2026-01-24",
-     "casa": "Salford",
-     "ospite": "Bristol Rvs",
+     "data": "2025-03-04",
+     "casa": "Colchester",
+     "ospite": "Chesterfield",
      "gol_casa": 1,
      "gol_ospite": 0
     },
     {
-     "data": "2025-09-27",
-     "casa": "Bristol Rvs",
-     "ospite": "Salford",
-     "gol_casa": 2,
+     "data": "2024-10-22",
+     "casa": "Chesterfield",
+     "ospite": "Colchester",
+     "gol_casa": 1,
      "gol_ospite": 1
     }
    ]
@@ -268754,713 +269419,34 @@
    ]
   },
   {
-   "id": "chesterfield-colchester",
+   "id": "bristol-rvs-salford",
    "campionato": "league-two",
-   "casa": "Chesterfield",
-   "ospite": "Colchester",
+   "casa": "Bristol Rvs",
+   "ospite": "Salford",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
    "gol_casa": 1,
-   "gol_ospite": 1,
-   "statistiche": {
-    "tiri": [
-     19,
-     6
-    ],
-    "in_porta": [
-     3,
-     1
-    ],
-    "corner": [
-     7,
-     2
-    ],
-    "falli": [
-     9,
-     15
-    ],
-    "gialli": [
-     3,
-     2
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     62.4,
-     37.6
-    ],
-    "passaggi": [
-     584,
-     355
-    ],
-    "parate": [
-     0,
-     1
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Chesterfield",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Colchester",
-    "p_mercato": null,
-    "p_modello": [
-     0.4896,
-     0.2559,
-     0.2545
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Chesterfield",
-     "ospite": "Colchester",
-     "gol_casa": 1,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2026-03-03",
-     "casa": "Chesterfield",
-     "ospite": "Colchester",
-     "gol_casa": 3,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2025-10-04",
-     "casa": "Colchester",
-     "ospite": "Chesterfield",
-     "gol_casa": 6,
-     "gol_ospite": 2
-    },
-    {
-     "data": "2025-03-04",
-     "casa": "Colchester",
-     "ospite": "Chesterfield",
-     "gol_casa": 1,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2024-10-22",
-     "casa": "Chesterfield",
-     "ospite": "Colchester",
-     "gol_casa": 1,
-     "gol_ospite": 1
-    }
-   ]
-  },
-  {
-   "id": "crawley-town-shrewsbury",
-   "campionato": "league-two",
-   "casa": "Crawley Town",
-   "ospite": "Shrewsbury",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 2,
-   "gol_ospite": 3,
-   "statistiche": {
-    "tiri": [
-     12,
-     16
-    ],
-    "in_porta": [
-     6,
-     7
-    ],
-    "corner": [
-     4,
-     2
-    ],
-    "falli": [
-     8,
-     8
-    ],
-    "gialli": [
-     2,
-     3
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     57.5,
-     42.5
-    ],
-    "passaggi": [
-     388,
-     273
-    ],
-    "parate": [
-     4,
-     4
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Crawley Town",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Shrewsbury",
-    "p_mercato": null,
-    "p_modello": [
-     0.452,
-     0.274,
-     0.2739
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Crawley Town",
-     "ospite": "Shrewsbury",
-     "gol_casa": 2,
-     "gol_ospite": 3
-    },
-    {
-     "data": "2026-04-18",
-     "casa": "Crawley Town",
-     "ospite": "Shrewsbury",
-     "gol_casa": 0,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2025-10-18",
-     "casa": "Shrewsbury",
-     "ospite": "Crawley Town",
-     "gol_casa": 1,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "exeter-crewe",
-   "campionato": "league-two",
-   "casa": "Exeter",
-   "ospite": "Crewe",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 2,
-   "gol_ospite": 0,
-   "statistiche": {
-    "tiri": [
-     15,
-     16
-    ],
-    "in_porta": [
-     5,
-     4
-    ],
-    "corner": [
-     3,
-     6
-    ],
-    "falli": [
-     11,
-     13
-    ],
-    "gialli": [
-     1,
-     1
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     46.3,
-     53.7
-    ],
-    "passaggi": [
-     369,
-     418
-    ],
-    "parate": [
-     4,
-     3
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Exeter",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Crewe",
-    "p_mercato": null,
-    "p_modello": [
-     0.2847,
-     0.4576,
-     0.2577
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Exeter",
-     "ospite": "Crewe",
-     "gol_casa": 2,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
-   "id": "northampton-tranmere",
-   "campionato": "league-two",
-   "casa": "Northampton",
-   "ospite": "Tranmere",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 0,
-   "gol_ospite": 1,
-   "statistiche": {
-    "tiri": [
-     21,
-     8
-    ],
-    "in_porta": [
-     4,
-     1
-    ],
-    "corner": [
-     9,
-     6
-    ],
-    "falli": [
-     12,
-     9
-    ],
-    "gialli": [
-     0,
-     2
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     63.6,
-     36.4
-    ],
-    "passaggi": [
-     481,
-     279
-    ],
-    "parate": [
-     0,
-     4
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Northampton",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Tranmere",
-    "p_mercato": null,
-    "p_modello": [
-     0.2605,
-     0.3952,
-     0.3444
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Northampton",
-     "ospite": "Tranmere",
-     "gol_casa": 0,
-     "gol_ospite": 1
-    }
-   ]
-  },
-  {
-   "id": "rochdale-grimsby",
-   "campionato": "league-two",
-   "casa": "Rochdale",
-   "ospite": "Grimsby",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 2,
    "gol_ospite": 2,
    "statistiche": {
     "tiri": [
-     16,
-     24
-    ],
-    "in_porta": [
-     6,
-     7
-    ],
-    "corner": [
-     7,
-     10
-    ],
-    "falli": [
-     13,
-     8
-    ],
-    "gialli": [
-     3,
-     3
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     53.4,
-     46.6
-    ],
-    "passaggi": [
-     383,
-     329
-    ],
-    "parate": [
-     4,
-     3
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Rochdale",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Grimsby",
-    "p_mercato": null,
-    "p_modello": [
-     0.3231,
-     0.277,
-     0.3999
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Rochdale",
-     "ospite": "Grimsby",
-     "gol_casa": 2,
-     "gol_ospite": 2
-    }
-   ]
-  },
-  {
-   "id": "rotherham-newport-county",
-   "campionato": "league-two",
-   "casa": "Rotherham",
-   "ospite": "Newport County",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 2,
-   "gol_ospite": 2,
-   "statistiche": {
-    "tiri": [
-     12,
+     14,
      12
     ],
     "in_porta": [
-     5,
-     4
-    ],
-    "corner": [
-     2,
-     2
-    ],
-    "falli": [
-     18,
-     16
-    ],
-    "gialli": [
-     3,
-     1
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     61.8,
-     38.2
-    ],
-    "passaggi": [
-     392,
-     248
-    ],
-    "parate": [
-     2,
-     3
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Rotherham",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Newport County",
-    "p_mercato": null,
-    "p_modello": [
-     0.4397,
-     0.2368,
-     0.3235
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Rotherham",
-     "ospite": "Newport County",
-     "gol_casa": 2,
-     "gol_ospite": 2
-    }
-   ]
-  },
-  {
-   "id": "walsall-oldham",
-   "campionato": "league-two",
-   "casa": "Walsall",
-   "ospite": "Oldham",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 3,
-   "gol_ospite": 0,
-   "statistiche": {
-    "tiri": [
-     22,
-     15
-    ],
-    "in_porta": [
-     5,
+     6,
      5
     ],
     "corner": [
-     8,
-     1
-    ],
-    "falli": [
-     13,
-     21
-    ],
-    "gialli": [
-     3,
+     7,
      3
     ],
-    "rossi": [
-     1,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     54.4,
-     45.6
-    ],
-    "passaggi": [
-     377,
-     320
-    ],
-    "parate": [
-     5,
-     2
-    ]
-   },
-   "quote_chiusura": {},
-   "pronostico": {
-    "casa": "Walsall",
-    "data": "2026-10-20",
-    "margine": null,
-    "ora": "20:45",
-    "ospite": "Oldham",
-    "p_mercato": null,
-    "p_modello": [
-     0.4085,
-     0.2796,
-     0.3119
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-11"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-10-20",
-     "casa": "Walsall",
-     "ospite": "Oldham",
-     "gol_casa": 3,
-     "gol_ospite": 0
-    },
-    {
-     "data": "2025-12-29",
-     "casa": "Walsall",
-     "ospite": "Oldham",
-     "gol_casa": 1,
-     "gol_ospite": 2
-    },
-    {
-     "data": "2025-12-10",
-     "casa": "Oldham",
-     "ospite": "Walsall",
-     "gol_casa": 0,
-     "gol_ospite": 1
-    }
-   ]
-  },
-  {
-   "id": "york-accrington",
-   "campionato": "league-two",
-   "casa": "York",
-   "ospite": "Accrington",
-   "data": "2026-10-20",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 1,
-   "gol_ospite": 1,
-   "statistiche": {
-    "tiri": [
-     16,
-     12
-    ],
-    "in_porta": [
-     6,
-     4
-    ],
-    "corner": [
-     7,
-     6
-    ],
     "falli": [
-     10,
+     15,
      14
     ],
     "gialli": [
-     2,
+     4,
      3
     ],
     "rossi": [
@@ -269472,12 +269458,12 @@
      0
     ],
     "possesso": [
-     61.0,
-     39.0
+     48.8,
+     51.2
     ],
     "passaggi": [
-     524,
-     325
+     347,
+     374
     ],
     "parate": [
      3,
@@ -269486,16 +269472,16 @@
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "York",
+    "casa": "Bristol Rvs",
     "data": "2026-10-20",
     "margine": null,
     "ora": "20:45",
-    "ospite": "Accrington",
+    "ospite": "Salford",
     "p_mercato": null,
     "p_modello": [
-     0.6338,
-     0.1938,
-     0.1725
+     0.3539,
+     0.2587,
+     0.3874
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -269514,42 +269500,56 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "York",
-     "ospite": "Accrington",
+     "casa": "Bristol Rvs",
+     "ospite": "Salford",
      "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2026-01-24",
+     "casa": "Salford",
+     "ospite": "Bristol Rvs",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-09-27",
+     "casa": "Bristol Rvs",
+     "ospite": "Salford",
+     "gol_casa": 2,
      "gol_ospite": 1
     }
    ]
   },
   {
-   "id": "gillingham-port-vale",
+   "id": "barnet-swindon",
    "campionato": "league-two",
-   "casa": "Gillingham",
-   "ospite": "Port Vale",
+   "casa": "Barnet",
+   "ospite": "Swindon",
    "data": "2026-10-20",
    "ora": "",
    "giocata": true,
    "gol_casa": 1,
-   "gol_ospite": 1,
+   "gol_ospite": 3,
    "statistiche": {
     "tiri": [
-     9,
+     22,
      11
     ],
     "in_porta": [
-     3,
-     3
+     11,
+     5
     ],
     "corner": [
-     9,
-     4
+     14,
+     0
     ],
     "falli": [
-     12,
-     11
+     7,
+     6
     ],
     "gialli": [
-     2,
+     0,
      1
     ],
     "rossi": [
@@ -269561,30 +269561,30 @@
      0
     ],
     "possesso": [
-     40.9,
-     59.1
+     72.3,
+     27.7
     ],
     "passaggi": [
-     290,
-     430
+     599,
+     233
     ],
     "parate": [
      2,
-     2
+     11
     ]
    },
    "quote_chiusura": {},
    "pronostico": {
-    "casa": "Gillingham",
+    "casa": "Barnet",
     "data": "2026-10-20",
     "margine": null,
-    "ora": "21:00",
-    "ospite": "Port Vale",
+    "ora": "20:45",
+    "ospite": "Swindon",
     "p_mercato": null,
     "p_modello": [
-     0.3286,
-     0.3061,
-     0.3653
+     0.5679,
+     0.209,
+     0.2231
     ],
     "quote": {},
     "salvato_il": "2026-10-11"
@@ -269603,24 +269603,24 @@
    "precedenti": [
     {
      "data": "2026-10-20",
-     "casa": "Gillingham",
-     "ospite": "Port Vale",
+     "casa": "Barnet",
+     "ospite": "Swindon",
      "gol_casa": 1,
-     "gol_ospite": 1
+     "gol_ospite": 3
     },
     {
-     "data": "2025-05-03",
-     "casa": "Port Vale",
-     "ospite": "Gillingham",
+     "data": "2026-02-17",
+     "casa": "Barnet",
+     "ospite": "Swindon",
+     "gol_casa": 1,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-08-19",
+     "casa": "Swindon",
+     "ospite": "Barnet",
      "gol_casa": 0,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2024-11-09",
-     "casa": "Gillingham",
-     "ospite": "Port Vale",
-     "gol_casa": 1,
-     "gol_ospite": 0
+     "gol_ospite": 2
     }
    ]
   },
@@ -341592,470 +341592,6 @@
    "precedenti": []
   },
   {
-   "id": "montpellier-red-star",
-   "casa": "Montpellier",
-   "ospite": "Red Star",
-   "data": "2026-10-24",
-   "ora": "14:00",
-   "quote": {},
-   "p_mercato": null,
-   "p_modello": [
-    0.4866,
-    0.3008,
-    0.2127
-   ],
-   "margine": null,
-   "margine_migliore": null,
-   "campionato": "ligue-2",
-   "dettaglio": {
-    "gol_attesi_casa": 1.25,
-    "gol_attesi_ospite": 0.72,
-    "matrice": [
-     [
-      0.14206,
-      0.0988,
-      0.03626,
-      0.0087,
-      0.00156,
-      0.00023
-     ],
-     [
-      0.17253,
-      0.12759,
-      0.04519,
-      0.01084,
-      0.00195,
-      0.00028
-     ],
-     [
-      0.10874,
-      0.07825,
-      0.02815,
-      0.00675,
-      0.00121,
-      0.00017
-     ],
-     [
-      0.04516,
-      0.0325,
-      0.01169,
-      0.0028,
-      0.0005,
-      7e-05
-     ],
-     [
-      0.01407,
-      0.01012,
-      0.00364,
-      0.00087,
-      0.00016,
-      2e-05
-     ],
-     [
-      0.00351,
-      0.00252,
-      0.00091,
-      0.00022,
-      4e-05,
-      1e-05
-     ]
-    ],
-    "risultati_probabili": [
-     {
-      "risultato": "1-0",
-      "p": 0.1725
-     },
-     {
-      "risultato": "0-0",
-      "p": 0.1421
-     },
-     {
-      "risultato": "1-1",
-      "p": 0.1276
-     },
-     {
-      "risultato": "2-0",
-      "p": 0.1087
-     },
-     {
-      "risultato": "0-1",
-      "p": 0.0988
-     }
-    ],
-    "mercati": {
-     "1x2": {
-      "1": 0.4866,
-      "X": 0.3008,
-      "2": 0.2127
-     },
-     "btts": {
-      "si": 0.3675,
-      "no": 0.6325
-     },
-     "ou_1.5": {
-      "over": 0.5866,
-      "under": 0.4134
-     },
-     "ou_2.5": {
-      "over": 0.314,
-      "under": 0.686
-     },
-     "ou_3.5": {
-      "over": 0.1367,
-      "under": 0.8633
-     }
-    }
-   },
-   "stat_casa": {
-    "squadra": "Montpellier",
-    "partite": 20,
-    "gol_fatti": 1.2,
-    "gol_subiti": 0.6,
-    "gol_totali": 24,
-    "in_porta_totali": 94,
-    "attesi_dai_tiri": 30.3,
-    "scarto_conversione": -6.3,
-    "vantaggio_casa": 0.04,
-    "casa": {
-     "partite": 9,
-     "gol_fatti": 1.22,
-     "gol_subiti": 0.67,
-     "tiri": 15.2,
-     "in_porta": 5.3,
-     "in_porta_subiti": 3.9,
-     "tiri_subiti": 11.9,
-     "corner": 5.8,
-     "corner_subiti": 3.3,
-     "falli": 16.7,
-     "cartellini": 1.9,
-     "gialli": 16,
-     "rossi": 1,
-     "precisione_tiri": 0.35,
-     "over_25": 0.333,
-     "gol_gol": 0.444,
-     "clean_sheet": 0.556,
-     "a_secco": 0.222,
-     "con_avanzate": 4,
-     "possesso": 63.3,
-     "passaggi": 555.0,
-     "precisione_passaggi": 0.859,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 17.2,
-     "intercetti": 0.0,
-     "respinte": 14.0,
-     "parate": 4.5,
-     "fuorigioco": 0.5,
-     "tiri_respinti": 5.5
-    },
-    "trasferta": {
-     "partite": 11,
-     "gol_fatti": 1.18,
-     "gol_subiti": 0.55,
-     "tiri": 9.7,
-     "in_porta": 4.2,
-     "in_porta_subiti": 4.2,
-     "tiri_subiti": 15.5,
-     "corner": 5.0,
-     "corner_subiti": 5.2,
-     "falli": 17.3,
-     "cartellini": 2.1,
-     "gialli": 21,
-     "rossi": 2,
-     "precisione_tiri": 0.43,
-     "over_25": 0.273,
-     "gol_gol": 0.273,
-     "clean_sheet": 0.636,
-     "a_secco": 0.273,
-     "con_avanzate": 5,
-     "possesso": 42.0,
-     "passaggi": 349.0,
-     "precisione_passaggi": 0.842,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 15.4,
-     "intercetti": 0.0,
-     "respinte": 22.8,
-     "parate": 3.0,
-     "fuorigioco": 0.4,
-     "tiri_respinti": 2.0
-    }
-   },
-   "stat_ospite": {
-    "squadra": "Red Star",
-    "partite": 20,
-    "gol_fatti": 1.4,
-    "gol_subiti": 1.2,
-    "gol_totali": 28,
-    "in_porta_totali": 94,
-    "attesi_dai_tiri": 30.3,
-    "scarto_conversione": -2.3,
-    "vantaggio_casa": -0.6,
-    "casa": {
-     "partite": 10,
-     "gol_fatti": 1.1,
-     "gol_subiti": 1.1,
-     "tiri": 13.7,
-     "in_porta": 4.4,
-     "in_porta_subiti": 3.7,
-     "tiri_subiti": 8.5,
-     "corner": 5.5,
-     "corner_subiti": 3.0,
-     "falli": 13.2,
-     "cartellini": 1.7,
-     "gialli": 17,
-     "rossi": 0,
-     "precisione_tiri": 0.321,
-     "over_25": 0.3,
-     "gol_gol": 0.4,
-     "clean_sheet": 0.5,
-     "a_secco": 0.4,
-     "con_avanzate": 4,
-     "possesso": 58.5,
-     "passaggi": 506.0,
-     "precisione_passaggi": 0.825,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 15.5,
-     "intercetti": 0.0,
-     "respinte": 12.8,
-     "parate": 2.2,
-     "fuorigioco": 1.5,
-     "tiri_respinti": 4.0
-    },
-    "trasferta": {
-     "partite": 10,
-     "gol_fatti": 1.7,
-     "gol_subiti": 1.3,
-     "tiri": 12.9,
-     "in_porta": 5.0,
-     "in_porta_subiti": 4.6,
-     "tiri_subiti": 12.1,
-     "corner": 5.6,
-     "corner_subiti": 4.1,
-     "falli": 15.8,
-     "cartellini": 2.6,
-     "gialli": 25,
-     "rossi": 1,
-     "precisione_tiri": 0.388,
-     "over_25": 0.6,
-     "gol_gol": 0.7,
-     "clean_sheet": 0.2,
-     "a_secco": 0.1,
-     "con_avanzate": 5,
-     "possesso": 41.4,
-     "passaggi": 356.0,
-     "precisione_passaggi": 0.792,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 18.0,
-     "intercetti": 0.0,
-     "respinte": 20.0,
-     "parate": 2.8,
-     "fuorigioco": 2.4,
-     "tiri_respinti": 3.2
-    }
-   },
-   "forma_casa": {
-    "squadra": "Montpellier",
-    "partite": 6,
-    "gol_fatti": 1.33,
-    "gol_subiti": 0.67,
-    "gol_totali": 8,
-    "in_porta_totali": 31,
-    "attesi_dai_tiri": 10.0,
-    "scarto_conversione": -2.0,
-    "vantaggio_casa": -0.67,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 1.0,
-     "gol_subiti": 0.0,
-     "tiri": 14.3,
-     "in_porta": 5.3,
-     "in_porta_subiti": 5.0,
-     "tiri_subiti": 13.0,
-     "corner": 6.7,
-     "corner_subiti": 3.7,
-     "falli": 13.3,
-     "cartellini": 2.3,
-     "gialli": 7,
-     "rossi": 0,
-     "precisione_tiri": 0.372,
-     "over_25": 0.0,
-     "gol_gol": 0.0,
-     "clean_sheet": 1.0,
-     "a_secco": 0.333,
-     "con_avanzate": 3,
-     "possesso": 65.9,
-     "passaggi": 593.0,
-     "precisione_passaggi": 0.876,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 14.0,
-     "intercetti": 0.0,
-     "respinte": 13.0,
-     "parate": 5.0,
-     "fuorigioco": 0.7,
-     "tiri_respinti": 3.3
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 1.67,
-     "gol_subiti": 1.33,
-     "tiri": 10.7,
-     "in_porta": 5.0,
-     "in_porta_subiti": 4.3,
-     "tiri_subiti": 17.0,
-     "corner": 4.0,
-     "corner_subiti": 6.0,
-     "falli": 15.3,
-     "cartellini": 1.3,
-     "gialli": 4,
-     "rossi": 0,
-     "precisione_tiri": 0.469,
-     "over_25": 0.667,
-     "gol_gol": 0.667,
-     "clean_sheet": 0.333,
-     "a_secco": 0.0,
-     "con_avanzate": 3,
-     "possesso": 40.3,
-     "passaggi": 361.0,
-     "precisione_passaggi": 0.871,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 14.3,
-     "intercetti": 0.0,
-     "respinte": 15.7,
-     "parate": 2.3,
-     "fuorigioco": 0.7,
-     "tiri_respinti": 1.3
-    }
-   },
-   "forma_ospite": {
-    "squadra": "Red Star",
-    "partite": 6,
-    "gol_fatti": 1.67,
-    "gol_subiti": 1.5,
-    "gol_totali": 10,
-    "in_porta_totali": 35,
-    "attesi_dai_tiri": 11.3,
-    "scarto_conversione": -1.3,
-    "vantaggio_casa": -2.0,
-    "casa": {
-     "partite": 3,
-     "gol_fatti": 0.67,
-     "gol_subiti": 1.67,
-     "tiri": 12.0,
-     "in_porta": 4.3,
-     "in_porta_subiti": 4.0,
-     "tiri_subiti": 10.0,
-     "corner": 6.7,
-     "corner_subiti": 3.0,
-     "falli": 18.0,
-     "cartellini": 1.7,
-     "gialli": 5,
-     "rossi": 0,
-     "precisione_tiri": 0.361,
-     "over_25": 0.333,
-     "gol_gol": 0.333,
-     "clean_sheet": 0.333,
-     "a_secco": 0.333,
-     "con_avanzate": 3,
-     "possesso": 55.6,
-     "passaggi": 491.0,
-     "precisione_passaggi": 0.808,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 17.3,
-     "intercetti": 0.0,
-     "respinte": 15.0,
-     "parate": 2.3,
-     "fuorigioco": 1.7,
-     "tiri_respinti": 3.3
-    },
-    "trasferta": {
-     "partite": 3,
-     "gol_fatti": 2.67,
-     "gol_subiti": 1.33,
-     "tiri": 18.0,
-     "in_porta": 7.3,
-     "in_porta_subiti": 3.3,
-     "tiri_subiti": 11.7,
-     "corner": 4.0,
-     "corner_subiti": 5.0,
-     "falli": 22.0,
-     "cartellini": 3.7,
-     "gialli": 10,
-     "rossi": 1,
-     "precisione_tiri": 0.407,
-     "over_25": 1.0,
-     "gol_gol": 1.0,
-     "clean_sheet": 0.0,
-     "a_secco": 0.0,
-     "con_avanzate": 3,
-     "possesso": 37.3,
-     "passaggi": 327.0,
-     "precisione_passaggi": 0.827,
-     "precisione_cross": 0.0,
-     "precisione_lanci": 0.0,
-     "contrasti": 19.7,
-     "intercetti": 0.0,
-     "respinte": 14.7,
-     "parate": 1.3,
-     "fuorigioco": 1.3,
-     "tiri_respinti": 4.3
-    }
-   },
-   "incrocio": [
-    {
-     "voce": "Gol",
-     "attacco": 1.22,
-     "difesa": 1.3,
-     "media": 1.26
-    },
-    {
-     "voce": "Tiri",
-     "attacco": 15.2,
-     "difesa": 12.1,
-     "media": 13.6
-    },
-    {
-     "voce": "Tiri in porta",
-     "attacco": 5.3,
-     "difesa": 4.6,
-     "media": 4.9
-    },
-    {
-     "voce": "Calci d'angolo",
-     "attacco": 5.8,
-     "difesa": 4.1,
-     "media": 4.9
-    },
-    {
-     "voce": "Possesso",
-     "attacco": 63.3,
-     "difesa": 41.4,
-     "media": null
-    }
-   ],
-   "precedenti": [
-    {
-     "data": "2026-05-09",
-     "casa": "Red Star",
-     "ospite": "Montpellier",
-     "gol_casa": 1,
-     "gol_ospite": 1
-    },
-    {
-     "data": "2025-08-09",
-     "casa": "Montpellier",
-     "ospite": "Red Star",
-     "gol_casa": 1,
-     "gol_ospite": 1
-    }
-   ]
-  },
-  {
    "id": "st-etienne-nantes",
    "casa": "St Etienne",
    "ospite": "Nantes",
@@ -342965,6 +342501,470 @@
      "ospite": "Reims",
      "gol_casa": 2,
      "gol_ospite": 6
+    }
+   ]
+  },
+  {
+   "id": "montpellier-red-star",
+   "casa": "Montpellier",
+   "ospite": "Red Star",
+   "data": "2026-10-26",
+   "ora": "20:45",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.4866,
+    0.3008,
+    0.2127
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "campionato": "ligue-2",
+   "dettaglio": {
+    "gol_attesi_casa": 1.25,
+    "gol_attesi_ospite": 0.72,
+    "matrice": [
+     [
+      0.14206,
+      0.0988,
+      0.03626,
+      0.0087,
+      0.00156,
+      0.00023
+     ],
+     [
+      0.17253,
+      0.12759,
+      0.04519,
+      0.01084,
+      0.00195,
+      0.00028
+     ],
+     [
+      0.10874,
+      0.07825,
+      0.02815,
+      0.00675,
+      0.00121,
+      0.00017
+     ],
+     [
+      0.04516,
+      0.0325,
+      0.01169,
+      0.0028,
+      0.0005,
+      7e-05
+     ],
+     [
+      0.01407,
+      0.01012,
+      0.00364,
+      0.00087,
+      0.00016,
+      2e-05
+     ],
+     [
+      0.00351,
+      0.00252,
+      0.00091,
+      0.00022,
+      4e-05,
+      1e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-0",
+      "p": 0.1725
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.1421
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.1276
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.1087
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.0988
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.4866,
+      "X": 0.3008,
+      "2": 0.2127
+     },
+     "btts": {
+      "si": 0.3675,
+      "no": 0.6325
+     },
+     "ou_1.5": {
+      "over": 0.5866,
+      "under": 0.4134
+     },
+     "ou_2.5": {
+      "over": 0.314,
+      "under": 0.686
+     },
+     "ou_3.5": {
+      "over": 0.1367,
+      "under": 0.8633
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Montpellier",
+    "partite": 20,
+    "gol_fatti": 1.2,
+    "gol_subiti": 0.6,
+    "gol_totali": 24,
+    "in_porta_totali": 94,
+    "attesi_dai_tiri": 30.3,
+    "scarto_conversione": -6.3,
+    "vantaggio_casa": 0.04,
+    "casa": {
+     "partite": 9,
+     "gol_fatti": 1.22,
+     "gol_subiti": 0.67,
+     "tiri": 15.2,
+     "in_porta": 5.3,
+     "in_porta_subiti": 3.9,
+     "tiri_subiti": 11.9,
+     "corner": 5.8,
+     "corner_subiti": 3.3,
+     "falli": 16.7,
+     "cartellini": 1.9,
+     "gialli": 16,
+     "rossi": 1,
+     "precisione_tiri": 0.35,
+     "over_25": 0.333,
+     "gol_gol": 0.444,
+     "clean_sheet": 0.556,
+     "a_secco": 0.222,
+     "con_avanzate": 4,
+     "possesso": 63.3,
+     "passaggi": 555.0,
+     "precisione_passaggi": 0.859,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 17.2,
+     "intercetti": 0.0,
+     "respinte": 14.0,
+     "parate": 4.5,
+     "fuorigioco": 0.5,
+     "tiri_respinti": 5.5
+    },
+    "trasferta": {
+     "partite": 11,
+     "gol_fatti": 1.18,
+     "gol_subiti": 0.55,
+     "tiri": 9.7,
+     "in_porta": 4.2,
+     "in_porta_subiti": 4.2,
+     "tiri_subiti": 15.5,
+     "corner": 5.0,
+     "corner_subiti": 5.2,
+     "falli": 17.3,
+     "cartellini": 2.1,
+     "gialli": 21,
+     "rossi": 2,
+     "precisione_tiri": 0.43,
+     "over_25": 0.273,
+     "gol_gol": 0.273,
+     "clean_sheet": 0.636,
+     "a_secco": 0.273,
+     "con_avanzate": 5,
+     "possesso": 42.0,
+     "passaggi": 349.0,
+     "precisione_passaggi": 0.842,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 15.4,
+     "intercetti": 0.0,
+     "respinte": 22.8,
+     "parate": 3.0,
+     "fuorigioco": 0.4,
+     "tiri_respinti": 2.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Red Star",
+    "partite": 20,
+    "gol_fatti": 1.4,
+    "gol_subiti": 1.2,
+    "gol_totali": 28,
+    "in_porta_totali": 94,
+    "attesi_dai_tiri": 30.3,
+    "scarto_conversione": -2.3,
+    "vantaggio_casa": -0.6,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.1,
+     "gol_subiti": 1.1,
+     "tiri": 13.7,
+     "in_porta": 4.4,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 8.5,
+     "corner": 5.5,
+     "corner_subiti": 3.0,
+     "falli": 13.2,
+     "cartellini": 1.7,
+     "gialli": 17,
+     "rossi": 0,
+     "precisione_tiri": 0.321,
+     "over_25": 0.3,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.5,
+     "a_secco": 0.4,
+     "con_avanzate": 4,
+     "possesso": 58.5,
+     "passaggi": 506.0,
+     "precisione_passaggi": 0.825,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 15.5,
+     "intercetti": 0.0,
+     "respinte": 12.8,
+     "parate": 2.2,
+     "fuorigioco": 1.5,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.7,
+     "gol_subiti": 1.3,
+     "tiri": 12.9,
+     "in_porta": 5.0,
+     "in_porta_subiti": 4.6,
+     "tiri_subiti": 12.1,
+     "corner": 5.6,
+     "corner_subiti": 4.1,
+     "falli": 15.8,
+     "cartellini": 2.6,
+     "gialli": 25,
+     "rossi": 1,
+     "precisione_tiri": 0.388,
+     "over_25": 0.6,
+     "gol_gol": 0.7,
+     "clean_sheet": 0.2,
+     "a_secco": 0.1,
+     "con_avanzate": 5,
+     "possesso": 41.4,
+     "passaggi": 356.0,
+     "precisione_passaggi": 0.792,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.0,
+     "intercetti": 0.0,
+     "respinte": 20.0,
+     "parate": 2.8,
+     "fuorigioco": 2.4,
+     "tiri_respinti": 3.2
+    }
+   },
+   "forma_casa": {
+    "squadra": "Montpellier",
+    "partite": 6,
+    "gol_fatti": 1.33,
+    "gol_subiti": 0.67,
+    "gol_totali": 8,
+    "in_porta_totali": 31,
+    "attesi_dai_tiri": 10.0,
+    "scarto_conversione": -2.0,
+    "vantaggio_casa": -0.67,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 0.0,
+     "tiri": 14.3,
+     "in_porta": 5.3,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 13.0,
+     "corner": 6.7,
+     "corner_subiti": 3.7,
+     "falli": 13.3,
+     "cartellini": 2.3,
+     "gialli": 7,
+     "rossi": 0,
+     "precisione_tiri": 0.372,
+     "over_25": 0.0,
+     "gol_gol": 0.0,
+     "clean_sheet": 1.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 65.9,
+     "passaggi": 593.0,
+     "precisione_passaggi": 0.876,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 13.0,
+     "parate": 5.0,
+     "fuorigioco": 0.7,
+     "tiri_respinti": 3.3
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 1.33,
+     "tiri": 10.7,
+     "in_porta": 5.0,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 17.0,
+     "corner": 4.0,
+     "corner_subiti": 6.0,
+     "falli": 15.3,
+     "cartellini": 1.3,
+     "gialli": 4,
+     "rossi": 0,
+     "precisione_tiri": 0.469,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 40.3,
+     "passaggi": 361.0,
+     "precisione_passaggi": 0.871,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.3,
+     "intercetti": 0.0,
+     "respinte": 15.7,
+     "parate": 2.3,
+     "fuorigioco": 0.7,
+     "tiri_respinti": 1.3
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Red Star",
+    "partite": 6,
+    "gol_fatti": 1.67,
+    "gol_subiti": 1.5,
+    "gol_totali": 10,
+    "in_porta_totali": 35,
+    "attesi_dai_tiri": 11.3,
+    "scarto_conversione": -1.3,
+    "vantaggio_casa": -2.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.67,
+     "tiri": 12.0,
+     "in_porta": 4.3,
+     "in_porta_subiti": 4.0,
+     "tiri_subiti": 10.0,
+     "corner": 6.7,
+     "corner_subiti": 3.0,
+     "falli": 18.0,
+     "cartellini": 1.7,
+     "gialli": 5,
+     "rossi": 0,
+     "precisione_tiri": 0.361,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 55.6,
+     "passaggi": 491.0,
+     "precisione_passaggi": 0.808,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 17.3,
+     "intercetti": 0.0,
+     "respinte": 15.0,
+     "parate": 2.3,
+     "fuorigioco": 1.7,
+     "tiri_respinti": 3.3
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 2.67,
+     "gol_subiti": 1.33,
+     "tiri": 18.0,
+     "in_porta": 7.3,
+     "in_porta_subiti": 3.3,
+     "tiri_subiti": 11.7,
+     "corner": 4.0,
+     "corner_subiti": 5.0,
+     "falli": 22.0,
+     "cartellini": 3.7,
+     "gialli": 10,
+     "rossi": 1,
+     "precisione_tiri": 0.407,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 37.3,
+     "passaggi": 327.0,
+     "precisione_passaggi": 0.827,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 19.7,
+     "intercetti": 0.0,
+     "respinte": 14.7,
+     "parate": 1.3,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 4.3
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.22,
+     "difesa": 1.3,
+     "media": 1.26
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 15.2,
+     "difesa": 12.1,
+     "media": 13.6
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 5.3,
+     "difesa": 4.6,
+     "media": 4.9
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.8,
+     "difesa": 4.1,
+     "media": 4.9
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 63.3,
+     "difesa": 41.4,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-05-09",
+     "casa": "Red Star",
+     "ospite": "Montpellier",
+     "gol_casa": 1,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-08-09",
+     "casa": "Montpellier",
+     "ospite": "Red Star",
+     "gol_casa": 1,
+     "gol_ospite": 1
     }
    ]
   },
