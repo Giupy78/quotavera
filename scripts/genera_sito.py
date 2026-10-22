@@ -105,6 +105,38 @@ def gia_giocata_coppia(giocate: dict, casa: str, ospite: str, quando: date) -> b
     return any(abs((d - quando).days) <= 3 for d in giocate.get((casa, ospite), ()))
 
 
+def marcatori(cronaca: dict, quanti: int = 25) -> list[dict]:
+    """La classifica dei marcatori, dai gol raccolti partita per partita.
+
+    Gli autogol non contano per chi li segna — e' una classifica di marcatori,
+    non di sfortunati — e il nome del giocatore e' quello di ESPN, che e'
+    l'unica fonte che ce lo da'. Non c'e' niente da riconciliare: non esiste
+    una seconda lista di giocatori con cui confrontarlo, quindi per una volta
+    il problema dei nomi non si pone.
+    """
+    gol: dict[str, dict] = {}
+    for dati in cronaca.values():
+        for g in dati.get("gol") or []:
+            chi = g.get("marcatore")
+            if not chi or "own" in (g.get("tipo") or "").lower():
+                continue
+            voce = gol.setdefault(chi, {"nome": chi, "squadra": g.get("squadra"),
+                                        "gol": 0, "rigori": 0, "assist": 0})
+            voce["gol"] += 1
+            if "penalty" in (g.get("tipo") or "").lower():
+                voce["rigori"] += 1
+        for g in dati.get("gol") or []:
+            chi = g.get("assist")
+            if not chi:
+                continue
+            voce = gol.setdefault(chi, {"nome": chi, "squadra": g.get("squadra"),
+                                        "gol": 0, "rigori": 0, "assist": 0})
+            voce["assist"] += 1
+    fuori = [v for v in gol.values() if v["gol"] > 0 or v["assist"] > 0]
+    fuori.sort(key=lambda v: (-v["gol"], -v["assist"], v["nome"]))
+    return fuori[:quanti]
+
+
 def id_partita(casa: str, ospite: str) -> str:
     """L'indirizzo di una partita: lo stesso che usa `PartitaFutura.id`.
 
@@ -231,7 +263,8 @@ def numeri_squadra(s, conv: float) -> dict:
     }
 
 
-def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None) -> dict | None:
+def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
+            cronache: dict | None = None) -> dict | None:
     """Tutto quello che serve al sito per un campionato.
 
     `stagione` sono le partite della stagione in corso — poche, a inizio anno.
@@ -242,6 +275,7 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None) -> dict 
         return None
 
     estesi = nomi_estesi or {}
+    cronaca = cronache or {}
 
     modello = ModelloCalcio().fit([p.incontro for p in storico])
     # La conversione media serve un campione ampio: si prende dallo storico
@@ -447,6 +481,9 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None) -> dict 
                 "parate": list(st_.parate) if st_.avanzate else None,
             } if st_.completa else None),
             "quote_chiusura": {k: list(v) for k, v in x.quote.items()},
+            **{k: v for k, v in (cronaca.get((i.casa, i.ospite)) or
+                 {"gol": [], "cartellini": [], "formazioni": {}}).items()
+               if k != "data"},
             # Quello che dicevamo prima, se c'eravamo.
             "pronostico": prima,
             "p_modello": None, "p_mercato": None, "quote": {},
@@ -604,6 +641,7 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None) -> dict 
         "risultati": risultati,
         "sorprese": sorprese(stagione, c),
         "stagione_completa": stagione_completa(c, set(stat) | attuali, stagione),
+        "marcatori": marcatori(cronaca),
         "chicche": [x.come_dizionario()
                     for x in motore_chicche.per_campionato(storico, c, attuali,
                                                            INIZIO_STAGIONE)],
@@ -895,6 +933,7 @@ def main() -> int:
         # troppo e' precisamente il modo in cui i gol finiscono nella squadra
         # sbagliata.
         nomi_estesi: dict[str, str] = {}
+        cronache: dict[tuple, dict] = {}
         in_corso = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
         # Stesso ripiego di `elabora`: senza, con football-data giu' l'insieme
         # e' vuoto e ESPN non viene interrogato.
@@ -909,13 +948,26 @@ def main() -> int:
         if squadre_note:
             recenti, _, estesi = espn.aggiorna(c.slug, squadre_note, INIZIO_STAGIONE, oggi)
             nomi_estesi.update(estesi)
+            # La cronaca, indicizzata per squadre e data: serve a `elabora` per
+            # attaccarla alle schede delle partite giocate.
+            for r in recenti:
+                if r.gol or r.formazioni:
+                    # Chiave senza data: ESPN e football-data non concordano
+                    # sempre sul giorno, e cercando la corrispondenza esatta non
+                    # si trovava mai niente. Una coppia casa-ospite si ripete al
+                    # massimo una volta a stagione in quest'ordine, quindi basta.
+                    cronache[(r.casa, r.ospite)] = {
+                        "data": r.data.isoformat(),
+                        "gol": r.gol, "cartellini": r.cartellini,
+                        "formazioni": r.formazioni,
+                    }
             storico, arricchite, aggiunte = fondi(storico, recenti, c.slug)
             if aggiunte or arricchite:
                 print(f"  {c.etichetta:34s} ESPN: +{aggiunte} partite,"
                       f" {arricchite} arricchite")
 
         stagione = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
-        dati = elabora(c, storico, stagione, cal, nomi_estesi)
+        dati = elabora(c, storico, stagione, cal, nomi_estesi, cronache)
         if not dati:
             print(f"  {c.etichetta:34s} dati insufficienti, salto")
             continue
@@ -974,7 +1026,7 @@ def main() -> int:
     indice = [{k: v for k, v in l.items()
                if k not in ("squadre", "calendario", "schede", "sorprese",
                             "classifica", "risultati", "stagione_completa",
-                            "finestre", "chicche")}
+                            "finestre", "chicche", "marcatori")}
               for l in leghe]
     # Due date diverse, e tenerle separate e' il punto.
     #
@@ -1009,6 +1061,9 @@ def main() -> int:
 
     pezzi = [a for a in (articolo_campionato(l) for l in leghe) if a]
     scrivi("articoli.json", {"data": date.today().isoformat(), "pezzi": pezzi})
+    scrivi("marcatori.json", {
+        "campionati": {l["slug"]: l.get("marcatori", []) for l in leghe},
+    })
     scrivi("chicche.json", {
         "data": date.today().isoformat(),
         "confronti": [x.come_dizionario()

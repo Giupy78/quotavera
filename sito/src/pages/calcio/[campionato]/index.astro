@@ -8,6 +8,7 @@ import classifiche from "../../../dati/classifiche.json";
 import risultati from "../../../dati/risultati.json";
 import stagione from "../../../dati/stagione.json";
 import finestre from "../../../dati/finestre.json";
+import marcatori from "../../../dati/marcatori.json";
 
 export function getStaticPaths() {
   const cal = calendario.campionati as Record<string, any[]>;
@@ -24,11 +25,12 @@ export function getStaticPaths() {
       ultimi: ri[c.slug] ?? [],
       completo: (stagione.campionati as Record<string, any>)[c.slug] ?? null,
       fin: (finestre.campionati as Record<string, any>)[c.slug] ?? null,
+      bomber: (marcatori.campionati as Record<string, any>)[c.slug] ?? [],
     },
   }));
 }
 
-const { lega, partite, team, classifica, ultimi, completo, fin } = Astro.props;
+const { lega, partite, team, classifica, ultimi, completo, fin, bomber } = Astro.props;
 
 /* Le profondita' fra cui puo' scegliere chi legge, e quella aperta all'arrivo. */
 const profondita: number[] = finestre.disponibili;
@@ -389,6 +391,50 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
           pubblicata dalla fonte: si deduce contando le partite già giocate da
           ogni squadra, così i recuperi restano al turno a cui appartengono.
         </p>
+      </section>
+    )
+  }
+
+  {
+    bomber.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Marcatori</h2>
+          <p>
+            Gol e assist di questa stagione, contati partita per partita dai
+            tabellini. Fra parentesi i rigori, che valgono quanto gli altri in
+            classifica ma raccontano una cosa diversa su chi li segna.
+          </p>
+        </div>
+        <div class="scorri">
+          <table class="dati">
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th>Giocatore</th>
+                <th>Squadra</th>
+                <th class="num">Gol</th>
+                <th class="num">Assist</th>
+              </tr>
+            </thead>
+            <tbody>
+              {bomber.slice(0, 20).map((g: any, i: number) => (
+                <tr>
+                  <td class="num mono" style="color:var(--ink-3)">{i + 1}</td>
+                  <td><b>{g.nome}</b></td>
+                  <td style="color:var(--ink-2)">{g.squadra}</td>
+                  <td class="num mono" style="font-weight:600">
+                    {g.gol}
+                    {g.rigori > 0 && (
+                      <span style="color:var(--ink-3);font-weight:400"> ({g.rigori})</span>
+                    )}
+                  </td>
+                  <td class="num mono">{g.assist || "—"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     )
   }

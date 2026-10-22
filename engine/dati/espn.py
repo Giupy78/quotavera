@@ -49,6 +49,11 @@ UTC = timezone.utc
 ROMA = ZoneInfo("Europe/Rome")
 
 BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
+
+# Quante partite al massimo si scaricano per campionato in un turno. Serve
+# quando si aggiunge un dato nuovo e bisogna ripassare tutto lo storico: senza
+# tetto, duemila richieste di fila a un servizio gratuito.
+MASSIMO_RECUPERI = 120
 CARTELLA = Path(__file__).resolve().parents[2] / "dati" / "espn"
 
 # I nostri slug verso quelli di ESPN. Le due serie minori scozzesi non ci sono:
@@ -155,6 +160,11 @@ class PartitaEspn:
     # Per ogni voce di VOCI: (valore casa, valore ospite). Puo' essere vuoto:
     # ESPN da' il risultato subito e il riepilogo qualche minuto dopo.
     stat: dict[str, tuple[float, float]] = field(default_factory=dict)
+    # La cronaca: chi ha segnato e quando, chi ha preso un cartellino, chi
+    # scendeva in campo. Arriva dalla stessa richiesta del tabellino.
+    gol: list[dict] = field(default_factory=list)
+    cartellini: list[dict] = field(default_factory=list)
+    formazioni: dict = field(default_factory=dict)
 
     @property
     def completa(self) -> bool:
@@ -266,11 +276,99 @@ def _numero(testo: str) -> float:
         return 0.0
 
 
-def tabellino(lega_espn: str, id_evento: str) -> dict[str, tuple[float, float]]:
-    """Le statistiche di una partita. Dizionario vuoto se ESPN non le ha."""
+def _gol_e_cartellini(d: dict) -> tuple[list[dict], list[dict]]:
+    """Chi ha segnato e chi e' stato ammonito, col minuto.
+
+    `keyEvents` racconta la partita evento per evento, e il testo e' gia'
+    scritto in inglese per esteso — "Goal! Parma 0, Torino 1. Giovanni Simeone
+    (Torino) left footed shot... Assisted by Rafik Belghali". A noi servono i
+    pezzi, non la frase: marcatore, minuto, assist, squadra.
+    """
+    gol, cartellini = [], []
+    for e in d.get("keyEvents") or []:
+        tipo = ((e.get("type") or {}).get("text") or "")
+        minuto = ((e.get("clock") or {}).get("displayValue") or "").strip()
+        squadra = ((e.get("team") or {}).get("displayName") or "")
+        gente = [
+            (x.get("athlete") or {}).get("displayName")
+            for x in (e.get("participants") or [])
+        ]
+        gente = [x for x in gente if x]
+        if e.get("scoringPlay"):
+            gol.append({
+                "minuto": minuto,
+                "squadra": squadra,
+                "marcatore": gente[0] if gente else None,
+                "assist": gente[1] if len(gente) > 1 else None,
+                # "Goal - Penalty", "Own Goal", "Goal - Header": il dettaglio
+                # sta nel tipo, e distinguere un autogol da un gol conta.
+                "tipo": tipo,
+            })
+        elif "Card" in tipo:
+            cartellini.append({
+                "minuto": minuto,
+                "squadra": squadra,
+                "giocatore": gente[0] if gente else None,
+                "rosso": "Red" in tipo,
+            })
+    return gol, cartellini
+
+
+def _formazioni(d: dict) -> dict:
+    """Titolari, panchina e cambi, per lato.
+
+    ESPN li da' gia' con numero di maglia, ruolo e chi e' entrato per chi: e'
+    tutto nella stessa risposta del tabellino, che scarichiamo da settembre e
+    di cui finora tenevamo solo le statistiche di squadra.
+    """
+    fuori: dict[str, dict] = {}
+    for t in d.get("rosters") or []:
+        lato = t.get("homeAway")
+        if lato not in ("home", "away"):
+            continue
+        giocatori = []
+        for g in t.get("roster") or []:
+            a = g.get("athlete") or {}
+            if not a.get("displayName"):
+                continue
+            giocatori.append({
+                "nome": a.get("displayName"),
+                "maglia": g.get("jersey"),
+                "ruolo": (g.get("position") or {}).get("abbreviation"),
+                "titolare": bool(g.get("starter")),
+                "entrato": bool(g.get("subbedIn")),
+                "uscito": bool(g.get("subbedOut")),
+            })
+        if giocatori:
+            fuori[lato] = {
+                "squadra": (t.get("team") or {}).get("displayName"),
+                "modulo": t.get("formation"),
+                "giocatori": giocatori,
+            }
+    return fuori
+
+
+def dettaglio(lega_espn: str, id_evento: str) -> dict:
+    """Tutto quello che ESPN sa di una partita, in **una** richiesta.
+
+    Prima si chiedeva la stessa pagina e si teneva solo il tabellino, buttando
+    via gol, cartellini e formazioni che erano li' dentro. Separarli in piu'
+    richieste sarebbe stato tre volte il traffico per gli stessi dati.
+    """
     d = _chiedi(f"{BASE}/{lega_espn}/summary?event={id_evento}")
     if not d:
-        return {}
+        return {"stat": {}, "gol": [], "cartellini": [], "formazioni": {}}
+    gol, cartellini = _gol_e_cartellini(d)
+    return {
+        "stat": _statistiche(d),
+        "gol": gol,
+        "cartellini": cartellini,
+        "formazioni": _formazioni(d),
+    }
+
+
+def _statistiche(d: dict) -> dict[str, tuple[float, float]]:
+    """Le statistiche di squadra. Dizionario vuoto se ESPN non le ha."""
     squadre = d.get("boxscore", {}).get("teams", [])
     if len(squadre) != 2:
         return {}
@@ -467,13 +565,30 @@ def aggiorna(slug: str, squadre_nostre: list[str], da: date, a: date,
     loro = sorted({p["casa"] for p in grezze} | {p["ospite"] for p in grezze})
     mappa, non_abbinati = abbina(loro, squadre_nostre)
 
-    nuove = 0
+    nuove = recuperi = 0
     for p in grezze:
-        if p["id"] in archivio and archivio[p["id"]].get("stat"):
+        gia = archivio.get(p["id"]) or {}
+        # Si riscarica se manca il tabellino **oppure** se manca la parte nuova
+        # — gol, cartellini, formazioni — che prima non salvavamo. Cosi' il
+        # recupero dello storico avviene da solo, senza uno script a parte.
+        completo = gia.get("stat") and "formazioni" in gia
+        if completo:
             continue
-        stat = tabellino(lega, p["id"])
-        archivio[p["id"]] = {**p, "stat": {k: list(v) for k, v in stat.items()}}
+        if recuperi >= MASSIMO_RECUPERI:
+            # Lo storico si recupera in piu' notti invece che in una sola: duemila
+            # richieste di fila a un servizio che ci regala i dati sono maleducazione,
+            # e un turno che dura mezz'ora e' un turno che prima o poi viene ucciso.
+            break
+        d = dettaglio(lega, p["id"])
+        archivio[p["id"]] = {
+            **p,
+            "stat": {k: list(v) for k, v in d["stat"].items()},
+            "gol": d["gol"],
+            "cartellini": d["cartellini"],
+            "formazioni": d["formazioni"],
+        }
         nuove += 1
+        recuperi += 1
         time.sleep(0.15)          # gentilezza verso un endpoint che ci regala i dati
 
     if nuove:
@@ -492,6 +607,9 @@ def aggiorna(slug: str, squadre_nostre: list[str], da: date, a: date,
             casa=casa, ospite=ospite,
             gol_casa=p["gol_casa"], gol_ospite=p["gol_ospite"],
             stat={k: tuple(v) for k, v in (p.get("stat") or {}).items()},
+            gol=p.get("gol") or [],
+            cartellini=p.get("cartellini") or [],
+            formazioni=p.get("formazioni") or {},
         ))
     fuori.sort(key=lambda x: x.data)
     # `mappa` va da ESPN ai nostri nomi; qui serve il contrario. Il nome esteso

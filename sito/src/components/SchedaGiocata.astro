@@ -29,6 +29,28 @@ const dataLunga = giorno.toLocaleDateString("it-IT", {
 });
 
 const st = p.statistiche;
+
+/* I gol portano il nome squadra come lo scrive ESPN ("AS Roma"), mentre noi
+   pubblichiamo la forma corta ("Roma"). Per sapere da che lato sta una rete si
+   confronta col nome che ESPN usa nelle formazioni della stessa partita. */
+const formaCasa = p.formazioni?.home?.squadra ?? p.casa_esteso ?? p.casa;
+
+/* "Goal - Penalty", "Own Goal", "Goal - Header": il dettaglio conta, ma in
+   inglese in mezzo a una pagina italiana no. */
+/* ESPN firma i gol col suo nome ("Internazionale") mentre il resto della
+   pagina usa il nostro ("Inter"). Due nomi per la stessa squadra nella stessa
+   schermata si leggono come un errore, non come due fonti. */
+const nostroNome = (s: string) =>
+  s === formaCasa ? p.casa : s === p.formazioni?.away?.squadra ? p.ospite : s;
+
+const tipoGol = (t: string) => {
+  const x = t.toLowerCase();
+  if (x.includes("own")) return "autogol";
+  if (x.includes("penalty")) return "su rigore";
+  if (x.includes("header")) return "di testa";
+  if (x.includes("free")) return "su punizione";
+  return "";
+};
 const etichette = ["1", "X", "2"];
 const colori = ["var(--s1)", "var(--s2)", "var(--s3)"];
 
@@ -128,6 +150,78 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 }
 
 {
+  p.gol?.length > 0 && (
+    <section>
+      <div class="hd">
+        <h2>I gol</h2>
+        <p>Chi ha segnato, quando, e su assist di chi.</p>
+      </div>
+      <div class="gol">
+        {p.gol.map((g: any) => (
+          <div class={`rete ${g.squadra === formaCasa ? "di-casa" : "di-fuori"}`}>
+            <span class="minuto mono">{g.minuto}</span>
+            <span class="chi">
+              <b>{g.marcatore ?? "—"}</b>
+              {g.assist && <small>assist di {g.assist}</small>}
+              {g.tipo && g.tipo !== "Goal" && <em>{tipoGol(g.tipo)}</em>}
+            </span>
+            <span class="squadra-gol">{nostroNome(g.squadra)}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+{
+  (p.formazioni?.home || p.formazioni?.away) && (
+    <section>
+      <div class="hd">
+        <h2>Le formazioni</h2>
+        <p>
+          Chi è sceso in campo dall'inizio, e chi è entrato a partita in corso.
+        </p>
+      </div>
+      <div class="formazioni">
+        {["home", "away"].map((lato) =>
+          p.formazioni[lato] ? (
+            <div class="undici">
+              <h3>
+                {lato === "home" ? p.casa : p.ospite}
+                {p.formazioni[lato].modulo && (
+                  <span class="modulo mono">{p.formazioni[lato].modulo}</span>
+                )}
+              </h3>
+              <ol class="titolari">
+                {p.formazioni[lato].giocatori
+                  .filter((g: any) => g.titolare)
+                  .map((g: any) => (
+                    <li>
+                      <span class="maglia mono">{g.maglia ?? "—"}</span>
+                      <span class="nome">{g.nome}</span>
+                      <span class="ruolo">{g.ruolo}</span>
+                      {g.uscito && <span class="cambio">↓</span>}
+                    </li>
+                  ))}
+              </ol>
+              {p.formazioni[lato].giocatori.some((g: any) => g.entrato) && (
+                <p class="entrati">
+                  <b>Entrati:</b>{" "}
+                  {p.formazioni[lato].giocatori
+                    .filter((g: any) => g.entrato)
+                    .map((g: any) => g.nome)
+                    .join(", ")}
+                </p>
+              )}
+            </div>
+          ) : null,
+        )}
+      </div>
+    </section>
+  )
+}
+
+{
   st && (
     <section>
       <div class="hd">
@@ -191,6 +285,104 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 </section>
 
 <style>
+  /* --- i gol -------------------------------------------------------- */
+  .gol {
+    border: 1px solid var(--rule);
+  }
+  .rete {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: baseline;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .rete:last-child {
+    border-bottom: 0;
+  }
+  .rete .minuto {
+    color: var(--s1);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .rete .chi b {
+    font-size: 14px;
+  }
+  .rete .chi small,
+  .rete .chi em {
+    display: block;
+    font-size: 11.5px;
+    color: var(--ink-3);
+    font-style: normal;
+    margin-top: 2px;
+  }
+  .rete .chi em {
+    color: var(--s2);
+  }
+  .rete .squadra-gol {
+    font-size: 11.5px;
+    color: var(--ink-3);
+    text-align: right;
+  }
+
+  /* --- le formazioni ------------------------------------------------- */
+  .formazioni {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .undici {
+    background: var(--paper);
+    padding: 14px 16px 16px;
+  }
+  .undici h3 {
+    font-size: 14px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .undici .modulo {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--s1);
+  }
+  .titolari {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .titolari li {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr) auto auto;
+    gap: 8px;
+    align-items: baseline;
+    padding: 3px 0;
+    font-size: 13px;
+  }
+  .titolari .maglia {
+    color: var(--ink-3);
+    font-size: 11.5px;
+    text-align: right;
+  }
+  .titolari .ruolo {
+    font-size: 10.5px;
+    color: var(--ink-3);
+    font-family: var(--mono);
+  }
+  .titolari .cambio {
+    color: var(--s1);
+    font-size: 11px;
+  }
+  .entrati {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
   .tabellone {
     /* h1 ma non deve sembrare un titolo di testo: i margini e il peso del
        carattere li detta il tabellone, non il foglio di stile globale. */
