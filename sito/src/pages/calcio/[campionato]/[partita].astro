@@ -24,13 +24,57 @@ const giorno = new Date(p.data + "T00:00:00");
    giorno dopo vuole il risultato, e il risultato nel titolo e' anche l'unica
    cosa che distingue questa pagina dalle altre mille agli occhi di un motore
    di ricerca. */
+/* "statistiche" nel titolo non e' riempitivo: delle 59 ricerche che in tre
+   mesi hanno mostrato il sito, la forma piu' frequente e' esattamente
+   "statistiche squadra A - squadra B", seguita da "quote squadra A squadra B".
+   Il titolo deve contenere le parole con cui la gente cerca, altrimenti
+   Google ci accosta alla ricerca ma con poca convinzione — ed e' il motivo
+   per cui la posizione media e' 41. */
 const titolo = p.giocata
-  ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}`
-  : `${p.casa} — ${p.ospite}`;
+  ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}: statistiche`
+  : `${p.casa} — ${p.ospite}: statistiche, probabilità e quote`;
 const descrizione = p.giocata
   ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}: risultato, statistiche `
     + `della partita e cosa diceva il nostro modello prima che si giocasse.`
-  : `Statistiche e numeri di ${p.casa} contro ${p.ospite}.`;
+  : `${p.casa} — ${p.ospite}: statistiche delle due squadre, probabilità del `
+    + `modello e quote del mercato a confronto.`;
+
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "SportsEvent",
+  name: p.giocata
+    ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}`
+    : `${p.casa} — ${p.ospite}`,
+  startDate: p.ora ? `${p.data}T${p.ora}:00` : p.data,
+  eventStatus: p.giocata
+    ? "https://schema.org/EventScheduled"
+    : "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  sport: "Soccer",
+  competitor: [
+    {
+      "@type": "SportsTeam",
+      name: p.casa,
+      /* Il nome esteso — "AFC Bournemouth" dove noi scriviamo "Bournemouth" —
+         e' quello con cui si cerca su Google. Sta qui e non in pagina: ai
+         lettori la forma corta basta, al motore di ricerca serve sapere che
+         sono la stessa squadra. */
+      ...(p.casa_esteso ? { alternateName: p.casa_esteso } : {}),
+    },
+    {
+      "@type": "SportsTeam",
+      name: p.ospite,
+      ...(p.ospite_esteso ? { alternateName: p.ospite_esteso } : {}),
+    },
+  ],
+  superEvent: { "@type": "SportsOrganization", name: lega?.nome },
+  ...(p.giocata
+    ? {
+        description: `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}, `
+          + `${lega?.nome}: risultato e statistiche della partita.`,
+      }
+    : {}),
+};
 
 const c = p.stat_casa, o = p.stat_ospite;
 const fc = p.forma_casa, fo = p.forma_ospite;
@@ -75,6 +119,16 @@ if (p.dettaglio) {
 ---
 
 <Base titolo={titolo} descrizione={descrizione}>
+  {/* Dati strutturati: dicono a Google *cosa* e' questa pagina, non solo cosa
+      c'e' scritto sopra. Una partita fra due squadre, in una data, in un
+      campionato — e, quando e' finita, com'e' andata. Senza, una scheda
+      partita e' indistinguibile da una pagina qualsiasi che nomina due
+      squadre, ed e' una delle ragioni per cui finiamo in quarta pagina.
+
+      Sta nel corpo e non nella testa perche' il layout e' condiviso: a Google
+      va bene lo stesso, JSON-LD si legge ovunque nel documento. */}
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+
   {/* Due pagine allo stesso indirizzo: prima del fischio l'anteprima,
       dopo il risultato con quello che dicevamo prima. Lo stesso indirizzo
       di proposito — e' quello che Google ha gia' indicizzato, e prima

@@ -231,7 +231,7 @@ def numeri_squadra(s, conv: float) -> dict:
     }
 
 
-def elabora(c, storico, stagione, cal) -> dict | None:
+def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None) -> dict | None:
     """Tutto quello che serve al sito per un campionato.
 
     `stagione` sono le partite della stagione in corso — poche, a inizio anno.
@@ -240,6 +240,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
     """
     if len(storico) < 100:
         return None
+
+    estesi = nomi_estesi or {}
 
     modello = ModelloCalcio().fit([p.incontro for p in storico])
     # La conversione media serve un campione ampio: si prende dallo storico
@@ -373,6 +375,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
         schede.append({
             **riga,
             "campionato": c.slug,
+            "casa_esteso": estesi.get(p.casa),
+            "ospite_esteso": estesi.get(p.ospite),
             "dettaglio": dettaglio,
             "stat_casa": numeri_squadra(sc, conv) if sc else None,
             "stat_ospite": numeri_squadra(so, conv) if so else None,
@@ -428,6 +432,8 @@ def elabora(c, storico, stagione, cal) -> dict | None:
             "id": chiave,
             "campionato": c.slug,
             "casa": i.casa, "ospite": i.ospite,
+            "casa_esteso": estesi.get(i.casa),
+            "ospite_esteso": estesi.get(i.ospite),
             "data": i.data.isoformat(), "ora": "",
             "giocata": True,
             "gol_casa": i.punti_casa, "gol_ospite": i.punti_ospite,
@@ -888,6 +894,7 @@ def main() -> int:
         # metterebbe in gara squadre retrocesse anni fa, e una somiglianza di
         # troppo e' precisamente il modo in cui i gol finiscono nella squadra
         # sbagliata.
+        nomi_estesi: dict[str, str] = {}
         in_corso = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
         # Stesso ripiego di `elabora`: senza, con football-data giu' l'insieme
         # e' vuoto e ESPN non viene interrogato.
@@ -900,14 +907,15 @@ def main() -> int:
             or viste
         )
         if squadre_note:
-            recenti, _ = espn.aggiorna(c.slug, squadre_note, INIZIO_STAGIONE, oggi)
+            recenti, _, estesi = espn.aggiorna(c.slug, squadre_note, INIZIO_STAGIONE, oggi)
+            nomi_estesi.update(estesi)
             storico, arricchite, aggiunte = fondi(storico, recenti, c.slug)
             if aggiunte or arricchite:
                 print(f"  {c.etichetta:34s} ESPN: +{aggiunte} partite,"
                       f" {arricchite} arricchite")
 
         stagione = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
-        dati = elabora(c, storico, stagione, cal)
+        dati = elabora(c, storico, stagione, cal, nomi_estesi)
         if not dati:
             print(f"  {c.etichetta:34s} dati insufficienti, salto")
             continue

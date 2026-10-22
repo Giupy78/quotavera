@@ -456,7 +456,7 @@ def aggiorna(slug: str, squadre_nostre: list[str], da: date, a: date,
     """
     lega = LEGHE.get(slug)
     if not lega:
-        return [], []
+        return [], [], {}
 
     archivio = carica_archivio(slug)
     grezze = partite_finite(lega, da, a)
@@ -494,4 +494,10 @@ def aggiorna(slug: str, squadre_nostre: list[str], da: date, a: date,
             stat={k: tuple(v) for k, v in (p.get("stat") or {}).items()},
         ))
     fuori.sort(key=lambda x: x.data)
-    return fuori, non_abbinati
+    # `mappa` va da ESPN ai nostri nomi; qui serve il contrario. Il nome esteso
+    # di ESPN — "AFC Bournemouth", "Internazionale" — e' quello con cui la gente
+    # cerca davvero su Google, mentre noi pubblichiamo la forma corta di
+    # football-data. Non lo mettiamo in pagina: finisce nei dati strutturati
+    # come nome alternativo, che e' esattamente il posto giusto.
+    estesi = {nostro: espn for espn, nostro in mappa.items() if espn != nostro}
+    return fuori, non_abbinati, estesi

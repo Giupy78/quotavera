@@ -61,11 +61,15 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
     {" · "}<span style="text-transform:capitalize">{dataLunga}</span>
   </p>
 
-  <div class="tabellone">
-    <div class="squadra casa">{p.casa}</div>
-    <div class="punteggio mono">{p.gol_casa}<i>–</i>{p.gol_ospite}</div>
-    <div class="squadra">{p.ospite}</div>
-  </div>
+  {/* Il tabellone *e'* il titolo della pagina, quindi e' un h1 e non un div.
+      Prima non c'era nessun h1: millecinquecento pagine senza una riga che
+      dicesse a Google di cosa parlano, mentre le ricerche che ci trovano sono
+      quasi tutte "statistiche squadra A - squadra B". */}
+  <h1 class="tabellone">
+    <span class="squadra casa">{p.casa}</span>
+    <span class="punteggio mono">{p.gol_casa}<i>–</i>{p.gol_ospite}</span>
+    <span class="squadra">{p.ospite}</span>
+  </h1>
 
   {st && (
     <p class="sotto">
@@ -188,6 +192,10 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 
 <style>
   .tabellone {
+    /* h1 ma non deve sembrare un titolo di testo: i margini e il peso del
+       carattere li detta il tabellone, non il foglio di stile globale. */
+    margin: 0;
+    font-weight: 400;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     gap: 18px;
