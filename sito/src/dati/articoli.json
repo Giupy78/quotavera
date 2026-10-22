@@ -1,5 +1,5 @@
 {
- "data": "2026-10-21",
+ "data": "2026-10-22",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -292,7 +292,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 29 gol in 10 partite, 2.9 a incontro.",
+      "Nella 9ª giornata sono stati segnati 33 gol in 11 partite, 3.0 a incontro.",
       "Il risultato più netto è stato Betis 2-5 Barcelona: Barcelona ha vinto con 3 gol di scarto."
      ]
     },
@@ -347,16 +347,16 @@
     },
     {
      "tipo": "fragilita",
-     "titolo": "Levante non tiene il vantaggio",
-     "testo": "Avanti al riposo 10 volte nelle ultime stagioni, non ha vinto 5 di quelle partite. Nessuno in campionato ne butta via tanti.",
-     "numero": "50%",
+     "titolo": "Vallecano non tiene il vantaggio",
+     "testo": "Avanti al riposo 32 volte nelle ultime stagioni, non ha vinto 15 di quelle partite. Nessuno in campionato ne butta via tanti.",
+     "numero": "47%",
      "campionato": "LaLiga",
      "bandiera": "🇪🇸",
      "slug": "laliga",
      "squadre": [
-      "Levante"
+      "Vallecano"
      ],
-     "campione": 10
+     "campione": 32
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1787,7 +1787,7 @@
      "righe": [
       "In testa c'è Stockport con 22 punti in 11 partite.",
       "Bradford ha 21 punti ma i tiri in porta ne direbbero 16.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Barnsley, ferma a 8 punti contro i 14.5 attesi dal gioco."
+      "All'opposto Barnsley, ferma a 8 punti contro i 14.4 attesi dal gioco."
      ]
     }
    ],
@@ -1874,6 +1874,21 @@
     }
    ],
    "sorprese": [
+    {
+     "campionato": "League One",
+     "bandiera": "🏴",
+     "slug": "league-one",
+     "data": "2026-10-21",
+     "casa": "Reading",
+     "ospite": "Leyton Orient",
+     "gol_casa": 1,
+     "gol_ospite": 0,
+     "in_porta_casa": 2,
+     "in_porta_ospite": 8,
+     "vincitore": "Reading",
+     "perdente": "Leyton Orient",
+     "scarto_tiri": 6
+    },
     {
      "campionato": "League One",
      "bandiera": "🏴",
@@ -1973,28 +1988,28 @@
     {
      "tipo": "rimonte",
      "titolo": "Barnet non molla all'intervallo",
-     "testo": "Sotto al riposo 12 volte nelle ultime stagioni, ha finito vincendo 3: è la quota di rimonte più alta del campionato.",
-     "numero": "25%",
+     "testo": "Sotto al riposo 13 volte nelle ultime stagioni, ha finito vincendo 3: è la quota di rimonte più alta del campionato.",
+     "numero": "23%",
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
      "squadre": [
       "Barnet"
      ],
-     "campione": 12
+     "campione": 13
     },
     {
      "tipo": "fragilita",
-     "titolo": "Tranmere non tiene il vantaggio",
-     "testo": "Avanti al riposo 41 volte nelle ultime stagioni, non ha vinto 17 di quelle partite. Nessuno in campionato ne butta via tanti.",
+     "titolo": "Barnet non tiene il vantaggio",
+     "testo": "Avanti al riposo 17 volte nelle ultime stagioni, non ha vinto 7 di quelle partite. Nessuno in campionato ne butta via tanti.",
      "numero": "41%",
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
      "squadre": [
-      "Tranmere"
+      "Barnet"
      ],
-     "campione": 41
+     "campione": 17
     },
     {
      "tipo": "sorpresa_mercato",
