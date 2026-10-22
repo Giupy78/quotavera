@@ -383,7 +383,14 @@ class PartitaFutura:
         banco al dettaglio. Il filtro sul margine serve a saltare l'exchange
         quando il mercato e' ancora vuoto.
         """
-        return _primo_credibile(self.quote, ("betfair", "media", "bet365", "massimo"))
+        return _primo_credibile(
+            self.quote,
+            # "mercato_unico" per ultimo: e' il prezzo di un solo operatore,
+            # preso da ESPN quando football-data e' indietro col calendario.
+            # Meglio di niente — senza, il sito non puo' dire nulla sul mercato
+            # per giorni — ma non e' un confronto, e chi legge deve saperlo.
+            ("betfair", "media", "bet365", "massimo", "mercato_unico"),
+        )
 
 
 def ora_italiana(orario: str, giorno: date) -> str:

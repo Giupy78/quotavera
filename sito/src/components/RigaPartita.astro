@@ -73,6 +73,11 @@ const quote = p.quote.massimo ?? p.quote.media ?? p.quote.bet365 ?? null;
   <div class="margine mono">
     <span class="etichetta-margine">margine</span>
     {p.margine !== null ? pct(p.margine, 1) : "—"}
+    {/* Un pallino quando il prezzo viene da un operatore solo invece che dal
+        confronto fra otto. Non e' un dettaglio tecnico: un margine dell'8% di
+        un banco al dettaglio e uno del 3% di un exchange non sono lo stesso
+        numero, e chi legge la colonna deve poterli distinguere. */}
+    {p.quote_da === "unico" && <i class="unico" title="prezzo di un solo operatore">•</i>}
   </div>
 </a>
 
@@ -159,6 +164,11 @@ const quote = p.quote.massimo ?? p.quote.media ?? p.quote.bet365 ?? null;
     font-size: 10.5px;
   }
 
+  .unico {
+    color: var(--s2);
+    font-style: normal;
+    margin-left: 3px;
+  }
   .margine {
     text-align: right;
     font-size: 13px;

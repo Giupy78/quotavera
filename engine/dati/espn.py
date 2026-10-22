@@ -448,6 +448,47 @@ def partite_finite(lega_espn: str, da: date, a: date) -> list[dict]:
     return fuori
 
 
+def _americana(valore) -> float | None:
+    """Da quota americana a decimale. +150 -> 2.50, -200 -> 1.50."""
+    if valore in (None, ""):
+        return None
+    try:
+        v = float(str(valore).replace("+", ""))
+    except ValueError:
+        return None
+    if v == 0:
+        return None
+    return round(1 + (v / 100 if v > 0 else 100 / abs(v)), 3)
+
+
+def _quote_1x2(gara: dict) -> tuple[float, float, float] | None:
+    """Le quote 1-X-2, se ESPN le espone, gia' in decimale.
+
+    Stanno in tre posti diversi della stessa struttura — casa e trasferta sotto
+    `moneyline`, il pareggio sotto `drawOdds` — e in formato americano, perche'
+    l'endpoint e' quello del sito americano di ESPN.
+
+    **Non sono un confronto fra operatori**: vengono da un solo bookmaker. Non
+    sostituiscono quelle di football-data, che ne porta otto e permette di
+    calcolare quanto si tiene il banco davvero; servono quando football-data e'
+    indietro, che e' spesso, e il sito altrimenti non puo' dire niente sul
+    mercato. Chi legge deve saperlo, e infatti la pagina lo scrive.
+    """
+    o = (gara.get("odds") or [None])[0]
+    if not o:
+        return None
+    ml = o.get("moneyline") or {}
+    def lato(nome):
+        v = (ml.get(nome) or {})
+        chiuso = (v.get("close") or v.get("open") or {})
+        return _americana(chiuso.get("odds"))
+    casa, ospite = lato("home"), lato("away")
+    pari = _americana((o.get("drawOdds") or {}).get("moneyLine"))
+    if not (casa and pari and ospite):
+        return None
+    return (casa, pari, ospite)
+
+
 def partite_in_programma(lega_espn: str, da: date, a: date) -> list[dict]:
     """Le partite ancora da giocare, coi nomi ancora quelli di ESPN.
 
@@ -486,6 +527,7 @@ def partite_in_programma(lega_espn: str, da: date, a: date) -> list[dict]:
                     "ora": quando[11:16],
                     "casa": lati["home"]["team"]["displayName"],
                     "ospite": lati["away"]["team"]["displayName"],
+                    "quote": _quote_1x2(g),
                 })
             except (KeyError, TypeError):
                 continue
@@ -519,7 +561,7 @@ def in_programma(slug: str, squadre_nostre: list[str], da: date, a: date) -> lis
             int(p["ora"][:2]), int(p["ora"][3:5]), tzinfo=UTC,
         ).astimezone(ROMA)
         fuori.append({"data": quando.date(), "ora": quando.strftime("%H:%M"),
-                      "casa": casa, "ospite": ospite})
+                      "casa": casa, "ospite": ospite, "quote": p.get("quote")})
     return fuori
 
 

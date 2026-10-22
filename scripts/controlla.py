@@ -162,26 +162,32 @@ def controlla() -> tuple[list[str], list[str]]:
                 continue
             ultima = _ultima_partita_nel_csv(f)
             if ultima and (oggi - ultima).days > FOOTBALL_DATA_FERMO:
-                fonti_ferme["football-data"].append(
-                    f"{nomi[slug]} (al {ultima})"
-                )
+                fonti_ferme["football-data"].append(nomi[slug])
 
     # Il verdetto sulle fonti: ferme tutte e due vuol dire che non arrivera'
     # piu' niente, e quello e' un guaio. Una sola, con l'altra che copre, e'
     # una cosa da sapere e basta.
-    if fonti_ferme["espn"] and fonti_ferme["football-data"]:
+    # Ciechi si e' su **un campionato**, non in generale: ESPN fermo sulla Pro
+    # League e football-data fermo sulla Ligue 2 sono due avvisi, non un guaio,
+    # perche' su ciascuno dei due l'altra fonte sta lavorando. La prima versione
+    # confrontava le due liste senza intersecarle e gridava al disastro ogni
+    # volta che c'era un ritardo da una parte e uno dall'altra.
+    al_buio = sorted(set(fonti_ferme["espn"]) & set(fonti_ferme["football-data"]))
+    if al_buio:
         guai.append(
-            f"ferme tutt'e due le fonti: ESPN su {len(fonti_ferme['espn'])} "
-            f"campionati e football-data su {len(fonti_ferme['football-data'])}. "
-            f"Da qui in poi non arriva piu' niente."
+            f"nessuna fonte aggiornata per: {', '.join(al_buio[:4])}"
+            + (f" e altri {len(al_buio) - 4}" if len(al_buio) > 4 else "")
+            + ". Li' non arriva piu' niente."
         )
-    else:
-        for fonte, elenco in fonti_ferme.items():
-            if elenco:
-                avvisi.append(
-                    f"{fonte} fermo su {len(elenco)} campionati "
-                    f"(es. {elenco[0]}) - l'altra fonte sta coprendo"
-                )
+    for fonte, elenco in fonti_ferme.items():
+        restanti = [x for x in elenco if x.split(" (")[0] not in al_buio]
+        if restanti:
+            avvisi.append(
+                (f"{fonte} fermo sulla {restanti[0]} - l'altra fonte sta coprendo"
+                 if len(restanti) == 1 else
+                 f"{fonte} fermo su {len(restanti)} campionati "
+                 f"(es. {restanti[0]}) - l'altra fonte sta coprendo")
+            )
 
     # --- i pronostici tornano a casa? -------------------------------------
     #

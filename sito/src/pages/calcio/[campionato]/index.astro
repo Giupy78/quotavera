@@ -124,10 +124,12 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     <div class="hd">
       <h2>Calendario</h2>
       <p>
-        La barra è la probabilità del modello. Le quote, dove ci sono, sono le
-        migliori disponibili: il trattino vuol dire che il mercato non le ha
-        ancora esposte — il calendario arriva da ESPN, le quote da
-        football-data, e la seconda è più lenta della prima.
+        La barra è la probabilità del modello. Dove c'è un
+        {" "}<b style="color:var(--s2)">•</b> accanto al margine, il prezzo
+        viene da <b>un solo operatore</b> e non dal confronto fra otto: succede
+        quando football-data è indietro col calendario, cioè spesso. Un margine
+        dell'8% di un banco al dettaglio e uno del 3% di un exchange non sono
+        lo stesso numero.
       </p>
     </div>
     {

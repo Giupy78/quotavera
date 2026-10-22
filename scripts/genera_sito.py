@@ -356,7 +356,12 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
                 continue
             partite_lega.append(PartitaFutura(
                 campionato=c.slug, data=f["data"], ora=f["ora"],
-                casa=f["casa"], ospite=f["ospite"], quote={},
+                casa=f["casa"], ospite=f["ospite"],
+                # Le quote di ESPN sono di un operatore solo. Entrano sotto una
+                # chiave tutta loro, cosi' si riconoscono dopo e la pagina puo'
+                # dire da dove vengono invece di farle passare per un confronto
+                # fra banchi, che non sono.
+                quote={"mercato_unico": tuple(f["quote"])} if f.get("quote") else {},
             ))
             aggiunte_cal += 1
         if aggiunte_cal:
@@ -401,6 +406,10 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
             "margine": arrotonda(margine(list(quote)), 4) if quote else None,
             "margine_migliore": (arrotonda(margine(list(p.quote["massimo"])), 4)
                                  if "massimo" in p.quote else None),
+            # Da dove vengono le quote di questa riga: il confronto fra otto
+            # operatori di football-data, oppure il singolo banco di ESPN.
+            "quote_da": ("unico" if set(p.quote) == {"mercato_unico"}
+                         else ("confronto" if p.quote else None)),
         }
         righe.append(riga)
 
