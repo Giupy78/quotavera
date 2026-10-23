@@ -1,6 +1,6 @@
 {
  "data": "2026-10-23",
- "partite_in_programma": 420,
+ "partite_in_programma": 425,
  "campionati": 22,
  "sorprese": [
   {
@@ -870,15 +870,48 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
-   "id": "werder-bremen-hoffenheim",
-   "casa": "Werder Bremen",
-   "ospite": "Hoffenheim",
-   "data": "2026-10-31",
-   "ora": "15:30",
-   "margine": 0.1101
+   "campionato": "Super League",
+   "bandiera": "🇬🇷",
+   "slug": "super-league-grecia",
+   "id": "aris-atromitos",
+   "casa": "Aris",
+   "ospite": "Atromitos",
+   "data": "2026-10-25",
+   "ora": "18:30",
+   "margine": 0.1166
+  },
+  {
+   "campionato": "Pro League",
+   "bandiera": "🇧🇪",
+   "slug": "jupiler",
+   "id": "genk-standard",
+   "casa": "Genk",
+   "ospite": "Standard",
+   "data": "2026-10-25",
+   "ora": "13:30",
+   "margine": 0.1111
+  },
+  {
+   "campionato": "League One scozzese",
+   "bandiera": "🏴",
+   "slug": "league-one-scozia",
+   "id": "alloa-queen-of-sth",
+   "casa": "Alloa",
+   "ospite": "Queen of Sth",
+   "data": "2026-10-24",
+   "ora": "16:00",
+   "margine": 0.1089
+  },
+  {
+   "campionato": "League One scozzese",
+   "bandiera": "🏴",
+   "slug": "league-one-scozia",
+   "id": "cove-rangers-east-kilbride",
+   "casa": "Cove Rangers",
+   "ospite": "East Kilbride",
+   "data": "2026-10-24",
+   "ora": "16:00",
+   "margine": 0.1073
   },
   {
    "campionato": "Bundesliga",
@@ -890,96 +923,63 @@
    "data": "2026-10-31",
    "ora": "18:30",
    "margine": 0.1065
-  },
-  {
-   "campionato": "National League",
-   "bandiera": "🏴",
-   "slug": "national-league",
-   "id": "scunthorpe-woking",
-   "casa": "Scunthorpe",
-   "ospite": "Woking",
-   "data": "2026-10-24",
-   "ora": "16:00",
-   "margine": 0.1062
-  },
-  {
-   "campionato": "National League",
-   "bandiera": "🏴",
-   "slug": "national-league",
-   "id": "boreham-wood-fylde",
-   "casa": "Boreham Wood",
-   "ospite": "Fylde",
-   "data": "2026-10-24",
-   "ora": "16:00",
-   "margine": 0.1038
-  },
-  {
-   "campionato": "National League",
-   "bandiera": "🏴",
-   "slug": "national-league",
-   "id": "gateshead-tamworth",
-   "casa": "Gateshead",
-   "ospite": "Tamworth",
-   "data": "2026-10-23",
-   "ora": "20:45",
-   "margine": 0.1032
   }
  ],
  "partite_meno_care": [
   {
-   "campionato": "Premier League",
-   "bandiera": "🏴",
-   "slug": "premier-league",
-   "id": "coventry-fulham",
-   "casa": "Coventry",
-   "ospite": "Fulham",
-   "data": "2026-10-24",
-   "ora": "16:00",
-   "margine": 0.0391
-  },
-  {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "angers-lorient",
-   "casa": "Angers",
-   "ospite": "Lorient",
-   "data": "2026-10-25",
-   "ora": "17:15",
-   "margine": 0.04
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴",
-   "slug": "championship",
-   "id": "preston-west-brom",
-   "casa": "Preston",
-   "ospite": "West Brom",
-   "data": "2026-10-24",
-   "ora": "16:00",
-   "margine": 0.0405
-  },
-  {
    "campionato": "LaLiga",
    "bandiera": "🇪🇸",
    "slug": "laliga",
-   "id": "sociedad-levante",
-   "casa": "Sociedad",
-   "ospite": "Levante",
-   "data": "2026-10-25",
-   "ora": "18:30",
-   "margine": 0.0408
+   "id": "ath-madrid-la-coruna",
+   "casa": "Ath Madrid",
+   "ospite": "La Coruna",
+   "data": "2026-10-24",
+   "ora": "21:00",
+   "margine": 0.0024
   },
   {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "auxerre-le-mans",
-   "casa": "Auxerre",
-   "ospite": "Le Mans",
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "paderborn-hamburg",
+   "casa": "Paderborn",
+   "ospite": "Hamburg",
+   "data": "2026-10-24",
+   "ora": "15:30",
+   "margine": 0.0024
+  },
+  {
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "stuttgart-mgladbach",
+   "casa": "Stuttgart",
+   "ospite": "M'gladbach",
+   "data": "2026-10-23",
+   "ora": "20:30",
+   "margine": 0.0027
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "torino-monza",
+   "casa": "Torino",
+   "ospite": "Monza",
+   "data": "2026-10-23",
+   "ora": "20:45",
+   "margine": 0.0029
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "atalanta-frosinone",
+   "casa": "Atalanta",
+   "ospite": "Frosinone",
    "data": "2026-10-25",
-   "ora": "17:15",
-   "margine": 0.0421
+   "ora": "15:00",
+   "margine": 0.0039
   }
  ]
 }
