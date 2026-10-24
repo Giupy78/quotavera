@@ -1,16 +1,16 @@
 {
- "data": "2026-10-23",
+ "data": "2026-10-24",
  "confronti": [
   {
    "tipo": "gol_lega",
    "titolo": "Il campionato dove si segna di più è Bundesliga",
-   "testo": "3,22 gol a partita, contando tutte le gare delle ultime stagioni.",
-   "numero": "3,22",
+   "testo": "3,23 gol a partita, contando tutte le gare delle ultime stagioni.",
+   "numero": "3,23",
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 971
+   "campione": 972
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,18 +21,18 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1496
+   "campione": 1497
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta più che altrove in National League",
+   "titolo": "Giocare in casa conta più che altrove in LaLiga 2",
    "testo": "La squadra di casa vince il 46% delle partite.",
    "numero": "46%",
-   "campionato": "National League",
-   "bandiera": "🏴",
-   "slug": "national-league",
+   "campionato": "LaLiga 2",
+   "bandiera": "🇪🇸",
+   "slug": "laliga-2",
    "squadre": [],
-   "campione": 155
+   "campione": 1497
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1210
+   "campione": 1211
   },
   {
    "tipo": "cartellini",
@@ -194,15 +194,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Ipswich decide presto",
-    "testo": "27 dei suoi 47 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-    "numero": "57%",
+    "testo": "27 dei suoi 48 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+    "numero": "56%",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
      "Ipswich"
     ],
-    "campione": 47
+    "campione": 48
    },
    {
     "tipo": "sorpresa_mercato",
@@ -249,16 +249,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Malaga non vince da 9 partite",
+    "titolo": "Malaga non vince da 10 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "LaLiga",
     "bandiera": "🇪🇸",
     "slug": "laliga",
     "squadre": [
      "Malaga"
     ],
-    "campione": 9
+    "campione": 10
    },
    {
     "tipo": "rimonte",
@@ -326,19 +326,6 @@
     "slug": "bundesliga",
     "squadre": [
      "Dortmund"
-    ],
-    "campione": 6
-   },
-   {
-    "tipo": "digiuno",
-    "titolo": "M'gladbach non vince da 6 partite",
-    "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
-    "campionato": "Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga",
-    "squadre": [
-     "M'gladbach"
     ],
     "campione": 6
    },
@@ -1038,19 +1025,6 @@
     "campione": 7
    },
    {
-    "tipo": "digiuno",
-    "titolo": "Vicenza non vince da 6 partite",
-    "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
-    "campionato": "Serie B",
-    "bandiera": "🇮🇹",
-    "slug": "serie-b",
-    "squadre": [
-     "Vicenza"
-    ],
-    "campione": 6
-   },
-   {
     "tipo": "fragilita",
     "titolo": "Sampdoria non tiene il vantaggio",
     "testo": "Avanti al riposo 29 volte nelle ultime stagioni, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
@@ -1095,16 +1069,16 @@
   "championship": [
    {
     "tipo": "imbattuta",
-    "titolo": "West Ham non perde da 9 partite",
+    "titolo": "Middlesbrough non perde da 10 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
-     "West Ham"
+     "Middlesbrough"
     ],
-    "campione": 9
+    "campione": 10
    },
    {
     "tipo": "digiuno",
@@ -1665,16 +1639,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Clermont non vince da 9 partite",
+    "titolo": "Clermont non vince da 10 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "Ligue 2",
     "bandiera": "🇫🇷",
     "slug": "ligue-2",
     "squadre": [
      "Clermont"
     ],
-    "campione": 9
+    "campione": 10
    },
    {
     "tipo": "rimonte",

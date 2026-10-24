@@ -1,4 +1,927 @@
 {
+ "401885079": {
+  "cartellini": [
+   {
+    "giocatore": "Saël Kumbedi",
+    "minuto": "57'",
+    "rosso": false,
+    "squadra": "VfL Wolfsburg"
+   },
+   {
+    "giocatore": "Elvis Rexhbecaj",
+    "minuto": "90'+5'",
+    "rosso": false,
+    "squadra": "VfL Wolfsburg"
+   }
+  ],
+  "casa": "VfL Bochum",
+  "data": "2026-10-23",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Timon Wellenreuther",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Cleiton",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Hauke Wahl",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Joakim Maehle",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Saël Kumbedi",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Muhammed Damar",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Vinicius Souza",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Yannick Gerhardt",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Robert Glatzel",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Fabian Reese",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Alexander Bernhardsson",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Mathys Angély",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "37",
+      "nome": "Elvis Rexhbecaj",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Kento Shiogai",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Aaron Zehnter",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Maximilian Arnold",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Bence Dárdai",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Kilian Fischer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "23",
+      "nome": "Alessio Besio",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Jakub Zielinski",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "VfL Wolfsburg"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Timo Horn",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Karol Mets",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Michael Steinwender",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Maximilian Wittek",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Sean Klaiber",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Gerrit Holtmann",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Mats Pannewig",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Tom Meyer",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Philipp Hofmann",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Koji Miyoshi",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Berkan Taz",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Tino Casali",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Leon Sawas",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "29",
+      "nome": "Mansour Ouro-Tagba",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Daniel Hanslik",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Lasse Isbruch",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "4",
+      "nome": "Yigit Karademir",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Jarne Steuckers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Charlie Patino",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Christian Rasmussen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "VfL Bochum"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Fabian Reese",
+    "minuto": "2'",
+    "squadra": "VfL Wolfsburg",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Sean Klaiber",
+    "minuto": "63'",
+    "squadra": "VfL Bochum",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 1,
+  "id": "401885079",
+  "ospite": "VfL Wolfsburg",
+  "stat": {
+   "contrasti": [
+    15.0,
+    16.0
+   ],
+   "contrasti_riusciti": [
+    8.0,
+    9.0
+   ],
+   "corner": [
+    5.0,
+    7.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    19.0,
+    9.0
+   ],
+   "fuorigioco": [
+    6.0,
+    1.0
+   ],
+   "gialli": [
+    0.0,
+    2.0
+   ],
+   "in_porta": [
+    5.0,
+    5.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    4.0,
+    4.0
+   ],
+   "passaggi": [
+    336.0,
+    576.0
+   ],
+   "passaggi_riusciti": [
+    247.0,
+    499.0
+   ],
+   "possesso": [
+    36.9,
+    63.1
+   ],
+   "respinte": [
+    23.0,
+    27.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    19.0,
+    14.0
+   ],
+   "tiri_respinti": [
+    6.0,
+    4.0
+   ]
+  }
+ },
+ "401885082": {
+  "cartellini": [
+   {
+    "giocatore": "Arkadiusz Pyrka",
+    "minuto": "7'",
+    "rosso": false,
+    "squadra": "St. Pauli"
+   },
+   {
+    "giocatore": "Abdoulie Ceesay",
+    "minuto": "26'",
+    "rosso": false,
+    "squadra": "St. Pauli"
+   },
+   {
+    "giocatore": "Raoul Petretta",
+    "minuto": "26'",
+    "rosso": false,
+    "squadra": "SV Darmstadt 98"
+   },
+   {
+    "giocatore": "Kai Klefisch",
+    "minuto": "56'",
+    "rosso": false,
+    "squadra": "SV Darmstadt 98"
+   },
+   {
+    "giocatore": "Adam Dzwigala",
+    "minuto": "65'",
+    "rosso": false,
+    "squadra": "St. Pauli"
+   },
+   {
+    "giocatore": "Eric Smith",
+    "minuto": "83'",
+    "rosso": false,
+    "squadra": "St. Pauli"
+   },
+   {
+    "giocatore": "William Mikelbrencis",
+    "minuto": "90'+2'",
+    "rosso": false,
+    "squadra": "SV Darmstadt 98"
+   }
+  ],
+  "casa": "SV Darmstadt 98",
+  "data": "2026-10-23",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Ben Voll",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Eric Smith",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Lars Ritzka",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Dávid Németh",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Joel Chima Fujita",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Mathias Rasmussen",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Connor Metcalfe",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Louis Oppie",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Arkadiusz Pyrka",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Abdoulie Ceesay",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Youssoupha Niang",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Marcus Mathiesen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Taichi Hara",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Branimir Hrgota",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Tomoya Ando",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "25",
+      "nome": "Adam Dzwigala",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Dimitar Mitov",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "22",
+      "nome": "Samuel Klein",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Ricky-Jade Jones",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Martijn Kaars",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-1-2",
+    "squadra": "St. Pauli"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Marcel Schuhen",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "49",
+      "nome": "Yannik Lührs",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Patric Pfeiffer",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Raoul Petretta",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "William Mikelbrencis",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Hiroki Akiyama",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Kai Klefisch",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Noah Weißhaupt",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Marco Richter",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "36",
+      "nome": "Milan Smit",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Fynn-Luca Lakenmacher",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Nicolas Verkooijen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Lee Ho-Jae",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Christopher Lannert",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "41",
+      "nome": "Lance Duijvestijn",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Florian Kleinhansl",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Lars Kehl",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Aleksandar Vukotic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Alexander Brunst-Zöllner",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Ibrahim El Kadiri",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-4-2",
+    "squadra": "SV Darmstadt 98"
+   }
+  },
+  "gol": [],
+  "gol_casa": 0,
+  "gol_ospite": 0,
+  "id": "401885082",
+  "ospite": "St. Pauli",
+  "stat": {
+   "contrasti": [
+    22.0,
+    14.0
+   ],
+   "contrasti_riusciti": [
+    15.0,
+    7.0
+   ],
+   "corner": [
+    2.0,
+    6.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    13.0,
+    13.0
+   ],
+   "fuorigioco": [
+    3.0,
+    2.0
+   ],
+   "gialli": [
+    3.0,
+    4.0
+   ],
+   "in_porta": [
+    0.0,
+    2.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    2.0,
+    0.0
+   ],
+   "passaggi": [
+    342.0,
+    601.0
+   ],
+   "passaggi_riusciti": [
+    269.0,
+    533.0
+   ],
+   "possesso": [
+    36.5,
+    63.5
+   ],
+   "respinte": [
+    35.0,
+    19.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    12.0,
+    18.0
+   ],
+   "tiri_respinti": [
+    7.0,
+    5.0
+   ]
+  }
+ },
  "401885084": {
   "cartellini": [
    {
