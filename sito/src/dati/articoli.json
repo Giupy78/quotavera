@@ -12,7 +12,7 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 5 gol in 1 partite, 5.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 9 gol in 3 partite, 3.0 a incontro."
      ]
     },
     {
@@ -153,32 +153,19 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 5 gol in 2 partite, 2.5 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Man City con 21 punti in 7 partite.",
-      "Man City ha 21 punti ma i tiri in porta ne direbbero 11.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Man City con 21 punti in 8 partite.",
+      "Man City ha 21 punti ma i tiri in porta ne direbbero 13.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Sunderland, ferma a 4 punti contro i 10.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
-    {
-     "tipo": "imbattuta",
-     "titolo": "Man City non perde da 7 partite",
-     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "7",
-     "campionato": "Premier League",
-     "bandiera": "🏴",
-     "slug": "premier-league",
-     "squadre": [
-      "Man City"
-     ],
-     "campione": 7
-    },
     {
      "tipo": "porta_chiusa",
      "titolo": "Brighton non subisce gol da 4 partite",
@@ -265,6 +252,21 @@
      "campionato": "Premier League",
      "bandiera": "🏴",
      "slug": "premier-league",
+     "data": "2026-10-24",
+     "casa": "Aston Villa",
+     "ospite": "Man City",
+     "gol_casa": 2,
+     "gol_ospite": 1,
+     "in_porta_casa": 2,
+     "in_porta_ospite": 7,
+     "vincitore": "Aston Villa",
+     "perdente": "Man City",
+     "scarto_tiri": 5
+    },
+    {
+     "campionato": "Premier League",
+     "bandiera": "🏴",
+     "slug": "premier-league",
      "data": "2026-09-20",
      "casa": "Man City",
      "ospite": "Sunderland",
@@ -290,7 +292,8 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 5 gol in 2 partite, 2.5 a incontro.",
+      "Il risultato più netto è stato Vallecano 0-3 Elche: Elche ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -960,15 +963,15 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 8 gol in 3 partite, 2.7 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Galatasaray con 19 punti in 8 partite.",
-      "Amedspor ha 17 punti ma i tiri in porta ne direbbero 13.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Eyupspor, ferma a 3 punti contro i 8.4 attesi dal gioco."
+      "Kasimpasa ha 16 punti ma i tiri in porta ne direbbero 11.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Eyupspor, ferma a 3 punti contro i 9.7 attesi dal gioco."
      ]
     }
    ],
@@ -1014,16 +1017,16 @@
     },
     {
      "tipo": "a_secco",
-     "titolo": "Eyupspor non segna da 5 partite",
+     "titolo": "Eyupspor non segna da 6 partite",
      "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "5",
+     "numero": "6",
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
      "slug": "superlig",
      "squadre": [
       "Eyupspor"
      ],
-     "campione": 5
+     "campione": 6
     },
     {
      "tipo": "rimonte",
@@ -1081,6 +1084,21 @@
     }
    ],
    "sorprese": [
+    {
+     "campionato": "Süper Lig",
+     "bandiera": "🇹🇷",
+     "slug": "superlig",
+     "data": "2026-10-24",
+     "casa": "Gaziantep",
+     "ospite": "Erzurumspor",
+     "gol_casa": 1,
+     "gol_ospite": 3,
+     "in_porta_casa": 7,
+     "in_porta_ospite": 3,
+     "vincitore": "Erzurumspor",
+     "perdente": "Gaziantep",
+     "scarto_tiri": 4
+    },
     {
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
@@ -1524,7 +1542,8 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 10 gol in 6 partite, 1.7 a incontro.",
+      "Il risultato più netto è stato Modena 3-0 Cesena: Modena ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -1532,7 +1551,7 @@
      "righe": [
       "In testa c'è Palermo con 19 punti in 7 partite.",
       "Palermo ha 19 punti ma i tiri in porta ne direbbero 11.9: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sampdoria, ferma a 4 punti contro i 11.0 attesi dal gioco."
+      "All'opposto Sampdoria, ferma a 5 punti contro i 12.6 attesi dal gioco."
      ]
     }
    ],
@@ -1549,6 +1568,19 @@
       "Palermo"
      ],
      "campione": 7
+    },
+    {
+     "tipo": "digiuno",
+     "titolo": "Cesena non vince da 6 partite",
+     "testo": "Il digiuno aperto più lungo del campionato.",
+     "numero": "6",
+     "campionato": "Serie B",
+     "bandiera": "🇮🇹",
+     "slug": "serie-b",
+     "squadre": [
+      "Cesena"
+     ],
+     "campione": 6
     },
     {
      "tipo": "fragilita",
@@ -1592,7 +1624,38 @@
      "campione": 1
     }
    ],
-   "sorprese": [],
+   "sorprese": [
+    {
+     "campionato": "Serie B",
+     "bandiera": "🇮🇹",
+     "slug": "serie-b",
+     "data": "2026-10-24",
+     "casa": "Avellino",
+     "ospite": "Padova",
+     "gol_casa": 0,
+     "gol_ospite": 1,
+     "in_porta_casa": 7,
+     "in_porta_ospite": 1,
+     "vincitore": "Padova",
+     "perdente": "Avellino",
+     "scarto_tiri": 6
+    },
+    {
+     "campionato": "Serie B",
+     "bandiera": "🇮🇹",
+     "slug": "serie-b",
+     "data": "2026-10-24",
+     "casa": "Cremonese",
+     "ospite": "Juve Stabia",
+     "gol_casa": 0,
+     "gol_ospite": 1,
+     "in_porta_casa": 6,
+     "in_porta_ospite": 2,
+     "vincitore": "Juve Stabia",
+     "perdente": "Cremonese",
+     "scarto_tiri": 4
+    }
+   ],
    "giornate_giocate": 8
   },
   {
@@ -1606,7 +1669,7 @@
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 6 gol in 1 partite, 6.0 a incontro.",
+      "Nella 12ª giornata sono stati segnati 15 gol in 4 partite, 3.8 a incontro.",
       "Il risultato più netto è stato Bolton 1-5 Middlesbrough: Middlesbrough ha vinto con 4 gol di scarto."
      ]
     },
@@ -1615,7 +1678,7 @@
      "righe": [
       "In testa c'è Middlesbrough con 25 punti in 12 partite.",
       "Swansea ha 23 punti ma i tiri in porta ne direbbero 16.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Norwich, ferma a 9 punti contro i 16.5 attesi dal gioco."
+      "All'opposto Derby, ferma a 7 punti contro i 13.9 attesi dal gioco."
      ]
     }
    ],
@@ -1635,16 +1698,16 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Charlton non vince da 8 partite",
+     "titolo": "Charlton non vince da 9 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Championship",
      "bandiera": "🏴",
      "slug": "championship",
      "squadre": [
       "Charlton"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "rimonte",
@@ -1684,6 +1747,19 @@
       "Burnley"
      ],
      "campione": 85
+    },
+    {
+     "tipo": "ripresa",
+     "titolo": "Charlton vive di secondi tempi",
+     "testo": "Solo 18 dei suoi 55 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "67%",
+     "campionato": "Championship",
+     "bandiera": "🏴",
+     "slug": "championship",
+     "squadre": [
+      "Charlton"
+     ],
+     "campione": 55
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1739,19 +1815,19 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League One: cosa dicono i numeri",
-   "sommario": "Stockport in testa con 22 punti, 12ª giornata archiviata.",
+   "sommario": "Huddersfield in testa con 25 punti, 12ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 3 gol in 2 partite, 1.5 a incontro.",
+      "Nella 12ª giornata sono stati segnati 6 gol in 3 partite, 2.0 a incontro.",
       "Il risultato più netto è stato Stevenage 3-0 Plymouth: Stevenage ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Stockport con 22 punti in 11 partite.",
+      "In testa c'è Huddersfield con 25 punti in 12 partite.",
       "Bradford ha 21 punti ma i tiri in porta ne direbbero 16.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Barnsley, ferma a 8 punti contro i 14.4 attesi dal gioco."
      ]
@@ -1894,19 +1970,19 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "League Two: cosa dicono i numeri",
-   "sommario": "Salford in testa con 25 punti, 12ª giornata archiviata.",
+   "sommario": "Salford in testa con 25 punti, 13ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 12ª giornata",
+     "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 35 gol in 11 partite, 3.2 a incontro."
+      "Nella 13ª giornata sono stati segnati 1 gol in 2 partite, 0.5 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Salford con 25 punti in 12 partite.",
-      "Crewe ha 21 punti ma i tiri in porta ne direbbero 14.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Cheltenham ha 21 punti ma i tiri in porta ne direbbero 14.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Crawley Town, ferma a 5 punti contro i 11.9 attesi dal gioco."
      ]
     }
@@ -1927,16 +2003,16 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Crawley Town non vince da 8 partite",
+     "titolo": "Colchester non vince da 9 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "League Two",
      "bandiera": "🏴",
      "slug": "league-two",
      "squadre": [
-      "Crawley Town"
+      "Colchester"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "porta_chiusa",
@@ -2038,7 +2114,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 12
+   "giornate_giocate": 13
   },
   {
    "slug": "national-league",
@@ -2046,20 +2122,19 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 35 punti, 13ª giornata archiviata.",
+   "sommario": "Boreham Wood in testa con 35 punti, 14ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 13ª giornata",
+     "titolo": "La 14ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 39 gol in 12 partite, 3.2 a incontro.",
-      "Il risultato più netto è stato Wealdstone 0-6 Yeovil: Yeovil ha vinto con 6 gol di scarto."
+      "Nella 14ª giornata sono stati segnati 10 gol in 2 partite, 5.0 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Boreham Wood con 35 punti in 13 partite.",
-      "Boreham Wood ha 35 punti ma i tiri in porta ne direbbero 25.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Boreham Wood ha 35 punti ma i tiri in porta ne direbbero 25.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Gateshead, ferma a 4 punti contro i 10.7 attesi dal gioco."
      ]
     }
@@ -2191,7 +2266,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 13
+   "giornate_giocate": 14
   },
   {
    "slug": "laliga-2",
@@ -2204,14 +2279,14 @@
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
+      "Nella 11ª giornata sono stati segnati 5 gol in 2 partite, 2.5 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Almeria con 24 punti in 10 partite.",
-      "Eibar ha 22 punti ma i tiri in porta ne direbbero 13.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Eibar ha 22 punti ma i tiri in porta ne direbbero 13.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Albacete, ferma a 1 punto contro i 11.2 attesi dal gioco."
      ]
     }
@@ -2351,19 +2426,20 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "2. Bundesliga: cosa dicono i numeri",
-   "sommario": "Hertha in testa con 22 punti, 9ª giornata archiviata.",
+   "sommario": "Hertha in testa con 25 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 2 gol in 2 partite, 1.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 12 gol in 5 partite, 2.4 a incontro.",
+      "Il risultato più netto è stato Magdeburg 6-1 Karlsruhe: Magdeburg ha vinto con 5 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Hertha con 22 punti in 8 partite.",
-      "Hertha ha 22 punti ma i tiri in porta ne direbbero 14.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Hertha con 25 punti in 9 partite.",
+      "Hertha ha 25 punti ma i tiri in porta ne direbbero 16.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Braunschweig, ferma a 7 punti contro i 13.2 attesi dal gioco."
      ]
     }
@@ -2371,16 +2447,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Nurnberg non perde da 8 partite",
+     "titolo": "Hertha non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "2. Bundesliga",
      "bandiera": "🇩🇪",
      "slug": "bundesliga-2",
      "squadre": [
-      "Nurnberg"
+      "Hertha"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "digiuno",
@@ -2468,21 +2544,6 @@
      "campionato": "2. Bundesliga",
      "bandiera": "🇩🇪",
      "slug": "bundesliga-2",
-     "data": "2026-09-06",
-     "casa": "Osnabruck",
-     "ospite": "Braunschweig",
-     "gol_casa": 3,
-     "gol_ospite": 1,
-     "in_porta_casa": 8,
-     "in_porta_ospite": 12,
-     "vincitore": "Osnabruck",
-     "perdente": "Braunschweig",
-     "scarto_tiri": 4
-    },
-    {
-     "campionato": "2. Bundesliga",
-     "bandiera": "🇩🇪",
-     "slug": "bundesliga-2",
      "data": "2026-09-20",
      "casa": "Hannover",
      "ospite": "Bochum",
@@ -2508,7 +2569,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 12 gol in 5 partite, 2.4 a incontro."
+      "Nella 10ª giornata sono stati segnati 15 gol in 6 partite, 2.5 a incontro."
      ]
     },
     {
@@ -2630,21 +2691,6 @@
      "vincitore": "Grenoble",
      "perdente": "Rodez",
      "scarto_tiri": 7
-    },
-    {
-     "campionato": "Ligue 2",
-     "bandiera": "🇫🇷",
-     "slug": "ligue-2",
-     "data": "2026-09-11",
-     "casa": "Dijon",
-     "ospite": "Laval",
-     "gol_casa": 3,
-     "gol_ospite": 2,
-     "in_porta_casa": 3,
-     "in_porta_ospite": 7,
-     "vincitore": "Dijon",
-     "perdente": "Laval",
-     "scarto_tiri": 4
     },
     {
      "campionato": "Ligue 2",

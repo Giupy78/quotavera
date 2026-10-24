@@ -21,18 +21,18 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1497
+   "campione": 1498
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta più che altrove in LaLiga 2",
+   "titolo": "Giocare in casa conta più che altrove in National League",
    "testo": "La squadra di casa vince il 46% delle partite.",
    "numero": "46%",
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
+   "campionato": "National League",
+   "bandiera": "🏴",
+   "slug": "national-league",
    "squadre": [],
-   "campione": 1497
+   "campione": 157
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1211
+   "campione": 1216
   },
   {
    "tipo": "cartellini",
@@ -139,19 +139,6 @@
    }
   ],
   "premier-league": [
-   {
-    "tipo": "imbattuta",
-    "titolo": "Man City non perde da 7 partite",
-    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "7",
-    "campionato": "Premier League",
-    "bandiera": "🏴",
-    "slug": "premier-league",
-    "squadre": [
-     "Man City"
-    ],
-    "campione": 7
-   },
    {
     "tipo": "porta_chiusa",
     "titolo": "Brighton non subisce gol da 4 partite",
@@ -659,16 +646,16 @@
    },
    {
     "tipo": "a_secco",
-    "titolo": "Eyupspor non segna da 5 partite",
+    "titolo": "Eyupspor non segna da 6 partite",
     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "5",
+    "numero": "6",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
      "Eyupspor"
     ],
-    "campione": 5
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -1025,6 +1012,19 @@
     "campione": 7
    },
    {
+    "tipo": "digiuno",
+    "titolo": "Cesena non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Serie B",
+    "bandiera": "🇮🇹",
+    "slug": "serie-b",
+    "squadre": [
+     "Cesena"
+    ],
+    "campione": 6
+   },
+   {
     "tipo": "fragilita",
     "titolo": "Sampdoria non tiene il vantaggio",
     "testo": "Avanti al riposo 29 volte nelle ultime stagioni, non ha vinto 14 di quelle partite. Nessuno in campionato ne butta via tanti.",
@@ -1082,16 +1082,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Charlton non vince da 8 partite",
+    "titolo": "Charlton non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Championship",
     "bandiera": "🏴",
     "slug": "championship",
     "squadre": [
      "Charlton"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "rimonte",
@@ -1131,6 +1131,19 @@
      "Burnley"
     ],
     "campione": 85
+   },
+   {
+    "tipo": "ripresa",
+    "titolo": "Charlton vive di secondi tempi",
+    "testo": "Solo 18 dei suoi 55 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "67%",
+    "campionato": "Championship",
+    "bandiera": "🏴",
+    "slug": "championship",
+    "squadre": [
+     "Charlton"
+    ],
+    "campione": 55
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1259,16 +1272,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Crawley Town non vince da 8 partite",
+    "titolo": "Colchester non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "League Two",
     "bandiera": "🏴",
     "slug": "league-two",
     "squadre": [
-     "Crawley Town"
+     "Colchester"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "porta_chiusa",
@@ -1531,16 +1544,16 @@
   "bundesliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Nurnberg non perde da 8 partite",
+    "titolo": "Hertha non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
-     "Nurnberg"
+     "Hertha"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
