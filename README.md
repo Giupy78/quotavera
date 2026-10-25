@@ -1,6 +1,6 @@
 # Quota Vera — statistiche sportive dai dati veri
 
-Stato al **28 agosto 2026**. Questo file tiene decisioni, stato e prossimi
+Stato al **25 ottobre 2026**. Questo file tiene decisioni, stato e prossimi
 passi, come il README di CondoManager. **Va aggiornato quando cambia una
 decisione**, non quando cambia un'idea: quello che non è scritto qui, la
 sessione dopo non esiste.
@@ -197,15 +197,18 @@ sì, e si misura).
 
 | Pezzo | Stato |
 |---|---|
-| Nucleo: tipi, mercato, metriche | fatto, 23 test |
-| Calcio: Dixon-Coles | fatto, 13 test |
-| Basket, tennis | fatti, 21 test — in attesa di una fonte dati vera |
-| Lettore football-data.co.uk | fatto, 15 test |
-| Statistiche di squadra | fatto, 9 test |
-| **Sito su dati veri, 22 campionati** | **fatto, 227 pagine** |
+| Nucleo: tipi, mercato, metriche | fatto |
+| Calcio: Dixon-Coles | fatto |
+| Basket, tennis | fatti — in attesa di una fonte dati vera |
+| Lettore football-data.co.uk | fatto |
+| Seconda fonte: ESPN | fatto — vedi sotto |
+| Statistiche di squadra | fatto |
+| **Sito in linea su quotavera.it** | **fatto, 2.685 pagine** |
+| **Pagine squadra, 398** | **fatte (25 ottobre)** |
 | **Track record contro la chiusura** | **fatto** |
-| Pipeline notturna | scritta, mai girata davvero |
-| Messa in linea | **manca solo questo** — vedi `DEPLOY.md` |
+| Pipeline notturna | **gira sola due volte al giorno** |
+| Sentinella sui dati pubblicati | fatta — `scripts/controlla.py` |
+| In totale | 136 test |
 
 ### Il sito
 
@@ -217,13 +220,30 @@ npm --prefix sito run dev        # http://localhost:4321
 Astro statico, senza JavaScript nel browser. Niente Tailwind: il sistema visivo
 sta in `sito/src/styles/global.css` come token CSS.
 
-**Ventidue divisioni in undici paesi** (`engine/dati/catalogo.py`), 227 pagine:
-le partite del giorno, una pagina per campionato con calendario e statistiche,
-la scheda di ogni partita, gli articoli, il confronto fra mercati, come si
-leggono le quote, il modello, il track record.
+**Ventidue divisioni in undici paesi** (`engine/dati/catalogo.py`), 2.685
+pagine: le partite del giorno, una pagina per campionato con calendario e
+statistiche, **la scheda di ogni partita** (2.233, che restano al loro
+indirizzo per tutta la stagione), **una pagina per ogni squadra** (398), gli
+articoli, il confronto fra mercati, come si leggono le quote, il modello, il
+track record.
 
 `scripts/genera_sito.py` è la cerniera: il motore calcola, lo script serializza,
-il sito disegna. È quello che il cron notturno chiama alle 04:00.
+il sito disegna. È quello che il cron chiama a mezzanotte UTC — le 02:00
+italiane d'estate — con un secondo giro a mezzogiorno UTC come rete di
+sicurezza, perché il cron di GitHub può ritardare di ore.
+
+**L'ultimo passo del turno è `scripts/controlla.py`**, e non è un test: i test
+dicono se il programma gira, la sentinella dice se quello che abbiamo appena
+pubblicato ha senso. Nasce dal difetto che si è ripetuto più volte — turni che
+finivano verdi pubblicando dati fermi. Distingue i **guai** (esce con errore) dagli
+**avvisi** (resta verde), perché una sentinella che grida sempre non la guarda
+più nessuno.
+
+**`dati/pronostici/` sta nel repository.** È l'archivio di quello che il modello
+diceva *prima* di ogni partita, e serve a due cose: mostrarlo accanto al
+risultato sulla scheda, ed essere l'elenco esatto degli indirizzi pubblicati in
+stagione — se una partita esce da tutte le liste, è da lì che si recupera la
+sua pagina invece di lasciarla diventare un 404.
 
 **Le coppe non ci sono.** football-data copre solo campionati nazionali:
 Champions, Europa League e coppe nazionali richiedono una fonte a pagamento.
@@ -308,22 +328,71 @@ pagina `/track-record/` perché chiunque possa verificarla invece di crederci.**
 
 ---
 
-## 5. Prossimi passi, in ordine
+## 5. Dove siamo con Google (25 ottobre 2026)
 
-1. **Metterlo online.** È l'unica cosa che manca e richiede i tuoi account:
-   repository GitHub, Cloudflare Pages. Istruzioni in `DEPLOY.md`.
-2. **Far girare la pipeline almeno una volta a mano** dalla scheda Actions
-   («Run workflow»), che salta il controllo dell'orario apposta.
-3. **Togliere il `noindex`** quando decidi di aprire: una variabile
-   d'ambiente su Cloudflare, non una modifica al codice.
-4. **Scrivere qualche approfondimento.** Il pezzo del giorno lo genera il
-   programma; gli articoli che restano validi oltre la giornata no.
-5. **Poi, se serve:** una fonte a pagamento per le coppe e le quote in diretta.
-   Da valutare solo quando il resto è in piedi e si vede se interessa a qualcuno.
+I numeri veri, da Search Console, perché la sessione dopo non se li inventi:
+
+| | Valore | Periodo |
+|---|---|---|
+| Impressioni | 217 | tre mesi |
+| Clic | 1 | tre mesi |
+| Posizione media | 44,6 | tre mesi |
+| Pagine indicizzate | ~1.320 | al 22 ottobre |
+| Pagine non indicizzate | ~676, quattro motivi | al 22 ottobre |
+
+**Il totale conta meno della forma della curva.** Fino all'11 ottobre le
+impressioni erano piatte a zero; dal 13 stanno fra le 15 e le 32 al giorno.
+Quasi tutte le 217 sono arrivate negli ultimi dieci giorni. L'inflessione cade
+circa tre settimane dopo il 20 settembre, il giorno in cui le schede partita
+hanno smesso di sparire dopo il fischio finale: è il tempo che Google impiega a
+ripassare e a convincersi che un indirizzo non evapora.
+
+**Posizione 44 vuol dire quarta pagina: invisibili, non penalizzati.** Il clic
+singolo non è un segnale negativo, è assenza di segnale — a quella profondità
+non ci arriva nessuno. Il numero da guardare sono le impressioni; i clic
+cominciano quando la posizione scende sotto 15-20. Attenzione a non leggere la
+posizione media come un voto: quando nuove pagine cominciano a comparire,
+entrano in fondo e tirano giù la media **mentre** la visibilità cresce.
+
+### Cosa è stato riparato il 25 ottobre
+
+- **`location` mancante** sui dati strutturati delle partite: errore critico,
+  introdotto tre giorni prima. Lo stadio lo dà ESPN nella stessa risposta.
+- **Il 404 di giornata.** Una partita giocata *oggi* non aveva pagina: usciva
+  dalle partite in programma appena arrivava il risultato, e il giro delle
+  giocate la saltava per un `>=` che doveva essere `>`. Spariva per tutto il
+  giorno e tornava alle 02:00 — un 404 nelle ore in cui quella partita si
+  cerca. Il difetto era attivo da settimane, e la salita delle impressioni è
+  avvenuta nonostante quello.
+- **Le partite senza risultato** (le due scozzesi minori, National League)
+  uscivano da tutte le liste per sempre. Ora la pagina resta, e dice che il
+  punteggio non ce l'abbiamo.
 
 ---
 
-## 6. Riferimenti
+## 6. Prossimi passi, in ordine
+
+1. **Aspettare e misurare.** Le pagine squadra sono nuove: tre settimane prima
+   di capire se Google le prende. Il segnale è impressioni in salita **e**
+   posizione media che scende sotto 30. Non i clic.
+2. **Un'immagine sociale.** Il sito non ha nessun `og:image`: chi condivide una
+   pagina su WhatsApp vede un rettangolo vuoto. Chiude anche l'avviso non
+   critico `image` di Search Console.
+3. **Guardare gli altri tre motivi** delle pagine non indicizzate. Il 404 è
+   chiuso; gli altri tre non si vedono senza aprire Search Console.
+4. **Scrivere qualche approfondimento.** Il pezzo del giorno lo genera il
+   programma; gli articoli che restano validi oltre la giornata no.
+5. **Risultati in diretta.** Richiedono JavaScript nel browser e una chiamata
+   diretta a ESPN, che può rifiutarla per via dell'origine. Da provare quando
+   il resto è assestato, sapendo che su questo terreno Diretta e Flashscore
+   sono irraggiungibili: ha senso solo come complemento alla scheda, non come
+   prodotto.
+6. **Niente fonti a pagamento finché non c'è un incasso.** Vincolo esplicito,
+   non una preferenza tecnica: coppe e quote in tempo reale restano fuori.
+
+---
+
+## 7. Riferimenti
 
 - Dixon & Coles, *Modelling Association Football Scores and Inefficiencies in
   the Football Betting Market*, Applied Statistics 46(2), 1997
