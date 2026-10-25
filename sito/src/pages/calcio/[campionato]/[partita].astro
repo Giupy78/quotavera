@@ -4,6 +4,7 @@ import MatriceRisultati from "../../../components/MatriceRisultati.astro";
 import SchedaGiocata from "../../../components/SchedaGiocata.astro";
 import campionati from "../../../dati/campionati.json";
 import schede from "../../../dati/schede.json";
+import { lumacaSquadra } from "../../../lib/indirizzi";
 
 export function getStaticPaths() {
   const leghe = Object.fromEntries(campionati.campionati.map((c) => [c.slug, c]));
@@ -531,9 +532,32 @@ if (p.dettaglio) {
   </p>
     </>
   )}
+
+  {/* Le due pagine squadra. Sono il modo in cui chi arriva qui da una ricerca
+      trova il resto del sito, e il modo in cui Google arriva a quelle pagine:
+      senza questa riga sarebbero duemila pagine partita e quattrocento pagine
+      squadra che non si parlano. */}
+  <p class="le-squadre">
+    <span>Statistiche complete:</span>
+    <a href={`/calcio/${lega.slug}/squadra/${lumacaSquadra(p.casa)}/`}>{p.casa}</a>
+    <a href={`/calcio/${lega.slug}/squadra/${lumacaSquadra(p.ospite)}/`}>{p.ospite}</a>
+  </p>
 </Base>
 
 <style>
+  .le-squadre {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 30px;
+  }
+  .le-squadre span {
+    color: var(--ink-3);
+  }
   td.media,
   th.media {
     font-family: var(--mono);

@@ -9,6 +9,7 @@ import risultati from "../../../dati/risultati.json";
 import stagione from "../../../dati/stagione.json";
 import finestre from "../../../dati/finestre.json";
 import marcatori from "../../../dati/marcatori.json";
+import { lumacaSquadra } from "../../../lib/indirizzi";
 
 export function getStaticPaths() {
   const cal = calendario.campionati as Record<string, any[]>;
@@ -304,7 +305,11 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
                       </i>
                     )}
                   </td>
-                  <td><b>{r.squadra}</b></td>
+                  <td>
+                    <a class="squadra" href={`/calcio/${lega.slug}/squadra/${lumacaSquadra(r.squadra)}/`}>
+                      <b>{r.squadra}</b>
+                    </a>
+                  </td>
                   <td class="num">{r.giocate}</td>
                   <td class="num">{r.vinte}</td>
                   <td class="num">{r.pareggiate}</td>
@@ -539,7 +544,11 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
                       const q = (v: number | null, d = 1) => (v === null ? "—" : num(v, d));
                       return (
                         <tr>
-                          <td><b>{s.squadra}</b></td>
+                          <td>
+                            <a class="squadra" href={`/calcio/${lega.slug}/squadra/${lumacaSquadra(s.squadra)}/`}>
+                              <b>{s.squadra}</b>
+                            </a>
+                          </td>
                           <td class="num">{s.partite}</td>
                           <td class="num">{num(s.gol_fatti)}</td>
                           <td class="num">{q(base("tiri"))}</td>
@@ -604,6 +613,19 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
 </Base>
 
 <style>
+  /* Il nome della squadra porta alla sua pagina. Dentro una tabella di numeri
+     un link blu e sottolineato griderebbe su ogni riga: resta del colore del
+     testo e si scopre al passaggio del mouse. */
+  a.squadra {
+    color: inherit;
+    text-decoration: none;
+  }
+  a.squadra:hover {
+    color: var(--s1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
   td.pochine {
     color: var(--ink-3);
     font-size: 11.5px;

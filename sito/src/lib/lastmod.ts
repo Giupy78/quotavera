@@ -20,6 +20,9 @@ import campionati from '../dati/campionati.json';
 import articoli from '../dati/articoli.json';
 import trackRecord from '../dati/track-record.json';
 import calendario from '../dati/calendario.json';
+import squadre from '../dati/squadre.json';
+import schede from '../dati/schede.json';
+import { lumacaSquadra } from './indirizzi';
 
 /** Quando il cron ha rigenerato i dati. È il nostro "ultimo aggiornamento". */
 const GENERATO = (campionati as { generato_il?: string }).generato_il;
@@ -91,6 +94,26 @@ export function mappaLastmod(): Map<string, string> {
       ((calendario as { campionati: Record<string, Array<{ id?: string }>> }).campionati[slug] ?? []);
     for (const partita of partite) {
       if (partita.id) segna(`/calcio/${slug}/${partita.id}/`, GENERATO);
+    }
+  }
+
+  // Pagine partita gia' giocate. La data giusta e' quella della partita, non
+  // quella di stanotte: il risultato e le statistiche non cambiano piu'.
+  // Dichiarare che si muovono ogni notte sarebbe la bugia contro cui mette in
+  // guardia il commento in testa a questo file — e sono la maggioranza delle
+  // pagine del sito, quindi sarebbe la bugia piu' grossa.
+  for (const sc of (schede as { partite: Array<{ campionato: string; id: string; data?: string; giocata?: boolean }> }).partite) {
+    if (sc.giocata && sc.data) {
+      segna(`/calcio/${sc.campionato}/${sc.id}/`, sc.data);
+    }
+  }
+
+  // Pagine squadra: le medie si spostano a ogni giornata, quindi la data di
+  // generazione e' la data vera anche qui.
+  const perLega = (squadre as { campionati: Record<string, Array<{ squadra: string }>> }).campionati;
+  for (const [slug, elenco] of Object.entries(perLega ?? {})) {
+    for (const s of elenco) {
+      segna(`/calcio/${slug}/squadra/${lumacaSquadra(s.squadra)}/`, GENERATO);
     }
   }
 

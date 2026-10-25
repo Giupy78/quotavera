@@ -1,0 +1,893 @@
+---
+import Base from "../../../../layouts/Base.astro";
+import campionati from "../../../../dati/campionati.json";
+import squadre from "../../../../dati/squadre.json";
+import classifiche from "../../../../dati/classifiche.json";
+import finestre from "../../../../dati/finestre.json";
+import marcatori from "../../../../dati/marcatori.json";
+import schede from "../../../../dati/schede.json";
+import { lumacaSquadra } from "../../../../lib/indirizzi";
+import { unisci, mediaLega } from "../../../../lib/statistiche";
+
+export function getStaticPaths() {
+  const sq = squadre.campionati as Record<string, any[]>;
+  const cl = classifiche.campionati as Record<string, any[]>;
+  const fi = finestre.campionati as Record<string, any>;
+  const mk = marcatori.campionati as Record<string, any[]>;
+  const leghe = Object.fromEntries(campionati.campionati.map((c) => [c.slug, c]));
+  const profondita = finestre.disponibili as number[];
+
+  const vie: any[] = [];
+  for (const [slug, elenco] of Object.entries(sq)) {
+    const lega = leghe[slug];
+    if (!lega) continue;
+    const dellaLega = (schede.partite as any[]).filter((p) => p.campionato === slug);
+
+    for (const s of elenco) {
+      const nome = s.squadra;
+      const sue = dellaLega.filter((p) => p.casa === nome || p.ospite === nome);
+
+      /* Il nome per esteso — "Internazionale" per "Inter" — ce l'hanno le
+         schede quando ESPN ha coperto quella partita. Serve al titolo: chi
+         cerca scrive tutte e due le forme. */
+      const esteso =
+        sue.map((p) => (p.casa === nome ? p.casa_esteso : p.ospite_esteso))
+           .find((x) => x && x !== nome) ?? null;
+
+      /* Le finestre si riducono qui a quello che serve a questa squadra: la
+         sua riga e la media del campionato. Portarsi dietro l'intero file per
+         ognuna delle 398 pagine sarebbe inutile. */
+      const perFinestra = profondita.map((n) => {
+        const righe = (fi[slug]?.dati?.[String(n)] ?? []) as any[];
+        const r = righe.find((x) => x.squadra === nome) ?? null;
+        return {
+          n,
+          composizione: fi[slug]?.composizione?.[String(n)] ?? null,
+          totale: r ? unisci(r) : null,
+          casa: r?.casa ?? null,
+          trasferta: r?.trasferta ?? null,
+          media: righe.length ? mediaLega(righe) : null,
+        };
+      });
+
+      vie.push({
+        params: { campionato: slug, squadra: lumacaSquadra(nome) },
+        props: {
+          lega, nome, esteso,
+          riga: (cl[slug] ?? []).find((r: any) => r.squadra === nome) ?? null,
+          squadreInLega: (cl[slug] ?? []).length,
+          perFinestra,
+          bomber: (mk[slug] ?? []).filter((m: any) => m.squadra === nome),
+          sue,
+        },
+      });
+    }
+  }
+  return vie;
+}
+
+const { lega, nome, esteso, riga, squadreInLega, perFinestra, bomber, sue } =
+  Astro.props;
+
+const num = (v: number, d = 1) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number, d = 0) => num(v * 100, d) + "%";
+const segnato = (v: number) => (v >= 0 ? "+" : "−") + num(Math.abs(v) * 100, 0) + "%";
+
+const profondita = finestre.disponibili as number[];
+const predefinita = finestre.predefinita as number;
+
+/* --- la forma ---------------------------------------------------------- */
+const giocate = sue
+  .filter((p: any) => p.giocata)
+  .sort((a: any, b: any) => (a.data < b.data ? -1 : 1));
+
+const esito = (p: any) => {
+  const fatti = p.casa === nome ? p.gol_casa : p.gol_ospite;
+  const subiti = p.casa === nome ? p.gol_ospite : p.gol_casa;
+  return { fatti, subiti, segno: fatti > subiti ? "V" : fatti < subiti ? "P" : "N" };
+};
+
+const forma = giocate.slice(-10);
+const prossima = sue
+  .filter((p: any) => !p.giocata && !p.senza_risultato)
+  .sort((a: any, b: any) => (a.data < b.data ? -1 : 1))[0] ?? null;
+
+const giorno = (s: string) =>
+  new Date(s + "T00:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "short" });
+
+/* --- i grafici ---------------------------------------------------------
+   Barre in HTML e CSS, non immagini e non JavaScript. Si ridimensionano con
+   la colonna senza deformare il testo, prendono i colori dai token del sito —
+   quindi chiaro e scuro vengono da soli — e pesano quanto il testo che
+   contengono. Il numero resta scritto accanto a ogni barra: chi non distingue
+   i colori, chi stampa la pagina e chi legge con la voce trova comunque il
+   dato. */
+
+/* Quanto scarto dalla media serve per riempire mezza pista. Oltre il 60% la
+   barra si ferma: sono differenze che nel calcio non esistono quasi mai, e
+   lasciare la scala libera schiaccerebbe tutte le altre righe. */
+const SCARTO_PIENO = 0.6;
+
+const METRICHE = [
+  { k: "gol_fatti", et: "Gol fatti" },
+  { k: "gol_subiti", et: "Gol subiti" },
+  { k: "tiri", et: "Tiri" },
+  { k: "in_porta", et: "Tiri in porta" },
+  { k: "corner", et: "Calci d'angolo" },
+  { k: "falli", et: "Falli subiti" },
+  { k: "cartellini", et: "Cartellini" },
+];
+
+function scarti(totale: any, media: any) {
+  if (!totale || !media) return [];
+  const righe = [...METRICHE];
+  if (totale.possesso !== null && media.possesso) {
+    righe.push({ k: "possesso", et: "Possesso" });
+  }
+  return righe.flatMap((m) => {
+    const v = totale[m.k], a = media[m.k];
+    if (v === null || v === undefined || !a) return [];
+    const d = (v - a) / a;
+    const q = Math.max(-1, Math.min(1, d / SCARTO_PIENO));
+    return [{ ...m, v, a, d, q }];
+  });
+}
+
+const CONFRONTO = [
+  { k: "gol_fatti", et: "Gol fatti" },
+  { k: "gol_subiti", et: "Gol subiti" },
+  { k: "tiri", et: "Tiri" },
+  { k: "in_porta", et: "Tiri in porta" },
+  { k: "corner", et: "Calci d'angolo" },
+  { k: "cartellini", et: "Cartellini" },
+];
+
+function casaFuori(casa: any, trasferta: any) {
+  if (!casa || !trasferta) return [];
+  return CONFRONTO.flatMap((m) => {
+    const a = casa[m.k], b = trasferta[m.k];
+    if (a === null || a === undefined || b === null || b === undefined) return [];
+    const max = Math.max(a, b, 0.0001);
+    return [{ ...m, a, b, qa: a / max, qb: b / max }];
+  });
+}
+
+/* --- la tabella dei numeri --------------------------------------------- */
+const RIGHE_TABELLA = [
+  { k: "gol_fatti", et: "Gol fatti", d: 2 },
+  { k: "gol_subiti", et: "Gol subiti", d: 2 },
+  { k: "tiri", et: "Tiri", d: 1 },
+  { k: "in_porta", et: "Tiri in porta", d: 1 },
+  { k: "tiri_subiti", et: "Tiri subiti", d: 1 },
+  { k: "in_porta_subiti", et: "Tiri in porta subiti", d: 1 },
+  { k: "corner", et: "Calci d'angolo", d: 1 },
+  { k: "corner_subiti", et: "Calci d'angolo subiti", d: 1 },
+  { k: "falli", et: "Falli subiti", d: 1 },
+  { k: "cartellini", et: "Cartellini", d: 2 },
+];
+const RIGHE_AVANZATE = [
+  { k: "possesso", et: "Possesso (%)", d: 1 },
+  { k: "passaggi", et: "Passaggi", d: 0 },
+  { k: "contrasti", et: "Contrasti", d: 1 },
+  { k: "intercetti", et: "Intercetti", d: 1 },
+  { k: "parate", et: "Parate", d: 1 },
+];
+
+const titolo = `Statistiche ${nome}`;
+const descrizione =
+  `Tutti i numeri del ${nome} in ${lega.nome}: gol, tiri, tiri in porta, calci ` +
+  `d'angolo, falli, cartellini e possesso, in casa e in trasferta, a confronto ` +
+  `con la media del campionato. Puoi scegliere quante partite guardare indietro.`;
+
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  name: nome,
+  ...(esteso ? { alternateName: esteso } : {}),
+  sport: "Soccer",
+  memberOf: { "@type": "SportsOrganization", name: lega.nome },
+};
+
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Calcio", item: new URL("/campionati/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: lega.nome, item: new URL(`/calcio/${lega.slug}/`, Astro.site).href },
+    { "@type": "ListItem", position: 3, name: nome },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <section>
+    <p class="occhiello">
+      <a href={`/calcio/${lega.slug}/`} style="color:inherit">
+        {lega.bandiera} {lega.nome}
+      </a>
+      {riga && ` · ${riga.posizione}ª su ${squadreInLega}`}
+    </p>
+
+    <div class="hd">
+      <h1>Statistiche {nome}</h1>
+      {esteso && <p class="esteso">{esteso}</p>}
+    </div>
+
+    {
+      riga && (
+        <div class="kpi">
+          <div class="voce">
+            <div class="et">Punti</div>
+            <div class="cifra mono">{riga.punti}</div>
+            <div class="sotto">in {riga.giocate} giornate</div>
+          </div>
+          <div class="voce">
+            <div class="et">Record</div>
+            <div class="cifra mono">{riga.vinte}-{riga.pareggiate}-{riga.perse}</div>
+            <div class="sotto">vinte, pari, perse</div>
+          </div>
+          <div class="voce">
+            <div class="et">Gol</div>
+            <div class="cifra mono">{riga.fatti}-{riga.subiti}</div>
+            <div class="sotto">
+              differenza {riga.differenza >= 0 ? "+" : "−"}{Math.abs(riga.differenza)}
+            </div>
+          </div>
+          <div class="voce">
+            <div class="et">Punti attesi</div>
+            <div class="cifra mono">{num(riga.punti_attesi)}</div>
+            <div class="sotto">
+              {riga.scarto_punti >= 0 ? "+" : "−"}{num(Math.abs(riga.scarto_punti))} sul gioco
+            </div>
+          </div>
+        </div>
+      )
+    }
+
+    {
+      riga && Math.abs(riga.scarto_punti) >= 3 && (
+        <p class="spiega">
+          {riga.scarto_punti > 0
+            ? `Il ${nome} ha raccolto ${num(riga.scarto_punti)} punti più di quanto dicano i tiri prodotti e concessi: finora il risultato è stato più generoso della prestazione.`
+            : `Il ${nome} ha raccolto ${num(Math.abs(riga.scarto_punti))} punti meno di quanto dicano i tiri prodotti e concessi: finora la prestazione è valsa più della classifica.`}
+        </p>
+      )
+    }
+  </section>
+
+  {
+    forma.length > 0 && (
+      <section>
+        <h2>Le ultime {forma.length}</h2>
+        <div class="forma">
+          {forma.map((p: any) => {
+            const e = esito(p);
+            const altra = p.casa === nome ? p.ospite : p.casa;
+            return (
+              <a
+                href={`/calcio/${lega.slug}/${p.id}/`}
+                class={`chip e-${e.segno}`}
+                title={`${giorno(p.data)} · ${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}`}
+              >
+                <span class="sg">{e.segno}</span>
+                <span class="ris mono">{e.fatti}-{e.subiti}</span>
+                <span class="avv">{p.casa === nome ? "" : "a "}{altra}</span>
+              </a>
+            );
+          })}
+        </div>
+        <p class="nota">Dalla più lontana alla più recente. Ogni riquadro porta alla scheda della partita.</p>
+      </section>
+    )
+  }
+
+  {
+    prossima && (
+      <section>
+        <h2>La prossima</h2>
+        <a class="prossima" href={`/calcio/${lega.slug}/${prossima.id}/`}>
+          <span class="quando">{giorno(prossima.data)}{prossima.ora && ` · ${prossima.ora}`}</span>
+          <span class="chi">{prossima.casa} — {prossima.ospite}</span>
+          <span class="vai">statistiche, probabilità e quote →</span>
+        </a>
+      </section>
+    )
+  }
+
+  <section>
+    <h2>I numeri</h2>
+
+    <div class="finestre">
+      {profondita.map((n) => (
+        <input type="radio" name="finestra" id={`fin-${n}`} checked={n === predefinita} />
+      ))}
+      <div class="scelte" role="group" aria-label="Quante partite guardare indietro">
+        <span>Ultime</span>
+        {profondita.map((n) => <label for={`fin-${n}`}>{n}</label>)}
+        <span>partite</span>
+      </div>
+
+      <div class="pannelli">
+        {perFinestra.map((f: any) => {
+          const sc = scarti(f.totale, f.media);
+          const cf = casaFuori(f.casa, f.trasferta);
+          const avanzate = (f.totale?.con_avanzate ?? 0) > 0;
+          const quota = f.composizione?.quota_stagione ?? 1;
+          return (
+            <div class={`pannello p-${f.n}`}>
+              {quota < 0.5 && (
+                <p class="avviso-stagione">
+                  Di queste {f.n} partite solo il {pct(quota)} è di questa
+                  stagione: il resto viene dal campionato precedente. È voluto —
+                  con poche giornate giocate qualunque statistica di quest'anno
+                  sarebbe rumore — ma va saputo mentre si legge.
+                </p>
+              )}
+
+              {f.totale === null ? (
+                <div class="vuoto">
+                  <b>Niente da mostrare su questa profondità</b>
+                  Per il {nome} non abbiamo ancora {f.n} partite con le
+                  statistiche complete.
+                </div>
+              ) : (
+                <>
+                  {/* ---- grafico 1: lo scarto dalla media ---------------- */}
+                  <h3>Rispetto alla media del campionato</h3>
+                  <p class="nota">
+                    Quanto il {nome} sta sopra o sotto la media di {lega.nome},
+                    a partita. La barra si ferma al 60%.
+                  </p>
+                  <div class="chiave">
+                    <span><i class="sw sotto"></i> sotto la media</span>
+                    <span><i class="sw sopra"></i> sopra la media</span>
+                  </div>
+                  <div class="grafico">
+                    {sc.map((m: any) => (
+                      <div class="g-riga">
+                        <div class="g-et">{m.et}</div>
+                        <div class="g-pista divergente">
+                          <span
+                            class={`g-barra ${m.d >= 0 ? "sopra" : "sotto"}`}
+                            style={`left:${m.d >= 0 ? 50 : 50 + m.q * 50}%;width:${Math.abs(m.q) * 50}%`}
+                            title={`${m.et}: ${num(m.v, 2)} contro una media di ${num(m.a, 2)}`}
+                          ></span>
+                        </div>
+                        <div class="g-val mono">{segnato(m.d)}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* ---- grafico 2: in casa e in trasferta --------------- */}
+                  {cf.length > 0 && (
+                    <>
+                      <h3>In casa e in trasferta</h3>
+                      <p class="nota">
+                        Media a partita. Ogni riga ha la sua scala: le barre si
+                        confrontano fra loro, non fra righe diverse.
+                      </p>
+                      <div class="chiave">
+                        <span><i class="sw casa"></i> in casa</span>
+                        <span><i class="sw fuori"></i> in trasferta</span>
+                      </div>
+                      <div class="grafico">
+                        {cf.map((m: any) => (
+                          <div class="g-riga doppia">
+                            <div class="g-et">{m.et}</div>
+                            <div class="g-pista impilata">
+                              <span
+                                class="g-barra casa"
+                                style={`width:${m.qa * 100}%`}
+                                title={`${m.et} in casa: ${num(m.a, 2)}`}
+                              ></span>
+                              <span
+                                class="g-barra fuori"
+                                style={`width:${m.qb * 100}%`}
+                                title={`${m.et} in trasferta: ${num(m.b, 2)}`}
+                              ></span>
+                            </div>
+                            <div class="g-val mono">
+                              <b>{num(m.a, 1)}</b> · {num(m.b, 1)}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+
+                  {/* ---- la tabella, che è dove stanno i numeri veri ----- */}
+                  <h3>Tutti i numeri</h3>
+                  <div class="scorri">
+                    <table class="dati">
+                      <thead>
+                        <tr>
+                          <th>Per partita</th>
+                          <th class="num">Totale</th>
+                          <th class="num">In casa</th>
+                          <th class="num">In trasferta</th>
+                          <th class="num">Media del campionato</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Partite</td>
+                          <td class="num mono">{f.totale.partite}</td>
+                          <td class="num mono">{f.casa?.partite ?? "—"}</td>
+                          <td class="num mono">{f.trasferta?.partite ?? "—"}</td>
+                          <td class="num mono">—</td>
+                        </tr>
+                        {RIGHE_TABELLA.map((r) => (
+                          <tr>
+                            <td>{r.et}</td>
+                            <td class="num mono">
+                              {f.totale[r.k] === null ? "—" : num(f.totale[r.k], r.d)}
+                            </td>
+                            <td class="num mono">
+                              {f.casa?.[r.k] === undefined ? "—" : num(f.casa[r.k], r.d)}
+                            </td>
+                            <td class="num mono">
+                              {f.trasferta?.[r.k] === undefined ? "—" : num(f.trasferta[r.k], r.d)}
+                            </td>
+                            <td class="num mono media">
+                              {f.media?.[r.k] ? num(f.media[r.k], r.d) : "—"}
+                            </td>
+                          </tr>
+                        ))}
+                        {avanzate &&
+                          RIGHE_AVANZATE.map((r) => (
+                            <tr>
+                              <td>{r.et}</td>
+                              <td class="num mono">
+                                {f.totale[r.k] === null ? "—" : num(f.totale[r.k], r.d)}
+                              </td>
+                              <td class="num mono">
+                                {f.casa?.[r.k] === null || f.casa?.[r.k] === undefined
+                                  ? "—" : num(f.casa[r.k], r.d)}
+                              </td>
+                              <td class="num mono">
+                                {f.trasferta?.[r.k] === null || f.trasferta?.[r.k] === undefined
+                                  ? "—" : num(f.trasferta[r.k], r.d)}
+                              </td>
+                              <td class="num mono media">
+                                {f.media?.[r.k] ? num(f.media[r.k], r.d) : "—"}
+                              </td>
+                            </tr>
+                          ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  {avanzate && (
+                    <p class="nota">
+                      Possesso, passaggi, contrasti, intercetti e parate vengono
+                      da {f.totale.con_avanzate} partite delle {f.totale.partite}:
+                      sono quelle di cui abbiamo il dettaglio completo.
+                    </p>
+                  )}
+                </>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  {
+    bomber.length > 0 && (
+      <section>
+        <h2>Chi segna</h2>
+        <div class="scorri">
+          <table class="dati">
+            <thead>
+              <tr>
+                <th>Giocatore</th>
+                <th class="num">Gol</th>
+                <th class="num">di cui rigori</th>
+                <th class="num">Assist</th>
+              </tr>
+            </thead>
+            <tbody>
+              {bomber.map((m: any) => (
+                <tr>
+                  <td>{m.nome}</td>
+                  <td class="num mono">{m.gol}</td>
+                  <td class="num mono">{m.rigori || "—"}</td>
+                  <td class="num mono">{m.assist || "—"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    giocate.length > 0 && (
+      <section>
+        <h2>Tutte le partite giocate</h2>
+        <div class="scorri">
+          <table class="dati">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Partita</th>
+                <th class="num">Risultato</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {[...giocate].reverse().map((p: any) => {
+                const e = esito(p);
+                return (
+                  <tr>
+                    <td class="mono">{giorno(p.data)}</td>
+                    <td>
+                      {p.casa === nome ? <b>{p.casa}</b> : p.casa}
+                      {" — "}
+                      {p.ospite === nome ? <b>{p.ospite}</b> : p.ospite}
+                    </td>
+                    <td class="num mono">{p.gol_casa}-{p.gol_ospite}</td>
+                    <td class="num">
+                      <span class={`pallino e-${e.segno}`}>{e.segno}</span>
+                      {" "}
+                      <a href={`/calcio/${lega.slug}/${p.id}/`}>scheda</a>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  <p class="torna">
+    <a href={`/calcio/${lega.slug}/`}>← torna alla {lega.nome}</a>
+  </p>
+</Base>
+
+<style>
+  section {
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 4px;
+  }
+  h3 {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin: 30px 0 4px;
+  }
+  .esteso {
+    color: var(--ink-3);
+    font-size: 14px;
+    margin: 2px 0 0;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 4px 0 12px;
+    max-width: 62ch;
+  }
+  .spiega {
+    font-family: var(--serif);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 62ch;
+    margin: 16px 0 0;
+  }
+
+  /* --- la riga di cifre in testa -------------------------------------- */
+  .kpi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 20px;
+  }
+  .kpi .voce {
+    background: var(--card);
+    padding: 13px 15px 14px;
+  }
+  .kpi .et {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .kpi .cifra {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+    margin-top: 4px;
+  }
+  .kpi .sotto {
+    font-size: 11.5px;
+    color: var(--ink-3);
+    margin-top: 2px;
+  }
+
+  /* --- la forma -------------------------------------------------------- */
+  .forma {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0 0;
+  }
+  .chip {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 74px;
+    padding: 7px 9px 8px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    text-decoration: none;
+    color: inherit;
+  }
+  .chip:hover {
+    border-color: var(--ink-3);
+  }
+  .chip .sg {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+  .chip .ris {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .chip .avv {
+    font-size: 11px;
+    color: var(--ink-3);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* L'esito non è mai affidato al solo colore: la lettera c'è sempre. */
+  .e-V { color: var(--good); }
+  .e-N { color: var(--ink-3); }
+  .e-P { color: var(--s2); }
+  .pallino {
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  /* --- la prossima ----------------------------------------------------- */
+  .prossima {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--s1);
+    background: var(--card);
+    padding: 14px 16px 15px;
+    margin-top: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .prossima:hover { border-color: var(--ink-3); border-left-color: var(--s1); }
+  .prossima .quando {
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+  .prossima .chi {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--ink);
+  }
+  .prossima .vai {
+    font-size: 12.5px;
+    color: var(--s1);
+  }
+
+  /* --- i grafici -------------------------------------------------------
+     Nessuna immagine e nessuno script: una pista e una barra larga una
+     percentuale. Il contorno di messa a fuoco, la stampa e l'ingrandimento
+     del browser funzionano come su qualunque altro elemento della pagina. */
+  .chiave {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 11.5px;
+    color: var(--ink-3);
+    margin: 0 0 10px;
+  }
+  .chiave span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .chiave .sw {
+    width: 10px;
+    height: 10px;
+    flex: none;
+    border-radius: 2px;
+  }
+  .sw.sopra, .sw.fuori { background: var(--s2); }
+  .sw.sotto, .sw.casa { background: var(--s1); }
+
+  .grafico {
+    border-top: 1px solid var(--rule);
+    margin-bottom: 6px;
+  }
+  .g-riga {
+    display: grid;
+    grid-template-columns: 11.5ch 1fr 7ch;
+    align-items: center;
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .g-riga.doppia {
+    grid-template-columns: 11.5ch 1fr 9ch;
+  }
+  .g-et {
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.25;
+  }
+  .g-val {
+    font-size: 12px;
+    color: var(--ink-3);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .g-val b {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .g-pista {
+    position: relative;
+    height: 10px;
+  }
+  .g-pista.impilata {
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    /* Lo stacco fra le due barre è di fondo, non un bordo disegnato. */
+    gap: 3px;
+  }
+  .g-barra {
+    display: block;
+    height: 10px;
+  }
+  /* La riga dello zero: una linea sottile, non tratteggiata. */
+  .g-pista.divergente::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -7px;
+    bottom: -7px;
+    width: 1px;
+    background: var(--rule-strong);
+  }
+  .g-pista.divergente .g-barra {
+    position: absolute;
+    top: 0;
+    min-width: 2px;
+  }
+  .g-barra.sopra {
+    background: var(--s2);
+    border-radius: 0 3px 3px 0;
+  }
+  .g-barra.sotto {
+    background: var(--s1);
+    border-radius: 3px 0 0 3px;
+  }
+  .g-barra.casa {
+    background: var(--s1);
+    border-radius: 0 3px 3px 0;
+  }
+  .g-barra.fuori {
+    background: var(--s2);
+    border-radius: 0 3px 3px 0;
+  }
+
+  /* --- selettore di profondità, senza una riga di JavaScript -----------
+     Gli stessi quattro radio della pagina campionato: invisibili ma non
+     rimossi, così restano raggiungibili con la tastiera. */
+  .finestre > input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+  .scelte {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 12.5px;
+    color: var(--ink-3);
+    margin: 12px 0 16px;
+  }
+  .scelte label {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    padding: 4px 11px;
+    border: 1px solid var(--rule);
+    color: var(--ink-2);
+    cursor: pointer;
+    user-select: none;
+  }
+  .scelte label:hover {
+    border-color: var(--ink-3);
+    color: var(--ink);
+  }
+  .pannello {
+    display: none;
+  }
+  #fin-5:checked ~ .pannelli .p-5,
+  #fin-10:checked ~ .pannelli .p-10,
+  #fin-20:checked ~ .pannelli .p-20,
+  #fin-40:checked ~ .pannelli .p-40 {
+    display: block;
+  }
+  #fin-5:checked ~ .scelte label[for="fin-5"],
+  #fin-10:checked ~ .scelte label[for="fin-10"],
+  #fin-20:checked ~ .scelte label[for="fin-20"],
+  #fin-40:checked ~ .scelte label[for="fin-40"] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+    font-weight: 600;
+  }
+  .finestre > input[type="radio"]:focus-visible + .scelte label,
+  #fin-5:focus-visible ~ .scelte label[for="fin-5"],
+  #fin-10:focus-visible ~ .scelte label[for="fin-10"],
+  #fin-20:focus-visible ~ .scelte label[for="fin-20"],
+  #fin-40:focus-visible ~ .scelte label[for="fin-40"] {
+    outline: 2px solid var(--s1);
+    outline-offset: 2px;
+  }
+  .avviso-stagione {
+    border-left: 2px solid var(--s1);
+    padding: 10px 0 10px 14px;
+    margin: 0 0 18px;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    max-width: 68ch;
+  }
+
+  td.media {
+    color: var(--ink-3);
+  }
+  .torna {
+    font-size: 13px;
+    margin-top: 34px;
+  }
+
+  @media (max-width: 620px) {
+    .kpi {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .g-riga,
+    .g-riga.doppia {
+      grid-template-columns: 9.5ch 1fr 6.5ch;
+      gap: 9px;
+    }
+    .g-et { font-size: 11.5px; }
+  }
+</style>
