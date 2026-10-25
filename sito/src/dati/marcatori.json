@@ -20,7 +20,7 @@
     "squadra": "AS Roma",
     "gol": 6,
     "rigori": 0,
-    "assist": 0
+    "assist": 1
    },
    {
     "nome": "Anastasios Douvikas",
@@ -90,6 +90,13 @@
     "squadra": "Napoli",
     "gol": 3,
     "rigori": 1,
+    "assist": 1
+   },
+   {
+    "nome": "Matìas Soulè",
+    "squadra": "AS Roma",
+    "gol": 3,
+    "rigori": 0,
     "assist": 1
    },
    {
@@ -165,13 +172,6 @@
    {
     "nome": "Assane Diao",
     "squadra": "Como",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 1
-   },
-   {
-    "nome": "Edon Zhegrova",
-    "squadra": "Juventus",
     "gol": 2,
     "rigori": 0,
     "assist": 1
@@ -377,6 +377,13 @@
     "assist": 6
    },
    {
+    "nome": "Yassir Zabiri",
+    "squadra": "Racing Santander",
+    "gol": 8,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Sergio Camello",
     "squadra": "Rayo Vallecano",
     "gol": 7,
@@ -388,13 +395,6 @@
     "squadra": "Osasuna",
     "gol": 7,
     "rigori": 4,
-    "assist": 0
-   },
-   {
-    "nome": "Yassir Zabiri",
-    "squadra": "Racing Santander",
-    "gol": 7,
-    "rigori": 0,
     "assist": 0
    },
    {
@@ -468,6 +468,13 @@
     "assist": 3
    },
    {
+    "nome": "Alejandro Grimaldo",
+    "squadra": "Atlético Madrid",
+    "gol": 3,
+    "rigori": 2,
+    "assist": 2
+   },
+   {
     "nome": "Jonathan David",
     "squadra": "Atlético Madrid",
     "gol": 3,
@@ -482,10 +489,10 @@
     "assist": 2
    },
    {
-    "nome": "Alejandro Grimaldo",
-    "squadra": "Atlético Madrid",
+    "nome": "Georges Mikautadze",
+    "squadra": "Villarreal",
     "gol": 3,
-    "rigori": 2,
+    "rigori": 1,
     "assist": 1
    },
    {
@@ -522,29 +529,22 @@
     "gol": 3,
     "rigori": 1,
     "assist": 0
-   },
-   {
-    "nome": "Alberto Moleiro",
-    "squadra": "Villarreal",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 3
    }
   ],
   "bundesliga": [
+   {
+    "nome": "Niclas Füllkrug",
+    "squadra": "Werder Bremen",
+    "gol": 8,
+    "rigori": 3,
+    "assist": 0
+   },
    {
     "nome": "Patrik Schick",
     "squadra": "Bayer Leverkusen",
     "gol": 6,
     "rigori": 0,
     "assist": 2
-   },
-   {
-    "nome": "Niclas Füllkrug",
-    "squadra": "Werder Bremen",
-    "gol": 6,
-    "rigori": 1,
-    "assist": 0
    },
    {
     "nome": "Michael Olise",
@@ -607,7 +607,21 @@
     "squadra": "RB Leipzig",
     "gol": 3,
     "rigori": 0,
+    "assist": 5
+   },
+   {
+    "nome": "Anthony Caci",
+    "squadra": "Mainz",
+    "gol": 3,
+    "rigori": 0,
     "assist": 3
+   },
+   {
+    "nome": "Tidiam Gomis",
+    "squadra": "RB Leipzig",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 2
    },
    {
     "nome": "Igor Matanovic",
@@ -659,50 +673,36 @@
     "assist": 0
    },
    {
+    "nome": "Rômulo",
+    "squadra": "RB Leipzig",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Marco Grüll",
     "squadra": "Werder Bremen",
     "gol": 2,
     "rigori": 0,
-    "assist": 4
+    "assist": 5
    },
    {
     "nome": "Fabian Rieder",
     "squadra": "FC Augsburg",
     "gol": 2,
     "rigori": 1,
-    "assist": 3
+    "assist": 4
    },
    {
     "nome": "Sheraldo Becker",
     "squadra": "Mainz",
     "gol": 2,
     "rigori": 0,
-    "assist": 3
+    "assist": 4
    },
    {
     "nome": "Adam Daghim",
     "squadra": "TSG Hoffenheim",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 2
-   },
-   {
-    "nome": "Anthony Caci",
-    "squadra": "Mainz",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 2
-   },
-   {
-    "nome": "Bambasé Conté",
-    "squadra": "TSG Hoffenheim",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 2
-   },
-   {
-    "nome": "Derry Scherhant",
-    "squadra": "SC Freiburg",
     "gol": 2,
     "rigori": 0,
     "assist": 2
@@ -721,7 +721,7 @@
     "squadra": "Paris FC",
     "gol": 6,
     "rigori": 3,
-    "assist": 3
+    "assist": 4
    },
    {
     "nome": "Amine Gouiri",
@@ -736,6 +736,13 @@
     "gol": 5,
     "rigori": 2,
     "assist": 1
+   },
+   {
+    "nome": "Florian Thauvin",
+    "squadra": "Lens",
+    "gol": 4,
+    "rigori": 3,
+    "assist": 7
    },
    {
     "nome": "Ferran Torres",
@@ -771,13 +778,6 @@
     "gol": 4,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Florian Thauvin",
-    "squadra": "Lens",
-    "gol": 3,
-    "rigori": 3,
-    "assist": 6
    },
    {
     "nome": "Adil Bourabaa",
@@ -894,6 +894,13 @@
     "assist": 2
    },
    {
+    "nome": "Jacob Trenskow",
+    "squadra": "Heerenveen",
+    "gol": 6,
+    "rigori": 0,
+    "assist": 2
+   },
+   {
     "nome": "Thom Van Bergen",
     "squadra": "FC Groningen",
     "gol": 6,
@@ -929,6 +936,20 @@
     "assist": 4
    },
    {
+    "nome": "Ilyes Hamache",
+    "squadra": "SC Cambuur",
+    "gol": 5,
+    "rigori": 0,
+    "assist": 2
+   },
+   {
+    "nome": "Nicolas Binder",
+    "squadra": "SC Cambuur",
+    "gol": 5,
+    "rigori": 0,
+    "assist": 2
+   },
+   {
     "nome": "Anis Hadj Moussa",
     "squadra": "Feyenoord Rotterdam",
     "gol": 5,
@@ -945,6 +966,13 @@
    {
     "nome": "Nacho Ferri",
     "squadra": "Feyenoord Rotterdam",
+    "gol": 5,
+    "rigori": 0,
+    "assist": 1
+   },
+   {
+    "nome": "Rafik El Arguioui",
+    "squadra": "SC Cambuur",
     "gol": 5,
     "rigori": 0,
     "assist": 1
@@ -978,13 +1006,6 @@
     "assist": 0
    },
    {
-    "nome": "Jacob Trenskow",
-    "squadra": "Heerenveen",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 2
-   },
-   {
     "nome": "Mexx Meerdink",
     "squadra": "AZ Alkmaar",
     "gol": 4,
@@ -1004,13 +1025,6 @@
     "gol": 4,
     "rigori": 1,
     "assist": 2
-   },
-   {
-    "nome": "Ilyes Hamache",
-    "squadra": "SC Cambuur",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 1
    },
    {
     "nome": "Luciano Valente",
@@ -1041,25 +1055,11 @@
     "assist": 0
    },
    {
-    "nome": "Rafik El Arguioui",
-    "squadra": "SC Cambuur",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
     "nome": "Tyrone Owusu",
     "squadra": "Telstar",
     "gol": 4,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Irakli Yegoian",
-    "squadra": "Excelsior",
-    "gol": 3,
-    "rigori": 1,
-    "assist": 5
    }
   ],
   "primeira-liga": [
@@ -1148,6 +1148,13 @@
     "assist": 0
    },
    {
+    "nome": "Borja Sainz",
+    "squadra": "FC Porto",
+    "gol": 4,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "André Silva",
     "squadra": "FC Porto",
     "gol": 3,
@@ -1174,13 +1181,6 @@
     "gol": 3,
     "rigori": 2,
     "assist": 1
-   },
-   {
-    "nome": "Borja Sainz",
-    "squadra": "FC Porto",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
    },
    {
     "nome": "Dawda Camara",
@@ -1241,6 +1241,13 @@
   ],
   "superlig": [
    {
+    "nome": "Gift Orban",
+    "squadra": "Amed SFK",
+    "gol": 8,
+    "rigori": 1,
+    "assist": 0
+   },
+   {
     "nome": "Mohamed Salah",
     "squadra": "Trabzonspor",
     "gol": 8,
@@ -1252,13 +1259,6 @@
     "squadra": "Istanbul Basaksehir",
     "gol": 7,
     "rigori": 2,
-    "assist": 0
-   },
-   {
-    "nome": "Gift Orban",
-    "squadra": "Amed SFK",
-    "gol": 7,
-    "rigori": 0,
     "assist": 0
    },
    {
@@ -1290,6 +1290,13 @@
     "assist": 0
    },
    {
+    "nome": "Dia Saba",
+    "squadra": "Amed SFK",
+    "gol": 5,
+    "rigori": 1,
+    "assist": 0
+   },
+   {
     "nome": "Juan",
     "squadra": "Goztepe",
     "gol": 5,
@@ -1315,13 +1322,6 @@
     "squadra": "Çorum FK",
     "gol": 4,
     "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Dia Saba",
-    "squadra": "Amed SFK",
-    "gol": 4,
-    "rigori": 1,
     "assist": 0
    },
    {
@@ -1418,10 +1418,24 @@
   ],
   "jupiler": [
    {
+    "nome": "Norman Bassette",
+    "squadra": "KVC Westerlo",
+    "gol": 7,
+    "rigori": 2,
+    "assist": 0
+   },
+   {
     "nome": "Rafiu Durosinmi",
     "squadra": "Racing Genk",
     "gol": 6,
     "rigori": 2,
+    "assist": 0
+   },
+   {
+    "nome": "Chris Lokesa",
+    "squadra": "Waasland-Beveren",
+    "gol": 5,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -1432,13 +1446,6 @@
     "assist": 0
    },
    {
-    "nome": "Norman Bassette",
-    "squadra": "KVC Westerlo",
-    "gol": 5,
-    "rigori": 1,
-    "assist": 0
-   },
-   {
     "nome": "Samed Bazdar",
     "squadra": "Sint-Truidense",
     "gol": 5,
@@ -1446,9 +1453,9 @@
     "assist": 0
    },
    {
-    "nome": "Chris Lokesa",
-    "squadra": "Waasland-Beveren",
-    "gol": 4,
+    "nome": "Shunsuke Saito",
+    "squadra": "KVC Westerlo",
+    "gol": 5,
     "rigori": 1,
     "assist": 0
    },
@@ -1551,6 +1558,13 @@
     "assist": 0
    },
    {
+    "nome": "Nolan Gillot",
+    "squadra": "RAAL La Louvière",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Relebohile Mofokeng",
     "squadra": "Union St.-Gilloise",
     "gol": 3,
@@ -1565,10 +1579,10 @@
     "assist": 0
    },
    {
-    "nome": "Shunsuke Saito",
-    "squadra": "KVC Westerlo",
+    "nome": "Snayder Porozo",
+    "squadra": "Antwerp",
     "gol": 3,
-    "rigori": 0,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -1577,33 +1591,19 @@
     "gol": 3,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Tom Reyners",
-    "squadra": "Lommel SK",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Aaron Bibout",
-    "squadra": "Racing Genk",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
    }
   ],
   "super-league-grecia": [
    {
-    "nome": "Andrews Tetteh",
-    "squadra": "Panathinaikos",
-    "gol": 4,
-    "rigori": 0,
+    "nome": "Barnabás Varga",
+    "squadra": "AEK Athens",
+    "gol": 5,
+    "rigori": 1,
     "assist": 0
    },
    {
-    "nome": "Barnabás Varga",
-    "squadra": "AEK Athens",
+    "nome": "Andrews Tetteh",
+    "squadra": "Panathinaikos",
     "gol": 4,
     "rigori": 0,
     "assist": 0
@@ -1613,6 +1613,13 @@
     "squadra": "Kalamata",
     "gol": 4,
     "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Jorge Pombo",
+    "squadra": "Kifisia",
+    "gol": 4,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -1644,13 +1651,6 @@
     "assist": 0
    },
    {
-    "nome": "Jorge Pombo",
-    "squadra": "Kifisia",
-    "gol": 3,
-    "rigori": 1,
-    "assist": 0
-   },
-   {
     "nome": "Kenan Kodro",
     "squadra": "OFI Crete",
     "gol": 3,
@@ -1676,6 +1676,20 @@
     "squadra": "Panathinaikos",
     "gol": 3,
     "rigori": 1,
+    "assist": 0
+   },
+   {
+    "nome": "Zini",
+    "squadra": "AEK Athens",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Aboubakary Koita",
+    "squadra": "AEK Athens",
+    "gol": 2,
+    "rigori": 0,
     "assist": 0
    },
    {
@@ -1728,6 +1742,20 @@
     "assist": 0
    },
    {
+    "nome": "Harold Moukoudi",
+    "squadra": "AEK Athens",
+    "gol": 2,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Ivi",
+    "squadra": "Iraklis",
+    "gol": 2,
+    "rigori": 1,
+    "assist": 0
+   },
+   {
     "nome": "Jota Silva",
     "squadra": "Olympiacos",
     "gol": 2,
@@ -1737,34 +1765,6 @@
    {
     "nome": "Jovanny Bolívar",
     "squadra": "Kalamata",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Julián Bartolo",
-    "squadra": "Asteras Tripoli",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Ketu Jih Kalvin",
-    "squadra": "Asteras Tripoli",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Kwadwo Opoku",
-    "squadra": "Panetolikos",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Matías González",
-    "squadra": "Volos NFC",
     "gol": 2,
     "rigori": 0,
     "assist": 0
@@ -1795,8 +1795,22 @@
    {
     "nome": "Jacob Murrell",
     "squadra": "Falkirk",
-    "gol": 4,
+    "gol": 5,
     "rigori": 1,
+    "assist": 0
+   },
+   {
+    "nome": "Ryan Naderi",
+    "squadra": "Rangers",
+    "gol": 5,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Bradley Fink",
+    "squadra": "Dundee",
+    "gol": 4,
+    "rigori": 0,
     "assist": 0
    },
    {
@@ -1807,22 +1821,8 @@
     "assist": 0
    },
    {
-    "nome": "Ryan Naderi",
-    "squadra": "Rangers",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
     "nome": "Alexander Lowry",
     "squadra": "Motherwell",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Bradley Fink",
-    "squadra": "Dundee",
     "gol": 3,
     "rigori": 0,
     "assist": 0
@@ -1877,6 +1877,13 @@
     "assist": 0
    },
    {
+    "nome": "Kevin Kelsy",
+    "squadra": "Rangers",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Killian Phillips",
     "squadra": "St Mirren",
     "gol": 3,
@@ -1926,22 +1933,15 @@
     "assist": 0
    },
    {
-    "nome": "Jesse Randall",
-    "squadra": "Dundee United",
+    "nome": "Connor Ronan",
+    "squadra": "Aberdeen",
     "gol": 2,
     "rigori": 0,
     "assist": 0
    },
    {
-    "nome": "Lyall Cameron",
-    "squadra": "Dundee United",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Owen Bevan",
-    "squadra": "Dundee",
+    "nome": "Eseosa Sule",
+    "squadra": "St Mirren",
     "gol": 2,
     "rigori": 0,
     "assist": 0
@@ -2005,8 +2005,22 @@
     "assist": 0
    },
    {
+    "nome": "Antonis Siatounis",
+    "squadra": "Benevento",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Federico Bonazzoli",
     "squadra": "Cremonese",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Gabriele Gori",
+    "squadra": "Ascoli",
     "gol": 3,
     "rigori": 0,
     "assist": 0
@@ -2054,13 +2068,6 @@
     "assist": 0
    },
    {
-    "nome": "Antonis Siatounis",
-    "squadra": "Benevento",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
     "nome": "Arturo Calabresi",
     "squadra": "Pisa",
     "gol": 2,
@@ -2079,6 +2086,13 @@
     "squadra": "Empoli",
     "gol": 2,
     "rigori": 1,
+    "assist": 0
+   },
+   {
+    "nome": "David Okereke",
+    "squadra": "Benevento",
+    "gol": 2,
+    "rigori": 0,
     "assist": 0
    },
    {
@@ -2108,20 +2122,6 @@
     "gol": 2,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Filippo Pittarello",
-    "squadra": "Pisa",
-    "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Francesco Salvemini",
-    "squadra": "Benevento",
-    "gol": 2,
-    "rigori": 1,
-    "assist": 0
    }
   ],
   "championship": [
@@ -2131,6 +2131,13 @@
     "gol": 11,
     "rigori": 0,
     "assist": 0
+   },
+   {
+    "nome": "Andri Gudjohnsen",
+    "squadra": "Blackburn Rovers",
+    "gol": 8,
+    "rigori": 0,
+    "assist": 1
    },
    {
     "nome": "Cyle Larin",
@@ -2152,13 +2159,6 @@
     "gol": 6,
     "rigori": 1,
     "assist": 3
-   },
-   {
-    "nome": "Andri Gudjohnsen",
-    "squadra": "Blackburn Rovers",
-    "gol": 6,
-    "rigori": 0,
-    "assist": 1
    },
    {
     "nome": "Fernando López",
@@ -2231,6 +2231,13 @@
     "assist": 1
    },
    {
+    "nome": "Aune Heggebo",
+    "squadra": "West Bromwich Albion",
+    "gol": 4,
+    "rigori": 0,
+    "assist": 1
+   },
+   {
     "nome": "Lyndon Dykes",
     "squadra": "Millwall",
     "gol": 4,
@@ -2292,13 +2299,6 @@
     "gol": 3,
     "rigori": 0,
     "assist": 2
-   },
-   {
-    "nome": "Mathias Kvistgaarden",
-    "squadra": "Norwich City",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 2
    }
   ],
   "league-one": [
@@ -2338,10 +2338,24 @@
     "assist": 0
    },
    {
+    "nome": "Michael Smith",
+    "squadra": "Mansfield Town",
+    "gol": 6,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Sanches Fernandes",
     "squadra": "Huddersfield Town",
     "gol": 6,
     "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Aribim Pepple",
+    "squadra": "Plymouth Argyle",
+    "gol": 5,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -2352,6 +2366,13 @@
     "assist": 0
    },
    {
+    "nome": "Jayden Stockley",
+    "squadra": "AFC Wimbledon",
+    "gol": 5,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Jayden Wareham",
     "squadra": "Wycombe Wanderers",
     "gol": 5,
@@ -2359,16 +2380,9 @@
     "assist": 0
    },
    {
-    "nome": "Michael Smith",
-    "squadra": "Mansfield Town",
+    "nome": "Kyreece Lisbie",
+    "squadra": "Reading",
     "gol": 5,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Aribim Pepple",
-    "squadra": "Plymouth Argyle",
-    "gol": 4,
     "rigori": 0,
     "assist": 0
    },
@@ -2387,6 +2401,13 @@
     "assist": 0
    },
    {
+    "nome": "Fred Onyedinma",
+    "squadra": "Wycombe Wanderers",
+    "gol": 4,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Jack Diamond",
     "squadra": "Stockport County",
     "gol": 4,
@@ -2396,13 +2417,6 @@
    {
     "nome": "Jacob Brown",
     "squadra": "Reading",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Jayden Stockley",
-    "squadra": "AFC Wimbledon",
     "gol": 4,
     "rigori": 0,
     "assist": 0
@@ -2462,23 +2476,16 @@
     "gol": 3,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Finn Delap",
-    "squadra": "Burton Albion",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Fred Onyedinma",
-    "squadra": "Wycombe Wanderers",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
    }
   ],
   "league-two": [
+   {
+    "nome": "Kabongo Tshimanga",
+    "squadra": "Barnet",
+    "gol": 9,
+    "rigori": 3,
+    "assist": 0
+   },
    {
     "nome": "Aaron Drinan",
     "squadra": "Swindon Town",
@@ -2494,8 +2501,8 @@
     "assist": 0
    },
    {
-    "nome": "Kabongo Tshimanga",
-    "squadra": "Barnet",
+    "nome": "Paul Mullin",
+    "squadra": "Rotherham United",
     "gol": 8,
     "rigori": 3,
     "assist": 0
@@ -2505,6 +2512,13 @@
     "squadra": "Walsall",
     "gol": 7,
     "rigori": 2,
+    "assist": 0
+   },
+   {
+    "nome": "Josh Woods",
+    "squadra": "Accrington Stanley",
+    "gol": 7,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -2522,13 +2536,6 @@
     "assist": 0
    },
    {
-    "nome": "Josh Woods",
-    "squadra": "Accrington Stanley",
-    "gol": 6,
-    "rigori": 1,
-    "assist": 0
-   },
-   {
     "nome": "Ollie Pearce",
     "squadra": "York City",
     "gol": 6,
@@ -2536,10 +2543,10 @@
     "assist": 0
    },
    {
-    "nome": "Paul Mullin",
-    "squadra": "Rotherham United",
+    "nome": "Ronan Hale",
+    "squadra": "Gillingham",
     "gol": 6,
-    "rigori": 3,
+    "rigori": 2,
     "assist": 0
    },
    {
@@ -2571,10 +2578,10 @@
     "assist": 0
    },
    {
-    "nome": "Ronan Hale",
-    "squadra": "Gillingham",
+    "nome": "Ronan Coughlan",
+    "squadra": "Fleetwood Town",
     "gol": 5,
-    "rigori": 2,
+    "rigori": 0,
     "assist": 0
    },
    {
@@ -2606,6 +2613,13 @@
     "assist": 0
    },
    {
+    "nome": "Dylan Morgan",
+    "squadra": "Crawley Town",
+    "gol": 4,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "George Lloyd",
     "squadra": "Shrewsbury Town",
     "gol": 4,
@@ -2620,37 +2634,23 @@
     "assist": 0
    },
    {
-    "nome": "Kieran Green",
-    "squadra": "Grimsby Town",
+    "nome": "Josh Davison",
+    "squadra": "Shrewsbury Town",
     "gol": 4,
     "rigori": 0,
     "assist": 0
    },
    {
-    "nome": "Lee Bonis",
+    "nome": "Josh Koroma",
     "squadra": "Chesterfield",
     "gol": 4,
     "rigori": 0,
     "assist": 0
    },
    {
-    "nome": "Macaulay Langstaff",
-    "squadra": "Salford City",
+    "nome": "Kieran Green",
+    "squadra": "Grimsby Town",
     "gol": 4,
-    "rigori": 1,
-    "assist": 0
-   },
-   {
-    "nome": "Ronan Coughlan",
-    "squadra": "Fleetwood Town",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Bobby Kamwa",
-    "squadra": "Bristol Rovers",
-    "gol": 3,
     "rigori": 0,
     "assist": 0
    }
@@ -2661,6 +2661,20 @@
     "squadra": "Boreham Wood",
     "gol": 9,
     "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Johl Powell",
+    "squadra": "Yeovil Town",
+    "gol": 8,
+    "rigori": 1,
+    "assist": 0
+   },
+   {
+    "nome": "John Marquis",
+    "squadra": "Woking",
+    "gol": 8,
+    "rigori": 5,
     "assist": 0
    },
    {
@@ -2678,23 +2692,23 @@
     "assist": 0
    },
    {
-    "nome": "Johl Powell",
-    "squadra": "Yeovil Town",
+    "nome": "Kieren Donnelly",
+    "squadra": "Tamworth",
+    "gol": 7,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Razzaq De Graft",
+    "squadra": "Worthing",
     "gol": 7,
     "rigori": 1,
     "assist": 0
    },
    {
-    "nome": "John Marquis",
-    "squadra": "Woking",
-    "gol": 7,
-    "rigori": 4,
-    "assist": 0
-   },
-   {
-    "nome": "Kieren Donnelly",
-    "squadra": "Tamworth",
-    "gol": 7,
+    "nome": "Jay Bird",
+    "squadra": "Boreham Wood",
+    "gol": 6,
     "rigori": 0,
     "assist": 0
    },
@@ -2727,13 +2741,6 @@
     "assist": 0
    },
    {
-    "nome": "Razzaq De Graft",
-    "squadra": "Worthing",
-    "gol": 6,
-    "rigori": 1,
-    "assist": 0
-   },
-   {
     "nome": "Bailey Hobson",
     "squadra": "Harrogate Town",
     "gol": 5,
@@ -2743,13 +2750,6 @@
    {
     "nome": "Jacob Wakeling",
     "squadra": "Solihull Moors",
-    "gol": 5,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Jay Bird",
-    "squadra": "Boreham Wood",
     "gol": 5,
     "rigori": 0,
     "assist": 0
@@ -2776,6 +2776,20 @@
     "assist": 0
    },
    {
+    "nome": "Olufela Olomola",
+    "squadra": "Wealdstone",
+    "gol": 5,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Promise Omochere",
+    "squadra": "Southend United",
+    "gol": 5,
+    "rigori": 1,
+    "assist": 0
+   },
+   {
     "nome": "Rekeem Harper",
     "squadra": "Barrow",
     "gol": 5,
@@ -2787,6 +2801,13 @@
     "squadra": "Aldershot Town",
     "gol": 5,
     "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Zak Brunt",
+    "squadra": "Boreham Wood",
+    "gol": 5,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -2804,35 +2825,21 @@
     "assist": 0
    },
    {
-    "nome": "Danny Cashman",
-    "squadra": "Boreham Wood",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Dominic Hutchinson",
+    "nome": "Cory Adjetey-Brew",
     "squadra": "Worthing",
     "gol": 4,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Georgie Kelly",
-    "squadra": "Carlisle United",
-    "gol": 4,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Harry Cardwell",
-    "squadra": "Southend United",
-    "gol": 4,
-    "rigori": 1,
-    "assist": 0
    }
   ],
   "laliga-2": [
+   {
+    "nome": "Miguel de la Fuente",
+    "squadra": "Almería",
+    "gol": 7,
+    "rigori": 0,
+    "assist": 0
+   },
    {
     "nome": "Alvaro Marin",
     "squadra": "RC Celta Fortuna",
@@ -2855,10 +2862,10 @@
     "assist": 0
    },
    {
-    "nome": "Miguel de la Fuente",
-    "squadra": "Almería",
-    "gol": 6,
-    "rigori": 0,
+    "nome": "Vladyslav Vanat",
+    "squadra": "Girona",
+    "gol": 5,
+    "rigori": 1,
     "assist": 0
    },
    {
@@ -2974,6 +2981,13 @@
     "assist": 0
    },
    {
+    "nome": "Carles Pérez",
+    "squadra": "Girona",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "David González",
     "squadra": "Burgos",
     "gol": 3,
@@ -2988,22 +3002,8 @@
     "assist": 0
    },
    {
-    "nome": "Jon Guruzeta",
-    "squadra": "Eibar",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Jorge Rastrojo",
-    "squadra": "Eldense",
-    "gol": 3,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Juan Latasa",
-    "squadra": "Real Valladolid",
+    "nome": "Jesé",
+    "squadra": "Las Palmas",
     "gol": 3,
     "rigori": 0,
     "assist": 0
@@ -3137,6 +3137,13 @@
     "assist": 0
    },
    {
+    "nome": "Erencan Yardimci",
+    "squadra": "Kaiserslautern",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Jan Schöppner",
     "squadra": "1. FC Heidenheim 1846",
     "gol": 3,
@@ -3177,13 +3184,6 @@
     "gol": 3,
     "rigori": 0,
     "assist": 0
-   },
-   {
-    "nome": "Robin Meißner",
-    "squadra": "VfL Osnabruck",
-    "gol": 3,
-    "rigori": 1,
-    "assist": 0
    }
   ],
   "ligue-2": [
@@ -3204,7 +3204,7 @@
    {
     "nome": "Augustine Boakye",
     "squadra": "Saint-Étienne",
-    "gol": 5,
+    "gol": 6,
     "rigori": 0,
     "assist": 0
    },
@@ -3400,6 +3400,13 @@
     "assist": 0
    },
    {
+    "nome": "Euan Henderson",
+    "squadra": "Partick Thistle",
+    "gol": 3,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "George Oakley",
     "squadra": "Raith Rovers",
     "gol": 3,
@@ -3423,6 +3430,13 @@
    {
     "nome": "Aidan Connolly",
     "squadra": "Queen's Park",
+    "gol": 2,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
+    "nome": "Alfie Stewart",
+    "squadra": "Inverness Caledonian Thistle",
     "gol": 2,
     "rigori": 0,
     "assist": 0
@@ -3498,6 +3512,13 @@
     "assist": 0
    },
    {
+    "nome": "Rory Macleod",
+    "squadra": "Dunfermline Athletic",
+    "gol": 2,
+    "rigori": 0,
+    "assist": 0
+   },
+   {
     "nome": "Sam Young",
     "squadra": "Stenhousemuir",
     "gol": 2,
@@ -3515,27 +3536,6 @@
     "nome": "Tony Watt",
     "squadra": "Partick Thistle",
     "gol": 2,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Andrew Shinnie",
-    "squadra": "Stenhousemuir",
-    "gol": 1,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Andy Winter",
-    "squadra": "Arbroath",
-    "gol": 1,
-    "rigori": 0,
-    "assist": 0
-   },
-   {
-    "nome": "Ben Summers",
-    "squadra": "Ayr United",
-    "gol": 1,
     "rigori": 0,
     "assist": 0
    }

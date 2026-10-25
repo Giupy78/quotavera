@@ -1,4 +1,1962 @@
 {
+ "401878965": {
+  "cartellini": [
+   {
+    "giocatore": "Christian Brüls",
+    "minuto": "45'+3'",
+    "rosso": false,
+    "squadra": "Waasland-Beveren"
+   },
+   {
+    "giocatore": "Bruno Godeau",
+    "minuto": "62'",
+    "rosso": false,
+    "squadra": "Waasland-Beveren"
+   },
+   {
+    "giocatore": "Victor Olatunji",
+    "minuto": "90'+6'",
+    "rosso": false,
+    "squadra": "Waasland-Beveren"
+   },
+   {
+    "giocatore": "Reda Laalaoui",
+    "minuto": "90'+9'",
+    "rosso": true,
+    "squadra": "KVC Westerlo"
+   },
+   {
+    "giocatore": "Christophe Janssens",
+    "minuto": "90'+9'",
+    "rosso": false,
+    "squadra": "Waasland-Beveren"
+   }
+  ],
+  "casa": "KVC Westerlo",
+  "data": "2026-10-24",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Johannes Schenk",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Bruno Godeau",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Viktor Boone",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Christophe Janssens",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Laurent Jans",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Sieben Dewaele",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Cheick Oumar Conde",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Arno Verschueren",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Elohim Kaboré",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Jearl Margaritha",
+      "ruolo": "LF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Christian Brüls",
+      "ruolo": "RF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "48",
+      "nome": "Jannik Robatsch",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Ferre Slegers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "33",
+      "nome": "Victor Olatunji",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Cheick Konate",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Dominic Thompson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "5",
+      "nome": "Chris Lokesa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "92",
+      "nome": "Lennart Mertens",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "84",
+      "nome": "Josua Lusamba",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "35",
+      "nome": "Yoni Gomis",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-3-3",
+    "squadra": "Waasland-Beveren"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Andreas Jungdal",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Amando Lapage",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Seiji Kimura",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Dylan Ourega",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Lasse Flö",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Issai Sakamoto",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Cisse Sandra",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Ibrahima Fofana",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Norman Bassette",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Shunsuke Saito",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Naoufal Bohamdi-Kamoni",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "40",
+      "nome": "Botond Balogh",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Bill Lathouwers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Pape Diong",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Thomas Van Den Keybus",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "David Nicolas Amegnaglo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "12",
+      "nome": "Reda Laalaoui",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "47",
+      "nome": "Yang Min-Hyeok",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "88",
+      "nome": "Fabio Ferraro",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "22",
+      "nome": "Emmanuel Tsimba",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "KVC Westerlo"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Shunsuke Saito",
+    "minuto": "10'",
+    "squadra": "KVC Westerlo",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Elohim Kaboré",
+    "minuto": "33'",
+    "squadra": "Waasland-Beveren",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Norman Bassette",
+    "minuto": "45'+1'",
+    "squadra": "KVC Westerlo",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Norman Bassette",
+    "minuto": "55'",
+    "squadra": "KVC Westerlo",
+    "tipo": "Penalty - Scored"
+   },
+   {
+    "assist": null,
+    "marcatore": "Chris Lokesa",
+    "minuto": "67'",
+    "squadra": "Waasland-Beveren",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Victor Olatunji",
+    "minuto": "88'",
+    "squadra": "Waasland-Beveren",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Shunsuke Saito",
+    "minuto": "90'+7'",
+    "squadra": "KVC Westerlo",
+    "tipo": "Penalty - Scored"
+   },
+   {
+    "assist": null,
+    "marcatore": "Victor Olatunji",
+    "minuto": "90'+12'",
+    "squadra": "Waasland-Beveren",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 4,
+  "gol_ospite": 4,
+  "id": "401878965",
+  "ospite": "Waasland-Beveren",
+  "stat": {
+   "contrasti": [
+    15.0,
+    21.0
+   ],
+   "contrasti_riusciti": [
+    10.0,
+    9.0
+   ],
+   "corner": [
+    3.0,
+    7.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    3.0,
+    12.0
+   ],
+   "fuorigioco": [
+    2.0,
+    3.0
+   ],
+   "gialli": [
+    0.0,
+    4.0
+   ],
+   "in_porta": [
+    6.0,
+    7.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    3.0,
+    2.0
+   ],
+   "passaggi": [
+    452.0,
+    453.0
+   ],
+   "passaggi_riusciti": [
+    382.0,
+    386.0
+   ],
+   "possesso": [
+    50.0,
+    50.0
+   ],
+   "respinte": [
+    35.0,
+    28.0
+   ],
+   "rossi": [
+    1.0,
+    0.0
+   ],
+   "tiri": [
+    15.0,
+    16.0
+   ],
+   "tiri_respinti": [
+    2.0,
+    3.0
+   ]
+  }
+ },
+ "401878966": {
+  "cartellini": [
+   {
+    "giocatore": "Mame Ndiaga Wade",
+    "minuto": "5'",
+    "rosso": false,
+    "squadra": "RAAL La Louvière"
+   },
+   {
+    "giocatore": "Mustapha Ubandoma",
+    "minuto": "46'",
+    "rosso": false,
+    "squadra": "RAAL La Louvière"
+   },
+   {
+    "giocatore": "Siad Gourville",
+    "minuto": "59'",
+    "rosso": false,
+    "squadra": "RAAL La Louvière"
+   },
+   {
+    "giocatore": "Anosike Ementa",
+    "minuto": "83'",
+    "rosso": false,
+    "squadra": "Zulte-Waregem"
+   },
+   {
+    "giocatore": "Marius Courcoul",
+    "minuto": "90'+1'",
+    "rosso": false,
+    "squadra": "RAAL La Louvière"
+   }
+  ],
+  "casa": "RAAL La Louvière",
+  "data": "2026-10-24",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Brent Gabriel",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jakob Kiilerich",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Laurent Lemoine",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Youssoupha Mbodji",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Benoit De Jaegere",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "István Átrok",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Enrique Lofolomo",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "36",
+      "nome": "Serxho Ujka",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Anosike Ementa",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Ousseynou Niang",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Marley Aké",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Louis Bostyn",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Nikola Mituljikic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "53",
+      "nome": "Kewan Vemba",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "55",
+      "nome": "Yannick Cappelle",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Tobias Hedl",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Tristan Panduro",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Thomas Claes",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "49",
+      "nome": "Franz Tangala",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "90",
+      "nome": "Akpa Chukwu Hemsley",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Zulte-Waregem"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Marcos Peano",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Siad Gourville",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Djibril Lamego",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Wagane Faye",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Thierry Lutonda",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Nolan Gillot",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Mame Ndiaga Wade",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "48",
+      "nome": "Ismaila Coulibaly",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Marius Courcoul",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Mustapha Ubandoma",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Zsombor Gruber",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Salomon Patrick Amougou Nkoa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Mátyás Kovács",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Yllan Okou",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Elias Filet",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "91",
+      "nome": "Théo Radelet",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "43",
+      "nome": "Quentin Benaets",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "90",
+      "nome": "Léandro Rousseau",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "78",
+      "nome": "Anas Tajaouart",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "44",
+      "nome": "Mehdi Boukamir",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "5-3-2",
+    "squadra": "RAAL La Louvière"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Nolan Gillot",
+    "minuto": "37'",
+    "squadra": "RAAL La Louvière",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Nolan Gillot",
+    "minuto": "73'",
+    "squadra": "RAAL La Louvière",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Léandro Rousseau",
+    "minuto": "84'",
+    "squadra": "RAAL La Louvière",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 3,
+  "gol_ospite": 0,
+  "id": "401878966",
+  "ospite": "Zulte-Waregem",
+  "stat": {
+   "contrasti": [
+    18.0,
+    18.0
+   ],
+   "contrasti_riusciti": [
+    9.0,
+    14.0
+   ],
+   "corner": [
+    5.0,
+    3.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    21.0,
+    11.0
+   ],
+   "fuorigioco": [
+    4.0,
+    0.0
+   ],
+   "gialli": [
+    4.0,
+    1.0
+   ],
+   "in_porta": [
+    8.0,
+    6.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    6.0,
+    5.0
+   ],
+   "passaggi": [
+    342.0,
+    442.0
+   ],
+   "passaggi_riusciti": [
+    252.0,
+    325.0
+   ],
+   "possesso": [
+    44.7,
+    55.3
+   ],
+   "respinte": [
+    31.0,
+    16.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    15.0,
+    15.0
+   ],
+   "tiri_respinti": [
+    3.0,
+    4.0
+   ]
+  }
+ },
+ "401878968": {
+  "cartellini": [
+   {
+    "giocatore": "Aiham Ousou",
+    "minuto": "11'",
+    "rosso": false,
+    "squadra": "Royal Charleroi SC"
+   },
+   {
+    "giocatore": "Carlos Daniel Mejia Klinger",
+    "minuto": "30'",
+    "rosso": false,
+    "squadra": "Antwerp"
+   },
+   {
+    "giocatore": "Mardochee Nzita",
+    "minuto": "80'",
+    "rosso": false,
+    "squadra": "Royal Charleroi SC"
+   },
+   {
+    "giocatore": "Gaku Nawata",
+    "minuto": "85'",
+    "rosso": false,
+    "squadra": "Royal Charleroi SC"
+   },
+   {
+    "giocatore": "Christopher Scott",
+    "minuto": "87'",
+    "rosso": false,
+    "squadra": "Antwerp"
+   },
+   {
+    "giocatore": "Arthur Vermeeren",
+    "minuto": "88'",
+    "rosso": false,
+    "squadra": "Antwerp"
+   }
+  ],
+  "casa": "Antwerp",
+  "data": "2026-10-24",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Mohamed Koné",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "95",
+      "nome": "Cheick Keita",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Aiham Ousou",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Mardochee Nzita",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Kevin Guiton",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Jakob Romsaas",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Yassine Khalifi",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Amine Boukamir",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Aurelien Scheidler",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Freddy Mbemba",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Patrick Pflücke",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Adama Bojang",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "65",
+      "nome": "Mory Kera",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Isaac Cissé",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "2",
+      "nome": "Triston Rowe",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Boubakar Dembaga",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Noah Solheid",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "13",
+      "nome": "Gaku Nawata",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Martin Delavalée",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "25",
+      "nome": "Antoine Colassin",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Royal Charleroi SC"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "41",
+      "nome": "Taishi Nozawa",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Álvaro Cortés",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Rein Van Helden",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Daam Foulon",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Semm Renders",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Thibo Somers",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "48",
+      "nome": "Arthur Vermeeren",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Bahmed Deuff",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Snayder Porozo",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Ibrahim Salah",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "80",
+      "nome": "Carlos Daniel Mejia Klinger",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "43",
+      "nome": "Youssef Hamdaoui",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "25",
+      "nome": "Modibo Fofana",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Xander Dierckx",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Christopher Scott",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "44",
+      "nome": "Maxime Busi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Luca Schelfhout",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Yuto Tsunashima",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "81",
+      "nome": "Niels Devalckeneer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Michael Frey",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Antwerp"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Thibo Somers",
+    "minuto": "8'",
+    "squadra": "Antwerp",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Snayder Porozo",
+    "minuto": "27'",
+    "squadra": "Antwerp",
+    "tipo": "Penalty - Scored"
+   },
+   {
+    "assist": null,
+    "marcatore": "Rein Van Helden",
+    "minuto": "47'",
+    "squadra": "Antwerp",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 3,
+  "gol_ospite": 0,
+  "id": "401878968",
+  "ospite": "Royal Charleroi SC",
+  "stat": {
+   "contrasti": [
+    18.0,
+    18.0
+   ],
+   "contrasti_riusciti": [
+    12.0,
+    10.0
+   ],
+   "corner": [
+    5.0,
+    5.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    17.0,
+    11.0
+   ],
+   "fuorigioco": [
+    1.0,
+    4.0
+   ],
+   "gialli": [
+    3.0,
+    3.0
+   ],
+   "in_porta": [
+    4.0,
+    7.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    6.0,
+    1.0
+   ],
+   "passaggi": [
+    360.0,
+    475.0
+   ],
+   "passaggi_riusciti": [
+    280.0,
+    402.0
+   ],
+   "possesso": [
+    43.4,
+    56.6
+   ],
+   "respinte": [
+    20.0,
+    17.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    7.0,
+    20.0
+   ],
+   "tiri_respinti": [
+    3.0,
+    4.0
+   ]
+  }
+ },
+ "401878969": {
+  "cartellini": [
+   {
+    "giocatore": "Takuya Ogiwara",
+    "minuto": "12'",
+    "rosso": false,
+    "squadra": "Oud-Heverlee Leuven"
+   },
+   {
+    "giocatore": "Shawn Adewoye",
+    "minuto": "40'",
+    "rosso": false,
+    "squadra": "Lommel SK"
+   },
+   {
+    "giocatore": "Stredair Appuah",
+    "minuto": "45'+2'",
+    "rosso": false,
+    "squadra": "Lommel SK"
+   },
+   {
+    "giocatore": "Robin Mirisola",
+    "minuto": "71'",
+    "rosso": false,
+    "squadra": "Oud-Heverlee Leuven"
+   }
+  ],
+  "casa": "OH Leuven",
+  "data": "2026-10-24",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Matthias Pieklak",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Jesper Tolinsson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Timothy Eyoma",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Shawn Adewoye",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Jason Van Duiven",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Lucas Schoofs",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "41",
+      "nome": "Sverre Nypan",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Joel Pelupessy",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Don-Angelo Konadu",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Stredair Appuah",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Juho Talvitie",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Nikola Ivezic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Nicolas Rommens",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "46",
+      "nome": "Niek Corthouts",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Isaiah Dada-Mascoll",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Djordje Gordic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Tom Reyners",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "47",
+      "nome": "Tristan Gooijer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "73",
+      "nome": "Alexander Reumers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "34",
+      "nome": "Henry Oware",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Lommel SK"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Dani van den Heuvel",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Ewoud Pletinckx",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Roggerio Nyakossi",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jamie Lawrence",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Siebe Schrijvers",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Wouter George",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Takuya Ogiwara",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Davis Opoku",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Robin Mirisola",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "William Balikwisha",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Lukasz Lakomy",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Kiany Vroman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "72",
+      "nome": "Sebastian Murru",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Shin Yamada",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "30",
+      "nome": "Alessandro Fontanarosa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "48",
+      "nome": "Bryang Kayo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "77",
+      "nome": "Thibault Vlietinck",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Kyan Vaesen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Chukwubuikem Ikwuemesi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Emmanuel Addai",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-3",
+    "squadra": "Oud-Heverlee Leuven"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Stredair Appuah",
+    "minuto": "35'",
+    "squadra": "Lommel SK",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Robin Mirisola",
+    "minuto": "65'",
+    "squadra": "Oud-Heverlee Leuven",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Emmanuel Addai",
+    "minuto": "67'",
+    "squadra": "Oud-Heverlee Leuven",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Jason Van Duiven",
+    "minuto": "90'+6'",
+    "squadra": "Lommel SK",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 2,
+  "id": "401878969",
+  "ospite": "Lommel SK",
+  "stat": {
+   "contrasti": [
+    19.0,
+    18.0
+   ],
+   "contrasti_riusciti": [
+    14.0,
+    12.0
+   ],
+   "corner": [
+    7.0,
+    5.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    16.0,
+    12.0
+   ],
+   "fuorigioco": [
+    2.0,
+    1.0
+   ],
+   "gialli": [
+    2.0,
+    2.0
+   ],
+   "in_porta": [
+    6.0,
+    4.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    2.0,
+    3.0
+   ],
+   "passaggi": [
+    381.0,
+    514.0
+   ],
+   "passaggi_riusciti": [
+    301.0,
+    425.0
+   ],
+   "possesso": [
+    42.8,
+    57.2
+   ],
+   "respinte": [
+    28.0,
+    22.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    22.0,
+    13.0
+   ],
+   "tiri_respinti": [
+    5.0,
+    6.0
+   ]
+  }
+ },
  "401878970": {
   "cartellini": [
    {
