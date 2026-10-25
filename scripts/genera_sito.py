@@ -264,7 +264,7 @@ def numeri_squadra(s, conv: float) -> dict:
 
 
 def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
-            cronache: dict | None = None) -> dict | None:
+            cronache: dict | None = None, stadi: dict | None = None) -> dict | None:
     """Tutto quello che serve al sito per un campionato.
 
     `stagione` sono le partite della stagione in corso — poche, a inizio anno.
@@ -276,6 +276,7 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
 
     estesi = nomi_estesi or {}
     cronaca = cronache or {}
+    campi = stadi or {}
 
     modello = ModelloCalcio().fit([p.incontro for p in storico])
     # La conversione media serve un campione ampio: si prende dallo storico
@@ -420,6 +421,7 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
             "campionato": c.slug,
             "casa_esteso": estesi.get(p.casa),
             "ospite_esteso": estesi.get(p.ospite),
+            "stadio": campi.get((p.casa, p.ospite)),
             "dettaglio": dettaglio,
             "stat_casa": numeri_squadra(sc, conv) if sc else None,
             "stat_ospite": numeri_squadra(so, conv) if so else None,
@@ -464,7 +466,13 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
     # prima e lasciato li' accanto a com'e' andata.
     for x in stagione:
         i = x.incontro
-        if i.data >= oggi_utc():
+        # `>` e non `>=`: una partita giocata **oggi** il risultato ce l'ha
+        # gia', e saltarla lasciava la sua pagina senza nessuna delle due
+        # versioni — usciva dalle partite in programma (il punteggio era
+        # arrivato) e non entrava fra le giocate (la data era di oggi). Spariva
+        # per tutto il giorno e tornava alle 02:00: un 404 proprio nelle ore in
+        # cui quella partita la cercano.
+        if i.data > oggi_utc():
             continue
         chiave = id_partita(i.casa, i.ospite)
         if chiave in {y["id"] for y in schede}:
@@ -477,6 +485,7 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
             "casa": i.casa, "ospite": i.ospite,
             "casa_esteso": estesi.get(i.casa),
             "ospite_esteso": estesi.get(i.ospite),
+            "stadio": campi.get((i.casa, i.ospite)),
             "data": i.data.isoformat(), "ora": "",
             "giocata": True,
             "gol_casa": i.punti_casa, "gol_ospite": i.punti_ospite,
@@ -506,6 +515,55 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
                 for y in precedenti(storico, i.casa, i.ospite, quante=6)
             ],
         })
+
+    # --- gli indirizzi pubblicati che nessuna delle due liste copre -------
+    #
+    # Una partita la cui data e' passata senza che il risultato arrivi esce da
+    # tutte e due: non e' "in programma" (la data e' vecchia) e non e'
+    # "giocata" (il punteggio non c'e'). Succede nei due campionati scozzesi
+    # minori, che ESPN non copre, e in National League, dove football-data a
+    # volte si ferma per giorni. La pagina pero' l'abbiamo pubblicata e Google
+    # l'ha indicizzata: farla sparire e' un 404 su un indirizzo nostro.
+    #
+    # L'archivio dei pronostici e' l'elenco esatto degli indirizzi pubblicati
+    # in questa stagione, ed e' li' che si guarda chi e' rimasto fuori. La
+    # pagina resta in piedi con quello che avevamo scritto prima e dice che il
+    # risultato non ce l'abbiamo — che e' vero, e vale piu' di un indirizzo
+    # morto.
+    presenti = {y["id"] for y in schede}
+    orfane = 0
+    for chiave, v in archivio.items():
+        if chiave in presenti or not v.get("data"):
+            continue
+        schede.append({
+            "id": chiave,
+            "campionato": c.slug,
+            "casa": v["casa"], "ospite": v["ospite"],
+            "casa_esteso": estesi.get(v["casa"]),
+            "ospite_esteso": estesi.get(v["ospite"]),
+            "stadio": campi.get((v["casa"], v["ospite"])),
+            "data": v["data"], "ora": v.get("ora") or "",
+            "giocata": False,
+            "senza_risultato": True,
+            "quote": v.get("quote") or {},
+            "p_mercato": v.get("p_mercato"),
+            "p_modello": v.get("p_modello"),
+            "margine": v.get("margine"),
+            "margine_migliore": None,
+            "quote_da": "confronto" if v.get("quote") else None,
+            "dettaglio": None,
+            "stat_casa": None, "stat_ospite": None,
+            "forma_casa": None, "forma_ospite": None, "incrocio": None,
+            "precedenti": [
+                {"data": y.incontro.data.isoformat(), "casa": y.incontro.casa,
+                 "ospite": y.incontro.ospite, "gol_casa": y.incontro.punti_casa,
+                 "gol_ospite": y.incontro.punti_ospite}
+                for y in precedenti(storico, v["casa"], v["ospite"], quante=6)
+            ],
+        })
+        orfane += 1
+    if orfane:
+        print(f"  {c.etichetta:34s} {orfane} pagin{'a' if orfane == 1 else 'e'} tenut{'a' if orfane == 1 else 'e'} in piedi senza risultato")
 
     # Chi milita nel campionato *adesso*: la finestra mobile guarda indietro tre
     # stagioni, quindi senza questo filtro comparirebbero le retrocesse. Sono
@@ -943,6 +1001,7 @@ def main() -> int:
         # sbagliata.
         nomi_estesi: dict[str, str] = {}
         cronache: dict[tuple, dict] = {}
+        stadi: dict[tuple, dict] = {}
         in_corso = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
         # Stesso ripiego di `elabora`: senza, con football-data giu' l'insieme
         # e' vuoto e ESPN non viene interrogato.
@@ -959,7 +1018,16 @@ def main() -> int:
             nomi_estesi.update(estesi)
             # La cronaca, indicizzata per squadre e data: serve a `elabora` per
             # attaccarla alle schede delle partite giocate.
+            # Lo stadio delle partite ancora da giocare. `elabora` rifara' la
+            # stessa chiamata per il calendario, ma la risposta e' in cache nel
+            # modulo per questo giro: non sono due richieste.
+            for f in espn.in_programma(c.slug, squadre_note, oggi,
+                                       oggi + timedelta(days=ORIZZONTE + 1)):
+                if f.get("stadio"):
+                    stadi[(f["casa"], f["ospite"])] = f["stadio"]
             for r in recenti:
+                if r.stadio:
+                    stadi[(r.casa, r.ospite)] = r.stadio
                 if r.gol or r.formazioni:
                     # Chiave senza data: ESPN e football-data non concordano
                     # sempre sul giorno, e cercando la corrispondenza esatta non
@@ -976,7 +1044,7 @@ def main() -> int:
                       f" {arricchite} arricchite")
 
         stagione = [p for p in storico if p.incontro.data >= INIZIO_STAGIONE]
-        dati = elabora(c, storico, stagione, cal, nomi_estesi, cronache)
+        dati = elabora(c, storico, stagione, cal, nomi_estesi, cronache, stadi)
         if not dati:
             print(f"  {c.etichetta:34s} dati insufficienti, salto")
             continue

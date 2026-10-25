@@ -1,4 +1,533 @@
 {
+ "401883127": {
+  "cartellini": [
+   {
+    "giocatore": "Neal Viereck",
+    "minuto": "4'",
+    "rosso": false,
+    "squadra": "Tenerife"
+   },
+   {
+    "giocatore": "Arthur Bonaldo",
+    "minuto": "8'",
+    "rosso": false,
+    "squadra": "CD Sabadell"
+   },
+   {
+    "giocatore": "Edgar González",
+    "minuto": "17'",
+    "rosso": false,
+    "squadra": "CD Sabadell"
+   },
+   {
+    "giocatore": "Juanjo",
+    "minuto": "45'+1'",
+    "rosso": false,
+    "squadra": "Tenerife"
+   },
+   {
+    "giocatore": "Urri",
+    "minuto": "49'",
+    "rosso": false,
+    "squadra": "CD Sabadell"
+   },
+   {
+    "giocatore": "Eneko Aguilar",
+    "minuto": "61'",
+    "rosso": false,
+    "squadra": "CD Sabadell"
+   },
+   {
+    "giocatore": "Anthony Landázuri",
+    "minuto": "77'",
+    "rosso": false,
+    "squadra": "Tenerife"
+   }
+  ],
+  "casa": "CD Sabadell",
+  "data": "2026-10-25",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Dani Martín",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Neal Viereck",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Anthony Landázuri",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Roko Jureskin",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "David Rodríguez Ramos",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Juanjo",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Anes Krdzalic",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Noel López",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Christian Gomis",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Nacho Gil",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Enric Gallego",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jorge Moreno",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "40",
+      "nome": "Gabriel Lozano",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "César Álvarez",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Grant-Leon Ranos",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Martin Pecar",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "16",
+      "nome": "Jesús Álvarez",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Mauro Pittón",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "José León",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "29",
+      "nome": "Daniel Fernández",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Marc Mateu",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Jesús De Miguel",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "15",
+      "nome": "Fabricio",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-4-2",
+    "squadra": "Tenerife"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Diego Fuoli",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Edgar González",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Arthur Bonaldo",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Óscar Sanz",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Urri",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Quadri Liameed",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Javi López",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Ton Ripoll",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Gastón Valles",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Ángel Baena",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Joel Priego",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Alain Ribeiro",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Quim Utgés",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Yanis Rahmani",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Marc Vidal",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "José Luis Català Vázquez",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Pere Pons",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Jose Ortega",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "Eneko Aguilar",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Juan Carlos Lázaro Cervera",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Nikolai Óbolo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Yussif Owusu",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-3",
+    "squadra": "CD Sabadell"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Óscar Sanz",
+    "minuto": "47'",
+    "squadra": "CD Sabadell",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Enric Gallego",
+    "minuto": "55'",
+    "squadra": "Tenerife",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 1,
+  "id": "401883127",
+  "ospite": "Tenerife",
+  "stadio": {
+   "citta": "Sabadell",
+   "nome": "Estadi Municipal de la Nova Creu Alta",
+   "paese": "Spain"
+  },
+  "stat": {
+   "contrasti": [
+    11.0,
+    11.0
+   ],
+   "contrasti_riusciti": [
+    6.0,
+    8.0
+   ],
+   "corner": [
+    4.0,
+    5.0
+   ],
+   "cross": [
+    0.0,
+    0.0
+   ],
+   "cross_riusciti": [
+    0.0,
+    0.0
+   ],
+   "falli": [
+    17.0,
+    9.0
+   ],
+   "fuorigioco": [
+    1.0,
+    2.0
+   ],
+   "gialli": [
+    4.0,
+    3.0
+   ],
+   "in_porta": [
+    4.0,
+    3.0
+   ],
+   "intercetti": [
+    0.0,
+    0.0
+   ],
+   "lanci": [
+    0.0,
+    0.0
+   ],
+   "lanci_riusciti": [
+    0.0,
+    0.0
+   ],
+   "parate": [
+    2.0,
+    2.0
+   ],
+   "passaggi": [
+    341.0,
+    266.0
+   ],
+   "passaggi_riusciti": [
+    257.0,
+    171.0
+   ],
+   "possesso": [
+    57.1,
+    42.9
+   ],
+   "respinte": [
+    37.0,
+    44.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    14.0,
+    11.0
+   ],
+   "tiri_respinti": [
+    3.0,
+    3.0
+   ]
+  }
+ },
  "401883128": {
   "cartellini": [
    {

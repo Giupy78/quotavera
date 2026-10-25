@@ -165,6 +165,7 @@ class PartitaEspn:
     gol: list[dict] = field(default_factory=list)
     cartellini: list[dict] = field(default_factory=list)
     formazioni: dict = field(default_factory=dict)
+    stadio: dict | None = None
 
     @property
     def completa(self) -> bool:
@@ -442,10 +443,31 @@ def partite_finite(lega_espn: str, da: date, a: date) -> list[dict]:
                     "ospite": lati["away"]["team"]["displayName"],
                     "gol_casa": int(lati["home"]["score"]),
                     "gol_ospite": int(lati["away"]["score"]),
+                    "stadio": _stadio(g),
                 })
             except (KeyError, TypeError, ValueError):
                 continue
     return fuori
+
+
+def _stadio(gara: dict) -> dict | None:
+    """Dove si gioca: nome dell'impianto, citta', paese.
+
+    Serve a `location` nei dati strutturati, che per Google e' un campo
+    **obbligatorio** su un evento: senza, la pagina non puo' comparire con le
+    sue informazioni nei risultati, e Search Console lo segnala come errore
+    critico. Era il caso delle nostre schede fino a oggi.
+    """
+    v = gara.get("venue") or {}
+    nome = v.get("fullName")
+    if not nome:
+        return None
+    ind = v.get("address") or {}
+    return {
+        "nome": nome,
+        "citta": ind.get("city"),
+        "paese": ind.get("country"),
+    }
 
 
 def _americana(valore) -> float | None:
@@ -528,6 +550,7 @@ def partite_in_programma(lega_espn: str, da: date, a: date) -> list[dict]:
                     "casa": lati["home"]["team"]["displayName"],
                     "ospite": lati["away"]["team"]["displayName"],
                     "quote": _quote_1x2(g),
+                    "stadio": _stadio(g),
                 })
             except (KeyError, TypeError):
                 continue
@@ -561,7 +584,8 @@ def in_programma(slug: str, squadre_nostre: list[str], da: date, a: date) -> lis
             int(p["ora"][:2]), int(p["ora"][3:5]), tzinfo=UTC,
         ).astimezone(ROMA)
         fuori.append({"data": quando.date(), "ora": quando.strftime("%H:%M"),
-                      "casa": casa, "ospite": ospite, "quote": p.get("quote")})
+                      "casa": casa, "ospite": ospite, "quote": p.get("quote"),
+                      "stadio": p.get("stadio")})
     return fuori
 
 
@@ -652,6 +676,7 @@ def aggiorna(slug: str, squadre_nostre: list[str], da: date, a: date,
             gol=p.get("gol") or [],
             cartellini=p.get("cartellini") or [],
             formazioni=p.get("formazioni") or {},
+            stadio=p.get("stadio"),
         ))
     fuori.sort(key=lambda x: x.data)
     # `mappa` va da ESPN ai nostri nomi; qui serve il contrario. Il nome esteso

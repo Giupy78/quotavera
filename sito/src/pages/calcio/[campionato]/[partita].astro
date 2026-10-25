@@ -39,18 +39,60 @@ const descrizione = p.giocata
   : `${p.casa} — ${p.ospite}: statistiche delle due squadre, probabilità del `
     + `modello e quote del mercato a confronto.`;
 
+/* Una partita dura un'ora e tre quarti scarsa più l'intervallo: due ore è una
+   stima onesta, e `endDate` Google la vuole. Non fingiamo di conoscere il
+   minuto esatto del fischio finale — non ce l'abbiamo — ma un evento senza
+   fine dichiarata vale meno di uno con una fine ragionevole. */
+const inizio = p.ora ? `${p.data}T${p.ora}:00` : `${p.data}T15:00:00`;
+/* Due ore avanti restando nel fuso della partita: si tratta la stringa come
+   se fosse UTC e si riformatta in UTC, cosi' l'andata e il ritorno si
+   annullano. Passare per il fuso locale era l'errore di prima — `toISOString`
+   riportava indietro le stesse due ore appena aggiunte e la fine tornava
+   uguale all'inizio. */
+const fine = new Date(new Date(`${inizio}Z`).getTime() + 2 * 3600 * 1000)
+  .toISOString()
+  .slice(0, 19);
+
 const datiStrutturati = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
   name: p.giocata
     ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}`
     : `${p.casa} — ${p.ospite}`,
-  startDate: p.ora ? `${p.data}T${p.ora}:00` : p.data,
-  eventStatus: p.giocata
-    ? "https://schema.org/EventScheduled"
-    : "https://schema.org/EventScheduled",
+  startDate: inizio,
+  endDate: fine,
+  /* `EventStatusType` non ha un valore "conclusa": i soli ammessi sono
+     Scheduled, Cancelled, Postponed, Rescheduled, MovedOnline. Una partita
+     giocata come da calendario resta EventScheduled; inventare un
+     EventCompleted darebbe un errore nuovo al posto di quello appena
+     chiuso. */
+  eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   sport: "Soccer",
+  /* `location` e' obbligatorio: senza, Search Console segnala un errore
+     critico e la pagina non puo' comparire con le sue informazioni. Lo stadio
+     ce lo da' ESPN nella stessa risposta del resto. Dove manca si mette il
+     campionato come luogo: e' impreciso, ma un campo assente e' peggio di uno
+     approssimato, e non stiamo inventando un indirizzo che non esiste. */
+  location: p.stadio
+    ? {
+        "@type": "Place",
+        name: p.stadio.nome,
+        address: {
+          "@type": "PostalAddress",
+          ...(p.stadio.citta ? { addressLocality: p.stadio.citta } : {}),
+          ...(p.stadio.paese ? { addressCountry: p.stadio.paese } : {}),
+        },
+      }
+    : { "@type": "Place", name: `Campo di casa di ${p.casa}` },
+  organizer: { "@type": "SportsOrganization", name: lega?.nome },
+  /* `performer` duplica `competitor` ed e' voluto: `competitor` e' la forma
+     giusta per una partita, `performer` e' quella che il controllo generico
+     sugli eventi si aspetta. Dirla in tutt'e due i modi costa due righe. */
+  performer: [
+    { "@type": "SportsTeam", name: p.casa },
+    { "@type": "SportsTeam", name: p.ospite },
+  ],
   competitor: [
     {
       "@type": "SportsTeam",
@@ -155,6 +197,22 @@ if (p.dettaglio) {
         )
       }
     </div>
+
+    {/* La data e' passata ma il risultato non ci e' arrivato: capita nei
+        campionati che una sola delle due fonti copre. Si dice, invece di
+        lasciare l'anteprima a far credere che la partita sia ancora da
+        giocare. */}
+    {
+      p.senza_risultato && (
+        <div class="vuoto" style="margin:18px 0">
+          <b>Il risultato non ci è ancora arrivato</b>
+          La partita risulta giocata, ma nessuna delle nostre fonti ha
+          pubblicato il punteggio. Qui sotto resta quello che il modello diceva
+          prima del fischio d'inizio: appena il dato arriva, questa pagina si
+          aggiorna da sé.
+        </div>
+      )
+    }
 
     {
       p.p_modello && (
