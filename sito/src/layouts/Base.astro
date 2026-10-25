@@ -16,6 +16,22 @@ const qui = Astro.url.pathname;
 const canonico = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.href;
 const titoloCompleto = `${titolo} — Quota Vera`;
 
+/* L'anteprima per i social. Quella del campionato quando la pagina ne ha uno,
+   altrimenti quella generale: il campionato si ricava dalla via, cosi' nessuna
+   delle duemilaseicento pagine deve ricordarsi di passarlo.
+   Le immagini si rigenerano a mano con `node scripts/immagine-sociale.mjs` —
+   non dipendono dai risultati, non c'e' ragione di rifarle ogni notte.
+   L'indirizzo dev'essere assoluto: i social non risolvono i percorsi relativi. */
+const slugNoti = new Set(campionati.campionati.map((c) => c.slug));
+const diCampionato = qui.match(/^\/calcio\/([^/]+)\//)?.[1];
+const immagine =
+  diCampionato && slugNoti.has(diCampionato)
+    ? `/sociale-${diCampionato}.png`
+    : "/sociale.png";
+const immagineAssoluta = Astro.site
+  ? new URL(immagine, Astro.site).href
+  : immagine;
+
 const voci = [
   { href: "/", testo: "Oggi" },
   { href: "/blog/", testo: "Articoli" },
@@ -61,9 +77,14 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
     <meta property="og:title" content={titoloCompleto} />
     <meta property="og:description" content={descrizione} />
     <meta property="og:url" content={canonico} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={immagineAssoluta} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Quota Vera — statistiche di 22 campionati europei" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={titoloCompleto} />
     <meta name="twitter:description" content={descrizione} />
+    <meta name="twitter:image" content={immagineAssoluta} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

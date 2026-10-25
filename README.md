@@ -239,6 +239,13 @@ finivano verdi pubblicando dati fermi. Distingue i **guai** (esce con errore) da
 **avvisi** (resta verde), perché una sentinella che grida sempre non la guarda
 più nessuno.
 
+**L'anteprima social** (`og:image`) e' un PNG per campionato piu' uno
+generale, in `sito/public/sociale*.png`. Si rifanno a mano con `node
+scripts/immagine-sociale.mjs`: non dipendono dai risultati, rigenerarle ogni
+notte sarebbe lavoro per niente. I social non seguono un SVG, e il font va
+preso fra quelli di sistema — sono Georgia e Arial, cioe' i ripieghi che i
+token del sito gia' dichiarano dopo Newsreader e Archivo.
+
 **`dati/pronostici/` sta nel repository.** È l'archivio di quello che il modello
 diceva *prima* di ogni partita, e serve a due cose: mostrarlo accanto al
 risultato sulla scheda, ed essere l'elenco esatto degli indirizzi pubblicati in
@@ -375,19 +382,16 @@ entrano in fondo e tirano giù la media **mentre** la visibilità cresce.
 1. **Aspettare e misurare.** Le pagine squadra sono nuove: tre settimane prima
    di capire se Google le prende. Il segnale è impressioni in salita **e**
    posizione media che scende sotto 30. Non i clic.
-2. **Un'immagine sociale.** Il sito non ha nessun `og:image`: chi condivide una
-   pagina su WhatsApp vede un rettangolo vuoto. Chiude anche l'avviso non
-   critico `image` di Search Console.
-3. **Guardare gli altri tre motivi** delle pagine non indicizzate. Il 404 è
+2. **Guardare gli altri tre motivi** delle pagine non indicizzate. Il 404 è
    chiuso; gli altri tre non si vedono senza aprire Search Console.
-4. **Scrivere qualche approfondimento.** Il pezzo del giorno lo genera il
+3. **Scrivere qualche approfondimento.** Il pezzo del giorno lo genera il
    programma; gli articoli che restano validi oltre la giornata no.
-5. **Risultati in diretta.** Richiedono JavaScript nel browser e una chiamata
+4. **Risultati in diretta.** Richiedono JavaScript nel browser e una chiamata
    diretta a ESPN, che può rifiutarla per via dell'origine. Da provare quando
    il resto è assestato, sapendo che su questo terreno Diretta e Flashscore
    sono irraggiungibili: ha senso solo come complemento alla scheda, non come
    prodotto.
-6. **Niente fonti a pagamento finché non c'è un incasso.** Vincolo esplicito,
+5. **Niente fonti a pagamento finché non c'è un incasso.** Vincolo esplicito,
    non una preferenza tecnica: coppe e quote in tempo reale restano fuori.
 
 ---
