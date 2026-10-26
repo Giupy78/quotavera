@@ -1,5 +1,5 @@
 {
- "data": "2026-10-25",
+ "data": "2026-10-26",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -12,7 +12,7 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 21 gol in 6 partite, 3.5 a incontro."
+      "Nella 8ª giornata sono stati segnati 34 gol in 10 partite, 3.4 a incontro."
      ]
     },
     {
@@ -37,6 +37,19 @@
       "Roma"
      ],
      "campione": 8
+    },
+    {
+     "tipo": "digiuno",
+     "titolo": "Udinese non vince da 6 partite",
+     "testo": "Il digiuno aperto più lungo del campionato.",
+     "numero": "6",
+     "campionato": "Serie A",
+     "bandiera": "🇮🇹",
+     "slug": "serie-a",
+     "squadre": [
+      "Udinese"
+     ],
+     "campione": 6
     },
     {
      "tipo": "rimonte",
@@ -153,7 +166,8 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 10 gol in 5 partite, 2.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 19 gol in 10 partite, 1.9 a incontro.",
+      "Il risultato più netto è stato Man United 0-3 Bournemouth: Bournemouth ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -161,23 +175,36 @@
      "righe": [
       "In testa c'è Man City con 21 punti in 8 partite.",
       "Arsenal ha 21 punti ma i tiri in porta ne direbbero 13.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sunderland, ferma a 4 punti contro i 10.2 attesi dal gioco."
+      "All'opposto Sunderland, ferma a 5 punti contro i 11.6 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
-     "tipo": "porta_chiusa",
-     "titolo": "Brighton non subisce gol da 4 partite",
-     "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
-     "numero": "4",
+     "tipo": "digiuno",
+     "titolo": "Sunderland non vince da 6 partite",
+     "testo": "Il digiuno aperto più lungo del campionato.",
+     "numero": "6",
      "campionato": "Premier League",
      "bandiera": "🏴",
      "slug": "premier-league",
      "squadre": [
-      "Brighton"
+      "Sunderland"
      ],
-     "campione": 4
+     "campione": 6
+    },
+    {
+     "tipo": "a_secco",
+     "titolo": "Sunderland non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+     "numero": "3",
+     "campionato": "Premier League",
+     "bandiera": "🏴",
+     "slug": "premier-league",
+     "squadre": [
+      "Sunderland"
+     ],
+     "campione": 3
     },
     {
      "tipo": "rimonte",
@@ -292,15 +319,15 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 16 gol in 6 partite, 2.7 a incontro.",
+      "Nella 10ª giornata sono stati segnati 22 gol in 9 partite, 2.4 a incontro.",
       "Il risultato più netto è stato Ath Bilbao 4-0 Getafe: Ath Bilbao ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Barcelona con 27 punti in 9 partite.",
-      "Barcelona ha 27 punti ma i tiri in porta ne direbbero 20.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Barcelona con 27 punti in 10 partite.",
+      "Betis ha 20 punti ma i tiri in porta ne direbbero 13.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Villarreal, ferma a 12 punti contro i 18.9 attesi dal gioco."
      ]
     }
@@ -308,16 +335,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Barcelona non perde da 9 partite",
+     "titolo": "Celta non perde da 7 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "9",
+     "numero": "7",
      "campionato": "LaLiga",
      "bandiera": "🇪🇸",
      "slug": "laliga",
      "squadre": [
-      "Barcelona"
+      "Celta"
      ],
-     "campione": 9
+     "campione": 7
     },
     {
      "tipo": "digiuno",
@@ -427,19 +454,19 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "Bundesliga: cosa dicono i numeri",
-   "sommario": "Dortmund in testa con 17 punti, 7ª giornata archiviata.",
+   "sommario": "Bayern Munich in testa con 17 punti, 7ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 7ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 18 gol in 7 partite, 2.6 a incontro.",
+      "Nella 7ª giornata sono stati segnati 25 gol in 9 partite, 2.8 a incontro.",
       "Il risultato più netto è stato RB Leipzig 4-0 Elversberg: RB Leipzig ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Dortmund con 17 punti in 7 partite.",
+      "In testa c'è Bayern Munich con 17 punti in 7 partite.",
       "Dortmund ha 17 punti ma i tiri in porta ne direbbero 12.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Stuttgart, ferma a 6 punti contro i 10.3 attesi dal gioco."
      ]
@@ -539,36 +566,37 @@
    "bandiera": "🇫🇷",
    "paese": "Francia",
    "titolo": "Ligue 1: cosa dicono i numeri",
-   "sommario": "Lyon in testa con 14 punti, 8ª giornata archiviata.",
+   "sommario": "Rennes in testa con 16 punti, 8ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 6 gol in 2 partite, 3.0 a incontro."
+      "Nella 8ª giornata sono stati segnati 20 gol in 8 partite, 2.5 a incontro.",
+      "Il risultato più netto è stato Rennes 3-0 Strasbourg: Rennes ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Lyon con 14 punti in 7 partite.",
-      "Lyon ha 14 punti ma i tiri in porta ne direbbero 10.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Le Havre, ferma a 2 punti contro i 9.8 attesi dal gioco."
+      "In testa c'è Rennes con 16 punti in 8 partite.",
+      "Rennes ha 16 punti ma i tiri in porta ne direbbero 12.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Le Havre, ferma a 2 punti contro i 11.6 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "digiuno",
-     "titolo": "Le Havre non vince da 7 partite",
+     "titolo": "Le Havre non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Ligue 1",
      "bandiera": "🇫🇷",
      "slug": "ligue-1",
      "squadre": [
       "Le Havre"
      ],
-     "campione": 7
+     "campione": 8
     },
     {
      "tipo": "rimonte",
@@ -670,7 +698,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 26 gol in 7 partite, 3.7 a incontro.",
+      "Nella 10ª giornata sono stati segnati 31 gol in 9 partite, 3.4 a incontro.",
       "Il risultato più netto è stato Willem II 1-6 Cambuur: Cambuur ha vinto con 5 gol di scarto."
      ]
     },
@@ -679,7 +707,7 @@
      "righe": [
       "In testa c'è Feyenoord con 24 punti in 10 partite.",
       "For Sittard ha 18 punti ma i tiri in porta ne direbbero 12.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Willem II, ferma a 2 punti contro i 6.1 attesi dal gioco."
+      "All'opposto Sparta Rotterdam, ferma a 9 punti contro i 13.3 attesi dal gioco."
      ]
     }
    ],
@@ -795,7 +823,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 9 gol in 4 partite, 2.2 a incontro.",
+      "Nella 9ª giornata sono stati segnati 21 gol in 8 partite, 2.6 a incontro.",
       "Il risultato più netto è stato Guimaraes 5-0 Maritimo: Guimaraes ha vinto con 5 gol di scarto."
      ]
     },
@@ -804,7 +832,7 @@
      "righe": [
       "In testa c'è Porto con 27 punti in 9 partite.",
       "Porto ha 27 punti ma i tiri in porta ne direbbero 18.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Estoril, ferma a 2 punti contro i 12.2 attesi dal gioco."
+      "All'opposto Estoril, ferma a 2 punti contro i 14.2 attesi dal gioco."
      ]
     }
    ],
@@ -824,16 +852,16 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Estoril non vince da 8 partite",
+     "titolo": "Estoril non vince da 9 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Primeira Liga",
      "bandiera": "🇵🇹",
      "slug": "primeira-liga",
      "squadre": [
       "Estoril"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "a_secco",
@@ -923,6 +951,21 @@
      "campionato": "Primeira Liga",
      "bandiera": "🇵🇹",
      "slug": "primeira-liga",
+     "data": "2026-10-25",
+     "casa": "Estoril",
+     "ospite": "Moreirense",
+     "gol_casa": 1,
+     "gol_ospite": 3,
+     "in_porta_casa": 7,
+     "in_porta_ospite": 4,
+     "vincitore": "Moreirense",
+     "perdente": "Estoril",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "Primeira Liga",
+     "bandiera": "🇵🇹",
+     "slug": "primeira-liga",
      "data": "2026-10-10",
      "casa": "Academico Viseu",
      "ospite": "Estoril",
@@ -931,21 +974,6 @@
      "in_porta_casa": 6,
      "in_porta_ospite": 9,
      "vincitore": "Academico Viseu",
-     "perdente": "Estoril",
-     "scarto_tiri": 3
-    },
-    {
-     "campionato": "Primeira Liga",
-     "bandiera": "🇵🇹",
-     "slug": "primeira-liga",
-     "data": "2026-09-20",
-     "casa": "Estoril",
-     "ospite": "Casa Pia",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 3,
-     "vincitore": "Casa Pia",
      "perdente": "Estoril",
      "scarto_tiri": 3
     }
@@ -963,7 +991,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 13 gol in 5 partite, 2.6 a incontro."
+      "Nella 9ª giornata sono stati segnati 15 gol in 6 partite, 2.5 a incontro."
      ]
     },
     {
@@ -1121,50 +1149,50 @@
    "bandiera": "🇧🇪",
    "paese": "Belgio",
    "titolo": "Pro League: cosa dicono i numeri",
-   "sommario": "Gent in testa con 22 punti, 9ª giornata archiviata.",
+   "sommario": "Gent in testa con 25 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 21 gol in 5 partite, 4.2 a incontro.",
-      "Il risultato più netto è stato RAAL La Louviere 3-0 Waregem: RAAL La Louviere ha vinto con 3 gol di scarto."
+      "Nella 9ª giornata sono stati segnati 37 gol in 8 partite, 4.6 a incontro.",
+      "Il risultato più netto è stato Gent 4-0 Anderlecht: Gent ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Gent con 22 punti in 8 partite.",
-      "Gent ha 22 punti ma i tiri in porta ne direbbero 14.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Cercle Brugge, ferma a 3 punti contro i 10.0 attesi dal gioco."
+      "In testa c'è Gent con 25 punti in 9 partite.",
+      "Gent ha 25 punti ma i tiri in porta ne direbbero 15.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Cercle Brugge, ferma a 3 punti contro i 10.1 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "St. Gilloise non perde da 8 partite",
+     "titolo": "St. Gilloise non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Pro League",
      "bandiera": "🇧🇪",
      "slug": "jupiler",
      "squadre": [
       "St. Gilloise"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "digiuno",
-     "titolo": "Cercle Brugge non vince da 8 partite",
+     "titolo": "Cercle Brugge non vince da 9 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Pro League",
      "bandiera": "🇧🇪",
      "slug": "jupiler",
      "squadre": [
       "Cercle Brugge"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "a_secco",
@@ -1274,20 +1302,20 @@
    "bandiera": "🇬🇷",
    "paese": "Grecia",
    "titolo": "Super League: cosa dicono i numeri",
-   "sommario": "Panathinaikos in testa con 18 punti, 8ª giornata archiviata.",
+   "sommario": "Panathinaikos in testa con 21 punti, 8ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 10 gol in 3 partite, 3.3 a incontro.",
+      "Nella 8ª giornata sono stati segnati 23 gol in 7 partite, 3.3 a incontro.",
       "Il risultato più netto è stato AEK 5-0 Panetolikos: AEK ha vinto con 5 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Panathinaikos con 18 punti in 7 partite.",
-      "PAOK ha 15 punti ma i tiri in porta ne direbbero 10.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Panathinaikos con 21 punti in 8 partite.",
+      "Olympiakos ha 19 punti ma i tiri in porta ne direbbero 14.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Levadeiakos, ferma a 3 punti contro i 8.7 attesi dal gioco."
      ]
     }
@@ -1308,16 +1336,29 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Levadeiakos non vince da 8 partite",
+     "titolo": "Volos NFC non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
      "numero": "8",
      "campionato": "Super League",
      "bandiera": "🇬🇷",
      "slug": "super-league-grecia",
      "squadre": [
-      "Levadeiakos"
+      "Volos NFC"
      ],
      "campione": 8
+    },
+    {
+     "tipo": "porta_chiusa",
+     "titolo": "Olympiakos non subisce gol da 4 partite",
+     "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
+     "numero": "4",
+     "campionato": "Super League",
+     "bandiera": "🇬🇷",
+     "slug": "super-league-grecia",
+     "squadre": [
+      "Olympiakos"
+     ],
+     "campione": 4
     },
     {
      "tipo": "a_secco",
@@ -1357,19 +1398,6 @@
       "Kifisia"
      ],
      "campione": 15
-    },
-    {
-     "tipo": "primo_tempo",
-     "titolo": "OFI Crete decide presto",
-     "testo": "72 dei suoi 130 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-     "numero": "55%",
-     "campionato": "Super League",
-     "bandiera": "🇬🇷",
-     "slug": "super-league-grecia",
-     "squadre": [
-      "OFI Crete"
-     ],
-     "campione": 130
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1430,7 +1458,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 18 gol in 5 partite, 3.6 a incontro.",
+      "Nella 10ª giornata sono stati segnati 20 gol in 6 partite, 3.3 a incontro.",
       "Il risultato più netto è stato Rangers 4-0 St Johnstone: Rangers ha vinto con 4 gol di scarto."
      ]
     },
@@ -1439,7 +1467,7 @@
      "righe": [
       "In testa c'è Celtic con 27 punti in 10 partite.",
       "Celtic ha 27 punti ma i tiri in porta ne direbbero 21.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Hibernian, ferma a 7 punti contro i 11.5 attesi dal gioco."
+      "All'opposto Motherwell, ferma a 8 punti contro i 12.6 attesi dal gioco."
      ]
     }
    ],
@@ -1550,20 +1578,20 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie B: cosa dicono i numeri",
-   "sommario": "Palermo in testa con 19 punti, 8ª giornata archiviata.",
+   "sommario": "Palermo in testa con 22 punti, 8ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 20 gol in 8 partite, 2.5 a incontro.",
+      "Nella 8ª giornata sono stati segnati 25 gol in 10 partite, 2.5 a incontro.",
       "Il risultato più netto è stato Catanzaro 1-6 Ascoli: Ascoli ha vinto con 5 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Palermo con 19 punti in 7 partite.",
-      "Palermo ha 19 punti ma i tiri in porta ne direbbero 11.9: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Palermo con 22 punti in 8 partite.",
+      "Palermo ha 22 punti ma i tiri in porta ne direbbero 13.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Sampdoria, ferma a 5 punti contro i 12.6 attesi dal gioco."
      ]
     }
@@ -1571,16 +1599,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Palermo non perde da 7 partite",
+     "titolo": "Palermo non perde da 8 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Serie B",
      "bandiera": "🇮🇹",
      "slug": "serie-b",
      "squadre": [
       "Palermo"
      ],
-     "campione": 7
+     "campione": 8
     },
     {
      "tipo": "digiuno",
@@ -2288,21 +2316,21 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga 2: cosa dicono i numeri",
-   "sommario": "Almeria in testa con 25 punti, 11ª giornata archiviata.",
+   "sommario": "Castellon in testa con 26 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 20 gol in 7 partite, 2.9 a incontro.",
+      "Nella 11ª giornata sono stati segnati 30 gol in 10 partite, 3.0 a incontro.",
       "Il risultato più netto è stato Girona 5-1 Celta B: Girona ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Almeria con 25 punti in 11 partite.",
+      "In testa c'è Castellon con 26 punti in 11 partite.",
       "Almeria ha 25 punti ma i tiri in porta ne direbbero 16.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Albacete, ferma a 1 punto contro i 11.2 attesi dal gioco."
+      "All'opposto Ceuta, ferma a 5 punti contro i 14.3 attesi dal gioco."
      ]
     }
    ],
@@ -2322,16 +2350,16 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Albacete non vince da 10 partite",
+     "titolo": "Tenerife non vince da 6 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "10",
+     "numero": "6",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
      "squadre": [
-      "Albacete"
+      "Tenerife"
      ],
-     "campione": 10
+     "campione": 6
     },
     {
      "tipo": "rimonte",

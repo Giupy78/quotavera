@@ -1,4 +1,1023 @@
 {
+ "401875566": {
+  "cartellini": [
+   {
+    "giocatore": "Ro-Zangelo Daal",
+    "minuto": "4'",
+    "rosso": false,
+    "squadra": "AZ Alkmaar"
+   },
+   {
+    "giocatore": "Elijah Dijkstra",
+    "minuto": "19'",
+    "rosso": false,
+    "squadra": "AZ Alkmaar"
+   },
+   {
+    "giocatore": "Robin Pröpper",
+    "minuto": "43'",
+    "rosso": false,
+    "squadra": "FC Twente"
+   },
+   {
+    "giocatore": "Daouda Weidmann",
+    "minuto": "50'",
+    "rosso": false,
+    "squadra": "FC Twente"
+   },
+   {
+    "giocatore": "Ayoub Oufkir",
+    "minuto": "70'",
+    "rosso": false,
+    "squadra": "AZ Alkmaar"
+   },
+   {
+    "giocatore": "Daouda Weidmann",
+    "minuto": "88'",
+    "rosso": true,
+    "squadra": "FC Twente"
+   }
+  ],
+  "casa": "AZ Alkmaar",
+  "data": "2026-10-25",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Joel Drommel",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Ruud Nijstad",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Robin Pröpper",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Aske Adelgaard",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Bart van Rooij",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Younes Taha",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Daouda Weidmann",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Ramiz Zerrouki",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Wout Weghorst",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Sondre Ørjasaeter",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Daan Rots",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Thomas van den Belt",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Kristian Hlynsson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Marko Pjaca",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "2",
+      "nome": "Michal Rosiak",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Remko Pasveer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Jip Meilink",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "25",
+      "nome": "Lucas Vennegoor Of Hesselink",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Jordy Bawuah",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Yannick Gerritsen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "FC Twente"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Jari De Busser",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Wesley Hoedt",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Lewis Schouten",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Mateo Chávez",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Elijah Dijkstra",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Valdemar Byskov",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Peer Koopmeiners",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Dave Kwakman",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Mexx Meerdink",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Ro-Zangelo Daal",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Weslley Patati",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Seiya Maikuma",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Rome-Jayden Owusu-Oduro",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "54",
+      "nome": "Jerolldino Bergraaf",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Bendegúz Kovács",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "75",
+      "nome": "Hessel De Wit",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "30",
+      "nome": "Denso Kasius",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "Ayoub Oufkir",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Mees De Wit",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Rion Ichihara",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Calvin Stengs",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Jordy Clasie",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Wassim Bouziane",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "AZ Alkmaar"
+   }
+  },
+  "gol": [
+   {
+    "assist": "Younes Taha",
+    "marcatore": "Sondre Ørjasaeter",
+    "minuto": "84'",
+    "squadra": "FC Twente",
+    "tipo": "Goal"
+   },
+   {
+    "assist": "Joel Drommel",
+    "marcatore": "Lucas Vennegoor Of Hesselink",
+    "minuto": "90'+3'",
+    "squadra": "FC Twente",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 0,
+  "gol_ospite": 2,
+  "id": "401875566",
+  "ospite": "FC Twente",
+  "stadio": {
+   "citta": "Alkmaar",
+   "nome": "AFAS Stadion",
+   "paese": "Netherlands"
+  },
+  "stat": {
+   "contrasti": [
+    14.0,
+    16.0
+   ],
+   "contrasti_riusciti": [
+    8.0,
+    9.0
+   ],
+   "corner": [
+    3.0,
+    6.0
+   ],
+   "cross": [
+    16.0,
+    18.0
+   ],
+   "cross_riusciti": [
+    5.0,
+    5.0
+   ],
+   "falli": [
+    17.0,
+    16.0
+   ],
+   "fuorigioco": [
+    1.0,
+    4.0
+   ],
+   "gialli": [
+    3.0,
+    1.0
+   ],
+   "in_porta": [
+    5.0,
+    5.0
+   ],
+   "intercetti": [
+    5.0,
+    5.0
+   ],
+   "lanci": [
+    45.0,
+    50.0
+   ],
+   "lanci_riusciti": [
+    20.0,
+    21.0
+   ],
+   "parate": [
+    3.0,
+    5.0
+   ],
+   "passaggi": [
+    438.0,
+    416.0
+   ],
+   "passaggi_riusciti": [
+    369.0,
+    341.0
+   ],
+   "possesso": [
+    51.2,
+    48.8
+   ],
+   "respinte": [
+    17.0,
+    22.0
+   ],
+   "rossi": [
+    0.0,
+    1.0
+   ],
+   "tiri": [
+    13.0,
+    16.0
+   ],
+   "tiri_respinti": [
+    5.0,
+    7.0
+   ]
+  }
+ },
+ "401875567": {
+  "cartellini": [
+   {
+    "giocatore": "Julian Brandt",
+    "minuto": "64'",
+    "rosso": false,
+    "squadra": "Ajax Amsterdam"
+   },
+   {
+    "giocatore": "Isaac Babadi",
+    "minuto": "89'",
+    "rosso": false,
+    "squadra": "Sparta Rotterdam"
+   },
+   {
+    "giocatore": "Lucas Rosa",
+    "minuto": "90'+3'",
+    "rosso": false,
+    "squadra": "Ajax Amsterdam"
+   }
+  ],
+  "casa": "Sparta Rotterdam",
+  "data": "2026-10-25",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Marc-André ter Stegen",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "36",
+      "nome": "Dies Janse",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Thilo Kehrer",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Youri Baas",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Lucas Rosa",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Sofyan Amrabat",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Julian Brandt",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Jorthy Mokio",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Tolu Arokodare",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "68",
+      "nome": "Abdellah Ouazane",
+      "ruolo": "LF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Viktor Tsygankov",
+      "ruolo": "RF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Davy Klaassen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Maarten Paes",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Jofre Torrents",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "43",
+      "nome": "Rayane Bounida",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Joeri Heerkens",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Aaron Bouwman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Yves Bissouma",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Daley Blind",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Oscar Gloukh",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "38",
+      "nome": "Marcos Leonardo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "67",
+      "nome": "Mohamed Abdalla",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "5",
+      "nome": "Owen Wijndal",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-3-3",
+    "squadra": "Ajax Amsterdam"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Michael Brouwer",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Nick Verschuren",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Bruno Martins Indi",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Marvin Young",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Bas Kuipers",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Lushendry Martes",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Cedric Hatenboer",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Jens Toornstra",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Isaac Babadi",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Robin Van Cruijsen",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Milan Zonneveld",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Giannino Vianello",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Julian Baas",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Mitchell van Bergen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "Casper Terho",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Alwande Roaldsøy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Andrej Kostic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Joel Ideho",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Teo Quintero",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Filip Bednarek",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Boyd Reith",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Pascal Kuiper",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "5-4-1",
+    "squadra": "Sparta Rotterdam"
+   }
+  },
+  "gol": [
+   {
+    "assist": "Julian Brandt",
+    "marcatore": "Abdellah Ouazane",
+    "minuto": "22'",
+    "squadra": "Ajax Amsterdam",
+    "tipo": "Goal"
+   },
+   {
+    "assist": "Isaac Babadi",
+    "marcatore": "Jens Toornstra",
+    "minuto": "43'",
+    "squadra": "Sparta Rotterdam",
+    "tipo": "Goal - Header"
+   },
+   {
+    "assist": "Julian Brandt",
+    "marcatore": "Tolu Arokodare",
+    "minuto": "45'+1'",
+    "squadra": "Ajax Amsterdam",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 2,
+  "id": "401875567",
+  "ospite": "Ajax Amsterdam",
+  "stadio": {
+   "citta": "Rotterdam",
+   "nome": "Sparta-Stadion Het Kasteel",
+   "paese": "Netherlands"
+  },
+  "stat": {
+   "contrasti": [
+    23.0,
+    12.0
+   ],
+   "contrasti_riusciti": [
+    15.0,
+    10.0
+   ],
+   "corner": [
+    5.0,
+    3.0
+   ],
+   "cross": [
+    26.0,
+    11.0
+   ],
+   "cross_riusciti": [
+    4.0,
+    3.0
+   ],
+   "falli": [
+    15.0,
+    7.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    1.0,
+    2.0
+   ],
+   "in_porta": [
+    5.0,
+    4.0
+   ],
+   "intercetti": [
+    25.0,
+    8.0
+   ],
+   "lanci": [
+    72.0,
+    60.0
+   ],
+   "lanci_riusciti": [
+    25.0,
+    32.0
+   ],
+   "parate": [
+    2.0,
+    3.0
+   ],
+   "passaggi": [
+    403.0,
+    619.0
+   ],
+   "passaggi_riusciti": [
+    326.0,
+    538.0
+   ],
+   "possesso": [
+    40.6,
+    59.4
+   ],
+   "respinte": [
+    12.0,
+    37.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    11.0,
+    16.0
+   ],
+   "tiri_respinti": [
+    4.0,
+    4.0
+   ]
+  }
+ },
  "401875568": {
   "cartellini": [
    {

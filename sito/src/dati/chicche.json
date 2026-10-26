@@ -1,5 +1,5 @@
 {
- "data": "2026-10-25",
+ "data": "2026-10-26",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -10,7 +10,7 @@
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
    "squadre": [],
-   "campione": 978
+   "campione": 980
   },
   {
    "tipo": "gol_lega_meno",
@@ -21,7 +21,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1503
+   "campione": 1506
   },
   {
    "tipo": "campo",
@@ -32,7 +32,7 @@
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
    "squadre": [],
-   "campione": 1503
+   "campione": 1506
   },
   {
    "tipo": "pareggi",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1218
+   "campione": 1220
   },
   {
    "tipo": "cartellini",
@@ -54,7 +54,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 759
+   "campione": 763
   },
   {
    "tipo": "corner",
@@ -65,7 +65,7 @@
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 743
+   "campione": 744
   }
  ],
  "per_campionato": {
@@ -82,6 +82,19 @@
      "Roma"
     ],
     "campione": 8
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Udinese non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Udinese"
+    ],
+    "campione": 6
    },
    {
     "tipo": "rimonte",
@@ -140,17 +153,30 @@
   ],
   "premier-league": [
    {
-    "tipo": "porta_chiusa",
-    "titolo": "Brighton non subisce gol da 4 partite",
-    "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
-    "numero": "4",
+    "tipo": "digiuno",
+    "titolo": "Sunderland non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
     "campionato": "Premier League",
     "bandiera": "🏴",
     "slug": "premier-league",
     "squadre": [
-     "Brighton"
+     "Sunderland"
     ],
-    "campione": 4
+    "campione": 6
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Sunderland non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Premier League",
+    "bandiera": "🏴",
+    "slug": "premier-league",
+    "squadre": [
+     "Sunderland"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -223,16 +249,16 @@
   "laliga": [
    {
     "tipo": "imbattuta",
-    "titolo": "Barcelona non perde da 9 partite",
+    "titolo": "Celta non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "9",
+    "numero": "7",
     "campionato": "LaLiga",
     "bandiera": "🇪🇸",
     "slug": "laliga",
     "squadre": [
-     "Barcelona"
+     "Celta"
     ],
-    "campione": 9
+    "campione": 7
    },
    {
     "tipo": "digiuno",
@@ -374,16 +400,16 @@
   "ligue-1": [
    {
     "tipo": "digiuno",
-    "titolo": "Le Havre non vince da 7 partite",
+    "titolo": "Le Havre non vince da 8 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Ligue 1",
     "bandiera": "🇫🇷",
     "slug": "ligue-1",
     "squadre": [
      "Le Havre"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "rimonte",
@@ -538,16 +564,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Estoril non vince da 8 partite",
+    "titolo": "Estoril non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
      "Estoril"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "a_secco",
@@ -741,29 +767,29 @@
   "jupiler": [
    {
     "tipo": "imbattuta",
-    "titolo": "St. Gilloise non perde da 8 partite",
+    "titolo": "St. Gilloise non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
      "St. Gilloise"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
-    "titolo": "Cercle Brugge non vince da 8 partite",
+    "titolo": "Cercle Brugge non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
      "Cercle Brugge"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "a_secco",
@@ -849,16 +875,29 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Levadeiakos non vince da 8 partite",
+    "titolo": "Volos NFC non vince da 8 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
     "numero": "8",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
-     "Levadeiakos"
+     "Volos NFC"
     ],
     "campione": 8
+   },
+   {
+    "tipo": "porta_chiusa",
+    "titolo": "Olympiakos non subisce gol da 4 partite",
+    "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
+    "numero": "4",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Olympiakos"
+    ],
+    "campione": 4
    },
    {
     "tipo": "a_secco",
@@ -898,19 +937,6 @@
      "Kifisia"
     ],
     "campione": 15
-   },
-   {
-    "tipo": "primo_tempo",
-    "titolo": "OFI Crete decide presto",
-    "testo": "72 dei suoi 130 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-    "numero": "55%",
-    "campionato": "Super League",
-    "bandiera": "🇬🇷",
-    "slug": "super-league-grecia",
-    "squadre": [
-     "OFI Crete"
-    ],
-    "campione": 130
    },
    {
     "tipo": "sorpresa_mercato",
@@ -1026,16 +1052,16 @@
   "serie-b": [
    {
     "tipo": "imbattuta",
-    "titolo": "Palermo non perde da 7 partite",
+    "titolo": "Palermo non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Serie B",
     "bandiera": "🇮🇹",
     "slug": "serie-b",
     "squadre": [
      "Palermo"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "digiuno",
@@ -1488,16 +1514,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Albacete non vince da 10 partite",
+    "titolo": "Tenerife non vince da 6 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "10",
+    "numero": "6",
     "campionato": "LaLiga 2",
     "bandiera": "🇪🇸",
     "slug": "laliga-2",
     "squadre": [
-     "Albacete"
+     "Tenerife"
     ],
-    "campione": 10
+    "campione": 6
    },
    {
     "tipo": "rimonte",
