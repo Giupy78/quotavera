@@ -375,6 +375,19 @@ entrano in fondo e tirano giù la media **mentre** la visibilità cresce.
   uscivano da tutte le liste per sempre. Ora la pagina resta, e dice che il
   punteggio non ce l'abbiamo.
 
+### Il seguito, il 26 ottobre
+
+Search Console ha riportato due avvisi **non critici**: `url` mancante in
+`organizer`, `address` mancante in `location`. Sono comparsi solo perché il
+primo errore era stato chiuso — Google non può lamentarsi di un campo dentro
+un oggetto che non esiste — ed è la conferma che le pagine erano già state
+ripassate nel giro di diciassette ore. Chiusi tutti e due: l'organizzatore
+punta alla pagina del campionato, e l'indirizzo c'è sempre, con il paese del
+campionato (codice ISO, `GB` più `addressRegion` per Inghilterra e Scozia) e la
+città quando lo stadio ce l'ha dato ESPN. Le due squadre ora portano anche
+l'indirizzo della loro pagina: 4.466 collegamenti nel markup, tutti verso
+pagine che esistono.
+
 ---
 
 ## 6. Prossimi passi, in ordine

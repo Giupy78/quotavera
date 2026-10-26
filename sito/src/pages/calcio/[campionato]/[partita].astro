@@ -5,6 +5,7 @@ import SchedaGiocata from "../../../components/SchedaGiocata.astro";
 import campionati from "../../../dati/campionati.json";
 import schede from "../../../dati/schede.json";
 import { lumacaSquadra } from "../../../lib/indirizzi";
+import { indirizzo } from "../../../lib/paesi";
 
 export function getStaticPaths() {
   const leghe = Object.fromEntries(campionati.campionati.map((c) => [c.slug, c]));
@@ -54,6 +55,14 @@ const fine = new Date(new Date(`${inizio}Z`).getTime() + 2 * 3600 * 1000)
   .toISOString()
   .slice(0, 19);
 
+/* Da ieri ogni squadra ha la sua pagina: dirlo qui lega le duemila schede
+   partita alle quattrocento pagine squadra anche per chi legge il markup e non
+   i collegamenti. */
+const viaSquadra = (nome: string) =>
+  lega?.slug && Astro.site
+    ? { url: new URL(`/calcio/${lega.slug}/squadra/${lumacaSquadra(nome)}/`, Astro.site).href }
+    : {};
+
 const datiStrutturati = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
@@ -73,26 +82,35 @@ const datiStrutturati = {
   /* `location` e' obbligatorio: senza, Search Console segnala un errore
      critico e la pagina non puo' comparire con le sue informazioni. Lo stadio
      ce lo da' ESPN nella stessa risposta del resto. Dove manca si mette il
-     campionato come luogo: e' impreciso, ma un campo assente e' peggio di uno
-     approssimato, e non stiamo inventando un indirizzo che non esiste. */
-  location: p.stadio
-    ? {
-        "@type": "Place",
-        name: p.stadio.nome,
-        address: {
-          "@type": "PostalAddress",
-          ...(p.stadio.citta ? { addressLocality: p.stadio.citta } : {}),
-          ...(p.stadio.paese ? { addressCountry: p.stadio.paese } : {}),
-        },
-      }
-    : { "@type": "Place", name: `Campo di casa di ${p.casa}` },
-  organizer: { "@type": "SportsOrganization", name: lega?.nome },
+     campo di casa della squadra ospitante: e' impreciso, ma un campo assente
+     e' peggio di uno approssimato, e non stiamo inventando un indirizzo.
+     L'indirizzo c'e' in tutt'e due i casi. Il paese lo sappiamo sempre — e'
+     quello del campionato, e una partita casalinga si gioca li' — e la citta'
+     solo quando lo stadio ce l'ha dato ESPN. Un `location` senza `address` e'
+     il secondo dei due avvisi arrivati da Search Console il 26 ottobre, ed e'
+     comparso solo perche' il primo, `location` del tutto assente, era stato
+     chiuso: Google non puo' lamentarsi di un campo dentro un oggetto che non
+     esiste. */
+  location: {
+    "@type": "Place",
+    name: p.stadio ? p.stadio.nome : `Campo di casa di ${p.casa}`,
+    address: indirizzo(lega?.paese, p.stadio?.citta),
+  },
+  /* `url` sull'organizzatore: la pagina del campionato. E' l'altro avviso
+     dello stesso messaggio, e la pagina esiste gia'. */
+  organizer: {
+    "@type": "SportsOrganization",
+    name: lega?.nome,
+    ...(lega?.slug && Astro.site
+      ? { url: new URL(`/calcio/${lega.slug}/`, Astro.site).href }
+      : {}),
+  },
   /* `performer` duplica `competitor` ed e' voluto: `competitor` e' la forma
      giusta per una partita, `performer` e' quella che il controllo generico
      sugli eventi si aspetta. Dirla in tutt'e due i modi costa due righe. */
   performer: [
-    { "@type": "SportsTeam", name: p.casa },
-    { "@type": "SportsTeam", name: p.ospite },
+    { "@type": "SportsTeam", name: p.casa, ...viaSquadra(p.casa) },
+    { "@type": "SportsTeam", name: p.ospite, ...viaSquadra(p.ospite) },
   ],
   competitor: [
     {
@@ -103,11 +121,13 @@ const datiStrutturati = {
          lettori la forma corta basta, al motore di ricerca serve sapere che
          sono la stessa squadra. */
       ...(p.casa_esteso ? { alternateName: p.casa_esteso } : {}),
+      ...viaSquadra(p.casa),
     },
     {
       "@type": "SportsTeam",
       name: p.ospite,
       ...(p.ospite_esteso ? { alternateName: p.ospite_esteso } : {}),
+      ...viaSquadra(p.ospite),
     },
   ],
   superEvent: { "@type": "SportsOrganization", name: lega?.nome },
