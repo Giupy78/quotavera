@@ -344,8 +344,8 @@ I numeri veri, da Search Console, perché la sessione dopo non se li inventi:
 | Impressioni | 217 | tre mesi |
 | Clic | 1 | tre mesi |
 | Posizione media | 44,6 | tre mesi |
-| Pagine indicizzate | ~1.320 | al 22 ottobre |
-| Pagine non indicizzate | ~676, quattro motivi | al 22 ottobre |
+| Pagine indicizzate | ~1.320 → **1.650** | dal 22 al 27 ottobre |
+| Pagine non indicizzate | ~676 → 617 | dal 22 al 27 ottobre |
 
 **Il totale conta meno della forma della curva.** Fino all'11 ottobre le
 impressioni erano piatte a zero; dal 13 stanno fra le 15 e le 32 al giorno.
@@ -387,6 +387,40 @@ campionato (codice ISO, `GB` più `addressRegion` per Inghilterra e Scozia) e la
 città quando lo stadio ce l'ha dato ESPN. Le due squadre ora portano anche
 l'indirizzo della loro pagina: 4.466 collegamenti nel markup, tutti verso
 pagine che esistono.
+
+### Il 27 ottobre: i quattro motivi, letti
+
+Dei 617 indirizzi non indicizzati:
+
+- **582 «rilevati, ma non ancora indicizzati»**: Google li conosce e non è
+  ancora passato a leggerli. È la coda, non un errore — su un dominio di due
+  mesi Google scansiona poco per volta. Ci sono dentro quasi certamente le
+  pagine squadra.
+- **31 «scansionati, ma non indicizzati»**: tutte pagine partita, tutte lette
+  il 24 ottobre, quasi tutte di partite ancora lontane. Un'anteprima somiglia
+  molto alle altre mille; di solito entra quando arriva il risultato e la pagina
+  diventa unica. Niente da correggere.
+- **3 in 404**: uno (wigan-mansfield) risponde già 200. Gli altri due erano un
+  residuo: partite pubblicate come «in programma» e uscite da tutte le liste
+  **prima** che `dati/pronostici/` fosse salvato nel repository, quindi senza
+  archivio da cui ripescarle. Passando al setaccio tutte le 126 versioni di
+  `schede.json` dal 28 agosto: **2.258 indirizzi partita pubblicati, 4 persi**.
+  Rimessi nell'archivio con i dati che avevano allora (campo `ricostruita_il`),
+  senza pronostico — non ce l'abbiamo, e scriverlo adesso sarebbe inventarlo.
+  Oggi ne esistono 2.258 su 2.258.
+- **1 reindirizzamento**: normale.
+
+L'avviso sulle pagine senza risultato diceva «la partita risulta giocata». Non
+lo sappiamo — può essere stata rinviata, ed è probabilmente il caso di tutte e
+quattro, cadute a ridosso della sosta per le nazionali. Ora dice tutte e due le
+possibilità.
+
+**Web Analytics di Cloudflare è acceso dal 27 ottobre.** Prima non lo era: il
+token non era mai stato impostato, quindi di pagine viste non esiste nessun
+dato precedente. quotavera.it non è una zona Cloudflare (il dominio è
+registrato altrove), quindi l'impostazione automatica dalla sezione Web
+Analytics non è disponibile: si accende dal progetto Pages, scheda *Metriche*.
+Si attiva al primo rilascio successivo.
 
 ---
 

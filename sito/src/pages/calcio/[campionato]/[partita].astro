@@ -219,17 +219,20 @@ if (p.dettaglio) {
       }
     </div>
 
-    {/* La data e' passata ma il risultato non ci e' arrivato: capita nei
-        campionati che una sola delle due fonti copre. Si dice, invece di
-        lasciare l'anteprima a far credere che la partita sia ancora da
-        giocare. */}
+    {/* La data e' passata ma il risultato non ci e' arrivato. Le cause
+        possibili sono due e da qui non si distinguono: la partita e' stata
+        rinviata, oppure si e' giocata in un campionato che una sola delle
+        nostre fonti copre e quella fonte e' indietro. L'avviso dice le due
+        cose invece di sceglierne una: la prima versione scriveva "la partita
+        risulta giocata", che per una partita rinviata e' falso. */}
     {
       p.senza_risultato && (
         <div class="vuoto" style="margin:18px 0">
-          <b>Il risultato non ci è ancora arrivato</b>
-          La partita risulta giocata, ma nessuna delle nostre fonti ha
-          pubblicato il punteggio. Qui sotto resta quello che il modello diceva
-          prima del fischio d'inizio: appena il dato arriva, questa pagina si
+          <b>Il risultato non ci è arrivato</b>
+          La data della partita è passata, ma nessuna delle nostre fonti ha
+          pubblicato il punteggio: può essere stata rinviata, oppure il dato
+          deve ancora arrivare. Qui sotto resta quello che sapevamo prima. Se
+          la partita viene giocata o rimessa in calendario, questa pagina si
           aggiorna da sé.
         </div>
       )
