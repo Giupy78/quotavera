@@ -8,25 +8,40 @@
     "data": "2026-10-27",
     "ora": "18:30",
     "quote": {
-     "mercato_unico": [
-      3.1,
-      3.45,
-      2.1
+     "betfair": [
+      3.65,
+      3.65,
+      2.2
+     ],
+     "bet365": [
+      3.5,
+      3.6,
+      2.05
+     ],
+     "massimo": [
+      3.5,
+      3.7,
+      2.15
+     ],
+     "media": [
+      3.33,
+      3.54,
+      2.09
      ]
     },
     "p_mercato": [
-     0.2939,
-     0.2619,
-     0.4442
+     0.2732,
+     0.2732,
+     0.4536
     ],
     "p_modello": [
      0.272,
      0.2595,
      0.4685
     ],
-    "margine": 0.0886,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0025,
+    "margine_migliore": 0.0211,
+    "quote_da": "confronto"
    },
    {
     "id": "roma-cagliari",
@@ -35,25 +50,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.323,
-      4.7,
-      8.5
+     "betfair": [
+      1.34,
+      5.9,
+      10.5
+     ],
+     "bet365": [
+      1.3,
+      5.5,
+      9.5
+     ],
+     "massimo": [
+      1.35,
+      5.6,
+      10.5
+     ],
+     "media": [
+      1.31,
+      5.33,
+      9.31
      ]
     },
     "p_mercato": [
-     0.7189,
-     0.1867,
-     0.0944
+     0.7415,
+     0.1663,
+     0.0922
     ],
     "p_modello": [
      0.6806,
      0.2045,
      0.1149
     ],
-    "margine": 0.0863,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.011,
+    "margine_migliore": 0.0146,
+    "quote_da": "confronto"
    },
    {
     "id": "torino-como",
@@ -62,25 +92,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      4.6,
-      3.75,
-      1.69
+     "betfair": [
+      5.1,
+      3.95,
+      1.79
+     ],
+     "bet365": [
+      4.75,
+      3.7,
+      1.75
+     ],
+     "massimo": [
+      4.9,
+      4.0,
+      1.77
+     ],
+     "media": [
+      4.5,
+      3.8,
+      1.74
      ]
     },
     "p_mercato": [
-     0.1948,
-     0.243,
-     0.5622
+     0.1937,
+     0.2507,
+     0.5556
     ],
     "p_modello": [
      0.2041,
      0.2471,
      0.5489
     ],
-    "margine": 0.0758,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0079,
+    "margine_migliore": 0.0191,
+    "quote_da": "confronto"
    },
    {
     "id": "milan-bologna",
@@ -89,25 +134,40 @@
     "data": "2026-10-28",
     "ora": "18:30",
     "quote": {
-     "mercato_unico": [
-      1.588,
-      3.9,
-      5.0
+     "betfair": [
+      1.72,
+      4.1,
+      5.7
+     ],
+     "bet365": [
+      1.62,
+      3.75,
+      5.75
+     ],
+     "massimo": [
+      1.64,
+      4.0,
+      5.75
+     ],
+     "media": [
+      1.62,
+      3.91,
+      5.3
      ]
     },
     "p_mercato": [
-     0.5955,
-     0.2298,
-     0.1747
+     0.5811,
+     0.2437,
+     0.1752
     ],
     "p_modello": [
      0.4882,
      0.2608,
      0.251
     ],
-    "margine": 0.0861,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0007,
+    "margine_migliore": 0.0337,
+    "quote_da": "confronto"
    },
    {
     "id": "parma-udinese",
@@ -116,25 +176,40 @@
     "data": "2026-10-28",
     "ora": "18:30",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      3.1,
+      3.15,
+      2.72
+     ],
+     "bet365": [
       2.9,
-      3.05,
-      2.45
+      3.2,
+      2.5
+     ],
+     "massimo": [
+      3.0,
+      3.2,
+      2.55
+     ],
+     "media": [
+      2.9,
+      3.14,
+      2.49
      ]
     },
     "p_mercato": [
-     0.3182,
-     0.3016,
-     0.3803
+     0.32,
+     0.3149,
+     0.365
     ],
     "p_modello": [
      0.3175,
      0.3,
      0.3825
     ],
-    "margine": 0.0809,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0077,
+    "margine_migliore": 0.038,
+    "quote_da": "confronto"
    },
    {
     "id": "venezia-inter",
@@ -143,25 +218,40 @@
     "data": "2026-10-28",
     "ora": "18:30",
     "quote": {
-     "mercato_unico": [
-      7.0,
-      5.25,
-      1.333
+     "betfair": [
+      8.6,
+      6.0,
+      1.38
+     ],
+     "bet365": [
+      8.5,
+      5.0,
+      1.36
+     ],
+     "massimo": [
+      8.5,
+      5.75,
+      1.36
+     ],
+     "media": [
+      7.73,
+      5.47,
+      1.33
      ]
     },
     "p_mercato": [
-     0.1196,
-     0.1659,
-     0.7146
+     0.1142,
+     0.1645,
+     0.7214
     ],
     "p_modello": [
      0.0593,
      0.1228,
      0.8179
     ],
-    "margine": 0.0835,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0076,
+    "margine_migliore": 0.0269,
+    "quote_da": "confronto"
    },
    {
     "id": "genoa-juventus",
@@ -170,25 +260,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      5.0,
+     "betfair": [
+      5.6,
+      3.85,
+      1.76
+     ],
+     "bet365": [
+      5.5,
       3.6,
-      1.645
+      1.67
+     ],
+     "massimo": [
+      5.5,
+      3.75,
+      1.73
+     ],
+     "media": [
+      5.18,
+      3.66,
+      1.68
      ]
     },
     "p_mercato": [
-     0.1749,
-     0.2508,
-     0.5743
+     0.1767,
+     0.2577,
+     0.5656
     ],
     "p_modello": [
      0.2006,
      0.2726,
      0.5268
     ],
-    "margine": 0.0857,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0065,
+    "margine_migliore": 0.0265,
+    "quote_da": "confronto"
    },
    {
     "id": "monza-napoli",
@@ -197,25 +302,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      4.7,
+      4.1,
+      1.83
+     ],
+     "bet365": [
+      4.5,
+      3.9,
+      1.75
+     ],
+     "massimo": [
+      4.8,
       4.0,
-      3.8,
-      1.769
+      1.8
+     ],
+     "media": [
+      4.35,
+      3.89,
+      1.74
      ]
     },
     "p_mercato": [
-     0.2259,
-     0.2388,
-     0.5352
+     0.2118,
+     0.2429,
+     0.5452
     ],
     "p_modello": [
      0.1509,
      0.203,
      0.6461
     ],
-    "margine": 0.0784,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0031,
+    "margine_migliore": 0.0139,
+    "quote_da": "confronto"
    },
    {
     "id": "frosinone-lecce",
@@ -224,25 +344,40 @@
     "data": "2026-10-29",
     "ora": "18:30",
     "quote": {
-     "mercato_unico": [
-      1.645,
+     "betfair": [
+      1.73,
+      4.3,
+      5.1
+     ],
+     "bet365": [
+      1.65,
       4.0,
-      4.4
+      5.0
+     ],
+     "massimo": [
+      1.7,
+      4.33,
+      5.0
+     ],
+     "media": [
+      1.66,
+      4.13,
+      4.49
      ]
     },
     "p_mercato": [
-     0.5745,
-     0.2239,
-     0.2017
+     0.5754,
+     0.2305,
+     0.1941
     ],
     "p_modello": [
      0.5945,
      0.2183,
      0.1871
     ],
-    "margine": 0.0852,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0067,
+    "margine_migliore": 0.0192,
+    "quote_da": "confronto"
    },
    {
     "id": "fiorentina-atalanta",
@@ -251,25 +386,40 @@
     "data": "2026-10-29",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.15,
-      3.5,
-      2.95
+     "betfair": [
+      2.26,
+      3.75,
+      3.35
+     ],
+     "bet365": [
+      2.2,
+      3.6,
+      3.1
+     ],
+     "massimo": [
+      2.25,
+      3.8,
+      3.1
+     ],
+     "media": [
+      2.18,
+      3.62,
+      3.01
      ]
     },
     "p_mercato": [
-     0.433,
-     0.2575,
-     0.3095
+     0.4397,
+     0.2642,
+     0.296
     ],
     "p_modello": [
      0.2738,
      0.2474,
      0.4788
     ],
-    "margine": 0.0898,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0077,
+    "margine_migliore": 0.0302,
+    "quote_da": "confronto"
    },
    {
     "id": "bologna-monza",
@@ -306,22 +456,22 @@
     "ora": "18:00",
     "quote": {
      "mercato_unico": [
-      4.9,
+      5.0,
       4.1,
-      1.556
+      1.541
      ]
     },
     "p_mercato": [
-     0.1774,
-     0.2162,
-     0.6064
+     0.1728,
+     0.2155,
+     0.6117
     ],
     "p_modello": [
      0.16,
      0.2273,
      0.6127
     ],
-    "margine": 0.0907,
+    "margine": 0.0928,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -331,16 +481,26 @@
     "ospite": "Inter",
     "data": "2026-10-31",
     "ora": "20:45",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      3.15,
+      3.5,
+      2.05
+     ]
+    },
+    "p_mercato": [
+     0.2881,
+     0.2571,
+     0.4548
+    ],
     "p_modello": [
      0.2675,
      0.235,
      0.4976
     ],
-    "margine": null,
+    "margine": 0.091,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "como-venezia",
@@ -458,22 +618,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      1.741,
-      3.55,
-      4.2
+      1.769,
+      3.45,
+      4.1
      ]
     },
     "p_mercato": [
-     0.5383,
-     0.2521,
-     0.2096
+     0.5276,
+     0.2586,
+     0.2139
     ],
     "p_modello": [
      0.3884,
      0.2929,
      0.3187
     ],
-    "margine": 0.0942,
+    "margine": 0.099,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -483,16 +643,26 @@
     "ospite": "Fiorentina",
     "data": "2026-11-02",
     "ora": "18:30",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.4,
+      3.45,
+      2.55
+     ]
+    },
+    "p_mercato": [
+     0.3826,
+     0.2588,
+     0.3586
+    ],
     "p_modello": [
      0.3621,
      0.2533,
      0.3846
     ],
-    "margine": null,
+    "margine": 0.0987,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "atalanta-parma",
@@ -500,12 +670,39 @@
     "ospite": "Parma",
     "data": "2026-11-02",
     "ora": "20:45",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      1.426,
+      4.3,
+      6.0
+     ]
+    },
+    "p_mercato": [
+     0.6598,
+     0.2021,
+     0.1382
+    ],
     "p_modello": [
      0.6407,
      0.2232,
      0.1361
+    ],
+    "margine": 0.1005,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "venezia-udinese",
+    "casa": "Venezia",
+    "ospite": "Udinese",
+    "data": "2026-11-06",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2656,
+     0.2776,
+     0.4568
     ],
     "margine": null,
     "margine_migliore": null,
@@ -521,22 +718,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      1.833,
-      3.9,
-      3.95
+      1.769,
+      4.0,
+      4.1
      ]
     },
     "p_mercato": [
-     0.5246,
-     0.2393,
-     0.2361
+     0.5425,
+     0.2318,
+     0.2257
     ],
     "p_modello": [
      0.4659,
      0.2466,
      0.2875
     ],
-    "margine": 0.0551,
+    "margine": 0.0592,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -548,22 +745,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.15,
-      3.4,
-      3.35
+      2.05,
+      3.45,
+      3.5
      ]
     },
     "p_mercato": [
-     0.4443,
-     0.2757,
-     0.28
+     0.4646,
+     0.2697,
+     0.2657
     ],
     "p_modello": [
      0.4202,
      0.2855,
      0.2944
     ],
-    "margine": 0.0577,
+    "margine": 0.0634,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -656,22 +853,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.667,
+      1.645,
       4.4,
-      4.4
+      4.5
      ]
     },
     "p_mercato": [
-     0.5784,
-     0.2108,
-     0.2108
+     0.5852,
+     0.2099,
+     0.2049
     ],
     "p_modello": [
      0.5818,
      0.2291,
      0.189
     ],
-    "margine": 0.0544,
+    "margine": 0.0574,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -710,22 +907,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      1.952,
-      3.7,
-      3.55
+      2.0,
+      3.65,
+      3.5
      ]
     },
     "p_mercato": [
-     0.4884,
-     0.2502,
-     0.2614
+     0.478,
+     0.2552,
+     0.2668
     ],
     "p_modello": [
      0.4819,
      0.2731,
      0.245
     ],
-    "margine": 0.0643,
+    "margine": 0.0597,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -750,7 +947,7 @@
     "p_modello": [
      0.2608,
      0.2887,
-     0.4506
+     0.4505
     ],
     "margine": 0.0595,
     "margine_migliore": null,
@@ -782,51 +979,36 @@
     "margine": 0.0619,
     "margine_migliore": null,
     "quote_da": "unico"
-   }
-  ],
-  "laliga": [
+   },
    {
-    "id": "sevilla-osasuna",
-    "casa": "Sevilla",
-    "ospite": "Osasuna",
-    "data": "2026-10-26",
+    "id": "everton-coventry",
+    "casa": "Everton",
+    "ospite": "Coventry",
+    "data": "2026-11-06",
     "ora": "21:00",
     "quote": {
-     "betfair": [
-      2.0,
-      3.45,
-      4.6
-     ],
-     "bet365": [
-      1.95,
-      3.3,
-      4.2
-     ],
-     "massimo": [
-      1.95,
-      3.4,
-      4.33
-     ],
-     "media": [
-      1.92,
-      3.36,
-      4.0
+     "mercato_unico": [
+      1.69,
+      3.9,
+      4.5
      ]
     },
     "p_mercato": [
-     0.4973,
-     0.2875,
-     0.2152
+     0.5643,
+     0.2346,
+     0.2011
     ],
     "p_modello": [
-     0.472,
-     0.2613,
-     0.2667
+     0.5579,
+     0.2854,
+     0.1567
     ],
-    "margine": 0.0072,
-    "margine_migliore": 0.0379,
-    "quote_da": "confronto"
-   },
+    "margine": 0.0703,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   }
+  ],
+  "laliga": [
    {
     "id": "villarreal-espanol",
     "casa": "Villarreal",
@@ -835,22 +1017,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      1.465,
-      4.8,
-      6.0
+      1.444,
+      4.9,
+      6.5
      ]
     },
     "p_mercato": [
-     0.6588,
-     0.1911,
-     0.1501
+     0.6715,
+     0.189,
+     0.1395
     ],
     "p_modello": [
-     0.6363,
-     0.2096,
-     0.1541
+     0.6372,
+     0.2093,
+     0.1535
     ],
-    "margine": 0.0576,
+    "margine": 0.0504,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -873,9 +1055,9 @@
      0.5997
     ],
     "p_modello": [
-     0.2532,
-     0.2408,
-     0.506
+     0.2539,
+     0.241,
+     0.5051
     ],
     "margine": 0.0577,
     "margine_migliore": null,
@@ -900,9 +1082,9 @@
      0.3145
     ],
     "p_modello": [
-     0.3629,
+     0.3637,
      0.2992,
-     0.3379
+     0.3371
     ],
     "margine": 0.0574,
     "margine_migliore": null,
@@ -927,9 +1109,9 @@
      0.1261
     ],
     "p_modello": [
-     0.7728,
-     0.1568,
-     0.0704
+     0.7733,
+     0.1566,
+     0.0701
     ],
     "margine": 0.0595,
     "margine_migliore": null,
@@ -943,22 +1125,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      1.125,
-      8.0,
+      1.111,
+      8.5,
       23.0
      ]
     },
     "p_mercato": [
-     0.8622,
-     0.1082,
-     0.0296
+     0.8715,
+     0.0998,
+     0.0287
     ],
     "p_modello": [
-     0.8222,
-     0.118,
-     0.0599
+     0.823,
+     0.1175,
+     0.0595
     ],
-    "margine": 0.0574,
+    "margine": 0.0612,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -981,9 +1163,9 @@
      0.3788
     ],
     "p_modello": [
-     0.3667,
-     0.3281,
-     0.3052
+     0.3614,
+     0.3293,
+     0.3093
     ],
     "margine": 0.0616,
     "margine_migliore": null,
@@ -997,22 +1179,22 @@
     "ora": "16:15",
     "quote": {
      "mercato_unico": [
-      9.0,
+      9.5,
       7.0,
-      1.235
+      1.222
      ]
     },
     "p_mercato": [
-     0.0938,
-     0.1248,
-     0.7815
+     0.0873,
+     0.1239,
+     0.7888
     ],
     "p_modello": [
-     0.0875,
-     0.118,
-     0.7945
+     0.0874,
+     0.1179,
+     0.7947
     ],
-    "margine": 0.0637,
+    "margine": 0.0665,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1024,22 +1206,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      2.45,
+      2.35,
       3.35,
-      2.85
+      2.95
      ]
     },
     "p_mercato": [
-     0.3882,
-     0.2801,
-     0.3317
+     0.4034,
+     0.2784,
+     0.3182
     ],
     "p_modello": [
-     0.5036,
-     0.259,
-     0.2374
+     0.5043,
+     0.2589,
+     0.2368
     ],
-    "margine": 0.0575,
+    "margine": 0.063,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1062,9 +1244,9 @@
      0.2822
     ],
     "p_modello": [
-     0.4973,
-     0.255,
-     0.2477
+     0.4981,
+     0.2549,
+     0.247
     ],
     "margine": 0.0648,
     "margine_migliore": null,
@@ -1076,16 +1258,53 @@
     "ospite": "Osasuna",
     "data": "2026-11-02",
     "ora": "21:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4867,
-     0.2699,
-     0.2434
+    "quote": {
+     "mercato_unico": [
+      2.15,
+      3.2,
+      3.55
+     ]
+    },
+    "p_mercato": [
+     0.4437,
+     0.2933,
+     0.263
     ],
-    "margine": null,
+    "p_modello": [
+     0.4946,
+     0.2692,
+     0.2363
+    ],
+    "margine": 0.0593,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
+   },
+   {
+    "id": "sevilla-alaves",
+    "casa": "Sevilla",
+    "ospite": "Alaves",
+    "data": "2026-11-06",
+    "ora": "21:00",
+    "quote": {
+     "mercato_unico": [
+      2.1,
+      3.2,
+      3.6
+     ]
+    },
+    "p_mercato": [
+     0.4521,
+     0.291,
+     0.2569
+    ],
+    "p_modello": [
+     0.4504,
+     0.2759,
+     0.2737
+    ],
+    "margine": 0.0665,
+    "margine_migliore": null,
+    "quote_da": "unico"
    }
   ],
   "bundesliga": [
@@ -1108,9 +1327,9 @@
      0.4533
     ],
     "p_modello": [
-     0.4525,
+     0.4524,
      0.2184,
-     0.3291
+     0.3292
     ],
     "margine": 0.0951,
     "margine_migliore": null,
@@ -1124,22 +1343,22 @@
     "ora": "15:30",
     "quote": {
      "mercato_unico": [
-      1.741,
+      1.769,
       4.1,
-      3.6
+      3.55
      ]
     },
     "p_mercato": [
-     0.5375,
-     0.2147,
-     0.2477
+     0.5306,
+     0.2163,
+     0.2531
     ],
     "p_modello": [
      0.5313,
      0.2164,
      0.2524
     ],
-    "margine": 0.0961,
+    "margine": 0.0909,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1162,7 +1381,7 @@
      0.2763
     ],
     "p_modello": [
-     0.4514,
+     0.4515,
      0.2996,
      0.2489
     ],
@@ -1178,22 +1397,22 @@
     "ora": "15:30",
     "quote": {
      "mercato_unico": [
-      2.85,
-      3.6,
-      2.15
+      2.95,
+      3.65,
+      2.1
      ]
     },
     "p_mercato": [
-     0.3199,
-     0.2485,
-     0.4316
+     0.3098,
+     0.2462,
+     0.444
     ],
     "p_modello": [
      0.3954,
      0.2515,
      0.3531
     ],
-    "margine": 0.0938,
+    "margine": 0.0891,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1216,7 +1435,7 @@
      0.5116
     ],
     "p_modello": [
-     0.1851,
+     0.1852,
      0.3509,
      0.464
     ],
@@ -1284,16 +1503,26 @@
     "ospite": "FC Koln",
     "data": "2026-11-01",
     "ora": "15:30",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.4,
+      3.45,
+      2.6
+     ]
+    },
+    "p_mercato": [
+     0.3851,
+     0.2611,
+     0.3538
+    ],
     "p_modello": [
      0.4185,
      0.2729,
      0.3086
     ],
-    "margine": null,
+    "margine": 0.0911,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "ein-frankfurt-hamburg",
@@ -1304,9 +1533,26 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5775,
+     0.5774,
      0.2214,
-     0.2011
+     0.2012
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "hamburg-mgladbach",
+    "casa": "Hamburg",
+    "ospite": "M'gladbach",
+    "data": "2026-11-06",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3896,
+     0.264,
+     0.3464
     ],
     "margine": null,
     "margine_migliore": null,
@@ -1315,48 +1561,6 @@
   ],
   "ligue-1": [
    {
-    "id": "paris-sg-lyon",
-    "casa": "Paris SG",
-    "ospite": "Lyon",
-    "data": "2026-10-26",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      1.45,
-      5.7,
-      7.0
-     ],
-     "bet365": [
-      1.45,
-      4.75,
-      6.5
-     ],
-     "massimo": [
-      1.48,
-      5.25,
-      6.5
-     ],
-     "media": [
-      1.43,
-      4.94,
-      6.1
-     ]
-    },
-    "p_mercato": [
-     0.6863,
-     0.1731,
-     0.1406
-    ],
-    "p_modello": [
-     0.6202,
-     0.2096,
-     0.1703
-    ],
-    "margine": 0.008,
-    "margine_migliore": 0.02,
-    "quote_da": "confronto"
-   },
-   {
     "id": "le-havre-paris-sg",
     "casa": "Le Havre",
     "ospite": "Paris SG",
@@ -1364,49 +1568,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      9.5,
+      10.0,
       7.0,
-      1.235
+      1.222
      ]
     },
     "p_mercato": [
-     0.0896,
-     0.1264,
-     0.784
+     0.0835,
+     0.1254,
+     0.7911
     ],
     "p_modello": [
-     0.1122,
-     0.1894,
-     0.6984
+     0.1094,
+     0.1888,
+     0.7018
     ],
-    "margine": 0.0578,
-    "margine_migliore": null,
-    "quote_da": "unico"
-   },
-   {
-    "id": "lille-lens",
-    "casa": "Lille",
-    "ospite": "Lens",
-    "data": "2026-10-30",
-    "ora": "21:05",
-    "quote": {
-     "mercato_unico": [
-      2.35,
-      3.5,
-      2.85
-     ]
-    },
-    "p_mercato": [
-     0.4037,
-     0.2661,
-     0.3302
-    ],
-    "p_modello": [
-     0.4134,
-     0.29,
-     0.2966
-    ],
-    "margine": 0.0621,
+    "margine": 0.0612,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1414,8 +1591,8 @@
     "id": "nice-rennes",
     "casa": "Nice",
     "ospite": "Rennes",
-    "data": "2026-10-31",
-    "ora": "17:15",
+    "data": "2026-10-30",
+    "ora": "19:00",
     "quote": {
      "mercato_unico": [
       2.75,
@@ -1429,65 +1606,38 @@
      0.4047
     ],
     "p_modello": [
-     0.3534,
-     0.2518,
-     0.3948
+     0.354,
+     0.2516,
+     0.3943
     ],
     "margine": 0.0594,
     "margine_migliore": null,
     "quote_da": "unico"
    },
    {
-    "id": "lorient-brest",
-    "casa": "Lorient",
-    "ospite": "Brest",
-    "data": "2026-10-31",
-    "ora": "20:45",
+    "id": "lille-lens",
+    "casa": "Lille",
+    "ospite": "Lens",
+    "data": "2026-10-30",
+    "ora": "21:05",
     "quote": {
      "mercato_unico": [
       2.4,
-      3.35,
-      2.8
+      3.5,
+      2.75
      ]
     },
     "p_mercato": [
-     0.3915,
-     0.2755,
-     0.333
+     0.3937,
+     0.2648,
+     0.3415
     ],
     "p_modello": [
-     0.4273,
-     0.2636,
-     0.3091
+     0.4142,
+     0.2898,
+     0.296
     ],
-    "margine": 0.0723,
-    "margine_migliore": null,
-    "quote_da": "unico"
-   },
-   {
-    "id": "lyon-angers",
-    "casa": "Lyon",
-    "ospite": "Angers",
-    "data": "2026-10-31",
-    "ora": "20:45",
-    "quote": {
-     "mercato_unico": [
-      1.377,
-      5.0,
-      7.0
-     ]
-    },
-    "p_mercato": [
-     0.697,
-     0.1795,
-     0.1235
-    ],
-    "p_modello": [
-     0.6736,
-     0.2091,
-     0.1173
-    ],
-    "margine": 0.0691,
+    "margine": 0.066,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1499,22 +1649,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.2,
+      2.3,
       3.45,
-      3.05
+      3.0
      ]
     },
     "p_mercato": [
-     0.4287,
-     0.267,
-     0.3043
+     0.4143,
+     0.2714,
+     0.3143
     ],
     "p_modello": [
      0.191,
      0.2423,
-     0.5668
+     0.5667
     ],
-    "margine": 0.0723,
+    "margine": 0.058,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1526,22 +1676,49 @@
     "ora": "15:00",
     "quote": {
      "mercato_unico": [
-      1.769,
+      1.833,
       3.95,
-      3.95
+      3.9
      ]
     },
     "p_mercato": [
-     0.5378,
-     0.2311,
-     0.2311
+     0.5246,
+     0.2361,
+     0.2393
     ],
     "p_modello": [
-     0.526,
-     0.2388,
-     0.2352
+     0.5271,
+     0.2384,
+     0.2345
     ],
-    "margine": 0.0716,
+    "margine": 0.0551,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "lyon-angers",
+    "casa": "Lyon",
+    "ospite": "Angers",
+    "data": "2026-11-01",
+    "ora": "17:15",
+    "quote": {
+     "mercato_unico": [
+      1.385,
+      5.0,
+      7.0
+     ]
+    },
+    "p_mercato": [
+     0.6946,
+     0.1807,
+     0.1247
+    ],
+    "p_modello": [
+     0.6692,
+     0.2119,
+     0.1189
+    ],
+    "margine": 0.0649,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1553,22 +1730,22 @@
     "ora": "17:15",
     "quote": {
      "mercato_unico": [
-      2.25,
-      3.55,
+      2.3,
+      3.5,
       2.95
      ]
     },
     "p_mercato": [
-     0.4213,
-     0.2612,
-     0.3175
+     0.4138,
+     0.2669,
+     0.3194
     ],
     "p_modello": [
-     0.3767,
-     0.2561,
-     0.3672
+     0.3773,
+     0.2559,
+     0.3668
     ],
-    "margine": 0.0651,
+    "margine": 0.0595,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1591,11 +1768,65 @@
      0.2611
     ],
     "p_modello": [
-     0.5478,
-     0.2273,
-     0.2249
+     0.5488,
+     0.2269,
+     0.2242
     ],
     "margine": 0.0653,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "lorient-brest",
+    "casa": "Lorient",
+    "ospite": "Brest",
+    "data": "2026-11-02",
+    "ora": "20:45",
+    "quote": {
+     "mercato_unico": [
+      2.4,
+      3.35,
+      2.8
+     ]
+    },
+    "p_mercato": [
+     0.3915,
+     0.2755,
+     0.333
+    ],
+    "p_modello": [
+     0.4279,
+     0.2634,
+     0.3087
+    ],
+    "margine": 0.0723,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "toulouse-strasbourg",
+    "casa": "Toulouse",
+    "ospite": "Strasbourg",
+    "data": "2026-11-06",
+    "ora": "20:45",
+    "quote": {
+     "mercato_unico": [
+      2.05,
+      3.65,
+      3.25
+     ]
+    },
+    "p_mercato": [
+     0.4624,
+     0.2522,
+     0.2853
+    ],
+    "p_modello": [
+     0.4146,
+     0.2568,
+     0.3286
+    ],
+    "margine": 0.0695,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -1647,7 +1878,7 @@
      0.3058
     ],
     "p_modello": [
-     0.3711,
+     0.3712,
      0.2502,
      0.3786
     ],
@@ -1755,9 +1986,9 @@
      0.3121
     ],
     "p_modello": [
-     0.4165,
+     0.4166,
      0.255,
-     0.3285
+     0.3284
     ],
     "margine": 0.0819,
     "margine_migliore": null,
@@ -1843,67 +2074,52 @@
     "margine": 0.0841,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "willem-ii-zwolle",
+    "casa": "Willem II",
+    "ospite": "Zwolle",
+    "data": "2026-11-06",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2689,
+     0.2615,
+     0.4695
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "primeira-liga": [
-   {
-    "id": "santa-clara-benfica",
-    "casa": "Santa Clara",
-    "ospite": "Benfica",
-    "data": "2026-10-26",
-    "ora": "19:45",
-    "quote": {
-     "betfair": [
-      9.4,
-      5.5,
-      1.37
-     ],
-     "bet365": [
-      9.0,
-      4.33,
-      1.35
-     ],
-     "massimo": [
-      9.3,
-      4.8,
-      1.4
-     ],
-     "media": [
-      8.19,
-      4.55,
-      1.36
-     ]
-    },
-    "p_mercato": [
-     0.1014,
-     0.1765,
-     0.7221
-    ],
-    "p_modello": [
-     0.1726,
-     0.2351,
-     0.5923
-    ],
-    "margine": 0.0181,
-    "margine_migliore": 0.0301,
-    "quote_da": "confronto"
-   },
    {
     "id": "casa-pia-sp-lisbon",
     "casa": "Casa Pia",
     "ospite": "Sp Lisbon",
     "data": "2026-10-30",
     "ora": "21:15",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      8.5,
+      5.5,
+      1.286
+     ]
+    },
+    "p_mercato": [
+     0.0967,
+     0.1591,
+     0.7442
+    ],
     "p_modello": [
      0.0726,
      0.1266,
      0.8008
     ],
-    "margine": null,
+    "margine": 0.0771,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "moreirense-estrela",
@@ -1924,9 +2140,9 @@
      0.3893
     ],
     "p_modello": [
-     0.4693,
+     0.4692,
      0.2497,
-     0.281
+     0.2811
     ],
     "margine": 0.079,
     "margine_migliore": null,
@@ -1940,22 +2156,22 @@
     "ora": "21:30",
     "quote": {
      "mercato_unico": [
-      1.235,
-      5.75,
+      1.211,
+      6.0,
       10.5
      ]
     },
     "p_mercato": [
-     0.7749,
-     0.1507,
-     0.0744
+     0.7868,
+     0.141,
+     0.0722
     ],
     "p_modello": [
-     0.7847,
-     0.1386,
-     0.0767
+     0.7845,
+     0.1387,
+     0.0768
     ],
-    "margine": 0.0789,
+    "margine": 0.0877,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1967,22 +2183,22 @@
     "ora": "16:30",
     "quote": {
      "mercato_unico": [
-      1.8,
-      3.6,
-      4.0
+      1.769,
+      3.7,
+      4.1
      ]
     },
     "p_mercato": [
-     0.5239,
-     0.2516,
-     0.2245
+     0.5349,
+     0.2455,
+     0.2197
     ],
     "p_modello": [
-     0.5004,
-     0.2373,
-     0.2623
+     0.5002,
+     0.2374,
+     0.2624
     ],
-    "margine": 0.0833,
+    "margine": 0.0795,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1994,22 +2210,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      2.05,
-      3.35,
-      3.45
+      1.909,
+      3.45,
+      3.75
      ]
     },
     "p_mercato": [
-     0.46,
-     0.2742,
-     0.2657
+     0.4939,
+     0.2644,
+     0.2417
     ],
     "p_modello": [
-     0.7097,
-     0.1729,
-     0.1175
+     0.7092,
+     0.1732,
+     0.1176
     ],
-    "margine": 0.0762,
+    "margine": 0.0804,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2019,16 +2235,26 @@
     "ospite": "Santa Clara",
     "data": "2026-11-01",
     "ora": "19:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.2377,
-     0.2493,
-     0.513
+    "quote": {
+     "mercato_unico": [
+      3.25,
+      3.05,
+      2.25
+     ]
+    },
+    "p_mercato": [
+     0.282,
+     0.3018,
+     0.4161
     ],
-    "margine": null,
+    "p_modello": [
+     0.2384,
+     0.2483,
+     0.5133
+    ],
+    "margine": 0.08,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "sp-braga-famalicao",
@@ -2038,22 +2264,22 @@
     "ora": "21:30",
     "quote": {
      "mercato_unico": [
-      1.645,
-      3.6,
-      5.0
+      1.714,
+      3.55,
+      4.7
      ]
     },
     "p_mercato": [
-     0.5743,
-     0.2508,
-     0.1749
+     0.5532,
+     0.2571,
+     0.1896
     ],
     "p_modello": [
-     0.4711,
-     0.2577,
-     0.2712
+     0.4709,
+     0.2578,
+     0.2713
     ],
-    "margine": 0.0857,
+    "margine": 0.0779,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2063,16 +2289,26 @@
     "ospite": "Alverca",
     "data": "2026-11-02",
     "ora": "21:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.8054,
-     0.1236,
-     0.071
+    "quote": {
+     "mercato_unico": [
+      1.19,
+      6.5,
+      12.0
+     ]
+    },
+    "p_mercato": [
+     0.8055,
+     0.1313,
+     0.0632
     ],
-    "margine": null,
+    "p_modello": [
+     0.8055,
+     0.1233,
+     0.0712
+    ],
+    "margine": 0.0775,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "gil-vicente-guimaraes",
@@ -2080,12 +2316,39 @@
     "ospite": "Guimaraes",
     "data": "2026-11-02",
     "ora": "21:15",
+    "quote": {
+     "mercato_unico": [
+      2.6,
+      3.05,
+      2.7
+     ]
+    },
+    "p_mercato": [
+     0.3565,
+     0.3009,
+     0.3426
+    ],
+    "p_modello": [
+     0.4035,
+     0.2802,
+     0.3163
+    ],
+    "margine": 0.0829,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "famalicao-arouca",
+    "casa": "Famalicao",
+    "ospite": "Arouca",
+    "data": "2026-11-06",
+    "ora": "21:45",
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4036,
-     0.2801,
-     0.3163
+     0.5013,
+     0.2482,
+     0.2505
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2094,63 +2357,31 @@
   ],
   "superlig": [
    {
-    "id": "galatasaray-fenerbahce",
-    "casa": "Galatasaray",
-    "ospite": "Fenerbahce",
-    "data": "2026-10-26",
-    "ora": "19:30",
-    "quote": {
-     "betfair": [
-      2.24,
-      3.8,
-      3.0
-     ],
-     "bet365": [
-      2.15,
-      3.8,
-      2.75
-     ],
-     "massimo": [
-      2.2,
-      3.85,
-      3.0
-     ],
-     "media": [
-      2.13,
-      3.73,
-      2.85
-     ]
-    },
-    "p_mercato": [
-     0.4311,
-     0.2498,
-     0.3192
-    ],
-    "p_modello": [
-     0.4956,
-     0.2335,
-     0.271
-    ],
-    "margine": 0.0429,
-    "margine_migliore": 0.0476,
-    "quote_da": "confronto"
-   },
-   {
     "id": "konyaspor-galatasaray",
     "casa": "Konyaspor",
     "ospite": "Galatasaray",
     "data": "2026-10-30",
     "ora": "18:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.1605,
-     0.242,
-     0.5975
+    "quote": {
+     "mercato_unico": [
+      4.7,
+      4.1,
+      1.645
+     ]
+    },
+    "p_mercato": [
+     0.1935,
+     0.2241,
+     0.5824
     ],
-    "margine": null,
+    "p_modello": [
+     0.1587,
+     0.2419,
+     0.5995
+    ],
+    "margine": 0.0646,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "erzurumspor-corum",
@@ -2171,9 +2402,9 @@
      0.3512
     ],
     "p_modello": [
-     0.298,
+     0.2983,
      0.2783,
-     0.4237
+     0.4234
     ],
     "margine": 0.0773,
     "margine_migliore": null,
@@ -2185,16 +2416,26 @@
     "ospite": "Rizespor",
     "data": "2026-10-31",
     "ora": "14:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4064,
-     0.3288,
-     0.2648
+    "quote": {
+     "mercato_unico": [
+      2.45,
+      3.5,
+      2.6
+     ]
+    },
+    "p_mercato": [
+     0.3811,
+     0.261,
+     0.358
     ],
-    "margine": null,
+    "p_modello": [
+     0.4068,
+     0.3287,
+     0.2645
+    ],
+    "margine": 0.0785,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "fenerbahce-goztep",
@@ -2205,9 +2446,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6876,
-     0.1834,
-     0.129
+     0.6863,
+     0.1841,
+     0.1296
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2232,9 +2473,9 @@
      0.0883
     ],
     "p_modello": [
-     0.8319,
-     0.1172,
-     0.0508
+     0.8322,
+     0.1171,
+     0.0507
     ],
     "margine": 0.0847,
     "margine_migliore": null,
@@ -2249,9 +2490,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5726,
-     0.2402,
-     0.1872
+     0.573,
+     0.24,
+     0.187
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2263,16 +2504,26 @@
     "ospite": "Gaziantep",
     "data": "2026-11-01",
     "ora": "14:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.7047,
-     0.185,
-     0.1103
+    "quote": {
+     "mercato_unico": [
+      1.333,
+      5.25,
+      7.0
+     ]
+    },
+    "p_mercato": [
+     0.7146,
+     0.1659,
+     0.1196
     ],
-    "margine": null,
+    "p_modello": [
+     0.7052,
+     0.1848,
+     0.11
+    ],
+    "margine": 0.0835,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "kasimpasa-besiktas",
@@ -2280,16 +2531,26 @@
     "ospite": "Besiktas",
     "data": "2026-11-01",
     "ora": "17:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.2917,
-     0.2777,
-     0.4306
+    "quote": {
+     "mercato_unico": [
+      5.0,
+      4.1,
+      1.556
+     ]
+    },
+    "p_mercato": [
+     0.1746,
+     0.2174,
+     0.608
     ],
-    "margine": null,
+    "p_modello": [
+     0.2921,
+     0.2777,
+     0.4302
+    ],
+    "margine": 0.0866,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "genclerbirligi-alanyaspor",
@@ -2297,12 +2558,39 @@
     "ospite": "Alanyaspor",
     "data": "2026-11-02",
     "ora": "18:00",
+    "quote": {
+     "mercato_unico": [
+      2.7,
+      3.15,
+      2.55
+     ]
+    },
+    "p_mercato": [
+     0.3435,
+     0.2916,
+     0.3649
+    ],
+    "p_modello": [
+     0.3243,
+     0.3225,
+     0.3532
+    ],
+    "margine": 0.08,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "gaziantep-kasimpasa",
+    "casa": "Gaziantep",
+    "ospite": "Kasimpasa",
+    "data": "2026-11-06",
+    "ora": "18:00",
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.324,
-     0.3226,
-     0.3535
+     0.3685,
+     0.2788,
+     0.3527
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2318,22 +2606,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      5.0,
+      5.25,
       4.5,
-      1.513
+      1.5
      ]
     },
     "p_mercato": [
-     0.1755,
-     0.1972,
-     0.6272
+     0.1673,
+     0.1983,
+     0.6344
     ],
     "p_modello": [
      0.1767,
      0.2119,
      0.6114
     ],
-    "margine": 0.0832,
+    "margine": 0.0794,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2525,7 +2813,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5644,
+     0.5643,
      0.2533,
      0.1823
     ],
@@ -2545,6 +2833,23 @@
      0.2195,
      0.2632,
      0.5173
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "standard-beveren",
+    "casa": "Standard",
+    "ospite": "Beveren",
+    "data": "2026-11-06",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5361,
+     0.2431,
+     0.2208
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2693,16 +2998,26 @@
     "ospite": "Volos NFC",
     "data": "2026-11-02",
     "ora": "17:00",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      1.8,
+      3.6,
+      4.0
+     ]
+    },
+    "p_mercato": [
+     0.5239,
+     0.2516,
+     0.2245
+    ],
     "p_modello": [
      0.5294,
      0.2869,
      0.1837
     ],
-    "margine": null,
+    "margine": 0.0833,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "kalamata-iraklis",
@@ -2710,16 +3025,26 @@
     "ospite": "Iraklis",
     "data": "2026-11-02",
     "ora": "18:30",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.2,
+      3.1,
+      3.3
+     ]
+    },
+    "p_mercato": [
+     0.426,
+     0.2966,
+     0.2774
+    ],
     "p_modello": [
      0.4435,
      0.2481,
      0.3085
     ],
-    "margine": null,
+    "margine": 0.0802,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    }
   ],
   "premiership": [
@@ -2730,25 +3055,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.05,
-      3.5,
-      3.45
+     "betfair": [
+      2.16,
+      3.6,
+      3.6
+     ],
+     "bet365": [
+      2.01,
+      3.4,
+      3.5
+     ],
+     "massimo": [
+      2.08,
+      3.6,
+      3.5
+     ],
+     "media": [
+      2.02,
+      3.47,
+      3.38
      ]
     },
     "p_mercato": [
-     0.4646,
-     0.2657,
-     0.2697
+     0.4562,
+     0.2719,
+     0.2719
     ],
     "p_modello": [
      0.4007,
      0.2681,
      0.3312
     ],
-    "margine": 0.0634,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0185,
+    "margine_migliore": 0.0443,
+    "quote_da": "confronto"
    },
    {
     "id": "celtic-dundee-united",
@@ -2757,25 +3097,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.27,
-      5.75,
-      9.0
+     "betfair": [
+      1.28,
+      6.6,
+      10.5
+     ],
+     "bet365": [
+      1.22,
+      6.0,
+      10.0
+     ],
+     "massimo": [
+      1.3,
+      6.25,
+      10.25
+     ],
+     "media": [
+      1.26,
+      5.93,
+      9.08
      ]
     },
     "p_mercato": [
-     0.7558,
-     0.1527,
-     0.0915
+     0.7689,
+     0.1435,
+     0.0877
     ],
     "p_modello": [
      0.8049,
      0.1268,
      0.0683
     ],
-    "margine": 0.0724,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.028,
+    "margine_migliore": 0.0268,
+    "quote_da": "confronto"
    },
    {
     "id": "dundee-kilmarnock",
@@ -2784,25 +3139,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.952,
-      3.8,
-      3.45
+     "betfair": [
+      1.97,
+      4.0,
+      3.7
+     ],
+     "bet365": [
+      1.91,
+      3.6,
+      3.7
+     ],
+     "massimo": [
+      1.95,
+      3.85,
+      3.7
+     ],
+     "media": [
+      1.92,
+      3.7,
+      3.48
      ]
     },
     "p_mercato": [
-     0.488,
-     0.2429,
-     0.2691
+     0.4972,
+     0.2413,
+     0.2615
     ],
     "p_modello": [
      0.5006,
      0.2294,
      0.27
     ],
-    "margine": 0.0653,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0279,
+    "margine_migliore": 0.0428,
+    "quote_da": "confronto"
    },
    {
     "id": "st-johnstone-motherwell",
@@ -2811,25 +3181,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.5,
+     "betfair": [
+      2.56,
       3.4,
-      2.65
+      2.86
+     ],
+     "bet365": [
+      2.45,
+      3.5,
+      2.57
+     ],
+     "massimo": [
+      2.5,
+      3.6,
+      2.8
+     ],
+     "media": [
+      2.45,
+      3.41,
+      2.66
      ]
     },
     "p_mercato": [
-     0.3754,
-     0.2714,
-     0.3532
+     0.3788,
+     0.2831,
+     0.3381
     ],
     "p_modello": [
      0.2842,
      0.2746,
      0.4412
     ],
-    "margine": 0.0715,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0344,
+    "margine_migliore": 0.0349,
+    "quote_da": "confronto"
    },
    {
     "id": "st-mirren-hibernian",
@@ -2838,25 +3223,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
       3.35,
-      3.6,
+      3.75,
+      2.16
+     ],
+     "bet365": [
+      3.3,
+      3.5,
       2.05
+     ],
+     "massimo": [
+      3.5,
+      3.75,
+      2.1
+     ],
+     "media": [
+      3.24,
+      3.61,
+      2.03
      ]
     },
     "p_mercato": [
-     0.278,
-     0.2576,
-     0.4644
+     0.2894,
+     0.2578,
+     0.4527
     ],
     "p_modello": [
      0.2974,
      0.2746,
      0.428
     ],
-    "margine": 0.0641,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0281,
+    "margine_migliore": 0.0286,
+    "quote_da": "confronto"
    },
    {
     "id": "hearts-rangers",
@@ -2865,25 +3265,40 @@
     "data": "2026-10-28",
     "ora": "21:00",
     "quote": {
-     "mercato_unico": [
-      3.1,
-      3.7,
+     "betfair": [
+      3.3,
+      4.0,
+      2.16
+     ],
+     "bet365": [
+      3.25,
+      3.6,
+      2.05
+     ],
+     "massimo": [
+      3.25,
+      3.75,
+      2.2
+     ],
+     "media": [
+      3.11,
+      3.61,
       2.1
      ]
     },
     "p_mercato": [
-     0.3001,
-     0.2487,
-     0.4512
+     0.2978,
+     0.245,
+     0.4571
     ],
     "p_modello": [
      0.3798,
      0.2516,
      0.3687
     ],
-    "margine": 0.069,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.016,
+    "margine_migliore": 0.0289,
+    "quote_da": "confronto"
    },
    {
     "id": "kilmarnock-st-johnstone",
@@ -2945,25 +3360,40 @@
     "data": "2026-10-27",
     "ora": "19:00",
     "quote": {
-     "mercato_unico": [
-      1.69,
-      4.2,
-      4.4
+     "betfair": [
+      1.64,
+      4.5,
+      5.5
+     ],
+     "bet365": [
+      1.57,
+      3.7,
+      5.0
+     ],
+     "massimo": [
+      1.63,
+      4.33,
+      5.0
+     ],
+     "media": [
+      1.59,
+      4.0,
+      4.78
      ]
     },
     "p_mercato": [
-     0.5694,
-     0.2206,
-     0.21
+     0.6042,
+     0.218,
+     0.1778
     ],
     "p_modello": [
      0.5792,
      0.2481,
      0.1728
     ],
-    "margine": 0.0571,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0138,
+    "margine_migliore": 0.0444,
+    "quote_da": "confronto"
    },
    {
     "id": "ascoli-sampdoria",
@@ -2972,25 +3402,40 @@
     "data": "2026-10-27",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      2.15,
+     "betfair": [
+      2.24,
+      3.35,
+      3.75
+     ],
+     "bet365": [
+      2.05,
       3.2,
-      3.35
+      3.4
+     ],
+     "massimo": [
+      2.15,
+      3.45,
+      3.5
+     ],
+     "media": [
+      2.09,
+      3.26,
+      3.29
      ]
     },
     "p_mercato": [
-     0.4378,
-     0.288,
-     0.2743
+     0.4422,
+     0.2948,
+     0.263
     ],
     "p_modello": [
      0.6093,
      0.2644,
      0.1263
     ],
-    "margine": 0.0761,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0116,
+    "margine_migliore": 0.0407,
+    "quote_da": "confronto"
    },
    {
     "id": "cesena-empoli",
@@ -2999,25 +3444,40 @@
     "data": "2026-10-27",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      2.1,
+      3.4,
+      4.1
+     ],
+     "bet365": [
+      1.91,
+      3.2,
+      4.0
+     ],
+     "massimo": [
+      2.08,
+      3.3,
+      4.0
+     ],
+     "media": [
       2.0,
-      3.45,
-      3.55
+      3.22,
+      3.58
      ]
     },
     "p_mercato": [
-     0.4737,
-     0.2672,
-     0.2592
+     0.471,
+     0.2895,
+     0.2395
     ],
     "p_modello": [
      0.427,
      0.2918,
      0.2812
     ],
-    "margine": 0.0715,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0142,
+    "margine_migliore": 0.0338,
+    "quote_da": "confronto"
    },
    {
     "id": "mantova-cremonese",
@@ -3026,25 +3486,40 @@
     "data": "2026-10-27",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      2.2,
-      3.3,
-      3.15
+     "betfair": [
+      2.32,
+      3.4,
+      3.5
+     ],
+     "bet365": [
+      2.15,
+      3.1,
+      3.25
+     ],
+     "massimo": [
+      2.25,
+      3.4,
+      3.25
+     ],
+     "media": [
+      2.17,
+      3.22,
+      3.13
      ]
     },
     "p_mercato": [
-     0.4278,
-     0.279,
-     0.2932
+     0.4272,
+     0.2906,
+     0.2822
     ],
     "p_modello": [
      0.3793,
      0.2897,
      0.3309
     ],
-    "margine": 0.075,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0109,
+    "margine_migliore": 0.0463,
+    "quote_da": "confronto"
    },
    {
     "id": "padova-sudtirol",
@@ -3053,25 +3528,40 @@
     "data": "2026-10-27",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      2.4,
-      3.2,
-      2.95
+     "betfair": [
+      2.54,
+      3.15,
+      3.35
+     ],
+     "bet365": [
+      2.32,
+      3.0,
+      3.0
+     ],
+     "massimo": [
+      2.45,
+      3.15,
+      3.1
+     ],
+     "media": [
+      2.35,
+      3.05,
+      2.97
      ]
     },
     "p_mercato": [
-     0.3929,
-     0.2905,
-     0.3165
+     0.3903,
+     0.3143,
+     0.2954
     ],
     "p_modello": [
      0.3684,
      0.3314,
      0.3002
     ],
-    "margine": 0.0681,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0097,
+    "margine_migliore": 0.0482,
+    "quote_da": "confronto"
    },
    {
     "id": "vicenza-modena",
@@ -3080,25 +3570,40 @@
     "data": "2026-10-27",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      3.45,
-      3.5,
+     "betfair": [
+      3.8,
+      3.6,
+      2.14
+     ],
+     "bet365": [
+      3.6,
+      3.3,
+      1.96
+     ],
+     "massimo": [
+      3.6,
+      3.55,
+      2.06
+     ],
+     "media": [
+      3.39,
+      3.39,
       2.0
      ]
     },
     "p_mercato": [
-     0.2659,
-     0.2619,
-     0.4722
+     0.2606,
+     0.2752,
+     0.4643
     ],
     "p_modello": [
      0.3133,
      0.2679,
      0.4188
     ],
-    "margine": 0.0756,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0082,
+    "margine_migliore": 0.0449,
+    "quote_da": "confronto"
    },
    {
     "id": "virtus-entella-avellino",
@@ -3107,25 +3612,40 @@
     "data": "2026-10-27",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      2.05,
-      3.2,
-      3.65
+     "betfair": [
+      2.12,
+      3.35,
+      4.1
+     ],
+     "bet365": [
+      1.96,
+      3.1,
+      3.9
+     ],
+     "massimo": [
+      2.1,
+      3.25,
+      3.9
+     ],
+     "media": [
+      2.01,
+      3.17,
+      3.6
      ]
     },
     "p_mercato": [
-     0.4607,
-     0.2885,
-     0.2507
+     0.4665,
+     0.2939,
+     0.2395
     ],
     "p_modello": [
      0.3745,
      0.3203,
      0.3052
     ],
-    "margine": 0.0743,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0141,
+    "margine_migliore": 0.0403,
+    "quote_da": "confronto"
    },
    {
     "id": "pisa-palermo",
@@ -3134,25 +3654,40 @@
     "data": "2026-10-28",
     "ora": "19:00",
     "quote": {
-     "mercato_unico": [
-      2.55,
-      3.1,
-      2.75
+     "betfair": [
+      2.38,
+      3.2,
+      3.2
+     ],
+     "bet365": [
+      2.25,
+      3.3,
+      2.85
+     ],
+     "massimo": [
+      2.38,
+      3.5,
+      3.1
+     ],
+     "media": [
+      2.27,
+      3.33,
+      2.88
      ]
     },
     "p_mercato": [
-     0.3654,
-     0.2972,
-     0.3374
+     0.4043,
+     0.2978,
+     0.2978
     ],
     "p_modello": [
      0.3967,
      0.2758,
      0.3275
     ],
-    "margine": 0.0784,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0452,
+    "margine_migliore": 0.0285,
+    "quote_da": "confronto"
    },
    {
     "id": "carrarese-arezzo",
@@ -3161,25 +3696,40 @@
     "data": "2026-10-28",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      2.25,
+     "betfair": [
+      2.34,
       3.15,
       3.3
+     ],
+     "bet365": [
+      2.15,
+      3.1,
+      3.3
+     ],
+     "massimo": [
+      2.3,
+      3.3,
+      3.3
+     ],
+     "media": [
+      2.22,
+      3.16,
+      3.1
      ]
     },
     "p_mercato": [
-     0.4214,
-     0.2964,
-     0.2822
+     0.4105,
+     0.3019,
+     0.2876
     ],
     "p_modello": [
      0.6152,
      0.2298,
      0.155
     ],
-    "margine": 0.0649,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0478,
+    "margine_migliore": 0.0408,
+    "quote_da": "confronto"
    },
    {
     "id": "juve-stabia-verona",
@@ -3188,25 +3738,40 @@
     "data": "2026-10-28",
     "ora": "20:00",
     "quote": {
-     "mercato_unico": [
-      2.95,
-      3.35,
-      2.3
+     "betfair": [
+      2.9,
+      3.4,
+      2.56
+     ],
+     "bet365": [
+      2.75,
+      3.1,
+      2.5
+     ],
+     "massimo": [
+      2.85,
+      3.45,
+      2.5
+     ],
+     "media": [
+      2.75,
+      3.28,
+      2.37
      ]
     },
     "p_mercato": [
-     0.3152,
-     0.2755,
-     0.4093
+     0.335,
+     0.2846,
+     0.3804
     ],
     "p_modello": [
      0.421,
      0.2699,
      0.3091
     ],
-    "margine": 0.0723,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0296,
+    "margine_migliore": 0.0407,
+    "quote_da": "confronto"
    },
    {
     "id": "cremonese-benevento",
@@ -3377,6 +3942,23 @@
     "margine": null,
     "margine_migliore": null,
     "quote_da": null
+   },
+   {
+    "id": "ascoli-palermo",
+    "casa": "Ascoli",
+    "ospite": "Palermo",
+    "data": "2026-11-06",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4148,
+     0.3074,
+     0.2778
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "championship": [
@@ -3415,22 +3997,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      3.4,
+      3.3,
       3.45,
-      2.1
+      2.15
      ]
     },
     "p_mercato": [
-     0.2749,
-     0.2707,
-     0.4543
+     0.2844,
+     0.2714,
+     0.4442
     ],
     "p_modello": [
      0.3038,
      0.2772,
-     0.4189
+     0.419
     ],
-    "margine": 0.0602,
+    "margine": 0.058,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3442,22 +4024,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      1.588,
+      1.571,
       4.3,
-      5.0
+      5.25
      ]
     },
     "p_mercato": [
-     0.6048,
-     0.2136,
-     0.1816
+     0.6126,
+     0.2144,
+     0.173
     ],
     "p_modello": [
-     0.5559,
+     0.556,
      0.2337,
-     0.2104
+     0.2103
     ],
-    "margine": 0.0623,
+    "margine": 0.0596,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3469,22 +4051,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      1.714,
-      3.85,
-      4.7
+      1.741,
+      3.8,
+      4.5
      ]
     },
     "p_mercato": [
-     0.5616,
-     0.2423,
-     0.196
+     0.5512,
+     0.2445,
+     0.2042
     ],
     "p_modello": [
      0.4801,
-     0.2725,
+     0.2726,
      0.2474
     ],
-    "margine": 0.0559,
+    "margine": 0.0598,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3496,22 +4078,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.75,
+      2.8,
       3.6,
-      2.4
+      2.35
      ]
     },
     "p_mercato": [
-     0.3441,
-     0.2595,
-     0.3964
+     0.3369,
+     0.2588,
+     0.4043
     ],
     "p_modello": [
      0.3737,
      0.2606,
      0.3657
     ],
-    "margine": 0.0581,
+    "margine": 0.0605,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3523,20 +4105,20 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.05,
-      3.4,
-      3.65
+      2.1,
+      3.45,
+      3.45
      ]
     },
     "p_mercato": [
-     0.4673,
-     0.2763,
-     0.2564
+     0.4559,
+     0.2721,
+     0.2721
     ],
     "p_modello": [
      0.5688,
      0.2409,
-     0.1903
+     0.1902
     ],
     "margine": 0.0559,
     "margine_migliore": null,
@@ -3604,22 +4186,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.714,
+      1.741,
       4.1,
-      4.3
+      4.2
      ]
     },
     "p_mercato": [
-     0.5601,
-     0.2255,
-     0.2144
+     0.5525,
+     0.2266,
+     0.2209
     ],
     "p_modello": [
      0.6298,
      0.2017,
      0.1684
     ],
-    "margine": 0.0599,
+    "margine": 0.0564,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3658,22 +4240,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.541,
+      1.571,
       4.4,
-      5.5
+      5.25
      ]
     },
     "p_mercato": [
-     0.6254,
-     0.2097,
-     0.1649
+     0.6147,
+     0.2108,
+     0.1745
     ],
     "p_modello": [
      0.7049,
      0.1696,
      0.1255
     ],
-    "margine": 0.058,
+    "margine": 0.0543,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3686,21 +4268,21 @@
     "quote": {
      "mercato_unico": [
       1.625,
-      4.3,
-      4.8
+      4.4,
+      4.7
      ]
     },
     "p_mercato": [
-     0.593,
-     0.2154,
-     0.1916
+     0.5934,
+     0.2105,
+     0.1962
     ],
     "p_modello": [
      0.6202,
      0.2069,
      0.1729
     ],
-    "margine": 0.0563,
+    "margine": 0.0554,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3747,7 +4329,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3849,
+     0.3848,
      0.2577,
      0.3574
     ],
@@ -3907,6 +4489,23 @@
     "margine": null,
     "margine_migliore": null,
     "quote_da": null
+   },
+   {
+    "id": "derby-bolton",
+    "casa": "Derby",
+    "ospite": "Bolton",
+    "data": "2026-11-06",
+    "ora": "21:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4949,
+     0.2427,
+     0.2624
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "league-one": [
@@ -3917,25 +4516,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      1.43,
+      5.1,
+      8.6
+     ],
+     "bet365": [
+      1.35,
+      4.75,
+      7.5
+     ],
+     "massimo": [
       1.4,
-      4.9,
-      6.5
+      5.2,
+      8.75
+     ],
+     "media": [
+      1.38,
+      4.89,
+      7.11
      ]
     },
     "p_mercato": [
-     0.684,
-     0.1826,
-     0.1334
+     0.6944,
+     0.1926,
+     0.113
     ],
     "p_modello": [
      0.4612,
      0.2685,
      0.2703
     ],
-    "margine": 0.0722,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0117,
+    "margine_migliore": 0.0209,
+    "quote_da": "confronto"
    },
    {
     "id": "luton-doncaster",
@@ -3944,25 +4558,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.541,
-      4.4,
-      5.25
+     "betfair": [
+      1.53,
+      4.8,
+      6.4
+     ],
+     "bet365": [
+      1.46,
+      4.33,
+      5.5
+     ],
+     "massimo": [
+      1.55,
+      4.75,
+      6.0
+     ],
+     "media": [
+      1.5,
+      4.47,
+      5.53
      ]
     },
     "p_mercato": [
-     0.622,
-     0.2071,
-     0.171
+     0.6461,
+     0.2029,
+     0.151
     ],
     "p_modello": [
-     0.5731,
+     0.5732,
      0.2259,
      0.201
     ],
-    "margine": 0.0667,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0182,
+    "margine_migliore": 0.0224,
+    "quote_da": "confronto"
    },
    {
     "id": "milton-keynes-dons-bromley",
@@ -3971,25 +4600,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.625,
-      4.2,
-      4.7
+     "betfair": [
+      1.63,
+      4.5,
+      5.7
+     ],
+     "bet365": [
+      1.53,
+      4.0,
+      5.0
+     ],
+     "massimo": [
+      1.62,
+      4.5,
+      5.5
+     ],
+     "media": [
+      1.59,
+      4.16,
+      4.99
      ]
     },
     "p_mercato": [
-     0.5891,
-     0.2179,
-     0.193
+     0.609,
+     0.2188,
+     0.1722
     ],
     "p_modello": [
      0.6259,
      0.212,
      0.1621
     ],
-    "margine": 0.0662,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0112,
+    "margine_migliore": 0.0213,
+    "quote_da": "confronto"
    },
    {
     "id": "oxford-stockport",
@@ -3998,25 +4642,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      3.6,
+      3.9,
+      2.1
+     ],
+     "bet365": [
+      3.4,
+      3.7,
+      1.96
+     ],
+     "massimo": [
+      3.4,
+      4.0,
+      2.1
+     ],
+     "media": [
       3.3,
-      3.75,
+      3.72,
       2.0
      ]
     },
     "p_mercato": [
-     0.2807,
-     0.245,
-     0.4743
+     0.2745,
+     0.2532,
+     0.4724
     ],
     "p_modello": [
      0.4517,
      0.2443,
      0.304
     ],
-    "margine": 0.0697,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0104,
+    "margine_migliore": 0.0203,
+    "quote_da": "confronto"
    },
    {
     "id": "sheffield-weds-cambridge",
@@ -4025,25 +4684,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.0,
-      3.65,
-      3.35
+     "betfair": [
+      2.12,
+      3.8,
+      3.65
+     ],
+     "bet365": [
+      2.01,
+      3.4,
+      3.4
+     ],
+     "massimo": [
+      2.05,
+      3.8,
+      3.6
+     ],
+     "media": [
+      2.02,
+      3.63,
+      3.34
      ]
     },
     "p_mercato": [
-     0.4733,
-     0.2513,
-     0.2754
+     0.4685,
+     0.2604,
+     0.2712
     ],
     "p_modello": [
      0.6566,
      0.1951,
      0.1483
     ],
-    "margine": 0.0725,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0088,
+    "margine_migliore": 0.0287,
+    "quote_da": "confronto"
    },
    {
     "id": "bradford-huddersfield",
@@ -4097,22 +4771,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      2.15,
-      3.7,
-      2.9
+      2.25,
+      3.6,
+      2.75
      ]
     },
     "p_mercato": [
-     0.4363,
-     0.2453,
-     0.3184
+     0.4141,
+     0.2509,
+     0.335
     ],
     "p_modello": [
      0.4544,
      0.2296,
      0.316
     ],
-    "margine": 0.0802,
+    "margine": 0.0859,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4158,22 +4832,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.769,
-      3.7,
-      4.1
+      1.833,
+      3.65,
+      3.95
      ]
     },
     "p_mercato": [
-     0.5349,
-     0.2455,
-     0.2197
+     0.518,
+     0.2512,
+     0.2308
     ],
     "p_modello": [
      0.4688,
      0.2783,
      0.2528
     ],
-    "margine": 0.0795,
+    "margine": 0.0727,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4222,7 +4896,7 @@
     "p_modello": [
      0.698,
      0.1888,
-     0.1132
+     0.1131
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4253,22 +4927,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.541,
-      4.1,
+      1.526,
+      4.2,
       5.25
      ]
     },
     "p_mercato": [
-     0.6154,
-     0.2184,
-     0.1662
+     0.6214,
+     0.2125,
+     0.166
     ],
     "p_modello": [
      0.5359,
      0.2416,
      0.2225
     ],
-    "margine": 0.0833,
+    "margine": 0.0839,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4353,73 +5027,46 @@
   ],
   "league-two": [
    {
-    "id": "walsall-salford",
-    "casa": "Walsall",
-    "ospite": "Salford",
-    "data": "2026-10-26",
-    "ora": "21:00",
-    "quote": {
-     "betfair": [
-      3.25,
-      3.55,
-      2.12
-     ],
-     "bet365": [
-      3.3,
-      3.4,
-      2.05
-     ],
-     "massimo": [
-      3.4,
-      3.7,
-      2.1
-     ],
-     "media": [
-      3.2,
-      3.52,
-      2.04
-     ]
-    },
-    "p_mercato": [
-     0.288,
-     0.2624,
-     0.4496
-    ],
-    "p_modello": [
-     0.4159,
-     0.2713,
-     0.3128
-    ],
-    "margine": 0.0611,
-    "margine_migliore": 0.0406,
-    "quote_da": "confronto"
-   },
-   {
     "id": "barnet-york",
     "casa": "Barnet",
     "ospite": "York",
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.0,
-      3.85,
-      3.15
+     "betfair": [
+      2.14,
+      3.9,
+      3.45
+     ],
+     "bet365": [
+      2.01,
+      3.7,
+      3.2
+     ],
+     "massimo": [
+      2.1,
+      4.0,
+      3.2
+     ],
+     "media": [
+      2.04,
+      3.74,
+      3.14
      ]
     },
     "p_mercato": [
-     0.4716,
-     0.2359,
-     0.2925
+     0.4623,
+     0.2522,
+     0.2855
     ],
     "p_modello": [
-     0.4239,
+     0.4231,
      0.232,
-     0.3441
+     0.3448
     ],
-    "margine": 0.0772,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0136,
+    "margine_migliore": 0.0387,
+    "quote_da": "confronto"
    },
    {
     "id": "newport-county-chesterfield",
@@ -4440,9 +5087,9 @@
      0.4813
     ],
     "p_modello": [
-     0.257,
-     0.2428,
-     0.5002
+     0.2562,
+     0.2429,
+     0.5009
     ],
     "margine": 0.0838,
     "margine_migliore": null,
@@ -4457,9 +5104,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3595,
+     0.3584,
      0.2436,
-     0.3969
+     0.3981
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4484,9 +5131,9 @@
      0.1926
     ],
     "p_modello": [
-     0.5875,
-     0.2427,
-     0.1699
+     0.5865,
+     0.2433,
+     0.1702
     ],
     "margine": 0.0831,
     "margine_migliore": null,
@@ -4511,9 +5158,9 @@
      0.2727
     ],
     "p_modello": [
-     0.3534,
-     0.3878,
-     0.2588
+     0.3526,
+     0.3879,
+     0.2595
     ],
     "margine": 0.0811,
     "margine_migliore": null,
@@ -4525,16 +5172,26 @@
     "ospite": "Walsall",
     "data": "2026-10-31",
     "ora": "16:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.3767,
-     0.2853,
-     0.338
+    "quote": {
+     "mercato_unico": [
+      2.5,
+      3.35,
+      2.6
+     ]
+    },
+    "p_mercato": [
+     0.3715,
+     0.2721,
+     0.3564
     ],
-    "margine": null,
+    "p_modello": [
+     0.3872,
+     0.281,
+     0.3318
+    ],
+    "margine": 0.0831,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "crewe-barnet",
@@ -4545,9 +5202,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3477,
-     0.2525,
-     0.3997
+     0.3463,
+     0.2528,
+     0.4009
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4572,9 +5229,9 @@
      0.3724
     ],
     "p_modello": [
-     0.4486,
-     0.2654,
-     0.2859
+     0.4473,
+     0.266,
+     0.2868
     ],
     "margine": 0.0804,
     "margine_migliore": null,
@@ -4599,9 +5256,9 @@
      0.2132
     ],
     "p_modello": [
-     0.5719,
-     0.2438,
-     0.1843
+     0.5704,
+     0.2446,
+     0.1851
     ],
     "margine": 0.0819,
     "margine_migliore": null,
@@ -4613,16 +5270,26 @@
     "ospite": "Exeter",
     "data": "2026-10-31",
     "ora": "16:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.2973,
-     0.4185,
-     0.2842
+    "quote": {
+     "mercato_unico": [
+      1.606,
+      4.0,
+      4.9
+     ]
+    },
+    "p_mercato": [
+     0.5922,
+     0.2264,
+     0.1814
     ],
-    "margine": null,
+    "p_modello": [
+     0.3042,
+     0.4135,
+     0.2823
+    ],
+    "margine": 0.0767,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "shrewsbury-gillingham",
@@ -4643,9 +5310,9 @@
      0.2412
     ],
     "p_modello": [
-     0.372,
-     0.2832,
-     0.3448
+     0.3713,
+     0.2835,
+     0.3452
     ],
     "margine": 0.082,
     "margine_migliore": null,
@@ -4670,9 +5337,9 @@
      0.3368
     ],
     "p_modello": [
-     0.6317,
-     0.187,
-     0.1813
+     0.6293,
+     0.188,
+     0.1827
     ],
     "margine": 0.0801,
     "margine_migliore": null,
@@ -4697,9 +5364,9 @@
      0.241
     ],
     "p_modello": [
-     0.4218,
-     0.2427,
-     0.3356
+     0.4204,
+     0.243,
+     0.3367
     ],
     "margine": 0.0825,
     "margine_migliore": null,
@@ -4724,9 +5391,9 @@
      0.3583
     ],
     "p_modello": [
-     0.2883,
-     0.4052,
-     0.3064
+     0.2879,
+     0.4054,
+     0.3068
     ],
     "margine": 0.0776,
     "margine_migliore": null,
@@ -4735,85 +5402,46 @@
   ],
   "national-league": [
    {
-    "id": "fylde-hartlepool",
-    "casa": "Fylde",
-    "ospite": "Hartlepool",
-    "data": "2026-10-27",
-    "ora": "20:45",
-    "quote": {
-     "mercato_unico": [
-      1.667,
-      3.95,
-      4.0
-     ]
-    },
-    "p_mercato": [
-     0.5598,
-     0.2216,
-     0.2186
-    ],
-    "p_modello": [
-     0.4497,
-     0.2483,
-     0.3019
-    ],
-    "margine": 0.103,
-    "margine_migliore": null,
-    "quote_da": "unico"
-   },
-   {
-    "id": "hornchurch-yeovil",
-    "casa": "Hornchurch",
-    "ospite": "Yeovil",
-    "data": "2026-10-27",
-    "ora": "20:45",
-    "quote": {
-     "mercato_unico": [
-      2.7,
-      3.3,
-      2.35
-     ]
-    },
-    "p_mercato": [
-     0.3373,
-     0.2716,
-     0.3911
-    ],
-    "p_modello": [
-     0.3822,
-     0.2731,
-     0.3446
-    ],
-    "margine": 0.0989,
-    "margine_migliore": null,
-    "quote_da": "unico"
-   },
-   {
     "id": "altrincham-kidderminster",
     "casa": "Altrincham",
     "ospite": "Kidderminster",
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.909,
-      3.45,
-      3.55
+     "betfair": [
+      1.99,
+      3.7,
+      3.9
+     ],
+     "bet365": [
+      1.9,
+      3.6,
+      3.6
+     ],
+     "massimo": [
+      1.93,
+      3.6,
+      3.6
+     ],
+     "media": [
+      1.9,
+      3.48,
+      3.49
      ]
     },
     "p_mercato": [
-     0.4884,
-     0.2598,
-     0.2518
+     0.4916,
+     0.2611,
+     0.2473
     ],
     "p_modello": [
      0.4051,
      0.3027,
      0.2922
     ],
-    "margine": 0.0954,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0292,
+    "margine_migliore": 0.0737,
+    "quote_da": "confronto"
    },
    {
     "id": "boston-utd-gateshead",
@@ -4822,25 +5450,82 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.556,
-      3.75,
+     "betfair": [
+      1.63,
+      4.2,
+      5.6
+     ],
+     "bet365": [
+      1.57,
+      3.9,
+      4.75
+     ],
+     "massimo": [
+      1.6,
+      4.0,
       5.25
+     ],
+     "media": [
+      1.56,
+      3.92,
+      4.82
      ]
     },
     "p_mercato": [
-     0.6028,
-     0.2356,
-     0.1616
+     0.6014,
+     0.2288,
+     0.1698
     ],
     "p_modello": [
      0.5063,
      0.2307,
      0.263
     ],
-    "margine": 0.0998,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0302,
+    "margine_migliore": 0.0655,
+    "quote_da": "confronto"
+   },
+   {
+    "id": "fylde-hartlepool",
+    "casa": "Fylde",
+    "ospite": "Hartlepool",
+    "data": "2026-10-27",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      1.78,
+      4.3,
+      4.3
+     ],
+     "bet365": [
+      1.7,
+      4.0,
+      3.75
+     ],
+     "massimo": [
+      1.73,
+      4.0,
+      4.1
+     ],
+     "media": [
+      1.69,
+      3.91,
+      3.89
+     ]
+    },
+    "p_mercato": [
+     0.5514,
+     0.2243,
+     0.2243
+    ],
+    "p_modello": [
+     0.4498,
+     0.2483,
+     0.3019
+    ],
+    "margine": 0.0269,
+    "margine_migliore": 0.0719,
+    "quote_da": "confronto"
    },
    {
     "id": "halifax-barrow",
@@ -4849,25 +5534,82 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.35,
-      3.3,
+     "betfair": [
+      2.5,
+      3.55,
+      2.88
+     ],
+     "bet365": [
+      2.3,
+      3.5,
       2.7
+     ],
+     "massimo": [
+      2.38,
+      3.5,
+      2.75
+     ],
+     "media": [
+      2.31,
+      3.42,
+      2.65
      ]
     },
     "p_mercato": [
-     0.3911,
-     0.2716,
-     0.3373
+     0.39,
+     0.2725,
+     0.3376
     ],
     "p_modello": [
      0.3467,
      0.265,
      0.3883
     ],
-    "margine": 0.0989,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0289,
+    "margine_migliore": 0.0695,
+    "quote_da": "confronto"
+   },
+   {
+    "id": "hornchurch-yeovil",
+    "casa": "Hornchurch",
+    "ospite": "Yeovil",
+    "data": "2026-10-27",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      3.15,
+      3.55,
+      2.32
+     ],
+     "bet365": [
+      2.88,
+      3.4,
+      2.2
+     ],
+     "massimo": [
+      2.9,
+      3.5,
+      2.33
+     ],
+     "media": [
+      2.77,
+      3.37,
+      2.24
+     ]
+    },
+    "p_mercato": [
+     0.3076,
+     0.2721,
+     0.4203
+    ],
+    "p_modello": [
+     0.3822,
+     0.2731,
+     0.3446
+    ],
+    "margine": 0.0302,
+    "margine_migliore": 0.0597,
+    "quote_da": "confronto"
    },
    {
     "id": "tamworth-scunthorpe",
@@ -4876,25 +5618,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      2.3,
+      3.95,
+      2.94
+     ],
+     "bet365": [
+      2.15,
+      3.7,
+      2.8
+     ],
+     "massimo": [
       2.2,
-      3.6,
-      2.75
+      3.8,
+      2.8
+     ],
+     "media": [
+      2.15,
+      3.68,
+      2.74
      ]
     },
     "p_mercato": [
-     0.4205,
-     0.2479,
-     0.3317
+     0.4248,
+     0.2444,
+     0.3308
     ],
     "p_modello": [
      0.3915,
      0.2276,
      0.3808
     ],
-    "margine": 0.096,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0281,
+    "margine_migliore": 0.0748,
+    "quote_da": "confronto"
    },
    {
     "id": "wealdstone-solihull",
@@ -4903,25 +5660,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.15,
-      3.55,
-      2.85
+     "betfair": [
+      2.04,
+      4.0,
+      3.5
+     ],
+     "bet365": [
+      1.95,
+      3.7,
+      3.3
+     ],
+     "massimo": [
+      2.02,
+      3.8,
+      3.3
+     ],
+     "media": [
+      1.98,
+      3.67,
+      3.09
      ]
     },
     "p_mercato": [
-     0.4302,
-     0.2512,
-     0.3186
+     0.4806,
+     0.242,
+     0.2774
     ],
     "p_modello": [
      0.4586,
      0.2306,
      0.3108
     ],
-    "margine": 0.0977,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0259,
+    "margine_migliore": 0.0612,
+    "quote_da": "confronto"
    },
    {
     "id": "woking-boreham-wood",
@@ -4930,25 +5702,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      3.95,
-      3.7,
-      1.741
+     "betfair": [
+      4.8,
+      4.2,
+      1.73
+     ],
+     "bet365": [
+      4.2,
+      3.9,
+      1.65
+     ],
+     "massimo": [
+      4.2,
+      4.0,
+      1.73
+     ],
+     "media": [
+      4.05,
+      3.82,
+      1.68
      ]
     },
     "p_mercato": [
-     0.2232,
-     0.2399,
-     0.5369
+     0.201,
+     0.2306,
+     0.5685
     ],
     "p_modello": [
      0.2949,
      0.2371,
      0.468
     ],
-    "margine": 0.0978,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0245,
+    "margine_migliore": 0.0661,
+    "quote_da": "confronto"
    },
    {
     "id": "worthing-southend",
@@ -4957,25 +5744,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      2.55,
-      3.9,
+     "betfair": [
+      2.74,
+      4.2,
+      2.36
+     ],
+     "bet365": [
+      2.63,
+      3.75,
       2.2
+     ],
+     "massimo": [
+      2.7,
+      4.0,
+      2.25
+     ],
+     "media": [
+      2.58,
+      3.75,
+      2.22
      ]
     },
     "p_mercato": [
-     0.3571,
-     0.2249,
-     0.418
+     0.3559,
+     0.2299,
+     0.4143
     ],
     "p_modello": [
      0.4656,
      0.2243,
      0.3101
     ],
-    "margine": 0.1031,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0268,
+    "margine_migliore": 0.0648,
+    "quote_da": "confronto"
    },
    {
     "id": "carlisle-harrogate",
@@ -4984,25 +5786,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.952,
-      3.55,
-      3.25
+     "betfair": [
+      1.41,
+      1.41,
+      1.24
+     ],
+     "bet365": [
+      2.0,
+      3.6,
+      3.1
+     ],
+     "massimo": [
+      2.0,
+      3.75,
+      3.3
+     ],
+     "media": [
+      1.95,
+      3.61,
+      3.19
      ]
     },
     "p_mercato": [
-     0.4749,
-     0.2499,
-     0.2752
+     0.4748,
+     0.2449,
+     0.2804
     ],
     "p_modello": [
      0.4197,
      0.2242,
      0.3561
     ],
-    "margine": 0.1017,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.1033,
+    "margine_migliore": 0.0697,
+    "quote_da": "confronto"
    },
    {
     "id": "forest-green-eastleigh",
@@ -5011,25 +5828,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      1.526,
-      4.6,
-      4.5
+     "betfair": [
+      1.59,
+      4.7,
+      5.3
+     ],
+     "bet365": [
+      1.53,
+      4.1,
+      5.5
+     ],
+     "massimo": [
+      1.54,
+      4.75,
+      5.5
+     ],
+     "media": [
+      1.52,
+      4.25,
+      4.93
      ]
     },
     "p_mercato": [
-     0.6171,
-     0.1891,
-     0.1938
+     0.6167,
+     0.2036,
+     0.1797
     ],
     "p_modello": [
      0.6045,
      0.2098,
      0.1856
     ],
-    "margine": 0.0949,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0304,
+    "margine_migliore": 0.0417,
+    "quote_da": "confronto"
    },
    {
     "id": "sutton-aldershot",
@@ -5038,25 +5870,40 @@
     "data": "2026-10-28",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
+     "betfair": [
+      1.24,
+      1.12,
+      1.96
+     ],
+     "bet365": [
+      1.83,
+      3.6,
+      3.8
+     ],
+     "massimo": [
+      1.9,
+      3.7,
+      4.0
+     ],
+     "media": [
       1.8,
-      3.5,
-      3.85
+      3.59,
+      3.75
      ]
     },
     "p_mercato": [
-     0.5173,
-     0.254,
-     0.2287
+     0.5174,
+     0.2471,
+     0.2355
     ],
     "p_modello": [
      0.4134,
      0.2411,
      0.3455
     ],
-    "margine": 0.101,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.1008,
+    "margine_migliore": 0.0466,
+    "quote_da": "confronto"
    },
    {
     "id": "fylde-hornchurch",
@@ -5086,7 +5933,7 @@
     "p_modello": [
      0.4656,
      0.2616,
-     0.2728
+     0.2729
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5101,9 +5948,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3675,
+     0.3676,
      0.231,
-     0.4015
+     0.4014
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5222,7 +6069,7 @@
     "p_modello": [
      0.2508,
      0.2292,
-     0.52
+     0.5199
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5265,48 +6112,6 @@
   ],
   "laliga-2": [
    {
-    "id": "andorra-burgos",
-    "casa": "Andorra",
-    "ospite": "Burgos",
-    "data": "2026-10-26",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      1.94,
-      3.5,
-      4.2
-     ],
-     "bet365": [
-      1.81,
-      3.6,
-      4.0
-     ],
-     "massimo": [
-      1.91,
-      3.6,
-      4.0
-     ],
-     "media": [
-      1.88,
-      3.36,
-      3.78
-     ]
-    },
-    "p_mercato": [
-     0.5007,
-     0.2732,
-     0.2261
-    ],
-    "p_modello": [
-     0.3789,
-     0.2994,
-     0.3217
-    ],
-    "margine": 0.0393,
-    "margine_migliore": 0.0513,
-    "quote_da": "confronto"
-   },
-   {
     "id": "sociedad-b-girona",
     "casa": "Sociedad B",
     "ospite": "Girona",
@@ -5325,9 +6130,9 @@
      0.4603
     ],
     "p_modello": [
-     0.1758,
-     0.2051,
-     0.6191
+     0.176,
+     0.2057,
+     0.6184
     ],
     "margine": 0.0755,
     "margine_migliore": null,
@@ -5352,9 +6157,9 @@
      0.3316
     ],
     "p_modello": [
-     0.4505,
-     0.2452,
-     0.3043
+     0.4495,
+     0.2454,
+     0.305
     ],
     "margine": 0.0768,
     "margine_migliore": null,
@@ -5369,9 +6174,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4533,
-     0.2106,
-     0.3362
+     0.4511,
+     0.2109,
+     0.338
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5396,9 +6201,9 @@
      0.3315
     ],
     "p_modello": [
-     0.2986,
-     0.3276,
-     0.3738
+     0.2982,
+     0.3284,
+     0.3735
     ],
     "margine": 0.0772,
     "margine_migliore": null,
@@ -5423,9 +6228,9 @@
      0.3054
     ],
     "p_modello": [
-     0.3716,
-     0.2599,
-     0.3685
+     0.3711,
+     0.2601,
+     0.3687
     ],
     "margine": 0.0855,
     "margine_migliore": null,
@@ -5437,16 +6242,26 @@
     "ospite": "Sp Gijon",
     "data": "2026-11-01",
     "ora": "16:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.3169,
-     0.2528,
-     0.4304
+    "quote": {
+     "mercato_unico": [
+      2.5,
+      3.5,
+      2.55
+     ]
+    },
+    "p_mercato": [
+     0.3733,
+     0.2612,
+     0.3656
     ],
-    "margine": null,
+    "p_modello": [
+     0.3162,
+     0.2531,
+     0.4307
+    ],
+    "margine": 0.0779,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "burgos-castellon",
@@ -5457,9 +6272,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3544,
-     0.2948,
-     0.3508
+     0.36,
+     0.2906,
+     0.3494
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5474,9 +6289,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3785,
-     0.2882,
-     0.3333
+     0.3857,
+     0.2835,
+     0.3308
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5488,16 +6303,26 @@
     "ospite": "Las Palmas",
     "data": "2026-11-02",
     "ora": "16:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4945,
-     0.2648,
-     0.2407
+    "quote": {
+     "mercato_unico": [
+      1.714,
+      3.7,
+      4.4
+     ]
+    },
+    "p_mercato": [
+     0.5521,
+     0.245,
+     0.2029
     ],
-    "margine": null,
+    "p_modello": [
+     0.4939,
+     0.265,
+     0.2411
+    ],
+    "margine": 0.081,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "valladolid-leganes",
@@ -5505,16 +6330,26 @@
     "ospite": "Leganes",
     "data": "2026-11-02",
     "ora": "18:30",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4427,
-     0.2961,
-     0.2612
+    "quote": {
+     "mercato_unico": [
+      1.769,
+      3.7,
+      4.0
+     ]
+    },
+    "p_mercato": [
+     0.5326,
+     0.2436,
+     0.2238
     ],
-    "margine": null,
+    "p_modello": [
+     0.4418,
+     0.2965,
+     0.2617
+    ],
+    "margine": 0.0856,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "mallorca-cadiz",
@@ -5525,9 +6360,26 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6479,
+     0.6477,
      0.2574,
-     0.0946
+     0.0949
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "castellon-eibar",
+    "casa": "Castellon",
+    "ospite": "Eibar",
+    "data": "2026-11-06",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4883,
+     0.2581,
+     0.2536
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5543,22 +6395,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      1.714,
-      3.9,
-      4.1
+      1.8,
+      3.8,
+      3.9
      ]
     },
     "p_mercato": [
-     0.551,
-     0.2306,
-     0.2184
+     0.5269,
+     0.2398,
+     0.2332
     ],
     "p_modello": [
      0.5634,
      0.2329,
      0.2037
     ],
-    "margine": 0.0837,
+    "margine": 0.0751,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5570,22 +6422,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      3.15,
-      3.55,
-      2.1
+      2.75,
+      3.5,
+      2.35
      ]
     },
     "p_mercato": [
-     0.2931,
-     0.258,
-     0.4489
+     0.3386,
+     0.2621,
+     0.3993
     ],
     "p_modello": [
      0.5172,
      0.2377,
      0.2451
     ],
-    "margine": 0.0753,
+    "margine": 0.0749,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5624,22 +6476,22 @@
     "ora": "13:00",
     "quote": {
      "mercato_unico": [
-      2.75,
+      2.85,
       3.65,
-      2.25
+      2.2
      ]
     },
     "p_mercato": [
-     0.3362,
-     0.2484,
-     0.4154
+     0.3246,
+     0.2492,
+     0.4262
     ],
     "p_modello": [
      0.4315,
      0.2352,
      0.3332
     ],
-    "margine": 0.0821,
+    "margine": 0.0794,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5651,22 +6503,22 @@
     "ora": "13:00",
     "quote": {
      "mercato_unico": [
-      1.513,
-      4.6,
-      5.0
+      1.526,
+      4.5,
+      4.9
      ]
     },
     "p_mercato": [
-     0.6291,
-     0.1939,
-     0.1769
+     0.6223,
+     0.1977,
+     0.18
     ],
     "p_modello": [
      0.8242,
      0.104,
      0.0718
     ],
-    "margine": 0.0783,
+    "margine": 0.0816,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5678,22 +6530,22 @@
     "ora": "20:30",
     "quote": {
      "mercato_unico": [
-      2.85,
-      3.6,
-      2.2
+      2.95,
+      3.65,
+      2.15
      ]
     },
     "p_mercato": [
-     0.3233,
-     0.2518,
-     0.4249
+     0.3133,
+     0.2496,
+     0.4371
     ],
     "p_modello": [
      0.4213,
      0.2249,
      0.3538
     ],
-    "margine": 0.0832,
+    "margine": 0.0781,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5707,20 +6559,20 @@
      "mercato_unico": [
       2.0,
       3.75,
-      3.15
+      3.2
      ]
     },
     "p_mercato": [
-     0.4691,
-     0.2406,
-     0.2903
+     0.4709,
+     0.2421,
+     0.287
     ],
     "p_modello": [
      0.5283,
      0.2398,
      0.232
     ],
-    "margine": 0.0841,
+    "margine": 0.0792,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5732,22 +6584,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      2.4,
-      3.7,
+      2.45,
+      3.6,
       2.5
      ]
     },
     "p_mercato": [
-     0.3865,
-     0.2433,
-     0.3702
+     0.3785,
+     0.2509,
+     0.3705
     ],
     "p_modello": [
      0.3633,
      0.265,
      0.3717
     ],
-    "margine": 0.0869,
+    "margine": 0.0859,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5777,104 +6629,69 @@
     "margine": 0.0753,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "dresden-greuther-furth",
+    "casa": "Dresden",
+    "ospite": "Greuther Furth",
+    "data": "2026-11-06",
+    "ora": "18:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5251,
+     0.2241,
+     0.2508
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "braunschweig-cottbus",
+    "casa": "Braunschweig",
+    "ospite": "Cottbus",
+    "data": "2026-11-06",
+    "ora": "18:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3289,
+     0.2332,
+     0.438
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "ligue-2": [
-   {
-    "id": "boulogne-reims",
-    "casa": "Boulogne",
-    "ospite": "Reims",
-    "data": "2026-10-26",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      1.13,
-      1.11,
-      1.11
-     ],
-     "massimo": [
-      3.1,
-      3.25,
-      2.35
-     ],
-     "media": [
-      2.99,
-      3.12,
-      2.26
-     ]
-    },
-    "p_mercato": [
-     0.3027,
-     0.2891,
-     0.4082
-    ],
-    "p_modello": [
-     0.2045,
-     0.2615,
-     0.534
-    ],
-    "margine": 0.0974,
-    "margine_migliore": 0.0558,
-    "quote_da": "confronto"
-   },
-   {
-    "id": "montpellier-red-star",
-    "casa": "Montpellier",
-    "ospite": "Red Star",
-    "data": "2026-10-26",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      1.53,
-      1.12,
-      1.16
-     ],
-     "bet365": [
-      2.45,
-      3.2,
-      2.63
-     ],
-     "massimo": [
-      2.5,
-      3.5,
-      2.88
-     ],
-     "media": [
-      2.38,
-      3.34,
-      2.66
-     ]
-    },
-    "p_mercato": [
-     0.3871,
-     0.2691,
-     0.3438
-    ],
-    "p_modello": [
-     0.4862,
-     0.2994,
-     0.2144
-    ],
-    "margine": 0.0955,
-    "margine_migliore": 0.0329,
-    "quote_da": "confronto"
-   },
    {
     "id": "grenoble-dijon",
     "casa": "Grenoble",
     "ospite": "Dijon",
     "data": "2026-10-30",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.3493,
-     0.2393,
-     0.4114
+    "quote": {
+     "mercato_unico": [
+      3.2,
+      3.25,
+      2.15
+     ]
+    },
+    "p_mercato": [
+     0.2851,
+     0.2804,
+     0.4345
     ],
-    "margine": null,
+    "p_modello": [
+     0.3498,
+     0.24,
+     0.4101
+    ],
+    "margine": 0.0853,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "metz-pau-fc",
@@ -5895,9 +6712,9 @@
      0.3036
     ],
     "p_modello": [
-     0.621,
-     0.1931,
-     0.1859
+     0.6209,
+     0.1937,
+     0.1854
     ],
     "margine": 0.0743,
     "margine_migliore": null,
@@ -5909,16 +6726,26 @@
     "ospite": "Clermont",
     "data": "2026-10-30",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.3607,
-     0.2753,
-     0.364
+    "quote": {
+     "mercato_unico": [
+      1.444,
+      4.3,
+      6.5
+     ]
+    },
+    "p_mercato": [
+     0.6599,
+     0.2085,
+     0.1316
     ],
-    "margine": null,
+    "p_modello": [
+     0.3606,
+     0.2762,
+     0.3632
+    ],
+    "margine": 0.0789,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "rodez-dunkerque",
@@ -5926,16 +6753,26 @@
     "ospite": "Dunkerque",
     "data": "2026-10-30",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4309,
-     0.2359,
-     0.3332
+    "quote": {
+     "mercato_unico": [
+      2.0,
+      3.75,
+      3.2
+     ]
+    },
+    "p_mercato": [
+     0.4709,
+     0.2421,
+     0.287
     ],
-    "margine": null,
+    "p_modello": [
+     0.4314,
+     0.2367,
+     0.3319
+    ],
+    "margine": 0.0792,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "laval-boulogne",
@@ -5943,16 +6780,26 @@
     "ospite": "Boulogne",
     "data": "2026-10-30",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.3797,
-     0.3046,
-     0.3157
+    "quote": {
+     "mercato_unico": [
+      2.3,
+      3.35,
+      2.9
+     ]
+    },
+    "p_mercato": [
+     0.4073,
+     0.2736,
+     0.3191
     ],
-    "margine": null,
+    "p_modello": [
+     0.3736,
+     0.3068,
+     0.3196
+    ],
+    "margine": 0.0781,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "annecy-montpellier",
@@ -5960,16 +6807,26 @@
     "ospite": "Montpellier",
     "data": "2026-10-31",
     "ora": "14:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.2944,
-     0.3157,
-     0.3898
+    "quote": {
+     "mercato_unico": [
+      2.85,
+      3.5,
+      2.25
+     ]
+    },
+    "p_mercato": [
+     0.324,
+     0.2602,
+     0.4158
     ],
-    "margine": null,
+    "p_modello": [
+     0.2936,
+     0.3133,
+     0.3931
+    ],
+    "margine": 0.081,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "reims-sochaux",
@@ -5977,16 +6834,26 @@
     "ospite": "Sochaux",
     "data": "2026-10-31",
     "ora": "14:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.6412,
-     0.2302,
-     0.1286
+    "quote": {
+     "mercato_unico": [
+      1.667,
+      3.85,
+      4.5
+     ]
+    },
+    "p_mercato": [
+     0.5679,
+     0.2344,
+     0.1977
     ],
-    "margine": null,
+    "p_modello": [
+     0.6362,
+     0.2333,
+     0.1305
+    ],
+    "margine": 0.0818,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "guingamp-st-etienne",
@@ -5994,16 +6861,26 @@
     "ospite": "St Etienne",
     "data": "2026-10-31",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.2261,
-     0.2378,
-     0.5361
+    "quote": {
+     "mercato_unico": [
+      3.9,
+      3.45,
+      1.87
+     ]
+    },
+    "p_mercato": [
+     0.2315,
+     0.2642,
+     0.5043
     ],
-    "margine": null,
+    "p_modello": [
+     0.226,
+     0.2389,
+     0.535
+    ],
+    "margine": 0.081,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "red-star-nancy",
@@ -6014,9 +6891,94 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4651,
-     0.2709,
-     0.264
+     0.4638,
+     0.2704,
+     0.2658
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "nancy-sochaux",
+    "casa": "Nancy",
+    "ospite": "Sochaux",
+    "data": "2026-11-06",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4455,
+     0.3147,
+     0.2398
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "boulogne-annecy",
+    "casa": "Boulogne",
+    "ospite": "Annecy",
+    "data": "2026-11-06",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2802,
+     0.2979,
+     0.4219
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "dijon-red-star",
+    "casa": "Dijon",
+    "ospite": "Red Star",
+    "data": "2026-11-06",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4322,
+     0.2258,
+     0.3421
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "dunkerque-guingamp",
+    "casa": "Dunkerque",
+    "ospite": "Guingamp",
+    "data": "2026-11-06",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4473,
+     0.249,
+     0.3038
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "grenoble-reims",
+    "casa": "Grenoble",
+    "ospite": "Reims",
+    "data": "2026-11-06",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2293,
+     0.2571,
+     0.5136
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6031,25 +6993,40 @@
     "data": "2026-10-27",
     "ora": "20:45",
     "quote": {
-     "mercato_unico": [
-      3.75,
-      3.15,
-      2.05
+     "betfair": [
+      4.0,
+      3.35,
+      2.1
+     ],
+     "bet365": [
+      3.4,
+      3.3,
+      1.9
+     ],
+     "massimo": [
+      3.7,
+      3.35,
+      2.0
+     ],
+     "media": [
+      3.48,
+      3.24,
+      1.97
      ]
     },
     "p_mercato": [
-     0.2443,
-     0.2942,
-     0.4615
+     0.2423,
+     0.2905,
+     0.4671
     ],
     "p_modello": [
      0.4943,
      0.3521,
      0.1535
     ],
-    "margine": 0.0719,
-    "margine_migliore": null,
-    "quote_da": "unico"
+    "margine": 0.0247,
+    "margine_migliore": 0.0688,
+    "quote_da": "confronto"
    },
    {
     "id": "stenhousemuir-livingston",
@@ -6165,9 +7142,69 @@
     "margine": 0.0851,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "raith-rvs-dunfermline",
+    "casa": "Raith Rvs",
+    "ospite": "Dunfermline",
+    "data": "2026-11-06",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4254,
+     0.3309,
+     0.2437
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
-  "league-one-scozia": [],
+  "league-one-scozia": [
+   {
+    "id": "ross-county-hamilton",
+    "casa": "Ross County",
+    "ospite": "Hamilton",
+    "data": "2026-10-27",
+    "ora": "20:45",
+    "quote": {
+     "betfair": [
+      1.5,
+      4.6,
+      6.8
+     ],
+     "bet365": [
+      1.48,
+      4.0,
+      5.25
+     ],
+     "massimo": [
+      1.52,
+      4.35,
+      6.5
+     ],
+     "media": [
+      1.44,
+      4.12,
+      5.63
+     ]
+    },
+    "p_mercato": [
+     0.6538,
+     0.208,
+     0.1382
+    ],
+    "p_modello": [
+     0.8135,
+     0.13,
+     0.0565
+    ],
+    "margine": 0.0311,
+    "margine_migliore": 0.0416,
+    "quote_da": "confronto"
+   }
+  ],
   "league-two-scozia": []
  }
 }
