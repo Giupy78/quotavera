@@ -1,5 +1,5 @@
 {
- "data": "2026-10-27",
+ "data": "2026-10-28",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -12,7 +12,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 8 gol in 1 partite, 8.0 a incontro.",
+      "Nella 9ª giornata sono stati segnati 18 gol in 3 partite, 6.0 a incontro.",
       "Il risultato più netto è stato Sassuolo 2-6 Lazio: Lazio ha vinto con 4 gol di scarto."
      ]
     },
@@ -28,14 +28,14 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Lazio non perde da 9 partite",
+     "titolo": "Roma non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
      "numero": "9",
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
      "squadre": [
-      "Lazio"
+      "Roma"
      ],
      "campione": 9
     },
@@ -1584,7 +1584,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 16 gol in 7 partite, 2.3 a incontro."
      ]
     },
     {
@@ -1592,7 +1592,7 @@
      "righe": [
       "In testa c'è Palermo con 22 punti in 8 partite.",
       "Palermo ha 22 punti ma i tiri in porta ne direbbero 13.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sampdoria, ferma a 5 punti contro i 12.6 attesi dal gioco."
+      "All'opposto Sampdoria, ferma a 5 punti contro i 14.2 attesi dal gioco."
      ]
     }
    ],
@@ -1612,14 +1612,14 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Cesena non vince da 6 partite",
+     "titolo": "Empoli non vince da 6 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
      "numero": "6",
      "campionato": "Serie B",
      "bandiera": "🇮🇹",
      "slug": "serie-b",
      "squadre": [
-      "Cesena"
+      "Empoli"
      ],
      "campione": 6
     },
@@ -1680,6 +1680,21 @@
      "vincitore": "Padova",
      "perdente": "Avellino",
      "scarto_tiri": 6
+    },
+    {
+     "campionato": "Serie B",
+     "bandiera": "🇮🇹",
+     "slug": "serie-b",
+     "data": "2026-10-27",
+     "casa": "Mantova",
+     "ospite": "Cremonese",
+     "gol_casa": 0,
+     "gol_ospite": 2,
+     "in_porta_casa": 9,
+     "in_porta_ospite": 5,
+     "vincitore": "Cremonese",
+     "perdente": "Mantova",
+     "scarto_tiri": 4
     },
     {
      "campionato": "Serie B",
@@ -1876,14 +1891,14 @@
     {
      "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 8 gol in 2 partite, 4.0 a incontro."
+      "Nella 13ª giornata sono stati segnati 11 gol in 4 partite, 2.8 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Huddersfield con 25 punti in 12 partite.",
-      "Oxford ha 19 punti ma i tiri in porta ne direbbero 14.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Oxford ha 22 punti ma i tiri in porta ne direbbero 16.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Barnsley, ferma a 8 punti contro i 15.6 attesi dal gioco."
      ]
     }
@@ -1891,14 +1906,14 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Bradford non perde da 8 partite",
+     "titolo": "Oxford non perde da 8 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
      "numero": "8",
      "campionato": "League One",
      "bandiera": "🏴",
      "slug": "league-one",
      "squadre": [
-      "Bradford"
+      "Oxford"
      ],
      "campione": 8
     },
@@ -1998,21 +2013,6 @@
      "vincitore": "Reading",
      "perdente": "Leyton Orient",
      "scarto_tiri": 6
-    },
-    {
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "data": "2026-10-10",
-     "casa": "Stockport",
-     "ospite": "Barnsley",
-     "gol_casa": 3,
-     "gol_ospite": 1,
-     "in_porta_casa": 4,
-     "in_porta_ospite": 9,
-     "vincitore": "Stockport",
-     "perdente": "Barnsley",
-     "scarto_tiri": 5
     }
    ],
    "giornate_giocate": 13
@@ -2028,7 +2028,7 @@
     {
      "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 34 gol in 9 partite, 3.8 a incontro.",
+      "Nella 13ª giornata sono stati segnati 38 gol in 10 partite, 3.8 a incontro.",
       "Il risultato più netto è stato Rochdale 0-5 Accrington: Accrington ha vinto con 5 gol di scarto."
      ]
     },
@@ -2163,50 +2163,49 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 38 punti, 14ª giornata archiviata.",
+   "sommario": "Boreham Wood in testa con 41 punti, 15ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 14ª giornata",
+     "titolo": "La 15ª giornata",
      "righe": [
-      "Nella 14ª giornata sono stati segnati 36 gol in 10 partite, 3.6 a incontro.",
-      "Il risultato più netto è stato Boreham Wood 4-0 Fylde: Boreham Wood ha vinto con 4 gol di scarto."
+      "Nella 15ª giornata sono stati segnati 29 gol in 8 partite, 3.6 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Boreham Wood con 38 punti in 14 partite.",
-      "Boreham Wood ha 38 punti ma i tiri in porta ne direbbero 28.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Boston Utd, ferma a 12 punti contro i 19.0 attesi dal gioco."
+      "In testa c'è Boreham Wood con 41 punti in 15 partite.",
+      "Boreham Wood ha 41 punti ma i tiri in porta ne direbbero 29.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Scunthorpe, ferma a 10 punti contro i 17.9 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Boreham Wood non perde da 14 partite",
+     "titolo": "Boreham Wood non perde da 15 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "14",
+     "numero": "15",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
      "squadre": [
       "Boreham Wood"
      ],
-     "campione": 14
+     "campione": 15
     },
     {
      "tipo": "digiuno",
-     "titolo": "Gateshead non vince da 11 partite",
+     "titolo": "Gateshead non vince da 12 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "11",
+     "numero": "12",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
      "squadre": [
       "Gateshead"
      ],
-     "campione": 11
+     "campione": 12
     },
     {
      "tipo": "fragilita",
@@ -2223,16 +2222,16 @@
     },
     {
      "tipo": "ripresa",
-     "titolo": "Barrow vive di secondi tempi",
-     "testo": "Solo 6 dei suoi 22 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "73%",
+     "titolo": "Tamworth vive di secondi tempi",
+     "testo": "Solo 6 dei suoi 25 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "76%",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
      "squadre": [
-      "Barrow"
+      "Tamworth"
      ],
-     "campione": 22
+     "campione": 25
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2293,24 +2292,9 @@
      "vincitore": "Worthing",
      "perdente": "Kidderminster",
      "scarto_tiri": 3
-    },
-    {
-     "campionato": "National League",
-     "bandiera": "🏴",
-     "slug": "national-league",
-     "data": "2026-09-29",
-     "casa": "Woking",
-     "ospite": "Solihull",
-     "gol_casa": 2,
-     "gol_ospite": 4,
-     "in_porta_casa": 7,
-     "in_porta_ospite": 4,
-     "vincitore": "Solihull",
-     "perdente": "Woking",
-     "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 14
+   "giornate_giocate": 15
   },
   {
    "slug": "laliga-2",
@@ -2766,7 +2750,7 @@
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 7 gol in 4 partite, 1.8 a incontro.",
+      "Nella 12ª giornata sono stati segnati 8 gol in 5 partite, 1.6 a incontro.",
       "Il risultato più netto è stato Partick 3-0 Stenhousemuir: Partick ha vinto con 3 gol di scarto."
      ]
     },
@@ -2774,7 +2758,7 @@
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Partick con 25 punti in 12 partite.",
-      "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 13.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 14.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Morton, ferma a 7 punti contro i 11.5 attesi dal gioco."
      ]
     }
@@ -2782,16 +2766,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Dunfermline non perde da 8 partite",
+     "titolo": "Dunfermline non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Championship scozzese",
      "bandiera": "🏴",
      "slug": "championship-scozia",
      "squadre": [
       "Dunfermline"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "rimonte",
