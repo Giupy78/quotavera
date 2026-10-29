@@ -1,5 +1,5 @@
 {
- "data": "2026-10-28",
+ "data": "2026-10-29",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -7,21 +7,21 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie A: cosa dicono i numeri",
-   "sommario": "Lazio in testa con 25 punti, 9ª giornata archiviata.",
+   "sommario": "Inter in testa con 25 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 18 gol in 3 partite, 6.0 a incontro.",
+      "Nella 9ª giornata sono stati segnati 33 gol in 8 partite, 4.1 a incontro.",
       "Il risultato più netto è stato Sassuolo 2-6 Lazio: Lazio ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Lazio con 25 punti in 9 partite.",
+      "In testa c'è Inter con 25 punti in 9 partite.",
       "Lazio ha 25 punti ma i tiri in porta ne direbbero 13.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Fiorentina, ferma a 4 punti contro i 9.7 attesi dal gioco."
+      "All'opposto Venezia, ferma a 3 punti contro i 10.1 attesi dal gioco."
      ]
     }
    ],
@@ -41,16 +41,29 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Udinese non vince da 6 partite",
+     "titolo": "Udinese non vince da 7 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "6",
+     "numero": "7",
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
      "squadre": [
       "Udinese"
      ],
-     "campione": 6
+     "campione": 7
+    },
+    {
+     "tipo": "a_secco",
+     "titolo": "Udinese non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+     "numero": "3",
+     "campionato": "Serie A",
+     "bandiera": "🇮🇹",
+     "slug": "serie-a",
+     "squadre": [
+      "Udinese"
+     ],
+     "campione": 3
     },
     {
      "tipo": "rimonte",
@@ -137,21 +150,6 @@
      "vincitore": "Torino",
      "perdente": "Parma",
      "scarto_tiri": 5
-    },
-    {
-     "campionato": "Serie A",
-     "bandiera": "🇮🇹",
-     "slug": "serie-a",
-     "data": "2026-09-19",
-     "casa": "Venezia",
-     "ospite": "Lazio",
-     "gol_casa": 0,
-     "gol_ospite": 2,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 2,
-     "vincitore": "Lazio",
-     "perdente": "Venezia",
-     "scarto_tiri": 4
     }
    ],
    "giornate_giocate": 9
@@ -1454,50 +1452,49 @@
    "bandiera": "🏴",
    "paese": "Scozia",
    "titolo": "Premiership: cosa dicono i numeri",
-   "sommario": "Celtic in testa con 27 punti, 10ª giornata archiviata.",
+   "sommario": "Celtic in testa con 28 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 20 gol in 6 partite, 3.3 a incontro.",
-      "Il risultato più netto è stato Rangers 4-0 St Johnstone: Rangers ha vinto con 4 gol di scarto."
+      "Nella 11ª giornata sono stati segnati 19 gol in 6 partite, 3.2 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Celtic con 27 punti in 10 partite.",
-      "Celtic ha 27 punti ma i tiri in porta ne direbbero 21.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Motherwell, ferma a 8 punti contro i 12.6 attesi dal gioco."
+      "In testa c'è Celtic con 28 punti in 11 partite.",
+      "Celtic ha 28 punti ma i tiri in porta ne direbbero 23.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Motherwell, ferma a 9 punti contro i 15.0 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Rangers non perde da 8 partite",
+     "titolo": "Rangers non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Premiership",
      "bandiera": "🏴",
      "slug": "premiership",
      "squadre": [
       "Rangers"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "digiuno",
-     "titolo": "Hibernian non vince da 7 partite",
+     "titolo": "Hibernian non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Premiership",
      "bandiera": "🏴",
      "slug": "premiership",
      "squadre": [
       "Hibernian"
      ],
-     "campione": 7
+     "campione": 8
     },
     {
      "tipo": "rimonte",
@@ -1571,7 +1568,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "serie-b",
@@ -1579,19 +1576,19 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie B: cosa dicono i numeri",
-   "sommario": "Palermo in testa con 22 punti, 9ª giornata archiviata.",
+   "sommario": "Palermo in testa con 23 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 16 gol in 7 partite, 2.3 a incontro."
+      "Nella 9ª giornata sono stati segnati 26 gol in 10 partite, 2.6 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Palermo con 22 punti in 8 partite.",
-      "Palermo ha 22 punti ma i tiri in porta ne direbbero 13.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Palermo con 23 punti in 9 partite.",
+      "Palermo ha 23 punti ma i tiri in porta ne direbbero 15.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Sampdoria, ferma a 5 punti contro i 14.2 attesi dal gioco."
      ]
     }
@@ -1599,16 +1596,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Palermo non perde da 8 partite",
+     "titolo": "Palermo non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Serie B",
      "bandiera": "🇮🇹",
      "slug": "serie-b",
      "squadre": [
       "Palermo"
      ],
-     "campione": 8
+     "campione": 9
     },
     {
      "tipo": "digiuno",
@@ -2168,14 +2165,15 @@
     {
      "titolo": "La 15ª giornata",
      "righe": [
-      "Nella 15ª giornata sono stati segnati 29 gol in 8 partite, 3.6 a incontro."
+      "Nella 15ª giornata sono stati segnati 36 gol in 11 partite, 3.3 a incontro.",
+      "Il risultato più netto è stato Carlisle 3-0 Harrogate: Carlisle ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Boreham Wood con 41 punti in 15 partite.",
-      "Boreham Wood ha 41 punti ma i tiri in porta ne direbbero 29.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Boreham Wood ha 41 punti ma i tiri in porta ne direbbero 29.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Scunthorpe, ferma a 10 punti contro i 17.9 attesi dal gioco."
      ]
     }

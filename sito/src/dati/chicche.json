@@ -1,5 +1,5 @@
 {
- "data": "2026-10-28",
+ "data": "2026-10-29",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -43,7 +43,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1227
+   "campione": 1230
   },
   {
    "tipo": "cartellini",
@@ -65,7 +65,7 @@
    "bandiera": "🏴",
    "slug": "premiership",
    "squadre": [],
-   "campione": 744
+   "campione": 750
   }
  ],
  "per_campionato": {
@@ -85,16 +85,29 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Udinese non vince da 6 partite",
+    "titolo": "Udinese non vince da 7 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Serie A",
     "bandiera": "🇮🇹",
     "slug": "serie-a",
     "squadre": [
      "Udinese"
     ],
-    "campione": 6
+    "campione": 7
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Udinese non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Udinese"
+    ],
+    "campione": 3
    },
    {
     "tipo": "rimonte",
@@ -970,29 +983,29 @@
   "premiership": [
    {
     "tipo": "imbattuta",
-    "titolo": "Rangers non perde da 8 partite",
+    "titolo": "Rangers non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Premiership",
     "bandiera": "🏴",
     "slug": "premiership",
     "squadre": [
      "Rangers"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
-    "titolo": "Hibernian non vince da 7 partite",
+    "titolo": "Hibernian non vince da 8 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Premiership",
     "bandiera": "🏴",
     "slug": "premiership",
     "squadre": [
      "Hibernian"
     ],
-    "campione": 7
+    "campione": 8
    },
    {
     "tipo": "rimonte",
@@ -1052,16 +1065,16 @@
   "serie-b": [
    {
     "tipo": "imbattuta",
-    "titolo": "Palermo non perde da 8 partite",
+    "titolo": "Palermo non perde da 9 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Serie B",
     "bandiera": "🇮🇹",
     "slug": "serie-b",
     "squadre": [
      "Palermo"
     ],
-    "campione": 8
+    "campione": 9
    },
    {
     "tipo": "digiuno",
