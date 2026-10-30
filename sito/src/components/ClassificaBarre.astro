@@ -1,0 +1,147 @@
+---
+/**
+ * Una classifica a barre: una riga per campionato, dalla piu' lunga alla piu'
+ * corta. Serve agli articoli con i dati, che mettono in fila i ventidue
+ * campionati su una misura sola.
+ *
+ * Stesso principio dei grafici delle pagine squadra: niente immagini e niente
+ * JavaScript, una pista e una barra larga una percentuale. Il numero e'
+ * sempre scritto a destra, quindi chi non distingue i colori o stampa la
+ * pagina legge comunque il dato.
+ *
+ * Le barre partono da zero. Far partire l'asse da 2 gol a partita renderebbe
+ * la Bundesliga "il doppio" della Serie A, quando la differenza vera e' un
+ * quarto: e' il modo piu' comune di mentire con un grafico onesto.
+ *
+ * `evidenza` e' l'enfasi: le righe evidenziate prendono il colore del sito, le
+ * altre restano grigie. Un colore per ogni campionato non direbbe niente —
+ * ventidue colori non si distinguono — mentre "dove sta la Serie A in mezzo
+ * agli altri" e' esattamente la domanda di chi legge in italiano.
+ */
+interface Riga {
+  etichetta: string;
+  bandiera?: string;
+  href?: string;
+  valore: number;
+  testo: string;          // il valore gia' scritto, con la virgola
+  dettaglio?: string;     // per il tooltip
+  evidenza?: boolean;
+}
+
+interface Props {
+  righe: Riga[];
+  nota?: string;
+}
+
+const { righe } = Astro.props;
+const massimo = Math.max(...righe.map((r) => r.valore), 0.0001);
+---
+
+<div class="classifica" role="list">
+  {
+    righe.map((r, i) => (
+      <div class:list={["riga", { evidenza: r.evidenza }]} role="listitem">
+        <span class="pos mono">{i + 1}</span>
+        <span class="nome">
+          {r.bandiera && <span class="bandiera" aria-hidden="true">{r.bandiera}</span>}
+          {r.href ? <a href={r.href}>{r.etichetta}</a> : r.etichetta}
+        </span>
+        <span class="pista">
+          <span
+            class="barra"
+            style={`width:${(r.valore / massimo) * 100}%`}
+            title={r.dettaglio ?? `${r.etichetta}: ${r.testo}`}
+          />
+        </span>
+        <span class="val mono">{r.testo}</span>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .classifica {
+    border-top: 1px solid var(--rule);
+    margin: 10px 0 8px;
+  }
+  .riga {
+    display: grid;
+    /* Larghezze fisse, non `auto`: ogni riga e' una griglia a se', e con
+       colonne automatiche le barre partirebbero da punti diversi. 24ch
+       bastano per "Championship scozzese" con la bandiera davanti. */
+    grid-template-columns: 2.4ch 24ch 1fr 5ch;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 13px;
+  }
+  .pos {
+    font-size: 11.5px;
+    color: var(--ink-3);
+    text-align: right;
+  }
+  .nome {
+    color: var(--ink-2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .nome a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .nome a:hover {
+    color: var(--s1);
+    text-decoration: underline;
+  }
+  .bandiera {
+    margin-right: 5px;
+  }
+  .pista {
+    height: 10px;
+  }
+  .barra {
+    display: block;
+    height: 10px;
+    background: var(--ink-3);
+    opacity: 0.4;
+    border-radius: 0 3px 3px 0;
+  }
+  .val {
+    text-align: right;
+    color: var(--ink-2);
+  }
+  /* L'enfasi: colore pieno sulla barra, e il nome in grassetto, cosi' che
+     l'evidenza non sia affidata al solo colore. */
+  .evidenza .barra {
+    background: var(--s1);
+    opacity: 1;
+  }
+  .evidenza .nome {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .evidenza .val {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  /* Sul telefono i nomi lunghi vanno a capo invece di essere troncati:
+     "Championship sco…" e' un nome che il lettore deve indovinare. */
+  @media (max-width: 620px) {
+    .riga {
+      grid-template-columns: 2.2ch 12.5ch 1fr 4.5ch;
+      gap: 8px;
+      font-size: 12.5px;
+    }
+    .nome {
+      white-space: normal;
+      line-height: 1.25;
+    }
+    /* La bandiera e' decorativa, e su una colonna stretta va a capo da sola
+       lasciando il nome sulla riga sotto. Il nome basta. */
+    .bandiera {
+      display: none;
+    }
+  }
+</style>

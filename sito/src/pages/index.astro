@@ -165,13 +165,13 @@ const dataLunga = (iso: string) =>
       <h2>Lo sapevi?</h2>
       <p>
         Numeri che vengono fuori solo mettendo ventidue campionati uno accanto
-        all'altro. Ogni riquadro porta all'articolo del suo campionato.
+        all'altro. Ogni riquadro porta alla pagina con i numeri completi.
       </p>
     </div>
     <div class="vetrina">
       {
         (chicche.confronti as any[]).map((c) => (
-          <a class="chicca" href={`/blog/${c.slug}/`}>
+          <a class="chicca" href={c.collegamento || `/blog/${c.slug}/`}>
             <span class="numero mono">{c.numero}</span>
             <span class="testo">
               <b>{c.titolo}</b>
@@ -181,6 +181,11 @@ const dataLunga = (iso: string) =>
         ))
       }
     </div>
+    <p class="fra-campionati">
+      <a href="/statistiche/campionati-con-piu-gol/">
+        Tutti i 22 campionati a confronto: dove si segnano più gol →
+      </a>
+    </p>
   </section>
 
   <section>
@@ -368,6 +373,10 @@ const dataLunga = (iso: string) =>
 </Base>
 
 <style>
+  .fra-campionati {
+    font-size: 13.5px;
+    margin: 16px 0 0;
+  }
   /* --- la vetrina delle chicche -------------------------------------
      Il numero grande e colorato fa il lavoro: e' l'unica cosa che si legge
      scorrendo veloce, e il resto si legge solo se quel numero ha incuriosito.

@@ -1,5 +1,5 @@
 {
- "data": "2026-10-27",
+ "data": "2026-10-30",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -7,50 +7,66 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie A: cosa dicono i numeri",
-   "sommario": "Lazio in testa con 25 punti, 9ª giornata archiviata.",
+   "sommario": "Inter in testa con 25 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 8 gol in 1 partite, 8.0 a incontro.",
+      "Nella 9ª giornata sono stati segnati 43 gol in 10 partite, 4.3 a incontro.",
       "Il risultato più netto è stato Sassuolo 2-6 Lazio: Lazio ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Lazio con 25 punti in 9 partite.",
+      "In testa c'è Inter con 25 punti in 9 partite.",
       "Lazio ha 25 punti ma i tiri in porta ne direbbero 13.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Fiorentina, ferma a 4 punti contro i 9.7 attesi dal gioco."
+      "All'opposto Venezia, ferma a 3 punti contro i 10.1 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Lazio non perde da 9 partite",
+     "titolo": "Roma non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
      "numero": "9",
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
      "squadre": [
-      "Lazio"
+      "Roma"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Udinese non vince da 6 partite",
+     "titolo": "Udinese non vince da 7 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "6",
+     "numero": "7",
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
      "squadre": [
       "Udinese"
      ],
-     "campione": 6
+     "campione": 7,
+     "collegamento": ""
+    },
+    {
+     "tipo": "a_secco",
+     "titolo": "Udinese non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+     "numero": "3",
+     "campionato": "Serie A",
+     "bandiera": "🇮🇹",
+     "slug": "serie-a",
+     "squadre": [
+      "Udinese"
+     ],
+     "campione": 3,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -63,7 +79,8 @@
      "squadre": [
       "Inter"
      ],
-     "campione": 14
+     "campione": 14,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -76,7 +93,8 @@
      "squadre": [
       "Cagliari"
      ],
-     "campione": 20
+     "campione": 20,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -90,7 +108,8 @@
       "Inter",
       "Udinese"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -104,7 +123,8 @@
       "Milan",
       "Cremonese"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -137,21 +157,6 @@
      "vincitore": "Torino",
      "perdente": "Parma",
      "scarto_tiri": 5
-    },
-    {
-     "campionato": "Serie A",
-     "bandiera": "🇮🇹",
-     "slug": "serie-a",
-     "data": "2026-09-19",
-     "casa": "Venezia",
-     "ospite": "Lazio",
-     "gol_casa": 0,
-     "gol_ospite": 2,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 2,
-     "vincitore": "Lazio",
-     "perdente": "Venezia",
-     "scarto_tiri": 4
     }
    ],
    "giornate_giocate": 9
@@ -192,7 +197,8 @@
      "squadre": [
       "Sunderland"
      ],
-     "campione": 6
+     "campione": 6,
+     "collegamento": ""
     },
     {
      "tipo": "a_secco",
@@ -205,7 +211,8 @@
      "squadre": [
       "Sunderland"
      ],
-     "campione": 3
+     "campione": 3,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -218,7 +225,8 @@
      "squadre": [
       "Man City"
      ],
-     "campione": 19
+     "campione": 19,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -231,7 +239,8 @@
      "squadre": [
       "Sunderland"
      ],
-     "campione": 8
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -244,7 +253,8 @@
      "squadre": [
       "Ipswich"
      ],
-     "campione": 48
+     "campione": 48,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -258,7 +268,8 @@
       "Liverpool",
       "Nott'm Forest"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -272,7 +283,8 @@
       "Liverpool",
       "Crystal Palace"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -345,7 +357,8 @@
      "squadre": [
       "Celta"
      ],
-     "campione": 7
+     "campione": 7,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -358,7 +371,8 @@
      "squadre": [
       "Malaga"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -371,7 +385,8 @@
      "squadre": [
       "Real Madrid"
      ],
-     "campione": 19
+     "campione": 19,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -384,7 +399,8 @@
      "squadre": [
       "Vallecano"
      ],
-     "campione": 32
+     "campione": 32,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -398,7 +414,8 @@
       "Barcelona",
       "Leganes"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -412,7 +429,8 @@
       "Barcelona",
       "Las Palmas"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -485,7 +503,8 @@
      "squadre": [
       "Dortmund"
      ],
-     "campione": 7
+     "campione": 7,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -498,7 +517,8 @@
      "squadre": [
       "Bayern Munich"
      ],
-     "campione": 15
+     "campione": 15,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -511,7 +531,8 @@
      "squadre": [
       "FC Koln"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -525,7 +546,8 @@
       "Bayern Munich",
       "Werder Bremen"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -539,7 +561,8 @@
       "Bayern Munich",
       "Augsburg"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -597,7 +620,8 @@
      "squadre": [
       "Le Havre"
      ],
-     "campione": 8
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -610,7 +634,8 @@
      "squadre": [
       "Monaco"
      ],
-     "campione": 27
+     "campione": 27,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -623,7 +648,8 @@
      "squadre": [
       "Nice"
      ],
-     "campione": 38
+     "campione": 38,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -637,7 +663,8 @@
       "Lille",
       "Le Havre"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -651,7 +678,8 @@
       "Monaco",
       "Angers"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -724,7 +752,8 @@
      "squadre": [
       "Feyenoord"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -737,7 +766,8 @@
      "squadre": [
       "Willem II"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -750,7 +780,8 @@
      "squadre": [
       "PSV Eindhoven"
      ],
-     "campione": 16
+     "campione": 16,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -763,7 +794,8 @@
      "squadre": [
       "Excelsior"
      ],
-     "campione": 24
+     "campione": 24,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -777,7 +809,8 @@
       "PSV Eindhoven",
       "Telstar"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -791,7 +824,8 @@
       "Zwolle",
       "PSV Eindhoven"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -849,7 +883,8 @@
      "squadre": [
       "Porto"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -862,7 +897,8 @@
      "squadre": [
       "Estoril"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "a_secco",
@@ -875,7 +911,8 @@
      "squadre": [
       "Estrela"
      ],
-     "campione": 3
+     "campione": 3,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -888,7 +925,8 @@
      "squadre": [
       "Sp Lisbon"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -901,7 +939,8 @@
      "squadre": [
       "Rio Ave"
      ],
-     "campione": 24
+     "campione": 24,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -915,7 +954,8 @@
       "Sp Lisbon",
       "Santa Clara"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -929,7 +969,8 @@
       "Casa Pia",
       "Porto"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1016,7 +1057,8 @@
      "squadre": [
       "Amedspor"
      ],
-     "campione": 7
+     "campione": 7,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -1029,7 +1071,8 @@
      "squadre": [
       "Samsunspor"
      ],
-     "campione": 7
+     "campione": 7,
+     "collegamento": ""
     },
     {
      "tipo": "a_secco",
@@ -1042,7 +1085,8 @@
      "squadre": [
       "Eyupspor"
      ],
-     "campione": 6
+     "campione": 6,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -1055,7 +1099,8 @@
      "squadre": [
       "Fenerbahce"
      ],
-     "campione": 23
+     "campione": 23,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1068,7 +1113,8 @@
      "squadre": [
       "Alanyaspor"
      ],
-     "campione": 40
+     "campione": 40,
+     "collegamento": ""
     },
     {
      "tipo": "ripresa",
@@ -1081,7 +1127,8 @@
      "squadre": [
       "Amedspor"
      ],
-     "campione": 20
+     "campione": 20,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1095,7 +1142,8 @@
       "Buyuksehyr",
       "Ad. Demirspor"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1109,7 +1157,8 @@
       "Hatayspor",
       "Fenerbahce"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1167,7 +1216,8 @@
      "squadre": [
       "St. Gilloise"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -1180,7 +1230,8 @@
      "squadre": [
       "Cercle Brugge"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "a_secco",
@@ -1193,7 +1244,8 @@
      "squadre": [
       "Waregem"
      ],
-     "campione": 4
+     "campione": 4,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -1206,7 +1258,8 @@
      "squadre": [
       "Club Brugge"
      ],
-     "campione": 22
+     "campione": 22,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1219,7 +1272,8 @@
      "squadre": [
       "Oud-Heverlee Leuven"
      ],
-     "campione": 27
+     "campione": 27,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1233,7 +1287,8 @@
       "Club Brugge",
       "Standard"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1247,7 +1302,8 @@
       "Club Brugge",
       "Antwerp"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1320,7 +1376,8 @@
      "squadre": [
       "AEK"
      ],
-     "campione": 7
+     "campione": 7,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -1333,7 +1390,8 @@
      "squadre": [
       "Volos NFC"
      ],
-     "campione": 8
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "porta_chiusa",
@@ -1346,7 +1404,8 @@
      "squadre": [
       "Olympiakos"
      ],
-     "campione": 4
+     "campione": 4,
+     "collegamento": ""
     },
     {
      "tipo": "a_secco",
@@ -1359,7 +1418,8 @@
      "squadre": [
       "Levadeiakos"
      ],
-     "campione": 8
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -1372,7 +1432,8 @@
      "squadre": [
       "AEK"
      ],
-     "campione": 17
+     "campione": 17,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1385,7 +1446,8 @@
      "squadre": [
       "Kifisia"
      ],
-     "campione": 15
+     "campione": 15,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -1398,7 +1460,8 @@
      "squadre": [
       "OFI Crete"
      ],
-     "campione": 132
+     "campione": 132,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1412,7 +1475,8 @@
       "PAOK",
       "Volos NFC"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1426,7 +1490,8 @@
       "Lamia",
       "Panathinaikos"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1454,63 +1519,65 @@
    "bandiera": "🏴",
    "paese": "Scozia",
    "titolo": "Premiership: cosa dicono i numeri",
-   "sommario": "Celtic in testa con 27 punti, 10ª giornata archiviata.",
+   "sommario": "Celtic in testa con 28 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 20 gol in 6 partite, 3.3 a incontro.",
-      "Il risultato più netto è stato Rangers 4-0 St Johnstone: Rangers ha vinto con 4 gol di scarto."
+      "Nella 11ª giornata sono stati segnati 19 gol in 6 partite, 3.2 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Celtic con 27 punti in 10 partite.",
-      "Celtic ha 27 punti ma i tiri in porta ne direbbero 21.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Motherwell, ferma a 8 punti contro i 12.6 attesi dal gioco."
+      "In testa c'è Celtic con 28 punti in 11 partite.",
+      "Celtic ha 28 punti ma i tiri in porta ne direbbero 23.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Motherwell, ferma a 9 punti contro i 15.0 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Rangers non perde da 8 partite",
+     "titolo": "Rangers non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Premiership",
      "bandiera": "🏴",
      "slug": "premiership",
      "squadre": [
       "Rangers"
      ],
-     "campione": 8
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Hibernian non vince da 7 partite",
+     "titolo": "Hibernian non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Premiership",
      "bandiera": "🏴",
      "slug": "premiership",
      "squadre": [
       "Hibernian"
      ],
-     "campione": 7
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
      "titolo": "Celtic non molla all'intervallo",
-     "testo": "Sotto al riposo 17 volte nelle ultime stagioni, ha finito vincendo 5: è la quota di rimonte più alta del campionato.",
-     "numero": "29%",
+     "testo": "Sotto al riposo 18 volte nelle ultime stagioni, ha finito vincendo 5: è la quota di rimonte più alta del campionato.",
+     "numero": "28%",
      "campionato": "Premiership",
      "bandiera": "🏴",
      "slug": "premiership",
      "squadre": [
       "Celtic"
      ],
-     "campione": 17
+     "campione": 18,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1523,7 +1590,8 @@
      "squadre": [
       "St Johnstone"
      ],
-     "campione": 18
+     "campione": 18,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1537,7 +1605,8 @@
       "Rangers",
       "Motherwell"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1551,7 +1620,8 @@
       "St Johnstone",
       "Celtic"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1571,7 +1641,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "serie-b",
@@ -1579,49 +1649,51 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie B: cosa dicono i numeri",
-   "sommario": "Palermo in testa con 22 punti, 9ª giornata archiviata.",
+   "sommario": "Palermo in testa con 23 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 26 gol in 10 partite, 2.6 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Palermo con 22 punti in 8 partite.",
-      "Palermo ha 22 punti ma i tiri in porta ne direbbero 13.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sampdoria, ferma a 5 punti contro i 12.6 attesi dal gioco."
+      "In testa c'è Palermo con 23 punti in 9 partite.",
+      "Palermo ha 23 punti ma i tiri in porta ne direbbero 15.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Sampdoria, ferma a 5 punti contro i 14.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Palermo non perde da 8 partite",
+     "titolo": "Palermo non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Serie B",
      "bandiera": "🇮🇹",
      "slug": "serie-b",
      "squadre": [
       "Palermo"
      ],
-     "campione": 8
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Cesena non vince da 6 partite",
+     "titolo": "Empoli non vince da 6 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
      "numero": "6",
      "campionato": "Serie B",
      "bandiera": "🇮🇹",
      "slug": "serie-b",
      "squadre": [
-      "Cesena"
+      "Empoli"
      ],
-     "campione": 6
+     "campione": 6,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1634,7 +1706,8 @@
      "squadre": [
       "Sampdoria"
      ],
-     "campione": 30
+     "campione": 30,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1648,7 +1721,8 @@
       "Palermo",
       "Lecco"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1662,7 +1736,8 @@
       "Cesena",
       "Padova"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1680,6 +1755,21 @@
      "vincitore": "Padova",
      "perdente": "Avellino",
      "scarto_tiri": 6
+    },
+    {
+     "campionato": "Serie B",
+     "bandiera": "🇮🇹",
+     "slug": "serie-b",
+     "data": "2026-10-27",
+     "casa": "Mantova",
+     "ospite": "Cremonese",
+     "gol_casa": 0,
+     "gol_ospite": 2,
+     "in_porta_casa": 9,
+     "in_porta_ospite": 5,
+     "vincitore": "Cremonese",
+     "perdente": "Mantova",
+     "scarto_tiri": 4
     },
     {
      "campionato": "Serie B",
@@ -1735,7 +1825,8 @@
      "squadre": [
       "Middlesbrough"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -1748,7 +1839,8 @@
      "squadre": [
       "Charlton"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "a_secco",
@@ -1761,7 +1853,8 @@
      "squadre": [
       "Bristol City"
      ],
-     "campione": 3
+     "campione": 3,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -1774,7 +1867,8 @@
      "squadre": [
       "Southampton"
      ],
-     "campione": 22
+     "campione": 22,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1787,7 +1881,8 @@
      "squadre": [
       "Cardiff"
      ],
-     "campione": 22
+     "campione": 22,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -1800,7 +1895,8 @@
      "squadre": [
       "Burnley"
      ],
-     "campione": 86
+     "campione": 86,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1814,7 +1910,8 @@
       "Middlesbrough",
       "Charlton"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1828,7 +1925,8 @@
       "Coventry",
       "Sheffield Weds"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1876,14 +1974,14 @@
     {
      "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 8 gol in 2 partite, 4.0 a incontro."
+      "Nella 13ª giornata sono stati segnati 11 gol in 4 partite, 2.8 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Huddersfield con 25 punti in 12 partite.",
-      "Oxford ha 19 punti ma i tiri in porta ne direbbero 14.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Oxford ha 22 punti ma i tiri in porta ne direbbero 16.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Barnsley, ferma a 8 punti contro i 15.6 attesi dal gioco."
      ]
     }
@@ -1891,16 +1989,17 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Bradford non perde da 8 partite",
+     "titolo": "Oxford non perde da 8 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
      "numero": "8",
      "campionato": "League One",
      "bandiera": "🏴",
      "slug": "league-one",
      "squadre": [
-      "Bradford"
+      "Oxford"
      ],
-     "campione": 8
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -1913,7 +2012,8 @@
      "squadre": [
       "Barnsley"
      ],
-     "campione": 7
+     "campione": 7,
+     "collegamento": ""
     },
     {
      "tipo": "porta_chiusa",
@@ -1926,20 +2026,22 @@
      "squadre": [
       "Bradford"
      ],
-     "campione": 4
+     "campione": 4,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
      "titolo": "Stockport non molla all'intervallo",
-     "testo": "Sotto al riposo 29 volte nelle ultime stagioni, ha finito vincendo 6: è la quota di rimonte più alta del campionato.",
-     "numero": "21%",
+     "testo": "Sotto al riposo 30 volte nelle ultime stagioni, ha finito vincendo 6: è la quota di rimonte più alta del campionato.",
+     "numero": "20%",
      "campionato": "League One",
      "bandiera": "🏴",
      "slug": "league-one",
      "squadre": [
       "Stockport"
      ],
-     "campione": 29
+     "campione": 30,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -1952,7 +2054,22 @@
      "squadre": [
       "Barnsley"
      ],
-     "campione": 53
+     "campione": 53,
+     "collegamento": ""
+    },
+    {
+     "tipo": "primo_tempo",
+     "titolo": "Leicester decide presto",
+     "testo": "11 dei suoi 20 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+     "numero": "55%",
+     "campionato": "League One",
+     "bandiera": "🏴",
+     "slug": "league-one",
+     "squadre": [
+      "Leicester"
+     ],
+     "campione": 20,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1966,7 +2083,8 @@
       "Shrewsbury",
       "Birmingham"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -1980,7 +2098,8 @@
       "Peterboro",
       "Carlisle"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -1998,21 +2117,6 @@
      "vincitore": "Reading",
      "perdente": "Leyton Orient",
      "scarto_tiri": 6
-    },
-    {
-     "campionato": "League One",
-     "bandiera": "🏴",
-     "slug": "league-one",
-     "data": "2026-10-10",
-     "casa": "Stockport",
-     "ospite": "Barnsley",
-     "gol_casa": 3,
-     "gol_ospite": 1,
-     "in_porta_casa": 4,
-     "in_porta_ospite": 9,
-     "vincitore": "Stockport",
-     "perdente": "Barnsley",
-     "scarto_tiri": 5
     }
    ],
    "giornate_giocate": 13
@@ -2028,7 +2132,7 @@
     {
      "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 34 gol in 9 partite, 3.8 a incontro.",
+      "Nella 13ª giornata sono stati segnati 38 gol in 10 partite, 3.8 a incontro.",
       "Il risultato più netto è stato Rochdale 0-5 Accrington: Accrington ha vinto con 5 gol di scarto."
      ]
     },
@@ -2053,7 +2157,8 @@
      "squadre": [
       "Salford"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -2066,7 +2171,8 @@
      "squadre": [
       "Crawley Town"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -2079,7 +2185,8 @@
      "squadre": [
       "Barnet"
      ],
-     "campione": 13
+     "campione": 13,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2092,7 +2199,8 @@
      "squadre": [
       "Barnet"
      ],
-     "campione": 18
+     "campione": 18,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2106,7 +2214,8 @@
       "Salford",
       "Newport County"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2120,7 +2229,8 @@
       "Barnet",
       "Newport County"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -2163,50 +2273,52 @@
    "bandiera": "🏴",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 38 punti, 14ª giornata archiviata.",
+   "sommario": "Boreham Wood in testa con 41 punti, 15ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 14ª giornata",
+     "titolo": "La 15ª giornata",
      "righe": [
-      "Nella 14ª giornata sono stati segnati 36 gol in 10 partite, 3.6 a incontro.",
-      "Il risultato più netto è stato Boreham Wood 4-0 Fylde: Boreham Wood ha vinto con 4 gol di scarto."
+      "Nella 15ª giornata sono stati segnati 36 gol in 11 partite, 3.3 a incontro.",
+      "Il risultato più netto è stato Carlisle 3-0 Harrogate: Carlisle ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Boreham Wood con 38 punti in 14 partite.",
-      "Boreham Wood ha 38 punti ma i tiri in porta ne direbbero 28.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Boston Utd, ferma a 12 punti contro i 19.0 attesi dal gioco."
+      "In testa c'è Boreham Wood con 41 punti in 15 partite.",
+      "Boreham Wood ha 41 punti ma i tiri in porta ne direbbero 30.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Scunthorpe, ferma a 10 punti contro i 17.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Boreham Wood non perde da 14 partite",
+     "titolo": "Boreham Wood non perde da 15 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "14",
+     "numero": "15",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
      "squadre": [
       "Boreham Wood"
      ],
-     "campione": 14
+     "campione": 15,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Gateshead non vince da 11 partite",
+     "titolo": "Gateshead non vince da 12 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "11",
+     "numero": "12",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
      "squadre": [
       "Gateshead"
      ],
-     "campione": 11
+     "campione": 12,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2219,20 +2331,22 @@
      "squadre": [
       "Worthing"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "ripresa",
      "titolo": "Barrow vive di secondi tempi",
-     "testo": "Solo 6 dei suoi 22 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "73%",
+     "testo": "Solo 6 dei suoi 25 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "76%",
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
      "squadre": [
       "Barrow"
      ],
-     "campione": 22
+     "campione": 25,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2246,7 +2360,8 @@
       "Rochdale",
       "Morecambe"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2260,10 +2375,26 @@
       "Gateshead",
       "York"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
+    {
+     "campionato": "National League",
+     "bandiera": "🏴",
+     "slug": "national-league",
+     "data": "2026-10-27",
+     "casa": "Wealdstone",
+     "ospite": "Solihull",
+     "gol_casa": 2,
+     "gol_ospite": 3,
+     "in_porta_casa": 9,
+     "in_porta_ospite": 5,
+     "vincitore": "Solihull",
+     "perdente": "Wealdstone",
+     "scarto_tiri": 4
+    },
     {
      "campionato": "National League",
      "bandiera": "🏴",
@@ -2283,34 +2414,19 @@
      "campionato": "National League",
      "bandiera": "🏴",
      "slug": "national-league",
-     "data": "2026-10-24",
-     "casa": "Kidderminster",
-     "ospite": "Worthing",
-     "gol_casa": 1,
-     "gol_ospite": 2,
-     "in_porta_casa": 7,
-     "in_porta_ospite": 4,
-     "vincitore": "Worthing",
-     "perdente": "Kidderminster",
-     "scarto_tiri": 3
-    },
-    {
-     "campionato": "National League",
-     "bandiera": "🏴",
-     "slug": "national-league",
-     "data": "2026-09-29",
-     "casa": "Woking",
-     "ospite": "Solihull",
+     "data": "2026-10-27",
+     "casa": "Halifax",
+     "ospite": "Barrow",
      "gol_casa": 2,
-     "gol_ospite": 4,
+     "gol_ospite": 3,
      "in_porta_casa": 7,
      "in_porta_ospite": 4,
-     "vincitore": "Solihull",
-     "perdente": "Woking",
+     "vincitore": "Barrow",
+     "perdente": "Halifax",
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 14
+   "giornate_giocate": 15
   },
   {
    "slug": "laliga-2",
@@ -2348,7 +2464,8 @@
      "squadre": [
       "Almeria"
      ],
-     "campione": 8
+     "campione": 8,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -2361,7 +2478,8 @@
      "squadre": [
       "Tenerife"
      ],
-     "campione": 6
+     "campione": 6,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -2374,7 +2492,8 @@
      "squadre": [
       "Eibar"
      ],
-     "campione": 30
+     "campione": 30,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2387,7 +2506,8 @@
      "squadre": [
       "Albacete"
      ],
-     "campione": 37
+     "campione": 37,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -2400,7 +2520,8 @@
      "squadre": [
       "Girona"
      ],
-     "campione": 22
+     "campione": 22,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2414,7 +2535,8 @@
       "Andorra",
       "Ceuta"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2428,7 +2550,8 @@
       "Albacete",
       "Alcorcon"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -2516,7 +2639,8 @@
      "squadre": [
       "Hertha"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "porta_chiusa",
@@ -2529,7 +2653,8 @@
      "squadre": [
       "Kaiserslautern"
      ],
-     "campione": 4
+     "campione": 4,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -2542,7 +2667,8 @@
      "squadre": [
       "Hannover"
      ],
-     "campione": 28
+     "campione": 28,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2555,7 +2681,8 @@
      "squadre": [
       "Darmstadt"
      ],
-     "campione": 18
+     "campione": 18,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -2568,7 +2695,8 @@
      "squadre": [
       "Dresden"
      ],
-     "campione": 65
+     "campione": 65,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2582,7 +2710,8 @@
       "Hannover",
       "Greuther Furth"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2596,7 +2725,8 @@
       "St Pauli",
       "Elversberg"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -2653,7 +2783,8 @@
      "squadre": [
       "Reims"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -2666,7 +2797,8 @@
      "squadre": [
       "Clermont"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -2679,7 +2811,8 @@
      "squadre": [
       "Rodez"
      ],
-     "campione": 38
+     "campione": 38,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2692,7 +2825,8 @@
      "squadre": [
       "Clermont"
      ],
-     "campione": 15
+     "campione": 15,
+     "collegamento": ""
     },
     {
      "tipo": "ripresa",
@@ -2705,7 +2839,8 @@
      "squadre": [
       "Boulogne"
      ],
-     "campione": 41
+     "campione": 41,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2719,7 +2854,8 @@
       "Paris FC",
       "Martigues"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2733,7 +2869,8 @@
       "Lorient",
       "Laval"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -2766,7 +2903,7 @@
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 7 gol in 4 partite, 1.8 a incontro.",
+      "Nella 12ª giornata sono stati segnati 8 gol in 5 partite, 1.6 a incontro.",
       "Il risultato più netto è stato Partick 3-0 Stenhousemuir: Partick ha vinto con 3 gol di scarto."
      ]
     },
@@ -2774,7 +2911,7 @@
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Partick con 25 punti in 12 partite.",
-      "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 13.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 13.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Morton, ferma a 7 punti contro i 11.5 attesi dal gioco."
      ]
     }
@@ -2782,16 +2919,17 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Dunfermline non perde da 8 partite",
+     "titolo": "Dunfermline non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Championship scozzese",
      "bandiera": "🏴",
      "slug": "championship-scozia",
      "squadre": [
       "Dunfermline"
      ],
-     "campione": 8
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -2804,7 +2942,8 @@
      "squadre": [
       "Partick"
      ],
-     "campione": 26
+     "campione": 26,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2817,7 +2956,8 @@
      "squadre": [
       "Morton"
      ],
-     "campione": 33
+     "campione": 33,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -2830,7 +2970,8 @@
      "squadre": [
       "Inverness C"
      ],
-     "campione": 57
+     "campione": 57,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2844,7 +2985,8 @@
       "Falkirk",
       "Raith Rvs"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2858,7 +3000,8 @@
       "Dundee United",
       "Airdrie Utd"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [
@@ -2901,20 +3044,20 @@
    "bandiera": "🏴",
    "paese": "Scozia",
    "titolo": "League One scozzese: cosa dicono i numeri",
-   "sommario": "Ross County in testa con 31 punti, 12ª giornata archiviata.",
+   "sommario": "Ross County in testa con 32 punti, 12ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 11 gol in 4 partite, 2.8 a incontro.",
+      "Nella 12ª giornata sono stati segnati 13 gol in 5 partite, 2.6 a incontro.",
       "Il risultato più netto è stato Ross County 4-0 Airdrie Utd: Ross County ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Ross County con 31 punti in 11 partite.",
-      "Hamilton ha 31 punti ma i tiri in porta ne direbbero 22.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Ross County con 32 punti in 12 partite.",
+      "Hamilton ha 32 punti ma i tiri in porta ne direbbero 23.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Alloa, ferma a 12 punti contro i 18.0 attesi dal gioco."
      ]
     }
@@ -2922,16 +3065,17 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Ross County non perde da 11 partite",
+     "titolo": "Ross County non perde da 12 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "11",
+     "numero": "12",
      "campionato": "League One scozzese",
      "bandiera": "🏴",
      "slug": "league-one-scozia",
      "squadre": [
       "Ross County"
      ],
-     "campione": 11
+     "campione": 12,
+     "collegamento": ""
     },
     {
      "tipo": "digiuno",
@@ -2944,7 +3088,8 @@
      "squadre": [
       "East Fife"
      ],
-     "campione": 10
+     "campione": 10,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -2957,7 +3102,8 @@
      "squadre": [
       "Alloa"
      ],
-     "campione": 40
+     "campione": 40,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -2970,7 +3116,8 @@
      "squadre": [
       "Montrose"
      ],
-     "campione": 40
+     "campione": 40,
+     "collegamento": ""
     },
     {
      "tipo": "ripresa",
@@ -2983,7 +3130,8 @@
      "squadre": [
       "East Fife"
      ],
-     "campione": 43
+     "campione": 43,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -2997,7 +3145,8 @@
       "Edinburgh City",
       "Falkirk"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -3011,7 +3160,8 @@
       "Hamilton",
       "Annan Athletic"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [],
@@ -3053,7 +3203,8 @@
      "squadre": [
       "Stranraer"
      ],
-     "campione": 9
+     "campione": 9,
+     "collegamento": ""
     },
     {
      "tipo": "rimonte",
@@ -3066,7 +3217,8 @@
      "squadre": [
       "Forfar"
      ],
-     "campione": 33
+     "campione": 33,
+     "collegamento": ""
     },
     {
      "tipo": "fragilita",
@@ -3079,7 +3231,8 @@
      "squadre": [
       "Annan Athletic"
      ],
-     "campione": 12
+     "campione": 12,
+     "collegamento": ""
     },
     {
      "tipo": "primo_tempo",
@@ -3092,7 +3245,8 @@
      "squadre": [
       "Forfar"
      ],
-     "campione": 129
+     "campione": 129,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -3106,7 +3260,8 @@
       "Peterhead",
       "Edinburgh City"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     },
     {
      "tipo": "sorpresa_mercato",
@@ -3120,7 +3275,8 @@
       "East Fife",
       "Stranraer"
      ],
-     "campione": 1
+     "campione": 1,
+     "collegamento": ""
     }
    ],
    "sorprese": [

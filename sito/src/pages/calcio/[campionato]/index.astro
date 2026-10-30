@@ -9,6 +9,7 @@ import risultati from "../../../dati/risultati.json";
 import stagione from "../../../dati/stagione.json";
 import finestre from "../../../dati/finestre.json";
 import marcatori from "../../../dati/marcatori.json";
+import fra from "../../../dati/fra_campionati.json";
 import { lumacaSquadra } from "../../../lib/indirizzi";
 
 export function getStaticPaths() {
@@ -32,6 +33,12 @@ export function getStaticPaths() {
 }
 
 const { lega, partite, team, classifica, ultimi, completo, fin, bomber } = Astro.props;
+
+/* Dove sta questo campionato fra i ventidue, sui gol di tre stagioni intere.
+   E' il rimando all'articolo con la classifica completa, ed e' anche il
+   collegamento con cui Google arriva a quell'articolo da ventidue pagine. */
+const fraLeghe = (fra.campionati as any[]);
+const quiFra = fraLeghe.find((r) => r.slug === lega.slug) ?? null;
 
 /* Le profondita' fra cui puo' scegliere chi legge, e quella aperta all'arrivo. */
 const profondita: number[] = finestre.disponibili;
@@ -119,6 +126,16 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
         <div class="n">nei prossimi giorni</div>
       </div>
     </div>
+    {
+      quiFra && (
+        <p class="fra-campionati">
+          Gol a partita nelle ultime tre stagioni intere:
+          {" "}<b class="mono">{num(quiFra.totale.gol)}</b>,
+          {" "}{quiFra.posizione_gol}° posto su {fraLeghe.length} campionati.
+          {" "}<a href="/statistiche/campionati-con-piu-gol/">La classifica completa →</a>
+        </p>
+      )
+    }
   </section>
 
   <section>
@@ -613,6 +630,11 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
 </Base>
 
 <style>
+  .fra-campionati {
+    font-size: 13px;
+    color: var(--ink-2);
+    margin: 14px 0 0;
+  }
   /* Il nome della squadra porta alla sua pagina. Dentro una tabella di numeri
      un link blu e sottolineato griderebbe su ogni riga: resta del colore del
      testo e si scopre al passaggio del mouse. */

@@ -165,3 +165,50 @@ def test_una_serie_non_attraversa_la_sosta_estiva():
     con = [x for x in chicche.serie_aperte(tutte, C, dal=date(2026, 7, 1))
            if x.tipo == "imbattuta"]
     assert con == [], "una serie di tre partite non e' una notizia"
+
+
+# --- confronti fra campionati ---------------------------------------------
+
+def test_l_articolo_davanti_al_campionato():
+    assert chicche.con_articolo("Bundesliga") == "la Bundesliga"
+    assert chicche.con_articolo("Eredivisie") == "l'Eredivisie"
+    assert chicche.con_articolo("LaLiga 2") == "LaLiga 2"      # mai "la LaLiga"
+
+
+class Lega:
+    def __init__(self, slug, nome):
+        self.slug, self.nome = slug, nome
+        self.paese, self.bandiera, self.livello = "X", "", 1
+
+
+def _stagione(anno, gc, go, quante=120):
+    """`quante` partite tutte uguali, una al giorno da settembre."""
+    inizio = date(anno, 9, 1)
+    return [
+        PartitaStorica(
+            incontro=Incontro("m", inizio + timedelta(days=i), "A", "B", gc, go, "X"),
+            quote={},
+            stat=Statistiche(tiri=(10, 8), in_porta=(4, 3), corner=(5, 4),
+                             falli=(11, 12), gialli=(2, 1), rossi=(0, 0),
+                             gol_primo_tempo=(0, 0), completa=True),
+        )
+        for i in range(quante)
+    ]
+
+
+def test_i_gol_delle_chicche_sono_quelli_dell_articolo():
+    # La stagione in corso ha partite pazze: con il conto vecchio sarebbero
+    # entrate nella media, con quello nuovo restano fuori come nell'articolo.
+    per_lega = [
+        (Lega("a", "Bundesliga"), _stagione(2025, 2, 1) + _stagione(2026, 5, 5, 40)),
+        (Lega("b", "Serie A"), _stagione(2025, 1, 1)),
+        (Lega("c", "LaLiga 2"), _stagione(2025, 1, 0)),
+    ]
+    fuori = {c.tipo: c for c in chicche.confronti(per_lega, stagione_in_corso=2026)}
+    piu, meno = fuori["gol_lega"], fuori["gol_lega_meno"]
+    assert piu.titolo == "Il campionato dove si segna di più è la Bundesliga"
+    assert piu.numero == "3,00"                     # solo la stagione intera
+    assert "nell'ultima stagione intera" in piu.testo
+    assert meno.titolo == "E quello dove si segna di meno è LaLiga 2"
+    assert "2,00 in meno" in meno.testo             # calcolato, non scritto a mano
+    assert piu.collegamento == "/statistiche/campionati-con-piu-gol/"

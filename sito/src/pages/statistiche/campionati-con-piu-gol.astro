@@ -1,0 +1,327 @@
+---
+import Base from "../../layouts/Base.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import fra from "../../dati/fra_campionati.json";
+
+/* Il primo degli articoli con i dati. Il testo e' scritto qui, ma ogni frase
+   che contiene un numero lo prende da `fra_campionati.json`, che il lavoro
+   notturno rigenera: la pagina resta vera anche quando la classifica cambia,
+   ed e' per questo che non scade come un articolo del giorno.
+
+   I numeri sono calcolati su **stagioni intere** e la stagione in corso sta a
+   parte. Il motivo e' in `engine/fra_campionati.py`; qui basta sapere che con
+   la finestra corta il primo posto era di un altro campionato. */
+
+const righe = fra.campionati as any[];
+const N = righe.length;
+const stagioni = fra.stagioni_comuni as string[];
+const inCorso = fra.stagione_in_corso as string;
+
+const num = (v: number, d = 2) =>
+  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (v: number) => `${Math.round(v * 100)}%`;
+
+/* L'articolo davanti al nome del campionato: tutti femminili ("la Serie A",
+   "la Premier League"), con l'apostrofo davanti a vocale ("l'Eredivisie"), e
+   niente davanti a LaLiga, che l'articolo ce l'ha gia' nel nome. Stessa
+   regola di `con_articolo` in `engine/chicche.py`. */
+const art = (nome: string) =>
+  nome.startsWith("La") ? "" : /^[aeiouAEIOU]/.test(nome) ? "l'" : "la ";
+const nella = (nome: string) =>
+  nome.startsWith("La") ? "in " : /^[aeiouAEIOU]/.test(nome) ? "nell'" : "nella ";
+
+const italiani = new Set(["serie-a", "serie-b"]);
+const primo = righe[0];
+const secondo = righe[1];
+const terzo = righe[2];
+const ultimo = righe[N - 1];
+const serieA = righe.find((r) => r.slug === "serie-a");
+const partiteTotali = righe.reduce((s, r) => s + r.totale.partite, 0);
+
+/* Quanto vale lo scarto fra il primo campionato e la Serie A, detto in gol di
+   una stagione intera: "0,67 a partita" non si immagina, "250 gol" si'. */
+const scartoA = serieA ? primo.totale.gol - serieA.totale.gol : 0;
+const golDiStagione = Math.round((scartoA * 380) / 10) * 10;
+
+/* La stagione in corso: si mostra, ma solo dove ci sono abbastanza partite da
+   non essere puro rumore. Sotto le 60 una giornata pazza basta a spostare la
+   media di mezzo gol. */
+const MINIMO_IN_CORSO = 60;
+const scarti = righe
+  .filter((r) => r.in_corso && r.in_corso.partite >= MINIMO_IN_CORSO)
+  .map((r) => ({ r, d: r.in_corso.gol - r.totale.gol }))
+  .sort((a, b) => Math.abs(b.d) - Math.abs(a.d));
+const piuLontano = scarti[0] ?? null;
+const aOggi = serieA?.in_corso ?? null;
+
+const estremo = (chiave: string, massimo: boolean) =>
+  righe.reduce((m, r) =>
+    !m || (massimo ? r.totale[chiave] > m.totale[chiave] : r.totale[chiave] < m.totale[chiave]) ? r : m,
+    null as any);
+const piuZeroZero = estremo("zero_a_zero", true);
+const menoZeroZero = estremo("zero_a_zero", false);
+const piuTre = estremo("almeno_tre", true);
+
+const barre = righe.map((r) => ({
+  etichetta: r.nome,
+  bandiera: r.bandiera,
+  href: `/calcio/${r.slug}/`,
+  valore: r.totale.gol,
+  testo: num(r.totale.gol),
+  dettaglio: `${r.nome}: ${num(r.totale.gol)} gol a partita su ${r.totale.partite.toLocaleString("it-IT")} partite`,
+  evidenza: italiani.has(r.slug),
+}));
+
+const titolo = "Campionati con più gol: la media gol di 22 campionati europei";
+const descrizione =
+  `La media gol di 22 campionati europei nelle ultime tre stagioni intere: dove si segna ` +
+  `di più, dove di meno e dove sta la Serie A. Aggiornata ogni notte.`;
+
+const canonico = new URL("/statistiche/campionati-con-piu-gol/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "I campionati con più gol in Europa",
+  description: descrizione,
+  datePublished: "2026-10-30",
+  dateModified: fra.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Campionati con più gol" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>I campionati con più gol in Europa</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Nelle ultime tre stagioni intere, dal {stagioni[0]} al {stagioni[stagioni.length - 1]},
+        il campionato con più gol è {art(primo.nome)}<strong>{primo.nome}</strong>:
+        {" "}{num(primo.totale.gol)} gol a partita. Seguono {art(secondo.nome)}{secondo.nome}
+        {" "}con {num(secondo.totale.gol)} e {art(terzo.nome)}{terzo.nome} con {num(terzo.totale.gol)}.
+        In fondo alla classifica c'è {art(ultimo.nome)}{ultimo.nome}, con {num(ultimo.totale.gol)}.
+      </p>
+      {
+        serieA && (
+          <p>
+            {serieA.posizione_gol === 1 ? (
+              <>La <strong>Serie A</strong> è in testa a tutti.</>
+            ) : (
+              <>
+                La <strong>Serie A</strong> è {serieA.posizione_gol}ª su {N}, con
+                {" "}{num(serieA.totale.gol)} gol a partita.
+                {golDiStagione >= 50 && (
+                  <>
+                    {" "}Detto in un altro modo: se segnasse come {art(primo.nome)}{primo.nome}, in una
+                    stagione da 380 partite vedrebbe circa {golDiStagione} gol in più.
+                  </>
+                )}
+              </>
+            )}
+          </p>
+        )
+      }
+    </div>
+
+    <h2 class="sotto-titolo">Gol a partita, ultime tre stagioni intere</h2>
+    <p class="nota">
+      In blu i campionati italiani. Ogni nome porta alla pagina del campionato.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    {
+      aOggi && aOggi.partite > 0 && (
+        <>
+          <h2 class="sotto-titolo">E quest'anno?</h2>
+          <div class="prosa">
+            <p>
+              Nella stagione {inCorso}, dopo {aOggi.partite} partite, la Serie A viaggia a
+              {" "}<strong>{num(aOggi.gol)}</strong> gol a partita
+              {Math.abs(aOggi.gol - serieA.totale.gol) >= 0.2
+                ? aOggi.gol > serieA.totale.gol
+                  ? `: molto sopra la sua media degli ultimi tre anni.`
+                  : `: molto sotto la sua media degli ultimi tre anni.`
+                : `, in linea con la sua media degli ultimi tre anni.`}
+              {piuLontano && piuLontano.r.slug !== "serie-a" && (
+                <>
+                  {" "}Il campionato che si è allontanato di più dalla propria media è
+                  {" "}{art(piuLontano.r.nome)}{piuLontano.r.nome}, che è passata da
+                  {" "}{num(piuLontano.r.totale.gol)} a {num(piuLontano.r.in_corso.gol)}.
+                </>
+              )}
+            </p>
+            <p>
+              Sono numeri da prendere con le pinze. Su un centinaio di partite bastano un paio
+              di giornate pazze per spostare la media di mezzo gol, ed è il motivo per cui la
+              classifica qui sopra usa solo stagioni concluse: un migliaio di partite per
+              campionato, dove l'ordine smette di dipendere dal caso.
+            </p>
+          </div>
+        </>
+      )
+    }
+
+    <h2 class="sotto-titolo">Non solo la media</h2>
+    <div class="prosa">
+      <p>
+        La media dice quanti gol, non come arrivano. Le partite con almeno tre gol sono più
+        frequenti {nella(piuTre.nome)}{piuTre.nome} ({pct(piuTre.totale.almeno_tre)}). Lo zero
+        a zero è più frequente {nella(piuZeroZero.nome)}{piuZeroZero.nome}
+        ({pct(piuZeroZero.totale.zero_a_zero)} delle partite) e più raro
+        {" "}{nella(menoZeroZero.nome)}{menoZeroZero.nome} ({pct(menoZeroZero.totale.zero_a_zero)}).
+      </p>
+    </div>
+
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Campionato</th>
+            <th class="num">Gol a partita</th>
+            <th class="num">Almeno 3 gol</th>
+            <th class="num">0-0</th>
+            <th class="num">Entrambe a segno</th>
+            <th class="num">Partite</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r) => (
+              <tr class:list={{ ita: italiani.has(r.slug) }}>
+                <td class="num mono">{r.posizione_gol}</td>
+                <td>
+                  <a href={`/calcio/${r.slug}/`}>{r.bandiera} {r.nome}</a>
+                </td>
+                <td class="num mono">{num(r.totale.gol)}</td>
+                <td class="num mono">{pct(r.totale.almeno_tre)}</td>
+                <td class="num mono">{pct(r.totale.zero_a_zero)}</td>
+                <td class="num mono">{pct(r.totale.entrambe)}</td>
+                <td class="num mono">{r.totale.partite.toLocaleString("it-IT")}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Stagione per stagione</h2>
+    <p class="nota">
+      Gol a partita in ogni stagione. L'ultima colonna è la stagione in corso, con il numero
+      di partite giocate finora.
+    </p>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            {stagioni.map((s) => <th class="num">{s}</th>)}
+            <th class="num">{inCorso}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r) => (
+              <tr class:list={{ ita: italiani.has(r.slug) }}>
+                <td>{r.bandiera} {r.nome}</td>
+                {stagioni.map((s) => (
+                  <td class="num mono">
+                    {r.per_stagione[s] ? num(r.per_stagione[s].gol) : "—"}
+                  </td>
+                ))}
+                <td class="num mono adesso">
+                  {r.in_corso ? (
+                    <>
+                      {num(r.in_corso.gol)} <small>({r.in_corso.partite})</small>
+                    </>
+                  ) : (
+                    "—"
+                  )}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono {partiteTotali.toLocaleString("it-IT")} partite: tutte quelle dei ventidue
+        campionati nelle stagioni {stagioni.join(", ")}, come le pubblica football-data.co.uk.
+        Per la stagione in corso si aggiungono i risultati che ESPN ha già e football-data non
+        ancora. Ogni media è il totale dei gol diviso il totale delle partite, non la media delle
+        medie delle squadre.
+      </p>
+      <p>
+        Si contano solo stagioni intere perché su poche partite le classifiche ballano: con le
+        ultime venti partite di ogni squadra, circa 170 per campionato, anche il primo posto può
+        cambiare da una settimana all'altra. La stagione in corso si vede nella tabella, ma non
+        entra nella classifica finché non è conclusa.
+      </p>
+      <p>
+        La pagina si aggiorna da sola ogni notte, insieme al resto del sito.
+      </p>
+    </div>
+
+    <p class="torna">
+      <a href="/statistiche/">← Tutte le statistiche fra campionati</a>
+    </p>
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+  td.adesso small {
+    color: var(--ink-3);
+    font-weight: 400;
+  }
+  .torna {
+    font-size: 13px;
+    margin-top: 34px;
+  }
+</style>

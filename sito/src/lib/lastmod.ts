@@ -79,6 +79,10 @@ export function mappaLastmod(): Map<string, string> {
   segna('/mercati/', GENERATO);
   segna('/track-record/', TRACK);
 
+  // Gli articoli con i dati: i numeri si rigenerano ogni notte con il resto.
+  segna('/statistiche/', GENERATO);
+  segna('/statistiche/campionati-con-piu-gol/', GENERATO);
+
   // Il blog esce con i dati del giorno.
   segna('/blog/', ARTICOLI);
   segna('/blog/giornata/', ARTICOLI);

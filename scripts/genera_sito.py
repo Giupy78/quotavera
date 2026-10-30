@@ -22,6 +22,7 @@ RADICE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RADICE))
 
 from engine import chicche as motore_chicche
+from engine import fra_campionati
 from engine.classifica import calcola as calcola_classifica
 from engine.classifica import giornate, posizioni_attese
 from engine.core.market import margine, probabilita_implicite
@@ -1144,8 +1145,14 @@ def main() -> int:
     scrivi("chicche.json", {
         "data": date.today().isoformat(),
         "confronti": [x.come_dizionario()
-                      for x in motore_chicche.confronti(materiale_chicche)],
+                      for x in motore_chicche.confronti(materiale_chicche, INIZIO_STAGIONE.year)],
         "per_campionato": {l["slug"]: l.get("chicche", []) for l in leghe},
+    })
+    # Il materiale degli articoli con i dati: stagioni intere, non la finestra
+    # delle ultime venti partite. Vedi `engine/fra_campionati.py` per il perche'.
+    scrivi("fra_campionati.json", {
+        "generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        **fra_campionati.per_campionato(materiale_chicche, INIZIO_STAGIONE.year),
     })
 
     print("\nFatto: dati veri, nessuna simulazione.")

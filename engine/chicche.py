@@ -56,6 +56,9 @@ class Chicca:
     squadre: list[str] = field(default_factory=list)
     # Su quante partite e' calcolata: senza, il lettore non puo' pesarla.
     campione: int = 0
+    # Dove porta il riquadro, quando non e' l'articolo del giorno del suo
+    # campionato: le chicche sui gol portano alla classifica completa.
+    collegamento: str = ""
 
     def come_dizionario(self) -> dict:
         return {
@@ -63,7 +66,22 @@ class Chicca:
             "numero": self.numero, "campionato": self.campionato,
             "bandiera": self.bandiera, "slug": self.slug,
             "squadre": self.squadre, "campione": self.campione,
+            "collegamento": self.collegamento,
         }
+
+
+def con_articolo(nome: str) -> str:
+    """'la Bundesliga', "l'Eredivisie", 'LaLiga'. I campionati sono tutti
+    femminili, e LaLiga l'articolo ce l'ha gia' nel nome: "la LaLiga" e' il
+    tipo di errore che fa sembrare un testo scritto da un programma."""
+    if nome.startswith("La"):
+        return nome
+    if nome[:1].lower() in "aeiou":
+        return "l'" + nome
+    return "la " + nome
+
+
+_NUMERI = {1: "una", 2: "due", 3: "tre", 4: "quattro", 5: "cinque"}
 
 
 def _percento(parte: float, tutto: float) -> str:
@@ -314,12 +332,17 @@ def serie_aperte(partite: list[PartitaStorica], c,
 
 # --- i confronti fra campionati -------------------------------------------
 
-def confronti(per_lega: list[tuple]) -> list[Chicca]:
+def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> list[Chicca]:
     """Le differenze fra campionati, che quasi nessuno mette in fila.
 
     `per_lega` e' una lista di (catalogo, partite). Qui non si guarda una
     squadra ma un intero torneo, ed e' il taglio che rende utile avere
     ventidue campionati invece di uno.
+
+    Con `stagione_in_corso` i gol si contano come nell'articolo sui campionati
+    con piu' gol: stagioni intere, stagione in corso esclusa. Prima erano due
+    conti diversi della stessa cosa, e la home diceva 3,22 accanto a un
+    rimando che portava a una pagina con 3,20.
     """
     righe = []
     for c, partite in per_lega:
@@ -341,16 +364,29 @@ def confronti(per_lega: list[tuple]) -> list[Chicca]:
     if len(righe) < 3:
         return []
 
-    def estremo(chiave, massimo, tipo, titolo, testo, formato):
+    quante = None
+    if stagione_in_corso is not None:
+        from engine import fra_campionati
+        fra = fra_campionati.per_campionato(per_lega, stagione_in_corso)
+        per_slug = {r["slug"]: r for r in fra["campionati"]}
+        quante = len(fra["stagioni_comuni"])
+        righe = [r for r in righe if r["c"].slug in per_slug]
+        for r in righe:
+            t = per_slug[r["c"].slug]["totale"]
+            r["gol"], r["n_gol"] = t["gol"], t["partite"]
+
+    def estremo(chiave, massimo, tipo, titolo, testo, formato, collegamento="", **altro):
         r = (max if massimo else min)(righe, key=lambda x: x[chiave])
         v = r[chiave]
+        nome = r["c"].nome
         return Chicca(
             tipo=tipo,
-            titolo=titolo.format(c=r["c"].nome),
-            testo=testo.format(v=formato(v), c=r["c"].nome),
+            titolo=titolo.format(c=nome, la_c=con_articolo(nome)),
+            testo=testo.format(v=formato(v), c=nome, **altro),
             numero=formato(v),
-            campionato=r["c"].nome, bandiera=r["c"].bandiera, slug=r["c"].slug,
-            campione=r["n"],
+            campionato=nome, bandiera=r["c"].bandiera, slug=r["c"].slug,
+            campione=r.get("n_gol", r["n"]) if chiave == "gol" else r["n"],
+            collegamento=collegamento,
         )
 
     # La virgola, non il punto: questi numeri li legge un lettore italiano, e
@@ -361,18 +397,29 @@ def confronti(per_lega: list[tuple]) -> list[Chicca]:
     pc = lambda v: f"{100 * v:.0f}%"
     uno = lambda v: f"{v:.1f}".replace(".", ",")
 
+    # Lo scarto fra il primo e l'ultimo si calcola: la versione precedente
+    # diceva "quasi uno in meno" a mano, e lo scarto vero era 0,73.
+    piu = max(righe, key=lambda x: x["gol"])["gol"]
+    meno = min(righe, key=lambda x: x["gol"])["gol"]
+    quando = (f"nelle ultime {_NUMERI.get(quante, str(quante))} stagioni intere"
+              if quante and quante > 1 else
+              "nell'ultima stagione intera" if quante == 1 else
+              "contando tutte le gare delle ultime stagioni")
+    articolo = "/statistiche/campionati-con-piu-gol/" if quante else ""
+
     return [
-        estremo("gol", True, "gol_lega", "Il campionato dove si segna di più è {c}",
-                "{v} gol a partita, contando tutte le gare delle ultime stagioni.", due),
-        estremo("gol", False, "gol_lega_meno", "E quello dove si segna di meno è {c}",
-                "{v} gol a partita: quasi uno in meno del campionato più prolifico.", due),
+        estremo("gol", True, "gol_lega", "Il campionato dove si segna di più è {la_c}",
+                "{v} gol a partita {quando}.", due, articolo, quando=quando),
+        estremo("gol", False, "gol_lega_meno", "E quello dove si segna di meno è {la_c}",
+                "{v} gol a partita: {d} in meno del campionato più prolifico.", due, articolo,
+                d=due(piu - meno)),
         estremo("casa", True, "campo", "Giocare in casa conta più che altrove in {c}",
                 "La squadra di casa vince il {v} delle partite.", pc),
         estremo("pari", True, "pareggi", "In {c} si pareggia più che ovunque",
                 "Un {v} delle partite finisce in parità.", pc),
         estremo("cartellini", True, "cartellini", "L'arbitro estrae di più in {c}",
                 "{v} cartellini a partita fra le due squadre.", uno),
-        estremo("corner", True, "corner", "Il campionato dei calci d'angolo è {c}",
+        estremo("corner", True, "corner", "Il campionato dei calci d'angolo è {la_c}",
                 "{v} angoli a partita in totale.", uno),
     ]
 
