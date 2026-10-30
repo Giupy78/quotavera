@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Bandiera from "../components/Bandiera.astro";
 import campionati from "../dati/campionati.json";
 import calendario from "../dati/calendario.json";
 
@@ -58,7 +59,7 @@ const totali = leghe.reduce((s, l) => s + l.partite_storico, 0);
       [...perPaese.entries()].map(([paese, gruppo]) => (
         <div class="paese">
           <h2>
-            <span>{gruppo[0].bandiera}</span> {paese}
+            <span><Bandiera e={gruppo[0].bandiera} /></span> {paese}
           </h2>
           <div class="divisioni">
             {gruppo.map((l) => (

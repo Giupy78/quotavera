@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
 import articolo from "../../dati/articolo.json";
 import articoli from "../../dati/articoli.json";
 import chicche from "../../dati/chicche.json";
@@ -92,7 +93,7 @@ const dataLunga = giorno.toLocaleDateString("it-IT", {
       {pezzi.map((p: any) => (
         <a class="lega" href={`/blog/${p.slug}/`}>
           <div class="testa">
-            <span class="bandiera">{p.bandiera}</span>
+            <span class="bandiera"><Bandiera e={p.bandiera} /></span>
             <b>{p.campionato}</b>
             <span class="paese">{p.paese}</span>
           </div>

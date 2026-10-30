@@ -1,0 +1,116 @@
+---
+/**
+ * La bandiera di un campionato, disegnata invece che scritta.
+ *
+ * Fino al 30 ottobre erano emoji, e avevano due difetti. Su Windows le
+ * bandiere nazionali non esistono: al loro posto il sistema scrive la sigla,
+ * "IT", "FR". E Inghilterra e Scozia erano lo stesso carattere, una bandiera
+ * nera generica, quindi anche su iPhone e Android al posto della croce di San
+ * Giorgio si vedeva una bandiera nera, identica a quella scozzese.
+ *
+ * Disegnarle costa undici piccoli SVG e le rende uguali dappertutto, anche
+ * stampate. Sono semplificate dove il disegno vero, a sedici pixel, sarebbe
+ * una macchia: niente stemmi su Spagna e Portogallo.
+ *
+ * La chiave resta l'emoji che sta nei dati, cosi' non cambia il formato di
+ * nessun file: ogni pagina che scriveva `{x.bandiera}` passa a
+ * `<Bandiera e={x.bandiera} />`. Un'emoji che non conosciamo si scrive com'e'.
+ *
+ * L'altezza e' in `em`, quindi la bandiera segue il testo che accompagna: un
+ * titolo da 26 pixel ha una bandiera da titolo, una riga di menu una da menu.
+ */
+interface Props {
+  e?: string;
+}
+const { e = "" } = Astro.props;
+
+const INGHILTERRA = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}";
+const SCOZIA = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}";
+
+/* Disegni su una tela 30×20, il rapporto 3:2 della maggior parte. Quelle che
+   ne hanno un altro (Germania e Inghilterra 3:5, Belgio 13:15) si adattano: a
+   questa misura la differenza non si vede, una fila disallineata si'. */
+const disegni: Record<string, { paese: string; svg: string }> = {
+  "🇮🇹": {
+    paese: "Italia",
+    svg: `<rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce2b37"/>`,
+  },
+  [INGHILTERRA]: {
+    paese: "Inghilterra",
+    svg: `<rect width="30" height="20" fill="#fff"/><rect x="13" width="4" height="20" fill="#ce1124"/><rect y="8" width="30" height="4" fill="#ce1124"/>`,
+  },
+  [SCOZIA]: {
+    paese: "Scozia",
+    svg: `<rect width="30" height="20" fill="#005eb8"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/>`,
+  },
+  "🇪🇸": {
+    paese: "Spagna",
+    svg: `<rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/>`,
+  },
+  "🇩🇪": {
+    paese: "Germania",
+    svg: `<rect width="30" height="20" fill="#ffce00"/><rect width="30" height="13.34" fill="#dd0000"/><rect width="30" height="6.67" fill="#000"/>`,
+  },
+  "🇫🇷": {
+    paese: "Francia",
+    svg: `<rect width="30" height="20" fill="#ed2939"/><rect width="20" height="20" fill="#fff"/><rect width="10" height="20" fill="#002395"/>`,
+  },
+  "🇳🇱": {
+    paese: "Paesi Bassi",
+    svg: `<rect width="30" height="20" fill="#21468b"/><rect width="30" height="13.34" fill="#fff"/><rect width="30" height="6.67" fill="#ae1c28"/>`,
+  },
+  "🇵🇹": {
+    paese: "Portogallo",
+    svg: `<rect width="30" height="20" fill="#da291c"/><rect width="12" height="20" fill="#046a38"/><circle cx="12" cy="10" r="4" fill="none" stroke="#ffe900" stroke-width="1.6"/><rect x="10.3" y="7.9" width="3.4" height="4.2" fill="#fff"/><rect x="10.8" y="8.4" width="2.4" height="3.2" fill="#da291c"/>`,
+  },
+  "🇹🇷": {
+    paese: "Turchia",
+    svg: `<rect width="30" height="20" fill="#e30a17"/><circle cx="11" cy="10" r="5" fill="#fff"/><circle cx="12.25" cy="10" r="4" fill="#e30a17"/><polygon points="14.80,10.00 16.49,9.41 16.53,7.62 17.61,9.05 19.32,8.53 18.30,10.00 19.32,11.47 17.61,10.95 16.53,12.38 16.49,10.59" fill="#fff"/>`,
+  },
+  "🇧🇪": {
+    paese: "Belgio",
+    svg: `<rect width="30" height="20" fill="#ed2939"/><rect width="20" height="20" fill="#fae042"/><rect width="10" height="20" fill="#000"/>`,
+  },
+  "🇬🇷": {
+    paese: "Grecia",
+    svg:
+      `<rect width="30" height="20" fill="#0d5eaf"/>` +
+      [1, 3, 5, 7]
+        .map((i) => `<rect y="${((i * 20) / 9).toFixed(2)}" width="30" height="${(20 / 9).toFixed(2)}" fill="#fff"/>`)
+        .join("") +
+      `<rect width="11.11" height="11.11" fill="#0d5eaf"/><rect y="4.44" width="11.11" height="2.23" fill="#fff"/><rect x="4.44" width="2.23" height="11.11" fill="#fff"/>`,
+  },
+};
+
+const d = disegni[e];
+---
+
+{
+  d ? (
+    <svg
+      class="bandiera-svg"
+      viewBox="0 0 30 20"
+      width="18"
+      height="12"
+      role="img"
+      aria-label={d.paese}
+      set:html={`<title>${d.paese}</title>${d.svg}`}
+    />
+  ) : (
+    e
+  )
+}
+
+<style>
+  .bandiera-svg {
+    display: inline-block;
+    height: 0.8em;
+    width: auto;
+    vertical-align: -0.08em;
+    border-radius: 1.5px;
+    /* Un filo attorno: la bandiera inglese e' quasi tutta bianca e sul fondo
+       chiaro del sito altrimenti sparirebbe. */
+    box-shadow: 0 0 0 0.5px var(--rule-strong);
+    flex: none;
+  }
+</style>

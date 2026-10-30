@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Bandiera from "../components/Bandiera.astro";
 import campionati from "../dati/campionati.json";
 
 const principali = campionati.campionati.filter((c) => c.principale).slice(0, 6);
@@ -37,7 +38,7 @@ const principali = campionati.campionati.filter((c) => c.principale).slice(0, 6)
       {
         principali.map((c) => (
           <a href={`/calcio/${c.slug}/`}>
-            <span>{c.bandiera}</span>
+            <span><Bandiera e={c.bandiera} /></span>
             {c.nome}
           </a>
         ))

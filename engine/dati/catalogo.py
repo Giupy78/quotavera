@@ -31,10 +31,20 @@ class Campionato:
         return f"{self.bandiera} {self.nome}"
 
 
+# Le bandiere di Inghilterra e Scozia non sono un carattere solo. Il solo
+# U+1F3F4 e' una bandiera nera generica, e per un mese e' stata quella di
+# entrambe: su iPhone e Android al posto della croce di San Giorgio c'era una
+# bandiera nera, identica a quella scozzese. Quelle vere sono la bandiera nera
+# seguita dai caratteri "tag" con la sigla della regione (gb-eng, gb-sct) e un
+# terminatore. Si scrivono con gli escape perche' i tag sono invisibili.
+INGHILTERRA = "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+SCOZIA = "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+
+
 CAMPIONATI: list[Campionato] = [
     # --- prime divisioni, quelle che vanno nel menu -------------------------
     Campionato("serie-a", "I1", "Serie A", "Italia", "🇮🇹", 1, True),
-    Campionato("premier-league", "E0", "Premier League", "Inghilterra", "🏴", 1, True),
+    Campionato("premier-league", "E0", "Premier League", "Inghilterra", INGHILTERRA, 1, True),
     Campionato("laliga", "SP1", "LaLiga", "Spagna", "🇪🇸", 1, True),
     Campionato("bundesliga", "D1", "Bundesliga", "Germania", "🇩🇪", 1, True),
     Campionato("ligue-1", "F1", "Ligue 1", "Francia", "🇫🇷", 1, True),
@@ -43,16 +53,16 @@ CAMPIONATI: list[Campionato] = [
     Campionato("superlig", "T1", "Süper Lig", "Turchia", "🇹🇷", 1, True),
     Campionato("jupiler", "B1", "Pro League", "Belgio", "🇧🇪", 1, True),
     Campionato("super-league-grecia", "G1", "Super League", "Grecia", "🇬🇷", 1, True),
-    Campionato("premiership", "SC0", "Premiership", "Scozia", "🏴", 1, True),
+    Campionato("premiership", "SC0", "Premiership", "Scozia", SCOZIA, 1, True),
 
     # --- seconde divisioni e minori -----------------------------------------
     # Ci sono e sono gratis. Contano piu' di quanto sembri: il mercato le
     # prezza peggio, e le statistiche di squadra ci sono lo stesso.
     Campionato("serie-b", "I2", "Serie B", "Italia", "🇮🇹", 2, False),
-    Campionato("championship", "E1", "Championship", "Inghilterra", "🏴", 2, False),
-    Campionato("league-one", "E2", "League One", "Inghilterra", "🏴", 3, False),
-    Campionato("league-two", "E3", "League Two", "Inghilterra", "🏴", 4, False),
-    Campionato("national-league", "EC", "National League", "Inghilterra", "🏴", 5, False),
+    Campionato("championship", "E1", "Championship", "Inghilterra", INGHILTERRA, 2, False),
+    Campionato("league-one", "E2", "League One", "Inghilterra", INGHILTERRA, 3, False),
+    Campionato("league-two", "E3", "League Two", "Inghilterra", INGHILTERRA, 4, False),
+    Campionato("national-league", "EC", "National League", "Inghilterra", INGHILTERRA, 5, False),
     Campionato("laliga-2", "SP2", "LaLiga 2", "Spagna", "🇪🇸", 2, False),
     Campionato("bundesliga-2", "D2", "2. Bundesliga", "Germania", "🇩🇪", 2, False),
     Campionato("ligue-2", "F2", "Ligue 2", "Francia", "🇫🇷", 2, False),
@@ -62,9 +72,9 @@ CAMPIONATI: list[Campionato] = [
     # "Championship" identiche. Su Windows avevano pure la stessa bandiera
     # nera, perche' la bandiera scozzese li' non esiste. Gli slug non cambiano,
     # quindi nessun indirizzo si rompe.
-    Campionato("championship-scozia", "SC1", "Championship scozzese", "Scozia", "🏴", 2, False),
-    Campionato("league-one-scozia", "SC2", "League One scozzese", "Scozia", "🏴", 3, False),
-    Campionato("league-two-scozia", "SC3", "League Two scozzese", "Scozia", "🏴", 4, False),
+    Campionato("championship-scozia", "SC1", "Championship scozzese", "Scozia", SCOZIA, 2, False),
+    Campionato("league-one-scozia", "SC2", "League One scozzese", "Scozia", SCOZIA, 3, False),
+    Campionato("league-two-scozia", "SC3", "League Two scozzese", "Scozia", SCOZIA, 4, False),
 ]
 
 PER_SLUG = {c.slug: c for c in CAMPIONATI}

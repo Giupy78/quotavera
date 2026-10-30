@@ -1,4 +1,5 @@
 ---
+import Bandiera from "./Bandiera.astro";
 /**
  * Una classifica a barre: una riga per campionato, dalla piu' lunga alla piu'
  * corta. Serve agli articoli con i dati, che mettono in fila i ventidue
@@ -43,7 +44,7 @@ const massimo = Math.max(...righe.map((r) => r.valore), 0.0001);
       <div class:list={["riga", { evidenza: r.evidenza }]} role="listitem">
         <span class="pos mono">{i + 1}</span>
         <span class="nome">
-          {r.bandiera && <span class="bandiera" aria-hidden="true">{r.bandiera}</span>}
+          {r.bandiera && <span class="bandiera" aria-hidden="true"><Bandiera e={r.bandiera} /></span>}
           {r.href ? <a href={r.href}>{r.etichetta}</a> : r.etichetta}
         </span>
         <span class="pista">

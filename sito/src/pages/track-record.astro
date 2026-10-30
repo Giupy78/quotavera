@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Bandiera from "../components/Bandiera.astro";
 import Calibrazione from "../components/Calibrazione.astro";
 import track from "../dati/track-record.json";
 
@@ -184,7 +185,7 @@ const casiTotali = curvaModello.reduce((s, f) => s + f.casi, 0);
                 <tr>
                   <td>
                     <a href={`/calcio/${c.slug}/`} style="color:inherit">
-                      {c.bandiera} <b>{c.nome}</b>
+                      <Bandiera e={c.bandiera} /> <b>{c.nome}</b>
                     </a>
                     <div style="font-size:11px;color:var(--ink-3)">{c.paese}</div>
                   </td>

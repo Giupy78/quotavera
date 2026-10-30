@@ -1,4 +1,5 @@
 ---
+import Bandiera from "./Bandiera.astro";
 /* La scheda di una partita gia' giocata.
 
    Esiste per due ragioni, e la seconda vale piu' della prima.
@@ -79,7 +80,7 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 
 <section>
   <p class="occhiello">
-    <a href={`/calcio/${p.campionato}/`}>{lega?.bandiera} {lega?.nome}</a>
+    <a href={`/calcio/${p.campionato}/`}><Bandiera e={lega?.bandiera} /> {lega?.nome}</a>
     {" · "}<span style="text-transform:capitalize">{dataLunga}</span>
   </p>
 

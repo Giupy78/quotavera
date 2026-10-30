@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Bandiera from "../components/Bandiera.astro";
 import campionati from "../dati/campionati.json";
 import squadre from "../dati/squadre.json";
 
@@ -79,7 +80,7 @@ const totali = leghe.reduce((s, l) => s + l.partite_storico, 0);
                 <tr>
                   <td>
                     <a href={`/calcio/${l.slug}/`} style="color:inherit">
-                      {l.bandiera} <b>{l.nome}</b>
+                      <Bandiera e={l.bandiera} /> <b>{l.nome}</b>
                     </a>
                     <div style="font-size:11px;color:var(--ink-3)">{l.paese}</div>
                   </td>
@@ -108,7 +109,7 @@ const totali = leghe.reduce((s, l) => s + l.partite_storico, 0);
       leghe.map((l) => (
         <details class="lega-forze" open={l.slug === "serie-a"}>
           <summary>
-            <span>{l.bandiera} <b>{l.nome}</b></span>
+            <span><Bandiera e={l.bandiera} /> <b>{l.nome}</b></span>
             <small>
               {(sq[l.slug] ?? []).length} squadre · fattore campo
               {" "}{num(Math.exp(l.vantaggio_casa))}×

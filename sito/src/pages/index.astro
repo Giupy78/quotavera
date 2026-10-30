@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Bandiera from "../components/Bandiera.astro";
 import RigaPartita from "../components/RigaPartita.astro";
 import campionati from "../dati/campionati.json";
 import calendario from "../dati/calendario.json";
@@ -209,7 +210,7 @@ const dataLunga = (iso: string) =>
             articolo.segnano_piu_di_quanto_creano.slice(0, 4).map((s: any) => (
               <div>
                 <span>
-                  {s.bandiera} <b style="font-weight:600">{s.squadra}</b>
+                  <Bandiera e={s.bandiera} /> <b style="font-weight:600">{s.squadra}</b>
                   <small style="display:block;color:var(--ink-3);font-size:11px">
                     {s.gol_totali} gol, {num(s.attesi_dai_tiri, 1)} attesi
                   </small>
@@ -233,7 +234,7 @@ const dataLunga = (iso: string) =>
             articolo.segnano_meno_di_quanto_creano.slice(0, 4).map((s: any) => (
               <div>
                 <span>
-                  {s.bandiera} <b style="font-weight:600">{s.squadra}</b>
+                  <Bandiera e={s.bandiera} /> <b style="font-weight:600">{s.squadra}</b>
                   <small style="display:block;color:var(--ink-3);font-size:11px">
                     {s.gol_totali} gol, {num(s.attesi_dai_tiri, 1)} attesi
                   </small>
@@ -262,7 +263,7 @@ const dataLunga = (iso: string) =>
         <div class="sorprese">
           {articolo.sorprese.slice(0, 6).map((x: any) => (
             <a class="sorpresa" href={`/calcio/${x.slug}/`}>
-              <span class="lega">{x.bandiera} {x.campionato}</span>
+              <span class="lega"><Bandiera e={x.bandiera} /> {x.campionato}</span>
               <span class="gara">
                 <b>{x.casa}</b> {x.gol_casa}–{x.gol_ospite} <b>{x.ospite}</b>
               </span>
@@ -290,7 +291,7 @@ const dataLunga = (iso: string) =>
         (articoli.pezzi as any[]).map((a) => (
           <a class="pezzo" href={`/blog/${a.slug}/`}>
             <span class="testa">
-              <span class="bandiera">{a.bandiera}</span>
+              <span class="bandiera"><Bandiera e={a.bandiera} /></span>
               <b>{a.campionato}</b>
               {a.chicche.length > 0 && (
                 <span class="quante mono">{a.chicche.length}</span>
@@ -323,7 +324,7 @@ const dataLunga = (iso: string) =>
           {perCampionato(oggi[1]).map(([slug, gruppo]) => (
             <details open={perSlug[slug]?.principale}>
               <summary>
-                <span class="bandiera">{perSlug[slug].bandiera}</span>
+                <span class="bandiera"><Bandiera e={perSlug[slug].bandiera} /></span>
                 <b>{perSlug[slug].nome}</b>
                 <span class="conto mono">{gruppo.length}</span>
               </summary>
@@ -357,7 +358,7 @@ const dataLunga = (iso: string) =>
               <div class="leghe">
                 {perCampionato(partite).map(([slug, gruppo]) => (
                   <a href={`/calcio/${slug}/`} class={perSlug[slug]?.principale ? "forte" : ""}>
-                    <span class="bandiera">{perSlug[slug].bandiera}</span>
+                    <span class="bandiera"><Bandiera e={perSlug[slug].bandiera} /></span>
                     {perSlug[slug].nome}
                     <span class="mono">{gruppo.length}</span>
                   </a>
@@ -610,9 +611,8 @@ const dataLunga = (iso: string) =>
     color: var(--ink-3);
     font-size: 11px;
   }
-  /* La bandiera e' decorativa: su Windows i caratteri bandiera non esistono e
-     al loro posto compare la sigla del paese. Tenerla piccola e grigia fa si'
-     che in quel caso sembri un'etichetta, non un carattere mancante. */
+  /* La bandiera e' un disegno (`components/Bandiera.astro`) e la sua altezza
+     segue il testo: qui la si tiene piccola, accanto al nome. */
   .bandiera {
     font-size: 13px;
   }

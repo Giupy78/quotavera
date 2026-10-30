@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Bandiera from "../../../components/Bandiera.astro";
 import MatriceRisultati from "../../../components/MatriceRisultati.astro";
 import SchedaGiocata from "../../../components/SchedaGiocata.astro";
 import campionati from "../../../dati/campionati.json";
@@ -202,7 +203,7 @@ if (p.dettaglio) {
     <>
   <section>
     <p class="occhiello">
-      <a href={`/calcio/${lega.slug}/`} style="color:inherit">{lega.bandiera} {lega.nome}</a>
+      <a href={`/calcio/${lega.slug}/`} style="color:inherit"><Bandiera e={lega.bandiera} /> {lega.nome}</a>
       {" · "}
       {giorno.toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long" })}
       {p.ora && ` · ${p.ora}`}

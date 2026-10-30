@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
 import articolo from "../../dati/articolo.json";
 
 const num = (v: number, d = 2) =>
@@ -74,7 +75,7 @@ const divario = care[0] && convenienti[0]
                   <b>{s.vincitore}</b> ha vinto tirando in porta
                   {" "}<b>{s.scarto_tiri} volte in meno</b> del {s.perdente}.
                 </p>
-                <div class="dove">{s.bandiera} {s.campionato}</div>
+                <div class="dove"><Bandiera e={s.bandiera} /> {s.campionato}</div>
               </div>
             );
           })}
@@ -123,7 +124,7 @@ const divario = care[0] && convenienti[0]
             sopra.map((s: any) => (
               <tr>
                 <td><b>{s.squadra}</b></td>
-                <td style="color:var(--ink-2)">{s.bandiera} {s.campionato}</td>
+                <td style="color:var(--ink-2)"><Bandiera e={s.bandiera} /> {s.campionato}</td>
                 <td class="num">{s.gol_totali}</td>
                 <td class="num">{num(s.attesi_dai_tiri, 1)}</td>
                 <td class="num" style="color:var(--s2);font-weight:600">
@@ -173,7 +174,7 @@ const divario = care[0] && convenienti[0]
             sotto.map((s: any) => (
               <tr>
                 <td><b>{s.squadra}</b></td>
-                <td style="color:var(--ink-2)">{s.bandiera} {s.campionato}</td>
+                <td style="color:var(--ink-2)"><Bandiera e={s.bandiera} /> {s.campionato}</td>
                 <td class="num">{s.gol_totali}</td>
                 <td class="num">{num(s.attesi_dai_tiri, 1)}</td>
                 <td class="num" style="color:var(--s1);font-weight:600">
@@ -208,7 +209,7 @@ const divario = care[0] && convenienti[0]
                     {p.casa} — {p.ospite}
                   </a>
                   <small style="display:block;color:var(--ink-3);font-size:11px">
-                    {p.bandiera} {p.campionato}
+                    <Bandiera e={p.bandiera} /> {p.campionato}
                   </small>
                 </span>
                 <b class="mono">{pct(p.margine)}</b>
@@ -230,7 +231,7 @@ const divario = care[0] && convenienti[0]
                     {p.casa} — {p.ospite}
                   </a>
                   <small style="display:block;color:var(--ink-3);font-size:11px">
-                    {p.bandiera} {p.campionato}
+                    <Bandiera e={p.bandiera} /> {p.campionato}
                   </small>
                 </span>
                 <b class="mono" style="color:var(--good)">{pct(p.margine)}</b>

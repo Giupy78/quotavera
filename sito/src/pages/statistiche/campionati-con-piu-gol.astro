@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
 import ClassificaBarre from "../../components/ClassificaBarre.astro";
 import fra from "../../dati/fra_campionati.json";
 
@@ -212,7 +213,7 @@ const briciole = {
               <tr class:list={{ ita: italiani.has(r.slug) }}>
                 <td class="num mono">{r.posizione_gol}</td>
                 <td>
-                  <a href={`/calcio/${r.slug}/`}>{r.bandiera} {r.nome}</a>
+                  <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
                 </td>
                 <td class="num mono">{num(r.totale.gol)}</td>
                 <td class="num mono">{pct(r.totale.almeno_tre)}</td>
@@ -244,7 +245,7 @@ const briciole = {
           {
             righe.map((r) => (
               <tr class:list={{ ita: italiani.has(r.slug) }}>
-                <td>{r.bandiera} {r.nome}</td>
+                <td><Bandiera e={r.bandiera} /> {r.nome}</td>
                 {stagioni.map((s) => (
                   <td class="num mono">
                     {r.per_stagione[s] ? num(r.per_stagione[s].gol) : "—"}

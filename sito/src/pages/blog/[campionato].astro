@@ -3,6 +3,7 @@
    Ventidue pagine invece di una: chi cerca "Ligue 2" non ha nessun motivo di
    trovarsi un riassunto in cui la Ligue 2 sta in una riga su venti. */
 import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
 import articoli from "../../dati/articoli.json";
 import chicche from "../../dati/chicche.json";
 
@@ -37,7 +38,7 @@ const trasversali = (chicche.confronti as any[]).filter(
       <a href="/blog/">Articoli</a> · {dataLunga}
     </p>
     <div class="hd">
-      <h1>{pezzo.bandiera} {pezzo.titolo}</h1>
+      <h1><Bandiera e={pezzo.bandiera} /> {pezzo.titolo}</h1>
       <p>{pezzo.sommario}</p>
     </div>
 
