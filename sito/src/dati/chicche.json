@@ -1,5 +1,5 @@
 {
- "data": "2026-10-30",
+ "data": "2026-10-31",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -27,14 +27,14 @@
   },
   {
    "tipo": "campo",
-   "titolo": "Giocare in casa conta più che altrove in LaLiga 2",
+   "titolo": "Giocare in casa conta più che altrove in National League",
    "testo": "La squadra di casa vince il 46% delle partite.",
    "numero": "46%",
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
+   "campionato": "National League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "national-league",
    "squadre": [],
-   "campione": 1507,
+   "campione": 178,
    "collegamento": ""
   },
   {
@@ -443,17 +443,31 @@
   ],
   "ligue-1": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Paris SG non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+    "numero": "6",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Paris SG"
+    ],
+    "campione": 6,
+    "collegamento": ""
+   },
+   {
     "tipo": "digiuno",
-    "titolo": "Le Havre non vince da 8 partite",
+    "titolo": "Le Havre non vince da 9 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "8",
+    "numero": "9",
     "campionato": "Ligue 1",
     "bandiera": "🇫🇷",
     "slug": "ligue-1",
     "squadre": [
      "Le Havre"
     ],
-    "campione": 8,
+    "campione": 9,
     "collegamento": ""
    },
    {
@@ -848,20 +862,6 @@
      "Cercle Brugge"
     ],
     "campione": 9,
-    "collegamento": ""
-   },
-   {
-    "tipo": "a_secco",
-    "titolo": "Waregem non segna da 4 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "4",
-    "campionato": "Pro League",
-    "bandiera": "🇧🇪",
-    "slug": "jupiler",
-    "squadre": [
-     "Waregem"
-    ],
-    "campione": 4,
     "collegamento": ""
    },
    {
@@ -1844,16 +1844,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Clermont non vince da 10 partite",
+    "titolo": "Clermont non vince da 11 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "10",
+    "numero": "11",
     "campionato": "Ligue 2",
     "bandiera": "🇫🇷",
     "slug": "ligue-2",
     "squadre": [
      "Clermont"
     ],
-    "campione": 10,
+    "campione": 11,
     "collegamento": ""
    },
    {
@@ -1942,6 +1942,20 @@
      "Dunfermline"
     ],
     "campione": 9,
+    "collegamento": ""
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Stenhousemuir non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Championship scozzese",
+    "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "slug": "championship-scozia",
+    "squadre": [
+     "Stenhousemuir"
+    ],
+    "campione": 3,
     "collegamento": ""
    },
    {

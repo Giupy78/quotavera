@@ -1,5 +1,5 @@
 {
- "data": "2026-10-30",
+ "data": "2026-10-31",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -327,13 +327,12 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga: cosa dicono i numeri",
-   "sommario": "Barcelona in testa con 27 punti, 10ª giornata archiviata.",
+   "sommario": "Barcelona in testa con 27 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 24 gol in 10 partite, 2.4 a incontro.",
-      "Il risultato più netto è stato Ath Bilbao 4-0 Getafe: Ath Bilbao ha vinto con 4 gol di scarto."
+      "Nella 11ª giornata sono stati segnati 1 gol in 1 partite, 1.0 a incontro."
      ]
     },
     {
@@ -341,7 +340,7 @@
      "righe": [
       "In testa c'è Barcelona con 27 punti in 10 partite.",
       "Betis ha 20 punti ma i tiri in porta ne direbbero 13.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Villarreal, ferma a 12 punti contro i 18.9 attesi dal gioco."
+      "All'opposto Villarreal, ferma a 12 punti contro i 20.5 attesi dal gioco."
      ]
     }
    ],
@@ -465,7 +464,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "bundesliga",
@@ -473,13 +472,13 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "Bundesliga: cosa dicono i numeri",
-   "sommario": "Bayern Munich in testa con 17 punti, 7ª giornata archiviata.",
+   "sommario": "Bayern Munich in testa con 17 punti, 8ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 7ª giornata",
+     "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 7ª giornata sono stati segnati 25 gol in 9 partite, 2.8 a incontro.",
-      "Il risultato più netto è stato RB Leipzig 4-0 Elversberg: RB Leipzig ha vinto con 4 gol di scarto."
+      "Nella 8ª giornata sono stati segnati 5 gol in 1 partite, 5.0 a incontro.",
+      "Il risultato più netto è stato Elversberg 4-1 Mainz: Elversberg ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -582,7 +581,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 7
+   "giornate_giocate": 8
   },
   {
    "slug": "ligue-1",
@@ -590,37 +589,51 @@
    "bandiera": "🇫🇷",
    "paese": "Francia",
    "titolo": "Ligue 1: cosa dicono i numeri",
-   "sommario": "Paris SG in testa con 17 punti, 8ª giornata archiviata.",
+   "sommario": "Paris SG in testa con 20 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 8ª giornata",
+     "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 22 gol in 9 partite, 2.4 a incontro.",
-      "Il risultato più netto è stato Rennes 3-0 Strasbourg: Rennes ha vinto con 3 gol di scarto."
+      "Nella 9ª giornata sono stati segnati 14 gol in 3 partite, 4.7 a incontro.",
+      "Il risultato più netto è stato Le Havre 1-5 Paris SG: Paris SG ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Paris SG con 17 punti in 8 partite.",
-      "Rennes ha 16 punti ma i tiri in porta ne direbbero 12.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Le Havre, ferma a 2 punti contro i 11.6 attesi dal gioco."
+      "In testa c'è Paris SG con 20 punti in 9 partite.",
+      "Nice ha 14 punti ma i tiri in porta ne direbbero 10.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Le Havre, ferma a 2 punti contro i 12.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
+     "tipo": "imbattuta",
+     "titolo": "Paris SG non perde da 6 partite",
+     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+     "numero": "6",
+     "campionato": "Ligue 1",
+     "bandiera": "🇫🇷",
+     "slug": "ligue-1",
+     "squadre": [
+      "Paris SG"
+     ],
+     "campione": 6,
+     "collegamento": ""
+    },
+    {
      "tipo": "digiuno",
-     "titolo": "Le Havre non vince da 8 partite",
+     "titolo": "Le Havre non vince da 9 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "Ligue 1",
      "bandiera": "🇫🇷",
      "slug": "ligue-1",
      "squadre": [
       "Le Havre"
      ],
-     "campione": 8,
+     "campione": 9,
      "collegamento": ""
     },
     {
@@ -714,7 +727,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 8
+   "giornate_giocate": 9
   },
   {
    "slug": "eredivisie",
@@ -853,13 +866,12 @@
    "bandiera": "🇵🇹",
    "paese": "Portogallo",
    "titolo": "Primeira Liga: cosa dicono i numeri",
-   "sommario": "Porto in testa con 27 punti, 9ª giornata archiviata.",
+   "sommario": "Porto in testa con 27 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 9ª giornata",
+     "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 24 gol in 9 partite, 2.7 a incontro.",
-      "Il risultato più netto è stato Guimaraes 5-0 Maritimo: Guimaraes ha vinto con 5 gol di scarto."
+      "Nella 10ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
      ]
     },
     {
@@ -1020,7 +1032,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 9
+   "giornate_giocate": 10
   },
   {
    "slug": "superlig",
@@ -1028,18 +1040,19 @@
    "bandiera": "🇹🇷",
    "paese": "Turchia",
    "titolo": "Süper Lig: cosa dicono i numeri",
-   "sommario": "Galatasaray in testa con 22 punti, 9ª giornata archiviata.",
+   "sommario": "Galatasaray in testa con 25 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 9ª giornata",
+     "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 27 gol in 9 partite, 3.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 4 gol in 1 partite, 4.0 a incontro.",
+      "Il risultato più netto è stato Konyaspor 0-4 Galatasaray: Galatasaray ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Galatasaray con 22 punti in 9 partite.",
+      "In testa c'è Galatasaray con 25 punti in 10 partite.",
       "Amedspor ha 20 punti ma i tiri in porta ne direbbero 15.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Eyupspor, ferma a 3 punti contro i 9.7 attesi dal gioco."
      ]
@@ -1178,7 +1191,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 9
+   "giornate_giocate": 10
   },
   {
    "slug": "jupiler",
@@ -1186,19 +1199,18 @@
    "bandiera": "🇧🇪",
    "paese": "Belgio",
    "titolo": "Pro League: cosa dicono i numeri",
-   "sommario": "Gent in testa con 25 punti, 9ª giornata archiviata.",
+   "sommario": "Club Brugge in testa con 27 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 9ª giornata",
+     "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 37 gol in 8 partite, 4.6 a incontro.",
-      "Il risultato più netto è stato Gent 4-0 Anderlecht: Gent ha vinto con 4 gol di scarto."
+      "Nella 10ª giornata sono stati segnati 6 gol in 1 partite, 6.0 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Gent con 25 punti in 9 partite.",
+      "In testa c'è Club Brugge con 27 punti in 10 partite.",
       "Gent ha 25 punti ma i tiri in porta ne direbbero 15.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Cercle Brugge, ferma a 3 punti contro i 10.1 attesi dal gioco."
      ]
@@ -1231,20 +1243,6 @@
       "Cercle Brugge"
      ],
      "campione": 9,
-     "collegamento": ""
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Waregem non segna da 4 partite",
-     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "4",
-     "campionato": "Pro League",
-     "bandiera": "🇧🇪",
-     "slug": "jupiler",
-     "squadre": [
-      "Waregem"
-     ],
-     "campione": 4,
      "collegamento": ""
     },
     {
@@ -1338,7 +1336,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 9
+   "giornate_giocate": 10
   },
   {
    "slug": "super-league-grecia",
@@ -1795,13 +1793,12 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "paese": "Inghilterra",
    "titolo": "Championship: cosa dicono i numeri",
-   "sommario": "Middlesbrough in testa con 25 punti, 12ª giornata archiviata.",
+   "sommario": "Middlesbrough in testa con 25 punti, 13ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 12ª giornata",
+     "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 36 gol in 12 partite, 3.0 a incontro.",
-      "Il risultato più netto è stato QPR 5-0 Swansea: QPR ha vinto con 5 gol di scarto."
+      "Nella 13ª giornata sono stati segnati 1 gol in 1 partite, 1.0 a incontro."
      ]
     },
     {
@@ -1961,7 +1958,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 12
+   "giornate_giocate": 13
   },
   {
    "slug": "league-one",
@@ -2127,13 +2124,13 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "paese": "Inghilterra",
    "titolo": "League Two: cosa dicono i numeri",
-   "sommario": "Salford in testa con 28 punti, 13ª giornata archiviata.",
+   "sommario": "Salford in testa con 28 punti, 14ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 13ª giornata",
+     "titolo": "La 14ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 38 gol in 10 partite, 3.8 a incontro.",
-      "Il risultato più netto è stato Rochdale 0-5 Accrington: Accrington ha vinto con 5 gol di scarto."
+      "Nella 14ª giornata sono stati segnati 5 gol in 1 partite, 5.0 a incontro.",
+      "Il risultato più netto è stato Newport County 4-1 Chesterfield: Newport County ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -2265,7 +2262,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 13
+   "giornate_giocate": 14
   },
   {
    "slug": "national-league",
@@ -2273,13 +2270,12 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 41 punti, 15ª giornata archiviata.",
+   "sommario": "Boreham Wood in testa con 41 punti, 16ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 15ª giornata",
+     "titolo": "La 16ª giornata",
      "righe": [
-      "Nella 15ª giornata sono stati segnati 36 gol in 11 partite, 3.3 a incontro.",
-      "Il risultato più netto è stato Carlisle 3-0 Harrogate: Carlisle ha vinto con 3 gol di scarto."
+      "Nella 16ª giornata sono stati segnati 4 gol in 1 partite, 4.0 a incontro."
      ]
     },
     {
@@ -2426,7 +2422,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 15
+   "giornate_giocate": 16
   },
   {
    "slug": "laliga-2",
@@ -2609,13 +2605,12 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "2. Bundesliga: cosa dicono i numeri",
-   "sommario": "Hertha in testa con 25 punti, 9ª giornata archiviata.",
+   "sommario": "Hertha in testa con 25 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 9ª giornata",
+     "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 21 gol in 9 partite, 2.3 a incontro.",
-      "Il risultato più netto è stato Magdeburg 6-1 Karlsruhe: Magdeburg ha vinto con 5 gol di scarto."
+      "Nella 10ª giornata sono stati segnati 7 gol in 2 partite, 3.5 a incontro."
      ]
     },
     {
@@ -2623,7 +2618,7 @@
      "righe": [
       "In testa c'è Hertha con 25 punti in 9 partite.",
       "Hertha ha 25 punti ma i tiri in porta ne direbbero 16.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Bochum, ferma a 8 punti contro i 13.0 attesi dal gioco."
+      "All'opposto Braunschweig, ferma a 10 punti contro i 14.7 attesi dal gioco."
      ]
     }
    ],
@@ -2746,7 +2741,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 9
+   "giornate_giocate": 10
   },
   {
    "slug": "ligue-2",
@@ -2754,12 +2749,12 @@
    "bandiera": "🇫🇷",
    "paese": "Francia",
    "titolo": "Ligue 2: cosa dicono i numeri",
-   "sommario": "St Etienne in testa con 25 punti, 10ª giornata archiviata.",
+   "sommario": "St Etienne in testa con 25 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 21 gol in 9 partite, 2.3 a incontro."
+      "Nella 11ª giornata sono stati segnati 12 gol in 5 partite, 2.4 a incontro."
      ]
     },
     {
@@ -2767,7 +2762,7 @@
      "righe": [
       "In testa c'è St Etienne con 25 punti in 10 partite.",
       "Montpellier ha 21 punti ma i tiri in porta ne direbbero 14.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Laval, ferma a 6 punti contro i 13.4 attesi dal gioco."
+      "All'opposto Nantes, ferma a 9 punti contro i 15.7 attesi dal gioco."
      ]
     }
    ],
@@ -2788,16 +2783,16 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Clermont non vince da 10 partite",
+     "titolo": "Clermont non vince da 11 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "10",
+     "numero": "11",
      "campionato": "Ligue 2",
      "bandiera": "🇫🇷",
      "slug": "ligue-2",
      "squadre": [
       "Clermont"
      ],
-     "campione": 10,
+     "campione": 11,
      "collegamento": ""
     },
     {
@@ -2878,19 +2873,19 @@
      "campionato": "Ligue 2",
      "bandiera": "🇫🇷",
      "slug": "ligue-2",
-     "data": "2026-09-12",
-     "casa": "Dunkerque",
-     "ospite": "St Etienne",
-     "gol_casa": 2,
-     "gol_ospite": 1,
-     "in_porta_casa": 2,
-     "in_porta_ospite": 5,
-     "vincitore": "Dunkerque",
-     "perdente": "St Etienne",
-     "scarto_tiri": 3
+     "data": "2026-10-30",
+     "casa": "Grenoble",
+     "ospite": "Dijon",
+     "gol_casa": 1,
+     "gol_ospite": 3,
+     "in_porta_casa": 8,
+     "in_porta_ospite": 4,
+     "vincitore": "Dijon",
+     "perdente": "Grenoble",
+     "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "championship-scozia",
@@ -2898,20 +2893,20 @@
    "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
    "paese": "Scozia",
    "titolo": "Championship scozzese: cosa dicono i numeri",
-   "sommario": "Partick in testa con 25 punti, 12ª giornata archiviata.",
+   "sommario": "Partick in testa con 25 punti, 13ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 12ª giornata",
+     "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 8 gol in 5 partite, 1.6 a incontro.",
-      "Il risultato più netto è stato Partick 3-0 Stenhousemuir: Partick ha vinto con 3 gol di scarto."
+      "Nella 13ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro.",
+      "Il risultato più netto è stato Stenhousemuir 0-3 Livingston: Livingston ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Partick con 25 punti in 12 partite.",
-      "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 13.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 14.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Morton, ferma a 7 punti contro i 11.5 attesi dal gioco."
      ]
     }
@@ -2929,6 +2924,20 @@
       "Dunfermline"
      ],
      "campione": 9,
+     "collegamento": ""
+    },
+    {
+     "tipo": "a_secco",
+     "titolo": "Stenhousemuir non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+     "numero": "3",
+     "campionato": "Championship scozzese",
+     "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+     "slug": "championship-scozia",
+     "squadre": [
+      "Stenhousemuir"
+     ],
+     "campione": 3,
      "collegamento": ""
     },
     {
@@ -3036,7 +3045,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 12
+   "giornate_giocate": 13
   },
   {
    "slug": "league-one-scozia",
