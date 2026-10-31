@@ -34,7 +34,7 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "slug": "national-league",
    "squadre": [],
-   "campione": 178,
+   "campione": 180,
    "collegamento": ""
   },
   {
@@ -46,7 +46,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1230,
+   "campione": 1233,
    "collegamento": ""
   },
   {
@@ -180,16 +180,16 @@
   "premier-league": [
    {
     "tipo": "digiuno",
-    "titolo": "Sunderland non vince da 6 partite",
+    "titolo": "Man United non vince da 7 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Premier League",
     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "slug": "premier-league",
     "squadre": [
-     "Sunderland"
+     "Man United"
     ],
-    "campione": 6,
+    "campione": 7,
     "collegamento": ""
    },
    {
@@ -370,16 +370,44 @@
   "bundesliga": [
    {
     "tipo": "imbattuta",
-    "titolo": "Dortmund non perde da 7 partite",
+    "titolo": "Werder Bremen non perde da 7 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
     "numero": "7",
     "campionato": "Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga",
     "squadre": [
-     "Dortmund"
+     "Werder Bremen"
     ],
     "campione": 7,
+    "collegamento": ""
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Augsburg non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Augsburg"
+    ],
+    "campione": 6,
+    "collegamento": ""
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Schalke 04 non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Bundesliga",
+    "bandiera": "🇩🇪",
+    "slug": "bundesliga",
+    "squadre": [
+     "Schalke 04"
+    ],
+    "campione": 3,
     "collegamento": ""
    },
    {
@@ -1361,17 +1389,17 @@
     "collegamento": ""
    },
    {
-    "tipo": "porta_chiusa",
-    "titolo": "Bradford non subisce gol da 4 partite",
-    "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
-    "numero": "4",
+    "tipo": "a_secco",
+    "titolo": "Bradford non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
     "campionato": "League One",
     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "slug": "league-one",
     "squadre": [
      "Bradford"
     ],
-    "campione": 4,
+    "campione": 3,
     "collegamento": ""
    },
    {
@@ -1728,30 +1756,16 @@
   "bundesliga-2": [
    {
     "tipo": "imbattuta",
-    "titolo": "Hertha non perde da 9 partite",
+    "titolo": "Hertha non perde da 10 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Hertha"
     ],
-    "campione": 9,
-    "collegamento": ""
-   },
-   {
-    "tipo": "porta_chiusa",
-    "titolo": "Kaiserslautern non subisce gol da 4 partite",
-    "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
-    "numero": "4",
-    "campionato": "2. Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga-2",
-    "squadre": [
-     "Kaiserslautern"
-    ],
-    "campione": 4,
+    "campione": 10,
     "collegamento": ""
    },
    {
