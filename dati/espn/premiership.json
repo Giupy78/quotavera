@@ -1,4 +1,955 @@
 {
+ "401878346": {
+  "cartellini": [
+   {
+    "giocatore": "Joseph Hodge",
+    "minuto": "38'",
+    "rosso": false,
+    "squadra": "Motherwell"
+   },
+   {
+    "giocatore": "Marcus Fraser",
+    "minuto": "50'",
+    "rosso": false,
+    "squadra": "St Mirren"
+   },
+   {
+    "giocatore": "Ryan Carr",
+    "minuto": "51'",
+    "rosso": false,
+    "squadra": "St Mirren"
+   },
+   {
+    "giocatore": "Martin Moormann",
+    "minuto": "60'",
+    "rosso": false,
+    "squadra": "Motherwell"
+   },
+   {
+    "giocatore": "Alexander Gogic",
+    "minuto": "86'",
+    "rosso": false,
+    "squadra": "St Mirren"
+   },
+   {
+    "giocatore": "Regan Charles-Cook",
+    "minuto": "89'",
+    "rosso": false,
+    "squadra": "Motherwell"
+   },
+   {
+    "giocatore": "Emmanuel Longelo",
+    "minuto": "90'",
+    "rosso": false,
+    "squadra": "Motherwell"
+   },
+   {
+    "giocatore": "Samuel Ramos",
+    "minuto": "90'+1'",
+    "rosso": false,
+    "squadra": "St Mirren"
+   },
+   {
+    "giocatore": "Killian Phillips",
+    "minuto": "90'+2'",
+    "rosso": false,
+    "squadra": "St Mirren"
+   }
+  ],
+  "casa": "Motherwell",
+  "data": "2026-10-31",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Jacob Chapman",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Alexander Gogic",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "53",
+      "nome": "Henry Fieldson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Marcus Fraser",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Fraser Taylor",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Ryan Carr",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Luke Thomas",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "47",
+      "nome": "Calvin Ramsay",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Eseosa Sule",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "48",
+      "nome": "Paul Nsio",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "88",
+      "nome": "Killian Phillips",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "35",
+      "nome": "Grant Tamosevicius",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "23",
+      "nome": "Chris Mochrie",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Samuel Ramos",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "37",
+      "nome": "Carrick Mcevoy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Jake Young",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Liam Donnelly",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Louis Jackson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Jayden Richardson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "3",
+      "nome": "Declan John",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-2-1",
+    "squadra": "St Mirren"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Alex Paulsen",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Martin Moormann",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Jake Girdwood-Reich",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Emmanuel Longelo",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Tom Sparrow",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Ibrahim Sa'Id",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Lukas Fadinger",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "71",
+      "nome": "Joseph Hodge",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "47",
+      "nome": "Seb Palmer-Houlden",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Jardell Kanga",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Tawanda Maswanhise",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Jordan McGhee",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Matty Connolly",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "12",
+      "nome": "Oscar Priestman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Callum Hendry",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "16",
+      "nome": "Paul McGinn",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Jamie Knight-Lebel",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "15",
+      "nome": "Eythor Bjørgolfsson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "63",
+      "nome": "Dylan Levitt",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Regan Charles-Cook",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Motherwell"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Lukas Fadinger",
+    "minuto": "82'",
+    "squadra": "Motherwell",
+    "tipo": "Penalty - Scored"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 0,
+  "id": "401878346",
+  "ospite": "St Mirren",
+  "stadio": {
+   "citta": "Motherwell",
+   "nome": "Fir Park",
+   "paese": "Scotland"
+  },
+  "stat": {
+   "contrasti": [
+    11.0,
+    21.0
+   ],
+   "contrasti_riusciti": [
+    9.0,
+    9.0
+   ],
+   "corner": [
+    6.0,
+    3.0
+   ],
+   "falli": [
+    17.0,
+    14.0
+   ],
+   "fuorigioco": [
+    1.0,
+    2.0
+   ],
+   "gialli": [
+    4.0,
+    5.0
+   ],
+   "in_porta": [
+    2.0,
+    1.0
+   ],
+   "parate": [
+    1.0,
+    1.0
+   ],
+   "passaggi": [
+    455.0,
+    436.0
+   ],
+   "passaggi_riusciti": [
+    379.0,
+    352.0
+   ],
+   "possesso": [
+    51.7,
+    48.3
+   ],
+   "respinte": [
+    18.0,
+    18.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    11.0,
+    5.0
+   ],
+   "tiri_respinti": [
+    3.0,
+    1.0
+   ]
+  }
+ },
+ "401878347": {
+  "cartellini": [
+   {
+    "giocatore": "Toby Steward",
+    "minuto": "13'",
+    "rosso": true,
+    "squadra": "St Johnstone"
+   },
+   {
+    "giocatore": "Jason Holt",
+    "minuto": "35'",
+    "rosso": false,
+    "squadra": "St Johnstone"
+   },
+   {
+    "giocatore": "Matthew Todd",
+    "minuto": "35'",
+    "rosso": false,
+    "squadra": "St Johnstone"
+   },
+   {
+    "giocatore": "Aaron Tshibola",
+    "minuto": "37'",
+    "rosso": false,
+    "squadra": "Kilmarnock"
+   },
+   {
+    "giocatore": "Jamie Brandon",
+    "minuto": "56'",
+    "rosso": false,
+    "squadra": "Kilmarnock"
+   },
+   {
+    "giocatore": "Nicky Clescenco",
+    "minuto": "83'",
+    "rosso": false,
+    "squadra": "Kilmarnock"
+   }
+  ],
+  "casa": "Kilmarnock",
+  "data": "2026-10-31",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Toby Steward",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Bozo Mikulic",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Enes Alic",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Cheick Diabate",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Jason Holt",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "42",
+      "nome": "Reece McAlear",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Joel Cotterill",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Matthew Todd",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Danny Schmidt",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Josh Fowler",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Taylor Steven",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Ross Sinclair",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Daniel Finlayson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "32",
+      "nome": "Josh Campbell",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Matty Foulds",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "23",
+      "nome": "Logan Chalmers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "James Gullan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Ruari Paton",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "52",
+      "nome": "Arran Brookfield",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Macauley Tait",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-2-1",
+    "squadra": "St Johnstone"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "58",
+      "nome": "Nico Mantl",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Robbie Deas",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "George Stanger",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Cathal McCarthy",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Tom Lowery",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "36",
+      "nome": "Aaron Tshibola",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Greg Kiltie",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Erik Ring",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Jamie Brandon",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Djenario Daniels",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Joe Hugill",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Tyreece John-Jules",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Roshaun Mathurin",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Nicky Clescenco",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Jonathan Meier",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Ieuan Owen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "Michael Schjonning-Larsen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Calum Ferie",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Mj Kamara",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Rory McKenzie",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-1-2",
+    "squadra": "Kilmarnock"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Cathal McCarthy",
+    "minuto": "14'",
+    "squadra": "Kilmarnock",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Danny Schmidt",
+    "minuto": "40'",
+    "squadra": "St Johnstone",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Djenario Daniels",
+    "minuto": "41'",
+    "squadra": "Kilmarnock",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Joel Cotterill",
+    "minuto": "65'",
+    "squadra": "St Johnstone",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 2,
+  "id": "401878347",
+  "ospite": "St Johnstone",
+  "stadio": {
+   "citta": "Kilmarnock",
+   "nome": "The BBSP Stadium",
+   "paese": "Scotland"
+  },
+  "stat": {
+   "contrasti": [
+    18.0,
+    13.0
+   ],
+   "contrasti_riusciti": [
+    12.0,
+    9.0
+   ],
+   "corner": [
+    10.0,
+    2.0
+   ],
+   "falli": [
+    12.0,
+    10.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    3.0,
+    2.0
+   ],
+   "in_porta": [
+    6.0,
+    3.0
+   ],
+   "parate": [
+    1.0,
+    4.0
+   ],
+   "passaggi": [
+    542.0,
+    341.0
+   ],
+   "passaggi_riusciti": [
+    455.0,
+    236.0
+   ],
+   "possesso": [
+    62.6,
+    37.4
+   ],
+   "respinte": [
+    14.0,
+    42.0
+   ],
+   "rossi": [
+    0.0,
+    1.0
+   ],
+   "tiri": [
+    22.0,
+    6.0
+   ],
+   "tiri_respinti": [
+    6.0,
+    2.0
+   ]
+  }
+ },
  "401878351": {
   "cartellini": [
    {

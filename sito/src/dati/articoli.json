@@ -1,5 +1,5 @@
 {
- "data": "2026-10-31",
+ "data": "2026-11-01",
  "pezzi": [
   {
    "slug": "serie-a",
@@ -7,18 +7,19 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie A: cosa dicono i numeri",
-   "sommario": "Inter in testa con 25 punti, 10ª giornata archiviata.",
+   "sommario": "Lazio in testa con 25 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 3 gol in 1 partite, 3.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 14 gol in 3 partite, 4.7 a incontro.",
+      "Il risultato più netto è stato Udinese 2-5 Roma: Roma ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Inter con 25 punti in 9 partite.",
+      "In testa c'è Lazio con 25 punti in 9 partite.",
       "Lazio ha 25 punti ma i tiri in porta ne direbbero 13.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Venezia, ferma a 3 punti contro i 10.1 attesi dal gioco."
      ]
@@ -27,44 +28,30 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Roma non perde da 9 partite",
+     "titolo": "Roma non perde da 10 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
      "squadre": [
       "Roma"
      ],
-     "campione": 9,
+     "campione": 10,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Udinese non vince da 7 partite",
+     "titolo": "Udinese non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Serie A",
      "bandiera": "🇮🇹",
      "slug": "serie-a",
      "squadre": [
       "Udinese"
      ],
-     "campione": 7,
-     "collegamento": ""
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Udinese non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "3",
-     "campionato": "Serie A",
-     "bandiera": "🇮🇹",
-     "slug": "serie-a",
-     "squadre": [
-      "Udinese"
-     ],
-     "campione": 3,
+     "campione": 8,
      "collegamento": ""
     },
     {
@@ -156,6 +143,21 @@
      "vincitore": "Torino",
      "perdente": "Parma",
      "scarto_tiri": 5
+    },
+    {
+     "campionato": "Serie A",
+     "bandiera": "🇮🇹",
+     "slug": "serie-a",
+     "data": "2026-10-31",
+     "casa": "Milan",
+     "ospite": "Inter",
+     "gol_casa": 3,
+     "gol_ospite": 1,
+     "in_porta_casa": 4,
+     "in_porta_ospite": 8,
+     "vincitore": "Milan",
+     "perdente": "Inter",
+     "scarto_tiri": 4
     }
    ],
    "giornate_giocate": 10
@@ -171,43 +173,43 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 19 gol in 8 partite, 2.4 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Man City con 21 punti in 8 partite.",
+      "In testa c'è Man City con 21 punti in 9 partite.",
       "Arsenal ha 21 punti ma i tiri in porta ne direbbero 13.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sunderland, ferma a 5 punti contro i 11.6 attesi dal gioco."
+      "All'opposto Sunderland, ferma a 5 punti contro i 12.4 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "digiuno",
-     "titolo": "Man United non vince da 7 partite",
+     "titolo": "Sunderland non vince da 7 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
      "numero": "7",
      "campionato": "Premier League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "premier-league",
      "squadre": [
-      "Man United"
+      "Sunderland"
      ],
      "campione": 7,
      "collegamento": ""
     },
     {
      "tipo": "a_secco",
-     "titolo": "Sunderland non segna da 3 partite",
+     "titolo": "Crystal Palace non segna da 3 partite",
      "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
      "numero": "3",
      "campionato": "Premier League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "premier-league",
      "squadre": [
-      "Sunderland"
+      "Crystal Palace"
      ],
      "campione": 3,
      "collegamento": ""
@@ -243,15 +245,29 @@
     {
      "tipo": "primo_tempo",
      "titolo": "Ipswich decide presto",
-     "testo": "28 dei suoi 48 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-     "numero": "58%",
+     "testo": "28 dei suoi 50 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+     "numero": "56%",
      "campionato": "Premier League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "premier-league",
      "squadre": [
       "Ipswich"
      ],
-     "campione": 48,
+     "campione": 50,
+     "collegamento": ""
+    },
+    {
+     "tipo": "ripresa",
+     "titolo": "Sunderland vive di secondi tempi",
+     "testo": "Solo 16 dei suoi 49 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "67%",
+     "campionato": "Premier League",
+     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+     "slug": "premier-league",
+     "squadre": [
+      "Sunderland"
+     ],
+     "campione": 49,
      "collegamento": ""
     },
     {
@@ -305,6 +321,21 @@
      "campionato": "Premier League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "premier-league",
+     "data": "2026-10-31",
+     "casa": "Man City",
+     "ospite": "Brighton",
+     "gol_casa": 0,
+     "gol_ospite": 1,
+     "in_porta_casa": 6,
+     "in_porta_ospite": 3,
+     "vincitore": "Brighton",
+     "perdente": "Man City",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "Premier League",
+     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+     "slug": "premier-league",
      "data": "2026-09-20",
      "casa": "Man City",
      "ospite": "Sunderland",
@@ -325,19 +356,20 @@
    "bandiera": "🇪🇸",
    "paese": "Spagna",
    "titolo": "LaLiga: cosa dicono i numeri",
-   "sommario": "Ath Madrid in testa con 28 punti, 11ª giornata archiviata.",
+   "sommario": "Barcelona in testa con 30 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 3 gol in 2 partite, 1.5 a incontro."
+      "Nella 11ª giornata sono stati segnati 16 gol in 5 partite, 3.2 a incontro.",
+      "Il risultato più netto è stato Barcelona 6-1 Alaves: Barcelona ha vinto con 5 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Ath Madrid con 28 punti in 11 partite.",
-      "Ath Madrid ha 28 punti ma i tiri in porta ne direbbero 20.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Barcelona con 30 punti in 11 partite.",
+      "Betis ha 23 punti ma i tiri in porta ne direbbero 15.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Villarreal, ferma a 12 punti contro i 20.5 attesi dal gioco."
      ]
     }
@@ -345,30 +377,30 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Celta non perde da 7 partite",
+     "titolo": "Ath Madrid non perde da 7 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
      "numero": "7",
      "campionato": "LaLiga",
      "bandiera": "🇪🇸",
      "slug": "laliga",
      "squadre": [
-      "Celta"
+      "Ath Madrid"
      ],
      "campione": 7,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Malaga non vince da 10 partite",
+     "titolo": "Malaga non vince da 11 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "10",
+     "numero": "11",
      "campionato": "LaLiga",
      "bandiera": "🇪🇸",
      "slug": "laliga",
      "squadre": [
       "Malaga"
      ],
-     "campione": 10,
+     "campione": 11,
      "collegamento": ""
     },
     {
@@ -470,20 +502,20 @@
    "bandiera": "🇩🇪",
    "paese": "Germania",
    "titolo": "Bundesliga: cosa dicono i numeri",
-   "sommario": "Bayern Munich in testa con 17 punti, 8ª giornata archiviata.",
+   "sommario": "Bayern Munich in testa con 18 punti, 8ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 18 gol in 6 partite, 3.0 a incontro.",
+      "Nella 8ª giornata sono stati segnati 22 gol in 7 partite, 3.1 a incontro.",
       "Il risultato più netto è stato Elversberg 4-1 Mainz: Elversberg ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Bayern Munich con 17 punti in 7 partite.",
-      "Dortmund ha 17 punti ma i tiri in porta ne direbbero 12.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Bayern Munich con 18 punti in 8 partite.",
+      "Dortmund ha 18 punti ma i tiri in porta ne direbbero 14.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Hoffenheim, ferma a 9 punti contro i 12.5 attesi dal gioco."
      ]
     }
@@ -491,16 +523,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Werder Bremen non perde da 7 partite",
+     "titolo": "Dortmund non perde da 8 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Bundesliga",
      "bandiera": "🇩🇪",
      "slug": "bundesliga",
      "squadre": [
-      "Werder Bremen"
+      "Dortmund"
      ],
-     "campione": 7,
+     "campione": 8,
      "collegamento": ""
     },
     {
@@ -635,7 +667,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 14 gol in 3 partite, 4.7 a incontro.",
+      "Nella 9ª giornata sono stati segnati 16 gol in 4 partite, 4.0 a incontro.",
       "Il risultato più netto è stato Le Havre 1-5 Paris SG: Paris SG ha vinto con 4 gol di scarto."
      ]
     },
@@ -776,51 +808,51 @@
    "bandiera": "🇳🇱",
    "paese": "Paesi Bassi",
    "titolo": "Eredivisie: cosa dicono i numeri",
-   "sommario": "Feyenoord in testa con 24 punti, 10ª giornata archiviata.",
+   "sommario": "Feyenoord in testa con 25 punti, 11ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 10ª giornata",
+     "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 31 gol in 9 partite, 3.4 a incontro.",
-      "Il risultato più netto è stato Willem II 1-6 Cambuur: Cambuur ha vinto con 5 gol di scarto."
+      "Nella 11ª giornata sono stati segnati 15 gol in 5 partite, 3.0 a incontro.",
+      "Il risultato più netto è stato PSV Eindhoven 7-0 Willem II: PSV Eindhoven ha vinto con 7 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Feyenoord con 24 punti in 10 partite.",
-      "For Sittard ha 18 punti ma i tiri in porta ne direbbero 12.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sparta Rotterdam, ferma a 9 punti contro i 13.3 attesi dal gioco."
+      "In testa c'è Feyenoord con 25 punti in 11 partite.",
+      "For Sittard ha 19 punti ma i tiri in porta ne direbbero 13.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Nijmegen, ferma a 11 punti contro i 15.8 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Feyenoord non perde da 10 partite",
+     "titolo": "Feyenoord non perde da 11 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "10",
+     "numero": "11",
      "campionato": "Eredivisie",
      "bandiera": "🇳🇱",
      "slug": "eredivisie",
      "squadre": [
       "Feyenoord"
      ],
-     "campione": 10,
+     "campione": 11,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Willem II non vince da 10 partite",
+     "titolo": "Willem II non vince da 11 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "10",
+     "numero": "11",
      "campionato": "Eredivisie",
      "bandiera": "🇳🇱",
      "slug": "eredivisie",
      "squadre": [
       "Willem II"
      ],
-     "campione": 10,
+     "campione": 11,
      "collegamento": ""
     },
     {
@@ -887,6 +919,21 @@
      "campionato": "Eredivisie",
      "bandiera": "🇳🇱",
      "slug": "eredivisie",
+     "data": "2026-10-31",
+     "casa": "Ajax",
+     "ospite": "AZ Alkmaar",
+     "gol_casa": 1,
+     "gol_ospite": 0,
+     "in_porta_casa": 2,
+     "in_porta_ospite": 5,
+     "vincitore": "Ajax",
+     "perdente": "AZ Alkmaar",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "Eredivisie",
+     "bandiera": "🇳🇱",
+     "slug": "eredivisie",
      "data": "2026-10-09",
      "casa": "PSV Eindhoven",
      "ospite": "Heerenveen",
@@ -899,7 +946,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 10
+   "giornate_giocate": 11
   },
   {
    "slug": "primeira-liga",
@@ -907,19 +954,20 @@
    "bandiera": "🇵🇹",
    "paese": "Portogallo",
    "titolo": "Primeira Liga: cosa dicono i numeri",
-   "sommario": "Porto in testa con 27 punti, 10ª giornata archiviata.",
+   "sommario": "Porto in testa con 30 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 2 gol in 1 partite, 2.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 9 gol in 3 partite, 3.0 a incontro.",
+      "Il risultato più netto è stato Porto 4-0 Estoril: Porto ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Porto con 27 punti in 9 partite.",
-      "Porto ha 27 punti ma i tiri in porta ne direbbero 18.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Porto con 30 punti in 10 partite.",
+      "Porto ha 30 punti ma i tiri in porta ne direbbero 21.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Estoril, ferma a 2 punti contro i 14.2 attesi dal gioco."
      ]
     }
@@ -927,44 +975,30 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Porto non perde da 9 partite",
+     "titolo": "Porto non perde da 10 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "Primeira Liga",
      "bandiera": "🇵🇹",
      "slug": "primeira-liga",
      "squadre": [
       "Porto"
      ],
-     "campione": 9,
+     "campione": 10,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Estoril non vince da 9 partite",
+     "titolo": "Estoril non vince da 10 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "Primeira Liga",
      "bandiera": "🇵🇹",
      "slug": "primeira-liga",
      "squadre": [
       "Estoril"
      ],
-     "campione": 9,
-     "collegamento": ""
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Estrela non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "3",
-     "campionato": "Primeira Liga",
-     "bandiera": "🇵🇹",
-     "slug": "primeira-liga",
-     "squadre": [
-      "Estrela"
-     ],
-     "campione": 3,
+     "campione": 10,
      "collegamento": ""
     },
     {
@@ -1086,7 +1120,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 8 gol in 3 partite, 2.7 a incontro.",
+      "Nella 10ª giornata sono stati segnati 11 gol in 4 partite, 2.8 a incontro.",
       "Il risultato più netto è stato Konyaspor 0-4 Galatasaray: Galatasaray ha vinto con 4 gol di scarto."
      ]
     },
@@ -1245,7 +1279,8 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 6 gol in 1 partite, 6.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 17 gol in 5 partite, 3.4 a incontro.",
+      "Il risultato più netto è stato Anderlecht 4-1 Westerlo: Anderlecht ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -1260,16 +1295,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "St. Gilloise non perde da 9 partite",
+     "titolo": "St. Gilloise non perde da 10 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "Pro League",
      "bandiera": "🇧🇪",
      "slug": "jupiler",
      "squadre": [
       "St. Gilloise"
      ],
-     "campione": 9,
+     "campione": 10,
      "collegamento": ""
     },
     {
@@ -1385,20 +1420,19 @@
    "bandiera": "🇬🇷",
    "paese": "Grecia",
    "titolo": "Super League: cosa dicono i numeri",
-   "sommario": "Panathinaikos in testa con 21 punti, 8ª giornata archiviata.",
+   "sommario": "Olympiakos in testa con 22 punti, 9ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 8ª giornata",
+     "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 23 gol in 7 partite, 3.3 a incontro.",
-      "Il risultato più netto è stato AEK 5-0 Panetolikos: AEK ha vinto con 5 gol di scarto."
+      "Nella 9ª giornata sono stati segnati 5 gol in 1 partite, 5.0 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Panathinaikos con 21 punti in 8 partite.",
-      "OFI Crete ha 13 punti ma i tiri in porta ne direbbero 8.5: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Olympiakos con 22 punti in 9 partite.",
+      "Olympiakos ha 22 punti ma i tiri in porta ne direbbero 16.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Levadeiakos, ferma a 3 punti contro i 8.8 attesi dal gioco."
      ]
     }
@@ -1430,20 +1464,6 @@
       "Volos NFC"
      ],
      "campione": 8,
-     "collegamento": ""
-    },
-    {
-     "tipo": "porta_chiusa",
-     "titolo": "Olympiakos non subisce gol da 4 partite",
-     "testo": "Quattro o più partite di fila con la porta inviolata capitano poco.",
-     "numero": "4",
-     "campionato": "Super League",
-     "bandiera": "🇬🇷",
-     "slug": "super-league-grecia",
-     "squadre": [
-      "Olympiakos"
-     ],
-     "campione": 4,
      "collegamento": ""
     },
     {
@@ -1538,6 +1558,21 @@
      "campionato": "Super League",
      "bandiera": "🇬🇷",
      "slug": "super-league-grecia",
+     "data": "2026-10-31",
+     "casa": "Kifisia",
+     "ospite": "Olympiakos",
+     "gol_casa": 2,
+     "gol_ospite": 3,
+     "in_porta_casa": 8,
+     "in_porta_ospite": 5,
+     "vincitore": "Olympiakos",
+     "perdente": "Kifisia",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "Super League",
+     "bandiera": "🇬🇷",
+     "slug": "super-league-grecia",
      "data": "2026-09-07",
      "casa": "Asteras Tripolis",
      "ospite": "Iraklis",
@@ -1550,7 +1585,7 @@
      "scarto_tiri": 3
     }
    ],
-   "giornate_giocate": 8
+   "giornate_giocate": 9
   },
   {
    "slug": "premiership",
@@ -1558,12 +1593,12 @@
    "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
    "paese": "Scozia",
    "titolo": "Premiership: cosa dicono i numeri",
-   "sommario": "Celtic in testa con 28 punti, 11ª giornata archiviata.",
+   "sommario": "Celtic in testa con 28 punti, 12ª giornata archiviata.",
    "sezioni": [
     {
-     "titolo": "La 11ª giornata",
+     "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 19 gol in 6 partite, 3.2 a incontro."
+      "Nella 12ª giornata sono stati segnati 5 gol in 2 partite, 2.5 a incontro."
      ]
     },
     {
@@ -1571,7 +1606,7 @@
      "righe": [
       "In testa c'è Celtic con 28 punti in 11 partite.",
       "Celtic ha 28 punti ma i tiri in porta ne direbbero 23.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Motherwell, ferma a 9 punti contro i 15.0 attesi dal gioco."
+      "All'opposto Motherwell, ferma a 12 punti contro i 16.6 attesi dal gioco."
      ]
     }
    ],
@@ -1680,7 +1715,7 @@
      "scarto_tiri": 4
     }
    ],
-   "giornate_giocate": 11
+   "giornate_giocate": 12
   },
   {
    "slug": "serie-b",
@@ -1693,7 +1728,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 6 gol in 3 partite, 2.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 10 gol in 5 partite, 2.0 a incontro."
      ]
     },
     {
@@ -1701,7 +1736,7 @@
      "righe": [
       "In testa c'è Palermo con 23 punti in 9 partite.",
       "Palermo ha 23 punti ma i tiri in porta ne direbbero 15.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Sampdoria, ferma a 5 punti contro i 14.2 attesi dal gioco."
+      "All'opposto Sampdoria, ferma a 8 punti contro i 15.5 attesi dal gioco."
      ]
     }
    ],
@@ -1834,64 +1869,51 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "paese": "Inghilterra",
    "titolo": "Championship: cosa dicono i numeri",
-   "sommario": "Middlesbrough in testa con 25 punti, 13ª giornata archiviata.",
+   "sommario": "Middlesbrough in testa con 28 punti, 13ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 12 gol in 4 partite, 3.0 a incontro."
+      "Nella 13ª giornata sono stati segnati 41 gol in 12 partite, 3.4 a incontro.",
+      "Il risultato più netto è stato Swansea 4-0 Blackburn: Swansea ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Middlesbrough con 25 punti in 12 partite.",
-      "Southampton ha 24 punti ma i tiri in porta ne direbbero 17.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Derby, ferma a 7 punti contro i 13.9 attesi dal gioco."
+      "In testa c'è Middlesbrough con 28 punti in 13 partite.",
+      "West Brom ha 24 punti ma i tiri in porta ne direbbero 16.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Derby, ferma a 7 punti contro i 14.5 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Middlesbrough non perde da 10 partite",
+     "titolo": "Middlesbrough non perde da 11 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "10",
+     "numero": "11",
      "campionato": "Championship",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "championship",
      "squadre": [
       "Middlesbrough"
      ],
-     "campione": 10,
+     "campione": 11,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Charlton non vince da 9 partite",
+     "titolo": "Charlton non vince da 10 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "Championship",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "championship",
      "squadre": [
       "Charlton"
      ],
-     "campione": 9,
-     "collegamento": ""
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Bristol City non segna da 3 partite",
-     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "3",
-     "campionato": "Championship",
-     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-     "slug": "championship",
-     "squadre": [
-      "Bristol City"
-     ],
-     "campione": 3,
+     "campione": 10,
      "collegamento": ""
     },
     {
@@ -1972,6 +1994,21 @@
      "campionato": "Championship",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "championship",
+     "data": "2026-10-31",
+     "casa": "Wolves",
+     "ospite": "Cardiff",
+     "gol_casa": 3,
+     "gol_ospite": 0,
+     "in_porta_casa": 4,
+     "in_porta_ospite": 9,
+     "vincitore": "Wolves",
+     "perdente": "Cardiff",
+     "scarto_tiri": 5
+    },
+    {
+     "campionato": "Championship",
+     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+     "slug": "championship",
      "data": "2026-10-24",
      "casa": "West Ham",
      "ospite": "Southampton",
@@ -1997,7 +2034,7 @@
     {
      "titolo": "La 14ª giornata",
      "righe": [
-      "Nella 14ª giornata sono stati segnati 3 gol in 2 partite, 1.5 a incontro.",
+      "Nella 14ª giornata sono stati segnati 8 gol in 4 partite, 2.0 a incontro.",
       "Il risultato più netto è stato Leyton Orient 3-0 Cambridge: Leyton Orient ha vinto con 3 gol di scarto."
      ]
     },
@@ -2005,38 +2042,38 @@
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Huddersfield con 28 punti in 13 partite.",
-      "Oxford ha 22 punti ma i tiri in porta ne direbbero 16.6: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Barnsley, ferma a 8 punti contro i 15.6 attesi dal gioco."
+      "Oxford ha 23 punti ma i tiri in porta ne direbbero 19.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Barnsley, ferma a 9 punti contro i 15.8 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Oxford non perde da 8 partite",
+     "titolo": "Oxford non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "League One",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "league-one",
      "squadre": [
       "Oxford"
      ],
-     "campione": 8,
+     "campione": 9,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Barnsley non vince da 7 partite",
+     "titolo": "Barnsley non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "League One",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "league-one",
      "squadre": [
       "Barnsley"
      ],
-     "campione": 7,
+     "campione": 8,
      "collegamento": ""
     },
     {
@@ -2082,17 +2119,17 @@
      "collegamento": ""
     },
     {
-     "tipo": "primo_tempo",
-     "titolo": "Leicester decide presto",
-     "testo": "11 dei suoi 20 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-     "numero": "55%",
+     "tipo": "ripresa",
+     "titolo": "Milton Keynes Dons vive di secondi tempi",
+     "testo": "Solo 5 dei suoi 22 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "77%",
      "campionato": "League One",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "league-one",
      "squadre": [
-      "Leicester"
+      "Milton Keynes Dons"
      ],
-     "campione": 20,
+     "campione": 22,
      "collegamento": ""
     },
     {
@@ -2151,51 +2188,51 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "paese": "Inghilterra",
    "titolo": "League Two: cosa dicono i numeri",
-   "sommario": "Salford in testa con 28 punti, 14ª giornata archiviata.",
+   "sommario": "Salford in testa con 31 punti, 14ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 14ª giornata",
      "righe": [
-      "Nella 14ª giornata sono stati segnati 18 gol in 3 partite, 6.0 a incontro.",
+      "Nella 14ª giornata sono stati segnati 39 gol in 10 partite, 3.9 a incontro.",
       "Il risultato più netto è stato Newport County 4-1 Chesterfield: Newport County ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Salford con 28 punti in 13 partite.",
-      "Salford ha 28 punti ma i tiri in porta ne direbbero 20.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Crawley Town, ferma a 6 punti contro i 14.0 attesi dal gioco."
+      "In testa c'è Salford con 31 punti in 14 partite.",
+      "Salford ha 31 punti ma i tiri in porta ne direbbero 22.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Crawley Town, ferma a 9 punti contro i 16.3 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Salford non perde da 10 partite",
+     "titolo": "Salford non perde da 11 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "10",
+     "numero": "11",
      "campionato": "League Two",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "league-two",
      "squadre": [
       "Salford"
      ],
-     "campione": 10,
+     "campione": 11,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Crawley Town non vince da 9 partite",
+     "titolo": "Colchester non vince da 10 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "League Two",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "league-two",
      "squadre": [
-      "Crawley Town"
+      "Colchester"
      ],
-     "campione": 9,
+     "campione": 10,
      "collegamento": ""
     },
     {
@@ -2297,50 +2334,51 @@
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "paese": "Inghilterra",
    "titolo": "National League: cosa dicono i numeri",
-   "sommario": "Boreham Wood in testa con 41 punti, 16ª giornata archiviata.",
+   "sommario": "Boreham Wood in testa con 44 punti, 16ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 16ª giornata",
      "righe": [
-      "Nella 16ª giornata sono stati segnati 10 gol in 3 partite, 3.3 a incontro."
+      "Nella 16ª giornata sono stati segnati 41 gol in 12 partite, 3.4 a incontro.",
+      "Il risultato più netto è stato Worthing 0-3 Sutton: Sutton ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Boreham Wood con 41 punti in 15 partite.",
-      "Boreham Wood ha 41 punti ma i tiri in porta ne direbbero 30.9: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Scunthorpe, ferma a 10 punti contro i 17.2 attesi dal gioco."
+      "In testa c'è Boreham Wood con 44 punti in 16 partite.",
+      "Boreham Wood ha 44 punti ma i tiri in porta ne direbbero 32.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Scunthorpe, ferma a 10 punti contro i 18.3 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Boreham Wood non perde da 15 partite",
+     "titolo": "Boreham Wood non perde da 16 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "15",
+     "numero": "16",
      "campionato": "National League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "national-league",
      "squadre": [
       "Boreham Wood"
      ],
-     "campione": 15,
+     "campione": 16,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Gateshead non vince da 12 partite",
+     "titolo": "Gateshead non vince da 13 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "12",
+     "numero": "13",
      "campionato": "National League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "national-league",
      "squadre": [
       "Gateshead"
      ],
-     "campione": 12,
+     "campione": 13,
      "collegamento": ""
     },
     {
@@ -2358,17 +2396,31 @@
      "collegamento": ""
     },
     {
+     "tipo": "primo_tempo",
+     "titolo": "Boston Utd decide presto",
+     "testo": "12 dei suoi 21 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+     "numero": "57%",
+     "campionato": "National League",
+     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+     "slug": "national-league",
+     "squadre": [
+      "Boston Utd"
+     ],
+     "campione": 21,
+     "collegamento": ""
+    },
+    {
      "tipo": "ripresa",
      "titolo": "Barrow vive di secondi tempi",
-     "testo": "Solo 6 dei suoi 25 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "76%",
+     "testo": "Solo 6 dei suoi 26 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "77%",
      "campionato": "National League",
      "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
      "slug": "national-league",
      "squadre": [
       "Barrow"
      ],
-     "campione": 25,
+     "campione": 26,
      "collegamento": ""
     },
     {
@@ -2462,14 +2514,14 @@
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 1 gol in 1 partite, 1.0 a incontro."
+      "Nella 12ª giornata sono stati segnati 10 gol in 4 partite, 2.5 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Castellon con 26 punti in 11 partite.",
-      "Almeria ha 25 punti ma i tiri in porta ne direbbero 16.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "Almeria ha 26 punti ma i tiri in porta ne direbbero 17.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Ceuta, ferma a 5 punti contro i 14.3 attesi dal gioco."
      ]
     }
@@ -2477,16 +2529,16 @@
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Almeria non perde da 8 partite",
+     "titolo": "Almeria non perde da 9 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "8",
+     "numero": "9",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
      "squadre": [
       "Almeria"
      ],
-     "campione": 8,
+     "campione": 9,
      "collegamento": ""
     },
     {
@@ -2611,15 +2663,15 @@
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
-     "data": "2026-10-12",
-     "casa": "Burgos",
-     "ospite": "Granada",
-     "gol_casa": 0,
+     "data": "2026-10-31",
+     "casa": "Albacete",
+     "ospite": "Sabadell",
+     "gol_casa": 2,
      "gol_ospite": 1,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 3,
-     "vincitore": "Granada",
-     "perdente": "Burgos",
+     "in_porta_casa": 2,
+     "in_porta_ospite": 5,
+     "vincitore": "Albacete",
+     "perdente": "Sabadell",
      "scarto_tiri": 3
     }
    ],
@@ -2636,7 +2688,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 14 gol in 5 partite, 2.8 a incontro.",
+      "Nella 10ª giornata sono stati segnati 17 gol in 6 partite, 2.8 a incontro.",
       "Il risultato più netto è stato Kaiserslautern 0-3 Hertha: Hertha ha vinto con 3 gol di scarto."
      ]
     },
@@ -2767,14 +2819,14 @@
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 15 gol in 6 partite, 2.5 a incontro.",
+      "Nella 11ª giornata sono stati segnati 18 gol in 7 partite, 2.6 a incontro.",
       "Il risultato più netto è stato Annecy 0-3 Montpellier: Montpellier ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è St Etienne con 25 punti in 10 partite.",
+      "In testa c'è St Etienne con 25 punti in 11 partite.",
       "Montpellier ha 24 punti ma i tiri in porta ne direbbero 15.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Nantes, ferma a 9 punti contro i 15.7 attesi dal gioco."
      ]
@@ -2927,32 +2979,32 @@
     {
      "titolo": "La 13ª giornata",
      "righe": [
-      "Nella 13ª giornata sono stati segnati 7 gol in 2 partite, 3.5 a incontro.",
+      "Nella 13ª giornata sono stati segnati 23 gol in 5 partite, 4.6 a incontro.",
       "Il risultato più netto è stato Arbroath 0-4 Raith Rvs: Raith Rvs ha vinto con 4 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Partick con 25 punti in 12 partite.",
+      "In testa c'è Partick con 25 punti in 13 partite.",
       "Stenhousemuir ha 23 punti ma i tiri in porta ne direbbero 14.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Morton, ferma a 7 punti contro i 11.5 attesi dal gioco."
+      "All'opposto Inverness C, ferma a 19 punti contro i 23.9 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Dunfermline non perde da 9 partite",
+     "titolo": "Dunfermline non perde da 10 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "9",
+     "numero": "10",
      "campionato": "Championship scozzese",
      "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
      "slug": "championship-scozia",
      "squadre": [
       "Dunfermline"
      ],
-     "campione": 9,
+     "campione": 10,
      "collegamento": ""
     },
     {
@@ -3000,15 +3052,15 @@
     {
      "tipo": "primo_tempo",
      "titolo": "Inverness C decide presto",
-     "testo": "33 dei suoi 57 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-     "numero": "58%",
+     "testo": "33 dei suoi 58 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+     "numero": "57%",
      "campionato": "Championship scozzese",
      "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
      "slug": "championship-scozia",
      "squadre": [
       "Inverness C"
      ],
-     "campione": 57,
+     "campione": 58,
      "collegamento": ""
     },
     {
