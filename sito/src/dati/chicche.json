@@ -46,7 +46,7 @@
    "bandiera": "🇮🇹",
    "slug": "serie-b",
    "squadre": [],
-   "campione": 1235,
+   "campione": 1238,
    "collegamento": ""
   },
   {
@@ -58,7 +58,7 @@
    "bandiera": "🇬🇷",
    "slug": "super-league-grecia",
    "squadre": [],
-   "campione": 764,
+   "campione": 765,
    "collegamento": ""
   },
   {
@@ -70,7 +70,7 @@
    "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
    "slug": "premiership",
    "squadre": [],
-   "campione": 752,
+   "campione": 753,
    "collegamento": ""
   }
  ],
@@ -102,6 +102,20 @@
      "Udinese"
     ],
     "campione": 8,
+    "collegamento": ""
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Venezia non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Serie A",
+    "bandiera": "🇮🇹",
+    "slug": "serie-a",
+    "squadre": [
+     "Venezia"
+    ],
+    "campione": 3,
     "collegamento": ""
    },
    {
@@ -587,6 +601,20 @@
     "collegamento": ""
    },
    {
+    "tipo": "a_secco",
+    "titolo": "Excelsior non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Eredivisie",
+    "bandiera": "🇳🇱",
+    "slug": "eredivisie",
+    "squadre": [
+     "Excelsior"
+    ],
+    "campione": 3,
+    "collegamento": ""
+   },
+   {
     "tipo": "rimonte",
     "titolo": "PSV Eindhoven non molla all'intervallo",
     "testo": "Sotto al riposo 16 volte nelle ultime stagioni, ha finito vincendo 7: è la quota di rimonte più alta del campionato.",
@@ -736,44 +764,30 @@
   "superlig": [
    {
     "tipo": "imbattuta",
-    "titolo": "Amedspor non perde da 7 partite",
+    "titolo": "Amedspor non perde da 8 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
      "Amedspor"
     ],
-    "campione": 7,
+    "campione": 8,
     "collegamento": ""
    },
    {
     "tipo": "digiuno",
-    "titolo": "Samsunspor non vince da 7 partite",
+    "titolo": "Samsunspor non vince da 8 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "7",
+    "numero": "8",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
      "Samsunspor"
     ],
-    "campione": 7,
-    "collegamento": ""
-   },
-   {
-    "tipo": "a_secco",
-    "titolo": "Eyupspor non segna da 6 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "6",
-    "campionato": "Süper Lig",
-    "bandiera": "🇹🇷",
-    "slug": "superlig",
-    "squadre": [
-     "Eyupspor"
-    ],
-    "campione": 6,
+    "campione": 8,
     "collegamento": ""
    },
    {
@@ -807,15 +821,15 @@
    {
     "tipo": "ripresa",
     "titolo": "Amedspor vive di secondi tempi",
-    "testo": "Solo 5 dei suoi 20 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-    "numero": "75%",
+    "testo": "Solo 5 dei suoi 25 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+    "numero": "80%",
     "campionato": "Süper Lig",
     "bandiera": "🇹🇷",
     "slug": "superlig",
     "squadre": [
      "Amedspor"
     ],
-    "campione": 20,
+    "campione": 25,
     "collegamento": ""
    },
    {
@@ -862,20 +876,6 @@
      "St. Gilloise"
     ],
     "campione": 10,
-    "collegamento": ""
-   },
-   {
-    "tipo": "digiuno",
-    "titolo": "Cercle Brugge non vince da 9 partite",
-    "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "9",
-    "campionato": "Pro League",
-    "bandiera": "🇧🇪",
-    "slug": "jupiler",
-    "squadre": [
-     "Cercle Brugge"
-    ],
-    "campione": 9,
     "collegamento": ""
    },
    {
@@ -968,16 +968,16 @@
    },
    {
     "tipo": "a_secco",
-    "titolo": "Levadeiakos non segna da 8 partite",
+    "titolo": "Panetolikos non segna da 3 partite",
     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "8",
+    "numero": "3",
     "campionato": "Super League",
     "bandiera": "🇬🇷",
     "slug": "super-league-grecia",
     "squadre": [
-     "Levadeiakos"
+     "Panetolikos"
     ],
-    "campione": 8,
+    "campione": 3,
     "collegamento": ""
    },
    {
@@ -1158,16 +1158,16 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Empoli non vince da 6 partite",
+    "titolo": "Empoli non vince da 7 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "6",
+    "numero": "7",
     "campionato": "Serie B",
     "bandiera": "🇮🇹",
     "slug": "serie-b",
     "squadre": [
      "Empoli"
     ],
-    "campione": 6,
+    "campione": 7,
     "collegamento": ""
    },
    {
@@ -1771,15 +1771,15 @@
    {
     "tipo": "primo_tempo",
     "titolo": "Dresden decide presto",
-    "testo": "39 dei suoi 65 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-    "numero": "60%",
+    "testo": "39 dei suoi 66 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+    "numero": "59%",
     "campionato": "2. Bundesliga",
     "bandiera": "🇩🇪",
     "slug": "bundesliga-2",
     "squadre": [
      "Dresden"
     ],
-    "campione": 65,
+    "campione": 66,
     "collegamento": ""
    },
    {

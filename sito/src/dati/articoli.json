@@ -7,21 +7,21 @@
    "bandiera": "🇮🇹",
    "paese": "Italia",
    "titolo": "Serie A: cosa dicono i numeri",
-   "sommario": "Lazio in testa con 25 punti, 10ª giornata archiviata.",
+   "sommario": "Lazio in testa con 28 punti, 10ª giornata archiviata.",
    "sezioni": [
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 14 gol in 3 partite, 4.7 a incontro.",
+      "Nella 10ª giornata sono stati segnati 20 gol in 6 partite, 3.3 a incontro.",
       "Il risultato più netto è stato Udinese 2-5 Roma: Roma ha vinto con 3 gol di scarto."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Lazio con 25 punti in 9 partite.",
-      "Lazio ha 25 punti ma i tiri in porta ne direbbero 13.1: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Venezia, ferma a 3 punti contro i 10.1 attesi dal gioco."
+      "In testa c'è Lazio con 28 punti in 10 partite.",
+      "Lazio ha 28 punti ma i tiri in porta ne direbbero 14.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Venezia, ferma a 3 punti contro i 10.7 attesi dal gioco."
      ]
     }
    ],
@@ -52,6 +52,20 @@
       "Udinese"
      ],
      "campione": 8,
+     "collegamento": ""
+    },
+    {
+     "tipo": "a_secco",
+     "titolo": "Venezia non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+     "numero": "3",
+     "campionato": "Serie A",
+     "bandiera": "🇮🇹",
+     "slug": "serie-a",
+     "squadre": [
+      "Venezia"
+     ],
+     "campione": 3,
      "collegamento": ""
     },
     {
@@ -361,7 +375,7 @@
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 16 gol in 5 partite, 3.2 a incontro.",
+      "Nella 11ª giornata sono stati segnati 23 gol in 7 partite, 3.3 a incontro.",
       "Il risultato più netto è stato Barcelona 6-1 Alaves: Barcelona ha vinto con 5 gol di scarto."
      ]
     },
@@ -507,7 +521,7 @@
     {
      "titolo": "La 8ª giornata",
      "righe": [
-      "Nella 8ª giornata sono stati segnati 22 gol in 7 partite, 3.1 a incontro.",
+      "Nella 8ª giornata sono stati segnati 24 gol in 8 partite, 3.0 a incontro.",
       "Il risultato più netto è stato Elversberg 4-1 Mainz: Elversberg ha vinto con 3 gol di scarto."
      ]
     },
@@ -667,7 +681,7 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 16 gol in 4 partite, 4.0 a incontro.",
+      "Nella 9ª giornata sono stati segnati 22 gol in 5 partite, 4.4 a incontro.",
       "Il risultato più netto è stato Le Havre 1-5 Paris SG: Paris SG ha vinto con 4 gol di scarto."
      ]
     },
@@ -813,8 +827,8 @@
     {
      "titolo": "La 11ª giornata",
      "righe": [
-      "Nella 11ª giornata sono stati segnati 15 gol in 5 partite, 3.0 a incontro.",
-      "Il risultato più netto è stato PSV Eindhoven 7-0 Willem II: PSV Eindhoven ha vinto con 7 gol di scarto."
+      "Nella 11ª giornata sono stati segnati 36 gol in 9 partite, 4.0 a incontro.",
+      "Il risultato più netto è stato Excelsior 0-9 Twente: Twente ha vinto con 9 gol di scarto."
      ]
     },
     {
@@ -853,6 +867,20 @@
       "Willem II"
      ],
      "campione": 11,
+     "collegamento": ""
+    },
+    {
+     "tipo": "a_secco",
+     "titolo": "Excelsior non segna da 3 partite",
+     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+     "numero": "3",
+     "campionato": "Eredivisie",
+     "bandiera": "🇳🇱",
+     "slug": "eredivisie",
+     "squadre": [
+      "Excelsior"
+     ],
+     "campione": 3,
      "collegamento": ""
     },
     {
@@ -919,6 +947,21 @@
      "campionato": "Eredivisie",
      "bandiera": "🇳🇱",
      "slug": "eredivisie",
+     "data": "2026-11-01",
+     "casa": "Groningen",
+     "ospite": "Sparta Rotterdam",
+     "gol_casa": 2,
+     "gol_ospite": 3,
+     "in_porta_casa": 10,
+     "in_porta_ospite": 4,
+     "vincitore": "Sparta Rotterdam",
+     "perdente": "Groningen",
+     "scarto_tiri": 6
+    },
+    {
+     "campionato": "Eredivisie",
+     "bandiera": "🇳🇱",
+     "slug": "eredivisie",
      "data": "2026-10-31",
      "casa": "Ajax",
      "ospite": "AZ Alkmaar",
@@ -959,7 +1002,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 9 gol in 3 partite, 3.0 a incontro.",
+      "Nella 10ª giornata sono stati segnati 10 gol in 4 partite, 2.5 a incontro.",
       "Il risultato più netto è stato Porto 4-0 Estoril: Porto ha vinto con 4 gol di scarto."
      ]
     },
@@ -1120,7 +1163,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 11 gol in 4 partite, 2.8 a incontro.",
+      "Nella 10ª giornata sono stati segnati 26 gol in 7 partite, 3.7 a incontro.",
       "Il risultato più netto è stato Konyaspor 0-4 Galatasaray: Galatasaray ha vinto con 4 gol di scarto."
      ]
     },
@@ -1128,52 +1171,38 @@
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Galatasaray con 25 punti in 10 partite.",
-      "Amedspor ha 20 punti ma i tiri in porta ne direbbero 15.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Eyupspor, ferma a 3 punti contro i 9.7 attesi dal gioco."
+      "Trabzonspor ha 22 punti ma i tiri in porta ne direbbero 16.2: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Eyupspor, ferma a 3 punti contro i 10.2 attesi dal gioco."
      ]
     }
    ],
    "chicche": [
     {
      "tipo": "imbattuta",
-     "titolo": "Amedspor non perde da 7 partite",
+     "titolo": "Amedspor non perde da 8 partite",
      "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
      "slug": "superlig",
      "squadre": [
       "Amedspor"
      ],
-     "campione": 7,
+     "campione": 8,
      "collegamento": ""
     },
     {
      "tipo": "digiuno",
-     "titolo": "Samsunspor non vince da 7 partite",
+     "titolo": "Samsunspor non vince da 8 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "7",
+     "numero": "8",
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
      "slug": "superlig",
      "squadre": [
       "Samsunspor"
      ],
-     "campione": 7,
-     "collegamento": ""
-    },
-    {
-     "tipo": "a_secco",
-     "titolo": "Eyupspor non segna da 6 partite",
-     "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "6",
-     "campionato": "Süper Lig",
-     "bandiera": "🇹🇷",
-     "slug": "superlig",
-     "squadre": [
-      "Eyupspor"
-     ],
-     "campione": 6,
+     "campione": 8,
      "collegamento": ""
     },
     {
@@ -1207,15 +1236,15 @@
     {
      "tipo": "ripresa",
      "titolo": "Amedspor vive di secondi tempi",
-     "testo": "Solo 5 dei suoi 20 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
-     "numero": "75%",
+     "testo": "Solo 5 dei suoi 25 gol arrivano nel primo tempo: il resto dopo l'intervallo.",
+     "numero": "80%",
      "campionato": "Süper Lig",
      "bandiera": "🇹🇷",
      "slug": "superlig",
      "squadre": [
       "Amedspor"
      ],
-     "campione": 20,
+     "campione": 25,
      "collegamento": ""
     },
     {
@@ -1279,7 +1308,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 17 gol in 5 partite, 3.4 a incontro.",
+      "Nella 10ª giornata sono stati segnati 23 gol in 7 partite, 3.3 a incontro.",
       "Il risultato più netto è stato Anderlecht 4-1 Westerlo: Anderlecht ha vinto con 3 gol di scarto."
      ]
     },
@@ -1288,7 +1317,7 @@
      "righe": [
       "In testa c'è Club Brugge con 27 punti in 10 partite.",
       "Gent ha 25 punti ma i tiri in porta ne direbbero 15.7: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Cercle Brugge, ferma a 3 punti contro i 10.1 attesi dal gioco."
+      "All'opposto Cercle Brugge, ferma a 6 punti contro i 11.7 attesi dal gioco."
      ]
     }
    ],
@@ -1305,20 +1334,6 @@
       "St. Gilloise"
      ],
      "campione": 10,
-     "collegamento": ""
-    },
-    {
-     "tipo": "digiuno",
-     "titolo": "Cercle Brugge non vince da 9 partite",
-     "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "9",
-     "campionato": "Pro League",
-     "bandiera": "🇧🇪",
-     "slug": "jupiler",
-     "squadre": [
-      "Cercle Brugge"
-     ],
-     "campione": 9,
      "collegamento": ""
     },
     {
@@ -1400,6 +1415,21 @@
      "campionato": "Pro League",
      "bandiera": "🇧🇪",
      "slug": "jupiler",
+     "data": "2026-11-01",
+     "casa": "St Truiden",
+     "ospite": "Oud-Heverlee Leuven",
+     "gol_casa": 1,
+     "gol_ospite": 2,
+     "in_porta_casa": 7,
+     "in_porta_ospite": 4,
+     "vincitore": "Oud-Heverlee Leuven",
+     "perdente": "St Truiden",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "Pro League",
+     "bandiera": "🇧🇪",
+     "slug": "jupiler",
      "data": "2026-10-24",
      "casa": "Antwerp",
      "ospite": "Charleroi",
@@ -1425,7 +1455,8 @@
     {
      "titolo": "La 9ª giornata",
      "righe": [
-      "Nella 9ª giornata sono stati segnati 5 gol in 1 partite, 5.0 a incontro."
+      "Nella 9ª giornata sono stati segnati 8 gol in 2 partite, 4.0 a incontro.",
+      "Il risultato più netto è stato Levadeiakos 3-0 Aris: Levadeiakos ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -1433,7 +1464,7 @@
      "righe": [
       "In testa c'è Olympiakos con 22 punti in 9 partite.",
       "Olympiakos ha 22 punti ma i tiri in porta ne direbbero 16.8: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Levadeiakos, ferma a 3 punti contro i 8.8 attesi dal gioco."
+      "All'opposto Asteras Tripolis, ferma a 6 punti contro i 11.3 attesi dal gioco."
      ]
     }
    ],
@@ -1468,16 +1499,16 @@
     },
     {
      "tipo": "a_secco",
-     "titolo": "Levadeiakos non segna da 8 partite",
+     "titolo": "Panetolikos non segna da 3 partite",
      "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-     "numero": "8",
+     "numero": "3",
      "campionato": "Super League",
      "bandiera": "🇬🇷",
      "slug": "super-league-grecia",
      "squadre": [
-      "Levadeiakos"
+      "Panetolikos"
      ],
-     "campione": 8,
+     "campione": 3,
      "collegamento": ""
     },
     {
@@ -1598,14 +1629,14 @@
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 5 gol in 2 partite, 2.5 a incontro."
+      "Nella 12ª giornata sono stati segnati 7 gol in 3 partite, 2.3 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
-      "In testa c'è Celtic con 28 punti in 11 partite.",
-      "Celtic ha 28 punti ma i tiri in porta ne direbbero 23.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "In testa c'è Celtic con 28 punti in 12 partite.",
+      "Falkirk ha 18 punti ma i tiri in porta ne direbbero 12.9: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
       "All'opposto Motherwell, ferma a 12 punti contro i 16.6 attesi dal gioco."
      ]
     }
@@ -1703,6 +1734,21 @@
      "campionato": "Premiership",
      "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
      "slug": "premiership",
+     "data": "2026-11-01",
+     "casa": "Falkirk",
+     "ospite": "Celtic",
+     "gol_casa": 2,
+     "gol_ospite": 0,
+     "in_porta_casa": 2,
+     "in_porta_ospite": 9,
+     "vincitore": "Falkirk",
+     "perdente": "Celtic",
+     "scarto_tiri": 7
+    },
+    {
+     "campionato": "Premiership",
+     "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+     "slug": "premiership",
      "data": "2026-10-11",
      "casa": "Aberdeen",
      "ospite": "St Johnstone",
@@ -1728,7 +1774,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 10 gol in 5 partite, 2.0 a incontro."
+      "Nella 10ª giornata sono stati segnati 16 gol in 8 partite, 2.0 a incontro."
      ]
     },
     {
@@ -1757,16 +1803,16 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Empoli non vince da 6 partite",
+     "titolo": "Empoli non vince da 7 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
-     "numero": "6",
+     "numero": "7",
      "campionato": "Serie B",
      "bandiera": "🇮🇹",
      "slug": "serie-b",
      "squadre": [
       "Empoli"
      ],
-     "campione": 6,
+     "campione": 7,
      "collegamento": ""
     },
     {
@@ -2514,15 +2560,15 @@
     {
      "titolo": "La 12ª giornata",
      "righe": [
-      "Nella 12ª giornata sono stati segnati 10 gol in 4 partite, 2.5 a incontro."
+      "Nella 12ª giornata sono stati segnati 14 gol in 6 partite, 2.3 a incontro."
      ]
     },
     {
      "titolo": "La classifica, e quella del gioco",
      "righe": [
       "In testa c'è Castellon con 26 punti in 11 partite.",
-      "Almeria ha 26 punti ma i tiri in porta ne direbbero 17.4: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Ceuta, ferma a 5 punti contro i 14.3 attesi dal gioco."
+      "Granada ha 23 punti ma i tiri in porta ne direbbero 14.3: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
+      "All'opposto Ceuta, ferma a 5 punti contro i 15.2 attesi dal gioco."
      ]
     }
    ],
@@ -2663,15 +2709,15 @@
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
-     "data": "2026-10-31",
-     "casa": "Albacete",
-     "ospite": "Sabadell",
-     "gol_casa": 2,
-     "gol_ospite": 1,
-     "in_porta_casa": 2,
-     "in_porta_ospite": 5,
-     "vincitore": "Albacete",
-     "perdente": "Sabadell",
+     "data": "2026-11-01",
+     "casa": "Eldense",
+     "ospite": "Granada",
+     "gol_casa": 0,
+     "gol_ospite": 2,
+     "in_porta_casa": 6,
+     "in_porta_ospite": 3,
+     "vincitore": "Granada",
+     "perdente": "Eldense",
      "scarto_tiri": 3
     }
    ],
@@ -2688,7 +2734,7 @@
     {
      "titolo": "La 10ª giornata",
      "righe": [
-      "Nella 10ª giornata sono stati segnati 17 gol in 6 partite, 2.8 a incontro.",
+      "Nella 10ª giornata sono stati segnati 25 gol in 9 partite, 2.8 a incontro.",
       "Il risultato più netto è stato Kaiserslautern 0-3 Hertha: Hertha ha vinto con 3 gol di scarto."
      ]
     },
@@ -2747,15 +2793,15 @@
     {
      "tipo": "primo_tempo",
      "titolo": "Dresden decide presto",
-     "testo": "39 dei suoi 65 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
-     "numero": "60%",
+     "testo": "39 dei suoi 66 gol delle ultime stagioni arrivano prima dell'intervallo: è la squadra più sbilanciata sul primo tempo del campionato.",
+     "numero": "59%",
      "campionato": "2. Bundesliga",
      "bandiera": "🇩🇪",
      "slug": "bundesliga-2",
      "squadre": [
       "Dresden"
      ],
-     "campione": 65,
+     "campione": 66,
      "collegamento": ""
     },
     {
@@ -2820,7 +2866,7 @@
      "titolo": "La 11ª giornata",
      "righe": [
       "Nella 11ª giornata sono stati segnati 18 gol in 7 partite, 2.6 a incontro.",
-      "Il risultato più netto è stato Annecy 0-3 Montpellier: Montpellier ha vinto con 3 gol di scarto."
+      "Il risultato più netto è stato Guingamp 3-0 St Etienne: Guingamp ha vinto con 3 gol di scarto."
      ]
     },
     {
@@ -2980,7 +3026,7 @@
      "titolo": "La 13ª giornata",
      "righe": [
       "Nella 13ª giornata sono stati segnati 23 gol in 5 partite, 4.6 a incontro.",
-      "Il risultato più netto è stato Arbroath 0-4 Raith Rvs: Raith Rvs ha vinto con 4 gol di scarto."
+      "Il risultato più netto è stato Dunfermline 5-1 Inverness C: Dunfermline ha vinto con 4 gol di scarto."
      ]
     },
     {

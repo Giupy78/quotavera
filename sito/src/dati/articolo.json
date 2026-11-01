@@ -1,8 +1,23 @@
 {
  "data": "2026-11-01",
- "partite_in_programma": 235,
+ "partite_in_programma": 207,
  "campionati": 22,
  "sorprese": [
+  {
+   "campionato": "Premiership",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "slug": "premiership",
+   "data": "2026-11-01",
+   "casa": "Falkirk",
+   "ospite": "Celtic",
+   "gol_casa": 2,
+   "gol_ospite": 0,
+   "in_porta_casa": 2,
+   "in_porta_ospite": 9,
+   "vincitore": "Falkirk",
+   "perdente": "Celtic",
+   "scarto_tiri": 7
+  },
   {
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
@@ -34,6 +49,21 @@
    "scarto_tiri": 6
   },
   {
+   "campionato": "Eredivisie",
+   "bandiera": "🇳🇱",
+   "slug": "eredivisie",
+   "data": "2026-11-01",
+   "casa": "Groningen",
+   "ospite": "Sparta Rotterdam",
+   "gol_casa": 2,
+   "gol_ospite": 3,
+   "in_porta_casa": 10,
+   "in_porta_ospite": 4,
+   "vincitore": "Sparta Rotterdam",
+   "perdente": "Groningen",
+   "scarto_tiri": 6
+  },
+  {
    "campionato": "Serie B",
    "bandiera": "🇮🇹",
    "slug": "serie-b",
@@ -62,36 +92,6 @@
    "vincitore": "Reading",
    "perdente": "Leyton Orient",
    "scarto_tiri": 6
-  },
-  {
-   "campionato": "League Two",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "league-two",
-   "data": "2026-10-20",
-   "casa": "Barnet",
-   "ospite": "Swindon",
-   "gol_casa": 1,
-   "gol_ospite": 3,
-   "in_porta_casa": 11,
-   "in_porta_ospite": 5,
-   "vincitore": "Swindon",
-   "perdente": "Barnet",
-   "scarto_tiri": 6
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "data": "2026-10-19",
-   "casa": "Parma",
-   "ospite": "Torino",
-   "gol_casa": 0,
-   "gol_ospite": 3,
-   "in_porta_casa": 8,
-   "in_porta_ospite": 3,
-   "vincitore": "Torino",
-   "perdente": "Parma",
-   "scarto_tiri": 5
   }
  ],
  "segnano_piu_di_quanto_creano": [
@@ -335,8 +335,8 @@
    "gol_subiti": 1.4,
    "gol_totali": 63,
    "in_porta_totali": 145,
-   "attesi_dai_tiri": 46.5,
-   "scarto_conversione": 16.5,
+   "attesi_dai_tiri": 46.6,
+   "scarto_conversione": 16.4,
    "vantaggio_casa": 1.08,
    "casa": {
     "partite": 11,
@@ -938,17 +938,6 @@
    "margine": 0.0031
   },
   {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "lazio-cagliari",
-   "casa": "Lazio",
-   "ospite": "Cagliari",
-   "data": "2026-11-01",
-   "ora": "15:00",
-   "margine": 0.0032
-  },
-  {
    "campionato": "Premier League",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "slug": "premier-league",
@@ -974,12 +963,23 @@
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
-   "id": "union-berlin-fc-koln",
-   "casa": "Union Berlin",
-   "ospite": "FC Koln",
+   "id": "ein-frankfurt-hamburg",
+   "casa": "Ein Frankfurt",
+   "ospite": "Hamburg",
    "data": "2026-11-01",
-   "ora": "15:30",
-   "margine": 0.0074
+   "ora": "17:30",
+   "margine": 0.008
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "juventus-napoli",
+   "casa": "Juventus",
+   "ospite": "Napoli",
+   "data": "2026-11-01",
+   "ora": "20:45",
+   "margine": 0.0084
   }
  ]
 }
