@@ -1,0 +1,343 @@
+---
+import Base from "../../layouts/Base.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import fra from "../../dati/fra_campionati.json";
+import { num, pct, art, nella } from "../../lib/testo";
+
+/* Il secondo articolo con i dati. Stesse regole del primo: stagioni intere,
+   stagione in corso a parte, ogni frase con un numero lo prende dai dati e
+   regge qualunque campionato finisca in testa.
+
+   Il fattore campo e' misurato come scarto fra la quota di partite vinte da
+   chi gioca in casa e quella vinte da chi gioca fuori. In gol la classifica
+   viene quasi uguale; in vittorie si legge senza spiegazioni. */
+
+const righe = [...(fra.campionati as any[])].sort(
+  (a, b) => b.totale.vantaggio - a.totale.vantaggio,
+);
+const N = righe.length;
+const stagioni = fra.stagioni_comuni as string[];
+const inCorso = fra.stagione_in_corso as string;
+
+/* Lo scarto in punti percentuali: 0.195 -> "19,5". */
+const punti = (v: number) => num(v * 100, 1);
+
+const italiani = new Set(["serie-a", "serie-b"]);
+const [primo, secondo, terzo] = righe;
+const ultimo = righe[N - 1];
+const serieA = righe.find((r) => r.slug === "serie-a");
+
+/* Quanto puo' spostarsi lo scarto di una stagione per puro caso: meta'
+   dell'intervallo al 95%. Serve a non presentare come tendenza tre numeri che
+   ballano dentro il rumore. */
+const margine = (t: any) =>
+  1.96 * Math.sqrt((t.vittorie_casa + t.vittorie_ospite - t.vantaggio ** 2) / t.partite);
+
+const stagioniA = serieA ? stagioni.map((s) => serieA.per_stagione[s]).filter(Boolean) : [];
+const scendeA = stagioniA.length > 2 &&
+  stagioniA.every((t: any, i: number) => i === 0 || t.vantaggio < stagioniA[i - 1].vantaggio);
+const saleA = stagioniA.length > 2 &&
+  stagioniA.every((t: any, i: number) => i === 0 || t.vantaggio > stagioniA[i - 1].vantaggio);
+const margineA = stagioniA.length
+  ? Math.round(Math.max(...stagioniA.map((t: any) => margine(t))) * 100)
+  : 0;
+
+const perGol = [...righe].sort(
+  (a, b) => (b.totale.gol_casa - b.totale.gol_ospite) - (a.totale.gol_casa - a.totale.gol_ospite),
+);
+const scartoGol = (r: any) => r.totale.gol_casa - r.totale.gol_ospite;
+const piuPari = righe.reduce((m, r) => (r.totale.pareggi > m.totale.pareggi ? r : m));
+const menoPari = righe.reduce((m, r) => (r.totale.pareggi < m.totale.pareggi ? r : m));
+const aOggi = serieA?.in_corso ?? null;
+
+const barre = righe.map((r) => ({
+  etichetta: r.nome,
+  bandiera: r.bandiera,
+  href: `/calcio/${r.slug}/`,
+  valore: Math.max(r.totale.vantaggio, 0),
+  testo: punti(r.totale.vantaggio),
+  dettaglio:
+    `${r.nome}: in casa vince il ${pct(r.totale.vittorie_casa)}, fuori il ` +
+    `${pct(r.totale.vittorie_ospite)} (${r.totale.partite.toLocaleString("it-IT")} partite)`,
+  evidenza: italiani.has(r.slug),
+}));
+
+const titolo = "Fattore campo: dove conta di più giocare in casa";
+const descrizione =
+  `Quanto conta giocare in casa in 22 campionati europei, su tre stagioni intere: ` +
+  `vittorie in casa e in trasferta, pareggi, gol, e dove sta la Serie A. Aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/fattore-campo/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Il fattore campo nei campionati europei",
+  description: descrizione,
+  datePublished: "2026-11-02",
+  dateModified: fra.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Fattore campo" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>Il fattore campo nei campionati europei</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Nelle ultime tre stagioni intere, dal {stagioni[0]} al {stagioni[stagioni.length - 1]},
+        il campionato dove giocare in casa conta di più è {art(primo.nome)}<strong>{primo.nome}</strong>:
+        la squadra di casa vince il {pct(primo.totale.vittorie_casa)} delle partite, quella
+        ospite il {pct(primo.totale.vittorie_ospite)}. Seguono {art(secondo.nome)}{secondo.nome}
+        {" "}e {art(terzo.nome)}{terzo.nome}. Dove conta meno è {art(ultimo.nome)}{ultimo.nome}:
+        {" "}{pct(ultimo.totale.vittorie_casa)} contro {pct(ultimo.totale.vittorie_ospite)}.
+      </p>
+      {
+        serieA && (
+          <p>
+            La <strong>Serie A</strong> è {serieA.posizione_campo}ª su {N}: in casa si vince il
+            {" "}{pct(serieA.totale.vittorie_casa)} delle partite, fuori il
+            {" "}{pct(serieA.totale.vittorie_ospite)}, uno scarto di {punti(serieA.totale.vantaggio)} punti.
+            {serieA.posizione_campo > N - 3 &&
+              " È fra i campionati europei dove giocare in casa conta meno."}
+            {serieA.posizione_campo <= 3 &&
+              " È fra i campionati europei dove giocare in casa conta di più."}
+          </p>
+        )
+      }
+    </div>
+
+    <h2 class="sotto-titolo">Vittorie in casa meno vittorie in trasferta</h2>
+    <p class="nota">
+      In punti percentuali, ultime tre stagioni intere. Per esempio, se la squadra di casa vince
+      il 45% delle partite e quella ospite il 30%, lo scarto è di 15 punti. In blu i campionati
+      italiani.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    {
+      serieA && stagioniA.length > 1 && (
+        <>
+          <h2 class="sotto-titolo">Stagione per stagione i numeri ballano</h2>
+          <div class="prosa">
+            <p>
+              In Serie A lo scarto è stato di{" "}
+              {stagioniA.map((t: any, i: number) => (
+                <>
+                  {i > 0 && (i === stagioniA.length - 1 ? " e " : ", ")}
+                  {punti(t.vantaggio)} punti nel {stagioni[i]}
+                </>
+              ))}.
+              {scendeA && " Sembra una discesa."}
+              {saleA && " Sembra una salita."}
+              {" "}Ma una stagione sono {stagioniA[0].partite} partite, e su un campione così lo
+              scarto può spostarsi di circa {margineA} punti in un senso o nell'altro per puro caso.
+              {(scendeA || saleA)
+                ? " Tre numeri così non bastano a parlare di una tendenza."
+                : ""}
+              {" "}È il motivo per cui la classifica qui sopra mette insieme le stagioni: con
+              {" "}{serieA.totale.partite.toLocaleString("it-IT")} partite il margine scende a circa
+              {" "}{Math.round(margine(serieA.totale) * 100)} punti.
+            </p>
+          </div>
+        </>
+      )
+    }
+
+    {
+      aOggi && aOggi.partite > 0 && (
+        <>
+          <h2 class="sotto-titolo">E quest'anno?</h2>
+          <div class="prosa">
+            <p>
+              Nella stagione {inCorso}, dopo {aOggi.partite} partite, in Serie A la squadra di casa
+              vince il {pct(aOggi.vittorie_casa)} delle partite e quella ospite il
+              {" "}{pct(aOggi.vittorie_ospite)}. Su così poche partite il margine di errore è largo:
+              circa {Math.round(margine(aOggi) * 100)} punti.
+            </p>
+          </div>
+        </>
+      )
+    }
+
+    <h2 class="sotto-titolo">In gol, e nei pareggi</h2>
+    <div class="prosa">
+      <p>
+        Misurato in gol il quadro è simile. La squadra di casa segna più di quella ospite
+        soprattutto {nella(perGol[0].nome)}{perGol[0].nome}, con {num(scartoGol(perGol[0]))} gol
+        a partita di differenza, e meno {nella(perGol[N - 1].nome)}{perGol[N - 1].nome}, con
+        {" "}{num(scartoGol(perGol[N - 1]))}.
+        {serieA && <> In Serie A la differenza è di {num(scartoGol(serieA))}.</>}
+      </p>
+      <p>
+        Il pareggio è più frequente {nella(piuPari.nome)}{piuPari.nome}, dove finisce in parità il
+        {" "}{pct(piuPari.totale.pareggi)} delle partite, e più raro
+        {" "}{nella(menoPari.nome)}{menoPari.nome} ({pct(menoPari.totale.pareggi)}). Conta per
+        leggere la classifica qui sopra: dove si pareggia molto, restano meno partite da vincere,
+        in casa e fuori.
+      </p>
+    </div>
+
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Campionato</th>
+            <th class="num">Vince la casa</th>
+            <th class="num">Pareggio</th>
+            <th class="num">Vince l'ospite</th>
+            <th class="num">Scarto</th>
+            <th class="num">Gol in casa</th>
+            <th class="num">Gol fuori</th>
+            <th class="num">Partite</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r, i) => (
+              <tr class:list={{ ita: italiani.has(r.slug) }}>
+                <td class="num mono">{i + 1}</td>
+                <td>
+                  <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
+                </td>
+                <td class="num mono">{pct(r.totale.vittorie_casa)}</td>
+                <td class="num mono">{pct(r.totale.pareggi)}</td>
+                <td class="num mono">{pct(r.totale.vittorie_ospite)}</td>
+                <td class="num mono">{punti(r.totale.vantaggio)}</td>
+                <td class="num mono">{num(r.totale.gol_casa)}</td>
+                <td class="num mono">{num(r.totale.gol_ospite)}</td>
+                <td class="num mono">{r.totale.partite.toLocaleString("it-IT")}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Lo scarto, stagione per stagione</h2>
+    <p class="nota">
+      In punti percentuali. L'ultima colonna è la stagione in corso, con il numero di partite
+      giocate finora.
+    </p>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            {stagioni.map((s) => <th class="num">{s}</th>)}
+            <th class="num">{inCorso}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r) => (
+              <tr class:list={{ ita: italiani.has(r.slug) }}>
+                <td><Bandiera e={r.bandiera} /> {r.nome}</td>
+                {stagioni.map((s) => (
+                  <td class="num mono">
+                    {r.per_stagione[s] ? punti(r.per_stagione[s].vantaggio) : "—"}
+                  </td>
+                ))}
+                <td class="num mono adesso">
+                  {r.in_corso ? (
+                    <>
+                      {punti(r.in_corso.vantaggio)} <small>({r.in_corso.partite})</small>
+                    </>
+                  ) : (
+                    "—"
+                  )}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Il fattore campo, qui, è la differenza fra la quota di partite vinte dalla squadra di casa
+        e quella vinte dalla squadra ospite. Misurarlo in gol, cioè gol segnati in casa meno gol
+        segnati fuori, dà una classifica quasi uguale; in vittorie si legge più facilmente.
+      </p>
+      <p>
+        Le partite sono tutte quelle dei ventidue campionati nelle stagioni {stagioni.join(", ")},
+        come le pubblica football-data.co.uk; per la stagione in corso si aggiungono i risultati
+        che ESPN ha già e football-data non ancora. Si contano solo stagioni intere perché su una
+        stagione sola lo scarto oscilla di diversi punti per caso, come si vede nella tabella qui
+        sopra. La pagina si aggiorna da sola ogni notte.
+      </p>
+    </div>
+
+    <p class="leggi-anche">
+      Leggi anche: <a href="/statistiche/campionati-con-piu-gol/">I campionati con più gol in Europa</a>
+    </p>
+    <p class="torna">
+      <a href="/statistiche/">← Tutte le statistiche fra campionati</a>
+    </p>
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+  td.adesso small {
+    color: var(--ink-3);
+    font-weight: 400;
+  }
+  .leggi-anche {
+    font-size: 14px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 34px;
+  }
+  .torna {
+    font-size: 13px;
+    margin-top: 14px;
+  }
+</style>

@@ -212,3 +212,20 @@ def test_i_gol_delle_chicche_sono_quelli_dell_articolo():
     assert meno.titolo == "E quello dove si segna di meno è LaLiga 2"
     assert "2,00 in meno" in meno.testo             # calcolato, non scritto a mano
     assert piu.collegamento == "/statistiche/campionati-con-piu-gol/"
+
+
+def test_il_fattore_campo_delle_chicche_e_quello_dell_articolo():
+    # "molto" vince piu' spesso in casa in assoluto, ma pareggia poco e perde
+    # spesso fuori: e' "scarto" che ha il fattore campo piu' forte.
+    per_lega = [
+        (Lega("a", "Molto"), _stagione(2025, 1, 0, 60) + _stagione(2025, 0, 1, 60)),
+        (Lega("b", "Scarto"), _stagione(2025, 1, 0, 50) + _stagione(2025, 1, 1, 70)),
+        (Lega("c", "Altro"), _stagione(2025, 1, 1, 120)),
+    ]
+    fuori = {c.tipo: c for c in chicche.confronti(per_lega, stagione_in_corso=2026)}
+    campo = fuori["campo"]
+    assert campo.campionato == "Scarto"
+    assert campo.numero == "42%"          # in grande le vittorie in casa, non lo scarto
+    assert "vince il 42% delle partite, quella ospite il 0%" in campo.testo
+    assert campo.collegamento == "/statistiche/fattore-campo/"
+    assert fuori["pareggi"].collegamento == "/statistiche/fattore-campo/"

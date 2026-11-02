@@ -130,10 +130,17 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     {
       quiFra && (
         <p class="fra-campionati">
-          Gol a partita nelle ultime tre stagioni intere:
-          {" "}<b class="mono">{num(quiFra.totale.gol)}</b>,
-          {" "}{quiFra.posizione_gol}° posto su {fraLeghe.length} campionati.
-          {" "}<a href="/statistiche/campionati-con-piu-gol/">La classifica completa →</a>
+          <span>
+            Nelle ultime tre stagioni intere: <b class="mono">{num(quiFra.totale.gol)}</b> gol a
+            partita, {quiFra.posizione_gol}° posto su {fraLeghe.length} campionati.
+            {" "}<a href="/statistiche/campionati-con-piu-gol/">La classifica dei gol →</a>
+          </span>
+          <span>
+            In casa si vince il <b class="mono">{pct(quiFra.totale.vittorie_casa)}</b> delle partite,
+            fuori il <b class="mono">{pct(quiFra.totale.vittorie_ospite)}</b>:
+            {" "}{quiFra.posizione_campo}° posto per fattore campo.
+            {" "}<a href="/statistiche/fattore-campo/">La classifica del fattore campo →</a>
+          </span>
         </p>
       )
     }
@@ -635,6 +642,12 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     font-size: 13px;
     color: var(--ink-2);
     margin: 14px 0 0;
+  }
+  .fra-campionati span {
+    display: block;
+  }
+  .fra-campionati span + span {
+    margin-top: 4px;
   }
   /* Il nome della squadra porta alla sua pagina. Dentro una tabella di numeri
      un link blu e sottolineato griderebbe su ogni riga: resta del colore del

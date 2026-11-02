@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Bandiera from "../../components/Bandiera.astro";
 import ClassificaBarre from "../../components/ClassificaBarre.astro";
 import fra from "../../dati/fra_campionati.json";
+import { num, pct, art, nella } from "../../lib/testo";
 
 /* Il primo degli articoli con i dati. Il testo e' scritto qui, ma ogni frase
    che contiene un numero lo prende da `fra_campionati.json`, che il lavoro
@@ -18,18 +19,6 @@ const N = righe.length;
 const stagioni = fra.stagioni_comuni as string[];
 const inCorso = fra.stagione_in_corso as string;
 
-const num = (v: number, d = 2) =>
-  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
-const pct = (v: number) => `${Math.round(v * 100)}%`;
-
-/* L'articolo davanti al nome del campionato: tutti femminili ("la Serie A",
-   "la Premier League"), con l'apostrofo davanti a vocale ("l'Eredivisie"), e
-   niente davanti a LaLiga, che l'articolo ce l'ha gia' nel nome. Stessa
-   regola di `con_articolo` in `engine/chicche.py`. */
-const art = (nome: string) =>
-  nome.startsWith("La") ? "" : /^[aeiouAEIOU]/.test(nome) ? "l'" : "la ";
-const nella = (nome: string) =>
-  nome.startsWith("La") ? "in " : /^[aeiouAEIOU]/.test(nome) ? "nell'" : "nella ";
 
 const italiani = new Set(["serie-a", "serie-b"]);
 const primo = righe[0];
@@ -287,6 +276,9 @@ const briciole = {
       </p>
     </div>
 
+    <p class="leggi-anche">
+      Leggi anche: <a href="/statistiche/fattore-campo/">Il fattore campo nei campionati europei</a>
+    </p>
     <p class="torna">
       <a href="/statistiche/">← Tutte le statistiche fra campionati</a>
     </p>
@@ -321,8 +313,14 @@ const briciole = {
     color: var(--ink-3);
     font-weight: 400;
   }
+  .leggi-anche {
+    font-size: 14px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 34px;
+  }
   .torna {
     font-size: 13px;
-    margin-top: 34px;
+    margin-top: 14px;
   }
 </style>

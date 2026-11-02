@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import fra from "../../dati/fra_campionati.json";
+import { num, pct, art, nella } from "../../lib/testo";
 
 /* L'indice degli articoli con i dati. Oggi ce n'e' uno; la sezione esiste lo
    stesso perche' l'indirizzo dell'articolo la nomina, e chi accorcia l'URL
@@ -9,12 +10,9 @@ import fra from "../../dati/fra_campionati.json";
    niente che la pagina non dica. */
 
 const righe = fra.campionati as any[];
-const num = (v: number, d = 2) =>
-  v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
-const art = (nome: string) =>
-  nome.startsWith("La") ? "" : /^[aeiouAEIOU]/.test(nome) ? "l'" : "la ";
 const primo = righe[0];
 const serieA = righe.find((r) => r.slug === "serie-a");
+const primoCampo = [...righe].sort((a, b) => b.totale.vantaggio - a.totale.vantaggio)[0];
 
 const articoli = [
   {
@@ -23,6 +21,15 @@ const articoli = [
     sintesi:
       `In testa ${art(primo.nome)}${primo.nome} con ${num(primo.totale.gol)} gol a partita` +
       (serieA ? `; la Serie A è ${serieA.posizione_gol}ª su ${righe.length}.` : "."),
+  },
+  {
+    href: "/statistiche/fattore-campo/",
+    titolo: "Il fattore campo nei campionati europei",
+    sintesi:
+      `Conta di più ${nella(primoCampo.nome)}${primoCampo.nome}, dove la squadra di casa vince il ` +
+      `${pct(primoCampo.totale.vittorie_casa)} ` +
+      `delle partite` +
+      (serieA ? `; la Serie A è ${serieA.posizione_campo}ª su ${righe.length}.` : "."),
   },
 ];
 ---

@@ -90,3 +90,21 @@ def test_le_posizioni_seguono_i_gol():
          (Lega("tanto"), stagione(2025, [(3, 2)] * 120))],
         stagione_in_corso=2026)
     assert [(r["slug"], r["posizione_gol"]) for r in out["campionati"]] == [("tanto", 1), ("poco", 2)]
+
+
+def test_il_vantaggio_e_vittorie_in_casa_meno_vittorie_fuori():
+    m = fc.conta([partita(2, 0, date(2025, 9, 1)), partita(1, 1, date(2025, 9, 2)),
+                  partita(0, 1, date(2025, 9, 3)), partita(3, 1, date(2025, 9, 4))])
+    assert m["vittorie_casa"] == 0.5 and m["vittorie_ospite"] == 0.25
+    assert m["vantaggio"] == 0.25
+
+
+def test_la_classifica_del_fattore_campo_e_indipendente_da_quella_dei_gol():
+    # "gol" segna tanto ma vince spesso fuori; "casa" segna poco ma vince in casa.
+    out = fc.per_campionato(
+        [(Lega("gol"), stagione(2025, [(2, 3)] * 120)),
+         (Lega("casa"), stagione(2025, [(1, 0)] * 120))],
+        stagione_in_corso=2026)
+    per = {r["slug"]: r for r in out["campionati"]}
+    assert per["gol"]["posizione_gol"] == 1 and per["gol"]["posizione_campo"] == 2
+    assert per["casa"]["posizione_gol"] == 2 and per["casa"]["posizione_campo"] == 1

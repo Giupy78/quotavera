@@ -65,6 +65,11 @@ def conta(partite: list) -> dict | None:
         "vittorie_casa": quota(lambda c, o: c > o),
         "pareggi": quota(lambda c, o: c == o),
         "vittorie_ospite": quota(lambda c, o: c < o),
+        # Il fattore campo: quante volte vince chi gioca in casa, meno quante
+        # volte vince chi gioca fuori. Si poteva misurare in gol, e la
+        # classifica viene quasi uguale; in vittorie si legge senza spiegazioni.
+        "vantaggio": round((sum(1 for c, o in zip(casa, fuori) if c > o)
+                            - sum(1 for c, o in zip(casa, fuori) if c < o)) / n, 4),
     }
 
 
@@ -99,6 +104,10 @@ def per_campionato(per_lega: list[tuple], stagione_in_corso: int) -> dict:
             "in_corso": conta(divise.get(stagione_in_corso, [])),
         })
 
+    # Due classifiche sugli stessi dati: l'ordine della lista e' quello dei gol,
+    # la posizione per il fattore campo sta in un campo a parte.
+    for i, r in enumerate(sorted(righe, key=lambda r: -r["totale"]["vantaggio"]), start=1):
+        r["posizione_campo"] = i
     righe.sort(key=lambda r: -r["totale"]["gol"])
     for i, r in enumerate(righe, start=1):
         r["posizione_gol"] = i

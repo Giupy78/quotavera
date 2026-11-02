@@ -374,10 +374,20 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
         for r in righe:
             t = per_slug[r["c"].slug]["totale"]
             r["gol"], r["n_gol"] = t["gol"], t["partite"]
+            # Anche vittorie e pareggi come negli articoli: il fattore campo si
+            # misura come scarto fra vittorie in casa e fuori, non con le sole
+            # vittorie in casa, che dipendono anche da quanto si pareggia.
+            r["casa"], r["pari"] = t["vittorie_casa"], t["pareggi"]
+            r["fuori"], r["vantaggio"] = t["vittorie_ospite"], t["vantaggio"]
 
-    def estremo(chiave, massimo, tipo, titolo, testo, formato, collegamento="", **altro):
+    def estremo(chiave, massimo, tipo, titolo, testo, formato, collegamento="",
+                mostra=None, **altro):
+        """`chiave` decide chi e' in testa, `mostra` quale numero va in grande.
+        Di solito coincidono; per il fattore campo no: si sceglie con lo
+        scarto, ma in grande va la percentuale di vittorie in casa, che e' il
+        primo numero che il testo spiega."""
         r = (max if massimo else min)(righe, key=lambda x: x[chiave])
-        v = r[chiave]
+        v = r[mostra or chiave]
         nome = r["c"].nome
         return Chicca(
             tipo=tipo,
@@ -385,7 +395,7 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
             testo=testo.format(v=formato(v), c=nome, **altro),
             numero=formato(v),
             campionato=nome, bandiera=r["c"].bandiera, slug=r["c"].slug,
-            campione=r.get("n_gol", r["n"]) if chiave == "gol" else r["n"],
+            campione=r.get("n_gol", r["n"]) if quante else r["n"],
             collegamento=collegamento,
         )
 
@@ -406,6 +416,12 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
               "nell'ultima stagione intera" if quante == 1 else
               "contando tutte le gare delle ultime stagioni")
     articolo = "/statistiche/campionati-con-piu-gol/" if quante else ""
+    campo = "/statistiche/fattore-campo/" if quante else ""
+    # Il campionato dove giocare in casa conta di piu': con le stagioni intere
+    # la classifica e' quella dell'articolo, scarto fra vittorie in casa e
+    # fuori; senza, resta quella vecchia sulle sole vittorie in casa.
+    misura_campo = "vantaggio" if quante else "casa"
+    in_testa = max(righe, key=lambda x: x[misura_campo])
 
     return [
         estremo("gol", True, "gol_lega", "Il campionato dove si segna di più è {la_c}",
@@ -413,10 +429,13 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
         estremo("gol", False, "gol_lega_meno", "E quello dove si segna di meno è {la_c}",
                 "{v} gol a partita: {d} in meno del campionato più prolifico.", due, articolo,
                 d=due(piu - meno)),
-        estremo("casa", True, "campo", "Giocare in casa conta più che altrove in {c}",
-                "La squadra di casa vince il {v} delle partite.", pc),
+        estremo(misura_campo, True, "campo", "Giocare in casa conta più che altrove in {c}",
+                "La squadra di casa vince il {casa} delle partite"
+                + (", quella ospite il {fuori}." if quante else "."),
+                pc, campo, mostra="casa",
+                casa=pc(in_testa["casa"]), fuori=pc(in_testa.get("fuori", 0))),
         estremo("pari", True, "pareggi", "In {c} si pareggia più che ovunque",
-                "Un {v} delle partite finisce in parità.", pc),
+                "Un {v} delle partite finisce in parità.", pc, campo),
         estremo("cartellini", True, "cartellini", "L'arbitro estrae di più in {c}",
                 "{v} cartellini a partita fra le due squadre.", uno),
         estremo("corner", True, "corner", "Il campionato dei calci d'angolo è {la_c}",
