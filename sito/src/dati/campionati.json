@@ -1,5 +1,5 @@
 {
- "generato_il": "2026-11-02T21:25:20+00:00",
+ "generato_il": "2026-11-03T06:09:10+00:00",
  "dati_fino_al": "2026-11-02",
  "fonte": "football-data.co.uk",
  "campionati": [
@@ -10,90 +10,14 @@
    "bandiera": "🇮🇹",
    "livello": 1,
    "principale": true,
-   "partite_storico": 1239,
-   "partite_stagione": 99,
+   "partite_storico": 1240,
+   "partite_stagione": 100,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
    "giornate_giocate": 10,
    "finestra_statistiche": 20,
-   "conversione": 0.3082,
-   "vantaggio_casa": 0.0986,
-   "composizione_finestre": {
-    "5": {
-     "di_questa_stagione": 100,
-     "di_prima": 0,
-     "quota_stagione": 1.0
-    },
-    "10": {
-     "di_questa_stagione": 198,
-     "di_prima": 2,
-     "quota_stagione": 0.99
-    },
-    "20": {
-     "di_questa_stagione": 198,
-     "di_prima": 202,
-     "quota_stagione": 0.495
-    },
-    "40": {
-     "di_questa_stagione": 198,
-     "di_prima": 602,
-     "quota_stagione": 0.247
-    }
-   }
-  },
-  {
-   "slug": "premier-league",
-   "nome": "Premier League",
-   "paese": "Inghilterra",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "livello": 1,
-   "principale": true,
-   "partite_storico": 1229,
-   "partite_stagione": 89,
-   "stagione": "2026/27",
-   "stagione_precedente": "2025/26",
-   "giornate_giocate": 9,
-   "finestra_statistiche": 20,
-   "conversione": 0.3242,
-   "vantaggio_casa": 0.1752,
-   "composizione_finestre": {
-    "5": {
-     "di_questa_stagione": 100,
-     "di_prima": 0,
-     "quota_stagione": 1.0
-    },
-    "10": {
-     "di_questa_stagione": 178,
-     "di_prima": 20,
-     "quota_stagione": 0.899
-    },
-    "20": {
-     "di_questa_stagione": 178,
-     "di_prima": 200,
-     "quota_stagione": 0.471
-    },
-    "40": {
-     "di_questa_stagione": 178,
-     "di_prima": 560,
-     "quota_stagione": 0.241
-    }
-   }
-  },
-  {
-   "slug": "laliga",
-   "nome": "LaLiga",
-   "paese": "Spagna",
-   "bandiera": "🇪🇸",
-   "livello": 1,
-   "principale": true,
-   "partite_storico": 1248,
-   "partite_stagione": 108,
-   "stagione": "2026/27",
-   "stagione_precedente": "2025/26",
-   "giornate_giocate": 11,
-   "finestra_statistiche": 20,
-   "conversione": 0.3129,
-   "vantaggio_casa": 0.2892,
+   "conversione": 0.3081,
+   "vantaggio_casa": 0.0925,
    "composizione_finestre": {
     "5": {
      "di_questa_stagione": 100,
@@ -106,14 +30,90 @@
      "quota_stagione": 1.0
     },
     "20": {
-     "di_questa_stagione": 216,
-     "di_prima": 156,
-     "quota_stagione": 0.581
+     "di_questa_stagione": 200,
+     "di_prima": 200,
+     "quota_stagione": 0.5
     },
     "40": {
-     "di_questa_stagione": 216,
-     "di_prima": 496,
-     "quota_stagione": 0.303
+     "di_questa_stagione": 200,
+     "di_prima": 600,
+     "quota_stagione": 0.25
+    }
+   }
+  },
+  {
+   "slug": "premier-league",
+   "nome": "Premier League",
+   "paese": "Inghilterra",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "livello": 1,
+   "principale": true,
+   "partite_storico": 1230,
+   "partite_stagione": 90,
+   "stagione": "2026/27",
+   "stagione_precedente": "2025/26",
+   "giornate_giocate": 9,
+   "finestra_statistiche": 20,
+   "conversione": 0.3239,
+   "vantaggio_casa": 0.1734,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 100,
+     "di_prima": 0,
+     "quota_stagione": 1.0
+    },
+    "10": {
+     "di_questa_stagione": 180,
+     "di_prima": 18,
+     "quota_stagione": 0.909
+    },
+    "20": {
+     "di_questa_stagione": 180,
+     "di_prima": 198,
+     "quota_stagione": 0.476
+    },
+    "40": {
+     "di_questa_stagione": 180,
+     "di_prima": 558,
+     "quota_stagione": 0.244
+    }
+   }
+  },
+  {
+   "slug": "laliga",
+   "nome": "LaLiga",
+   "paese": "Spagna",
+   "bandiera": "🇪🇸",
+   "livello": 1,
+   "principale": true,
+   "partite_storico": 1249,
+   "partite_stagione": 109,
+   "stagione": "2026/27",
+   "stagione_precedente": "2025/26",
+   "giornate_giocate": 11,
+   "finestra_statistiche": 20,
+   "conversione": 0.3131,
+   "vantaggio_casa": 0.2897,
+   "composizione_finestre": {
+    "5": {
+     "di_questa_stagione": 100,
+     "di_prima": 0,
+     "quota_stagione": 1.0
+    },
+    "10": {
+     "di_questa_stagione": 200,
+     "di_prima": 0,
+     "quota_stagione": 1.0
+    },
+    "20": {
+     "di_questa_stagione": 218,
+     "di_prima": 155,
+     "quota_stagione": 0.584
+    },
+    "40": {
+     "di_questa_stagione": 218,
+     "di_prima": 495,
+     "quota_stagione": 0.306
     }
    }
   },
@@ -162,14 +162,14 @@
    "bandiera": "🇫🇷",
    "livello": 1,
    "principale": true,
-   "partite_storico": 998,
-   "partite_stagione": 80,
+   "partite_storico": 999,
+   "partite_stagione": 81,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
    "giornate_giocate": 9,
    "finestra_statistiche": 20,
-   "conversione": 0.3256,
-   "vantaggio_casa": 0.2138,
+   "conversione": 0.3263,
+   "vantaggio_casa": 0.2102,
    "composizione_finestre": {
     "5": {
      "di_questa_stagione": 90,
@@ -177,19 +177,19 @@
      "quota_stagione": 1.0
     },
     "10": {
-     "di_questa_stagione": 160,
-     "di_prima": 18,
-     "quota_stagione": 0.899
+     "di_questa_stagione": 162,
+     "di_prima": 16,
+     "quota_stagione": 0.91
     },
     "20": {
-     "di_questa_stagione": 160,
-     "di_prima": 178,
-     "quota_stagione": 0.473
+     "di_questa_stagione": 162,
+     "di_prima": 176,
+     "quota_stagione": 0.479
     },
     "40": {
-     "di_questa_stagione": 160,
-     "di_prima": 498,
-     "quota_stagione": 0.243
+     "di_questa_stagione": 162,
+     "di_prima": 496,
+     "quota_stagione": 0.246
     }
    }
   },
@@ -238,14 +238,14 @@
    "bandiera": "🇵🇹",
    "livello": 1,
    "principale": true,
-   "partite_storico": 1006,
-   "partite_stagione": 88,
+   "partite_storico": 1008,
+   "partite_stagione": 90,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
    "giornate_giocate": 10,
    "finestra_statistiche": 20,
-   "conversione": 0.3244,
-   "vantaggio_casa": 0.1616,
+   "conversione": 0.3242,
+   "vantaggio_casa": 0.1606,
    "composizione_finestre": {
     "5": {
      "di_questa_stagione": 90,
@@ -253,19 +253,19 @@
      "quota_stagione": 1.0
     },
     "10": {
-     "di_questa_stagione": 176,
-     "di_prima": 4,
-     "quota_stagione": 0.978
+     "di_questa_stagione": 180,
+     "di_prima": 0,
+     "quota_stagione": 1.0
     },
     "20": {
-     "di_questa_stagione": 176,
-     "di_prima": 164,
-     "quota_stagione": 0.518
+     "di_questa_stagione": 180,
+     "di_prima": 160,
+     "quota_stagione": 0.529
     },
     "40": {
-     "di_questa_stagione": 176,
-     "di_prima": 484,
-     "quota_stagione": 0.267
+     "di_questa_stagione": 180,
+     "di_prima": 480,
+     "quota_stagione": 0.273
     }
    }
   },
@@ -618,14 +618,14 @@
    "bandiera": "🇪🇸",
    "livello": 2,
    "principale": false,
-   "partite_storico": 1517,
-   "partite_stagione": 131,
+   "partite_storico": 1518,
+   "partite_stagione": 132,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
    "giornate_giocate": 12,
    "finestra_statistiche": 20,
-   "conversione": 0.3044,
-   "vantaggio_casa": 0.2702,
+   "conversione": 0.3048,
+   "vantaggio_casa": 0.2698,
    "composizione_finestre": {
     "5": {
      "di_questa_stagione": 110,
@@ -638,14 +638,14 @@
      "quota_stagione": 1.0
     },
     "20": {
-     "di_questa_stagione": 262,
-     "di_prima": 145,
-     "quota_stagione": 0.644
+     "di_questa_stagione": 264,
+     "di_prima": 144,
+     "quota_stagione": 0.647
     },
     "40": {
-     "di_questa_stagione": 262,
-     "di_prima": 505,
-     "quota_stagione": 0.342
+     "di_questa_stagione": 264,
+     "di_prima": 504,
+     "quota_stagione": 0.344
     }
    }
   },
@@ -694,14 +694,14 @@
    "bandiera": "🇫🇷",
    "livello": 2,
    "principale": false,
-   "partite_storico": 1087,
-   "partite_stagione": 97,
+   "partite_storico": 1089,
+   "partite_stagione": 99,
    "stagione": "2026/27",
    "stagione_precedente": "2025/26",
    "giornate_giocate": 11,
    "finestra_statistiche": 20,
-   "conversione": 0.3225,
-   "vantaggio_casa": 0.1371,
+   "conversione": 0.3241,
+   "vantaggio_casa": 0.1323,
    "composizione_finestre": {
     "5": {
      "di_questa_stagione": 90,
@@ -714,14 +714,14 @@
      "quota_stagione": 1.0
     },
     "20": {
-     "di_questa_stagione": 194,
-     "di_prima": 138,
-     "quota_stagione": 0.584
+     "di_questa_stagione": 198,
+     "di_prima": 135,
+     "quota_stagione": 0.595
     },
     "40": {
-     "di_questa_stagione": 194,
-     "di_prima": 438,
-     "quota_stagione": 0.307
+     "di_questa_stagione": 198,
+     "di_prima": 435,
+     "quota_stagione": 0.313
     }
    }
   },
