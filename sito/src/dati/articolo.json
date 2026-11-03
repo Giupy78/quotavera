@@ -1,6 +1,6 @@
 {
  "data": "2026-11-03",
- "partite_in_programma": 171,
+ "partite_in_programma": 172,
  "campionati": 22,
  "sorprese": [
   {
@@ -870,17 +870,6 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "fiorentina-juventus",
-   "casa": "Fiorentina",
-   "ospite": "Juventus",
-   "data": "2026-11-08",
-   "ora": "20:45",
-   "margine": 0.097
-  },
-  {
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
@@ -889,7 +878,18 @@
    "ospite": "Augsburg",
    "data": "2026-11-07",
    "ora": "15:30",
-   "margine": 0.0962
+   "margine": 0.0969
+  },
+  {
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "hoffenheim-schalke-04",
+   "casa": "Hoffenheim",
+   "ospite": "Schalke 04",
+   "data": "2026-11-08",
+   "ora": "19:30",
+   "margine": 0.0969
   },
   {
    "campionato": "Serie A",
@@ -917,12 +917,12 @@
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
-   "id": "hoffenheim-schalke-04",
-   "casa": "Hoffenheim",
-   "ospite": "Schalke 04",
+   "id": "fc-koln-leverkusen",
+   "casa": "FC Koln",
+   "ospite": "Leverkusen",
    "data": "2026-11-08",
-   "ora": "19:30",
-   "margine": 0.0951
+   "ora": "15:30",
+   "margine": 0.0947
   }
  ],
  "partite_meno_care": [
@@ -930,45 +930,12 @@
    "campionato": "Championship",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "slug": "championship",
-   "id": "birmingham-millwall",
-   "casa": "Birmingham",
-   "ospite": "Millwall",
-   "data": "2026-11-03",
-   "ora": "21:00",
-   "margine": 0.0442
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "blackburn-stoke",
-   "casa": "Blackburn",
-   "ospite": "Stoke",
+   "id": "qpr-burnley",
+   "casa": "QPR",
+   "ospite": "Burnley",
    "data": "2026-11-03",
    "ora": "20:45",
-   "margine": 0.0462
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "wrexham-middlesbrough",
-   "casa": "Wrexham",
-   "ospite": "Middlesbrough",
-   "data": "2026-11-04",
-   "ora": "20:45",
-   "margine": 0.0473
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "bristol-city-wolves",
-   "casa": "Bristol City",
-   "ospite": "Wolves",
-   "data": "2026-11-04",
-   "ora": "21:00",
-   "margine": 0.0477
+   "margine": 0.005
   },
   {
    "campionato": "Championship",
@@ -979,7 +946,40 @@
    "ospite": "Southampton",
    "data": "2026-11-03",
    "ora": "21:00",
-   "margine": 0.0481
+   "margine": 0.0053
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "watford-lincoln",
+   "casa": "Watford",
+   "ospite": "Lincoln",
+   "data": "2026-11-03",
+   "ora": "20:45",
+   "margine": 0.0055
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "derby-norwich",
+   "casa": "Derby",
+   "ospite": "Norwich",
+   "data": "2026-11-03",
+   "ora": "20:45",
+   "margine": 0.006
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "wrexham-middlesbrough",
+   "casa": "Wrexham",
+   "ospite": "Middlesbrough",
+   "data": "2026-11-04",
+   "ora": "20:45",
+   "margine": 0.0068
   }
  ]
 }
