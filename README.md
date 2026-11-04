@@ -415,6 +415,13 @@ lo sappiamo — può essere stata rinviata, ed è probabilmente il caso di tutte
 quattro, cadute a ridosso della sosta per le nazionali. Ora dice tutte e due le
 possibilità.
 
+**Bing Webmaster Tools dal 4 novembre.** Ecosia aveva cominciato a mandare
+visite, ed Ecosia mostra i risultati di Bing: il sito c'era già senza essere
+registrato. Verificato con il meta tag `msvalidate.01` in `Base.astro` (non
+con l'importazione da Search Console, che avrebbe dato a Microsoft l'accesso
+all'account Google) e con la sitemap `sitemap-index.xml` inviata. Copre Bing,
+Ecosia, DuckDuckGo e Yahoo.
+
 **Web Analytics di Cloudflare è acceso dal 27 ottobre.** Prima non lo era: il
 token non era mai stato impostato, quindi di pagine viste non esiste nessun
 dato precedente. quotavera.it non è una zona Cloudflare (il dominio è
