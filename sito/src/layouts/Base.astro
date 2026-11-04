@@ -67,6 +67,11 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titoloCompleto}</title>
     <meta name="description" content={descrizione} />
+    {/* La verifica del sito per Bing Webmaster Tools (Bing, Ecosia,
+        DuckDuckGo e Yahoo usano il suo indice). Non e' un segreto: Bing la
+        legge proprio perche' e' in chiaro nella pagina. Google invece e'
+        verificato via DNS, quindi qui non serve nulla per lui. */}
+    <meta name="msvalidate.01" content="593943BA76B56FDEA0396CA7F46D5044" />
     <link rel="canonical" href={canonico} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
