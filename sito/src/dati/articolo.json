@@ -1,6 +1,6 @@
 {
  "data": "2026-11-05",
- "partite_in_programma": 197,
+ "partite_in_programma": 196,
  "campionati": 22,
  "sorprese": [
   {
@@ -870,28 +870,6 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
-   "id": "hoffenheim-schalke-04",
-   "casa": "Hoffenheim",
-   "ospite": "Schalke 04",
-   "data": "2026-11-08",
-   "ora": "19:30",
-   "margine": 0.0969
-  },
-  {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
-   "id": "fc-koln-leverkusen",
-   "casa": "FC Koln",
-   "ospite": "Leverkusen",
-   "data": "2026-11-08",
-   "ora": "15:30",
-   "margine": 0.0947
-  },
-  {
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
@@ -903,26 +881,48 @@
    "margine": 0.0929
   },
   {
+   "campionato": "Primeira Liga",
+   "bandiera": "🇵🇹",
+   "slug": "primeira-liga",
+   "id": "estrela-benfica",
+   "casa": "Estrela",
+   "ospite": "Benfica",
+   "data": "2026-11-08",
+   "ora": "21:30",
+   "margine": 0.0875
+  },
+  {
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
-   "id": "freiburg-union-berlin",
-   "casa": "Freiburg",
-   "ospite": "Union Berlin",
-   "data": "2026-11-08",
-   "ora": "17:30",
-   "margine": 0.092
+   "id": "stuttgart-werder-bremen",
+   "casa": "Stuttgart",
+   "ospite": "Werder Bremen",
+   "data": "2026-11-07",
+   "ora": "18:30",
+   "margine": 0.086
   },
   {
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
-   "id": "monza-atalanta",
-   "casa": "Monza",
-   "ospite": "Atalanta",
+   "id": "napoli-lazio",
+   "casa": "Napoli",
+   "ospite": "Lazio",
    "data": "2026-11-08",
+   "ora": "12:30",
+   "margine": 0.0858
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "torino-lecce",
+   "casa": "Torino",
+   "ospite": "Lecce",
+   "data": "2026-11-07",
    "ora": "15:00",
-   "margine": 0.0914
+   "margine": 0.0851
   }
  ],
  "partite_meno_care": [
@@ -938,6 +938,17 @@
    "margine": 0.0405
   },
   {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "derby-bolton",
+   "casa": "Derby",
+   "ospite": "Bolton",
+   "data": "2026-11-06",
+   "ora": "21:00",
+   "margine": 0.0406
+  },
+  {
    "campionato": "Premier League",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "slug": "premier-league",
@@ -949,37 +960,26 @@
    "margine": 0.0407
   },
   {
-   "campionato": "Premier League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "premier-league",
-   "id": "leeds-tottenham",
-   "casa": "Leeds",
-   "ospite": "Tottenham",
-   "data": "2026-11-07",
-   "ora": "13:30",
-   "margine": 0.0424
+   "campionato": "Ligue 1",
+   "bandiera": "🇫🇷",
+   "slug": "ligue-1",
+   "id": "le-havre-lorient",
+   "casa": "Le Havre",
+   "ospite": "Lorient",
+   "data": "2026-11-08",
+   "ora": "17:15",
+   "margine": 0.0415
   },
   {
-   "campionato": "LaLiga",
-   "bandiera": "🇪🇸",
-   "slug": "laliga",
-   "id": "osasuna-ath-bilbao",
-   "casa": "Osasuna",
-   "ospite": "Ath Bilbao",
-   "data": "2026-11-07",
-   "ora": "18:30",
-   "margine": 0.0438
-  },
-  {
-   "campionato": "Premier League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "premier-league",
-   "id": "fulham-newcastle",
-   "casa": "Fulham",
-   "ospite": "Newcastle",
-   "data": "2026-11-07",
-   "ora": "16:00",
-   "margine": 0.0443
+   "campionato": "Ligue 1",
+   "bandiera": "🇫🇷",
+   "slug": "ligue-1",
+   "id": "le-mans-monaco",
+   "casa": "Le Mans",
+   "ospite": "Monaco",
+   "data": "2026-11-08",
+   "ora": "17:15",
+   "margine": 0.0415
   }
  ]
 }
