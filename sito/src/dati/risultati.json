@@ -5981,6 +5981,15 @@
       "gol_ospite": 1,
       "in_porta_casa": 5,
       "in_porta_ospite": 4
+     },
+     {
+      "data": "2026-11-04",
+      "casa": "Kortrijk",
+      "ospite": "KV Mechelen",
+      "gol_casa": 1,
+      "gol_ospite": 3,
+      "in_porta_casa": 2,
+      "in_porta_ospite": 8
      }
     ]
    },
@@ -8306,45 +8315,9 @@
   ],
   "championship": [
    {
-    "giornata": 14,
+    "giornata": 15,
     "stagione_scorsa": false,
     "partite": [
-     {
-      "data": "2026-11-03",
-      "casa": "Charlton",
-      "ospite": "Bolton",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-11-03",
-      "casa": "West Brom",
-      "ospite": "Southampton",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-11-03",
-      "casa": "Watford",
-      "ospite": "Lincoln",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-11-03",
-      "casa": "QPR",
-      "ospite": "Burnley",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 1
-     },
      {
       "data": "2026-11-03",
       "casa": "Preston",
@@ -8353,14 +8326,29 @@
       "gol_ospite": 3,
       "in_porta_casa": 2,
       "in_porta_ospite": 5
+     }
+    ]
+   },
+   {
+    "giornata": 14,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-03",
+      "casa": "Blackburn",
+      "ospite": "Stoke",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 3,
+      "in_porta_ospite": 3
      },
      {
       "data": "2026-11-03",
-      "casa": "Portsmouth",
-      "ospite": "Swansea",
-      "gol_casa": 3,
+      "casa": "Charlton",
+      "ospite": "Bolton",
+      "gol_casa": 0,
       "gol_ospite": 1,
-      "in_porta_casa": 5,
+      "in_porta_casa": 2,
       "in_porta_ospite": 3
      },
      {
@@ -8374,12 +8362,39 @@
      },
      {
       "data": "2026-11-03",
-      "casa": "Blackburn",
-      "ospite": "Stoke",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 3,
+      "casa": "Portsmouth",
+      "ospite": "Swansea",
+      "gol_casa": 3,
+      "gol_ospite": 1,
+      "in_porta_casa": 5,
       "in_porta_ospite": 3
+     },
+     {
+      "data": "2026-11-03",
+      "casa": "Preston",
+      "ospite": "Sheffield Utd",
+      "gol_casa": 2,
+      "gol_ospite": 3,
+      "in_porta_casa": 2,
+      "in_porta_ospite": 5
+     },
+     {
+      "data": "2026-11-03",
+      "casa": "QPR",
+      "ospite": "Burnley",
+      "gol_casa": 1,
+      "gol_ospite": 1,
+      "in_porta_casa": 5,
+      "in_porta_ospite": 1
+     },
+     {
+      "data": "2026-11-03",
+      "casa": "Watford",
+      "ospite": "Lincoln",
+      "gol_casa": 1,
+      "gol_ospite": 0,
+      "in_porta_casa": 2,
+      "in_porta_ospite": 1
      },
      {
       "data": "2026-11-03",
@@ -8387,8 +8402,44 @@
       "ospite": "Millwall",
       "gol_casa": 3,
       "gol_ospite": 0,
-      "in_porta_casa": 8,
+      "in_porta_casa": 9,
       "in_porta_ospite": 2
+     },
+     {
+      "data": "2026-11-03",
+      "casa": "West Brom",
+      "ospite": "Southampton",
+      "gol_casa": 1,
+      "gol_ospite": 1,
+      "in_porta_casa": 5,
+      "in_porta_ospite": 3
+     },
+     {
+      "data": "2026-11-04",
+      "casa": "Cardiff",
+      "ospite": "West Ham",
+      "gol_casa": 3,
+      "gol_ospite": 3,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 10
+     },
+     {
+      "data": "2026-11-04",
+      "casa": "Wrexham",
+      "ospite": "Middlesbrough",
+      "gol_casa": 2,
+      "gol_ospite": 0,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 2
+     },
+     {
+      "data": "2026-11-04",
+      "casa": "Bristol City",
+      "ospite": "Wolves",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 3,
+      "in_porta_ospite": 8
      }
     ]
    },
@@ -9084,138 +9135,6 @@
       "in_porta_ospite": 5
      }
     ]
-   },
-   {
-    "giornata": 7,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-11",
-      "casa": "West Ham",
-      "ospite": "Wrexham",
-      "gol_casa": 6,
-      "gol_ospite": 0,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Bolton",
-      "ospite": "Cardiff",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 10
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Derby",
-      "ospite": "Birmingham",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 9
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "West Brom",
-      "ospite": "QPR",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Blackburn",
-      "ospite": "Millwall",
-      "gol_casa": 3,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Charlton",
-      "ospite": "Portsmouth",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Middlesbrough",
-      "ospite": "Norwich",
-      "gol_casa": 4,
-      "gol_ospite": 3,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Preston",
-      "ospite": "Lincoln",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Southampton",
-      "ospite": "Bristol City",
-      "gol_casa": 4,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Swansea",
-      "ospite": "Burnley",
-      "gol_casa": 3,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Watford",
-      "ospite": "Stoke",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Sheffield United",
-      "ospite": "Wolves",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-15",
-      "casa": "Bristol City",
-      "ospite": "Lincoln",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-15",
-      "casa": "Middlesbrough",
-      "ospite": "Millwall",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 4
-     }
-    ]
    }
   ],
   "league-one": [
@@ -9261,6 +9180,15 @@
      },
      {
       "data": "2026-11-03",
+      "casa": "Huddersfield",
+      "ospite": "Luton",
+      "gol_casa": 1,
+      "gol_ospite": 1,
+      "in_porta_casa": 6,
+      "in_porta_ospite": 4
+     },
+     {
+      "data": "2026-11-03",
       "casa": "Wigan",
       "ospite": "Mansfield",
       "gol_casa": 0,
@@ -9269,13 +9197,13 @@
       "in_porta_ospite": 3
      },
      {
-      "data": "2026-11-03",
-      "casa": "Huddersfield",
-      "ospite": "Luton",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 4
+      "data": "2026-11-04",
+      "casa": "Oxford Utd",
+      "ospite": "Reading",
+      "gol_casa": 2,
+      "gol_ospite": 0,
+      "in_porta_casa": 7,
+      "in_porta_ospite": 3
      }
     ]
    },
