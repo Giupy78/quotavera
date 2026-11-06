@@ -1,6 +1,6 @@
 {
  "data": "2026-11-06",
- "partite_in_programma": 196,
+ "partite_in_programma": 205,
  "campionati": 22,
  "sorprese": [
   {
@@ -870,48 +870,72 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "venezia-udinese",
-   "casa": "Venezia",
-   "ospite": "Udinese",
-   "data": "2026-11-06",
-   "ora": "20:45",
-   "margine": 0.0864
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "napoli-lazio",
-   "casa": "Napoli",
-   "ospite": "Lazio",
-   "data": "2026-11-08",
-   "ora": "12:30",
-   "margine": 0.0852
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "torino-lecce",
-   "casa": "Torino",
-   "ospite": "Lecce",
+   "campionato": "League Two scozzese",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "slug": "league-two-scozia",
+   "id": "stranraer-stirling",
+   "casa": "Stranraer",
+   "ospite": "Stirling",
    "data": "2026-11-07",
-   "ora": "15:00",
-   "margine": 0.0851
+   "ora": "16:00",
+   "margine": 0.1115
   },
+  {
+   "campionato": "League One scozzese",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "slug": "league-one-scozia",
+   "id": "montrose-east-fife",
+   "casa": "Montrose",
+   "ospite": "East Fife",
+   "data": "2026-11-07",
+   "ora": "16:00",
+   "margine": 0.1108
+  },
+  {
+   "campionato": "League One scozzese",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "slug": "league-one-scozia",
+   "id": "alloa-airdrie-utd",
+   "casa": "Alloa",
+   "ospite": "Airdrie Utd",
+   "data": "2026-11-07",
+   "ora": "16:00",
+   "margine": 0.1094
+  },
+  {
+   "campionato": "League Two scozzese",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "slug": "league-two-scozia",
+   "id": "clyde-spartans",
+   "casa": "Clyde",
+   "ospite": "Spartans",
+   "data": "2026-11-07",
+   "ora": "16:00",
+   "margine": 0.1071
+  },
+  {
+   "campionato": "League Two scozzese",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "slug": "league-two-scozia",
+   "id": "annan-athletic-kelty-hearts",
+   "casa": "Annan Athletic",
+   "ospite": "Kelty Hearts",
+   "data": "2026-11-07",
+   "ora": "16:00",
+   "margine": 0.1064
+  }
+ ],
+ "partite_meno_care": [
   {
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
    "slug": "bundesliga",
-   "id": "dortmund-elversberg",
-   "casa": "Dortmund",
-   "ospite": "Elversberg",
-   "data": "2026-11-07",
+   "id": "fc-koln-leverkusen",
+   "casa": "FC Koln",
+   "ospite": "Leverkusen",
+   "data": "2026-11-08",
    "ora": "15:30",
-   "margine": 0.0849
+   "margine": 0.0028
   },
   {
    "campionato": "Serie A",
@@ -922,10 +946,30 @@
    "ospite": "Frosinone",
    "data": "2026-11-07",
    "ora": "15:00",
-   "margine": 0.0846
-  }
- ],
- "partite_meno_care": [
+   "margine": 0.0031
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "torino-lecce",
+   "casa": "Torino",
+   "ospite": "Lecce",
+   "data": "2026-11-07",
+   "ora": "15:00",
+   "margine": 0.0034
+  },
+  {
+   "campionato": "Premier League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "premier-league",
+   "id": "fulham-newcastle",
+   "casa": "Fulham",
+   "ospite": "Newcastle",
+   "data": "2026-11-07",
+   "ora": "16:00",
+   "margine": 0.0044
+  },
   {
    "campionato": "Premier League",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -935,51 +979,7 @@
    "ospite": "Hull",
    "data": "2026-11-07",
    "ora": "16:00",
-   "margine": 0.0407
-  },
-  {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "le-havre-lorient",
-   "casa": "Le Havre",
-   "ospite": "Lorient",
-   "data": "2026-11-08",
-   "ora": "17:15",
-   "margine": 0.0415
-  },
-  {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "le-mans-monaco",
-   "casa": "Le Mans",
-   "ospite": "Monaco",
-   "data": "2026-11-08",
-   "ora": "17:15",
-   "margine": 0.0415
-  },
-  {
-   "campionato": "LaLiga",
-   "bandiera": "🇪🇸",
-   "slug": "laliga",
-   "id": "sevilla-alaves",
-   "casa": "Sevilla",
-   "ospite": "Alaves",
-   "data": "2026-11-06",
-   "ora": "21:00",
-   "margine": 0.0421
-  },
-  {
-   "campionato": "LaLiga",
-   "bandiera": "🇪🇸",
-   "slug": "laliga",
-   "id": "sociedad-vallecano",
-   "casa": "Sociedad",
-   "ospite": "Vallecano",
-   "data": "2026-11-08",
-   "ora": "16:15",
-   "margine": 0.0426
+   "margine": 0.0046
   }
  ]
 }
