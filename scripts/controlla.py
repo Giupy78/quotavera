@@ -293,6 +293,26 @@ def controlla() -> tuple[list[str], list[str]]:
     if ore > 30:
         guai.append(f"i dati sono stati generati {ore:.0f} ore fa")
 
+    # Le coppe. Il guasto tipico e' lo stesso dei campionati: ESPN smette di
+    # rispondere, il turno finisce verde e le partite restano "in programma" con
+    # la data passata. Una o due possono essere rinvii veri; di piu' no.
+    try:
+        coppe = _carica("coppe.json")["coppe"]
+    except (OSError, KeyError, json.JSONDecodeError):
+        guai.append("le coppe non si leggono")
+    else:
+        for c in coppe:
+            ferme = [p for p in c["partite"] if p.get("senza_risultato")]
+            if len(ferme) > 3:
+                guai.append(f"{c['nome']}: {len(ferme)} partite con la data passata e senza risultato")
+            elif ferme:
+                avvisi.append(f"{c['nome']}: {len(ferme)} partite con la data passata e senza risultato")
+            senza = [p for p in c["partite"] if p.get("giocata") and not p.get("statistiche")]
+            if len(senza) > 5:
+                avvisi.append(f"{c['nome']}: {len(senza)} partite giocate senza tabellino")
+            if not c["partite"]:
+                guai.append(f"{c['nome']}: nessuna partita")
+
     return guai, avvisi
 
 

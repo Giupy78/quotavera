@@ -7,6 +7,7 @@ import classifiche from "../../../../dati/classifiche.json";
 import finestre from "../../../../dati/finestre.json";
 import marcatori from "../../../../dati/marcatori.json";
 import schede from "../../../../dati/schede.json";
+import coppe from "../../../../dati/coppe.json";
 import { lumacaSquadra } from "../../../../lib/indirizzi";
 import { unisci, mediaLega } from "../../../../lib/statistiche";
 
@@ -69,6 +70,14 @@ export function getStaticPaths() {
 
 const { lega, nome, esteso, riga, squadreInLega, perFinestra, bomber, sue } =
   Astro.props;
+
+/* Le coppe stanno in pagine a parte e non entrano nelle medie qui sotto: sono
+   altre partite, contro altri avversari. Qui c'e' solo il rimando. */
+const inCoppa = (coppe.coppe as any[]).flatMap((c) =>
+  c.squadre
+    .filter((s: any) => s.campionato === lega.slug && s.nome === nome)
+    .map((s: any) => ({ c, s })),
+);
 
 const num = (v: number, d = 1) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -548,6 +557,18 @@ const briciole = {
     )
   }
 
+  {
+    inCoppa.length > 0 && (
+      <p class="in-coppa">
+        {inCoppa.map(({ c, s }) => (
+          <a href={`/coppe/${c.slug}/squadra/${s.id}/`}>
+            {nome} in {c.nome}{s.posizione ? `: ${s.posizione}ª su ${c.classifica.length}` : ""} →
+          </a>
+        ))}
+      </p>
+    )
+  }
+
   <p class="torna">
     <a href={`/calcio/${lega.slug}/`}>← torna alla {lega.nome}</a>
   </p>
@@ -875,9 +896,13 @@ const briciole = {
   td.media {
     color: var(--ink-3);
   }
+  .in-coppa {
+    font-size: 13.5px;
+    margin-top: 34px;
+  }
   .torna {
     font-size: 13px;
-    margin-top: 34px;
+    margin-top: 14px;
   }
 
   @media (max-width: 620px) {

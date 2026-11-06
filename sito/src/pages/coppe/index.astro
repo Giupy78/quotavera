@@ -1,0 +1,128 @@
+---
+import Base from "../../layouts/Base.astro";
+import coppe from "../../dati/coppe.json";
+import { num } from "../../lib/testo";
+
+/* L'indice delle coppe europee. Dice subito cosa c'e' e cosa no: risultati,
+   classifiche e statistiche si'; probabilita' e confronto fra operatori no,
+   perche' il modello stima un campionato alla volta e football-data le coppe non
+   le copre. */
+
+const elenco = coppe.coppe as any[];
+
+const giorno = (d: string) =>
+  new Date(d + "T00:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "long" });
+
+const schede = elenco.map((c) => {
+  const prossime = c.partite.filter((p: any) => !p.giocata && !p.rinviata && !p.senza_risultato);
+  const data = prossime[0]?.data ?? null;
+  return {
+    c,
+    data,
+    quante: data ? prossime.filter((p: any) => p.data === data).length : 0,
+    primo: c.classifica[0] ?? null,
+  };
+});
+
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Coppe europee" },
+  ],
+};
+---
+
+<Base
+  titolo="Coppe europee: Champions, Europa e Conference League"
+  descrizione="Risultati, classifiche e statistiche di Champions, Europa e Conference League: tiri, calci d'angolo, cartellini e possesso di ogni squadra, aggiornati ogni notte."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <section>
+    <div class="hd">
+      <h1>Coppe europee</h1>
+      <p>
+        Risultati, classifiche e statistiche di squadra, aggiornati ogni notte.
+      </p>
+    </div>
+
+    <div class="coppe">
+      {
+        schede.map(({ c, data, quante, primo }) => (
+          <a class="coppa" href={`/coppe/${c.slug}/`}>
+            <b>{c.nome}</b>
+            <span class="stagione">Stagione {c.stagione}</span>
+            {primo && (
+              <span>
+                In testa <strong>{primo.squadra}</strong> con {primo.punti} punti
+              </span>
+            )}
+            <span>
+              {c.partite_giocate} partite giocate
+              {c.gol_a_partita !== null && `, ${num(c.gol_a_partita)} gol a partita`}
+            </span>
+            {data && (
+              <span>
+                Prossimo turno il {giorno(data)}: {quante} {quante === 1 ? "partita" : "partite"}
+              </span>
+            )}
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="prosa nota">
+      <p>
+        Le statistiche di coppa restano separate da quelle di campionato: sono altre
+        partite, contro altri avversari. Qui non ci sono le probabilità del nostro modello,
+        che lavora un campionato alla volta e non sa confrontare squadre di paesi diversi, né
+        il confronto fra operatori, perché la fonte che lo permette non copre le coppe. Le coppe
+        nazionali, per ora, non ci sono.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .coppe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+  .coppa {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    padding: 16px 18px 17px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+  .coppa:hover {
+    border-color: var(--ink-3);
+  }
+  .coppa b {
+    font-family: var(--serif);
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .coppa strong {
+    font-weight: 600;
+  }
+  .stagione {
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-bottom: 4px;
+  }
+  .nota {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+</style>

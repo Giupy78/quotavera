@@ -1,0 +1,322 @@
+---
+import Base from "../../../layouts/Base.astro";
+import coppe from "../../../dati/coppe.json";
+import { num } from "../../../lib/testo";
+
+export function getStaticPaths() {
+  return (coppe.coppe as any[]).map((c) => ({ params: { coppa: c.slug }, props: { c } }));
+}
+
+const { c } = Astro.props;
+
+const giornoLungo = (d: string) =>
+  new Date(d + "T00:00:00").toLocaleDateString("it-IT", {
+    weekday: "long", day: "numeric", month: "long",
+  });
+
+function perData(partite: any[]) {
+  const gruppi = new Map<string, any[]>();
+  for (const p of partite) {
+    if (!gruppi.has(p.data)) gruppi.set(p.data, []);
+    gruppi.get(p.data)!.push(p);
+  }
+  return [...gruppi.entries()];
+}
+
+const prossime = c.partite.filter((p: any) => !p.giocata && !p.rinviata && !p.senza_risultato);
+const sospese = c.partite.filter((p: any) => !p.giocata && (p.rinviata || p.senza_risultato));
+const giocate = c.partite.filter((p: any) => p.giocata).reverse();
+
+/* Le zone della fase a girone unico: valgono finche' la classifica e' quella. */
+const conZone = c.classifica.length === 36;
+
+const statistiche = [...c.squadre]
+  .filter((s: any) => s.partite > 0)
+  .sort((a: any, b: any) => b.medie.gol_fatti - a.medie.gol_fatti);
+const voce = (s: any, k: string, d = 1) =>
+  s.medie[k] === undefined ? "—" : num(s.medie[k], d);
+
+const titolo = `${c.nome}: classifica, risultati e statistiche`;
+const descrizione =
+  `${c.nome} ${c.stagione}: la classifica, tutti i risultati, le prossime partite e le ` +
+  `statistiche di ogni squadra, dai tiri ai cartellini. Aggiornate ogni notte.`;
+
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Coppe europee", item: new URL("/coppe/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: c.nome },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <section>
+    <p class="occhiello">
+      <a href="/coppe/" style="color:inherit">Coppe europee</a> · stagione {c.stagione}
+    </p>
+    <div class="hd">
+      <h1>{c.nome}</h1>
+      <p>{c.partite_giocate} partite giocate su {c.partite_totali} in calendario.</p>
+    </div>
+
+    <div class="tessere">
+      <div class="tessera">
+        <div class="k">Partite giocate</div>
+        <div class="v mono">{c.partite_giocate}</div>
+        <div class="n">su {c.partite_totali} in calendario</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Gol a partita</div>
+        <div class="v mono">{c.gol_a_partita !== null ? num(c.gol_a_partita) : "—"}</div>
+        <div class="n">in questa stagione</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Tiri a partita</div>
+        <div class="v mono">{c.media.tiri ? num(c.media.tiri, 1) : "—"}</div>
+        <div class="n">per squadra</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Cartellini gialli</div>
+        <div class="v mono">{c.media.gialli ? num(c.media.gialli, 1) : "—"}</div>
+        <div class="n">a partita, per squadra</div>
+      </div>
+    </div>
+  </section>
+
+  {
+    c.classifica.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Classifica</h2>
+          {conZone && (
+            <p>
+              Le prime 8 vanno agli ottavi, dalla 9ª alla 24ª agli spareggi, le altre sono
+              eliminate.
+            </p>
+          )}
+        </div>
+        <div class="scorri">
+          <table class="dati">
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th>Squadra</th>
+                <th class="num">G</th>
+                <th class="num">V</th>
+                <th class="num">N</th>
+                <th class="num">P</th>
+                <th class="num">GF</th>
+                <th class="num">GS</th>
+                <th class="num">DR</th>
+                <th class="num">Pt</th>
+              </tr>
+            </thead>
+            <tbody>
+              {c.classifica.map((r: any) => (
+                <tr class:list={{ taglio: conZone && (r.posizione === 8 || r.posizione === 24) }}>
+                  <td class="num mono">{r.posizione}</td>
+                  <td>
+                    {r.id ? <a class="nome" href={`/coppe/${c.slug}/squadra/${r.id}/`}><b>{r.squadra}</b></a> : <b>{r.squadra}</b>}
+                  </td>
+                  <td class="num mono">{r.giocate}</td>
+                  <td class="num mono">{r.vinte}</td>
+                  <td class="num mono">{r.pareggiate}</td>
+                  <td class="num mono">{r.perse}</td>
+                  <td class="num mono">{r.fatti}</td>
+                  <td class="num mono">{r.subiti}</td>
+                  <td class="num mono">{r.differenza > 0 ? `+${r.differenza}` : r.differenza}</td>
+                  <td class="num mono"><b>{r.punti}</b></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    prossime.length > 0 && (
+      <section>
+        <div class="hd"><h2>Le prossime partite</h2></div>
+        {perData(prossime).map(([data, partite]) => (
+          <div class="giorno">
+            <h3>{giornoLungo(data)}</h3>
+            <ul class="partite">
+              {partite.map((p: any) => (
+                <li>
+                  <a href={`/coppe/${c.slug}/${p.id}/`}>
+                    <span class="ora mono">{p.ora}</span>
+                    <span class="chi">{p.casa} — {p.ospite}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    )
+  }
+
+  {
+    sospese.length > 0 && (
+      <section>
+        <div class="hd"><h2>Partite senza risultato</h2></div>
+        <ul class="partite">
+          {sospese.map((p: any) => (
+            <li>
+              <a href={`/coppe/${c.slug}/${p.id}/`}>
+                <span class="ora mono">{p.data.slice(8)}/{p.data.slice(5, 7)}</span>
+                <span class="chi">{p.casa} — {p.ospite}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    giocate.length > 0 && (
+      <section>
+        <div class="hd"><h2>I risultati</h2></div>
+        {perData(giocate).map(([data, partite]) => (
+          <div class="giorno">
+            <h3>{giornoLungo(data)}</h3>
+            <ul class="partite">
+              {partite.map((p: any) => (
+                <li>
+                  <a href={`/coppe/${c.slug}/${p.id}/`}>
+                    <span class="ora mono">{p.gol_casa}-{p.gol_ospite}</span>
+                    <span class="chi">{p.casa} — {p.ospite}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    )
+  }
+
+  {
+    statistiche.length > 0 && (
+      <section>
+        <div class="hd">
+          <h2>Le statistiche delle squadre</h2>
+          <p>Medie a partita in questa {c.nome}, dalla squadra che segna di più.</p>
+        </div>
+        <div class="scorri">
+          <table class="dati larga">
+            <thead>
+              <tr>
+                <th>Squadra</th>
+                <th class="num">Part.</th>
+                <th class="num">Gol</th>
+                <th class="num">Subiti</th>
+                <th class="num">Tiri</th>
+                <th class="num">In porta</th>
+                <th class="num">Angoli</th>
+                <th class="num">Falli</th>
+                <th class="num">Gialli</th>
+                <th class="num">Possesso</th>
+              </tr>
+            </thead>
+            <tbody>
+              {statistiche.map((s: any) => (
+                <tr>
+                  <td><a class="nome" href={`/coppe/${c.slug}/squadra/${s.id}/`}><b>{s.nome}</b></a></td>
+                  <td class="num mono">{s.partite}</td>
+                  <td class="num mono">{voce(s, "gol_fatti", 2)}</td>
+                  <td class="num mono">{voce(s, "gol_subiti", 2)}</td>
+                  <td class="num mono">{voce(s, "tiri")}</td>
+                  <td class="num mono">{voce(s, "in_porta")}</td>
+                  <td class="num mono">{voce(s, "corner")}</td>
+                  <td class="num mono">{voce(s, "falli")}</td>
+                  <td class="num mono">{voce(s, "gialli")}</td>
+                  <td class="num mono">{s.medie.possesso === undefined ? "—" : `${num(s.medie.possesso, 1)}%`}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  <p class="torna"><a href="/coppe/">← Tutte le coppe europee</a></p>
+</Base>
+
+<style>
+  section {
+    margin-bottom: 38px;
+  }
+  a.nome {
+    color: inherit;
+    text-decoration: none;
+  }
+  a.nome:hover {
+    color: var(--s1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  /* La linea che separa le zone: uno spessore, non un colore. */
+  tr.taglio td {
+    border-bottom: 2px solid var(--rule-strong);
+  }
+  table.larga th,
+  table.larga td {
+    white-space: nowrap;
+  }
+  .giorno {
+    margin-bottom: 18px;
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin: 0 0 6px;
+  }
+  .partite {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 22px;
+  }
+  .partite li {
+    border-bottom: 1px solid var(--rule);
+  }
+  .partite a {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    padding: 7px 0;
+    color: inherit;
+    text-decoration: none;
+    font-size: 13.5px;
+  }
+  .partite a:hover .chi {
+    color: var(--s1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .ora {
+    flex: none;
+    width: 5.5ch;
+    font-size: 12.5px;
+    color: var(--ink-2);
+  }
+  .torna {
+    font-size: 13px;
+  }
+</style>

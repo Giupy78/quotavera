@@ -7,6 +7,7 @@ import calendario from "../dati/calendario.json";
 import articolo from "../dati/articolo.json";
 import articoli from "../dati/articoli.json";
 import chicche from "../dati/chicche.json";
+import coppe from "../dati/coppe.json";
 
 const num = (v: number, d = 2) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -276,6 +277,34 @@ const dataLunga = (iso: string) =>
       </section>
     )
   }
+
+  <section>
+    <div class="hd">
+      <h2>Le coppe europee</h2>
+      <p>Risultati, classifiche e statistiche. <a href="/coppe/">Tutte le coppe →</a></p>
+    </div>
+    <div class="coppe-home">
+      {
+        (coppe.coppe as any[]).map((c) => {
+          const prossime = c.partite.filter((p: any) => !p.giocata && !p.rinviata && !p.senza_risultato);
+          const data = prossime[0]?.data;
+          const primo = c.classifica[0];
+          return (
+            <a class="coppa-home" href={`/coppe/${c.slug}/`}>
+              <b>{c.nome}</b>
+              {primo && <span>In testa {primo.squadra}, {primo.punti} punti</span>}
+              {data && (
+                <span>
+                  Prossimo turno il{" "}
+                  {new Date(data + "T00:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "long" })}
+                </span>
+              )}
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
 
   <section>
     <div class="hd">
@@ -610,6 +639,30 @@ const dataLunga = (iso: string) =>
   .giornata .leghe a span.mono {
     color: var(--ink-3);
     font-size: 11px;
+  }
+  .coppe-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .coppa-home {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid var(--rule);
+    background: var(--card);
+    padding: 12px 14px 13px;
+    text-decoration: none;
+    font-size: 12.5px;
+    color: var(--ink-2);
+  }
+  .coppa-home:hover {
+    border-color: var(--ink-3);
+  }
+  .coppa-home b {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--ink);
   }
   /* La bandiera e' un disegno (`components/Bandiera.astro`) e la sua altezza
      segue il testo: qui la si tiene piccola, accanto al nome. */

@@ -23,6 +23,7 @@ sys.path.insert(0, str(RADICE))
 
 from engine import chicche as motore_chicche
 from engine import fra_campionati
+from engine.dati import coppe
 from engine.classifica import calcola as calcola_classifica
 from engine.classifica import giornate, posizioni_attese
 from engine.core.market import margine, probabilita_implicite
@@ -30,7 +31,7 @@ from engine.core.types import Fixture
 from engine.dati.catalogo import CAMPIONATI, PER_SLUG
 from engine.dati.football_data import PartitaFutura, calendario, carica, stagioni
 from engine.dati import espn, openfootball
-from engine.dati.unione import fondi
+from engine.dati.unione import allinea_calendario, fondi
 from engine.sports.football.model import ModelloCalcio
 from engine.statistiche import calcola, conversione_media, precedenti
 
@@ -545,7 +546,10 @@ def elabora(c, storico, stagione, cal, nomi_estesi: dict | None = None,
             "stadio": campi.get((v["casa"], v["ospite"])),
             "data": v["data"], "ora": v.get("ora") or "",
             "giocata": False,
-            "senza_risultato": True,
+            # Solo se la data e' davvero passata: fra le orfane ci sono anche
+            # partite future uscite dal calendario, e a quelle l'avviso "la data e'
+            # passata" raccontava una cosa falsa.
+            "senza_risultato": v["data"] <= ieri.isoformat(),
             "quote": v.get("quote") or {},
             "p_mercato": v.get("p_mercato"),
             "p_modello": v.get("p_modello"),
@@ -988,6 +992,9 @@ def main() -> int:
     oggi = date.today()
     for c in CAMPIONATI:
         storico = carica(c.slug, STORIA)
+        cal = allinea_calendario(cal, c.slug,
+                                 {p.incontro.casa for p in storico[-400:]}
+                                 | {p.incontro.ospite for p in storico[-400:]})
 
         # Il buco che ESPN riempie: football-data pubblica a turno concluso e
         # puo' arrivare con giorni di ritardo, cosi' il sito resta fermo mentre
@@ -1154,6 +1161,15 @@ def main() -> int:
         "generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         **fra_campionati.per_campionato(materiale_chicche, INIZIO_STAGIONE.year),
     })
+
+    # Le coppe sono un di piu': un guasto qui non deve fermare i campionati. Se
+    # ESPN e' giu', `coppe` costruisce dall'archivio; se va storto qualcos'altro
+    # resta il file di ieri, e la sentinella se ne accorge dalle partite ferme.
+    try:
+        nomi = {l["slug"]: [s["squadra"] for s in l["squadre"]] for l in leghe}
+        scrivi("coppe.json", coppe.aggiorna_tutte(nomi, INIZIO_STAGIONE.year))
+    except Exception as errore:
+        print(f"  ! coppe: {errore}")
 
     print("\nFatto: dati veri, nessuna simulazione.")
     return 0

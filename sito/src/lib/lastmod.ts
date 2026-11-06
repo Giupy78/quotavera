@@ -22,6 +22,7 @@ import trackRecord from '../dati/track-record.json';
 import calendario from '../dati/calendario.json';
 import squadre from '../dati/squadre.json';
 import schede from '../dati/schede.json';
+import coppe from '../dati/coppe.json';
 import { lumacaSquadra } from './indirizzi';
 
 /** Quando il cron ha rigenerato i dati. È il nostro "ultimo aggiornamento". */
@@ -111,6 +112,15 @@ export function mappaLastmod(): Map<string, string> {
     if (sc.giocata && sc.data) {
       segna(`/calcio/${sc.campionato}/${sc.id}/`, sc.data);
     }
+  }
+
+  // Le coppe. Stessa regola dei campionati: una partita giocata ha la sua data,
+  // tutto il resto si muove con la generazione notturna.
+  segna('/coppe/', GENERATO);
+  for (const c of (coppe as { coppe: any[] }).coppe) {
+    segna(`/coppe/${c.slug}/`, GENERATO);
+    for (const s of c.squadre) segna(`/coppe/${c.slug}/squadra/${s.id}/`, GENERATO);
+    for (const p of c.partite) segna(`/coppe/${c.slug}/${p.id}/`, p.giocata ? p.data : GENERATO);
   }
 
   // Pagine squadra: le medie si spostano a ogni giornata, quindi la data di

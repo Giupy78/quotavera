@@ -134,6 +134,7 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
               </a>
             ))
           }
+          <a href="/coppe/" class="tutti" aria-current={qui.startsWith("/coppe/") ? "page" : undefined}>coppe europee →</a>
           <a href="/campionati/" class="tutti">tutti i 22 →</a>
         </nav>
       </div>
@@ -146,8 +147,8 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
     <div class="wrap">
       <footer>
         <p>
-          Statistiche e quote da <b>football-data.co.uk</b>, calendario da
-          <b> openfootball</b>. Controllato
+          Statistiche e quote da <b>football-data.co.uk</b> ed <b>ESPN</b>, calendario
+          da <b>openfootball</b>. Controllato
           {" "}<time id="generato" datetime={campionati.generato_il}>
             {generato.toLocaleString("it-IT", { dateStyle: "long", timeStyle: "short" })}
           </time>{fino && (

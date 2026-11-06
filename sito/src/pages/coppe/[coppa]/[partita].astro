@@ -1,0 +1,354 @@
+---
+import Base from "../../../layouts/Base.astro";
+import SchedaGiocata from "../../../components/SchedaGiocata.astro";
+import coppe from "../../../dati/coppe.json";
+import { lumacaSquadra } from "../../../lib/indirizzi";
+import { num, pct } from "../../../lib/testo";
+
+/* La scheda di una partita di coppa. Quando e' giocata usa lo stesso componente
+   dei campionati. Prima della partita si mostra quello che abbiamo davvero: i
+   numeri delle due squadre in questa coppa e, se ci sono, le quote di un solo
+   operatore, dette per quello che sono. Non ci sono probabilita' del modello: e'
+   fatto per stimare un campionato alla volta, e fra squadre di paesi diversi
+   darebbe numeri inventati. */
+
+export function getStaticPaths() {
+  return (coppe.coppe as any[]).flatMap((c) =>
+    c.partite.map((p: any) => ({ params: { coppa: c.slug, partita: p.id }, props: { c, p } })),
+  );
+}
+
+const { c, p } = Astro.props;
+
+const trova = (id: string) => c.squadre.find((s: any) => s.id === id) ?? null;
+const casa = trova(p.casa_slug);
+const ospite = trova(p.ospite_slug);
+
+const dataLunga = new Date(p.data + "T00:00:00").toLocaleDateString("it-IT", {
+  weekday: "long", day: "numeric", month: "long",
+});
+const radice = `/coppe/${c.slug}/`;
+const paginaSquadra = (s: any) => `${radice}squadra/${s.id}/`;
+
+/* Il cammino in questa coppa, dalla partita piu' recente. */
+const cammino = (slug: string) =>
+  c.partite
+    .filter((x: any) => x.giocata && (x.casa_slug === slug || x.ospite_slug === slug))
+    .reverse();
+
+const dueDecimali = new Set(["gol_fatti", "gol_subiti"]);
+const VOCI = [
+  { k: "gol_fatti", et: "Gol fatti" },
+  { k: "gol_subiti", et: "Gol subiti" },
+  { k: "tiri", et: "Tiri" },
+  { k: "in_porta", et: "Tiri in porta" },
+  { k: "corner", et: "Calci d'angolo" },
+  { k: "falli", et: "Falli" },
+  { k: "gialli", et: "Cartellini gialli" },
+  { k: "possesso", et: "Possesso" },
+];
+const valore = (medie: any, k: string) => {
+  const v = medie?.[k];
+  if (v === undefined || v === null) return "—";
+  return k === "possesso" ? `${num(v, 1)}%` : num(v, dueDecimali.has(k) ? 2 : 1);
+};
+
+/* Le quote sono di un solo operatore. Il margine si calcola lo stesso: e' il dato
+   che questo sito esiste per mostrare. */
+const quote: number[] | null = p.quote ?? null;
+const sommaInversi = quote ? quote.reduce((s, q) => s + 1 / q, 0) : 0;
+const implicite = quote ? quote.map((q) => 1 / q / sommaInversi) : [];
+
+const titolo = p.giocata
+  ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}: statistiche, ${c.nome}`
+  : `${p.casa} — ${p.ospite}: statistiche, ${c.nome}`;
+const descrizione = p.giocata
+  ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}, ${c.nome} ${c.stagione}: marcatori, formazioni e statistiche della partita.`
+  : `${p.casa} — ${p.ospite}, ${c.nome} ${c.stagione}: il ${dataLunga} alle ${p.ora}. I numeri delle due squadre in coppa a confronto.`;
+
+const inizio = `${p.data}T${p.ora}:00`;
+const fine = new Date(new Date(`${inizio}Z`).getTime() + 2 * 3600 * 1000).toISOString().slice(0, 19);
+const sito = (via: string) => new URL(via, Astro.site).href;
+const squadraEvento = (nome: string, esteso: string, slug: string) => ({
+  "@type": "SportsTeam",
+  name: nome,
+  ...(esteso && esteso !== nome ? { alternateName: esteso } : {}),
+  ...(slug ? { url: sito(`${radice}squadra/${slug}/`) } : {}),
+});
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "SportsEvent",
+  name: p.giocata
+    ? `${p.casa} ${p.gol_casa}-${p.gol_ospite} ${p.ospite}`
+    : `${p.casa} — ${p.ospite}`,
+  startDate: inizio,
+  endDate: fine,
+  eventStatus: p.rinviata ? "https://schema.org/EventPostponed" : "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  sport: "Soccer",
+  location: {
+    "@type": "Place",
+    name: p.stadio?.nome ?? `Campo di casa di ${p.casa}`,
+    ...(p.stadio?.citta || p.stadio?.paese
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            ...(p.stadio.citta ? { addressLocality: p.stadio.citta } : {}),
+            ...(p.stadio.paese ? { addressCountry: p.stadio.paese } : {}),
+          },
+        }
+      : {}),
+  },
+  organizer: { "@type": "SportsOrganization", name: c.nome, url: sito(radice) },
+  performer: [
+    squadraEvento(p.casa, p.casa_esteso, p.casa_slug),
+    squadraEvento(p.ospite, p.ospite_esteso, p.ospite_slug),
+  ],
+  competitor: [
+    squadraEvento(p.casa, p.casa_esteso, p.casa_slug),
+    squadraEvento(p.ospite, p.ospite_esteso, p.ospite_slug),
+  ],
+};
+
+/* In fondo, le pagine delle due squadre: quella di coppa sempre, quella di
+   campionato solo per le squadre che seguiamo. */
+const collegamenti = [casa, ospite].filter(Boolean).flatMap((s: any) => [
+  { href: paginaSquadra(s), testo: `${s.nome} in ${c.nome}` },
+  ...(s.campionato
+    ? [{ href: `/calcio/${s.campionato}/squadra/${lumacaSquadra(s.nome)}/`, testo: `${s.nome} in campionato` }]
+    : []),
+]);
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+
+  {p.giocata ? (
+    <SchedaGiocata p={p} lega={{ nome: c.nome }} radice={radice} />
+  ) : (
+    <>
+      <section>
+        <p class="occhiello">
+          <a href={radice} style="color:inherit">{c.nome}</a>
+          {" · "}{dataLunga}{p.ora && ` · ${p.ora}`}
+        </p>
+        <div class="hd">
+          <h1>{p.casa} — {p.ospite}</h1>
+          {(p.fase || p.stadio) && (
+            <p>
+              {p.fase}
+              {p.fase && p.stadio && " · "}
+              {p.stadio?.nome}
+              {p.stadio?.citta && `, ${p.stadio.citta}`}
+            </p>
+          )}
+        </div>
+
+        {p.rinviata && (
+          <div class="vuoto" style="margin:18px 0">
+            <b>Questa partita risulta rinviata o sospesa</b>
+            Appena viene rimessa in calendario, o se ne conosce il risultato, questa pagina si
+            aggiorna da sé.
+          </div>
+        )}
+        {p.senza_risultato && (
+          <div class="vuoto" style="margin:18px 0">
+            <b>Il risultato non ci è arrivato</b>
+            La data della partita è passata, ma la nostra fonte non ha ancora pubblicato il
+            punteggio: appena arriva, questa pagina si aggiorna da sé.
+          </div>
+        )}
+      </section>
+
+      {casa && ospite && (casa.partite > 0 || ospite.partite > 0) && (
+        <section>
+          <div class="hd">
+            <h2>I numeri delle due squadre</h2>
+            <p>Medie a partita in questa {c.nome}.</p>
+          </div>
+          <div class="scorri">
+            <table class="dati">
+              <thead>
+                <tr>
+                  <th>A partita</th>
+                  <th class="num">{p.casa}</th>
+                  <th class="num">{p.ospite}</th>
+                  <th class="num">Media della coppa</th>
+                </tr>
+              </thead>
+              <tbody>
+                {casa.posizione && ospite.posizione && (
+                  <tr>
+                    <td>Posizione in classifica</td>
+                    <td class="num mono">{casa.posizione}ª</td>
+                    <td class="num mono">{ospite.posizione}ª</td>
+                    <td class="num mono media">—</td>
+                  </tr>
+                )}
+                {casa.punti !== null && ospite.punti !== null && (
+                  <tr>
+                    <td>Punti</td>
+                    <td class="num mono">{casa.punti}</td>
+                    <td class="num mono">{ospite.punti}</td>
+                    <td class="num mono media">—</td>
+                  </tr>
+                )}
+                {VOCI.map((v) => (
+                  <tr>
+                    <td>{v.et}</td>
+                    <td class="num mono">{valore(casa.medie, v.k)}</td>
+                    <td class="num mono">{valore(ospite.medie, v.k)}</td>
+                    <td class="num mono media">{valore(c.media, v.k)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {[{ s: casa, nome: p.casa }, { s: ospite, nome: p.ospite }].some((x) => x.s && cammino(x.s.id).length) && (
+        <section>
+          <div class="hd"><h2>Il cammino in coppa</h2></div>
+          <div class="cammini">
+            {[{ s: casa, nome: p.casa }, { s: ospite, nome: p.ospite }].map(({ s, nome }) => (
+              s && cammino(s.id).length > 0 && (
+                <div>
+                  <h3>{nome}</h3>
+                  <ul class="partite">
+                    {cammino(s.id).map((x: any) => (
+                      <li>
+                        <a href={`${radice}${x.id}/`}>
+                          <span class="ris mono">{x.gol_casa}-{x.gol_ospite}</span>
+                          <span>{x.casa} — {x.ospite}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            ))}
+          </div>
+        </section>
+      )}
+
+      {quote && (
+        <section>
+          <div class="hd">
+            <h2>Le quote</h2>
+            <p>
+              Di un solo operatore: niente confronto, perché la fonte che lo permette non copre
+              le coppe.
+            </p>
+          </div>
+          <div class="scorri">
+            <table class="dati">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="num">1 — {p.casa}</th>
+                  <th class="num">X — Pareggio</th>
+                  <th class="num">2 — {p.ospite}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Quota</td>
+                  {quote.map((q) => <td class="num mono">{num(q)}</td>)}
+                </tr>
+                <tr>
+                  <td>Probabilità implicita, senza margine</td>
+                  {implicite.map((x) => <td class="num mono">{pct(x, 1)}</td>)}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="nota">
+            Il margine di questo operatore è {pct(sommaInversi - 1, 1)}. Le quote dicono cosa pensa
+            il mercato, non cosa succederà: <a href="/quote/">come si leggono</a>.
+          </p>
+        </section>
+      )}
+    </>
+  )}
+
+  {p.rigori && <p class="nota">Ai rigori: {p.rigori[0]}-{p.rigori[1]}.</p>}
+
+  {
+    collegamenti.length > 0 && (
+      <p class="le-squadre">
+        <span>Statistiche complete:</span>
+        {collegamenti.map((l) => <a href={l.href}>{l.testo}</a>)}
+      </p>
+    )
+  }
+  {!p.giocata && <p class="torna"><a href={radice}>← Torna alla {c.nome}</a></p>}
+</Base>
+
+<style>
+  section {
+    margin-bottom: 34px;
+  }
+  td.media {
+    color: var(--ink-3);
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 8px 0 0;
+    max-width: 62ch;
+  }
+  .cammini {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+  }
+  h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .partite {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .partite li {
+    border-bottom: 1px solid var(--rule);
+  }
+  .partite a {
+    display: flex;
+    gap: 10px;
+    padding: 6px 0;
+    color: inherit;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .partite a:hover {
+    color: var(--s1);
+  }
+  .ris {
+    flex: none;
+    width: 4ch;
+    color: var(--ink-2);
+  }
+  .le-squadre {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 30px;
+  }
+  .le-squadre span {
+    color: var(--ink-3);
+  }
+  .torna {
+    font-size: 13px;
+    margin-top: 14px;
+  }
+</style>

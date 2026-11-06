@@ -5,10 +5,9 @@ in undici paesi. Non e' una lista di desideri — e' esattamente cio' per cui
 esistono sia lo storico con le quote di chiusura sia il calendario delle
 partite future.
 
-**Le coppe non ci sono**, e non e' una dimenticanza: football-data copre solo
-campionati nazionali. Champions, Europa League e Coppa Italia richiedono
-un'altra fonte, a pagamento. Sta scritto qui perche' non venga riscoperto ogni
-volta.
+**Le coppe non stanno qui**: football-data copre solo campionati nazionali. Le
+coppe europee arrivano da ESPN, gratis, e hanno il loro catalogo in
+`engine/dati/coppe.py`.
 """
 
 from __future__ import annotations

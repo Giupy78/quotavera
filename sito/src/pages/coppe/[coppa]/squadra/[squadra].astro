@@ -1,0 +1,254 @@
+---
+import Base from "../../../../layouts/Base.astro";
+import coppe from "../../../../dati/coppe.json";
+import { lumacaSquadra } from "../../../../lib/indirizzi";
+import { num } from "../../../../lib/testo";
+
+/* Una squadra in una coppa. Esiste anche per le squadre che non seguiamo in
+   campionato: "statistiche Ferencvaros" in italiano non la scrive quasi nessuno,
+   ed e' esattamente il tipo di ricerca in cui le pagine squadra si sono
+   posizionate meglio. Per quelle che seguiamo rimanda alla pagina di campionato,
+   che resta la pagina principale. */
+
+export function getStaticPaths() {
+  return (coppe.coppe as any[]).flatMap((c) =>
+    c.squadre.map((s: any) => ({ params: { coppa: c.slug, squadra: s.id }, props: { c, s } })),
+  );
+}
+
+const { c, s } = Astro.props;
+const radice = `/coppe/${c.slug}/`;
+
+const sue = c.partite.filter((p: any) => p.casa_slug === s.id || p.ospite_slug === s.id);
+const giocate = sue.filter((p: any) => p.giocata).reverse();
+const prossime = sue.filter((p: any) => !p.giocata && !p.rinviata && !p.senza_risultato);
+
+const giorno = (d: string) =>
+  new Date(d + "T00:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "short" });
+
+const esito = (p: any) => {
+  const fatti = p.casa_slug === s.id ? p.gol_casa : p.gol_ospite;
+  const subiti = p.casa_slug === s.id ? p.gol_ospite : p.gol_casa;
+  return fatti > subiti ? "V" : fatti < subiti ? "P" : "N";
+};
+
+const VOCI = [
+  { k: "gol_fatti", et: "Gol fatti", d: 2 },
+  { k: "gol_subiti", et: "Gol subiti", d: 2 },
+  { k: "tiri", et: "Tiri", d: 1 },
+  { k: "tiri_subiti", et: "Tiri subiti", d: 1 },
+  { k: "in_porta", et: "Tiri in porta", d: 1 },
+  { k: "in_porta_subiti", et: "Tiri in porta subiti", d: 1 },
+  { k: "corner", et: "Calci d'angolo", d: 1 },
+  { k: "corner_subiti", et: "Calci d'angolo subiti", d: 1 },
+  { k: "falli", et: "Falli", d: 1 },
+  { k: "gialli", et: "Cartellini gialli", d: 2 },
+  { k: "rossi", et: "Cartellini rossi", d: 2 },
+  { k: "possesso", et: "Possesso (%)", d: 1 },
+  { k: "passaggi", et: "Passaggi", d: 0 },
+  { k: "parate", et: "Parate", d: 1 },
+];
+const scrivi = (m: any, k: string, d: number) =>
+  m?.[k] === undefined || m?.[k] === null ? "—" : num(m[k], d);
+
+const titolo = `Statistiche ${s.nome} in ${c.nome}`;
+const descrizione =
+  `I numeri di ${s.nome} in ${c.nome} ${c.stagione}: gol, tiri, calci d'angolo, cartellini ` +
+  `e possesso a partita, a confronto con la media della coppa, e tutte le partite.`;
+
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  name: s.nome,
+  ...(s.esteso ? { alternateName: s.esteso } : {}),
+  sport: "Soccer",
+  memberOf: { "@type": "SportsOrganization", name: c.nome, url: new URL(radice, Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Coppe europee", item: new URL("/coppe/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: c.nome, item: new URL(radice, Astro.site).href },
+    { "@type": "ListItem", position: 3, name: s.nome },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <section>
+    <p class="occhiello">
+      <a href={radice} style="color:inherit">{c.nome}</a> · stagione {c.stagione}
+      {s.posizione && ` · ${s.posizione}ª su ${c.classifica.length}`}
+    </p>
+    <div class="hd">
+      <h1>{s.nome} in {c.nome}</h1>
+      {s.esteso && <p>{s.esteso}</p>}
+    </div>
+
+    <div class="tessere">
+      <div class="tessera">
+        <div class="k">Punti</div>
+        <div class="v mono">{s.punti ?? "—"}</div>
+        <div class="n">{s.posizione ? `${s.posizione}ª in classifica` : "in coppa"}</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Record</div>
+        <div class="v mono">{s.vinte}-{s.pareggiate}-{s.perse}</div>
+        <div class="n">vinte, pari, perse</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Gol</div>
+        <div class="v mono">{s.gol_fatti}-{s.gol_subiti}</div>
+        <div class="n">fatti e subiti</div>
+      </div>
+      <div class="tessera">
+        <div class="k">Partite</div>
+        <div class="v mono">{s.partite}</div>
+        <div class="n">giocate in coppa</div>
+      </div>
+    </div>
+
+    {
+      s.campionato && (
+        <p class="campionato">
+          <a href={`/calcio/${s.campionato}/squadra/${lumacaSquadra(s.nome)}/`}>
+            Le statistiche di {s.nome} in campionato →
+          </a>
+        </p>
+      )
+    }
+  </section>
+
+  {
+    prossime.length > 0 && (
+      <section>
+        <div class="hd"><h2>{prossime.length === 1 ? "La prossima" : "Le prossime"}</h2></div>
+        <ul class="partite">
+          {prossime.map((p: any) => (
+            <li>
+              <a href={`${radice}${p.id}/`}>
+                <span class="quando mono">{giorno(p.data)}</span>
+                <span>{p.casa} — {p.ospite}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    s.partite > 0 && (
+      <section>
+        <div class="hd">
+          <h2>I numeri a partita</h2>
+          <p>
+            {s.partite <= 3
+              ? `Su ${s.partite} ${s.partite === 1 ? "partita" : "partite"}: sono ancora pochissime.`
+              : `Su ${s.partite} partite: un campione piccolo, da leggere con cautela.`}
+          </p>
+        </div>
+        <div class="scorri">
+          <table class="dati">
+            <thead>
+              <tr>
+                <th>A partita</th>
+                <th class="num">{s.nome}</th>
+                <th class="num">Media della coppa</th>
+              </tr>
+            </thead>
+            <tbody>
+              {VOCI.filter((v) => s.medie[v.k] !== undefined).map((v) => (
+                <tr>
+                  <td>{v.et}</td>
+                  <td class="num mono">{scrivi(s.medie, v.k, v.d)}</td>
+                  <td class="num mono media">{scrivi(c.media, v.k, v.d)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    giocate.length > 0 && (
+      <section>
+        <div class="hd"><h2>Le partite giocate</h2></div>
+        <ul class="partite">
+          {giocate.map((p: any) => (
+            <li>
+              <a href={`${radice}${p.id}/`}>
+                <span class="quando mono">{giorno(p.data)}</span>
+                <span class="ris mono">{p.gol_casa}-{p.gol_ospite}</span>
+                <span class="esito">{esito(p)}</span>
+                <span>{p.casa} — {p.ospite}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <p class="torna"><a href={radice}>← Torna alla {c.nome}</a></p>
+</Base>
+
+<style>
+  section {
+    margin-bottom: 34px;
+  }
+  .campionato {
+    font-size: 13.5px;
+    margin: 14px 0 0;
+  }
+  td.media {
+    color: var(--ink-3);
+  }
+  .partite {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .partite li {
+    border-bottom: 1px solid var(--rule);
+  }
+  .partite a {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    padding: 7px 0;
+    color: inherit;
+    text-decoration: none;
+    font-size: 13.5px;
+  }
+  .partite a:hover {
+    color: var(--s1);
+  }
+  .quando {
+    flex: none;
+    width: 7ch;
+    font-size: 12.5px;
+    color: var(--ink-3);
+  }
+  .ris {
+    flex: none;
+    width: 4ch;
+  }
+  .esito {
+    flex: none;
+    width: 1.5ch;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink-2);
+  }
+  .torna {
+    font-size: 13px;
+  }
+</style>

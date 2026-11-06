@@ -17,8 +17,10 @@ import Bandiera from "./Bandiera.astro";
 interface Props {
   p: any;
   lega: any;
+  /* Dove porta il nome della competizione. Le coppe vivono sotto /coppe/. */
+  radice?: string;
 }
-const { p, lega } = Astro.props;
+const { p, lega, radice = `/calcio/${p.campionato}/` } = Astro.props;
 
 const num = (v: number, d = 2) =>
   v.toLocaleString("it-IT", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -71,7 +73,7 @@ const righeStat = st
       ...(st.possesso ? [["Possesso", st.possesso.map((x: number) => num(x, 1) + "%")]] : []),
       ...(st.passaggi ? [["Passaggi", st.passaggi]] : []),
       ...(st.parate ? [["Parate", st.parate]] : []),
-    ] as [string, any[]][])
+    ] as [string, any[]][]).filter(([, valori]) => valori)
   : [];
 
 const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
@@ -80,7 +82,7 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 
 <section>
   <p class="occhiello">
-    <a href={`/calcio/${p.campionato}/`}><Bandiera e={lega?.bandiera} /> {lega?.nome}</a>
+    <a href={radice}><Bandiera e={lega?.bandiera} /> {lega?.nome}</a>
     {" · "}<span style="text-transform:capitalize">{dataLunga}</span>
   </p>
 
@@ -96,8 +98,8 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 
   {st && (
     <p class="sotto">
-      Primo tempo {st.primo_tempo[0]}–{st.primo_tempo[1]} · tiri in porta
-      {" "}{st.in_porta[0]}–{st.in_porta[1]}
+      {st.primo_tempo && <>Primo tempo {st.primo_tempo[0]}–{st.primo_tempo[1]} · </>}
+      Tiri in porta {st.in_porta[0]}–{st.in_porta[1]}
     </p>
   )}
 </section>
@@ -279,7 +281,7 @@ const quote = p.quote_chiusura?.betfair ?? p.quote_chiusura?.pinnacle
 
 <section>
   <p class="vaia">
-    <a href={`/calcio/${p.campionato}/`}>
+    <a href={radice}>
       Classifica, risultati e statistiche di {lega?.nome} →
     </a>
   </p>
