@@ -252,10 +252,17 @@ risultato sulla scheda, ed essere l'elenco esatto degli indirizzi pubblicati in
 stagione — se una partita esce da tutte le liste, è da lì che si recupera la
 sua pagina invece di lasciarla diventare un 404.
 
-**Le coppe non ci sono.** football-data copre solo campionati nazionali:
-Champions, Europa League e coppe nazionali richiedono una fonte a pagamento.
-Scritto in `catalogo.py` e sulla pagina dei campionati perché non venga
-riscoperto ogni volta.
+**Le coppe europee ci sono dal 6 novembre 2026**, in `/coppe/`: Champions, Europa
+e Conference League, da ESPN, gratis. Per mesi questo file ha detto che servisse
+una fonte a pagamento: era vero prima di ESPN, ed è rimasto scritto per inerzia.
+Risultati, classifica, 28 statistiche, formazioni, gol e cartellini. Niente
+probabilità, perché il modello stima un campionato alla volta, e niente confronto
+fra operatori, perché football-data non le copre. L'archivio è `dati/coppe/` e non
+perde mai una partita; gli indirizzi si assegnano una volta sola. Le squadre si
+riconoscono dal **codice ESPN**, non dal nome: "AEK Larnaca" assomiglia al nostro
+AEK e "Red Star Belgrade" al nostro Red Star. Le statistiche di coppa non entrano
+in quelle di campionato. Le coppe nazionali non ci sono: da provare, è lo stesso
+endpoint.
 
 ### I dati, e quanto costano
 
@@ -265,7 +272,8 @@ riscoperto ogni volta.
 | Calendario e quote pre-partita | `fixtures.csv`, stessa fonte | gratis |
 | Calendario completo di stagione | openfootball | gratis |
 | **Risultati del giorno e tabellini** | **ESPN** | **gratis** |
-| Coppe, quote in tempo reale | serve un'API | 20-30 €/mese |
+| **Coppe europee** | **ESPN** | **gratis** |
+| Quote in tempo reale | serve un'API | 20-30 €/mese |
 
 Trent'anni di risultati, dieci di quote di chiusura, senza una chiave né un
 account.
@@ -424,10 +432,17 @@ Ecosia, DuckDuckGo e Yahoo.
 
 **Web Analytics di Cloudflare è acceso dal 27 ottobre.** Prima non lo era: il
 token non era mai stato impostato, quindi di pagine viste non esiste nessun
-dato precedente. quotavera.it non è una zona Cloudflare (il dominio è
-registrato altrove), quindi l'impostazione automatica dalla sezione Web
-Analytics non è disponibile: si accende dal progetto Pages, scheda *Metriche*.
-Si attiva al primo rilascio successivo.
+dato precedente. La sezione Web Analytics di Cloudflare non propone quotavera.it
+fra i siti disponibili, anche se il dominio è una zona Cloudflare (i nameserver
+sono i loro): si accende dal progetto Pages, scheda *Metriche*. Si attiva al primo
+rilascio successivo.
+
+**I robot delle intelligenze artificiali, deciso il 6 novembre.** Entrano quelli
+che leggono per citare il sito nelle risposte (OAI-SearchBot, ChatGPT-User,
+PerplexityBot, Claude-SearchBot, Claude-User), restano fuori quelli che raccolgono
+testo per l'addestramento (GPTBot e ClaudeBot rispondono 403). Il blocco lo fa
+Cloudflare, sulla rete e con un suo `robots.txt` aggiunto davanti al nostro: è già
+il criterio giusto, quindi l'impostazione è rimasta com'è. Vedi `robots.txt.ts`.
 
 ---
 
@@ -446,7 +461,9 @@ Si attiva al primo rilascio successivo.
    sono irraggiungibili: ha senso solo come complemento alla scheda, non come
    prodotto.
 5. **Niente fonti a pagamento finché non c'è un incasso.** Vincolo esplicito,
-   non una preferenza tecnica: coppe e quote in tempo reale restano fuori.
+   non una preferenza tecnica: le quote in tempo reale restano fuori. Prima di dire
+   che un dato richiede una fonte a pagamento, provare l'endpoint gratuito: per le
+   coppe abbiamo sbagliato per mesi.
 
 ---
 

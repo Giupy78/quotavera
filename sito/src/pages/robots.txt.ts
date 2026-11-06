@@ -6,28 +6,29 @@ import type { APIRoute } from "astro";
 
 const indicizzabile = import.meta.env.PUBLIC_NOINDEX !== "1";
 
-/* Gli assistenti AI sono lasciati entrare apposta.
+/* Chi entra e chi no, e perche' questo file non e' tutta la storia.
  *
- * Il criterio è uno solo: il crawler restituisce qualcosa? Chi indicizza per
- * citare il sito nelle risposte porta lettori, ed è lo stesso motivo per cui
- * lasciamo entrare Google. Chi aspira testo e non rimanda nessuno indietro
- * resta fuori: è la lista qui sotto.
+ * Il criterio e' uno solo: il crawler restituisce qualcosa? Chi legge per citare
+ * il sito in una risposta porta lettori, ed e' lo stesso motivo per cui entra
+ * Google. Chi raccoglie testo per addestrare un modello non rimanda nessuno.
  *
- * Due note che valgono più della lista:
+ * Questo file da solo non decide: Cloudflare aggiunge davanti al nostro il suo
+ * robots.txt gestito, e in piu' blocca alcuni robot sulla rete. Verificato il 6
+ * novembre 2026 sul sito vero:
  *
- * 1. `Google-Extended` e `Applebot-Extended` riguardano SOLO l'uso per
- *    l'addestramento e per le risposte generate. Non toccano `Googlebot` né
- *    `Applebot`, quindi il posizionamento nella ricerca non c'entra in nessuno
- *    dei due sensi: aprirli non aiuta il ranking, chiuderli non lo danneggia.
- *    Bloccare `Googlebot` invece farebbe sparire il sito da Google: sono cose
- *    diverse e vengono confuse spesso.
+ *   - entrano (200): Googlebot, bingbot, OAI-SearchBot, ChatGPT-User,
+ *     PerplexityBot, Claude-SearchBot, Claude-User;
+ *   - restano fuori (403): GPTBot, ClaudeBot, che servono all'addestramento.
  *
- * 2. `OAI-SearchBot` e `PerplexityBot` non sono mai stati bloccati: servono a
- *    citare, non ad addestrare. `ClaudeBot` e `GPTBot` invece lo erano, e
- *    alimentano anche gli indici da cui quegli assistenti pescano le fonti.
- *    Per un sito di pronostici, dove la domanda arriva sempre più spesso a un
- *    assistente invece che a un motore, restare fuori da quegli indici costa
- *    più di quanto protegga.
+ * E' esattamente il criterio qui sopra, quindi l'impostazione di Cloudflare e'
+ * rimasta com'e'. Una versione precedente di questo commento diceva che GPTBot e
+ * ClaudeBot erano lasciati entrare apposta: non era vero, e non serve, perche' le
+ * citazioni dipendono dai robot di ricerca.
+ *
+ * Attenzione a una confusione frequente: `Google-Extended` e `Applebot-Extended`
+ * riguardano solo addestramento e risposte generate, e non toccano `Googlebot` ne'
+ * il posizionamento. Bloccare `Googlebot` farebbe sparire il sito da Google: sono
+ * cose diverse.
  */
 const SCRAPING = [
   "CCBot",               // Common Crawl: archivio, non manda lettori
