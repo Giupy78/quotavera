@@ -192,3 +192,36 @@ def test_i_mesi_attraversano_il_capodanno():
     assert _mesi(date(2026, 11, 20), date(2027, 2, 2)) == [
         "202611", "202612", "202701", "202702",
     ]
+
+
+# --- i nomi del calendario ---------------------------------------------------------
+
+def _futura(casa, ospite, campionato="championship"):
+    from datetime import date
+    from engine.dati.football_data import PartitaFutura
+    return PartitaFutura(campionato=campionato, data=date(2026, 11, 3), ora="20:45",
+                         casa=casa, ospite=ospite, quote={})
+
+
+def test_il_calendario_prende_i_nomi_dei_risultati():
+    from engine.dati.unione import allinea_calendario
+    conosciute = {"Preston", "Sheffield United", "Sheffield Weds", "Oxford"}
+    cal = [_futura("Preston", "Sheffield Utd"), _futura("Oxford Utd", "Preston")]
+    fuori = allinea_calendario(cal, "championship", conosciute)
+    assert (fuori[0].casa, fuori[0].ospite) == ("Preston", "Sheffield United")
+    assert fuori[0].id == "preston-sheffield-united"
+    assert fuori[1].casa == "Oxford"
+
+
+def test_una_neopromossa_resta_com_e():
+    from engine.dati.unione import allinea_calendario
+    cal = [_futura("Preston", "Barnet")]
+    fuori = allinea_calendario(cal, "championship", {"Preston", "Sheffield United"})
+    assert fuori[0].ospite == "Barnet"
+
+
+def test_gli_altri_campionati_non_si_toccano():
+    from engine.dati.unione import allinea_calendario
+    cal = [_futura("Oxford Utd", "Reading", campionato="league-one")]
+    fuori = allinea_calendario(cal, "championship", {"Oxford", "Reading"})
+    assert fuori[0].casa == "Oxford Utd"

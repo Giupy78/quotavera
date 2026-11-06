@@ -25,7 +25,7 @@ from __future__ import annotations
 from dataclasses import replace
 from datetime import date
 
-from engine.dati.espn import PartitaEspn
+from engine.dati.espn import PartitaEspn, abbina
 from engine.dati.football_data import PartitaStorica, Statistiche
 from engine.core.types import Incontro
 
@@ -39,6 +39,33 @@ AVANZATE = ("tiri_respinti", "fuorigioco", "parate", "possesso", "passaggi",
             "passaggi_riusciti", "cross", "cross_riusciti", "contrasti",
             "contrasti_riusciti", "intercetti", "respinte", "lanci",
             "lanci_riusciti")
+
+
+def allinea_calendario(cal: list, campionato: str, conosciute: set[str]) -> list:
+    """Il calendario con i nomi scritti come nei risultati.
+
+    football-data non e' coerente con se stesso: da novembre 2026 il suo file del
+    calendario scrive "Sheffield Utd" e "Oxford Utd" dove quello dei risultati
+    scrive "Sheffield United" e "Oxford". Senza questo passaggio nasceva una
+    seconda pagina per la stessa partita, che non riceveva mai il risultato e
+    diceva "non ci e' arrivato" accanto alla pagina vera col punteggio.
+
+    Stesso abbinamento conservativo di ESPN: passa solo cio' che e' univoco da
+    entrambi i lati. Un nome che non si abbina resta com'e': e' una neopromossa che
+    non ha ancora giocato, e non un errore.
+    """
+    ignoti = sorted({n for p in cal if p.campionato == campionato
+                     for n in (p.casa, p.ospite)} - conosciute)
+    if not ignoti or not conosciute:
+        return cal
+    fatti, _ = abbina(ignoti, sorted(conosciute))
+    if not fatti:
+        return cal
+    return [
+        replace(p, casa=fatti.get(p.casa, p.casa), ospite=fatti.get(p.ospite, p.ospite))
+        if p.campionato == campionato else p
+        for p in cal
+    ]
 
 
 def _interi(valori: tuple[float, float]) -> tuple[int, int]:
