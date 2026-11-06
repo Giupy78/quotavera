@@ -152,7 +152,7 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
           {" "}<time id="generato" datetime={campionati.generato_il}>
             {generato.toLocaleString("it-IT", { dateStyle: "long", timeStyle: "short" })}
           </time>{fino && (
-            <>; il risultato più recente che abbiamo è del <b>{giorno(fino)}</b>
+            <>; il risultato di campionato più recente che abbiamo è del <b>{giorno(fino)}</b>
             {" "}— le fonti pubblicano a turno concluso, un paio di volte a
             settimana</>
           )}.
