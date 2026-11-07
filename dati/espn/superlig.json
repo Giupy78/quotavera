@@ -1,4 +1,937 @@
 {
+ "401888250": {
+  "cartellini": [
+   {
+    "giocatore": "Samed Onur",
+    "minuto": "14'",
+    "rosso": false,
+    "squadra": "Samsunspor"
+   },
+   {
+    "giocatore": "Arthur Masuaku",
+    "minuto": "39'",
+    "rosso": false,
+    "squadra": "Konyaspor"
+   },
+   {
+    "giocatore": "Enis Destan",
+    "minuto": "88'",
+    "rosso": false,
+    "squadra": "Konyaspor"
+   },
+   {
+    "giocatore": "Josafat Mendes",
+    "minuto": "90'+6'",
+    "rosso": false,
+    "squadra": "Samsunspor"
+   },
+   {
+    "giocatore": "Elayis Tavsan",
+    "minuto": "90'+6'",
+    "rosso": false,
+    "squadra": "Samsunspor"
+   }
+  ],
+  "casa": "Samsunspor",
+  "data": "2026-11-07",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Bahadir Han Güngördü",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Chidozie Awaziem",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Rayyan Baniya",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Arthur Masuaku",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Ugurcan Yazgili",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Diogo Gonçalves",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "77",
+      "nome": "Melih Ibrahimoglu",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "66",
+      "nome": "Rajmund Tóth",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "42",
+      "nome": "Mostafa Mohamed",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "91",
+      "nome": "Jean-Luc Dompé",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Ebrima Colley",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Ata Yanik",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Deniz Ertas",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Jackson Muleka",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Yhoan Andzouana",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Emir Bars",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Enis Bardhi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Arif Bosluk",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Marko Jevtovic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Ahmet Oguz",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "94",
+      "nome": "Enis Destan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Konyaspor"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Bilal Biyazit",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Igor Drapinski",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Strahinja Erakovic",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Logi Tomasson",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Josafat Mendes",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "42",
+      "nome": "Antoine Sekongo",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Samed Onur",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Elliot Watt",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Mohamed Bayo",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "77",
+      "nome": "Afonso Sousa",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Tanguy Coulibaly",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Yalcin Kayan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Haluk Tan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Elayis Tavsan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Saikuba Jarju",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "34",
+      "nome": "Gabriele Guarino",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "15",
+      "nome": "Kouadou Assoumou",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Okan Kocuk",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Enes Albak",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Oskar Øhlenschlaeger",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Yunus Emre Çift",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Samsunspor"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Antoine Sekongo",
+    "minuto": "39'",
+    "squadra": "Samsunspor",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 0,
+  "id": "401888250",
+  "ospite": "Konyaspor",
+  "stadio": {
+   "citta": "Samsun",
+   "nome": "Samsun 19 Mayis Stadium",
+   "paese": "Türkiye"
+  },
+  "stat": {
+   "contrasti": [
+    20.0,
+    9.0
+   ],
+   "contrasti_riusciti": [
+    11.0,
+    6.0
+   ],
+   "corner": [
+    2.0,
+    3.0
+   ],
+   "falli": [
+    12.0,
+    13.0
+   ],
+   "fuorigioco": [
+    1.0,
+    4.0
+   ],
+   "gialli": [
+    3.0,
+    2.0
+   ],
+   "in_porta": [
+    3.0,
+    1.0
+   ],
+   "parate": [
+    1.0,
+    2.0
+   ],
+   "passaggi": [
+    407.0,
+    442.0
+   ],
+   "passaggi_riusciti": [
+    320.0,
+    372.0
+   ],
+   "possesso": [
+    47.4,
+    52.6
+   ],
+   "respinte": [
+    23.0,
+    12.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    6.0,
+    7.0
+   ],
+   "tiri_respinti": [
+    1.0,
+    0.0
+   ]
+  }
+ },
+ "401888255": {
+  "cartellini": [
+   {
+    "giocatore": "Tayfur Bingöl",
+    "minuto": "63'",
+    "rosso": false,
+    "squadra": "Kocaelispor"
+   },
+   {
+    "giocatore": "Rigoberto Rivas",
+    "minuto": "81'",
+    "rosso": false,
+    "squadra": "Kocaelispor"
+   },
+   {
+    "giocatore": "Zak Jules",
+    "minuto": "82'",
+    "rosso": false,
+    "squadra": "Eyupspor"
+   },
+   {
+    "giocatore": "Daniel Agyei",
+    "minuto": "83'",
+    "rosso": false,
+    "squadra": "Kocaelispor"
+   }
+  ],
+  "casa": "Eyupspor",
+  "data": "2026-11-07",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "83",
+      "nome": "Serhat Öztasdelen",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Emir Ortakaya",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Anfernee Dijksteel",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Rigoberto Rivas",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Ugur Kaan Yildiz",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Berkan Kutlu",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Mahamadou Susoho",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Show",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "97",
+      "nome": "Florian Ayé",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Makana Baku",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Daniel Agyei",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "75",
+      "nome": "Tayfur Bingöl",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "26",
+      "nome": "Metehan Altunbas",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Gonçalo Santos Sousa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Onurcan Piri",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "41",
+      "nome": "Onur Öztonga",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "3",
+      "nome": "Muharrem Cinan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Tobias Gulliksen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Arda Özyar",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Matej Maglica",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Ege Bilim",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Kocaelispor"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Horatiu Moldovan",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Zak Jules",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jawad El Yamiq",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Anil Yasar",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Ömer Ceyhan",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Charles-Andre Raux Yao",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Abdelhamid Sabiri",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "88",
+      "nome": "Chandrel Géraud Massanga",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Ahmed Abdullahi",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Lenny Pintor",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "98",
+      "nome": "Bilal Boutobba",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "53",
+      "nome": "Musa Eren Karakaş",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "42",
+      "nome": "Berhan Satli",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Emre Bilgin",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Hamza Akman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "84",
+      "nome": "Christ Sadia",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Yusuf Barasi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Tashkin Ilter",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "David Costa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Yigit Demir",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Arda Yavuz",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Eyupspor"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Daniel Agyei",
+    "minuto": "5'",
+    "squadra": "Kocaelispor",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Berkan Kutlu",
+    "minuto": "28'",
+    "squadra": "Kocaelispor",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 0,
+  "gol_ospite": 2,
+  "id": "401888255",
+  "ospite": "Kocaelispor",
+  "stadio": {
+   "citta": "Istanbul",
+   "nome": "Esenyurt Necmi Kadioglu Stadi",
+   "paese": "Türkiye"
+  },
+  "stat": {
+   "contrasti": [
+    14.0,
+    27.0
+   ],
+   "contrasti_riusciti": [
+    10.0,
+    17.0
+   ],
+   "corner": [
+    4.0,
+    1.0
+   ],
+   "falli": [
+    13.0,
+    17.0
+   ],
+   "fuorigioco": [
+    1.0,
+    1.0
+   ],
+   "gialli": [
+    1.0,
+    3.0
+   ],
+   "in_porta": [
+    3.0,
+    7.0
+   ],
+   "parate": [
+    5.0,
+    3.0
+   ],
+   "passaggi": [
+    466.0,
+    466.0
+   ],
+   "passaggi_riusciti": [
+    407.0,
+    396.0
+   ],
+   "possesso": [
+    50.1,
+    49.9
+   ],
+   "respinte": [
+    14.0,
+    11.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    6.0,
+    12.0
+   ],
+   "tiri_respinti": [
+    1.0,
+    2.0
+   ]
+  }
+ },
  "401888256": {
   "cartellini": [
    {
