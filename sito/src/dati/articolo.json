@@ -1,6 +1,6 @@
 {
  "data": "2026-11-08",
- "partite_in_programma": 105,
+ "partite_in_programma": 76,
  "campionati": 22,
  "sorprese": [
   {
@@ -335,8 +335,8 @@
    "gol_subiti": 1.4,
    "gol_totali": 63,
    "in_porta_totali": 145,
-   "attesi_dai_tiri": 46.5,
-   "scarto_conversione": 16.5,
+   "attesi_dai_tiri": 46.7,
+   "scarto_conversione": 16.3,
    "vantaggio_casa": 1.08,
    "casa": {
     "partite": 11,
@@ -645,8 +645,8 @@
    "gol_subiti": 0.8,
    "gol_totali": 20,
    "in_porta_totali": 96,
-   "attesi_dai_tiri": 30.3,
-   "scarto_conversione": -10.3,
+   "attesi_dai_tiri": 30.5,
+   "scarto_conversione": -10.5,
    "vantaggio_casa": 1.01,
    "casa": {
     "partite": 9,
@@ -870,84 +870,62 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
-   "id": "sabadell-sociedad-b",
-   "casa": "Sabadell",
-   "ospite": "Sociedad B",
-   "data": "2026-11-09",
-   "ora": "20:30",
-   "margine": 0.0956
-  },
-  {
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
-   "id": "las-palmas-eldense",
-   "casa": "Las Palmas",
-   "ospite": "Eldense",
-   "data": "2026-11-08",
-   "ora": "18:30",
-   "margine": 0.0941
-  },
-  {
-   "campionato": "Pro League",
-   "bandiera": "🇧🇪",
-   "slug": "jupiler",
-   "id": "st-truiden-waregem",
-   "casa": "St Truiden",
-   "ospite": "Waregem",
-   "data": "2026-11-08",
-   "ora": "19:15",
-   "margine": 0.0838
-  },
-  {
-   "campionato": "Serie B",
-   "bandiera": "🇮🇹",
-   "slug": "serie-b",
-   "id": "virtus-entella-modena",
-   "casa": "Virtus Entella",
-   "ospite": "Modena",
-   "data": "2026-11-08",
-   "ora": "15:00",
-   "margine": 0.079
-  },
-  {
-   "campionato": "League Two",
+   "campionato": "National League",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "league-two",
-   "id": "exeter-cheltenham",
-   "casa": "Exeter",
-   "ospite": "Cheltenham",
+   "slug": "national-league",
+   "id": "scunthorpe-worthing",
+   "casa": "Scunthorpe",
+   "ospite": "Worthing",
    "data": "2026-11-14",
-   "ora": "13:30",
-   "margine": 0.0772
+   "ora": "16:00",
+   "margine": 0.1115
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "national-league",
+   "id": "harrogate-altrincham",
+   "casa": "Harrogate",
+   "ospite": "Altrincham",
+   "data": "2026-11-14",
+   "ora": "16:00",
+   "margine": 0.1059
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "national-league",
+   "id": "yeovil-boreham-wood",
+   "casa": "Yeovil",
+   "ospite": "Boreham Wood",
+   "data": "2026-11-14",
+   "ora": "16:00",
+   "margine": 0.1052
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "national-league",
+   "id": "hartlepool-wealdstone",
+   "casa": "Hartlepool",
+   "ospite": "Wealdstone",
+   "data": "2026-11-14",
+   "ora": "16:00",
+   "margine": 0.1048
+  },
+  {
+   "campionato": "National League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "national-league",
+   "id": "hornchurch-tamworth",
+   "casa": "Hornchurch",
+   "ospite": "Tamworth",
+   "data": "2026-11-14",
+   "ora": "16:00",
+   "margine": 0.1047
   }
  ],
  "partite_meno_care": [
-  {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
-   "id": "fc-koln-leverkusen",
-   "casa": "FC Koln",
-   "ospite": "Leverkusen",
-   "data": "2026-11-08",
-   "ora": "15:30",
-   "margine": 0.0028
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "genoa-milan",
-   "casa": "Genoa",
-   "ospite": "Milan",
-   "data": "2026-11-08",
-   "ora": "15:00",
-   "margine": 0.0048
-  },
   {
    "campionato": "Bundesliga",
    "bandiera": "🇩🇪",
@@ -963,23 +941,45 @@
    "campionato": "LaLiga",
    "bandiera": "🇪🇸",
    "slug": "laliga",
-   "id": "sociedad-vallecano",
-   "casa": "Sociedad",
-   "ospite": "Vallecano",
+   "id": "ath-madrid-barcelona",
+   "casa": "Ath Madrid",
+   "ospite": "Barcelona",
    "data": "2026-11-08",
-   "ora": "16:15",
-   "margine": 0.0059
+   "ora": "21:00",
+   "margine": 0.0068
   },
   {
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
-   "id": "monza-atalanta",
-   "casa": "Monza",
-   "ospite": "Atalanta",
+   "id": "fiorentina-juventus",
+   "casa": "Fiorentina",
+   "ospite": "Juventus",
    "data": "2026-11-08",
-   "ora": "15:00",
-   "margine": 0.0062
+   "ora": "20:45",
+   "margine": 0.0072
+  },
+  {
+   "campionato": "Ligue 1",
+   "bandiera": "🇫🇷",
+   "slug": "ligue-1",
+   "id": "lens-marseille",
+   "casa": "Lens",
+   "ospite": "Marseille",
+   "data": "2026-11-08",
+   "ora": "20:45",
+   "margine": 0.0083
+  },
+  {
+   "campionato": "LaLiga",
+   "bandiera": "🇪🇸",
+   "slug": "laliga",
+   "id": "celta-levante",
+   "casa": "Celta",
+   "ospite": "Levante",
+   "data": "2026-11-08",
+   "ora": "18:30",
+   "margine": 0.0085
   }
  ]
 }

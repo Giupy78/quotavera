@@ -1,4 +1,917 @@
 {
+ "401878945": {
+  "cartellini": [
+   {
+    "giocatore": "Siebe van der Heyden",
+    "minuto": "13'",
+    "rosso": false,
+    "squadra": "KAA Gent"
+   },
+   {
+    "giocatore": "Brecht Dejaegere",
+    "minuto": "80'",
+    "rosso": false,
+    "squadra": "KV Kortrijk"
+   },
+   {
+    "giocatore": "Axel Drouhin",
+    "minuto": "88'",
+    "rosso": false,
+    "squadra": "KV Kortrijk"
+   }
+  ],
+  "casa": "KAA Gent",
+  "data": "2026-11-08",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Marko Ilic",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "James Willy Ndjeungoue",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Axel Drouhin",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Matthew Anderson",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Mohamed Fofana",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Harrison Murray-Campbell",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "70",
+      "nome": "Anthony Philips",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "35",
+      "nome": "Boris Lambert",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Goduine Koyalipou",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "68",
+      "nome": "Thierry Ambrose",
+      "ruolo": "LF",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Shandre Campbell",
+      "ruolo": "RF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "36",
+      "nome": "Rudy Kohon",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "90",
+      "nome": "Sixtus Ogbuehi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Nayel Mehssatou Sepúlveda",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Brecht Dejaegere",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "71",
+      "nome": "Ken Masui",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Patrik Gunnarsson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Rok Storman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Jellert Van Landschoot",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Gilles Ruyssen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-3-3",
+    "squadra": "KV Kortrijk"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Davy Roef",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Maksim Paskotši",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Siebe van der Heyden",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "57",
+      "nome": "Matties Volckaert",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Mathias Delorge-Knieper",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Tibe De Vlieger",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Tiago Araújo",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Hyllarion",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "47",
+      "nome": "Josué Yamir Vergara Ortega",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Momodou Sonko",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "37",
+      "nome": "Abdelkahar Kadri",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "75",
+      "nome": "Ibrahima Cisse",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "35",
+      "nome": "Gilles De Meyer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "56",
+      "nome": "Mamadou Diallo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "39",
+      "nome": "Abdul Ayinde",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Aime Omgba",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "22",
+      "nome": "Leo Da Silva Lopes",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "59",
+      "nome": "El Hadji Seck",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Kjell Peersman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "Max Dean",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-2-1",
+    "squadra": "KAA Gent"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Abdelkahar Kadri",
+    "minuto": "32'",
+    "squadra": "KAA Gent",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 0,
+  "id": "401878945",
+  "ospite": "KV Kortrijk",
+  "stadio": {
+   "citta": "Ghent",
+   "nome": "Ghelamco Arena",
+   "paese": "Belgium"
+  },
+  "stat": {
+   "contrasti": [
+    17.0,
+    22.0
+   ],
+   "contrasti_riusciti": [
+    11.0,
+    9.0
+   ],
+   "corner": [
+    4.0,
+    1.0
+   ],
+   "falli": [
+    9.0,
+    22.0
+   ],
+   "fuorigioco": [
+    3.0,
+    0.0
+   ],
+   "gialli": [
+    1.0,
+    2.0
+   ],
+   "in_porta": [
+    4.0,
+    7.0
+   ],
+   "parate": [
+    7.0,
+    3.0
+   ],
+   "passaggi": [
+    490.0,
+    454.0
+   ],
+   "passaggi_riusciti": [
+    401.0,
+    370.0
+   ],
+   "possesso": [
+    51.9,
+    48.1
+   ],
+   "respinte": [
+    28.0,
+    18.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    12.0,
+    12.0
+   ],
+   "tiri_respinti": [
+    2.0,
+    3.0
+   ]
+  }
+ },
+ "401878946": {
+  "cartellini": [
+   {
+    "giocatore": "Jorne Spileers",
+    "minuto": "15'",
+    "rosso": false,
+    "squadra": "Club Brugge"
+   },
+   {
+    "giocatore": "Jayden Onia-Seke",
+    "minuto": "31'",
+    "rosso": false,
+    "squadra": "Anderlecht"
+   },
+   {
+    "giocatore": "Joaquin Seys",
+    "minuto": "45'+3'",
+    "rosso": false,
+    "squadra": "Club Brugge"
+   },
+   {
+    "giocatore": "Nicolo Tresoldi",
+    "minuto": "59'",
+    "rosso": false,
+    "squadra": "Club Brugge"
+   },
+   {
+    "giocatore": "Hans Vanaken",
+    "minuto": "61'",
+    "rosso": false,
+    "squadra": "Club Brugge"
+   },
+   {
+    "giocatore": "Giulian Biancone",
+    "minuto": "65'",
+    "rosso": false,
+    "squadra": "Anderlecht"
+   },
+   {
+    "giocatore": "Mihajlo Cvetkovic",
+    "minuto": "76'",
+    "rosso": false,
+    "squadra": "Anderlecht"
+   },
+   {
+    "giocatore": "Enric Llansana",
+    "minuto": "84'",
+    "rosso": false,
+    "squadra": "Anderlecht"
+   }
+  ],
+  "casa": "Club Brugge",
+  "data": "2026-11-08",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Colin Coosemans",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Léo Pétrot",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Giulian Biancone",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Ludwig Augustinsson",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "79",
+      "nome": "Ali Maamar",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Enric Llansana",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Mario Stroeykens",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "49",
+      "nome": "Jayden Onia-Seke",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Lukás Ambros",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Danylo Sikan",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Mihajlo Cvetkovic",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "55",
+      "nome": "Marco Kana",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Thelo Aasgaard",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "30",
+      "nome": "Ilias Koutsoupias",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Oleg Reabciuk",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Tawfik Bentayeb",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Justin Heekeren",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Marten Winkler",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Andrew Omobamidele",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Oliver Antman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-4-2",
+    "squadra": "Anderlecht"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Yann Sommer",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Brandon Mechele",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "58",
+      "nome": "Jorne Spileers",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "65",
+      "nome": "Joaquin Seys",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "64",
+      "nome": "Kyriani Sabbe",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Romeo Vermant",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Hans Vanaken",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Cheveyo Tsawa",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Nicolo Tresoldi",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "80",
+      "nome": "Felix Lemarechal",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Carlos Forbs",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "81",
+      "nome": "Argus Driessche",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "72",
+      "nome": "Jessi Silva",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "41",
+      "nome": "Hugo Siquet",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "3",
+      "nome": "Lee Han-Beom",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Matteo Dams",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Milan Robberechts",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Hugo Vetlesen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "62",
+      "nome": "Lynnt Audoor",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "85",
+      "nome": "Tian Nai Koren",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Club Brugge"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Hans Vanaken",
+    "minuto": "41'",
+    "squadra": "Club Brugge",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Mihajlo Cvetkovic",
+    "minuto": "58'",
+    "squadra": "Anderlecht",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 1,
+  "id": "401878946",
+  "ospite": "Anderlecht",
+  "stadio": {
+   "citta": "Brugge",
+   "nome": "Jan Breydel Stadium",
+   "paese": "Belgium"
+  },
+  "stat": {
+   "contrasti": [
+    11.0,
+    13.0
+   ],
+   "contrasti_riusciti": [
+    8.0,
+    9.0
+   ],
+   "corner": [
+    9.0,
+    1.0
+   ],
+   "falli": [
+    15.0,
+    14.0
+   ],
+   "fuorigioco": [
+    1.0,
+    0.0
+   ],
+   "gialli": [
+    4.0,
+    4.0
+   ],
+   "in_porta": [
+    8.0,
+    1.0
+   ],
+   "parate": [
+    0.0,
+    7.0
+   ],
+   "passaggi": [
+    640.0,
+    323.0
+   ],
+   "passaggi_riusciti": [
+    575.0,
+    262.0
+   ],
+   "possesso": [
+    67.3,
+    32.7
+   ],
+   "respinte": [
+    13.0,
+    58.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    24.0,
+    7.0
+   ],
+   "tiri_respinti": [
+    6.0,
+    2.0
+   ]
+  }
+ },
  "401878947": {
   "cartellini": [
    {

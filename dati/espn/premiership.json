@@ -1,4 +1,508 @@
 {
+ "401878339": {
+  "cartellini": [
+   {
+    "giocatore": "Finley Barbrook",
+    "minuto": "64'",
+    "rosso": false,
+    "squadra": "Falkirk"
+   },
+   {
+    "giocatore": "Owen Eames",
+    "minuto": "65'",
+    "rosso": false,
+    "squadra": "Falkirk"
+   },
+   {
+    "giocatore": "Jacob Murrell",
+    "minuto": "68'",
+    "rosso": false,
+    "squadra": "Falkirk"
+   },
+   {
+    "giocatore": "CJ Fodrey",
+    "minuto": "78'",
+    "rosso": false,
+    "squadra": "Falkirk"
+   },
+   {
+    "giocatore": "Deniss Melniks",
+    "minuto": "79'",
+    "rosso": false,
+    "squadra": "Falkirk"
+   },
+   {
+    "giocatore": "Leart Kabashi",
+    "minuto": "79'",
+    "rosso": false,
+    "squadra": "Heart of Midlothian"
+   },
+   {
+    "giocatore": "Ben Parkinson",
+    "minuto": "90'+1'",
+    "rosso": false,
+    "squadra": "Falkirk"
+   }
+  ],
+  "casa": "Heart of Midlothian",
+  "data": "2026-11-08",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Scott Bain",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Liam Henderson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Lewis Neilson",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Scott Tanser",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Jack Mcmillan",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Finley Barbrook",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Deniss Melniks",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Brad Spencer",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Jacob Murrell",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "42",
+      "nome": "Owen Eames",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Ethan Ross",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Ben Krauhaus",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Nicky Hogarth",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Craig Sibbald",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "2",
+      "nome": "Keelan Adams",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "99",
+      "nome": "CJ Fodrey",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Ben Parkinson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Ross Maciver",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Connor Mcleod",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Finn Yeats",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Falkirk"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Beau Reus",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Stuart Findlay",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "64",
+      "nome": "Malachi Walcott",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jamie McCart",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Jordi Altena",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Cláudio Braga",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Yan Dhanda",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "78",
+      "nome": "Laurent Mendy",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Pierre Landry Kabore",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Joshua McPake",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Sabah Kerjota",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Severin Sabri Guendouz",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Finlay Pollock",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Leart Kabashi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Ryan Fulton",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "39",
+      "nome": "Matthew Gillies",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Jerome Williams",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Aron Benjaminsen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "77",
+      "nome": "Amadou Ba-Sy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "James Wilson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Heart of Midlothian"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Finley Barbrook",
+    "minuto": "4'",
+    "squadra": "Falkirk",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Owen Eames",
+    "minuto": "17'",
+    "squadra": "Falkirk",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Jacob Murrell",
+    "minuto": "33'",
+    "squadra": "Falkirk",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Liam Henderson",
+    "minuto": "45'+2'",
+    "squadra": "Falkirk",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Jacob Murrell",
+    "minuto": "47'",
+    "squadra": "Falkirk",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Severin Sabri Guendouz",
+    "minuto": "50'",
+    "squadra": "Heart of Midlothian",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Cláudio Braga",
+    "minuto": "75'",
+    "squadra": "Heart of Midlothian",
+    "tipo": "Penalty - Scored"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 5,
+  "id": "401878339",
+  "ospite": "Falkirk",
+  "stadio": {
+   "citta": "Edinburgh",
+   "nome": "Tynecastle Park",
+   "paese": "Scotland"
+  },
+  "stat": {
+   "contrasti": [
+    10.0,
+    23.0
+   ],
+   "contrasti_riusciti": [
+    7.0,
+    14.0
+   ],
+   "corner": [
+    4.0,
+    5.0
+   ],
+   "falli": [
+    11.0,
+    20.0
+   ],
+   "fuorigioco": [
+    3.0,
+    2.0
+   ],
+   "gialli": [
+    1.0,
+    6.0
+   ],
+   "in_porta": [
+    6.0,
+    7.0
+   ],
+   "parate": [
+    2.0,
+    4.0
+   ],
+   "passaggi": [
+    438.0,
+    305.0
+   ],
+   "passaggi_riusciti": [
+    352.0,
+    218.0
+   ],
+   "possesso": [
+    59.1,
+    40.9
+   ],
+   "respinte": [
+    22.0,
+    41.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    16.0,
+    14.0
+   ],
+   "tiri_respinti": [
+    7.0,
+    4.0
+   ]
+  }
+ },
  "401878340": {
   "cartellini": [
    {
