@@ -1,5 +1,6 @@
 ---
 import Base from "./Base.astro";
+import PromoYotp from "../components/PromoYotp.astro";
 
 const { frontmatter } = Astro.props;
 const giorno = frontmatter.data ? new Date(String(frontmatter.data)) : null;
@@ -19,6 +20,8 @@ const giorno = frontmatter.data ? new Date(String(frontmatter.data)) : null;
     <article class="prosa articolo">
       <slot />
     </article>
+
+    <PromoYotp forma="riga" dove="articolo" />
 
     <p style="margin-top:36px"><a href="/blog/">← tutti gli articoli</a></p>
   </section>

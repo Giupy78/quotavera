@@ -1,0 +1,164 @@
+---
+/* Banner di You On The Pitch (youonthepitch.com), l'altro progetto di chi fa
+   Quota Vera: partite amatoriali vicino a te. Non e' gioco con vincita in
+   denaro, quindi il decreto dignita' non c'entra; e' dichiarato come
+   promozione di un nostro progetto, non mascherato da contenuto.
+   Due forme: "largo" in fondo a ogni pagina, "riga" dentro gli articoli.
+   Il parametro utm dice al sito d'arrivo da dove arrivano le visite. */
+interface Props {
+  forma?: "largo" | "riga";
+  dove?: string;
+}
+const { forma = "largo", dove = "pagina" } = Astro.props;
+const link = `https://youonthepitch.com/?utm_source=quotavera&utm_medium=banner&utm_campaign=crosspromo&utm_content=${dove}`;
+---
+{forma === "largo" ? (
+  <aside class="yotp" aria-label="You On The Pitch, un altro nostro progetto">
+    <a class="yotp-img" href={link} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+      <img src="/promo/yotp-sport.webp" width="900" height="502" loading="lazy" decoding="async"
+        alt="" />
+    </a>
+    <div class="yotp-txt">
+      <span class="yotp-kick">Un altro progetto di chi fa Quota Vera</span>
+      <p class="yotp-tit">Le partite le analizzi. E se stasera giocassi tu?</p>
+      <p>
+        <b>You On The Pitch</b> trova vicino a te la partita a cui manca un giocatore:
+        calcetto, calcio, basket, volley, beach volley, padel e tennis. Squadre,
+        tornei con il tabellone e la tua carta giocatore. Gratis, senza pubblicità.
+      </p>
+      <a class="yotp-btn" href={link} target="_blank" rel="noopener">
+        <img src="/promo/yotp-logo.png" width="22" height="22" alt="" />
+        Trova una partita vicino a te →
+      </a>
+    </div>
+  </aside>
+) : (
+  <aside class="yotp-riga" aria-label="You On The Pitch, un altro nostro progetto">
+    <img src="/promo/yotp-logo.png" width="36" height="36" alt="" />
+    <p>
+      <b>Dalle statistiche al campo.</b> Con You On The Pitch trovi la partita di calcetto,
+      basket, volley o padel a cui manca un giocatore, vicino a te.
+    </p>
+    <a href={link} target="_blank" rel="noopener">Provala gratis →</a>
+  </aside>
+)}
+
+<style>
+  .yotp {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    margin-top: 48px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: linear-gradient(150deg, #2a0447, #12061f 75%);
+    color: #f1f4f8;
+    box-shadow: inset 0 0 0 1px rgba(181, 123, 224, 0.25);
+  }
+  .yotp-img {
+    display: block;
+    line-height: 0;
+  }
+  .yotp-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 220px;
+  }
+  .yotp-txt {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    font-family: var(--sans);
+  }
+  .yotp-kick {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffb547;
+  }
+  .yotp-tit {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .yotp p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(241, 244, 248, 0.86);
+  }
+  .yotp .yotp-tit {
+    color: #fff;
+  }
+  .yotp-btn {
+    align-self: flex-start;
+    margin-top: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: #ff6e42;
+    color: #1a0a04;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .yotp-btn:hover {
+    background: #ff8a5f;
+  }
+  .yotp-btn img {
+    border-radius: 5px;
+  }
+  @media (max-width: 720px) {
+    .yotp {
+      grid-template-columns: 1fr;
+    }
+    .yotp-img img {
+      min-height: 0;
+      aspect-ratio: 900 / 502;
+    }
+    .yotp-txt {
+      padding: 18px 16px 20px;
+    }
+    .yotp-btn {
+      align-self: stretch;
+      justify-content: center;
+    }
+  }
+
+  .yotp-riga {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    padding: 14px 16px;
+    border: 1px solid var(--rule);
+    border-left: 4px solid #8e4ea8;
+    border-radius: 10px;
+    background: var(--card);
+    font-family: var(--sans);
+  }
+  .yotp-riga img {
+    border-radius: 8px;
+    flex: none;
+  }
+  .yotp-riga p {
+    flex: 1 1 260px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-2);
+  }
+  .yotp-riga a {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--s3);
+    white-space: nowrap;
+  }
+</style>
