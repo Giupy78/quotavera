@@ -1,6 +1,6 @@
 {
  "data": "2026-11-09",
- "partite_in_programma": 47,
+ "partite_in_programma": 41,
  "campionati": 22,
  "sorprese": [
   {
@@ -568,8 +568,8 @@
    "gol_subiti": 1.8,
    "gol_totali": 14,
    "in_porta_totali": 82,
-   "attesi_dai_tiri": 25.1,
-   "scarto_conversione": -11.1,
+   "attesi_dai_tiri": 25.0,
+   "scarto_conversione": -11.0,
    "vantaggio_casa": 0.2,
    "casa": {
     "partite": 10,
@@ -691,8 +691,8 @@
     "corner": 3.1,
     "corner_subiti": 6.5,
     "falli": 11.0,
-    "cartellini": 2.3,
-    "gialli": 25,
+    "cartellini": 2.1,
+    "gialli": 23,
     "rossi": 0,
     "precisione_tiri": 0.385,
     "over_25": 0.364,
@@ -736,8 +736,8 @@
     "corner": 4.4,
     "corner_subiti": 5.9,
     "falli": 11.7,
-    "cartellini": 2.4,
-    "gialli": 24,
+    "cartellini": 2.5,
+    "gialli": 25,
     "rossi": 0,
     "precisione_tiri": 0.289,
     "over_25": 0.5,
@@ -930,17 +930,6 @@
    "campionato": "LaLiga 2",
    "bandiera": "🇪🇸",
    "slug": "laliga-2",
-   "id": "las-palmas-eldense",
-   "casa": "Las Palmas",
-   "ospite": "Eldense",
-   "data": "2026-11-09",
-   "ora": "20:30",
-   "margine": 0.0597
-  },
-  {
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
    "id": "oviedo-girona",
    "casa": "Oviedo",
    "ospite": "Girona",
@@ -980,6 +969,17 @@
    "data": "2026-11-14",
    "ora": "16:00",
    "margine": 0.0769
+  },
+  {
+   "campionato": "League Two",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "league-two",
+   "id": "exeter-cheltenham",
+   "casa": "Exeter",
+   "ospite": "Cheltenham",
+   "data": "2026-11-14",
+   "ora": "13:30",
+   "margine": 0.0772
   }
  ]
 }
