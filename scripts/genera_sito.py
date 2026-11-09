@@ -23,6 +23,7 @@ sys.path.insert(0, str(RADICE))
 
 from engine import chicche as motore_chicche
 from engine import fra_campionati
+from engine import indirizzi
 from engine.dati import coppe
 from engine.classifica import calcola as calcola_classifica
 from engine.classifica import giornate, posizioni_attese
@@ -971,6 +972,33 @@ def articolo(leghe: list[dict]) -> dict:
     }
 
 
+def registra_indirizzi(partite: list[dict]) -> None:
+    """Aggiunge al registro gli indirizzi di stanotte e dice se ne manca qualcuno.
+
+    Il registro cresce soltanto: un indirizzo pubblicato una volta resta
+    dentro per sempre, e da lì si vede quando la sua pagina sparisce senza un
+    rinvio. Vedi `engine/indirizzi.py` per le tre volte in cui è successo.
+
+    Qui si avvisa e basta: il guaio, quello che fa diventare rosso il turno,
+    lo dichiara la sentinella dopo la pubblicazione. Un registro che non si
+    legge non si sovrascrive — riscriverlo con le sole pagine di oggi vorrebbe
+    dire dimenticare tutte le altre.
+    """
+    try:
+        registro = indirizzi.carica()
+    except (OSError, ValueError) as errore:
+        print(f"  ! dati/indirizzi.json non si legge, non lo tocco: {errore}")
+        return
+    nuovi = indirizzi.aggiungi(registro, partite, oggi_utc().isoformat())
+    indirizzi.salva(registro)
+    print(f"  {indirizzi.REGISTRO.relative_to(RADICE)}  "
+          f"({len(registro):,} indirizzi, {nuovi} nuovi)")
+    righe = indirizzi.racconta(
+        indirizzi.persi(registro, partite, indirizzi.carica_rinvii()))
+    for n, riga in enumerate(righe):
+        print(f"  {'! ' if n == 0 else ''}{riga}")
+
+
 def scrivi(nome: str, dati) -> None:
     USCITA.mkdir(parents=True, exist_ok=True)
     percorso = USCITA / nome
@@ -1141,7 +1169,8 @@ def main() -> int:
     scrivi("stagione.json", {"campionati": {
         l["slug"]: l["stagione_completa"] for l in leghe if l["stagione_completa"]
     }})
-    scrivi("schede.json", {"partite": [s for l in leghe for s in l["schede"]]})
+    partite = [s for l in leghe for s in l["schede"]]
+    scrivi("schede.json", {"partite": partite})
     scrivi("articolo.json", articolo(leghe))
 
     pezzi = [a for a in (articolo_campionato(l) for l in leghe) if a]
@@ -1170,6 +1199,15 @@ def main() -> int:
         scrivi("coppe.json", coppe.aggiorna_tutte(nomi, INIZIO_STAGIONE.year))
     except Exception as errore:
         print(f"  ! coppe: {errore}")
+
+    # Il registro degli indirizzi per ultimo, e protetto come le coppe: è una
+    # sorveglianza, e un suo guasto non deve fermare la pubblicazione dei dati.
+    # Se si rompe, si rompe anche la sentinella che usa le stesse funzioni, e
+    # il turno diventa rosso.
+    try:
+        registra_indirizzi(partite)
+    except Exception as errore:
+        print(f"  ! registro degli indirizzi: {errore!r}")
 
     print("\nFatto: dati veri, nessuna simulazione.")
     return 0

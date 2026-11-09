@@ -208,7 +208,8 @@ sì, e si misura).
 | **Track record contro la chiusura** | **fatto** |
 | Pipeline notturna | **gira sola due volte al giorno** |
 | Sentinella sui dati pubblicati | fatta — `scripts/controlla.py` |
-| In totale | 136 test |
+| Registro degli indirizzi pubblicati | fatto (9 novembre) — `dati/indirizzi.json` |
+| In totale | 201 test |
 
 ### Il sito
 
@@ -248,9 +249,26 @@ token del sito gia' dichiarano dopo Newsreader e Archivo.
 
 **`dati/pronostici/` sta nel repository.** È l'archivio di quello che il modello
 diceva *prima* di ogni partita, e serve a due cose: mostrarlo accanto al
-risultato sulla scheda, ed essere l'elenco esatto degli indirizzi pubblicati in
-stagione — se una partita esce da tutte le liste, è da lì che si recupera la
-sua pagina invece di lasciarla diventare un 404.
+risultato sulla scheda, e tenere in piedi la pagina di una partita uscita da
+tutte le liste invece di lasciarla diventare un 404.
+
+**`dati/indirizzi.json` è il registro di ogni indirizzo di partita mai
+pubblicato**, e cresce soltanto: ogni giro di `genera_sito.py` aggiunge quelli
+nuovi e non ne toglie nessuno. Serve perché le pagine sono sparite tre volte,
+sempre per una squadra scritta in due modi ("Sheffield Utd" e "Sheffield
+United", "Oxford Utd" e "Oxford", "KV Mechelen" e "Mechelen"): uniformato il
+nome, cambia l'indirizzo, e quello vecchio diventa un 404 che scopre Google.
+L'archivio dei pronostici non bastava come elenco, perché il 6 novembre è stato
+ripulito a mano proprio dei doppioni. Ogni indirizzo del registro deve avere la
+sua pagina oppure un rinvio in `sito/public/_redirects` che arrivi a una pagina
+viva; se no `genera_sito.py` lo stampa e la sentinella lo dichiara guaio, così
+parte la mail. Quando la pagina giusta è ovvia — stesso campionato, stessa data,
+nome riconosciuto come variante — il messaggio contiene già la riga da copiare
+nei rinvii; scriverla resta una decisione di una persona. Ricostruito il 9
+novembre da tutte le versioni di `schede.json` dal 1 ottobre: **2.471
+indirizzi, 2.458 pagine vive, 13 rinvii, nessuno perso**. Sulle 13 pagine
+perse, la proposta automatica coincide con tutti e 13 i rinvii scritti a mano.
+Si rifà con `python scripts/ricostruisci_indirizzi.py`.
 
 **Le coppe europee ci sono dal 6 novembre 2026**, in `/coppe/`: Champions, Europa
 e Conference League, da ESPN, gratis. Per mesi questo file ha detto che servisse

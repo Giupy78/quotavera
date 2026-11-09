@@ -32,12 +32,17 @@ Esce con 1 se qualcosa non torna, con 0 se e' tutto a posto.
 from __future__ import annotations
 
 import json
+import subprocess
 import sys
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 RADICE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(RADICE))
+
+from engine import indirizzi  # noqa: E402
+
 DATI = RADICE / "sito" / "src" / "dati"
 GREZZI = RADICE / "data" / "grezzi"
 ESPN = RADICE / "dati" / "espn"
@@ -293,6 +298,9 @@ def controlla() -> tuple[list[str], list[str]]:
     if ore > 30:
         guai.append(f"i dati sono stati generati {ore:.0f} ore fa")
 
+    # --- 7. gli indirizzi già pubblicati portano ancora a qualcosa? --------
+    guai += controlla_indirizzi(_carica("schede.json")["partite"])
+
     # Le coppe. Il guasto tipico e' lo stesso dei campionati: ESPN smette di
     # rispondere, il turno finisce verde e le partite restano "in programma" con
     # la data passata. Una o due possono essere rinvii veri; di piu' no.
@@ -314,6 +322,61 @@ def controlla() -> tuple[list[str], list[str]]:
                 guai.append(f"{c['nome']}: nessuna partita")
 
     return guai, avvisi
+
+
+def controlla_indirizzi(partite: list[dict], registro_su_disco: Path = indirizzi.REGISTRO,
+                        rinvii: Path = indirizzi.RINVII) -> list[str]:
+    """I guai sugli indirizzi pubblicati. Vuota se è tutto a posto.
+
+    Una pagina di partita pubblicata non deve sparire. È successo tre volte, e
+    ogni volta l'ha scoperto Google: un nome di squadra uniformato cambia
+    l'indirizzo, e quello vecchio diventa un 404 senza che niente lo dica.
+    Qui si guarda il registro di tutti gli indirizzi mai pubblicati: ognuno
+    deve avere ancora la sua pagina, o un rinvio in `_redirects` che arrivi a
+    una pagina che c'è. Se la pagina giusta è ovvia la riga da aggiungere è
+    già scritta nel messaggio — ma la aggiunge una persona.
+
+    Due controlli in più, per i modi in cui il registro stesso può guastarsi
+    senza rumore — lo stesso guasto che a settembre si è mangiato tre
+    settimane di pronostici: che contenga le pagine di oggi (cioè che
+    `genera_sito.py` lo stia aggiornando) e che non resti fuori dal commit.
+    """
+    try:
+        registro = indirizzi.carica(registro_su_disco)
+    except (OSError, ValueError) as errore:
+        return [f"il registro degli indirizzi non si legge: {errore}"]
+
+    guai = []
+    oggi = indirizzi.pagine(partite)
+    fuori_registro = sorted(set(oggi) - set(registro))
+    if fuori_registro:
+        guai.append(
+            f"{len(fuori_registro)} pagine di partita su {len(oggi)} non sono nel "
+            f"registro degli indirizzi (es. {fuori_registro[0]}): "
+            f"genera_sito.py non lo sta aggiornando"
+        )
+
+    righe = indirizzi.racconta(
+        indirizzi.persi(registro, partite, indirizzi.carica_rinvii(rinvii)))
+    if righe:
+        guai.append("\n".join(righe))
+
+    # Il file deve tornare a casa. Fuori da un repository git, o senza git, il
+    # controllo semplicemente non si fa.
+    try:
+        stato = subprocess.run(
+            ["git", "status", "--porcelain", "--", str(registro_su_disco)],
+            cwd=RADICE, capture_output=True, text=True, timeout=30,
+        )
+    except (OSError, subprocess.SubprocessError):
+        stato = None
+    if stato is not None and stato.returncode == 0 and stato.stdout.strip():
+        guai.append(
+            "dati/indirizzi.json su disco non è quello committato: se succede nel "
+            "turno notturno, il registro non è nella riga `git add` di aggiorna.yml "
+            "e ogni notte riparte da quello vecchio"
+        )
+    return guai
 
 
 def main() -> int:

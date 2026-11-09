@@ -134,12 +134,18 @@ jobs:
         # Tre settimane di pronostici persi senza che niente segnalasse nulla —
         # il file c'era, veniva scritto, semplicemente non tornava a casa.
         #
+        # `dati/indirizzi.json` è il registro di ogni indirizzo di partita mai
+        # pubblicato, e cresce soltanto. Se restasse fuori da questa riga
+        # ripartirebbe ogni notte da quello vecchio, e un indirizzo comparso e
+        # sparito fra due commit non lo vedrebbe nessuno: la sentinella qui
+        # sotto se ne accorge e fa diventare rosso il turno.
+        #
         # Quando le fonti non hanno pubblicato niente di nuovo non c'è nulla da
         # committare, e va bene così: è un turno riuscito, non un errore.
         run: |
           git config user.name "Quota Vera"
           git config user.email "actions@users.noreply.github.com"
-          git add sito/src/dati dati/espn dati/coppe data/grezzi dati/pronostici
+          git add sito/src/dati dati/espn dati/coppe data/grezzi dati/pronostici dati/indirizzi.json
           if git diff --staged --quiet; then
             echo "Nessun cambiamento nei dati: le fonti non hanno aggiornato."
           else
