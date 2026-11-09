@@ -141,6 +141,12 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
       </div>
     </div>
 
+    <div class="wrap">
+      <PromoYotp forma="top" dove="top" />
+    </div>
+    <PromoYotp forma="lato" lato="sx" dove="colonna-sx" />
+    <PromoYotp forma="lato" lato="dx" dove="colonna-dx" />
+
     <main class="wrap">
       <slot />
     </main>

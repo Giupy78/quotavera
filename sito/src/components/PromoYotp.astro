@@ -3,16 +3,41 @@
    Quota Vera: partite amatoriali vicino a te. Non e' gioco con vincita in
    denaro, quindi il decreto dignita' non c'entra; e' dichiarato come
    promozione di un nostro progetto, non mascherato da contenuto.
-   Due forme: "largo" in fondo a ogni pagina, "riga" dentro gli articoli.
+   Forme: "largo" in fondo a ogni pagina, "riga" dentro gli articoli, "top" sotto
+   il menu, "lato" nelle colonne fisse a destra e sinistra (solo schermi larghi,
+   dove ai lati della pagina c'e' spazio vuoto: non coprono mai il contenuto).
    Il parametro utm dice al sito d'arrivo da dove arrivano le visite. */
 interface Props {
-  forma?: "largo" | "riga";
+  forma?: "largo" | "riga" | "top" | "lato";
+  lato?: "sx" | "dx";
   dove?: string;
 }
-const { forma = "largo", dove = "pagina" } = Astro.props;
+const { forma = "largo", lato = "sx", dove = "pagina" } = Astro.props;
 const link = `https://youonthepitch.com/?utm_source=quotavera&utm_medium=banner&utm_campaign=crosspromo&utm_content=${dove}`;
 ---
-{forma === "largo" ? (
+{forma === "top" ? (
+  <aside class="yotp-top" aria-label="You On The Pitch, un altro nostro progetto">
+    <img src="/promo/yotp-logo.png" width="24" height="24" alt="" />
+    <p><b>You On The Pitch</b> · Trova la partita vicino a te a cui manca un giocatore: calcetto, basket, volley, padel, tennis. Gratis.</p>
+    <a href={link} target="_blank" rel="noopener">Gioca stasera →</a>
+  </aside>
+) : forma === "lato" ? (
+  <aside class={`yotp-lato yotp-${lato}`} aria-label="You On The Pitch, un altro nostro progetto">
+    <a href={link} target="_blank" rel="noopener">
+      <img class="yotp-lato-img" src="/promo/yotp-sport.webp" width="900" height="502" loading="lazy" decoding="async" alt="" />
+      <span class="yotp-lato-txt">
+        <span class="yotp-kick">Un nostro progetto</span>
+        {lato === "sx" ? (
+          <b>Ti manca uno per il calcetto?</b>
+        ) : (
+          <b>Organizzi un torneo con gli amici?</b>
+        )}
+        <span>{lato === "sx" ? "Trova giocatori vicino a te in un tocco." : "Gironi, tabellone e calendario in due minuti."}</span>
+        <span class="yotp-lato-btn"><img src="/promo/yotp-logo.png" width="18" height="18" alt="" /> You On The Pitch →</span>
+      </span>
+    </a>
+  </aside>
+) : forma === "largo" ? (
   <aside class="yotp" aria-label="You On The Pitch, un altro nostro progetto">
     <a class="yotp-img" href={link} target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
       <img src="/promo/yotp-sport.webp" width="900" height="502" loading="lazy" decoding="async"
@@ -44,6 +69,117 @@ const link = `https://youonthepitch.com/?utm_source=quotavera&utm_medium=banner&
 )}
 
 <style>
+  .yotp-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0 0;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #2a0447, #4a0377);
+    color: #f1f4f8;
+    font-family: var(--sans);
+    font-size: 13px;
+  }
+  .yotp-top img {
+    border-radius: 5px;
+    flex: none;
+  }
+  .yotp-top p {
+    flex: 1;
+    margin: 0;
+    min-width: 0;
+    line-height: 1.4;
+  }
+  .yotp-top a {
+    flex: none;
+    color: #ffb547;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .yotp-top p {
+      font-size: 12px;
+    }
+  }
+
+  /* Colonne laterali: fisse, larghe 140px, solo dove ai lati della pagina
+     (larga 1080px) resta spazio libero. */
+  .yotp-lato {
+    display: none;
+  }
+  @media (min-width: 1400px) {
+    .yotp-lato {
+      display: block;
+      position: fixed;
+      top: 150px;
+      width: 140px;
+      z-index: 5;
+      font-family: var(--sans);
+    }
+    .yotp-sx {
+      left: calc(50% - 540px - 160px);
+    }
+    .yotp-dx {
+      right: calc(50% - 540px - 160px);
+    }
+  }
+  .yotp-lato a {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(170deg, #2a0447, #12061f 80%);
+    color: #f1f4f8;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 1px rgba(181, 123, 224, 0.25);
+  }
+  .yotp-lato a:hover {
+    box-shadow: inset 0 0 0 1px #ff8a5f;
+  }
+  .yotp-lato-img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+  .yotp-dx .yotp-lato-img {
+    object-position: 85% 50%;
+  }
+  .yotp-sx .yotp-lato-img {
+    object-position: 15% 50%;
+  }
+  .yotp-lato-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 12px 14px;
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+  .yotp-lato-txt b {
+    font-size: 15px;
+    line-height: 1.25;
+    color: #fff;
+  }
+  .yotp-lato-txt > span:not(.yotp-kick):not(.yotp-lato-btn) {
+    color: rgba(241, 244, 248, 0.82);
+  }
+  .yotp-lato-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    background: #ff6e42;
+    color: #1a0a04;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .yotp-lato-btn img {
+    border-radius: 4px;
+  }
+
   .yotp {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
