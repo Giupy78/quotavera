@@ -1,5 +1,5 @@
 {
- "data": "2026-11-08",
+ "data": "2026-11-09",
  "confronti": [
   {
    "tipo": "gol_lega",
@@ -165,15 +165,29 @@
   ],
   "premier-league": [
    {
+    "tipo": "imbattuta",
+    "titolo": "Aston Villa non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+    "numero": "6",
+    "campionato": "Premier League",
+    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "slug": "premier-league",
+    "squadre": [
+     "Aston Villa"
+    ],
+    "campione": 6,
+    "collegamento": ""
+   },
+   {
     "tipo": "digiuno",
-    "titolo": "Hull non vince da 8 partite",
+    "titolo": "Man United non vince da 8 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
     "numero": "8",
     "campionato": "Premier League",
     "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "slug": "premier-league",
     "squadre": [
-     "Hull"
+     "Man United"
     ],
     "campione": 8,
     "collegamento": ""
@@ -281,20 +295,6 @@
   ],
   "laliga": [
    {
-    "tipo": "imbattuta",
-    "titolo": "Ath Madrid non perde da 7 partite",
-    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "7",
-    "campionato": "LaLiga",
-    "bandiera": "🇪🇸",
-    "slug": "laliga",
-    "squadre": [
-     "Ath Madrid"
-    ],
-    "campione": 7,
-    "collegamento": ""
-   },
-   {
     "tipo": "digiuno",
     "titolo": "Malaga non vince da 12 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
@@ -306,6 +306,20 @@
      "Malaga"
     ],
     "campione": 12,
+    "collegamento": ""
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Celta non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "LaLiga",
+    "bandiera": "🇪🇸",
+    "slug": "laliga",
+    "squadre": [
+     "Celta"
+    ],
+    "campione": 3,
     "collegamento": ""
    },
    {
@@ -397,20 +411,6 @@
     "collegamento": ""
    },
    {
-    "tipo": "a_secco",
-    "titolo": "Schalke 04 non segna da 3 partite",
-    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
-    "numero": "3",
-    "campionato": "Bundesliga",
-    "bandiera": "🇩🇪",
-    "slug": "bundesliga",
-    "squadre": [
-     "Schalke 04"
-    ],
-    "campione": 3,
-    "collegamento": ""
-   },
-   {
     "tipo": "rimonte",
     "titolo": "Bayern Munich non molla all'intervallo",
     "testo": "Sotto al riposo 15 volte nelle ultime stagioni, ha finito vincendo 4: è la quota di rimonte più alta del campionato.",
@@ -486,16 +486,30 @@
    },
    {
     "tipo": "digiuno",
-    "titolo": "Le Havre non vince da 9 partite",
+    "titolo": "Le Havre non vince da 10 partite",
     "testo": "Il digiuno aperto più lungo del campionato.",
-    "numero": "9",
+    "numero": "10",
     "campionato": "Ligue 1",
     "bandiera": "🇫🇷",
     "slug": "ligue-1",
     "squadre": [
      "Le Havre"
     ],
-    "campione": 9,
+    "campione": 10,
+    "collegamento": ""
+   },
+   {
+    "tipo": "a_secco",
+    "titolo": "Angers non segna da 3 partite",
+    "testo": "Tre partite senza gol di fila sono già un problema, non un caso.",
+    "numero": "3",
+    "campionato": "Ligue 1",
+    "bandiera": "🇫🇷",
+    "slug": "ligue-1",
+    "squadre": [
+     "Angers"
+    ],
+    "campione": 3,
     "collegamento": ""
    },
    {
@@ -662,16 +676,16 @@
   "primeira-liga": [
    {
     "tipo": "imbattuta",
-    "titolo": "Porto non perde da 10 partite",
+    "titolo": "Porto non perde da 11 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "10",
+    "numero": "11",
     "campionato": "Primeira Liga",
     "bandiera": "🇵🇹",
     "slug": "primeira-liga",
     "squadre": [
      "Porto"
     ],
-    "campione": 10,
+    "campione": 11,
     "collegamento": ""
    },
    {
@@ -852,16 +866,30 @@
   "jupiler": [
    {
     "tipo": "imbattuta",
-    "titolo": "St. Gilloise non perde da 10 partite",
+    "titolo": "St. Gilloise non perde da 11 partite",
     "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
-    "numero": "10",
+    "numero": "11",
     "campionato": "Pro League",
     "bandiera": "🇧🇪",
     "slug": "jupiler",
     "squadre": [
      "St. Gilloise"
     ],
-    "campione": 10,
+    "campione": 11,
+    "collegamento": ""
+   },
+   {
+    "tipo": "digiuno",
+    "titolo": "Waregem non vince da 6 partite",
+    "testo": "Il digiuno aperto più lungo del campionato.",
+    "numero": "6",
+    "campionato": "Pro League",
+    "bandiera": "🇧🇪",
+    "slug": "jupiler",
+    "squadre": [
+     "Waregem"
+    ],
+    "campione": 6,
     "collegamento": ""
    },
    {
@@ -924,6 +952,20 @@
    }
   ],
   "super-league-grecia": [
+   {
+    "tipo": "imbattuta",
+    "titolo": "Olympiakos non perde da 6 partite",
+    "testo": "Una serie aperta: dice cosa è successo, non cosa succederà.",
+    "numero": "6",
+    "campionato": "Super League",
+    "bandiera": "🇬🇷",
+    "slug": "super-league-grecia",
+    "squadre": [
+     "Olympiakos"
+    ],
+    "campione": 6,
+    "collegamento": ""
+   },
    {
     "tipo": "digiuno",
     "titolo": "Volos NFC non vince da 10 partite",
