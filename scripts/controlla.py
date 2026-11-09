@@ -32,8 +32,10 @@ Esce con 1 se qualcosa non torna, con 0 se e' tutto a posto.
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
+import time
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -64,6 +66,17 @@ RINVII_PLAUSIBILI = 1
 # football-data a turno concluso e con calma.
 ESPN_FERMO = 5
 FOOTBALL_DATA_FERMO = 12
+
+# Il sito pubblicato dichiara qui il commit da cui è stato compilato (vedi
+# `sito/src/pages/versione.txt.ts`).
+VERSIONE_PUBBLICATA = "https://quotavera.it/versione.txt"
+
+# Quanto aspettare che Cloudflare metta online l'ultimo commit. La sentinella
+# gira subito dopo il push, e la build di solito arriva in un minuto e mezzo:
+# dieci minuti sono un margine largo, e si aspettano tutti solo quando
+# qualcosa è andato storto davvero.
+ATTESA_PUBBLICAZIONE = 10 * 60
+OGNI = 20
 
 
 def _carica(nome: str) -> dict:
@@ -321,7 +334,107 @@ def controlla() -> tuple[list[str], list[str]]:
             if not c["partite"]:
                 guai.append(f"{c['nome']}: nessuna partita")
 
+    # --- 8. quello che è online è l'ultimo commit? ------------------------
+    #
+    # Per ultimo, perché è l'unico che può dover aspettare.
+    g, a = controlla_pubblicazione()
+    guai += g
+    avvisi += a
+
     return guai, avvisi
+
+
+def _leggi_versione() -> tuple[str | None, str]:
+    """Il commit dichiarato dal sito pubblicato, oppure (None, il perché).
+
+    Con curl e non con urllib: Cloudflare risponde 403 al client di Python,
+    mentre lascia passare curl. Il parametro in coda serve solo a non ricevere
+    una copia tenuta in cache da prima della pubblicazione.
+    """
+    try:
+        r = subprocess.run(
+            ["curl", "-sS", "--max-time", "20", "-w", "\n%{http_code}",
+             f"{VERSIONE_PUBBLICATA}?t={int(time.time())}"],
+            capture_output=True, text=True, timeout=40,
+        )
+    except (OSError, subprocess.SubprocessError) as errore:
+        return None, f"curl non parte ({errore})"
+    if r.returncode != 0:
+        return None, f"curl esce con {r.returncode}: {r.stderr.strip()[:120]}"
+    corpo, _, codice = r.stdout.rpartition("\n")
+    if codice != "200":
+        return None, f"risposta {codice}"
+    sha = corpo.strip()
+    if not re.fullmatch(r"[0-9a-f]{40}", sha):
+        return None, f"contenuto inatteso: {sha[:40]!r}"
+    return sha, ""
+
+
+def _ultimo_commit() -> str | None:
+    """L'ultimo commit di main, chiesto al repository su GitHub.
+
+    Non `HEAD` per prima cosa: se mentre la sentinella aspetta qualcuno spinge
+    un commit nuovo, l'ultimo diventa quello, ed è quello che deve finire
+    online. `HEAD` resta il ripiego quando GitHub non risponde.
+    """
+    for comando in (["git", "ls-remote", "origin", "refs/heads/main"],
+                    ["git", "rev-parse", "HEAD"]):
+        try:
+            r = subprocess.run(comando, cwd=RADICE, capture_output=True,
+                               text=True, timeout=30)
+        except (OSError, subprocess.SubprocessError):
+            continue
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout.split()[0]
+    return None
+
+
+def controlla_pubblicazione(leggi=_leggi_versione, ultimo=_ultimo_commit,
+                            attesa: float = ATTESA_PUBBLICAZIONE, ogni: float = OGNI,
+                            dormi=time.sleep, orologio=time.monotonic
+                            ) -> tuple[list[str], list[str]]:
+    """Restituisce (guai, avvisi) sul confronto fra il sito e l'ultimo commit.
+
+    Il 9 novembre 2026 un push con nove rinvii nuovi non ha mai avuto la sua
+    build su Cloudflare: il repository diceva che erano a posto, e la
+    sentinella lo confermava guardando il file, mentre il sito vero rispondeva
+    ancora 404. Per mezz'ora, finché un altro push non se li è portati dietro.
+    Nessun controllo poteva accorgersene, perché tutti guardavano il
+    repository e nessuno il sito.
+
+    Un sito fermo a un commit vecchio è un guaio: quello che c'è nel commit —
+    dati, rinvii, correzioni — i lettori non lo vedono. Un sito che non si
+    riesce a leggere è solo un avviso: può essere la rete, o Cloudflare che
+    tratta la macchina di GitHub da robot, e gridare ogni notte per quello
+    renderebbe la mail inutile.
+    """
+    scadenza = orologio() + attesa
+    letture_fallite = 0
+    while True:
+        atteso = ultimo()
+        if atteso is None:
+            return [], ["non so quale sia l'ultimo commit: non controllo cosa è online"]
+        pubblicato, perche = leggi()
+        if pubblicato == atteso:
+            return [], []
+        if pubblicato is None:
+            letture_fallite += 1
+            if letture_fallite >= 3:
+                return [], [f"non riesco a leggere {VERSIONE_PUBBLICATA} ({perche}): "
+                             f"non so se online c'è l'ultimo commit"]
+        if orologio() >= scadenza:
+            break
+        dormi(ogni)
+    if pubblicato is None:
+        return [], [f"non riesco a leggere {VERSIONE_PUBBLICATA} ({perche}): "
+                    f"non so se online c'è l'ultimo commit"]
+    minuti = round(attesa / 60)
+    return [
+        f"il sito pubblicato è fermo al commit {pubblicato[:7]}, l'ultimo su main è "
+        f"{atteso[:7]}: dopo {minuti} minuti Cloudflare non l'ha ancora messo "
+        f"online, e quello che c'è dentro (dati, rinvii, correzioni) i lettori "
+        f"non lo vedono"
+    ], []
 
 
 def controlla_indirizzi(partite: list[dict], registro_su_disco: Path = indirizzi.REGISTRO,

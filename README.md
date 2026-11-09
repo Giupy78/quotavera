@@ -209,7 +209,8 @@ sì, e si misura).
 | Pipeline notturna | **gira sola due volte al giorno** |
 | Sentinella sui dati pubblicati | fatta — `scripts/controlla.py` |
 | Registro degli indirizzi pubblicati | fatto (9 novembre) — `dati/indirizzi.json` |
-| In totale | 201 test |
+| Sentinella sul sito pubblicato (`/versione.txt`) | fatta (9 novembre) |
+| In totale | 209 test |
 
 ### Il sito
 
@@ -239,6 +240,16 @@ pubblicato ha senso. Nasce dal difetto che si è ripetuto più volte — turni c
 finivano verdi pubblicando dati fermi. Distingue i **guai** (esce con errore) dagli
 **avvisi** (resta verde), perché una sentinella che grida sempre non la guarda
 più nessuno.
+
+**L'ultimo controllo della sentinella guarda il sito vero, non il repository.**
+Il sito pubblica in `/versione.txt` il commit da cui è stato compilato (lo dà
+Cloudflare durante la build), e la sentinella lo confronta con l'ultimo commit di
+`main`, aspettando fino a dieci minuti che la build arrivi. Nasce dal 9 novembre
+2026: un push con nove rinvii nuovi non ha mai avuto la sua build, e per mezz'ora
+quegli indirizzi hanno risposto 404 mentre il repository — e la sentinella, che
+guardava solo il file — li davano per fatti. Sito fermo a un commit vecchio è un
+guaio; sito che non si riesce a leggere (rete, o Cloudflare che tratta la
+macchina di GitHub da robot) è solo un avviso.
 
 **L'anteprima social** (`og:image`) e' un PNG per campionato piu' uno
 generale, in `sito/public/sociale*.png`. Si rifanno a mano con `node

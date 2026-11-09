@@ -165,4 +165,9 @@ jobs:
         # giornata: sedici turni riusciti di fila, zero mail, zero pagine
         # rotte. Questo invece guarda il risultato, ed e' l'unica domanda che
         # avrebbe scoperto il guasto.
+        #
+        # L'ultimo controllo guarda il sito vero: legge /versione.txt e aspetta
+        # fino a dieci minuti che Cloudflare metta online il commit appena
+        # spinto. Di solito ci mette un minuto e mezzo; i dieci minuti si
+        # aspettano tutti solo quando la build non arriva, come il 9 novembre.
         run: python scripts/controlla.py
