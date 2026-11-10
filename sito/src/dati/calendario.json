@@ -2,16 +2,126 @@
  "campionati": {
   "serie-a": [],
   "premier-league": [],
-  "laliga": [],
-  "bundesliga": [],
-  "ligue-1": [],
+  "laliga": [
+   {
+    "id": "ath-bilbao-espanol",
+    "casa": "Ath Bilbao",
+    "ospite": "Espanol",
+    "data": "2026-11-20",
+    "ora": "21:00",
+    "quote": {
+     "mercato_unico": [
+      1.476,
+      4.3,
+      6.5
+     ]
+    },
+    "p_mercato": [
+     0.6512,
+     0.213,
+     0.1358
+    ],
+    "p_modello": [
+     0.5205,
+     0.2776,
+     0.2019
+    ],
+    "margine": 0.0639,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   }
+  ],
+  "bundesliga": [
+   {
+    "id": "bayern-munich-fc-koln",
+    "casa": "Bayern Munich",
+    "ospite": "FC Koln",
+    "data": "2026-11-20",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.9005,
+     0.0684,
+     0.0311
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   }
+  ],
+  "ligue-1": [
+   {
+    "id": "troyes-le-havre",
+    "casa": "Troyes",
+    "ospite": "Le Havre",
+    "data": "2026-11-20",
+    "ora": "20:45",
+    "quote": {
+     "mercato_unico": [
+      2.0,
+      3.5,
+      3.5
+     ]
+    },
+    "p_mercato": [
+     0.4737,
+     0.2631,
+     0.2631
+    ],
+    "p_modello": [
+     0.3163,
+     0.3242,
+     0.3595
+    ],
+    "margine": 0.0714,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   }
+  ],
   "eredivisie": [],
   "primeira-liga": [],
   "superlig": [],
-  "jupiler": [],
+  "jupiler": [
+   {
+    "id": "cercle-brugge-westerlo",
+    "casa": "Cercle Brugge",
+    "ospite": "Westerlo",
+    "data": "2026-11-20",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.452,
+     0.2213,
+     0.3267
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   }
+  ],
   "super-league-grecia": [],
   "premiership": [],
-  "serie-b": [],
+  "serie-b": [
+   {
+    "id": "verona-cesena",
+    "casa": "Verona",
+    "ospite": "Cesena",
+    "data": "2026-11-20",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5949,
+     0.2381,
+     0.167
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   }
+  ],
   "championship": [],
   "league-one": [
    {
@@ -148,6 +258,23 @@
     "margine": 0.0794,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "barnsley-sheffield-weds",
+    "casa": "Barnsley",
+    "ospite": "Sheffield Weds",
+    "data": "2026-11-20",
+    "ora": "21:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3008,
+     0.2395,
+     0.4597
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "league-two": [
@@ -719,6 +846,23 @@
     "margine": 0.1052,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "southend-boreham-wood",
+    "casa": "Southend",
+    "ospite": "Boreham Wood",
+    "data": "2026-11-20",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4071,
+     0.2279,
+     0.365
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "laliga-2": [
@@ -784,22 +928,22 @@
     "ora": "16:15",
     "quote": {
      "mercato_unico": [
-      2.5,
+      2.45,
       3.2,
-      2.7
+      2.8
      ]
     },
     "p_mercato": [
-     0.3716,
-     0.2859,
-     0.3425
+     0.3813,
+     0.2875,
+     0.3312
     ],
     "p_modello": [
      0.369,
      0.2624,
      0.3686
     ],
-    "margine": 0.0829,
+    "margine": 0.0778,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -998,10 +1142,148 @@
     "margine": null,
     "margine_migliore": null,
     "quote_da": null
+   },
+   {
+    "id": "andorra-leganes",
+    "casa": "Andorra",
+    "ospite": "Leganes",
+    "data": "2026-11-20",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5057,
+     0.2561,
+     0.2381
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
-  "bundesliga-2": [],
-  "ligue-2": [],
+  "bundesliga-2": [
+   {
+    "id": "bielefeld-magdeburg",
+    "casa": "Bielefeld",
+    "ospite": "Magdeburg",
+    "data": "2026-11-20",
+    "ora": "18:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4553,
+     0.2304,
+     0.3144
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "darmstadt-heidenheim",
+    "casa": "Darmstadt",
+    "ospite": "Heidenheim",
+    "data": "2026-11-20",
+    "ora": "18:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4622,
+     0.2339,
+     0.304
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   }
+  ],
+  "ligue-2": [
+   {
+    "id": "annecy-clermont",
+    "casa": "Annecy",
+    "ospite": "Clermont",
+    "data": "2026-11-20",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4883,
+     0.2663,
+     0.2454
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "nancy-dijon",
+    "casa": "Nancy",
+    "ospite": "Dijon",
+    "data": "2026-11-20",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3627,
+     0.2333,
+     0.404
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "guingamp-rodez",
+    "casa": "Guingamp",
+    "ospite": "Rodez",
+    "data": "2026-11-20",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.403,
+     0.2417,
+     0.3554
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "metz-boulogne",
+    "casa": "Metz",
+    "ospite": "Boulogne",
+    "data": "2026-11-20",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5549,
+     0.2387,
+     0.2064
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "red-star-pau-fc",
+    "casa": "Red Star",
+    "ospite": "Pau FC",
+    "data": "2026-11-20",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4713,
+     0.2387,
+     0.2899
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   }
+  ],
   "championship-scozia": [
    {
     "id": "ayr-raith-rvs",
@@ -1110,6 +1392,23 @@
     "margine": 0.0802,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "inverness-c-ayr",
+    "casa": "Inverness C",
+    "ospite": "Ayr",
+    "data": "2026-11-20",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4809,
+     0.2837,
+     0.2355
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "league-one-scozia": [],
