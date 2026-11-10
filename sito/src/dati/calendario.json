@@ -89,16 +89,26 @@
     "ospite": "Westerlo",
     "data": "2026-11-20",
     "ora": "20:45",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.0,
+      3.9,
+      3.1
+     ]
+    },
+    "p_mercato": [
+     0.471,
+     0.2321,
+     0.2969
+    ],
     "p_modello": [
      0.452,
      0.2213,
      0.3267
     ],
-    "margine": null,
+    "margine": 0.079,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    }
   ],
   "super-league-grecia": [],
@@ -110,16 +120,26 @@
     "ospite": "Cesena",
     "data": "2026-11-20",
     "ora": "20:30",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      1.714,
+      3.65,
+      4.5
+     ]
+    },
+    "p_mercato": [
+     0.5526,
+     0.249,
+     0.1984
+    ],
     "p_modello": [
      0.5949,
      0.2381,
      0.167
     ],
-    "margine": null,
+    "margine": 0.0796,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    }
   ],
   "championship": [],
@@ -186,22 +206,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.3,
-      3.65,
-      2.7
+      2.25,
+      3.6,
+      2.8
      ]
     },
     "p_mercato": [
-     0.407,
-     0.2493,
-     0.3438
+     0.4163,
+     0.2529,
+     0.3307
     ],
     "p_modello": [
      0.4859,
      0.2385,
      0.2756
     ],
-    "margine": 0.0791,
+    "margine": 0.0794,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -286,22 +306,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      2.05,
-      3.25,
-      3.55
+      1.909,
+      3.45,
+      3.65
      ]
     },
     "p_mercato": [
-     0.4597,
-     0.2829,
-     0.2574
+     0.4912,
+     0.2622,
+     0.2466
     ],
     "p_modello": [
      0.4713,
      0.3346,
      0.1941
     ],
-    "margine": 0.0772,
+    "margine": 0.0877,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -395,21 +415,21 @@
     "quote": {
      "mercato_unico": [
       1.909,
-      3.3,
-      4.0
+      3.35,
+      3.9
      ]
     },
     "p_mercato": [
-     0.4951,
-     0.2784,
-     0.2264
+     0.4945,
+     0.2734,
+     0.2322
     ],
     "p_modello": [
      0.4639,
      0.2855,
      0.2506
     ],
-    "margine": 0.0769,
+    "margine": 0.0788,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -666,22 +686,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.769,
-      3.65,
-      3.75
+      1.741,
+      3.8,
+      3.7
      ]
     },
     "p_mercato": [
-     0.525,
-     0.241,
-     0.2339
+     0.5332,
+     0.23,
+     0.2369
     ],
     "p_modello": [
      0.5826,
      0.2044,
      0.2131
     ],
-    "margine": 0.1059,
+    "margine": 0.1078,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -928,22 +948,22 @@
     "ora": "16:15",
     "quote": {
      "mercato_unico": [
-      2.45,
-      3.2,
+      2.55,
+      3.0,
       2.8
      ]
     },
     "p_mercato": [
-     0.3813,
-     0.2875,
-     0.3312
+     0.364,
+     0.3063,
+     0.3297
     ],
     "p_modello": [
      0.369,
      0.2624,
      0.3686
     ],
-    "margine": 0.0778,
+    "margine": 0.0826,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -956,21 +976,21 @@
     "quote": {
      "mercato_unico": [
       1.69,
-      3.9,
-      4.3
+      4.0,
+      4.2
      ]
     },
     "p_mercato": [
-     0.5603,
-     0.2315,
-     0.2082
+     0.5607,
+     0.2255,
+     0.2138
     ],
     "p_modello": [
      0.6294,
      0.1897,
      0.1809
     ],
-    "margine": 0.0807,
+    "margine": 0.0798,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -982,22 +1002,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      1.667,
-      4.0,
-      4.3
+      1.714,
+      3.95,
+      4.1
      ]
     },
     "p_mercato": [
-     0.5677,
-     0.2247,
-     0.2076
+     0.5523,
+     0.2284,
+     0.2193
     ],
     "p_modello": [
      0.6462,
      0.2301,
      0.1237
     ],
-    "margine": 0.0824,
+    "margine": 0.0805,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1009,22 +1029,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      2.4,
-      3.2,
+      2.35,
+      3.25,
       2.9
      ]
     },
     "p_mercato": [
-     0.3909,
-     0.2887,
-     0.3204
+     0.3983,
+     0.2827,
+     0.3191
     ],
     "p_modello": [
      0.3448,
      0.2819,
      0.3733
     ],
-    "margine": 0.074,
+    "margine": 0.0781,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1107,22 +1127,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      2.5,
+      2.35,
       3.1,
-      2.75
+      2.95
      ]
     },
     "p_mercato": [
-     0.3705,
-     0.2947,
-     0.3349
+     0.3952,
+     0.2944,
+     0.3104
     ],
     "p_modello": [
      0.2949,
      0.3457,
      0.3594
     ],
-    "margine": 0.0862,
+    "margine": 0.0871,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1152,7 +1172,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5057,
+     0.5058,
      0.2561,
      0.2381
     ],
@@ -1168,16 +1188,26 @@
     "ospite": "Magdeburg",
     "data": "2026-11-20",
     "ora": "18:30",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.15,
+      3.45,
+      3.0
+     ]
+    },
+    "p_mercato": [
+     0.4335,
+     0.262,
+     0.3045
+    ],
     "p_modello": [
      0.4553,
      0.2304,
      0.3144
     ],
-    "margine": null,
+    "margine": 0.0883,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "darmstadt-heidenheim",
@@ -1185,16 +1215,26 @@
     "ospite": "Heidenheim",
     "data": "2026-11-20",
     "ora": "18:30",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      3.4,
+      3.8,
+      1.909
+     ]
+    },
+    "p_mercato": [
+     0.2684,
+     0.238,
+     0.4936
+    ],
     "p_modello": [
      0.4622,
      0.2339,
      0.304
     ],
-    "margine": null,
+    "margine": 0.0811,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    }
   ],
   "ligue-2": [
@@ -1204,16 +1244,26 @@
     "ospite": "Clermont",
     "data": "2026-11-20",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.15,
+      3.3,
+      3.25
+     ]
+    },
+    "p_mercato": [
+     0.4379,
+     0.2788,
+     0.2833
+    ],
     "p_modello": [
      0.4883,
      0.2663,
      0.2454
     ],
-    "margine": null,
+    "margine": 0.0758,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "nancy-dijon",
@@ -1221,16 +1271,26 @@
     "ospite": "Dijon",
     "data": "2026-11-20",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      1.833,
+      3.75,
+      3.8
+     ]
+    },
+    "p_mercato": [
+     0.517,
+     0.2432,
+     0.2398
+    ],
     "p_modello": [
      0.3627,
      0.2333,
      0.404
     ],
-    "margine": null,
+    "margine": 0.0754,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "guingamp-rodez",
@@ -1238,16 +1298,26 @@
     "ospite": "Rodez",
     "data": "2026-11-20",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.0,
+      3.6,
+      3.3
+     ]
+    },
+    "p_mercato": [
+     0.4703,
+     0.2525,
+     0.2772
+    ],
     "p_modello": [
      0.403,
      0.2417,
      0.3554
     ],
-    "margine": null,
+    "margine": 0.0808,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "metz-boulogne",
@@ -1255,16 +1325,26 @@
     "ospite": "Boulogne",
     "data": "2026-11-20",
     "ora": "20:00",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      2.1,
+      3.35,
+      3.3
+     ]
+    },
+    "p_mercato": [
+     0.4481,
+     0.2737,
+     0.2782
+    ],
     "p_modello": [
      0.5549,
      0.2387,
      0.2064
     ],
-    "margine": null,
+    "margine": 0.0777,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "red-star-pau-fc",

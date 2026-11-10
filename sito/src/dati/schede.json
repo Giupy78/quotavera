@@ -435510,16 +435510,26 @@
    "ospite": "Westerlo",
    "data": "2026-11-20",
    "ora": "20:45",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.0,
+     3.9,
+     3.1
+    ]
+   },
+   "p_mercato": [
+    0.471,
+    0.2321,
+    0.2969
+   ],
    "p_modello": [
     0.452,
     0.2213,
     0.3267
    ],
-   "margine": null,
+   "margine": 0.079,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "jupiler",
    "casa_esteso": "Cercle Brugge KSV",
    "ospite_esteso": "KVC Westerlo",
@@ -564761,16 +564771,26 @@
    "ospite": "Cesena",
    "data": "2026-11-20",
    "ora": "20:30",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.714,
+     3.65,
+     4.5
+    ]
+   },
+   "p_mercato": [
+    0.5526,
+    0.249,
+    0.1984
+   ],
    "p_modello": [
     0.5949,
     0.2381,
     0.167
    ],
-   "margine": null,
+   "margine": 0.0796,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "serie-b",
    "casa_esteso": "Hellas Verona",
    "ospite_esteso": null,
@@ -716441,22 +716461,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     2.3,
-     3.65,
-     2.7
+     2.25,
+     3.6,
+     2.8
     ]
    },
    "p_mercato": [
-    0.407,
-    0.2493,
-    0.3438
+    0.4163,
+    0.2529,
+    0.3307
    ],
    "p_modello": [
     0.4859,
     0.2385,
     0.2756
    ],
-   "margine": 0.0791,
+   "margine": 0.0794,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-one",
@@ -792121,22 +792141,22 @@
    "ora": "13:30",
    "quote": {
     "mercato_unico": [
-     2.05,
-     3.25,
-     3.55
+     1.909,
+     3.45,
+     3.65
     ]
    },
    "p_mercato": [
-    0.4597,
-    0.2829,
-    0.2574
+    0.4912,
+    0.2622,
+    0.2466
    ],
    "p_modello": [
     0.4713,
     0.3346,
     0.1941
    ],
-   "margine": 0.0772,
+   "margine": 0.0877,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -794091,21 +794111,21 @@
    "quote": {
     "mercato_unico": [
      1.909,
-     3.3,
-     4.0
+     3.35,
+     3.9
     ]
    },
    "p_mercato": [
-    0.4951,
-    0.2784,
-    0.2264
+    0.4945,
+    0.2734,
+    0.2322
    ],
    "p_modello": [
     0.4639,
     0.2855,
     0.2506
    ],
-   "margine": 0.0769,
+   "margine": 0.0788,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -875628,22 +875648,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.769,
-     3.65,
-     3.75
+     1.741,
+     3.8,
+     3.7
     ]
    },
    "p_mercato": [
-    0.525,
-    0.241,
-    0.2339
+    0.5332,
+    0.23,
+    0.2369
    ],
    "p_modello": [
     0.5826,
     0.2044,
     0.2131
    ],
-   "margine": 0.1059,
+   "margine": 0.1078,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -968895,8 +968915,8 @@
       "no": 0.6388
      },
      "ou_1.5": {
-      "over": 0.5503,
-      "under": 0.4497
+      "over": 0.5502,
+      "under": 0.4498
      },
      "ou_2.5": {
       "over": 0.2812,
@@ -969314,7 +969334,7 @@
       0.09679,
       0.07486,
       0.03856,
-      0.01489,
+      0.0149,
       0.0046
      ],
      [
@@ -969761,22 +969781,22 @@
    "ora": "16:15",
    "quote": {
     "mercato_unico": [
-     2.45,
-     3.2,
+     2.55,
+     3.0,
      2.8
     ]
    },
    "p_mercato": [
-    0.3813,
-    0.2875,
-    0.3312
+    0.364,
+    0.3063,
+    0.3297
    ],
    "p_modello": [
     0.369,
     0.2624,
     0.3686
    ],
-   "margine": 0.0778,
+   "margine": 0.0826,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -970244,21 +970264,21 @@
    "quote": {
     "mercato_unico": [
      1.69,
-     3.9,
-     4.3
+     4.0,
+     4.2
     ]
    },
    "p_mercato": [
-    0.5603,
-    0.2315,
-    0.2082
+    0.5607,
+    0.2255,
+    0.2138
    ],
    "p_modello": [
     0.6294,
     0.1897,
     0.1809
    ],
-   "margine": 0.0807,
+   "margine": 0.0798,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -970274,8 +970294,8 @@
     "gol_attesi_ospite": 1.18,
     "matrice": [
      [
-      0.03011,
-      0.03536,
+      0.0301,
+      0.03535,
       0.0209,
       0.00822,
       0.00243,
@@ -970337,7 +970357,7 @@
      },
      {
       "risultato": "3-1",
-      "p": 0.0743
+      "p": 0.0744
      },
      {
       "risultato": "1-0",
@@ -970363,8 +970383,8 @@
       "under": 0.3199
      },
      "ou_3.5": {
-      "over": 0.4643,
-      "under": 0.5357
+      "over": 0.4644,
+      "under": 0.5356
      }
     }
    },
@@ -970725,22 +970745,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     1.667,
-     4.0,
-     4.3
+     1.714,
+     3.95,
+     4.1
     ]
    },
    "p_mercato": [
-    0.5677,
-    0.2247,
-    0.2076
+    0.5523,
+    0.2284,
+    0.2193
    ],
    "p_modello": [
     0.6462,
     0.2301,
     0.1237
    ],
-   "margine": 0.0824,
+   "margine": 0.0805,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -970764,16 +970784,16 @@
       6e-05
      ],
      [
-      0.17109,
-      0.10129,
+      0.1711,
+      0.10128,
       0.02991,
       0.00589,
       0.00087,
       0.0001
      ],
      [
-      0.14645,
-      0.08658,
+      0.14646,
+      0.08657,
       0.02559,
       0.00504,
       0.00075,
@@ -970782,9 +970802,9 @@
      [
       0.08353,
       0.04938,
-      0.0146,
+      0.01459,
       0.00288,
-      0.00043,
+      0.00042,
       5e-05
      ],
      [
@@ -970833,8 +970853,8 @@
       "2": 0.1237
      },
      "btts": {
-      "si": 0.3658,
-      "no": 0.6342
+      "si": 0.3657,
+      "no": 0.6343
      },
      "ou_1.5": {
       "over": 0.6697,
@@ -971192,22 +971212,22 @@
    "ora": "21:00",
    "quote": {
     "mercato_unico": [
-     2.4,
-     3.2,
+     2.35,
+     3.25,
      2.9
     ]
    },
    "p_mercato": [
-    0.3909,
-    0.2887,
-    0.3204
+    0.3983,
+    0.2827,
+    0.3191
    ],
    "p_modello": [
     0.3448,
     0.2819,
     0.3733
    ],
-   "margine": 0.074,
+   "margine": 0.0781,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -971286,7 +971306,7 @@
      },
      {
       "risultato": "0-0",
-      "p": 0.0978
+      "p": 0.0977
      },
      {
       "risultato": "1-2",
@@ -971680,16 +971700,16 @@
     "gol_attesi_ospite": 0.91,
     "matrice": [
      [
-      0.08767,
-      0.07958,
-      0.03627,
+      0.08766,
+      0.07957,
+      0.03626,
       0.011,
       0.0025,
       0.00046
      ],
      [
-      0.13344,
-      0.12167,
+      0.13343,
+      0.12166,
       0.05532,
       0.01678,
       0.00382,
@@ -971720,7 +971740,7 @@
       0.0001
      ],
      [
-      0.00602,
+      0.00603,
       0.00548,
       0.0025,
       0.00076,
@@ -972149,7 +972169,7 @@
      [
       0.06883,
       0.08293,
-      0.05018,
+      0.05017,
       0.02021,
       0.00611,
       0.00148
@@ -972182,7 +972202,7 @@
       0.01335,
       0.01613,
       0.00974,
-      0.00392,
+      0.00393,
       0.00119,
       0.00029
      ],
@@ -972638,7 +972658,7 @@
      ],
      [
       0.14951,
-      0.11277,
+      0.11276,
       0.04242,
       0.01065,
       0.002,
@@ -973094,22 +973114,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     2.5,
+     2.35,
      3.1,
-     2.75
+     2.95
     ]
    },
    "p_mercato": [
-    0.3705,
-    0.2947,
-    0.3349
+    0.3952,
+    0.2944,
+    0.3104
    ],
    "p_modello": [
     0.2949,
     0.3457,
     0.3594
    ],
-   "margine": 0.0862,
+   "margine": 0.0871,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -973125,7 +973145,7 @@
     "gol_attesi_ospite": 0.88,
     "matrice": [
      [
-      0.1915,
+      0.19151,
       0.16903,
       0.07475,
       0.02202,
@@ -973133,11 +973153,11 @@
       0.00086
      ],
      [
-      0.14717,
+      0.14718,
       0.13031,
       0.05753,
       0.01695,
-      0.00375,
+      0.00374,
       0.00066
      ],
      [
@@ -973192,7 +973212,7 @@
      },
      {
       "risultato": "0-2",
-      "p": 0.0748
+      "p": 0.0747
      }
     ],
     "mercati": {
@@ -973210,8 +973230,8 @@
       "under": 0.5077
      },
      "ou_2.5": {
-      "over": 0.2306,
-      "under": 0.7694
+      "over": 0.2305,
+      "under": 0.7695
      },
      "ou_3.5": {
       "over": 0.0864,
@@ -973591,7 +973611,7 @@
      ],
      [
       0.05987,
-      0.08583,
+      0.08582,
       0.06132,
       0.02923,
       0.01045,
@@ -973602,7 +973622,7 @@
       0.09217,
       0.06591,
       0.03142,
-      0.01123,
+      0.01124,
       0.00321
      ],
      [
@@ -973663,8 +973683,8 @@
       "no": 0.3279
      },
      "ou_1.5": {
-      "over": 0.8723,
-      "under": 0.1277
+      "over": 0.8724,
+      "under": 0.1276
      },
      "ou_2.5": {
       "over": 0.6936,
@@ -974019,7 +974039,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5057,
+    0.5058,
     0.2561,
     0.2381
    ],
@@ -974071,7 +974091,7 @@
       0.00036
      ],
      [
-      0.0191,
+      0.01911,
       0.01857,
       0.00903,
       0.00293,
@@ -974111,7 +974131,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5057,
+      "1": 0.5058,
       "X": 0.2561,
       "2": 0.2381
      },
@@ -974124,8 +974144,8 @@
       "under": 0.284
      },
      "ou_2.5": {
-      "over": 0.4601,
-      "under": 0.5399
+      "over": 0.4602,
+      "under": 0.5398
      },
      "ou_3.5": {
       "over": 0.2457,
@@ -1049435,501 +1049455,6 @@
    ]
   },
   {
-   "id": "sabadell-sociedad-b",
-   "campionato": "laliga-2",
-   "casa": "Sabadell",
-   "ospite": "Sociedad B",
-   "casa_esteso": "CD Sabadell",
-   "ospite_esteso": "Real Sociedad II",
-   "stadio": {
-    "citta": "Sabadell",
-    "nome": "Estadi Municipal de la Nova Creu Alta",
-    "paese": "Spain"
-   },
-   "data": "2026-11-09",
-   "ora": "",
-   "giocata": true,
-   "gol_casa": 0,
-   "gol_ospite": 0,
-   "statistiche": {
-    "tiri": [
-     19,
-     10
-    ],
-    "in_porta": [
-     3,
-     1
-    ],
-    "corner": [
-     5,
-     3
-    ],
-    "falli": [
-     16,
-     18
-    ],
-    "gialli": [
-     2,
-     3
-    ],
-    "rossi": [
-     0,
-     0
-    ],
-    "primo_tempo": [
-     0,
-     0
-    ],
-    "possesso": [
-     49.9,
-     50.1
-    ],
-    "passaggi": [
-     341,
-     350
-    ],
-    "parate": [
-     1,
-     3
-    ]
-   },
-   "quote_chiusura": {},
-   "gol": [],
-   "cartellini": [
-    {
-     "giocatore": "Luken Beitia",
-     "minuto": "39'",
-     "rosso": false,
-     "squadra": "Real Sociedad II"
-    },
-    {
-     "giocatore": "Javier Soroeta",
-     "minuto": "45'+5'",
-     "rosso": false,
-     "squadra": "Real Sociedad II"
-    },
-    {
-     "giocatore": "Alex Lebarbier",
-     "minuto": "77'",
-     "rosso": false,
-     "squadra": "Real Sociedad II"
-    },
-    {
-     "giocatore": "Edgar González",
-     "minuto": "82'",
-     "rosso": false,
-     "squadra": "CD Sabadell"
-    },
-    {
-     "giocatore": "Pere Pons",
-     "minuto": "88'",
-     "rosso": false,
-     "squadra": "CD Sabadell"
-    }
-   ],
-   "formazioni": {
-    "away": {
-     "giocatori": [
-      {
-       "entrato": false,
-       "maglia": "32",
-       "nome": "Lander Olasagasti",
-       "ruolo": "G",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "5",
-       "nome": "Kazunari Kita",
-       "ruolo": "CD-L",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "4",
-       "nome": "Luken Beitia",
-       "ruolo": "CD-R",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "23",
-       "nome": "Unax Agote",
-       "ruolo": "LB",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "22",
-       "nome": "Iñaki Rupérez",
-       "ruolo": "RB",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "16",
-       "nome": "Gorka Gorosabel",
-       "ruolo": "AM",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "6",
-       "nome": "Alex Lebarbier",
-       "ruolo": "LM",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "14",
-       "nome": "Tomás Carbonell",
-       "ruolo": "RM",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "19",
-       "nome": "Javier Soroeta",
-       "ruolo": "F",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "11",
-       "nome": "Alex Marchal",
-       "ruolo": "AM-L",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "7",
-       "nome": "Daniel Díaz",
-       "ruolo": "AM-R",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": true,
-       "maglia": "17",
-       "nome": "Lander Astiazarán",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "13",
-       "nome": "Theo Folgado",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "2",
-       "nome": "Jon Garro",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "12",
-       "nome": "Joan Oleaga",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "18",
-       "nome": "Gorka Carrera",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "10",
-       "nome": "Arkaitz Mariezkurrena",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "20",
-       "nome": "Sydney Osazuwa",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "34",
-       "nome": "Andrews Adjabeng",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "15",
-       "nome": "Iker Calderon",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "24",
-       "nome": "Unax Larrañaga",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "21",
-       "nome": "Jon Eceizabarrena",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "3",
-       "nome": "Jon Balda",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      }
-     ],
-     "modulo": "4-2-3-1",
-     "squadra": "Real Sociedad II"
-    },
-    "home": {
-     "giocatori": [
-      {
-       "entrato": false,
-       "maglia": "1",
-       "nome": "Diego Fuoli",
-       "ruolo": "G",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "6",
-       "nome": "Edgar González",
-       "ruolo": "CD-L",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "27",
-       "nome": "José Luis Català Vázquez",
-       "ruolo": "CD-R",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "3",
-       "nome": "Gerard Fornés",
-       "ruolo": "LB",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "7",
-       "nome": "Ton Ripoll",
-       "ruolo": "RB",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "8",
-       "nome": "Pere Pons",
-       "ruolo": "CM-L",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "22",
-       "nome": "Quadri Liameed",
-       "ruolo": "CM-R",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "10",
-       "nome": "Ángel Baena",
-       "ruolo": "LM",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "19",
-       "nome": "Yanis Rahmani",
-       "ruolo": "RM",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "12",
-       "nome": "Gastón Valles",
-       "ruolo": "CF-L",
-       "titolare": true,
-       "uscito": true
-      },
-      {
-       "entrato": false,
-       "maglia": "23",
-       "nome": "Joel Priego",
-       "ruolo": "CF-R",
-       "titolare": true,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "11",
-       "nome": "Javi López",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "5",
-       "nome": "Arthur Bonaldo",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "20",
-       "nome": "Urri",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "9",
-       "nome": "Nikolai Óbolo",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "13",
-       "nome": "Jose Ortega",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "15",
-       "nome": "Juan Carlos Lázaro Cervera",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "21",
-       "nome": "Alain Ribeiro",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "25",
-       "nome": "Marc Vidal",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": false,
-       "maglia": "33",
-       "nome": "Quim Utgés",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      },
-      {
-       "entrato": true,
-       "maglia": "18",
-       "nome": "Yussif Owusu",
-       "ruolo": "SUB",
-       "titolare": false,
-       "uscito": false
-      }
-     ],
-     "modulo": "4-4-2",
-     "squadra": "CD Sabadell"
-    }
-   },
-   "pronostico": {
-    "casa": "Sabadell",
-    "data": "2026-11-09",
-    "margine": null,
-    "ora": "20:30",
-    "ospite": "Sociedad B",
-    "p_mercato": null,
-    "p_modello": [
-     0.563,
-     0.2716,
-     0.1655
-    ],
-    "quote": {},
-    "salvato_il": "2026-10-30"
-   },
-   "p_modello": null,
-   "p_mercato": null,
-   "quote": {},
-   "margine": null,
-   "margine_migliore": null,
-   "dettaglio": null,
-   "stat_casa": null,
-   "stat_ospite": null,
-   "forma_casa": null,
-   "forma_ospite": null,
-   "incrocio": null,
-   "precedenti": [
-    {
-     "data": "2026-11-09",
-     "casa": "Sabadell",
-     "ospite": "Sociedad B",
-     "gol_casa": 0,
-     "gol_ospite": 0
-    }
-   ]
-  },
-  {
    "id": "las-palmas-eldense",
    "campionato": "laliga-2",
    "casa": "Las Palmas",
@@ -1049988,7 +1049513,28 @@
      3
     ]
    },
-   "quote_chiusura": {},
+   "quote_chiusura": {
+    "betfair": [
+     2.16,
+     3.6,
+     3.75
+    ],
+    "bet365": [
+     2.05,
+     3.5,
+     3.3
+    ],
+    "massimo": [
+     2.1,
+     3.5,
+     3.6
+    ],
+    "media": [
+     2.01,
+     3.42,
+     3.3
+    ]
+   },
    "gol": [
     {
      "assist": null,
@@ -1050480,6 +1050026,522 @@
    ]
   },
   {
+   "id": "sabadell-sociedad-b",
+   "campionato": "laliga-2",
+   "casa": "Sabadell",
+   "ospite": "Sociedad B",
+   "casa_esteso": "CD Sabadell",
+   "ospite_esteso": "Real Sociedad II",
+   "stadio": {
+    "citta": "Sabadell",
+    "nome": "Estadi Municipal de la Nova Creu Alta",
+    "paese": "Spain"
+   },
+   "data": "2026-11-09",
+   "ora": "",
+   "giocata": true,
+   "gol_casa": 0,
+   "gol_ospite": 0,
+   "statistiche": {
+    "tiri": [
+     19,
+     10
+    ],
+    "in_porta": [
+     3,
+     1
+    ],
+    "corner": [
+     5,
+     3
+    ],
+    "falli": [
+     16,
+     18
+    ],
+    "gialli": [
+     2,
+     3
+    ],
+    "rossi": [
+     0,
+     0
+    ],
+    "primo_tempo": [
+     0,
+     0
+    ],
+    "possesso": [
+     49.9,
+     50.1
+    ],
+    "passaggi": [
+     341,
+     350
+    ],
+    "parate": [
+     1,
+     3
+    ]
+   },
+   "quote_chiusura": {
+    "betfair": [
+     1.97,
+     3.6,
+     4.5
+    ],
+    "bet365": [
+     1.81,
+     3.5,
+     4.0
+    ],
+    "massimo": [
+     1.88,
+     3.5,
+     4.25
+    ],
+    "media": [
+     1.83,
+     3.36,
+     4.04
+    ]
+   },
+   "gol": [],
+   "cartellini": [
+    {
+     "giocatore": "Luken Beitia",
+     "minuto": "39'",
+     "rosso": false,
+     "squadra": "Real Sociedad II"
+    },
+    {
+     "giocatore": "Javier Soroeta",
+     "minuto": "45'+5'",
+     "rosso": false,
+     "squadra": "Real Sociedad II"
+    },
+    {
+     "giocatore": "Alex Lebarbier",
+     "minuto": "77'",
+     "rosso": false,
+     "squadra": "Real Sociedad II"
+    },
+    {
+     "giocatore": "Edgar González",
+     "minuto": "82'",
+     "rosso": false,
+     "squadra": "CD Sabadell"
+    },
+    {
+     "giocatore": "Pere Pons",
+     "minuto": "88'",
+     "rosso": false,
+     "squadra": "CD Sabadell"
+    }
+   ],
+   "formazioni": {
+    "away": {
+     "giocatori": [
+      {
+       "entrato": false,
+       "maglia": "32",
+       "nome": "Lander Olasagasti",
+       "ruolo": "G",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "5",
+       "nome": "Kazunari Kita",
+       "ruolo": "CD-L",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "4",
+       "nome": "Luken Beitia",
+       "ruolo": "CD-R",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "23",
+       "nome": "Unax Agote",
+       "ruolo": "LB",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "22",
+       "nome": "Iñaki Rupérez",
+       "ruolo": "RB",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "16",
+       "nome": "Gorka Gorosabel",
+       "ruolo": "AM",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "6",
+       "nome": "Alex Lebarbier",
+       "ruolo": "LM",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "14",
+       "nome": "Tomás Carbonell",
+       "ruolo": "RM",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "19",
+       "nome": "Javier Soroeta",
+       "ruolo": "F",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "11",
+       "nome": "Alex Marchal",
+       "ruolo": "AM-L",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "7",
+       "nome": "Daniel Díaz",
+       "ruolo": "AM-R",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": true,
+       "maglia": "17",
+       "nome": "Lander Astiazarán",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "13",
+       "nome": "Theo Folgado",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "2",
+       "nome": "Jon Garro",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "12",
+       "nome": "Joan Oleaga",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "18",
+       "nome": "Gorka Carrera",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "10",
+       "nome": "Arkaitz Mariezkurrena",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "20",
+       "nome": "Sydney Osazuwa",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "34",
+       "nome": "Andrews Adjabeng",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "15",
+       "nome": "Iker Calderon",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "24",
+       "nome": "Unax Larrañaga",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "21",
+       "nome": "Jon Eceizabarrena",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "3",
+       "nome": "Jon Balda",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      }
+     ],
+     "modulo": "4-2-3-1",
+     "squadra": "Real Sociedad II"
+    },
+    "home": {
+     "giocatori": [
+      {
+       "entrato": false,
+       "maglia": "1",
+       "nome": "Diego Fuoli",
+       "ruolo": "G",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "6",
+       "nome": "Edgar González",
+       "ruolo": "CD-L",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "27",
+       "nome": "José Luis Català Vázquez",
+       "ruolo": "CD-R",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "3",
+       "nome": "Gerard Fornés",
+       "ruolo": "LB",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "7",
+       "nome": "Ton Ripoll",
+       "ruolo": "RB",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "8",
+       "nome": "Pere Pons",
+       "ruolo": "CM-L",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "22",
+       "nome": "Quadri Liameed",
+       "ruolo": "CM-R",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "10",
+       "nome": "Ángel Baena",
+       "ruolo": "LM",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "19",
+       "nome": "Yanis Rahmani",
+       "ruolo": "RM",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "12",
+       "nome": "Gastón Valles",
+       "ruolo": "CF-L",
+       "titolare": true,
+       "uscito": true
+      },
+      {
+       "entrato": false,
+       "maglia": "23",
+       "nome": "Joel Priego",
+       "ruolo": "CF-R",
+       "titolare": true,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "11",
+       "nome": "Javi López",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "5",
+       "nome": "Arthur Bonaldo",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "20",
+       "nome": "Urri",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "9",
+       "nome": "Nikolai Óbolo",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "13",
+       "nome": "Jose Ortega",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "15",
+       "nome": "Juan Carlos Lázaro Cervera",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "21",
+       "nome": "Alain Ribeiro",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "25",
+       "nome": "Marc Vidal",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": false,
+       "maglia": "33",
+       "nome": "Quim Utgés",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      },
+      {
+       "entrato": true,
+       "maglia": "18",
+       "nome": "Yussif Owusu",
+       "ruolo": "SUB",
+       "titolare": false,
+       "uscito": false
+      }
+     ],
+     "modulo": "4-4-2",
+     "squadra": "CD Sabadell"
+    }
+   },
+   "pronostico": {
+    "casa": "Sabadell",
+    "data": "2026-11-09",
+    "margine": null,
+    "ora": "20:30",
+    "ospite": "Sociedad B",
+    "p_mercato": null,
+    "p_modello": [
+     0.563,
+     0.2716,
+     0.1655
+    ],
+    "quote": {},
+    "salvato_il": "2026-10-30"
+   },
+   "p_modello": null,
+   "p_mercato": null,
+   "quote": {},
+   "margine": null,
+   "margine_migliore": null,
+   "dettaglio": null,
+   "stat_casa": null,
+   "stat_ospite": null,
+   "forma_casa": null,
+   "forma_ospite": null,
+   "incrocio": null,
+   "precedenti": [
+    {
+     "data": "2026-11-09",
+     "casa": "Sabadell",
+     "ospite": "Sociedad B",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    }
+   ]
+  },
+  {
    "id": "andorra-mallorca",
    "campionato": "laliga-2",
    "casa": "Andorra",
@@ -1050619,16 +1050681,26 @@
    "ospite": "Magdeburg",
    "data": "2026-11-20",
    "ora": "18:30",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.15,
+     3.45,
+     3.0
+    ]
+   },
+   "p_mercato": [
+    0.4335,
+    0.262,
+    0.3045
+   ],
    "p_modello": [
     0.4553,
     0.2304,
     0.3144
    ],
-   "margine": null,
+   "margine": 0.0883,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "bundesliga-2",
    "casa_esteso": "Arminia Bielefeld",
    "ospite_esteso": "1. FC Magdeburg",
@@ -1051091,16 +1051163,26 @@
    "ospite": "Heidenheim",
    "data": "2026-11-20",
    "ora": "18:30",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     3.4,
+     3.8,
+     1.909
+    ]
+   },
+   "p_mercato": [
+    0.2684,
+    0.238,
+    0.4936
+   ],
    "p_modello": [
     0.4622,
     0.2339,
     0.304
    ],
-   "margine": null,
+   "margine": 0.0811,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "bundesliga-2",
    "casa_esteso": "SV Darmstadt 98",
    "ospite_esteso": "1. FC Heidenheim 1846",
@@ -1101503,16 +1101585,26 @@
    "ospite": "Clermont",
    "data": "2026-11-20",
    "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.15,
+     3.3,
+     3.25
+    ]
+   },
+   "p_mercato": [
+    0.4379,
+    0.2788,
+    0.2833
+   ],
    "p_modello": [
     0.4883,
     0.2663,
     0.2454
    ],
-   "margine": null,
+   "margine": 0.0758,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "ligue-2",
    "casa_esteso": null,
    "ospite_esteso": "Clermont Foot",
@@ -1101989,16 +1102081,26 @@
    "ospite": "Dijon",
    "data": "2026-11-20",
    "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.833,
+     3.75,
+     3.8
+    ]
+   },
+   "p_mercato": [
+    0.517,
+    0.2432,
+    0.2398
+   ],
    "p_modello": [
     0.3627,
     0.2333,
     0.404
    ],
-   "margine": null,
+   "margine": 0.0754,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "ligue-2",
    "casa_esteso": "AS Nancy Lorraine",
    "ospite_esteso": "Dijon FCO",
@@ -1102446,16 +1102548,26 @@
    "ospite": "Rodez",
    "data": "2026-11-20",
    "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.0,
+     3.6,
+     3.3
+    ]
+   },
+   "p_mercato": [
+    0.4703,
+    0.2525,
+    0.2772
+   ],
    "p_modello": [
     0.403,
     0.2417,
     0.3554
    ],
-   "margine": null,
+   "margine": 0.0808,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "ligue-2",
    "casa_esteso": null,
    "ospite_esteso": "Rodez Aveyron",
@@ -1102946,16 +1103058,26 @@
    "ospite": "Boulogne",
    "data": "2026-11-20",
    "ora": "20:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.1,
+     3.35,
+     3.3
+    ]
+   },
+   "p_mercato": [
+    0.4481,
+    0.2737,
+    0.2782
+   ],
    "p_modello": [
     0.5549,
     0.2387,
     0.2064
    ],
-   "margine": null,
+   "margine": 0.0777,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "ligue-2",
    "casa_esteso": null,
    "ospite_esteso": null,
