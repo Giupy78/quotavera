@@ -870,15 +870,15 @@
  ],
  "partite_piu_care": [
   {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
-   "id": "leverkusen-paderborn",
-   "casa": "Leverkusen",
-   "ospite": "Paderborn",
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "parma-roma",
+   "casa": "Parma",
+   "ospite": "Roma",
    "data": "2026-11-21",
-   "ora": "15:30",
-   "margine": 0.1183
+   "ora": "18:00",
+   "margine": 0.1124
   },
   {
    "campionato": "Serie A",
@@ -892,40 +892,62 @@
    "margine": 0.1115
   },
   {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "scunthorpe-worthing",
-   "casa": "Scunthorpe",
-   "ospite": "Worthing",
-   "data": "2026-11-14",
-   "ora": "16:00",
-   "margine": 0.1115
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "leverkusen-paderborn",
+   "casa": "Leverkusen",
+   "ospite": "Paderborn",
+   "data": "2026-11-21",
+   "ora": "15:30",
+   "margine": 0.1097
   },
   {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "hartlepool-wealdstone",
-   "casa": "Hartlepool",
-   "ospite": "Wealdstone",
-   "data": "2026-11-14",
-   "ora": "16:00",
-   "margine": 0.1085
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "como-cagliari",
+   "casa": "Como",
+   "ospite": "Cagliari",
+   "data": "2026-11-21",
+   "ora": "15:00",
+   "margine": 0.1075
   },
   {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "harrogate-altrincham",
-   "casa": "Harrogate",
-   "ospite": "Altrincham",
-   "data": "2026-11-14",
-   "ora": "16:00",
-   "margine": 0.1078
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "union-berlin-rb-leipzig",
+   "casa": "Union Berlin",
+   "ospite": "RB Leipzig",
+   "data": "2026-11-21",
+   "ora": "15:30",
+   "margine": 0.1062
   }
  ],
  "partite_meno_care": [
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "southampton-derby",
+   "casa": "Southampton",
+   "ospite": "Derby",
+   "data": "2026-11-21",
+   "ora": "13:30",
+   "margine": 0.0612
+  },
+  {
+   "campionato": "League Two",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "league-two",
+   "id": "shrewsbury-oldham",
+   "casa": "Shrewsbury",
+   "ospite": "Oldham",
+   "data": "2026-11-14",
+   "ora": "16:00",
+   "margine": 0.0627
+  },
   {
    "campionato": "LaLiga",
    "bandiera": "🇪🇸",
@@ -938,6 +960,17 @@
    "margine": 0.0639
   },
   {
+   "campionato": "Premier League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "premier-league",
+   "id": "aston-villa-sunderland",
+   "casa": "Aston Villa",
+   "ospite": "Sunderland",
+   "data": "2026-11-21",
+   "ora": "16:00",
+   "margine": 0.0648
+  },
+  {
    "campionato": "Ligue 1",
    "bandiera": "🇫🇷",
    "slug": "ligue-1",
@@ -947,39 +980,6 @@
    "data": "2026-11-21",
    "ora": "20:45",
    "margine": 0.0649
-  },
-  {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "lens-toulouse",
-   "casa": "Lens",
-   "ospite": "Toulouse",
-   "data": "2026-11-21",
-   "ora": "20:45",
-   "margine": 0.0651
-  },
-  {
-   "campionato": "Ligue 1",
-   "bandiera": "🇫🇷",
-   "slug": "ligue-1",
-   "id": "lille-lyon",
-   "casa": "Lille",
-   "ospite": "Lyon",
-   "data": "2026-11-21",
-   "ora": "20:45",
-   "margine": 0.0666
-  },
-  {
-   "campionato": "Premier League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "premier-league",
-   "id": "bournemouth-nottm-forest",
-   "casa": "Bournemouth",
-   "ospite": "Nott'm Forest",
-   "data": "2026-11-21",
-   "ora": "16:00",
-   "margine": 0.0674
   }
  ]
 }

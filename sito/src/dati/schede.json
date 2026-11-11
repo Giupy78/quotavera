@@ -8,22 +8,22 @@
    "ora": "15:00",
    "quote": {
     "mercato_unico": [
-     1.294,
+     1.278,
      5.0,
-     7.5
+     8.0
     ]
    },
    "p_mercato": [
-    0.7272,
-    0.1685,
-    0.1043
+    0.7361,
+    0.168,
+    0.0959
    ],
    "p_modello": [
     0.6355,
     0.2241,
     0.1403
    ],
-   "margine": 0.1061,
+   "margine": 0.1075,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "serie-a",
@@ -1014,22 +1014,22 @@
    "ora": "18:00",
    "quote": {
     "mercato_unico": [
-     7.5,
+     8.0,
      5.0,
-     1.294
+     1.27
     ]
    },
    "p_mercato": [
-    0.1043,
-    0.1685,
-    0.7272
+    0.0947,
+    0.1665,
+    0.7389
    ],
    "p_modello": [
     0.1324,
     0.2289,
     0.6387
    ],
-   "margine": 0.1061,
+   "margine": 0.1124,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "serie-a",
@@ -66839,22 +66839,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.714,
+     1.741,
      3.8,
-     4.5
+     4.4
     ]
    },
    "p_mercato": [
-    0.5567,
-    0.2417,
-    0.2016
+    0.5493,
+    0.243,
+    0.2077
    ],
    "p_modello": [
     0.5307,
     0.2603,
     0.209
    ],
-   "margine": 0.0688,
+   "margine": 0.0648,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "premier-league",
@@ -190409,22 +190409,22 @@
    "ora": "15:30",
    "quote": {
     "mercato_unico": [
-     1.222,
+     1.235,
      6.0,
      7.5
     ]
    },
    "p_mercato": [
-    0.7665,
-    0.1326,
-    0.1009
+    0.7618,
+    0.1351,
+    0.1032
    ],
    "p_modello": [
     0.6388,
     0.2335,
     0.1277
    ],
-   "margine": 0.1183,
+   "margine": 0.1097,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "bundesliga",
@@ -235748,15 +235748,15 @@
    "ora": "20:45",
    "quote": {
     "mercato_unico": [
-     1.833,
+     1.87,
      3.9,
-     3.8
+     3.65
     ]
    },
    "p_mercato": [
-    0.5208,
+    0.5102,
     0.2363,
-    0.2429
+    0.2535
    ],
    "p_modello": [
     0.5324,
@@ -510925,7 +510925,7 @@
     {
      "minuto": "81'",
      "squadra": "Aris",
-     "giocatore": "Fredrik Jensen",
+     "giocatore": "Fredrik Oldrup Jensen",
      "rosso": false
     },
     {
@@ -510949,7 +510949,7 @@
        "uscito": false
       },
       {
-       "nome": "Fredrik Jensen",
+       "nome": "Fredrik Oldrup Jensen",
        "maglia": "97",
        "ruolo": "CD-L",
        "titolare": true,
@@ -650864,16 +650864,26 @@
    "ospite": "QPR",
    "data": "2026-11-21",
    "ora": "13:30",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.5,
+     3.45,
+     2.65
+    ]
+   },
+   "p_mercato": [
+    0.3769,
+    0.2685,
+    0.3546
+   ],
    "p_modello": [
     0.4763,
     0.2612,
     0.2625
    ],
-   "margine": null,
+   "margine": 0.0672,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": null,
    "ospite_esteso": "Queens Park Rangers",
@@ -651364,16 +651374,26 @@
    "ospite": "Cardiff",
    "data": "2026-11-21",
    "ora": "13:30",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.714,
+     4.4,
+     3.9
+    ]
+   },
+   "p_mercato": [
+    0.5574,
+    0.207,
+    0.2356
+   ],
    "p_modello": [
     0.6021,
     0.1984,
     0.1995
    ],
-   "margine": null,
+   "margine": 0.0671,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "Norwich City",
    "ospite_esteso": "Cardiff City",
@@ -651850,16 +651870,26 @@
    "ospite": "Derby",
    "data": "2026-11-21",
    "ora": "13:30",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.392,
+     5.0,
+     7.0
+    ]
+   },
+   "p_mercato": [
+    0.6926,
+    0.1818,
+    0.1257
+   ],
    "p_modello": [
     0.6602,
     0.1943,
     0.1455
    ],
-   "margine": null,
+   "margine": 0.0612,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": null,
    "ospite_esteso": "Derby County",
@@ -652322,16 +652352,26 @@
    "ospite": "Portsmouth",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.75,
+     3.4,
+     2.45
+    ]
+   },
+   "p_mercato": [
+    0.3415,
+    0.2731,
+    0.3853
+   ],
    "p_modello": [
     0.3852,
     0.2501,
     0.3647
    ],
-   "margine": null,
+   "margine": 0.0659,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "Bolton Wanderers",
    "ospite_esteso": null,
@@ -652779,16 +652819,26 @@
    "ospite": "Wrexham",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.8,
+     3.25,
+     2.45
+    ]
+   },
+   "p_mercato": [
+    0.3328,
+    0.2843,
+    0.3829
+   ],
    "p_modello": [
     0.275,
     0.2558,
     0.4692
    ],
-   "margine": null,
+   "margine": 0.073,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "Lincoln City",
    "ospite_esteso": null,
@@ -653236,16 +653286,26 @@
    "ospite": "Bristol City",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.37,
+     5.0,
+     7.0
+    ]
+   },
+   "p_mercato": [
+    0.6991,
+    0.1784,
+    0.1225
+   ],
    "p_modello": [
     0.5731,
     0.2345,
     0.1924
    ],
-   "margine": null,
+   "margine": 0.0728,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": null,
    "ospite_esteso": null,
@@ -653736,16 +653796,26 @@
    "ospite": "Watford",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.606,
+     4.0,
+     5.0
+    ]
+   },
+   "p_mercato": [
+    0.5938,
+    0.2276,
+    0.1786
+   ],
    "p_modello": [
     0.5509,
     0.2487,
     0.2004
    ],
-   "margine": null,
+   "margine": 0.0727,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": null,
    "ospite_esteso": null,
@@ -654222,16 +654292,26 @@
    "ospite": "Birmingham",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.85,
+     3.35,
+     2.4
+    ]
+   },
+   "p_mercato": [
+    0.3289,
+    0.2774,
+    0.3937
+   ],
    "p_modello": [
     0.3416,
     0.2889,
     0.3695
    ],
-   "margine": null,
+   "margine": 0.0661,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "Stoke City",
    "ospite_esteso": "Birmingham City",
@@ -654708,16 +654788,26 @@
    "ospite": "West Brom",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     2.45,
+     3.25,
+     2.8
+    ]
+   },
+   "p_mercato": [
+    0.3829,
+    0.2843,
+    0.3328
+   ],
    "p_modello": [
     0.3851,
     0.294,
     0.3209
    ],
-   "margine": null,
+   "margine": 0.073,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "Swansea City",
    "ospite_esteso": "West Bromwich Albion",
@@ -655208,16 +655298,26 @@
    "ospite": "Preston",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.19,
+     7.0,
+     11.0
+    ]
+   },
+   "p_mercato": [
+    0.807,
+    0.1216,
+    0.0713
+   ],
    "p_modello": [
     0.7587,
     0.1359,
     0.1053
    ],
-   "margine": null,
+   "margine": 0.0741,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "West Ham United",
    "ospite_esteso": "Preston North End",
@@ -655665,16 +655765,26 @@
    "ospite": "Charlton",
    "data": "2026-11-21",
    "ora": "16:00",
-   "quote": {},
-   "p_mercato": null,
+   "quote": {
+    "mercato_unico": [
+     1.312,
+     5.25,
+     8.5
+    ]
+   },
+   "p_mercato": [
+    0.7319,
+    0.1696,
+    0.0985
+   ],
    "p_modello": [
     0.6554,
     0.2189,
     0.1257
    ],
-   "margine": null,
+   "margine": 0.0703,
    "margine_migliore": null,
-   "quote_da": null,
+   "quote_da": "unico",
    "campionato": "championship",
    "casa_esteso": "Wolverhampton Wanderers",
    "ospite_esteso": "Charlton Athletic",
@@ -746934,20 +747044,20 @@
     "mercato_unico": [
      2.65,
      3.35,
-     2.45
+     2.55
     ]
    },
    "p_mercato": [
-    0.349,
-    0.2718,
-    0.3792
+    0.3543,
+    0.2768,
+    0.3689
    ],
    "p_modello": [
     0.2863,
     0.2716,
     0.4421
    ],
-   "margine": 0.084,
+   "margine": 0.068,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-one",
@@ -747415,21 +747525,21 @@
    "quote": {
     "mercato_unico": [
      1.667,
-     3.9,
+     4.0,
      4.5
     ]
    },
    "p_mercato": [
-    0.5692,
-    0.2322,
-    0.1987
+    0.5716,
+    0.2278,
+    0.2006
    ],
    "p_modello": [
     0.5246,
     0.2345,
     0.2408
    ],
-   "margine": 0.0785,
+   "margine": 0.0721,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-one",
@@ -747882,21 +747992,21 @@
    "quote": {
     "mercato_unico": [
      2.25,
-     3.6,
+     3.65,
      2.8
     ]
    },
    "p_mercato": [
-    0.4163,
-    0.2529,
-    0.3307
+    0.4177,
+    0.2504,
+    0.332
    ],
    "p_modello": [
     0.4859,
     0.2385,
     0.2756
    ],
-   "margine": 0.0794,
+   "margine": 0.0756,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-one",
@@ -748348,22 +748458,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.87,
-     3.7,
-     3.55
+     1.909,
+     3.75,
+     3.6
     ]
    },
    "p_mercato": [
-    0.5022,
-    0.2433,
-    0.2545
+    0.4983,
+    0.2454,
+    0.2563
    ],
    "p_modello": [
     0.4967,
     0.2475,
     0.2558
    ],
-   "margine": 0.0867,
+   "margine": 0.0683,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-one",
@@ -748845,21 +748955,21 @@
    "quote": {
     "mercato_unico": [
      2.25,
-     3.6,
-     2.8
+     3.65,
+     2.85
     ]
    },
    "p_mercato": [
-    0.4163,
-    0.2529,
-    0.3307
+    0.4199,
+    0.2523,
+    0.3279
    ],
    "p_modello": [
     0.3953,
     0.2763,
     0.3284
    ],
-   "margine": 0.0794,
+   "margine": 0.0693,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-one",
@@ -828722,21 +828832,21 @@
    "quote": {
     "mercato_unico": [
      1.909,
-     3.45,
-     3.65
+     3.5,
+     3.85
     ]
    },
    "p_mercato": [
-    0.4912,
-    0.2622,
-    0.2466
+    0.4979,
+    0.2638,
+    0.2383
    ],
    "p_modello": [
     0.4713,
     0.3346,
     0.1941
    ],
-   "margine": 0.0877,
+   "margine": 0.0693,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -829188,22 +829298,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     2.85,
-     3.25,
+     2.9,
+     3.35,
      2.35
     ]
    },
    "p_mercato": [
-    0.323,
-    0.2808,
-    0.3962
+    0.3221,
+    0.2765,
+    0.4014
    ],
    "p_modello": [
     0.3192,
     0.2492,
     0.4316
    ],
-   "margine": 0.0841,
+   "margine": 0.0689,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -829670,22 +829780,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     2.05,
-     3.35,
-     3.4
+     2.1,
+     3.4,
+     3.35
     ]
    },
    "p_mercato": [
-    0.4585,
-    0.2729,
-    0.2686
+    0.4512,
+    0.2722,
+    0.2765
    ],
    "p_modello": [
     0.4735,
     0.2775,
     0.249
    ],
-   "margine": 0.0804,
+   "margine": 0.0688,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -830180,22 +830290,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     2.0,
-     3.4,
-     3.45
+     2.1,
+     3.35,
+     3.4
     ]
    },
    "p_mercato": [
-    0.4692,
-    0.2675,
-    0.2633
+    0.4512,
+    0.2765,
+    0.2722
    ],
    "p_modello": [
     0.5253,
     0.2498,
     0.2249
    ],
-   "margine": 0.084,
+   "margine": 0.0688,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -830690,22 +830800,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.909,
-     3.35,
-     3.9
+     2.0,
+     3.3,
+     3.7
     ]
    },
    "p_mercato": [
-    0.4945,
-    0.2734,
-    0.2322
+    0.473,
+    0.2796,
+    0.2474
    ],
    "p_modello": [
     0.4639,
     0.2855,
     0.2506
    ],
-   "margine": 0.0788,
+   "margine": 0.0733,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -831172,22 +831282,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     4.1,
      4.0,
-     1.69
+     4.0,
+     1.741
     ]
    },
    "p_mercato": [
-    0.2178,
-    0.2238,
-    0.5584
+    0.2272,
+    0.2272,
+    0.5457
    ],
    "p_modello": [
     0.2534,
     0.1962,
     0.5504
    ],
-   "margine": 0.0856,
+   "margine": 0.0744,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -831640,21 +831750,21 @@
    "quote": {
     "mercato_unico": [
      1.69,
-     3.7,
+     3.75,
      4.7
     ]
    },
    "p_mercato": [
-    0.5626,
-    0.2469,
-    0.1905
+    0.564,
+    0.2445,
+    0.1916
    ],
    "p_modello": [
     0.4552,
     0.3554,
     0.1894
    ],
-   "margine": 0.0748,
+   "margine": 0.0711,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -832108,20 +832218,20 @@
     "mercato_unico": [
      2.6,
      3.25,
-     2.55
+     2.7
     ]
    },
    "p_mercato": [
-    0.356,
-    0.2807,
-    0.3634
+    0.3633,
+    0.2875,
+    0.3492
    ],
    "p_modello": [
     0.271,
     0.2842,
     0.4448
    ],
-   "margine": 0.0845,
+   "margine": 0.0627,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -832589,21 +832699,21 @@
    "quote": {
     "mercato_unico": [
      3.2,
-     3.75,
+     3.8,
      2.0
     ]
    },
    "p_mercato": [
-    0.287,
-    0.2421,
-    0.4709
+    0.2881,
+    0.2397,
+    0.4722
    ],
    "p_modello": [
     0.4087,
     0.2474,
     0.3439
    ],
-   "margine": 0.0792,
+   "margine": 0.0757,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -833098,22 +833208,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     1.87,
+     1.952,
      3.55,
-     3.8
+     3.55
     ]
    },
    "p_mercato": [
-    0.5049,
-    0.2566,
-    0.2385
+    0.4843,
+    0.2579,
+    0.2579
    ],
    "p_modello": [
     0.5003,
     0.2529,
     0.2467
    ],
-   "margine": 0.0796,
+   "margine": 0.0757,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "league-two",
@@ -916018,21 +916128,21 @@
    "quote": {
     "mercato_unico": [
      2.25,
-     3.45,
+     3.5,
      2.7
     ]
    },
    "p_mercato": [
-    0.4076,
-    0.257,
-    0.3354
+    0.409,
+    0.2542,
+    0.3367
    ],
    "p_modello": [
     0.3818,
     0.2475,
     0.3707
    ],
-   "margine": 0.1047,
+   "margine": 0.1005,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -916484,22 +916594,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.417,
+     1.435,
      4.7,
-     5.5
+     5.25
     ]
    },
    "p_mercato": [
-    0.6642,
-    0.1829,
-    0.1529
+    0.6556,
+    0.183,
+    0.1614
    ],
    "p_modello": [
     0.6525,
     0.1902,
     0.1573
    ],
-   "margine": 0.1003,
+   "margine": 0.1001,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -916967,21 +917077,21 @@
    "quote": {
     "mercato_unico": [
      3.3,
-     3.6,
+     3.65,
      1.909
     ]
    },
    "p_mercato": [
-    0.2698,
-    0.2452,
-    0.4851
+    0.2709,
+    0.2426,
+    0.4864
    ],
    "p_modello": [
     0.3842,
     0.2369,
     0.3788
    ],
-   "margine": 0.1046,
+   "margine": 0.1008,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -917463,21 +917573,21 @@
    "quote": {
     "mercato_unico": [
      5.25,
-     3.95,
-     1.513
+     4.0,
+     1.526
     ]
    },
    "p_mercato": [
-    0.1602,
-    0.221,
-    0.6188
+    0.1627,
+    0.2206,
+    0.6167
    ],
    "p_modello": [
     0.2252,
     0.2192,
     0.5556
    ],
-   "margine": 0.1046,
+   "margine": 0.0958,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -917929,22 +918039,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.741,
+     1.769,
      3.8,
-     3.7
+     3.75
     ]
    },
    "p_mercato": [
-    0.5332,
-    0.23,
-    0.2369
+    0.529,
+    0.2338,
+    0.2372
    ],
    "p_modello": [
     0.5826,
     0.2044,
     0.213
    ],
-   "margine": 0.1078,
+   "margine": 0.0951,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -918397,21 +918507,21 @@
    "quote": {
     "mercato_unico": [
      2.05,
-     3.55,
+     3.6,
      2.95
     ]
    },
    "p_mercato": [
-    0.4486,
-    0.2479,
-    0.3036
+    0.4499,
+    0.2452,
+    0.3048
    ],
    "p_modello": [
     0.4388,
     0.2457,
     0.3154
    ],
-   "margine": 0.1085,
+   "margine": 0.1046,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -918907,21 +919017,21 @@
    "quote": {
     "mercato_unico": [
      2.5,
-     3.15,
+     3.2,
      2.6
     ]
    },
    "p_mercato": [
-    0.3652,
-    0.2847,
-    0.3502
+    0.3668,
+    0.2814,
+    0.3518
    ],
    "p_modello": [
     0.3415,
     0.3214,
     0.3371
    ],
-   "margine": 0.1021,
+   "margine": 0.0971,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -919388,22 +919498,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     2.35,
-     3.6,
-     2.45
+     2.15,
+     3.65,
+     2.8
     ]
    },
    "p_mercato": [
-    0.3869,
-    0.2432,
-    0.37
+    0.4307,
+    0.2441,
+    0.3252
    ],
    "p_modello": [
     0.3604,
     0.2107,
     0.4289
    ],
-   "margine": 0.1115,
+   "margine": 0.0962,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -919855,22 +919965,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.377,
+     1.385,
      4.9,
      5.75
     ]
    },
    "p_mercato": [
-    0.6826,
-    0.1733,
-    0.1441
+    0.6802,
+    0.1745,
+    0.1453
    ],
    "p_modello": [
     0.6546,
     0.1856,
     0.1598
    ],
-   "margine": 0.1042,
+   "margine": 0.1,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -920366,21 +920476,21 @@
    "quote": {
     "mercato_unico": [
      1.909,
-     3.5,
-     3.4
+     3.55,
+     3.45
     ]
    },
    "p_mercato": [
-    0.4854,
-    0.2532,
-    0.2614
+    0.4884,
+    0.2518,
+    0.2598
    ],
    "p_modello": [
     0.4415,
     0.2418,
     0.3167
    ],
-   "margine": 0.1037,
+   "margine": 0.0954,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -920863,20 +920973,20 @@
     "mercato_unico": [
      4.3,
      4.0,
-     1.606
+     1.625
     ]
    },
    "p_mercato": [
-    0.2009,
-    0.2179,
-    0.5812
+    0.2031,
+    0.22,
+    0.5769
    ],
    "p_modello": [
     0.265,
     0.2252,
     0.5097
    ],
-   "margine": 0.1052,
+   "margine": 0.0979,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -1016357,22 +1016467,22 @@
    "ora": "20:30",
    "quote": {
     "mercato_unico": [
-     2.2,
-     3.15,
-     3.35
+     2.3,
+     3.1,
+     3.25
     ]
    },
    "p_mercato": [
-    0.4294,
-    0.2946,
-    0.276
+    0.4118,
+    0.3014,
+    0.2868
    ],
    "p_modello": [
     0.3037,
     0.3234,
     0.3729
    ],
-   "margine": 0.0705,
+   "margine": 0.0651,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1016853,22 +1016963,22 @@
    "ora": "14:00",
    "quote": {
     "mercato_unico": [
-     2.75,
-     3.55,
+     2.8,
+     3.6,
      2.3
     ]
    },
    "p_mercato": [
-    0.3368,
-    0.2565,
-    0.4066
+    0.3339,
+    0.2559,
+    0.4102
    ],
    "p_modello": [
     0.3017,
     0.2509,
     0.4474
    ],
-   "margine": 0.0801,
+   "margine": 0.0697,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1017335,30 +1017445,30 @@
    "ora": "16:15",
    "quote": {
     "mercato_unico": [
-     2.55,
-     3.0,
-     2.8
+     2.5,
+     3.05,
+     2.9
     ]
    },
    "p_mercato": [
-    0.364,
-    0.3063,
-    0.3297
+    0.375,
+    0.3042,
+    0.3208
    ],
    "p_modello": [
     0.369,
     0.2624,
     0.3686
    ],
-   "margine": 0.0826,
+   "margine": 0.0727,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
    "casa_esteso": "Real Sociedad II",
    "ospite_esteso": "Sporting Gijón",
    "stadio": {
-    "nome": "Instalaciones de Zubieta",
-    "citta": "San Sebastian",
+    "nome": "Estadio Zubieta XXI",
+    "citta": "Donostia-San Sebastian",
     "paese": "Spain"
    },
    "dettaglio": {
@@ -1017817,22 +1017927,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     1.69,
-     4.0,
-     4.2
+     1.606,
+     4.2,
+     4.8
     ]
    },
    "p_mercato": [
-    0.5607,
-    0.2255,
-    0.2138
+    0.5952,
+    0.217,
+    0.1878
    ],
    "p_modello": [
     0.6294,
     0.1897,
     0.1809
    ],
-   "margine": 0.0798,
+   "margine": 0.0691,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1018299,22 +1018409,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     1.714,
-     3.95,
-     4.1
+     1.833,
+     4.0,
+     3.65
     ]
    },
    "p_mercato": [
-    0.5523,
-    0.2284,
-    0.2193
+    0.5192,
+    0.2286,
+    0.2522
    ],
    "p_modello": [
     0.6462,
     0.2301,
     0.1237
    ],
-   "margine": 0.0805,
+   "margine": 0.0695,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1019690,22 +1019800,22 @@
    "ora": "16:15",
    "quote": {
     "mercato_unico": [
-     1.714,
-     3.6,
-     4.6
+     1.769,
+     3.55,
+     4.3
     ]
    },
    "p_mercato": [
-    0.553,
-    0.2531,
-    0.194
+    0.5348,
+    0.2566,
+    0.2085
    ],
    "p_modello": [
     0.4316,
     0.2571,
     0.3113
    ],
-   "margine": 0.0786,
+   "margine": 0.0795,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1020668,22 +1020778,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     2.35,
-     3.1,
-     2.95
+     2.4,
+     3.05,
+     3.0
     ]
    },
    "p_mercato": [
-    0.3952,
-    0.2944,
-    0.3104
+    0.3896,
+    0.3025,
+    0.3079
    ],
    "p_modello": [
     0.2949,
     0.3457,
     0.3594
    ],
-   "margine": 0.0871,
+   "margine": 0.0779,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1022547,8 +1022657,8 @@
    "casa_esteso": "Real Sociedad II",
    "ospite_esteso": "Cádiz",
    "stadio": {
-    "nome": "Instalaciones de Zubieta",
-    "citta": "San Sebastian",
+    "nome": "Estadio Zubieta XXI",
+    "citta": "Donostia-San Sebastian",
     "paese": "Spain"
    },
    "dettaglio": {
@@ -1100095,22 +1100205,22 @@
    "ora": "18:30",
    "quote": {
     "mercato_unico": [
-     2.2,
-     3.5,
-     2.9
+     2.25,
+     3.55,
+     2.8
     ]
    },
    "p_mercato": [
-    0.4243,
-    0.2589,
-    0.3168
+    0.415,
+    0.2556,
+    0.3294
    ],
    "p_modello": [
     0.4553,
     0.2304,
     0.3144
    ],
-   "margine": 0.0851,
+   "margine": 0.0833,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "bundesliga-2",
@@ -1101554,22 +1101664,22 @@
    "ora": "13:00",
    "quote": {
     "mercato_unico": [
-     1.667,
+     1.69,
      4.1,
-     4.2
+     4.1
     ]
    },
    "p_mercato": [
-    0.5679,
-    0.2189,
-    0.2132
+    0.5608,
+    0.2196,
+    0.2196
    ],
    "p_modello": [
     0.5863,
     0.2248,
     0.1889
    ],
-   "margine": 0.0819,
+   "margine": 0.0795,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "bundesliga-2",
@@ -1102064,22 +1102174,22 @@
    "ora": "13:00",
    "quote": {
     "mercato_unico": [
-     1.606,
-     4.4,
-     4.4
+     1.625,
+     4.3,
+     4.3
     ]
    },
    "p_mercato": [
-    0.592,
-    0.204,
-    0.204
+    0.5836,
+    0.2082,
+    0.2082
    ],
    "p_modello": [
     0.6531,
     0.1907,
     0.1562
    ],
-   "margine": 0.0772,
+   "margine": 0.0805,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "bundesliga-2",
@@ -1210387,22 +1210497,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     3.0,
-     3.35,
+     3.05,
+     3.3,
      2.25
     ]
    },
    "p_mercato": [
-    0.3084,
-    0.2742,
-    0.4174
+    0.3033,
+    0.2789,
+    0.4178
    ],
    "p_modello": [
     0.3058,
     0.3082,
     0.386
    ],
-   "margine": 0.0763,
+   "margine": 0.0753,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "championship-scozia",
@@ -1211402,20 +1211512,20 @@
     "mercato_unico": [
      1.87,
      3.55,
-     3.8
+     3.85
     ]
    },
    "p_mercato": [
-    0.5049,
-    0.2566,
-    0.2385
+    0.5061,
+    0.2577,
+    0.2362
    ],
    "p_modello": [
     0.4879,
     0.2988,
     0.2132
    ],
-   "margine": 0.0796,
+   "margine": 0.0762,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "championship-scozia",
@@ -1211904,21 +1212014,21 @@
    "quote": {
     "mercato_unico": [
      1.87,
-     3.5,
+     3.55,
      3.85
     ]
    },
    "p_mercato": [
-    0.5046,
-    0.2604,
-    0.235
+    0.5061,
+    0.2577,
+    0.2362
    ],
    "p_modello": [
     0.5362,
     0.2947,
     0.1691
    ],
-   "margine": 0.0802,
+   "margine": 0.0762,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "championship-scozia",
