@@ -379,6 +379,14 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
             # vittorie in casa, che dipendono anche da quanto si pareggia.
             r["casa"], r["pari"] = t["vittorie_casa"], t["pareggi"]
             r["fuori"], r["vantaggio"] = t["vittorie_ospite"], t["vantaggio"]
+            # Cartellini e angoli come negli articoli a cui la chicca porta:
+            # stagioni intere, gialli piu' rossi, angoli delle due squadre. Lo
+            # stesso errore dei gol, evitato prima che succeda.
+            d, k = t.get("disciplina"), t.get("campo")
+            if d:
+                r["cartellini"] = d["cartellini"]
+            if k:
+                r["corner"] = k["corner"]
 
     def estremo(chiave, massimo, tipo, titolo, testo, formato, collegamento="",
                 mostra=None, **altro):
@@ -417,6 +425,8 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
               "contando tutte le gare delle ultime stagioni")
     articolo = "/statistiche/campionati-con-piu-gol/" if quante else ""
     campo = "/statistiche/fattore-campo/" if quante else ""
+    cartellini = "/statistiche/cartellini/" if quante else ""
+    angoli = "/statistiche/calci-d-angolo-e-tiri/" if quante else ""
     # Il campionato dove giocare in casa conta di piu': con le stagioni intere
     # la classifica e' quella dell'articolo, scarto fra vittorie in casa e
     # fuori; senza, resta quella vecchia sulle sole vittorie in casa.
@@ -436,10 +446,13 @@ def confronti(per_lega: list[tuple], stagione_in_corso: int | None = None) -> li
                 casa=pc(in_testa["casa"]), fuori=pc(in_testa.get("fuori", 0))),
         estremo("pari", True, "pareggi", "In {c} si pareggia più che ovunque",
                 "Un {v} delle partite finisce in parità.", pc, campo),
+        # Due decimali, come nell'articolo: "4,6" in home e "4,61" un clic
+        # dopo sembrano due numeri diversi.
         estremo("cartellini", True, "cartellini", "L'arbitro estrae di più in {c}",
-                "{v} cartellini a partita fra le due squadre.", uno),
+                "{v} cartellini a partita fra le due squadre.",
+                due if quante else uno, cartellini),
         estremo("corner", True, "corner", "Il campionato dei calci d'angolo è {la_c}",
-                "{v} angoli a partita in totale.", uno),
+                "{v} angoli a partita in totale.", due if quante else uno, angoli),
     ]
 
 
