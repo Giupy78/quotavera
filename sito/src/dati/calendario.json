@@ -22,7 +22,7 @@
     "p_modello": [
      0.6355,
      0.2241,
-     0.1403
+     0.1404
     ],
     "margine": 0.1075,
     "margine_migliore": null,
@@ -183,7 +183,7 @@
     ],
     "p_modello": [
      0.3675,
-     0.2621,
+     0.262,
      0.3705
     ],
     "margine": 0.1065,
@@ -456,7 +456,7 @@
     "p_modello": [
      0.3027,
      0.3089,
-     0.3883
+     0.3884
     ],
     "margine": 0.0731,
     "margine_migliore": null,
@@ -566,7 +566,7 @@
     "p_modello": [
      0.4536,
      0.2964,
-     0.2501
+     0.25
     ],
     "margine": 0.0731,
     "margine_migliore": null,
@@ -646,7 +646,7 @@
     ],
     "p_modello": [
      0.753,
-     0.1389,
+     0.1388,
      0.1081
     ],
     "margine": 0.0688,
@@ -699,7 +699,7 @@
      0.2021
     ],
     "p_modello": [
-     0.6375,
+     0.6376,
      0.2298,
      0.1327
     ],
@@ -745,21 +745,21 @@
     "quote": {
      "mercato_unico": [
       1.071,
-      9.5,
-      15.0
+      10.0,
+      16.0
      ]
     },
     "p_mercato": [
-     0.8844,
-     0.0754,
-     0.0402
+     0.8887,
+     0.0729,
+     0.0385
     ],
     "p_modello": [
      0.9005,
      0.0684,
      0.0311
     ],
-    "margine": 0.1056,
+    "margine": 0.0962,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -917,7 +917,7 @@
      0.5249
     ],
     "p_modello": [
-     0.1624,
+     0.1623,
      0.3132,
      0.5245
     ],
@@ -962,7 +962,7 @@
     "p_mercato": null,
     "p_modello": [
      0.5003,
-     0.2564,
+     0.2565,
      0.2433
     ],
     "margine": null,
@@ -992,7 +992,7 @@
     "p_modello": [
      0.3163,
      0.3242,
-     0.3594
+     0.3595
     ],
     "margine": 0.0714,
     "margine_migliore": null,
@@ -1168,22 +1168,22 @@
     "ora": "17:15",
     "quote": {
      "mercato_unico": [
-      2.8,
+      2.75,
       3.4,
-      2.4
+      2.45
      ]
     },
     "p_mercato": [
-     0.3345,
-     0.2725,
-     0.393
+     0.3415,
+     0.2731,
+     0.3853
     ],
     "p_modello": [
      0.3808,
      0.2499,
      0.3693
     ],
-    "margine": 0.0679,
+    "margine": 0.0659,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1224,22 +1224,22 @@
     "ora": "16:30",
     "quote": {
      "mercato_unico": [
-      3.65,
-      4.2,
-      1.741
+      3.8,
+      4.3,
+      1.714
      ]
     },
     "p_mercato": [
-     0.247,
-     0.2119,
-     0.5411
+     0.2386,
+     0.2086,
+     0.5528
     ],
     "p_modello": [
      0.2062,
      0.1882,
      0.6056
     ],
-    "margine": 0.0865,
+    "margine": 0.0791,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1252,21 +1252,21 @@
     "quote": {
      "mercato_unico": [
       1.952,
-      3.8,
-      3.2
+      3.85,
+      3.3
      ]
     },
     "p_mercato": [
-     0.4798,
-     0.236,
-     0.2842
+     0.4845,
+     0.2365,
+     0.279
     ],
     "p_modello": [
      0.4904,
      0.2031,
      0.3065
     ],
-    "margine": 0.088,
+    "margine": 0.0751,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1305,22 +1305,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      2.4,
+      2.35,
       3.75,
-      2.5
+      2.55
      ]
     },
     "p_mercato": [
-     0.3877,
-     0.2408,
-     0.3714
+     0.3961,
+     0.2405,
+     0.3634
     ],
     "p_modello": [
      0.4211,
      0.2466,
      0.3322
     ],
-    "margine": 0.0833,
+    "margine": 0.0844,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1357,16 +1357,26 @@
     "ospite": "Willem II",
     "data": "2026-11-22",
     "ora": "12:15",
-    "quote": {},
-    "p_mercato": null,
+    "quote": {
+     "mercato_unico": [
+      1.056,
+      13.0,
+      18.0
+     ]
+    },
+    "p_mercato": [
+     0.9093,
+     0.0552,
+     0.0355
+    ],
     "p_modello": [
      0.8603,
      0.1008,
      0.0389
     ],
-    "margine": null,
+    "margine": 0.0794,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "ajax-den-haag",
@@ -1376,22 +1386,22 @@
     "ora": "14:30",
     "quote": {
      "mercato_unico": [
-      1.154,
+      1.167,
       7.5,
       11.0
      ]
     },
     "p_mercato": [
-     0.8254,
-     0.1076,
-     0.067
+     0.8202,
+     0.1103,
+     0.0695
     ],
     "p_modello": [
      0.7144,
      0.1731,
      0.1125
     ],
-    "margine": 0.0908,
+    "margine": 0.0811,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1499,7 +1509,7 @@
     ],
     "p_modello": [
      0.7887,
-     0.1244,
+     0.1243,
      0.087
     ],
     "margine": 0.0798,
@@ -1561,7 +1571,7 @@
     "p_modello": [
      0.2546,
      0.3054,
-     0.44
+     0.4399
     ],
     "margine": null,
     "margine_migliore": null,
@@ -1629,22 +1639,22 @@
     "ora": "17:00",
     "quote": {
      "mercato_unico": [
-      1.154,
+      1.143,
       7.5,
       13.0
      ]
     },
     "p_mercato": [
-     0.8316,
-     0.1113,
-     0.0571
+     0.8361,
+     0.1089,
+     0.055
     ],
     "p_modello": [
      0.7623,
      0.165,
      0.0727
     ],
-    "margine": 0.0768,
+    "margine": 0.0851,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -1723,7 +1733,7 @@
      0.1436
     ],
     "p_modello": [
-     0.6563,
+     0.6562,
      0.2089,
      0.1349
     ],
@@ -1914,7 +1924,7 @@
      0.7185
     ],
     "p_modello": [
-     0.1173,
+     0.1172,
      0.1984,
      0.6843
     ],
@@ -2078,7 +2088,7 @@
      0.0617
     ],
     "p_modello": [
-     0.8062,
+     0.8061,
      0.1319,
      0.062
     ],
@@ -2378,7 +2388,7 @@
     ],
     "p_modello": [
      0.2942,
-     0.3074,
+     0.3073,
      0.3985
     ],
     "margine": 0.0856,
@@ -2584,22 +2594,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.75,
-      3.4,
+      2.8,
+      3.35,
       2.45
      ]
     },
     "p_mercato": [
-     0.3415,
-     0.2731,
-     0.3853
+     0.3358,
+     0.2781,
+     0.3861
     ],
     "p_modello": [
      0.3852,
      0.2501,
      0.3647
     ],
-    "margine": 0.0659,
+    "margine": 0.0638,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2800,22 +2810,22 @@
     "ora": "13:00",
     "quote": {
      "mercato_unico": [
-      1.833,
+      1.87,
       3.7,
-      4.0
+      3.85
      ]
     },
     "p_mercato": [
-     0.5206,
-     0.2497,
-     0.2298
+     0.5103,
+     0.25,
+     0.2397
     ],
     "p_modello": [
      0.5312,
      0.2563,
      0.2125
     ],
-    "margine": 0.0658,
+    "margine": 0.0648,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -2910,22 +2920,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.909,
-      3.75,
-      3.6
+      1.833,
+      3.8,
+      3.8
      ]
     },
     "p_mercato": [
-     0.4983,
-     0.2454,
-     0.2563
+     0.5183,
+     0.2408,
+     0.2408
     ],
     "p_modello": [
      0.4967,
      0.2475,
      0.2558
     ],
-    "margine": 0.0683,
+    "margine": 0.0719,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2984,7 +2994,7 @@
     "p_modello": [
      0.4633,
      0.2857,
-     0.2509
+     0.251
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2999,7 +3009,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.81,
+     0.8101,
      0.121,
      0.069
     ],
@@ -3051,7 +3061,7 @@
     "p_mercato": null,
     "p_modello": [
      0.2411,
-     0.2534,
+     0.2533,
      0.5056
     ],
     "margine": null,
@@ -3069,7 +3079,7 @@
     "p_modello": [
      0.5046,
      0.2255,
-     0.27
+     0.2699
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3135,9 +3145,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5632,
+     0.5633,
      0.2324,
-     0.2044
+     0.2043
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3170,22 +3180,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      1.909,
-      3.5,
+      1.87,
+      3.6,
       3.85
      ]
     },
     "p_mercato": [
-     0.4979,
-     0.2638,
-     0.2383
+     0.5076,
+     0.2551,
+     0.2374
     ],
     "p_modello": [
      0.4713,
      0.3346,
      0.1941
     ],
-    "margine": 0.0693,
+    "margine": 0.0723,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3332,22 +3342,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.69,
-      3.75,
-      4.7
+      1.588,
+      3.95,
+      5.25
      ]
     },
     "p_mercato": [
-     0.564,
-     0.2445,
-     0.1916
+     0.6004,
+     0.2305,
+     0.1691
     ],
     "p_modello": [
      0.4552,
      0.3554,
      0.1894
     ],
-    "margine": 0.0711,
+    "margine": 0.0734,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3386,22 +3396,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      3.2,
-      3.8,
-      2.0
+      3.15,
+      3.7,
+      2.05
      ]
     },
     "p_mercato": [
-     0.2881,
-     0.2397,
-     0.4722
+     0.293,
+     0.2467,
+     0.4603
     ],
     "p_modello": [
      0.4087,
      0.2474,
      0.3439
     ],
-    "margine": 0.0757,
+    "margine": 0.0755,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3458,7 +3468,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3274,
+     0.3275,
      0.253,
      0.4196
     ],
@@ -3561,7 +3571,7 @@
     "p_mercato": null,
     "p_modello": [
      0.6715,
-     0.1762,
+     0.1763,
      0.1523
     ],
     "margine": null,
@@ -3711,7 +3721,7 @@
      0.4864
     ],
     "p_modello": [
-     0.3842,
+     0.3843,
      0.2369,
      0.3788
     ],
@@ -3738,9 +3748,9 @@
      0.6167
     ],
     "p_modello": [
-     0.2252,
+     0.2253,
      0.2192,
-     0.5556
+     0.5555
     ],
     "margine": 0.0958,
     "margine_migliore": null,
@@ -3767,7 +3777,7 @@
     "p_modello": [
      0.5826,
      0.2044,
-     0.213
+     0.2131
     ],
     "margine": 0.0951,
     "margine_migliore": null,
@@ -3820,7 +3830,7 @@
     ],
     "p_modello": [
      0.3415,
-     0.3214,
+     0.3213,
      0.3371
     ],
     "margine": 0.0971,
@@ -3846,7 +3856,7 @@
      0.3252
     ],
     "p_modello": [
-     0.3604,
+     0.3605,
      0.2107,
      0.4289
     ],
@@ -3916,22 +3926,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      4.3,
-      4.0,
-      1.625
+      4.4,
+      4.2,
+      1.571
      ]
     },
     "p_mercato": [
-     0.2031,
-     0.22,
-     0.5769
+     0.1967,
+     0.2072,
+     0.596
     ],
     "p_modello": [
-     0.265,
+     0.2651,
      0.2252,
      0.5097
     ],
-    "margine": 0.0979,
+    "margine": 0.1019,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3963,7 +3973,7 @@
     "p_modello": [
      0.3779,
      0.2421,
-     0.3801
+     0.38
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4030,7 +4040,7 @@
     "p_mercato": null,
     "p_modello": [
      0.4291,
-     0.2697,
+     0.2696,
      0.3013
     ],
     "margine": null,
@@ -4150,21 +4160,21 @@
     "quote": {
      "mercato_unico": [
       2.3,
-      3.1,
+      3.15,
       3.25
      ]
     },
     "p_mercato": [
-     0.4118,
-     0.3014,
-     0.2868
+     0.4136,
+     0.298,
+     0.2884
     ],
     "p_modello": [
      0.3037,
      0.3234,
      0.3729
     ],
-    "margine": 0.0651,
+    "margine": 0.0599,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4176,22 +4186,22 @@
     "ora": "14:00",
     "quote": {
      "mercato_unico": [
-      2.8,
+      2.85,
       3.6,
-      2.3
+      2.25
      ]
     },
     "p_mercato": [
-     0.3339,
-     0.2559,
-     0.4102
+     0.3266,
+     0.2549,
+     0.4185
     ],
     "p_modello": [
      0.3017,
      0.2509,
      0.4474
     ],
-    "margine": 0.0697,
+    "margine": 0.0731,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4296,7 +4306,7 @@
     ],
     "p_modello": [
      0.3448,
-     0.2818,
+     0.2819,
      0.3733
     ],
     "margine": 0.0722,
@@ -4329,21 +4339,21 @@
     "quote": {
      "mercato_unico": [
       1.769,
-      3.55,
-      4.3
+      3.6,
+      4.4
      ]
     },
     "p_mercato": [
-     0.5348,
-     0.2566,
-     0.2085
+     0.5383,
+     0.2556,
+     0.2061
     ],
     "p_modello": [
      0.4316,
      0.2571,
      0.3113
     ],
-    "margine": 0.0795,
+    "margine": 0.0703,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4355,22 +4365,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      1.588,
-      3.9,
+      1.625,
+      4.0,
       5.0
      ]
     },
     "p_mercato": [
-     0.5955,
+     0.5895,
      0.2298,
-     0.1747
+     0.1807
     ],
     "p_modello": [
      0.5867,
      0.2439,
      0.1694
     ],
-    "margine": 0.0861,
+    "margine": 0.0654,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4384,20 +4394,20 @@
      "mercato_unico": [
       2.4,
       3.05,
-      3.0
+      3.15
      ]
     },
     "p_mercato": [
-     0.3896,
-     0.3025,
-     0.3079
+     0.395,
+     0.3076,
+     0.2974
     ],
     "p_modello": [
      0.2949,
      0.3457,
      0.3594
     ],
-    "margine": 0.0779,
+    "margine": 0.062,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4445,7 +4455,7 @@
     "p_mercato": null,
     "p_modello": [
      0.4052,
-     0.3272,
+     0.3273,
      0.2675
     ],
     "margine": null,
@@ -4463,7 +4473,7 @@
     "p_modello": [
      0.4523,
      0.2602,
-     0.2876
+     0.2875
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4497,7 +4507,7 @@
     "p_modello": [
      0.1792,
      0.3319,
-     0.4888
+     0.4889
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4546,7 +4556,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.507,
+     0.5071,
      0.2732,
      0.2197
     ],
@@ -4563,7 +4573,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4252,
+     0.4251,
      0.2254,
      0.3495
     ],
@@ -4580,7 +4590,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5065,
+     0.5064,
      0.2733,
      0.2203
     ],
@@ -4638,7 +4648,7 @@
     "p_modello": [
      0.4622,
      0.2339,
-     0.3039
+     0.304
     ],
     "margine": 0.0811,
     "margine_migliore": null,
@@ -4843,22 +4853,22 @@
     "ora": "20:00",
     "quote": {
      "mercato_unico": [
-      2.15,
+      2.1,
       3.3,
-      3.25
+      3.35
      ]
     },
     "p_mercato": [
-     0.4379,
-     0.2788,
-     0.2833
+     0.4481,
+     0.2782,
+     0.2737
     ],
     "p_modello": [
      0.4883,
      0.2663,
      0.2454
     ],
-    "margine": 0.0758,
+    "margine": 0.0777,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5052,21 +5062,21 @@
     "quote": {
      "mercato_unico": [
       3.05,
-      3.3,
-      2.25
+      3.2,
+      2.3
      ]
     },
     "p_mercato": [
-     0.3033,
-     0.2789,
-     0.4178
+     0.3034,
+     0.2883,
+     0.4083
     ],
     "p_modello": [
      0.3058,
      0.3082,
      0.386
     ],
-    "margine": 0.0753,
+    "margine": 0.0752,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5143,7 +5153,7 @@
      0.2362
     ],
     "p_modello": [
-     0.5362,
+     0.5361,
      0.2947,
      0.1691
     ],
