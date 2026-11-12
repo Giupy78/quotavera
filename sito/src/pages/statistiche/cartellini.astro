@@ -1,0 +1,282 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import fra from "../../dati/fra_campionati.json";
+import { num, pct, art, nella, ilp, chiaro } from "../../lib/testo";
+
+/* Il quinto articolo con i dati: cartellini e falli. Stesse regole degli
+   altri. I cartellini ci sono in tutti i campionati; i falli no (la National
+   League non li ha), e dove mancano la tabella scrive un trattino invece di
+   uno zero. Il conto e' in `engine/fra_campionati.py`, funzione `disciplina`.
+
+   La misura principale e' "cartellini a partita", gialli piu' rossi delle due
+   squadre: e' la stessa della chicca in home, che porta qui. */
+
+const righe = [...(fra.campionati as any[])]
+  .filter((r) => r.totale.disciplina)
+  .sort((a, b) => b.totale.disciplina.cartellini - a.totale.disciplina.cartellini);
+const N = righe.length;
+const stagioni = fra.stagioni_comuni as string[];
+const inCorso = fra.stagione_in_corso as string;
+const italiani = new Set(["serie-a", "serie-b"]);
+const D = (fra.tutti as any).disciplina;
+
+const ogni = (q: number) => Math.round(1 / q);
+const [primo, secondo, terzo] = righe;
+const ultimo = righe[N - 1];
+const serieA = righe.find((r) => r.slug === "serie-a");
+const posA = righe.findIndex((r) => r.slug === "serie-a") + 1;
+const dA = serieA?.totale.disciplina;
+
+const conFalli = righe.filter((r) => r.totale.disciplina.falli_per_giallo);
+const perSeverita = [...conFalli].sort(
+  (a, b) => a.totale.disciplina.falli_per_giallo - b.totale.disciplina.falli_per_giallo,
+);
+const piuSevero = perSeverita[0];
+const menoSevero = perSeverita[perSeverita.length - 1];
+
+const perRossi = [...righe].sort((a, b) => b.totale.disciplina.rossi - a.totale.disciplina.rossi);
+const piuRossi = perRossi[0];
+const menoRossi = perRossi[N - 1];
+
+const ospitePiuGialli = righe.filter(
+  (r) => r.totale.disciplina.gialli_ospite > r.totale.disciplina.gialli_casa,
+).length;
+
+/* La stagione in corso, come negli altri articoli: si mostra solo con
+   abbastanza partite da non essere puro rumore. */
+const MINIMO_IN_CORSO = 60;
+const aOggi = serieA?.in_corso?.disciplina;
+const mostraOggi = aOggi && aOggi.partite >= MINIMO_IN_CORSO;
+
+const barre = righe.map((r) => {
+  const d = r.totale.disciplina;
+  return {
+    etichetta: r.nome,
+    bandiera: r.bandiera,
+    href: `/calcio/${r.slug}/`,
+    valore: d.cartellini,
+    testo: num(d.cartellini),
+    dettaglio:
+      `${r.nome}: ${num(d.gialli)} gialli e ${num(d.rossi)} rossi a partita ` +
+      `(${d.partite.toLocaleString("it-IT")} partite)`,
+    evidenza: italiani.has(r.slug),
+  };
+});
+
+const titolo = "Media cartellini: i campionati con più gialli e rossi";
+const descrizione =
+  `Quanti cartellini gialli e rossi a partita in 22 campionati europei e in Serie A, quanti ` +
+  `falli servono per un giallo e chi viene ammonito di più fra casa e trasferta. ` +
+  `Tre stagioni intere, aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/cartellini/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Cartellini: i campionati più duri d'Europa",
+  description: descrizione,
+  datePublished: "2026-11-12",
+  dateModified: fra.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Cartellini" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>Cartellini: i campionati più duri d'Europa</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Nelle ultime tre stagioni intere, dal {stagioni[0]} al {stagioni[stagioni.length - 1]}, il
+        campionato con più cartellini è {art(primo.nome)}<strong>{chiaro(primo.nome)}</strong>:
+        {" "}{num(primo.totale.disciplina.cartellini)} a partita fra gialli e rossi, sommando le due
+        squadre. Seguono {art(secondo.nome)}{chiaro(secondo.nome)} con {num(secondo.totale.disciplina.cartellini)}
+        {" "}e {art(terzo.nome)}{chiaro(terzo.nome)} con {num(terzo.totale.disciplina.cartellini)}. Il più
+        tranquillo è {art(ultimo.nome)}{chiaro(ultimo.nome)}, con {num(ultimo.totale.disciplina.cartellini)}.
+      </p>
+      {
+        dA && (
+          <p>
+            La <strong>Serie A</strong> è {posA}ª su {N}, con {num(dA.cartellini)} cartellini a
+            partita: {num(dA.gialli)} gialli e un'espulsione ogni {ogni(dA.rossi)} partite. La media
+            di tutti i campionati insieme è {num(D.cartellini)}.
+          </p>
+        )
+      }
+    </div>
+
+    <h2 class="sotto-titolo">Cartellini a partita, ultime tre stagioni intere</h2>
+    <p class="nota">
+      Gialli più rossi, delle due squadre insieme. In blu i campionati italiani; ogni nome porta
+      alla pagina del campionato.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    <h2 class="sotto-titolo">In trasferta si viene ammoniti di più</h2>
+    <div class="prosa">
+      <p>
+        {ospitePiuGialli === N ? (
+          <>In tutti i {N} campionati</>
+        ) : (
+          <>In {ospitePiuGialli} campionati su {N}</>
+        )}{" "}la squadra ospite prende più gialli di quella di casa: {num(D.gialli_ospite)} contro
+        {" "}{num(D.gialli_casa)} a partita, {ilp((D.gialli_ospite - D.gialli_casa) / D.gialli_casa)} in
+        più. Con i rossi è lo stesso: {num(D.rossi_ospite * 100, 1)} ogni cento partite contro
+        {" "}{num(D.rossi_casa * 100, 1)}.
+      </p>
+      <p>
+        Può dipendere dall'arbitro, che sente lo stadio, ma anche dal fatto che chi gioca fuori
+        casa difende di più e quindi commette più falli. I dati dicono quanto, non perché.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">Quanti falli per un giallo</h2>
+    <div class="prosa">
+      <p>
+        In media si fischiano {num(D.falli, 1)} falli a partita e si mostra un giallo ogni
+        {" "}{num(D.falli_per_giallo, 1)}. È la misura più vicina alla severità degli arbitri:
+        {" "}{nella(piuSevero.nome)}{chiaro(piuSevero.nome)} arriva un giallo ogni
+        {" "}{num(piuSevero.totale.disciplina.falli_per_giallo, 1)} falli,
+        {" "}{nella(menoSevero.nome)}{chiaro(menoSevero.nome)} ogni
+        {" "}{num(menoSevero.totale.disciplina.falli_per_giallo, 1)}.
+        {dA?.falli_per_giallo && <> In Serie A {num(dA.falli_per_giallo, 1)}.</>}
+      </p>
+      <p>
+        Le espulsioni sono {num(D.rossi * 100, 0)} ogni cento partite, una ogni {ogni(D.rossi)}.
+        Più frequenti {nella(piuRossi.nome)}{chiaro(piuRossi.nome)} (una ogni
+        {" "}{ogni(piuRossi.totale.disciplina.rossi)}), più rare {nella(menoRossi.nome)}{chiaro(menoRossi.nome)}
+        {" "}(una ogni {ogni(menoRossi.totale.disciplina.rossi)}).
+      </p>
+    </div>
+
+    {
+      mostraOggi && dA && (
+        <>
+          <h2 class="sotto-titolo">E quest'anno?</h2>
+          <div class="prosa">
+            <p>
+              Nella stagione {inCorso}, dopo {aOggi.partite} partite, la Serie A è a
+              {" "}<strong>{num(aOggi.cartellini)}</strong> cartellini a partita
+              {Math.abs(aOggi.cartellini - dA.cartellini) >= 0.3
+                ? aOggi.cartellini > dA.cartellini
+                  ? `: sopra la sua media degli ultimi tre anni, che è ${num(dA.cartellini)}.`
+                  : `: sotto la sua media degli ultimi tre anni, che è ${num(dA.cartellini)}.`
+                : `, in linea con la sua media degli ultimi tre anni (${num(dA.cartellini)}).`}
+              {" "}Su poche giornate basta una partita nervosa per spostare la media, ed è il motivo
+              per cui la classifica qui sopra usa solo stagioni concluse.
+            </p>
+          </div>
+        </>
+      )
+    }
+
+    <h2 class="sotto-titolo">Campionato per campionato</h2>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Campionato</th>
+            <th class="num">Cartellini</th>
+            <th class="num">Gialli</th>
+            <th class="num">Gialli casa</th>
+            <th class="num">Gialli ospite</th>
+            <th class="num">Rossi ogni 100 partite</th>
+            <th class="num">Falli</th>
+            <th class="num">Falli per giallo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r, i) => {
+              const d = r.totale.disciplina;
+              return (
+                <tr class:list={{ ita: italiani.has(r.slug) }}>
+                  <td class="num mono">{i + 1}</td>
+                  <td>
+                    <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
+                  </td>
+                  <td class="num mono">{num(d.cartellini)}</td>
+                  <td class="num mono">{num(d.gialli)}</td>
+                  <td class="num mono">{num(d.gialli_casa)}</td>
+                  <td class="num mono">{num(d.gialli_ospite)}</td>
+                  <td class="num mono">{num(d.rossi * 100, 1)}</td>
+                  <td class="num mono">{d.falli ? num(d.falli, 1) : "—"}</td>
+                  <td class="num mono">{d.falli_per_giallo ? num(d.falli_per_giallo, 1) : "—"}</td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono {D.partite.toLocaleString("it-IT")} partite: tutte quelle dei {N} campionati nelle
+        stagioni {stagioni.join(", ")}, come le pubblica football-data.co.uk. I falli ci sono in
+        tutti i campionati tranne la National League, dove la tabella scrive un trattino: «falli
+        per giallo» è calcolato solo sulle partite che hanno entrambi i dati.
+      </p>
+      <p>
+        Gialli e rossi sono contati come li registra la fonte. Le medie di tutti i campionati
+        insieme sono calcolate sulle partite, non come media dei campionati. La stagione in corso
+        non entra nella classifica finché non è conclusa.
+      </p>
+      <p>La pagina si aggiorna da sola ogni notte, insieme al resto del sito.</p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/cartellini/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+</style>

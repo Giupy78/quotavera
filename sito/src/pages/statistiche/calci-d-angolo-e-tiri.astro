@@ -1,0 +1,336 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import fra from "../../dati/fra_campionati.json";
+import { num, pct, art, nella, ilp, chiaro } from "../../lib/testo";
+
+/* Il sesto articolo con i dati: calci d'angolo e tiri. Il pezzo forte e' la
+   domanda "piu' angoli vuol dire piu' gol?", a cui i dati rispondono di no, e
+   il confronto con i tiri in porta, dove invece il legame e' fortissimo. Le
+   frasi che lo dicono sono condizionate ai numeri: se un giorno gli angoli
+   cominciassero a contare, il testo cambierebbe da solo.
+
+   La National League non ha tiri, angoli e falli nei dati: resta fuori, e lo
+   si dice. Il conto e' in `engine/fra_campionati.py`, funzioni `campo` e
+   `fasce`. */
+
+const righe = [...(fra.campionati as any[])]
+  .filter((r) => r.totale.campo)
+  .sort((a, b) => b.totale.campo.corner - a.totale.campo.corner);
+const N = righe.length;
+const senza = (fra.campionati as any[]).filter((r) => !r.totale.campo);
+const stagioni = fra.stagioni_comuni as string[];
+const italiani = new Set(["serie-a", "serie-b"]);
+const C = (fra.tutti as any).campo;
+
+const [primo, secondo, terzo] = righe;
+const ultimo = righe[N - 1];
+const serieA = righe.find((r) => r.slug === "serie-a");
+const posA = righe.findIndex((r) => r.slug === "serie-a") + 1;
+const cA = serieA?.totale.campo;
+
+const angoli = fra.angoli_e_gol as any[];
+const porta = fra.porta_e_gol as any[];
+const fascia = (f: any) => (f.a === null ? `${f.da} o più` : f.da === 0 ? `${f.a} o meno` : `da ${f.da} a ${f.a}`);
+const golAngoli = angoli.map((f) => f.gol);
+const scartoAngoli = Math.max(...golAngoli) - Math.min(...golAngoli);
+const pocoPorta = porta[0];
+const moltoPorta = porta[porta.length - 1];
+const pocoAngoli = angoli[0];
+const moltiAngoli = angoli[angoli.length - 1];
+
+/* I campionati scozzesi minori registrano molti meno tiri degli altri e una
+   precisione molto piu' alta (19 tiri e 43% contro 24 e 35%, nel novembre
+   2026): troppo per essere calcio, e' quasi certamente un criterio di
+   conteggio diverso. Restano nella tabella, ma non nella classifica di chi
+   spreca meno, dove finirebbero in testa per un artefatto. */
+const SCOZZESI_MINORI = new Set(["championship-scozia", "league-one-scozia", "league-two-scozia"]);
+const strani = righe.filter((r) => SCOZZESI_MINORI.has(r.slug) && r.totale.campo.tiri < C.tiri - 3);
+const affidabili = righe.filter((r) => !strani.includes(r));
+const perEfficienza = [...affidabili].sort((a, b) => a.totale.campo.tiri_per_gol - b.totale.campo.tiri_per_gol);
+const piuEfficiente = perEfficienza[0];
+const menoEfficiente = perEfficienza[perEfficienza.length - 1];
+const posEffA = perEfficienza.findIndex((r) => r.slug === "serie-a") + 1;
+const scartoAngoliLeghe = primo.totale.campo.corner - ultimo.totale.campo.corner;
+
+const barre = righe.map((r) => {
+  const k = r.totale.campo;
+  return {
+    etichetta: r.nome,
+    bandiera: r.bandiera,
+    href: `/calcio/${r.slug}/`,
+    valore: k.corner,
+    testo: num(k.corner),
+    dettaglio:
+      `${r.nome}: ${num(k.corner_casa)} angoli per la squadra di casa, ${num(k.corner_ospite)} ` +
+      `per l'ospite (${k.partite.toLocaleString("it-IT")} partite)`,
+    evidenza: italiani.has(r.slug),
+  };
+});
+
+const titolo = "Media calci d'angolo e tiri nei campionati europei";
+const descrizione =
+  `Quanti calci d'angolo e quanti tiri a partita in 22 campionati europei e in Serie A, quanti ` +
+  `tiri servono per un gol e se più angoli vuol dire più gol. Tre stagioni intere, ` +
+  `aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/calci-d-angolo-e-tiri/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Calci d'angolo e tiri nei campionati europei",
+  description: descrizione,
+  datePublished: "2026-11-12",
+  dateModified: fra.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Calci d'angolo e tiri" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>Calci d'angolo e tiri nei campionati europei</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Nelle ultime tre stagioni intere, dal {stagioni[0]} al {stagioni[stagioni.length - 1]}, si
+        battono in media <strong>{num(C.corner)} calci d'angolo</strong> a partita, sommando le due
+        squadre. Il campionato con più angoli è {art(primo.nome)}<strong>{chiaro(primo.nome)}</strong>
+        {" "}({num(primo.totale.campo.corner)}). Seguono {art(secondo.nome)}{chiaro(secondo.nome)}
+        {" "}({num(secondo.totale.campo.corner)}) e {art(terzo.nome)}{chiaro(terzo.nome)}
+        {" "}({num(terzo.totale.campo.corner)}); quello con meno è {art(ultimo.nome)}{chiaro(ultimo.nome)}
+        {" "}({num(ultimo.totale.campo.corner)}).
+        {cA && (
+          <>
+            {" "}La <strong>Serie A</strong> è {posA}ª su {N}, con {num(cA.corner)}.
+          </>
+        )}
+      </p>
+      <p>
+        La squadra di casa ne batte di più: {num(C.corner_casa)} contro {num(C.corner_ospite)}
+        {" "}dell'ospite. Fra il primo e l'ultimo campionato ci sono {num(scartoAngoliLeghe, 1)}
+        {" "}angoli a partita di differenza.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">Calci d'angolo a partita, ultime tre stagioni intere</h2>
+    <p class="nota">
+      Le due squadre insieme. In blu i campionati italiani; ogni nome porta alla pagina del
+      campionato.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    <h2 class="sotto-titolo">Più angoli vuol dire più gol?</h2>
+    <div class="prosa">
+      {scartoAngoli < 0.2 ? (
+        <p>
+          <strong>No.</strong> Nelle partite con {fascia(pocoAngoli)} calci d'angolo si segnano
+          {" "}{num(pocoAngoli.gol)} gol, in quelle con {fascia(moltiAngoli)} {num(moltiAngoli.gol)}:
+          praticamente lo stesso numero. Tanti angoli possono voler dire una squadra che assedia,
+          non una partita con più gol.
+        </p>
+      ) : (
+        <p>
+          Poco. Nelle partite con {fascia(pocoAngoli)} calci d'angolo si segnano
+          {" "}{num(pocoAngoli.gol)} gol, in quelle con {fascia(moltiAngoli)} {num(moltiAngoli.gol)}:
+          una differenza di {num(Math.abs(moltiAngoli.gol - pocoAngoli.gol))} gol a partita.
+        </p>
+      )}
+      <p>
+        Con i <strong>tiri in porta</strong> è tutta un'altra storia: nelle partite con
+        {" "}{fascia(pocoPorta)} tiri nello specchio si segnano {num(pocoPorta.gol)} gol, in quelle
+        con {fascia(moltoPorta)} {num(moltoPorta.gol)}. Se si vuole capire quanto una squadra crea,
+        i tiri in porta dicono molto di più degli angoli.
+      </p>
+    </div>
+
+    <div class="scorri">
+      <table class="dati stretta">
+        <thead>
+          <tr>
+            <th>Calci d'angolo nella partita</th>
+            <th class="num">Partite</th>
+            <th class="num">Gol a partita</th>
+          </tr>
+        </thead>
+        <tbody>
+          {angoli.map((f) => (
+            <tr>
+              <td>{fascia(f)}</td>
+              <td class="num mono">{pct(f.quota)}</td>
+              <td class="num mono">{num(f.gol)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div class="scorri">
+      <table class="dati stretta">
+        <thead>
+          <tr>
+            <th>Tiri in porta nella partita</th>
+            <th class="num">Partite</th>
+            <th class="num">Gol a partita</th>
+          </tr>
+        </thead>
+        <tbody>
+          {porta.map((f) => (
+            <tr>
+              <td>{fascia(f)}</td>
+              <td class="num mono">{pct(f.quota)}</td>
+              <td class="num mono">{num(f.gol)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Quanti tiri servono per un gol</h2>
+    <div class="prosa">
+      <p>
+        In media una partita ha {num(C.tiri, 1)} tiri e {num(C.in_porta, 1)} tiri in porta. Finisce
+        nello specchio {ilp(C.precisione)} dei tiri, e diventa gol {ilp(C.gol_per_tiro_in_porta)}
+        {" "}dei tiri in porta: servono {num(C.tiri_per_gol, 1)} tiri per fare un gol.
+      </p>
+      <p>
+        Il campionato dove si spreca meno è {art(piuEfficiente.nome)}{chiaro(piuEfficiente.nome)}, con un gol
+        ogni {num(piuEfficiente.totale.campo.tiri_per_gol, 1)} tiri; quello dove si spreca di più
+        {" "}{menoEfficiente.slug === "serie-a" ? "è la Serie A" : `è ${art(menoEfficiente.nome)}${menoEfficiente.nome}`},
+        con uno ogni {num(menoEfficiente.totale.campo.tiri_per_gol, 1)}.
+        {cA && menoEfficiente.slug !== "serie-a" && posEffA > 0 && (
+          <>
+            {" "}La Serie A è {posEffA}ª su {perEfficienza.length}: un gol ogni
+            {" "}{num(cA.tiri_per_gol, 1)} tiri, e {ilp(cA.precisione)} dei tiri nello specchio.
+          </>
+        )}
+      </p>
+      {strani.length > 0 && (
+        <p>
+          Fuori da questa classifica {strani.length === 1 ? "resta" : "restano"}
+          {" "}{strani.map((r) => art(r.nome) + r.nome).join(", ").replace(/, ([^,]*)$/, " e $1")}: registrano
+          circa {num(strani.reduce((s, r) => s + r.totale.campo.tiri, 0) / strani.length, 0)} tiri a
+          partita contro {num(C.tiri, 0)} e una precisione molto più alta degli altri. La
+          differenza è troppo grande per essere solo calcio, ed è probabile che lì i tiri vengano
+          contati con un criterio diverso: nella tabella ci sono, ma il confronto va preso con
+          cautela.
+        </p>
+      )}
+    </div>
+
+    <h2 class="sotto-titolo">Campionato per campionato</h2>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Campionato</th>
+            <th class="num">Angoli</th>
+            <th class="num">Angoli casa</th>
+            <th class="num">Angoli ospite</th>
+            <th class="num">Tiri</th>
+            <th class="num">In porta</th>
+            <th class="num">Precisione</th>
+            <th class="num">Tiri per gol</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r, i) => {
+              const k = r.totale.campo;
+              return (
+                <tr class:list={{ ita: italiani.has(r.slug) }}>
+                  <td class="num mono">{i + 1}</td>
+                  <td>
+                    <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
+                  </td>
+                  <td class="num mono">{num(k.corner)}</td>
+                  <td class="num mono">{num(k.corner_casa)}</td>
+                  <td class="num mono">{num(k.corner_ospite)}</td>
+                  <td class="num mono">{num(k.tiri, 1)}</td>
+                  <td class="num mono">{num(k.in_porta, 1)}</td>
+                  <td class="num mono">{pct(k.precisione, 1)}</td>
+                  <td class="num mono">{k.tiri_per_gol ? num(k.tiri_per_gol, 1) : "—"}</td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono {C.partite.toLocaleString("it-IT")} partite: tutte quelle di {N} campionati nelle
+        stagioni {stagioni.join(", ")}, come le pubblica football-data.co.uk.
+        {senza.length > 0 && (
+          <>
+            {" "}{senza.map((r) => art(r.nome) + r.nome).join(" e ").replace(/^./, (c) => c.toUpperCase())} non {senza.length === 1 ? "ha" : "hanno"} tiri e
+            calci d'angolo nei dati, e resta fuori.
+          </>
+        )}
+      </p>
+      <p>
+        I tiri comprendono quelli respinti e quelli fuori dallo specchio; i tiri in porta sono
+        quelli che il portiere deve parare o che finiscono in rete. I gol per tiro contano tutti i
+        gol, anche autoreti e rigori: è la misura semplice, non quella dei gol attesi. Le medie di
+        tutti i campionati insieme sono calcolate sulle partite, non come media dei campionati.
+      </p>
+      <p>La pagina si aggiorna da sola ogni notte, insieme al resto del sito.</p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/calci-d-angolo-e-tiri/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+  .stretta {
+    max-width: 460px;
+    margin-bottom: 14px;
+  }
+</style>

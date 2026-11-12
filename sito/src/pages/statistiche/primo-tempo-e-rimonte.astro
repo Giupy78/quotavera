@@ -1,0 +1,295 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import fra from "../../dati/fra_campionati.json";
+import { num, pct, art, nella, ilp, Ilp, chiaro, ilNumero } from "../../lib/testo";
+
+/* Il terzo articolo con i dati: il punteggio all'intervallo e quello che
+   succede dopo. Stesse regole degli altri: stagioni intere, ogni frase con un
+   numero lo prende da `fra_campionati.json` e regge qualunque campionato
+   finisca in testa.
+
+   Si contano solo le partite di cui football-data pubblica il punteggio del
+   primo tempo: quelle arrivate da ESPN non ce l'hanno e restano fuori. Il
+   conto e' in `engine/fra_campionati.py`, funzione `intervallo`. */
+
+const tutti = fra.tutti as any;
+const I = tutti.intervallo;
+const righe = (fra.campionati as any[]).filter((r) => r.totale.intervallo?.chi_avanti);
+const N = righe.length;
+const stagioni = fra.stagioni_comuni as string[];
+const italiani = new Set(["serie-a", "serie-b"]);
+
+/* "Una partita su 19": l'inverso di una quota, arrotondato. */
+const ogni = (q: number) => Math.round(1 / q);
+
+const perRimonte = [...righe].sort(
+  (a, b) => b.totale.intervallo.chi_avanti.perde - a.totale.intervallo.chi_avanti.perde,
+);
+const piuRimonte = perRimonte[0];
+const menoRimonte = perRimonte[N - 1];
+const serieA = righe.find((r) => r.slug === "serie-a");
+const posA = perRimonte.findIndex((r) => r.slug === "serie-a") + 1;
+const A = serieA?.totale.intervallo;
+
+/* Quanto puo' spostarsi per caso la quota di un campionato: meta'
+   dell'intervallo al 95%. Serve a dire onestamente che a meta' classifica
+   l'ordine e' in buona parte rumore. */
+const margine = (p: number, n: number) => 1.96 * Math.sqrt((p * (1 - p)) / n);
+const margineA = A ? margine(A.chi_avanti.perde, A.chi_avanti.partite) : 0;
+
+const perSecondo = [...righe].sort(
+  (a, b) => b.totale.intervallo.quota_secondo - a.totale.intervallo.quota_secondo,
+);
+const piuSecondo = perSecondo[0];
+const menoSecondo = perSecondo[N - 1];
+
+const dopo = I.dopo_il_pari;
+const uno = I.di_uno;
+const due = I.di_due;
+const casa = I.casa_avanti;
+const ospite = I.ospite_avanti;
+
+const barre = perRimonte.map((r) => {
+  const t = r.totale.intervallo;
+  return {
+    etichetta: r.nome,
+    bandiera: r.bandiera,
+    href: `/calcio/${r.slug}/`,
+    valore: t.chi_avanti.perde,
+    testo: pct(t.chi_avanti.perde, 1),
+    dettaglio:
+      `${r.nome}: chi è avanti all'intervallo vince il ${pct(t.chi_avanti.vince)}, ` +
+      `pareggia il ${pct(t.chi_avanti.pari)}, perde il ${pct(t.chi_avanti.perde, 1)} ` +
+      `(${t.chi_avanti.partite.toLocaleString("it-IT")} partite)`,
+    evidenza: italiani.has(r.slug),
+  };
+});
+
+const titolo = "Chi è avanti all'intervallo vince? Primo tempo e rimonte";
+const descrizione =
+  `Quante volte vince chi chiude il primo tempo in vantaggio, quante volte si fa rimontare ` +
+  `e quanti gol arrivano nella ripresa: 22 campionati europei su tre stagioni intere. ` +
+  `Aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/primo-tempo-e-rimonte/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Chi è avanti all'intervallo vince la partita?",
+  description: descrizione,
+  datePublished: "2026-11-12",
+  dateModified: fra.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Primo tempo e rimonte" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>Chi è avanti all'intervallo vince la partita?</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Di solito sì. Nelle ultime tre stagioni intere dei {N} campionati che seguiamo,
+        {" "}{I.partite.toLocaleString("it-IT")} partite, chi è andato al riposo in vantaggio ha
+        vinto {ilNumero(pct(I.chi_avanti.vince))}<strong>{pct(I.chi_avanti.vince)}</strong> delle volte, ha pareggiato 
+        {" "}{ilp(I.chi_avanti.pari)} e ha perso {ilp(I.chi_avanti.perde)}. Una rimonta
+        completa, cioè la squadra sotto all'intervallo che vince, capita in una partita su
+        {" "}{ogni(I.rimonte)}.
+      </p>
+      <p>
+        Conta molto il margine. Con <strong>un gol</strong> di vantaggio si vince 
+        {" "}{ilp(uno.vince)}, e una volta su {ogni(uno.pari + uno.perde)} ci si fa raggiungere o
+        superare. Con <strong>due o più</strong> si vince {ilp(due.vince)}: si perde in
+        {" "}{num(due.perde * 100, 1)} casi su cento.
+      </p>
+      <p>
+        E conta chi è avanti. Se a condurre è la squadra di casa, vince {ilp(casa.vince)};
+        se è quella ospite, {ilp(ospite.vince)}, e si fa ribaltare {ilp(ospite.perde)}
+        {" "}delle volte contro {ilp(casa.perde)} della squadra di casa. È il fattore campo
+        che lavora anche nel secondo tempo.
+      </p>
+      {
+        dopo && (
+          <p>
+            {" "}{Ilp(I.pari_intervallo)} delle partite arriva all'intervallo in parità. Di queste,
+            {" "}{dopo.pari >= dopo.casa ? (
+              <>
+                {" "}{ilp(dopo.pari)} finisce ancora in parità, {ilp(dopo.casa)} la vince la squadra
+                di casa e {ilp(dopo.ospite)} quella ospite: il pareggio resta l'esito più
+                frequente, ma di poco.
+              </>
+            ) : (
+              <>
+                {" "}{ilp(dopo.casa)} la vince la squadra di casa, {ilp(dopo.pari)} finisce ancora
+                in parità e {ilp(dopo.ospite)} la vince quella ospite.
+              </>
+            )}
+          </p>
+        )
+      }
+    </div>
+
+    <h2 class="sotto-titolo">Dove si rimonta di più</h2>
+    <p class="nota">
+      Quante volte chi è avanti all'intervallo finisce per perdere. In blu i campionati
+      italiani; ogni nome porta alla pagina del campionato.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    <div class="prosa">
+      <p>
+        Il vantaggio del primo tempo tiene meno {nella(piuRimonte.nome)}<strong>{chiaro(piuRimonte.nome)}</strong>,
+        {" "}dove chi è avanti al riposo perde {ilp(piuRimonte.totale.intervallo.chi_avanti.perde, 1)}
+        {" "}delle volte, e tiene di più {nella(menoRimonte.nome)}{chiaro(menoRimonte.nome)}
+        {" "}({pct(menoRimonte.totale.intervallo.chi_avanti.perde, 1)}).
+        {A && (
+          <>
+            {" "}La <strong>Serie A</strong> è {posA}ª su {N}: chi chiude il primo tempo avanti vince
+            {" "}{ilp(A.chi_avanti.vince)} e perde {ilp(A.chi_avanti.perde, 1)}.
+          </>
+        )}
+      </p>
+      {A && (
+        <p>
+          Fra un campionato e l'altro ballano pochi punti. In Serie A le partite con una squadra
+          avanti all'intervallo sono {A.chi_avanti.partite.toLocaleString("it-IT")} in tre stagioni,
+          e su un campione così la quota può spostarsi per puro caso di circa
+          {" "}{num(margineA * 100, 1)} punti in su o in giù: le posizioni a metà classifica dicono
+          poco, i due estremi qualcosa di più.
+        </p>
+      )}
+    </div>
+
+    <h2 class="sotto-titolo">Primo o secondo tempo: quando si segna</h2>
+    <div class="prosa">
+      <p>
+        Nel secondo tempo si segna di più: {ilNumero(pct(I.quota_secondo))}<strong>{pct(I.quota_secondo)}</strong> dei gol,
+        {" "}{num(I.gol_secondo)} a partita contro {num(I.gol_primo)} nel primo. Succede in tutti i
+        campionati, con poche differenze: la quota più alta è {nella(piuSecondo.nome)}{chiaro(piuSecondo.nome)}
+        {" "}({pct(piuSecondo.totale.intervallo.quota_secondo, 1)}), la più bassa
+        {" "}{nella(menoSecondo.nome)}{chiaro(menoSecondo.nome)} ({pct(menoSecondo.totale.intervallo.quota_secondo, 1)}).
+        {A && (
+          <>
+            {" "}In Serie A è {ilp(A.quota_secondo, 1)}.
+          </>
+        )}
+      </p>
+      <p>
+        Le ragioni sono quelle che si immaginano: stanchezza, cambi, e la squadra che sta perdendo
+        che si scopre per recuperare. I dati dicono quanto, non quale delle tre pesa di più.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">Campionato per campionato</h2>
+    <p class="nota">
+      Le prime tre colonne guardano solo le partite con una squadra avanti all'intervallo.
+    </p>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Campionato</th>
+            <th class="num">Chi è avanti vince</th>
+            <th class="num">Pareggia</th>
+            <th class="num">Perde</th>
+            <th class="num">Una rimonta ogni</th>
+            <th class="num">Gol nel 2° tempo</th>
+            <th class="num">Partite</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            perRimonte.map((r, i) => {
+              const t = r.totale.intervallo;
+              return (
+                <tr class:list={{ ita: italiani.has(r.slug) }}>
+                  <td class="num mono">{i + 1}</td>
+                  <td>
+                    <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
+                  </td>
+                  <td class="num mono">{pct(t.chi_avanti.vince, 1)}</td>
+                  <td class="num mono">{pct(t.chi_avanti.pari, 1)}</td>
+                  <td class="num mono">{pct(t.chi_avanti.perde, 1)}</td>
+                  <td class="num mono">{t.rimonte > 0 ? `${ogni(t.rimonte)} partite` : "—"}</td>
+                  <td class="num mono">{pct(t.quota_secondo, 1)}</td>
+                  <td class="num mono">{t.partite.toLocaleString("it-IT")}</td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono {I.partite.toLocaleString("it-IT")} partite: tutte quelle dei {N} campionati nelle
+        stagioni {stagioni.join(", ")} di cui football-data.co.uk pubblica il punteggio del primo
+        tempo. Le partite della stagione in corso non entrano, perché a novembre sono troppo poche
+        per una classifica.
+      </p>
+      <p>
+        «Avanti all'intervallo» vuol dire con almeno un gol di vantaggio al fischio del primo
+        tempo. Una «rimonta» è una partita vinta da chi al riposo era sotto; i pareggi recuperati
+        stanno nella colonna «pareggia». Le percentuali di tutti i campionati insieme sono
+        calcolate sulle partite, non come media dei campionati: uno da 552 partite a stagione pesa
+        più di uno da 180.
+      </p>
+      <p>La pagina si aggiorna da sola ogni notte, insieme al resto del sito.</p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/primo-tempo-e-rimonte/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+</style>

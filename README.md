@@ -210,7 +210,43 @@ sì, e si misura).
 | Sentinella sui dati pubblicati | fatta — `scripts/controlla.py` |
 | Registro degli indirizzi pubblicati | fatto (9 novembre) — `dati/indirizzi.json` |
 | Sentinella sul sito pubblicato (`/versione.txt`) | fatta (9 novembre) |
-| In totale | 209 test |
+| **Articoli con i dati, 6** | **fatti (12 novembre)** — vedi sotto |
+| In totale | 219 test |
+
+### Gli articoli con i dati
+
+In `/statistiche/`, uno per domanda, tutti su **tre stagioni intere** di 22
+campionati (23.126 partite) e tutti rigenerati ogni notte da
+`engine/fra_campionati.py` → `fra_campionati.json`. Nessun numero è scritto a
+mano: ogni frase lo prende dai dati e regge qualunque campionato finisca in
+testa.
+
+| Articolo | La domanda | Il dato forte (12 novembre) |
+|---|---|---|
+| `campionati-con-piu-gol` | dove si segna di più | Bundesliga 3,20 gol, Serie A 19ª |
+| `fattore-campo` | quanto conta giocare in casa | LaLiga 2 in testa, Serie A 21ª |
+| `primo-tempo-e-rimonte` | chi è avanti all'intervallo vince? | 73%; una rimonta ogni 19 partite |
+| `risultati-piu-frequenti` | come finiscono le partite | 1-1 al 12,2%, poi 1-0 e 2-1 |
+| `cartellini` | dove si ammonisce di più | ospiti più ammoniti in tutti i 22 |
+| `calci-d-angolo-e-tiri` | più angoli vuol dire più gol? | **no**: 2,76 gol con 7 angoli o meno, 2,70 con 14 o più; i tiri in porta invece vanno da 1,39 a 4,15 |
+
+Le regole, scritte qui perché la prossima sessione non le riscopra:
+
+- **Uno zero può essere un buco.** Il lettore di football-data mette 0 dove una
+  colonna manca. Copertura verificata sui CSV grezzi il 12 novembre: primo
+  tempo, tiri, angoli, falli e cartellini al 100% in 21 campionati; la National
+  League ha primo tempo e cartellini ma non tiri, angoli e falli. Le partite
+  arrivate solo da ESPN non hanno il primo tempo. Ogni misura conta solo le
+  partite che hanno quel dato (`_ha_intervallo`, `_ha_cartellini`, `_ha_campo`).
+- **I campionati scozzesi minori contano i tiri diversamente** (19 a partita e
+  43% di precisione contro 24 e 35%): stanno nelle tabelle ma non nella
+  classifica di chi spreca meno, dove sarebbero primi per un artefatto.
+- **I numeri cambiano ogni notte, l'italiano deve reggere.** `ilp()` scrive
+  "l'11%" e "il 18%", `ilRisultato()` "l'1-1" e "lo 0-0", `chiaro()` "Super
+  League greca": stanno in `sito/src/lib/testo.ts`.
+- **Un articolo nuovo** va aggiunto in `components/AltriArticoli.astro` (il
+  "Leggi anche" in fondo a tutti), in `statistiche/index.astro` e in
+  `lib/lastmod.ts`. La pagina di ogni campionato ha già un rimando a ciascuno.
 
 ### Il sito
 

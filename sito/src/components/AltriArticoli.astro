@@ -1,0 +1,59 @@
+---
+/**
+ * In fondo a ogni articolo con i dati: gli altri articoli, e il ritorno
+ * all'indice. Un elenco solo, qui, perche' ogni articolo nuovo deve comparire
+ * in fondo a tutti gli altri senza doverli ritoccare uno per uno: sono anche i
+ * collegamenti con cui Google passa da un articolo all'altro.
+ *
+ * L'ordine e' quello di pubblicazione. I titoli sono quelli dell'h1.
+ */
+export const ARTICOLI = [
+  { href: "/statistiche/campionati-con-piu-gol/", titolo: "I campionati con più gol in Europa" },
+  { href: "/statistiche/fattore-campo/", titolo: "Il fattore campo nei campionati europei" },
+  { href: "/statistiche/primo-tempo-e-rimonte/", titolo: "Chi è avanti all'intervallo vince la partita?" },
+  { href: "/statistiche/risultati-piu-frequenti/", titolo: "I risultati più frequenti nel calcio europeo" },
+  { href: "/statistiche/cartellini/", titolo: "Cartellini: i campionati più duri d'Europa" },
+  { href: "/statistiche/calci-d-angolo-e-tiri/", titolo: "Calci d'angolo e tiri nei campionati europei" },
+];
+
+interface Props {
+  qui: string;
+}
+const { qui } = Astro.props;
+const altri = ARTICOLI.filter((a) => a.href !== qui);
+---
+
+<nav class="altri" aria-label="Altri articoli con i dati">
+  <p class="titolo">Leggi anche</p>
+  <ul>
+    {altri.map((a) => <li><a href={a.href}>{a.titolo}</a></li>)}
+  </ul>
+  <p class="torna">
+    <a href="/statistiche/">← Tutte le statistiche fra campionati</a>
+  </p>
+</nav>
+
+<style>
+  .altri {
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 34px;
+    font-size: 14px;
+  }
+  .titolo {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 0 0 6px;
+  }
+  ul {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.7;
+  }
+  .torna {
+    font-size: 13px;
+    margin-top: 14px;
+  }
+</style>

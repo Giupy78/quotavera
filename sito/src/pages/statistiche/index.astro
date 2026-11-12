@@ -1,11 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
 import fra from "../../dati/fra_campionati.json";
-import { num, pct, art, nella } from "../../lib/testo";
+import { num, pct, art, nella, ilRisultato, ilp, chiaro } from "../../lib/testo";
 
-/* L'indice degli articoli con i dati. Oggi ce n'e' uno; la sezione esiste lo
-   stesso perche' l'indirizzo dell'articolo la nomina, e chi accorcia l'URL
-   deve trovare una pagina, non un 404. Ogni voce ha una riga con il dato
+/* L'indice degli articoli con i dati. La sezione esiste anche perche'
+   l'indirizzo di ogni articolo la nomina, e chi accorcia l'URL deve trovare
+   una pagina, non un 404. Ogni voce ha una riga con il dato
    principale, preso dallo stesso file dell'articolo: l'indice non promette
    niente che la pagina non dica. */
 
@@ -13,6 +13,16 @@ const righe = fra.campionati as any[];
 const primo = righe[0];
 const serieA = righe.find((r) => r.slug === "serie-a");
 const primoCampo = [...righe].sort((a, b) => b.totale.vantaggio - a.totale.vantaggio)[0];
+
+const tutti = fra.tutti as any;
+const I = tutti.intervallo;
+const ris = Object.entries(fra.tutti_risultati as Record<string, number>).sort((a, b) => b[1] - a[1]);
+const totRis = ris.reduce((s, [, n]) => s + n, 0);
+const ilRis = ilRisultato;
+const perCart = [...righe].filter((r) => r.totale.disciplina)
+  .sort((a, b) => b.totale.disciplina.cartellini - a.totale.disciplina.cartellini);
+const angoli = fra.angoli_e_gol as any[];
+const porta = fra.porta_e_gol as any[];
 
 const articoli = [
   {
@@ -31,12 +41,47 @@ const articoli = [
       `delle partite` +
       (serieA ? `; la Serie A è ${serieA.posizione_campo}ª su ${righe.length}.` : "."),
   },
+  {
+    href: "/statistiche/primo-tempo-e-rimonte/",
+    titolo: "Chi è avanti all'intervallo vince la partita?",
+    sintesi:
+      `Vince ${ilp(I.chi_avanti.vince)} delle volte; una partita su ` +
+      `${Math.round(1 / I.rimonte)} viene ribaltata, e ${ilp(I.quota_secondo)} dei gol arriva nella ripresa.`,
+  },
+  {
+    href: "/statistiche/risultati-piu-frequenti/",
+    titolo: "I risultati più frequenti nel calcio europeo",
+    sintesi:
+      `In testa ${ilRis(ris[0][0])}${ris[0][0]}, ${ilp(ris[0][1] / totRis, 1)} delle partite; ` +
+      `poi ${ilRis(ris[1][0])}${ris[1][0]} e ${ilRis(ris[2][0])}${ris[2][0]}.`,
+  },
+  {
+    href: "/statistiche/cartellini/",
+    titolo: "Cartellini: i campionati più duri d'Europa",
+    sintesi:
+      `In testa ${art(perCart[0].nome)}${chiaro(perCart[0].nome)} con ${num(perCart[0].totale.disciplina.cartellini)} ` +
+      `cartellini a partita` +
+      (tutti.disciplina.gialli_ospite > tutti.disciplina.gialli_casa
+        ? `; in trasferta si viene ammoniti di più.`
+        : `.`),
+  },
+  {
+    href: "/statistiche/calci-d-angolo-e-tiri/",
+    titolo: "Calci d'angolo e tiri nei campionati europei",
+    sintesi:
+      (Math.abs(angoli[angoli.length - 1].gol - angoli[0].gol) < 0.2
+        ? `Con pochi o tanti angoli i gol sono gli stessi (${num(angoli[0].gol)} e ` +
+          `${num(angoli[angoli.length - 1].gol)}); `
+        : `Con pochi angoli ${num(angoli[0].gol)} gol a partita, con tanti ` +
+          `${num(angoli[angoli.length - 1].gol)}; `) +
+      `con i tiri in porta si va da ${num(porta[0].gol)} a ${num(porta[porta.length - 1].gol)}.`,
+  },
 ];
 ---
 
 <Base
   titolo="Statistiche fra campionati europei"
-  descrizione="Ventidue campionati europei messi a confronto su gol, fattore campo e altri numeri, su stagioni intere. Aggiornati ogni notte."
+  descrizione="Ventidue campionati europei messi a confronto su gol, fattore campo, primo tempo e rimonte, risultati più frequenti, cartellini e calci d'angolo, su stagioni intere. Aggiornati ogni notte."
 >
   <section>
     <div class="hd">

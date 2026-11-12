@@ -2,8 +2,9 @@
 import Base from "../../layouts/Base.astro";
 import ClassificaBarre from "../../components/ClassificaBarre.astro";
 import Bandiera from "../../components/Bandiera.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
 import fra from "../../dati/fra_campionati.json";
-import { num, pct, art, nella } from "../../lib/testo";
+import { num, pct, art, nella, ilp } from "../../lib/testo";
 
 /* Il secondo articolo con i dati. Stesse regole del primo: stagioni intere,
    stagione in corso a parte, ogni frase con un numero lo prende dai dati e
@@ -109,17 +110,17 @@ const briciole = {
       <p>
         Nelle ultime tre stagioni intere, dal {stagioni[0]} al {stagioni[stagioni.length - 1]},
         il campionato dove giocare in casa conta di più è {art(primo.nome)}<strong>{primo.nome}</strong>:
-        la squadra di casa vince il {pct(primo.totale.vittorie_casa)} delle partite, quella
-        ospite il {pct(primo.totale.vittorie_ospite)}. Seguono {art(secondo.nome)}{secondo.nome}
+        la squadra di casa vince {ilp(primo.totale.vittorie_casa)} delle partite, quella
+        ospite {ilp(primo.totale.vittorie_ospite)}. Seguono {art(secondo.nome)}{secondo.nome}
         {" "}e {art(terzo.nome)}{terzo.nome}. Dove conta meno è {art(ultimo.nome)}{ultimo.nome}:
         {" "}{pct(ultimo.totale.vittorie_casa)} contro {pct(ultimo.totale.vittorie_ospite)}.
       </p>
       {
         serieA && (
           <p>
-            La <strong>Serie A</strong> è {serieA.posizione_campo}ª su {N}: in casa si vince il
-            {" "}{pct(serieA.totale.vittorie_casa)} delle partite, fuori il
-            {" "}{pct(serieA.totale.vittorie_ospite)}, uno scarto di {punti(serieA.totale.vantaggio)} punti.
+            La <strong>Serie A</strong> è {serieA.posizione_campo}ª su {N}: in casa si vince 
+            {" "}{ilp(serieA.totale.vittorie_casa)} delle partite, fuori 
+            {" "}{ilp(serieA.totale.vittorie_ospite)}, uno scarto di {punti(serieA.totale.vantaggio)} punti.
             {serieA.posizione_campo > N - 3 &&
               " È fra i campionati europei dove giocare in casa conta meno."}
             {serieA.posizione_campo <= 3 &&
@@ -173,8 +174,8 @@ const briciole = {
           <div class="prosa">
             <p>
               Nella stagione {inCorso}, dopo {aOggi.partite} partite, in Serie A la squadra di casa
-              vince il {pct(aOggi.vittorie_casa)} delle partite e quella ospite il
-              {" "}{pct(aOggi.vittorie_ospite)}. Su così poche partite il margine di errore è largo:
+              vince {ilp(aOggi.vittorie_casa)} delle partite e quella ospite 
+              {" "}{ilp(aOggi.vittorie_ospite)}. Su così poche partite il margine di errore è largo:
               circa {Math.round(margine(aOggi) * 100)} punti.
             </p>
           </div>
@@ -192,8 +193,8 @@ const briciole = {
         {serieA && <> In Serie A la differenza è di {num(scartoGol(serieA))}.</>}
       </p>
       <p>
-        Il pareggio è più frequente {nella(piuPari.nome)}{piuPari.nome}, dove finisce in parità il
-        {" "}{pct(piuPari.totale.pareggi)} delle partite, e più raro
+        Il pareggio è più frequente {nella(piuPari.nome)}{piuPari.nome}, dove finisce in parità 
+        {" "}{ilp(piuPari.totale.pareggi)} delle partite, e più raro
         {" "}{nella(menoPari.nome)}{menoPari.nome} ({pct(menoPari.totale.pareggi)}). Conta per
         leggere la classifica qui sopra: dove si pareggia molto, restano meno partite da vincere,
         in casa e fuori.
@@ -293,12 +294,7 @@ const briciole = {
       </p>
     </div>
 
-    <p class="leggi-anche">
-      Leggi anche: <a href="/statistiche/campionati-con-piu-gol/">I campionati con più gol in Europa</a>
-    </p>
-    <p class="torna">
-      <a href="/statistiche/">← Tutte le statistiche fra campionati</a>
-    </p>
+    <AltriArticoli qui="/statistiche/fattore-campo/" />
   </article>
 </Base>
 
@@ -329,15 +325,5 @@ const briciole = {
   td.adesso small {
     color: var(--ink-3);
     font-weight: 400;
-  }
-  .leggi-anche {
-    font-size: 14px;
-    border-top: 1px solid var(--rule);
-    padding-top: 16px;
-    margin-top: 34px;
-  }
-  .torna {
-    font-size: 13px;
-    margin-top: 14px;
   }
 </style>

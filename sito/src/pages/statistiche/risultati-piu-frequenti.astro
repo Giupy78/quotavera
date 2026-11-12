@@ -1,0 +1,289 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import fra from "../../dati/fra_campionati.json";
+import { pct, nella, ilRisultato, ilp, chiaro } from "../../lib/testo";
+
+/* Il quarto articolo con i dati: i punteggi finali, contati. E' una
+   frequenza, non un pronostico: dice quante volte una partita e' finita in un
+   certo modo, non come finira' la prossima. Il testo lo dice una volta, in
+   chiaro, e poi lascia parlare i numeri.
+
+   Il punteggio si scrive con la squadra di casa prima: "1-0" e' la vittoria
+   di chi gioca in casa, "0-1" quella dell'ospite. */
+
+const righe = fra.campionati as any[];
+const N = righe.length;
+const stagioni = fra.stagioni_comuni as string[];
+const italiani = new Set(["serie-a", "serie-b"]);
+
+const tutti = fra.tutti_risultati as Record<string, number>;
+const totale = Object.values(tutti).reduce((s, n) => s + n, 0);
+const lista = Object.entries(tutti).sort((a, b) => b[1] - a[1]);
+const quota = (s: string) => (tutti[s] ?? 0) / totale;
+const ogni = (q: number) => Math.round(1 / q);
+
+/* L'articolo davanti a un punteggio: "l'1-1", "lo 0-0", "il 2-1". */
+const ilRis = ilRisultato;
+/* Lo stesso, a inizio frase. */
+const IlRis = (s: string) => {
+  const a = ilRis(s);
+  return a.charAt(0).toUpperCase() + a.slice(1);
+};
+const pari = (s: string) => {
+  const [c, o] = s.split("-");
+  return c === o;
+};
+const gol = (s: string) => s.split("-").reduce((t, x) => t + Number(x), 0);
+
+const [primo, secondo, terzo] = lista;
+const cinque = lista.slice(0, 5);
+const quotaCinque = cinque.reduce((s, [, n]) => s + n, 0) / totale;
+const conCinqueGol = lista.filter(([s]) => gol(s) >= 5).reduce((s, [, n]) => s + n, 0) / totale;
+const quotaPari = lista.filter(([s]) => pari(s)).reduce((s, [, n]) => s + n, 0) / totale;
+
+const barre = lista.slice(0, 12).map(([s, n]) => ({
+  etichetta: s,
+  valore: n / totale,
+  testo: pct(n / totale, 1),
+  dettaglio: `${s}: ${n.toLocaleString("it-IT")} partite su ${totale.toLocaleString("it-IT")}`,
+  evidenza: pari(s),
+}));
+
+/* Per campionato: le quote dentro il campionato, non sul totale. */
+const conti = (r: any) => {
+  const t = Object.values(r.risultati as Record<string, number>).reduce((s, n) => s + n, 0);
+  const ord = Object.entries(r.risultati as Record<string, number>).sort((a, b) => b[1] - a[1]);
+  const q = (s: string) => ((r.risultati as Record<string, number>)[s] ?? 0) / t;
+  const cinqueGol = ord.filter(([s]) => gol(s) >= 5).reduce((x, [, n]) => x + n, 0) / t;
+  return { t, ord, q, cinqueGol };
+};
+const serieA = righe.find((r) => r.slug === "serie-a");
+const cA = serieA ? conti(serieA) : null;
+const perZeroZero = [...righe].sort((a, b) => conti(b).q("0-0") - conti(a).q("0-0"));
+const piuZeroZero = perZeroZero[0];
+const menoZeroZero = perZeroZero[N - 1];
+/* I campionati dove il risultato piu' frequente non e' quello di tutti. */
+const diversi = righe.filter((r) => conti(r).ord[0][0] !== primo[0]);
+
+const titolo = "Risultati più frequenti nel calcio: 1-1, 1-0, 2-1 e gli altri";
+const descrizione =
+  `Quante volte una partita finisce 1-1, 1-0, 0-0 o 2-1: i risultati esatti più frequenti ` +
+  `in 22 campionati europei e in Serie A, su tre stagioni intere. Aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/risultati-piu-frequenti/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "I risultati più frequenti nel calcio europeo",
+  description: descrizione,
+  datePublished: "2026-11-12",
+  dateModified: fra.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Risultati più frequenti" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>I risultati più frequenti nel calcio europeo</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Su {totale.toLocaleString("it-IT")} partite di {N} campionati europei, nelle stagioni
+        dal {stagioni[0]} al {stagioni[stagioni.length - 1]}, il risultato più frequente è
+        {" "}{ilRis(primo[0])}<strong>{primo[0]}</strong>: {ilp(quota(primo[0]), 1)} delle partite,
+        una ogni {ogni(quota(primo[0]))}. Seguono {ilRis(secondo[0])}{secondo[0]}
+        {" "}({pct(quota(secondo[0]), 1)}) e {ilRis(terzo[0])}{terzo[0]} ({pct(quota(terzo[0]), 1)}). I
+        cinque risultati più comuni, da soli, fanno {ilp(quotaCinque)} delle partite.
+      </p>
+      <p>
+        Il punteggio si legge con la squadra di casa prima, e si vede il fattore campo:
+        {" "}{ilRis("1-0")}1-0 capita {ilp(quota("1-0"), 1)} delle volte, {ilRis("0-1")}0-1 
+        {" "}{ilp(quota("0-1"), 1)}; {ilRis("2-1")}2-1 {ilp(quota("2-1"), 1)},
+        {" "}{ilRis("1-2")}1-2 {ilp(quota("1-2"), 1)}.
+      </p>
+      <p>
+        Sono frequenze, non previsioni: dicono come sono finite le partite già giocate, non come
+        finirà la prossima, che dipende da chi la gioca.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">I dodici risultati più frequenti</h2>
+    <p class="nota">
+      Quota delle partite finite con ciascun punteggio, tutti i campionati insieme. In blu i
+      pareggi.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    <div class="prosa">
+      <p>
+        Un pareggio di qualunque tipo chiude {ilp(quotaPari)} delle partite. Lo 0-0 è
+        {" "}{ilp(quota("0-0"), 1)}: più frequente {nella(piuZeroZero.nome)}{chiaro(piuZeroZero.nome)}
+        {" "}({pct(conti(piuZeroZero).q("0-0"), 1)}), più raro {nella(menoZeroZero.nome)}{chiaro(menoZeroZero.nome)}
+        {" "}({pct(conti(menoZeroZero).q("0-0"), 1)}).
+        {" "}Le partite con cinque gol o più sono {ilp(conCinqueGol, 1)}
+        {quota("3-3") > 0 && <>; un 3-3 capita una volta ogni {ogni(quota("3-3"))} partite</>}
+        {quota("4-4") > 0 && <>, un 4-4 una ogni {ogni(quota("4-4")).toLocaleString("it-IT")}</>}.
+      </p>
+    </div>
+
+    {
+      serieA && cA && (
+        <>
+          <h2 class="sotto-titolo">I risultati più frequenti in Serie A</h2>
+          <div class="prosa">
+            <p>
+              In Serie A il risultato più frequente è {ilRis(cA.ord[0][0])}<strong>{cA.ord[0][0]}</strong>,
+              {" "}{ilp(cA.q(cA.ord[0][0]), 1)} delle {cA.t.toLocaleString("it-IT")} partite delle
+              ultime tre stagioni intere. Seguono {ilRis(cA.ord[1][0])}{cA.ord[1][0]}
+              {" "}({pct(cA.q(cA.ord[1][0]), 1)}) e {ilRis(cA.ord[2][0])}{cA.ord[2][0]}
+              {" "}({pct(cA.q(cA.ord[2][0]), 1)}). Lo 0-0 è {ilp(cA.q("0-0"), 1)}, contro 
+              {" "}{ilp(quota("0-0"), 1)} di tutti i campionati insieme.
+            </p>
+          </div>
+          <div class="scorri">
+            <table class="dati stretta">
+              <thead>
+                <tr>
+                  <th>Risultato</th>
+                  <th class="num">Serie A</th>
+                  <th class="num">Tutti i campionati</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cA.ord.slice(0, 8).map(([s, n]) => (
+                  <tr>
+                    <td class="mono">{s}</td>
+                    <td class="num mono">{pct(n / cA.t, 1)}</td>
+                    <td class="num mono">{pct(quota(s), 1)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )
+    }
+
+    <h2 class="sotto-titolo">Campionato per campionato</h2>
+    <p class="nota">
+      I tre risultati più frequenti di ogni campionato, con la loro quota. I campionati sono in
+      ordine di gol a partita, dal più prolifico.
+      {diversi.length > 0 && diversi.length < N && (
+        <> {IlRis(primo[0])}{primo[0]} è in testa ovunque tranne in
+          {" "}{diversi.length === 1 ? "un campionato" : `${diversi.length} campionati`}.</>
+      )}
+    </p>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th>1°</th>
+            <th>2°</th>
+            <th>3°</th>
+            <th class="num">0-0</th>
+            <th class="num">1-1</th>
+            <th class="num">5 gol o più</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            righe.map((r) => {
+              const c = conti(r);
+              return (
+                <tr class:list={{ ita: italiani.has(r.slug) }}>
+                  <td>
+                    <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
+                  </td>
+                  {c.ord.slice(0, 3).map(([s, n]) => (
+                    <td class="mono">
+                      {s} <small>{pct(n / c.t, 1)}</small>
+                    </td>
+                  ))}
+                  <td class="num mono">{pct(c.q("0-0"), 1)}</td>
+                  <td class="num mono">{pct(c.q("1-1"), 1)}</td>
+                  <td class="num mono">{pct(c.cinqueGol, 1)}</td>
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono {totale.toLocaleString("it-IT")} partite: tutte quelle dei {N} campionati nelle stagioni
+        {" "}{stagioni.join(", ")}, come le pubblica football-data.co.uk. Il punteggio è quello del
+        fischio finale dei novanta minuti, recupero compreso; supplementari e rigori nei
+        campionati non esistono, quindi non c'è altro da contare.
+      </p>
+      <p>
+        Le quote di tutti i campionati insieme sono calcolate sulle partite, non come media dei
+        campionati: uno da 552 partite a stagione pesa più di uno da 180. La stagione in corso non
+        entra finché non è conclusa.
+      </p>
+      <p>La pagina si aggiorna da sola ogni notte, insieme al resto del sito.</p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/risultati-piu-frequenti/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+  td small {
+    color: var(--ink-3);
+    font-weight: 400;
+  }
+  .stretta {
+    max-width: 420px;
+  }
+</style>

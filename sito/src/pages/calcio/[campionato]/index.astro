@@ -12,6 +12,7 @@ import finestre from "../../../dati/finestre.json";
 import marcatori from "../../../dati/marcatori.json";
 import fra from "../../../dati/fra_campionati.json";
 import { lumacaSquadra } from "../../../lib/indirizzi";
+import { ilRisultato, ilNumero, ilp } from "../../../lib/testo";
 
 export function getStaticPaths() {
   const cal = calendario.campionati as Record<string, any[]>;
@@ -40,6 +41,13 @@ const { lega, partite, team, classifica, ultimi, completo, fin, bomber } = Astro
    collegamento con cui Google arriva a quell'articolo da ventidue pagine. */
 const fraLeghe = (fra.campionati as any[]);
 const quiFra = fraLeghe.find((r) => r.slug === lega.slug) ?? null;
+/* Il punteggio finale piu' frequente del campionato, con l'articolo giusto
+   davanti: "l'1-1", "lo 0-0", "il 2-1". */
+const risultatiQui = Object.entries((quiFra?.risultati ?? {}) as Record<string, number>)
+  .sort((a, b) => b[1] - a[1]);
+const piuFrequente = risultatiQui[0] ?? null;
+const totRisultati = risultatiQui.reduce((s, [, n]) => s + n, 0);
+const ilRis = ilRisultato;
 
 /* Le profondita' fra cui puo' scegliere chi legge, e quella aperta all'arrivo. */
 const profondita: number[] = finestre.disponibili;
@@ -136,11 +144,42 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
             {" "}<a href="/statistiche/campionati-con-piu-gol/">La classifica dei gol →</a>
           </span>
           <span>
-            In casa si vince il <b class="mono">{pct(quiFra.totale.vittorie_casa)}</b> delle partite,
-            fuori il <b class="mono">{pct(quiFra.totale.vittorie_ospite)}</b>:
+            In casa si vince {ilNumero(pct(quiFra.totale.vittorie_casa))}<b class="mono">{pct(quiFra.totale.vittorie_casa)}</b> delle partite,
+            fuori {ilNumero(pct(quiFra.totale.vittorie_ospite))}<b class="mono">{pct(quiFra.totale.vittorie_ospite)}</b>:
             {" "}{quiFra.posizione_campo}° posto per fattore campo.
             {" "}<a href="/statistiche/fattore-campo/">La classifica del fattore campo →</a>
           </span>
+          {quiFra.totale.intervallo?.chi_avanti && (
+            <span>
+              Chi è avanti all'intervallo vince il
+              {" "}<b class="mono">{pct(quiFra.totale.intervallo.chi_avanti.vince)}</b> delle volte e
+              perde {ilNumero(pct(quiFra.totale.intervallo.chi_avanti.perde))}<b class="mono">{pct(quiFra.totale.intervallo.chi_avanti.perde)}</b>.
+              {" "}<a href="/statistiche/primo-tempo-e-rimonte/">Primo tempo e rimonte →</a>
+            </span>
+          )}
+          {piuFrequente && (
+            <span>
+              Il risultato più frequente è {ilRis(piuFrequente[0])}<b class="mono">{piuFrequente[0]}</b>,
+              {" "}{ilp(piuFrequente[1] / totRisultati, 1)} delle partite.
+              {" "}<a href="/statistiche/risultati-piu-frequenti/">I risultati più frequenti →</a>
+            </span>
+          )}
+          {quiFra.totale.disciplina && (
+            <span>
+              <b class="mono">{num(quiFra.totale.disciplina.cartellini)}</b> cartellini a partita
+              {quiFra.totale.campo && (
+                <>
+                  {" "}e <b class="mono">{num(quiFra.totale.campo.corner)}</b> calci d'angolo
+                </>
+              )}.
+              {" "}<a href="/statistiche/cartellini/">I cartellini →</a>
+              {quiFra.totale.campo && (
+                <>
+                  {" "}<a href="/statistiche/calci-d-angolo-e-tiri/">Angoli e tiri →</a>
+                </>
+              )}
+            </span>
+          )}
         </p>
       )
     }
@@ -486,7 +525,7 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
     {inizioStagione && (
       <p class="avviso-stagione">
         <b>Siamo a inizio stagione.</b> Delle ultime {predefinita} partite di
-        ogni squadra, solo il <b>{pct(comp.quota_stagione)}</b> è di
+        ogni squadra, solo {ilNumero(pct(comp.quota_stagione))}<b>{pct(comp.quota_stagione)}</b> è di
         {" "}{lega.stagione}: il resto viene da {lega.stagione_precedente}. È
         voluto — con {lega.giornate_giocate} giornate giocate qualunque
         statistica di questa stagione sarebbe rumore — ma va saputo mentre si

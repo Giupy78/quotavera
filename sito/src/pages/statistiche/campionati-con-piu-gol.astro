@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Bandiera from "../../components/Bandiera.astro";
 import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
 import fra from "../../dati/fra_campionati.json";
 import { num, pct, art, nella } from "../../lib/testo";
 
@@ -178,7 +179,7 @@ const briciole = {
         La media dice quanti gol, non come arrivano. Le partite con almeno tre gol sono più
         frequenti {nella(piuTre.nome)}{piuTre.nome} ({pct(piuTre.totale.almeno_tre)}). Lo zero
         a zero è più frequente {nella(piuZeroZero.nome)}{piuZeroZero.nome}
-        ({pct(piuZeroZero.totale.zero_a_zero)} delle partite) e più raro
+        {" "}({pct(piuZeroZero.totale.zero_a_zero)} delle partite) e più raro
         {" "}{nella(menoZeroZero.nome)}{menoZeroZero.nome} ({pct(menoZeroZero.totale.zero_a_zero)}).
       </p>
     </div>
@@ -276,12 +277,7 @@ const briciole = {
       </p>
     </div>
 
-    <p class="leggi-anche">
-      Leggi anche: <a href="/statistiche/fattore-campo/">Il fattore campo nei campionati europei</a>
-    </p>
-    <p class="torna">
-      <a href="/statistiche/">← Tutte le statistiche fra campionati</a>
-    </p>
+    <AltriArticoli qui="/statistiche/campionati-con-piu-gol/" />
   </article>
 </Base>
 
@@ -312,15 +308,5 @@ const briciole = {
   td.adesso small {
     color: var(--ink-3);
     font-weight: 400;
-  }
-  .leggi-anche {
-    font-size: 14px;
-    border-top: 1px solid var(--rule);
-    padding-top: 16px;
-    margin-top: 34px;
-  }
-  .torna {
-    font-size: 13px;
-    margin-top: 14px;
   }
 </style>
