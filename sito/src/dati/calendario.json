@@ -22,7 +22,7 @@
     "p_modello": [
      0.6355,
      0.2241,
-     0.1404
+     0.1403
     ],
     "margine": 0.1075,
     "margine_migliore": null,
@@ -183,7 +183,7 @@
     ],
     "p_modello": [
      0.3675,
-     0.262,
+     0.2621,
      0.3705
     ],
     "margine": 0.1065,
@@ -241,6 +241,33 @@
      0.5356
     ],
     "margine": 0.103,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "monza-fiorentina",
+    "casa": "Monza",
+    "ospite": "Fiorentina",
+    "data": "2026-11-23",
+    "ora": "20:45",
+    "quote": {
+     "mercato_unico": [
+      3.25,
+      3.55,
+      1.909
+     ]
+    },
+    "p_mercato": [
+     0.2716,
+     0.2464,
+     0.482
+    ],
+    "p_modello": [
+     0.2473,
+     0.226,
+     0.5267
+    ],
+    "margine": 0.1132,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -456,7 +483,7 @@
     "p_modello": [
      0.3027,
      0.3089,
-     0.3884
+     0.3883
     ],
     "margine": 0.0731,
     "margine_migliore": null,
@@ -486,6 +513,33 @@
      0.2132
     ],
     "margine": 0.0737,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "brentford-everton",
+    "casa": "Brentford",
+    "ospite": "Everton",
+    "data": "2026-11-23",
+    "ora": "21:00",
+    "quote": {
+     "mercato_unico": [
+      2.0,
+      3.6,
+      3.4
+     ]
+    },
+    "p_mercato": [
+     0.4735,
+     0.2552,
+     0.2712
+    ],
+    "p_modello": [
+     0.4573,
+     0.2812,
+     0.2614
+    ],
+    "margine": 0.0719,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -566,7 +620,7 @@
     "p_modello": [
      0.4536,
      0.2964,
-     0.25
+     0.2501
     ],
     "margine": 0.0731,
     "margine_migliore": null,
@@ -716,21 +770,48 @@
     "quote": {
      "mercato_unico": [
       5.5,
-      3.8,
-      1.606
+      3.85,
+      1.588
      ]
     },
     "p_mercato": [
-     0.1622,
-     0.242,
-     0.5957
+     0.1612,
+     0.2376,
+     0.6013
     ],
     "p_modello": [
      0.206,
      0.3076,
      0.4864
     ],
-    "margine": 0.0676,
+    "margine": 0.0713,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "levante-elche",
+    "casa": "Levante",
+    "ospite": "Elche",
+    "data": "2026-11-23",
+    "ora": "21:00",
+    "quote": {
+     "mercato_unico": [
+      2.15,
+      3.6,
+      3.1
+     ]
+    },
+    "p_mercato": [
+     0.4415,
+     0.2572,
+     0.3013
+    ],
+    "p_modello": [
+     0.4617,
+     0.2485,
+     0.2898
+    ],
+    "margine": 0.0655,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -917,7 +998,7 @@
      0.5249
     ],
     "p_modello": [
-     0.1623,
+     0.1624,
      0.3132,
      0.5245
     ],
@@ -992,7 +1073,7 @@
     "p_modello": [
      0.3163,
      0.3242,
-     0.3595
+     0.3594
     ],
     "margine": 0.0714,
     "margine_migliore": null,
@@ -1317,7 +1398,7 @@
     ],
     "p_modello": [
      0.4211,
-     0.2467,
+     0.2466,
      0.3322
     ],
     "margine": 0.0844,
@@ -1509,7 +1590,7 @@
     ],
     "p_modello": [
      0.7887,
-     0.1243,
+     0.1244,
      0.087
     ],
     "margine": 0.0798,
@@ -1571,7 +1652,7 @@
     "p_modello": [
      0.2546,
      0.3054,
-     0.4399
+     0.44
     ],
     "margine": null,
     "margine_migliore": null,
@@ -1598,7 +1679,7 @@
     "p_modello": [
      0.4706,
      0.2824,
-     0.247
+     0.2471
     ],
     "margine": 0.0802,
     "margine_migliore": null,
@@ -1655,6 +1736,33 @@
      0.0727
     ],
     "margine": 0.0851,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "buyuksehyr-corum",
+    "casa": "Buyuksehyr",
+    "ospite": "Corum",
+    "data": "2026-11-23",
+    "ora": "18:00",
+    "quote": {
+     "mercato_unico": [
+      1.87,
+      3.75,
+      3.55
+     ]
+    },
+    "p_mercato": [
+     0.5036,
+     0.2409,
+     0.2556
+    ],
+    "p_modello": [
+     0.5664,
+     0.2035,
+     0.23
+    ],
+    "margine": 0.0831,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -1733,7 +1841,7 @@
      0.1436
     ],
     "p_modello": [
-     0.6562,
+     0.6563,
      0.2089,
      0.1349
     ],
@@ -1951,7 +2059,7 @@
      0.2972
     ],
     "p_modello": [
-     0.4609,
+     0.461,
      0.2932,
      0.2459
     ],
@@ -2059,11 +2167,38 @@
      0.1322
     ],
     "p_modello": [
-     0.7876,
+     0.7877,
      0.1482,
      0.0641
     ],
     "margine": 0.0768,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "asteras-tripolis-aris",
+    "casa": "Asteras Tripolis",
+    "ospite": "Aris",
+    "data": "2026-11-23",
+    "ora": "16:00",
+    "quote": {
+     "mercato_unico": [
+      3.4,
+      2.95,
+      2.25
+     ]
+    },
+    "p_mercato": [
+     0.2695,
+     0.3135,
+     0.417
+    ],
+    "p_modello": [
+     0.2714,
+     0.3316,
+     0.397
+    ],
+    "margine": 0.0775,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -2756,22 +2891,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.19,
+      1.2,
       7.0,
       11.0
      ]
     },
     "p_mercato": [
-     0.807,
-     0.1216,
-     0.0713
+     0.8032,
+     0.1237,
+     0.0731
     ],
     "p_modello": [
      0.7587,
      0.1359,
      0.1053
     ],
-    "margine": 0.0741,
+    "margine": 0.0671,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2994,7 +3129,7 @@
     "p_modello": [
      0.4633,
      0.2857,
-     0.251
+     0.2509
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3009,7 +3144,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.8101,
+     0.81,
      0.121,
      0.069
     ],
@@ -3079,7 +3214,7 @@
     "p_modello": [
      0.5046,
      0.2255,
-     0.2699
+     0.27
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3468,7 +3603,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3275,
+     0.3274,
      0.253,
      0.4196
     ],
@@ -3587,9 +3722,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4472,
+     0.4473,
      0.3295,
-     0.2233
+     0.2232
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3638,7 +3773,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4419,
+     0.442,
      0.2293,
      0.3288
     ],
@@ -3721,7 +3856,7 @@
      0.4864
     ],
     "p_modello": [
-     0.3843,
+     0.3842,
      0.2369,
      0.3788
     ],
@@ -3750,7 +3885,7 @@
     "p_modello": [
      0.2252,
      0.2192,
-     0.5555
+     0.5556
     ],
     "margine": 0.0958,
     "margine_migliore": null,
@@ -3777,7 +3912,7 @@
     "p_modello": [
      0.5826,
      0.2044,
-     0.2131
+     0.213
     ],
     "margine": 0.0951,
     "margine_migliore": null,
@@ -3818,22 +3953,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.5,
-      3.2,
-      2.6
+      2.55,
+      3.25,
+      2.5
      ]
     },
     "p_mercato": [
-     0.3668,
-     0.2814,
-     0.3518
+     0.3582,
+     0.2759,
+     0.3659
     ],
     "p_modello": [
      0.3415,
-     0.3213,
+     0.3214,
      0.3371
     ],
-    "margine": 0.0971,
+    "margine": 0.0998,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3856,7 +3991,7 @@
      0.3329
     ],
     "p_modello": [
-     0.3605,
+     0.3604,
      0.2107,
      0.4289
     ],
@@ -3910,7 +4045,7 @@
      0.2598
     ],
     "p_modello": [
-     0.4414,
+     0.4415,
      0.2418,
      0.3167
     ],
@@ -4040,7 +4175,7 @@
     "p_mercato": null,
     "p_modello": [
      0.4291,
-     0.2696,
+     0.2697,
      0.3013
     ],
     "margine": null,
@@ -4058,7 +4193,7 @@
     "p_modello": [
      0.3649,
      0.2527,
-     0.3824
+     0.3823
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4159,22 +4294,22 @@
     "ora": "20:30",
     "quote": {
      "mercato_unico": [
-      2.35,
-      3.15,
-      3.2
+      2.45,
+      3.1,
+      3.0
      ]
     },
     "p_mercato": [
-     0.406,
-     0.2994,
-     0.2945
+     0.386,
+     0.3017,
+     0.3123
     ],
     "p_modello": [
      0.3037,
      0.3234,
      0.3729
     ],
-    "margine": 0.0555,
+    "margine": 0.0641,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4186,22 +4321,22 @@
     "ora": "14:00",
     "quote": {
      "mercato_unico": [
-      2.85,
+      2.9,
       3.6,
       2.25
      ]
     },
     "p_mercato": [
-     0.3266,
-     0.2549,
-     0.4185
+     0.3226,
+     0.2567,
+     0.4206
     ],
     "p_modello": [
      0.3017,
      0.2509,
      0.4474
     ],
-    "margine": 0.0731,
+    "margine": 0.067,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4306,7 +4441,7 @@
     ],
     "p_modello": [
      0.3448,
-     0.2819,
+     0.2818,
      0.3733
     ],
     "margine": 0.0722,
@@ -4454,8 +4589,8 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4053,
-     0.3273,
+     0.4052,
+     0.3272,
      0.2675
     ],
     "margine": null,
@@ -4473,7 +4608,7 @@
     "p_modello": [
      0.4523,
      0.2602,
-     0.2875
+     0.2876
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4507,7 +4642,7 @@
     "p_modello": [
      0.1792,
      0.3319,
-     0.4889
+     0.4888
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4556,7 +4691,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5071,
+     0.507,
      0.2732,
      0.2197
     ],
@@ -4590,9 +4725,26 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5064,
+     0.5065,
      0.2733,
      0.2203
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "ceuta-almeria",
+    "casa": "Ceuta",
+    "ospite": "Almeria",
+    "data": "2026-11-23",
+    "ora": "20:30",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2059,
+     0.2029,
+     0.5912
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4648,7 +4800,7 @@
     "p_modello": [
      0.4622,
      0.2339,
-     0.304
+     0.3039
     ],
     "margine": 0.0811,
     "margine_migliore": null,
@@ -5048,6 +5200,33 @@
      0.3676
     ],
     "margine": 0.0824,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   },
+   {
+    "id": "sochaux-dunkerque",
+    "casa": "Sochaux",
+    "ospite": "Dunkerque",
+    "data": "2026-11-23",
+    "ora": "20:45",
+    "quote": {
+     "mercato_unico": [
+      2.3,
+      3.25,
+      3.0
+     ]
+    },
+    "p_mercato": [
+     0.4081,
+     0.2834,
+     0.3085
+    ],
+    "p_modello": [
+     0.2221,
+     0.2991,
+     0.4789
+    ],
+    "margine": 0.0758,
     "margine_migliore": null,
     "quote_da": "unico"
    }

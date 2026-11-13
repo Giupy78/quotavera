@@ -21,7 +21,7 @@
    "p_modello": [
     0.6355,
     0.2241,
-    0.1404
+    0.1403
    ],
    "margine": 0.1075,
    "margine_migliore": null,
@@ -63,7 +63,7 @@
       0.00021
      ],
      [
-      0.07938,
+      0.07939,
       0.05708,
       0.02052,
       0.00492,
@@ -113,7 +113,7 @@
      "1x2": {
       "1": 0.6355,
       "X": 0.2241,
-      "2": 0.1404
+      "2": 0.1403
      },
      "btts": {
       "si": 0.4312,
@@ -1063,7 +1063,7 @@
      [
       0.0192,
       0.03382,
-      0.0298,
+      0.02979,
       0.0175,
       0.00771,
       0.00272
@@ -1078,7 +1078,7 @@
      ],
      [
       0.00069,
-      0.00122,
+      0.00121,
       0.00107,
       0.00063,
       0.00028,
@@ -2069,7 +2069,7 @@
      [
       0.15245,
       0.08679,
-      0.02471,
+      0.0247,
       0.00469,
       0.00067,
       8e-05
@@ -2559,7 +2559,7 @@
      [
       0.05566,
       0.0545,
-      0.02668,
+      0.02669,
       0.00871,
       0.00213,
       0.00042
@@ -3024,7 +3024,7 @@
    ],
    "p_modello": [
     0.3675,
-    0.262,
+    0.2621,
     0.3705
    ],
    "margine": 0.1065,
@@ -3067,7 +3067,7 @@
       0.00227
      ],
      [
-      0.02733,
+      0.02734,
       0.03688,
       0.02487,
       0.01119,
@@ -3075,7 +3075,7 @@
       0.00102
      ],
      [
-      0.00917,
+      0.00918,
       0.01238,
       0.00835,
       0.00375,
@@ -3116,7 +3116,7 @@
     "mercati": {
      "1x2": {
       "1": 0.3675,
-      "X": 0.262,
+      "X": 0.2621,
       "2": 0.3705
      },
      "btts": {
@@ -3556,7 +3556,7 @@
      ],
      [
       0.06538,
-      0.09279,
+      0.09278,
       0.06584,
       0.03115,
       0.01105,
@@ -4489,6 +4489,502 @@
      "ospite": "Inter",
      "gol_casa": 1,
      "gol_ospite": 2
+    }
+   ]
+  },
+  {
+   "id": "monza-fiorentina",
+   "casa": "Monza",
+   "ospite": "Fiorentina",
+   "data": "2026-11-23",
+   "ora": "20:45",
+   "quote": {
+    "mercato_unico": [
+     3.25,
+     3.55,
+     1.909
+    ]
+   },
+   "p_mercato": [
+    0.2716,
+    0.2464,
+    0.482
+   ],
+   "p_modello": [
+    0.2473,
+    0.226,
+    0.5267
+   ],
+   "margine": 0.1132,
+   "margine_migliore": null,
+   "quote_da": "unico",
+   "campionato": "serie-a",
+   "casa_esteso": null,
+   "ospite_esteso": null,
+   "stadio": {
+    "nome": "U-Power Stadium",
+    "citta": "Monza",
+    "paese": "Italy"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 1.25,
+    "gol_attesi_ospite": 1.91,
+    "matrice": [
+     [
+      0.04423,
+      0.0802,
+      0.07776,
+      0.0494,
+      0.02353,
+      0.00897
+     ],
+     [
+      0.05191,
+      0.10302,
+      0.09682,
+      0.06151,
+      0.0293,
+      0.01117
+     ],
+     [
+      0.0332,
+      0.06326,
+      0.06028,
+      0.03829,
+      0.01824,
+      0.00695
+     ],
+     [
+      0.01378,
+      0.02626,
+      0.02502,
+      0.01589,
+      0.00757,
+      0.00289
+     ],
+     [
+      0.00429,
+      0.00817,
+      0.00779,
+      0.00495,
+      0.00236,
+      0.0009
+     ],
+     [
+      0.00107,
+      0.00204,
+      0.00194,
+      0.00123,
+      0.00059,
+      0.00022
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.103
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0968
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.0802
+     },
+     {
+      "risultato": "0-2",
+      "p": 0.0778
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0633
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.2473,
+      "X": 0.226,
+      "2": 0.5267
+     },
+     "btts": {
+      "si": 0.6076,
+      "no": 0.3924
+     },
+     "ou_1.5": {
+      "over": 0.8237,
+      "under": 0.1763
+     },
+     "ou_2.5": {
+      "over": 0.6097,
+      "under": 0.3903
+     },
+     "ou_3.5": {
+      "over": 0.3864,
+      "under": 0.6136
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Monza",
+    "partite": 20,
+    "gol_fatti": 1.05,
+    "gol_subiti": 2.25,
+    "gol_totali": 21,
+    "in_porta_totali": 89,
+    "attesi_dai_tiri": 27.2,
+    "scarto_conversione": -6.2,
+    "vantaggio_casa": 0.31,
+    "casa": {
+     "partite": 9,
+     "gol_fatti": 1.22,
+     "gol_subiti": 2.22,
+     "tiri": 13.2,
+     "in_porta": 4.9,
+     "in_porta_subiti": 5.9,
+     "tiri_subiti": 14.9,
+     "corner": 3.8,
+     "corner_subiti": 4.6,
+     "falli": 12.4,
+     "cartellini": 2.2,
+     "gialli": 20,
+     "rossi": 0,
+     "precisione_tiri": 0.37,
+     "over_25": 0.778,
+     "gol_gol": 0.556,
+     "clean_sheet": 0.111,
+     "a_secco": 0.333,
+     "con_avanzate": 5,
+     "possesso": 43.0,
+     "passaggi": 389.0,
+     "precisione_passaggi": 0.828,
+     "precisione_cross": 0.213,
+     "precisione_lanci": 0.451,
+     "contrasti": 18.0,
+     "intercetti": 8.8,
+     "respinte": 19.8,
+     "parate": 4.6,
+     "fuorigioco": 1.6,
+     "tiri_respinti": 4.2
+    },
+    "trasferta": {
+     "partite": 11,
+     "gol_fatti": 0.91,
+     "gol_subiti": 2.27,
+     "tiri": 10.4,
+     "in_porta": 4.1,
+     "in_porta_subiti": 4.9,
+     "tiri_subiti": 13.0,
+     "corner": 4.1,
+     "corner_subiti": 4.2,
+     "falli": 11.6,
+     "cartellini": 1.9,
+     "gialli": 20,
+     "rossi": 1,
+     "precisione_tiri": 0.395,
+     "over_25": 0.636,
+     "gol_gol": 0.636,
+     "clean_sheet": 0.0,
+     "a_secco": 0.364,
+     "con_avanzate": 6,
+     "possesso": 44.7,
+     "passaggi": 376.0,
+     "precisione_passaggi": 0.797,
+     "precisione_cross": 0.303,
+     "precisione_lanci": 0.39,
+     "contrasti": 16.0,
+     "intercetti": 13.8,
+     "respinte": 21.2,
+     "parate": 2.3,
+     "fuorigioco": 3.5,
+     "tiri_respinti": 2.2
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Fiorentina",
+    "partite": 20,
+    "gol_fatti": 1.2,
+    "gol_subiti": 1.6,
+    "gol_totali": 24,
+    "in_porta_totali": 83,
+    "attesi_dai_tiri": 25.4,
+    "scarto_conversione": -1.4,
+    "vantaggio_casa": -0.65,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 0.91,
+     "gol_subiti": 1.36,
+     "tiri": 16.5,
+     "in_porta": 4.5,
+     "in_porta_subiti": 4.9,
+     "tiri_subiti": 12.2,
+     "corner": 5.5,
+     "corner_subiti": 5.0,
+     "falli": 12.6,
+     "cartellini": 1.8,
+     "gialli": 20,
+     "rossi": 0,
+     "precisione_tiri": 0.271,
+     "over_25": 0.455,
+     "gol_gol": 0.636,
+     "clean_sheet": 0.273,
+     "a_secco": 0.273,
+     "con_avanzate": 6,
+     "possesso": 46.6,
+     "passaggi": 399.0,
+     "precisione_passaggi": 0.849,
+     "precisione_cross": 0.198,
+     "precisione_lanci": 0.491,
+     "contrasti": 16.0,
+     "intercetti": 7.8,
+     "respinte": 20.2,
+     "parate": 3.5,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 5.5
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 1.56,
+     "gol_subiti": 1.89,
+     "tiri": 9.7,
+     "in_porta": 3.8,
+     "in_porta_subiti": 6.2,
+     "tiri_subiti": 16.9,
+     "corner": 2.8,
+     "corner_subiti": 4.7,
+     "falli": 10.9,
+     "cartellini": 2.7,
+     "gialli": 22,
+     "rossi": 2,
+     "precisione_tiri": 0.391,
+     "over_25": 0.667,
+     "gol_gol": 0.556,
+     "clean_sheet": 0.222,
+     "a_secco": 0.222,
+     "con_avanzate": 5,
+     "possesso": 43.6,
+     "passaggi": 380.0,
+     "precisione_passaggi": 0.821,
+     "precisione_cross": 0.235,
+     "precisione_lanci": 0.43,
+     "contrasti": 16.8,
+     "intercetti": 7.8,
+     "respinte": 21.6,
+     "parate": 3.2,
+     "fuorigioco": 1.6,
+     "tiri_respinti": 3.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Monza",
+    "partite": 6,
+    "gol_fatti": 1.5,
+    "gol_subiti": 2.17,
+    "gol_totali": 9,
+    "in_porta_totali": 31,
+    "attesi_dai_tiri": 9.5,
+    "scarto_conversione": -0.5,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 1.67,
+     "tiri": 16.0,
+     "in_porta": 6.0,
+     "in_porta_subiti": 6.3,
+     "tiri_subiti": 15.0,
+     "corner": 3.7,
+     "corner_subiti": 3.7,
+     "falli": 11.7,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.375,
+     "over_25": 0.667,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 42.9,
+     "passaggi": 404.0,
+     "precisione_passaggi": 0.84,
+     "precisione_cross": 0.184,
+     "precisione_lanci": 0.52,
+     "contrasti": 17.3,
+     "intercetti": 10.0,
+     "respinte": 17.3,
+     "parate": 4.7,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 4.7
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 2.67,
+     "tiri": 9.0,
+     "in_porta": 4.3,
+     "in_porta_subiti": 6.3,
+     "tiri_subiti": 14.7,
+     "corner": 4.0,
+     "corner_subiti": 5.0,
+     "falli": 10.7,
+     "cartellini": 1.7,
+     "gialli": 4,
+     "rossi": 1,
+     "precisione_tiri": 0.481,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 41.4,
+     "passaggi": 354.0,
+     "precisione_passaggi": 0.767,
+     "precisione_cross": 0.286,
+     "precisione_lanci": 0.333,
+     "contrasti": 18.3,
+     "intercetti": 15.0,
+     "respinte": 23.7,
+     "parate": 3.7,
+     "fuorigioco": 1.7,
+     "tiri_respinti": 2.3
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Fiorentina",
+    "partite": 6,
+    "gol_fatti": 1.83,
+    "gol_subiti": 2.17,
+    "gol_totali": 11,
+    "in_porta_totali": 28,
+    "attesi_dai_tiri": 8.6,
+    "scarto_conversione": 2.4,
+    "vantaggio_casa": -0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.67,
+     "gol_subiti": 2.33,
+     "tiri": 18.3,
+     "in_porta": 5.7,
+     "in_porta_subiti": 6.3,
+     "tiri_subiti": 12.0,
+     "corner": 8.0,
+     "corner_subiti": 6.3,
+     "falli": 12.7,
+     "cartellini": 2.0,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.309,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 46.1,
+     "passaggi": 409.0,
+     "precisione_passaggi": 0.865,
+     "precisione_cross": 0.186,
+     "precisione_lanci": 0.537,
+     "contrasti": 18.0,
+     "intercetti": 7.0,
+     "respinte": 17.7,
+     "parate": 4.0,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 6.7
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 2.0,
+     "gol_subiti": 2.0,
+     "tiri": 11.7,
+     "in_porta": 3.7,
+     "in_porta_subiti": 5.7,
+     "tiri_subiti": 16.7,
+     "corner": 2.7,
+     "corner_subiti": 4.7,
+     "falli": 13.0,
+     "cartellini": 3.0,
+     "gialli": 9,
+     "rossi": 0,
+     "precisione_tiri": 0.314,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 47.3,
+     "passaggi": 405.0,
+     "precisione_passaggi": 0.825,
+     "precisione_cross": 0.258,
+     "precisione_lanci": 0.447,
+     "contrasti": 18.3,
+     "intercetti": 6.7,
+     "respinte": 21.0,
+     "parate": 3.7,
+     "fuorigioco": 1.7,
+     "tiri_respinti": 4.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.22,
+     "difesa": 1.89,
+     "media": 1.55
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 13.2,
+     "difesa": 16.9,
+     "media": 15.0
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 4.9,
+     "difesa": 6.2,
+     "media": 5.6
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 3.8,
+     "difesa": 4.7,
+     "media": 4.2
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 43.0,
+     "difesa": 43.6,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2025-01-13",
+     "casa": "Monza",
+     "ospite": "Fiorentina",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-09-01",
+     "casa": "Fiorentina",
+     "ospite": "Monza",
+     "gol_casa": 2,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2024-05-13",
+     "casa": "Fiorentina",
+     "ospite": "Monza",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2023-12-22",
+     "casa": "Monza",
+     "ospite": "Fiorentina",
+     "gol_casa": 0,
+     "gol_ospite": 1
     }
    ]
   },
@@ -68330,7 +68826,7 @@
     "gol_attesi_ospite": 0.83,
     "matrice": [
      [
-      0.06154,
+      0.06155,
       0.03914,
       0.01881,
       0.00518,
@@ -68339,7 +68835,7 @@
      ],
      [
       0.10785,
-      0.10078,
+      0.10079,
       0.03898,
       0.01073,
       0.00222,
@@ -68848,7 +69344,7 @@
       0.00102
      ],
      [
-      0.0988,
+      0.09879,
       0.12823,
       0.06741,
       0.02523,
@@ -68864,7 +69360,7 @@
       0.00123
      ],
      [
-      0.04297,
+      0.04296,
       0.04824,
       0.02708,
       0.01014,
@@ -69367,14 +69863,14 @@
      ],
      [
       0.1009,
-      0.09619,
-      0.04584,
+      0.09618,
+      0.04585,
       0.01457,
       0.00347,
       0.00066
      ],
      [
-      0.05569,
+      0.05568,
       0.05308,
       0.0253,
       0.00804,
@@ -69834,7 +70330,7 @@
      [
       0.07436,
       0.06661,
-      0.04202,
+      0.04203,
       0.01577,
       0.00444,
       0.001
@@ -70316,9 +70812,9 @@
      [
       0.06604,
       0.07641,
-      0.06133,
+      0.06132,
       0.02971,
-      0.0108,
+      0.01079,
       0.00314
      ],
      [
@@ -70347,7 +70843,7 @@
      ],
      [
       0.00911,
-      0.01323,
+      0.01324,
       0.00962,
       0.00466,
       0.00169,
@@ -70403,8 +70899,8 @@
       "under": 0.4585
      },
      "ou_3.5": {
-      "over": 0.3183,
-      "under": 0.6817
+      "over": 0.3184,
+      "under": 0.6816
      }
     }
    },
@@ -71755,7 +72251,7 @@
    "p_modello": [
     0.3027,
     0.3089,
-    0.3884
+    0.3883
    ],
    "margine": 0.0731,
    "margine_migliore": null,
@@ -71776,7 +72272,7 @@
       0.12112,
       0.12311,
       0.07793,
-      0.03064,
+      0.03063,
       0.00903,
       0.00213
      ],
@@ -71847,7 +72343,7 @@
      "1x2": {
       "1": 0.3027,
       "X": 0.3089,
-      "2": 0.3884
+      "2": 0.3883
      },
      "btts": {
       "si": 0.4492,
@@ -72321,8 +72817,8 @@
       "no": 0.3791
      },
      "ou_1.5": {
-      "over": 0.8457,
-      "under": 0.1543
+      "over": 0.8458,
+      "under": 0.1542
      },
      "ou_2.5": {
       "over": 0.6372,
@@ -72708,6 +73204,516 @@
      "ospite": "Man United",
      "gol_casa": 0,
      "gol_ospite": 0
+    }
+   ]
+  },
+  {
+   "id": "brentford-everton",
+   "casa": "Brentford",
+   "ospite": "Everton",
+   "data": "2026-11-23",
+   "ora": "21:00",
+   "quote": {
+    "mercato_unico": [
+     2.0,
+     3.6,
+     3.4
+    ]
+   },
+   "p_mercato": [
+    0.4735,
+    0.2552,
+    0.2712
+   ],
+   "p_modello": [
+    0.4573,
+    0.2812,
+    0.2614
+   ],
+   "margine": 0.0719,
+   "margine_migliore": null,
+   "quote_da": "unico",
+   "campionato": "premier-league",
+   "casa_esteso": null,
+   "ospite_esteso": null,
+   "stadio": {
+    "nome": "Gtech Community Stadium",
+    "citta": "Brentford",
+    "paese": "England"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 1.45,
+    "gol_attesi_ospite": 1.03,
+    "matrice": [
+     [
+      0.09217,
+      0.07803,
+      0.04474,
+      0.01542,
+      0.00399,
+      0.00082
+     ],
+     [
+      0.11256,
+      0.13368,
+      0.06472,
+      0.02231,
+      0.00577,
+      0.00119
+     ],
+     [
+      0.08757,
+      0.09055,
+      0.04682,
+      0.01614,
+      0.00417,
+      0.00086
+     ],
+     [
+      0.04223,
+      0.04367,
+      0.02258,
+      0.00778,
+      0.00201,
+      0.00042
+     ],
+     [
+      0.01527,
+      0.01579,
+      0.00817,
+      0.00281,
+      0.00073,
+      0.00015
+     ],
+     [
+      0.00442,
+      0.00457,
+      0.00236,
+      0.00081,
+      0.00021,
+      4e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1337
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1126
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.0922
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0906
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.0876
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.4573,
+      "X": 0.2812,
+      "2": 0.2614
+     },
+     "btts": {
+      "si": 0.5013,
+      "no": 0.4987
+     },
+     "ou_1.5": {
+      "over": 0.7172,
+      "under": 0.2828
+     },
+     "ou_2.5": {
+      "over": 0.4512,
+      "under": 0.5488
+     },
+     "ou_3.5": {
+      "over": 0.2383,
+      "under": 0.7617
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Brentford",
+    "partite": 20,
+    "gol_fatti": 1.35,
+    "gol_subiti": 1.15,
+    "gol_totali": 27,
+    "in_porta_totali": 68,
+    "attesi_dai_tiri": 22.1,
+    "scarto_conversione": 4.9,
+    "vantaggio_casa": 1.1,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.9,
+     "gol_subiti": 0.9,
+     "tiri": 13.6,
+     "in_porta": 3.9,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 13.8,
+     "corner": 4.4,
+     "corner_subiti": 5.2,
+     "falli": 10.0,
+     "cartellini": 1.7,
+     "gialli": 15,
+     "rossi": 2,
+     "precisione_tiri": 0.287,
+     "over_25": 0.7,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.1,
+     "con_avanzate": 5,
+     "possesso": 42.5,
+     "passaggi": 346.0,
+     "precisione_passaggi": 0.771,
+     "precisione_cross": 0.295,
+     "precisione_lanci": 0.475,
+     "contrasti": 15.8,
+     "intercetti": 11.6,
+     "respinte": 29.4,
+     "parate": 2.4,
+     "fuorigioco": 1.4,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 0.8,
+     "gol_subiti": 1.4,
+     "tiri": 10.1,
+     "in_porta": 2.9,
+     "in_porta_subiti": 5.7,
+     "tiri_subiti": 17.1,
+     "corner": 3.5,
+     "corner_subiti": 6.2,
+     "falli": 11.7,
+     "cartellini": 2.4,
+     "gialli": 23,
+     "rossi": 1,
+     "precisione_tiri": 0.287,
+     "over_25": 0.4,
+     "gol_gol": 0.6,
+     "clean_sheet": 0.2,
+     "a_secco": 0.4,
+     "con_avanzate": 5,
+     "possesso": 45.4,
+     "passaggi": 362.0,
+     "precisione_passaggi": 0.764,
+     "precisione_cross": 0.284,
+     "precisione_lanci": 0.361,
+     "contrasti": 17.0,
+     "intercetti": 10.8,
+     "respinte": 32.0,
+     "parate": 3.8,
+     "fuorigioco": 1.6,
+     "tiri_respinti": 4.4
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Everton",
+    "partite": 20,
+    "gol_fatti": 1.35,
+    "gol_subiti": 1.35,
+    "gol_totali": 27,
+    "in_porta_totali": 100,
+    "attesi_dai_tiri": 32.5,
+    "scarto_conversione": -5.5,
+    "vantaggio_casa": 0.9,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.8,
+     "gol_subiti": 1.3,
+     "tiri": 13.4,
+     "in_porta": 5.3,
+     "in_porta_subiti": 4.1,
+     "tiri_subiti": 13.0,
+     "corner": 3.7,
+     "corner_subiti": 4.5,
+     "falli": 8.9,
+     "cartellini": 1.8,
+     "gialli": 18,
+     "rossi": 0,
+     "precisione_tiri": 0.396,
+     "over_25": 0.6,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.4,
+     "a_secco": 0.1,
+     "con_avanzate": 5,
+     "possesso": 47.2,
+     "passaggi": 432.0,
+     "precisione_passaggi": 0.827,
+     "precisione_cross": 0.217,
+     "precisione_lanci": 0.421,
+     "contrasti": 15.0,
+     "intercetti": 8.8,
+     "respinte": 24.8,
+     "parate": 3.2,
+     "fuorigioco": 2.2,
+     "tiri_respinti": 5.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 0.9,
+     "gol_subiti": 1.4,
+     "tiri": 11.9,
+     "in_porta": 4.7,
+     "in_porta_subiti": 4.6,
+     "tiri_subiti": 17.1,
+     "corner": 4.9,
+     "corner_subiti": 6.2,
+     "falli": 10.3,
+     "cartellini": 2.1,
+     "gialli": 20,
+     "rossi": 1,
+     "precisione_tiri": 0.395,
+     "over_25": 0.4,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.2,
+     "a_secco": 0.4,
+     "con_avanzate": 5,
+     "possesso": 46.9,
+     "passaggi": 408.0,
+     "precisione_passaggi": 0.833,
+     "precisione_cross": 0.198,
+     "precisione_lanci": 0.388,
+     "contrasti": 16.8,
+     "intercetti": 7.2,
+     "respinte": 28.8,
+     "parate": 2.4,
+     "fuorigioco": 1.8,
+     "tiri_respinti": 2.6
+    }
+   },
+   "forma_casa": {
+    "squadra": "Brentford",
+    "partite": 6,
+    "gol_fatti": 1.5,
+    "gol_subiti": 1.17,
+    "gol_totali": 9,
+    "in_porta_totali": 19,
+    "attesi_dai_tiri": 6.2,
+    "scarto_conversione": 2.8,
+    "vantaggio_casa": 1.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 2.0,
+     "gol_subiti": 0.67,
+     "tiri": 10.0,
+     "in_porta": 3.0,
+     "in_porta_subiti": 2.7,
+     "tiri_subiti": 16.0,
+     "corner": 3.3,
+     "corner_subiti": 8.3,
+     "falli": 7.7,
+     "cartellini": 3.0,
+     "gialli": 7,
+     "rossi": 2,
+     "precisione_tiri": 0.3,
+     "over_25": 0.667,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.667,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 40.8,
+     "passaggi": 337.0,
+     "precisione_passaggi": 0.75,
+     "precisione_cross": 0.211,
+     "precisione_lanci": 0.458,
+     "contrasti": 16.3,
+     "intercetti": 11.7,
+     "respinte": 33.0,
+     "parate": 2.0,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.67,
+     "tiri": 11.0,
+     "in_porta": 3.3,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 17.3,
+     "corner": 3.7,
+     "corner_subiti": 4.7,
+     "falli": 13.3,
+     "cartellini": 3.0,
+     "gialli": 8,
+     "rossi": 1,
+     "precisione_tiri": 0.303,
+     "over_25": 0.333,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 43.4,
+     "passaggi": 339.0,
+     "precisione_passaggi": 0.778,
+     "precisione_cross": 0.269,
+     "precisione_lanci": 0.384,
+     "contrasti": 15.7,
+     "intercetti": 11.0,
+     "respinte": 29.0,
+     "parate": 3.3,
+     "fuorigioco": 2.3,
+     "tiri_respinti": 3.3
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Everton",
+    "partite": 6,
+    "gol_fatti": 1.17,
+    "gol_subiti": 1.17,
+    "gol_totali": 7,
+    "in_porta_totali": 29,
+    "attesi_dai_tiri": 9.4,
+    "scarto_conversione": -2.4,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 1.0,
+     "tiri": 14.0,
+     "in_porta": 4.7,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 15.3,
+     "corner": 3.7,
+     "corner_subiti": 4.3,
+     "falli": 8.0,
+     "cartellini": 2.0,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.333,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 49.6,
+     "passaggi": 443.0,
+     "precisione_passaggi": 0.819,
+     "precisione_cross": 0.246,
+     "precisione_lanci": 0.395,
+     "contrasti": 14.0,
+     "intercetti": 7.3,
+     "respinte": 29.0,
+     "parate": 3.7,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 3.7
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.33,
+     "tiri": 13.0,
+     "in_porta": 5.0,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 15.3,
+     "corner": 4.7,
+     "corner_subiti": 7.7,
+     "falli": 8.7,
+     "cartellini": 1.7,
+     "gialli": 5,
+     "rossi": 0,
+     "precisione_tiri": 0.385,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 51.8,
+     "passaggi": 450.0,
+     "precisione_passaggi": 0.846,
+     "precisione_cross": 0.22,
+     "precisione_lanci": 0.453,
+     "contrasti": 14.0,
+     "intercetti": 6.3,
+     "respinte": 31.0,
+     "parate": 2.0,
+     "fuorigioco": 2.3,
+     "tiri_respinti": 2.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.9,
+     "difesa": 1.4,
+     "media": 1.65
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 13.6,
+     "difesa": 17.1,
+     "media": 15.4
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 3.9,
+     "difesa": 4.6,
+     "media": 4.2
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 4.4,
+     "difesa": 6.2,
+     "media": 5.3
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 42.5,
+     "difesa": 46.9,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-04-11",
+     "casa": "Brentford",
+     "ospite": "Everton",
+     "gol_casa": 2,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2026-01-04",
+     "casa": "Everton",
+     "ospite": "Brentford",
+     "gol_casa": 2,
+     "gol_ospite": 4
+    },
+    {
+     "data": "2025-02-26",
+     "casa": "Brentford",
+     "ospite": "Everton",
+     "gol_casa": 1,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-11-23",
+     "casa": "Everton",
+     "ospite": "Brentford",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2024-04-27",
+     "casa": "Everton",
+     "ospite": "Brentford",
+     "gol_casa": 1,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2023-09-23",
+     "casa": "Brentford",
+     "ospite": "Everton",
+     "gol_casa": 1,
+     "gol_ospite": 3
     }
    ]
   },
@@ -124119,10 +125125,10 @@
       0.0003
      ],
      [
-      0.14534,
+      0.14535,
       0.12762,
       0.04933,
-      0.0133,
+      0.01329,
       0.00269,
       0.00043
      ],
@@ -124607,7 +125613,7 @@
     "gol_attesi_ospite": 1.02,
     "matrice": [
      [
-      0.1184,
+      0.11839,
       0.10841,
       0.05841,
       0.01986,
@@ -125056,7 +126062,7 @@
    "p_modello": [
     0.4536,
     0.2964,
-    0.25
+    0.2501
    ],
    "margine": 0.0731,
    "margine_migliore": null,
@@ -125074,9 +126080,9 @@
     "gol_attesi_ospite": 0.89,
     "matrice": [
      [
-      0.11833,
+      0.11834,
       0.09407,
-      0.04448,
+      0.04449,
       0.01319,
       0.00293,
       0.00052
@@ -125107,7 +126113,7 @@
      ],
      [
       0.01321,
-      0.01176,
+      0.01175,
       0.00523,
       0.00155,
       0.00034,
@@ -125148,7 +126154,7 @@
      "1x2": {
       "1": 0.4536,
       "X": 0.2964,
-      "2": 0.25
+      "2": 0.2501
      },
      "btts": {
       "si": 0.4339,
@@ -125586,7 +126592,7 @@
      [
       0.06403,
       0.08209,
-      0.06525,
+      0.06524,
       0.03244,
       0.0121,
       0.00361
@@ -125600,7 +126606,7 @@
       0.00485
      ],
      [
-      0.05301,
+      0.05302,
       0.07908,
       0.05898,
       0.02933,
@@ -125609,7 +126615,7 @@
      ],
      [
       0.02376,
-      0.03544,
+      0.03545,
       0.02644,
       0.01314,
       0.0049,
@@ -125617,7 +126623,7 @@
      ],
      [
       0.00799,
-      0.01191,
+      0.01192,
       0.00889,
       0.00442,
       0.00165,
@@ -126094,7 +127100,7 @@
     "gol_attesi_ospite": 0.72,
     "matrice": [
      [
-      0.05185,
+      0.05186,
       0.03098,
       0.01246,
       0.00299,
@@ -126118,7 +127124,7 @@
       0.00021
      ],
      [
-      0.09955,
+      0.09954,
       0.07158,
       0.02574,
       0.00617,
@@ -126126,7 +127132,7 @@
       0.00016
      ],
      [
-      0.0576,
+      0.05759,
       0.04142,
       0.01489,
       0.00357,
@@ -126605,23 +127611,23 @@
     "matrice": [
      [
       0.01601,
-      0.01386,
+      0.01385,
       0.00953,
       0.00375,
-      0.00111,
+      0.0011,
       0.00026
      ],
      [
       0.04038,
-      0.05266,
-      0.0297,
-      0.01168,
+      0.05265,
+      0.02969,
+      0.01167,
       0.00344,
       0.00081
      ],
      [
-      0.06649,
-      0.07844,
+      0.0665,
+      0.07843,
       0.04626,
       0.01819,
       0.00536,
@@ -127116,7 +128122,7 @@
      [
       0.01928,
       0.03439,
-      0.04345,
+      0.04344,
       0.03356,
       0.01944,
       0.00901
@@ -127125,7 +128131,7 @@
       0.02614,
       0.07087,
       0.07852,
-      0.06066,
+      0.06065,
       0.03514,
       0.01629
      ],
@@ -127134,7 +128140,7 @@
       0.06124,
       0.07096,
       0.05481,
-      0.03176,
+      0.03175,
       0.01472
      ],
      [
@@ -127582,7 +128588,7 @@
     "matrice": [
      [
       0.08505,
-      0.05152,
+      0.05153,
       0.01966,
       0.00458,
       0.0008,
@@ -127591,21 +128597,21 @@
      [
       0.14172,
       0.1071,
-      0.03581,
+      0.03582,
       0.00835,
       0.00146,
       0.0002
      ],
      [
-      0.13337,
+      0.13336,
       0.09329,
-      0.03262,
+      0.03263,
       0.00761,
       0.00133,
       0.00019
      ],
      [
-      0.081,
+      0.08099,
       0.05665,
       0.01981,
       0.00462,
@@ -128018,21 +129024,21 @@
    "quote": {
     "mercato_unico": [
      5.5,
-     3.8,
-     1.606
+     3.85,
+     1.588
     ]
    },
    "p_mercato": [
-    0.1622,
-    0.242,
-    0.5957
+    0.1612,
+    0.2376,
+    0.6013
    ],
    "p_modello": [
     0.206,
     0.3076,
     0.4864
    ],
-   "margine": 0.0676,
+   "margine": 0.0713,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga",
@@ -128048,10 +129054,10 @@
     "gol_attesi_ospite": 1.25,
     "matrice": [
      [
-      0.1459,
+      0.14589,
       0.16976,
-      0.10985,
-      0.04584,
+      0.10986,
+      0.04585,
       0.01435,
       0.00359
      ],
@@ -128059,7 +129065,7 @@
       0.0942,
       0.13084,
       0.07832,
-      0.03268,
+      0.03269,
       0.01023,
       0.00256
      ],
@@ -128072,7 +129078,7 @@
       0.00091
      ],
      [
-      0.00847,
+      0.00846,
       0.0106,
       0.00663,
       0.00277,
@@ -128129,8 +129135,8 @@
       "no": 0.6302
      },
      "ou_1.5": {
-      "over": 0.5901,
-      "under": 0.4099
+      "over": 0.5902,
+      "under": 0.4098
      },
      "ou_2.5": {
       "over": 0.3138,
@@ -128516,6 +129522,488 @@
      "ospite": "Getafe",
      "gol_casa": 3,
      "gol_ospite": 3
+    }
+   ]
+  },
+  {
+   "id": "levante-elche",
+   "casa": "Levante",
+   "ospite": "Elche",
+   "data": "2026-11-23",
+   "ora": "21:00",
+   "quote": {
+    "mercato_unico": [
+     2.15,
+     3.6,
+     3.1
+    ]
+   },
+   "p_mercato": [
+    0.4415,
+    0.2572,
+    0.3013
+   ],
+   "p_modello": [
+    0.4617,
+    0.2485,
+    0.2898
+   ],
+   "margine": 0.0655,
+   "margine_migliore": null,
+   "quote_da": "unico",
+   "campionato": "laliga",
+   "casa_esteso": null,
+   "ospite_esteso": null,
+   "stadio": {
+    "nome": "Estadi Ciutat de València",
+    "citta": "Manises",
+    "paese": "Spain"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 1.69,
+    "gol_attesi_ospite": 1.3,
+    "matrice": [
+     [
+      0.05531,
+      0.06023,
+      0.0424,
+      0.01836,
+      0.00596,
+      0.00155
+     ],
+     [
+      0.07996,
+      0.1155,
+      0.07173,
+      0.03106,
+      0.01009,
+      0.00262
+     ],
+     [
+      0.07191,
+      0.09341,
+      0.06067,
+      0.02627,
+      0.00853,
+      0.00222
+     ],
+     [
+      0.04055,
+      0.05268,
+      0.03421,
+      0.01481,
+      0.00481,
+      0.00125
+     ],
+     [
+      0.01715,
+      0.02228,
+      0.01447,
+      0.00627,
+      0.00203,
+      0.00053
+     ],
+     [
+      0.0058,
+      0.00754,
+      0.0049,
+      0.00212,
+      0.00069,
+      0.00018
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1155
+     },
+     {
+      "risultato": "2-1",
+      "p": 0.0934
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.08
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.0719
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0717
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.4617,
+      "X": 0.2485,
+      "2": 0.2898
+     },
+     "btts": {
+      "si": 0.5983,
+      "no": 0.4017
+     },
+     "ou_1.5": {
+      "over": 0.8045,
+      "under": 0.1955
+     },
+     "ou_2.5": {
+      "over": 0.5747,
+      "under": 0.4253
+     },
+     "ou_3.5": {
+      "over": 0.3506,
+      "under": 0.6494
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Levante",
+    "partite": 20,
+    "gol_fatti": 1.45,
+    "gol_subiti": 1.6,
+    "gol_totali": 29,
+    "in_porta_totali": 89,
+    "attesi_dai_tiri": 27.7,
+    "scarto_conversione": 1.3,
+    "vantaggio_casa": 1.61,
+    "casa": {
+     "partite": 9,
+     "gol_fatti": 2.33,
+     "gol_subiti": 1.56,
+     "tiri": 18.2,
+     "in_porta": 6.4,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 11.9,
+     "corner": 5.7,
+     "corner_subiti": 4.7,
+     "falli": 10.9,
+     "cartellini": 1.8,
+     "gialli": 15,
+     "rossi": 1,
+     "precisione_tiri": 0.354,
+     "over_25": 0.556,
+     "gol_gol": 0.556,
+     "clean_sheet": 0.333,
+     "a_secco": 0.111,
+     "con_avanzate": 5,
+     "possesso": 41.1,
+     "passaggi": 382.0,
+     "precisione_passaggi": 0.807,
+     "precisione_cross": 0.284,
+     "precisione_lanci": 0.455,
+     "contrasti": 16.2,
+     "intercetti": 7.6,
+     "respinte": 25.2,
+     "parate": 2.8,
+     "fuorigioco": 1.2,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 11,
+     "gol_fatti": 0.73,
+     "gol_subiti": 1.64,
+     "tiri": 9.5,
+     "in_porta": 2.8,
+     "in_porta_subiti": 5.8,
+     "tiri_subiti": 15.5,
+     "corner": 3.5,
+     "corner_subiti": 4.7,
+     "falli": 10.3,
+     "cartellini": 1.7,
+     "gialli": 19,
+     "rossi": 0,
+     "precisione_tiri": 0.298,
+     "over_25": 0.545,
+     "gol_gol": 0.545,
+     "clean_sheet": 0.364,
+     "a_secco": 0.455,
+     "con_avanzate": 7,
+     "possesso": 44.1,
+     "passaggi": 391.0,
+     "precisione_passaggi": 0.824,
+     "precisione_cross": 0.19,
+     "precisione_lanci": 0.443,
+     "contrasti": 17.9,
+     "intercetti": 8.1,
+     "respinte": 22.3,
+     "parate": 4.3,
+     "fuorigioco": 0.6,
+     "tiri_respinti": 1.6
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Elche",
+    "partite": 20,
+    "gol_fatti": 1.25,
+    "gol_subiti": 1.5,
+    "gol_totali": 25,
+    "in_porta_totali": 78,
+    "attesi_dai_tiri": 24.3,
+    "scarto_conversione": 0.7,
+    "vantaggio_casa": -0.5,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.7,
+     "tiri": 12.8,
+     "in_porta": 3.7,
+     "in_porta_subiti": 4.4,
+     "tiri_subiti": 11.8,
+     "corner": 6.0,
+     "corner_subiti": 4.0,
+     "falli": 14.2,
+     "cartellini": 2.6,
+     "gialli": 26,
+     "rossi": 0,
+     "precisione_tiri": 0.289,
+     "over_25": 0.4,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.3,
+     "a_secco": 0.4,
+     "con_avanzate": 6,
+     "possesso": 57.2,
+     "passaggi": 538.0,
+     "precisione_passaggi": 0.887,
+     "precisione_cross": 0.244,
+     "precisione_lanci": 0.599,
+     "contrasti": 14.2,
+     "intercetti": 9.7,
+     "respinte": 13.2,
+     "parate": 2.7,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 2.7
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.5,
+     "gol_subiti": 1.3,
+     "tiri": 9.4,
+     "in_porta": 4.1,
+     "in_porta_subiti": 4.9,
+     "tiri_subiti": 14.5,
+     "corner": 3.3,
+     "corner_subiti": 5.0,
+     "falli": 13.2,
+     "cartellini": 2.6,
+     "gialli": 23,
+     "rossi": 3,
+     "precisione_tiri": 0.436,
+     "over_25": 0.6,
+     "gol_gol": 0.8,
+     "clean_sheet": 0.2,
+     "a_secco": 0.1,
+     "con_avanzate": 6,
+     "possesso": 45.7,
+     "passaggi": 429.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.309,
+     "precisione_lanci": 0.418,
+     "contrasti": 16.0,
+     "intercetti": 9.0,
+     "respinte": 28.0,
+     "parate": 3.5,
+     "fuorigioco": 1.2,
+     "tiri_respinti": 2.5
+    }
+   },
+   "forma_casa": {
+    "squadra": "Levante",
+    "partite": 6,
+    "gol_fatti": 1.33,
+    "gol_subiti": 1.5,
+    "gol_totali": 8,
+    "in_porta_totali": 25,
+    "attesi_dai_tiri": 7.8,
+    "scarto_conversione": 0.2,
+    "vantaggio_casa": 1.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 2.0,
+     "gol_subiti": 2.0,
+     "tiri": 17.3,
+     "in_porta": 6.3,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 16.7,
+     "corner": 4.3,
+     "corner_subiti": 4.7,
+     "falli": 9.0,
+     "cartellini": 1.3,
+     "gialli": 4,
+     "rossi": 0,
+     "precisione_tiri": 0.365,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 46.9,
+     "passaggi": 429.0,
+     "precisione_passaggi": 0.818,
+     "precisione_cross": 0.317,
+     "precisione_lanci": 0.459,
+     "contrasti": 16.7,
+     "intercetti": 6.7,
+     "respinte": 24.0,
+     "parate": 2.7,
+     "fuorigioco": 0.3,
+     "tiri_respinti": 5.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.0,
+     "tiri": 7.7,
+     "in_porta": 2.0,
+     "in_porta_subiti": 5.3,
+     "tiri_subiti": 17.7,
+     "corner": 3.0,
+     "corner_subiti": 3.7,
+     "falli": 11.3,
+     "cartellini": 2.3,
+     "gialli": 7,
+     "rossi": 0,
+     "precisione_tiri": 0.261,
+     "over_25": 0.333,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 44.3,
+     "passaggi": 413.0,
+     "precisione_passaggi": 0.829,
+     "precisione_cross": 0.231,
+     "precisione_lanci": 0.417,
+     "contrasti": 13.7,
+     "intercetti": 6.7,
+     "respinte": 20.0,
+     "parate": 4.7,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 0.7
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Elche",
+    "partite": 6,
+    "gol_fatti": 1.0,
+    "gol_subiti": 0.67,
+    "gol_totali": 6,
+    "in_porta_totali": 22,
+    "attesi_dai_tiri": 6.8,
+    "scarto_conversione": -0.8,
+    "vantaggio_casa": -2.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 0.0,
+     "gol_subiti": 1.0,
+     "tiri": 14.0,
+     "in_porta": 2.0,
+     "in_porta_subiti": 4.0,
+     "tiri_subiti": 10.0,
+     "corner": 6.7,
+     "corner_subiti": 4.0,
+     "falli": 13.3,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.143,
+     "over_25": 0.0,
+     "gol_gol": 0.0,
+     "clean_sheet": 0.333,
+     "a_secco": 1.0,
+     "con_avanzate": 3,
+     "possesso": 61.2,
+     "passaggi": 586.0,
+     "precisione_passaggi": 0.902,
+     "precisione_cross": 0.246,
+     "precisione_lanci": 0.648,
+     "contrasti": 13.7,
+     "intercetti": 8.0,
+     "respinte": 13.3,
+     "parate": 3.0,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 2.0,
+     "gol_subiti": 0.33,
+     "tiri": 10.7,
+     "in_porta": 5.3,
+     "in_porta_subiti": 5.3,
+     "tiri_subiti": 20.3,
+     "corner": 3.7,
+     "corner_subiti": 5.3,
+     "falli": 9.0,
+     "cartellini": 3.3,
+     "gialli": 9,
+     "rossi": 1,
+     "precisione_tiri": 0.5,
+     "over_25": 0.667,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.667,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 39.9,
+     "passaggi": 353.0,
+     "precisione_passaggi": 0.775,
+     "precisione_cross": 0.318,
+     "precisione_lanci": 0.415,
+     "contrasti": 15.3,
+     "intercetti": 9.7,
+     "respinte": 33.3,
+     "parate": 4.7,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 2.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 2.33,
+     "difesa": 1.3,
+     "media": 1.81
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 18.2,
+     "difesa": 14.5,
+     "media": 16.4
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 6.4,
+     "difesa": 4.9,
+     "media": 5.7
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.7,
+     "difesa": 5.0,
+     "media": 5.3
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 41.1,
+     "difesa": 45.7,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-01-23",
+     "casa": "Levante",
+     "ospite": "Elche",
+     "gol_casa": 3,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-08-29",
+     "casa": "Elche",
+     "ospite": "Levante",
+     "gol_casa": 2,
+     "gol_ospite": 0
     }
    ]
   },
@@ -194879,7 +196367,7 @@
       0.00016
      ],
      [
-      0.09193,
+      0.09194,
       0.07148,
       0.02779,
       0.0072,
@@ -195861,9 +197349,9 @@
     "gol_attesi_ospite": 0.67,
     "matrice": [
      [
-      0.09007,
+      0.09006,
       0.0508,
-      0.01908,
+      0.01907,
       0.00428,
       0.00072,
       0.0001
@@ -195885,7 +197373,7 @@
       0.00016
      ],
      [
-      0.08205,
+      0.08206,
       0.05524,
       0.01859,
       0.00417,
@@ -196865,7 +198353,7 @@
       0.03422,
       0.06006,
       0.05272,
-      0.03085,
+      0.03084,
       0.01354,
       0.00475
      ],
@@ -197358,7 +198846,7 @@
      [
       0.03906,
       0.07727,
-      0.06169,
+      0.0617,
       0.03473,
       0.01466,
       0.00495
@@ -197373,7 +198861,7 @@
      ],
      [
       0.03728,
-      0.06296,
+      0.06295,
       0.05316,
       0.02992,
       0.01263,
@@ -197391,7 +198879,7 @@
       0.00964,
       0.01627,
       0.01374,
-      0.00774,
+      0.00773,
       0.00327,
       0.0011
      ]
@@ -197795,7 +199283,7 @@
     0.5249
    ],
    "p_modello": [
-    0.1623,
+    0.1624,
     0.3132,
     0.5245
    ],
@@ -197816,8 +199304,8 @@
     "matrice": [
      [
       0.1691,
-      0.19632,
-      0.12676,
+      0.19631,
+      0.12675,
       0.05278,
       0.01648,
       0.00412
@@ -197826,7 +199314,7 @@
       0.08567,
       0.12193,
       0.07201,
-      0.02999,
+      0.02998,
       0.00936,
       0.00234
      ],
@@ -197839,7 +199327,7 @@
       0.00066
      ],
      [
-      0.00496,
+      0.00497,
       0.0062,
       0.00387,
       0.00161,
@@ -197887,7 +199375,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.1623,
+      "1": 0.1624,
       "X": 0.3132,
       "2": 0.5245
      },
@@ -198284,7 +199772,7 @@
      [
       0.05564,
       0.06451,
-      0.05108,
+      0.05109,
       0.02453,
       0.00884,
       0.00255
@@ -198823,7 +200311,7 @@
      ],
      [
       0.00676,
-      0.0074,
+      0.00741,
       0.00405,
       0.00148,
       0.00041,
@@ -240691,7 +242179,7 @@
    "p_modello": [
     0.3163,
     0.3242,
-    0.3595
+    0.3594
    ],
    "margine": 0.0714,
    "margine_migliore": null,
@@ -240709,8 +242197,8 @@
     "gol_attesi_ospite": 1.02,
     "matrice": [
      [
-      0.14661,
-      0.13716,
+      0.1466,
+      0.13715,
       0.07339,
       0.02503,
       0.0064,
@@ -240720,7 +242208,7 @@
       0.12569,
       0.1414,
       0.06908,
-      0.02355,
+      0.02356,
       0.00602,
       0.00123
      ],
@@ -240728,8 +242216,8 @@
       0.06213,
       0.06356,
       0.03251,
-      0.01108,
-      0.00283,
+      0.01109,
+      0.00284,
       0.00058
      ],
      [
@@ -240768,7 +242256,7 @@
      },
      {
       "risultato": "0-1",
-      "p": 0.1372
+      "p": 0.1371
      },
      {
       "risultato": "1-0",
@@ -240783,15 +242271,15 @@
      "1x2": {
       "1": 0.3163,
       "X": 0.3242,
-      "2": 0.3595
+      "2": 0.3594
      },
      "btts": {
       "si": 0.3969,
       "no": 0.6031
      },
      "ou_1.5": {
-      "over": 0.5905,
-      "under": 0.4095
+      "over": 0.5906,
+      "under": 0.4094
      },
      "ou_2.5": {
       "over": 0.3136,
@@ -241696,7 +243184,7 @@
      [
       0.0887,
       0.09888,
-      0.0479,
+      0.04789,
       0.01619,
       0.00411,
       0.00083
@@ -242192,7 +243680,7 @@
      [
       0.10599,
       0.11871,
-      0.05776,
+      0.05775,
       0.01961,
       0.00499,
       0.00102
@@ -242711,7 +244199,7 @@
       0.08914,
       0.08806,
       0.0435,
-      0.01432,
+      0.01433,
       0.00354,
       0.0007
      ],
@@ -243712,8 +245200,8 @@
     "gol_attesi_ospite": 0.69,
     "matrice": [
      [
-      0.0849,
-      0.05078,
+      0.08489,
+      0.05077,
       0.01926,
       0.00445,
       0.00077,
@@ -244196,7 +245684,7 @@
      [
       0.05132,
       0.06529,
-      0.05367,
+      0.05366,
       0.02727,
       0.01039,
       0.00317
@@ -244690,8 +246178,8 @@
     "gol_attesi_ospite": 1.05,
     "matrice": [
      [
-      0.02611,
-      0.02107,
+      0.0261,
+      0.02106,
       0.01267,
       0.00443,
       0.00116,
@@ -244699,7 +246187,7 @@
      ],
      [
       0.05962,
-      0.06889,
+      0.06888,
       0.03452,
       0.01207,
       0.00317,
@@ -291222,23 +292710,23 @@
     "matrice": [
      [
       0.02032,
-      0.03534,
+      0.03535,
       0.05332,
-      0.04694,
+      0.04693,
       0.03099,
       0.01637
      ],
      [
-      0.01853,
+      0.01854,
       0.06727,
       0.08218,
-      0.07235,
-      0.04777,
+      0.07234,
+      0.04776,
       0.02523
      ],
      [
       0.01816,
-      0.04796,
+      0.04797,
       0.06334,
       0.05576,
       0.03681,
@@ -291246,7 +292734,7 @@
      ],
      [
       0.00933,
-      0.02464,
+      0.02465,
       0.03254,
       0.02865,
       0.01891,
@@ -291732,14 +293220,14 @@
     "matrice": [
      [
       0.01798,
-      0.02018,
+      0.02019,
       0.02407,
       0.0154,
       0.00739,
       0.00284
      ],
      [
-      0.02672,
+      0.02673,
       0.06561,
       0.05824,
       0.03725,
@@ -291749,7 +293237,7 @@
      [
       0.03826,
       0.07342,
-      0.07044,
+      0.07045,
       0.04506,
       0.02162,
       0.0083
@@ -291758,7 +293246,7 @@
       0.03085,
       0.05921,
       0.05681,
-      0.03634,
+      0.03633,
       0.01743,
       0.00669
      ],
@@ -291766,7 +293254,7 @@
       0.01866,
       0.03581,
       0.03436,
-      0.02198,
+      0.02197,
       0.01054,
       0.00405
      ],
@@ -291820,8 +293308,8 @@
       "under": 0.1928
      },
      "ou_3.5": {
-      "over": 0.6293,
-      "under": 0.3707
+      "over": 0.6292,
+      "under": 0.3708
      }
     }
    },
@@ -292206,7 +293694,7 @@
       0.00011
      ],
      [
-      0.05618,
+      0.05619,
       0.06025,
       0.0256,
       0.00784,
@@ -292675,7 +294163,7 @@
    ],
    "p_modello": [
     0.4211,
-    0.2467,
+    0.2466,
     0.3322
    ],
    "margine": 0.0844,
@@ -292767,7 +294255,7 @@
     "mercati": {
      "1x2": {
       "1": 0.4211,
-      "X": 0.2467,
+      "X": 0.2466,
       "2": 0.3322
      },
      "btts": {
@@ -292783,8 +294271,8 @@
       "under": 0.3661
      },
      "ou_3.5": {
-      "over": 0.4124,
-      "under": 0.5876
+      "over": 0.4123,
+      "under": 0.5877
      }
     }
    },
@@ -293190,7 +294678,7 @@
     "gol_attesi_ospite": 1.2,
     "matrice": [
      [
-      0.05186,
+      0.05185,
       0.04438,
       0.03165,
       0.0127,
@@ -293680,8 +295168,8 @@
       2e-05
      ],
      [
-      0.06755,
-      0.04769,
+      0.06756,
+      0.04768,
       0.01368,
       0.00283,
       0.00044,
@@ -294155,8 +295643,8 @@
     "matrice": [
      [
       0.036,
-      0.02266,
-      0.01356,
+      0.02267,
+      0.01355,
       0.00429,
       0.00102,
       0.00019
@@ -294178,7 +295666,7 @@
       0.00063
      ],
      [
-      0.08372,
+      0.08373,
       0.07946,
       0.0377,
       0.01193,
@@ -294195,7 +295683,7 @@
      ],
      [
       0.02734,
-      0.02594,
+      0.02595,
       0.01231,
       0.00389,
       0.00092,
@@ -294625,12 +296113,12 @@
       0.0836,
       0.08101,
       0.0473,
-      0.02071,
+      0.02072,
       0.00726
      ],
      [
       0.05392,
-      0.11893,
+      0.11892,
       0.09637,
       0.05627,
       0.02464,
@@ -294638,14 +296126,14 @@
      ],
      [
       0.03736,
-      0.06545,
+      0.06544,
       0.05732,
       0.03347,
       0.01466,
       0.00513
      ],
      [
-      0.01482,
+      0.01481,
       0.02595,
       0.02273,
       0.01327,
@@ -294698,8 +296186,8 @@
       "2": 0.4966
      },
      "btts": {
-      "si": 0.5839,
-      "no": 0.4161
+      "si": 0.5838,
+      "no": 0.4162
      },
      "ou_1.5": {
       "over": 0.8008,
@@ -295132,7 +296620,7 @@
     "matrice": [
      [
       0.05173,
-      0.04832,
+      0.04833,
       0.03711,
       0.01619,
       0.0053,
@@ -295143,19 +296631,19 @@
       0.11219,
       0.06792,
       0.02963,
-      0.0097,
+      0.00969,
       0.00254
      ],
      [
       0.07258,
       0.09498,
-      0.06216,
-      0.02712,
+      0.06215,
+      0.02711,
       0.00887,
       0.00232
      ],
      [
-      0.04427,
+      0.04428,
       0.05794,
       0.03792,
       0.01654,
@@ -295208,8 +296696,8 @@
       "2": 0.2662
      },
      "btts": {
-      "si": 0.6212,
-      "no": 0.3788
+      "si": 0.6211,
+      "no": 0.3789
      },
      "ou_1.5": {
       "over": 0.829,
@@ -409022,7 +410510,7 @@
       0.00129
      ],
      [
-      0.0859,
+      0.08589,
       0.09067,
       0.04786,
       0.01684,
@@ -409032,13 +410520,13 @@
      [
       0.04159,
       0.04391,
-      0.02317,
+      0.02318,
       0.00815,
       0.00215,
       0.00045
      ],
      [
-      0.01511,
+      0.0151,
       0.01595,
       0.00842,
       0.00296,
@@ -409469,7 +410957,7 @@
    ],
    "p_modello": [
     0.7887,
-    0.1243,
+    0.1244,
     0.087
    ],
    "margine": 0.0798,
@@ -409504,7 +410992,7 @@
       0.00067
      ],
      [
-      0.05876,
+      0.05877,
       0.06963,
       0.04125,
       0.01629,
@@ -409513,7 +411001,7 @@
      ],
      [
       0.06719,
-      0.07961,
+      0.07962,
       0.04717,
       0.01863,
       0.00552,
@@ -409521,9 +411009,9 @@
      ],
      [
       0.05762,
-      0.06828,
+      0.06827,
       0.04045,
-      0.01597,
+      0.01598,
       0.00473,
       0.00112
      ],
@@ -409561,7 +411049,7 @@
     "mercati": {
      "1x2": {
       "1": 0.7887,
-      "X": 0.1243,
+      "X": 0.1244,
       "2": 0.087
      },
      "btts": {
@@ -409946,7 +411434,7 @@
     "matrice": [
      [
       0.03232,
-      0.01489,
+      0.0149,
       0.0084,
       0.00224,
       0.00045,
@@ -409974,10 +411462,10 @@
       0.03218,
       0.00859,
       0.00172,
-      0.00027
+      0.00028
      ],
      [
-      0.07143,
+      0.07142,
       0.05717,
       0.02288,
       0.0061,
@@ -410456,7 +411944,7 @@
     "matrice": [
      [
       0.11737,
-      0.14235,
+      0.14234,
       0.11389,
       0.0559,
       0.02058,
@@ -410909,7 +412397,7 @@
    "p_modello": [
     0.2546,
     0.3054,
-    0.4399
+    0.44
    ],
    "margine": null,
    "margine_migliore": null,
@@ -410927,7 +412415,7 @@
     "gol_attesi_ospite": 1.33,
     "matrice": [
      [
-      0.11596,
+      0.11597,
       0.12301,
       0.09029,
       0.0399,
@@ -410935,7 +412423,7 @@
       0.00351
      ],
      [
-      0.08438,
+      0.08439,
       0.14258,
       0.08575,
       0.03789,
@@ -410943,10 +412431,10 @@
       0.00333
      ],
      [
-      0.04635,
+      0.04634,
       0.06144,
       0.04072,
-      0.018,
+      0.01799,
       0.00596,
       0.00158
      ],
@@ -411001,7 +412489,7 @@
      "1x2": {
       "1": 0.2546,
       "X": 0.3054,
-      "2": 0.4399
+      "2": 0.44
      },
      "btts": {
       "si": 0.4635,
@@ -411376,7 +412864,7 @@
    "p_modello": [
     0.4706,
     0.2824,
-    0.247
+    0.2471
    ],
    "margine": 0.0802,
    "margine_migliore": null,
@@ -411412,7 +412900,7 @@
      [
       0.08929,
       0.09281,
-      0.04823,
+      0.04824,
       0.01671,
       0.00434,
       0.0009
@@ -411468,7 +412956,7 @@
      "1x2": {
       "1": 0.4706,
       "X": 0.2824,
-      "2": 0.247
+      "2": 0.2471
      },
      "btts": {
       "si": 0.5171,
@@ -411904,7 +413392,7 @@
     "gol_attesi_ospite": 1.44,
     "matrice": [
      [
-      0.10408,
+      0.10407,
       0.11847,
       0.09441,
       0.04527,
@@ -411916,7 +413404,7 @@
       0.13826,
       0.09022,
       0.04326,
-      0.01555,
+      0.01556,
       0.00447
      ],
      [
@@ -412415,7 +413903,7 @@
     "matrice": [
      [
       0.05087,
-      0.02165,
+      0.02166,
       0.00962,
       0.00213,
       0.00035,
@@ -412499,8 +413987,8 @@
       "under": 0.1728
      },
      "ou_2.5": {
-      "over": 0.6059,
-      "under": 0.3941
+      "over": 0.6058,
+      "under": 0.3942
      },
      "ou_3.5": {
       "over": 0.3822,
@@ -412870,6 +414358,473 @@
      "gol_ospite": 0
     }
    ]
+  },
+  {
+   "id": "buyuksehyr-corum",
+   "casa": "Buyuksehyr",
+   "ospite": "Corum",
+   "data": "2026-11-23",
+   "ora": "18:00",
+   "quote": {
+    "mercato_unico": [
+     1.87,
+     3.75,
+     3.55
+    ]
+   },
+   "p_mercato": [
+    0.5036,
+    0.2409,
+    0.2556
+   ],
+   "p_modello": [
+    0.5664,
+    0.2035,
+    0.23
+   ],
+   "margine": 0.0831,
+   "margine_migliore": null,
+   "quote_da": "unico",
+   "campionato": "superlig",
+   "casa_esteso": "Istanbul Basaksehir",
+   "ospite_esteso": "Çorum FK",
+   "stadio": {
+    "nome": "Basaksehir Fatih Terim Stadium",
+    "citta": "Istanbul",
+    "paese": "Türkiye"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 2.46,
+    "gol_attesi_ospite": 1.56,
+    "matrice": [
+     [
+      0.02512,
+      0.02109,
+      0.02193,
+      0.0114,
+      0.00444,
+      0.00138
+     ],
+     [
+      0.0373,
+      0.0762,
+      0.05388,
+      0.02799,
+      0.01091,
+      0.0034
+     ],
+     [
+      0.05449,
+      0.08493,
+      0.06618,
+      0.03439,
+      0.0134,
+      0.00418
+     ],
+     [
+      0.04462,
+      0.06954,
+      0.0542,
+      0.02816,
+      0.01097,
+      0.00342
+     ],
+     [
+      0.0274,
+      0.04271,
+      0.03329,
+      0.01729,
+      0.00674,
+      0.0021
+     ],
+     [
+      0.01346,
+      0.02099,
+      0.01635,
+      0.0085,
+      0.00331,
+      0.00103
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "2-1",
+      "p": 0.0849
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.0762
+     },
+     {
+      "risultato": "3-1",
+      "p": 0.0695
+     },
+     {
+      "risultato": "2-2",
+      "p": 0.0662
+     },
+     {
+      "risultato": "2-0",
+      "p": 0.0545
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.5664,
+      "X": 0.2035,
+      "2": 0.23
+     },
+     "btts": {
+      "si": 0.7289,
+      "no": 0.2711
+     },
+     "ou_1.5": {
+      "over": 0.9165,
+      "under": 0.0835
+     },
+     "ou_2.5": {
+      "over": 0.7639,
+      "under": 0.2361
+     },
+     "ou_3.5": {
+      "over": 0.5691,
+      "under": 0.4309
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Buyuksehyr",
+    "partite": 20,
+    "gol_fatti": 1.65,
+    "gol_subiti": 1.25,
+    "gol_totali": 33,
+    "in_porta_totali": 96,
+    "attesi_dai_tiri": 30.0,
+    "scarto_conversione": 3.0,
+    "vantaggio_casa": 1.9,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 2.6,
+     "gol_subiti": 0.7,
+     "tiri": 16.8,
+     "in_porta": 6.7,
+     "in_porta_subiti": 3.1,
+     "tiri_subiti": 9.4,
+     "corner": 4.8,
+     "corner_subiti": 3.6,
+     "falli": 14.7,
+     "cartellini": 2.4,
+     "gialli": 23,
+     "rossi": 1,
+     "precisione_tiri": 0.399,
+     "over_25": 0.7,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.6,
+     "a_secco": 0.1,
+     "con_avanzate": 6,
+     "possesso": 54.4,
+     "passaggi": 499.0,
+     "precisione_passaggi": 0.862,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 8.0,
+     "intercetti": 0.0,
+     "respinte": 20.0,
+     "parate": 2.3,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 4.2
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 0.7,
+     "gol_subiti": 1.8,
+     "tiri": 11.1,
+     "in_porta": 2.9,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 16.0,
+     "corner": 4.2,
+     "corner_subiti": 5.4,
+     "falli": 11.7,
+     "cartellini": 2.0,
+     "gialli": 19,
+     "rossi": 1,
+     "precisione_tiri": 0.261,
+     "over_25": 0.6,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.2,
+     "a_secco": 0.5,
+     "con_avanzate": 5,
+     "possesso": 46.7,
+     "passaggi": 369.0,
+     "precisione_passaggi": 0.776,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.4,
+     "intercetti": 0.0,
+     "respinte": 23.0,
+     "parate": 3.8,
+     "fuorigioco": 0.8,
+     "tiri_respinti": 2.6
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Corum",
+    "partite": 11,
+    "gol_fatti": 1.91,
+    "gol_subiti": 1.91,
+    "gol_totali": 21,
+    "in_porta_totali": 57,
+    "attesi_dai_tiri": 17.8,
+    "scarto_conversione": 3.2,
+    "vantaggio_casa": -1.3,
+    "casa": {
+     "partite": 5,
+     "gol_fatti": 1.2,
+     "gol_subiti": 1.8,
+     "tiri": 15.8,
+     "in_porta": 5.6,
+     "in_porta_subiti": 4.0,
+     "tiri_subiti": 9.6,
+     "corner": 5.4,
+     "corner_subiti": 3.0,
+     "falli": 15.8,
+     "cartellini": 2.0,
+     "gialli": 10,
+     "rossi": 0,
+     "precisione_tiri": 0.354,
+     "over_25": 0.8,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.2,
+     "a_secco": 0.4,
+     "con_avanzate": 5,
+     "possesso": 58.2,
+     "passaggi": 547.0,
+     "precisione_passaggi": 0.893,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.4,
+     "intercetti": 0.0,
+     "respinte": 15.0,
+     "parate": 2.4,
+     "fuorigioco": 1.6,
+     "tiri_respinti": 4.6
+    },
+    "trasferta": {
+     "partite": 6,
+     "gol_fatti": 2.5,
+     "gol_subiti": 2.0,
+     "tiri": 10.7,
+     "in_porta": 4.8,
+     "in_porta_subiti": 6.0,
+     "tiri_subiti": 19.0,
+     "corner": 2.8,
+     "corner_subiti": 7.2,
+     "falli": 11.5,
+     "cartellini": 2.0,
+     "gialli": 11,
+     "rossi": 1,
+     "precisione_tiri": 0.453,
+     "over_25": 0.833,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.167,
+     "a_secco": 0.167,
+     "con_avanzate": 6,
+     "possesso": 46.7,
+     "passaggi": 410.0,
+     "precisione_passaggi": 0.808,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 15.3,
+     "intercetti": 0.0,
+     "respinte": 31.7,
+     "parate": 4.0,
+     "fuorigioco": 1.7,
+     "tiri_respinti": 2.5
+    }
+   },
+   "forma_casa": {
+    "squadra": "Buyuksehyr",
+    "partite": 6,
+    "gol_fatti": 2.17,
+    "gol_subiti": 1.0,
+    "gol_totali": 13,
+    "in_porta_totali": 36,
+    "attesi_dai_tiri": 11.3,
+    "scarto_conversione": 1.7,
+    "vantaggio_casa": 3.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 3.67,
+     "gol_subiti": 1.0,
+     "tiri": 18.7,
+     "in_porta": 9.0,
+     "in_porta_subiti": 2.7,
+     "tiri_subiti": 9.3,
+     "corner": 5.0,
+     "corner_subiti": 4.7,
+     "falli": 17.0,
+     "cartellini": 2.0,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.482,
+     "over_25": 1.0,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 54.4,
+     "passaggi": 497.0,
+     "precisione_passaggi": 0.869,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 5.7,
+     "intercetti": 0.0,
+     "respinte": 23.0,
+     "parate": 1.7,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 4.7
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 1.0,
+     "tiri": 10.3,
+     "in_porta": 3.0,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 15.0,
+     "corner": 4.7,
+     "corner_subiti": 5.0,
+     "falli": 12.0,
+     "cartellini": 1.3,
+     "gialli": 4,
+     "rossi": 0,
+     "precisione_tiri": 0.29,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.667,
+     "con_avanzate": 3,
+     "possesso": 43.0,
+     "passaggi": 320.0,
+     "precisione_passaggi": 0.713,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.7,
+     "intercetti": 0.0,
+     "respinte": 28.0,
+     "parate": 3.3,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 2.3
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Corum",
+    "partite": 6,
+    "gol_fatti": 1.5,
+    "gol_subiti": 1.83,
+    "gol_totali": 9,
+    "in_porta_totali": 32,
+    "attesi_dai_tiri": 10.0,
+    "scarto_conversione": -1.0,
+    "vantaggio_casa": -1.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.67,
+     "tiri": 14.7,
+     "in_porta": 5.7,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 11.3,
+     "corner": 4.0,
+     "corner_subiti": 4.0,
+     "falli": 17.3,
+     "cartellini": 2.7,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.386,
+     "over_25": 1.0,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 52.2,
+     "passaggi": 483.0,
+     "precisione_passaggi": 0.872,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.3,
+     "intercetti": 0.0,
+     "respinte": 20.3,
+     "parate": 2.7,
+     "fuorigioco": 1.7,
+     "tiri_respinti": 4.3
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 2.0,
+     "gol_subiti": 1.0,
+     "tiri": 11.0,
+     "in_porta": 5.0,
+     "in_porta_subiti": 4.0,
+     "tiri_subiti": 13.3,
+     "corner": 2.7,
+     "corner_subiti": 6.3,
+     "falli": 11.3,
+     "cartellini": 1.7,
+     "gialli": 5,
+     "rossi": 0,
+     "precisione_tiri": 0.455,
+     "over_25": 0.667,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 52.1,
+     "passaggi": 455.0,
+     "precisione_passaggi": 0.813,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.7,
+     "intercetti": 0.0,
+     "respinte": 31.0,
+     "parate": 3.0,
+     "fuorigioco": 0.7,
+     "tiri_respinti": 2.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 2.6,
+     "difesa": 2.0,
+     "media": 2.3
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 16.8,
+     "difesa": 19.0,
+     "media": 17.9
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 6.7,
+     "difesa": 6.0,
+     "media": 6.3
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 4.8,
+     "difesa": 7.2,
+     "media": 6.0
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 54.4,
+     "difesa": 46.7,
+     "media": null
+    }
+   ],
+   "precedenti": []
   },
   {
    "id": "galatasaray-corum",
@@ -464635,7 +466590,7 @@
     "matrice": [
      [
       0.02882,
-      0.03935,
+      0.03936,
       0.03587,
       0.02007,
       0.00843,
@@ -464652,14 +466607,14 @@
      [
       0.05051,
       0.08481,
-      0.07119,
+      0.0712,
       0.03984,
       0.01672,
       0.00562
      ],
      [
       0.03355,
-      0.05633,
+      0.05632,
       0.04728,
       0.02646,
       0.01111,
@@ -464667,7 +466622,7 @@
      ],
      [
       0.01671,
-      0.02806,
+      0.02805,
       0.02355,
       0.01318,
       0.00553,
@@ -464676,7 +466631,7 @@
      [
       0.00666,
       0.01118,
-      0.00939,
+      0.00938,
       0.00525,
       0.0022,
       0.00074
@@ -465147,7 +467102,7 @@
       0.05715,
       0.06124,
       0.04088,
-      0.01697,
+      0.01696,
       0.00528,
       0.00132
      ],
@@ -465634,7 +467589,7 @@
     0.1436
    ],
    "p_modello": [
-    0.6562,
+    0.6563,
     0.2089,
     0.1349
    ],
@@ -465679,7 +467634,7 @@
      ],
      [
       0.08201,
-      0.06612,
+      0.06613,
       0.02666,
       0.00717,
       0.00144,
@@ -465687,7 +467642,7 @@
      ],
      [
       0.04174,
-      0.03365,
+      0.03366,
       0.01357,
       0.00365,
       0.00074,
@@ -465726,7 +467681,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.6562,
+      "1": 0.6563,
       "X": 0.2089,
       "2": 0.1349
      },
@@ -466655,7 +468610,7 @@
      ],
      [
       0.0853,
-      0.12317,
+      0.12316,
       0.07798,
       0.03422,
       0.01126,
@@ -466680,7 +468635,7 @@
      [
       0.01244,
       0.01637,
-      0.01078,
+      0.01077,
       0.00473,
       0.00156,
       0.00041
@@ -466723,16 +468678,16 @@
       "2": 0.3301
      },
      "btts": {
-      "si": 0.5719,
-      "no": 0.4281
+      "si": 0.5718,
+      "no": 0.4282
      },
      "ou_1.5": {
       "over": 0.7749,
       "under": 0.2251
      },
      "ou_2.5": {
-      "over": 0.5324,
-      "under": 0.4676
+      "over": 0.5323,
+      "under": 0.4677
      },
      "ou_3.5": {
       "over": 0.3097,
@@ -467129,7 +469084,7 @@
     "matrice": [
      [
       0.04416,
-      0.07552,
+      0.07551,
       0.07834,
       0.05152,
       0.02541,
@@ -467139,13 +469094,13 @@
       0.04601,
       0.10237,
       0.09713,
-      0.06387,
-      0.0315,
+      0.06388,
+      0.03151,
       0.01243
      ],
      [
       0.03094,
-      0.06105,
+      0.06104,
       0.06022,
       0.0396,
       0.01953,
@@ -467157,7 +469112,7 @@
       0.02489,
       0.01637,
       0.00807,
-      0.00318
+      0.00319
      ],
      [
       0.00396,
@@ -467205,8 +469160,8 @@
       "2": 0.5402
      },
      "btts": {
-      "si": 0.6156,
-      "no": 0.3844
+      "si": 0.6157,
+      "no": 0.3843
      },
      "ou_1.5": {
       "over": 0.8343,
@@ -467598,8 +469553,8 @@
       0.07155,
       0.15204,
       0.1736,
-      0.12988,
-      0.07288,
+      0.12989,
+      0.07289,
       0.03272
      ],
      [
@@ -468091,7 +470046,7 @@
     "gol_attesi_ospite": 0.81,
     "matrice": [
      [
-      0.08438,
+      0.08439,
       0.06038,
       0.02624,
       0.00709,
@@ -468109,7 +470064,7 @@
      [
       0.11776,
       0.09539,
-      0.03864,
+      0.03863,
       0.01043,
       0.00211,
       0.00034
@@ -468168,8 +470123,8 @@
       "2": 0.17
      },
      "btts": {
-      "si": 0.4598,
-      "no": 0.5402
+      "si": 0.4597,
+      "no": 0.5403
      },
      "ou_1.5": {
       "over": 0.7224,
@@ -468180,8 +470135,8 @@
       "under": 0.5372
      },
      "ou_3.5": {
-      "over": 0.248,
-      "under": 0.752
+      "over": 0.2479,
+      "under": 0.7521
      }
     }
    },
@@ -519783,7 +521738,7 @@
     "gol_attesi_ospite": 2.46,
     "matrice": [
      [
-      0.04615,
+      0.04614,
       0.06545,
       0.09749,
       0.07988,
@@ -520230,7 +522185,7 @@
     0.2972
    ],
    "p_modello": [
-    0.4609,
+    0.461,
     0.2932,
     0.2459
    ],
@@ -520258,7 +522213,7 @@
       0.00095
      ],
      [
-      0.08596,
+      0.08597,
       0.14038,
       0.06606,
       0.02444,
@@ -520266,7 +522221,7 @@
       0.0015
      ],
      [
-      0.08475,
+      0.08476,
       0.09405,
       0.05219,
       0.0193,
@@ -520322,7 +522277,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.4609,
+      "1": 0.461,
       "X": 0.2932,
       "2": 0.2459
      },
@@ -520746,7 +522701,7 @@
     "gol_attesi_ospite": 0.9,
     "matrice": [
      [
-      0.14381,
+      0.1438,
       0.08439,
       0.0485,
       0.01452,
@@ -520755,7 +522710,7 @@
      ],
      [
       0.12308,
-      0.15537,
+      0.15536,
       0.05918,
       0.01772,
       0.00398,
@@ -520779,7 +522734,7 @@
      ],
      [
       0.0111,
-      0.00997,
+      0.00998,
       0.00448,
       0.00134,
       0.0003,
@@ -522213,7 +524168,7 @@
     0.1322
    ],
    "p_modello": [
-    0.7876,
+    0.7877,
     0.1482,
     0.0641
    ],
@@ -522265,7 +524220,7 @@
       0.00026
      ],
      [
-      0.07296,
+      0.07297,
       0.05755,
       0.0227,
       0.00597,
@@ -522305,7 +524260,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.7876,
+      "1": 0.7877,
       "X": 0.1482,
       "2": 0.0641
      },
@@ -522686,6 +524641,516 @@
      "casa": "PAOK",
      "ospite": "Kifisia",
      "gol_casa": 2,
+     "gol_ospite": 1
+    }
+   ]
+  },
+  {
+   "id": "asteras-tripolis-aris",
+   "casa": "Asteras Tripolis",
+   "ospite": "Aris",
+   "data": "2026-11-23",
+   "ora": "16:00",
+   "quote": {
+    "mercato_unico": [
+     3.4,
+     2.95,
+     2.25
+    ]
+   },
+   "p_mercato": [
+    0.2695,
+    0.3135,
+    0.417
+   ],
+   "p_modello": [
+    0.2714,
+    0.3316,
+    0.397
+   ],
+   "margine": 0.0775,
+   "margine_migliore": null,
+   "quote_da": "unico",
+   "campionato": "super-league-grecia",
+   "casa_esteso": "Asteras Tripoli",
+   "ospite_esteso": null,
+   "stadio": {
+    "nome": "Theodoros Kolokotronis Stadium",
+    "citta": "Tripoli",
+    "paese": "Greece"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 1.0,
+    "gol_attesi_ospite": 1.25,
+    "matrice": [
+     [
+      0.12896,
+      0.10828,
+      0.08251,
+      0.03442,
+      0.01077,
+      0.0027
+     ],
+     [
+      0.08166,
+      0.1553,
+      0.08242,
+      0.03438,
+      0.01076,
+      0.00269
+     ],
+     [
+      0.05256,
+      0.06578,
+      0.04116,
+      0.01717,
+      0.00537,
+      0.00134
+     ],
+     [
+      0.0175,
+      0.0219,
+      0.0137,
+      0.00572,
+      0.00179,
+      0.00045
+     ],
+     [
+      0.00437,
+      0.00547,
+      0.00342,
+      0.00143,
+      0.00045,
+      0.00011
+     ],
+     [
+      0.00087,
+      0.00109,
+      0.00068,
+      0.00029,
+      9e-05,
+      2e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-1",
+      "p": 0.1553
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.129
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.1083
+     },
+     {
+      "risultato": "0-2",
+      "p": 0.0825
+     },
+     {
+      "risultato": "1-2",
+      "p": 0.0824
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.2714,
+      "X": 0.3316,
+      "2": 0.397
+     },
+     "btts": {
+      "si": 0.4746,
+      "no": 0.5254
+     },
+     "ou_1.5": {
+      "over": 0.6811,
+      "under": 0.3189
+     },
+     "ou_2.5": {
+      "over": 0.3907,
+      "under": 0.6093
+     },
+     "ou_3.5": {
+      "over": 0.1906,
+      "under": 0.8094
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Asteras Tripolis",
+    "partite": 20,
+    "gol_fatti": 1.15,
+    "gol_subiti": 1.3,
+    "gol_totali": 23,
+    "in_porta_totali": 76,
+    "attesi_dai_tiri": 23.1,
+    "scarto_conversione": -0.1,
+    "vantaggio_casa": 0.27,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 1.27,
+     "gol_subiti": 0.91,
+     "tiri": 12.5,
+     "in_porta": 4.5,
+     "in_porta_subiti": 3.1,
+     "tiri_subiti": 9.8,
+     "corner": 5.5,
+     "corner_subiti": 4.2,
+     "falli": 15.0,
+     "cartellini": 2.7,
+     "gialli": 29,
+     "rossi": 1,
+     "precisione_tiri": 0.358,
+     "over_25": 0.364,
+     "gol_gol": 0.545,
+     "clean_sheet": 0.273,
+     "a_secco": 0.364,
+     "con_avanzate": 6,
+     "possesso": 50.6,
+     "passaggi": 383.0,
+     "precisione_passaggi": 0.801,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.5,
+     "intercetti": 0.0,
+     "respinte": 22.8,
+     "parate": 1.8,
+     "fuorigioco": 2.3,
+     "tiri_respinti": 2.3
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.78,
+     "tiri": 8.3,
+     "in_porta": 3.0,
+     "in_porta_subiti": 5.7,
+     "tiri_subiti": 14.7,
+     "corner": 3.9,
+     "corner_subiti": 5.4,
+     "falli": 12.4,
+     "cartellini": 2.4,
+     "gialli": 20,
+     "rossi": 2,
+     "precisione_tiri": 0.36,
+     "over_25": 0.667,
+     "gol_gol": 0.778,
+     "clean_sheet": 0.222,
+     "a_secco": 0.222,
+     "con_avanzate": 3,
+     "possesso": 38.2,
+     "passaggi": 349.0,
+     "precisione_passaggi": 0.777,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 20.7,
+     "intercetti": 0.0,
+     "respinte": 34.3,
+     "parate": 3.3,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.3
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Aris",
+    "partite": 20,
+    "gol_fatti": 1.55,
+    "gol_subiti": 1.35,
+    "gol_totali": 31,
+    "in_porta_totali": 100,
+    "attesi_dai_tiri": 30.4,
+    "scarto_conversione": 0.6,
+    "vantaggio_casa": 0.9,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 2.0,
+     "gol_subiti": 0.9,
+     "tiri": 19.4,
+     "in_porta": 6.7,
+     "in_porta_subiti": 2.8,
+     "tiri_subiti": 9.5,
+     "corner": 5.2,
+     "corner_subiti": 3.6,
+     "falli": 15.4,
+     "cartellini": 2.4,
+     "gialli": 23,
+     "rossi": 1,
+     "precisione_tiri": 0.345,
+     "over_25": 0.7,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.4,
+     "a_secco": 0.3,
+     "con_avanzate": 4,
+     "possesso": 58.2,
+     "passaggi": 478.0,
+     "precisione_passaggi": 0.849,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.2,
+     "intercetti": 0.0,
+     "respinte": 19.5,
+     "parate": 1.8,
+     "fuorigioco": 1.5,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.1,
+     "gol_subiti": 1.8,
+     "tiri": 12.2,
+     "in_porta": 3.3,
+     "in_porta_subiti": 3.9,
+     "tiri_subiti": 11.7,
+     "corner": 5.4,
+     "corner_subiti": 3.2,
+     "falli": 17.1,
+     "cartellini": 2.1,
+     "gialli": 20,
+     "rossi": 1,
+     "precisione_tiri": 0.27,
+     "over_25": 0.6,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.2,
+     "a_secco": 0.4,
+     "con_avanzate": 5,
+     "possesso": 55.0,
+     "passaggi": 369.0,
+     "precisione_passaggi": 0.798,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.4,
+     "intercetti": 0.0,
+     "respinte": 20.6,
+     "parate": 2.6,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 4.0
+    }
+   },
+   "forma_casa": {
+    "squadra": "Asteras Tripolis",
+    "partite": 6,
+    "gol_fatti": 1.17,
+    "gol_subiti": 1.83,
+    "gol_totali": 7,
+    "in_porta_totali": 20,
+    "attesi_dai_tiri": 6.1,
+    "scarto_conversione": 0.9,
+    "vantaggio_casa": -0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 0.67,
+     "tiri": 9.3,
+     "in_porta": 4.3,
+     "in_porta_subiti": 2.0,
+     "tiri_subiti": 8.3,
+     "corner": 4.0,
+     "corner_subiti": 4.3,
+     "falli": 17.7,
+     "cartellini": 3.0,
+     "gialli": 9,
+     "rossi": 0,
+     "precisione_tiri": 0.464,
+     "over_25": 0.333,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 50.3,
+     "passaggi": 386.0,
+     "precisione_passaggi": 0.794,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 15.7,
+     "intercetti": 0.0,
+     "respinte": 17.3,
+     "parate": 1.0,
+     "fuorigioco": 2.3,
+     "tiri_respinti": 1.7
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 3.0,
+     "tiri": 7.0,
+     "in_porta": 2.3,
+     "in_porta_subiti": 7.0,
+     "tiri_subiti": 18.7,
+     "corner": 2.0,
+     "corner_subiti": 7.3,
+     "falli": 11.0,
+     "cartellini": 2.0,
+     "gialli": 5,
+     "rossi": 1,
+     "precisione_tiri": 0.333,
+     "over_25": 1.0,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 38.2,
+     "passaggi": 349.0,
+     "precisione_passaggi": 0.777,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 20.7,
+     "intercetti": 0.0,
+     "respinte": 34.3,
+     "parate": 3.3,
+     "fuorigioco": 2.0,
+     "tiri_respinti": 1.3
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Aris",
+    "partite": 6,
+    "gol_fatti": 1.83,
+    "gol_subiti": 1.17,
+    "gol_totali": 11,
+    "in_porta_totali": 26,
+    "attesi_dai_tiri": 7.9,
+    "scarto_conversione": 3.1,
+    "vantaggio_casa": 1.25,
+    "casa": {
+     "partite": 4,
+     "gol_fatti": 2.25,
+     "gol_subiti": 0.75,
+     "tiri": 19.2,
+     "in_porta": 5.0,
+     "in_porta_subiti": 2.5,
+     "tiri_subiti": 8.8,
+     "corner": 5.0,
+     "corner_subiti": 3.5,
+     "falli": 16.0,
+     "cartellini": 1.5,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.26,
+     "over_25": 0.75,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.5,
+     "a_secco": 0.25,
+     "con_avanzate": 4,
+     "possesso": 58.2,
+     "passaggi": 478.0,
+     "precisione_passaggi": 0.849,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 16.2,
+     "intercetti": 0.0,
+     "respinte": 19.5,
+     "parate": 1.8,
+     "fuorigioco": 1.5,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 2,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.0,
+     "tiri": 10.5,
+     "in_porta": 3.0,
+     "in_porta_subiti": 4.0,
+     "tiri_subiti": 13.0,
+     "corner": 6.0,
+     "corner_subiti": 4.0,
+     "falli": 18.5,
+     "cartellini": 2.0,
+     "gialli": 4,
+     "rossi": 0,
+     "precisione_tiri": 0.286,
+     "over_25": 1.0,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 2,
+     "possesso": 58.9,
+     "passaggi": 372.0,
+     "precisione_passaggi": 0.81,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.5,
+     "intercetti": 0.0,
+     "respinte": 18.5,
+     "parate": 1.5,
+     "fuorigioco": 0.0,
+     "tiri_respinti": 2.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 1.27,
+     "difesa": 1.8,
+     "media": 1.54
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 12.5,
+     "difesa": 11.7,
+     "media": 12.1
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 4.5,
+     "difesa": 3.9,
+     "media": 4.2
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 5.5,
+     "difesa": 3.2,
+     "media": 4.3
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 50.6,
+     "difesa": 55.0,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2025-12-20",
+     "casa": "Asteras Tripolis",
+     "ospite": "Aris",
+     "gol_casa": 0,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2025-11-09",
+     "casa": "Aris",
+     "ospite": "Asteras Tripolis",
+     "gol_casa": 0,
+     "gol_ospite": 0
+    },
+    {
+     "data": "2025-05-10",
+     "casa": "Aris",
+     "ospite": "Asteras Tripolis",
+     "gol_casa": 4,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-03-29",
+     "casa": "Asteras Tripolis",
+     "ospite": "Aris",
+     "gol_casa": 0,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2024-12-23",
+     "casa": "Asteras Tripolis",
+     "ospite": "Aris",
+     "gol_casa": 2,
+     "gol_ospite": 1
+    },
+    {
+     "data": "2024-08-31",
+     "casa": "Aris",
+     "ospite": "Asteras Tripolis",
+     "gol_casa": 1,
      "gol_ospite": 1
     }
    ]
@@ -561714,7 +564179,7 @@
      ],
      [
       0.13883,
-      0.08201,
+      0.082,
       0.02422,
       0.00477,
       0.0007,
@@ -562251,7 +564716,7 @@
       0.01065,
       0.00485,
       0.00147,
-      0.00034,
+      0.00033,
       6e-05
      ]
     ],
@@ -562296,8 +564761,8 @@
       "under": 0.4757
      },
      "ou_3.5": {
-      "over": 0.3023,
-      "under": 0.6977
+      "over": 0.3022,
+      "under": 0.6978
      }
     }
    },
@@ -605702,7 +608167,7 @@
     "gol_attesi_ospite": 1.13,
     "matrice": [
      [
-      0.14685,
+      0.14686,
       0.1313,
       0.08352,
       0.0315,
@@ -606674,7 +609139,7 @@
      ],
      [
       0.04704,
-      0.11745,
+      0.11744,
       0.09149,
       0.05333,
       0.02332,
@@ -606691,7 +609156,7 @@
      [
       0.01993,
       0.03485,
-      0.03047,
+      0.03048,
       0.01776,
       0.00777,
       0.00272
@@ -606750,8 +609215,8 @@
       "under": 0.1634
      },
      "ou_2.5": {
-      "over": 0.6121,
-      "under": 0.3879
+      "over": 0.6122,
+      "under": 0.3878
      },
      "ou_3.5": {
       "over": 0.389,
@@ -608124,9 +610589,9 @@
     "gol_attesi_ospite": 1.31,
     "matrice": [
      [
-      0.12208,
+      0.12207,
       0.12323,
-      0.0911,
+      0.09109,
       0.03977,
       0.01302,
       0.00341
@@ -668055,7 +670520,7 @@
     "gol_attesi_ospite": 1.08,
     "matrice": [
      [
-      0.07639,
+      0.0764,
       0.07565,
       0.04242,
       0.01522,
@@ -668063,7 +670528,7 @@
       0.00088
      ],
      [
-      0.10944,
+      0.10945,
       0.12438,
       0.06523,
       0.02341,
@@ -668589,7 +671054,7 @@
       0.00207
      ],
      [
-      0.05702,
+      0.05701,
       0.07254,
       0.04615,
       0.01957,
@@ -669061,15 +671526,15 @@
     "gol_attesi_ospite": 0.95,
     "matrice": [
      [
-      0.04448,
+      0.04447,
       0.03758,
-      0.01888,
+      0.01887,
       0.00595,
       0.00141,
       0.00027
      ],
      [
-      0.09131,
+      0.0913,
       0.0909,
       0.04191,
       0.01322,
@@ -669085,7 +671550,7 @@
       0.00066
      ],
      [
-      0.07693,
+      0.07694,
       0.0728,
       0.03444,
       0.01086,
@@ -669094,7 +671559,7 @@
      ],
      [
       0.04271,
-      0.04041,
+      0.04042,
       0.01912,
       0.00603,
       0.00143,
@@ -669142,8 +671607,8 @@
       "no": 0.4523
      },
      "ou_1.5": {
-      "over": 0.8266,
-      "under": 0.1734
+      "over": 0.8267,
+      "under": 0.1733
      },
      "ou_2.5": {
       "over": 0.6129,
@@ -669543,7 +672008,7 @@
     "gol_attesi_ospite": 1.46,
     "matrice": [
      [
-      0.05411,
+      0.0541,
       0.07189,
       0.05476,
       0.02671,
@@ -669552,18 +672017,18 @@
      ],
      [
       0.07427,
-      0.11596,
+      0.11595,
       0.08267,
-      0.04032,
+      0.04033,
       0.01475,
       0.00432
      ],
      [
       0.0583,
-      0.08531,
+      0.0853,
       0.06241,
       0.03044,
-      0.01113,
+      0.01114,
       0.00326
      ],
      [
@@ -669576,7 +672041,7 @@
      ],
      [
       0.01107,
-      0.0162,
+      0.01621,
       0.01186,
       0.00578,
       0.00212,
@@ -669620,8 +672085,8 @@
       "2": 0.3647
      },
      "btts": {
-      "si": 0.6016,
-      "no": 0.3984
+      "si": 0.6017,
+      "no": 0.3983
      },
      "ou_1.5": {
       "over": 0.7997,
@@ -670010,17 +672475,17 @@
     "gol_attesi_ospite": 1.58,
     "matrice": [
      [
-      0.06802,
-      0.09954,
+      0.06804,
+      0.09956,
       0.08113,
       0.04275,
-      0.0169,
+      0.01689,
       0.00534
      ],
      [
-      0.07181,
-      0.12151,
-      0.0936,
+      0.07182,
+      0.12152,
+      0.09359,
       0.04932,
       0.01949,
       0.00616
@@ -670031,7 +672496,7 @@
       0.05399,
       0.02845,
       0.01124,
-      0.00356
+      0.00355
      ],
      [
       0.01662,
@@ -670045,7 +672510,7 @@
       0.00479,
       0.00758,
       0.00599,
-      0.00316,
+      0.00315,
       0.00125,
       0.00039
      ],
@@ -670065,7 +672530,7 @@
      },
      {
       "risultato": "0-1",
-      "p": 0.0995
+      "p": 0.0996
      },
      {
       "risultato": "1-2",
@@ -670095,8 +672560,8 @@
       "under": 0.2394
      },
      "ou_2.5": {
-      "over": 0.5148,
-      "under": 0.4852
+      "over": 0.5147,
+      "under": 0.4853
      },
      "ou_3.5": {
       "over": 0.2935,
@@ -670987,7 +673452,7 @@
     "gol_attesi_ospite": 0.91,
     "matrice": [
      [
-      0.07888,
+      0.07889,
       0.06583,
       0.03122,
       0.00944,
@@ -670995,7 +673460,7 @@
       0.00039
      ],
      [
-      0.12382,
+      0.12383,
       0.11807,
       0.05219,
       0.01578,
@@ -671021,7 +673486,7 @@
      [
       0.02468,
       0.02239,
-      0.01016,
+      0.01015,
       0.00307,
       0.0007,
       0.00013
@@ -671029,7 +673494,7 @@
      [
       0.00825,
       0.00748,
-      0.0034,
+      0.00339,
       0.00103,
       0.00023,
       4e-05
@@ -671064,8 +673529,8 @@
       "2": 0.2004
      },
      "btts": {
-      "si": 0.4873,
-      "no": 0.5127
+      "si": 0.4872,
+      "no": 0.5128
      },
      "ou_1.5": {
       "over": 0.7315,
@@ -671492,7 +673957,7 @@
      ],
      [
       0.10767,
-      0.13559,
+      0.13558,
       0.07856,
       0.03114,
       0.00926,
@@ -671989,7 +674454,7 @@
      [
       0.12221,
       0.1365,
-      0.07039,
+      0.0704,
       0.02483,
       0.00657,
       0.00139
@@ -672458,22 +674923,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     1.19,
+     1.2,
      7.0,
      11.0
     ]
    },
    "p_mercato": [
-    0.807,
-    0.1216,
-    0.0713
+    0.8032,
+    0.1237,
+    0.0731
    ],
    "p_modello": [
     0.7587,
     0.1359,
     0.1053
    ],
-   "margine": 0.0741,
+   "margine": 0.0671,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "championship",
@@ -672498,7 +674963,7 @@
      ],
      [
       0.04333,
-      0.05243,
+      0.05244,
       0.02923,
       0.01115,
       0.00319,
@@ -672515,14 +674980,14 @@
      [
       0.07158,
       0.08189,
-      0.04685,
-      0.01787,
+      0.04684,
+      0.01786,
       0.00511,
       0.00117
      ],
      [
       0.05549,
-      0.06349,
+      0.06348,
       0.03632,
       0.01385,
       0.00396,
@@ -672552,7 +675017,7 @@
      },
      {
       "risultato": "2-0",
-      "p": 0.0692
+      "p": 0.0693
      },
      {
       "risultato": "4-1",
@@ -672578,8 +675043,8 @@
       "under": 0.2053
      },
      "ou_3.5": {
-      "over": 0.6111,
-      "under": 0.3889
+      "over": 0.611,
+      "under": 0.389
      }
     }
    },
@@ -672957,15 +675422,15 @@
     "matrice": [
      [
       0.08076,
-      0.05049,
+      0.05048,
       0.01802,
       0.00408,
       0.00069,
       9e-05
      ],
      [
-      0.14358,
-      0.10186,
+      0.14357,
+      0.10185,
       0.0337,
       0.00763,
       0.0013,
@@ -672988,16 +675453,16 @@
       0.0001
      ],
      [
-      0.03982,
-      0.02704,
+      0.03983,
+      0.02705,
       0.00918,
       0.00208,
       0.00035,
       5e-05
      ],
      [
-      0.01489,
-      0.01011,
+      0.0149,
+      0.01012,
       0.00343,
       0.00078,
       0.00013,
@@ -673045,8 +675510,8 @@
       "under": 0.5314
      },
      "ou_3.5": {
-      "over": 0.2528,
-      "under": 0.7472
+      "over": 0.2529,
+      "under": 0.7471
      }
     }
    },
@@ -673423,7 +675888,7 @@
     "gol_attesi_ospite": 0.92,
     "matrice": [
      [
-      0.08357,
+      0.08356,
       0.07074,
       0.03387,
       0.01036,
@@ -764716,7 +767181,7 @@
       0.08462,
       0.11217,
       0.08191,
-      0.03874,
+      0.03875,
       0.01375,
       0.0039
      ],
@@ -765662,15 +768127,15 @@
     "gol_attesi_ospite": 1.29,
     "matrice": [
      [
-      0.04978,
+      0.04977,
       0.05763,
       0.03883,
       0.01664,
       0.00535,
-      0.00137
+      0.00138
      ],
      [
-      0.08051,
+      0.0805,
       0.10985,
       0.06882,
       0.02949,
@@ -765678,9 +768143,9 @@
       0.00244
      ],
      [
-      0.07381,
+      0.0738,
       0.09488,
-      0.06098,
+      0.06099,
       0.02613,
       0.0084,
       0.00216
@@ -765713,7 +768178,7 @@
     "risultati_probabili": [
      {
       "risultato": "1-1",
-      "p": 0.1099
+      "p": 0.1098
      },
      {
       "risultato": "2-1",
@@ -766626,7 +769091,7 @@
     "matrice": [
      [
       0.08594,
-      0.09389,
+      0.09388,
       0.05719,
       0.02243,
       0.0066,
@@ -766635,14 +769100,14 @@
      [
       0.10547,
       0.13134,
-      0.07532,
+      0.07531,
       0.02954,
       0.00869,
       0.00204
      ],
      [
       0.07164,
-      0.08429,
+      0.0843,
       0.04959,
       0.01945,
       0.00572,
@@ -767125,10 +769590,10 @@
     "gol_attesi_ospite": 1.74,
     "matrice": [
      [
-      0.0475,
-      0.07499,
-      0.06757,
-      0.03915,
+      0.04749,
+      0.07498,
+      0.06756,
+      0.03914,
       0.01701,
       0.00591
      ],
@@ -767138,13 +769603,13 @@
       0.0925,
       0.05359,
       0.02329,
-      0.00809
+      0.0081
      ],
      [
       0.04192,
       0.07287,
       0.06332,
-      0.03668,
+      0.03669,
       0.01594,
       0.00554
      ],
@@ -767153,7 +769618,7 @@
       0.03325,
       0.0289,
       0.01674,
-      0.00727,
+      0.00728,
       0.00253
      ],
      [
@@ -767210,8 +769675,8 @@
       "under": 0.181
      },
      "ou_2.5": {
-      "over": 0.6003,
-      "under": 0.3997
+      "over": 0.6004,
+      "under": 0.3996
      },
      "ou_3.5": {
       "over": 0.3767,
@@ -767564,7 +770029,7 @@
    "p_modello": [
     0.4633,
     0.2857,
-    0.251
+    0.2509
    ],
    "margine": null,
    "margine_migliore": null,
@@ -767599,7 +770064,7 @@
      ],
      [
       0.09464,
-      0.08603,
+      0.08604,
       0.03911,
       0.01185,
       0.00269,
@@ -767656,7 +770121,7 @@
      "1x2": {
       "1": 0.4633,
       "X": 0.2857,
-      "2": 0.251
+      "2": 0.2509
      },
      "btts": {
       "si": 0.4438,
@@ -768062,7 +770527,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.8101,
+    0.81,
     0.121,
     0.069
    ],
@@ -768154,7 +770619,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.8101,
+      "1": 0.81,
       "X": 0.121,
       "2": 0.069
      },
@@ -768539,7 +771004,7 @@
     "gol_attesi_ospite": 0.69,
     "matrice": [
      [
-      0.12826,
+      0.12825,
       0.08372,
       0.03014,
       0.00697,
@@ -769495,11 +771960,11 @@
       0.12064,
       0.09556,
       0.05177,
-      0.02103,
+      0.02104,
       0.00684
      ],
      [
-      0.03784,
+      0.03783,
       0.06149,
       0.04997,
       0.02707,
@@ -769937,7 +772402,7 @@
    "p_modello": [
     0.5046,
     0.2255,
-    0.2699
+    0.27
    ],
    "margine": null,
    "margine_migliore": null,
@@ -769963,8 +772428,8 @@
       0.00149
      ],
      [
-      0.06772,
-      0.09926,
+      0.06771,
+      0.09925,
       0.06663,
       0.0306,
       0.01054,
@@ -769972,7 +772437,7 @@
      ],
      [
       0.06822,
-      0.09398,
+      0.09397,
       0.06473,
       0.02972,
       0.01024,
@@ -769996,7 +772461,7 @@
      ],
      [
       0.00834,
-      0.01148,
+      0.01149,
       0.00791,
       0.00363,
       0.00125,
@@ -770029,7 +772494,7 @@
      "1x2": {
       "1": 0.5046,
       "X": 0.2255,
-      "2": 0.2699
+      "2": 0.27
      },
      "btts": {
       "si": 0.6431,
@@ -770431,7 +772896,7 @@
       0.11505,
       0.09701,
       0.0409,
-      0.01149,
+      0.0115,
       0.00242,
       0.00041
      ],
@@ -770886,7 +773351,7 @@
      [
       0.04333,
       0.05488,
-      0.04073,
+      0.04072,
       0.01921,
       0.0068,
       0.00192
@@ -770902,7 +773367,7 @@
      [
       0.06494,
       0.09192,
-      0.06504,
+      0.06505,
       0.03069,
       0.01086,
       0.00307
@@ -770918,7 +773383,7 @@
      [
       0.01729,
       0.02447,
-      0.01731,
+      0.01732,
       0.00817,
       0.00289,
       0.00082
@@ -770961,8 +773426,8 @@
       "2": 0.3033
      },
      "btts": {
-      "si": 0.633,
-      "no": 0.367
+      "si": 0.6331,
+      "no": 0.3669
      },
      "ou_1.5": {
       "over": 0.8318,
@@ -771342,9 +773807,9 @@
     "matrice": [
      [
       0.17227,
-      0.12838,
+      0.12839,
       0.05144,
-      0.01338,
+      0.01339,
       0.00261,
       0.00041
      ],
@@ -771365,7 +773830,7 @@
       0.0002
      ],
      [
-      0.02799,
+      0.02798,
       0.02185,
       0.00853,
       0.00222,
@@ -771822,8 +774287,8 @@
       0.0009
      ],
      [
-      0.05949,
-      0.06076,
+      0.05948,
+      0.06075,
       0.03103,
       0.01056,
       0.0027,
@@ -772270,7 +774735,7 @@
     "gol_attesi_ospite": 1.27,
     "matrice": [
      [
-      0.03488,
+      0.03487,
       0.0389,
       0.02608,
       0.011,
@@ -772289,9 +774754,9 @@
       0.07591,
       0.09608,
       0.06081,
-      0.02565,
+      0.02566,
       0.00812,
-      0.00205
+      0.00206
      ],
      [
       0.05464,
@@ -846995,7 +849460,7 @@
      [
       0.02125,
       0.03335,
-      0.02617,
+      0.02616,
       0.01369,
       0.00537,
       0.00169
@@ -847451,7 +849916,7 @@
     "gol_attesi_ospite": 0.92,
     "matrice": [
      [
-      0.10193,
+      0.10194,
       0.09066,
       0.04249,
       0.01304,
@@ -847461,7 +849926,7 @@
      [
       0.13666,
       0.12898,
-      0.0586,
+      0.05861,
       0.01798,
       0.00414,
       0.00076
@@ -847980,7 +850445,7 @@
       0.0978,
       0.09583,
       0.04695,
-      0.01533,
+      0.01534,
       0.00376,
       0.00074
      ],
@@ -848503,7 +850968,7 @@
       0.00019
      ],
      [
-      0.0138,
+      0.01379,
       0.01226,
       0.00545,
       0.00161,
@@ -848962,31 +851427,31 @@
      ],
      [
       0.02905,
-      0.07227,
+      0.07226,
       0.08489,
       0.06734,
-      0.04006,
+      0.04007,
       0.01907
      ],
      [
-      0.02392,
-      0.05692,
-      0.06773,
-      0.05372,
-      0.03196,
-      0.01521
+      0.02391,
+      0.05691,
+      0.06772,
+      0.05373,
+      0.03197,
+      0.01522
      ],
      [
       0.01272,
       0.03027,
       0.03602,
-      0.02857,
+      0.02858,
       0.017,
       0.00809
      ],
      [
       0.00507,
-      0.01208,
+      0.01207,
       0.01437,
       0.0114,
       0.00678,
@@ -849042,8 +851507,8 @@
       "under": 0.2419
      },
      "ou_3.5": {
-      "over": 0.5613,
-      "under": 0.4387
+      "over": 0.5614,
+      "under": 0.4386
      }
     }
    },
@@ -849420,9 +851885,9 @@
     "gol_attesi_ospite": 0.52,
     "matrice": [
      [
-      0.22489,
+      0.2249,
       0.11472,
-      0.03021,
+      0.03022,
       0.00524,
       0.00068,
       7e-05
@@ -849436,7 +851901,7 @@
       7e-05
      ],
      [
-      0.10699,
+      0.10698,
       0.05564,
       0.01447,
       0.00251,
@@ -849904,7 +852369,7 @@
      ],
      [
       0.04752,
-      0.06208,
+      0.06209,
       0.04056,
       0.01767,
       0.00577,
@@ -850380,7 +852845,7 @@
       0.07932,
       0.11491,
       0.07963,
-      0.03726,
+      0.03727,
       0.01308,
       0.00367
      ],
@@ -850395,7 +852860,7 @@
      [
       0.03237,
       0.04545,
-      0.03191,
+      0.0319,
       0.01493,
       0.00524,
       0.00147
@@ -850411,7 +852876,7 @@
      [
       0.00389,
       0.00546,
-      0.00384,
+      0.00383,
       0.00179,
       0.00063,
       0.00018
@@ -851845,7 +854310,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.3275,
+    0.3274,
     0.253,
     0.4196
    ],
@@ -851937,7 +854402,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.3275,
+      "1": 0.3274,
       "X": 0.253,
       "2": 0.4196
      },
@@ -852867,7 +855332,7 @@
      [
       0.07899,
       0.07645,
-      0.03931,
+      0.03932,
       0.01321,
       0.00333,
       0.00067
@@ -853324,7 +855789,7 @@
      [
       0.04929,
       0.06644,
-      0.04812,
+      0.04813,
       0.02275,
       0.00807,
       0.00229
@@ -853794,7 +856259,7 @@
     "gol_attesi_ospite": 0.89,
     "matrice": [
      [
-      0.05616,
+      0.05615,
       0.04768,
       0.02184,
       0.00649,
@@ -853871,8 +856336,8 @@
       "2": 0.1575
      },
      "btts": {
-      "si": 0.5124,
-      "no": 0.4876
+      "si": 0.5125,
+      "no": 0.4875
      },
      "ou_1.5": {
       "over": 0.7871,
@@ -854780,7 +857245,7 @@
      [
       0.02167,
       0.02442,
-      0.01376,
+      0.01377,
       0.00517,
       0.00146,
       0.00033
@@ -855175,9 +857640,9 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.4472,
+    0.4473,
     0.3295,
-    0.2233
+    0.2232
    ],
    "margine": null,
    "margine_migliore": null,
@@ -855195,8 +857660,8 @@
     "gol_attesi_ospite": 0.66,
     "matrice": [
      [
-      0.17845,
-      0.11556,
+      0.17844,
+      0.11555,
       0.03883,
       0.00858,
       0.00142,
@@ -855211,7 +857676,7 @@
       0.0002
      ],
      [
-      0.1012,
+      0.10121,
       0.06707,
       0.02222,
       0.00491,
@@ -855219,7 +857684,7 @@
       0.00011
      ],
      [
-      0.03609,
+      0.0361,
       0.02392,
       0.00793,
       0.00175,
@@ -855250,7 +857715,7 @@
      },
      {
       "risultato": "0-0",
-      "p": 0.1785
+      "p": 0.1784
      },
      {
       "risultato": "1-1",
@@ -855258,7 +857723,7 @@
      },
      {
       "risultato": "0-1",
-      "p": 0.1156
+      "p": 0.1155
      },
      {
       "risultato": "2-0",
@@ -855267,17 +857732,17 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.4472,
+      "1": 0.4473,
       "X": 0.3295,
-      "2": 0.2233
+      "2": 0.2232
      },
      "btts": {
       "si": 0.32,
       "no": 0.68
      },
      "ou_1.5": {
-      "over": 0.5184,
-      "under": 0.4816
+      "over": 0.5185,
+      "under": 0.4815
      },
      "ou_2.5": {
       "over": 0.2514,
@@ -855653,7 +858118,7 @@
     "matrice": [
      [
       0.29042,
-      0.16592,
+      0.16593,
       0.04846,
       0.00936,
       0.00135,
@@ -856111,7 +858576,7 @@
      [
       0.08726,
       0.10574,
-      0.06741,
+      0.06742,
       0.02821,
       0.00885,
       0.00222
@@ -856126,7 +858591,7 @@
      ],
      [
       0.06194,
-      0.07775,
+      0.07774,
       0.04879,
       0.02041,
       0.00641,
@@ -856589,7 +859054,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.4419,
+    0.442,
     0.2293,
     0.3288
    ],
@@ -856609,17 +859074,17 @@
     "gol_attesi_ospite": 1.53,
     "matrice": [
      [
-      0.03681,
+      0.0368,
       0.0532,
-      0.04177,
+      0.04176,
       0.02135,
       0.00818,
       0.00251
      ],
      [
-      0.06283,
-      0.09957,
-      0.07536,
+      0.06282,
+      0.09956,
+      0.07535,
       0.03851,
       0.01476,
       0.00453
@@ -856681,7 +859146,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.4419,
+      "1": 0.442,
       "X": 0.2293,
       "2": 0.3288
      },
@@ -933798,7 +936263,7 @@
     "gol_attesi_ospite": 1.43,
     "matrice": [
      [
-      0.05564,
+      0.05565,
       0.08101,
       0.05727,
       0.02722,
@@ -933807,10 +936272,10 @@
      ],
      [
       0.08241,
-      0.11583,
+      0.11584,
       0.08307,
       0.03948,
-      0.01408,
+      0.01407,
       0.00401
      ],
      [
@@ -933824,7 +936289,7 @@
      [
       0.02866,
       0.04087,
-      0.02914,
+      0.02913,
       0.01385,
       0.00494,
       0.00141
@@ -933883,8 +936348,8 @@
       "under": 0.2191
      },
      "ou_2.5": {
-      "over": 0.5486,
-      "under": 0.4514
+      "over": 0.5485,
+      "under": 0.4515
      },
      "ou_3.5": {
       "over": 0.3251,
@@ -934265,7 +936730,7 @@
     "gol_attesi_ospite": 1.0,
     "matrice": [
      [
-      0.03927,
+      0.03928,
       0.0402,
       0.01978,
       0.00658,
@@ -934274,7 +936739,7 @@
      ],
      [
       0.08916,
-      0.08786,
+      0.08787,
       0.04407,
       0.01465,
       0.00365,
@@ -934727,7 +937192,7 @@
     0.4864
    ],
    "p_modello": [
-    0.3843,
+    0.3842,
     0.2369,
     0.3788
    ],
@@ -934748,27 +937213,27 @@
     "matrice": [
      [
       0.04407,
-      0.06983,
+      0.06982,
       0.05354,
       0.02762,
       0.01069,
       0.00331
      ],
      [
-      0.07039,
+      0.07038,
       0.1073,
-      0.08352,
+      0.08353,
       0.04309,
       0.01667,
       0.00516
      ],
      [
-      0.05441,
+      0.0544,
       0.0842,
       0.06515,
       0.03361,
       0.013,
-      0.00402
+      0.00403
      ],
      [
       0.02829,
@@ -934779,7 +937244,7 @@
       0.00209
      ],
      [
-      0.01104,
+      0.01103,
       0.01708,
       0.01321,
       0.00682,
@@ -934819,7 +937284,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.3843,
+      "1": 0.3842,
       "X": 0.2369,
       "2": 0.3788
      },
@@ -935225,7 +937690,7 @@
    "p_modello": [
     0.2252,
     0.2192,
-    0.5555
+    0.5556
    ],
    "margine": 0.0958,
    "margine_migliore": null,
@@ -935247,13 +937712,13 @@
       0.08873,
       0.08521,
       0.05493,
-      0.02655,
+      0.02656,
       0.01027
      ],
      [
       0.05323,
       0.10117,
-      0.0984,
+      0.09841,
       0.06343,
       0.03067,
       0.01186
@@ -935277,7 +937742,7 @@
      [
       0.00338,
       0.00653,
-      0.00632,
+      0.00631,
       0.00407,
       0.00197,
       0.00076
@@ -935317,7 +937782,7 @@
      "1x2": {
       "1": 0.2252,
       "X": 0.2192,
-      "2": 0.5555
+      "2": 0.5556
      },
      "btts": {
       "si": 0.5852,
@@ -935692,7 +938157,7 @@
    "p_modello": [
     0.5826,
     0.2044,
-    0.2131
+    0.213
    ],
    "margine": 0.0951,
    "margine_migliore": null,
@@ -935711,18 +938176,18 @@
     "matrice": [
      [
       0.03429,
-      0.04314,
-      0.02606,
+      0.04313,
+      0.02605,
       0.01062,
       0.00325,
       0.00079
      ],
      [
       0.07487,
-      0.0904,
-      0.05562,
-      0.02268,
-      0.00694,
+      0.09039,
+      0.05561,
+      0.02267,
+      0.00693,
       0.0017
      ],
      [
@@ -935734,15 +938199,15 @@
       0.00181
      ],
      [
-      0.05645,
-      0.06905,
-      0.04223,
+      0.05646,
+      0.06906,
+      0.04224,
       0.01722,
       0.00527,
       0.00129
      ],
      [
-      0.03012,
+      0.03013,
       0.03685,
       0.02254,
       0.00919,
@@ -935784,7 +938249,7 @@
      "1x2": {
       "1": 0.5826,
       "X": 0.2044,
-      "2": 0.2131
+      "2": 0.213
      },
      "btts": {
       "si": 0.6217,
@@ -936186,8 +938651,8 @@
      ],
      [
       0.09048,
-      0.11534,
-      0.07496,
+      0.11535,
+      0.07497,
       0.03229,
       0.01043,
       0.0027
@@ -936656,22 +939121,22 @@
    "ora": "16:00",
    "quote": {
     "mercato_unico": [
-     2.5,
-     3.2,
-     2.6
+     2.55,
+     3.25,
+     2.5
     ]
    },
    "p_mercato": [
-    0.3668,
-    0.2814,
-    0.3518
+    0.3582,
+    0.2759,
+    0.3659
    ],
    "p_modello": [
     0.3415,
-    0.3213,
+    0.3214,
     0.3371
    ],
-   "margine": 0.0971,
+   "margine": 0.0998,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "national-league",
@@ -936687,7 +939152,7 @@
     "gol_attesi_ospite": 0.92,
     "matrice": [
      [
-      0.1557,
+      0.15571,
       0.14529,
       0.0667,
       0.02053,
@@ -936760,7 +939225,7 @@
     "mercati": {
      "1x2": {
       "1": 0.3415,
-      "X": 0.3213,
+      "X": 0.3214,
       "2": 0.3371
      },
      "btts": {
@@ -936776,8 +939241,8 @@
       "under": 0.7159
      },
      "ou_3.5": {
-      "over": 0.1177,
-      "under": 0.8823
+      "over": 0.1176,
+      "under": 0.8824
      }
     }
    },
@@ -937149,7 +939614,7 @@
     0.3329
    ],
    "p_modello": [
-    0.3605,
+    0.3604,
     0.2107,
     0.4289
    ],
@@ -937198,7 +939663,7 @@
       0.04417,
       0.02941,
       0.01468,
-      0.00586
+      0.00587
      ],
      [
       0.01009,
@@ -937241,7 +939706,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.3605,
+      "1": 0.3604,
       "X": 0.2107,
       "2": 0.4289
      },
@@ -937636,7 +940101,7 @@
     "gol_attesi_ospite": 1.05,
     "matrice": [
      [
-      0.03416,
+      0.03417,
       0.03705,
       0.01927,
       0.00677,
@@ -937660,7 +940125,7 @@
       0.001
      ],
      [
-      0.07106,
+      0.07105,
       0.07492,
       0.0395,
       0.01388,
@@ -937668,9 +940133,9 @@
       0.00077
      ],
      [
-      0.04101,
+      0.041,
       0.04324,
-      0.0228,
+      0.02279,
       0.00801,
       0.00211,
       0.00045
@@ -938126,7 +940591,7 @@
     0.2598
    ],
    "p_modello": [
-    0.4414,
+    0.4415,
     0.2418,
     0.3167
    ],
@@ -938157,7 +940622,7 @@
       0.08583,
       0.11252,
       0.07522,
-      0.03333,
+      0.03332,
       0.01107,
       0.00294
      ],
@@ -938171,7 +940636,7 @@
      ],
      [
       0.03684,
-      0.04896,
+      0.04897,
       0.03254,
       0.01442,
       0.00479,
@@ -938187,7 +940652,7 @@
      ],
      [
       0.00478,
-      0.00635,
+      0.00636,
       0.00422,
       0.00187,
       0.00062,
@@ -938218,7 +940683,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.4414,
+      "1": 0.4415,
       "X": 0.2418,
       "2": 0.3167
      },
@@ -938645,7 +941110,7 @@
       0.04237,
       0.0806,
       0.07446,
-      0.0462,
+      0.04621,
       0.0215,
       0.00801
      ],
@@ -938659,7 +941124,7 @@
      ],
      [
       0.03552,
-      0.06613,
+      0.06612,
       0.06155,
       0.03819,
       0.01777,
@@ -939117,7 +941582,7 @@
       0.03542,
       0.05863,
       0.04678,
-      0.02513,
+      0.02514,
       0.01013,
       0.00327
      ],
@@ -939146,8 +941611,8 @@
       0.00273
      ],
      [
-      0.0129,
-      0.02079,
+      0.01289,
+      0.02078,
       0.01675,
       0.009,
       0.00363,
@@ -939602,7 +942067,7 @@
      [
       0.04952,
       0.07586,
-      0.05634,
+      0.05635,
       0.02814,
       0.01054,
       0.00316
@@ -940103,20 +942568,20 @@
       0.04263,
       0.05821,
       0.03835,
-      0.01702,
+      0.01703,
       0.00567,
       0.00151
      ],
      [
       0.07885,
       0.10358,
-      0.06938,
+      0.06939,
       0.0308,
       0.01026,
       0.00273
      ],
      [
-      0.07078,
+      0.07077,
       0.09426,
       0.06277,
       0.02786,
@@ -940132,7 +942597,7 @@
       0.00149
      ],
      [
-      0.01931,
+      0.0193,
       0.02571,
       0.01712,
       0.0076,
@@ -940142,7 +942607,7 @@
      [
       0.00699,
       0.0093,
-      0.0062,
+      0.00619,
       0.00275,
       0.00092,
       0.00024
@@ -940596,7 +943061,7 @@
      [
       0.06106,
       0.09869,
-      0.08148,
+      0.08149,
       0.04459,
       0.0183,
       0.00601
@@ -940610,7 +943075,7 @@
       0.00507
      ],
      [
-      0.02869,
+      0.02868,
       0.04709,
       0.03865,
       0.02115,
@@ -941058,7 +943523,7 @@
     "gol_attesi_ospite": 1.48,
     "matrice": [
      [
-      0.04693,
+      0.04694,
       0.07103,
       0.05205,
       0.02566,
@@ -941067,17 +943532,17 @@
      ],
      [
       0.07518,
-      0.10958,
+      0.10959,
       0.08152,
       0.04019,
       0.01486,
       0.0044
      ],
      [
-      0.05836,
-      0.08632,
+      0.05837,
+      0.08633,
       0.06384,
-      0.03148,
+      0.03147,
       0.01164,
       0.00344
      ],
@@ -941139,12 +943604,12 @@
       "no": 0.3898
      },
      "ou_1.5": {
-      "over": 0.8069,
-      "under": 0.1931
+      "over": 0.8068,
+      "under": 0.1932
      },
      "ou_2.5": {
-      "over": 0.5869,
-      "under": 0.4131
+      "over": 0.5868,
+      "under": 0.4132
      },
      "ou_3.5": {
       "over": 0.3629,
@@ -941496,7 +943961,7 @@
    "p_mercato": null,
    "p_modello": [
     0.4291,
-    0.2696,
+    0.2697,
     0.3013
    ],
    "margine": null,
@@ -941515,7 +943980,7 @@
     "gol_attesi_ospite": 1.09,
     "matrice": [
      [
-      0.0867,
+      0.08671,
       0.09568,
       0.05151,
       0.01864,
@@ -941588,7 +944053,7 @@
     "mercati": {
      "1x2": {
       "1": 0.4291,
-      "X": 0.2696,
+      "X": 0.2697,
       "2": 0.3013
      },
      "btts": {
@@ -941997,7 +944462,7 @@
    "p_modello": [
     0.3649,
     0.2527,
-    0.3824
+    0.3823
    ],
    "margine": null,
    "margine_migliore": null,
@@ -942089,7 +944554,7 @@
      "1x2": {
       "1": 0.3649,
       "X": 0.2527,
-      "2": 0.3824
+      "2": 0.3823
      },
      "btts": {
       "si": 0.5618,
@@ -942539,7 +945004,7 @@
       0.00065
      ],
      [
-      0.03221,
+      0.0322,
       0.03201,
       0.01591,
       0.00527,
@@ -942988,23 +945453,23 @@
     "matrice": [
      [
       0.06668,
-      0.08403,
-      0.05149,
+      0.08402,
+      0.05148,
       0.02121,
-      0.00656,
+      0.00655,
       0.00162
      ],
      [
       0.09919,
       0.121,
       0.07523,
-      0.031,
+      0.03099,
       0.00958,
       0.00237
      ],
      [
       0.07194,
-      0.08892,
+      0.08893,
       0.05496,
       0.02264,
       0.007,
@@ -943481,11 +945946,11 @@
       0.00123
      ],
      [
-      0.09585,
+      0.09586,
       0.11406,
-      0.06916,
+      0.06915,
       0.02779,
-      0.00838,
+      0.00837,
       0.00202
      ],
      [
@@ -943497,9 +945962,9 @@
       0.00166
      ],
      [
-      0.04283,
+      0.04284,
       0.05164,
-      0.03113,
+      0.03112,
       0.01251,
       0.00377,
       0.00091
@@ -943528,7 +945993,7 @@
      },
      {
       "risultato": "1-0",
-      "p": 0.0958
+      "p": 0.0959
      },
      {
       "risultato": "2-1",
@@ -943550,8 +946015,8 @@
       "2": 0.2811
      },
      "btts": {
-      "si": 0.5644,
-      "no": 0.4356
+      "si": 0.5643,
+      "no": 0.4357
      },
      "ou_1.5": {
       "over": 0.7764,
@@ -943930,8 +946395,8 @@
     "gol_attesi_ospite": 1.98,
     "matrice": [
      [
-      0.01624,
-      0.03334,
+      0.01623,
+      0.03333,
       0.03256,
       0.02147,
       0.01062,
@@ -943941,16 +946406,16 @@
       0.03567,
       0.06933,
       0.06897,
-      0.04547,
+      0.04548,
       0.02249,
-      0.00889
+      0.0089
      ],
      [
-      0.03735,
-      0.07387,
+      0.03734,
+      0.07386,
       0.07305,
       0.04816,
-      0.02381,
+      0.02382,
       0.00942
      ],
      [
@@ -943958,7 +946423,7 @@
       0.05215,
       0.05158,
       0.03401,
-      0.01681,
+      0.01682,
       0.00665
      ],
      [
@@ -943966,11 +946431,11 @@
       0.02762,
       0.02731,
       0.01801,
-      0.0089,
+      0.00891,
       0.00352
      ],
      [
-      0.00592,
+      0.00591,
       0.0117,
       0.01157,
       0.00763,
@@ -944019,8 +946484,8 @@
       "under": 0.2245
      },
      "ou_3.5": {
-      "over": 0.5848,
-      "under": 0.4152
+      "over": 0.5849,
+      "under": 0.4151
      }
     }
    },
@@ -944399,7 +946864,7 @@
       0.12222,
       0.08671,
       0.04077,
-      0.01437,
+      0.01438,
       0.00406
      ],
      [
@@ -1034107,22 +1036572,22 @@
    "ora": "20:30",
    "quote": {
     "mercato_unico": [
-     2.35,
-     3.15,
-     3.2
+     2.45,
+     3.1,
+     3.0
     ]
    },
    "p_mercato": [
-    0.406,
-    0.2994,
-    0.2945
+    0.386,
+    0.3017,
+    0.3123
    ],
    "p_modello": [
     0.3037,
     0.3234,
     0.3729
    ],
-   "margine": 0.0555,
+   "margine": 0.0641,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1034138,7 +1036603,7 @@
     "gol_attesi_ospite": 0.99,
     "matrice": [
      [
-      0.1583,
+      0.15831,
       0.15584,
       0.07689,
       0.02527,
@@ -1034146,8 +1036611,8 @@
       0.00123
      ],
      [
-      0.1356,
-      0.13395,
+      0.13561,
+      0.13394,
       0.06597,
       0.02168,
       0.00534,
@@ -1034164,7 +1036629,7 @@
      [
       0.01665,
       0.01642,
-      0.0081,
+      0.00809,
       0.00266,
       0.00066,
       0.00013
@@ -1034219,8 +1036684,8 @@
       "no": 0.6388
      },
      "ou_1.5": {
-      "over": 0.5503,
-      "under": 0.4497
+      "over": 0.5502,
+      "under": 0.4498
      },
      "ou_2.5": {
       "over": 0.2812,
@@ -1034603,22 +1037068,22 @@
    "ora": "14:00",
    "quote": {
     "mercato_unico": [
-     2.85,
+     2.9,
      3.6,
      2.25
     ]
    },
    "p_mercato": [
-    0.3266,
-    0.2549,
-    0.4185
+    0.3226,
+    0.2567,
+    0.4206
    ],
    "p_modello": [
     0.3017,
     0.2509,
     0.4474
    ],
-   "margine": 0.0731,
+   "margine": 0.067,
    "margine_migliore": null,
    "quote_da": "unico",
    "campionato": "laliga-2",
@@ -1034635,10 +1037100,10 @@
     "matrice": [
      [
       0.06282,
-      0.09678,
+      0.09679,
       0.07486,
       0.03856,
-      0.01489,
+      0.0149,
       0.0046
      ],
      [
@@ -1035116,7 +1037581,7 @@
     "gol_attesi_ospite": 1.31,
     "matrice": [
      [
-      0.07221,
+      0.0722,
       0.09465,
       0.06229,
       0.02729,
@@ -1035124,7 +1037589,7 @@
       0.00236
      ],
      [
-      0.09471,
+      0.0947,
       0.12476,
       0.08193,
       0.0359,
@@ -1035599,7 +1038064,7 @@
     "matrice": [
      [
       0.0301,
-      0.03535,
+      0.03536,
       0.0209,
       0.00822,
       0.00243,
@@ -1035616,7 +1038081,7 @@
      [
       0.08126,
       0.09588,
-      0.05656,
+      0.05657,
       0.02225,
       0.00656,
       0.00155
@@ -1035661,7 +1038126,7 @@
      },
      {
       "risultato": "3-1",
-      "p": 0.0744
+      "p": 0.0743
      },
      {
       "risultato": "1-0",
@@ -1036080,35 +1038545,35 @@
     "gol_attesi_ospite": 0.59,
     "matrice": [
      [
-      0.10014,
-      0.05904,
+      0.10013,
+      0.05905,
       0.01748,
       0.00344,
       0.00051,
       6e-05
      ],
      [
-      0.1711,
-      0.10128,
+      0.17109,
+      0.10129,
       0.02991,
       0.00589,
       0.00087,
       0.0001
      ],
      [
-      0.14646,
-      0.08657,
+      0.14645,
+      0.08658,
       0.02559,
       0.00504,
-      0.00074,
+      0.00075,
       9e-05
      ],
      [
-      0.08354,
+      0.08353,
       0.04938,
-      0.01459,
+      0.0146,
       0.00288,
-      0.00042,
+      0.00043,
       5e-05
      ],
      [
@@ -1036135,7 +1038600,7 @@
      },
      {
       "risultato": "2-0",
-      "p": 0.1465
+      "p": 0.1464
      },
      {
       "risultato": "1-1",
@@ -1036157,8 +1038622,8 @@
       "2": 0.1237
      },
      "btts": {
-      "si": 0.3657,
-      "no": 0.6343
+      "si": 0.3658,
+      "no": 0.6342
      },
      "ou_1.5": {
       "over": 0.6697,
@@ -1036169,8 +1038634,8 @@
       "under": 0.5955
      },
      "ou_3.5": {
-      "over": 0.201,
-      "under": 0.799
+      "over": 0.2011,
+      "under": 0.7989
      }
     }
    },
@@ -1036528,7 +1038993,7 @@
    ],
    "p_modello": [
     0.3448,
-    0.2819,
+    0.2818,
     0.3733
    ],
    "margine": 0.0722,
@@ -1036547,7 +1039012,7 @@
     "gol_attesi_ospite": 1.19,
     "matrice": [
      [
-      0.09775,
+      0.09774,
       0.11628,
       0.06939,
       0.02758,
@@ -1036556,7 +1039021,7 @@
      ],
      [
       0.11062,
-      0.13216,
+      0.13215,
       0.07871,
       0.03128,
       0.00932,
@@ -1036564,7 +1039029,7 @@
      ],
      [
       0.06281,
-      0.07488,
+      0.07489,
       0.04464,
       0.01774,
       0.00529,
@@ -1036572,7 +1039037,7 @@
      ],
      [
       0.02375,
-      0.02831,
+      0.02832,
       0.01688,
       0.00671,
       0.002,
@@ -1036620,7 +1039085,7 @@
     "mercati": {
      "1x2": {
       "1": 0.3448,
-      "X": 0.2819,
+      "X": 0.2818,
       "2": 0.3733
      },
      "btts": {
@@ -1037004,7 +1039469,7 @@
     "gol_attesi_ospite": 0.91,
     "matrice": [
      [
-      0.08767,
+      0.08766,
       0.07958,
       0.03626,
       0.011,
@@ -1037013,7 +1039478,7 @@
      ],
      [
       0.13344,
-      0.12167,
+      0.12166,
       0.05532,
       0.01678,
       0.00382,
@@ -1037953,7 +1040418,7 @@
     "gol_attesi_ospite": 0.75,
     "matrice": [
      [
-      0.09112,
+      0.09113,
       0.06844,
       0.02581,
       0.00648,
@@ -1037962,7 +1040427,7 @@
      ],
      [
       0.14951,
-      0.11277,
+      0.11276,
       0.04242,
       0.01065,
       0.002,
@@ -1038042,8 +1040507,8 @@
       "under": 0.5706
      },
      "ou_3.5": {
-      "over": 0.2206,
-      "under": 0.7794
+      "over": 0.2205,
+      "under": 0.7795
      }
     }
    },
@@ -1038449,19 +1040914,19 @@
     "gol_attesi_ospite": 0.88,
     "matrice": [
      [
-      0.1915,
-      0.16904,
-      0.07476,
-      0.02203,
+      0.19151,
+      0.16903,
+      0.07475,
+      0.02202,
       0.00487,
       0.00086
      ],
      [
-      0.14717,
-      0.13031,
+      0.14718,
+      0.1303,
       0.05753,
       0.01695,
-      0.00375,
+      0.00374,
       0.00066
      ],
      [
@@ -1038516,7 +1040981,7 @@
      },
      {
       "risultato": "0-2",
-      "p": 0.0748
+      "p": 0.0747
      }
     ],
     "mercati": {
@@ -1038534,8 +1040999,8 @@
       "under": 0.5077
      },
      "ou_2.5": {
-      "over": 0.2306,
-      "under": 0.7694
+      "over": 0.2305,
+      "under": 0.7695
      },
      "ou_3.5": {
       "over": 0.0864,
@@ -1038923,7 +1041388,7 @@
      ],
      [
       0.06444,
-      0.09216,
+      0.09217,
       0.06591,
       0.03142,
       0.01124,
@@ -1038983,12 +1041448,12 @@
       "2": 0.2531
      },
      "btts": {
-      "si": 0.6722,
-      "no": 0.3278
+      "si": 0.6721,
+      "no": 0.3279
      },
      "ou_1.5": {
-      "over": 0.8724,
-      "under": 0.1276
+      "over": 0.8723,
+      "under": 0.1277
      },
      "ou_2.5": {
       "over": 0.6936,
@@ -1039396,7 +1041861,7 @@
      ],
      [
       0.01911,
-      0.01857,
+      0.01858,
       0.00903,
       0.00293,
       0.00071,
@@ -1039829,8 +1042294,8 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.4053,
-    0.3273,
+    0.4052,
+    0.3272,
     0.2675
    ],
    "margine": null,
@@ -1039850,14 +1042315,14 @@
     "matrice": [
      [
       0.1684,
-      0.12864,
-      0.04926,
-      0.01256,
+      0.12865,
+      0.04927,
+      0.01257,
       0.0024,
       0.00037
      ],
      [
-      0.17102,
+      0.17101,
       0.13107,
       0.0501,
       0.01278,
@@ -1039865,8 +1042330,8 @@
       0.00037
      ],
      [
-      0.08702,
-      0.06659,
+      0.08701,
+      0.06658,
       0.02547,
       0.0065,
       0.00124,
@@ -1039921,8 +1042386,8 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.4053,
-      "X": 0.3273,
+      "1": 0.4052,
+      "X": 0.3272,
       "2": 0.2675
      },
      "btts": {
@@ -1039930,8 +1042395,8 @@
       "no": 0.6585
      },
      "ou_1.5": {
-      "over": 0.532,
-      "under": 0.468
+      "over": 0.5319,
+      "under": 0.4681
      },
      "ou_2.5": {
       "over": 0.2646,
@@ -1040288,7 +1042753,7 @@
    "p_modello": [
     0.4523,
     0.2602,
-    0.2875
+    0.2876
    ],
    "margine": null,
    "margine_migliore": null,
@@ -1040349,7 +1042814,7 @@
       0.00429,
       0.00479,
       0.00267,
-      0.001,
+      0.00099,
       0.00028,
       6e-05
      ]
@@ -1040361,7 +1042826,7 @@
      },
      {
       "risultato": "1-0",
-      "p": 0.1106
+      "p": 0.1107
      },
      {
       "risultato": "2-1",
@@ -1040380,7 +1042845,7 @@
      "1x2": {
       "1": 0.4523,
       "X": 0.2602,
-      "2": 0.2875
+      "2": 0.2876
      },
      "btts": {
       "si": 0.5177,
@@ -1040780,13 +1043245,13 @@
      [
       0.05158,
       0.04173,
-      0.01697,
+      0.01698,
       0.00459,
       0.00093,
       0.00015
      ],
      [
-      0.11087,
+      0.11088,
       0.09018,
       0.03658,
       0.0099,
@@ -1040796,8 +1043261,8 @@
      [
       0.11954,
       0.09706,
-      0.03941,
-      0.01067,
+      0.0394,
+      0.01066,
       0.00216,
       0.00035
      ],
@@ -1040812,7 +1043277,7 @@
      [
       0.04625,
       0.03755,
-      0.01525,
+      0.01524,
       0.00413,
       0.00084,
       0.00014
@@ -1041232,7 +1043697,7 @@
    "p_modello": [
     0.1792,
     0.3319,
-    0.4889
+    0.4888
    ],
    "margine": null,
    "margine_migliore": null,
@@ -1041250,25 +1043715,25 @@
     "gol_attesi_ospite": 1.08,
     "matrice": [
      [
-      0.20006,
-      0.21594,
-      0.11672,
-      0.04204,
+      0.20005,
+      0.21593,
+      0.11671,
+      0.04203,
       0.01135,
       0.00245
      ],
      [
-      0.10571,
-      0.11443,
-      0.06176,
-      0.02224,
+      0.10572,
+      0.11444,
+      0.06177,
+      0.02225,
       0.00601,
       0.0013
      ],
      [
       0.028,
-      0.03025,
-      0.01634,
+      0.03026,
+      0.01635,
       0.00589,
       0.00159,
       0.00034
@@ -1041324,23 +1043789,23 @@
      "1x2": {
       "1": 0.1792,
       "X": 0.3319,
-      "2": 0.4889
+      "2": 0.4888
      },
      "btts": {
-      "si": 0.2715,
-      "no": 0.7285
+      "si": 0.2716,
+      "no": 0.7284
      },
      "ou_1.5": {
       "over": 0.4783,
       "under": 0.5217
      },
      "ou_2.5": {
-      "over": 0.2191,
-      "under": 0.7809
+      "over": 0.2192,
+      "under": 0.7808
      },
      "ou_3.5": {
-      "over": 0.0801,
-      "under": 0.9199
+      "over": 0.0802,
+      "under": 0.9198
      }
     }
    },
@@ -1041709,7 +1044174,7 @@
      [
       0.05574,
       0.08124,
-      0.05947,
+      0.05948,
       0.02899,
       0.0106,
       0.0031
@@ -1042180,7 +1044645,7 @@
     "matrice": [
      [
       0.07797,
-      0.09144,
+      0.09145,
       0.05384,
       0.02111,
       0.00621,
@@ -1042188,7 +1044653,7 @@
      ],
      [
       0.10708,
-      0.12619,
+      0.12618,
       0.07413,
       0.02906,
       0.00854,
@@ -1042631,7 +1045096,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5071,
+    0.507,
     0.2732,
     0.2197
    ],
@@ -1042652,7 +1045117,7 @@
     "matrice": [
      [
       0.10745,
-      0.08835,
+      0.08836,
       0.03646,
       0.01002,
       0.00206,
@@ -1042683,7 +1045148,7 @@
       0.00016
      ],
      [
-      0.01756,
+      0.01755,
       0.01447,
       0.00596,
       0.00164,
@@ -1042710,7 +1045175,7 @@
      },
      {
       "risultato": "0-0",
-      "p": 0.1074
+      "p": 0.1075
      },
      {
       "risultato": "2-0",
@@ -1042723,7 +1045188,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5071,
+      "1": 0.507,
       "X": 0.2732,
       "2": 0.2197
      },
@@ -1043109,7 +1045574,7 @@
     "matrice": [
      [
       0.03314,
-      0.05324,
+      0.05325,
       0.04303,
       0.02314,
       0.00934,
@@ -1043117,7 +1045582,7 @@
      ],
      [
       0.05928,
-      0.09588,
+      0.09589,
       0.07729,
       0.04157,
       0.01677,
@@ -1043126,7 +1045591,7 @@
      [
       0.05332,
       0.08604,
-      0.06942,
+      0.06941,
       0.03734,
       0.01506,
       0.00486
@@ -1043135,7 +1045600,7 @@
       0.03192,
       0.05151,
       0.04156,
-      0.02236,
+      0.02235,
       0.00902,
       0.00291
      ],
@@ -1043150,7 +1045615,7 @@
      [
       0.00515,
       0.00831,
-      0.00671,
+      0.0067,
       0.00361,
       0.00145,
       0.00047
@@ -1043545,7 +1046010,7 @@
    "quote": {},
    "p_mercato": null,
    "p_modello": [
-    0.5064,
+    0.5065,
     0.2733,
     0.2203
    ],
@@ -1043573,7 +1046038,7 @@
       0.00034
      ],
      [
-      0.15073,
+      0.15074,
       0.12471,
       0.05145,
       0.01417,
@@ -1043581,7 +1046046,7 @@
       0.00048
      ],
      [
-      0.10612,
+      0.10613,
       0.08765,
       0.0362,
       0.00997,
@@ -1043637,7 +1046102,7 @@
     ],
     "mercati": {
      "1x2": {
-      "1": 0.5064,
+      "1": 0.5065,
       "X": 0.2733,
       "2": 0.2203
      },
@@ -1044033,6 +1046498,478 @@
      "ospite": "Burgos",
      "gol_casa": 2,
      "gol_ospite": 1
+    }
+   ]
+  },
+  {
+   "id": "ceuta-almeria",
+   "casa": "Ceuta",
+   "ospite": "Almeria",
+   "data": "2026-11-23",
+   "ora": "20:30",
+   "quote": {},
+   "p_mercato": null,
+   "p_modello": [
+    0.2059,
+    0.2029,
+    0.5912
+   ],
+   "margine": null,
+   "margine_migliore": null,
+   "quote_da": null,
+   "campionato": "laliga-2",
+   "casa_esteso": null,
+   "ospite_esteso": "Almería",
+   "stadio": {
+    "nome": "Estadio Alfonso Murube",
+    "citta": "Ceuta",
+    "paese": "Spain"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 1.21,
+    "gol_attesi_ospite": 2.17,
+    "matrice": [
+     [
+      0.03424,
+      0.07392,
+      0.08016,
+      0.05788,
+      0.03135,
+      0.01358
+     ],
+     [
+      0.04128,
+      0.08968,
+      0.09705,
+      0.07008,
+      0.03796,
+      0.01645
+     ],
+     [
+      0.02504,
+      0.05424,
+      0.05876,
+      0.04243,
+      0.02298,
+      0.00996
+     ],
+     [
+      0.01011,
+      0.02189,
+      0.02371,
+      0.01712,
+      0.00927,
+      0.00402
+     ],
+     [
+      0.00306,
+      0.00663,
+      0.00718,
+      0.00518,
+      0.00281,
+      0.00122
+     ],
+     [
+      0.00074,
+      0.0016,
+      0.00174,
+      0.00126,
+      0.00068,
+      0.00029
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "1-2",
+      "p": 0.0971
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.0897
+     },
+     {
+      "risultato": "0-2",
+      "p": 0.0802
+     },
+     {
+      "risultato": "0-1",
+      "p": 0.0739
+     },
+     {
+      "risultato": "1-3",
+      "p": 0.0701
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.2059,
+      "X": 0.2029,
+      "2": 0.5912
+     },
+     "btts": {
+      "si": 0.6216,
+      "no": 0.3784
+     },
+     "ou_1.5": {
+      "over": 0.8506,
+      "under": 0.1494
+     },
+     "ou_2.5": {
+      "over": 0.6557,
+      "under": 0.3443
+     },
+     "ou_3.5": {
+      "over": 0.4364,
+      "under": 0.5636
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Ceuta",
+    "partite": 20,
+    "gol_fatti": 0.95,
+    "gol_subiti": 1.9,
+    "gol_totali": 19,
+    "in_porta_totali": 81,
+    "attesi_dai_tiri": 24.7,
+    "scarto_conversione": -5.7,
+    "vantaggio_casa": -0.29,
+    "casa": {
+     "partite": 11,
+     "gol_fatti": 0.82,
+     "gol_subiti": 1.55,
+     "tiri": 15.4,
+     "in_porta": 4.6,
+     "in_porta_subiti": 5.6,
+     "tiri_subiti": 13.4,
+     "corner": 6.0,
+     "corner_subiti": 3.7,
+     "falli": 15.3,
+     "cartellini": 3.2,
+     "gialli": 33,
+     "rossi": 2,
+     "precisione_tiri": 0.302,
+     "over_25": 0.364,
+     "gol_gol": 0.545,
+     "clean_sheet": 0.182,
+     "a_secco": 0.364,
+     "con_avanzate": 7,
+     "possesso": 54.9,
+     "passaggi": 419.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 17.0,
+     "intercetti": 0.0,
+     "respinte": 18.1,
+     "parate": 3.4,
+     "fuorigioco": 1.9,
+     "tiri_respinti": 5.3
+    },
+    "trasferta": {
+     "partite": 9,
+     "gol_fatti": 1.11,
+     "gol_subiti": 2.33,
+     "tiri": 11.1,
+     "in_porta": 3.3,
+     "in_porta_subiti": 4.9,
+     "tiri_subiti": 13.9,
+     "corner": 4.2,
+     "corner_subiti": 4.2,
+     "falli": 12.7,
+     "cartellini": 2.9,
+     "gialli": 25,
+     "rossi": 1,
+     "precisione_tiri": 0.3,
+     "over_25": 0.778,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.111,
+     "a_secco": 0.222,
+     "con_avanzate": 6,
+     "possesso": 46.7,
+     "passaggi": 381.0,
+     "precisione_passaggi": 0.805,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.0,
+     "intercetti": 0.0,
+     "respinte": 18.8,
+     "parate": 2.5,
+     "fuorigioco": 2.2,
+     "tiri_respinti": 4.0
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Almeria",
+    "partite": 20,
+    "gol_fatti": 1.9,
+    "gol_subiti": 1.05,
+    "gol_totali": 38,
+    "in_porta_totali": 99,
+    "attesi_dai_tiri": 30.2,
+    "scarto_conversione": 7.8,
+    "vantaggio_casa": 1.0,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 2.4,
+     "gol_subiti": 1.1,
+     "tiri": 16.8,
+     "in_porta": 6.0,
+     "in_porta_subiti": 3.7,
+     "tiri_subiti": 11.1,
+     "corner": 4.7,
+     "corner_subiti": 4.8,
+     "falli": 14.3,
+     "cartellini": 1.9,
+     "gialli": 17,
+     "rossi": 2,
+     "precisione_tiri": 0.357,
+     "over_25": 0.8,
+     "gol_gol": 0.6,
+     "clean_sheet": 0.4,
+     "a_secco": 0.0,
+     "con_avanzate": 6,
+     "possesso": 56.3,
+     "passaggi": 532.0,
+     "precisione_passaggi": 0.878,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.8,
+     "intercetti": 0.0,
+     "respinte": 19.3,
+     "parate": 2.5,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 3.2
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.4,
+     "gol_subiti": 1.0,
+     "tiri": 12.6,
+     "in_porta": 3.9,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 16.7,
+     "corner": 3.4,
+     "corner_subiti": 6.4,
+     "falli": 12.2,
+     "cartellini": 2.9,
+     "gialli": 28,
+     "rossi": 1,
+     "precisione_tiri": 0.31,
+     "over_25": 0.3,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.4,
+     "a_secco": 0.3,
+     "con_avanzate": 7,
+     "possesso": 50.4,
+     "passaggi": 443.0,
+     "precisione_passaggi": 0.825,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.4,
+     "intercetti": 0.0,
+     "respinte": 35.6,
+     "parate": 3.7,
+     "fuorigioco": 0.9,
+     "tiri_respinti": 2.1
+    }
+   },
+   "forma_casa": {
+    "squadra": "Ceuta",
+    "partite": 6,
+    "gol_fatti": 0.67,
+    "gol_subiti": 2.17,
+    "gol_totali": 4,
+    "in_porta_totali": 30,
+    "attesi_dai_tiri": 9.2,
+    "scarto_conversione": -5.2,
+    "vantaggio_casa": 0.0,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 2.0,
+     "tiri": 19.7,
+     "in_porta": 5.3,
+     "in_porta_subiti": 6.7,
+     "tiri_subiti": 16.0,
+     "corner": 7.3,
+     "corner_subiti": 2.7,
+     "falli": 13.7,
+     "cartellini": 3.7,
+     "gialli": 11,
+     "rossi": 0,
+     "precisione_tiri": 0.271,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 56.3,
+     "passaggi": 446.0,
+     "precisione_passaggi": 0.822,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.7,
+     "intercetti": 0.0,
+     "respinte": 19.0,
+     "parate": 4.7,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 5.3
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 0.67,
+     "gol_subiti": 2.33,
+     "tiri": 16.3,
+     "in_porta": 4.7,
+     "in_porta_subiti": 4.7,
+     "tiri_subiti": 11.7,
+     "corner": 7.3,
+     "corner_subiti": 5.7,
+     "falli": 11.3,
+     "cartellini": 3.0,
+     "gialli": 9,
+     "rossi": 0,
+     "precisione_tiri": 0.286,
+     "over_25": 0.667,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.0,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 48.0,
+     "passaggi": 365.0,
+     "precisione_passaggi": 0.793,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 18.7,
+     "intercetti": 0.0,
+     "respinte": 19.3,
+     "parate": 2.7,
+     "fuorigioco": 2.3,
+     "tiri_respinti": 6.0
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Almeria",
+    "partite": 6,
+    "gol_fatti": 2.17,
+    "gol_subiti": 1.0,
+    "gol_totali": 13,
+    "in_porta_totali": 29,
+    "attesi_dai_tiri": 8.9,
+    "scarto_conversione": 4.1,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 2.33,
+     "gol_subiti": 1.0,
+     "tiri": 16.7,
+     "in_porta": 6.3,
+     "in_porta_subiti": 4.3,
+     "tiri_subiti": 12.0,
+     "corner": 6.7,
+     "corner_subiti": 4.3,
+     "falli": 13.7,
+     "cartellini": 2.0,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.38,
+     "over_25": 1.0,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 57.6,
+     "passaggi": 530.0,
+     "precisione_passaggi": 0.876,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 14.0,
+     "intercetti": 0.0,
+     "respinte": 20.3,
+     "parate": 3.7,
+     "fuorigioco": 0.7,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 2.0,
+     "gol_subiti": 1.0,
+     "tiri": 10.7,
+     "in_porta": 3.3,
+     "in_porta_subiti": 5.3,
+     "tiri_subiti": 19.0,
+     "corner": 2.3,
+     "corner_subiti": 7.3,
+     "falli": 12.3,
+     "cartellini": 2.3,
+     "gialli": 7,
+     "rossi": 0,
+     "precisione_tiri": 0.312,
+     "over_25": 0.333,
+     "gol_gol": 0.667,
+     "clean_sheet": 0.333,
+     "a_secco": 0.0,
+     "con_avanzate": 3,
+     "possesso": 49.8,
+     "passaggi": 478.0,
+     "precisione_passaggi": 0.834,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.7,
+     "intercetti": 0.0,
+     "respinte": 37.7,
+     "parate": 4.3,
+     "fuorigioco": 1.0,
+     "tiri_respinti": 2.7
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 0.82,
+     "difesa": 1.0,
+     "media": 0.91
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 15.4,
+     "difesa": 16.7,
+     "media": 16.1
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 4.6,
+     "difesa": 5.0,
+     "media": 4.8
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 6.0,
+     "difesa": 6.4,
+     "media": 6.2
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 54.9,
+     "difesa": 50.4,
+     "media": null
+    }
+   ],
+   "precedenti": [
+    {
+     "data": "2026-02-01",
+     "casa": "Almeria",
+     "ospite": "Ceuta",
+     "gol_casa": 4,
+     "gol_ospite": 2
+    },
+    {
+     "data": "2025-11-26",
+     "casa": "Ceuta",
+     "ospite": "Almeria",
+     "gol_casa": 3,
+     "gol_ospite": 2
     }
    ]
   },
@@ -1120698,7 +1123635,7 @@
    "p_modello": [
     0.4622,
     0.2339,
-    0.304
+    0.3039
    ],
    "margine": 0.0811,
    "margine_migliore": null,
@@ -1120728,7 +1123665,7 @@
       0.10202,
       0.07216,
       0.03569,
-      0.01324,
+      0.01323,
       0.00393
      ],
      [
@@ -1120740,7 +1123677,7 @@
       0.00366
      ],
      [
-      0.03796,
+      0.03797,
       0.05632,
       0.04178,
       0.02066,
@@ -1120790,7 +1123727,7 @@
      "1x2": {
       "1": 0.4622,
       "X": 0.2339,
-      "2": 0.304
+      "2": 0.3039
      },
      "btts": {
       "si": 0.658,
@@ -1121199,7 +1124136,7 @@
       0.00074
      ],
      [
-      0.1011,
+      0.10111,
       0.09941,
       0.04887,
       0.01602,
@@ -1121706,7 +1124643,7 @@
       0.0523,
       0.0181,
       0.0047,
-      0.00098
+      0.00097
      ],
      [
       0.09586,
@@ -1122211,7 +1125148,7 @@
       0.00041
      ],
      [
-      0.07001,
+      0.07,
       0.08496,
       0.04438,
       0.01621,
@@ -1122244,7 +1125181,7 @@
      ],
      [
       0.01958,
-      0.02146,
+      0.02145,
       0.01175,
       0.00429,
       0.00118,
@@ -1122672,7 +1125609,7 @@
      [
       0.10437,
       0.08725,
-      0.04453,
+      0.04452,
       0.01414,
       0.00337,
       0.00064
@@ -1122702,7 +1125639,7 @@
       0.00027
      ],
      [
-      0.01435,
+      0.01436,
       0.01367,
       0.00651,
       0.00207,
@@ -1123154,15 +1126091,15 @@
      ],
      [
       0.0492,
-      0.08158,
+      0.08157,
       0.06763,
       0.03738,
-      0.01549,
+      0.0155,
       0.00514
      ],
      [
       0.02619,
-      0.04343,
+      0.04342,
       0.036,
       0.0199,
       0.00825,
@@ -1123612,9 +1126549,9 @@
       0.00103
      ],
      [
-      0.08799,
+      0.088,
       0.11587,
-      0.06537,
+      0.06536,
       0.02578,
       0.00763,
       0.0018
@@ -1123637,7 +1126574,7 @@
      ],
      [
       0.02065,
-      0.02444,
+      0.02443,
       0.01446,
       0.0057,
       0.00169,
@@ -1123681,8 +1126618,8 @@
       "2": 0.2535
      },
      "btts": {
-      "si": 0.5779,
-      "no": 0.4221
+      "si": 0.5778,
+      "no": 0.4222
      },
      "ou_1.5": {
       "over": 0.7951,
@@ -1124088,16 +1127025,16 @@
      [
       0.04196,
       0.04043,
-      0.02707,
+      0.02708,
       0.01086,
       0.00327,
       0.00079
      ],
      [
       0.07333,
-      0.0983,
+      0.09831,
       0.0564,
-      0.02262,
+      0.02263,
       0.00681,
       0.00164
      ],
@@ -1124113,7 +1127050,7 @@
       0.05634,
       0.0678,
       0.0408,
-      0.01637,
+      0.01636,
       0.00492,
       0.00118
      ],
@@ -1174532,7 +1177469,7 @@
      ],
      [
       0.13338,
-      0.1249,
+      0.12489,
       0.05876,
       0.0184,
       0.00432,
@@ -1175030,7 +1177967,7 @@
       0.06304,
       0.10374,
       0.08588,
-      0.04732,
+      0.04731,
       0.01955,
       0.00646
      ],
@@ -1175511,7 +1178448,7 @@
      ],
      [
       0.03114,
-      0.04522,
+      0.04523,
       0.03284,
       0.01589,
       0.00577,
@@ -1176005,7 +1178942,7 @@
      ],
      [
       0.12122,
-      0.11349,
+      0.11348,
       0.05339,
       0.01672,
       0.00393,
@@ -1176469,7 +1179406,7 @@
       0.00245
      ],
      [
-      0.07361,
+      0.07362,
       0.09385,
       0.05983,
       0.02542,
@@ -1176478,7 +1179415,7 @@
      ],
      [
       0.04142,
-      0.0528,
+      0.05281,
       0.03366,
       0.0143,
       0.00456,
@@ -1177038,8 +1179975,8 @@
       "under": 0.5608
      },
      "ou_3.5": {
-      "over": 0.2284,
-      "under": 0.7716
+      "over": 0.2285,
+      "under": 0.7715
      }
     }
    },
@@ -1177418,7 +1180355,7 @@
      [
       0.12155,
       0.16899,
-      0.117,
+      0.11699,
       0.05406,
       0.01874,
       0.0052
@@ -1177917,7 +1180854,7 @@
       0.05975,
       0.08484,
       0.06023,
-      0.02851,
+      0.0285,
       0.01012,
       0.00287
      ],
@@ -1178340,6 +1181277,473 @@
      "gol_ospite": 2
     }
    ]
+  },
+  {
+   "id": "sochaux-dunkerque",
+   "casa": "Sochaux",
+   "ospite": "Dunkerque",
+   "data": "2026-11-23",
+   "ora": "20:45",
+   "quote": {
+    "mercato_unico": [
+     2.3,
+     3.25,
+     3.0
+    ]
+   },
+   "p_mercato": [
+    0.4081,
+    0.2834,
+    0.3085
+   ],
+   "p_modello": [
+    0.2221,
+    0.2991,
+    0.4789
+   ],
+   "margine": 0.0758,
+   "margine_migliore": null,
+   "quote_da": "unico",
+   "campionato": "ligue-2",
+   "casa_esteso": null,
+   "ospite_esteso": null,
+   "stadio": {
+    "nome": "Stade Bonal",
+    "citta": "Montbéliard",
+    "paese": "France"
+   },
+   "dettaglio": {
+    "gol_attesi_casa": 0.73,
+    "gol_attesi_ospite": 1.22,
+    "matrice": [
+     [
+      0.14115,
+      0.17326,
+      0.10591,
+      0.04322,
+      0.01323,
+      0.00324
+     ],
+     [
+      0.10374,
+      0.12651,
+      0.07756,
+      0.03165,
+      0.00969,
+      0.00237
+     ],
+     [
+      0.03791,
+      0.0464,
+      0.0284,
+      0.01159,
+      0.00355,
+      0.00087
+     ],
+     [
+      0.00925,
+      0.01133,
+      0.00693,
+      0.00283,
+      0.00087,
+      0.00021
+     ],
+     [
+      0.00169,
+      0.00207,
+      0.00127,
+      0.00052,
+      0.00016,
+      4e-05
+     ],
+     [
+      0.00025,
+      0.0003,
+      0.00019,
+      8e-05,
+      2e-05,
+      1e-05
+     ]
+    ],
+    "risultati_probabili": [
+     {
+      "risultato": "0-1",
+      "p": 0.1733
+     },
+     {
+      "risultato": "0-0",
+      "p": 0.1411
+     },
+     {
+      "risultato": "1-1",
+      "p": 0.1265
+     },
+     {
+      "risultato": "0-2",
+      "p": 0.1059
+     },
+     {
+      "risultato": "1-0",
+      "p": 0.1037
+     }
+    ],
+    "mercati": {
+     "1x2": {
+      "1": 0.2221,
+      "X": 0.2991,
+      "2": 0.4789
+     },
+     "btts": {
+      "si": 0.3663,
+      "no": 0.6337
+     },
+     "ou_1.5": {
+      "over": 0.5819,
+      "under": 0.4181
+     },
+     "ou_2.5": {
+      "over": 0.3115,
+      "under": 0.6885
+     },
+     "ou_3.5": {
+      "over": 0.1351,
+      "under": 0.8649
+     }
+    }
+   },
+   "stat_casa": {
+    "squadra": "Sochaux",
+    "partite": 12,
+    "gol_fatti": 0.67,
+    "gol_subiti": 1.25,
+    "gol_totali": 8,
+    "in_porta_totali": 36,
+    "attesi_dai_tiri": 11.7,
+    "scarto_conversione": -3.7,
+    "vantaggio_casa": 0.23,
+    "casa": {
+     "partite": 5,
+     "gol_fatti": 0.8,
+     "gol_subiti": 1.4,
+     "tiri": 12.0,
+     "in_porta": 3.6,
+     "in_porta_subiti": 5.2,
+     "tiri_subiti": 13.4,
+     "corner": 6.4,
+     "corner_subiti": 5.0,
+     "falli": 14.8,
+     "cartellini": 1.2,
+     "gialli": 6,
+     "rossi": 0,
+     "precisione_tiri": 0.3,
+     "over_25": 0.4,
+     "gol_gol": 0.4,
+     "clean_sheet": 0.4,
+     "a_secco": 0.2,
+     "con_avanzate": 5,
+     "possesso": 47.3,
+     "passaggi": 409.0,
+     "precisione_passaggi": 0.773,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 8.0,
+     "intercetti": 0.0,
+     "respinte": 21.0,
+     "parate": 3.6,
+     "fuorigioco": 3.0,
+     "tiri_respinti": 3.4
+    },
+    "trasferta": {
+     "partite": 7,
+     "gol_fatti": 0.57,
+     "gol_subiti": 1.14,
+     "tiri": 10.6,
+     "in_porta": 2.6,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 14.1,
+     "corner": 3.4,
+     "corner_subiti": 6.6,
+     "falli": 14.9,
+     "cartellini": 1.9,
+     "gialli": 12,
+     "rossi": 1,
+     "precisione_tiri": 0.243,
+     "over_25": 0.143,
+     "gol_gol": 0.429,
+     "clean_sheet": 0.286,
+     "a_secco": 0.571,
+     "con_avanzate": 7,
+     "possesso": 43.9,
+     "passaggi": 382.0,
+     "precisione_passaggi": 0.802,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 11.6,
+     "intercetti": 0.0,
+     "respinte": 24.9,
+     "parate": 3.6,
+     "fuorigioco": 1.9,
+     "tiri_respinti": 2.4
+    }
+   },
+   "stat_ospite": {
+    "squadra": "Dunkerque",
+    "partite": 20,
+    "gol_fatti": 1.4,
+    "gol_subiti": 1.7,
+    "gol_totali": 28,
+    "in_porta_totali": 78,
+    "attesi_dai_tiri": 25.3,
+    "scarto_conversione": 2.7,
+    "vantaggio_casa": -0.4,
+    "casa": {
+     "partite": 10,
+     "gol_fatti": 1.2,
+     "gol_subiti": 1.1,
+     "tiri": 13.4,
+     "in_porta": 3.7,
+     "in_porta_subiti": 4.5,
+     "tiri_subiti": 11.3,
+     "corner": 5.5,
+     "corner_subiti": 3.6,
+     "falli": 12.9,
+     "cartellini": 2.1,
+     "gialli": 20,
+     "rossi": 1,
+     "precisione_tiri": 0.276,
+     "over_25": 0.3,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.1,
+     "a_secco": 0.4,
+     "con_avanzate": 7,
+     "possesso": 52.1,
+     "passaggi": 473.0,
+     "precisione_passaggi": 0.842,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.9,
+     "intercetti": 0.0,
+     "respinte": 19.4,
+     "parate": 4.0,
+     "fuorigioco": 1.6,
+     "tiri_respinti": 3.9
+    },
+    "trasferta": {
+     "partite": 10,
+     "gol_fatti": 1.6,
+     "gol_subiti": 2.3,
+     "tiri": 10.7,
+     "in_porta": 4.1,
+     "in_porta_subiti": 5.7,
+     "tiri_subiti": 15.9,
+     "corner": 3.8,
+     "corner_subiti": 4.5,
+     "falli": 13.7,
+     "cartellini": 2.3,
+     "gialli": 20,
+     "rossi": 3,
+     "precisione_tiri": 0.383,
+     "over_25": 0.6,
+     "gol_gol": 0.6,
+     "clean_sheet": 0.0,
+     "a_secco": 0.4,
+     "con_avanzate": 5,
+     "possesso": 49.4,
+     "passaggi": 412.0,
+     "precisione_passaggi": 0.82,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 15.2,
+     "intercetti": 0.0,
+     "respinte": 21.4,
+     "parate": 3.6,
+     "fuorigioco": 0.4,
+     "tiri_respinti": 2.4
+    }
+   },
+   "forma_casa": {
+    "squadra": "Sochaux",
+    "partite": 6,
+    "gol_fatti": 0.83,
+    "gol_subiti": 1.83,
+    "gol_totali": 5,
+    "in_porta_totali": 21,
+    "attesi_dai_tiri": 6.8,
+    "scarto_conversione": -1.8,
+    "vantaggio_casa": 0.25,
+    "casa": {
+     "partite": 2,
+     "gol_fatti": 1.0,
+     "gol_subiti": 2.0,
+     "tiri": 14.5,
+     "in_porta": 5.0,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 11.5,
+     "corner": 10.0,
+     "corner_subiti": 5.0,
+     "falli": 13.0,
+     "cartellini": 1.5,
+     "gialli": 3,
+     "rossi": 0,
+     "precisione_tiri": 0.345,
+     "over_25": 0.5,
+     "gol_gol": 1.0,
+     "clean_sheet": 0.0,
+     "a_secco": 0.0,
+     "con_avanzate": 2,
+     "possesso": 54.2,
+     "passaggi": 451.0,
+     "precisione_passaggi": 0.748,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 7.5,
+     "intercetti": 0.0,
+     "respinte": 24.5,
+     "parate": 3.0,
+     "fuorigioco": 4.5,
+     "tiri_respinti": 4.0
+    },
+    "trasferta": {
+     "partite": 4,
+     "gol_fatti": 0.75,
+     "gol_subiti": 1.75,
+     "tiri": 12.8,
+     "in_porta": 2.8,
+     "in_porta_subiti": 5.0,
+     "tiri_subiti": 13.5,
+     "corner": 4.8,
+     "corner_subiti": 4.5,
+     "falli": 15.8,
+     "cartellini": 2.0,
+     "gialli": 8,
+     "rossi": 0,
+     "precisione_tiri": 0.216,
+     "over_25": 0.25,
+     "gol_gol": 0.5,
+     "clean_sheet": 0.0,
+     "a_secco": 0.5,
+     "con_avanzate": 4,
+     "possesso": 46.9,
+     "passaggi": 414.0,
+     "precisione_passaggi": 0.815,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 11.2,
+     "intercetti": 0.0,
+     "respinte": 23.5,
+     "parate": 3.2,
+     "fuorigioco": 1.5,
+     "tiri_respinti": 3.5
+    }
+   },
+   "forma_ospite": {
+    "squadra": "Dunkerque",
+    "partite": 6,
+    "gol_fatti": 1.17,
+    "gol_subiti": 1.17,
+    "gol_totali": 7,
+    "in_porta_totali": 20,
+    "attesi_dai_tiri": 6.5,
+    "scarto_conversione": 0.5,
+    "vantaggio_casa": 0.33,
+    "casa": {
+     "partite": 3,
+     "gol_fatti": 1.33,
+     "gol_subiti": 0.67,
+     "tiri": 13.3,
+     "in_porta": 3.7,
+     "in_porta_subiti": 6.3,
+     "tiri_subiti": 15.0,
+     "corner": 4.3,
+     "corner_subiti": 5.0,
+     "falli": 12.0,
+     "cartellini": 2.0,
+     "gialli": 5,
+     "rossi": 1,
+     "precisione_tiri": 0.275,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.333,
+     "a_secco": 0.333,
+     "con_avanzate": 3,
+     "possesso": 55.9,
+     "passaggi": 528.0,
+     "precisione_passaggi": 0.853,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 13.7,
+     "intercetti": 0.0,
+     "respinte": 14.7,
+     "parate": 6.0,
+     "fuorigioco": 1.3,
+     "tiri_respinti": 3.0
+    },
+    "trasferta": {
+     "partite": 3,
+     "gol_fatti": 1.0,
+     "gol_subiti": 1.67,
+     "tiri": 10.3,
+     "in_porta": 3.0,
+     "in_porta_subiti": 6.7,
+     "tiri_subiti": 18.0,
+     "corner": 4.3,
+     "corner_subiti": 6.3,
+     "falli": 13.7,
+     "cartellini": 2.3,
+     "gialli": 6,
+     "rossi": 1,
+     "precisione_tiri": 0.29,
+     "over_25": 0.333,
+     "gol_gol": 0.333,
+     "clean_sheet": 0.0,
+     "a_secco": 0.667,
+     "con_avanzate": 3,
+     "possesso": 48.6,
+     "passaggi": 418.0,
+     "precisione_passaggi": 0.812,
+     "precisione_cross": 0.0,
+     "precisione_lanci": 0.0,
+     "contrasti": 11.7,
+     "intercetti": 0.0,
+     "respinte": 26.3,
+     "parate": 5.0,
+     "fuorigioco": 0.7,
+     "tiri_respinti": 3.0
+    }
+   },
+   "incrocio": [
+    {
+     "voce": "Gol",
+     "attacco": 0.8,
+     "difesa": 2.3,
+     "media": 1.55
+    },
+    {
+     "voce": "Tiri",
+     "attacco": 12.0,
+     "difesa": 15.9,
+     "media": 13.9
+    },
+    {
+     "voce": "Tiri in porta",
+     "attacco": 3.6,
+     "difesa": 5.7,
+     "media": 4.7
+    },
+    {
+     "voce": "Calci d'angolo",
+     "attacco": 6.4,
+     "difesa": 4.5,
+     "media": 5.5
+    },
+    {
+     "voce": "Possesso",
+     "attacco": 47.3,
+     "difesa": 49.4,
+     "media": null
+    }
+   ],
+   "precedenti": []
   },
   {
    "id": "boulogne-nancy",
@@ -1232970,7 +1236374,7 @@
     "gol_attesi_ospite": 0.92,
     "matrice": [
      [
-      0.10848,
+      0.10849,
       0.06415,
       0.03778,
       0.01153,
@@ -1232978,7 +1236382,7 @@
       0.00048
      ],
      [
-      0.116,
+      0.11601,
       0.1414,
       0.05633,
       0.01719,
@@ -1233947,7 +1237351,7 @@
      ],
      [
       0.0925,
-      0.13573,
+      0.13574,
       0.06333,
       0.02264,
       0.00607,

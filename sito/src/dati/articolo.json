@@ -1,6 +1,6 @@
 {
- "data": "2026-11-12",
- "partite_in_programma": 214,
+ "data": "2026-11-13",
+ "partite_in_programma": 221,
  "campionati": 22,
  "sorprese": [
   {
@@ -873,6 +873,17 @@
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
+   "id": "monza-fiorentina",
+   "casa": "Monza",
+   "ospite": "Fiorentina",
+   "data": "2026-11-23",
+   "ora": "20:45",
+   "margine": 0.1132
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
    "id": "parma-roma",
    "casa": "Parma",
    "ospite": "Roma",
@@ -912,31 +923,9 @@
    "data": "2026-11-22",
    "ora": "15:00",
    "margine": 0.1088
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "como-cagliari",
-   "casa": "Como",
-   "ospite": "Cagliari",
-   "data": "2026-11-21",
-   "ora": "15:00",
-   "margine": 0.1075
   }
  ],
  "partite_meno_care": [
-  {
-   "campionato": "LaLiga 2",
-   "bandiera": "🇪🇸",
-   "slug": "laliga-2",
-   "id": "leganes-burgos",
-   "casa": "Leganes",
-   "ospite": "Burgos",
-   "data": "2026-11-13",
-   "ora": "20:30",
-   "margine": 0.0555
-  },
   {
    "campionato": "LaLiga",
    "bandiera": "🇪🇸",
@@ -980,6 +969,17 @@
    "data": "2026-11-14",
    "ora": "16:00",
    "margine": 0.0627
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "bolton-portsmouth",
+   "casa": "Bolton",
+   "ospite": "Portsmouth",
+   "data": "2026-11-21",
+   "ora": "16:00",
+   "margine": 0.0638
   }
  ]
 }
