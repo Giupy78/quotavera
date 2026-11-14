@@ -1,4 +1,3783 @@
 {
+ "401881266": {
+  "cartellini": [
+   {
+    "giocatore": "Mitchell Clark",
+    "minuto": "26'",
+    "rosso": false,
+    "squadra": "Swindon Town"
+   },
+   {
+    "giocatore": "Dan Butler",
+    "minuto": "41'",
+    "rosso": false,
+    "squadra": "Swindon Town"
+   },
+   {
+    "giocatore": "Dan Butler",
+    "minuto": "66'",
+    "rosso": true,
+    "squadra": "Swindon Town"
+   }
+  ],
+  "casa": "Swindon Town",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Christy Pym",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Cameron McJannett",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Harvey Rodgers",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Jayden Sweeney",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Joe Foulkes",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Mark Shelton",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Cian Doyle",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Jamie Walker",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Andy Cook",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Iwan Morgan",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Sonny Finch",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Justin Amaluzor",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Finley Cartwright",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Henry Brown",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "30",
+      "nome": "Charles Vernam",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Ryley Reynolds",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Josh Andrews",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Harvey Cartwright",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Grimsby Town"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Connor Ripley",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Kaelan Majekodunmi",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Dan Butler",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "James Ball",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Shaun Thomson",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Anthony Munda",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Joel Mcgregor",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Mitchell Clark",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Aaron Drinan",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Joseph Snowdon",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Matthew Virtue-Thick",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "43",
+      "nome": "Freddie Hoare",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "39",
+      "nome": "Louis Millard",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "James Debayo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "34",
+      "nome": "Billy Kirkman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Lewis Ward",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Ollie Palmer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Antwoine Hackford",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-2-1",
+    "squadra": "Swindon Town"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Andy Cook",
+    "minuto": "21'",
+    "squadra": "Grimsby Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Iwan Morgan",
+    "minuto": "43'",
+    "squadra": "Grimsby Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Iwan Morgan",
+    "minuto": "58'",
+    "squadra": "Grimsby Town",
+    "tipo": "Penalty - Scored"
+   },
+   {
+    "assist": null,
+    "marcatore": "Josh Andrews",
+    "minuto": "82'",
+    "squadra": "Grimsby Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Aaron Drinan",
+    "minuto": "85'",
+    "squadra": "Swindon Town",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 4,
+  "id": "401881266",
+  "ospite": "Grimsby Town",
+  "stadio": {
+   "citta": "Swindon",
+   "nome": "The County Ground",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    20.0,
+    18.0
+   ],
+   "contrasti_riusciti": [
+    11.0,
+    11.0
+   ],
+   "corner": [
+    6.0,
+    11.0
+   ],
+   "falli": [
+    10.0,
+    8.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    1.0,
+    0.0
+   ],
+   "in_porta": [
+    3.0,
+    9.0
+   ],
+   "parate": [
+    5.0,
+    2.0
+   ],
+   "passaggi": [
+    324.0,
+    406.0
+   ],
+   "passaggi_riusciti": [
+    219.0,
+    302.0
+   ],
+   "possesso": [
+    44.4,
+    55.6
+   ],
+   "respinte": [
+    37.0,
+    26.0
+   ],
+   "rossi": [
+    1.0,
+    0.0
+   ],
+   "tiri": [
+    9.0,
+    21.0
+   ],
+   "tiri_respinti": [
+    4.0,
+    6.0
+   ]
+  }
+ },
+ "401881267": {
+  "cartellini": [
+   {
+    "giocatore": "Donervon Daniels",
+    "minuto": "82'",
+    "rosso": false,
+    "squadra": "Oldham Athletic"
+   },
+   {
+    "giocatore": "Will Brook",
+    "minuto": "90'+3'",
+    "rosso": false,
+    "squadra": "Shrewsbury Town"
+   },
+   {
+    "giocatore": "Keenan Appiah-Forson",
+    "minuto": "90'+3'",
+    "rosso": false,
+    "squadra": "Oldham Athletic"
+   }
+  ],
+  "casa": "Shrewsbury Town",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Matthew Hudson",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Donervon Daniels",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Emmanuel Monthe",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Will Sutton",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Thomas Pett",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Oliver Norburn",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Thomas Hill",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Jamie Robson",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Gus Scott-Morriss",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Mike Fondop-Talom",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Calum Kavanagh",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Aston Wilson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Josh Hawkes",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Noah Chilvers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Lewis Temple",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Elliott Nevitt",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Favour Fawunmi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Keenan Appiah-Forson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-1-2",
+    "squadra": "Oldham Athletic"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Will Brook",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "William Boyle",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Joshua Ruffels",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Sam Stubbs",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Jay Turner-Cook",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Thomas Sang",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Michael Golding",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Kevin Berkoe",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Luca Hoole",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Josh Davison",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "George Lloyd",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Joseph Gbode",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Cameron Gregory",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "Will Gray",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Lee Isaac",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Isaac Fletcher",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Lino Sousa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Callum Stewart",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-1-2",
+    "squadra": "Shrewsbury Town"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Kevin Berkoe",
+    "minuto": "73'",
+    "squadra": "Shrewsbury Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Josh Davison",
+    "minuto": "77'",
+    "squadra": "Shrewsbury Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Favour Fawunmi",
+    "minuto": "90'+3'",
+    "squadra": "Oldham Athletic",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 1,
+  "id": "401881267",
+  "ospite": "Oldham Athletic",
+  "stadio": {
+   "citta": "Shrewsbury",
+   "nome": "The Croud Meadow",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    9.0,
+    17.0
+   ],
+   "contrasti_riusciti": [
+    9.0,
+    12.0
+   ],
+   "corner": [
+    3.0,
+    3.0
+   ],
+   "falli": [
+    5.0,
+    18.0
+   ],
+   "fuorigioco": [
+    4.0,
+    3.0
+   ],
+   "gialli": [
+    1.0,
+    2.0
+   ],
+   "in_porta": [
+    3.0,
+    2.0
+   ],
+   "parate": [
+    1.0,
+    1.0
+   ],
+   "passaggi": [
+    320.0,
+    342.0
+   ],
+   "passaggi_riusciti": [
+    214.0,
+    230.0
+   ],
+   "possesso": [
+    48.9,
+    51.1
+   ],
+   "respinte": [
+    28.0,
+    36.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    16.0,
+    5.0
+   ],
+   "tiri_respinti": [
+    4.0,
+    1.0
+   ]
+  }
+ },
+ "401881268": {
+  "cartellini": [
+   {
+    "giocatore": "Joseph O'Brien-Whitmarsh",
+    "minuto": "17'",
+    "rosso": false,
+    "squadra": "Northampton Town"
+   },
+   {
+    "giocatore": "Matt Butcher",
+    "minuto": "19'",
+    "rosso": false,
+    "squadra": "Salford City"
+   },
+   {
+    "giocatore": "James Maxwell",
+    "minuto": "31'",
+    "rosso": false,
+    "squadra": "Northampton Town"
+   },
+   {
+    "giocatore": "Owen Dale",
+    "minuto": "51'",
+    "rosso": false,
+    "squadra": "Northampton Town"
+   }
+  ],
+  "casa": "Salford City",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Ross Fitzsimons",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jon Guthrie",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Elliott Moore",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "James Maxwell",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Conor McCarthy",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Lee Evans",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Connor Lemonheigh-Evans",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Joseph O'Brien-Whitmarsh",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Joe Wormleighton",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Matthew Warhurst",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Owen Dale",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Josh Powell",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "35",
+      "nome": "Max Dyche",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Elliott List",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "32",
+      "nome": "Harvey Saunders",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "James Dadge",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Nathaniel Opoku",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Logan Briggs",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-4-2",
+    "squadra": "Northampton Town"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Will Norris",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Dan Scarr",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Will Aimson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Adebola Oluwo",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Luke Garbutt",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Abraham Odoh",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Matt Butcher",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Brendan Sarpong-Wiredu",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Macaulay Langstaff",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Kallum Cesay",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Daniel Udoh",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Ben Woodburn",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Oliver Turton",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Brandon Cooper",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "6",
+      "nome": "Joe Powell",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Ryan Graydon",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Lee Burge",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "Taylor Allen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "5-4-1",
+    "squadra": "Salford City"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Elliott Moore",
+    "minuto": "2'",
+    "squadra": "Northampton Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Kallum Cesay",
+    "minuto": "64'",
+    "squadra": "Salford City",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 1,
+  "id": "401881268",
+  "ospite": "Northampton Town",
+  "stadio": {
+   "citta": "Salford",
+   "nome": "Peninsula Stadium",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    20.0,
+    18.0
+   ],
+   "contrasti_riusciti": [
+    13.0,
+    11.0
+   ],
+   "corner": [
+    4.0,
+    8.0
+   ],
+   "falli": [
+    17.0,
+    13.0
+   ],
+   "fuorigioco": [
+    3.0,
+    2.0
+   ],
+   "gialli": [
+    1.0,
+    3.0
+   ],
+   "in_porta": [
+    2.0,
+    5.0
+   ],
+   "parate": [
+    4.0,
+    1.0
+   ],
+   "passaggi": [
+    532.0,
+    340.0
+   ],
+   "passaggi_riusciti": [
+    446.0,
+    248.0
+   ],
+   "possesso": [
+    60.3,
+    39.7
+   ],
+   "respinte": [
+    25.0,
+    25.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    9.0,
+    12.0
+   ],
+   "tiri_respinti": [
+    3.0,
+    3.0
+   ]
+  }
+ },
+ "401881270": {
+  "cartellini": [
+   {
+    "giocatore": "Alex Hunt",
+    "minuto": "29'",
+    "rosso": false,
+    "squadra": "York City"
+   },
+   {
+    "giocatore": "Joe Felix",
+    "minuto": "60'",
+    "rosso": false,
+    "squadra": "York City"
+   },
+   {
+    "giocatore": "Harvey Gilmour",
+    "minuto": "67'",
+    "rosso": false,
+    "squadra": "Rochdale"
+   },
+   {
+    "giocatore": "Oliver Banks",
+    "minuto": "88'",
+    "rosso": false,
+    "squadra": "York City"
+   }
+  ],
+  "casa": "Rochdale",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Alfie Mcnally",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Zak Johnson",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Mark Kitching",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Ryan Fallowfield",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Alex Hunt",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Arthur Read",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Harry Boyes",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Joe Felix",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Ollie Pearce",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Hiram Boateng",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Oliver Banks",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Josh Stones",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Frankie Maguire",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Jovan Malcolm",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Alex Newby",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Joey Grey",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Zech Medley",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "George Sykes-Kenworthy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-2-1",
+    "squadra": "York City"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Sam Waller",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Kaiden Wilson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "44",
+      "nome": "Aden Flint",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Kane Taylor",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Tobi Adebayo-Rowling",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Zain Silcott-Duberry",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Harvey Gilmour",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Jamie Allen",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Dajaune Brown",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Glenn Middleton",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Luke Hannant",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Babajide Adeeko",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Ethan Ebanks-Landell",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "4",
+      "nome": "Ryan East",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Edward Francis",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "40",
+      "nome": "Ian Henderson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Bryant Bilongo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Cian Hayes",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Rochdale"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Ollie Pearce",
+    "minuto": "56'",
+    "squadra": "York City",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 0,
+  "gol_ospite": 1,
+  "id": "401881270",
+  "ospite": "York City",
+  "stadio": {
+   "citta": "Rochdale",
+   "nome": "Crown Oil Arena",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    8.0,
+    13.0
+   ],
+   "contrasti_riusciti": [
+    5.0,
+    9.0
+   ],
+   "corner": [
+    6.0,
+    7.0
+   ],
+   "falli": [
+    6.0,
+    10.0
+   ],
+   "fuorigioco": [
+    1.0,
+    3.0
+   ],
+   "gialli": [
+    1.0,
+    3.0
+   ],
+   "in_porta": [
+    5.0,
+    3.0
+   ],
+   "parate": [
+    2.0,
+    3.0
+   ],
+   "passaggi": [
+    493.0,
+    403.0
+   ],
+   "passaggi_riusciti": [
+    418.0,
+    317.0
+   ],
+   "possesso": [
+    55.8,
+    44.2
+   ],
+   "respinte": [
+    18.0,
+    31.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    12.0,
+    17.0
+   ],
+   "tiri_respinti": [
+    4.0,
+    10.0
+   ]
+  }
+ },
+ "401881271": {
+  "cartellini": [
+   {
+    "giocatore": "George Hall",
+    "minuto": "10'",
+    "rosso": false,
+    "squadra": "Port Vale"
+   },
+   {
+    "giocatore": "Kyle Dempsey",
+    "minuto": "90'+3'",
+    "rosso": false,
+    "squadra": "Port Vale"
+   }
+  ],
+  "casa": "Port Vale",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Louie Moulden",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Farrend Rawson",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Devon Matthews",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Tom Moore",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Stefan Mols",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Conor Grant",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Alex Henderson",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Charlie Brown",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Donald Love",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Tyler Walton",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Charlie Warren",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "James Rogerson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Charlie Caton",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Seamus Conneely",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Oliver Smith",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Joshua Smith",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Shaun Whalley",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "49",
+      "nome": "Ronan Darcy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-1-2",
+    "squadra": "Accrington Stanley"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Marko Marosi",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Jasper Moon",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Connor Hall",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Cameron Humphreys",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Kyle Dempsey",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "George Hall",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "George Byers",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Jaheim Headley",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Jordan Lawrence-Gabriel",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Onel Hernández",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "36",
+      "nome": "Max Watters",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "12",
+      "nome": "Aaron McGowan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Lewis Montsma",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "42",
+      "nome": "Charlie Bussel",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "38",
+      "nome": "Rhys Walters",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Jackson Smith",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Maleace Asamoah",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "14",
+      "nome": "Oliver Lynch",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-5-2",
+    "squadra": "Port Vale"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Jaheim Headley",
+    "minuto": "8'",
+    "squadra": "Port Vale",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Kyle Dempsey",
+    "minuto": "27'",
+    "squadra": "Port Vale",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Alex Henderson",
+    "minuto": "58'",
+    "squadra": "Accrington Stanley",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Jaheim Headley",
+    "minuto": "61'",
+    "squadra": "Port Vale",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Tyler Walton",
+    "minuto": "85'",
+    "squadra": "Accrington Stanley",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Tom Moore",
+    "minuto": "90'",
+    "squadra": "Port Vale",
+    "tipo": "Own Goal"
+   }
+  ],
+  "gol_casa": 4,
+  "gol_ospite": 2,
+  "id": "401881271",
+  "ospite": "Accrington Stanley",
+  "stadio": {
+   "citta": "Stoke-on-Trent",
+   "nome": "Vale Park",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    11.0,
+    9.0
+   ],
+   "contrasti_riusciti": [
+    8.0,
+    8.0
+   ],
+   "corner": [
+    7.0,
+    3.0
+   ],
+   "falli": [
+    10.0,
+    11.0
+   ],
+   "fuorigioco": [
+    5.0,
+    3.0
+   ],
+   "gialli": [
+    2.0,
+    0.0
+   ],
+   "in_porta": [
+    9.0,
+    4.0
+   ],
+   "parate": [
+    2.0,
+    5.0
+   ],
+   "passaggi": [
+    364.0,
+    382.0
+   ],
+   "passaggi_riusciti": [
+    253.0,
+    285.0
+   ],
+   "possesso": [
+    49.0,
+    51.0
+   ],
+   "respinte": [
+    16.0,
+    25.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    17.0,
+    11.0
+   ],
+   "tiri_respinti": [
+    5.0,
+    3.0
+   ]
+  }
+ },
+ "401881273": {
+  "cartellini": [
+   {
+    "giocatore": "James Wilson",
+    "minuto": "40'",
+    "rosso": false,
+    "squadra": "Cheltenham Town"
+   },
+   {
+    "giocatore": "Kirsten Otchere",
+    "minuto": "45'",
+    "rosso": false,
+    "squadra": "Cheltenham Town"
+   }
+  ],
+  "casa": "Exeter City",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Wyll Stanway",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "James Wilson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Pierce Sweeney",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Jordan Shipley",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Jonathan Tomkinson",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Ben Stevenson",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Charlie Mccann",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Shaun McWilliams",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Andreas Weimann",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Kirsten Otchere",
+      "ruolo": "LF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Ryan Broom",
+      "ruolo": "RF",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "5",
+      "nome": "Robbie Cundy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "George Miller",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Joe Day",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Jake Bickerstaff",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Favour Onukwuli",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "George Nurse",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Freddie Willcox",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-3-3",
+    "squadra": "Cheltenham Town"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Jack Bycroft",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jack Fitzwater",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Jack Taylor",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Luca Woodhouse",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Lakyle Samuel",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Reece Cole",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Harry Kite",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Jake Doyle-Hayes",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Sonny Cox",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Anthony Scully",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "George Birch",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Taylor Perry",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Frankie Phillips",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Liam Oakes",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Danny Rose",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "40",
+      "nome": "Edward James",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Ed Turns",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Josh Gordon",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Exeter City"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Lakyle Samuel",
+    "minuto": "51'",
+    "squadra": "Exeter City",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 0,
+  "id": "401881273",
+  "ospite": "Cheltenham Town",
+  "stadio": {
+   "citta": "Exeter",
+   "nome": "St James Park",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    14.0,
+    19.0
+   ],
+   "contrasti_riusciti": [
+    10.0,
+    13.0
+   ],
+   "corner": [
+    5.0,
+    5.0
+   ],
+   "falli": [
+    12.0,
+    15.0
+   ],
+   "fuorigioco": [
+    0.0,
+    0.0
+   ],
+   "gialli": [
+    0.0,
+    2.0
+   ],
+   "in_porta": [
+    5.0,
+    1.0
+   ],
+   "parate": [
+    1.0,
+    4.0
+   ],
+   "passaggi": [
+    294.0,
+    431.0
+   ],
+   "passaggi_riusciti": [
+    189.0,
+    288.0
+   ],
+   "possesso": [
+    40.1,
+    59.9
+   ],
+   "respinte": [
+    75.0,
+    32.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    14.0,
+    8.0
+   ],
+   "tiri_respinti": [
+    1.0,
+    1.0
+   ]
+  }
+ },
+ "401881274": {
+  "cartellini": [
+   {
+    "giocatore": "Ciaran Brennan",
+    "minuto": "1'",
+    "rosso": false,
+    "squadra": "Newport County"
+   },
+   {
+    "giocatore": "Jordan Gibson",
+    "minuto": "15'",
+    "rosso": false,
+    "squadra": "Crewe Alexandra"
+   },
+   {
+    "giocatore": "Charlie McNeill",
+    "minuto": "38'",
+    "rosso": false,
+    "squadra": "Crewe Alexandra"
+   },
+   {
+    "giocatore": "Matús Holícek",
+    "minuto": "55'",
+    "rosso": false,
+    "squadra": "Crewe Alexandra"
+   },
+   {
+    "giocatore": "Kion Etete",
+    "minuto": "60'",
+    "rosso": false,
+    "squadra": "Newport County"
+   },
+   {
+    "giocatore": "Adrien Thibaut",
+    "minuto": "61'",
+    "rosso": false,
+    "squadra": "Crewe Alexandra"
+   }
+  ],
+  "casa": "Crewe Alexandra",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Jordan Wright",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Kyle Cameron",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Lee Jenkins",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Matty Jacob",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Dan Sassi",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Aaron Lewis",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Ciaran Brennan",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Matt Smith",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Kion Etete",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Harrison Biggins",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Yahya Bamba",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Gerard Garner",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "3",
+      "nome": "Tom Davies",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "James Crole",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Shaquille Gwengwe",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Jake Turner",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "23",
+      "nome": "Michael Adu-Poku",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Kieron Evans",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Newport County"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Ian Lawlor",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Joshua Stephenson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Luke Offord",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Reece Hutchinson",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Lewis Billington",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Joe White",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Matús Holícek",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Conor Thomas",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Charlie McNeill",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Jordan Gibson",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Josh March",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Joel Tabiner",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "James Jones",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "Calum Agius",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Tom Booth",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Owen Lunt",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "29",
+      "nome": "Adrien Thibaut",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Stan Dancey",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Crewe Alexandra"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Luke Offord",
+    "minuto": "3'",
+    "squadra": "Newport County",
+    "tipo": "Own Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Dan Sassi",
+    "minuto": "34'",
+    "squadra": "Newport County",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Charlie McNeill",
+    "minuto": "77'",
+    "squadra": "Crewe Alexandra",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Joshua Stephenson",
+    "minuto": "90'",
+    "squadra": "Crewe Alexandra",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 2,
+  "id": "401881274",
+  "ospite": "Newport County",
+  "stadio": {
+   "citta": "Crewe",
+   "nome": "Mornflake Stadium",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    14.0,
+    12.0
+   ],
+   "contrasti_riusciti": [
+    9.0,
+    9.0
+   ],
+   "corner": [
+    4.0,
+    6.0
+   ],
+   "falli": [
+    17.0,
+    12.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    4.0,
+    2.0
+   ],
+   "in_porta": [
+    5.0,
+    2.0
+   ],
+   "parate": [
+    1.0,
+    3.0
+   ],
+   "passaggi": [
+    481.0,
+    219.0
+   ],
+   "passaggi_riusciti": [
+    382.0,
+    117.0
+   ],
+   "possesso": [
+    67.9,
+    32.1
+   ],
+   "respinte": [
+    36.0,
+    37.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    9.0,
+    14.0
+   ],
+   "tiri_respinti": [
+    0.0,
+    6.0
+   ]
+  }
+ },
+ "401881275": {
+  "cartellini": [
+   {
+    "giocatore": "Jay Williams",
+    "minuto": "26'",
+    "rosso": false,
+    "squadra": "Colchester United"
+   },
+   {
+    "giocatore": "Logan Dobbs",
+    "minuto": "64'",
+    "rosso": false,
+    "squadra": "Gillingham"
+   }
+  ],
+  "casa": "Colchester United",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Oliver Wright",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Omar Beckles",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Logan Dobbs",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Ethan Coleman",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Zane Albarus",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Harry Waldock",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "James Brophy",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Nick Freeman",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Lamin Sillah",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Garath McCleary",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Sheldon Kendall",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Cameron Antwi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Ronan Hale",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Armani Little",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "40",
+      "nome": "Rohan Luthra",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "5",
+      "nome": "Andy Smith",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Jack Daley",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "32",
+      "nome": "Louie Dayal",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-3",
+    "squadra": "Gillingham"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Thimothee Lo-Tutala",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Sean Raggett",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jack Tucker",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Ellis Iandolo",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Kane Vincent-Young",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Jack Payne",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Teddy Bishop",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Jay Williams",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Jaden Williams",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Harry Anderson",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Moses Sesay",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "23",
+      "nome": "Adrian Akande",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "4",
+      "nome": "Ben Perry",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "31",
+      "nome": "Oscar Roberts",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "44",
+      "nome": "Sam Kuffour",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Kien Connolly",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "6",
+      "nome": "Paul Digby",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Oscar Thorn",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Colchester United"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Jack Payne",
+    "minuto": "61'",
+    "squadra": "Colchester United",
+    "tipo": "Penalty - Scored"
+   },
+   {
+    "assist": null,
+    "marcatore": "Harry Anderson",
+    "minuto": "72'",
+    "squadra": "Colchester United",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 0,
+  "id": "401881275",
+  "ospite": "Gillingham",
+  "stadio": {
+   "citta": "Colchester",
+   "nome": "JobServe Community Stadium",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    16.0,
+    14.0
+   ],
+   "contrasti_riusciti": [
+    12.0,
+    7.0
+   ],
+   "corner": [
+    2.0,
+    5.0
+   ],
+   "falli": [
+    10.0,
+    13.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    1.0,
+    1.0
+   ],
+   "in_porta": [
+    7.0,
+    4.0
+   ],
+   "parate": [
+    4.0,
+    5.0
+   ],
+   "passaggi": [
+    304.0,
+    481.0
+   ],
+   "passaggi_riusciti": [
+    212.0,
+    378.0
+   ],
+   "possesso": [
+    38.2,
+    61.8
+   ],
+   "respinte": [
+    50.0,
+    10.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    13.0,
+    14.0
+   ],
+   "tiri_respinti": [
+    2.0,
+    5.0
+   ]
+  }
+ },
+ "401881276": {
+  "cartellini": [
+   {
+    "giocatore": "Kyle McFadzean",
+    "minuto": "6'",
+    "rosso": false,
+    "squadra": "Chesterfield"
+   },
+   {
+    "giocatore": "Lee Bonis",
+    "minuto": "42'",
+    "rosso": false,
+    "squadra": "Chesterfield"
+   }
+  ],
+  "casa": "Bristol Rovers",
+  "data": "2026-11-14",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Zachary Hemming",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Jack Simpson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Kyle McFadzean",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Lewis Gordon",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Remeao Hutton",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Louie Marsh",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Ryan Stirk",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Tom Naylor",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Lee Bonis",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "37",
+      "nome": "Josh Koroma",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Liam Mandeville",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "George McEachran",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Kiano Dyer",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Dylan Duffy",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "31",
+      "nome": "Joel Randall",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "Dilan Kumar Markanday",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "46",
+      "nome": "Tom Pearce",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Alfie Pond",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "Chesterfield"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": true,
+      "maglia": "10",
+      "nome": "Bobby Kamwa",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Arvin Appiah",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "19",
+      "nome": "Ellis Harrison",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Richard Smallwood",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Charlie Binns",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Philip Sanyaolu",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Shaqai Forde",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Brad Young",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Alfie Kilgour",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Kofi Balmer",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Ben Purrington",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Tom James",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Joe Quigley",
+      "ruolo": "M",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Keenan Gough",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Tommy Leigh",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Clinton Mola",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Reiss-Alexander Russell-Denny",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Fabrizio Cavegn",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     }
+    ],
+    "modulo": "4-3-1-2",
+    "squadra": "Bristol Rovers"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Louie Marsh",
+    "minuto": "24'",
+    "squadra": "Chesterfield",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Lee Bonis",
+    "minuto": "77'",
+    "squadra": "Chesterfield",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 0,
+  "gol_ospite": 2,
+  "id": "401881276",
+  "ospite": "Chesterfield",
+  "stadio": {
+   "citta": "Bristol",
+   "nome": "Memorial Stadium",
+   "paese": "England"
+  },
+  "stat": {
+   "contrasti": [
+    15.0,
+    14.0
+   ],
+   "contrasti_riusciti": [
+    15.0,
+    7.0
+   ],
+   "corner": [
+    2.0,
+    0.0
+   ],
+   "falli": [
+    9.0,
+    12.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    0.0,
+    2.0
+   ],
+   "in_porta": [
+    2.0,
+    4.0
+   ],
+   "parate": [
+    2.0,
+    2.0
+   ],
+   "passaggi": [
+    427.0,
+    411.0
+   ],
+   "passaggi_riusciti": [
+    279.0,
+    281.0
+   ],
+   "possesso": [
+    51.3,
+    48.7
+   ],
+   "respinte": [
+    21.0,
+    52.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    10.0,
+    8.0
+   ],
+   "tiri_respinti": [
+    3.0,
+    1.0
+   ]
+  }
+ },
  "401881277": {
   "cartellini": [
    {
