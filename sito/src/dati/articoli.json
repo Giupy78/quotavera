@@ -2456,7 +2456,7 @@
     {
      "titolo": "La 14ª giornata",
      "righe": [
-      "Nella 14ª giornata sono stati segnati 21 gol in 6 partite, 3.5 a incontro."
+      "Nella 14ª giornata sono stati segnati 24 gol in 8 partite, 3.0 a incontro."
      ]
     },
     {
@@ -2464,7 +2464,7 @@
      "righe": [
       "In testa c'è Almeria con 32 punti in 14 partite.",
       "Almeria ha 32 punti ma i tiri in porta ne direbbero 20.0: è la squadra che sta raccogliendo di più rispetto a quanto crea.",
-      "All'opposto Ceuta, ferma a 5 punti contro i 16.3 attesi dal gioco."
+      "All'opposto Ceuta, ferma a 5 punti contro i 17.0 attesi dal gioco."
      ]
     }
    ],
@@ -2485,14 +2485,14 @@
     },
     {
      "tipo": "digiuno",
-     "titolo": "Tenerife non vince da 7 partite",
+     "titolo": "Ceuta non vince da 7 partite",
      "testo": "Il digiuno aperto più lungo del campionato.",
      "numero": "7",
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
      "squadre": [
-      "Tenerife"
+      "Ceuta"
      ],
      "campione": 7,
      "collegamento": ""
@@ -2604,6 +2604,21 @@
      "campionato": "LaLiga 2",
      "bandiera": "🇪🇸",
      "slug": "laliga-2",
+     "data": "2026-11-15",
+     "casa": "Granada",
+     "ospite": "Las Palmas",
+     "gol_casa": 1,
+     "gol_ospite": 0,
+     "in_porta_casa": 3,
+     "in_porta_ospite": 6,
+     "vincitore": "Granada",
+     "perdente": "Las Palmas",
+     "scarto_tiri": 3
+    },
+    {
+     "campionato": "LaLiga 2",
+     "bandiera": "🇪🇸",
+     "slug": "laliga-2",
      "data": "2026-11-07",
      "casa": "Leganes",
      "ospite": "Albacete",
@@ -2613,21 +2628,6 @@
      "in_porta_ospite": 4,
      "vincitore": "Albacete",
      "perdente": "Leganes",
-     "scarto_tiri": 3
-    },
-    {
-     "campionato": "LaLiga 2",
-     "bandiera": "🇪🇸",
-     "slug": "laliga-2",
-     "data": "2026-11-01",
-     "casa": "Eldense",
-     "ospite": "Granada",
-     "gol_casa": 0,
-     "gol_ospite": 2,
-     "in_porta_casa": 6,
-     "in_porta_ospite": 3,
-     "vincitore": "Granada",
-     "perdente": "Eldense",
      "scarto_tiri": 3
     }
    ],
