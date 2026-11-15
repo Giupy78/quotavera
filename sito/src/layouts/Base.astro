@@ -141,9 +141,10 @@ const giorno = (d: Date) => d.toLocaleDateString("it-IT", { day: "numeric", mont
       </div>
     </div>
 
-    <div class="wrap">
-      <PromoYotp forma="top" dove="top" />
-    </div>
+    {/* Il banner sotto il menu (forma "top") e' stato tolto il 15 novembre:
+        sul telefono occupava il primo schermo di ogni pagina, ed e' da li' che
+        arrivano tutti i clic da Google. Restano le colonne laterali (solo
+        schermi larghi), quello in fondo alla pagina e quello negli articoli. */}
     <PromoYotp forma="lato" lato="sx" dove="colonna-sx" />
     <PromoYotp forma="lato" lato="dx" dove="colonna-dx" />
 
