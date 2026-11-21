@@ -1,4 +1,510 @@
 {
+ "401882799": {
+  "cartellini": [
+   {
+    "giocatore": "Sergio Camello",
+    "minuto": "45'+1'",
+    "rosso": false,
+    "squadra": "Rayo Vallecano"
+   },
+   {
+    "giocatore": "Javier Guerra",
+    "minuto": "64'",
+    "rosso": false,
+    "squadra": "Valencia"
+   },
+   {
+    "giocatore": "Jorge de Frutos",
+    "minuto": "71'",
+    "rosso": false,
+    "squadra": "Rayo Vallecano"
+   }
+  ],
+  "casa": "Rayo Vallecano",
+  "data": "2026-11-21",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Stole Dimitrievski",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Copete",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "César Tárrega",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Pablo Maffeo",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Arnau Martínez",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Guido Rodríguez",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Pepelu",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Luis Rioja",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Dani Raba",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Umar Sadiq",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Javier Guerra",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "4",
+      "nome": "Mouctar Diakhaby",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "15",
+      "nome": "Aliou Dieng",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "33",
+      "nome": "Aaron Mayol",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Justin de Haas",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Harvey Elliott",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "37",
+      "nome": "Aimar Blázquez",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "David Otorbi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Kayne Van Oevelen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "23",
+      "nome": "Filip Ugrinic",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Dimitri Foulquier",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "39",
+      "nome": "Ryunosuke Sato",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Hugo Duro",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-4-2",
+    "squadra": "Valencia"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Emil Audero",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Mujaid Sadick",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Florian Lejeune",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Giorgi Tsitaishvili",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Andrei Ratiu",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Unai López",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Pathé Ciss",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Jorge de Frutos",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Isi Palazón",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Sergio Camello",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Randy Nteka",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Fran Pérez",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Marash Kumbulla",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Daniel Cárdenas",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "4",
+      "nome": "Pedro Díaz",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "37",
+      "nome": "Rayane Belaid",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Jozhua Vertrouwd",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Alexandre Alemão",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Adrià Pedrosa",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Iván Balliu",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Álvaro García",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "36",
+      "nome": "Gnangoro Bouare Samake",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Pelayo Fernández",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-4-2",
+    "squadra": "Rayo Vallecano"
+   }
+  },
+  "gol": [
+   {
+    "assist": "Javier Guerra",
+    "marcatore": "Copete",
+    "minuto": "41'",
+    "squadra": "Valencia",
+    "tipo": "Goal - Header"
+   }
+  ],
+  "gol_casa": 0,
+  "gol_ospite": 1,
+  "id": "401882799",
+  "ospite": "Valencia",
+  "stadio": {
+   "citta": "Madrid",
+   "nome": "Estadio de Vallecas",
+   "paese": "Spain"
+  },
+  "stat": {
+   "contrasti": [
+    13.0,
+    18.0
+   ],
+   "contrasti_riusciti": [
+    9.0,
+    7.0
+   ],
+   "corner": [
+    8.0,
+    5.0
+   ],
+   "cross": [
+    36.0,
+    10.0
+   ],
+   "cross_riusciti": [
+    6.0,
+    4.0
+   ],
+   "falli": [
+    12.0,
+    17.0
+   ],
+   "fuorigioco": [
+    2.0,
+    2.0
+   ],
+   "gialli": [
+    2.0,
+    1.0
+   ],
+   "in_porta": [
+    5.0,
+    2.0
+   ],
+   "intercetti": [
+    6.0,
+    9.0
+   ],
+   "lanci": [
+    52.0,
+    54.0
+   ],
+   "lanci_riusciti": [
+    31.0,
+    18.0
+   ],
+   "parate": [
+    1.0,
+    5.0
+   ],
+   "passaggi": [
+    529.0,
+    305.0
+   ],
+   "passaggi_riusciti": [
+    456.0,
+    242.0
+   ],
+   "possesso": [
+    63.9,
+    36.1
+   ],
+   "respinte": [
+    13.0,
+    46.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    21.0,
+    11.0
+   ],
+   "tiri_respinti": [
+    8.0,
+    4.0
+   ]
+  }
+ },
  "401882805": {
   "cartellini": [
    {
@@ -508,6 +1014,563 @@
    "tiri_respinti": [
     3.0,
     1.0
+   ]
+  }
+ },
+ "401882806": {
+  "cartellini": [
+   {
+    "giocatore": "Ximo Navarro",
+    "minuto": "5'",
+    "rosso": false,
+    "squadra": "Deportivo"
+   },
+   {
+    "giocatore": "Giacomo Quagliata",
+    "minuto": "19'",
+    "rosso": false,
+    "squadra": "Deportivo"
+   },
+   {
+    "giocatore": "Ángel Pérez",
+    "minuto": "32'",
+    "rosso": false,
+    "squadra": "Alavés"
+   },
+   {
+    "giocatore": "Miguel Loureiro",
+    "minuto": "48'",
+    "rosso": false,
+    "squadra": "Deportivo"
+   },
+   {
+    "giocatore": "Adama Traoré",
+    "minuto": "56'",
+    "rosso": false,
+    "squadra": "Deportivo"
+   },
+   {
+    "giocatore": "Abde Rebbach",
+    "minuto": "56'",
+    "rosso": false,
+    "squadra": "Alavés"
+   },
+   {
+    "giocatore": "Lucas Boyé",
+    "minuto": "65'",
+    "rosso": false,
+    "squadra": "Alavés"
+   },
+   {
+    "giocatore": "Ander Guevara",
+    "minuto": "89'",
+    "rosso": false,
+    "squadra": "Alavés"
+   }
+  ],
+  "casa": "Alavés",
+  "data": "2026-11-21",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Leo Román",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Miguel Loureiro",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Lucas Noubi",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Giacomo Quagliata",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Ximo Navarro",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Riki Rodríguez",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Mario Soriano Carreno",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Marc Casadó",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Yeremay Hernández",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Luismi Cruz",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Pierre-Emerick Aubameyang",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "David Mella",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "20",
+      "nome": "José María Giménez",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "16",
+      "nome": "Lorenzo Amatucci",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Germán Parreño",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "32",
+      "nome": "Bil Nsongo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Jonathan Asp Jensen",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "25",
+      "nome": "Álvaro Fernández",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Angeliño",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "Adama Traoré",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Adrià Altimira",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "37",
+      "nome": "Noé Carrillo",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Diego Villares",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-5-1",
+    "squadra": "Deportivo"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Mariano Díaz",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Aitor Mañas",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Miguel Rodríguez",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Selu Diallo",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "12",
+      "nome": "Hugo Novoa",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "6",
+      "nome": "Ander Guevara",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "27",
+      "nome": "Xanet Oláiz",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Adrián Rodríguez",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Carles Aleñá",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "3",
+      "nome": "Youssef Lekhedim",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Nicolás Valentini",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Carlos Protesoni",
+      "ruolo": null,
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Antonio Sivera",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Ville Koski",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Jonny",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Nahuel Tenaglia",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Antonio Blanco",
+      "ruolo": "SW",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Denis Suárez",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Pablo Ibáñez",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Abde Rebbach",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Ángel Pérez",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Lucas Boyé",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Toni Martínez",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     }
+    ],
+    "modulo": "3-1-4-2",
+    "squadra": "Alavés"
+   }
+  },
+  "gol": [
+   {
+    "assist": "Antonio Blanco",
+    "marcatore": "Ángel Pérez",
+    "minuto": "2'",
+    "squadra": "Alavés",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Nahuel Tenaglia",
+    "minuto": "41'",
+    "squadra": "Deportivo",
+    "tipo": "Own Goal"
+   },
+   {
+    "assist": "Ángel Pérez",
+    "marcatore": "Lucas Boyé",
+    "minuto": "62'",
+    "squadra": "Alavés",
+    "tipo": "Goal - Header"
+   },
+   {
+    "assist": "Lucas Boyé",
+    "marcatore": "Denis Suárez",
+    "minuto": "90'",
+    "squadra": "Alavés",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 3,
+  "gol_ospite": 1,
+  "id": "401882806",
+  "ospite": "Deportivo",
+  "stadio": {
+   "citta": "Vitoria-Gasteiz",
+   "nome": "Mendizorrotza",
+   "paese": "Spain"
+  },
+  "stat": {
+   "contrasti": [
+    17.0,
+    21.0
+   ],
+   "contrasti_riusciti": [
+    10.0,
+    12.0
+   ],
+   "corner": [
+    8.0,
+    2.0
+   ],
+   "cross": [
+    21.0,
+    14.0
+   ],
+   "cross_riusciti": [
+    5.0,
+    4.0
+   ],
+   "falli": [
+    20.0,
+    15.0
+   ],
+   "fuorigioco": [
+    1.0,
+    1.0
+   ],
+   "gialli": [
+    4.0,
+    4.0
+   ],
+   "in_porta": [
+    8.0,
+    2.0
+   ],
+   "intercetti": [
+    12.0,
+    6.0
+   ],
+   "lanci": [
+    67.0,
+    58.0
+   ],
+   "lanci_riusciti": [
+    39.0,
+    24.0
+   ],
+   "parate": [
+    2.0,
+    5.0
+   ],
+   "passaggi": [
+    358.0,
+    391.0
+   ],
+   "passaggi_riusciti": [
+    292.0,
+    306.0
+   ],
+   "possesso": [
+    48.4,
+    51.6
+   ],
+   "respinte": [
+    19.0,
+    32.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    21.0,
+    7.0
+   ],
+   "tiri_respinti": [
+    5.0,
+    4.0
    ]
   }
  },
