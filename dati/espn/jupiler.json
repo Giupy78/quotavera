@@ -1,4 +1,460 @@
 {
+ "401878937": {
+  "cartellini": [
+   {
+    "giocatore": "Ibrahim Diakité",
+    "minuto": "29'",
+    "rosso": false,
+    "squadra": "Cercle Brugge KSV"
+   },
+   {
+    "giocatore": "Babatunde Akinsola",
+    "minuto": "35'",
+    "rosso": false,
+    "squadra": "Cercle Brugge KSV"
+   },
+   {
+    "giocatore": "Royer Caicedo",
+    "minuto": "42'",
+    "rosso": false,
+    "squadra": "Cercle Brugge KSV"
+   },
+   {
+    "giocatore": "Amando Lapage",
+    "minuto": "57'",
+    "rosso": false,
+    "squadra": "KVC Westerlo"
+   },
+   {
+    "giocatore": "Andreas Jungdal",
+    "minuto": "65'",
+    "rosso": false,
+    "squadra": "KVC Westerlo"
+   },
+   {
+    "giocatore": "Steve Ngoura",
+    "minuto": "90'+6'",
+    "rosso": false,
+    "squadra": "Cercle Brugge KSV"
+   }
+  ],
+  "casa": "Cercle Brugge KSV",
+  "data": "2026-11-20",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "99",
+      "nome": "Andreas Jungdal",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Amando Lapage",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Seiji Kimura",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "88",
+      "nome": "Fabio Ferraro",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Lasse Flö",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Cisse Sandra",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Dogucan Haspolat",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "45",
+      "nome": "Ibrahima Fofana",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Norman Bassette",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Issai Sakamoto",
+      "ruolo": "AM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "20",
+      "nome": "Cameron Congreve",
+      "ruolo": "AM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": true,
+      "maglia": "39",
+      "nome": "Thomas Van Den Keybus",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "47",
+      "nome": "Yang Min-Hyeok",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Bill Lathouwers",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Shunsuke Saito",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Pape Diong",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "Nikola Storm",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Naoufal Bohamdi-Kamoni",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "22",
+      "nome": "Emmanuel Tsimba",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "40",
+      "nome": "Botond Balogh",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "4-2-3-1",
+    "squadra": "KVC Westerlo"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Gaëtan Coucke",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Geoffrey Kondo",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Royer Caicedo",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Ibrahim Diakité",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "28",
+      "nome": "Hannes Van Der Bruggen",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "18",
+      "nome": "Luke Le Roux",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "71",
+      "nome": "Viggo Martens",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "15",
+      "nome": "Gary Magnée",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Babatunde Akinsola",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Dante Vanzeir",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Steve Ngoura",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "11",
+      "nome": "Charles Herrmann",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Yann Lienard",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "82",
+      "nome": "Louis Colman",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "42",
+      "nome": "Lukas Mondele",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "8",
+      "nome": "Erick",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "75",
+      "nome": "Sebbe Gheerardyns",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "Abdoul Ouattara",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "41",
+      "nome": "Krys Kouassi",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "3",
+      "nome": "Yago Lincoln Rocha Santos",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-1-2",
+    "squadra": "Cercle Brugge KSV"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Steve Ngoura",
+    "minuto": "71'",
+    "squadra": "Cercle Brugge KSV",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 1,
+  "gol_ospite": 0,
+  "id": "401878937",
+  "ospite": "KVC Westerlo",
+  "stadio": {
+   "citta": "Brugge",
+   "nome": "Jan Breydel Stadium",
+   "paese": "Belgium"
+  },
+  "stat": {
+   "contrasti": [
+    17.0,
+    17.0
+   ],
+   "contrasti_riusciti": [
+    11.0,
+    7.0
+   ],
+   "corner": [
+    2.0,
+    4.0
+   ],
+   "falli": [
+    10.0,
+    14.0
+   ],
+   "fuorigioco": [
+    3.0,
+    1.0
+   ],
+   "gialli": [
+    4.0,
+    2.0
+   ],
+   "in_porta": [
+    6.0,
+    6.0
+   ],
+   "parate": [
+    6.0,
+    5.0
+   ],
+   "passaggi": [
+    335.0,
+    473.0
+   ],
+   "passaggi_riusciti": [
+    263.0,
+    397.0
+   ],
+   "possesso": [
+    41.9,
+    58.1
+   ],
+   "respinte": [
+    29.0,
+    29.0
+   ],
+   "rossi": [
+    0.0,
+    0.0
+   ],
+   "tiri": [
+    18.0,
+    16.0
+   ],
+   "tiri_respinti": [
+    2.0,
+    5.0
+   ]
+  }
+ },
  "401878943": {
   "cartellini": [
    {

@@ -37,7 +37,7 @@
     "p_modello": [
      0.6355,
      0.2241,
-     0.1404
+     0.1403
     ],
     "margine": 0.0047,
     "margine_migliore": 0.0185,
@@ -288,7 +288,7 @@
     ],
     "p_modello": [
      0.3675,
-     0.262,
+     0.2621,
      0.3705
     ],
     "margine": 0.003,
@@ -468,7 +468,7 @@
     ],
     "p_modello": [
      0.5751,
-     0.2258,
+     0.2259,
      0.199
     ],
     "margine": 0.0905,
@@ -510,22 +510,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      1.235,
+      1.25,
       5.5,
       9.0
      ]
     },
     "p_mercato": [
-     0.7647,
-     0.1515,
-     0.0837
+     0.7594,
+     0.1544,
+     0.0862
     ],
     "p_modello": [
      0.7355,
      0.1658,
      0.0987
     ],
-    "margine": 0.1026,
+    "margine": 0.0929,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -550,7 +550,7 @@
     "p_modello": [
      0.3148,
      0.2541,
-     0.431
+     0.4311
     ],
     "margine": 0.1045,
     "margine_migliore": null,
@@ -1023,7 +1023,7 @@
     "p_modello": [
      0.3027,
      0.3089,
-     0.3884
+     0.3883
     ],
     "margine": 0.0096,
     "margine_migliore": 0.0225,
@@ -1175,22 +1175,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.0,
+      1.952,
       3.75,
-      3.4
+      3.5
      ]
     },
     "p_mercato": [
-     0.4776,
-     0.2477,
-     0.2747
+     0.4883,
+     0.2465,
+     0.2652
     ],
     "p_modello": [
      0.4136,
      0.251,
      0.3353
     ],
-    "margine": 0.0608,
+    "margine": 0.0647,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1269,7 +1269,7 @@
     "p_modello": [
      0.5245,
      0.2357,
-     0.2397
+     0.2398
     ],
     "margine": 0.072,
     "margine_migliore": null,
@@ -1382,51 +1382,26 @@
     "margine": 0.0648,
     "margine_migliore": null,
     "quote_da": "unico"
+   },
+   {
+    "id": "coventry-ipswich",
+    "casa": "Coventry",
+    "ospite": "Ipswich",
+    "data": "2026-12-01",
+    "ora": "21:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4689,
+     0.2366,
+     0.2945
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "laliga": [
-   {
-    "id": "ath-bilbao-espanol",
-    "casa": "Ath Bilbao",
-    "ospite": "Espanol",
-    "data": "2026-11-20",
-    "ora": "21:00",
-    "quote": {
-     "betfair": [
-      1.52,
-      4.8,
-      7.2
-     ],
-     "bet365": [
-      1.5,
-      4.33,
-      6.5
-     ],
-     "massimo": [
-      1.52,
-      4.6,
-      6.6
-     ],
-     "media": [
-      1.48,
-      4.38,
-      6.23
-     ]
-    },
-    "p_mercato": [
-     0.6558,
-     0.2068,
-     0.1374
-    ],
-    "p_modello": [
-     0.5205,
-     0.2776,
-     0.2019
-    ],
-    "margine": 0.0051,
-    "margine_migliore": 0.0268,
-    "quote_da": "confronto"
-   },
    {
     "id": "alaves-la-coruna",
     "casa": "Alaves",
@@ -1461,9 +1436,9 @@
      0.2718
     ],
     "p_modello": [
-     0.3852,
-     0.3036,
-     0.3112
+     0.3843,
+     0.302,
+     0.3137
     ],
     "margine": 0.0067,
     "margine_migliore": 0.0287,
@@ -1503,9 +1478,9 @@
      0.229
     ],
     "p_modello": [
-     0.4536,
-     0.2964,
-     0.25
+     0.4541,
+     0.2947,
+     0.2512
     ],
     "margine": 0.0116,
     "margine_migliore": 0.0384,
@@ -1545,9 +1520,9 @@
      0.4045
     ],
     "p_modello": [
-     0.3364,
-     0.261,
-     0.4026
+     0.3365,
+     0.2594,
+     0.4041
     ],
     "margine": 0.0057,
     "margine_migliore": 0.0344,
@@ -1587,9 +1562,9 @@
      0.0515
     ],
     "p_modello": [
-     0.7288,
-     0.1759,
-     0.0953
+     0.7289,
+     0.1751,
+     0.096
     ],
     "margine": 0.0043,
     "margine_migliore": 0.012,
@@ -1629,9 +1604,9 @@
      0.0669
     ],
     "p_modello": [
-     0.753,
-     0.1388,
-     0.1081
+     0.7524,
+     0.1386,
+     0.109
     ],
     "margine": 0.0077,
     "margine_migliore": 0.0329,
@@ -1671,9 +1646,9 @@
      0.478
     ],
     "p_modello": [
-     0.3018,
-     0.2044,
-     0.4938
+     0.3025,
+     0.2034,
+     0.4941
     ],
     "margine": 0.0074,
     "margine_migliore": 0.0289,
@@ -1713,9 +1688,9 @@
      0.2083
     ],
     "p_modello": [
-     0.6376,
-     0.2298,
-     0.1327
+     0.6369,
+     0.229,
+     0.1341
     ],
     "margine": 0.015,
     "margine_migliore": 0.0258,
@@ -1755,9 +1730,9 @@
      0.6162
     ],
     "p_modello": [
-     0.206,
-     0.3076,
-     0.4864
+     0.2064,
+     0.3055,
+     0.4881
     ],
     "margine": 0.0121,
     "margine_migliore": 0.0211,
@@ -1797,9 +1772,9 @@
      0.2949
     ],
     "p_modello": [
-     0.4617,
-     0.2485,
-     0.2898
+     0.4615,
+     0.2473,
+     0.2912
     ],
     "margine": 0.0113,
     "margine_migliore": 0.0315,
@@ -1824,9 +1799,9 @@
      0.2964
     ],
     "p_modello": [
-     0.6531,
-     0.1712,
-     0.1757
+     0.6515,
+     0.171,
+     0.1774
     ],
     "margine": 0.065,
     "margine_migliore": null,
@@ -1851,9 +1826,9 @@
      0.1572
     ],
     "p_modello": [
-     0.5607,
-     0.2501,
-     0.1892
+     0.5604,
+     0.249,
+     0.1906
     ],
     "margine": 0.058,
     "margine_migliore": null,
@@ -1878,9 +1853,9 @@
      0.5411
     ],
     "p_modello": [
-     0.1722,
-     0.2675,
-     0.5604
+     0.1778,
+     0.2708,
+     0.5514
     ],
     "margine": 0.0628,
     "margine_migliore": null,
@@ -1905,9 +1880,9 @@
      0.5909
     ],
     "p_modello": [
-     0.2471,
-     0.2541,
-     0.4988
+     0.2474,
+     0.2524,
+     0.5002
     ],
     "margine": 0.0618,
     "margine_migliore": null,
@@ -1921,22 +1896,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      1.143,
-      8.0,
-      13.0
+      1.154,
+      8.5,
+      14.0
      ]
     },
     "p_mercato": [
-     0.8398,
-     0.1032,
+     0.8411,
+     0.102,
      0.057
     ],
     "p_modello": [
-     0.7724,
-     0.1551,
-     0.0725
+     0.7727,
+     0.1542,
+     0.0731
     ],
-    "margine": 0.0768,
+    "margine": 0.0556,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1960,8 +1935,8 @@
     ],
     "p_modello": [
      0.44,
-     0.2831,
-     0.2769
+     0.2815,
+     0.2785
     ],
     "margine": 0.0737,
     "margine_migliore": null,
@@ -1986,9 +1961,9 @@
      0.7387
     ],
     "p_modello": [
-     0.1684,
-     0.2063,
-     0.6254
+     0.1692,
+     0.2052,
+     0.6255
     ],
     "margine": 0.0664,
     "margine_migliore": null,
@@ -2013,9 +1988,9 @@
      0.3704
     ],
     "p_modello": [
-     0.3682,
-     0.2603,
-     0.3715
+     0.3678,
+     0.2588,
+     0.3734
     ],
     "margine": 0.0636,
     "margine_migliore": null,
@@ -2040,9 +2015,9 @@
      0.291
     ],
     "p_modello": [
-     0.5259,
-     0.2358,
-     0.2383
+     0.5261,
+     0.2344,
+     0.2395
     ],
     "margine": 0.0665,
     "margine_migliore": null,
@@ -2067,9 +2042,9 @@
      0.2503
     ],
     "p_modello": [
-     0.4226,
-     0.3411,
-     0.2363
+     0.4284,
+     0.3401,
+     0.2315
     ],
     "margine": 0.0639,
     "margine_migliore": null,
@@ -2077,48 +2052,6 @@
    }
   ],
   "bundesliga": [
-   {
-    "id": "bayern-munich-fc-koln",
-    "casa": "Bayern Munich",
-    "ospite": "FC Koln",
-    "data": "2026-11-20",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      1.09,
-      17.5,
-      34.0
-     ],
-     "bet365": [
-      1.08,
-      13.0,
-      19.0
-     ],
-     "massimo": [
-      1.09,
-      17.0,
-      26.0
-     ],
-     "media": [
-      1.07,
-      12.63,
-      21.5
-     ]
-    },
-    "p_mercato": [
-     0.9155,
-     0.0561,
-     0.0284
-    ],
-    "p_modello": [
-     0.9005,
-     0.0684,
-     0.0311
-    ],
-    "margine": 0.004,
-    "margine_migliore": 0.0147,
-    "quote_da": "confronto"
-   },
    {
     "id": "ein-frankfurt-hoffenheim",
     "casa": "Ein Frankfurt",
@@ -2153,9 +2086,9 @@
      0.3574
     ],
     "p_modello": [
-     0.4828,
-     0.2116,
-     0.3056
+     0.4812,
+     0.2121,
+     0.3067
     ],
     "margine": 0.0068,
     "margine_migliore": 0.0303,
@@ -2195,9 +2128,9 @@
      0.4895
     ],
     "p_modello": [
-     0.5074,
-     0.209,
-     0.2836
+     0.5037,
+     0.21,
+     0.2863
     ],
     "margine": 0.0149,
     "margine_migliore": 0.022,
@@ -2237,9 +2170,9 @@
      0.0927
     ],
     "p_modello": [
-     0.6388,
-     0.2335,
-     0.1277
+     0.6371,
+     0.235,
+     0.128
     ],
     "margine": 0.0093,
     "margine_migliore": 0.003,
@@ -2279,9 +2212,9 @@
      0.6156
     ],
     "p_modello": [
-     0.191,
-     0.2262,
-     0.5828
+     0.1899,
+     0.2264,
+     0.5837
     ],
     "margine": 0.0042,
     "margine_migliore": 0.0362,
@@ -2321,9 +2254,9 @@
      0.6475
     ],
     "p_modello": [
-     0.2,
-     0.2307,
-     0.5693
+     0.1989,
+     0.2309,
+     0.5703
     ],
     "margine": 0.0149,
     "margine_migliore": 0.0243,
@@ -2363,9 +2296,9 @@
      0.5301
     ],
     "p_modello": [
-     0.1623,
-     0.3132,
-     0.5245
+     0.1613,
+     0.3127,
+     0.5259
     ],
     "margine": 0.0196,
     "margine_migliore": 0.0284,
@@ -2405,9 +2338,9 @@
      0.4005
     ],
     "p_modello": [
-     0.4011,
-     0.2548,
-     0.3441
+     0.3996,
+     0.2555,
+     0.3449
     ],
     "margine": 0.0078,
     "margine_migliore": 0.0332,
@@ -2447,9 +2380,9 @@
      0.2027
     ],
     "p_modello": [
-     0.5003,
-     0.2565,
-     0.2433
+     0.4981,
+     0.2575,
+     0.2444
     ],
     "margine": 0.0188,
     "margine_migliore": 0.024,
@@ -2474,9 +2407,9 @@
      0.2303
     ],
     "p_modello": [
-     0.4827,
-     0.2459,
-     0.2715
+     0.4809,
+     0.2467,
+     0.2723
     ],
     "margine": 0.0954,
     "margine_migliore": null,
@@ -2501,9 +2434,9 @@
      0.2721
     ],
     "p_modello": [
-     0.303,
-     0.2196,
-     0.4775
+     0.3194,
+     0.2255,
+     0.4551
     ],
     "margine": 0.0971,
     "margine_migliore": null,
@@ -2518,9 +2451,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.0804,
-     0.1302,
-     0.7894
+     0.0834,
+     0.1345,
+     0.7821
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2545,9 +2478,9 @@
      0.1554
     ],
     "p_modello": [
-     0.5586,
-     0.2456,
-     0.1959
+     0.5564,
+     0.2467,
+     0.1969
     ],
     "margine": 0.0917,
     "margine_migliore": null,
@@ -2572,9 +2505,9 @@
      0.3271
     ],
     "p_modello": [
-     0.379,
-     0.4457,
-     0.1753
+     0.3783,
+     0.446,
+     0.1757
     ],
     "margine": 0.0904,
     "margine_migliore": null,
@@ -2599,9 +2532,9 @@
      0.2352
     ],
     "p_modello": [
-     0.6054,
-     0.193,
-     0.2016
+     0.6033,
+     0.1939,
+     0.2028
     ],
     "margine": 0.0903,
     "margine_migliore": null,
@@ -2626,9 +2559,9 @@
      0.3881
     ],
     "p_modello": [
-     0.3349,
-     0.2397,
-     0.4254
+     0.3332,
+     0.2402,
+     0.4266
     ],
     "margine": 0.1077,
     "margine_migliore": null,
@@ -2653,9 +2586,9 @@
      0.2351
     ],
     "p_modello": [
-     0.5292,
-     0.2176,
-     0.2532
+     0.5281,
+     0.2183,
+     0.2536
     ],
     "margine": 0.1018,
     "margine_migliore": null,
@@ -2680,9 +2613,9 @@
      0.3122
     ],
     "p_modello": [
-     0.5108,
-     0.2382,
-     0.251
+     0.5084,
+     0.2393,
+     0.2523
     ],
     "margine": 0.0993,
     "margine_migliore": null,
@@ -2690,48 +2623,6 @@
    }
   ],
   "ligue-1": [
-   {
-    "id": "troyes-le-havre",
-    "casa": "Troyes",
-    "ospite": "Le Havre",
-    "data": "2026-11-20",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      2.28,
-      3.55,
-      3.5
-     ],
-     "bet365": [
-      2.2,
-      3.4,
-      3.2
-     ],
-     "massimo": [
-      2.22,
-      3.5,
-      3.4
-     ],
-     "media": [
-      2.18,
-      3.39,
-      3.2
-     ]
-    },
-    "p_mercato": [
-     0.4364,
-     0.2798,
-     0.2838
-    ],
-    "p_modello": [
-     0.3163,
-     0.3242,
-     0.3595
-    ],
-    "margine": 0.006,
-    "margine_migliore": 0.0303,
-    "quote_da": "confronto"
-   },
    {
     "id": "nice-paris-sg",
     "casa": "Nice",
@@ -2766,9 +2657,9 @@
      0.6612
     ],
     "p_modello": [
-     0.179,
-     0.2201,
-     0.6009
+     0.1788,
+     0.2208,
+     0.6004
     ],
     "margine": 0.0131,
     "margine_migliore": 0.0195,
@@ -2808,9 +2699,9 @@
      0.2474
     ],
     "p_modello": [
-     0.5324,
-     0.2492,
-     0.2184
+     0.5329,
+     0.2499,
+     0.2171
     ],
     "margine": 0.0186,
     "margine_migliore": 0.0051,
@@ -2850,9 +2741,9 @@
      0.2893
     ],
     "p_modello": [
-     0.4525,
-     0.2842,
-     0.2632
+     0.4535,
+     0.285,
+     0.2615
     ],
     "margine": 0.015,
     "margine_migliore": 0.0363,
@@ -2892,9 +2783,9 @@
      0.1284
     ],
     "p_modello": [
-     0.6192,
-     0.2116,
-     0.1691
+     0.62,
+     0.2117,
+     0.1682
     ],
     "margine": 0.0112,
     "margine_migliore": 0.0382,
@@ -2934,9 +2825,9 @@
      0.3102
     ],
     "p_modello": [
-     0.4931,
-     0.2289,
-     0.2781
+     0.4948,
+     0.2292,
+     0.276
     ],
     "margine": 0.007,
     "margine_migliore": 0.0302,
@@ -2976,9 +2867,9 @@
      0.0941
     ],
     "p_modello": [
-     0.6411,
-     0.2286,
-     0.1303
+     0.6414,
+     0.2292,
+     0.1294
     ],
     "margine": 0.0217,
     "margine_migliore": 0.0201,
@@ -3018,9 +2909,9 @@
      0.3897
     ],
     "p_modello": [
-     0.3808,
-     0.2499,
-     0.3693
+     0.3823,
+     0.2506,
+     0.3671
     ],
     "margine": 0.0204,
     "margine_migliore": 0.0272,
@@ -3060,9 +2951,9 @@
      0.14
     ],
     "p_modello": [
-     0.7224,
-     0.1599,
-     0.1177
+     0.7162,
+     0.1635,
+     0.1203
     ],
     "margine": 0.0101,
     "margine_migliore": 0.0229,
@@ -3087,9 +2978,9 @@
      0.4196
     ],
     "p_modello": [
-     0.3718,
-     0.2601,
-     0.3682
+     0.3707,
+     0.2609,
+     0.3684
     ],
     "margine": 0.0701,
     "margine_migliore": null,
@@ -3115,8 +3006,8 @@
     ],
     "p_modello": [
      0.1778,
-     0.2572,
-     0.5651
+     0.2585,
+     0.5637
     ],
     "margine": 0.0715,
     "margine_migliore": null,
@@ -3141,9 +3032,9 @@
      0.4185
     ],
     "p_modello": [
-     0.2633,
-     0.2471,
-     0.4896
+     0.2567,
+     0.2444,
+     0.499
     ],
     "margine": 0.0731,
     "margine_migliore": null,
@@ -3168,9 +3059,9 @@
      0.5082
     ],
     "p_modello": [
-     0.1982,
-     0.2538,
-     0.548
+     0.202,
+     0.2578,
+     0.5401
     ],
     "margine": 0.0705,
     "margine_migliore": null,
@@ -3195,9 +3086,9 @@
      0.1949
     ],
     "p_modello": [
-     0.6156,
-     0.2468,
-     0.1376
+     0.5671,
+     0.2519,
+     0.181
     ],
     "margine": 0.0753,
     "margine_migliore": null,
@@ -3222,9 +3113,9 @@
      0.0723
     ],
     "p_modello": [
-     0.7348,
-     0.1702,
-     0.095
+     0.7345,
+     0.1709,
+     0.0946
     ],
     "margine": 0.0705,
     "margine_migliore": null,
@@ -3249,9 +3140,9 @@
      0.5281
     ],
     "p_modello": [
-     0.2503,
-     0.233,
-     0.5167
+     0.25,
+     0.2339,
+     0.5161
     ],
     "margine": 0.0719,
     "margine_migliore": null,
@@ -3266,9 +3157,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4181,
-     0.2436,
-     0.3383
+     0.4193,
+     0.2442,
+     0.3365
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3293,9 +3184,9 @@
      0.3166
     ],
     "p_modello": [
-     0.4511,
-     0.2479,
-     0.301
+     0.4515,
+     0.2484,
+     0.3001
     ],
     "margine": 0.0679,
     "margine_migliore": null,
@@ -3760,7 +3651,7 @@
     "p_modello": [
      0.3164,
      0.2475,
-     0.436
+     0.4361
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4060,22 +3951,22 @@
     "ora": "21:15",
     "quote": {
      "mercato_unico": [
-      7.0,
-      4.4,
-      1.417
+      6.5,
+      4.2,
+      1.435
      ]
     },
     "p_mercato": [
-     0.1217,
-     0.2042,
-     0.6741
+     0.1289,
+     0.2109,
+     0.6601
     ],
     "p_modello": [
      0.1758,
      0.217,
      0.6072
     ],
-    "margine": 0.0758,
+    "margine": 0.0888,
     "margine_migliore": null,
     "quote_da": "unico"
    }
@@ -4158,7 +4049,7 @@
     ],
     "p_modello": [
      0.7887,
-     0.1243,
+     0.1244,
      0.087
     ],
     "margine": 0.0208,
@@ -4285,7 +4176,7 @@
     "p_modello": [
      0.2546,
      0.3054,
-     0.4399
+     0.44
     ],
     "margine": 0.052,
     "margine_migliore": 0.0556,
@@ -4615,48 +4506,6 @@
   ],
   "jupiler": [
    {
-    "id": "cercle-brugge-westerlo",
-    "casa": "Cercle Brugge",
-    "ospite": "Westerlo",
-    "data": "2026-11-20",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      2.06,
-      3.95,
-      3.65
-     ],
-     "bet365": [
-      1.91,
-      3.6,
-      3.4
-     ],
-     "massimo": [
-      2.05,
-      3.8,
-      3.6
-     ],
-     "media": [
-      1.97,
-      3.66,
-      3.35
-     ]
-    },
-    "p_mercato": [
-     0.4808,
-     0.2492,
-     0.27
-    ],
-    "p_modello": [
-     0.452,
-     0.2213,
-     0.3267
-    ],
-    "margine": 0.0126,
-    "margine_migliore": 0.0287,
-    "quote_da": "confronto"
-   },
-   {
     "id": "charleroi-st-truiden",
     "casa": "Charleroi",
     "ospite": "St Truiden",
@@ -4690,9 +4539,9 @@
      0.2759
     ],
     "p_modello": [
-     0.4756,
-     0.2477,
-     0.2766
+     0.4775,
+     0.2452,
+     0.2773
     ],
     "margine": 0.0309,
     "margine_migliore": 0.0451,
@@ -4732,9 +4581,9 @@
      0.1296
     ],
     "p_modello": [
-     0.6562,
-     0.2089,
-     0.1349
+     0.6578,
+     0.2068,
+     0.1354
     ],
     "margine": 0.0195,
     "margine_migliore": 0.0269,
@@ -4774,9 +4623,9 @@
      0.6965
     ],
     "p_modello": [
-     0.1658,
-     0.1981,
-     0.6361
+     0.1667,
+     0.1965,
+     0.6368
     ],
     "margine": 0.0299,
     "margine_migliore": 0.0369,
@@ -4816,9 +4665,9 @@
      0.2967
     ],
     "p_modello": [
-     0.4092,
-     0.2607,
-     0.3301
+     0.4112,
+     0.2582,
+     0.3306
     ],
     "margine": 0.0487,
     "margine_migliore": 0.0325,
@@ -4858,9 +4707,9 @@
      0.4881
     ],
     "p_modello": [
-     0.2339,
-     0.2259,
-     0.5402
+     0.2349,
+     0.2241,
+     0.541
     ],
     "margine": 0.0456,
     "margine_migliore": 0.0556,
@@ -4900,9 +4749,9 @@
      0.7105
     ],
     "p_modello": [
-     0.0539,
-     0.1588,
-     0.7873
+     0.0546,
+     0.1577,
+     0.7878
     ],
     "margine": 0.0332,
     "margine_migliore": 0.0426,
@@ -4942,9 +4791,9 @@
      0.1334
     ],
     "p_modello": [
-     0.5849,
-     0.2451,
-     0.17
+     0.587,
+     0.2426,
+     0.1704
     ],
     "margine": 0.0334,
     "margine_migliore": 0.04,
@@ -4984,9 +4833,9 @@
      0.472
     ],
     "p_modello": [
-     0.5115,
-     0.2877,
-     0.2008
+     0.5142,
+     0.2846,
+     0.2011
     ],
     "margine": 0.0831,
     "margine_migliore": 0.0505,
@@ -5001,9 +4850,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5756,
-     0.2644,
-     0.16
+     0.5774,
+     0.2619,
+     0.1607
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5018,9 +4867,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5889,
-     0.2093,
-     0.2018
+     0.5837,
+     0.2111,
+     0.2052
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5035,9 +4884,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4416,
-     0.246,
-     0.3124
+     0.4435,
+     0.2466,
+     0.3099
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5052,9 +4901,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5551,
-     0.2447,
-     0.2002
+     0.5574,
+     0.242,
+     0.2006
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5069,8 +4918,8 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6937,
-     0.1763,
+     0.6958,
+     0.1742,
      0.13
     ],
     "margine": null,
@@ -5086,9 +4935,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3932,
-     0.2558,
-     0.3511
+     0.3949,
+     0.2535,
+     0.3516
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5103,9 +4952,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3575,
-     0.2735,
-     0.369
+     0.3593,
+     0.271,
+     0.3697
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5120,9 +4969,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.1704,
-     0.2322,
-     0.5974
+     0.1714,
+     0.2302,
+     0.5984
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5137,9 +4986,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6661,
-     0.2173,
-     0.1166
+     0.6676,
+     0.2153,
+     0.1171
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5181,7 +5030,7 @@
      0.6938
     ],
     "p_modello": [
-     0.1172,
+     0.1173,
      0.1984,
      0.6843
     ],
@@ -5596,7 +5445,7 @@
      0.0582
     ],
     "p_modello": [
-     0.8061,
+     0.8062,
      0.1319,
      0.062
     ],
@@ -5925,7 +5774,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4046,
+     0.4047,
      0.262,
      0.3333
     ],
@@ -5952,48 +5801,6 @@
    }
   ],
   "serie-b": [
-   {
-    "id": "verona-cesena",
-    "casa": "Verona",
-    "ospite": "Cesena",
-    "data": "2026-11-20",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      1.78,
-      3.95,
-      4.9
-     ],
-     "bet365": [
-      1.71,
-      3.6,
-      4.75
-     ],
-     "massimo": [
-      1.73,
-      3.85,
-      5.0
-     ],
-     "media": [
-      1.68,
-      3.68,
-      4.49
-     ]
-    },
-    "p_mercato": [
-     0.5544,
-     0.2472,
-     0.1984
-    ],
-    "p_modello": [
-     0.5949,
-     0.2381,
-     0.167
-    ],
-    "margine": 0.019,
-    "margine_migliore": 0.0378,
-    "quote_da": "confronto"
-   },
    {
     "id": "ascoli-vicenza",
     "casa": "Ascoli",
@@ -6028,9 +5835,9 @@
      0.1963
     ],
     "p_modello": [
-     0.7175,
-     0.1881,
-     0.0944
+     0.7197,
+     0.1866,
+     0.0937
     ],
     "margine": 0.0259,
     "margine_migliore": 0.0401,
@@ -6070,9 +5877,9 @@
      0.2936
     ],
     "p_modello": [
-     0.4275,
-     0.3259,
-     0.2466
+     0.4251,
+     0.3261,
+     0.2488
     ],
     "margine": 0.0435,
     "margine_migliore": 0.0501,
@@ -6112,9 +5919,9 @@
      0.1675
     ],
     "p_modello": [
-     0.4501,
-     0.3199,
-     0.2301
+     0.4495,
+     0.3197,
+     0.2307
     ],
     "margine": 0.0491,
     "margine_migliore": 0.0504,
@@ -6154,9 +5961,9 @@
      0.3498
     ],
     "p_modello": [
-     0.2737,
-     0.3352,
-     0.3911
+     0.2779,
+     0.3353,
+     0.3868
     ],
     "margine": 0.0294,
     "margine_migliore": 0.053,
@@ -6196,9 +6003,9 @@
      0.4308
     ],
     "p_modello": [
-     0.2942,
-     0.3073,
-     0.3985
+     0.2939,
+     0.3072,
+     0.3989
     ],
     "margine": 0.0328,
     "margine_migliore": 0.0404,
@@ -6238,9 +6045,9 @@
      0.5625
     ],
     "p_modello": [
-     0.2994,
-     0.258,
-     0.4426
+     0.2974,
+     0.2576,
+     0.445
     ],
     "margine": 0.0314,
     "margine_migliore": 0.0365,
@@ -6280,9 +6087,9 @@
      0.5134
     ],
     "p_modello": [
-     0.2857,
+     0.2873,
      0.2632,
-     0.4511
+     0.4496
     ],
     "margine": 0.0564,
     "margine_migliore": 0.0452,
@@ -6322,9 +6129,9 @@
      0.3066
     ],
     "p_modello": [
-     0.4216,
-     0.2943,
-     0.2841
+     0.4213,
+     0.2941,
+     0.2845
     ],
     "margine": 0.065,
     "margine_migliore": 0.0511,
@@ -6364,9 +6171,9 @@
      0.2968
     ],
     "p_modello": [
-     0.2499,
-     0.3131,
-     0.437
+     0.2448,
+     0.311,
+     0.4442
     ],
     "margine": 0.0637,
     "margine_migliore": 0.053,
@@ -6381,9 +6188,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.423,
-     0.2931,
-     0.2839
+     0.422,
+     0.2929,
+     0.285
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6398,9 +6205,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5405,
-     0.2779,
-     0.1816
+     0.5336,
+     0.2799,
+     0.1865
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6415,9 +6222,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2244,
-     0.3213,
-     0.4543
+     0.2373,
+     0.3258,
+     0.4368
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6432,9 +6239,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6066,
-     0.2408,
-     0.1525
+     0.605,
+     0.2414,
+     0.1536
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6449,9 +6256,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3652,
-     0.2659,
-     0.3688
+     0.3584,
+     0.2652,
+     0.3764
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6466,9 +6273,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2356,
-     0.2915,
-     0.4729
+     0.2825,
+     0.3049,
+     0.4126
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6483,9 +6290,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5161,
-     0.2815,
-     0.2024
+     0.5144,
+     0.282,
+     0.2036
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6500,9 +6307,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6241,
-     0.2337,
-     0.1422
+     0.6304,
+     0.2307,
+     0.1389
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6517,9 +6324,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4232,
-     0.3309,
-     0.2459
+     0.4209,
+     0.3311,
+     0.2479
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6534,9 +6341,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4373,
+     0.4345,
      0.279,
-     0.2837
+     0.2866
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6551,9 +6358,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5942,
-     0.286,
-     0.1198
+     0.5893,
+     0.2881,
+     0.1226
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6568,9 +6375,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3334,
-     0.3369,
-     0.3297
+     0.3323,
+     0.3365,
+     0.3311
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6585,9 +6392,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2625,
-     0.2656,
-     0.4719
+     0.316,
+     0.2767,
+     0.4073
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6602,9 +6409,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3634,
-     0.2566,
-     0.3799
+     0.3386,
+     0.2561,
+     0.4054
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6619,9 +6426,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4874,
-     0.2903,
-     0.2223
+     0.4925,
+     0.2887,
+     0.2189
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6636,9 +6443,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4963,
-     0.3051,
-     0.1986
+     0.4961,
+     0.3049,
+     0.199
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6653,9 +6460,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3986,
-     0.2986,
-     0.3028
+     0.3987,
+     0.2983,
+     0.303
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6670,9 +6477,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2596,
-     0.3128,
-     0.4276
+     0.2593,
+     0.3127,
+     0.4281
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6687,9 +6494,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.167,
-     0.2308,
-     0.6022
+     0.163,
+     0.2277,
+     0.6092
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6704,9 +6511,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4553,
-     0.2705,
-     0.2741
+     0.4531,
+     0.2707,
+     0.2762
     ],
     "margine": null,
     "margine_migliore": null,
@@ -7244,7 +7051,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4971,
+     0.4972,
      0.2406,
      0.2623
     ],
@@ -7261,7 +7068,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4431,
+     0.4432,
      0.2947,
      0.2622
     ],
@@ -7295,7 +7102,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5432,
+     0.5431,
      0.2241,
      0.2327
     ],
@@ -7314,7 +7121,7 @@
     "p_modello": [
      0.2702,
      0.2067,
-     0.5232
+     0.5231
     ],
     "margine": null,
     "margine_migliore": null,
@@ -7363,7 +7170,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2991,
+     0.299,
      0.259,
      0.4419
     ],
@@ -7465,9 +7272,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.187,
+     0.1869,
      0.2314,
-     0.5816
+     0.5817
     ],
     "margine": null,
     "margine_migliore": null,
@@ -7603,7 +7410,7 @@
     "p_modello": [
      0.4988,
      0.2505,
-     0.2507
+     0.2508
     ],
     "margine": null,
     "margine_migliore": null,
@@ -7628,48 +7435,6 @@
    }
   ],
   "league-one": [
-   {
-    "id": "barnsley-sheffield-weds",
-    "casa": "Barnsley",
-    "ospite": "Sheffield Weds",
-    "data": "2026-11-20",
-    "ora": "21:00",
-    "quote": {
-     "betfair": [
-      3.25,
-      4.1,
-      2.16
-     ],
-     "bet365": [
-      3.0,
-      3.8,
-      2.1
-     ],
-     "massimo": [
-      3.2,
-      4.0,
-      2.15
-     ],
-     "media": [
-      3.02,
-      3.79,
-      2.08
-     ]
-    },
-    "p_mercato": [
-     0.3029,
-     0.2394,
-     0.4577
-    ],
-    "p_modello": [
-     0.2546,
-     0.2323,
-     0.5131
-    ],
-    "margine": 0.0146,
-    "margine_migliore": 0.0276,
-    "quote_da": "confronto"
-   },
    {
     "id": "blackpool-wigan",
     "casa": "Blackpool",
@@ -7704,9 +7469,9 @@
      0.2841
     ],
     "p_modello": [
-     0.4554,
+     0.4553,
      0.2885,
-     0.2561
+     0.2562
     ],
     "margine": 0.018,
     "margine_migliore": 0.0295,
@@ -7746,9 +7511,9 @@
      0.1223
     ],
     "p_modello": [
-     0.7985,
-     0.127,
-     0.0745
+     0.7981,
+     0.1272,
+     0.0747
     ],
     "margine": 0.0211,
     "margine_migliore": 0.019,
@@ -7788,9 +7553,9 @@
      0.1869
     ],
     "p_modello": [
-     0.5316,
+     0.5315,
      0.2843,
-     0.1841
+     0.1842
     ],
     "margine": 0.0309,
     "margine_migliore": 0.0274,
@@ -7830,9 +7595,9 @@
      0.5795
     ],
     "p_modello": [
-     0.2813,
+     0.2812,
      0.2515,
-     0.4672
+     0.4674
     ],
     "margine": 0.0134,
     "margine_migliore": 0.0347,
@@ -7874,7 +7639,7 @@
     "p_modello": [
      0.239,
      0.2512,
-     0.5097
+     0.5098
     ],
     "margine": 0.0144,
     "margine_migliore": 0.0073,
@@ -7914,7 +7679,7 @@
      0.2721
     ],
     "p_modello": [
-     0.5017,
+     0.5016,
      0.2274,
      0.271
     ],
@@ -7956,9 +7721,9 @@
      0.2032
     ],
     "p_modello": [
-     0.585,
+     0.5848,
      0.2399,
-     0.1752
+     0.1753
     ],
     "margine": 0.0172,
     "margine_migliore": 0.011,
@@ -7998,9 +7763,9 @@
      0.3736
     ],
     "p_modello": [
-     0.4277,
+     0.4274,
      0.2244,
-     0.3479
+     0.3482
     ],
     "margine": 0.0151,
     "margine_migliore": 0.0328,
@@ -8040,9 +7805,9 @@
      0.2966
     ],
     "p_modello": [
-     0.3975,
-     0.3345,
-     0.2679
+     0.3981,
+     0.3344,
+     0.2675
     ],
     "margine": 0.0198,
     "margine_migliore": 0.0274,
@@ -8082,9 +7847,9 @@
      0.3264
     ],
     "p_modello": [
-     0.565,
+     0.5647,
      0.233,
-     0.2021
+     0.2022
     ],
     "margine": 0.0209,
     "margine_migliore": 0.0313,
@@ -8124,9 +7889,9 @@
      0.2316
     ],
     "p_modello": [
-     0.5624,
+     0.5623,
      0.2122,
-     0.2254
+     0.2255
     ],
     "margine": 0.0209,
     "margine_migliore": 0.0213,
@@ -8141,9 +7906,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3873,
-     0.2463,
-     0.3664
+     0.3872,
+     0.2462,
+     0.3665
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8158,9 +7923,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5124,
-     0.2674,
-     0.2202
+     0.5135,
+     0.2672,
+     0.2193
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8185,9 +7950,9 @@
      0.4557
     ],
     "p_modello": [
-     0.147,
-     0.1833,
-     0.6697
+     0.1471,
+     0.1834,
+     0.6695
     ],
     "margine": 0.0882,
     "margine_migliore": null,
@@ -8202,9 +7967,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.296,
-     0.3013,
-     0.4027
+     0.2895,
+     0.3016,
+     0.4089
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8219,9 +7984,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2624,
-     0.2517,
-     0.4859
+     0.2623,
+     0.2516,
+     0.486
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8236,9 +8001,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4588,
+     0.4581,
      0.2468,
-     0.2944
+     0.2951
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8253,9 +8018,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4865,
+     0.4863,
      0.2433,
-     0.2702
+     0.2703
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8270,9 +8035,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3317,
-     0.2591,
-     0.4092
+     0.333,
+     0.2593,
+     0.4078
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8287,9 +8052,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2443,
+     0.2446,
      0.2379,
-     0.5178
+     0.5175
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8304,9 +8069,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4729,
+     0.4728,
      0.2375,
-     0.2896
+     0.2897
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8321,9 +8086,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3474,
+     0.3473,
      0.257,
-     0.3956
+     0.3957
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8338,9 +8103,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5374,
-     0.2374,
-     0.2252
+     0.5444,
+     0.2363,
+     0.2193
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8355,9 +8120,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.436,
+     0.4358,
      0.2969,
-     0.2672
+     0.2674
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8374,7 +8139,7 @@
     "p_modello": [
      0.5449,
      0.2405,
-     0.2146
+     0.2147
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8389,9 +8154,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3188,
-     0.2783,
-     0.4029
+     0.3187,
+     0.2782,
+     0.4031
     ],
     "margine": null,
     "margine_migliore": null,
@@ -8406,9 +8171,213 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4003,
+     0.4001,
      0.3016,
-     0.2981
+     0.2983
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "leyton-orient-peterboro",
+    "casa": "Leyton Orient",
+    "ospite": "Peterboro",
+    "data": "2026-12-01",
+    "ora": "20:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5096,
+     0.2369,
+     0.2535
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "barnsley-wycombe",
+    "casa": "Barnsley",
+    "ospite": "Wycombe",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.35,
+     0.2388,
+     0.4112
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "blackpool-luton",
+    "casa": "Blackpool",
+    "ospite": "Luton",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3418,
+     0.2524,
+     0.4058
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "bradford-milton-keynes-dons",
+    "casa": "Bradford",
+    "ospite": "Milton Keynes Dons",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4367,
+     0.262,
+     0.3013
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "burton-wigan",
+    "casa": "Burton",
+    "ospite": "Wigan",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3928,
+     0.3041,
+     0.3031
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "cambridge-leicester",
+    "casa": "Cambridge",
+    "ospite": "Leicester",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3146,
+     0.2455,
+     0.4399
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "huddersfield-stevenage",
+    "casa": "Huddersfield",
+    "ospite": "Stevenage",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4742,
+     0.2806,
+     0.2452
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "mansfield-stockport",
+    "casa": "Mansfield",
+    "ospite": "Stockport",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3322,
+     0.2627,
+     0.4052
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "notts-county-afc-wimbledon",
+    "casa": "Notts County",
+    "ospite": "AFC Wimbledon",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5685,
+     0.2672,
+     0.1643
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "oxford-sheffield-weds",
+    "casa": "Oxford",
+    "ospite": "Sheffield Weds",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4469,
+     0.2662,
+     0.287
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "plymouth-bromley",
+    "casa": "Plymouth",
+    "ospite": "Bromley",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.8065,
+     0.1198,
+     0.0736
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "reading-doncaster",
+    "casa": "Reading",
+    "ospite": "Doncaster",
+    "data": "2026-12-01",
+    "ora": "21:00",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5913,
+     0.2256,
+     0.183
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9099,7 +9068,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5622,
+     0.5621,
      0.2414,
      0.1965
     ],
@@ -9116,9 +9085,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3973,
+     0.3974,
      0.252,
-     0.3507
+     0.3506
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9157,51 +9126,196 @@
     "margine": null,
     "margine_migliore": null,
     "quote_da": null
+   },
+   {
+    "id": "accrington-crewe",
+    "casa": "Accrington",
+    "ospite": "Crewe",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3874,
+     0.2716,
+     0.3409
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "barnet-rotherham",
+    "casa": "Barnet",
+    "ospite": "Rotherham",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.7357,
+     0.1471,
+     0.1172
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "cheltenham-rochdale",
+    "casa": "Cheltenham",
+    "ospite": "Rochdale",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5601,
+     0.2123,
+     0.2276
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "chesterfield-exeter",
+    "casa": "Chesterfield",
+    "ospite": "Exeter",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3492,
+     0.3798,
+     0.271
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "crawley-town-port-vale",
+    "casa": "Crawley Town",
+    "ospite": "Port Vale",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.2809,
+     0.2783,
+     0.4407
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "gillingham-swindon",
+    "casa": "Gillingham",
+    "ospite": "Swindon",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3495,
+     0.2639,
+     0.3866
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "grimsby-colchester",
+    "casa": "Grimsby",
+    "ospite": "Colchester",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.4909,
+     0.2546,
+     0.2546
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "newport-county-walsall",
+    "casa": "Newport County",
+    "ospite": "Walsall",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3057,
+     0.255,
+     0.4394
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "northampton-fleetwood-town",
+    "casa": "Northampton",
+    "ospite": "Fleetwood Town",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.319,
+     0.387,
+     0.294
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "oldham-bristol-rvs",
+    "casa": "Oldham",
+    "ospite": "Bristol Rvs",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5097,
+     0.2598,
+     0.2306
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "york-shrewsbury",
+    "casa": "York",
+    "ospite": "Shrewsbury",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.6146,
+     0.206,
+     0.1794
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "national-league": [
-   {
-    "id": "southend-boreham-wood",
-    "casa": "Southend",
-    "ospite": "Boreham Wood",
-    "data": "2026-11-20",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      3.0,
-      4.5,
-      2.14
-     ],
-     "bet365": [
-      3.0,
-      3.8,
-      2.1
-     ],
-     "massimo": [
-      3.0,
-      4.2,
-      2.1
-     ],
-     "media": [
-      2.89,
-      3.83,
-      2.02
-     ]
-    },
-    "p_mercato": [
-     0.3258,
-     0.2153,
-     0.459
-    ],
-    "p_modello": [
-     0.4094,
-     0.2284,
-     0.3622
-    ],
-    "margine": 0.0228,
-    "margine_migliore": 0.0476,
-    "quote_da": "confronto"
-   },
    {
     "id": "solihull-altrincham",
     "casa": "Solihull",
@@ -9236,9 +9350,9 @@
      0.3657
     ],
     "p_modello": [
-     0.3961,
-     0.2437,
-     0.3603
+     0.3956,
+     0.2439,
+     0.3605
     ],
     "margine": 0.064,
     "margine_migliore": 0.0405,
@@ -9278,9 +9392,9 @@
      0.2548
     ],
     "p_modello": [
-     0.4873,
-     0.2303,
-     0.2824
+     0.4868,
+     0.2306,
+     0.2826
     ],
     "margine": 0.0494,
     "margine_migliore": 0.0729,
@@ -9320,9 +9434,9 @@
      0.3848
     ],
     "p_modello": [
-     0.3925,
-     0.2316,
-     0.3759
+     0.3919,
+     0.2318,
+     0.3763
     ],
     "margine": 0.0722,
     "margine_migliore": 0.0636,
@@ -9362,9 +9476,9 @@
      0.4207
     ],
     "p_modello": [
-     0.4293,
-     0.2424,
-     0.3283
+     0.4285,
+     0.2426,
+     0.3289
     ],
     "margine": 0.0613,
     "margine_migliore": 0.075,
@@ -9404,9 +9518,9 @@
      0.5103
     ],
     "p_modello": [
-     0.3568,
-     0.2556,
-     0.3875
+     0.3562,
+     0.2558,
+     0.3879
     ],
     "margine": 0.0648,
     "margine_migliore": 0.0597,
@@ -9446,9 +9560,9 @@
      0.2609
     ],
     "p_modello": [
-     0.4283,
-     0.2715,
-     0.3002
+     0.4278,
+     0.2718,
+     0.3004
     ],
     "margine": 0.0659,
     "margine_migliore": 0.0608,
@@ -9488,9 +9602,9 @@
      0.506
     ],
     "p_modello": [
-     0.4033,
-     0.2897,
-     0.307
+     0.4029,
+     0.29,
+     0.3072
     ],
     "margine": 0.0252,
     "margine_migliore": 0.0383,
@@ -9530,9 +9644,9 @@
      0.2734
     ],
     "p_modello": [
-     0.4164,
-     0.2598,
-     0.3238
+     0.4159,
+     0.2601,
+     0.324
     ],
     "margine": 0.0518,
     "margine_migliore": 0.0518,
@@ -9572,9 +9686,9 @@
      0.2806
     ],
     "p_modello": [
-     0.4561,
-     0.2466,
-     0.2973
+     0.4556,
+     0.2467,
+     0.2977
     ],
     "margine": 0.0844,
     "margine_migliore": 0.0659,
@@ -9614,9 +9728,9 @@
      0.3932
     ],
     "p_modello": [
-     0.3806,
-     0.2084,
-     0.411
+     0.3797,
+     0.2085,
+     0.4118
     ],
     "margine": 0.0674,
     "margine_migliore": 0.0419,
@@ -9656,9 +9770,9 @@
      0.3942
     ],
     "p_modello": [
-     0.339,
-     0.2584,
-     0.4026
+     0.3385,
+     0.2586,
+     0.4029
     ],
     "margine": 0.0259,
     "margine_migliore": 0.0227,
@@ -9673,9 +9787,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3847,
-     0.2496,
-     0.3657
+     0.3842,
+     0.2498,
+     0.3659
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9690,9 +9804,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4184,
-     0.2669,
-     0.3147
+     0.4179,
+     0.267,
+     0.3151
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9707,9 +9821,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4889,
-     0.2361,
-     0.2751
+     0.4884,
+     0.2363,
+     0.2753
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9724,9 +9838,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2495,
-     0.2382,
-     0.5123
+     0.2493,
+     0.2383,
+     0.5124
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9741,9 +9855,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6632,
-     0.1806,
-     0.1563
+     0.6626,
+     0.1809,
+     0.1565
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9758,9 +9872,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3601,
-     0.2577,
-     0.3822
+     0.3597,
+     0.2579,
+     0.3824
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9775,9 +9889,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3953,
-     0.2495,
-     0.3552
+     0.4009,
+     0.248,
+     0.3511
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9792,9 +9906,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.585,
-     0.2074,
-     0.2076
+     0.5845,
+     0.2076,
+     0.2078
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9809,9 +9923,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3885,
-     0.2377,
-     0.3738
+     0.388,
+     0.2379,
+     0.3741
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9826,9 +9940,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.7167,
-     0.1546,
-     0.1287
+     0.7207,
+     0.1525,
+     0.1268
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9843,8 +9957,8 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.583,
-     0.2393,
+     0.5827,
+     0.2396,
      0.1777
     ],
     "margine": null,
@@ -9860,9 +9974,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4348,
-     0.2474,
-     0.3178
+     0.4344,
+     0.2476,
+     0.318
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9877,9 +9991,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5027,
-     0.2229,
-     0.2744
+     0.5023,
+     0.2231,
+     0.2746
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9894,9 +10008,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5095,
-     0.2183,
-     0.2721
+     0.509,
+     0.2186,
+     0.2724
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9911,8 +10025,8 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3236,
-     0.2613,
+     0.3234,
+     0.2615,
      0.4151
     ],
     "margine": null,
@@ -9928,9 +10042,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4153,
-     0.2488,
-     0.3359
+     0.4149,
+     0.2489,
+     0.3362
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9945,9 +10059,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3496,
-     0.2288,
-     0.4216
+     0.3492,
+     0.229,
+     0.4218
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9962,9 +10076,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.7772,
-     0.1313,
-     0.0915
+     0.7809,
+     0.1292,
+     0.0898
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9979,9 +10093,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3615,
-     0.3106,
-     0.3279
+     0.361,
+     0.3109,
+     0.3282
     ],
     "margine": null,
     "margine_migliore": null,
@@ -9996,9 +10110,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6636,
-     0.192,
-     0.1443
+     0.663,
+     0.1924,
+     0.1446
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10013,9 +10127,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3144,
-     0.2596,
-     0.426
+     0.314,
+     0.2598,
+     0.4262
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10030,9 +10144,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5846,
-     0.2102,
-     0.2052
+     0.5841,
+     0.2105,
+     0.2054
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10047,9 +10161,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6299,
-     0.1938,
-     0.1763
+     0.6297,
+     0.194,
+     0.1764
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10064,9 +10178,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.26,
-     0.246,
-     0.494
+     0.2641,
+     0.2454,
+     0.4905
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10074,48 +10188,6 @@
    }
   ],
   "laliga-2": [
-   {
-    "id": "andorra-leganes",
-    "casa": "Andorra",
-    "ospite": "Leganes",
-    "data": "2026-11-20",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      1.92,
-      3.75,
-      4.3
-     ],
-     "bet365": [
-      1.81,
-      3.5,
-      4.2
-     ],
-     "massimo": [
-      1.88,
-      3.6,
-      4.33
-     ],
-     "media": [
-      1.82,
-      3.5,
-      3.91
-     ]
-    },
-    "p_mercato": [
-     0.5132,
-     0.2603,
-     0.2264
-    ],
-    "p_modello": [
-     0.4961,
-     0.254,
-     0.2499
-    ],
-    "margine": 0.0201,
-    "margine_migliore": 0.0406,
-    "quote_da": "confronto"
-   },
    {
     "id": "sabadell-granada",
     "casa": "Sabadell",
@@ -10150,9 +10222,9 @@
      0.3058
     ],
     "p_modello": [
-     0.3546,
-     0.3321,
-     0.3133
+     0.3526,
+     0.3325,
+     0.3149
     ],
     "margine": 0.0206,
     "margine_migliore": 0.0319,
@@ -10192,9 +10264,9 @@
      0.2484
     ],
     "p_modello": [
-     0.4503,
-     0.257,
-     0.2927
+     0.4485,
+     0.2573,
+     0.2941
     ],
     "margine": 0.0362,
     "margine_migliore": 0.0392,
@@ -10234,9 +10306,9 @@
      0.1322
     ],
     "p_modello": [
-     0.6711,
-     0.1938,
-     0.1351
+     0.6694,
+     0.1945,
+     0.1361
     ],
     "margine": 0.0238,
     "margine_migliore": 0.043,
@@ -10276,9 +10348,9 @@
      0.4308
     ],
     "p_modello": [
-     0.2324,
-     0.3106,
-     0.457
+     0.2308,
+     0.3103,
+     0.4589
     ],
     "margine": 0.0328,
     "margine_migliore": 0.0517,
@@ -10318,9 +10390,9 @@
      0.2545
     ],
     "p_modello": [
-     0.3851,
-     0.2416,
-     0.3733
+     0.3838,
+     0.2417,
+     0.3745
     ],
     "margine": 0.0502,
     "margine_migliore": 0.0499,
@@ -10360,9 +10432,9 @@
      0.2762
     ],
     "p_modello": [
-     0.4195,
-     0.2643,
-     0.3162
+     0.4179,
+     0.2646,
+     0.3176
     ],
     "margine": 0.0429,
     "margine_migliore": 0.0534,
@@ -10402,9 +10474,9 @@
      0.4438
     ],
     "p_modello": [
-     0.4108,
-     0.2351,
-     0.354
+     0.4082,
+     0.2354,
+     0.3563
     ],
     "margine": 0.1154,
     "margine_migliore": 0.0513,
@@ -10444,9 +10516,9 @@
      0.216
     ],
     "p_modello": [
-     0.5284,
-     0.2646,
-     0.207
+     0.527,
+     0.2652,
+     0.2077
     ],
     "margine": 0.0544,
     "margine_migliore": 0.0509,
@@ -10486,9 +10558,9 @@
      0.2415
     ],
     "p_modello": [
-     0.4971,
-     0.2735,
-     0.2294
+     0.4957,
+     0.274,
+     0.2303
     ],
     "margine": 0.0375,
     "margine_migliore": 0.0383,
@@ -10528,9 +10600,9 @@
      0.4878
     ],
     "p_modello": [
-     0.1992,
-     0.2007,
-     0.6001
+     0.1981,
+     0.2005,
+     0.6014
     ],
     "margine": 0.0465,
     "margine_migliore": 0.0328,
@@ -10545,9 +10617,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3574,
-     0.3561,
-     0.2865
+     0.3711,
+     0.3515,
+     0.2774
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10562,9 +10634,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5219,
-     0.2377,
-     0.2403
+     0.5357,
+     0.2333,
+     0.231
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10579,9 +10651,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4633,
-     0.274,
-     0.2627
+     0.4624,
+     0.2743,
+     0.2633
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10596,9 +10668,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2098,
-     0.2514,
-     0.5388
+     0.2093,
+     0.2516,
+     0.5391
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10613,9 +10685,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.455,
-     0.3024,
-     0.2426
+     0.4537,
+     0.3028,
+     0.2434
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10630,9 +10702,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.496,
-     0.2453,
-     0.2586
+     0.4951,
+     0.2457,
+     0.2592
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10647,9 +10719,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6603,
-     0.1946,
-     0.1451
+     0.6593,
+     0.1951,
+     0.1456
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10664,9 +10736,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4645,
-     0.2788,
-     0.2567
+     0.4646,
+     0.279,
+     0.2565
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10681,9 +10753,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4075,
-     0.2442,
-     0.3482
+     0.4063,
+     0.2444,
+     0.3493
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10698,9 +10770,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5842,
-     0.2093,
-     0.2065
+     0.583,
+     0.2098,
+     0.2072
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10715,9 +10787,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.65,
-     0.1873,
-     0.1627
+     0.6503,
+     0.1872,
+     0.1624
     ],
     "margine": null,
     "margine_migliore": null,
@@ -10927,7 +10999,7 @@
      0.6065
     ],
     "p_modello": [
-     0.3629,
+     0.363,
      0.2418,
      0.3952
     ],
@@ -11012,7 +11084,7 @@
     ],
     "p_modello": [
      0.5734,
-     0.2176,
+     0.2175,
      0.209
     ],
     "margine": 0.0388,
@@ -11113,7 +11185,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.2804,
+     0.2803,
      0.2722,
      0.4474
     ],
@@ -11149,7 +11221,7 @@
     "p_modello": [
      0.3644,
      0.2463,
-     0.3893
+     0.3892
     ],
     "margine": null,
     "margine_migliore": null,
@@ -11174,216 +11246,6 @@
    }
   ],
   "ligue-2": [
-   {
-    "id": "annecy-clermont",
-    "casa": "Annecy",
-    "ospite": "Clermont",
-    "data": "2026-11-20",
-    "ora": "20:00",
-    "quote": {
-     "betfair": [
-      2.16,
-      3.4,
-      3.75
-     ],
-     "bet365": [
-      2.0,
-      3.1,
-      3.3
-     ],
-     "massimo": [
-      2.15,
-      3.35,
-      3.6
-     ],
-     "media": [
-      2.06,
-      3.24,
-      3.33
-     ]
-    },
-    "p_mercato": [
-     0.4543,
-     0.2865,
-     0.2592
-    ],
-    "p_modello": [
-     0.4883,
-     0.2663,
-     0.2454
-    ],
-    "margine": 0.0237,
-    "margine_migliore": 0.0414,
-    "quote_da": "confronto"
-   },
-   {
-    "id": "guingamp-rodez",
-    "casa": "Guingamp",
-    "ospite": "Rodez",
-    "data": "2026-11-20",
-    "ora": "20:00",
-    "quote": {
-     "betfair": [
-      2.12,
-      3.75,
-      3.5
-     ],
-     "bet365": [
-      2.0,
-      3.3,
-      3.25
-     ],
-     "massimo": [
-      2.1,
-      3.6,
-      3.5
-     ],
-     "media": [
-      2.01,
-      3.5,
-      3.24
-     ]
-    },
-    "p_mercato": [
-     0.4629,
-     0.2591,
-     0.278
-    ],
-    "p_modello": [
-     0.403,
-     0.2417,
-     0.3554
-    ],
-    "margine": 0.0241,
-    "margine_migliore": 0.0397,
-    "quote_da": "confronto"
-   },
-   {
-    "id": "metz-boulogne",
-    "casa": "Metz",
-    "ospite": "Boulogne",
-    "data": "2026-11-20",
-    "ora": "20:00",
-    "quote": {
-     "betfair": [
-      2.22,
-      3.4,
-      3.6
-     ],
-     "bet365": [
-      2.05,
-      3.0,
-      3.4
-     ],
-     "massimo": [
-      2.15,
-      3.4,
-      3.5
-     ],
-     "media": [
-      2.09,
-      3.23,
-      3.28
-     ]
-    },
-    "p_mercato": [
-     0.4424,
-     0.2869,
-     0.2707
-    ],
-    "p_modello": [
-     0.5549,
-     0.2387,
-     0.2064
-    ],
-    "margine": 0.0223,
-    "margine_migliore": 0.0449,
-    "quote_da": "confronto"
-   },
-   {
-    "id": "nancy-dijon",
-    "casa": "Nancy",
-    "ospite": "Dijon",
-    "data": "2026-11-20",
-    "ora": "20:00",
-    "quote": {
-     "betfair": [
-      1.85,
-      3.9,
-      4.5
-     ],
-     "bet365": [
-      1.75,
-      3.6,
-      4.2
-     ],
-     "massimo": [
-      1.84,
-      3.8,
-      4.2
-     ],
-     "media": [
-      1.77,
-      3.64,
-      3.97
-     ]
-    },
-    "p_mercato": [
-     0.5332,
-     0.2504,
-     0.2164
-    ],
-    "p_modello": [
-     0.3627,
-     0.2333,
-     0.404
-    ],
-    "margine": 0.0192,
-    "margine_migliore": 0.0447,
-    "quote_da": "confronto"
-   },
-   {
-    "id": "red-star-pau-fc",
-    "casa": "Red Star",
-    "ospite": "Pau FC",
-    "data": "2026-11-20",
-    "ora": "20:00",
-    "quote": {
-     "betfair": [
-      2.12,
-      3.45,
-      3.9
-     ],
-     "bet365": [
-      2.0,
-      3.2,
-      3.4
-     ],
-     "massimo": [
-      2.1,
-      3.5,
-      3.65
-     ],
-     "media": [
-      2.02,
-      3.28,
-      3.43
-     ]
-    },
-    "p_mercato": [
-     0.4651,
-     0.2841,
-     0.2508
-    ],
-    "p_modello": [
-     0.4713,
-     0.2387,
-     0.2899
-    ],
-    "margine": 0.018,
-    "margine_migliore": 0.0359,
-    "quote_da": "confronto"
-   },
    {
     "id": "laval-montpellier",
     "casa": "Laval",
@@ -11418,9 +11280,9 @@
      0.4656
     ],
     "p_modello": [
-     0.1943,
-     0.2766,
-     0.529
+     0.1949,
+     0.2757,
+     0.5293
     ],
     "margine": 0.0416,
     "margine_migliore": 0.0379,
@@ -11460,9 +11322,9 @@
      0.4475
     ],
     "p_modello": [
-     0.3839,
-     0.2485,
-     0.3676
+     0.385,
+     0.2476,
+     0.3674
     ],
     "margine": 0.0428,
     "margine_migliore": 0.0517,
@@ -11502,9 +11364,9 @@
      0.1299
     ],
     "p_modello": [
-     0.3884,
-     0.2734,
-     0.3382
+     0.3892,
+     0.2728,
+     0.338
     ],
     "margine": 0.0974,
     "margine_migliore": 0.0302,
@@ -11544,9 +11406,9 @@
      0.316
     ],
     "p_modello": [
-     0.2221,
-     0.299,
-     0.4789
+     0.2223,
+     0.2992,
+     0.4785
     ],
     "margine": 0.0986,
     "margine_migliore": 0.0422,
@@ -11554,48 +11416,6 @@
    }
   ],
   "championship-scozia": [
-   {
-    "id": "inverness-c-ayr",
-    "casa": "Inverness C",
-    "ospite": "Ayr",
-    "data": "2026-11-20",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      1.65,
-      4.0,
-      5.9
-     ],
-     "bet365": [
-      1.6,
-      3.8,
-      4.75
-     ],
-     "massimo": [
-      1.61,
-      4.0,
-      5.0
-     ],
-     "media": [
-      1.59,
-      3.8,
-      4.8
-     ]
-    },
-    "p_mercato": [
-     0.5959,
-     0.242,
-     0.1621
-    ],
-    "p_modello": [
-     0.4808,
-     0.2747,
-     0.2445
-    ],
-    "margine": 0.0256,
-    "margine_migliore": 0.0711,
-    "quote_da": "confronto"
-   },
    {
     "id": "arbroath-stenhousemuir",
     "casa": "Arbroath",
@@ -11630,9 +11450,9 @@
      0.3243
     ],
     "p_modello": [
-     0.262,
-     0.3214,
-     0.4166
+     0.2604,
+     0.3228,
+     0.4168
     ],
     "margine": 0.0478,
     "margine_migliore": 0.0653,
@@ -11672,9 +11492,9 @@
      0.0742
     ],
     "p_modello": [
-     0.5387,
-     0.2862,
-     0.1751
+     0.5383,
+     0.2879,
+     0.1738
     ],
     "margine": 0.0344,
     "margine_migliore": 0.057,
@@ -11714,9 +11534,9 @@
      0.6286
     ],
     "p_modello": [
-     0.1416,
-     0.2946,
-     0.5638
+     0.1406,
+     0.2962,
+     0.5633
     ],
     "margine": 0.0616,
     "margine_migliore": 0.0556,
@@ -11756,13 +11576,47 @@
      0.4053
     ],
     "p_modello": [
-     0.3474,
-     0.3256,
-     0.327
+     0.3461,
+     0.3271,
+     0.3268
     ],
     "margine": 0.0629,
     "margine_migliore": 0.0758,
     "quote_da": "confronto"
+   },
+   {
+    "id": "dunfermline-arbroath",
+    "casa": "Dunfermline",
+    "ospite": "Arbroath",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.5535,
+     0.2892,
+     0.1573
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
+   },
+   {
+    "id": "morton-ayr",
+    "casa": "Morton",
+    "ospite": "Ayr",
+    "data": "2026-12-01",
+    "ora": "20:45",
+    "quote": {},
+    "p_mercato": null,
+    "p_modello": [
+     0.3547,
+     0.2982,
+     0.3471
+    ],
+    "margine": null,
+    "margine_migliore": null,
+    "quote_da": null
    }
   ],
   "league-one-scozia": [
@@ -11926,7 +11780,7 @@
      0.0526
     ],
     "p_modello": [
-     0.8918,
+     0.8919,
      0.0796,
      0.0285
     ],
