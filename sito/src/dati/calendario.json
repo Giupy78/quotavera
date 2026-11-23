@@ -2,48 +2,6 @@
  "campionati": {
   "serie-a": [
    {
-    "id": "monza-fiorentina",
-    "casa": "Monza",
-    "ospite": "Fiorentina",
-    "data": "2026-11-23",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      3.8,
-      3.95,
-      1.99
-     ],
-     "bet365": [
-      3.75,
-      3.8,
-      1.91
-     ],
-     "massimo": [
-      3.8,
-      3.9,
-      2.0
-     ],
-     "media": [
-      3.56,
-      3.79,
-      1.92
-     ]
-    },
-    "p_mercato": [
-     0.2572,
-     0.2473,
-     0.4955
-    ],
-    "p_modello": [
-     0.2481,
-     0.2273,
-     0.5246
-    ],
-    "margine": 0.0188,
-    "margine_migliore": 0.0196,
-    "quote_da": "confronto"
-   },
-   {
     "id": "venezia-bologna",
     "casa": "Venezia",
     "ospite": "Bologna",
@@ -62,9 +20,9 @@
      0.4414
     ],
     "p_modello": [
-     0.1718,
-     0.2492,
-     0.579
+     0.1725,
+     0.2495,
+     0.578
     ],
     "margine": 0.0967,
     "margine_migliore": null,
@@ -78,22 +36,22 @@
     "ora": "15:00",
     "quote": {
      "mercato_unico": [
-      1.476,
+      1.5,
       4.6,
-      5.0
+      4.8
      ]
     },
     "p_mercato": [
-     0.6388,
-     0.1891,
-     0.1721
+     0.6292,
+     0.1898,
+     0.181
     ],
     "p_modello": [
-     0.5617,
-     0.2215,
-     0.2168
+     0.5629,
+     0.2211,
+     0.216
     ],
-    "margine": 0.0949,
+    "margine": 0.0924,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -105,22 +63,22 @@
     "ora": "18:00",
     "quote": {
      "mercato_unico": [
-      3.4,
-      3.35,
-      2.0
+      3.3,
+      3.3,
+      2.05
      ]
     },
     "p_mercato": [
-     0.2648,
-     0.2691,
-     0.4661
+     0.2731,
+     0.2731,
+     0.4537
     ],
     "p_modello": [
-     0.2423,
-     0.263,
-     0.4947
+     0.2435,
+     0.2632,
+     0.4933
     ],
-    "margine": 0.0926,
+    "margine": 0.0939,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -143,9 +101,9 @@
      0.0984
     ],
     "p_modello": [
-     0.7231,
-     0.1698,
-     0.1071
+     0.7253,
+     0.1687,
+     0.106
     ],
     "margine": 0.0978,
     "margine_migliore": null,
@@ -159,22 +117,22 @@
     "ora": "12:30",
     "quote": {
      "mercato_unico": [
-      3.15,
-      3.45,
-      2.05
+      2.95,
+      3.4,
+      2.2
      ]
     },
     "p_mercato": [
-     0.2868,
-     0.2599,
-     0.4533
+     0.3103,
+     0.2664,
+     0.4234
     ],
     "p_modello": [
-     0.3189,
-     0.2564,
-     0.4247
+     0.3356,
+     0.258,
+     0.4065
     ],
-    "margine": 0.0951,
+    "margine": 0.0876,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -197,9 +155,9 @@
      0.5792
     ],
     "p_modello": [
-     0.1873,
-     0.2231,
-     0.5897
+     0.1883,
+     0.2235,
+     0.5882
     ],
     "margine": 0.0918,
     "margine_migliore": null,
@@ -224,9 +182,9 @@
      0.0702
     ],
     "p_modello": [
-     0.8073,
-     0.125,
-     0.0677
+     0.7878,
+     0.1346,
+     0.0776
     ],
     "margine": 0.0951,
     "margine_migliore": null,
@@ -251,9 +209,9 @@
      0.2721
     ],
     "p_modello": [
-     0.3995,
-     0.2915,
-     0.3089
+     0.4011,
+     0.2913,
+     0.3076
     ],
     "margine": 0.0971,
     "margine_migliore": null,
@@ -278,9 +236,9 @@
      0.4912
     ],
     "p_modello": [
-     0.1584,
-     0.2304,
-     0.6111
+     0.1598,
+     0.2311,
+     0.6091
     ],
     "margine": 0.0877,
     "margine_migliore": null,
@@ -305,9 +263,9 @@
      0.5639
     ],
     "p_modello": [
-     0.1924,
-     0.2383,
-     0.5693
+     0.1941,
+     0.2389,
+     0.5669
     ],
     "margine": 0.0924,
     "margine_migliore": null,
@@ -316,48 +274,6 @@
   ],
   "premier-league": [
    {
-    "id": "brentford-everton",
-    "casa": "Brentford",
-    "ospite": "Everton",
-    "data": "2026-11-23",
-    "ora": "21:00",
-    "quote": {
-     "betfair": [
-      2.24,
-      3.6,
-      3.5
-     ],
-     "bet365": [
-      2.15,
-      3.5,
-      3.3
-     ],
-     "massimo": [
-      2.2,
-      3.65,
-      3.45
-     ],
-     "media": [
-      2.12,
-      3.51,
-      3.26
-     ]
-    },
-    "p_mercato": [
-     0.4429,
-     0.2746,
-     0.2825
-    ],
-    "p_modello": [
-     0.4581,
-     0.2832,
-     0.2588
-    ],
-    "margine": 0.0099,
-    "margine_migliore": 0.0184,
-    "quote_da": "confronto"
-   },
-   {
     "id": "nottm-forest-chelsea",
     "casa": "Nott'm Forest",
     "ospite": "Chelsea",
@@ -365,22 +281,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      2.75,
-      3.5,
-      2.45
+      2.65,
+      3.35,
+      2.6
      ]
     },
     "p_mercato": [
-     0.3443,
-     0.2675,
-     0.3882
+     0.3568,
+     0.2792,
+     0.364
     ],
     "p_modello": [
-     0.3653,
-     0.2681,
-     0.3667
+     0.3671,
+     0.2682,
+     0.3647
     ],
-    "margine": 0.0575,
+    "margine": 0.0605,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -403,9 +319,9 @@
      0.1561
     ],
     "p_modello": [
-     0.5869,
-     0.2291,
-     0.184
+     0.5906,
+     0.228,
+     0.1814
     ],
     "margine": 0.0618,
     "margine_migliore": null,
@@ -419,22 +335,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      2.0,
-      3.75,
-      3.4
+      2.05,
+      3.7,
+      3.3
      ]
     },
     "p_mercato": [
-     0.4776,
-     0.2477,
-     0.2747
+     0.4654,
+     0.2512,
+     0.2834
     ],
     "p_modello": [
-     0.4011,
-     0.2525,
-     0.3464
+     0.3875,
+     0.2517,
+     0.3608
     ],
-    "margine": 0.0608,
+    "margine": 0.0611,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -446,22 +362,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      3.35,
-      3.8,
-      2.0
+      3.5,
+      3.85,
+      1.952
      ]
     },
     "p_mercato": [
-     0.2788,
-     0.244,
-     0.4772
+     0.2674,
+     0.2418,
+     0.4908
     ],
     "p_modello": [
-     0.2166,
-     0.223,
-     0.5603
+     0.2173,
+     0.2233,
+     0.5594
     ],
-    "margine": 0.0617,
+    "margine": 0.0577,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -473,22 +389,22 @@
     "ora": "13:00",
     "quote": {
      "mercato_unico": [
-      3.45,
-      3.6,
-      2.05
+      3.95,
+      3.55,
+      1.909
      ]
     },
     "p_mercato": [
-     0.2722,
-     0.2603,
-     0.4675
+     0.235,
+     0.2631,
+     0.5018
     ],
     "p_modello": [
-     0.2745,
-     0.2834,
-     0.4421
+     0.2611,
+     0.2786,
+     0.4603
     ],
-    "margine": 0.0554,
+    "margine": 0.0587,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -500,22 +416,22 @@
     "ora": "15:05",
     "quote": {
      "mercato_unico": [
-      1.556,
-      4.4,
-      5.25
+      1.541,
+      4.5,
+      5.5
      ]
     },
     "p_mercato": [
-     0.6183,
-     0.2089,
-     0.1728
+     0.6274,
+     0.2062,
+     0.1664
     ],
     "p_modello": [
-     0.5121,
-     0.239,
-     0.2488
+     0.5145,
+     0.2386,
+     0.2468
     ],
-    "margine": 0.0604,
+    "margine": 0.053,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -538,9 +454,9 @@
      0.2341
     ],
     "p_modello": [
-     0.2736,
-     0.3165,
-     0.4099
+     0.2748,
+     0.3171,
+     0.4081
     ],
     "margine": 0.0619,
     "margine_migliore": null,
@@ -565,9 +481,9 @@
      0.3707
     ],
     "p_modello": [
-     0.3543,
-     0.2847,
-     0.361
+     0.3557,
+     0.2849,
+     0.3594
     ],
     "margine": 0.0625,
     "margine_migliore": null,
@@ -581,22 +497,22 @@
     "ora": "15:05",
     "quote": {
      "mercato_unico": [
-      3.4,
+      3.55,
       3.35,
-      2.15
+      2.1
      ]
     },
     "p_mercato": [
-     0.2757,
-     0.28,
-     0.4443
+     0.2639,
+     0.2804,
+     0.4557
     ],
     "p_modello": [
-     0.3594,
-     0.3041,
-     0.3365
+     0.361,
+     0.3042,
+     0.3347
     ],
-    "margine": 0.0577,
+    "margine": 0.0564,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -619,9 +535,9 @@
      0.2599
     ],
     "p_modello": [
-     0.4869,
-     0.2821,
-     0.231
+     0.488,
+     0.2819,
+     0.2301
     ],
     "margine": 0.0567,
     "margine_migliore": null,
@@ -633,16 +549,26 @@
     "ospite": "Ipswich",
     "data": "2026-12-01",
     "ora": "21:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.5378,
-     0.2179,
-     0.2443
+    "quote": {
+     "mercato_unico": [
+      2.25,
+      3.6,
+      3.0
+     ]
+    },
+    "p_mercato": [
+     0.4247,
+     0.2603,
+     0.3151
     ],
-    "margine": null,
+    "p_modello": [
+     0.5381,
+     0.2179,
+     0.2439
+    ],
+    "margine": 0.0556,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "chelsea-crystal-palace",
@@ -650,16 +576,26 @@
     "ospite": "Crystal Palace",
     "data": "2026-12-02",
     "ora": "20:30",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.579,
-     0.2232,
-     0.1977
+    "quote": {
+     "mercato_unico": [
+      1.625,
+      4.3,
+      4.5
+     ]
+    },
+    "p_mercato": [
+     0.5876,
+     0.2113,
+     0.2011
     ],
-    "margine": null,
+    "p_modello": [
+     0.5807,
+     0.2228,
+     0.1965
+    ],
+    "margine": 0.0702,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "hull-nottm-forest",
@@ -667,16 +603,26 @@
     "ospite": "Nott'm Forest",
     "data": "2026-12-02",
     "ora": "20:30",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4442,
-     0.323,
-     0.2328
+    "quote": {
+     "mercato_unico": [
+      3.85,
+      3.55,
+      1.909
+     ]
+    },
+    "p_mercato": [
+     0.2395,
+     0.2611,
+     0.4994
     ],
-    "margine": null,
+    "p_modello": [
+     0.4446,
+     0.3232,
+     0.2322
+    ],
+    "margine": 0.0653,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "liverpool-sunderland",
@@ -684,16 +630,26 @@
     "ospite": "Sunderland",
     "data": "2026-12-02",
     "ora": "20:30",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.6238,
-     0.2333,
-     0.1429
+    "quote": {
+     "mercato_unico": [
+      1.465,
+      4.6,
+      6.0
+     ]
+    },
+    "p_mercato": [
+     0.6551,
+     0.1973,
+     0.1476
     ],
-    "margine": null,
+    "p_modello": [
+     0.6249,
+     0.2329,
+     0.1422
+    ],
+    "margine": 0.0667,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "man-city-leeds",
@@ -701,16 +657,26 @@
     "ospite": "Leeds",
     "data": "2026-12-02",
     "ora": "20:30",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.5897,
-     0.2399,
-     0.1704
+    "quote": {
+     "mercato_unico": [
+      1.526,
+      4.4,
+      5.25
+     ]
+    },
+    "p_mercato": [
+     0.6257,
+     0.2052,
+     0.1691
     ],
-    "margine": null,
+    "p_modello": [
+     0.5905,
+     0.2396,
+     0.1698
+    ],
+    "margine": 0.0731,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "bournemouth-brighton",
@@ -718,16 +684,26 @@
     "ospite": "Brighton",
     "data": "2026-12-02",
     "ora": "21:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.3755,
-     0.265,
-     0.3596
+    "quote": {
+     "mercato_unico": [
+      2.4,
+      3.5,
+      2.7
+     ]
+    },
+    "p_mercato": [
+     0.3914,
+     0.2628,
+     0.3459
     ],
-    "margine": null,
+    "p_modello": [
+     0.3766,
+     0.2651,
+     0.3583
+    ],
+    "margine": 0.0728,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "aston-villa-everton",
@@ -735,16 +711,26 @@
     "ospite": "Everton",
     "data": "2026-12-02",
     "ora": "21:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4537,
-     0.284,
-     0.2623
+    "quote": {
+     "mercato_unico": [
+      1.952,
+      3.55,
+      3.55
+     ]
+    },
+    "p_mercato": [
+     0.4843,
+     0.2579,
+     0.2579
     ],
-    "margine": null,
+    "p_modello": [
+     0.475,
+     0.2781,
+     0.2469
+    ],
+    "margine": 0.0757,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "brentford-arsenal",
@@ -752,16 +738,26 @@
     "ospite": "Arsenal",
     "data": "2026-12-02",
     "ora": "21:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.1999,
-     0.2675,
-     0.5326
+    "quote": {
+     "mercato_unico": [
+      4.1,
+      3.7,
+      1.8
+     ]
+    },
+    "p_mercato": [
+     0.2226,
+     0.2485,
+     0.5289
     ],
-    "margine": null,
+    "p_modello": [
+     0.2116,
+     0.2706,
+     0.5178
+    ],
+    "margine": 0.0697,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "newcastle-man-united",
@@ -769,16 +765,26 @@
     "ospite": "Man United",
     "data": "2026-12-02",
     "ora": "21:15",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4677,
-     0.2393,
-     0.293
+    "quote": {
+     "mercato_unico": [
+      2.55,
+      3.75,
+      2.45
+     ]
+    },
+    "p_mercato": [
+     0.3692,
+     0.2458,
+     0.385
     ],
-    "margine": null,
+    "p_modello": [
+     0.4691,
+     0.2393,
+     0.2916
+    ],
+    "margine": 0.067,
     "margine_migliore": null,
-    "quote_da": null
+    "quote_da": "unico"
    },
    {
     "id": "tottenham-fulham",
@@ -786,61 +792,29 @@
     "ospite": "Fulham",
     "data": "2026-12-03",
     "ora": "21:00",
-    "quote": {},
-    "p_mercato": null,
-    "p_modello": [
-     0.4056,
-     0.2856,
-     0.3089
-    ],
-    "margine": null,
-    "margine_migliore": null,
-    "quote_da": null
-   }
-  ],
-  "laliga": [
-   {
-    "id": "levante-elche",
-    "casa": "Levante",
-    "ospite": "Elche",
-    "data": "2026-11-23",
-    "ora": "21:00",
     "quote": {
-     "betfair": [
-      2.26,
+     "mercato_unico": [
+      1.833,
       3.7,
-      3.35
-     ],
-     "bet365": [
-      2.15,
-      3.6,
-      3.25
-     ],
-     "massimo": [
-      2.2,
-      3.65,
-      3.3
-     ],
-     "media": [
-      2.15,
-      3.54,
-      3.11
+      3.9
      ]
     },
     "p_mercato": [
-     0.4384,
-     0.2667,
-     0.2949
+     0.5182,
+     0.2477,
+     0.2341
     ],
     "p_modello": [
-     0.4597,
-     0.247,
-     0.2932
+     0.4068,
+     0.2856,
+     0.3076
     ],
-    "margine": 0.0113,
-    "margine_migliore": 0.0315,
-    "quote_da": "confronto"
-   },
+    "margine": 0.0722,
+    "margine_migliore": null,
+    "quote_da": "unico"
+   }
+  ],
+  "laliga": [
    {
     "id": "levante-santander",
     "casa": "Levante",
@@ -860,9 +834,9 @@
      0.2964
     ],
     "p_modello": [
-     0.6257,
-     0.1752,
-     0.1991
+     0.6198,
+     0.1779,
+     0.2023
     ],
     "margine": 0.065,
     "margine_migliore": null,
@@ -887,9 +861,9 @@
      0.1745
     ],
     "p_modello": [
-     0.563,
-     0.2495,
-     0.1875
+     0.5628,
+     0.25,
+     0.1872
     ],
     "margine": 0.0543,
     "margine_migliore": null,
@@ -903,22 +877,22 @@
     "ora": "16:15",
     "quote": {
      "mercato_unico": [
-      4.4,
-      3.7,
-      1.769
+      4.5,
+      3.75,
+      1.741
      ]
     },
     "p_mercato": [
-     0.2083,
-     0.2506,
-     0.5411
+     0.2032,
+     0.2469,
+     0.5499
     ],
     "p_modello": [
-     0.1685,
-     0.2779,
-     0.5536
+     0.168,
+     0.2783,
+     0.5537
     ],
-    "margine": 0.0628,
+    "margine": 0.0633,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -930,22 +904,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      5.25,
-      4.4,
-      1.556
+      6.0,
+      4.6,
+      1.488
      ]
     },
     "p_mercato": [
-     0.1728,
-     0.2089,
-     0.6183
+     0.1505,
+     0.2005,
+     0.649
     ],
     "p_modello": [
-     0.2392,
-     0.2489,
-     0.5119
+     0.2401,
+     0.2515,
+     0.5084
     ],
-    "margine": 0.0604,
+    "margine": 0.0561,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -968,9 +942,9 @@
      0.057
     ],
     "p_modello": [
-     0.7666,
-     0.156,
-     0.0774
+     0.7664,
+     0.1564,
+     0.0772
     ],
     "margine": 0.0556,
     "margine_migliore": null,
@@ -995,9 +969,9 @@
      0.2612
     ],
     "p_modello": [
-     0.4435,
-     0.2835,
-     0.2731
+     0.4431,
+     0.2841,
+     0.2727
     ],
     "margine": 0.0525,
     "margine_migliore": null,
@@ -1022,9 +996,9 @@
      0.7733
     ],
     "p_modello": [
-     0.1428,
-     0.1794,
-     0.6778
+     0.1423,
+     0.1795,
+     0.6782
     ],
     "margine": 0.0605,
     "margine_migliore": null,
@@ -1038,22 +1012,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      2.65,
-      3.45,
-      2.55
+      2.7,
+      3.5,
+      2.5
      ]
     },
     "p_mercato": [
-     0.3572,
-     0.271,
-     0.3718
+     0.3514,
+     0.2679,
+     0.3806
     ],
     "p_modello": [
-     0.3675,
-     0.2573,
-     0.3752
+     0.3671,
+     0.2578,
+     0.375
     ],
-    "margine": 0.0594,
+    "margine": 0.0561,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1076,9 +1050,9 @@
      0.2991
     ],
     "p_modello": [
-     0.5188,
-     0.2353,
-     0.2458
+     0.5184,
+     0.2359,
+     0.2456
     ],
     "margine": 0.0565,
     "margine_migliore": null,
@@ -1092,22 +1066,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      2.15,
-      3.1,
-      3.7
+      2.1,
+      3.15,
+      3.8
      ]
     },
     "p_mercato": [
-     0.4442,
-     0.3037,
-     0.2521
+     0.4555,
+     0.299,
+     0.2455
     ],
     "p_modello": [
-     0.44,
-     0.3354,
-     0.2246
+     0.4398,
+     0.336,
+     0.2242
     ],
-    "margine": 0.058,
+    "margine": 0.0568,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1120,9 +1094,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.1927,
-     0.2152,
-     0.5921
+     0.1922,
+     0.2156,
+     0.5922
     ],
     "margine": null,
     "margine_migliore": null,
@@ -1137,9 +1111,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.626,
-     0.1939,
-     0.1801
+     0.6258,
+     0.1943,
+     0.1799
     ],
     "margine": null,
     "margine_migliore": null,
@@ -1157,20 +1131,20 @@
      "mercato_unico": [
       1.69,
       4.1,
-      3.85
+      3.95
      ]
     },
     "p_mercato": [
-     0.5548,
-     0.2149,
-     0.2303
+     0.5572,
+     0.2169,
+     0.2259
     ],
     "p_modello": [
      0.5054,
      0.2391,
      0.2555
     ],
-    "margine": 0.0954,
+    "margine": 0.0888,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1182,22 +1156,22 @@
     "ora": "15:30",
     "quote": {
      "mercato_unico": [
-      1.909,
-      3.75,
-      3.3
+      1.952,
+      3.65,
+      3.25
      ]
     },
     "p_mercato": [
-     0.4891,
-     0.2377,
-     0.2732
+     0.4776,
+     0.2447,
+     0.2776
     ],
     "p_modello": [
      0.3524,
      0.2366,
      0.411
     ],
-    "margine": 0.0935,
+    "margine": 0.094,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1265,7 +1239,7 @@
     ],
     "p_modello": [
      0.3214,
-     0.4725,
+     0.4724,
      0.2061
     ],
     "margine": 0.0922,
@@ -1307,22 +1281,22 @@
     "ora": "15:30",
     "quote": {
      "mercato_unico": [
-      2.5,
-      3.7,
-      2.35
+      2.6,
+      3.65,
+      2.3
      ]
     },
     "p_mercato": [
-     0.3672,
-     0.2406,
-     0.3922
+     0.353,
+     0.2449,
+     0.4021
     ],
     "p_modello": [
-     0.3331,
+     0.3332,
      0.2365,
      0.4303
     ],
-    "margine": 0.0958,
+    "margine": 0.0934,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1373,7 +1347,7 @@
     ],
     "p_modello": [
      0.5043,
-     0.2375,
+     0.2374,
      0.2583
     ],
     "margine": 0.0899,
@@ -1417,22 +1391,22 @@
     "ora": "17:15",
     "quote": {
      "mercato_unico": [
-      4.3,
+      4.4,
       4.0,
-      1.69
+      1.714
      ]
     },
     "p_mercato": [
-     0.2101,
-     0.2272,
-     0.5628
+     0.2089,
+     0.2313,
+     0.5598
     ],
     "p_modello": [
      0.1678,
      0.2509,
      0.5813
     ],
-    "margine": 0.0743,
+    "margine": 0.0607,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1444,22 +1418,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      3.0,
-      3.55,
+      3.05,
+      3.6,
       2.2
      ]
     },
     "p_mercato": [
-     0.3105,
-     0.2598,
-     0.4297
+     0.3082,
+     0.2588,
+     0.433
     ],
     "p_modello": [
      0.2601,
      0.2466,
      0.4933
     ],
-    "margine": 0.0696,
+    "margine": 0.0602,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1471,22 +1445,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      3.85,
-      3.4,
-      1.952
+      3.75,
+      3.35,
+      2.0
      ]
     },
     "p_mercato": [
-     0.2392,
-     0.273,
-     0.4877
+     0.2464,
+     0.2777,
+     0.476
     ],
     "p_modello": [
      0.2529,
      0.2644,
      0.4826
     ],
-    "margine": 0.0662,
+    "margine": 0.0652,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1499,21 +1473,21 @@
     "quote": {
      "mercato_unico": [
       1.667,
-      4.0,
-      4.5
+      4.1,
+      4.6
      ]
     },
     "p_mercato": [
-     0.5716,
-     0.2278,
-     0.2006
+     0.5758,
+     0.2251,
+     0.199
     ],
     "p_modello": [
      0.5648,
      0.2505,
      0.1847
     ],
-    "margine": 0.0721,
+    "margine": 0.0612,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1525,22 +1499,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      1.211,
-      6.5,
+      1.2,
+      7.0,
       11.0
      ]
     },
     "p_mercato": [
-     0.7943,
-     0.1334,
-     0.0723
+     0.8032,
+     0.1237,
+     0.0731
     ],
     "p_modello": [
      0.7293,
      0.1725,
      0.0982
     ],
-    "margine": 0.0705,
+    "margine": 0.0671,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1652,22 +1626,22 @@
     "ora": "16:30",
     "quote": {
      "mercato_unico": [
-      2.0,
-      3.65,
-      3.3
+      2.05,
+      3.6,
+      3.2
      ]
     },
     "p_mercato": [
-     0.4717,
-     0.2499,
-     0.2784
+     0.4593,
+     0.2533,
+     0.2873
     ],
     "p_modello": [
      0.379,
      0.2469,
      0.3741
     ],
-    "margine": 0.077,
+    "margine": 0.0781,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1679,22 +1653,22 @@
     "ora": "18:45",
     "quote": {
      "mercato_unico": [
-      1.211,
+      1.222,
       7.0,
       8.5
      ]
     },
     "p_mercato": [
-     0.7875,
-     0.1184,
-     0.0941
+     0.7834,
+     0.1205,
+     0.0961
     ],
     "p_modello": [
      0.8001,
      0.1185,
      0.0814
     ],
-    "margine": 0.0863,
+    "margine": 0.0788,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1761,21 +1735,21 @@
     "quote": {
      "mercato_unico": [
       2.0,
-      4.0,
-      3.05
+      3.9,
+      3.1
      ]
     },
     "p_mercato": [
-     0.4714,
-     0.2262,
-     0.3025
+     0.471,
+     0.2321,
+     0.2969
     ],
     "p_modello": [
      0.4575,
      0.2378,
      0.3047
     ],
-    "margine": 0.0779,
+    "margine": 0.079,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1787,22 +1761,22 @@
     "ora": "14:30",
     "quote": {
      "mercato_unico": [
-      3.3,
-      3.75,
-      1.952
+      3.4,
+      3.85,
+      1.909
      ]
     },
     "p_mercato": [
-     0.2768,
-     0.2412,
-     0.482
+     0.2694,
+     0.2357,
+     0.4948
     ],
     "p_modello": [
      0.3293,
-     0.261,
+     0.2611,
      0.4097
     ],
-    "margine": 0.082,
+    "margine": 0.0777,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1814,22 +1788,22 @@
     "ora": "16:45",
     "quote": {
      "mercato_unico": [
-      5.25,
-      4.6,
-      1.488
+      5.0,
+      4.5,
+      1.526
      ]
     },
     "p_mercato": [
-     0.1671,
-     0.1934,
-     0.6394
+     0.1772,
+     0.1989,
+     0.6239
     ],
     "p_modello": [
      0.2066,
      0.2323,
      0.5611
     ],
-    "margine": 0.0799,
+    "margine": 0.0775,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1870,22 +1844,22 @@
     "ora": "21:15",
     "quote": {
      "mercato_unico": [
-      2.15,
-      3.2,
-      3.3
+      2.05,
+      3.25,
+      3.5
      ]
     },
     "p_mercato": [
-     0.4362,
-     0.2865,
-     0.2773
+     0.4582,
+     0.2816,
+     0.2601
     ],
     "p_modello": [
      0.3089,
      0.2391,
      0.452
     ],
-    "margine": 0.0806,
+    "margine": 0.0812,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -1951,22 +1925,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      2.5,
+      2.55,
       3.05,
-      2.9
+      2.75
      ]
     },
     "p_mercato": [
-     0.375,
-     0.3042,
-     0.3208
+     0.3636,
+     0.3007,
+     0.3357
     ],
     "p_modello": [
      0.5559,
      0.2367,
      0.2074
     ],
-    "margine": 0.0727,
+    "margine": 0.0837,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2005,22 +1979,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      1.87,
-      3.5,
-      3.85
+      1.8,
+      3.6,
+      4.0
      ]
     },
     "p_mercato": [
-     0.5046,
-     0.2604,
-     0.235
+     0.5239,
+     0.2516,
+     0.2245
     ],
     "p_modello": [
      0.4996,
      0.2374,
      0.2631
     ],
-    "margine": 0.0802,
+    "margine": 0.0833,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2108,48 +2082,6 @@
   ],
   "superlig": [
    {
-    "id": "buyuksehyr-corum",
-    "casa": "Buyuksehyr",
-    "ospite": "Corum",
-    "data": "2026-11-23",
-    "ora": "18:00",
-    "quote": {
-     "betfair": [
-      1.94,
-      1.1,
-      3.8
-     ],
-     "bet365": [
-      1.76,
-      3.75,
-      3.75
-     ],
-     "massimo": [
-      1.91,
-      3.85,
-      3.75
-     ],
-     "media": [
-      1.85,
-      3.69,
-      3.58
-     ]
-    },
-    "p_mercato": [
-     0.5064,
-     0.2427,
-     0.2509
-    ],
-    "p_modello": [
-     0.5635,
-     0.2017,
-     0.2348
-    ],
-    "margine": 0.0909,
-    "margine_migliore": 0.05,
-    "quote_da": "confronto"
-   },
-   {
     "id": "alanyaspor-konyaspor",
     "casa": "Alanyaspor",
     "ospite": "Konyaspor",
@@ -2158,21 +2090,21 @@
     "quote": {
      "mercato_unico": [
       2.5,
-      3.25,
+      3.15,
       2.7
      ]
     },
     "p_mercato": [
-     0.3732,
-     0.2827,
-     0.3441
+     0.3699,
+     0.2892,
+     0.3409
     ],
     "p_modello": [
-     0.4308,
-     0.304,
-     0.2652
+     0.4306,
+     0.3042,
+     0.2651
     ],
-    "margine": 0.0781,
+    "margine": 0.0878,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2195,9 +2127,9 @@
      0.241
     ],
     "p_modello": [
-     0.4176,
-     0.2681,
-     0.3143
+     0.4175,
+     0.2685,
+     0.314
     ],
     "margine": 0.0825,
     "margine_migliore": null,
@@ -2212,8 +2144,8 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4581,
-     0.2839,
+     0.4577,
+     0.2842,
      0.258
     ],
     "margine": null,
@@ -2240,8 +2172,8 @@
     ],
     "p_modello": [
      0.1869,
-     0.1975,
-     0.6156
+     0.1978,
+     0.6153
     ],
     "margine": 0.0808,
     "margine_migliore": null,
@@ -2256,9 +2188,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.4689,
-     0.276,
-     0.2551
+     0.4594,
+     0.2713,
+     0.2693
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2273,9 +2205,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.1915,
-     0.2529,
-     0.5556
+     0.1892,
+     0.2499,
+     0.5609
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2289,22 +2221,22 @@
     "ora": "17:00",
     "quote": {
      "mercato_unico": [
-      1.25,
-      5.75,
-      9.0
+      1.235,
+      6.0,
+      10.0
      ]
     },
     "p_mercato": [
-     0.7627,
-     0.149,
-     0.0882
+     0.776,
+     0.1444,
+     0.0797
     ],
     "p_modello": [
-     0.8078,
+     0.8083,
      0.139,
-     0.0533
+     0.0528
     ],
-    "margine": 0.085,
+    "margine": 0.0764,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2317,9 +2249,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3353,
-     0.2737,
-     0.3909
+     0.3349,
+     0.2741,
+     0.391
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2334,9 +2266,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3077,
-     0.2562,
-     0.4361
+     0.3078,
+     0.2567,
+     0.4355
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2460,22 +2392,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      1.5,
+      1.488,
       4.3,
-      5.5
+      5.75
      ]
     },
     "p_mercato": [
-     0.6337,
-     0.2079,
-     0.1584
+     0.64,
+     0.2087,
+     0.1514
     ],
     "p_modello": [
      0.6618,
      0.1892,
      0.149
     ],
-    "margine": 0.081,
+    "margine": 0.0785,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2487,22 +2419,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      2.25,
+      2.3,
       3.65,
-      2.75
+      2.7
      ]
     },
     "p_mercato": [
-     0.4154,
-     0.2484,
-     0.3362
+     0.407,
+     0.2493,
+     0.3438
     ],
     "p_modello": [
      0.3891,
      0.2493,
      0.3615
     ],
-    "margine": 0.0821,
+    "margine": 0.0791,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2514,22 +2446,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      3.45,
-      4.0,
-      1.833
+      3.35,
+      3.9,
+      1.909
      ]
     },
     "p_mercato": [
-     0.2628,
-     0.2239,
-     0.5133
+     0.2734,
+     0.2322,
+     0.4945
     ],
     "p_modello": [
      0.3618,
      0.2677,
      0.3705
     ],
-    "margine": 0.0854,
+    "margine": 0.0788,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2590,48 +2522,6 @@
   ],
   "super-league-grecia": [
    {
-    "id": "asteras-tripolis-aris",
-    "casa": "Asteras Tripolis",
-    "ospite": "Aris",
-    "data": "2026-11-23",
-    "ora": "16:00",
-    "quote": {
-     "betfair": [
-      3.45,
-      3.15,
-      2.18
-     ],
-     "bet365": [
-      3.4,
-      3.1,
-      2.2
-     ],
-     "massimo": [
-      3.4,
-      3.4,
-      2.2
-     ],
-     "media": [
-      3.2,
-      3.07,
-      2.17
-     ]
-    },
-    "p_mercato": [
-     0.2689,
-     0.2961,
-     0.435
-    ],
-    "p_modello": [
-     0.276,
-     0.3303,
-     0.3937
-    ],
-    "margine": 0.066,
-    "margine_migliore": 0.0428,
-    "quote_da": "confronto"
-   },
-   {
     "id": "iraklis-panetolikos",
     "casa": "Iraklis",
     "ospite": "Panetolikos",
@@ -2639,22 +2529,22 @@
     "ora": "16:00",
     "quote": {
      "mercato_unico": [
-      1.8,
-      3.5,
-      4.2
+      1.833,
+      3.4,
+      4.1
      ]
     },
     "p_mercato": [
-     0.5253,
-     0.2606,
-     0.214
+     0.514,
+     0.2676,
+     0.2185
     ],
     "p_modello": [
-     0.5253,
-     0.2857,
-     0.189
+     0.5259,
+     0.284,
+     0.1902
     ],
-    "margine": 0.0794,
+    "margine": 0.0836,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2667,9 +2557,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3503,
-     0.3313,
-     0.3184
+     0.3555,
+     0.3318,
+     0.3127
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2683,22 +2573,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      1.714,
-      3.7,
-      4.4
+      1.741,
+      3.65,
+      4.2
      ]
     },
     "p_mercato": [
-     0.5521,
-     0.245,
-     0.2029
+     0.5411,
+     0.247,
+     0.2119
     ],
     "p_modello": [
-     0.406,
-     0.2668,
-     0.3272
+     0.4058,
+     0.2652,
+     0.3291
     ],
-    "margine": 0.081,
+    "margine": 0.0865,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2711,21 +2601,21 @@
     "quote": {
      "mercato_unico": [
       6.5,
-      4.5,
-      1.417
+      4.3,
+      1.444
      ]
     },
     "p_mercato": [
-     0.1308,
-     0.1975,
-     0.6717
+     0.1316,
+     0.2085,
+     0.6599
     ],
     "p_modello": [
-     0.1929,
-     0.3032,
-     0.5038
+     0.1935,
+     0.301,
+     0.5055
     ],
-    "margine": 0.0818,
+    "margine": 0.0789,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2737,22 +2627,22 @@
     "ora": "16:30",
     "quote": {
      "mercato_unico": [
-      2.0,
-      3.25,
+      1.952,
+      3.45,
       3.6
      ]
     },
     "p_mercato": [
-     0.4687,
-     0.2803,
-     0.251
+     0.4827,
+     0.2646,
+     0.2527
     ],
     "p_modello": [
-     0.3919,
-     0.2844,
-     0.3237
+     0.3922,
+     0.2824,
+     0.3253
     ],
-    "margine": 0.0855,
+    "margine": 0.0799,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2765,9 +2655,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.1631,
-     0.3184,
-     0.5185
+     0.1668,
+     0.3214,
+     0.5118
     ],
     "margine": null,
     "margine_migliore": null,
@@ -2792,9 +2682,9 @@
      0.1841
     ],
     "p_modello": [
-     0.5094,
-     0.2883,
-     0.2023
+     0.5097,
+     0.2866,
+     0.2037
     ],
     "margine": 0.082,
     "margine_migliore": null,
@@ -2810,22 +2700,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      1.606,
-      4.2,
+      1.645,
+      4.1,
       4.8
      ]
     },
     "p_mercato": [
-     0.5952,
-     0.217,
-     0.1878
+     0.5841,
+     0.2254,
+     0.1904
     ],
     "p_modello": [
      0.5833,
      0.2144,
      0.2023
     ],
-    "margine": 0.0691,
+    "margine": 0.0601,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -2838,21 +2728,21 @@
     "quote": {
      "mercato_unico": [
       1.235,
-      6.0,
-      10.0
+      6.5,
+      10.5
      ]
     },
     "p_mercato": [
-     0.776,
-     0.1444,
-     0.0797
+     0.7836,
+     0.1369,
+     0.0795
     ],
     "p_modello": [
      0.7293,
      0.1665,
      0.1042
     ],
-    "margine": 0.0764,
+    "margine": 0.0588,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3100,22 +2990,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      1.87,
+      1.909,
       3.5,
       4.0
      ]
     },
     "p_mercato": [
-     0.5082,
-     0.2634,
-     0.2284
+     0.5015,
+     0.2668,
+     0.2317
     ],
     "p_modello": [
      0.4104,
      0.2913,
      0.2982
     ],
-    "margine": 0.0705,
+    "margine": 0.0595,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3127,22 +3017,22 @@
     "ora": "20:00",
     "quote": {
      "mercato_unico": [
-      1.541,
-      4.2,
+      1.556,
+      4.3,
       5.5
      ]
     },
     "p_mercato": [
-     0.6211,
-     0.217,
-     0.1618
+     0.6196,
+     0.2152,
+     0.1652
     ],
     "p_modello": [
      0.5016,
      0.2802,
      0.2183
     ],
-    "margine": 0.0688,
+    "margine": 0.057,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3155,21 +3045,21 @@
     "quote": {
      "mercato_unico": [
       2.7,
-      3.4,
-      2.45
+      3.35,
+      2.6
      ]
     },
     "p_mercato": [
-     0.3459,
-     0.271,
-     0.383
+     0.3523,
+     0.2814,
+     0.3663
     ],
     "p_modello": [
      0.2667,
      0.3236,
      0.4097
     ],
-    "margine": 0.0727,
+    "margine": 0.0535,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3181,22 +3071,22 @@
     "ora": "20:00",
     "quote": {
      "mercato_unico": [
-      1.444,
-      4.6,
-      6.0
+      1.455,
+      4.7,
+      6.5
      ]
     },
     "p_mercato": [
-     0.6608,
-     0.1944,
-     0.1448
+     0.6649,
+     0.1966,
+     0.1385
     ],
     "p_modello": [
      0.5936,
      0.2444,
      0.162
     ],
-    "margine": 0.0766,
+    "margine": 0.0539,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3208,22 +3098,22 @@
     "ora": "20:00",
     "quote": {
      "mercato_unico": [
-      2.75,
+      2.85,
       3.05,
       2.65
      ]
     },
     "p_mercato": [
-     0.3406,
-     0.3054,
-     0.354
+     0.3322,
+     0.3095,
+     0.3583
     ],
     "p_modello": [
      0.393,
      0.2592,
      0.3478
     ],
-    "margine": 0.0689,
+    "margine": 0.0561,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3236,21 +3126,21 @@
     "quote": {
      "mercato_unico": [
       3.3,
-      3.15,
+      3.2,
       2.25
      ]
     },
     "p_mercato": [
-     0.2822,
-     0.2964,
-     0.4214
+     0.2838,
+     0.2931,
+     0.4231
     ],
     "p_modello": [
      0.2833,
      0.307,
      0.4096
     ],
-    "margine": 0.0649,
+    "margine": 0.06,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3262,22 +3152,22 @@
     "ora": "19:00",
     "quote": {
      "mercato_unico": [
-      1.909,
-      3.25,
-      4.3
+      2.0,
+      3.15,
+      3.9
      ]
     },
     "p_mercato": [
-     0.4998,
-     0.287,
-     0.2131
+     0.4728,
+     0.2935,
+     0.2336
     ],
     "p_modello": [
      0.4919,
      0.2852,
      0.2229
     ],
-    "margine": 0.0641,
+    "margine": 0.0739,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3301,7 +3191,7 @@
     ],
     "p_modello": [
      0.6262,
-     0.2297,
+     0.2298,
      0.144
     ],
     "margine": 0.0724,
@@ -3316,22 +3206,22 @@
     "ora": "20:00",
     "quote": {
      "mercato_unico": [
-      2.75,
-      3.05,
-      2.65
+      2.8,
+      3.1,
+      2.55
      ]
     },
     "p_mercato": [
-     0.3406,
-     0.3054,
-     0.354
+     0.3332,
+     0.2992,
+     0.3676
     ],
     "p_modello": [
      0.4149,
      0.327,
      0.2582
     ],
-    "margine": 0.0689,
+    "margine": 0.0719,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3343,22 +3233,22 @@
     "ora": "20:00",
     "quote": {
      "mercato_unico": [
-      2.4,
-      3.05,
-      3.1
+      2.35,
+      3.15,
+      3.0
      ]
     },
     "p_mercato": [
-     0.3933,
-     0.306,
-     0.3008
+     0.3988,
+     0.2928,
+     0.3084
     ],
     "p_modello": [
      0.4369,
      0.2816,
-     0.2815
+     0.2816
     ],
-    "margine": 0.0671,
+    "margine": 0.0763,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3422,7 +3312,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3775,
+     0.3774,
      0.2497,
      0.3729
     ],
@@ -3542,22 +3432,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.5,
+      2.4,
       3.35,
-      2.85
+      3.0
      ]
     },
     "p_mercato": [
-     0.3829,
-     0.2827,
-     0.3344
+     0.3997,
+     0.283,
+     0.3174
     ],
     "p_modello": [
      0.3832,
      0.269,
-     0.3478
+     0.3479
     ],
-    "margine": 0.0494,
+    "margine": 0.0485,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3569,22 +3459,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      1.513,
-      4.9,
-      5.5
+      1.541,
+      4.8,
+      5.25
      ]
     },
     "p_mercato": [
-     0.6418,
-     0.1901,
-     0.1681
+     0.6295,
+     0.1941,
+     0.1764
     ],
     "p_modello": [
      0.4886,
      0.2432,
      0.2682
     ],
-    "margine": 0.0468,
+    "margine": 0.0477,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3690,7 +3580,7 @@
     "p_modello": [
      0.2899,
      0.2144,
-     0.4957
+     0.4956
     ],
     "margine": 0.0412,
     "margine_migliore": null,
@@ -3704,22 +3594,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.5,
-      3.7,
-      2.65
+      2.55,
+      3.65,
+      2.6
      ]
     },
     "p_mercato": [
-     0.3835,
-     0.2553,
-     0.3611
+     0.3747,
+     0.258,
+     0.3673
     ],
     "p_modello": [
      0.3465,
      0.25,
      0.4035
     ],
-    "margine": 0.0476,
+    "margine": 0.0507,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3731,22 +3621,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      1.323,
-      5.75,
+      1.333,
+      5.5,
       9.0
      ]
     },
     "p_mercato": [
-     0.7381,
-     0.1619,
-     0.0999
+     0.7316,
+     0.1691,
+     0.0993
     ],
     "p_modello": [
      0.6237,
      0.2133,
      0.1629
     ],
-    "margine": 0.0409,
+    "margine": 0.0431,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3785,22 +3675,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.6,
-      3.85,
-      2.5
+      2.65,
+      3.75,
+      2.45
      ]
     },
     "p_mercato": [
-     0.3694,
-     0.2459,
-     0.3846
+     0.3596,
+     0.2504,
+     0.39
     ],
     "p_modello": [
      0.4344,
      0.2658,
      0.2999
     ],
-    "margine": 0.0444,
+    "margine": 0.0522,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3812,22 +3702,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.45,
+      2.5,
       3.55,
-      2.75
+      2.7
      ]
     },
     "p_mercato": [
-     0.3896,
-     0.2648,
-     0.3456
+     0.382,
+     0.2652,
+     0.3528
     ],
     "p_modello": [
      0.3658,
      0.2921,
      0.342
     ],
-    "margine": 0.0535,
+    "margine": 0.0521,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -3920,7 +3810,7 @@
     "p_modello": [
      0.293,
      0.2475,
-     0.4595
+     0.4596
     ],
     "margine": null,
     "margine_migliore": null,
@@ -3988,7 +3878,7 @@
     "p_modello": [
      0.3719,
      0.2619,
-     0.3662
+     0.3663
     ],
     "margine": null,
     "margine_migliore": null,
@@ -4073,21 +3963,21 @@
     "quote": {
      "mercato_unico": [
       4.0,
-      4.2,
+      4.3,
       1.714
      ]
     },
     "p_mercato": [
-     0.228,
-     0.2163,
-     0.5557
+     0.2297,
+     0.2125,
+     0.5578
     ],
     "p_modello": [
      0.3435,
      0.2505,
      0.406
     ],
-    "margine": 0.0715,
+    "margine": 0.066,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4100,21 +3990,21 @@
     "quote": {
      "mercato_unico": [
       1.571,
-      4.2,
-      5.0
+      4.3,
+      5.25
      ]
     },
     "p_mercato": [
-     0.6066,
-     0.2153,
-     0.178
+     0.6126,
+     0.2144,
+     0.173
     ],
     "p_modello": [
      0.5061,
      0.2633,
      0.2306
     ],
-    "margine": 0.0746,
+    "margine": 0.0596,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4126,22 +4016,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      3.75,
       3.8,
+      3.85,
       1.87
      ]
     },
     "p_mercato": [
-     0.2465,
-     0.2431,
-     0.5104
+     0.2452,
+     0.2418,
+     0.513
     ],
     "p_modello": [
-     0.1725,
+     0.1724,
      0.1955,
      0.632
     ],
-    "margine": 0.0646,
+    "margine": 0.0577,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4153,22 +4043,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.8,
-      3.35,
-      2.4
+      2.85,
+      3.4,
+      2.45
      ]
     },
     "p_mercato": [
-     0.333,
-     0.2755,
-     0.3915
+     0.3332,
+     0.2771,
+     0.3897
     ],
     "p_modello": [
      0.2919,
      0.2998,
      0.4083
     ],
-    "margine": 0.0723,
+    "margine": 0.0532,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4180,22 +4070,22 @@
     "ora": "21:00",
     "quote": {
      "mercato_unico": [
-      3.75,
-      4.1,
-      1.741
+      3.85,
+      4.2,
+      1.769
      ]
     },
     "p_mercato": [
-     0.2403,
-     0.218,
-     0.5417
+     0.2401,
+     0.2189,
+     0.541
     ],
     "p_modello": [
      0.2699,
      0.2486,
      0.4814
     ],
-    "margine": 0.085,
+    "margine": 0.0631,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4207,22 +4097,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      1.833,
+      1.769,
       3.85,
-      3.7
+      3.85
      ]
     },
     "p_mercato": [
-     0.5169,
-     0.2364,
-     0.2467
+     0.5329,
+     0.2336,
+     0.2336
     ],
     "p_modello": [
      0.4907,
      0.248,
      0.2613
     ],
-    "margine": 0.0756,
+    "margine": 0.0848,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4234,22 +4124,22 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      2.35,
+      2.15,
       3.75,
-      2.55
+      2.8
      ]
     },
     "p_mercato": [
-     0.3961,
-     0.2405,
-     0.3634
+     0.4333,
+     0.2391,
+     0.3276
     ],
     "p_modello": [
      0.5106,
      0.2373,
      0.2521
     ],
-    "margine": 0.0844,
+    "margine": 0.0889,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4462,7 +4352,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.3521,
+     0.3522,
      0.233,
      0.4148
     ],
@@ -4616,7 +4506,7 @@
     "p_mercato": null,
     "p_modello": [
      0.7501,
-     0.1477,
+     0.1478,
      0.1022
     ],
     "margine": null,
@@ -4650,22 +4540,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      3.75,
-      3.9,
+      3.8,
+      3.95,
       1.833
      ]
     },
     "p_mercato": [
-     0.2453,
-     0.2352,
-     0.5195
+     0.2439,
+     0.2341,
+     0.522
     ],
     "p_modello": [
      0.2401,
      0.2356,
      0.5243
     ],
-    "margine": 0.0686,
+    "margine": 0.0619,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4677,22 +4567,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.05,
-      3.25,
+      2.1,
+      3.3,
       3.6
      ]
     },
     "p_mercato": [
-     0.4611,
-     0.2841,
-     0.2548
+     0.4555,
+     0.2847,
+     0.2598
     ],
     "p_modello": [
      0.4269,
      0.3504,
      0.2227
     ],
-    "margine": 0.0733,
+    "margine": 0.057,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -4759,7 +4649,7 @@
      0.4179
     ],
     "p_modello": [
-     0.3846,
+     0.3845,
      0.2701,
      0.3454
     ],
@@ -4930,7 +4820,7 @@
     "p_modello": [
      0.4015,
      0.2528,
-     0.3456
+     0.3457
     ],
     "margine": 0.0785,
     "margine_migliore": null,
@@ -5188,7 +5078,7 @@
      0.2793
     ],
     "p_modello": [
-     0.3724,
+     0.3723,
      0.2456,
      0.3821
     ],
@@ -5204,22 +5094,22 @@
     "ora": "20:45",
     "quote": {
      "mercato_unico": [
-      2.5,
+      2.45,
       3.15,
-      2.6
+      2.7
      ]
     },
     "p_mercato": [
-     0.3652,
-     0.2847,
-     0.3502
+     0.3752,
+     0.2866,
+     0.3382
     ],
     "p_modello": [
      0.3683,
      0.2691,
      0.3626
     ],
-    "margine": 0.1021,
+    "margine": 0.096,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5296,9 +5186,9 @@
      0.1463
     ],
     "p_modello": [
-     0.6842,
+     0.6843,
      0.1735,
-     0.1423
+     0.1422
     ],
     "margine": 0.0965,
     "margine_migliore": null,
@@ -5351,7 +5241,7 @@
     ],
     "p_modello": [
      0.3979,
-     0.2454,
+     0.2455,
      0.3567
     ],
     "margine": 0.1022,
@@ -5519,7 +5409,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5067,
+     0.5066,
      0.2177,
      0.2756
     ],
@@ -5555,7 +5445,7 @@
     "p_modello": [
      0.3622,
      0.2481,
-     0.3896
+     0.3897
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5604,7 +5494,7 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.364,
+     0.3639,
      0.3061,
      0.33
     ],
@@ -5700,48 +5590,6 @@
   ],
   "laliga-2": [
    {
-    "id": "ceuta-almeria",
-    "casa": "Ceuta",
-    "ospite": "Almeria",
-    "data": "2026-11-23",
-    "ora": "20:30",
-    "quote": {
-     "betfair": [
-      3.55,
-      3.85,
-      1.98
-     ],
-     "bet365": [
-      3.6,
-      3.7,
-      1.9
-     ],
-     "massimo": [
-      3.6,
-      4.0,
-      1.98
-     ],
-     "media": [
-      3.37,
-      3.63,
-      1.92
-     ]
-    },
-    "p_mercato": [
-     0.267,
-     0.2453,
-     0.4878
-    ],
-    "p_modello": [
-     0.1976,
-     0.2009,
-     0.6015
-    ],
-    "margine": 0.0465,
-    "margine_migliore": 0.0328,
-    "quote_da": "confronto"
-   },
-   {
     "id": "leganes-sabadell",
     "casa": "Leganes",
     "ospite": "Sabadell",
@@ -5760,9 +5608,9 @@
      0.307
     ],
     "p_modello": [
-     0.3777,
-     0.3477,
-     0.2746
+     0.3774,
+     0.3481,
+     0.2745
     ],
     "margine": 0.0805,
     "margine_migliore": null,
@@ -5776,22 +5624,22 @@
     "ora": "14:00",
     "quote": {
      "mercato_unico": [
-      2.35,
-      3.25,
-      2.85
+      2.25,
+      3.3,
+      3.0
      ]
     },
     "p_mercato": [
-     0.3962,
-     0.2808,
-     0.323
+     0.4159,
+     0.2772,
+     0.3069
     ],
     "p_modello": [
-     0.5492,
-     0.2316,
-     0.2192
+     0.5488,
+     0.2319,
+     0.2193
     ],
-    "margine": 0.0841,
+    "margine": 0.0808,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5814,8 +5662,8 @@
      0.2727
     ],
     "p_modello": [
-     0.4532,
-     0.2822,
+     0.453,
+     0.2824,
      0.2646
     ],
     "margine": 0.0811,
@@ -5842,7 +5690,7 @@
     ],
     "p_modello": [
      0.2027,
-     0.2476,
+     0.2477,
      0.5496
     ],
     "margine": 0.0856,
@@ -5857,22 +5705,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      1.8,
-      3.2,
-      4.7
+      1.833,
+      3.25,
+      4.4
      ]
     },
     "p_mercato": [
-     0.5248,
-     0.2864,
-     0.1888
+     0.5151,
+     0.2818,
+     0.2031
     ],
     "p_modello": [
-     0.4491,
-     0.3052,
-     0.2456
+     0.4488,
+     0.3055,
+     0.2457
     ],
-    "margine": 0.0808,
+    "margine": 0.0805,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5895,9 +5743,9 @@
      0.2313
     ],
     "p_modello": [
-     0.5132,
-     0.2439,
-     0.2429
+     0.5128,
+     0.2442,
+     0.243
     ],
     "margine": 0.0814,
     "margine_migliore": null,
@@ -5912,9 +5760,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6603,
-     0.195,
-     0.1447
+     0.6608,
+     0.1934,
+     0.1458
     ],
     "margine": null,
     "margine_migliore": null,
@@ -5928,22 +5776,22 @@
     "ora": "16:15",
     "quote": {
      "mercato_unico": [
-      2.25,
+      2.3,
       3.25,
-      3.05
+      2.95
      ]
     },
     "p_mercato": [
-     0.4161,
-     0.282,
-     0.3018
+     0.4062,
+     0.2816,
+     0.3122
     ],
     "p_modello": [
-     0.4515,
-     0.2949,
+     0.451,
+     0.2954,
      0.2536
     ],
-    "margine": 0.08,
+    "margine": 0.0815,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -5966,8 +5814,8 @@
      0.448
     ],
     "p_modello": [
-     0.4111,
-     0.2439,
+     0.4109,
+     0.2442,
      0.345
     ],
     "margine": 0.078,
@@ -5983,9 +5831,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.5924,
-     0.2081,
-     0.1995
+     0.5927,
+     0.207,
+     0.2003
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6000,9 +5848,9 @@
     "quote": {},
     "p_mercato": null,
     "p_modello": [
-     0.6257,
-     0.1983,
-     0.176
+     0.6251,
+     0.1988,
+     0.1762
     ],
     "margine": null,
     "margine_migliore": null,
@@ -6018,22 +5866,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      1.952,
-      3.85,
-      3.2
+      2.05,
+      3.8,
+      3.05
      ]
     },
     "p_mercato": [
-     0.481,
-     0.2337,
-     0.2853
+     0.4591,
+     0.2388,
+     0.3022
     ],
     "p_modello": [
      0.3783,
      0.2319,
      0.3898
     ],
-    "margine": 0.0845,
+    "margine": 0.0788,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -6045,22 +5893,22 @@
     "ora": "18:30",
     "quote": {
      "mercato_unico": [
-      1.645,
-      4.0,
-      4.4
+      1.741,
+      3.9,
+      4.0
      ]
     },
     "p_mercato": [
-     0.5745,
-     0.2239,
-     0.2017
+     0.5433,
+     0.2315,
+     0.2252
     ],
     "p_modello": [
      0.4346,
      0.2757,
      0.2897
     ],
-    "margine": 0.0852,
+    "margine": 0.0808,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -6099,22 +5947,22 @@
     "ora": "13:00",
     "quote": {
      "mercato_unico": [
-      1.455,
-      4.8,
-      5.5
+      1.408,
+      5.0,
+      6.0
      ]
     },
     "p_mercato": [
-     0.6554,
-     0.1853,
-     0.1594
+     0.6781,
+     0.1772,
+     0.1447
     ],
     "p_modello": [
      0.6233,
      0.199,
      0.1777
     ],
-    "margine": 0.0774,
+    "margine": 0.0769,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -6153,22 +6001,22 @@
     "ora": "20:30",
     "quote": {
      "mercato_unico": [
-      2.9,
-      3.6,
+      2.95,
+      3.65,
       2.15
      ]
     },
     "p_mercato": [
-     0.3159,
-     0.2504,
-     0.4337
+     0.3133,
+     0.2496,
+     0.4371
     ],
     "p_modello": [
      0.2795,
      0.2861,
      0.4344
     ],
-    "margine": 0.0877,
+    "margine": 0.0781,
     "margine_migliore": null,
     "quote_da": "unico"
    },
@@ -6234,112 +6082,27 @@
     "ora": "13:30",
     "quote": {
      "mercato_unico": [
-      3.35,
+      3.55,
       4.0,
-      1.87
+      1.833
      ]
     },
     "p_mercato": [
-     0.272,
-     0.2245,
-     0.5035
+     0.2574,
+     0.2263,
+     0.5163
     ],
     "p_modello": [
      0.1911,
      0.2041,
      0.6048
     ],
-    "margine": 0.0833,
+    "margine": 0.0772,
     "margine_migliore": null,
     "quote_da": "unico"
    }
   ],
-  "ligue-2": [
-   {
-    "id": "nantes-grenoble",
-    "casa": "Nantes",
-    "ospite": "Grenoble",
-    "data": "2026-11-23",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      1.33,
-      1.16,
-      1.35
-     ],
-     "bet365": [
-      1.44,
-      3.7,
-      6.5
-     ],
-     "massimo": [
-      1.5,
-      4.25,
-      7.8
-     ],
-     "media": [
-      1.44,
-      4.07,
-      6.36
-     ]
-    },
-    "p_mercato": [
-     0.6543,
-     0.2158,
-     0.1299
-    ],
-    "p_modello": [
-     0.3924,
-     0.2692,
-     0.3384
-    ],
-    "margine": 0.0974,
-    "margine_migliore": 0.0302,
-    "quote_da": "confronto"
-   },
-   {
-    "id": "sochaux-dunkerque",
-    "casa": "Sochaux",
-    "ospite": "Dunkerque",
-    "data": "2026-11-23",
-    "ora": "20:45",
-    "quote": {
-     "betfair": [
-      1.52,
-      3.15,
-      1.55
-     ],
-     "bet365": [
-      2.25,
-      3.1,
-      2.88
-     ],
-     "massimo": [
-      2.38,
-      3.4,
-      3.05
-     ],
-     "media": [
-      2.27,
-      3.23,
-      2.87
-     ]
-    },
-    "p_mercato": [
-     0.4059,
-     0.2781,
-     0.316
-    ],
-    "p_modello": [
-     0.2239,
-     0.2953,
-     0.4808
-    ],
-    "margine": 0.0986,
-    "margine_migliore": 0.0422,
-    "quote_da": "confronto"
-   }
-  ],
+  "ligue-2": [],
   "championship-scozia": [
    {
     "id": "dunfermline-arbroath",
