@@ -1,6 +1,6 @@
 {
- "data": "2026-11-23",
- "partite_in_programma": 260,
+ "data": "2026-11-24",
+ "partite_in_programma": 278,
  "campionati": 22,
  "sorprese": [
   {
@@ -870,62 +870,73 @@
  ],
  "partite_piu_care": [
   {
+   "campionato": "Bundesliga",
+   "bandiera": "🇩🇪",
+   "slug": "bundesliga",
+   "id": "bayern-munich-paderborn",
+   "casa": "Bayern Munich",
+   "ospite": "Paderborn",
+   "data": "2026-12-04",
+   "ora": "20:30",
+   "margine": 0.1038
+  },
+  {
    "campionato": "National League",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
    "slug": "national-league",
-   "id": "boreham-wood-aldershot",
-   "casa": "Boreham Wood",
-   "ospite": "Aldershot",
+   "id": "harrogate-kidderminster",
+   "casa": "Harrogate",
+   "ospite": "Kidderminster",
    "data": "2026-11-25",
-   "ora": "20:00",
-   "margine": 0.1046
+   "ora": "20:45",
+   "margine": 0.0991
   },
   {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "fylde-halifax",
-   "casa": "Fylde",
-   "ospite": "Halifax",
-   "data": "2026-11-24",
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "inter-genoa",
+   "casa": "Inter",
+   "ospite": "Genoa",
+   "data": "2026-11-28",
    "ora": "20:45",
-   "margine": 0.1037
+   "margine": 0.0978
   },
   {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "forest-green-southend",
-   "casa": "Forest Green",
-   "ospite": "Southend",
-   "data": "2026-11-24",
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "como-juventus",
+   "casa": "Como",
+   "ospite": "Juventus",
+   "data": "2026-11-29",
    "ora": "20:45",
-   "margine": 0.1022
+   "margine": 0.0971
   },
   {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "eastleigh-yeovil",
-   "casa": "Eastleigh",
-   "ospite": "Yeovil",
-   "data": "2026-11-24",
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "venezia-bologna",
+   "casa": "Venezia",
+   "ospite": "Bologna",
+   "data": "2026-11-27",
    "ora": "20:45",
-   "margine": 0.101
-  },
-  {
-   "campionato": "National League",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "national-league",
-   "id": "scunthorpe-gateshead",
-   "casa": "Scunthorpe",
-   "ospite": "Gateshead",
-   "data": "2026-11-24",
-   "ora": "20:45",
-   "margine": 0.1005
+   "margine": 0.0967
   }
  ],
  "partite_meno_care": [
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "middlesbrough-swansea",
+   "casa": "Middlesbrough",
+   "ospite": "Swansea",
+   "data": "2026-11-24",
+   "ora": "20:45",
+   "margine": 0.0411
+  },
   {
    "campionato": "Championship",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -946,29 +957,7 @@
    "ospite": "Millwall",
    "data": "2026-11-25",
    "ora": "21:00",
-   "margine": 0.0414
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "wolves-derby",
-   "casa": "Wolves",
-   "ospite": "Derby",
-   "data": "2026-11-24",
-   "ora": "21:00",
-   "margine": 0.0431
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "middlesbrough-swansea",
-   "casa": "Middlesbrough",
-   "ospite": "Swansea",
-   "data": "2026-11-24",
-   "ora": "20:45",
-   "margine": 0.0452
+   "margine": 0.0416
   },
   {
    "campionato": "Championship",
@@ -979,7 +968,18 @@
    "ospite": "Preston",
    "data": "2026-11-24",
    "ora": "20:45",
-   "margine": 0.0477
+   "margine": 0.046
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "charlton-lincoln",
+   "casa": "Charlton",
+   "ospite": "Lincoln",
+   "data": "2026-11-24",
+   "ora": "20:45",
+   "margine": 0.0487
   }
  ]
 }
