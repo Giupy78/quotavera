@@ -1,28 +1,28 @@
 {
- "generato_il": "2026-11-25T07:57:29+00:00",
+ "generato_il": "2026-11-25T21:03:17+00:00",
  "coppe": [
   {
    "slug": "champions-league",
    "nome": "Champions League",
    "stagione": "2026/27",
-   "partite_giocate": 81,
+   "partite_giocate": 83,
    "partite_totali": 144,
-   "gol_a_partita": 3.864,
+   "gol_a_partita": 3.843,
    "media": {
-    "gol_fatti": 1.932,
-    "gol_subiti": 1.932,
-    "tiri": 14.623,
-    "tiri_subiti": 14.623,
-    "in_porta": 5.377,
-    "in_porta_subiti": 5.377,
-    "corner": 4.71,
-    "corner_subiti": 4.71,
-    "falli": 11.099,
+    "gol_fatti": 1.922,
+    "gol_subiti": 1.922,
+    "tiri": 14.59,
+    "tiri_subiti": 14.59,
+    "in_porta": 5.386,
+    "in_porta_subiti": 5.386,
+    "corner": 4.735,
+    "corner_subiti": 4.735,
+    "falli": 11.096,
     "gialli": 1.735,
-    "rossi": 0.068,
+    "rossi": 0.066,
     "possesso": 50.0,
-    "passaggi": 486.562,
-    "parate": 3.383
+    "passaggi": 485.452,
+    "parate": 3.398
    },
    "classifica": [
     {
@@ -71,9 +71,24 @@
      "id": "como"
     },
     {
+     "squadra_id": "83",
+     "squadra_espn": "Barcelona",
+     "posizione": 4,
+     "giocate": 5,
+     "vinte": 4,
+     "pareggiate": 0,
+     "perse": 1,
+     "fatti": 18,
+     "subiti": 7,
+     "differenza": 11,
+     "punti": 12,
+     "squadra": "Barcelona",
+     "id": "barcelona"
+    },
+    {
      "squadra_id": "244",
      "squadra_espn": "Real Betis",
-     "posizione": 4,
+     "posizione": 5,
      "giocate": 5,
      "vinte": 4,
      "pareggiate": 0,
@@ -88,7 +103,7 @@
     {
      "squadra_id": "359",
      "squadra_espn": "Arsenal",
-     "posizione": 5,
+     "posizione": 6,
      "giocate": 5,
      "vinte": 3,
      "pareggiate": 2,
@@ -103,7 +118,7 @@
     {
      "squadra_id": "382",
      "squadra_espn": "Manchester City",
-     "posizione": 6,
+     "posizione": 7,
      "giocate": 5,
      "vinte": 3,
      "pareggiate": 1,
@@ -118,7 +133,7 @@
     {
      "squadra_id": "124",
      "squadra_espn": "Borussia Dortmund",
-     "posizione": 7,
+     "posizione": 8,
      "giocate": 5,
      "vinte": 3,
      "pareggiate": 1,
@@ -129,21 +144,6 @@
      "punti": 10,
      "squadra": "Dortmund",
      "id": "dortmund"
-    },
-    {
-     "squadra_id": "83",
-     "squadra_espn": "Barcelona",
-     "posizione": 8,
-     "giocate": 4,
-     "vinte": 3,
-     "pareggiate": 0,
-     "perse": 1,
-     "fatti": 14,
-     "subiti": 6,
-     "differenza": 8,
-     "punti": 9,
-     "squadra": "Barcelona",
-     "id": "barcelona"
     },
     {
      "squadra_id": "362",
@@ -341,9 +341,24 @@
      "id": "rb-leipzig"
     },
     {
+     "squadra_id": "102",
+     "squadra_espn": "Villarreal",
+     "posizione": 22,
+     "giocate": 5,
+     "vinte": 2,
+     "pareggiate": 0,
+     "perse": 3,
+     "fatti": 9,
+     "subiti": 14,
+     "differenza": -5,
+     "punti": 6,
+     "squadra": "Villarreal",
+     "id": "villarreal"
+    },
+    {
      "squadra_id": "436",
      "squadra_espn": "Fenerbahce",
-     "posizione": 22,
+     "posizione": 23,
      "giocate": 4,
      "vinte": 1,
      "pareggiate": 2,
@@ -358,7 +373,7 @@
     {
      "squadra_id": "104",
      "squadra_espn": "AS Roma",
-     "posizione": 23,
+     "posizione": 24,
      "giocate": 4,
      "vinte": 1,
      "pareggiate": 1,
@@ -373,7 +388,7 @@
     {
      "squadra_id": "493",
      "squadra_espn": "Shakhtar Donetsk",
-     "posizione": 24,
+     "posizione": 25,
      "giocate": 4,
      "vinte": 1,
      "pareggiate": 1,
@@ -388,7 +403,7 @@
     {
      "squadra_id": "510",
      "squadra_espn": "Viking FK",
-     "posizione": 25,
+     "posizione": 26,
      "giocate": 4,
      "vinte": 1,
      "pareggiate": 1,
@@ -403,7 +418,7 @@
     {
      "squadra_id": "1068",
      "squadra_espn": "Atlético Madrid",
-     "posizione": 26,
+     "posizione": 27,
      "giocate": 4,
      "vinte": 1,
      "pareggiate": 1,
@@ -418,7 +433,7 @@
     {
      "squadra_id": "114",
      "squadra_espn": "Napoli",
-     "posizione": 27,
+     "posizione": 28,
      "giocate": 5,
      "vinte": 1,
      "pareggiate": 1,
@@ -433,7 +448,7 @@
     {
      "squadra_id": "148",
      "squadra_espn": "PSV Eindhoven",
-     "posizione": 28,
+     "posizione": 29,
      "giocate": 5,
      "vinte": 1,
      "pareggiate": 1,
@@ -446,39 +461,9 @@
      "id": "psv-eindhoven"
     },
     {
-     "squadra_id": "102",
-     "squadra_espn": "Villarreal",
-     "posizione": 29,
-     "giocate": 4,
-     "vinte": 1,
-     "pareggiate": 0,
-     "perse": 3,
-     "fatti": 8,
-     "subiti": 14,
-     "differenza": -6,
-     "punti": 3,
-     "squadra": "Villarreal",
-     "id": "villarreal"
-    },
-    {
-     "squadra_id": "21922",
-     "squadra_espn": "Sabah FK",
-     "posizione": 30,
-     "giocate": 4,
-     "vinte": 1,
-     "pareggiate": 0,
-     "perse": 3,
-     "fatti": 4,
-     "subiti": 10,
-     "differenza": -6,
-     "punti": 3,
-     "squadra": "Sabah FK",
-     "id": "sabah-fk"
-    },
-    {
      "squadra_id": "887",
      "squadra_espn": "AEK Athens",
-     "posizione": 31,
+     "posizione": 30,
      "giocate": 5,
      "vinte": 1,
      "pareggiate": 0,
@@ -493,7 +478,7 @@
     {
      "squadra_id": "142",
      "squadra_espn": "Feyenoord Rotterdam",
-     "posizione": 32,
+     "posizione": 31,
      "giocate": 5,
      "vinte": 1,
      "pareggiate": 0,
@@ -504,6 +489,21 @@
      "punti": 3,
      "squadra": "Feyenoord",
      "id": "feyenoord"
+    },
+    {
+     "squadra_id": "21922",
+     "squadra_espn": "Sabah FK",
+     "posizione": 32,
+     "giocate": 5,
+     "vinte": 1,
+     "pareggiate": 0,
+     "perse": 4,
+     "fatti": 5,
+     "subiti": 14,
+     "differenza": -9,
+     "punti": 3,
+     "squadra": "Sabah FK",
+     "id": "sabah-fk"
     },
     {
      "squadra_id": "175",
@@ -524,13 +524,13 @@
      "squadra_id": "494",
      "squadra_espn": "Slavia Prague",
      "posizione": 34,
-     "giocate": 4,
+     "giocate": 5,
      "vinte": 0,
      "pareggiate": 1,
-     "perse": 3,
+     "perse": 4,
      "fatti": 5,
-     "subiti": 9,
-     "differenza": -4,
+     "subiti": 10,
+     "differenza": -5,
      "punti": 1,
      "squadra": "Slavia Prague",
      "id": "slavia-prague"
@@ -664,12 +664,44 @@
      }
     },
     {
+     "id": "barcelona",
+     "espn_id": "83",
+     "nome": "Barcelona",
+     "esteso": null,
+     "campionato": "laliga",
+     "posizione": 4,
+     "punti": 12,
+     "partite": 5,
+     "vinte": 4,
+     "pareggiate": 0,
+     "perse": 1,
+     "gol_fatti": 18,
+     "gol_subiti": 7,
+     "con_tabellino": 5,
+     "medie": {
+      "gol_fatti": 3.6,
+      "gol_subiti": 1.4,
+      "tiri": 21.0,
+      "in_porta": 9.4,
+      "corner": 4.6,
+      "falli": 10.4,
+      "gialli": 0.6,
+      "rossi": 0.0,
+      "possesso": 66.34,
+      "passaggi": 661.2,
+      "parate": 3.2,
+      "tiri_subiti": 9.6,
+      "in_porta_subiti": 4.6,
+      "corner_subiti": 3.2
+     }
+    },
+    {
      "id": "betis",
      "espn_id": "244",
      "nome": "Betis",
      "esteso": "Real Betis",
      "campionato": "laliga",
-     "posizione": 4,
+     "posizione": 5,
      "punti": 12,
      "partite": 5,
      "vinte": 4,
@@ -701,7 +733,7 @@
      "nome": "Arsenal",
      "esteso": null,
      "campionato": "premier-league",
-     "posizione": 5,
+     "posizione": 6,
      "punti": 11,
      "partite": 5,
      "vinte": 3,
@@ -733,7 +765,7 @@
      "nome": "Man City",
      "esteso": "Manchester City",
      "campionato": "premier-league",
-     "posizione": 6,
+     "posizione": 7,
      "punti": 10,
      "partite": 5,
      "vinte": 3,
@@ -765,7 +797,7 @@
      "nome": "Dortmund",
      "esteso": "Borussia Dortmund",
      "campionato": "bundesliga",
-     "posizione": 7,
+     "posizione": 8,
      "punti": 10,
      "partite": 5,
      "vinte": 3,
@@ -789,38 +821,6 @@
       "tiri_subiti": 15.6,
       "in_porta_subiti": 4.2,
       "corner_subiti": 5.6
-     }
-    },
-    {
-     "id": "barcelona",
-     "espn_id": "83",
-     "nome": "Barcelona",
-     "esteso": null,
-     "campionato": "laliga",
-     "posizione": 8,
-     "punti": 9,
-     "partite": 4,
-     "vinte": 3,
-     "pareggiate": 0,
-     "perse": 1,
-     "gol_fatti": 14,
-     "gol_subiti": 6,
-     "con_tabellino": 4,
-     "medie": {
-      "gol_fatti": 3.5,
-      "gol_subiti": 1.5,
-      "tiri": 20.0,
-      "in_porta": 8.25,
-      "corner": 4.25,
-      "falli": 11.0,
-      "gialli": 0.75,
-      "rossi": 0.0,
-      "possesso": 65.075,
-      "passaggi": 655.25,
-      "parate": 3.5,
-      "tiri_subiti": 10.0,
-      "in_porta_subiti": 5.0,
-      "corner_subiti": 3.0
      }
     },
     {
@@ -1240,12 +1240,44 @@
      }
     },
     {
+     "id": "villarreal",
+     "espn_id": "102",
+     "nome": "Villarreal",
+     "esteso": null,
+     "campionato": "laliga",
+     "posizione": 22,
+     "punti": 6,
+     "partite": 5,
+     "vinte": 2,
+     "pareggiate": 0,
+     "perse": 3,
+     "gol_fatti": 9,
+     "gol_subiti": 14,
+     "con_tabellino": 5,
+     "medie": {
+      "gol_fatti": 1.8,
+      "gol_subiti": 2.8,
+      "tiri": 13.0,
+      "in_porta": 4.4,
+      "corner": 3.4,
+      "falli": 12.4,
+      "gialli": 3.0,
+      "rossi": 0.0,
+      "possesso": 45.0,
+      "passaggi": 436.8,
+      "parate": 3.4,
+      "tiri_subiti": 17.2,
+      "in_porta_subiti": 5.8,
+      "corner_subiti": 8.4
+     }
+    },
+    {
      "id": "fenerbahce",
      "espn_id": "436",
      "nome": "Fenerbahce",
      "esteso": null,
      "campionato": "superlig",
-     "posizione": 22,
+     "posizione": 23,
      "punti": 5,
      "partite": 4,
      "vinte": 1,
@@ -1277,7 +1309,7 @@
      "nome": "Roma",
      "esteso": "AS Roma",
      "campionato": "serie-a",
-     "posizione": 23,
+     "posizione": 24,
      "punti": 4,
      "partite": 4,
      "vinte": 1,
@@ -1309,7 +1341,7 @@
      "nome": "Shakhtar Donetsk",
      "esteso": null,
      "campionato": null,
-     "posizione": 24,
+     "posizione": 25,
      "punti": 4,
      "partite": 4,
      "vinte": 1,
@@ -1341,7 +1373,7 @@
      "nome": "Viking FK",
      "esteso": null,
      "campionato": null,
-     "posizione": 25,
+     "posizione": 26,
      "punti": 4,
      "partite": 4,
      "vinte": 1,
@@ -1373,7 +1405,7 @@
      "nome": "Ath Madrid",
      "esteso": "Atlético Madrid",
      "campionato": "laliga",
-     "posizione": 26,
+     "posizione": 27,
      "punti": 4,
      "partite": 4,
      "vinte": 1,
@@ -1405,7 +1437,7 @@
      "nome": "Napoli",
      "esteso": null,
      "campionato": "serie-a",
-     "posizione": 27,
+     "posizione": 28,
      "punti": 4,
      "partite": 5,
      "vinte": 1,
@@ -1437,7 +1469,7 @@
      "nome": "PSV Eindhoven",
      "esteso": null,
      "campionato": "eredivisie",
-     "posizione": 28,
+     "posizione": 29,
      "punti": 4,
      "partite": 5,
      "vinte": 1,
@@ -1464,76 +1496,12 @@
      }
     },
     {
-     "id": "villarreal",
-     "espn_id": "102",
-     "nome": "Villarreal",
-     "esteso": null,
-     "campionato": "laliga",
-     "posizione": 29,
-     "punti": 3,
-     "partite": 4,
-     "vinte": 1,
-     "pareggiate": 0,
-     "perse": 3,
-     "gol_fatti": 8,
-     "gol_subiti": 14,
-     "con_tabellino": 4,
-     "medie": {
-      "gol_fatti": 2.0,
-      "gol_subiti": 3.5,
-      "tiri": 14.5,
-      "in_porta": 4.25,
-      "corner": 4.25,
-      "falli": 11.75,
-      "gialli": 2.75,
-      "rossi": 0.0,
-      "possesso": 44.225,
-      "passaggi": 444.0,
-      "parate": 4.0,
-      "tiri_subiti": 18.25,
-      "in_porta_subiti": 7.0,
-      "corner_subiti": 7.25
-     }
-    },
-    {
-     "id": "sabah-fk",
-     "espn_id": "21922",
-     "nome": "Sabah FK",
-     "esteso": null,
-     "campionato": null,
-     "posizione": 30,
-     "punti": 3,
-     "partite": 4,
-     "vinte": 1,
-     "pareggiate": 0,
-     "perse": 3,
-     "gol_fatti": 4,
-     "gol_subiti": 10,
-     "con_tabellino": 4,
-     "medie": {
-      "gol_fatti": 1.0,
-      "gol_subiti": 2.5,
-      "tiri": 13.25,
-      "in_porta": 3.5,
-      "corner": 4.0,
-      "falli": 11.25,
-      "gialli": 2.5,
-      "rossi": 0.25,
-      "possesso": 45.35,
-      "passaggi": 417.25,
-      "parate": 5.25,
-      "tiri_subiti": 20.5,
-      "in_porta_subiti": 8.75,
-      "corner_subiti": 8.0
-     }
-    },
-    {
      "id": "aek",
      "espn_id": "887",
      "nome": "AEK",
      "esteso": "AEK Athens",
      "campionato": "super-league-grecia",
-     "posizione": 31,
+     "posizione": 30,
      "punti": 3,
      "partite": 5,
      "vinte": 1,
@@ -1565,7 +1533,7 @@
      "nome": "Feyenoord",
      "esteso": "Feyenoord Rotterdam",
      "campionato": "eredivisie",
-     "posizione": 32,
+     "posizione": 31,
      "punti": 3,
      "partite": 5,
      "vinte": 1,
@@ -1589,6 +1557,38 @@
       "tiri_subiti": 15.6,
       "in_porta_subiti": 6.6,
       "corner_subiti": 3.4
+     }
+    },
+    {
+     "id": "sabah-fk",
+     "espn_id": "21922",
+     "nome": "Sabah FK",
+     "esteso": null,
+     "campionato": null,
+     "posizione": 32,
+     "punti": 3,
+     "partite": 5,
+     "vinte": 1,
+     "pareggiate": 0,
+     "perse": 4,
+     "gol_fatti": 5,
+     "gol_subiti": 14,
+     "con_tabellino": 5,
+     "medie": {
+      "gol_fatti": 1.0,
+      "gol_subiti": 2.8,
+      "tiri": 12.2,
+      "in_porta": 3.4,
+      "corner": 4.0,
+      "falli": 10.8,
+      "gialli": 2.2,
+      "rossi": 0.2,
+      "possesso": 42.0,
+      "passaggi": 387.4,
+      "parate": 6.0,
+      "tiri_subiti": 21.4,
+      "in_porta_subiti": 9.8,
+      "corner_subiti": 7.6
      }
     },
     {
@@ -1631,28 +1631,28 @@
      "campionato": null,
      "posizione": 34,
      "punti": 1,
-     "partite": 4,
+     "partite": 5,
      "vinte": 0,
      "pareggiate": 1,
-     "perse": 3,
+     "perse": 4,
      "gol_fatti": 5,
-     "gol_subiti": 9,
-     "con_tabellino": 4,
+     "gol_subiti": 10,
+     "con_tabellino": 5,
      "medie": {
-      "gol_fatti": 1.25,
-      "gol_subiti": 2.25,
-      "tiri": 17.25,
-      "in_porta": 5.75,
-      "corner": 5.25,
-      "falli": 13.0,
-      "gialli": 1.0,
-      "rossi": 0.25,
-      "possesso": 46.75,
-      "passaggi": 364.0,
-      "parate": 3.25,
-      "tiri_subiti": 16.5,
-      "in_porta_subiti": 5.75,
-      "corner_subiti": 4.5
+      "gol_fatti": 1.0,
+      "gol_subiti": 2.0,
+      "tiri": 16.4,
+      "in_porta": 4.8,
+      "corner": 6.8,
+      "falli": 12.8,
+      "gialli": 1.2,
+      "rossi": 0.2,
+      "possesso": 47.78,
+      "passaggi": 371.4,
+      "parate": 3.4,
+      "tiri_subiti": 14.6,
+      "in_porta_subiti": 5.6,
+      "corner_subiti": 3.6
      }
     },
     {
@@ -37678,431 +37678,431 @@
      },
      "gol": [
       {
+       "assist": null,
+       "marcatore": "Oussama Targhaline",
        "minuto": "2'",
        "squadra": "FC Porto",
-       "marcatore": "Oussama Targhaline",
-       "assist": null,
        "tipo": "Own Goal"
       }
      ],
      "cartellini": [
       {
-       "minuto": "13'",
-       "squadra": "FC Porto",
        "giocatore": "Victor Froholdt",
-       "rosso": false
+       "minuto": "13'",
+       "rosso": false,
+       "squadra": "FC Porto"
       },
       {
-       "minuto": "22'",
-       "squadra": "FC Porto",
        "giocatore": "Alberto Costa",
-       "rosso": false
+       "minuto": "22'",
+       "rosso": false,
+       "squadra": "FC Porto"
       },
       {
-       "minuto": "69'",
-       "squadra": "FC Porto",
        "giocatore": "Jakub Kiwior",
-       "rosso": false
+       "minuto": "69'",
+       "rosso": false,
+       "squadra": "FC Porto"
       },
       {
-       "minuto": "71'",
-       "squadra": "Feyenoord Rotterdam",
        "giocatore": "Thijs Kraaijeveld",
-       "rosso": false
+       "minuto": "71'",
+       "rosso": false,
+       "squadra": "Feyenoord Rotterdam"
       },
       {
-       "minuto": "90'+4'",
-       "squadra": "Feyenoord Rotterdam",
        "giocatore": "Gonçalo Borges",
-       "rosso": false
+       "minuto": "90'+4'",
+       "rosso": false,
+       "squadra": "Feyenoord Rotterdam"
       },
       {
-       "minuto": "90'+4'",
-       "squadra": "FC Porto",
        "giocatore": "Pablo Rosario",
-       "rosso": false
+       "minuto": "90'+4'",
+       "rosso": false,
+       "squadra": "FC Porto"
       }
      ],
      "formazioni": {
-      "home": {
-       "squadra": "Feyenoord Rotterdam",
-       "modulo": "4-3-3",
-       "giocatori": [
-        {
-         "nome": "Florian Kastenmeier",
-         "maglia": "33",
-         "ruolo": "G",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Mika Mármol",
-         "maglia": "35",
-         "ruolo": "CD-L",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Thijs Kraaijeveld",
-         "maglia": "24",
-         "ruolo": "CD-R",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Javi López",
-         "maglia": "16",
-         "ruolo": "LB",
-         "titolare": true,
-         "entrato": false,
-         "uscito": true
-        },
-        {
-         "nome": "Givairo Read",
-         "maglia": "26",
-         "ruolo": "RB",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Charles Vanhoutte",
-         "maglia": "34",
-         "ruolo": "CM",
-         "titolare": true,
-         "entrato": false,
-         "uscito": true
-        },
-        {
-         "nome": "Oussama Targhaline",
-         "maglia": "28",
-         "ruolo": "LM",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Gjivai Zechiël",
-         "maglia": "8",
-         "ruolo": "RM",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Shaqueel Van Persie",
-         "maglia": "49",
-         "ruolo": "F",
-         "titolare": true,
-         "entrato": false,
-         "uscito": true
-        },
-        {
-         "nome": "Luciano Valente",
-         "maglia": "10",
-         "ruolo": "LF",
-         "titolare": true,
-         "entrato": false,
-         "uscito": true
-        },
-        {
-         "nome": "Anis Hadj Moussa",
-         "maglia": "23",
-         "ruolo": "RF",
-         "titolare": true,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Gijs Smal",
-         "maglia": "5",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Liam Bossin",
-         "maglia": "39",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Nacho Ferri",
-         "maglia": "19",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": true,
-         "uscito": false
-        },
-        {
-         "nome": "Reiss Nelson",
-         "maglia": "17",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Tobias van den Elshout",
-         "maglia": "22",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": true,
-         "uscito": false
-        },
-        {
-         "nome": "Tjark Ernst",
-         "maglia": "1",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Mats Deijl",
-         "maglia": "20",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Jerayno Schaken",
-         "maglia": "57",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Sem Steijn",
-         "maglia": "14",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": true,
-         "uscito": false
-        },
-        {
-         "nome": "Tsuyoshi Watanabe",
-         "maglia": "4",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Gaoussou Diarra",
-         "maglia": "27",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": false,
-         "uscito": false
-        },
-        {
-         "nome": "Gonçalo Borges",
-         "maglia": "11",
-         "ruolo": "SUB",
-         "titolare": false,
-         "entrato": true,
-         "uscito": false
-        }
-       ]
-      },
       "away": {
-       "squadra": "FC Porto",
-       "modulo": "4-3-3",
        "giocatori": [
         {
-         "nome": "Diogo Costa",
+         "entrato": false,
          "maglia": "99",
+         "nome": "Diogo Costa",
          "ruolo": "G",
          "titolare": true,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Jakub Kiwior",
+         "entrato": false,
          "maglia": "4",
+         "nome": "Jakub Kiwior",
          "ruolo": "CD-L",
          "titolare": true,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Jan Bednarek",
+         "entrato": false,
          "maglia": "5",
+         "nome": "Jan Bednarek",
          "ruolo": "CD-R",
          "titolare": true,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Zaidu Sanusi",
+         "entrato": false,
          "maglia": "12",
+         "nome": "Zaidu Sanusi",
          "ruolo": "LB",
          "titolare": true,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Alberto Costa",
+         "entrato": false,
          "maglia": "20",
+         "nome": "Alberto Costa",
          "ruolo": "RB",
          "titolare": true,
-         "entrato": false,
          "uscito": true
         },
         {
-         "nome": "Pablo Rosario",
+         "entrato": false,
          "maglia": "13",
+         "nome": "Pablo Rosario",
          "ruolo": "CM",
          "titolare": true,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Gabri Veiga",
+         "entrato": false,
          "maglia": "10",
+         "nome": "Gabri Veiga",
          "ruolo": "LM",
          "titolare": true,
-         "entrato": false,
          "uscito": true
         },
         {
-         "nome": "Victor Froholdt",
+         "entrato": false,
          "maglia": "8",
+         "nome": "Victor Froholdt",
          "ruolo": "RM",
          "titolare": true,
-         "entrato": false,
          "uscito": true
         },
         {
-         "nome": "Santiago Gimenez",
+         "entrato": false,
          "maglia": "29",
+         "nome": "Santiago Gimenez",
          "ruolo": "F",
          "titolare": true,
-         "entrato": false,
          "uscito": true
         },
         {
-         "nome": "Oskar Pietuszewski",
+         "entrato": false,
          "maglia": "77",
+         "nome": "Oskar Pietuszewski",
          "ruolo": "LF",
          "titolare": true,
-         "entrato": false,
          "uscito": true
         },
         {
-         "nome": "Pepê",
+         "entrato": false,
          "maglia": "11",
+         "nome": "Pepê",
          "ruolo": "RF",
          "titolare": true,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Samu Aghehowa",
+         "entrato": true,
          "maglia": "9",
+         "nome": "Samu Aghehowa",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": true,
          "uscito": false
         },
         {
-         "nome": "Borja Sainz",
+         "entrato": false,
          "maglia": "17",
+         "nome": "Borja Sainz",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Nehuén Pérez",
+         "entrato": false,
          "maglia": "18",
+         "nome": "Nehuén Pérez",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "William Gomes",
+         "entrato": true,
          "maglia": "7",
+         "nome": "William Gomes",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": true,
          "uscito": false
         },
         {
-         "nome": "Seko Fofana",
+         "entrato": true,
          "maglia": "42",
+         "nome": "Seko Fofana",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": true,
          "uscito": false
         },
         {
-         "nome": "Martim Fernandes",
+         "entrato": true,
          "maglia": "52",
+         "nome": "Martim Fernandes",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": true,
          "uscito": false
         },
         {
-         "nome": "André Silva",
+         "entrato": false,
          "maglia": "19",
+         "nome": "André Silva",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Cláudio Ramos",
+         "entrato": false,
          "maglia": "14",
+         "nome": "Cláudio Ramos",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Alan Varela",
+         "entrato": false,
          "maglia": "22",
+         "nome": "Alan Varela",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Hwang In-Beom",
-         "maglia": "16",
-         "ruolo": "SUB",
-         "titolare": false,
          "entrato": true,
+         "maglia": "16",
+         "nome": "Hwang In-Beom",
+         "ruolo": "SUB",
+         "titolare": false,
          "uscito": false
         },
         {
-         "nome": "Moura",
+         "entrato": false,
          "maglia": "74",
+         "nome": "Moura",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         },
         {
-         "nome": "Souza",
+         "entrato": false,
          "maglia": "33",
+         "nome": "Souza",
          "ruolo": "SUB",
          "titolare": false,
-         "entrato": false,
          "uscito": false
         }
-       ]
+       ],
+       "modulo": "4-3-3",
+       "squadra": "FC Porto"
+      },
+      "home": {
+       "giocatori": [
+        {
+         "entrato": false,
+         "maglia": "33",
+         "nome": "Florian Kastenmeier",
+         "ruolo": "G",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "35",
+         "nome": "Mika Mármol",
+         "ruolo": "CD-L",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "24",
+         "nome": "Thijs Kraaijeveld",
+         "ruolo": "CD-R",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "16",
+         "nome": "Javi López",
+         "ruolo": "LB",
+         "titolare": true,
+         "uscito": true
+        },
+        {
+         "entrato": false,
+         "maglia": "26",
+         "nome": "Givairo Read",
+         "ruolo": "RB",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "34",
+         "nome": "Charles Vanhoutte",
+         "ruolo": "CM",
+         "titolare": true,
+         "uscito": true
+        },
+        {
+         "entrato": false,
+         "maglia": "28",
+         "nome": "Oussama Targhaline",
+         "ruolo": "LM",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "8",
+         "nome": "Gjivai Zechiël",
+         "ruolo": "RM",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "49",
+         "nome": "Shaqueel Van Persie",
+         "ruolo": "F",
+         "titolare": true,
+         "uscito": true
+        },
+        {
+         "entrato": false,
+         "maglia": "10",
+         "nome": "Luciano Valente",
+         "ruolo": "LF",
+         "titolare": true,
+         "uscito": true
+        },
+        {
+         "entrato": false,
+         "maglia": "23",
+         "nome": "Anis Hadj Moussa",
+         "ruolo": "RF",
+         "titolare": true,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "5",
+         "nome": "Gijs Smal",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "39",
+         "nome": "Liam Bossin",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": true,
+         "maglia": "19",
+         "nome": "Nacho Ferri",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "17",
+         "nome": "Reiss Nelson",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": true,
+         "maglia": "22",
+         "nome": "Tobias van den Elshout",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "1",
+         "nome": "Tjark Ernst",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "20",
+         "nome": "Mats Deijl",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "57",
+         "nome": "Jerayno Schaken",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": true,
+         "maglia": "14",
+         "nome": "Sem Steijn",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "4",
+         "nome": "Tsuyoshi Watanabe",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": false,
+         "maglia": "27",
+         "nome": "Gaoussou Diarra",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        },
+        {
+         "entrato": true,
+         "maglia": "11",
+         "nome": "Gonçalo Borges",
+         "ruolo": "SUB",
+         "titolare": false,
+         "uscito": false
+        }
+       ],
+       "modulo": "4-3-3",
+       "squadra": "Feyenoord Rotterdam"
       }
      }
     },
@@ -40948,26 +40948,477 @@
      "data": "2026-11-25",
      "ora": "18:45",
      "fase": "Fase a girone unico",
-     "giocata": false,
+     "giocata": true,
      "rinviata": false,
      "senza_risultato": false,
-     "gol_casa": null,
-     "gol_ospite": null,
+     "gol_casa": 0,
+     "gol_ospite": 1,
      "rigori": null,
      "stadio": {
       "nome": "Fortuna Arena",
       "citta": "Prague",
       "paese": "Czechia"
      },
-     "quote": [
-      3.2,
-      3.8,
-      2.1
+     "quote": null,
+     "statistiche": {
+      "tiri": [
+       13,
+       7
+      ],
+      "in_porta": [
+       1,
+       5
+      ],
+      "corner": [
+       13,
+       0
+      ],
+      "falli": [
+       12,
+       15
+      ],
+      "gialli": [
+       2,
+       4
+      ],
+      "rossi": [
+       0,
+       0
+      ],
+      "possesso": [
+       51.9,
+       48.1
+      ],
+      "passaggi": [
+       401,
+       408
+      ],
+      "parate": [
+       4,
+       1
+      ]
+     },
+     "gol": [
+      {
+       "minuto": "62'",
+       "squadra": "Villarreal",
+       "marcatore": "Tajon Buchanan",
+       "assist": "Ayoze Pérez",
+       "tipo": "Goal"
+      }
      ],
-     "statistiche": null,
-     "gol": [],
-     "cartellini": [],
-     "formazioni": {}
+     "cartellini": [
+      {
+       "minuto": "4'",
+       "squadra": "Slavia Prague",
+       "giocatore": "Michal Sadílek",
+       "rosso": false
+      },
+      {
+       "minuto": "12'",
+       "squadra": "Villarreal",
+       "giocatore": "Sergi Cardona",
+       "rosso": false
+      },
+      {
+       "minuto": "29'",
+       "squadra": "Slavia Prague",
+       "giocatore": "Ange N'Guessan",
+       "rosso": false
+      },
+      {
+       "minuto": "45'+2'",
+       "squadra": "Villarreal",
+       "giocatore": "Renato Veiga",
+       "rosso": false
+      },
+      {
+       "minuto": "90'+3'",
+       "squadra": "Villarreal",
+       "giocatore": "Tajon Buchanan",
+       "rosso": false
+      },
+      {
+       "minuto": "90'+4'",
+       "squadra": "Villarreal",
+       "giocatore": "Carlos Romero",
+       "rosso": false
+      }
+     ],
+     "formazioni": {
+      "home": {
+       "squadra": "Slavia Prague",
+       "modulo": "3-4-2-1",
+       "giocatori": [
+        {
+         "nome": "Jakub Markovic",
+         "maglia": "35",
+         "ruolo": "G",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "David Zima",
+         "maglia": "4",
+         "ruolo": "CD",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Ange N'Guessan",
+         "maglia": "6",
+         "ruolo": "CD-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Tomás Holes",
+         "maglia": "3",
+         "ruolo": "CD-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Wiktor Nowak",
+         "maglia": "30",
+         "ruolo": "CM-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Michal Sadílek",
+         "maglia": "23",
+         "ruolo": "CM-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "David Jurásek",
+         "maglia": "39",
+         "ruolo": "LM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Tomás Vlcek",
+         "maglia": "27",
+         "ruolo": "RM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Mojmír Chytil",
+         "maglia": "13",
+         "ruolo": "F",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Mubarak Suleiman",
+         "maglia": "15",
+         "ruolo": "CF-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Emmanuel Dennis Ayaosi",
+         "maglia": "20",
+         "ruolo": "CF-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Oskar Kubiak",
+         "maglia": "8",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Nazar Domchak",
+         "maglia": "29",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Adam Rezek",
+         "maglia": "40",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Pavel Kacor",
+         "maglia": "32",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Samuel Isife",
+         "maglia": "14",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Jakub Kolísek",
+         "maglia": "45",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "David Barcot",
+         "maglia": "47",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Mikulás Konecny",
+         "maglia": "42",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Ivan Schranz",
+         "maglia": "26",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Eliás Piták",
+         "maglia": "43",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Matěj Kotrba",
+         "maglia": "53",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        }
+       ]
+      },
+      "away": {
+       "squadra": "Villarreal",
+       "modulo": "4-4-2",
+       "giocatori": [
+        {
+         "nome": "Luiz Júnior",
+         "maglia": "1",
+         "ruolo": "G",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Renato Veiga",
+         "maglia": "12",
+         "ruolo": "CD-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Logan Costa",
+         "maglia": "2",
+         "ruolo": "CD-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Sergi Cardona",
+         "maglia": "23",
+         "ruolo": "LB",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Santiago Mouriño",
+         "maglia": "15",
+         "ruolo": "RB",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Pape Gueye",
+         "maglia": "18",
+         "ruolo": "CM-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Carlos Macià",
+         "maglia": "16",
+         "ruolo": "CM-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Tani Oluwaseyi",
+         "maglia": "21",
+         "ruolo": "LM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Tajon Buchanan",
+         "maglia": "17",
+         "ruolo": "RM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Alberto Moleiro",
+         "maglia": "10",
+         "ruolo": "CF-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Ayoze Pérez",
+         "maglia": "22",
+         "ruolo": "CF-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Alex Freeman",
+         "maglia": "3",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Péter Gulácsi",
+         "maglia": "25",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Cheikh Ahmad Tidiane Thiam",
+         "maglia": "30",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Joselillo",
+         "maglia": "28",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Santi Comesaña",
+         "maglia": "14",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Nicolas Pépé",
+         "maglia": "19",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Rubén Gómez",
+         "maglia": "13",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "César Bonafé Ceita",
+         "maglia": "32",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Nizar El Jmili Ben Hamou",
+         "maglia": "27",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Pau Navarro",
+         "maglia": "6",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Carlos Romero",
+         "maglia": "20",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Georges Mikautadze",
+         "maglia": "9",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        }
+       ]
+      }
+     }
     },
     {
      "id": "sabah-fk-barcelona",
@@ -40981,26 +41432,483 @@
      "data": "2026-11-25",
      "ora": "18:45",
      "fase": "Fase a girone unico",
-     "giocata": false,
+     "giocata": true,
      "rinviata": false,
      "senza_risultato": false,
-     "gol_casa": null,
-     "gol_ospite": null,
+     "gol_casa": 1,
+     "gol_ospite": 4,
      "rigori": null,
      "stadio": {
       "nome": "Baku Olympic Stadium",
       "citta": "Baku",
       "paese": "Azerbaijan"
      },
-     "quote": [
-      21.0,
-      13.0,
-      1.083
+     "quote": null,
+     "statistiche": {
+      "tiri": [
+       8,
+       25
+      ],
+      "in_porta": [
+       3,
+       14
+      ],
+      "corner": [
+       4,
+       6
+      ],
+      "falli": [
+       9,
+       8
+      ],
+      "gialli": [
+       1,
+       0
+      ],
+      "rossi": [
+       0,
+       0
+      ],
+      "possesso": [
+       28.6,
+       71.4
+      ],
+      "passaggi": [
+       268,
+       685
+      ],
+      "parate": [
+       9,
+       2
+      ]
+     },
+     "gol": [
+      {
+       "minuto": "31'",
+       "squadra": "Barcelona",
+       "marcatore": "Anthony Gordon",
+       "assist": null,
+       "tipo": "Goal"
+      },
+      {
+       "minuto": "51'",
+       "squadra": "Barcelona",
+       "marcatore": "Anthony Gordon",
+       "assist": null,
+       "tipo": "Goal - Volley"
+      },
+      {
+       "minuto": "55'",
+       "squadra": "Barcelona",
+       "marcatore": "Karim Adeyemi",
+       "assist": "Alejandro Balde",
+       "tipo": "Goal"
+      },
+      {
+       "minuto": "60'",
+       "squadra": "Barcelona",
+       "marcatore": "Gabriel Jesus",
+       "assist": null,
+       "tipo": "Goal"
+      },
+      {
+       "minuto": "63'",
+       "squadra": "Sabah FK",
+       "marcatore": "Joy-Lance Mickels",
+       "assist": "Christian Nwachukwu",
+       "tipo": "Goal"
+      }
      ],
-     "statistiche": null,
-     "gol": [],
-     "cartellini": [],
-     "formazioni": {}
+     "cartellini": [
+      {
+       "minuto": "69'",
+       "squadra": "Sabah FK",
+       "giocatore": "Ivan Lepinjica",
+       "rosso": false
+      }
+     ],
+     "formazioni": {
+      "home": {
+       "squadra": "Sabah FK",
+       "modulo": "4-2-3-1",
+       "giocatori": [
+        {
+         "nome": "Stas Pokatilov",
+         "maglia": "92",
+         "ruolo": "G",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Júnior Almeida",
+         "maglia": "33",
+         "ruolo": "CD-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Steve Solvet",
+         "maglia": "3",
+         "ruolo": "CD-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Tymoteusz Puchacz",
+         "maglia": "27",
+         "ruolo": "LB",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Akim Zedadka",
+         "maglia": "80",
+         "ruolo": "RB",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Du Queiroz",
+         "maglia": "37",
+         "ruolo": "AM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Ivan Lepinjica",
+         "maglia": "13",
+         "ruolo": "LM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Umarali Rakhmonaliev",
+         "maglia": "7",
+         "ruolo": "RM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Khayal Aliyev",
+         "maglia": "9",
+         "ruolo": "F",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Christian Nwachukwu",
+         "maglia": "8",
+         "ruolo": "AM-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Xander Severina",
+         "maglia": "34",
+         "ruolo": "AM-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Rauf Rustamli",
+         "maglia": "16",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Abdulakh Khaybulaev",
+         "maglia": "6",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Joy-Lance Mickels",
+         "maglia": "20",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Tellur Mutallimov",
+         "maglia": "17",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Kaheem Parris",
+         "maglia": "11",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Amin Ramazanov",
+         "maglia": "1",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Orphé Mbina",
+         "maglia": "99",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Ravan Mirzammadov",
+         "maglia": "94",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Aleksey Isayev",
+         "maglia": "10",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Rahman Dashdamirov",
+         "maglia": "5",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Veljko Simic",
+         "maglia": "21",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Rodrigo Fernandes",
+         "maglia": "88",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        }
+       ]
+      },
+      "away": {
+       "squadra": "Barcelona",
+       "modulo": "4-3-3",
+       "giocatori": [
+        {
+         "nome": "Joan García",
+         "maglia": "1",
+         "ruolo": "G",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Gerard Martín",
+         "maglia": "18",
+         "ruolo": "CD-L",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Frenkie de Jong",
+         "maglia": "21",
+         "ruolo": "CD-R",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Alejandro Balde",
+         "maglia": "3",
+         "ruolo": "LB",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Jules Koundé",
+         "maglia": "23",
+         "ruolo": "RB",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Gavi",
+         "maglia": "6",
+         "ruolo": "CM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Pedri",
+         "maglia": "8",
+         "ruolo": "LM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Fermín López",
+         "maglia": "7",
+         "ruolo": "RM",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Gabriel Jesus",
+         "maglia": "9",
+         "ruolo": "F",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Anthony Gordon",
+         "maglia": "17",
+         "ruolo": "LF",
+         "titolare": true,
+         "entrato": false,
+         "uscito": true
+        },
+        {
+         "nome": "Karim Adeyemi",
+         "maglia": "14",
+         "ruolo": "RF",
+         "titolare": true,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "João Cancelo",
+         "maglia": "2",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Marc Bernal",
+         "maglia": "22",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Òscar Gistau",
+         "maglia": "42",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Brian Fariñas",
+         "maglia": "4",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Eric García",
+         "maglia": "24",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Wojciech Szczesny",
+         "maglia": "13",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Álex Campos",
+         "maglia": "41",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Dominik Livakovic",
+         "maglia": "25",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Jesse Bisiwu",
+         "maglia": "27",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        },
+        {
+         "nome": "Raphinha",
+         "maglia": "11",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Dani Olmo",
+         "maglia": "20",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": true,
+         "uscito": false
+        },
+        {
+         "nome": "Pau Cubarsí",
+         "maglia": "5",
+         "ruolo": "SUB",
+         "titolare": false,
+         "entrato": false,
+         "uscito": false
+        }
+       ]
+      }
+     }
     },
     {
      "id": "ath-madrid-viking-fk",
@@ -41027,8 +41935,8 @@
      },
      "quote": [
       1.111,
-      10.5,
-      19.0
+      10.0,
+      21.0
      ],
      "statistiche": null,
      "gol": [],
@@ -41059,9 +41967,9 @@
       "paese": "Belgium"
      },
      "quote": [
-      4.5,
-      4.7,
-      1.625
+      4.1,
+      4.4,
+      1.741
      ],
      "statistiche": null,
      "gol": [],
@@ -41092,9 +42000,9 @@
       "paese": "Portugal"
      },
      "quote": [
-      2.55,
-      3.75,
-      2.6
+      2.75,
+      3.7,
+      2.45
      ],
      "statistiche": null,
      "gol": [],
@@ -41125,8 +42033,8 @@
       "paese": "France"
      },
      "quote": [
-      1.476,
-      5.0,
+      1.488,
+      4.8,
       6.0
      ],
      "statistiche": null,
@@ -41158,9 +42066,9 @@
       "paese": "England"
      },
      "quote": [
-      2.85,
-      3.5,
-      2.4
+      2.7,
+      3.45,
+      2.6
      ],
      "statistiche": null,
      "gol": [],
@@ -41191,9 +42099,9 @@
       "paese": "Italy"
      },
      "quote": [
-      1.417,
+      1.4,
       5.5,
-      6.0
+      6.5
      ],
      "statistiche": null,
      "gol": [],
@@ -41224,9 +42132,9 @@
       "paese": "France"
      },
      "quote": [
-      5.5,
-      4.1,
-      1.606
+      5.25,
+      4.0,
+      1.645
      ],
      "statistiche": null,
      "gol": [],
@@ -79046,9 +79954,9 @@
       "paese": "Georgia"
      },
      "quote": [
-      1.211,
+      1.222,
       7.0,
-      12.0
+      11.0
      ],
      "statistiche": null,
      "gol": [],
@@ -79211,9 +80119,9 @@
       "paese": "Spain"
      },
      "quote": [
-      3.6,
       3.55,
-      2.05
+      3.5,
+      2.1
      ],
      "statistiche": null,
      "gol": [],
@@ -79244,9 +80152,9 @@
       "paese": "Austria"
      },
      "quote": [
-      1.182,
-      8.0,
-      13.0
+      1.167,
+      8.5,
+      14.0
      ],
      "statistiche": null,
      "gol": [],
@@ -79277,7 +80185,7 @@
       "paese": "Greece"
      },
      "quote": [
-      2.9,
+      2.85,
       3.45,
       2.45
      ],
@@ -79310,9 +80218,9 @@
       "paese": "France"
      },
      "quote": [
-      1.182,
-      8.0,
-      14.0
+      1.19,
+      7.5,
+      13.0
      ],
      "statistiche": null,
      "gol": [],
@@ -79442,9 +80350,9 @@
       "paese": "Netherlands"
      },
      "quote": [
-      3.0,
-      3.9,
-      2.15
+      3.1,
+      3.95,
+      2.1
      ],
      "statistiche": null,
      "gol": [],
@@ -79476,8 +80384,8 @@
      },
      "quote": [
       4.7,
-      4.2,
-      1.667
+      4.3,
+      1.645
      ],
      "statistiche": null,
      "gol": [],
@@ -79508,8 +80416,8 @@
       "paese": "England"
      },
      "quote": [
-      1.235,
-      6.5,
+      1.256,
+      6.0,
       11.0
      ],
      "statistiche": null,
@@ -79541,9 +80449,9 @@
       "paese": "Czechia"
      },
      "quote": [
-      2.85,
-      3.7,
-      2.35
+      2.9,
+      3.75,
+      2.3
      ],
      "statistiche": null,
      "gol": [],
@@ -108511,9 +109419,9 @@
       "paese": "Kazakhstan"
      },
      "quote": [
-      2.25,
-      3.45,
-      3.15
+      2.15,
+      3.5,
+      3.35
      ],
      "statistiche": null,
      "gol": [],
@@ -108577,9 +109485,9 @@
       "paese": "Norway"
      },
      "quote": [
-      2.2,
-      3.85,
-      3.05
+      2.15,
+      3.95,
+      3.0
      ],
      "statistiche": null,
      "gol": [],
@@ -108639,9 +109547,9 @@
       "paese": "Albania"
      },
      "quote": [
-      1.571,
-      4.4,
-      5.25
+      1.606,
+      4.5,
+      5.0
      ],
      "statistiche": null,
      "gol": [],
@@ -108705,9 +109613,9 @@
       "paese": "Czechia"
      },
      "quote": [
-      3.35,
-      3.8,
-      2.05
+      3.2,
+      3.75,
+      2.1
      ],
      "statistiche": null,
      "gol": [],
@@ -108740,7 +109648,7 @@
      "quote": [
       7.0,
       4.4,
-      1.476
+      1.465
      ],
      "statistiche": null,
      "gol": [],
@@ -108771,9 +109679,9 @@
       "paese": "England"
      },
      "quote": [
-      1.143,
-      9.0,
-      16.0
+      1.125,
+      9.5,
+      19.0
      ],
      "statistiche": null,
      "gol": [],
@@ -108804,8 +109712,8 @@
       "paese": "Netherlands"
      },
      "quote": [
-      1.19,
-      8.0,
+      1.182,
+      8.5,
       12.0
      ],
      "statistiche": null,
@@ -108837,9 +109745,9 @@
       "paese": "Andorra"
      },
      "quote": [
-      10.5,
-      6.0,
-      1.263
+      12.0,
+      6.5,
+      1.235
      ],
      "statistiche": null,
      "gol": [],
@@ -108936,9 +109844,9 @@
       "paese": "Bulgaria"
      },
      "quote": [
-      4.1,
-      3.9,
-      1.833
+      4.2,
+      4.0,
+      1.769
      ],
      "statistiche": null,
      "gol": [],
@@ -109002,9 +109910,9 @@
       "paese": "Croatia"
      },
      "quote": [
-      2.15,
-      3.55,
-      3.3
+      2.2,
+      3.6,
+      3.15
      ],
      "statistiche": null,
      "gol": [],
@@ -109035,9 +109943,9 @@
       "paese": "Bosnia and Herzegovina"
      },
      "quote": [
-      5.75,
-      4.8,
-      1.5
+      6.0,
+      5.0,
+      1.455
      ],
      "statistiche": null,
      "gol": [],
@@ -109068,9 +109976,9 @@
       "paese": "Denmark"
      },
      "quote": [
-      2.65,
+      2.5,
       3.55,
-      2.55
+      2.7
      ],
      "statistiche": null,
      "gol": [],
