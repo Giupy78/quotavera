@@ -1,4 +1,702 @@
 {
+ "401889180": {
+  "cartellini": [
+   {
+    "giocatore": "Nathan Sheron",
+    "minuto": "41'",
+    "rosso": false,
+    "squadra": "Hartlepool United"
+   },
+   {
+    "giocatore": "Jamie Andrews",
+    "minuto": "68'",
+    "rosso": false,
+    "squadra": "Solihull Moors"
+   },
+   {
+    "giocatore": "Jack Hunter",
+    "minuto": "85'",
+    "rosso": false,
+    "squadra": "Hartlepool United"
+   }
+  ],
+  "casa": "Hartlepool United",
+  "data": "2026-11-25",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "38",
+      "nome": "Sam Johnson",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "33",
+      "nome": "Cheyenne Dunkley",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Alex Whitmore",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Tyler French",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Jamie Andrews",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Scott High",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "35",
+      "nome": "Marvin Johnson",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Tyrell Warren",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Ben Wodskou",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Elias Kachunga",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Joe Sbarra",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Jevon Mills",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Ryan Woods",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "Oscar Rutherford",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "12",
+      "nome": "Nat Ford",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "25",
+      "nome": "Florent Hoti",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Carter Pinnington",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "9",
+      "nome": "Jacob Wakeling",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-3",
+    "squadra": "Solihull Moors"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Max Merrick",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "55",
+      "nome": "Sam Lavelle",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "27",
+      "nome": "Liam Gibson",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Maxim Kouogun",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "42",
+      "nome": "Cole Deeming",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Jamie Miley",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Nathan Sheron",
+      "ruolo": "AM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "52",
+      "nome": "Max Clark",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "2",
+      "nome": "Jay Benn",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Luke Charman",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "10",
+      "nome": "William Harris",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "21",
+      "nome": "Charlie Thomas Thornton",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "17",
+      "nome": "Jack Nolan",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Brooklyn Ilunga",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "4",
+      "nome": "Jack Hunter",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Nathan Joseph Fisher",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "12",
+      "nome": "Neo Eccleston",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Chris Popov",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-5-2",
+    "squadra": "Hartlepool United"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Luke Charman",
+    "minuto": "26'",
+    "squadra": "Hartlepool United",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "William Harris",
+    "minuto": "61'",
+    "squadra": "Hartlepool United",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 2,
+  "gol_ospite": 0,
+  "id": "401889180",
+  "ospite": "Solihull Moors",
+  "stadio": {
+   "citta": "Hartlepool",
+   "nome": "The Suit Direct Stadium",
+   "paese": "England"
+  },
+  "stat": {}
+ },
+ "401889181": {
+  "cartellini": [
+   {
+    "giocatore": "Ellis Taylor",
+    "minuto": "86'",
+    "rosso": false,
+    "squadra": "Harrogate Town"
+   }
+  ],
+  "casa": "Harrogate Town",
+  "data": "2026-11-25",
+  "formazioni": {
+   "away": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "1",
+      "nome": "Jack Wint",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Cian Harries",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Richard Faakye",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "5",
+      "nome": "Angus MacDonald",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "24",
+      "nome": "Owen Jarrett Evans",
+      "ruolo": "LB",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "8",
+      "nome": "Ben Crompton",
+      "ruolo": "RB",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "7",
+      "nome": "Max Brogan",
+      "ruolo": "CM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "29",
+      "nome": "Maziar Kouhyar",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "22",
+      "nome": "Oliver Tipton",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Sam Austin",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "32",
+      "nome": "Layton Campbell",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "15",
+      "nome": "Michael Reindorf",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "2",
+      "nome": "Reece Hall",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "13",
+      "nome": "Josh Bishop",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Bruce Minaker",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Louis Francis",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "28",
+      "nome": "Callum Stewart",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "5-3-2",
+    "squadra": "Kidderminster Harriers"
+   },
+   "home": {
+    "giocatori": [
+     {
+      "entrato": false,
+      "maglia": "34",
+      "nome": "Luke Hutchinson",
+      "ruolo": "G",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "16",
+      "nome": "Sam Dreyer",
+      "ruolo": "CD",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "4",
+      "nome": "Archie Chaplin",
+      "ruolo": "CD-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "26",
+      "nome": "Grant Horton",
+      "ruolo": "CD-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "17",
+      "nome": "Josh Hmami",
+      "ruolo": "CM-L",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "14",
+      "nome": "Morgan Williams",
+      "ruolo": "CM-R",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "3",
+      "nome": "Ethan Bristow",
+      "ruolo": "LM",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "21",
+      "nome": "Ellis Taylor",
+      "ruolo": "RM",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "23",
+      "nome": "Brad Dolaghan",
+      "ruolo": "F",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "19",
+      "nome": "Michael Craig",
+      "ruolo": "CF-L",
+      "titolare": true,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "11",
+      "nome": "Will Mcgowan",
+      "ruolo": "CF-R",
+      "titolare": true,
+      "uscito": true
+     },
+     {
+      "entrato": false,
+      "maglia": "9",
+      "nome": "Shawn Mccoulsky",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "7",
+      "nome": "George Thomson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "35",
+      "nome": "Ciaran Mcguckin",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "30",
+      "nome": "Rory Watson",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": false,
+      "maglia": "6",
+      "nome": "Warren Burrell",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "24",
+      "nome": "Lewis Cass",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     },
+     {
+      "entrato": true,
+      "maglia": "18",
+      "nome": "Jack Muldoon",
+      "ruolo": "SUB",
+      "titolare": false,
+      "uscito": false
+     }
+    ],
+    "modulo": "3-4-2-1",
+    "squadra": "Harrogate Town"
+   }
+  },
+  "gol": [
+   {
+    "assist": null,
+    "marcatore": "Max Brogan",
+    "minuto": "34'",
+    "squadra": "Kidderminster Harriers",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Brad Dolaghan",
+    "minuto": "62'",
+    "squadra": "Harrogate Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Will Mcgowan",
+    "minuto": "77'",
+    "squadra": "Harrogate Town",
+    "tipo": "Goal"
+   },
+   {
+    "assist": null,
+    "marcatore": "Sam Dreyer",
+    "minuto": "83'",
+    "squadra": "Harrogate Town",
+    "tipo": "Goal"
+   }
+  ],
+  "gol_casa": 3,
+  "gol_ospite": 1,
+  "id": "401889181",
+  "ospite": "Kidderminster Harriers",
+  "stadio": {
+   "citta": "Harrogate",
+   "nome": "EnviroVent Stadium",
+   "paese": "England"
+  },
+  "stat": {}
+ },
  "401889182": {
   "cartellini": [
    {

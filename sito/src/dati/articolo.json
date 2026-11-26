@@ -1,6 +1,6 @@
 {
- "data": "2026-11-25",
- "partite_in_programma": 323,
+ "data": "2026-11-26",
+ "partite_in_programma": 363,
  "campionati": 22,
  "sorprese": [
   {
@@ -884,6 +884,28 @@
    "campionato": "Serie A",
    "bandiera": "🇮🇹",
    "slug": "serie-a",
+   "id": "genoa-torino",
+   "casa": "Genoa",
+   "ospite": "Torino",
+   "data": "2026-12-06",
+   "ora": "12:30",
+   "margine": 0.1103
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
+   "id": "lazio-atalanta",
+   "casa": "Lazio",
+   "ospite": "Atalanta",
+   "data": "2026-12-06",
+   "ora": "15:00",
+   "margine": 0.1094
+  },
+  {
+   "campionato": "Serie A",
+   "bandiera": "🇮🇹",
+   "slug": "serie-a",
    "id": "frosinone-inter",
    "casa": "Frosinone",
    "ospite": "Inter",
@@ -901,75 +923,9 @@
    "data": "2026-12-04",
    "ora": "20:30",
    "margine": 0.1074
-  },
-  {
-   "campionato": "Serie A",
-   "bandiera": "🇮🇹",
-   "slug": "serie-a",
-   "id": "napoli-lecce",
-   "casa": "Napoli",
-   "ospite": "Lecce",
-   "data": "2026-12-05",
-   "ora": "20:45",
-   "margine": 0.107
-  },
-  {
-   "campionato": "Bundesliga",
-   "bandiera": "🇩🇪",
-   "slug": "bundesliga",
-   "id": "augsburg-fc-koln",
-   "casa": "Augsburg",
-   "ospite": "FC Koln",
-   "data": "2026-12-05",
-   "ora": "15:30",
-   "margine": 0.1065
   }
  ],
  "partite_meno_care": [
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "watford-blackburn",
-   "casa": "Watford",
-   "ospite": "Blackburn",
-   "data": "2026-11-25",
-   "ora": "20:45",
-   "margine": 0.0041
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "burnley-birmingham",
-   "casa": "Burnley",
-   "ospite": "Birmingham",
-   "data": "2026-11-25",
-   "ora": "20:45",
-   "margine": 0.0084
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "stoke-millwall",
-   "casa": "Stoke",
-   "ospite": "Millwall",
-   "data": "2026-11-25",
-   "ora": "21:00",
-   "margine": 0.0099
-  },
-  {
-   "campionato": "Championship",
-   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-   "slug": "championship",
-   "id": "bolton-west-brom",
-   "casa": "Bolton",
-   "ospite": "West Brom",
-   "data": "2026-11-25",
-   "ora": "20:45",
-   "margine": 0.0131
-  },
   {
    "campionato": "League One",
    "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -980,6 +936,50 @@
    "data": "2026-11-26",
    "ora": "21:00",
    "margine": 0.0248
+  },
+  {
+   "campionato": "Premier League",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "premier-league",
+   "id": "nottm-forest-chelsea",
+   "casa": "Nott'm Forest",
+   "ospite": "Chelsea",
+   "data": "2026-11-27",
+   "ora": "21:00",
+   "margine": 0.0434
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "west-ham-stoke",
+   "casa": "West Ham",
+   "ospite": "Stoke",
+   "data": "2026-11-28",
+   "ora": "16:00",
+   "margine": 0.0435
+  },
+  {
+   "campionato": "LaLiga",
+   "bandiera": "🇪🇸",
+   "slug": "laliga",
+   "id": "malaga-ath-bilbao",
+   "casa": "Malaga",
+   "ospite": "Ath Bilbao",
+   "data": "2026-11-28",
+   "ora": "16:15",
+   "margine": 0.0436
+  },
+  {
+   "campionato": "Championship",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "slug": "championship",
+   "id": "millwall-burnley",
+   "casa": "Millwall",
+   "ospite": "Burnley",
+   "data": "2026-11-28",
+   "ora": "16:00",
+   "margine": 0.045
   }
  ]
 }
