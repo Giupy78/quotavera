@@ -229,6 +229,19 @@ testa.
 | `risultati-piu-frequenti` | come finiscono le partite | 1-1 al 12,2%, poi 1-0 e 2-1 |
 | `cartellini` | dove si ammonisce di più | ospiti più ammoniti in tutti i 22 |
 | `calci-d-angolo-e-tiri` | più angoli vuol dire più gol? | **no**: 2,76 gol con 7 angoli o meno, 2,70 con 14 o più; i tiri in porta invece vanno da 1,39 a 4,15 |
+| `minuti-dei-gol` (26 nov) | in che minuto si segna? | 56% dei gol nel secondo tempo, 23% dal 76', uno su 12 nel recupero |
+| `capocannonieri-europa` (26 nov) | chi segna di più in Europa | classifica unica di 20 campionati, ogni notte |
+| `migliori-attacchi-e-difese` (26 nov) | chi segna e chi subisce di più | gol a partita, squadre con almeno 8 partite |
+
+Gli ultimi tre parlano della **stagione in corso**, non di tre stagioni intere, e
+cambiano dopo ogni giornata. `minuti-dei-gol` viene da `engine/minuti.py` →
+`minuti.json` (tabellini ESPN, l'unica fonte con il minuto): un campionato entra
+solo con almeno il 95% di tabellini completi, quindi le due divisioni scozzesi
+minori restano fuori; del tipo di gol si usano solo rigori e autogol, perché
+ESPN segna i colpi di testa una volta su tre. I marcatori vengono da
+`marcatori()` in `genera_sito.py`; attacchi e difese da `classifiche.json`. I
+nomi delle squadre non vanno mai preceduti da un articolo nel testo ("del
+Roma"): le frasi sono scritte per non averne bisogno.
 
 Le regole, scritte qui perché la prossima sessione non le riscopra:
 

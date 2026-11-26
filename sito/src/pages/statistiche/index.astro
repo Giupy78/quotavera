@@ -1,6 +1,9 @@
 ---
 import Base from "../../layouts/Base.astro";
 import fra from "../../dati/fra_campionati.json";
+import minuti from "../../dati/minuti.json";
+import marcatori from "../../dati/marcatori.json";
+import classifiche from "../../dati/classifiche.json";
 import { num, pct, art, nella, ilRisultato, ilp, chiaro } from "../../lib/testo";
 
 /* L'indice degli articoli con i dati. La sezione esiste anche perche'
@@ -23,6 +26,17 @@ const perCart = [...righe].filter((r) => r.totale.disciplina)
   .sort((a, b) => b.totale.disciplina.cartellini - a.totale.disciplina.cartellini);
 const angoli = fra.angoli_e_gol as any[];
 const porta = fra.porta_e_gol as any[];
+
+/* Gli articoli sulla stagione in corso: minuti dei gol, marcatori, attacchi e
+   difese. Stessa regola: la riga dell'indice usa i numeri della pagina. */
+const M = (minuti.tutti as any) ?? null;
+const bomber = Object.values(marcatori.campionati as Record<string, any[]>)
+  .flat()
+  .sort((a, b) => b.gol - a.gol || a.rigori - b.rigori || b.assist - a.assist || a.nome.localeCompare(b.nome))[0];
+const tabelle = Object.values(classifiche.campionati as Record<string, any[]>).flat()
+  .filter((r) => r.giocate >= 8);
+const attacco = [...tabelle].sort((a, b) => b.fatti / b.giocate - a.fatti / a.giocate)[0];
+const difesa = [...tabelle].sort((a, b) => a.subiti / a.giocate - b.subiti / b.giocate)[0];
 
 const articoli = [
   {
@@ -76,12 +90,37 @@ const articoli = [
           `${num(angoli[angoli.length - 1].gol)}; `) +
       `con i tiri in porta si va da ${num(porta[0].gol)} a ${num(porta[porta.length - 1].gol)}.`,
   },
+  ...(M
+    ? [{
+        href: "/statistiche/minuti-dei-gol/",
+        titolo: "In che minuto si segnano più gol",
+        sintesi:
+          `Nel secondo tempo ${ilp(M.secondo_tempo)} dei gol; dal 76' in poi ${ilp(M.finale)}, ` +
+          `e un gol ogni ${Math.round(1 / M.recupero)} arriva nel recupero.`,
+      }]
+    : []),
+  ...(bomber
+    ? [{
+        href: "/statistiche/capocannonieri-europa/",
+        titolo: "I capocannonieri d'Europa",
+        sintesi: `In testa ${bomber.nome} (${bomber.squadra}) con ${bomber.gol} gol.`,
+      }]
+    : []),
+  ...(attacco && difesa
+    ? [{
+        href: "/statistiche/migliori-attacchi-e-difese/",
+        titolo: "I migliori attacchi e le migliori difese d'Europa",
+        sintesi:
+          `Segna di più ${attacco.squadra} (${num(attacco.fatti / attacco.giocate)} gol a partita), ` +
+          `subisce meno ${difesa.squadra} (${num(difesa.subiti / difesa.giocate)}).`,
+      }]
+    : []),
 ];
 ---
 
 <Base
   titolo="Statistiche fra campionati europei"
-  descrizione="Ventidue campionati europei messi a confronto su gol, fattore campo, primo tempo e rimonte, risultati più frequenti, cartellini e calci d'angolo, su stagioni intere. Aggiornati ogni notte."
+  descrizione="Ventidue campionati europei messi a confronto: gol, fattore campo, rimonte, risultati più frequenti, cartellini, calci d'angolo, minuti dei gol, capocannonieri, migliori attacchi e difese. Aggiornati ogni notte."
 >
   <section>
     <div class="hd">

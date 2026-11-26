@@ -88,6 +88,9 @@ export function mappaLastmod(): Map<string, string> {
   segna('/statistiche/risultati-piu-frequenti/', GENERATO);
   segna('/statistiche/cartellini/', GENERATO);
   segna('/statistiche/calci-d-angolo-e-tiri/', GENERATO);
+  segna('/statistiche/minuti-dei-gol/', GENERATO);
+  segna('/statistiche/capocannonieri-europa/', GENERATO);
+  segna('/statistiche/migliori-attacchi-e-difese/', GENERATO);
 
   // Il blog esce con i dati del giorno.
   segna('/blog/', ARTICOLI);

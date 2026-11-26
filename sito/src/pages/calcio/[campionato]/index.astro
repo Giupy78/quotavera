@@ -11,6 +11,7 @@ import stagione from "../../../dati/stagione.json";
 import finestre from "../../../dati/finestre.json";
 import marcatori from "../../../dati/marcatori.json";
 import fra from "../../../dati/fra_campionati.json";
+import minuti from "../../../dati/minuti.json";
 import { lumacaSquadra } from "../../../lib/indirizzi";
 import { ilRisultato, ilNumero, ilp } from "../../../lib/testo";
 
@@ -48,6 +49,8 @@ const risultatiQui = Object.entries((quiFra?.risultati ?? {}) as Record<string, 
 const piuFrequente = risultatiQui[0] ?? null;
 const totRisultati = risultatiQui.reduce((s, [, n]) => s + n, 0);
 const ilRis = ilRisultato;
+/* I minuti dei gol di questo campionato, se ESPN ne ha i tabellini completi. */
+const minutiQui = (minuti.campionati as any[]).find((r) => r.slug === lega.slug) ?? null;
 
 /* Le profondita' fra cui puo' scegliere chi legge, e quella aperta all'arrivo. */
 const profondita: number[] = finestre.disponibili;
@@ -178,6 +181,20 @@ const squadreOrdinate = [...team].sort((a, b) => b.gol_fatti - a.gol_fatti);
                   {" "}<a href="/statistiche/calci-d-angolo-e-tiri/">Angoli e tiri →</a>
                 </>
               )}
+            </span>
+          )}
+          {minutiQui && (
+            <span>
+              In questa stagione, dal 76' in poi, arriva {ilNumero(pct(minutiQui.finale))}<b class="mono">{pct(minutiQui.finale)}</b>
+              {" "}dei gol; il primo gol in media al {Math.round(minutiQui.primo_gol_medio)}° minuto.
+              {" "}<a href="/statistiche/minuti-dei-gol/">I minuti dei gol →</a>
+            </span>
+          )}
+          {bomber[0] && (
+            <span>
+              Capocannoniere: {bomber[0].nome} ({bomber[0].squadra}), <b class="mono">{bomber[0].gol}</b> gol.
+              {" "}<a href="/statistiche/capocannonieri-europa/">I capocannonieri d'Europa →</a>
+              {" "}<a href="/statistiche/migliori-attacchi-e-difese/">Attacchi e difese →</a>
             </span>
           )}
         </p>

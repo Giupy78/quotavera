@@ -32,9 +32,13 @@ interface Riga {
 interface Props {
   righe: Riga[];
   nota?: string;
+  /* false quando le righe non sono una classifica ma una sequenza (le fasce
+     di minuti dei gol): un "1, 2, 3" davanti farebbe leggere un ordine di
+     merito che non c'e'. */
+  numerata?: boolean;
 }
 
-const { righe } = Astro.props;
+const { righe, numerata = true } = Astro.props;
 const massimo = Math.max(...righe.map((r) => r.valore), 0.0001);
 ---
 
@@ -42,7 +46,7 @@ const massimo = Math.max(...righe.map((r) => r.valore), 0.0001);
   {
     righe.map((r, i) => (
       <div class:list={["riga", { evidenza: r.evidenza }]} role="listitem">
-        <span class="pos mono">{i + 1}</span>
+        <span class="pos mono">{numerata ? i + 1 : ""}</span>
         <span class="nome">
           {r.bandiera && <span class="bandiera" aria-hidden="true"><Bandiera e={r.bandiera} /></span>}
           {r.href ? <a href={r.href}>{r.etichetta}</a> : r.etichetta}

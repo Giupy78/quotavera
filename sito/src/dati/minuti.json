@@ -1,0 +1,1442 @@
+{
+ "generato_il": "2026-11-26T21:20:18+00:00",
+ "dal": "2026-07-01",
+ "tutti": {
+  "partite": 2527,
+  "gol": 7386,
+  "gol_a_partita": 2.923,
+  "fasce": [
+   {
+    "etichetta": "1'-15'",
+    "gol": 965,
+    "quota": 0.1307,
+    "recupero": false
+   },
+   {
+    "etichetta": "16'-30'",
+    "gol": 1045,
+    "quota": 0.1415,
+    "recupero": false
+   },
+   {
+    "etichetta": "31'-45'",
+    "gol": 1034,
+    "quota": 0.14,
+    "recupero": false
+   },
+   {
+    "etichetta": "recupero 1° tempo",
+    "gol": 182,
+    "quota": 0.0246,
+    "recupero": true
+   },
+   {
+    "etichetta": "46'-60'",
+    "gol": 1276,
+    "quota": 0.1728,
+    "recupero": false
+   },
+   {
+    "etichetta": "61'-75'",
+    "gol": 1189,
+    "quota": 0.161,
+    "recupero": false
+   },
+   {
+    "etichetta": "76'-90'",
+    "gol": 1244,
+    "quota": 0.1684,
+    "recupero": false
+   },
+   {
+    "etichetta": "recupero 2° tempo",
+    "gol": 451,
+    "quota": 0.0611,
+    "recupero": true
+   }
+  ],
+  "primo_tempo": 0.4368,
+  "secondo_tempo": 0.5632,
+  "recupero": 0.0857,
+  "finale": 0.2295,
+  "rigori": 0.0669,
+  "autogol": 0.0333,
+  "senza_gol": 0.0542,
+  "primo_gol_medio": 30.0,
+  "primo_gol_entro_15": 0.33
+ },
+ "campionati": [
+  {
+   "slug": "bundesliga",
+   "nome": "Bundesliga",
+   "paese": "Germania",
+   "bandiera": "🇩🇪",
+   "partite": 90,
+   "gol": 305,
+   "gol_a_partita": 3.389,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 43,
+     "quota": 0.141,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 40,
+     "quota": 0.1311,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 30,
+     "quota": 0.0984,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 7,
+     "quota": 0.023,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 54,
+     "quota": 0.177,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 46,
+     "quota": 0.1508,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 61,
+     "quota": 0.2,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 24,
+     "quota": 0.0787,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.3934,
+   "secondo_tempo": 0.6066,
+   "recupero": 0.1016,
+   "finale": 0.2787,
+   "rigori": 0.0361,
+   "autogol": 0.0262,
+   "senza_gol": 0.0778,
+   "primo_gol_medio": 26.9,
+   "primo_gol_entro_15": 0.4
+  },
+  {
+   "slug": "super-league-grecia",
+   "nome": "Super League",
+   "paese": "Grecia",
+   "bandiera": "🇬🇷",
+   "partite": 76,
+   "gol": 207,
+   "gol_a_partita": 2.724,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 23,
+     "quota": 0.1111,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 28,
+     "quota": 0.1353,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 30,
+     "quota": 0.1449,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 3,
+     "quota": 0.0145,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 37,
+     "quota": 0.1787,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 30,
+     "quota": 0.1449,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 35,
+     "quota": 0.1691,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 21,
+     "quota": 0.1014,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4058,
+   "secondo_tempo": 0.5942,
+   "recupero": 0.1159,
+   "finale": 0.2705,
+   "rigori": 0.087,
+   "autogol": 0.0242,
+   "senza_gol": 0.0658,
+   "primo_gol_medio": 32.2,
+   "primo_gol_entro_15": 0.2895
+  },
+  {
+   "slug": "national-league",
+   "nome": "National League",
+   "paese": "Inghilterra",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "partite": 224,
+   "gol": 705,
+   "gol_a_partita": 3.147,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 72,
+     "quota": 0.1021,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 101,
+     "quota": 0.1433,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 94,
+     "quota": 0.1333,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 18,
+     "quota": 0.0255,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 118,
+     "quota": 0.1674,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 124,
+     "quota": 0.1759,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 124,
+     "quota": 0.1759,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 54,
+     "quota": 0.0766,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4043,
+   "secondo_tempo": 0.5957,
+   "recupero": 0.1021,
+   "finale": 0.2525,
+   "rigori": 0.0511,
+   "autogol": 0.0312,
+   "senza_gol": 0.0179,
+   "primo_gol_medio": 31.6,
+   "primo_gol_entro_15": 0.2902
+  },
+  {
+   "slug": "laliga",
+   "nome": "LaLiga",
+   "paese": "Spagna",
+   "bandiera": "🇪🇸",
+   "partite": 129,
+   "gol": 371,
+   "gol_a_partita": 2.876,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 41,
+     "quota": 0.1105,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 58,
+     "quota": 0.1563,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 52,
+     "quota": 0.1402,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 11,
+     "quota": 0.0296,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 52,
+     "quota": 0.1402,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 64,
+     "quota": 0.1725,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 70,
+     "quota": 0.1887,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 23,
+     "quota": 0.062,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4367,
+   "secondo_tempo": 0.5633,
+   "recupero": 0.0916,
+   "finale": 0.2507,
+   "rigori": 0.0889,
+   "autogol": 0.0323,
+   "senza_gol": 0.093,
+   "primo_gol_medio": 33.1,
+   "primo_gol_entro_15": 0.3023
+  },
+  {
+   "slug": "league-two",
+   "nome": "League Two",
+   "paese": "Inghilterra",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "partite": 188,
+   "gol": 503,
+   "gol_a_partita": 2.676,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 70,
+     "quota": 0.1392,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 68,
+     "quota": 0.1352,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 71,
+     "quota": 0.1412,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 12,
+     "quota": 0.0239,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 80,
+     "quota": 0.159,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 77,
+     "quota": 0.1531,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 94,
+     "quota": 0.1869,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 31,
+     "quota": 0.0616,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4394,
+   "secondo_tempo": 0.5606,
+   "recupero": 0.0855,
+   "finale": 0.2485,
+   "rigori": 0.0795,
+   "autogol": 0.0338,
+   "senza_gol": 0.0798,
+   "primo_gol_medio": 30.5,
+   "primo_gol_entro_15": 0.3351
+  },
+  {
+   "slug": "league-one",
+   "nome": "League One",
+   "paese": "Inghilterra",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "partite": 179,
+   "gol": 502,
+   "gol_a_partita": 2.804,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 53,
+     "quota": 0.1056,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 68,
+     "quota": 0.1355,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 66,
+     "quota": 0.1315,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 12,
+     "quota": 0.0239,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 94,
+     "quota": 0.1873,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 87,
+     "quota": 0.1733,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 94,
+     "quota": 0.1873,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 28,
+     "quota": 0.0558,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.3964,
+   "secondo_tempo": 0.6036,
+   "recupero": 0.0797,
+   "finale": 0.243,
+   "rigori": 0.0458,
+   "autogol": 0.0359,
+   "senza_gol": 0.0782,
+   "primo_gol_medio": 31.8,
+   "primo_gol_entro_15": 0.2737
+  },
+  {
+   "slug": "serie-b",
+   "nome": "Serie B",
+   "paese": "Italia",
+   "bandiera": "🇮🇹",
+   "partite": 130,
+   "gol": 346,
+   "gol_a_partita": 2.662,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 42,
+     "quota": 0.1214,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 61,
+     "quota": 0.1763,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 41,
+     "quota": 0.1185,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 8,
+     "quota": 0.0231,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 53,
+     "quota": 0.1532,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 57,
+     "quota": 0.1647,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 70,
+     "quota": 0.2023,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 14,
+     "quota": 0.0405,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4393,
+   "secondo_tempo": 0.5607,
+   "recupero": 0.0636,
+   "finale": 0.2428,
+   "rigori": 0.0462,
+   "autogol": 0.0289,
+   "senza_gol": 0.0385,
+   "primo_gol_medio": 31.0,
+   "primo_gol_entro_15": 0.2846
+  },
+  {
+   "slug": "ligue-1",
+   "nome": "Ligue 1",
+   "paese": "Francia",
+   "bandiera": "🇫🇷",
+   "partite": 99,
+   "gol": 292,
+   "gol_a_partita": 2.949,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 33,
+     "quota": 0.113,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 36,
+     "quota": 0.1233,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 47,
+     "quota": 0.161,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 8,
+     "quota": 0.0274,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 50,
+     "quota": 0.1712,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 50,
+     "quota": 0.1712,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 49,
+     "quota": 0.1678,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 19,
+     "quota": 0.0651,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4247,
+   "secondo_tempo": 0.5753,
+   "recupero": 0.0925,
+   "finale": 0.2329,
+   "rigori": 0.1096,
+   "autogol": 0.0274,
+   "senza_gol": 0.0606,
+   "primo_gol_medio": 29.6,
+   "primo_gol_entro_15": 0.3131
+  },
+  {
+   "slug": "jupiler",
+   "nome": "Pro League",
+   "paese": "Belgio",
+   "bandiera": "🇧🇪",
+   "partite": 108,
+   "gol": 340,
+   "gol_a_partita": 3.148,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 40,
+     "quota": 0.1176,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 34,
+     "quota": 0.1,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 55,
+     "quota": 0.1618,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 11,
+     "quota": 0.0324,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 60,
+     "quota": 0.1765,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 61,
+     "quota": 0.1794,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 58,
+     "quota": 0.1706,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 21,
+     "quota": 0.0618,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4118,
+   "secondo_tempo": 0.5882,
+   "recupero": 0.0941,
+   "finale": 0.2324,
+   "rigori": 0.0912,
+   "autogol": 0.0412,
+   "senza_gol": 0.0278,
+   "primo_gol_medio": 31.4,
+   "primo_gol_entro_15": 0.3148
+  },
+  {
+   "slug": "bundesliga-2",
+   "nome": "2. Bundesliga",
+   "paese": "Germania",
+   "bandiera": "🇩🇪",
+   "partite": 108,
+   "gol": 322,
+   "gol_a_partita": 2.981,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 52,
+     "quota": 0.1615,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 44,
+     "quota": 0.1366,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 37,
+     "quota": 0.1149,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 16,
+     "quota": 0.0497,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 54,
+     "quota": 0.1677,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 45,
+     "quota": 0.1398,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 57,
+     "quota": 0.177,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 17,
+     "quota": 0.0528,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4627,
+   "secondo_tempo": 0.5373,
+   "recupero": 0.1025,
+   "finale": 0.2298,
+   "rigori": 0.0714,
+   "autogol": 0.0248,
+   "senza_gol": 0.0648,
+   "primo_gol_medio": 27.1,
+   "primo_gol_entro_15": 0.4167
+  },
+  {
+   "slug": "primeira-liga",
+   "nome": "Primeira Liga",
+   "paese": "Portogallo",
+   "bandiera": "🇵🇹",
+   "partite": 98,
+   "gol": 258,
+   "gol_a_partita": 2.633,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 34,
+     "quota": 0.1318,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 32,
+     "quota": 0.124,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 33,
+     "quota": 0.1279,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 6,
+     "quota": 0.0233,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 49,
+     "quota": 0.1899,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 46,
+     "quota": 0.1783,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 41,
+     "quota": 0.1589,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 17,
+     "quota": 0.0659,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.407,
+   "secondo_tempo": 0.593,
+   "recupero": 0.0891,
+   "finale": 0.2248,
+   "rigori": 0.1008,
+   "autogol": 0.0465,
+   "senza_gol": 0.051,
+   "primo_gol_medio": 32.4,
+   "primo_gol_entro_15": 0.3061
+  },
+  {
+   "slug": "laliga-2",
+   "nome": "LaLiga 2",
+   "paese": "Spagna",
+   "bandiera": "🇪🇸",
+   "partite": 162,
+   "gol": 437,
+   "gol_a_partita": 2.698,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 66,
+     "quota": 0.151,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 70,
+     "quota": 0.1602,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 55,
+     "quota": 0.1259,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 12,
+     "quota": 0.0275,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 78,
+     "quota": 0.1785,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 58,
+     "quota": 0.1327,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 70,
+     "quota": 0.1602,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 28,
+     "quota": 0.0641,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4645,
+   "secondo_tempo": 0.5355,
+   "recupero": 0.0915,
+   "finale": 0.2243,
+   "rigori": 0.0664,
+   "autogol": 0.0389,
+   "senza_gol": 0.0679,
+   "primo_gol_medio": 27.9,
+   "primo_gol_entro_15": 0.3704
+  },
+  {
+   "slug": "superlig",
+   "nome": "Süper Lig",
+   "paese": "Turchia",
+   "bandiera": "🇹🇷",
+   "partite": 108,
+   "gol": 325,
+   "gol_a_partita": 3.009,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 46,
+     "quota": 0.1415,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 49,
+     "quota": 0.1508,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 45,
+     "quota": 0.1385,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 7,
+     "quota": 0.0215,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 49,
+     "quota": 0.1508,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 57,
+     "quota": 0.1754,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 55,
+     "quota": 0.1692,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 17,
+     "quota": 0.0523,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4523,
+   "secondo_tempo": 0.5477,
+   "recupero": 0.0738,
+   "finale": 0.2215,
+   "rigori": 0.0831,
+   "autogol": 0.0308,
+   "senza_gol": 0.0463,
+   "primo_gol_medio": 26.5,
+   "primo_gol_entro_15": 0.3611
+  },
+  {
+   "slug": "premier-league",
+   "nome": "Premier League",
+   "paese": "Inghilterra",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "partite": 110,
+   "gol": 303,
+   "gol_a_partita": 2.755,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 45,
+     "quota": 0.1485,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 34,
+     "quota": 0.1122,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 43,
+     "quota": 0.1419,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 5,
+     "quota": 0.0165,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 64,
+     "quota": 0.2112,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 46,
+     "quota": 0.1518,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 45,
+     "quota": 0.1485,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 21,
+     "quota": 0.0693,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4191,
+   "secondo_tempo": 0.5809,
+   "recupero": 0.0858,
+   "finale": 0.2178,
+   "rigori": 0.0594,
+   "autogol": 0.0462,
+   "senza_gol": 0.0636,
+   "primo_gol_medio": 32.7,
+   "primo_gol_entro_15": 0.3091
+  },
+  {
+   "slug": "ligue-2",
+   "nome": "Ligue 2",
+   "paese": "Francia",
+   "bandiera": "🇫🇷",
+   "partite": 117,
+   "gol": 314,
+   "gol_a_partita": 2.684,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 38,
+     "quota": 0.121,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 42,
+     "quota": 0.1338,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 47,
+     "quota": 0.1497,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 6,
+     "quota": 0.0191,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 56,
+     "quota": 0.1783,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 57,
+     "quota": 0.1815,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 50,
+     "quota": 0.1592,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 18,
+     "quota": 0.0573,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4236,
+   "secondo_tempo": 0.5764,
+   "recupero": 0.0764,
+   "finale": 0.2166,
+   "rigori": 0.0446,
+   "autogol": 0.0255,
+   "senza_gol": 0.0684,
+   "primo_gol_medio": 33.9,
+   "primo_gol_entro_15": 0.2821
+  },
+  {
+   "slug": "serie-a",
+   "nome": "Serie A",
+   "paese": "Italia",
+   "bandiera": "🇮🇹",
+   "partite": 120,
+   "gol": 379,
+   "gol_a_partita": 3.158,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 45,
+     "quota": 0.1187,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 62,
+     "quota": 0.1636,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 53,
+     "quota": 0.1398,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 6,
+     "quota": 0.0158,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 69,
+     "quota": 0.1821,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 65,
+     "quota": 0.1715,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 58,
+     "quota": 0.153,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 21,
+     "quota": 0.0554,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.438,
+   "secondo_tempo": 0.562,
+   "recupero": 0.0712,
+   "finale": 0.2084,
+   "rigori": 0.0528,
+   "autogol": 0.0369,
+   "senza_gol": 0.0167,
+   "primo_gol_medio": 31.5,
+   "primo_gol_entro_15": 0.2917
+  },
+  {
+   "slug": "eredivisie",
+   "nome": "Eredivisie",
+   "paese": "Paesi Bassi",
+   "bandiera": "🇳🇱",
+   "partite": 117,
+   "gol": 456,
+   "gol_a_partita": 3.897,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 61,
+     "quota": 0.1338,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 65,
+     "quota": 0.1425,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 64,
+     "quota": 0.1404,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 12,
+     "quota": 0.0263,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 79,
+     "quota": 0.1732,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 80,
+     "quota": 0.1754,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 65,
+     "quota": 0.1425,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 30,
+     "quota": 0.0658,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.443,
+   "secondo_tempo": 0.557,
+   "recupero": 0.0921,
+   "finale": 0.2083,
+   "rigori": 0.0526,
+   "autogol": 0.0307,
+   "senza_gol": 0.0085,
+   "primo_gol_medio": 26.1,
+   "primo_gol_entro_15": 0.4103
+  },
+  {
+   "slug": "championship",
+   "nome": "Championship",
+   "paese": "Inghilterra",
+   "bandiera": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+   "partite": 204,
+   "gol": 592,
+   "gol_a_partita": 2.902,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 92,
+     "quota": 0.1554,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 87,
+     "quota": 0.147,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 91,
+     "quota": 0.1537,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 15,
+     "quota": 0.0253,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 102,
+     "quota": 0.1723,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 85,
+     "quota": 0.1436,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 88,
+     "quota": 0.1486,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 32,
+     "quota": 0.0541,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.4814,
+   "secondo_tempo": 0.5186,
+   "recupero": 0.0794,
+   "finale": 0.2027,
+   "rigori": 0.0574,
+   "autogol": 0.0321,
+   "senza_gol": 0.0539,
+   "primo_gol_medio": 27.3,
+   "primo_gol_entro_15": 0.3676
+  },
+  {
+   "slug": "premiership",
+   "nome": "Premiership",
+   "paese": "Scozia",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "partite": 83,
+   "gol": 251,
+   "gol_a_partita": 3.024,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 40,
+     "quota": 0.1594,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 36,
+     "quota": 0.1434,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 52,
+     "quota": 0.2072,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 4,
+     "quota": 0.0159,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 43,
+     "quota": 0.1713,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 32,
+     "quota": 0.1275,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 33,
+     "quota": 0.1315,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 11,
+     "quota": 0.0438,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.5259,
+   "secondo_tempo": 0.4741,
+   "recupero": 0.0598,
+   "finale": 0.1753,
+   "rigori": 0.0956,
+   "autogol": 0.0518,
+   "senza_gol": 0.0241,
+   "primo_gol_medio": 24.6,
+   "primo_gol_entro_15": 0.4217
+  },
+  {
+   "slug": "championship-scozia",
+   "nome": "Championship scozzese",
+   "paese": "Scozia",
+   "bandiera": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+   "partite": 77,
+   "gol": 178,
+   "gol_a_partita": 2.312,
+   "fasce": [
+    {
+     "etichetta": "1'-15'",
+     "gol": 29,
+     "quota": 0.1629,
+     "recupero": false
+    },
+    {
+     "etichetta": "16'-30'",
+     "gol": 30,
+     "quota": 0.1685,
+     "recupero": false
+    },
+    {
+     "etichetta": "31'-45'",
+     "gol": 28,
+     "quota": 0.1573,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 1° tempo",
+     "gol": 3,
+     "quota": 0.0169,
+     "recupero": true
+    },
+    {
+     "etichetta": "46'-60'",
+     "gol": 35,
+     "quota": 0.1966,
+     "recupero": false
+    },
+    {
+     "etichetta": "61'-75'",
+     "gol": 22,
+     "quota": 0.1236,
+     "recupero": false
+    },
+    {
+     "etichetta": "76'-90'",
+     "gol": 27,
+     "quota": 0.1517,
+     "recupero": false
+    },
+    {
+     "etichetta": "recupero 2° tempo",
+     "gol": 4,
+     "quota": 0.0225,
+     "recupero": true
+    }
+   ],
+   "primo_tempo": 0.5056,
+   "secondo_tempo": 0.4944,
+   "recupero": 0.0393,
+   "finale": 0.1742,
+   "rigori": 0.0843,
+   "autogol": 0.0169,
+   "senza_gol": 0.0909,
+   "primo_gol_medio": 30.1,
+   "primo_gol_entro_15": 0.3117
+  }
+ ],
+ "esclusi": [
+  {
+   "slug": "league-one-scozia",
+   "nome": "League One scozzese",
+   "completezza": 0.0506
+  },
+  {
+   "slug": "league-two-scozia",
+   "nome": "League Two scozzese",
+   "completezza": 0.0405
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import minuti from "../../dati/minuti.json";
+import fra from "../../dati/fra_campionati.json";
+import { num, pct, ilp, Ilp, chiaro, nella } from "../../lib/testo";
+
+/* In che minuto si segna. Diverso dagli altri articoli con i dati in una cosa
+   sola, e il testo lo dice: i minuti dei gol esistono solo nei tabellini ESPN
+   della stagione in corso, quindi qui i numeri sono "di quest'anno" e non
+   "delle ultime tre stagioni". Il conto, e le regole su quali campionati
+   entrano, sono in `engine/minuti.py`. */
+
+const T = minuti.tutti as any;
+const righe = minuti.campionati as any[];
+const esclusi = minuti.esclusi as any[];
+const N = righe.length;
+const italiani = new Set(["serie-a", "serie-b"]);
+const ogni = (q: number) => Math.round(1 / q);
+
+const fasce = T.fasce as any[];
+const regolari = fasce.filter((f) => !f.recupero);
+const piuPiena = regolari.reduce((m, f) => (f.quota > m.quota ? f : m));
+const piuVuota = regolari.reduce((m, f) => (f.quota < m.quota ? f : m));
+const recupero2 = fasce.find((f) => f.etichetta.startsWith("recupero 2"));
+
+/* Lo stesso conto fatto in un altro modo: dai punteggi all'intervallo delle
+   ultime tre stagioni intere, nell'articolo sul primo tempo. Se i due numeri
+   si somigliano, il campione di quest'anno e' affidabile. */
+const secondoStorico = (fra.tutti as any)?.intervallo?.quota_secondo ?? null;
+
+const perFinale = righe; // gia' ordinati da chi segna di piu' dal 76' in poi
+const minPartite = Math.min(...righe.map((r) => r.partite));
+const maxPartite = Math.max(...righe.map((r) => r.partite));
+const piuFinale = perFinale[0];
+const menoFinale = perFinale[N - 1];
+const serieA = righe.find((r) => r.slug === "serie-a");
+const posA = righe.findIndex((r) => r.slug === "serie-a") + 1;
+
+const barre = fasce.map((f) => ({
+  etichetta: f.etichetta,
+  valore: f.quota,
+  testo: pct(f.quota, 1),
+  dettaglio: `${f.etichetta}: ${f.gol.toLocaleString("it-IT")} gol su ${T.gol.toLocaleString("it-IT")}`,
+  evidenza: f.recupero,
+}));
+
+const titolo = "In che minuto si segna di più? I gol minuto per minuto";
+const descrizione =
+  `In quale minuto si segnano più gol, quanti arrivano nel recupero e quando arriva il primo ` +
+  `gol: ${T.gol.toLocaleString("it-IT")} gol di questa stagione in ${N} campionati europei. ` +
+  `Aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/minuti-dei-gol/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "In che minuto si segnano più gol",
+  description: descrizione,
+  datePublished: "2026-11-26",
+  dateModified: minuti.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Minuti dei gol" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>In che minuto si segnano più gol</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        In questa stagione, su {T.gol.toLocaleString("it-IT")} gol segnati in
+        {" "}{T.partite.toLocaleString("it-IT")} partite di {N} campionati europei, il quarto d'ora con
+        più gol è quello fra il <strong>{piuPiena.etichetta.replace("'-", "' e il ")}</strong>:
+        {" "}{ilp(piuPiena.quota, 1)} del totale. Quello con meno è
+        {" "}{piuVuota.etichetta === "1'-15'"
+          ? "il primo quarto d'ora della partita"
+          : `quello fra il ${piuVuota.etichetta.replace("'-", "' e il ")}`}, con
+        {" "}{ilp(piuVuota.quota, 1)}.
+      </p>
+      <p>
+        Nel secondo tempo si segna di più: {ilp(T.secondo_tempo)} dei gol contro
+        {" "}{ilp(T.primo_tempo)} del primo. Dal 76' in poi, recupero compreso, arriva
+        {" "}<strong>{ilp(T.finale)}</strong> dei gol, quasi uno su {ogni(T.finale)}. E
+        {" "}{ilp(T.recupero, 1)} arriva nei minuti di recupero: un gol ogni {ogni(T.recupero)},
+        soprattutto in quello del secondo tempo ({ilp(recupero2.quota, 1)}).
+      </p>
+      {
+        secondoStorico && (
+          <p>
+            È lo stesso risultato che si ottiene per un'altra strada, dai punteggi all'intervallo
+            di tre stagioni intere: lì i gol del secondo tempo sono {ilp(secondoStorico)}
+            {" "}(<a href="/statistiche/primo-tempo-e-rimonte/">chi è avanti all'intervallo vince?</a>).
+            Due fonti diverse, stessa risposta.
+          </p>
+        )
+      }
+    </div>
+
+    <h2 class="sotto-titolo">I gol per quarto d'ora</h2>
+    <p class="nota">
+      Quota dei gol della stagione segnati in ogni fascia. In blu i minuti di recupero, contati a
+      parte: un gol al 90'+3' non è un gol al 90'.
+    </p>
+    <ClassificaBarre righe={barre} numerata={false} />
+
+    <h2 class="sotto-titolo">Il primo gol</h2>
+    <div class="prosa">
+      <p>
+        Il primo gol arriva in media al <strong>{num(T.primo_gol_medio, 0)}° minuto</strong>. In una
+        partita su {ogni(T.primo_gol_entro_15)} si segna entro il primo quarto d'ora, mentre
+        {" "}{ilp(T.senza_gol, 1)} delle partite finisce senza gol.
+      </p>
+      <p>
+        {Ilp(T.rigori, 1)} dei gol è su rigore e {ilp(T.autogol, 1)} è un autogol. Altri tipi di
+        gol, come quelli di testa o su punizione, qui non ci sono: la fonte li segna solo a volte,
+        e un dato che manca una volta su tre farebbe una statistica falsa.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">Campionato per campionato</h2>
+    <p class="nota">
+      In ordine di gol segnati dal 76' in poi. Ogni campionato ha fra {minPartite} e {maxPartite}
+      {" "}partite: le differenze di uno o due punti possono essere caso.
+    </p>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th class="num">Partite</th>
+            <th class="num">Gol a partita</th>
+            <th class="num">Primo tempo</th>
+            <th class="num">Dal 76'</th>
+            <th class="num">Recupero</th>
+            <th class="num">Rigori</th>
+            <th class="num">Primo gol</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            perFinale.map((r) => (
+              <tr class:list={{ ita: italiani.has(r.slug) }}>
+                <td>
+                  <a href={`/calcio/${r.slug}/`}><Bandiera e={r.bandiera} /> {r.nome}</a>
+                </td>
+                <td class="num mono">{r.partite}</td>
+                <td class="num mono">{num(r.gol_a_partita)}</td>
+                <td class="num mono">{pct(r.primo_tempo, 1)}</td>
+                <td class="num mono">{pct(r.finale, 1)}</td>
+                <td class="num mono">{pct(r.recupero, 1)}</td>
+                <td class="num mono">{pct(r.rigori, 1)}</td>
+                <td class="num mono">{r.primo_gol_medio ? `${num(r.primo_gol_medio, 0)}'` : "—"}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Il finale pesa di più {nella(piuFinale.nome)}{chiaro(piuFinale.nome)}, dove dal 76' in poi
+        arriva {ilp(piuFinale.finale)} dei gol, e di meno {nella(menoFinale.nome)}{chiaro(menoFinale.nome)}
+        {" "}({pct(menoFinale.finale)}).
+        {serieA && (
+          <>
+            {" "}La <strong>Serie A</strong> è {posA}ª su {N}: {ilp(serieA.finale)} dei gol dal 76', il
+            {" "}primo gol in media al {num(serieA.primo_gol_medio, 0)}° minuto.
+          </>
+        )}
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono i gol della stagione in corso, dal {new Date(minuti.dal + "T00:00:00").toLocaleDateString("it-IT", { day: "numeric", month: "long", year: "numeric" })},
+        {" "}presi dai tabellini di ESPN, l'unica fonte che dà il minuto di ogni gol. Per questo,
+        diversamente dagli altri articoli, non ci sono le stagioni passate.
+      </p>
+      <p>
+        Un campionato entra solo se almeno il 95% delle sue partite ha l'elenco completo dei gol,
+        che torna con il punteggio finale: contare i gol solo dove la fonte li racconta meglio
+        sposterebbe le percentuali.
+        {esclusi.length > 0 && (
+          <>
+            {" "}Per questo {esclusi.length === 1 ? "resta" : "restano"} fuori
+            {" "}{esclusi.map((e) => e.nome).join(" e ")}, dove ESPN non pubblica l'elenco dei gol.
+          </>
+        )}
+      </p>
+      <p>
+        Il minuto è quello del tabellino: un gol al 45'+2' sta nel recupero del primo tempo, non
+        nel quarto d'ora fra il 31' e il 45'. La pagina si aggiorna da sola ogni notte.
+      </p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/minuti-dei-gol/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+</style>

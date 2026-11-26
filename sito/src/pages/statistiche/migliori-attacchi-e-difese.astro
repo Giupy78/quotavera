@@ -1,0 +1,233 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import classifiche from "../../dati/classifiche.json";
+import campionati from "../../dati/campionati.json";
+import { num, chiaro } from "../../lib/testo";
+import { lumacaSquadra } from "../../lib/indirizzi";
+
+/* I migliori attacchi e le migliori difese di tutti i campionati, nella
+   stagione in corso: gol fatti e subiti a partita, dalle classifiche che il
+   sito pubblica ogni notte. La media a partita e non il totale, perche' i
+   campionati non hanno giocato lo stesso numero di giornate.
+
+   Il testo dice due cose che i numeri da soli non dicono: segnare tanto in
+   League One non vale come segnare tanto in Bundesliga, e su una dozzina di
+   partite la classifica e' ancora mobile. */
+
+const MINIMO = 8; // partite giocate per entrare: sotto, una partita sposta troppo
+const leghe = campionati.campionati as any[];
+const perSlug = Object.fromEntries(leghe.map((c) => [c.slug, c]));
+const tabelle = classifiche.campionati as Record<string, any[]>;
+const stagione = leghe[0]?.stagione ?? "";
+const italiani = new Set(["serie-a", "serie-b"]);
+
+const squadre = Object.entries(tabelle)
+  .filter(([slug]) => perSlug[slug])
+  .flatMap(([slug, righe]) =>
+    righe
+      .filter((r) => r.giocate >= MINIMO)
+      .map((r) => ({
+        ...r,
+        lega: perSlug[slug],
+        fattiP: r.fatti / r.giocate,
+        subitiP: r.subiti / r.giocate,
+        href: `/calcio/${slug}/squadra/${lumacaSquadra(r.squadra)}/`,
+      })),
+  );
+const N = new Set(squadre.map((s) => s.lega.slug)).size;
+
+const attacchi = [...squadre].sort((a, b) => b.fattiP - a.fattiP || b.fatti - a.fatti);
+const difese = [...squadre].sort((a, b) => a.subitiP - b.subitiP || a.subiti - b.subiti);
+const posAtt = (s: any) => attacchi.indexOf(s) + 1;
+const posDif = (s: any) => difese.indexOf(s) + 1;
+
+const chi = (s: any) => `${s.squadra} (${chiaro(s.lega.nome)})`;
+const attA = attacchi.find((s) => s.lega.slug === "serie-a");
+const difA = difese.find((s) => s.lega.slug === "serie-a");
+
+const barreAtt = attacchi.slice(0, 15).map((s) => ({
+  etichetta: s.squadra,
+  bandiera: s.lega.bandiera,
+  href: s.href,
+  valore: s.fattiP,
+  testo: num(s.fattiP),
+  dettaglio: `${s.squadra} (${s.lega.nome}): ${s.fatti} gol in ${s.giocate} partite`,
+  evidenza: italiani.has(s.lega.slug),
+}));
+const barreDif = difese.slice(0, 15).map((s) => ({
+  etichetta: s.squadra,
+  bandiera: s.lega.bandiera,
+  href: s.href,
+  valore: s.subitiP,
+  testo: num(s.subitiP),
+  dettaglio: `${s.squadra} (${s.lega.nome}): ${s.subiti} gol subiti in ${s.giocate} partite`,
+  evidenza: italiani.has(s.lega.slug),
+}));
+
+const perCampionato = leghe
+  .filter((c) => squadre.some((s) => s.lega.slug === c.slug))
+  .map((c) => ({
+    c,
+    att: attacchi.find((s) => s.lega.slug === c.slug),
+    dif: difese.find((s) => s.lega.slug === c.slug),
+  }));
+
+const titolo = `Migliori attacchi e difese d'Europa ${stagione}: gol fatti e subiti`;
+const descrizione =
+  `Le squadre che segnano di più e quelle che subiscono di meno in ${N} campionati europei, ` +
+  `stagione ${stagione}: gol fatti e subiti a partita, e i migliori di ogni campionato. ` +
+  `Aggiornato ogni notte.`;
+
+const canonico = new URL("/statistiche/migliori-attacchi-e-difese/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "I migliori attacchi e le migliori difese d'Europa",
+  description: descrizione,
+  datePublished: "2026-11-26",
+  dateModified: campionati.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Migliori attacchi e difese" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>I migliori attacchi e le migliori difese d'Europa</h1>
+    </div>
+
+    <div class="prosa">
+      <p>
+        Nella stagione {stagione}, fra le {squadre.length} squadre dei {N} campionati che seguiamo,
+        la squadra che segna di più è <strong>{attacchi[0].squadra}</strong>
+        {" "}({chiaro(attacchi[0].lega.nome)}): {num(attacchi[0].fattiP)} gol a partita,
+        {" "}{attacchi[0].fatti} in {attacchi[0].giocate} partite. Seguono {chi(attacchi[1])} con
+        {" "}{num(attacchi[1].fattiP)} e {chi(attacchi[2])} con {num(attacchi[2].fattiP)}.
+      </p>
+      <p>
+        Quella che subisce meno è <strong>{difese[0].squadra}</strong>
+        {" "}({chiaro(difese[0].lega.nome)}): {num(difese[0].subitiP)} gol subiti a partita,
+        {" "}{difese[0].subiti} in {difese[0].giocate} partite. Seguono {chi(difese[1])} con
+        {" "}{num(difese[1].subitiP)} e {chi(difese[2])} con {num(difese[2].subitiP)}.
+      </p>
+      {attA && difA && (
+        <p>
+          In <strong>Serie A</strong> la squadra che segna di più è {attA.squadra}, con
+          {" "}{num(attA.fattiP)} gol a partita ({posAtt(attA)}ª in Europa); quella che subisce meno
+          {" "}è {difA.squadra}, con {num(difA.subitiP)} ({posDif(difA)}ª in Europa).
+        </p>
+      )}
+      <p>
+        Sono numeri, non un giudizio sulle squadre: segnare tanto in un campionato di terza
+        divisione non vale come segnare tanto in Bundesliga. E dopo una dozzina di partite la
+        classifica è ancora mobile: bastano una goleada o una serata storta per cambiare posto.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">I quindici migliori attacchi</h2>
+    <p class="nota">
+      Gol fatti a partita. In blu le squadre italiane; ogni nome porta alla pagina della squadra.
+    </p>
+    <ClassificaBarre righe={barreAtt} />
+
+    <h2 class="sotto-titolo">Le quindici migliori difese</h2>
+    <p class="nota">
+      Gol subiti a partita: la barra più corta è la difesa migliore.
+    </p>
+    <ClassificaBarre righe={barreDif} />
+
+    <h2 class="sotto-titolo">Il miglior attacco e la miglior difesa di ogni campionato</h2>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th>Miglior attacco</th>
+            <th class="num">Gol a partita</th>
+            <th>Miglior difesa</th>
+            <th class="num">Subiti a partita</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            perCampionato.map(({ c, att, dif }) => (
+              <tr class:list={{ ita: italiani.has(c.slug) }}>
+                <td>
+                  <a href={`/calcio/${c.slug}/`}><Bandiera e={c.bandiera} /> {c.nome}</a>
+                </td>
+                <td><a href={att.href}>{att.squadra}</a></td>
+                <td class="num mono">{num(att.fattiP)}</td>
+                <td><a href={dif.href}>{dif.squadra}</a></td>
+                <td class="num mono">{num(dif.subitiP)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        Sono i gol di campionato della stagione in corso, dalle stesse classifiche pubblicate nelle
+        pagine dei campionati: risultati di football-data.co.uk, più quelli che ESPN ha già e
+        football-data non ancora. Le coppe non entrano.
+      </p>
+      <p>
+        Si confronta la media a partita, non il totale, perché i campionati non hanno giocato lo
+        stesso numero di giornate. Entrano le squadre con almeno {MINIMO} partite giocate. La
+        pagina si aggiorna da sola ogni notte, dopo ogni giornata.
+      </p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/migliori-attacchi-e-difese/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+</style>

@@ -1,0 +1,277 @@
+---
+import Base from "../../layouts/Base.astro";
+import Bandiera from "../../components/Bandiera.astro";
+import ClassificaBarre from "../../components/ClassificaBarre.astro";
+import AltriArticoli from "../../components/AltriArticoli.astro";
+import marcatori from "../../dati/marcatori.json";
+import campionati from "../../dati/campionati.json";
+import { art, chiaro } from "../../lib/testo";
+
+/* I capocannonieri dei campionati che seguiamo, messi in un'unica classifica.
+   La stagione e' quella in corso e i numeri cambiano dopo ogni giornata: la
+   pagina si rigenera ogni notte con la classifica marcatori di ogni
+   campionato (`marcatori()` in `scripts/genera_sito.py`, dai gol dei tabellini
+   ESPN, autogol esclusi).
+
+   Due avvertenze che il testo dice in chiaro. Non e' la Scarpa d'oro, dove i
+   gol dei campionati piu' forti valgono il doppio: qui un gol e' un gol. E i
+   campionati non sono allo stesso punto: chi gioca in uno che ha disputato
+   piu' giornate ha avuto piu' partite per segnare. */
+
+const leghe = campionati.campionati as any[];
+const liste = marcatori.campionati as Record<string, any[]>;
+const conDati = leghe.filter((c) => (liste[c.slug] ?? []).length > 0);
+const senzaDati = leghe.filter((c) => (liste[c.slug] ?? []).length === 0);
+const N = conDati.length;
+const stagione = leghe[0]?.stagione ?? "";
+const italiani = new Set(["serie-a", "serie-b"]);
+
+const tutti = conDati
+  .flatMap((c) => liste[c.slug].map((g) => ({ ...g, lega: c })))
+  .sort((a, b) => b.gol - a.gol || a.rigori - b.rigori || b.assist - a.assist || a.nome.localeCompare(b.nome));
+/* Posizione a pari merito: chi ha gli stessi gol ha la stessa posizione. */
+const posizione = (g: number) => 1 + tutti.filter((x) => x.gol > g).length;
+
+const massimo = tutti[0]?.gol ?? 0;
+const inTesta = tutti.filter((x) => x.gol === massimo);
+const dopo = tutti.filter((x) => x.gol < massimo).slice(0, 2);
+const top = tutti.slice(0, 30);
+
+const chi = (x: any) => `${x.nome} (${x.squadra}, ${chiaro(x.lega.nome)})`;
+const conRigori = (x: any) => (x.rigori > 0 ? `, ${x.rigori} su rigore` : "");
+
+const primoA = tutti.find((x) => x.lega.slug === "serie-a");
+const senzaRigori = [...tutti]
+  .sort((a, b) => b.gol - b.rigori - (a.gol - a.rigori) || b.gol - a.gol)
+  .slice(0, 5);
+
+const piuGiornate = conDati.reduce((m, c) => (c.giornate_giocate > m.giornate_giocate ? c : m));
+const menoGiornate = conDati.reduce((m, c) => (c.giornate_giocate < m.giornate_giocate ? c : m));
+
+const barre = tutti.slice(0, 15).map((x) => ({
+  etichetta: x.nome,
+  bandiera: x.lega.bandiera,
+  href: `/calcio/${x.lega.slug}/`,
+  valore: x.gol,
+  testo: String(x.gol),
+  dettaglio: `${x.nome}, ${x.squadra} (${x.lega.nome}): ${x.gol} gol, ${x.rigori} su rigore, ${x.assist} assist`,
+  evidenza: italiani.has(x.lega.slug),
+}));
+
+const capocannonieri = conDati.map((c) => {
+  const l = liste[c.slug];
+  const pari = l.filter((g) => g.gol === l[0].gol).length;
+  return { c, g: l[0], pari };
+});
+
+const titolo = `Capocannonieri d'Europa: la classifica marcatori ${stagione}`;
+const descrizione =
+  `La classifica marcatori di ${N} campionati europei messi insieme, stagione ${stagione}: ` +
+  `chi ha segnato di più, quanti su rigore e il capocannoniere di ogni campionato. Aggiornata ogni notte.`;
+
+const canonico = new URL("/statistiche/capocannonieri-europa/", Astro.site).href;
+const datiStrutturati = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "I capocannonieri d'Europa",
+  description: descrizione,
+  datePublished: "2026-11-26",
+  dateModified: campionati.generato_il,
+  inLanguage: "it-IT",
+  image: new URL("/sociale.png", Astro.site).href,
+  mainEntityOfPage: canonico,
+  author: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+  publisher: { "@type": "Organization", name: "Quota Vera", url: new URL("/", Astro.site).href },
+};
+const briciole = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Quota Vera", item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Statistiche fra campionati", item: new URL("/statistiche/", Astro.site).href },
+    { "@type": "ListItem", position: 3, name: "Capocannonieri d'Europa" },
+  ],
+};
+---
+
+<Base titolo={titolo} descrizione={descrizione}>
+  <script type="application/ld+json" set:html={JSON.stringify(datiStrutturati)} />
+  <script type="application/ld+json" set:html={JSON.stringify(briciole)} />
+
+  <article>
+    <p class="occhiello">
+      <a href="/statistiche/" style="color:inherit">Statistiche fra campionati</a> · aggiornato ogni notte
+    </p>
+    <div class="hd">
+      <h1>I capocannonieri d'Europa</h1>
+    </div>
+
+    <div class="prosa">
+      {inTesta.length === 1 ? (
+        <p>
+          Nella stagione {stagione}, il giocatore che ha segnato di più nei {N} campionati che
+          seguiamo è <strong>{inTesta[0].nome}</strong> ({inTesta[0].squadra},
+          {" "}{chiaro(inTesta[0].lega.nome)}): {massimo} gol{conRigori(inTesta[0])}.
+          {dopo.length > 0 && (
+            <>
+              {" "}Seguono {dopo.map((x) => `${chi(x)} con ${x.gol}`).join(" e ")}.
+            </>
+          )}
+        </p>
+      ) : (
+        <p>
+          Nella stagione {stagione}, in testa ai {N} campionati che seguiamo ci sono
+          {" "}{inTesta.length} giocatori a pari merito con <strong>{massimo} gol</strong>:
+          {" "}{inTesta.map(chi).join(", ")}.
+        </p>
+      )}
+      {primoA && (
+        <p>
+          In <strong>Serie A</strong> il primo è {primoA.nome} ({primoA.squadra}) con {primoA.gol}
+          {" "}gol{conRigori(primoA)}: {posizione(primoA.gol) === 1 ? "primo" : `${posizione(primoA.gol)}°`} in
+          {" "}Europa{tutti.filter((x) => x.gol === primoA.gol).length > 1 ? ", a pari merito" : ""}.
+        </p>
+      )}
+      <p>
+        Non è la Scarpa d'oro, dove i gol dei campionati più forti valgono il doppio: qui un gol è
+        un gol. E i campionati non sono allo stesso punto: {art(piuGiornate.nome)}{chiaro(piuGiornate.nome)}
+        {" "}ha giocato {piuGiornate.giornate_giocate} giornate, {art(menoGiornate.nome)}{chiaro(menoGiornate.nome)}
+        {" "}{menoGiornate.giornate_giocate}. Chi gioca in un campionato più lungo ha avuto più partite
+        per segnare.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">I quindici con più gol</h2>
+    <p class="nota">
+      In blu chi gioca in un campionato italiano. Il nome porta alla pagina del campionato.
+    </p>
+    <ClassificaBarre righe={barre} />
+
+    <h2 class="sotto-titolo">La classifica, i primi trenta</h2>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th class="num">#</th>
+            <th>Giocatore</th>
+            <th>Squadra</th>
+            <th>Campionato</th>
+            <th class="num">Gol</th>
+            <th class="num">Rigori</th>
+            <th class="num">Assist</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            top.map((x) => (
+              <tr class:list={{ ita: italiani.has(x.lega.slug) }}>
+                <td class="num mono">{posizione(x.gol)}</td>
+                <td>{x.nome}</td>
+                <td>{x.squadra}</td>
+                <td>
+                  <a href={`/calcio/${x.lega.slug}/`}><Bandiera e={x.lega.bandiera} /> {x.lega.nome}</a>
+                </td>
+                <td class="num mono">{x.gol}</td>
+                <td class="num mono">{x.rigori}</td>
+                <td class="num mono">{x.assist}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Senza contare i rigori</h2>
+    <div class="prosa">
+      <p>
+        Tolti i rigori, la classifica cambia un po': in testa ci sono
+        {" "}{senzaRigori.map((x) => `${x.nome} (${x.gol - x.rigori})`).join(", ").replace(/, ([^,]*)$/, " e $1")}.
+      </p>
+    </div>
+
+    <h2 class="sotto-titolo">Il capocannoniere di ogni campionato</h2>
+    <div class="scorri">
+      <table class="dati">
+        <thead>
+          <tr>
+            <th>Campionato</th>
+            <th>Capocannoniere</th>
+            <th>Squadra</th>
+            <th class="num">Gol</th>
+            <th class="num">Giornate giocate</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            capocannonieri.map(({ c, g, pari }) => (
+              <tr class:list={{ ita: italiani.has(c.slug) }}>
+                <td>
+                  <a href={`/calcio/${c.slug}/`}><Bandiera e={c.bandiera} /> {c.nome}</a>
+                </td>
+                <td>
+                  {g.nome}
+                  {pari > 1 && <small> e altri {pari - 1}</small>}
+                </td>
+                <td>{g.squadra}</td>
+                <td class="num mono">{g.gol}</td>
+                <td class="num mono">{c.giornate_giocate}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sotto-titolo">Come sono fatti questi numeri</h2>
+    <div class="prosa piccola">
+      <p>
+        I gol sono contati partita per partita dai tabellini di ESPN, che danno il marcatore di
+        ogni gol: gli autogol non contano per chi li segna. Solo le partite di campionato, non le
+        coppe.
+        {senzaDati.length > 0 && (
+          <>
+            {" "}{senzaDati.map((c) => c.nome).join(" e ")}
+            {" "}{senzaDati.length === 1 ? "non c'è" : "non ci sono"}: lì ESPN non pubblica i
+            marcatori.
+          </>
+        )}
+      </p>
+      <p>
+        I nomi dei giocatori e delle squadre sono quelli della fonte. La pagina si aggiorna da sola
+        ogni notte, dopo ogni giornata.
+      </p>
+    </div>
+
+    <AltriArticoli qui="/statistiche/capocannonieri-europa/" />
+  </article>
+</Base>
+
+<style>
+  .sotto-titolo {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 38px 0 4px;
+  }
+  .nota {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    max-width: 62ch;
+  }
+  .prosa {
+    margin-top: 6px;
+  }
+  .prosa.piccola {
+    font-size: 15px;
+    color: var(--ink-2);
+  }
+  tr.ita td {
+    font-weight: 600;
+  }
+  td small {
+    color: var(--ink-3);
+    font-weight: 400;
+  }
+</style>
