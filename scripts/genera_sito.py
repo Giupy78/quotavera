@@ -24,6 +24,7 @@ sys.path.insert(0, str(RADICE))
 from engine import chicche as motore_chicche
 from engine import fra_campionati
 from engine import indirizzi
+from engine import minuti as minuti_dei_gol
 from engine.dati import coppe
 from engine.classifica import calcola as calcola_classifica
 from engine.classifica import giornate, posizioni_attese
@@ -1190,6 +1191,16 @@ def main() -> int:
         "generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         **fra_campionati.per_campionato(materiale_chicche, INIZIO_STAGIONE.year),
     })
+    # I minuti dei gol: solo la stagione in corso, dai tabellini ESPN, che sono
+    # l'unica fonte con il minuto. Protetto come le coppe: se si rompe resta
+    # il file di ieri, e l'articolo con i numeri di ieri.
+    try:
+        scrivi("minuti.json", {
+            "generato_il": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            **minuti_dei_gol.per_il_sito(partite, INIZIO_STAGIONE, CAMPIONATI),
+        })
+    except Exception as errore:
+        print(f"  ! minuti dei gol: {errore!r}")
 
     # Le coppe sono un di piu': un guasto qui non deve fermare i campionati. Se
     # ESPN e' giu', `coppe` costruisce dall'archivio; se va storto qualcos'altro
