@@ -2,6 +2,21 @@
  "campionati": {
   "serie-a": [
    {
+    "giornata": 13,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Venezia",
+      "ospite": "Bologna",
+      "gol_casa": 0,
+      "gol_ospite": 0,
+      "in_porta_casa": 5,
+      "in_porta_ospite": 6
+     }
+    ]
+   },
+   {
     "giornata": 12,
     "stagione_scorsa": false,
     "partite": [
@@ -672,105 +687,24 @@
       "in_porta_ospite": 1
      }
     ]
-   },
-   {
-    "giornata": 5,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-18",
-      "casa": "Monza",
-      "ospite": "Sassuolo",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 8
-     },
-     {
-      "data": "2026-09-19",
-      "casa": "Bologna",
-      "ospite": "Torino",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-19",
-      "casa": "Udinese",
-      "ospite": "Cagliari",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-19",
-      "casa": "Roma",
-      "ospite": "Inter",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-19",
-      "casa": "Venezia",
-      "ospite": "Lazio",
-      "gol_casa": 0,
-      "gol_ospite": 2,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-20",
-      "casa": "Fiorentina",
-      "ospite": "Napoli",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-20",
-      "casa": "Frosinone",
-      "ospite": "Como",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 8
-     },
-     {
-      "data": "2026-09-20",
-      "casa": "Parma",
-      "ospite": "Genoa",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-20",
-      "casa": "Juventus",
-      "ospite": "Atalanta",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-20",
-      "casa": "Milan",
-      "ospite": "Lecce",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 3
-     }
-    ]
    }
   ],
   "premier-league": [
+   {
+    "giornata": 12,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Nott'm Forest",
+      "ospite": "Chelsea",
+      "gol_casa": 3,
+      "gol_ospite": 2,
+      "in_porta_casa": 7,
+      "in_porta_ospite": 3
+     }
+    ]
+   },
    {
     "giornata": 11,
     "stagione_scorsa": false,
@@ -1442,105 +1376,24 @@
       "in_porta_ospite": 6
      }
     ]
-   },
-   {
-    "giornata": 4,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-12",
-      "casa": "Aston Villa",
-      "ospite": "Nott'm Forest",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Bournemouth",
-      "ospite": "Brentford",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 10,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Chelsea",
-      "ospite": "Hull",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Crystal Palace",
-      "ospite": "Ipswich",
-      "gol_casa": 2,
-      "gol_ospite": 3,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Liverpool",
-      "ospite": "Fulham",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Tottenham",
-      "ospite": "Everton",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Sunderland",
-      "ospite": "Arsenal",
-      "gol_casa": 0,
-      "gol_ospite": 2,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Coventry",
-      "ospite": "Brighton",
-      "gol_casa": 0,
-      "gol_ospite": 5,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Man United",
-      "ospite": "Man City",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-14",
-      "casa": "Leeds",
-      "ospite": "Newcastle",
-      "gol_casa": 4,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 5
-     }
-    ]
    }
   ],
   "laliga": [
+   {
+    "giornata": 14,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Levante",
+      "ospite": "Santander",
+      "gol_casa": 1,
+      "gol_ospite": 3,
+      "in_porta_casa": 3,
+      "in_porta_ospite": 8
+     }
+    ]
+   },
    {
     "giornata": 13,
     "stagione_scorsa": false,
@@ -2212,105 +2065,24 @@
       "in_porta_ospite": 6
      }
     ]
-   },
-   {
-    "giornata": 6,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-13",
-      "casa": "Celta",
-      "ospite": "Malaga",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Sociedad",
-      "ospite": "Ath Madrid",
-      "gol_casa": 0,
-      "gol_ospite": 3,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-15",
-      "casa": "Vallecano",
-      "ospite": "Espanol",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-15",
-      "casa": "Alaves",
-      "ospite": "Valencia",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-15",
-      "casa": "Elche",
-      "ospite": "Real Madrid",
-      "gol_casa": 2,
-      "gol_ospite": 3,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-09-16",
-      "casa": "Ath Madrid",
-      "ospite": "Osasuna",
-      "gol_casa": 4,
-      "gol_ospite": 0,
-      "in_porta_casa": 11,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-16",
-      "casa": "La Coruna",
-      "ospite": "Sevilla",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-16",
-      "casa": "Barcelona",
-      "ospite": "Santander",
-      "gol_casa": 7,
-      "gol_ospite": 2,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-17",
-      "casa": "Betis",
-      "ospite": "Getafe",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-17",
-      "casa": "Malaga",
-      "ospite": "Villarreal",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 7
-     }
-    ]
    }
   ],
   "bundesliga": [
+   {
+    "giornata": 11,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Werder Bremen",
+      "ospite": "M'gladbach",
+      "gol_casa": 3,
+      "gol_ospite": 3,
+      "in_porta_casa": 8,
+      "in_porta_ospite": 6
+     }
+    ]
+   },
    {
     "giornata": 10,
     "stagione_scorsa": false,
@@ -2919,96 +2691,24 @@
       "in_porta_ospite": 2
      }
     ]
-   },
-   {
-    "giornata": 3,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-11",
-      "casa": "Union Berlin",
-      "ospite": "Schalke 04",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 10
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Augsburg",
-      "ospite": "Leverkusen",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Dortmund",
-      "ospite": "Paderborn",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Freiburg",
-      "ospite": "M'gladbach",
-      "gol_casa": 5,
-      "gol_ospite": 0,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Hoffenheim",
-      "ospite": "Stuttgart",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Mainz",
-      "ospite": "Ein Frankfurt",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "FC Koln",
-      "ospite": "Werder Bremen",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "RB Leipzig",
-      "ospite": "Hamburg",
-      "gol_casa": 5,
-      "gol_ospite": 0,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Elversberg",
-      "ospite": "Bayern Munich",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 6
-     }
-    ]
    }
   ],
   "ligue-1": [
+   {
+    "giornata": 12,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Brest",
+      "ospite": "Paris FC",
+      "gol_casa": 1,
+      "gol_ospite": 0,
+      "in_porta_casa": 3,
+      "in_porta_ospite": 8
+     }
+    ]
+   },
    {
     "giornata": 11,
     "stagione_scorsa": false,
@@ -3617,96 +3317,24 @@
       "in_porta_ospite": 10
      }
     ]
-   },
-   {
-    "giornata": 4,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-11",
-      "casa": "Rennes",
-      "ospite": "Marseille",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Strasbourg",
-      "ospite": "Monaco",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Auxerre",
-      "ospite": "Nice",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Le Havre",
-      "ospite": "Angers",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Lorient",
-      "ospite": "Toulouse",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Paris FC",
-      "ospite": "Lyon",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Lille",
-      "ospite": "Troyes",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Le Mans",
-      "ospite": "Lens",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Brest",
-      "ospite": "Paris SG",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 7
-     }
-    ]
    }
   ],
   "eredivisie": [
+   {
+    "giornata": 14,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Groningen",
+      "ospite": "Willem II",
+      "gol_casa": 1,
+      "gol_ospite": 1,
+      "in_porta_casa": 9,
+      "in_porta_ospite": 4
+     }
+    ]
+   },
    {
     "giornata": 13,
     "stagione_scorsa": false,
@@ -4315,105 +3943,24 @@
       "in_porta_ospite": 6
      }
     ]
-   },
-   {
-    "giornata": 6,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-11",
-      "casa": "AZ Alkmaar",
-      "ospite": "Willem II",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Twente",
-      "ospite": "Den Haag",
-      "gol_casa": 2,
-      "gol_ospite": 0,
-      "in_porta_casa": 12,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Go Ahead Eagles",
-      "ospite": "Groningen",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "For Sittard",
-      "ospite": "Ajax",
-      "gol_casa": 1,
-      "gol_ospite": 5,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 11
-     },
-     {
-      "data": "2026-09-12",
-      "casa": "Cambuur",
-      "ospite": "Nijmegen",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Excelsior",
-      "ospite": "Utrecht",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Heerenveen",
-      "ospite": "Telstar",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "Zwolle",
-      "ospite": "Feyenoord",
-      "gol_casa": 0,
-      "gol_ospite": 7,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 12
-     },
-     {
-      "data": "2026-09-13",
-      "casa": "PSV Eindhoven",
-      "ospite": "Sparta Rotterdam",
-      "gol_casa": 4,
-      "gol_ospite": 1,
-      "in_porta_casa": 10,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-15",
-      "casa": "Ajax",
-      "ospite": "Willem II",
-      "gol_casa": 5,
-      "gol_ospite": 1,
-      "in_porta_casa": 12,
-      "in_porta_ospite": 4
-     }
-    ]
    }
   ],
   "primeira-liga": [
+   {
+    "giornata": 12,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Maritimo",
+      "ospite": "Nacional",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 4,
+      "in_porta_ospite": 4
+     }
+    ]
+   },
    {
     "giornata": 11,
     "stagione_scorsa": false,
@@ -5040,93 +4587,6 @@
       "in_porta_ospite": 4
      }
     ]
-   },
-   {
-    "giornata": 4,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-08-28",
-      "casa": "Rio Ave",
-      "ospite": "Sp Lisbon",
-      "gol_casa": 0,
-      "gol_ospite": 4,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-08-29",
-      "casa": "Alverca",
-      "ospite": "Santa Clara",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-08-29",
-      "casa": "Arouca",
-      "ospite": "Maritimo",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-08-29",
-      "casa": "Academico Viseu",
-      "ospite": "Porto",
-      "gol_casa": 0,
-      "gol_ospite": 3,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-08-30",
-      "casa": "Nacional",
-      "ospite": "Estrela",
-      "gol_casa": 2,
-      "gol_ospite": 3,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-08-30",
-      "casa": "Casa Pia",
-      "ospite": "Moreirense",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-08-30",
-      "casa": "Famalicao",
-      "ospite": "Gil Vicente",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-08-31",
-      "casa": "Benfica",
-      "ospite": "Estoril",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-08-31",
-      "casa": "Sp Braga",
-      "ospite": "Guimaraes",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 2
-     }
-    ]
    }
   ],
   "superlig": [
@@ -5136,21 +4596,21 @@
     "partite": [
      {
       "data": "2026-11-27",
-      "casa": "Alanyaspor",
-      "ospite": "Konyaspor",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-11-27",
       "casa": "Rizespor",
       "ospite": "Kasimpasa",
       "gol_casa": 3,
       "gol_ospite": 2,
       "in_porta_casa": 7,
       "in_porta_ospite": 6
+     },
+     {
+      "data": "2026-11-27",
+      "casa": "Alanyaspor",
+      "ospite": "Konyaspor",
+      "gol_casa": 1,
+      "gol_ospite": 2,
+      "in_porta_casa": 2,
+      "in_porta_ospite": 4
      }
     ]
    },
@@ -5766,6 +5226,21 @@
   ],
   "jupiler": [
    {
+    "giornata": 13,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Oud-Heverlee Leuven",
+      "ospite": "Kortrijk",
+      "gol_casa": 2,
+      "gol_ospite": 2,
+      "in_porta_casa": 8,
+      "in_porta_ospite": 3
+     }
+    ]
+   },
+   {
     "giornata": 12,
     "stagione_scorsa": false,
     "partite": [
@@ -6371,93 +5846,6 @@
       "gol_ospite": 0,
       "in_porta_casa": 6,
       "in_porta_ospite": 2
-     }
-    ]
-   },
-   {
-    "giornata": 5,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-09-04",
-      "casa": "Lommel SK",
-      "ospite": "Club Brugge",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-05",
-      "casa": "Charleroi",
-      "ospite": "St. Gilloise",
-      "gol_casa": 2,
-      "gol_ospite": 3,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-09-05",
-      "casa": "Mechelen",
-      "ospite": "Westerlo",
-      "gol_casa": 0,
-      "gol_ospite": 4,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-09-05",
-      "casa": "St Truiden",
-      "ospite": "RAAL La Louviere",
-      "gol_casa": 4,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-09-05",
-      "casa": "Standard",
-      "ospite": "Antwerp",
-      "gol_casa": 1,
-      "gol_ospite": 0,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-09-06",
-      "casa": "Cercle Brugge",
-      "ospite": "Gent",
-      "gol_casa": 0,
-      "gol_ospite": 3,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-09-06",
-      "casa": "Kortrijk",
-      "ospite": "Waregem",
-      "gol_casa": 0,
-      "gol_ospite": 2,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-09-06",
-      "casa": "Anderlecht",
-      "ospite": "Genk",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-09-06",
-      "casa": "Beveren",
-      "ospite": "Oud-Heverlee Leuven",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 4
      }
     ]
    }
@@ -8252,6 +7640,21 @@
   ],
   "championship": [
    {
+    "giornata": 18,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Southampton",
+      "ospite": "Middlesbrough",
+      "gol_casa": 2,
+      "gol_ospite": 0,
+      "in_porta_casa": 5,
+      "in_porta_ospite": 4
+     }
+    ]
+   },
+   {
     "giornata": 17,
     "stagione_scorsa": false,
     "partite": [
@@ -9055,120 +8458,6 @@
       "gol_ospite": 1,
       "in_porta_casa": 2,
       "in_porta_ospite": 1
-     }
-    ]
-   },
-   {
-    "giornata": 10,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-10-13",
-      "casa": "Bristol City",
-      "ospite": "Blackburn",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Burnley",
-      "ospite": "Charlton",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Cardiff",
-      "ospite": "Watford",
-      "gol_casa": 5,
-      "gol_ospite": 1,
-      "in_porta_casa": 10,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Millwall",
-      "ospite": "Swansea",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Wolves",
-      "ospite": "Bolton",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Wrexham",
-      "ospite": "West Brom",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Birmingham",
-      "ospite": "Preston",
-      "gol_casa": 4,
-      "gol_ospite": 0,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-10-13",
-      "casa": "Stoke",
-      "ospite": "Middlesbrough",
-      "gol_casa": 2,
-      "gol_ospite": 3,
-      "in_porta_casa": 1,
-      "in_porta_ospite": 9
-     },
-     {
-      "data": "2026-10-14",
-      "casa": "Norwich",
-      "ospite": "Southampton",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-10-14",
-      "casa": "Portsmouth",
-      "ospite": "Sheffield United",
-      "gol_casa": 3,
-      "gol_ospite": 2,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-10-14",
-      "casa": "QPR",
-      "ospite": "Derby",
-      "gol_casa": 4,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-10-14",
-      "casa": "Lincoln",
-      "ospite": "West Ham",
-      "gol_casa": 0,
-      "gol_ospite": 6,
-      "in_porta_casa": 0,
-      "in_porta_ospite": 12
      }
     ]
    }
@@ -10922,6 +10211,21 @@
   ],
   "national-league": [
    {
+    "giornata": 20,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Scunthorpe",
+      "ospite": "Wealdstone",
+      "gol_casa": 4,
+      "gol_ospite": 1,
+      "in_porta_casa": 0,
+      "in_porta_ospite": 0
+     }
+    ]
+   },
+   {
     "giornata": 19,
     "stagione_scorsa": false,
     "partite": [
@@ -11691,114 +10995,24 @@
       "in_porta_ospite": 7
      }
     ]
-   },
-   {
-    "giornata": 12,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-10-03",
-      "casa": "Aldershot",
-      "ospite": "Carlisle",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 10
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Barrow",
-      "ospite": "Wealdstone",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Boreham Wood",
-      "ospite": "Altrincham",
-      "gol_casa": 3,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Eastleigh",
-      "ospite": "Woking",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 10
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Gateshead",
-      "ospite": "Worthing",
-      "gol_casa": 1,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 8
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Harrogate",
-      "ospite": "Hornchurch",
-      "gol_casa": 3,
-      "gol_ospite": 0,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Hartlepool",
-      "ospite": "Tamworth",
-      "gol_casa": 0,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 3
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Kidderminster",
-      "ospite": "Sutton",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Solihull",
-      "ospite": "Halifax",
-      "gol_casa": 0,
-      "gol_ospite": 2,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Southend",
-      "ospite": "Fylde",
-      "gol_casa": 3,
-      "gol_ospite": 1,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 2
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Yeovil",
-      "ospite": "Boston Utd",
-      "gol_casa": 6,
-      "gol_ospite": 0,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 1
-     }
-    ]
    }
   ],
   "laliga-2": [
+   {
+    "giornata": 16,
+    "stagione_scorsa": false,
+    "partite": [
+     {
+      "data": "2026-11-27",
+      "casa": "Leganes",
+      "ospite": "Sabadell",
+      "gol_casa": 0,
+      "gol_ospite": 0,
+      "in_porta_casa": 2,
+      "in_porta_ospite": 3
+     }
+    ]
+   },
    {
     "giornata": 15,
     "stagione_scorsa": false,
@@ -12506,111 +11720,6 @@
       "in_porta_ospite": 4
      }
     ]
-   },
-   {
-    "giornata": 8,
-    "stagione_scorsa": false,
-    "partite": [
-     {
-      "data": "2026-10-02",
-      "casa": "Eldense",
-      "ospite": "Oviedo",
-      "gol_casa": 4,
-      "gol_ospite": 1,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Albacete",
-      "ospite": "Eibar",
-      "gol_casa": 1,
-      "gol_ospite": 3,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 6
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Almeria",
-      "ospite": "Burgos",
-      "gol_casa": 2,
-      "gol_ospite": 1,
-      "in_porta_casa": 8,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-10-03",
-      "casa": "Cadiz",
-      "ospite": "Leganes",
-      "gol_casa": 4,
-      "gol_ospite": 0,
-      "in_porta_casa": 9,
-      "in_porta_ospite": 1
-     },
-     {
-      "data": "2026-10-04",
-      "casa": "Sociedad B",
-      "ospite": "Granada",
-      "gol_casa": 2,
-      "gol_ospite": 3,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 5
-     },
-     {
-      "data": "2026-10-04",
-      "casa": "Sp Gijon",
-      "ospite": "Celta B",
-      "gol_casa": 3,
-      "gol_ospite": 2,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 8
-     },
-     {
-      "data": "2026-10-04",
-      "casa": "Castellon",
-      "ospite": "Ceuta",
-      "gol_casa": 1,
-      "gol_ospite": 1,
-      "in_porta_casa": 2,
-      "in_porta_ospite": 4
-     },
-     {
-      "data": "2026-10-04",
-      "casa": "Las Palmas",
-      "ospite": "Valladolid",
-      "gol_casa": 2,
-      "gol_ospite": 2,
-      "in_porta_casa": 4,
-      "in_porta_ospite": 7
-     },
-     {
-      "data": "2026-10-04",
-      "casa": "Girona",
-      "ospite": "Mallorca",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 5,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-04",
-      "casa": "Sabadell",
-      "ospite": "Andorra",
-      "gol_casa": 0,
-      "gol_ospite": 0,
-      "in_porta_casa": 3,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-10-05",
-      "casa": "Cordoba",
-      "ospite": "Tenerife",
-      "gol_casa": 3,
-      "gol_ospite": 2,
-      "in_porta_casa": 6,
-      "in_porta_ospite": 2
-     }
-    ]
    }
   ],
   "bundesliga-2": [
@@ -12620,21 +11729,21 @@
     "partite": [
      {
       "data": "2026-11-27",
-      "casa": "Heidenheim",
-      "ospite": "Nurnberg",
-      "gol_casa": 3,
-      "gol_ospite": 1,
-      "in_porta_casa": 7,
-      "in_porta_ospite": 0
-     },
-     {
-      "data": "2026-11-27",
       "casa": "Bochum",
       "ospite": "Darmstadt",
       "gol_casa": 2,
       "gol_ospite": 0,
       "in_porta_casa": 8,
       "in_porta_ospite": 1
+     },
+     {
+      "data": "2026-11-27",
+      "casa": "Heidenheim",
+      "ospite": "Nurnberg",
+      "gol_casa": 3,
+      "gol_ospite": 1,
+      "in_porta_casa": 7,
+      "in_porta_ospite": 0
      }
     ]
    },
